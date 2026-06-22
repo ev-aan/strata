@@ -1,0 +1,30 @@
+subject: proto-indo-european
+
+threads:
+
+  - id: thread-pie-popular-framing
+    type: reception-overlay
+    title: "PIE in popular science framing"
+    confers_weight: false   # T4: required for reception overlays
+    description: >
+      How PIE reaches general readers: a single mother tongue that "went global,"
+      often narrated with origin-myth cadence — a "Big Bang" of language, a people
+      who "conquered" half the world. These framings track real claims but add
+      salience the evidence does not carry.
+    overlay_notes:
+      - >
+        "One ancient language went global" compresses a multi-millennium,
+        multi-mechanism dispersal (still contested — see pie-spread-mechanism) into
+        a single triumphal arc. The arc is narrative proportion, not evidence.
+      - >
+        The "Big Bang" / explosion metaphor imports suddenness the record does not
+        establish. Dispersal timing is itself only proposed (pie-wheel-terminus).
+      - >
+        Conquest-and-replacement narratives select one social model from a contested
+        set and present it as settled. This is precisely the adoption-weight pressure
+        the spread-mechanism claim is held at contested to resist.
+    firewall: >
+      This thread records reception. It is mechanically barred (confers_weight: false)
+      from lending evidential weight to any claim. A reader arriving with the popular
+      framing should be able to see which parts of it correspond to established claims,
+      which to proposed, and which to a contested model dressed as a conclusion.
