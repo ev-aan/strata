@@ -1,0 +1,213 @@
+subject: proto-indo-european
+title: "Proto-Indo-European: A Reconstructed Language"
+description: >
+  PIE is unusual among Strata subjects: its primary evidence is the output of a
+  method, not a surviving record. No PIE text exists. Every reconstructed form is
+  an inference from regular sound correspondences across attested daughter languages.
+  This dig keeps three things mechanically distinct that the popular framing fuses:
+  (1) the comparative method as a reproducible procedure, (2) the reconstructed
+  lexicon it yields, and (3) the historical claims (homeland, date, spread) that
+  rest on chains built from that lexicon plus material and genetic evidence.
+
+# ---------------------------------------------------------------------------
+# EVIDENCE-CLASS NOTE (governance, not a claim):
+# This dig introduces no new evidence class but stress-tests the existing four.
+# Reconstructed forms are filed as SYNTHETIC, not material or primary-text:
+# a starred form is an inference, never an observed record. Rule 9 therefore
+# does NOT treat a reconstruction-only result as a primary refutation.
+# The mitigating fact — that correspondence sets are mechanically reproducible —
+# is captured in prose on each claim, not by promoting the class. Encoding
+# "reproducible therefore primary" in the validator would let method outputs
+# wear material evidence's costume. Refused, same logic as the falsifiability
+# refusal: reproducibility of a correspondence is checkable; whether it licenses
+# a historical inference is judgment.
+# ---------------------------------------------------------------------------
+
+claims:
+
+  - id: pie-comparative-method-valid
+    state: established
+    statement: >
+      The comparative method reliably establishes genetic relationship between
+      languages and reconstructs features of an unattested common ancestor, on the
+      basis of regular, systematic sound correspondences that recur across
+      independent lexical items.
+    evidence_class: synthetic
+    confidence: high
+    anchor:
+      type: method-reproducibility
+      description: >
+        Sound correspondences (e.g. the set underlying Grimm's Law across Germanic
+        vs. Latin/Greek/Sanskrit) are mechanically reproducible: given the daughter
+        forms, the correspondence either recurs regularly or it does not. Regularity
+        across hundreds of unrelated lexemes is not reproducible by chance or borrowing.
+      accessible: true
+    basis: >
+      The method's outputs are checkable in a way ordinary synthetic work is not.
+      This is the firmest synthetic-class claim in the corpus. It is filed
+      established, not as primary-text, because what is reproducible is the
+      correspondence, not a PIE record.
+
+  - id: pie-exists-as-real-language
+    state: established
+    statement: >
+      A single ancestral language (Proto-Indo-European) was actually spoken by a
+      real community, and the Indo-European languages are its genuine descendants
+      rather than a typological grouping or areal convergence.
+    evidence_class: synthetic
+    confidence: high
+    anchor:
+      type: convergent-correspondence
+      description: >
+        Shared morphology (ablaut, the verbal system) and core vocabulary follow
+        correspondence patterns too regular and too deep to be explained by contact.
+        Independent branches preserve the same irregularities (e.g. suppletive paradigms).
+      accessible: true
+    basis: >
+      "Real spoken language" is a stronger claim than "the method works," but the
+      depth of shared morphological irregularity carries it. Capped at established,
+      not pushed toward false precision about the speech community itself.
+
+  - id: pie-reconstructed-lexicon
+    state: established
+    statement: >
+      A substantial PIE lexicon can be reconstructed with regular correspondences,
+      including core kinship, body parts, numerals, and items of material culture
+      such as a word for 'wheel' (*kwekwlos) and 'horse' (*h1ekwos).
+    evidence_class: synthetic
+    confidence: high
+    anchor:
+      type: correspondence-set
+      description: >
+        Each reconstructed lexeme rests on attested reflexes across multiple branches
+        obeying established sound laws. The wheel and horse terms recur across
+        Anatolian-excluded branches.
+      accessible: true
+    basis: >
+      The lexemes are established as reconstructions. What those lexemes LICENSE about
+      PIE culture and date is a separate claim (see pie-wheel-terminus) and must not
+      inherit this claim's confidence.
+
+  - id: pie-wheel-terminus
+    state: proposed
+    statement: >
+      Because PIE had inherited vocabulary for the wheel and wheeled transport, the
+      proto-language was most likely still a unity after the invention of wheeled
+      vehicles (c. 3500 BCE), placing the bulk of PIE dispersal in the later 4th
+      millennium BCE.
+    evidence_class: synthetic
+    confidence: moderate
+    anchor:
+      type: inference-chain
+      description: >
+        Chain: reconstructed lexeme (wheel) -> inferred familiarity with the artifact
+        -> terminus post quem tied to the archaeological date of wheel technology.
+      accessible: true
+    basis: >
+      "Most likely" is the honest cap. The chain is sound but each link is defeasible:
+      a term can be inherited and re-applied to a later artifact (semantic retrofitting),
+      and Anatolian's position complicates whether the wheel term was truly PIE-wide.
+      Held at proposed, not established — the lexicon is established, the dating inference is not.
+
+  - id: pie-steppe-homeland
+    state: established
+    statement: >
+      The PIE homeland was the Pontic-Caspian steppe (north of the Black and Caspian
+      seas), associated with the Yamnaya horizon, rather than Neolithic Anatolia.
+    evidence_class: material
+    confidence: high
+    anchor:
+      type: aDNA-convergence
+      description: >
+        Ancient-DNA studies (2015 onward) document a genetic expansion from the
+        Pontic-Caspian steppe (Yamnaya-associated ancestry) into Europe and South Asia
+        on timelines and routes matching the linguistic spread. This is material
+        evidence independent of the reconstruction.
+      accessible: true
+    basis: >
+      Filed material because the load-bearing anchor is aDNA, not reconstruction.
+      The convergence of an independent evidence class (genetics) with the linguistic
+      picture is what lifts this from proposed to established.
+
+  - id: anatolian-daughter-hypothesis
+    state: refuted
+    statement: >
+      The Anatolian branch (Hittite et al.) is a daughter of PIE that split after
+      the proto-language was fully formed, with Anatolia as a candidate homeland.
+    evidence_class: material
+    confidence: high
+    refutes_target: "Anatolian-as-daughter / Anatolian homeland hypothesis"
+    anchor:
+      type: aDNA-absence
+      description: >
+        Genetic analysis of remains from Anatolian-speaking populations shows no
+        Yamnaya/steppe genetic connection of the kind that accompanies other IE
+        branches' spread. The material record breaks the required population link.
+      accessible: true
+    basis: >
+      Rule 9 satisfied: the refutation NAMES its target and rests on a material anchor
+      (aDNA absence), not on consensus. Note the current replacement view — Anatolian
+      as a SISTER of PIE, both descending from an earlier "Indo-Anatolian" — is itself
+      only proposed (see indo-anatolian-node), so the refutation of the daughter
+      hypothesis does not smuggle in certainty about the sister hypothesis.
+
+  - id: indo-anatolian-node
+    state: proposed
+    statement: >
+      Anatolian is not a daughter of PIE but its sister, both descending from a still
+      earlier proto-language ("Indo-Anatolian" / pre-PIE).
+    evidence_class: synthetic
+    confidence: moderate
+    anchor:
+      type: cladistic-inference
+      description: >
+        Anatolian's archaic features (e.g. retention of laryngeals as consonants,
+        a simpler verbal/gender system) are read as splits predating innovations
+        shared by all non-Anatolian branches.
+      accessible: true
+    basis: >
+      The replacement for the refuted daughter hypothesis. Held at proposed: the
+      archaic-feature reading is defensible but reconstruction-internal, and "earlier
+      than PIE" pushes against the searched-gap wall (see pre-pie-ancestor).
+
+  - id: pie-spread-mechanism
+    state: contested
+    statement: >
+      The mechanism by which IE languages spread so widely — demographic replacement,
+      elite-male dominance, plague-mediated collapse of farming populations, or gradual
+      migration — is not settled.
+    evidence_class: material
+    confidence: low
+    anchor:
+      type: live-dispute
+      description: >
+        aDNA shows strong male-biased steppe ancestry signatures in descendant
+        populations, but these are compatible with multiple social models (violent
+        conquest, asymmetric plague mortality plus patrilineality, elite emulation).
+        The genetic signal underdetermines the social mechanism.
+      accessible: true
+    basis: >
+      Genuinely contested: the same material evidence is read through competing social
+      models, none of which the data currently discriminates. This is a live
+      evidential dispute, not adoption pressure — kept at contested, no test retires it yet.
+
+  - id: pre-pie-ancestor
+    state: searched_gap
+    statement: >
+      The ancestor of PIE itself (the language that preceded the proto-language,
+      including any pre-PIE/Indo-Anatolian stage and its own parent) cannot currently
+      be reconstructed.
+    evidence_class: synthetic
+    confidence: high
+    anchor:
+      type: method-horizon
+      description: >
+        The comparative method reaches back only as far as surviving daughter languages
+        permit. Beyond the deepest reconstructable node there are no further attested
+        descendants to correspond, so the method runs out. This is a horizon of the
+        method, not a temporary lack of data.
+      accessible: true
+    basis: >
+      A principled searched_gap, not an open research question awaiting a find. The gap
+      is structural: no oracle exists beyond the reconstruction horizon. Distinguishes
+      "we haven't reconstructed it" from "the method cannot reach it."
