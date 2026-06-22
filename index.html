@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Strata — What do we actually know?</title>
+  <meta name="description" content="Strata is an open record of how knowledge is built — claim by claim, layer by layer. Each dig traces what the evidence actually supports." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --sand:        #F5F2EC;
+      --sand-dark:   #EAE5DC;
+      --ink:         #1A1814;
+      --ink-mid:     #4A4640;
+      --ink-muted:   #7A746C;
+      --amber:       #8B6914;
+      --amber-light: #F5EDD5;
+      --teal:        #0F6E56;
+      --teal-light:  #E1F5EE;
+      --coral:       #993C1D;
+      --coral-light: #FAECE7;
+      --border:      rgba(26,24,20,0.12);
+      --border-mid:  rgba(26,24,20,0.20);
+    }
+
+    html {
+      background: var(--sand);
+      color: var(--ink);
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ── Nav ── */
+    nav {
+      padding: 1.75rem 0 1.75rem;
+      border-bottom: 0.5px solid var(--border);
+      margin-bottom: 5rem;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: 'Fraunces', serif;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ── Hero ── */
+    .hero {
+      margin-bottom: 5rem;
+    }
+
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .headline {
+      font-size: clamp(36px, 6vw, 52px);
+      font-weight: 300;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.75rem;
+      max-width: 600px;
+    }
+
+    .headline em {
+      font-style: italic;
+      color: var(--amber);
+    }
+
+    .mission {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--ink-mid);
+      max-width: 560px;
+    }
+
+    /* ── Section ── */
+    .section {
+      margin-bottom: 4.5rem;
+    }
+
+    .section-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    /* ── Dig cards ── */
+    .dig-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 0.5px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .dig-card {
+      background: var(--sand);
+      padding: 1.25rem;
+      transition: background 0.15s;
+    }
+
+    .dig-card:hover { background: var(--sand-dark); }
+
+    .dig-icon {
+      font-size: 18px;
+      margin-bottom: 0.75rem;
+      color: var(--ink-muted);
+    }
+
+    .dig-name {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 0.3rem;
+    }
+
+    .dig-meta {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Updates ── */
+    .update-item {
+      display: grid;
+      grid-template-columns: 100px 1fr auto;
+      align-items: start;
+      gap: 1.25rem;
+      padding: 1.25rem 0;
+      border-bottom: 0.5px solid var(--border);
+    }
+
+    .update-item:first-child { border-top: 0.5px solid var(--border); }
+
+    .update-date {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-muted);
+      padding-top: 3px;
+    }
+
+    .update-title {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 0.3rem;
+    }
+
+    .update-sub {
+      font-size: 13px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--ink-muted);
+      line-height: 1.5;
+    }
+
+    .badge {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 20px;
+      border: 0.5px solid;
+      white-space: nowrap;
+      margin-top: 3px;
+    }
+
+    .badge-established { border-color: var(--teal);  color: var(--teal); }
+    .badge-proposed    { border-color: var(--amber); color: var(--amber); }
+    .badge-refuted     { border-color: var(--coral); color: var(--coral); }
+    .badge-queued      { border-color: var(--border-mid); color: var(--ink-muted); }
+
+    /* ── Pull quote ── */
+    .pull-quote {
+      padding: 2.5rem 0;
+      border-top: 0.5px solid var(--border);
+      margin-bottom: 4rem;
+    }
+
+    .pull-quote-text {
+      font-size: clamp(18px, 3vw, 22px);
+      font-weight: 300;
+      font-style: italic;
+      line-height: 1.55;
+      max-width: 520px;
+      color: var(--ink);
+    }
+
+    .pull-quote-attr {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 1rem;
+    }
+
+    /* ── GitHub bar ── */
+    .github-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.25rem;
+      background: var(--sand-dark);
+      border: 0.5px solid var(--border);
+      border-radius: 10px;
+    }
+
+    .github-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--ink-mid);
+    }
+
+    .github-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .status-dot {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-muted);
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--teal);
+    }
+
+    .btn {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 0.5px solid var(--border-mid);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.15s;
+      text-decoration: none;
+    }
+
+    .btn:hover { background: var(--sand); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 0.5px solid var(--border);
+      padding: 2rem 0;
+      margin-top: 4rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-note {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--ink-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      .container { padding: 0 1.25rem; }
+      nav { margin-bottom: 3rem; }
+      .nav-links { gap: 1.25rem; }
+      .update-item { grid-template-columns: 1fr; gap: 0.5rem; }
+      .update-date { padding-top: 0; }
+      .badge { align-self: flex-start; }
+      .github-bar { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .footer-inner { flex-direction: column; gap: 0.5rem; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Nav -->
+    <nav>
+      <div class="nav-inner">
+        <span class="logo">STRATA</span>
+        <ul class="nav-links">
+          <li><a href="#digs">Digs</a></li>
+          <li><a href="#updates">Updates</a></li>
+          <li><a href="https://github.com/ev-aan/strata" target="_blank" rel="noopener">GitHub ↗</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="eyebrow">A knowledge platform</p>
+      <h1 class="headline">What do we actually <em>know,</em> and how do we know it?</h1>
+      <p class="mission">Strata is an open record of how knowledge is built — claim by claim, layer by layer. Each dig traces what the evidence actually supports, how confident we can be, and where honest uncertainty lives. No consensus shortcuts. No adoption masquerading as proof.</p>
+    </section>
+
+    <!-- Digs -->
+    <section class="section" id="digs">
+      <p class="section-label">Active digs</p>
+      <div class="dig-grid">
+        <div class="dig-card">
+          <div class="dig-icon">&#9770;</div>
+          <div class="dig-name">Flood narratives</div>
+          <div class="dig-meta">Mesopotamian texts</div>
+        </div>
+        <div class="dig-card">
+          <div class="dig-icon">&#9883;</div>
+          <div class="dig-name">H. pylori &amp; ulcers</div>
+          <div class="dig-meta">Medical science</div>
+        </div>
+        <div class="dig-card">
+          <div class="dig-icon">&#9760;</div>
+          <div class="dig-name">Piltdown Man</div>
+          <div class="dig-meta">Scientific fraud</div>
+        </div>
+        <div class="dig-card">
+          <div class="dig-icon">&#9793;</div>
+          <div class="dig-name">Continental drift</div>
+          <div class="dig-meta">Plate tectonics — queued</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Updates -->
+    <section class="section" id="updates">
+      <p class="section-label">Recent updates</p>
+      <div>
+        <div class="update-item">
+          <span class="update-date">Jun 2025</span>
+          <div>
+            <div class="update-title">Piltdown Man dig complete</div>
+            <div class="update-sub">Forensic measurement retires the claim. Dawson's identity held at proposed.</div>
+          </div>
+          <span class="badge badge-refuted">Refuted</span>
+        </div>
+        <div class="update-item">
+          <span class="update-date">May 2025</span>
+          <div>
+            <div class="update-title">H. pylori &amp; peptic ulcers</div>
+            <div class="update-sub">First discriminating test primitive. Marshall's self-experiment retires the question.</div>
+          </div>
+          <span class="badge badge-established">Established</span>
+        </div>
+        <div class="update-item">
+          <span class="update-date">Apr 2025</span>
+          <div>
+            <div class="update-title">Flood narrative corpus</div>
+            <div class="update-sub">Gilgamesh, Enūma Eliš, Atra-hasis, Sumerian Flood Story as primary digs.</div>
+          </div>
+          <span class="badge badge-proposed">Proposed</span>
+        </div>
+        <div class="update-item">
+          <span class="update-date">Coming</span>
+          <div>
+            <div class="update-title">Continental drift → plate tectonics</div>
+            <div class="update-sub">A case where the establishment's rejection also fails Rule 9.</div>
+          </div>
+          <span class="badge badge-queued">Queued</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pull quote -->
+    <div class="pull-quote">
+      <p class="pull-quote-text">"Popular adoption cannot masquerade as evidence — and neither can scholarly consensus masquerade as refutation."</p>
+      <p class="pull-quote-attr">Rule 9 — Strata validator</p>
+    </div>
+
+    <!-- GitHub bar -->
+    <div class="github-bar">
+      <div class="github-left">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        ev-aan/strata
+      </div>
+      <div class="github-right">
+        <span class="status-dot"><span class="dot"></span>In progress</span>
+        <a href="https://github.com/ev-aan/strata" target="_blank" rel="noopener" class="btn">View repo →</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-inner">
+        <span class="footer-note">Strata — evidence-weighted knowledge</span>
+        <span class="footer-note">Built in the open</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
