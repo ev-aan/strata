@@ -1,0 +1,22 @@
+# netlify.toml — alternative to GitHub Pages.
+# Netlify runs this build itself on every push. The validation gate
+# is folded into the build command: if conformance or tests fail,
+# the command exits non-zero and Netlify refuses to publish.
+
+[build]
+  publish = "site"
+  command = "python build/conformance.py && python build.py --all"
+
+[build.environment]
+  PYTHON_VERSION = "3.12"
+
+# Netlify installs from requirements.txt automatically if present.
+# If you don't keep one, add a runtime install to the command:
+#   command = "pip install pyyaml && python build/conformance.py && python build.py --all"
+
+# Clean URLs: /proto-indo-european instead of /proto-indo-european.html
+[[redirects]]
+  from = "/*"
+  to = "/:splat/index.html"
+  status = 200
+  force = false
