@@ -1,0 +1,33 @@
+subject: proto-indo-european
+
+discriminating_tests:
+
+  - id: dt-anatolian-genetic-link
+    question: >
+      Do populations speaking Anatolian IE languages carry the Pontic-Caspian
+      (Yamnaya-associated) steppe ancestry that accompanies the spread of the
+      other Indo-European branches?
+    retires: anatolian-daughter-hypothesis
+    predicts:
+      steppe-homeland-and-anatolian-as-daughter: >
+        IF Anatolia were a daughter branch dispersed from the steppe like the others,
+        Anatolian-speaking populations should show the same steppe genetic signature.
+      anatolian-homeland: >
+        IF Anatolia were the homeland, the directionality of genetic flow should run
+        outward FROM Anatolia, not show an absent steppe link.
+    result:
+      type: material
+      finding: >
+        aDNA shows no steppe/Yamnaya genetic connection in the relevant Anatolian
+        populations of the kind seen in other IE branches' expansions.
+      accessible: true
+    resolves: >
+      The absence is a material result, not a consensus. It is what licenses placing
+      anatolian-daughter-hypothesis in the refuted state under Rule 9, and is the
+      direct anchor that claim cites.
+    note: >
+      D3 satisfied: the question is retired by a material result (genetic
+      presence/absence), never by which hypothesis is more popular among scholars.
+      The test does NOT settle the sister-hypothesis (indo-anatolian-node) — a hypothesis
+      can survive a discriminating test without being confirmed by it. That node stays
+      proposed.
