@@ -1,0 +1,101 @@
+subject: chemtrails
+dig_status: scoping          # no claims drafted yet; feasibility only
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+
+log:
+  - id: L-01
+    date: 2026-10-01
+    entry: >
+      TOPIC OPENED by the owner: "chemtrails", the claim that the long white trails behind
+      some aircraft are a deliberate, secret spraying of chemicals. Scoping only. All figures
+      below are V1 (search results agree) or V0 (marked); no primary document was opened.
+  - id: L-02
+    date: 2026-10-01
+    entry: >
+      THE CLAIM HAS FIVE PARTS THAT MUST BE FILED SEPARATELY (the popular version fuses them):
+      (A) aircraft leave trails that sometimes persist for hours: documented physics.
+      (B) the trails are or contain something other than jet exhaust and water: the claim.
+      (C) a secret, large-scale atmospheric spraying program exists (the "SLAP" claim): the claim.
+      (D) real, documented programs exist that touch the atmosphere (cloud seeding, solar
+      geoengineering research): documented, and a common source of the confusion.
+      (E) harm to people from (B) or (C): a further claim that depends on (C).
+  - id: L-03
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, ORACLE FOR (A) AND (B): yes, a physical one. Whether a contrail persists is
+      governed by two conditions: the Schmidt-Appleman criterion (can a trail form at this
+      temperature and humidity) and ice supersaturation (ISSR: relative humidity over ice at or
+      above 100 percent). Where the air is ice-supersaturated, trails persist, can last hours,
+      spread and merge into cirrus; elsewhere they vanish within minutes. Persistence is
+      forecast with weather models, and contrail-avoidance research uses those forecasts
+      (Atmospheric Chemistry and Physics papers, 2023-2025; Reading, DLR and RFF material).
+      That is a PREDICTION that can be tested against flights on the same route on different
+      days: same aircraft, different humidity, different outcome. V1; papers not read.
+  - id: L-04
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, THE EXPERT SURVEY AND RULE 9. Shearer and colleagues (Environmental
+      Research Letters, 2016) surveyed atmospheric chemists and geochemists: 76 of 77 reported
+      no evidence of a secret large-scale spraying program, and said data cited as evidence
+      can be explained by contrail physics and aerosol chemistry (a corrigendum exists; V1).
+      UNDER RULE 9 THIS IS INTERPRETIVE EVIDENCE: a scholarly consensus may not stand in as
+      the refutation. The dig must therefore rest any refutation on material or primary_text
+      anchors (the persistence physics; atmospheric and precipitation sampling data; flight
+      and fuel records) and present the survey only as adoption weight among experts.
+  - id: L-05
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, ADOPTION DATA EXISTS: Tingley and Wagner (Palgrave Communications, 2017)
+      used a nationally representative YouGov/Polimetrix sample of about 1,000 within the 2016
+      Cooperative Congressional Election Study: 9 percent called the claim completely true and
+      a further 19 to 29 percent somewhat true, with no apparent partisan difference (V1). The
+      same study reports that conspiracy views were about 60 percent of social-media discourse
+      on geoengineering at the time (V1, one source). These fill adoption_weight with
+      measurements, not guesses.
+  - id: L-06
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, DOCUMENTED NEIGHBOURS (these are real and must NOT be merged into the
+      claim): (1) Weather modification such as cloud seeding is a documented, operating
+      practice. (2) Solar geoengineering by stratospheric aerosol injection is an area of
+      research; Harvard's SCoPEx balloon experiment was suspended in 2023 and cancelled in
+      March 2024 (V1; MIT Technology Review and Harvard Salata Institute sources). No report
+      reviewed describes an operating stratospheric injection program. (3) Laws now exist:
+      Tennessee restricted airborne chemical release and intentional modification of sunlight,
+      weather or temperature in 2024; Florida enacted a similar third-degree-felony statute in
+      June 2025 (V1). Counts of other states vary by source (one tracker reports 37 states with
+      proposals, with Louisiana as a third enactment; one site claims "31+ states ban"). The
+      two counts conflict and one source is weak: V0 until the state legislative records are read.
+      A law banning something is a fact about law, and confers no weight on the claim that the
+      thing is happening.
+  - id: L-07
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, A QUANTITY TEST (proposed, not run): a secret program at the scale claimed
+      implies tonnage and logistics (aircraft payload, flights, fuel, material supply, ground
+      handling, workers). A mass and logistics estimate, built only from published aircraft
+      and airline figures and labelled synthetic, can ask whether the claimed scale is
+      physically and financially plausible without anyone noticing. Same style of argument
+      as the Apollo mass ratio; same limits: it is an inference, and stays proposed until
+      independently reviewed.
+  - id: L-08
+    date: 2026-10-01
+    entry: >
+      CAUTIONS (logged now): (a) the absence of evidence of a program is an absence anchor and
+      is capped at provisional confidence; positive anchors come from (A), (B) and sampling
+      data. (b) Some documented things (cloud seeding, SRM research) are real; the page must
+      say so plainly instead of treating all talk of the atmosphere as the claim. (c) Contrail
+      physics is also a real, current science problem (aviation climate forcing); the page must
+      not make it look settled where it is not. (d) Tone: report belief figures and the
+      reasoning plainly; no ridicule of those who hold the belief. (e) The laws are real
+      and recent; their existence goes in the divergence note.
+  - id: L-09
+    date: 2026-10-01
+    entry: >
+      NEXT STEPS (not started, all blocked on source access): read Shearer 2016 and its
+      corrigendum; read Tingley and Wagner 2017; read two persistence papers and one
+      contrail-avoidance forecast paper; find published atmospheric and rainwater sampling
+      studies and filed analyses (primary_text or material); read Tennessee and Florida
+      statutes; write the test down before collecting anything; then draft claims A to E.
+      Hosts needed beyond the current list: iopscience.iop.org, nature.com, acp.copernicus.org,
+      flsenate.gov, tn.gov, epa.gov, technologyreview.com.
