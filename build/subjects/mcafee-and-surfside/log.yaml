@@ -1,0 +1,73 @@
+subject: mcafee-and-surfside
+dig_status: scoping          # no claims drafted yet; feasibility only
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+
+log:
+  - id: L-01
+    date: 2026-10-01
+    entry: >
+      TOPIC SELECTED by the owner: allegations that the death of John McAfee (software
+      entrepreneur) is connected to a Miami building that was suddenly destroyed.
+      Working reading: the building is Champlain Towers South, Surfside, Florida, which
+      collapsed the day after McAfee's death. The owner did not name the building; the
+      identification is ours and is checked in L-02.
+  - id: L-02
+    date: 2026-10-01
+    entry: >
+      TIMELINE (V1 unless marked): McAfee was found dead in his cell at Brians 2 prison near
+      Barcelona on 23 June 2021, shortly after Spain's National Court authorized his
+      extradition to the United States. Champlain Towers South partly collapsed in the early
+      hours of 24 June 2021; the standing remainder was demolished days later (V0, from memory;
+      date to be checked). Number of people killed at Surfside: V0, to be taken from the
+      official record, not from memory.
+      NOTE ON WORDING: "suddenly destroyed" blends two events, the collapse and the later
+      controlled demolition. The dig must keep them apart.
+  - id: L-03
+    date: 2026-10-01
+    entry: >
+      THE CLAIM AS CIRCULATED (V1, several fact-check and news reports agree): that McAfee
+      stored about 31 TB of files on "government corruption" at a condo near 88th Street and
+      Collins Avenue, that the building was destroyed to remove them, and that his death is
+      linked. The claim rests on a post attributed to McAfee's account that fact-checkers
+      report was never posted by him (Snopes and others). They also report he did not own a
+      unit in the building. Neither point has been checked here against the primary record
+      (the account's archive; Miami-Dade property records).
+  - id: L-04
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, ORACLES: THREE SEPARATE QUESTIONS, THREE DIFFERENT ORACLES.
+      (1) How did McAfee die? Evidence: Spanish autopsy and court findings (apparent suicide
+      by hanging; a court in 2023 shelved the probe, reported as finding "no indications of
+      anything other than a violent death of suicidal origin"). His widow publicly disputed
+      the finding and asked for further checks, which a local judge denied (V1). The case
+      is documented but not independently re-examined as far as the sources reviewed show.
+      Likely filing: the official finding as established-by-authority only where an anchor
+      is read; the dispute as contested; independent review as a searched gap.
+      (2) Why did Surfside collapse? Evidence: the US National Institute of Standards and
+      Technology investigation, with technical findings reported as released in June 2026:
+      failure began at pool-deck / garage-column connections, with design deficiencies,
+      construction deviations, added loads and corrosion; vibration, foundation settlement
+      and roofing work ruled out (V1, search summaries; not read). Strong material oracle.
+      (3) Is there a LINK? Evidence is mostly absence: no verified record places McAfee
+      or any data cache in the building; the key tweet is reported as fabricated. An absence
+      anchor is capped at provisional under CONTRIBUTING.md, so positive anchors must be
+      found (property records; the account's own archive; timing of events from primary
+      logs).
+  - id: L-05
+    date: 2026-10-01
+    entry: >
+      CAUTIONS (logged now): (a) people died at Surfside and McAfee had a family; wording must
+      be plain and restrained. (b) The coincidence of dates is a real, documented fact and
+      stays on the page as such; it carries no evidential weight (threads.yaml,
+      confers_weight false). (c) No claim names or characterizes private individuals who
+      repeated the theory; the overlay records the claim, not the people. (d) We do not
+      state how McAfee died beyond what sources read directly say, and we do not exclude
+      what is not excluded.
+  - id: L-06
+    date: 2026-10-01
+    entry: >
+      NEXT STEPS (not started): confirm the building and dates against primary records;
+      read the NIST findings and the Spanish court record; check the property records and
+      the account archive for the alleged post; write the test down before collecting
+      anything; then draft claims. Blocked on source access until the network allowlist is
+      widened (adds: nist.gov, sec.gov or court-record hosts as needed).
