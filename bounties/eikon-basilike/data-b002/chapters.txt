@@ -1,0 +1,31 @@
+chapter                                      words   dist  within Charles own (share of his passages as far or farther)  other clergy as far or farther
+1. Vpon His Majesties calling this last Parl  1065  0.810          0%         60%
+2. Vpon the Earle of Straffords death.        1452  0.768          0%         67%
+3. Vpon His Majesties going to the House of    927  0.834          0%         67%
+4. Vpon the Insolency of the Tu mults.        1884  0.772          0%         28%
+5. Vpon His Majesties passing the Bill for t  1727  0.688          0%         87%
+6. Vpon His Majesties retirement from VVestm  1752  0.734          0%         67%
+7. Vpon the Queenes departure, and absence o  1220  0.819          0%         47%
+8. Vpon His Majesties repulse at Hull, and t  1491  0.760          0%         67%
+9. Vpon the listing, and raising Armies agai  2500  0.671          0%         73%
+10. Vpon their seizing the Kings Magazines,   1976  0.647          0%         98%
+11. Vpon the 19. Propositions first sent to   2500  0.686          0%         68%
+12. Vpon the Rebellion, and troubles in Irel  2419  0.627          0%         90%
+13. Vpon the Calling in of the Scots, and th  2127  0.712          0%         65%
+14. Vpon the Covenant.                        2500  0.672          0%         85%
+15. Vpon the many Iealousies rai sed, and Sc  2500  0.738          0%         43%
+16. Vpon the Ordinance against the Commo Pra  2072  0.694          0%         65%
+17. Of the differences between the KING and   2500  0.736          0%         38%
+18. Vpon Vxbridge -Treaty, and other Offers   1267  0.850          0%         18%
+19. Vpon the various events of the Warre; Vi  2017  0.738          0%         42%
+20. Vpon the Reformations of the Times.       1742  0.719          0%         73%
+21. Vpon His Majesties Let ters taken and di  1552  0.760          0%         55%
+22. Vpon His Majesties leaving Oxford, and g   909  0.922          0%         23%
+23. Vpon the Scots delivering the KING to th  1059  0.808          2%         50%
+24. Vpon their denying His Ma jesty the Atte  2500  0.634          0%         88%
+25. Penitentiall Meditations and Vowes in th  1073  0.859          0%         42%
+26. Vpon the Armies Surprisall of the KING a  1743  0.736          0%         70%
+27. To the Prince of VVales.                  2500  0.701          0%         42%
+Meditations upon Death, after the Votes of N  2500  0.687          0%         65%
+
+chapters inside Charles range (>=10% of his own passages as far or farther): 0 of 28

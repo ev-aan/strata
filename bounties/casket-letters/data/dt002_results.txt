@@ -1,0 +1,12 @@
+chunks kept: Mary 530 Catherine 2886
+equal-size corpora per resample: 530 chunks ≈ 31800 words
+III      median ratio 1.59  90% range 1.25–1.78
+IV       median ratio 1.49  90% range 1.23–1.88
+V        median ratio 1.55  90% range 1.10–2.66
+VI       median ratio 1.35  90% range 0.94–1.64
+II-open  median ratio 0.01  90% range 0.01–0.03
+calibration Mary     : median 1.44, 90% range 1.00–2.44, correct 57/60, ratio>=3: 1/60
+calibration Catherine: median 0.64, 90% range 0.46–0.88, correct 58/60, ratio>=3: 0/60
+III most frequent phrases shared with Mary: ['ai enuaie en', 'iuques a la', 'umble et obeisante', 'cele qui uous', 'de plus longue', 'ie uous enuaie', 'longue et eureuse', 'pour iamais uous']
+VI most frequent phrases shared with Mary: ['ie lui ai', 'qu il uous', 'beau frere i', 'me dit que', 'de uous memes', 'i et uenu', 'uers mai et', 'de ma part']
+IV most frequent phrases shared with Mary: ['que ie n', 'ie n en', 'selon uotre promese', 'de ceux qui', 'ie n euse', 'non que ie', 'toute ma uie', 'si non que']

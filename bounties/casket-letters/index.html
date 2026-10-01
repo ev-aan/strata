@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Strata bounty B-001: a public, append-only record of testing whether the surviving French Casket Letters match Mary Queen of Scots' own writing.">
+<title>Casket Letters Bounty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: wiki article — sticky contents rail left, article column right; stratigraphic claim layers are the one bold element. */
+:root {
+  --ground: #ECEEEA;      /* limestone */
+  --paper: #F7F8F5;
+  --ink: #23201B;         /* soil dark */
+  --ink-soft: #5B554B;
+  --rule: #CFCFC6;
+  --ochre: #A86B1F;
+  --mineral: #2F6B72;     /* evidence: cool */
+  --mineral-soft: #D5E6E6;
+  --clay: #B0583A;        /* adoption: warm */
+  --clay-soft: #F1DCD2;
+  --ok: #3C7A4A; --warn: #A87B12; --bad: #A23B2E; --gap: #6A5C8C;
+  --f-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --ground: #1A1814; --paper: #221F1A; --ink: #E9E4DA; --ink-soft: #A9A194; --rule: #3A352D;
+  --ochre: #D59A4A; --mineral: #7DB7BC; --mineral-soft: #1F3537; --clay: #DE8A6A; --clay-soft: #3B2720;
+  --ok: #7CC08B; --warn: #D9B24E; --bad: #E07A6C; --gap: #A898CF; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --ground: #1A1814; --paper: #221F1A; --ink: #E9E4DA; --ink-soft: #A9A194; --rule: #3A352D;
+  --ochre: #D59A4A; --mineral: #7DB7BC; --mineral-soft: #1F3537; --clay: #DE8A6A; --clay-soft: #3B2720;
+  --ok: #7CC08B; --warn: #D9B24E; --bad: #E07A6C; --gap: #A898CF; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--ground); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6; }
+a { color: var(--mineral); text-underline-offset: 2px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--ochre); outline-offset: 2px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 64px; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 40px; }
+@media (max-width: 860px) { .wrap { grid-template-columns: minmax(0,1fr); gap: 20px; padding-inline: 16px; } }
+
+/* rail */
+.rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; font-family: var(--f-mono); font-size: 12.5px; }
+.rail .crumb { color: var(--ink-soft); letter-spacing: .04em; text-transform: uppercase; font-size: 11px; margin-bottom: 14px; }
+.rail ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; border-left: 1px solid var(--rule); }
+.rail li a { display: block; padding-left: 12px; color: var(--ink-soft); text-decoration: none; }
+.rail li a:hover { color: var(--ink); }
+@media (max-width: 860px) { .rail { position: static; } .rail ol { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); border-left: 0; } .rail li a { padding-left: 0; } }
+
+article { min-width: 0; }
+.eyebrow { font-family: var(--f-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ochre); }
+h1 { font-family: var(--f-display); font-weight: 600; font-size: clamp(2rem, 4.4vw, 3rem); line-height: 1.08; margin: 6px 0 12px; text-wrap: balance; font-variation-settings: "opsz" 120; }
+h2 { font-family: var(--f-display); font-weight: 600; font-size: 1.55rem; margin: 48px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); text-wrap: balance; scroll-margin-top: 20px; }
+h3 { font-family: var(--f-display); font-weight: 600; font-size: 1.15rem; margin: 24px 0 6px; }
+p, li { max-width: 68ch; }
+.stakes { font-family: var(--f-display); font-size: 1.25rem; line-height: 1.45; color: var(--ink); max-width: 60ch; margin: 0 0 18px; }
+.mono { font-family: var(--f-mono); font-size: .86em; }
+.muted { color: var(--ink-soft); }
+
+/* infobox */
+.lead { display: grid; grid-template-columns: minmax(0,1fr) 300px; gap: 28px; align-items: start; }
+@media (max-width: 980px) { .lead { grid-template-columns: minmax(0,1fr); } }
+.infobox { background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; font-size: 14px; }
+.infobox h4 { margin: 0; padding: 10px 14px; font-family: var(--f-mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid var(--rule); color: var(--ink-soft); font-weight: 500; }
+.infobox dl { margin: 0; padding: 6px 14px 12px; display: grid; grid-template-columns: 96px minmax(0,1fr); gap: 7px 10px; }
+.infobox dt { font-family: var(--f-mono); font-size: 11.5px; color: var(--ink-soft); padding-top: 2px; }
+.infobox dd { margin: 0; }
+
+.pill { display: inline-block; font-family: var(--f-mono); font-size: 11.5px; padding: 1px 8px; border-radius: 99px; border: 1px solid currentColor; white-space: nowrap; line-height: 1.6; }
+.s-established { color: var(--ok); } .s-contested { color: var(--warn); } .s-gap { color: var(--gap); } .s-proposed { color: var(--ochre); } .s-refuted { color: var(--bad); }
+.s-open { color: var(--mineral); }
+
+/* claim layers */
+.layers { display: grid; gap: 0; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; background: var(--paper); }
+.layer { padding: 18px 20px; border-top: 1px solid var(--rule); display: grid; gap: 10px; }
+.layer:first-child { border-top: 0; }
+.layer-head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; }
+.layer-id { font-family: var(--f-mono); font-size: 12px; color: var(--ink-soft); }
+.layer-title { font-family: var(--f-display); font-weight: 600; font-size: 1.1rem; line-height: 1.3; flex: 1 1 320px; min-width: 0; }
+.weights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 620px) { .weights { grid-template-columns: minmax(0,1fr); } }
+.w { border-radius: 3px; padding: 10px 12px; font-size: 14px; }
+.w-ev { background: var(--mineral-soft); }
+.w-ad { background: var(--clay-soft); }
+.w .w-label { font-family: var(--f-mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; display: flex; justify-content: space-between; gap: 8px; }
+.w-ev .w-label { color: var(--mineral); } .w-ad .w-label { color: var(--clay); }
+.pips { letter-spacing: 2px; }
+.w p { margin: 4px 0 0; }
+.meta { font-family: var(--f-mono); font-size: 12px; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 4px 16px; }
+details { border-top: 1px dashed var(--rule); padding-top: 8px; }
+summary { cursor: pointer; font-family: var(--f-mono); font-size: 12.5px; color: var(--ink-soft); }
+details[open] summary { margin-bottom: 6px; }
+
+/* positions table */
+.tbl { overflow-x: auto; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); }
+table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 14px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-top: 1px solid var(--rule); }
+thead th { border-top: 0; font-family: var(--f-mono); font-size: 11.5px; letter-spacing: .05em; text-transform: uppercase; color: var(--ink-soft); font-weight: 500; }
+th.ev { color: var(--mineral); } th.ad { color: var(--clay); }
+
+/* findings */
+.findings { display: grid; gap: 14px; }
+.finding { display: grid; grid-template-columns: 88px minmax(0,1fr); gap: 14px; padding: 14px 16px; background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; }
+@media (max-width: 560px) { .finding { grid-template-columns: minmax(0,1fr); gap: 6px; } }
+.finding .fid { font-family: var(--f-mono); font-size: 12px; color: var(--ink-soft); }
+.finding h3 { margin: 0 0 4px; font-size: 1.05rem; }
+.finding p { margin: 4px 0; }
+.effect { font-family: var(--f-mono); font-size: 12.5px; color: var(--ochre); }
+
+.verdict { border-left: 3px solid var(--ochre); padding: 4px 0 4px 16px; margin: 16px 0; }
+.verdict p { margin: 6px 0; }
+
+ol.steps { padding-left: 1.3em; display: grid; gap: 8px; }
+ol.steps li::marker { font-family: var(--f-mono); color: var(--ochre); }
+
+.outcomes { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+@media (max-width: 760px) { .outcomes { grid-template-columns: minmax(0,1fr); } }
+.oc { background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 12px 14px; font-size: 14px; }
+.oc h4 { margin: 0 0 4px; font-family: var(--f-mono); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+.oc p { margin: 4px 0; }
+
+.firewall { background: var(--paper); border: 1px solid var(--rule); border-radius: 4px; padding: 14px 16px; display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: 14px; align-items: center; }
+@media (max-width: 640px) { .firewall { grid-template-columns: minmax(0,1fr); } .firewall .wall { transform: rotate(90deg); justify-self: center; } }
+.firewall .side h4 { margin: 0 0 4px; font-family: var(--f-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; }
+.firewall .side p { margin: 0; font-size: 14px; }
+.wall { font-family: var(--f-mono); font-size: 12px; color: var(--bad); text-align: center; white-space: nowrap; }
+
+/* log */
+.log { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--rule); display: grid; gap: 14px; }
+.log li { padding-left: 16px; position: relative; max-width: none; }
+.log li::before { content: ""; position: absolute; left: -6px; top: 8px; width: 10px; height: 10px; border-radius: 50%; background: var(--ground); border: 2px solid var(--ochre); }
+.log time { font-family: var(--f-mono); font-size: 12px; color: var(--ink-soft); display: block; }
+.log p { margin: 2px 0; }
+
+.sources { font-size: 14px; display: grid; gap: 6px; padding-left: 1.4em; }
+.sources li { max-width: none; overflow-wrap: anywhere; }
+.cls { font-family: var(--f-mono); font-size: 11px; color: var(--ink-soft); }
+footer { margin-top: 56px; padding-top: 14px; border-top: 1px solid var(--rule); font-family: var(--f-mono); font-size: 12px; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+html { scroll-behavior: smooth; }
+</style>
+<style>html{color-scheme:light}@media (prefers-color-scheme: dark){html{color-scheme:dark}}body{margin:0}img{max-width:100%}[hidden]{display:none!important}.back{font-family:var(--f-mono);font-size:12px;color:var(--ink-soft);text-decoration:none}</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <nav class="rail" aria-label="Contents">
+    <div class="crumb"><a class="back" href="../../">← Strata</a> · Bounties · B-001</div>
+    <ol>
+      <li><a href="#question">The question</a></li>
+      <li><a href="#claims">Claims</a></li>
+      <li><a href="#positions">Positions</a></li>
+      <li><a href="#feasibility">Feasibility check</a></li>
+      <li><a href="#test">Current test</a></li>
+      <li><a href="#overlay">Conspiracy overlay</a></li>
+      <li><a href="#gaps">Open gaps</a></li>
+      <li><a href="#log">Excavation log</a></li>
+      <li><a href="#challenge">Challenge a finding</a></li>
+      <li><a href="#areas">Areas to explore</a></li>
+      <li><a href="#sources">Sources</a></li>
+      <li><a href="../../method/">Method &amp; rules</a></li>
+    </ol>
+  </nav>
+
+  <article>
+    <div class="eyebrow">Bounty B-001 · Scotland &amp; England · 1567–1568</div>
+    <h1>The Casket Letters</h1>
+
+    <div class="lead">
+      <div>
+        <p class="stakes">Eight letters and a run of sonnets, said to be in Mary Queen of Scots' hand, were used to depose her. The originals are gone. Can what survives still tell us who wrote them?</p>
+        <p>In June 1567 Mary's enemies said they had found a silver casket holding letters from her to the Earl of Bothwell. Read as genuine, the letters tie her to the February 1567 murder of her husband, Lord Darnley. They were shown to Elizabeth I's commissioners at York and Westminster in 1568. The originals disappeared in the 1580s. Historians have argued for over 450 years about whether they are genuine, forged, or a mix.</p>
+        <p>This page is the public record of Strata's attempt at a narrow, testable part of that question. Every finding, every dead end and every change of plan is logged below and stays visible.</p>
+        <p class="muted mono">To the best of our knowledge as of 2026-10-01. First result: the surviving French letters lean toward Mary's phrasing over Catherine de Médicis's (claim C-06, proposed, not yet reviewed). A genre confound is still open. An earlier test design (DT-001) was retired before running because the French text is too short for it.</p>
+      </div>
+      <aside class="infobox" aria-label="Bounty summary">
+        <h4>Bounty record</h4>
+        <dl>
+          <dt>Status</dt><dd><span class="pill s-open">open · first result</span></dd>
+          <dt>Nature</dt><dd>Mixed. The overall guilt question is <em>standing</em>; the narrowed style question is <em>resolvable</em> only in part.</dd>
+          <dt>Oracle</dt><dd>Mary's authenticated French letters (Labanoff, 1844; Lasry et al., 2023)</dd>
+          <dt>Sources open?</dt><dd>Mostly. The casket copies and Labanoff are public domain. The 2023 plaintexts are not fully public.</dd>
+          <dt>Confirmation</dt><dd>Named outside specialist required before any claim leaves <span class="pill s-proposed">proposed</span></dd>
+          <dt>Opened</dt><dd class="mono">2026-10-01</dd>
+          <dt>Maintainer</dt><dd>Strata (ev-aan)</dd>
+        </dl>
+      </aside>
+    </div>
+
+    <h2 id="question">The question</h2>
+    <p><strong>Original question (too broad):</strong> Are the Casket Letters genuine?</p>
+    <p><strong>Narrowed bounty question:</strong> Do the casket texts that survive <em>in French</em> match the writing habits of Mary's authenticated French letters more closely than they match other French writers of her time?</p>
+    <p>Why it was narrowed: the most important letter, the long "Glasgow letter" (Letter II), survives only in Scots, English and Latin versions. Style tests on translations are unreliable (see finding F2), so that letter cannot be tested this way. The narrowed question is smaller, but an answer to it would be real evidence instead of another opinion.</p>
+
+    <h2 id="claims">Claims</h2>
+    <p class="muted">Each claim shows evidential weight (cool) and adoption weight (warm) separately. Adoption is information, not evidence. <span class="mono">anchor_checked: no</span> means we have only read secondary descriptions so far, not the primary document itself.</p>
+
+    <div class="layers">
+      <section class="layer">
+        <div class="layer-head"><span class="layer-id">C-01</span><span class="layer-title">In 1586, Walsingham's decipherer Thomas Phelippes forged an enciphered postscript to Mary's letter to Anthony Babington, asking for the names of the conspirators.</span><span class="pill s-established">established</span></div>
+        <div class="weights">
+          <div class="w w-ev"><div class="w-label"><span>Evidential</span><span class="pips">●●●●○</span></div><p>Primary text: the forged postscript survives in the UK National Archives and is described consistently by the NSA history and archive sources.</p></div>
+          <div class="w w-ad"><div class="w-label"><span>Adoption</span><span class="pips">●●●●●</span></div><p>Standard account in every modern history of the Babington Plot.</p></div>
+        </div>
+        <div class="meta"><span>class: primary_text</span><span>anchor_checked: no</span><span>would change if: the archive document were shown to be in another hand or date</span></div>
+      </section>
+
+      <section class="layer">
+        <div class="layer-head"><span class="layer-id">C-02</span><span class="layer-title">The original Casket Letters are lost; only copies, translations and printed versions survive.</span><span class="pill s-established">established</span></div>
+        <div class="weights">
+          <div class="w w-ev"><div class="w-label"><span>Evidential</span><span class="pips">●●●●○</span></div><p>No original has been traced. They were returned to the Earl of Morton in 1571 and vanished some years after his 1581 execution.</p></div>
+          <div class="w w-ad"><div class="w-label"><span>Adoption</span><span class="pips">●●●●●</span></div><p>Universal.</p></div>
+        </div>
+        <div class="meta"><span>class: primary_text (absence)</span><span>anchor_checked: no</span><span>capped at provisional (absence anchor)</span><span>would change if: an original surfaced</span></div>
+        <details><summary>Depth: who destroyed them?</summary><p>Several sources say Mary's son, James VI, is "believed" to have destroyed them in 1584. That attribution is weaker than the loss itself and is held separately as a proposed claim, not merged into C-02.</p></details>
+      </section>
+
+      <section class="layer">
+        <div class="layer-head"><span class="layer-id">C-03</span><span class="layer-title">The French versions printed in the 1570s are not copies of the originals. They were translated back into French from the Latin, which was itself translated from the Scots.</span><span class="pill s-proposed">proposed</span></div>
+        <div class="weights">
+          <div class="w w-ev"><div class="w-label"><span>Evidential</span><span class="pips">●●●○○</span></div><p>Argued by T. F. Henderson (1889–90), reported by the 1911 Britannica. Checkable by comparing the texts side by side.</p></div>
+          <div class="w w-ad"><div class="w-label"><span>Adoption</span><span class="pips">●●●○○</span></div><p>Standard among specialists; little known outside them.</p></div>
+        </div>
+        <div class="meta"><span>class: interpretive</span><span>anchor_checked: no</span><span>next step: read Henderson's appendix (Latin and French translations, from p. 141)</span></div>
+        <details><summary>Depth: why this matters for the test</summary><p>If C-03 holds, the printed French texts must be excluded from the test entirely. Only the French copies found among William Cecil's papers (Hatfield) can stand in for the lost originals.</p></details>
+      </section>
+
+      <section class="layer">
+        <div class="layer-head"><span class="layer-id">C-04</span><span class="layer-title">The Casket Letters are Mary's genuine letters to Bothwell.</span><span class="pill s-contested">contested</span></div>
+        <div class="weights">
+          <div class="w w-ev"><div class="w-label"><span>Evidential</span><span class="pips">●●○○○</span></div><p>No originals. Content and dating arguments cut both ways. No independent test has been applied yet.</p></div>
+          <div class="w w-ad"><div class="w-label"><span>Adoption</span><span class="pips">●●○○○</span></div><p>Minority among modern biographers. National Museums Scotland says it is "widely thought" they were doctored.</p></div>
+        </div>
+        <div class="meta"><span>see positions table</span><span>would change if: the discriminating test DT-001 runs</span></div>
+      </section>
+
+      <section class="layer">
+        <div class="layer-head"><span class="layer-id">C-05</span><span class="layer-title">No computational style comparison of the casket texts against Mary's authenticated French letters has been published.</span><span class="pill s-gap">searched_gap</span></div>
+        <div class="weights">
+          <div class="w w-ev"><div class="w-label"><span>Evidential</span><span class="pips">●○○○○</span></div><p>Absence from two web searches only. This is weak. A specialist could know of unpublished or non-indexed work.</p></div>
+          <div class="w w-ad"><div class="w-label"><span>Adoption</span><span class="pips">○○○○○</span></div><p>Not a claim anyone holds yet.</p></div>
+        </div>
+        <div class="meta"><span>next step: search Google Scholar, Cryptologia and Digital Scholarship in the Humanities; ask the 2023 decipherment team</span></div>
+        <details open><summary>Revision 2026-10-01 (finding F7)</summary><p>Narrowed. Manual comparisons do exist: Henderson reports that Harry Bresslau found the French opening of Letter II "corresponds very closely in phrase and structure" with a genuine letter in Labanoff, and that Bernard Sepp argued from idioms in the translations. What remains unfound is a systematic, computed comparison across all surviving French text.</p></details>
+      </section>
+
+      <section class="layer">
+        <div class="layer-head"><span class="layer-id">C-06</span><span class="layer-title">The four French casket letters (III–VI) share phrasing with Mary's authenticated French letters more than with Catherine de Médicis's, at levels typical of Mary's own letters.</span><span class="pill s-proposed">proposed</span></div>
+        <div class="weights">
+          <div class="w w-ev"><div class="w-label"><span>Evidential</span><span class="pips">●●○○○</span></div><p>Our own computed result (DT-002), calibrated at about 96% on held-out letters. Weakened by a genre confound and by OCR copies. Not yet reviewed by anyone outside Strata.</p></div>
+          <div class="w w-ad"><div class="w-label"><span>Adoption</span><span class="pips">○○○○○</span></div><p>New today. Agrees in direction with Bresslau (1882), but that is agreement, not confirmation.</p></div>
+        </div>
+        <div class="meta"><span>class: synthetic</span><span>anchor_checked: partial (texts via 19th-c. print and OCR)</span><span>would change if: a genre-matched control (G-05) erases the lean, or a reviewer finds an error</span></div>
+      </section>
+    </div>
+
+    <h2 id="positions">Positions on authenticity</h2>
+    <p class="muted">The three live positions. The weights are kept in separate columns on purpose.</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Position</th><th>Held by (examples)</th><th class="ev">Evidential basis</th><th class="ad">Adoption</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Genuine</strong></td><td>Robertson and Hume (18th c.); T. F. Henderson (1889); Jenny Wormald</td><td>Most of Elizabeth's commissioners accepted them after comparing the handwriting with Mary's. Wormald argues that the lords' reluctance to produce them, and their destruction, imply real evidence. Both are inferences, not tests.</td><td>Low to moderate</td></tr>
+          <tr><td><strong>Forged</strong></td><td>Adam Blackwood (16th c.); Walter Goodall (1754); William Tytler</td><td>Strong motive, a broken chain of custody, no signatures, addresses or dates. Motive and opportunity show a forgery was <em>possible</em>, not that one happened.</td><td>Low to moderate</td></tr>
+          <tr><td><strong>Composite</strong> (real letters spliced with forged or altered text)</td><td>Harry Bresslau (1882; Letters III–VI genuine, Letter II partly forged); Antonia Fraser (1969); John Guy (2004)</td><td>Guy estimates about 1,500–1,800 words of Letter II are likely genuine and 1,000–1,200 likely interpolated, from internal inconsistencies. This is careful reading, but it is still judgment, not measurement.</td><td>Moderate; the most common modern view</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="verdict"><strong>Divergence note.</strong> The composite view has the most adoption, but none of the three positions rests on an independent test. All the evidential weight is interpretive. That gap is why this question is a bounty.</p>
+
+    <h2 id="feasibility">Feasibility check, 2026-10-01</h2>
+    <p>Before building anything, we checked whether the test could actually be done. Four findings changed the plan.</p>
+    <div class="findings">
+      <div class="finding"><div class="fid">F1<br>oracle</div><div>
+        <h3>The 2023 letters can't be the main baseline yet</h3>
+        <p>The 2023 paper by Lasry, Biermann and Tomokiyo is open access, but it prints one full letter plus summaries of the rest. In 2024, historian Estelle Paranque said only three historians had full access to the letters.</p>
+        <p>Mary's other French letters are fully public: Labanoff's seven-volume 1844 edition is digitised on the Internet Archive, HathiTrust and Gallica.</p>
+        <p class="effect">→ Effect: Labanoff becomes the main authenticated corpus. The 2023 letters become a later held-out check if the team grants access.</p>
+      </div></div>
+      <div class="finding"><div class="fid">F2<br>method</div><div>
+        <h3>Style tests on translations don't work</h3>
+        <p>A 2024 study tested standard authorship methods on translated texts and found they did not correctly attribute them. A translator's habits overwrite the author's.</p>
+        <p class="effect">→ Effect: Letter II (Scots, English and Latin only) is excluded from the test. Only French-language copies are tested.</p>
+      </div></div>
+      <div class="finding"><div class="fid">F3<br>sources</div><div>
+        <h3>Not all French texts are equal</h3>
+        <p>The French printed in the 1570s appears to be a retranslation (claim C-03). The French copies among Cecil's papers are the closest surviving thing to the originals. Henderson (1889) and Goodall (1754) both print the casket texts and are public domain.</p>
+        <p class="effect">→ Effect: the test uses only the Cecil/Hatfield French copies. Which letters and sonnets exist in that form is still to be listed (gap G-01).</p>
+      </div></div>
+      <div class="finding"><div class="fid">F4<br>prior work</div><div>
+        <h3>Nobody seems to have run this test</h3>
+        <p>Two searches found no computational style study of the casket texts (claim C-05). This is weak evidence of absence, so it stays a gap until a wider search and a specialist confirm it.</p>
+        <p class="effect">→ Effect: proceed, but ask before claiming novelty. <em>Revised by F7.</em></p>
+      </div></div>
+      <div class="finding"><div class="fid">F5<br>sources</div><div>
+        <h3>Only four letters survive as French copies</h3>
+        <p>Henderson (1889, p. 68): "The copies of the original French versions of the letters now known to exist are Nos. 3 and 5 in the Record Office, and Nos. 4 and 6 at Hatfield." Letters 7 and 8 exist only in print. Henderson calls No. 6 the only one "in itself fatally compromising," so the testable set does include a damaging letter.</p>
+        <p class="effect">→ Effect: test set fixed at Letters III, IV, V and VI, plus the two Letter II fragments for phrase checks only.</p>
+      </div></div>
+      <div class="finding"><div class="fid">F6<br>method</div><div>
+        <h3>The French text is too short for the planned test</h3>
+        <p>A line-by-line count of Henderson's appendix gives roughly 630, 500, 240 and 400 words for Letters III–VI, about 1,750 in all (±20%, from OCR). Eder (2010) found word-frequency attribution "simply disastrous" below about 3,000 words for novels, with about 2,500 for Latin prose at best.</p>
+        <p class="effect">→ Effect: DT-001 would almost certainly fail its own calibration bar. Retired before running, with this reason. Replaced by DT-002.</p>
+      </div></div>
+      <div class="finding"><div class="fid">F7<br>prior work</div><div>
+        <h3>Nineteenth-century scholars already compared phrases by hand</h3>
+        <p>Henderson reports Bresslau's close match between Letter II's French opening and a genuine Labanoff letter, and Sepp's arguments from idiom. Henderson also cites the Hatfield calendar editors: none of the letters "can be used as direct evidence against Mary, and some of them have been suspiciously manipulated."</p>
+        <p class="effect">→ Effect: the useful new step is to make that phrase comparison systematic and repeatable, with a control baseline Bresslau did not have.</p>
+      </div></div>
+      <div class="finding"><div class="fid">F8<br>pilot</div><div>
+        <h3>Pilot: the method finds a real parallel on its own</h3>
+        <p>We searched about 77,000 overlapping passages in Labanoff volumes 1–2 (1542–1569) for the French opening of Letter II, "Estant party du lieu ou j'avois laissé mon cœur…", without pointing the search at any letter.</p>
+        <p>The third-ranked passage is Mary to Elizabeth, Ripon, 27 January 1569: "estant contrainte partir du lieu où j'ay résiday jusque à présent…". Same opening construction. The two ranked above it were noise: a garbled scan and a modern French translation of a letter Mary wrote in another language.</p>
+        <p>Two limits. Henderson does not name the letter Bresslau used, so we cannot confirm this is his parallel. And the Ripon letter postdates the casket hearings (December 1568), so it can show a habit of phrase, not a source a forger copied from.</p>
+        <p class="effect">→ Effect: positive control partly passed. Before scaling, translated and editorial text must be filtered out of Labanoff. Scans are clean enough to proceed.</p>
+      </div></div>
+      <div class="finding"><div class="fid">F9<br>prior work</div><div>
+        <h3>The control problem was raised in the 1880s</h3>
+        <p>Henderson (pp. 69–70): Bresslau made "an exhaustive comparison of the phrases and turns of style of the four French letters" with Labanoff and concluded Mary wrote them. But "it has been shown that similar peculiarities of style to those adduced by him may be found in the letters of Catherine de Medici."</p>
+        <p class="effect">→ Effect: the comparison with Mary has been done; what was missing then and now is a measured control. Catherine de Médicis's letters become the required control corpus, not an optional one. This is where Strata can add something new.</p>
+      </div></div>
+    </div>
+    <div class="verdict">
+      <p><strong>Verdict: go, narrowed.</strong> The test is doable with public sources, but it can only speak to the French-language casket texts, not the Glasgow letter. A clean result would be new evidence. It would not settle Mary's guilt, and this page will not claim it does.</p>
+    </div>
+
+    <h2 id="test">Discriminating test DT-002 (current)</h2>
+    <p><strong>Question:</strong> Do the surviving French casket texts share long phrases with Mary's authenticated letters more often than chance and ordinary period French would explain?</p>
+    <p>This is phrase matching (text-reuse detection), not style counting. It works on short texts, and it speaks directly to the composite theory: a forger splicing Mary's real letters, or Mary writing in her own habitual phrases, would both leave shared phrases. A total absence would count against both.</p>
+    <ol class="steps">
+      <li><strong>Mary corpus.</strong> All French letters in Labanoff, OCR from the public scans, spelling normalised (the copies were made by clerks).</li>
+      <li><strong>Control corpus.</strong> French letters of the 1560s by other writers, of similar size, so we know how often unrelated writers share phrases by chance.</li>
+      <li><strong>Match.</strong> Find every shared run of 4 or more content-bearing words between each casket text and each corpus. Discard stock formulas (greetings, closings) using the control corpus.</li>
+      <li><strong>Pre-set bar.</strong> A casket text counts as "phrase-linked to Mary" only if its rate of shared phrases with Mary's corpus is at least 3 times its rate with the control corpus, and each match is listed for human review.</li>
+      <li><strong>Positive control.</strong> The method must rediscover Bresslau's Letter II parallel without being pointed at it. If it can't, it stops and the failure is published.</li>
+      <li><strong>Publish</strong> code, corpora lists, every match and every non-match. Outside review before any claim moves from proposed.</li>
+    </ol>
+    <p class="muted">Possible outcomes: phrase-linked (consistent with genuine or composite, cannot separate them); not linked (counts against both, unless the corpus is too thin); inconclusive (OCR or corpus too poor, logged as a gap).</p>
+
+    <h3 id="result">Result, 2026-10-01</h3>
+    <p>Method: each casket text's three-word phrases (spelling normalised, phrases made only of common words like "de la" ignored) were checked against equal-sized samples of Mary's French (Labanoff vols 1–2, about 31,800 words of old-spelling text) and Catherine de Médicis's (La Ferrière vols 2–3). The ratio is Mary-share ÷ Catherine-share; above 1 leans Mary. Each was repeated over 30 random samples.</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Text</th><th>French words</th><th class="ev">Ratio (median)</th><th class="ev">90% range</th><th>Reading</th></tr></thead>
+        <tbody>
+          <tr><td>Letter III</td><td class="mono">657</td><td class="mono">1.59</td><td class="mono">1.25–1.78</td><td>Leans Mary</td></tr>
+          <tr><td>Letter IV</td><td class="mono">443</td><td class="mono">1.49</td><td class="mono">1.23–1.88</td><td>Leans Mary</td></tr>
+          <tr><td>Letter V</td><td class="mono">226</td><td class="mono">1.55</td><td class="mono">1.10–2.66</td><td>Leans Mary, wide range (short text)</td></tr>
+          <tr><td>Letter VI</td><td class="mono">387</td><td class="mono">1.35</td><td class="mono">0.94–1.64</td><td>Leans Mary, range touches 1</td></tr>
+          <tr><td>Letter II opening</td><td class="mono">29</td><td class="mono">0.01</td><td class="mono">0.01–0.03</td><td>Too short to read; ignored</td></tr>
+          <tr><td><em>Calibration: Mary's own letters, held out</em></td><td class="mono">~420 each</td><td class="mono">1.44</td><td class="mono">1.00–2.44</td><td>57 of 60 placed correctly</td></tr>
+          <tr><td><em>Calibration: Catherine's letters, held out</em></td><td class="mono">~420 each</td><td class="mono">0.64</td><td class="mono">0.46–0.88</td><td>58 of 60 placed correctly</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="findings" style="margin-top:14px">
+      <div class="finding"><div class="fid">F10<br>design error</div><div>
+        <h3>Our pre-set bar of 3× was wrong, and we say so</h3>
+        <p>DT-002 said a text is "phrase-linked to Mary" only at a ratio of 3 or more. Under that rule, no casket letter qualifies. But Mary's own genuine letters reach 3 only once in 60 tries, so the bar could never have worked. The rule that the calibration actually validated is "above 1".</p>
+        <p class="effect">→ Effect: both readings are published. Under the pre-set rule: no letter linked. Under the calibrated rule: all four lean Mary. Future bars will be set from a calibration run, not guessed.</p>
+      </div></div>
+      <div class="finding"><div class="fid">F11<br>confound</div><div>
+        <h3>The control may differ by genre, not by author</h3>
+        <p>Catherine's published letters are mostly official dispatches. The casket letters are intimate. The shared phrases driving the result include "toute ma vie", "de ma vie", "en ce monde" and "ce porteur vous dira": personal-letter language. Mary's corpus has more personal letters than Catherine's, so the lean could partly be "personal letter" rather than "Mary".</p>
+        <p class="effect">→ Effect: C-06 stays proposed. The next control must be personal letters by another French-writing woman of the period (gap G-05).</p>
+      </div></div>
+    </div>
+    <p class="verdict"><strong>What this does and doesn't show.</strong> The surviving French letters read like Mary's letters more than like Catherine's, about as strongly as Mary's own letters do. That fits "genuine" and fits "composite" (a forger working from her real letters). It does not show guilt, and the genre gap could still explain part of it.</p>
+    <p class="mono" style="font-size:13px">Run files: <a href="data/README.txt">README</a> · <a href="data/extract.py">extract.py</a> · <a href="data/pilot.py">pilot.py</a> · <a href="data/compare.py">compare.py</a> · <a href="data/boot.py">boot.py</a> · <a href="data/casket_fr.json">casket_fr.json</a> · <a href="data/dt002_results.txt">results</a></p>
+
+    <h2 id="test-retired">Discriminating test DT-001 (retired before running)</h2>
+    <p class="muted">Kept for the record. Retired 2026-10-01 because of finding F6: the French text is far below the length this method needs. No data was collected under it.</p>
+    <p>Rules are fixed here <em>before</em> any result exists, so the result can't shape the method. Any change after a run is logged as a change, with the reason.</p>
+    <ol class="steps">
+      <li><strong>Build Mary's corpus.</strong> Her French letters from Labanoff, 1560–1568, the years closest to the casket letters. Note which are autograph and which are secretary-written.</li>
+      <li><strong>Build controls.</strong> French letters by other writers of the period, including women in her circle where texts exist. For the sonnets, add French court poetry of the period, since a sonnet and a letter differ in style regardless of author.</li>
+      <li><strong>Measure common words, not spelling.</strong> The copies were made by clerks who changed spelling, so the test uses function words (de, que, et, je, vous…) and sentence habits that copyists rarely alter.</li>
+      <li><strong>Calibrate first.</strong> On samples of the same length as the casket texts, the method must assign held-out Mary letters to Mary and control letters to others at least 90% of the time. If it fails, the test stops and the failure is published.</li>
+      <li><strong>Then score the casket texts</strong>, one at a time, with uncertainty ranges.</li>
+      <li><strong>Publish everything</strong>: corpus lists, code, raw scores and the calibration result, so anyone can rerun it.</li>
+      <li><strong>Outside review.</strong> A named specialist reviews before any claim moves from proposed.</li>
+    </ol>
+
+    <h3>What each result would and would not show</h3>
+    <div class="outcomes">
+      <div class="oc"><h4 class="s-established">Matches Mary</h4><p>Consistent with genuine <em>or</em> composite. A forger splicing Mary's real letters would also pass. Cannot prove guilt.</p></div>
+      <div class="oc"><h4 class="s-refuted">Does not match</h4><p>Points away from Mary's authorship of that text, unless the mismatch is explained by genre or the copyist. Calibration in step 4 is what makes this result count.</p></div>
+      <div class="oc"><h4 class="s-gap">Inconclusive</h4><p>Texts too short or calibration fails. Logged as a <span class="mono">searched_gap</span> with the exact reason. Still a published result.</p></div>
+    </div>
+
+    <h2 id="overlay">Conspiracy overlay</h2>
+    <p>The popular claim: <em>"Mary was framed by the state."</em> Part of it is documented. Part of it is not. Strata keeps the two apart.</p>
+    <div class="firewall">
+      <div class="side"><h4 class="s-established">Documented (1586)</h4><p>English intelligence forged text in Mary's correspondence to trap her and her allies (C-01).</p></div>
+      <div class="wall" aria-label="no weight transfers">✕ confers_weight: false ✕</div>
+      <div class="side"><h4 class="s-contested">Unproven (1567–68)</h4><p>The Casket Letters were forged by the Scottish lords who deposed her (C-04).</p></div>
+    </div>
+    <p>A proven forgery in 1586, by different people in another country, shows that forging Mary's letters was possible and was done. It adds no evidence that the 1567 letters were forged. Treating it as if it did is exactly the move a narrative makes when it borrows weight from a true story.</p>
+
+    <h2 id="gaps">Open gaps</h2>
+    <div class="layers">
+      <section class="layer"><div class="layer-head"><span class="layer-id">G-01</span><span class="layer-title">Which casket letters and sonnets survive as French copies among Cecil's papers?</span><span class="pill s-established">closed · F5</span></div><div class="meta"><span>answer: Letters III and V (Record Office), IV and VI (Hatfield). Letter II survives in French only as its opening sentence and one phrase Cecil wrote in a margin.</span></div></section>
+      <section class="layer"><div class="layer-head"><span class="layer-id">G-02</span><span class="layer-title">Is there enough French text to reach the calibration bar?</span><span class="pill s-refuted">closed · no (F6)</span></div><div class="meta"><span>answer: about 1,750 words in total, against a published floor of roughly 2,500–5,000 words for word-frequency methods. DT-001 retired.</span></div></section>
+      <section class="layer"><div class="layer-head"><span class="layer-id">G-05</span><span class="layer-title">Does the lean toward Mary survive a control of personal letters by another French-writing woman of the 1560s?</span><span class="pill s-gap">searched_gap</span></div><div class="meta"><span>next step: find a public-domain edition of personal French letters (candidates: Catherine's letters to her daughters only; other court women's family correspondence) and rerun DT-002 unchanged</span></div></section>
+      <section class="layer"><div class="layer-head"><span class="layer-id">G-03</span><span class="layer-title">Can we get the full 2023 plaintexts as a held-out check?</span><span class="pill s-gap">searched_gap</span></div><div class="meta"><span>next step: request to Lasry, Biermann and Tomokiyo, or a 2024+ edition</span></div></section>
+      <section class="layer"><div class="layer-head"><span class="layer-id">G-04</span><span class="layer-title">Who would review the result?</span><span class="pill s-gap">searched_gap</span></div><div class="meta"><span>candidates to approach: a historian of Mary's correspondence; a computational stylometry specialist in early modern French</span></div></section>
+    </div>
+
+    <h2 id="log">Excavation log</h2>
+    <p class="muted">Append-only. Entries are never edited or removed; corrections are added as new entries.</p>
+    <ul class="log">
+      <li><time datetime="2026-10-01">2026-10-01 · opened</time><p>Bounty B-001 opened. Chosen over the Monteagle letter, the Zinoviev letter, Linear Elamite and the Copper Scroll, because it is old, has a conspiracy overlay with a documented core, and gained a new comparison corpus in 2023.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F1</time><p>2023 plaintexts not fully public. Main baseline switched to Labanoff (1844).</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F2</time><p>Translated texts are unreliable for style tests. Letter II removed from scope.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F3</time><p>Printed 1570s French likely a retranslation (C-03). Test limited to the Cecil/Hatfield French copies.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F4</time><p>No prior computational study found in two searches. Logged as searched_gap C-05, not as a novelty claim.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · design</time><p>DT-001 fixed with a 90% calibration bar before any data was collected.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F5</time><p>Read Henderson's appendix directly. French copies survive for Letters III–VI only. G-01 closed.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F6</time><p>Counted the French: about 1,750 words. Below the published floor for word-frequency methods. G-02 closed. DT-001 retired before any run.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F7</time><p>Found 19th-century manual comparisons (Bresslau, Sepp). C-05 narrowed by a revision note.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · design</time><p>DT-002 (phrase matching against a control baseline, with Bresslau's parallel as a positive control) set before any data was collected.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · pilot (F8)</time><p>DT-002 pilot on Labanoff vols 1–2. Ripon letter of 27 Jan 1569 surfaced unprompted at rank 3 with the same opening construction as Letter II. Two noise hits above it traced to OCR and a translated letter. Positive control: partial pass.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · finding F9</time><p>Henderson reports Bresslau's 1882 comparison and the objection that Catherine de Médicis's letters show the same traits. Control corpus made mandatory.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · run</time><p>DT-002 run. Calibration 115/120 correct. Letters III–VI all lean Mary (median ratios 1.35–1.59). Claim C-06 filed as proposed. Code and outputs published with this page.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · F10, F11</time><p>Pre-set 3× bar found unusable (fails Mary's own letters); reported both ways. Genre confound identified; gap G-05 opened.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · queue</time><p>Added A-08 (Eikon Basilike) as next candidate: long enough for style tests, which the Casket Letters were not. Added A-09 (Gowrie / Logan letters), parked.</p></li>
+      <li><time datetime="2026-10-01">2026-10-01 · queue</time><p>Areas-to-explore list started. Weizmann acetone / Balfour Declaration (A-02) added as the next candidate, continuing the existing WWI chemistry dig.</p></li>
+    </ul>
+
+    <h2 id="challenge">Challenge a finding</h2>
+    <p>Every claim, finding and step on this page can be disputed. To challenge one, open an issue on the Strata repository at <span class="mono">github.com/ev-aan/strata</span> (<a href="https://github.com/ev-aan/strata/issues/new/choose" target="_blank" rel="noopener">issues</a>) naming the ID (for example <span class="mono">C-03</span> or <span class="mono">F2</span>) and the source that anchors your challenge. A challenge with an anchor is logged here whether it is accepted or not.</p>
+
+    <h2 id="areas">Areas to explore</h2>
+    <p class="muted">The running queue of candidate bounties. A candidate moves up when it has an oracle and open sources. Status changes are logged, not overwritten.</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>ID</th><th>Area</th><th>Conspiracy overlay</th><th class="ev">Oracle (what could check an answer)</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">A-01</td><td><strong>Casket Letters</strong>, 1567</td><td>"Mary was framed"</td><td>Mary's authenticated French letters</td><td><span class="pill s-open">active · B-001</span></td></tr>
+          <tr><td class="mono">A-02</td><td><strong>Weizmann's acetone and the Balfour Declaration</strong>, 1915–1917. Continues the existing dig: WWI ammunition chemistry → modern Israel → WWII.</td><td>"The Balfour Declaration was a reward for Weizmann's cordite chemistry," popularised by Lloyd George's war memoirs</td><td>War Cabinet minutes, Ministry of Munitions records, Weizmann's correspondence: does the acetone work appear in the decision record?</td><td><span class="pill s-proposed">next candidate</span></td></tr>
+          <tr><td class="mono">A-03</td><td><strong>Monteagle letter</strong>, 1605</td><td>"Cecil knew of the Gunpowder Plot early"</td><td>The original survives (TNA SP 14/216/2); handwriting exemplars of the suspects</td><td><span class="pill s-gap">needs a paleographer</span></td></tr>
+          <tr><td class="mono">A-04</td><td><strong>Zinoviev letter</strong>, 1924</td><td>"Intelligence services rigged an election"</td><td>Weak: no original letter exists, only copies</td><td><span class="pill s-gap">parked · no oracle</span></td></tr>
+          <tr><td class="mono">A-05</td><td><strong>Linear Elamite</strong>, c. 2000 BCE</td><td>None</td><td>New inscriptions tested against the 2022 sign values</td><td><span class="pill s-gap">needs a specialist</span></td></tr>
+          <tr><td class="mono">A-06</td><td><strong>Copper Scroll</strong>, 1st c. CE</td><td>"Temple treasure is still buried"</td><td>None known</td><td><span class="pill s-gap">parked · no oracle</span></td></tr>
+          <tr><td class="mono">A-08</td><td><a href="../eikon-basilike/"><strong>Eikon Basilike</strong></a>, 1649 (now bounty B-002): the "King's Book" published days after Charles I's execution. Did Charles write it, or did John Gauden, who claimed it after 1660?</td><td>"Milton had a plagiarised prayer (Pamela's prayer, from Sidney's <em>Arcadia</em>) slipped into the book to discredit it." The plagiarism is real; the planting is contested.</td><td>Strong: about 60,000 words, far above the length floor; Charles's authenticated letters, Gauden's and Jeremy Taylor's own works as candidates and controls, all public domain</td><td><span class="pill s-proposed">next candidate</span></td></tr>
+          <tr><td class="mono">A-09</td><td><strong>Gowrie conspiracy and the Logan letters</strong>, 1600–1608</td><td>"James VI staged the plot to kill the Ruthven brothers." The Logan letters were later shown to be forged by George Sprot</td><td>Weak: letters are short; handwriting already studied by Andrew Lang (1902)</td><td><span class="pill s-gap">parked · short texts</span></td></tr>
+          <tr><td class="mono">A-07</td><td><strong>Casket Letter II</strong> (Glasgow letter)</td><td>As A-01</td><td>Needs a method that works through translation</td><td><span class="pill s-gap">parked · method gap</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="sources">Sources</h2>
+    <ol class="sources">
+      <li>Lasry, G., Biermann, N. &amp; Tomokiyo, S. (2023). "Deciphering Mary Stuart's lost letters from 1578–1584." <em>Cryptologia</em> 47(2): 101–202. <a href="https://doi.org/10.1080/01611194.2022.2160677" target="_blank" rel="noopener">doi:10.1080/01611194.2022.2160677</a> <span class="cls">primary_text · open access</span></li>
+      <li>Labanoff, A. (ed.) (1844). <em>Lettres, instructions et mémoires de Marie Stuart</em>, 7 vols. <a href="https://archive.org/details/lettresinstruct08marygoog" target="_blank" rel="noopener">Internet Archive, vol. 1</a> · <a href="https://catalog.hathitrust.org/Record/000111814" target="_blank" rel="noopener">HathiTrust</a> <span class="cls">primary_text · public domain</span></li>
+      <li>Henderson, T. F. (1889). <em>The Casket Letters and Mary Queen of Scots</em>. <a href="https://archive.org/details/casketlettersan00hendgoog" target="_blank" rel="noopener">Internet Archive</a> <span class="cls">primary_text (texts) + interpretive</span></li>
+      <li>Goodall, W. (1754). <em>An Examination of the Letters said to be written by Mary Queen of Scots</em>. <a href="https://books.google.com/books?id=3FM2AAAAMAAJ" target="_blank" rel="noopener">vol. 1</a> · <a href="https://books.google.com/books?id=zYQUAAAAQAAJ" target="_blank" rel="noopener">vol. 2</a> <span class="cls">primary_text (texts) + interpretive</span></li>
+      <li>"Casket Letters," <em>Encyclopædia Britannica</em> (1911). <a href="https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Casket_Letters" target="_blank" rel="noopener">Wikisource</a> <span class="cls">synthetic</span></li>
+      <li>"The Casket Letters: A Famous Case Reopened." <em>The Historical Journal</em> 28(3). <a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/ACD737AA73978A450549391DDDE4467C/S0018246X00003289a.pdf/div-class-title-the-casket-letters-a-famous-case-reopened-a-href-fn01-ref-type-fn-span-class-sup-1-span-a-div.pdf" target="_blank" rel="noopener">Cambridge</a> <span class="cls">interpretive</span></li>
+      <li>NSA, "To Catch a Queen" (declassified 2011). <a href="https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/to-catch-a-queen.pdf" target="_blank" rel="noopener">PDF</a> <span class="cls">synthetic</span></li>
+      <li>"Thomas Phelippes." <a href="https://en.wikipedia.org/wiki/Thomas_Phelippes" target="_blank" rel="noopener">Wikipedia</a> <span class="cls">synthetic · to be re-anchored to TNA</span></li>
+      <li>National Museums Scotland, "The controversial letters associated with the Mary, Queen of Scots Casket." <a href="https://www.nms.ac.uk/discover-catalogue/the-controversial-letters-associated-with-the-mary-queen-of-scots-casket" target="_blank" rel="noopener">nms.ac.uk</a> <span class="cls">adoption signal</span></li>
+      <li>The Tudor Society, "The Casket Letters" (summarising John Guy, 2004). <a href="https://www.tudorsociety.com/the-casket-letters/" target="_blank" rel="noopener">tudorsociety.com</a> <span class="cls">synthetic · to be re-anchored to Guy</span></li>
+      <li>"Casket letters" and "Mary Queen of Scots (Fraser book)." <a href="https://en.wikipedia.org/wiki/Casket_letters" target="_blank" rel="noopener">Wikipedia</a> · <a href="https://en.wikipedia.org/wiki/Mary_Queen_of_Scots_(Fraser_book)" target="_blank" rel="noopener">Wikipedia</a> <span class="cls">synthetic</span></li>
+      <li>Northeastern University News (2024), on Estelle Paranque and access to the 2023 letters. <a href="https://news.northeastern.edu/2024/08/21/mary-queen-of-scots-letters/" target="_blank" rel="noopener">news.northeastern.edu</a> <span class="cls">synthetic</span></li>
+      <li>Eder, M. (2010). "Does size matter? Authorship attribution, small samples, big problem." Digital Humanities 2010. <a href="https://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-744.html" target="_blank" rel="noopener">DH2010 abstract</a> <span class="cls">synthetic · method</span></li>
+      <li>"Authorship attribution in translated texts: a stylometric study" (PROPOR 2024). <a href="https://aclanthology.org/2024.propor-2.15.pdf" target="_blank" rel="noopener">ACL Anthology</a> <span class="cls">synthetic · method</span></li>
+    </ol>
+
+    <footer>Strata · Bounty B-001 · append-only record · last entry 2026-10-01<br>Text CC BY 4.0 · code MIT · historical sources public domain. See LICENSE files in the <a href="https://github.com/ev-aan/strata">repository</a>.</footer>
+  </article>
+</div>
+
+</body>
+</html>

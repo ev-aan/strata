@@ -1,0 +1,6 @@
+eikon parts 28 [1059, 1449, 923, 1879, 1723, 1749, 1219, 1489, 2797, 1971, 3293, 2415, 2125, 2693, 3581, 2062, 4226, 1263, 2012, 1739, 1547, 907, 1058, 2815, 1071, 1743, 4441, 3888]
+KNOWN NON-CHARLES TEXTS:
+  Queen Henrietta Maria's letters (1645 Cabinet)        2111w  {'charles': 0.606, 'gauden': 0.892, 'taylor': 0.889, 'milton': 0.855}  -> charles
+  Other papers in the Cabinet (petitions, instructions)  4440w  {'charles': 0.627, 'gauden': 0.639, 'taylor': 0.633, 'milton': 0.633}  -> charles
+  Jeremy Taylor, letter to a gentlewoman (A63729)       8545w  {'charles': 0.646, 'gauden': 0.597, 'taylor': 0.659, 'milton': 0.708}  -> gauden
+  Gauden, Religious & Loyal Protestation (open letter, 1649)  3997w  {'charles': 0.843, 'gauden': 0.59, 'taylor': 0.826, 'milton': 0.791}  -> gauden

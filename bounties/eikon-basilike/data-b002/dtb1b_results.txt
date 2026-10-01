@@ -1,0 +1,56 @@
+charles {'A31932': 9359}
+gauden {'A42489': 12124, 'A42498': 35015, 'A42492': 4002, 'A42483': 60000, 'A42487': 31729, 'A42490': 21254, 'A42495': 31966, 'A42475': 33732, 'A42477': 12717, 'A42491': 24703, 'A42496': 18881, 'A42479': 22251, 'A42476': 14271}
+taylor {'A13414': 20190, 'A27805': 60000, 'A63653': 30013, 'A63711': 60000}
+milton {'A50898': 60000}
+eikon parts 28 [1059, 1449, 923, 1879, 1723, 1749, 1219, 1489, 2797, 1971, 3293, 2415, 2125, 2693, 3581, 2062, 4226, 1263, 2012, 1739, 1547, 907, 1058, 2815, 1071, 1743, 4441, 3888]
+chunks per author: Counter({'gauden': 313, 'taylor': 161, 'milton': 61, 'charles_letters': 39, 'henderson': 7, 'charles_formal': 5})
+
+GENRE-MATCHED CALIBRATION: Charles formal papers vs Henderson (same pamphlet), 1,000-word held-out chunks
+  charles_formal  chunk 0: nearest charles_letters then charles_formal  | C-formal 0.732  Henderson 0.843  C-letters 0.728  Gauden 0.962
+  charles_formal  chunk 1: nearest charles_letters then charles_formal  | C-formal 0.676  Henderson 0.691  C-letters 0.673  Gauden 0.882
+  charles_formal  chunk 2: nearest charles_formal  then charles_letters | C-formal 0.683  Henderson 0.831  C-letters 0.752  Gauden 0.938
+  charles_formal  chunk 3: nearest charles_letters then henderson       | C-formal 0.707  Henderson 0.680  C-letters 0.666  Gauden 0.775
+  charles_formal  chunk 4: nearest charles_formal  then charles_letters | C-formal 0.634  Henderson 0.693  C-letters 0.675  Gauden 0.778
+  henderson       chunk 0: nearest henderson       then gauden          | C-formal 0.740  Henderson 0.540  C-letters 0.717  Gauden 0.695
+  henderson       chunk 1: nearest henderson       then gauden          | C-formal 0.783  Henderson 0.612  C-letters 0.799  Gauden 0.736
+  henderson       chunk 2: nearest henderson       then charles_formal  | C-formal 0.757  Henderson 0.630  C-letters 0.775  Gauden 0.770
+  henderson       chunk 3: nearest henderson       then gauden          | C-formal 0.851  Henderson 0.613  C-letters 0.858  Gauden 0.743
+  henderson       chunk 4: nearest henderson       then gauden          | C-formal 0.790  Henderson 0.529  C-letters 0.774  Gauden 0.670
+  henderson       chunk 5: nearest henderson       then gauden          | C-formal 0.754  Henderson 0.723  C-letters 0.752  Gauden 0.739
+  henderson       chunk 6: nearest henderson       then taylor          | C-formal 0.721  Henderson 0.563  C-letters 0.769  Gauden 0.676
+
+WHOLE TEXTS vs profiles (lower = closer):
+  EIKON (whole)         {'charles_letters': 0.537, 'charles_formal': 0.613, 'henderson': 0.565, 'gauden': 0.396, 'taylor': 0.591, 'milton': 0.479}
+  Charles formal (self) {'charles_letters': 0.486, 'charles_formal': 0.087, 'henderson': 0.54, 'gauden': 0.7, 'taylor': 0.773, 'milton': 0.674}
+  Henderson (self)      {'charles_letters': 0.6, 'charles_formal': 0.554, 'henderson': 0.04, 'gauden': 0.517, 'taylor': 0.583, 'milton': 0.575}
+
+EIKON CHAPTERS, nearest among Charles-formal / Henderson / Gauden / Taylor / Milton (letters profile excluded as genre-mismatched):
+  1. Vpon His Majesties calling this last Pa  1065w charle=0.865 hender=0.860 gauden=0.792 taylor=0.784 milton=0.778  -> milton
+  2. Vpon the Earle of Straffords death.      1452w charle=0.901 hender=0.812 gauden=0.773 taylor=0.805 milton=0.746  -> milton
+  3. Vpon His Majesties going to the House o   927w charle=0.880 hender=0.867 gauden=0.793 taylor=0.904 milton=0.790  -> milton
+  4. Vpon the Insolency of the Tu mults.      1884w charle=0.759 hender=0.689 gauden=0.612 taylor=0.748 milton=0.653  -> gauden
+  5. Vpon His Majesties passing the Bill for  1727w charle=0.731 hender=0.802 gauden=0.756 taylor=0.865 milton=0.713  -> milton
+  6. Vpon His Majesties retirement from VVes  1752w charle=0.830 hender=0.827 gauden=0.701 taylor=0.837 milton=0.748  -> gauden
+  7. Vpon the Queenes departure, and absence  1220w charle=0.936 hender=0.902 gauden=0.753 taylor=0.810 milton=0.884  -> gauden
+  8. Vpon His Majesties repulse at Hull, and  1491w charle=0.883 hender=0.796 gauden=0.710 taylor=0.725 milton=0.619  -> milton
+  9. Vpon the listing, and raising Armies ag  2806w charle=0.747 hender=0.691 gauden=0.545 taylor=0.691 milton=0.557  -> gauden
+  10. Vpon their seizing the Kings Magazines  1976w charle=0.762 hender=0.709 gauden=0.653 taylor=0.761 milton=0.699  -> gauden
+  11. Vpon the 19. Propositions first sent t  3299w charle=0.723 hender=0.707 gauden=0.571 taylor=0.766 milton=0.645  -> gauden
+  12. Vpon the Rebellion, and troubles in Ir  2419w charle=0.712 hender=0.712 gauden=0.564 taylor=0.717 milton=0.584  -> gauden
+  13. Vpon the Calling in of the Scots, and   2127w charle=0.794 hender=0.687 gauden=0.529 taylor=0.717 milton=0.612  -> gauden
+  14. Vpon the Covenant.                      2702w charle=0.722 hender=0.593 gauden=0.482 taylor=0.670 milton=0.631  -> gauden
+  15. Vpon the many Iealousies rai sed, and   3591w charle=0.744 hender=0.691 gauden=0.526 taylor=0.710 milton=0.602  -> gauden
+  16. Vpon the Ordinance against the Commo P  2072w charle=0.761 hender=0.677 gauden=0.486 taylor=0.639 milton=0.624  -> gauden
+  17. Of the differences between the KING an  4243w charle=0.720 hender=0.607 gauden=0.458 taylor=0.670 milton=0.605  -> gauden
+  18. Vpon Vxbridge -Treaty, and other Offer  1267w charle=0.852 hender=0.830 gauden=0.738 taylor=0.875 milton=0.750  -> gauden
+  19. Vpon the various events of the Warre;   2017w charle=0.761 hender=0.716 gauden=0.586 taylor=0.731 milton=0.647  -> gauden
+  20. Vpon the Reformations of the Times.     1742w charle=0.806 hender=0.714 gauden=0.549 taylor=0.706 milton=0.691  -> gauden
+  21. Vpon His Majesties Let ters taken and   1552w charle=0.874 hender=0.845 gauden=0.699 taylor=0.839 milton=0.796  -> gauden
+  22. Vpon His Majesties leaving Oxford, and   909w charle=0.994 hender=0.981 gauden=0.996 taylor=0.973 milton=1.037  -> taylor
+  23. Vpon the Scots delivering the KING to   1059w charle=0.898 hender=0.939 gauden=0.912 taylor=0.933 milton=0.917  -> charles_formal
+  24. Vpon their denying His Ma jesty the At  2817w charle=0.749 hender=0.690 gauden=0.537 taylor=0.656 milton=0.649  -> gauden
+  25. Penitentiall Meditations and Vowes in   1073w charle=0.988 hender=0.901 gauden=0.885 taylor=0.770 milton=0.951  -> taylor
+  26. Vpon the Armies Surprisall of the KING  1743w charle=0.813 hender=0.787 gauden=0.752 taylor=0.830 milton=0.748  -> milton
+  27. To the Prince of VVales.                4449w charle=0.661 hender=0.639 gauden=0.440 taylor=0.657 milton=0.638  -> gauden
+  Meditations upon Death, after the Votes of  3898w charle=0.748 hender=0.665 gauden=0.520 taylor=0.626 milton=0.660  -> gauden
+tally: {'milton': 6, 'gauden': 19, 'taylor': 2, 'charles_formal': 1}

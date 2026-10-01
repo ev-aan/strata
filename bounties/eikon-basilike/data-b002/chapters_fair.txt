@@ -1,0 +1,6 @@
+L=1000: Charles formal papers vs letters-only profile: median 0.679 (max 0.809, n=20 overlapping windows)
+       Eikon chapters: median 0.842 (min 0.730, n=26);  other clergy: median 0.826
+       chapters closer than the FARTHEST Charles formal window: 8 of 26
+L=1500: Charles formal papers vs letters-only profile: median 0.618 (max 0.678, n=18 overlapping windows)
+       Eikon chapters: median 0.760 (min 0.692, n=19);  other clergy: median 0.778
+       chapters closer than the FARTHEST Charles formal window: 0 of 19
