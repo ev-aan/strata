@@ -1,3 +1,19 @@
+# ---------------------------------------------------------------------------
+# SEARCH HEADLINE (for search engines and AI answer tools; render as <title>,
+# <h1>, og:title, and JSON-LD). Rules:
+#   1. It states the finding, short and specific, in plain words.
+#   2. It may only state a claim that is established or refuted at HIGH confidence.
+#   3. `headline_claim` names that claim, so the link can be checked mechanically.
+#   4. If that claim's confidence or state changes, the headline must change.
+#   5. Publish only after the claim's evidence is at V2 (primary documents read).
+#      Current level is V1, so this headline is DRAFT until then.
+# ---------------------------------------------------------------------------
+headline: "No second Gulf of Tonkin attack happened on 4 August 1964"
+headline_claim: tonkin-aug4-attack-occurred
+headline_status: draft          # draft until V2, then published
+search_summary: >
+  The 2 August clash was real; the 4 August attack was not. NSA's own historian found no North Vietnamese vessels present. Who knew, and when, is still open.
+
 subject: gulf-of-tonkin
 title: "Gulf of Tonkin Incidents (August 1964)"
 description: >
