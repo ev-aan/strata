@@ -7,6 +7,8 @@
 #   4. If that claim's confidence or state changes, the headline must change.
 #   5. Publish only after the claim's evidence is at V2 (primary documents read).
 #      Current level is V1, so this headline is DRAFT until then.
+#   6. Plain words only. Name the belief being refuted AND what replaces it, and
+#      explain any term a general reader would not know (in the summary if not the title).
 # ---------------------------------------------------------------------------
 headline: "No, the Apollo Moon landings were not faked"
 headline_claim: apollo-staged-hoax
