@@ -18,13 +18,16 @@ discriminating_tests:
     result:
       type: material
       finding: >
-        Observatories in several countries range the reflectors; samples dated by
-        non-NASA labs give lunar ages and signatures; India's and Japan's orbiters
-        image or detect site traces. No independent record fails.
+        Four stations in three countries (APOLLO and McDonald in the US, Matera in
+        Italy, Grasse in France) range the reflectors; about 150 labs studied
+        381.7 kg of samples dated to about 4.4+ billion years; Japan's SELENE detected
+        the Apollo 15 exhaust halo and India's Chandrayaan-2 imaged descent stages.
+        No independent record fails.
       accessible: true
     resolves: >
       The retirement rests on physical records anyone can re-measure, not on which
-      side has more believers. # VERIFY each result against the sources in claims.yaml.
+      side has more believers. Verification level V1 (search-corroborated, primary documents
+      not opened); see the header of claims.yaml.
     note: >
       D3 satisfied: retired by material convergence, never by popularity or by
       NASA's authority. The test does not retire every individual question about
@@ -41,16 +44,19 @@ discriminating_tests:
         should be present and imaged.
       robotic-only: >
         IF robotic only, trails and tracks of that kind should be absent, and returned
-        mass should be in the range robotic missions achieved (grams to ~0.2 kg per mission).
+        mass should be in the range robotic missions achieved (101 g, 55 g and 170.1 g
+        for Luna 16, 20 and 24; 326.1 g total).
     result:
       type: material
       finding: >
-        Foot trails and rover tracks are imaged at the sites by LRO (and reported by
-        Chandrayaan-2 at Apollo 12); returned mass is about 382 kg.
+        Foot trails and rover tracks are imaged at the sites by LRO (NASA's own images,
+        so not independent). Returned mass is 381.7 kg, about 1,170 times the Soviet
+        robotic total. Chandrayaan-2 shows descent stages; its foot-trail imaging is
+        NOT claimed (unconfirmed).
       accessible: true
     resolves: >
       Separates "something delivered these things" (reflectors, rocks) from
-      "people did". # VERIFY foot-trail imagery in the primary papers.
+      "people did". Weaker than the first test: the trail imagery is not independent.
     note: >
       This is the harder test of the two: it addresses the only alternative that
       survives dt-independent-records.
@@ -59,4 +65,6 @@ discriminating_tests:
 # OPEN TESTS (not filed; no result yet):
 #   - A fresh, newly commissioned ranging or imaging campaign by a party with no
 #     prior stake, as an ongoing re-check rather than a one-time result.
+#   - Independent imaging (non-NASA orbiter) of rover tracks or foot trails. This is the
+#     single result that would lift apollo-robotic-only-alternative from moderate to high.
 # ---------------------------------------------------------------------------

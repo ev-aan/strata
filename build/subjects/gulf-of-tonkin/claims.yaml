@@ -4,29 +4,53 @@ description: >
   Two separate events are routinely fused: the 2 August 1964 clash between USS
   Maddox and North Vietnamese torpedo boats, and the reported 4 August attack that
   led to the Tonkin Gulf Resolution. Strata keeps them apart. The first happened.
-  The second, on the declassified record, did not. A third question is kept
-  separate again: WHY the administration treated 4 August as an attack. That
-  question is a genuine gap, and it is where conspiracy claims and the evidence
-  part ways. This dig exists partly as a calibration case: a real, documented
-  failure of government reporting, filed strictly on its own evidence so that it
-  neither inflates nor excuses claims in other digs.
+  The second, on the declassified record, did not. Two further questions are kept
+  separate again: who inside the intelligence chain skewed the record, and whether
+  senior officials KNEW. The first has a documented answer; the second is a genuine
+  gap, and it is where conspiracy claims and the evidence part ways. This dig is
+  also a calibration case: a real, documented failure of government reporting,
+  filed strictly on its own evidence so that it neither inflates nor excuses
+  claims in other digs.
 
 # ---------------------------------------------------------------------------
-# DRAFT STATUS (governance, not a claim):
-# Drafted by AI from web search summaries. Primary documents could not be opened
-# directly in the drafting environment. Every `# VERIFY` flag below marks a spot
-# where a human should open the cited source before this dig is built or published.
+# VERIFICATION LEVELS (governance, not a claim). Used in every `# V:` line below.
+#   V0  recalled or single-source, not confirmed
+#   V1  facts agree across 2+ independent search results
+#       (secondary reporting; primary document NOT opened)
+#   V2  primary document opened and read directly
+# STATUS OF THIS DRAFT: the drafting environment blocks every primary host
+# (nsa.gov, media.defense.gov, history.state.gov, usni.org, ...), so NOTHING here
+# is V2. Best reached is V1. The Hanyok study is therefore known only through
+# press and history-site reports of it, which matters for the intent claims below.
 #
-# SOURCES consulted (search-level, not yet read in full):
-#   NSA declassified study (Hanyok), "Skunks, Bogies, Silent Hounds, and the Flying Fish":
+# QUANTITIES USED (V1 unless noted):
+#   Tonkin Gulf Resolution ......... passed 7 Aug 1964; House 416-0 (about 40 min debate),
+#                                    Senate 88-2 (about 8 h 40 min debate; Morse, Gruening
+#                                    against); signed 10 Aug 1964
+#   Contrary SIGINT withheld ....... "almost 90 percent" of intercepts that would have
+#                                    conflicted with the attack story did not reach the
+#                                    Pentagon/White House (press report of Hanyok; V0 on the
+#                                    exact figure until the study is read)
+#   Hanyok study ................... written 2001 in the classified Cryptologic Quarterly;
+#                                    released 2005
+#   Herrick cable .................. flash precedence; received in Washington 13:27 on
+#                                    4 August (Washington time); says "No actual visual
+#                                    sightings by MADDOX"
+#   Giap / McNamara ................ Hanoi, November 1995
+#
+# SOURCES (search-level):
+#   Hanyok study (NSA, and defense.gov mirror):
 #     https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/gulf-of-tonkin/articles/release-1/rel1_skunks_bogies.pdf
-#   NSA, "The Gulf of Tonkin Mystery: The SIGINT Hounds Were Howling":
-#     https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/gulf-of-tonkin/articles/release-2/rel2_thoughts_intelligence.pdf
+#     https://media.defense.gov/2021/Jun/29/2002751691/-1/-1/0/SKUNKS.PDF
+#   Press and history reports of Hanyok:
+#     https://www.sfgate.com/news/article/Tonkin-Gulf-reports-cooked-Historian-s-2598276.php
+#     https://www.historynewsnetwork.org/article/17620
 #   US Naval Institute, "The Truth About Tonkin":
 #     https://www.usni.org/magazines/naval-history-magazine/2008/february/truth-about-tonkin
-#   Naval History and Heritage Command, Tonkin Gulf crisis summary:
-#     https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/t/tonkin-gulf-crisis/tonkin-gulf-crisis-aug-1964.html
-#   McNamara / Giap meeting, Hanoi, Nov 1995 (news reports):
+#   Resolution vote (CFR, Britannica, Senate.gov):
+#     https://www.cfr.org/articles/twe-remembers-congress-passes-gulf-tonkin-resolution
+#     https://www.senate.gov/artandhistory/senate-stories/chairman-fulbright-and-the-tonkin-gulf-resolution.htm
+#   McNamara / Giap, Hanoi 1995:
 #     https://archive.seattletimes.com/archive/19951109/2151509/mcnamara-asks-for-truth-about-gulf-of-tonkin----giap-there-was-no-attack
 # ---------------------------------------------------------------------------
 
@@ -42,12 +66,12 @@ claims:
     anchor:
       type: contemporaneous-records-plus-adversary-account
       description: >
-        US Navy records and the NSA signals intelligence for that day agree, and
-        North Vietnamese General Vo Nguyen Giap confirmed the 2 August attack to
-        McNamara in 1995.
+        US Navy records and the NSA signals intelligence agree, and North Vietnamese
+        General Vo Nguyen Giap confirmed the 2 August attack to McNamara in 1995.
       accessible: true
     basis: >
-      # VERIFY: Naval History and Heritage Command account.
+      # V: V1 (Navy history summaries, USNI, Seattle Times and UPI reports agree).
+      # TO REACH V2: Naval History and Heritage Command Tonkin Gulf crisis account.
       Established on records from both sides. Giap's statement is testimony and is
       used only as corroboration of the records, never as the anchor.
 
@@ -67,7 +91,8 @@ claims:
         Maddox was on an intelligence patrol near the raided islands.
       accessible: true
     basis: >
-      # VERIFY: dates and attribution against the Naval Institute and NSA documents.
+      # V: V1 (USNI and the OPLAN 34A summaries agree on dates and attribution).
+      # TO REACH V2: USNI article; NSA release documents.
       Established as context. It says Hanoi had a reason to attack the Maddox on
       2 August; it does NOT say the US arranged the 2 August clash. See tonkin-bait-order.
 
@@ -82,18 +107,24 @@ claims:
     anchor:
       type: signals-intelligence-reexamination
       description: >
-        NSA's own historian re-examined the full set of intercepts in a study
-        declassified in 2005 and concluded no second attack occurred. The
-        intercepts presented as reporting 4 August events were about the 2 August
-        action. Within hours of the event the on-scene commander, Captain John
-        Herrick, cabled that "freak weather effects on radar and overeager sonarmen"
-        may have accounted for many reports.
+        NSA historian Robert Hanyok re-examined the full set of intercepts and
+        concluded no second attack occurred and no North Vietnamese vessels were
+        present; the intercepts presented as 4 August reporting concerned the
+        2 August action. Captain John Herrick, the on-scene commander, cabled
+        (flash precedence, received in Washington 13:27 on 4 August Washington time):
+        "Review of action makes many reported contacts and torpedoes fired appear
+        doubtful. Freak weather effects on radar and overeager sonarmen may have
+        accounted for many reports ... No actual visual sightings by MADDOX ...
+        Suggest complete evaluation before any further action taken."
       accessible: true
     basis: >
-      # VERIFY: the Hanyok study and the Herrick message text directly.
+      # V: V1 for Hanyok's conclusion (NSA release pages, SFGate, HNN agree), V1 for
+      #    the Herrick wording (USNI and others quote it identically), V1 for the
+      #    1995 Giap statement ("nothing happened on our side on the 4th of August").
+      # TO REACH V2: the Hanyok study (media.defense.gov SKUNKS.PDF) and the Herrick
+      #    message text.
       Rule 9 satisfied: names its target and rests on primary documents. Giap's
-      1995 statement that "nothing happened on our side on the 4th of August"
-      agrees, and is treated as corroboration only.
+      statement agrees and is treated as corroboration only.
 
   - id: tonkin-sigint-selectively-presented
     state: established
@@ -109,11 +140,73 @@ claims:
         The NSA study concludes that SIGINT "was presented in such a manner as to
         preclude responsible decision makers in the Johnson administration from
         having the complete and objective narrative of events of 4 August 1964."
+        A press report of the study says almost 90 percent of the intercepts that
+        would have contradicted the attack story were left out of reports to the
+        Pentagon and White House, and that forwarded messages contained
+        "severe analytic errors, unexplained translation changes, and the
+        conjunction of two messages into one translation."
       accessible: true
     basis: >
-      # VERIFY: exact wording and the study's account of which reports were withheld.
-      Established that the presentation was selective. This claim is silent on WHY
-      (error, bias, or design); that is tonkin-deliberate-fabrication, held apart.
+      # V: V1 for the "preclude" sentence (quoted identically in several places).
+      #    V0 for the "almost 90 percent" figure: from one press report, not checked
+      #    against the study.
+      # TO REACH V2: Hanyok study, sections on omitted and altered intercepts.
+      Established that the presentation was selective. This claim does not say who
+      did it or why; see tonkin-midlevel-deliberate-skew and tonkin-senior-knowledge.
+
+  - id: tonkin-midlevel-deliberate-skew
+    state: proposed
+    statement: >
+      Mid-level NSA officers deliberately skewed the 4 August intelligence, to cover
+      up earlier errors rather than to pursue a political goal.
+    evidence_class: synthetic
+    confidence: moderate
+    anchor:
+      type: inference-from-pattern
+      description: >
+        Hanyok, per press reports, inferred deliberate skewing from a pattern:
+        uncorrected translation errors, altered intercept times and selective
+        citation. He concluded motive was concealment of earlier errors, and that top
+        NSA and defense officials and President Johnson neither knew nor condoned it.
+      accessible: true
+    basis: >
+      # V: V1 for the conclusion as reported (SFGate, HNN and a news summary agree);
+      #    V0 for the motive, which is Hanyok's inference, not a document.
+      # CORRECTION from first draft: it said the study left "error or design" open
+      #    and that the contested question was intent in general. The reported
+      #    finding is more specific: deliberate at mid-level, with motive inferred,
+      #    and senior officials found not to have known.
+      # TO REACH V2: the study's concluding section.
+      Held at proposed: intent and motive are inferred from a pattern of documents,
+      and the inference comes from a single internal historian.
+
+  - id: tonkin-senior-knowledge
+    state: contested
+    statement: >
+      Senior administration officials knew the 4 August attack was doubtful or false
+      when they ordered reprisal strikes and sought the Resolution, as opposed to
+      acting on a genuine, if flawed, belief that it happened.
+    evidence_class: primary-text
+    confidence: low
+    anchor:
+      type: live-dispute
+      description: >
+        For knowing: Herrick's doubt cable reached Washington on the day of the
+        decision, about 13:27 Washington time on 4 August, before the reprisal
+        orders. Against: Hanyok found no senior knowledge of the skewed SIGINT,
+        and McNamara later conceded only "serious misjudgments" (Hanoi, 1995).
+        Doubts existing in the building is not the same as officials knowing the
+        attack was false.
+      accessible: true
+    basis: >
+      # V: V1 for the Herrick receipt time (one source family, USNI-derived; treat as
+      #    V0 for the exact clock time until the message is read); V1 for Hanyok's
+      #    conclusion and for the 1995 statements.
+      # TO REACH V2: dated senior communications between the Herrick cable and the
+      #    Resolution (see the open test dt-who-knew-when in tests.yaml).
+      Genuinely contested: the documents reviewed so far do not discriminate between
+      "should have known" and "knew". Held at contested, low confidence. This is the
+      dig's central conspiracy-adjacent gap.
 
   - id: tonkin-resolution-rested-on-aug4
     state: established
@@ -125,36 +218,18 @@ claims:
     anchor:
       type: legislative-record
       description: >
-        The Resolution authorized presidential action in Southeast Asia and was later
-        used as the legal basis for escalation of the Vietnam War.
+        House 416-0 and Senate 88-2 on 7 August 1964 (Senators Morse and Gruening
+        dissenting); signed 10 August. The text approves "all necessary measures to
+        repel any armed attack against the forces of the United States and to prevent
+        further aggression," and it was later used as the legal basis for escalation.
       accessible: true
     basis: >
-      # VERIFY: the vote counts (recalled as Senate 88-2 and House 416-0; not
-      # confirmed by the searches above) and the wording tying it to the attacks.
-      Kept moderate until the legislative record is read directly.
-
-  - id: tonkin-deliberate-fabrication
-    state: contested
-    statement: >
-      Senior administration officials knowingly invented or knowingly relied on a
-      false 4 August attack to obtain war authority, as opposed to a genuine
-      misreading that officials then reinforced and defended.
-    evidence_class: primary-text
-    confidence: low
-    anchor:
-      type: live-dispute
-      description: >
-        The record establishes selective presentation (tonkin-sigint-selectively-presented)
-        and that doubts existed within hours (the Herrick cable). It does not,
-        in the sources reviewed, settle who knew what, when. The NSA study leaves
-        "error or design" open at the level of the analysts.
-      accessible: true
-    basis: >
-      # VERIFY: whether the declassified record contains senior-level communications
-      # that discriminate between these readings.
-      Genuinely contested: the same documents are read as deliberate deception or as
-      confirmation bias under pressure. Held at contested, low confidence. No test in
-      tests.yaml retires it yet. This is the dig's central conspiracy-adjacent gap.
+      # V: V1 for the vote counts and dissenters (CFR, Britannica, Senate.gov and
+      #    others agree) and the quoted text. CLEARED: the vote counts were V0
+      #    recalled figures in the first draft.
+      # "Rested on 4 August" is an interpretation of the debate record and has NOT
+      #    been checked against the floor debate; that part stays V0, hence moderate.
+      # TO REACH V2: archives.gov Tonkin Gulf Resolution; the Congressional Record.
 
   - id: tonkin-bait-order
     state: searched_gap
@@ -171,7 +246,8 @@ claims:
         (tonkin-34a-raids-preceded) makes the suspicion understandable.
       accessible: true
     basis: >
-      # VERIFY: scope of what has been declassified and what historians have reported.
+      # V: V0. This is an absence in a record this draft has not read.
+      # TO REACH V2: full-text search of the NSA release set and FRUS 1964-68 vol. I
+      #    for provocation language.
       A searched gap, not a refutation: absence in what has been released is not
-      proof of absence. Confidence is low because the search record has not been
-      read in full by this dig. A found document would move this claim.
+      proof of absence. A found document would move this claim.

@@ -20,23 +20,29 @@ discriminating_tests:
       type: primary-text
       finding: >
         NSA's re-examination of the full intercept set found the cited reports
-        referred to the 2 August action, and the on-scene commander's own message
-        questioned the radar and sonar contacts within hours.
+        referred to the 2 August action and no North Vietnamese vessels were present
+        on 4 August. The on-scene commander's flash message, received in Washington
+        the same day, questioned the radar and sonar contacts and reported no
+        visual sightings by Maddox.
       accessible: true
     resolves: >
       The refutation rests on re-reading the original records, not on which account
-      is more widely believed. # VERIFY against the declassified documents.
+      is more widely believed. Verification level V1 (search-corroborated); the study itself
+      has not been opened.
     note: >
       D3 satisfied. Giap's 1995 testimony agrees but is not what retires the claim.
-      The test does NOT answer why the report was believed or relayed; that
-      question (tonkin-deliberate-fabrication) stays contested.
+      The test does NOT answer who skewed the record or why, or whether senior
+      officials knew; tonkin-midlevel-deliberate-skew stays proposed and
+      tonkin-senior-knowledge stays contested.
 
 # ---------------------------------------------------------------------------
 # OPEN TESTS (not filed; no result yet):
-#   - dt-who-knew-when (would discriminate tonkin-deliberate-fabrication):
-#     do dated senior-level communications, before the 5 August reprisal and the
-#     7 August Resolution, show knowledge of the doubts about 4 August?
-#     Needs a read of the declassified record for those specific communications.
+#   - dt-who-knew-when (would discriminate tonkin-senior-knowledge):
+#     do dated senior-level communications between the Herrick cable (received in
+#     Washington 13:27, 4 August) and the 7 August Resolution show knowledge of the
+#     doubts, and did anyone act on them? The cable's arrival time is the one dated
+#     fact in hand; what officials did with it is not. FRUS 1964-68 vol. I is the
+#     likely source. Needs V2 access.
 #   - dt-bait-order (would discriminate tonkin-bait-order): any document ordering
 #     the Maddox patrol as a provocation.
 # ---------------------------------------------------------------------------
