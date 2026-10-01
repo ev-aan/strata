@@ -68,6 +68,9 @@ description: >
 #   Lost tapes:                https://www.space.com/6994-nasa-erased-moonwalk-tapes-restores-copies.html
 # ---------------------------------------------------------------------------
 
+divergence_note: >
+  Evidence and adoption mostly agree: most people accept the landings, and the independent records support them. The gap is a persistent minority (6% in 1999, about 11-12% later) and where doubt concentrates: the footage, radiation, and the lost original tapes. The tapes gap is documented, which is why it deserves a plain answer. The weakest evidential point is crewed versus robotic, not staged versus real.
+
 claims:
 
   - id: apollo-retroreflectors-on-moon
@@ -77,6 +80,13 @@ claims:
       14 and 15 sites and are ranged routinely by observatories outside NASA.
     evidence_class: material
     confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Accepted across the relevant sciences; ranging stations still use the arrays.
+    would_change_if: >
+      an outside station reports no return from a site's coordinates under conditions where one is expected, or ranging records are shown not to be independent of NASA
     anchor:
       type: independent-instrument-reproducibility
       description: >
@@ -103,6 +113,13 @@ claims:
       authentically lunar, and studied by laboratories in many countries.
     evidence_class: material
     confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Universal among sample scientists; labs in many countries have studied the material.
+    would_change_if: >
+      an outside laboratory shows a documented returned sample to be terrestrial, or the 381.7 kg total is shown to be wrong
     anchor:
       type: multi-laboratory-convergence
       description: >
@@ -129,6 +146,13 @@ claims:
       and disturbed ground at the landing sites.
     evidence_class: material
     confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 4   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Accepted among planetary scientists; less widely known to the public.
+    would_change_if: >
+      the JAXA or ISRO imaging is shown not to match the claimed sites, or the SELENE halo is attributed to something else
     anchor:
       type: independent-orbital-imaging
       description: >
@@ -157,6 +181,13 @@ claims:
       crews walked on the surface and collected the returned samples.
     evidence_class: material
     confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 4   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      US polls: about 89% rejected 'staged' in 1999 (Gallup); 11-12% accepted it in 2019 and 2021 YouGov surveys. Polls ask 'staged', not 'crewed vs robotic'.
+    would_change_if: >
+      independent (non-NASA) imaging of tracks or trails, or independent surface-station data, is found; or a robotic-only delivery is shown feasible at 381.7 kg
     anchor:
       type: convergence-of-independent-records
       description: >
@@ -185,6 +216,13 @@ claims:
       missions, with no humans on the surface.
     evidence_class: synthetic
     confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 1   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. Rarely proposed outside specialist discussion.
+    would_change_if: >
+      independent imaging of rover tracks or foot trails is found (raises it), or a documented robotic return of hundreds of kg is shown (lowers it)
     refutes_target: "Apollo artifacts were placed and collected robotically only"
     anchor:
       type: capability-ratio-plus-surface-traces
@@ -214,6 +252,13 @@ claims:
       The Apollo landings were staged on Earth and never took place.
     evidence_class: material
     confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 1   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Gallup 1999: about 6% doubted the landings. YouGov 2019: 11% of US adults. Economist/YouGov 2021: 12%. UK YouGov 2012: 12%. A Newsweek headline reports about half of Russians in one poll (not read; unchecked).
+    would_change_if: >
+      any one of the independent records (outside ranging, foreign lab dating, other nations' imaging) is shown to fail or to depend on NASA
     refutes_target: "Apollo landings were staged / faked"
     anchor:
       type: convergence-against-fabrication
@@ -239,6 +284,13 @@ claims:
       a fake, did not publicly challenge the landings, and later exchanged samples.
     evidence_class: synthetic
     confidence: low
+    evidential_weight: 2   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. Widely repeated as an argument; its public form is stronger than its documentation.
+    would_change_if: >
+      Soviet primary documents or press from 1969 are found that either confirm or contest the landing
     anchor:
       type: argument-from-silence
       description: >
@@ -263,6 +315,13 @@ claims:
       without receiving a dangerous radiation dose.
     evidence_class: material
     confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. The Van Allen belts argument is a staple of hoax claims, so doubt is common; expert acceptance is high.
+    would_change_if: >
+      dosimetry outside NASA's records, or a recomputation of the belt transit from independent belt data, differing materially from the table
     anchor:
       type: dosimetry-plus-belt-physics
       description: >
@@ -287,8 +346,17 @@ claims:
     statement: >
       The original Apollo 11 slow-scan television tapes (45 tapes) were erased and
       reused; the surviving footage comes from station recordings.
-    evidence_class: primary-text
-    confidence: high
+    evidence_class: primary_text
+    confidence: moderate   # capped: absence anchor (framework rule)
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Widely known and accepted.
+    would_change_if: >
+      the 45 original tapes, or records of their disposal that contradict NASA's 2009 account, are found
+    next_step: >
+      Read NASA's 2009 Apollo 11 tape-search report and Goddard's tape inventory and disposal records; log what each shows about the 45 tapes and the dates.
     anchor:
       type: documented-absence
       description: >

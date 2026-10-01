@@ -1,0 +1,50 @@
+subject: apollo-landings
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+# Dates are 2026-10-01 unless stated.
+
+log:
+  - id: L-01
+    date: 2026-10-01
+    entry: >
+      Dig drafted from web search summaries. Nine claims, two tests, one reception
+      thread. No primary document was opened (the drafting environment blocks every
+      primary host).
+  - id: L-02
+    date: 2026-10-01
+    entry: >
+      Verification pass (levels V0/V1/V2 introduced; nothing reached V2). Quantities
+      added: 381.7 kg returned; 326.1 g total from the three successful Soviet sample
+      returns (ratio about 1,170 to 1); four ranging stations in three countries;
+      crew-average skin dose 0.16 to 1.14 rad.
+  - id: L-03
+    date: 2026-10-01
+    entry: >
+      CORRECTION to the first draft: it listed Japan and Australia as lunar-ranging
+      stations. The sources reviewed do not support that. Stations are APOLLO, McDonald,
+      Matera and Grasse.
+  - id: L-04
+    date: 2026-10-01
+    entry: >
+      CORRECTION: the first draft said Chandrayaan-2 images show foot trails. The only
+      source was a social-media post; at about 0.25 m per pixel a trail is marginal.
+      Removed. Chandrayaan-2 descent-stage imaging is kept.
+  - id: L-05
+    date: 2026-10-01
+    entry: >
+      DOWNGRADES: apollo-robotic-only-alternative moved from material/high to
+      synthetic/moderate (inference about robotic capability; track imagery is NASA's
+      own). apollo-crewed-landings-occurred moved from high to moderate because it
+      depends on that claim. apollo-soviet-non-challenge moved from moderate to low
+      (no explicit contemporaneous Soviet statement found).
+  - id: L-06
+    date: 2026-10-01
+    entry: >
+      Conformed to CONTRIBUTING.md: added evidential_weight, adoption_weight (with
+      poll figures where found), anchor_checked (no for every claim), would_change_if,
+      next_step for the searched gap, and a divergence note. apollo-original-sstv-tapes-lost
+      moved from high to moderate: an absence anchor is capped.
+  - id: L-07
+    date: 2026-10-01
+    entry: >
+      OPEN: refutation_class was not set on the two refuted claims because the class
+      definitions are not in CONTRIBUTING.md or the Method page. Awaiting definitions.

@@ -17,7 +17,7 @@ discriminating_tests:
         earlier 2 August action, and the ship records should be doubtful or
         contradicted.
     result:
-      type: primary-text
+      type: primary_text
       finding: >
         NSA's re-examination of the full intercept set found the cited reports
         referred to the 2 August action and no North Vietnamese vessels were present

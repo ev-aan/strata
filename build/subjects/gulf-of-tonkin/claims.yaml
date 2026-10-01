@@ -72,6 +72,9 @@ description: >
 #     https://archive.seattletimes.com/archive/19951109/2151509/mcnamara-asks-for-truth-about-gulf-of-tonkin----giap-there-was-no-attack
 # ---------------------------------------------------------------------------
 
+divergence_note: >
+  Evidence and adoption diverge on two points. On 4 August, historians agree no attack occurred, while the public memory of 1964 is of an attack. On intent, the popular framing ('false flag') is stronger than the record, which shows selective presentation by mid-level NSA officers and leaves senior knowledge contested. That gap is the product.
+
 claims:
 
   - id: tonkin-aug2-maddox-engaged
@@ -79,8 +82,15 @@ claims:
     statement: >
       On 2 August 1964 North Vietnamese torpedo boats attacked USS Maddox in the
       Gulf of Tonkin; the Maddox and supporting aircraft returned fire.
-    evidence_class: primary-text
+    evidence_class: primary_text
     confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Universal among historians; Hanoi's own account agrees (Giap, 1995).
+    would_change_if: >
+      records from either side showing the 2 August clash did not occur as described
     anchor:
       type: contemporaneous-records-plus-adversary-account
       description: >
@@ -99,8 +109,15 @@ claims:
       South Vietnamese commando raids on North Vietnamese islands under the US-backed
       OPLAN 34A (night of 30-31 July 1964) preceded the Maddox incident, and Hanoi
       associated the American destroyer with those raids.
-    evidence_class: primary-text
+    evidence_class: primary_text
     confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 4   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Accepted by historians; less widely known to the public.
+    would_change_if: >
+      records showing the 30-31 July raids were not 34A, or were not linked in Hanoi's view to the Maddox
     anchor:
       type: declassified-operational-record
       description: >
@@ -119,8 +136,15 @@ claims:
     statement: >
       On 4 August 1964 North Vietnamese torpedo boats attacked USS Maddox and USS
       Turner Joy a second time.
-    evidence_class: primary-text
+    evidence_class: primary_text
     confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 2   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Historians: a consensus that no second attack occurred (a Naval Historical Center historian, Edward Marolda, reversed the Navy's earlier account). The public: not measured; in 1964 the attack was widely believed.
+    would_change_if: >
+      new intercepts, ship logs or North Vietnamese records showing boats present and firing on 4 August
     refutes_target: "A second North Vietnamese attack took place on 4 August 1964"
     anchor:
       type: signals-intelligence-reexamination
@@ -150,8 +174,15 @@ claims:
       The signals intelligence reaching senior decision-makers about 4 August was
       assembled and presented in a way that omitted contradicting material and did
       not give them the complete picture.
-    evidence_class: primary-text
+    evidence_class: primary_text
     confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. Accepted among historians who have read the NSA study; little known to the public.
+    would_change_if: >
+      the full intercept set shows the omitted material was not contradictory, or the roughly 90% figure is not found in the study
     anchor:
       type: internal-historian-finding
       description: >
@@ -179,6 +210,13 @@ claims:
       up earlier errors rather than to pursue a political goal.
     evidence_class: synthetic
     confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. Rests on one internal historian's inference; not widely discussed.
+    would_change_if: >
+      a document showing the skewing was mistaken rather than deliberate, or showing direction from outside the mid-level officers
     anchor:
       type: inference-from-pattern
       description: >
@@ -204,8 +242,17 @@ claims:
       Senior administration officials knew the 4 August attack was doubtful or false
       when they ordered reprisal strikes and sought the Resolution, as opposed to
       acting on a genuine, if flawed, belief that it happened.
-    evidence_class: primary-text
+    evidence_class: primary_text
     confidence: low
+    evidential_weight: 2   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. 'They lied us into war' is a popular framing; historians are divided on who knew what.
+    would_change_if: >
+      dated senior communications between the doubt cable and the Resolution showing knowledge or its absence
+    next_step: >
+      Read FRUS 1964-68 vol. I and the Herrick message for senior communications dated 4-7 August 1964, and log who received the doubts and what they did.
     anchor:
       type: live-dispute
       description: >
@@ -231,8 +278,15 @@ claims:
     statement: >
       Congress passed the Tonkin Gulf Resolution (7 August 1964) in response to the
       reported attacks, with the 4 August report central to the administration's case.
-    evidence_class: primary-text
+    evidence_class: primary_text
     confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. The vote counts and the text are not disputed.
+    would_change_if: >
+      the floor debate shows the attacks were not central to the case made to Congress
     anchor:
       type: legislative-record
       description: >
@@ -254,8 +308,17 @@ claims:
     statement: >
       No declassified document located so far shows an order to provoke the 2 August
       clash by sending the Maddox in as bait.
-    evidence_class: primary-text
+    evidence_class: primary_text
     confidence: low
+    evidential_weight: 2   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 2   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. Circulates in popular accounts; no document found.
+    would_change_if: >
+      a document ordering or planning the Maddox patrol as a provocation is found
+    next_step: >
+      Full-text search the NSA Tonkin releases (2005-2006) and FRUS 1964-68 vol. I for provocation or bait language; log every hit and every miss.
     anchor:
       type: absence-in-searched-record
       description: >
