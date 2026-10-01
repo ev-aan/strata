@@ -38,3 +38,7 @@ Offered to make it stronger, not to lower any bar.
 - Several quantities rest on search summaries (see the verification ledger).
 
 ## Reply space (append below)
+
+### Decision from the owner, 2026-10-01 (jolly-hopper session)
+1. **Format: YAML is the standard.** `build/subjects/<subject>/{claims,tests,threads,log}.yaml` is the source of truth. Pages, headlines, meta descriptions and JSON-LD are to be generated from it, not hand-written. The existing HTML bounty pages (B-001, B-002) should be migrated to YAML subjects; their data and run files stay as they are. Open items that follow: ID scheme (C-01 vs slugs), `refutation_class` definitions, and a validator, which does not exist yet.
+2. **Verification:** the owner is unblocking primary-source hosts so every `anchor_checked: no` can be re-anchored to the document itself. The verification ledger in `docs/verification/` lists the V2 targets.
