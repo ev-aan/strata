@@ -1,0 +1,42 @@
+subject: gulf-of-tonkin
+
+discriminating_tests:
+
+  - id: dt-aug4-intercept-recheck
+    question: >
+      Do the intercepts that were cited as proof of a 4 August attack actually
+      describe 4 August events?
+    retires: tonkin-aug4-attack-occurred
+    predicts:
+      attack-occurred: >
+        IF an attack occurred on 4 August, the intercepts cited for it should describe
+        North Vietnamese boat activity at that time, and independent ship records
+        (radar, sonar, visual) should support it.
+      no-attack: >
+        IF no attack occurred, the cited intercepts should turn out to describe the
+        earlier 2 August action, and the ship records should be doubtful or
+        contradicted.
+    result:
+      type: primary-text
+      finding: >
+        NSA's re-examination of the full intercept set found the cited reports
+        referred to the 2 August action, and the on-scene commander's own message
+        questioned the radar and sonar contacts within hours.
+      accessible: true
+    resolves: >
+      The refutation rests on re-reading the original records, not on which account
+      is more widely believed. # VERIFY against the declassified documents.
+    note: >
+      D3 satisfied. Giap's 1995 testimony agrees but is not what retires the claim.
+      The test does NOT answer why the report was believed or relayed; that
+      question (tonkin-deliberate-fabrication) stays contested.
+
+# ---------------------------------------------------------------------------
+# OPEN TESTS (not filed; no result yet):
+#   - dt-who-knew-when (would discriminate tonkin-deliberate-fabrication):
+#     do dated senior-level communications, before the 5 August reprisal and the
+#     7 August Resolution, show knowledge of the doubts about 4 August?
+#     Needs a read of the declassified record for those specific communications.
+#   - dt-bait-order (would discriminate tonkin-bait-order): any document ordering
+#     the Maddox patrol as a provocation.
+# ---------------------------------------------------------------------------

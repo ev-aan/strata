@@ -1,0 +1,62 @@
+subject: apollo-landings
+
+discriminating_tests:
+
+  - id: dt-independent-records
+    question: >
+      Do records that NASA does not control agree with the claimed landing sites,
+      at the claimed places and in the claimed quantities?
+    retires: apollo-staged-hoax
+    predicts:
+      landings-occurred: >
+        IF crews landed, outside observatories should get laser returns from the
+        site coordinates, foreign labs should find lunar-only signatures in the
+        samples, and other nations' orbiters should see hardware and traces there.
+      staged-on-earth: >
+        IF staged, at least one of these independent records should fail or
+        disagree, because a single fake would have to defeat all of them at once.
+    result:
+      type: material
+      finding: >
+        Observatories in several countries range the reflectors; samples dated by
+        non-NASA labs give lunar ages and signatures; India's and Japan's orbiters
+        image or detect site traces. No independent record fails.
+      accessible: true
+    resolves: >
+      The retirement rests on physical records anyone can re-measure, not on which
+      side has more believers. # VERIFY each result against the sources in claims.yaml.
+    note: >
+      D3 satisfied: retired by material convergence, never by popularity or by
+      NASA's authority. The test does not retire every individual question about
+      the photographs or film; those are handled as reception in threads.yaml.
+
+  - id: dt-human-traces-vs-robotic
+    question: >
+      Are there surface traces consistent with humans walking and driving, and mass
+      returned beyond robotic capability of the period?
+    retires: apollo-robotic-only-alternative
+    predicts:
+      crewed: >
+        IF crewed, foot trails, rover tracks and a returned mass of hundreds of kg
+        should be present and imaged.
+      robotic-only: >
+        IF robotic only, trails and tracks of that kind should be absent, and returned
+        mass should be in the range robotic missions achieved (grams to ~0.2 kg per mission).
+    result:
+      type: material
+      finding: >
+        Foot trails and rover tracks are imaged at the sites by LRO (and reported by
+        Chandrayaan-2 at Apollo 12); returned mass is about 382 kg.
+      accessible: true
+    resolves: >
+      Separates "something delivered these things" (reflectors, rocks) from
+      "people did". # VERIFY foot-trail imagery in the primary papers.
+    note: >
+      This is the harder test of the two: it addresses the only alternative that
+      survives dt-independent-records.
+
+# ---------------------------------------------------------------------------
+# OPEN TESTS (not filed; no result yet):
+#   - A fresh, newly commissioned ranging or imaging campaign by a party with no
+#     prior stake, as an ongoing re-check rather than a one-time result.
+# ---------------------------------------------------------------------------

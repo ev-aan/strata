@@ -1,0 +1,34 @@
+subject: apollo-landings
+
+threads:
+
+  - id: thread-apollo-hoax-framing
+    type: reception-overlay
+    title: "The 'faked Moon landing' narrative"
+    confers_weight: false   # T4: required for reception overlays
+    description: >
+      How the hoax idea reaches general readers: photographic oddities (shadows,
+      a waving flag, no stars), the Van Allen belts, "the tapes were lost", and a
+      suspicion of any government claim from the Cold War era. Each framing tracks
+      something real and then adds a conclusion the evidence does not carry.
+    overlay_notes:
+      - >
+        "The tapes were erased" tracks a real documented gap (apollo-original-sstv-tapes-lost).
+        It affects one footage source, not the reflectors, samples or orbital imagery.
+      - >
+        "The Van Allen belts would have killed them" imports a risk without a dose.
+        Compare apollo-radiation-survivable, held at moderate confidence on purpose.
+      - >
+        Photographic anomalies (shadows, flag, stars) are questions about cameras and
+        lighting on film, not about the material records. Whether each has a settled
+        explanation is a separate matter from whether the landings occurred.
+      - >
+        "Governments lie, so this is a lie" borrows weight from real deceptions.
+        Gulf of Tonkin (see subject gulf-of-tonkin) is a documented case, and it is
+        filed on its own evidence. It lends no weight here.
+    firewall: >
+      This thread records reception. It is mechanically barred (confers_weight: false)
+      from lending evidential weight to any claim, including the refuted hoax claim.
+      A reader arriving with the hoax framing should be able to see which parts of it
+      correspond to a real documented gap, which to a question about film, and which
+      to an unsupported conclusion.

@@ -1,0 +1,177 @@
+subject: gulf-of-tonkin
+title: "Gulf of Tonkin Incidents (August 1964)"
+description: >
+  Two separate events are routinely fused: the 2 August 1964 clash between USS
+  Maddox and North Vietnamese torpedo boats, and the reported 4 August attack that
+  led to the Tonkin Gulf Resolution. Strata keeps them apart. The first happened.
+  The second, on the declassified record, did not. A third question is kept
+  separate again: WHY the administration treated 4 August as an attack. That
+  question is a genuine gap, and it is where conspiracy claims and the evidence
+  part ways. This dig exists partly as a calibration case: a real, documented
+  failure of government reporting, filed strictly on its own evidence so that it
+  neither inflates nor excuses claims in other digs.
+
+# ---------------------------------------------------------------------------
+# DRAFT STATUS (governance, not a claim):
+# Drafted by AI from web search summaries. Primary documents could not be opened
+# directly in the drafting environment. Every `# VERIFY` flag below marks a spot
+# where a human should open the cited source before this dig is built or published.
+#
+# SOURCES consulted (search-level, not yet read in full):
+#   NSA declassified study (Hanyok), "Skunks, Bogies, Silent Hounds, and the Flying Fish":
+#     https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/gulf-of-tonkin/articles/release-1/rel1_skunks_bogies.pdf
+#   NSA, "The Gulf of Tonkin Mystery: The SIGINT Hounds Were Howling":
+#     https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/gulf-of-tonkin/articles/release-2/rel2_thoughts_intelligence.pdf
+#   US Naval Institute, "The Truth About Tonkin":
+#     https://www.usni.org/magazines/naval-history-magazine/2008/february/truth-about-tonkin
+#   Naval History and Heritage Command, Tonkin Gulf crisis summary:
+#     https://www.history.navy.mil/research/library/online-reading-room/title-list-alphabetically/t/tonkin-gulf-crisis/tonkin-gulf-crisis-aug-1964.html
+#   McNamara / Giap meeting, Hanoi, Nov 1995 (news reports):
+#     https://archive.seattletimes.com/archive/19951109/2151509/mcnamara-asks-for-truth-about-gulf-of-tonkin----giap-there-was-no-attack
+# ---------------------------------------------------------------------------
+
+claims:
+
+  - id: tonkin-aug2-maddox-engaged
+    state: established
+    statement: >
+      On 2 August 1964 North Vietnamese torpedo boats attacked USS Maddox in the
+      Gulf of Tonkin; the Maddox and supporting aircraft returned fire.
+    evidence_class: primary-text
+    confidence: high
+    anchor:
+      type: contemporaneous-records-plus-adversary-account
+      description: >
+        US Navy records and the NSA signals intelligence for that day agree, and
+        North Vietnamese General Vo Nguyen Giap confirmed the 2 August attack to
+        McNamara in 1995.
+      accessible: true
+    basis: >
+      # VERIFY: Naval History and Heritage Command account.
+      Established on records from both sides. Giap's statement is testimony and is
+      used only as corroboration of the records, never as the anchor.
+
+  - id: tonkin-34a-raids-preceded
+    state: established
+    statement: >
+      South Vietnamese commando raids on North Vietnamese islands under the US-backed
+      OPLAN 34A (night of 30-31 July 1964) preceded the Maddox incident, and Hanoi
+      associated the American destroyer with those raids.
+    evidence_class: primary-text
+    confidence: moderate
+    anchor:
+      type: declassified-operational-record
+      description: >
+        Declassified accounts describe 34A as conceived and overseen by the Defense
+        Department with CIA support and carried out by South Vietnamese forces; the
+        Maddox was on an intelligence patrol near the raided islands.
+      accessible: true
+    basis: >
+      # VERIFY: dates and attribution against the Naval Institute and NSA documents.
+      Established as context. It says Hanoi had a reason to attack the Maddox on
+      2 August; it does NOT say the US arranged the 2 August clash. See tonkin-bait-order.
+
+  - id: tonkin-aug4-attack-occurred
+    state: refuted
+    statement: >
+      On 4 August 1964 North Vietnamese torpedo boats attacked USS Maddox and USS
+      Turner Joy a second time.
+    evidence_class: primary-text
+    confidence: high
+    refutes_target: "A second North Vietnamese attack took place on 4 August 1964"
+    anchor:
+      type: signals-intelligence-reexamination
+      description: >
+        NSA's own historian re-examined the full set of intercepts in a study
+        declassified in 2005 and concluded no second attack occurred. The
+        intercepts presented as reporting 4 August events were about the 2 August
+        action. Within hours of the event the on-scene commander, Captain John
+        Herrick, cabled that "freak weather effects on radar and overeager sonarmen"
+        may have accounted for many reports.
+      accessible: true
+    basis: >
+      # VERIFY: the Hanyok study and the Herrick message text directly.
+      Rule 9 satisfied: names its target and rests on primary documents. Giap's
+      1995 statement that "nothing happened on our side on the 4th of August"
+      agrees, and is treated as corroboration only.
+
+  - id: tonkin-sigint-selectively-presented
+    state: established
+    statement: >
+      The signals intelligence reaching senior decision-makers about 4 August was
+      assembled and presented in a way that omitted contradicting material and did
+      not give them the complete picture.
+    evidence_class: primary-text
+    confidence: moderate
+    anchor:
+      type: internal-historian-finding
+      description: >
+        The NSA study concludes that SIGINT "was presented in such a manner as to
+        preclude responsible decision makers in the Johnson administration from
+        having the complete and objective narrative of events of 4 August 1964."
+      accessible: true
+    basis: >
+      # VERIFY: exact wording and the study's account of which reports were withheld.
+      Established that the presentation was selective. This claim is silent on WHY
+      (error, bias, or design); that is tonkin-deliberate-fabrication, held apart.
+
+  - id: tonkin-resolution-rested-on-aug4
+    state: established
+    statement: >
+      Congress passed the Tonkin Gulf Resolution (7 August 1964) in response to the
+      reported attacks, with the 4 August report central to the administration's case.
+    evidence_class: primary-text
+    confidence: moderate
+    anchor:
+      type: legislative-record
+      description: >
+        The Resolution authorized presidential action in Southeast Asia and was later
+        used as the legal basis for escalation of the Vietnam War.
+      accessible: true
+    basis: >
+      # VERIFY: the vote counts (recalled as Senate 88-2 and House 416-0; not
+      # confirmed by the searches above) and the wording tying it to the attacks.
+      Kept moderate until the legislative record is read directly.
+
+  - id: tonkin-deliberate-fabrication
+    state: contested
+    statement: >
+      Senior administration officials knowingly invented or knowingly relied on a
+      false 4 August attack to obtain war authority, as opposed to a genuine
+      misreading that officials then reinforced and defended.
+    evidence_class: primary-text
+    confidence: low
+    anchor:
+      type: live-dispute
+      description: >
+        The record establishes selective presentation (tonkin-sigint-selectively-presented)
+        and that doubts existed within hours (the Herrick cable). It does not,
+        in the sources reviewed, settle who knew what, when. The NSA study leaves
+        "error or design" open at the level of the analysts.
+      accessible: true
+    basis: >
+      # VERIFY: whether the declassified record contains senior-level communications
+      # that discriminate between these readings.
+      Genuinely contested: the same documents are read as deliberate deception or as
+      confirmation bias under pressure. Held at contested, low confidence. No test in
+      tests.yaml retires it yet. This is the dig's central conspiracy-adjacent gap.
+
+  - id: tonkin-bait-order
+    state: searched_gap
+    statement: >
+      No declassified document located so far shows an order to provoke the 2 August
+      clash by sending the Maddox in as bait.
+    evidence_class: primary-text
+    confidence: low
+    anchor:
+      type: absence-in-searched-record
+      description: >
+        Large sets of Tonkin materials have been declassified (including the 2005 NSA
+        release), and the sources reviewed do not report such an order. The context
+        (tonkin-34a-raids-preceded) makes the suspicion understandable.
+      accessible: true
+    basis: >
+      # VERIFY: scope of what has been declassified and what historians have reported.
+      A searched gap, not a refutation: absence in what has been released is not
+      proof of absence. Confidence is low because the search record has not been
+      read in full by this dig. A found document would move this claim.

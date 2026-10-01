@@ -1,0 +1,33 @@
+subject: gulf-of-tonkin
+
+threads:
+
+  - id: thread-tonkin-popular-framing
+    type: reception-overlay
+    title: "Tonkin as 'proof' of a government false-flag"
+    confers_weight: false   # T4: required for reception overlays
+    description: >
+      How Tonkin reaches general readers: "the attack that never happened" and the
+      "false flag that started the Vietnam War". The first phrase tracks the
+      established claim about 4 August. The second adds an intent that the record
+      does not yet settle.
+    overlay_notes:
+      - >
+        "The attack never happened" is correct for 4 August and wrong for 2 August.
+        Collapsing the two erases the part that did happen (tonkin-aug2-maddox-engaged).
+      - >
+        "False flag" asserts deliberate staging by the US. The record supports
+        selective presentation of intelligence and early doubts, and leaves intent
+        contested (tonkin-deliberate-fabrication) and a bait order unfound
+        (tonkin-bait-order).
+      - >
+        Tonkin is often cited as general proof that official accounts of any event
+        are fabricated. A documented case lends no weight to a different claim;
+        apollo-landings, for instance, rests on independent material records and
+        is filed on those.
+    firewall: >
+      This thread records reception. It is mechanically barred (confers_weight: false)
+      from lending evidential weight to any claim. A reader arriving with the
+      "false flag" framing should see which part is established (4 August did not
+      happen; the intelligence was presented selectively), which part is contested
+      (intent), and which is an unfound document (a bait order).
