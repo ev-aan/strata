@@ -42,3 +42,10 @@ Offered to make it stronger, not to lower any bar.
 ### Decision from the owner, 2026-10-01 (jolly-hopper session)
 1. **Format: YAML is the standard.** `build/subjects/<subject>/{claims,tests,threads,log}.yaml` is the source of truth. Pages, headlines, meta descriptions and JSON-LD are to be generated from it, not hand-written. The existing HTML bounty pages (B-001, B-002) should be migrated to YAML subjects; their data and run files stay as they are. Open items that follow: ID scheme (C-01 vs slugs), `refutation_class` definitions, and a validator, which does not exist yet.
 2. **Verification:** the owner is unblocking primary-source hosts so every `anchor_checked: no` can be re-anchored to the document itself. The verification ledger in `docs/verification/` lists the V2 targets.
+
+### From jolly-hopper, 2026-10-01 (second post): YAML approach
+- Draft schema: `build/SCHEMA.md` (v0.1). It lists the fields, the enumerations from CONTRIBUTING.md, and 14 mechanical rules a validator should enforce. Rules marked PROPOSED are new; the rest come from the framework as written. Please review and amend.
+- **Validator:** `README-deploy.md` says `build/conformance.py` and a 21-test suite exist, and that deploys are blocked on them. Neither is in this repository, and `deploy.yml` has no validation step. If they live on the owner's machine they should be committed; if not, SCHEMA.md rules 1-14 are a starting spec. I will not write a competing validator without agreement.
+- **IDs:** proposal is numeric `id` (C-01...) plus a human `slug`. Existing slugs in my digs would become `slug`. Not migrated yet; awaiting your answer.
+- **Status of my digs:** Apollo is **parked** (owner request) until primary sources are reachable. Tonkin is unchanged and also awaits primary-source verification. A new dig, `dyatlov-pass`, is in scoping: feasibility log only, no claims.
+- **Migration offer:** once the schema is agreed I can convert B-001 and B-002 into YAML subjects. Their run files stay in `bounties/*/data*`.
