@@ -1,0 +1,33 @@
+CONTROL DIVINES (not in model), 2,000-word samples x up to 3 per work:
+  Hammond 1655    @    0: -> henderson       charle=0.747 hender=0.627 gauden=0.680 taylor=0.674 milton=0.684
+  Hammond 1655    @ 2000: -> henderson       charle=0.687 hender=0.626 gauden=0.630 taylor=0.636 milton=0.638
+  Hammond 1655    @ 4000: -> henderson       charle=0.874 hender=0.699 gauden=0.729 taylor=0.762 milton=0.774
+  Hammond 1655    @ 6000: -> milton          charle=0.799 hender=0.673 gauden=0.689 taylor=0.740 milton=0.652
+  Reynolds 1642   @    0: -> gauden          charle=0.814 hender=0.769 gauden=0.622 taylor=0.668 milton=0.715
+  Reynolds 1642   @ 2000: -> gauden          charle=0.766 hender=0.689 gauden=0.549 taylor=0.653 milton=0.637
+  Reynolds 1642   @ 4000: -> gauden          charle=0.786 hender=0.711 gauden=0.567 taylor=0.649 milton=0.680
+  Reynolds 1642   @ 6000: -> gauden          charle=0.861 hender=0.797 gauden=0.708 taylor=0.754 milton=0.717
+  Fuller 1640     @    0: -> gauden          charle=0.742 hender=0.619 gauden=0.555 taylor=0.597 milton=0.592
+  Fuller 1640     @ 2000: -> gauden          charle=0.800 hender=0.674 gauden=0.589 taylor=0.641 milton=0.642
+  Fuller 1640     @ 4000: -> gauden          charle=0.820 hender=0.669 gauden=0.594 taylor=0.661 milton=0.708
+  Fuller 1640     @ 6000: -> gauden          charle=0.731 hender=0.688 gauden=0.632 taylor=0.691 milton=0.637
+  Hall 1641       @    0: -> gauden          charle=0.813 hender=0.621 gauden=0.566 taylor=0.609 milton=0.682
+  Hall 1641       @ 2000: -> gauden          charle=0.754 hender=0.609 gauden=0.576 taylor=0.642 milton=0.618
+  Hall 1641       @ 4000: -> gauden          charle=0.771 hender=0.646 gauden=0.609 taylor=0.645 milton=0.719
+  Ussher 1643     @    0: -> henderson       charle=0.872 hender=0.608 gauden=0.715 taylor=0.690 milton=0.762
+  Ussher 1643     @ 2000: -> henderson       charle=0.891 hender=0.693 gauden=0.782 taylor=0.773 milton=0.773
+  Ussher 1643     @ 4000: -> henderson       charle=0.856 hender=0.696 gauden=0.777 taylor=0.783 milton=0.770
+  Ussher 1643     @ 6000: -> henderson       charle=0.958 hender=0.760 gauden=0.827 taylor=0.806 milton=0.804
+  Sanderson 1647  @    0: -> gauden          charle=1.010 hender=0.700 gauden=0.647 taylor=0.678 milton=0.831
+  Sanderson 1647  @ 2000: -> henderson       charle=0.846 hender=0.641 gauden=0.659 taylor=0.731 milton=0.710
+  Sanderson 1647  @ 4000: -> henderson       charle=0.778 hender=0.600 gauden=0.603 taylor=0.699 milton=0.673
+  Sanderson 1647  @ 6000: -> gauden          charle=0.838 hender=0.637 gauden=0.616 taylor=0.709 milton=0.707
+  Baxter 1654     @    0: -> gauden          charle=0.715 hender=0.671 gauden=0.590 taylor=0.680 milton=0.706
+  Baxter 1654     @ 2000: -> gauden          charle=0.692 hender=0.641 gauden=0.635 taylor=0.761 milton=0.700
+  Baxter 1654     @ 4000: -> gauden          charle=0.659 hender=0.616 gauden=0.582 taylor=0.710 milton=0.656
+  Baxter 1654     @ 6000: -> gauden          charle=0.632 hender=0.665 gauden=0.630 taylor=0.688 milton=0.658
+  Calamy 1652     @    0: -> henderson       charle=0.761 hender=0.697 gauden=0.705 taylor=0.709 milton=0.765
+  Calamy 1652     @ 2000: -> taylor          charle=0.929 hender=0.766 gauden=0.781 taylor=0.752 milton=0.823
+  Calamy 1652     @ 4000: -> taylor          charle=0.940 hender=0.824 gauden=0.832 taylor=0.778 milton=0.865
+  Calamy 1652     @ 6000: -> taylor          charle=0.824 hender=0.737 gauden=0.764 taylor=0.728 milton=0.813
+tally: {'henderson': 10, 'milton': 1, 'gauden': 17, 'taylor': 3}

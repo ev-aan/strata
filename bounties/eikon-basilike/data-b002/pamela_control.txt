@@ -1,0 +1,12 @@
+Prayer: 487 words
+  4-word phrases shared with Sidney, Arcadia (1590)        : 108 of 484  (22%)
+  4-word phrases shared with Gauden (all works)            :   8 of 484  (2%)
+  4-word phrases shared with Taylor (all works)            :  25 of 484  (5%)
+  4-word phrases shared with Milton, Eikonoklastes         :   0 of 484  (0%)
+  4-word phrases shared with Eikon chapters (first issue)  :   7 of 484  (1%)
+  6-word phrases shared with Sidney, Arcadia (1590)        :  73 of 482  (15%)
+  6-word phrases shared with Gauden (all works)            :   0 of 482  (0%)
+  6-word phrases shared with Taylor (all works)            :   1 of 482  (0%)
+  6-word phrases shared with Milton, Eikonoklastes         :   0 of 482  (0%)
+  6-word phrases shared with Eikon chapters (first issue)  :   1 of 482  (0%)
+8-word runs found in Arcadia starting at prayer word positions: [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 35, 36, 45, 54, 55, 56, 57, 80, 81, 82, 83, 84, 85, 86, 87, 120, 134, 143, 144, 145, 146, 147, 148, 149, 150, 173]

@@ -1,0 +1,45 @@
+charles {'A31932': 9359}
+gauden {'A42489': 12124, 'A42498': 35015, 'A42492': 4002, 'A42483': 60000, 'A42487': 31729, 'A42490': 21254, 'A42495': 31966, 'A42475': 33732, 'A42477': 12717, 'A42491': 24703, 'A42496': 18881, 'A42479': 22251, 'A42476': 14271}
+taylor {'A13414': 20190, 'A27805': 60000, 'A63653': 30013, 'A63711': 60000}
+milton {'A50898': 60000}
+eikon parts 28 [1059, 1449, 923, 1879, 1723, 1749, 1219, 1489, 2797, 1971, 3293, 2415, 2125, 2693, 3581, 2062, 4226, 1263, 2012, 1739, 1547, 907, 1058, 2815, 1071, 1743, 4441, 3888]
+CALIBRATION (held-out 1,500-word chunks; same-work chunks never used to build the true author profile)
+  charles  26/26 correct
+  gauden   201/206 correct
+  taylor   75/107 correct
+  milton   40/40 correct
+  confusions: {'gauden->taylor': 4, 'gauden->milton': 1, 'taylor->milton': 11, 'taylor->charles': 1, 'taylor->gauden': 20}
+  overall 342/379 = 90%
+
+EIKON CHAPTERS (nearest author by Delta; bootstrap share over 200 resamples of 100 of 150 words)
+  1. Vpon His Majesties calling this last Parl  1065w  C=0.913 G=0.883 T=0.875 M=0.867  -> milton  boot {'milton': 84, 'taylor': 64, 'gauden': 33, 'charles': 19}
+  2. Vpon the Earle of Straffords death.        1452w  C=0.866 G=0.864 T=0.905 M=0.837  -> milton  boot {'gauden': 30, 'milton': 131, 'taylor': 4, 'charles': 35}
+  3. Vpon His Majesties going to the House of    927w  C=0.939 G=0.888 T=1.014 M=0.880  -> milton  boot {'gauden': 75, 'milton': 115, 'charles': 10}
+  4. Vpon the Insolency of the Tu mults.        1884w  C=0.873 G=0.675 T=0.832 M=0.719  -> gauden  boot {'gauden': 174, 'milton': 26}
+  5. Vpon His Majesties passing the Bill for t  1727w  C=0.781 G=0.840 T=0.964 M=0.791  -> charles boot {'milton': 84, 'charles': 114, 'gauden': 2}
+  6. Vpon His Majesties retirement from VVestm  1752w  C=0.819 G=0.770 T=0.923 M=0.816  -> gauden  boot {'gauden': 166, 'milton': 15, 'charles': 19}
+  7. Vpon the Queenes departure, and absence o  1220w  C=0.898 G=0.823 T=0.887 M=0.971  -> gauden  boot {'gauden': 191, 'taylor': 3, 'charles': 6}
+  8. Vpon His Majesties repulse at Hull, and t  1491w  C=0.850 G=0.785 T=0.800 M=0.684  -> milton  boot {'milton': 200}
+  9. Vpon the listing, and raising Armies agai  2806w  C=0.738 G=0.612 T=0.777 M=0.617  -> gauden  boot {'gauden': 112, 'milton': 88}
+  10. Vpon their seizing the Kings Magazines,   1976w  C=0.735 G=0.733 T=0.854 M=0.790  -> gauden  boot {'gauden': 104, 'milton': 8, 'charles': 88}
+  11. Vpon the 19. Propositions first sent to   3299w  C=0.741 G=0.645 T=0.863 M=0.717  -> gauden  boot {'gauden': 190, 'milton': 8, 'charles': 2}
+  12. Vpon the Rebellion, and troubles in Irel  2419w  C=0.715 G=0.633 T=0.808 M=0.654  -> gauden  boot {'gauden': 146, 'milton': 51, 'charles': 3}
+  13. Vpon the Calling in of the Scots, and th  2127w  C=0.814 G=0.599 T=0.811 M=0.681  -> gauden  boot {'gauden': 199, 'milton': 1}
+  14. Vpon the Covenant.                        2702w  C=0.788 G=0.547 T=0.758 M=0.701  -> gauden  boot {'gauden': 200}
+  15. Vpon the many Iealousies rai sed, and Sc  3591w  C=0.774 G=0.589 T=0.787 M=0.674  -> gauden  boot {'gauden': 198, 'milton': 2}
+  16. Vpon the Ordinance against the Commo Pra  2072w  C=0.792 G=0.549 T=0.714 M=0.703  -> gauden  boot {'gauden': 200}
+  17. Of the differences between the KING and   4243w  C=0.746 G=0.508 T=0.744 M=0.673  -> gauden  boot {'gauden': 200}
+  18. Vpon Vxbridge -Treaty, and other Offers   1267w  C=0.959 G=0.813 T=0.965 M=0.822  -> gauden  boot {'gauden': 125, 'milton': 75}
+  19. Vpon the various events of the Warre; Vi  2017w  C=0.838 G=0.657 T=0.821 M=0.722  -> gauden  boot {'gauden': 187, 'milton': 13}
+  20. Vpon the Reformations of the Times.       1742w  C=0.812 G=0.616 T=0.791 M=0.771  -> gauden  boot {'gauden': 200}
+  21. Vpon His Majesties Let ters taken and di  1552w  C=0.829 G=0.762 T=0.920 M=0.867  -> gauden  boot {'gauden': 188, 'charles': 11, 'milton': 1}
+  22. Vpon His Majesties leaving Oxford, and g   909w  C=1.046 G=1.127 T=1.102 M=1.165  -> charles boot {'charles': 161, 'taylor': 33, 'gauden': 5, 'milton': 1}
+  23. Vpon the Scots delivering the KING to th  1059w  C=0.919 G=1.028 T=1.057 M=1.025  -> charles boot {'charles': 194, 'gauden': 2, 'milton': 4}
+  24. Vpon their denying His Ma jesty the Atte  2817w  C=0.739 G=0.601 T=0.740 M=0.721  -> gauden  boot {'gauden': 200}
+  25. Penitentiall Meditations and Vowes in th  1073w  C=0.947 G=0.979 T=0.856 M=1.050  -> taylor  boot {'taylor': 198, 'charles': 2}
+  26. Vpon the Armies Surprisall of the KING a  1743w  C=0.803 G=0.811 T=0.901 M=0.803  -> charles boot {'charles': 73, 'milton': 76, 'gauden': 51}
+  27. To the Prince of VVales.                  4449w  C=0.758 G=0.493 T=0.736 M=0.715  -> gauden  boot {'gauden': 200}
+  Meditations upon Death, after the Votes of N  3898w  C=0.717 G=0.582 T=0.702 M=0.740  -> gauden  boot {'gauden': 200}
+
+WHOLE BOOK: {'charles': 0.6, 'gauden': 0.437, 'taylor': 0.659, 'milton': 0.528}
+chapters by nearest author: {'milton': 4, 'gauden': 19, 'charles': 4, 'taylor': 1}

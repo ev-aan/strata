@@ -1,0 +1,11 @@
+Distance to GAUDEN profile (lower = closer), 2,000-word samples:
+  Gauden own works (held out)    n= 25  median 0.524   middle half 0.487-0.576
+  Other divines                  n= 31  median 0.632   middle half 0.590-0.708
+  Eikon Basilike                 n= 29  median 0.591   middle half 0.561-0.653
+  Charles own (held out)         n= 12  median 0.744   middle half 0.714-0.762
+
+Distance to CHARLES profile (letters + formal papers):
+  Gauden own works (held out)    n= 25  median 0.805   middle half 0.726-0.847
+  Other divines                  n= 31  median 0.724   middle half 0.691-0.759
+  Eikon Basilike                 n= 29  median 0.702   middle half 0.669-0.716
+  Charles own (held out)         n= 12  median 0.465   middle half 0.448-0.506
