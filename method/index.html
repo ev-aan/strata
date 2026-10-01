@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strata Method</title>
+<meta name="description" content="The rules every Strata dig, test and bounty follows: separate evidence from adoption, append never erase, calibrate before you conclude.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#F5F2EC;--sand-dark:#EAE5DC;--ink:#1A1814;--ink-mid:#4A4640;--ink-muted:#7A746C;--amber:#8B6914;--teal:#0F6E56;--teal-light:#E1F5EE;--coral:#993C1D;--coral-light:#FAECE7;--border:rgba(26,24,20,.12);--border-mid:rgba(26,24,20,.2)}
+@media (prefers-color-scheme:dark){:root{--sand:#1A1814;--sand-dark:#24211C;--ink:#ECE7DE;--ink-mid:#C9C2B6;--ink-muted:#9A9387;--amber:#D5A94A;--teal:#6CC3A8;--teal-light:#173129;--coral:#E0866A;--coral-light:#3A231B;--border:rgba(236,231,222,.14);--border-mid:rgba(236,231,222,.24);color-scheme:dark}}
+*{box-sizing:border-box}
+html{background:var(--sand);color:var(--ink);font-family:'Fraunces',Georgia,serif;font-size:17px;-webkit-font-smoothing:antialiased}
+body{margin:0}
+.container{max-width:760px;margin:0 auto;padding:2rem 20px 4rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding-bottom:1.2rem;border-bottom:1px solid var(--border);margin-bottom:2.5rem;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+nav a{color:var(--ink-mid);text-decoration:none}
+nav .logo{font-family:'Fraunces',serif;font-weight:500;font-size:18px;letter-spacing:.12em;color:var(--ink)}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-muted);margin:0 0 .5rem}
+h1{font-weight:300;font-size:clamp(2rem,5vw,2.8rem);line-height:1.1;margin:0 0 1.2rem;text-wrap:balance}
+h2{font-weight:400;font-size:1.45rem;margin:2.6rem 0 .8rem;padding-top:1.2rem;border-top:1px solid var(--border)}
+h3{font-weight:500;font-size:1.08rem;margin:1.8rem 0 .5rem}
+p,li{line-height:1.65;color:var(--ink-mid);max-width:66ch}
+strong{color:var(--ink);font-weight:500}
+a{color:var(--teal)}
+code{font-family:'IBM Plex Mono',monospace;font-size:.82em;background:var(--sand-dark);padding:1px 5px;border-radius:3px;color:var(--ink)}
+ol li,ul li{margin:.35rem 0}
+hr{display:none}
+table{border-collapse:collapse;width:100%;font-size:.92rem;margin:.8rem 0}
+.tw{overflow-x:auto}
+th,td{text-align:left;padding:.55rem .6rem;border-top:1px solid var(--border);vertical-align:top}
+th{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-muted);font-weight:500;border-top:none}
+footer{margin-top:3rem;padding-top:1rem;border-top:1px solid var(--border);font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--ink-muted)}
+</style>
+</head>
+<body>
+<div class="container">
+<nav><a class="logo" href="../">STRATA</a><span><a href="../#bounties">Bounties</a> &nbsp;·&nbsp; <a href="https://github.com/ev-aan/strata">GitHub ↗</a></span></nav>
+<p class="eyebrow">Method</p><h1>How Strata digs</h1>
+<p>Strata shows the honestly weighted shape of what is known. It keeps the evidence for a belief separate from the number of people who hold it, and it stays honest about what is not yet known. Anyone can propose a dig, a test or a challenge. Every contribution has to follow the rules below. A change that breaks them is not merged, however good its conclusion looks.</p>
+<p>The same rules are in the repository as <a href="https://github.com/ev-aan/strata/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>.</p>
+<hr />
+<h2>1. The core rules</h2>
+<ol>
+<li><strong>Show evidential weight and adoption weight separately. Never combine them.</strong></li>
+<li><strong>Adoption is not evidence.</strong> Counting believers never raises evidential weight.</li>
+<li><strong>Every claim states what would change its weight.</strong></li>
+<li><strong>Verify against the world, not the store.</strong> A claim that can only be checked against other claims is unverified.</li>
+<li><strong>Scrutiny scales with load.</strong> The more depends on a claim, the harder it is checked.</li>
+<li><strong>Append, never erase.</strong> Revisions add; earlier reasoning stays visible.</li>
+<li><strong>State the weight at all times.</strong> "To the best of our knowledge" is required, not a hedge.</li>
+<li><strong>Score contributors against resolved outcomes, never against agreement.</strong></li>
+</ol>
+<h3>Refutation rules</h3>
+<ul>
+<li><strong>Rule 9.</strong> A refutation must name its target and rest on material or primary-text evidence. This applies in both directions. Popular belief cannot pose as evidence, and scholarly consensus cannot pose as a refutation.</li>
+<li><strong>Rule 12.</strong> <code>refutation_class</code> may only be set on a claim whose state is <code>refuted</code>. Each class (<code>narrative_drift</code>, <code>misattribution</code>, <code>motivated_error</code>, <code>institutional_propaganda</code>, <code>fabrication</code>) has its own evidential bar.</li>
+</ul>
+<hr />
+<h2>2. Claim states and evidence classes</h2>
+<p><strong>States</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>State</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>established</code></td>
+<td>Anchored to the world and checked.</td>
+</tr>
+<tr>
+<td><code>proposed</code></td>
+<td>One author's reading or a new result. Capped at provisional confidence until independently reviewed.</td>
+</tr>
+<tr>
+<td><code>contested</code></td>
+<td>Live positions with real evidence on more than one side.</td>
+</tr>
+<tr>
+<td><code>refuted</code></td>
+<td>Fails against material or primary-text evidence (Rule 9).</td>
+</tr>
+<tr>
+<td><code>searched_gap</code></td>
+<td>We looked and do not know yet. Must name the exact next step. This is not a failure.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Evidence classes</strong>, each with its own decay half-life:</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Example</th>
+<th>Half-life</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>material</code></td>
+<td>An object, a measurement, a dated manuscript</td>
+<td>50 years</td>
+</tr>
+<tr>
+<td><code>primary_text</code></td>
+<td>The document itself, read directly</td>
+<td>40 years</td>
+</tr>
+<tr>
+<td><code>interpretive</code></td>
+<td>A scholar's reading of the evidence</td>
+<td>10 years</td>
+</tr>
+<tr>
+<td><code>synthetic</code></td>
+<td>Reconstructions, statistics, computed results (including ours)</td>
+<td>5 years</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Our own computed results are <code>synthetic</code>.</strong> A model's or a script's output is never an anchor by itself. Only a match to something independent counts.</li>
+<li><strong>Fix a lazy citation by re-anchoring it to the primary source</strong>, not by downgrading a claim that is well supported.</li>
+<li><strong>An absence anchor is capped at provisional.</strong> "We found no record of X" is weaker than a positive observation.</li>
+</ul>
+<hr />
+<h2>3. Firewalls</h2>
+<ul>
+<li><strong>A true story lends no weight to a neighbouring claim.</strong> A documented forgery in 1586 is not evidence of a forgery in 1567. Mark these links <code>confers_weight: false</code>.</li>
+<li><strong>Reception and transmission go in their own records.</strong> How a claim spread is recorded as transmission, not as support for the claim.</li>
+<li><strong>Lineages and threads confer no evidential weight</strong> on the claims they connect.</li>
+</ul>
+<hr />
+<h2>4. Running a test or a bounty</h2>
+<p>Learned the hard way on bounties B-001 and B-002. Every step is required.</p>
+<p><strong>Before any data is collected</strong></p>
+<ol>
+<li><strong>Check feasibility first.</strong> Is there an oracle, something independent that could confirm an answer? Are the sources open? Is there enough text or data for the method? Log what you find, including dead ends.</li>
+<li><strong>Write the test down first.</strong> Record the question, the method, the corpora, the controls and what each possible result would and would not show. Do this in the log, before you run anything.</li>
+<li><strong>Set decision thresholds from calibration, not by guessing.</strong> In B-001 a guessed bar of 3× could never be met even by Mary's own letters. Run the method on texts of known authorship first, then set the bar from that.</li>
+</ol>
+<p><strong>Controls (no result counts without them)</strong></p>
+<ol>
+<li><strong>Positive control.</strong> The method must find a known answer it was not pointed at, for example the Pamela prayer in Sidney's <em>Arcadia</em> (B-002).</li>
+<li><strong>Held-out calibration.</strong> Test the method on known material it was not built from. Leave out the whole source work, not just the passage.</li>
+<li><strong>Genre control.</strong> Check whether the method is detecting the author or just the type of writing. In B-002, the Queen's letters scored as "Charles" until this was fixed.</li>
+<li><strong>Attractor control.</strong> Check whether a large or varied comparison corpus pulls in everything. In B-002, 17 of 31 passages by unrelated clergy came out nearest Gauden.</li>
+<li><strong>Report distances and ranges, not "nearest wins".</strong> Ask whether the questioned text sits inside the candidate's own range, compared with other writers' ranges.</li>
+</ol>
+<p><strong>Sources</strong></p>
+<ol>
+<li><strong>Prefer clean transcriptions to scanned OCR.</strong> If you must mix the two, say so, and normalise spelling the same way for every corpus.</li>
+<li><strong>Use only text the candidate really wrote.</strong> Drop ministerial drafts, editors' notes, translations and disputed attributions. List what was dropped and why.</li>
+</ol>
+<p><strong>After the run</strong></p>
+<ol>
+<li><strong>Publish everything:</strong> code, corpus lists with source identifiers, fixed random seeds, raw outputs. Another person must be able to rerun it and get the same numbers.</li>
+<li><strong>Keep failed and superseded runs on the page.</strong> A first result that did not survive the controls stays in the log, marked as such. This is what makes the surviving result believable.</li>
+<li><strong>Say what the result does not show,</strong> in plain words, next to what it does.</li>
+<li><strong>Get outside review before a claim leaves <code>proposed</code>.</strong> A named specialist outside Strata reviews it. Agreement with a famous scholar is not confirmation.</li>
+<li><strong>Write plain-and-true surface lines.</strong> No hype. "Compelling" is one bad word from clickbait.</li>
+</ol>
+<hr />
+<h2>5. Page and record conventions</h2>
+<p>Every dig or bounty page carries:</p>
+<ul>
+<li><strong>IDs that are never reused or renumbered:</strong></li>
+<li>claims (C-01…)</li>
+<li>findings (F1…)</li>
+<li>gaps (G-01…)</li>
+<li>tests (DT-…)</li>
+<li><strong>Claims with:</strong></li>
+<li>their state</li>
+<li>evidential weight and adoption weight, shown separately</li>
+<li>their evidence class</li>
+<li>whether the anchor was checked</li>
+<li>what would change their weight</li>
+<li><strong>A divergence note:</strong> the gap between evidence and adoption. That gap is the product.</li>
+<li><strong>An append-only excavation log</strong> with dates. Corrections are new entries.</li>
+<li><strong>A sources list</strong> that labels each source's evidence class.</li>
+<li><strong>Run files</strong> next to the page, with a README giving the run order.</li>
+</ul>
+<hr />
+<h2>6. How to contribute</h2>
+<ol>
+<li><strong>Fork the repository</strong> and make your changes on a branch.</li>
+<li><strong>Open a pull request</strong> and fill in the checklist. A maintainer reviews and merges it.</li>
+<li><strong>To challenge a finding,</strong> open an issue with the <a href="https://github.com/ev-aan/strata/issues/new/choose">"Challenge a finding" form</a>. Name the ID (for example <code>C-03</code> or <code>F7</code>) and the source that anchors your challenge. Challenges without an anchor are not logged. With one, they are logged whether accepted or not.</li>
+<li><strong>To propose a new bounty,</strong> open an issue. Name:</li>
+<li>the question</li>
+<li>the oracle</li>
+<li>whether the sources are open</li>
+<li>the conspiracy or popular claim it touches, if any.</li>
+</ol>
+<p>The public marks dig sites; contributors do the excavation.</p>
+<h2>Licences</h2>
+<ul>
+<li>Code: MIT (<a href="https://github.com/ev-aan/strata/blob/main/LICENSE">LICENSE</a>).</li>
+<li>Written content: CC BY 4.0 (<a href="https://github.com/ev-aan/strata/blob/main/LICENSE-CONTENT.md">LICENSE-CONTENT.md</a>).</li>
+<li>Historical sources: public domain.</li>
+</ul>
+<footer>Strata — method. Mirrors CONTRIBUTING.md in the repository; if they differ, the repository file is authoritative. CC BY 4.0.</footer>
+</div>
+</body>
+</html>
