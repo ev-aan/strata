@@ -13,6 +13,13 @@
 headline: "No, the Apollo Moon landings were not faked"
 headline_claim: apollo-staged-hoax
 headline_status: draft          # draft until V2, then published
+dig_status: parked              # parked 2026-10-01 by owner; do not publish or extend
+park_reason: >
+  Primary sources (NASA, NTRS, arXiv, IOP, NAS) are blocked in the working environment,
+  so no anchor can be checked. Nothing here is verified against a primary document.
+resume_when: >
+  Primary hosts are reachable. Then run the V2 targets in docs/verification/2026-10-01-apollo-tonkin.md
+  (NASA TN D-7080 dose table; ranging papers; Luna 16/20/24 masses; LROC and JAXA captions).
 search_summary: >
   Four outside stations in three countries still bounce lasers off Apollo's reflectors, and about 150 labs studied 381.7 kg of lunar rock. See the evidence.
 

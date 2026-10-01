@@ -48,3 +48,9 @@ log:
     entry: >
       OPEN: refutation_class was not set on the two refuted claims because the class
       definitions are not in CONTRIBUTING.md or the Method page. Awaiting definitions.
+  - id: L-08
+    date: 2026-10-01
+    entry: >
+      PARKED by the owner until primary sources are reachable. No content changed.
+      Claims, weights and headline stay as filed (all anchors unchecked, headline draft).
+      See dig_status, park_reason and resume_when in claims.yaml.
