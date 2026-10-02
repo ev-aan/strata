@@ -35,3 +35,16 @@ log:
       Owner agreed the authenticity-of-motive idea fits politics, not every kind of dig. Added P9 (inducement
       claims, tiers decisive/supporting/context, default searched_gap), P10 (consistency over time, synthetic,
       cap 3) and P11 (motive and sincerity not assessed) to SCHEMA.md as politics-only rules.
+  - id: L-06
+    date: "2026-10-02"
+    entry: >
+      PILOT STARTED. Clarifications to the selection rule, written BEFORE any roll call was fetched, because the
+      rule as drafted was ambiguous: (a) 'most recently completed Congress' = the 118th (3 Jan 2023 to 3 Jan 2025);
+      the 119th is still sitting. (b) Chamber: the House only, because its official Clerk XML gives member, party
+      and vote in one file. (c) 'Final-passage vote' = a recorded House vote whose question is passage of a bill or
+      joint resolution (H.R., S., H.J.Res., S.J.Res.), including suspension-and-pass; simple and concurrent resolutions,
+      amendments, motions and conference reports are excluded. (d) 'At least 10 members of each party on each side':
+      at least 10 Democrats and 10 Republicans voting Yea, and at least 10 of each voting Nay. (e) 'First by roll-call
+      number': ascending roll number, 2023 before 2024. (f) Member rule unchanged: first by last name from each party
+      whose vote differed from that party's majority on that roll call. Not-voting and Present do not count as
+      differing. If a clarification turns out to be wrong it will be logged, not edited.
