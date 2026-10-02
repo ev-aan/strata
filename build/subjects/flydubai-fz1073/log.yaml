@@ -225,3 +225,24 @@ log:
       need an implausibly abrupt change; CNN's 17,400 ft in just under two minutes averages 8,700 ft/min. The 29 s figure is probably a sampling artefact
       or measures a different slice; treat as UNRESOLVED until the raw ADS-B CSV is read. WHAT WOULD SETTLE IT: the flight data recorder's vertical
       acceleration trace (held by investigators), the raw tracker data, seat-belt sign status, and the medical records of the injured passengers.
+  - id: L-15
+    date: 2026-10-02
+    entry: >
+      OWNER CLAIMS TESTED: (1) 'the cabin is very clean'; (2) 'the air masks have not dropped'; (3) 'two other pilots on board'; (4) 'a surgeon and a number of
+      other folks'; (5) 'statistically difficult to put together'. READ (page text): CNN (30 Sep, 1 Oct), Gulf News, Migflug, The Conversation. FINDINGS.
+      (2) MASKS: The Conversation reports that early passenger accounts say the masks did not deploy. Oxygen masks drop when cabin pressure altitude rises
+      (about 14,000 ft), not when the aircraft descends; a sealed, pressurised cabin in a steep descent need not drop them. An explainer written by a
+      search tool claimed a Sky News video showed deployed masks; that summary was internally contradictory and is NOT used. Whether the cabin stayed
+      pressurised is not shown in anything read (needs the flight data and cabin altitude trace). (3) PILOTS: Gulf News and Migflug say two OFF-DUTY FLYDUBAI
+      pilots were travelling as passengers (staff travel on the operator's own flight). A search summary said they were a South African and a New Zealander;
+      that was NOT confirmed in a page read. (4) 'SURGEON': CNN quotes Shota Musaev, 'a dentist on board', who said he tied the attacker with headphone cords
+      and zip ties; Migflug says passengers described 'an Israeli doctor' treating the captain. No report read says 'surgeon'. A cabin-crew member is seen in
+      video calling for a doctor (CNN). (1) CLEAN CABIN: not assessable from text; a smooth push-over and pull-out (L-14 arithmetic) would leave loose items
+      in place. Videos not independently verified or authenticated (no authenticity block yet; see docs/AUTHENTICITY.md). (5) STATISTICS: illustrative Poisson
+      arithmetic on an aeroplane of 180 passengers. P(at least 2 off-duty pilots of the operating airline) is about 0.1% if 0.5% of passengers are staff and 5% of
+      staff are pilots, about 3% at 1%/15%, about 19% at 3%/15%, about 48% at 3%/30%. The inputs (share of staff travellers, share who are pilots) are unknown, so
+      'statistically difficult' cannot be asserted or rejected yet. P(at least one dentist) about 11% to 31% depending on the assumed rate (0.9 to 3 per 1,000, 70%
+      Israeli share, all ASSUMED, not sourced). Two cautions: (a) many flights fly every day, so some flight somewhere will show any given combination; (b) reports
+      of helpers exist because helpers helped (survivorship). WHAT WOULD ACTUALLY TEST IT: the airline's staff-travel booking records for the flight (obtainable
+      only by investigators), passenger manifest roles, and the pilots' names confirmed by the airline. GENUINE OPEN QUESTIONS in the record (CNN quoting an Israeli
+      official): how the cockpit door was opened, and how a weapon came on board. None of this tests whether the event was staged; no evidence either way found.
