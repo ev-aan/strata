@@ -447,9 +447,15 @@ def check_publish_gate(r):
         if not os.path.exists(rp):
             r.err(f"publish-gate:{s}", "published subject has no review.yaml (docs/PUBLISH_GATE.md)")
             continue
-        st = (load(rp) or {}).get("status")
+        rv = load(rp) or {}
+        st = rv.get("status")
         if st not in ("passed", "passed_with_open_items", "grandfathered"):
             r.err(f"publish-gate:{s}", f"review status `{st}` does not allow publishing")
+        # Revision rounds (docs/PUBLISH_GATE.md): a blocking request must have an author response and a reviewer resolution before a pass.
+        for rd in rv.get("rounds") or []:
+            for q in rd.get("requests") or []:
+                if q.get("severity") == "blocking" and st in ("passed", "passed_with_open_items") and (not q.get("author_response") or q.get("resolved") is not True):
+                    r.err(f"publish-gate:{s}", f"round {rd.get('round')} request `{q.get('id')}` is blocking but has no author response or reviewer resolution")
 
 
 def check_taxonomy(r, subjects):

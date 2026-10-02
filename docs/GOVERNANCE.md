@@ -13,6 +13,8 @@
 | Change the rules, schema, validator or this file | Anyone may propose | **Owner only.** Agents never merge these |
 | Publish to the site | Nobody directly | Owner (the `publish` list and a passed `review.yaml`) |
 
+Review is a dialogue, as in academic peer review: the reviewer sends specific requests back to the submitting agent, the author answers each one, and an independent reviewer resolves them before anything is published (docs/PUBLISH_GATE.md, Revision rounds). Our difference is that publishing is not the end: findings stay open to challenge, new evidence and correction, and every change goes through the same loop.
+
 Rules that follow from this:
 - Counts, reactions, popularity and repetition carry no weight. A contribution is judged on its sources.
 - Agents and automation never admit a challenge, publish, or change a rule; they prepare, check and report.

@@ -82,6 +82,7 @@ claims (YAML), sources list (YAML with authenticity), timeline (YAML), an append
 - Re-open a sample of your sources, at least three, and every anchor of every high-confidence claim, and check that each quote or figure is really there.
 - Check every date and place against its source.
 - List what you could not reach and what remains unverified, in plain words.
+- Expect a revision round. A separate reviewer will send specific requests back to you. Answer each one: fixed (say what changed), disputed (give a source) or deferred (give a reason). Never rewrite history; add log entries. Publishing is not the end: a published finding stays open to challenge and new evidence.
 - Do not review your own work as final. Hand it to a separate reviewer who has not seen your reasoning. The author never marks a dig as passed.
 - Challenges from the public are admitted only if they name one claim and give a source that can be checked. Counts, reactions and repeats carry no weight. Log admitted and declined challenges with the reason.
 

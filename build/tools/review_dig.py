@@ -131,7 +131,7 @@ def out(res, sub):
         if os.path.exists(p): print("review.yaml exists; not overwritten"); return
         res["reviewed_by"] = ""; res["reviewed_on"] = ""; res["notes"] = ""
         with open(p, "w", encoding="utf-8") as f:
-            f.write("# Publish-gate review record (docs/PUBLISH_GATE.md). status: pending | passed | passed_with_open_items | grandfathered | failed\n")
+            f.write("# Publish-gate review record (docs/PUBLISH_GATE.md). status: pending | revisions_requested | passed | passed_with_open_items | grandfathered | failed (rounds: see docs/PUBLISH_GATE.md)\n")
             yaml.safe_dump(res, f, sort_keys=False, allow_unicode=True, width=120)
         print("wrote", p)
 
