@@ -254,3 +254,19 @@ Thread rules now enforced in the validator:
 - **T4** reception-overlay members are only `contested` or `interpretive` claims. Settled myths go in
   `transmission.yaml`, pointed to with `see_transmission`.
 - Claims marked `absence_anchor: true` are capped at provisional confidence.
+
+## N25. Anchor format (one format for every excavation, enforced by conformance)
+
+Every claim has exactly one `anchor` mapping:
+
+```yaml
+anchor:
+  type: primary_text            # what kind of thing anchors it (primary_text, material, dataset, search-record, ...)
+  description: "What was read, where (page, table, section) and how it was read."
+  sources: [src-id-1, src-id-2] # optional: ids from this subject's sources/MANIFEST.yaml; every id must exist there
+  nodes: [{node: some-node-id, verb: supports}]   # optional: shared nodes the claim rests on, with a verb
+  accessible: true              # optional
+```
+
+Not allowed: an `anchors:` list, `ref:` inside the anchor, an anchor that is a bare string, a missing `type` or `description`.
+A searched gap uses `type: search-record` and says in `description` what was searched and where. Conformance reports each breach as an error.

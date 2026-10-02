@@ -66,6 +66,32 @@ def norm_checked(v):
     return str(v)
 
 
+def check_anchor_format(r, subject, c, sdir):
+    """N25: every claim has ONE `anchor` mapping {type, description, [sources], [nodes], [accessible]}. No `anchors:` list, no `ref:`."""
+    where = f"{subject}:{c.get('id')}"
+    if "anchors" in c:
+        r.err(where, "uses `anchors:`; the format is one `anchor:` mapping (SCHEMA N25)")
+    a = c.get("anchor")
+    if not isinstance(a, dict):
+        r.err(where, "`anchor` must be a mapping with `type` and `description` (SCHEMA N25)")
+        return
+    for k in ("type", "description"):
+        if not str(a.get(k) or "").strip():
+            r.err(where, f"anchor is missing `{k}` (SCHEMA N25)")
+    if "ref" in a:
+        r.err(where, "anchor uses `ref:`; use `sources: [manifest ids]` (SCHEMA N25)")
+    srcs = a.get("sources")
+    if srcs is not None:
+        if not isinstance(srcs, list):
+            r.err(where, "anchor `sources` must be a list of manifest ids")
+        else:
+            mpath = os.path.join(sdir, "sources", "MANIFEST.yaml")
+            ids = {s.get("id") for s in ((load(mpath) or {}).get("sources") or [])} if os.path.exists(mpath) else set()
+            for s in srcs:
+                if s not in ids:
+                    r.err(where, f"anchor source `{s}` is not in sources/MANIFEST.yaml (SCHEMA N25)")
+
+
 def check_claim(r, subject, c, legacy):
     cid = c.get("id", "<no id>")
     where = f"{subject}:{cid}"
@@ -202,6 +228,7 @@ def check_subject(r, sdir):
                 r.err(subject, f"duplicate claim id `{cid}`")
             ids[cid] = c
             check_claim(r, subject, c, legacy)
+            check_anchor_format(r, subject, c, sdir)
 
         vd = d.get("assessment")
         if vd:

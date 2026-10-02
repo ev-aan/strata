@@ -78,7 +78,7 @@ claims:
         Prayer with the first Prayer of his Majestie, deliverd to Dr. Juxion immediatly before his death, and Entitl'd, A prayer in time of Captivity". The TCP
         catalogue records this as the edition 'Publish'd now the second time and much enlarg'd', London 1650.
       accessible: true
-      ref: [src-tcp-a50898]
+      sources: [src-tcp-a50898]
   - id: eikon-text-tested-is-second-issue
     bounty_id: "F1/F2 (correction)"
     state: established
@@ -95,7 +95,7 @@ claims:
     anchor:
       type: catalogue-record
       description: "TCP A38258 header [read]: 'First edition, second issue. Printed by John Grismond for Richard Royston. \"This issue appeared within a few days of the death the King, probably about 4 February.\" Cf. Madan, F.F. New bibl. of the Eikon basilike.'"
-      ref: [src-tcp-a38258]
+      sources: [src-tcp-a38258]
   - id: eikon-tested-text-has-no-pamela-prayer
     bounty_id: F2
     state: established
@@ -112,7 +112,7 @@ claims:
     anchor:
       type: absence-in-searched-record
       description: "Search by this session of TCP A38258 (about 60,300 words by a rough count; the open question gives 60,359): 0 hits for 'Pamela', 'Pammela', 'Prayer in time of Captivity'. The word 'prayer' occurs 50 times in ordinary use."
-      ref: [src-tcp-a38258]
+      sources: [src-tcp-a38258]
   - id: eikon-pamela-prayer-is-sidneys
     bounty_id: C-02
     state: proposed
@@ -129,7 +129,7 @@ claims:
     anchor:
       type: computed-result
       description: "Positive control of the phrase matcher (finding F11): the 1687 'Prayer in time of Captivity' (TCP A31771) against Arcadia (A12229). The 1687 text changed Pamela's opening, 'O all-seeing Light, and eternal Life of all things', to 'O Powerful and eternal God', but kept the rest."
-      ref: [src-tcp-a12229, src-tcp-a31771]
+      sources: [src-tcp-a12229, src-tcp-a31771]
     basis: "Our own computed result."
   - id: eikon-gauden-claimed-authorship
     bounty_id: C-03
@@ -198,6 +198,7 @@ claims:
     would_change_if: "a published computed study being found"
     next_step: "Google Scholar, Digital Scholarship in the Humanities, and the 1950s-2000s literature in The Library ('John Gauden and the Authorship of the Eikon Basilike', not yet read)."
     searched: "Three web searches by the open question author."
+    anchor: {type: search-record, description: Three web searches by the open question author found no such study.}
   - id: eikon-text-lacks-charles-habits
     bounty_id: C-07
     state: proposed
@@ -218,7 +219,7 @@ claims:
         Median distance to Charles / to Gauden: Charles's own writing (held out, n=12) 0.465 / 0.744; Gauden's own works (n=25) 0.805 / 0.524; eight other 1640s-50s clergy
         (n=31) 0.724 / 0.632; the Eikon (n=29) 0.702 / 0.591. The Eikon's range does not overlap Charles's own. It does not show Gauden wrote it, and cannot separate
         'someone else wrote it' from 'Charles drafted it and someone else rewrote it'.
-      ref: [src-tcp-a38258, src-tcp-a31932, src-tcp-a78958]
+      sources: [src-tcp-a38258, src-tcp-a31932, src-tcp-a78958]
     basis: "Our own computed result, not reviewed by anyone outside the project."
   - id: eikon-style-singles-out-gauden
     bounty_id: C-08
@@ -233,6 +234,7 @@ claims:
     adoption_note: "Our first run (F6) suggested it and did not survive controls: it is recorded so that a headline built on it is not made."
     would_change_if: "a method that separates Gauden from other learned clergy before it is applied to the book"
     next_step: "Build such a method; Gauden's profile attracts most learned 1640s prose (F9: 17 of 31 passages from eight other clergy were 'nearest Gauden')."
+    anchor: {type: search-record, description: 'Not shown: no measurement singles out Gauden. The only comparison run (claim eikon-text-lacks-charles-habits) does not test Gauden.'}
   - id: eikon-no-long-chapter-in-charles-range
     bounty_id: F12
     state: proposed
@@ -249,4 +251,4 @@ claims:
     anchor:
       type: computed-result
       description: "Chapter-level check (finding F12; chapters.py and chapters_fair.py). Bears on the composite theory only for chapters of 1,500 words or more."
-      ref: [src-tcp-a38258]
+      sources: [src-tcp-a38258]

@@ -20,6 +20,7 @@ All changes go through `docs/REVIEW.md`:
 
 - Wikipedia is never an anchor. Summaries and search snippets are not primary reads.
 - `anchor_checked: primary` means the document itself was opened and read. Say what was blocked.
+- Anchor format (SCHEMA N25): every claim has ONE `anchor:` mapping with `type` and `description`, optional `sources: [manifest ids]` and `nodes`. Never `anchors:` or `ref:`. Searched gaps use `type: search-record`. Conformance fails otherwise.
 - Absence of a record is capped at provisional (`absence_anchor: true`).
 - How a myth spread goes in `transmission.yaml`; it never supports a claim.
 - Logs are append-only. Corrections are new entries.

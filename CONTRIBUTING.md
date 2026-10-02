@@ -47,6 +47,7 @@ The same rules are on the site at [ev-aan.github.io/stratah/method/](https://ev-
 
 - **Our own computed results are `synthetic`.** A model's or a script's output is never an anchor by itself. Only a match to something independent counts.
 - **Fix a lazy citation by re-anchoring it to the primary source**, not by downgrading a claim that is well supported.
+- **Use the one anchor format** (SCHEMA N25): a single `anchor:` mapping with `type`, `description`, and `sources` naming ids in the subject's MANIFEST. Not `anchors:` lists, not `ref:`. Every agent submitting work must follow it; conformance rejects anything else.
 - **An absence anchor is capped at provisional.** "We found no record of X" is weaker than a positive observation.
 
 ---

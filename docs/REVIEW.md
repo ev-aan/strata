@@ -35,6 +35,7 @@ logs, threads (T1, T2, T4) and transmission chains (X1 to X4). The reviewer cove
 
 **B. Weights and states are honest.**
 - `anchor_checked: primary` only where the primary document was actually read (look for the `# V:` line).
+- Anchor format (SCHEMA N25): one `anchor` mapping per claim with `type`, `description` and manifest-resolvable `sources`; no `anchors:` or `ref:`. Conformance enforces it; check the description says what was actually read.
 - Claims resting on absence are marked `absence_anchor: true` and held at provisional.
 - Each `refutation_class` meets its bar: `fabrication` needs evidence of deliberate invention;
   `institutional_propaganda` needs an anchored institutional campaign; otherwise use a weaker class.

@@ -552,7 +552,7 @@ claims:
         his belief then and now. 3 August call [Prados transcription]: "...explain this Op Plan 34-A, these covert operations. There's no
         question but what that had bearing on."
       accessible: true
-      ref: [src-sfrc-1968-hearing, src-lbj-tapes-transcripts]
+      sources: [src-sfrc-1968-hearing, src-lbj-tapes-transcripts]
     basis: >
       # V: the 1964 wording is read in the 1968 hearing record, where both Fulbright and McNamara treat it as accurate.
       The two statements are about different things as McNamara later explained (see tonkin-mcnamara-1968-account); whether the
@@ -584,7 +584,7 @@ claims:
       type: congressional-hearing-testimony
       description: "Hearing before the Senate Committee on Foreign Relations, 20 Feb 1968 (S. Hrg. 90-187), prepared statement pp. 14-16 and the questioning pp. 30-31 [read, OCR text]."
       accessible: true
-      ref: [src-sfrc-1968-hearing]
+      sources: [src-sfrc-1968-hearing]
     basis: >
       An account given four years after the events, by the person whose conduct is at issue. It is evidence of what he said in 1968,
       and of what he claims he said in 1964; it is not independent confirmation of the 1964 events.
@@ -611,7 +611,7 @@ claims:
       type: congressional-hearing-statement
       description: "S. Hrg. 90-187, 20 Feb 1968, p. 80 [read, OCR text; the page number is from the text layer]. Fulbright qualified the point with 'I don't believe'."
       accessible: true
-      ref: [src-sfrc-1968-hearing]
+      sources: [src-sfrc-1968-hearing]
     basis: >
       This is Fulbright's 1968 view and recollection about what the committees were told in 1964. It bears on what senators knew when they voted
       (P8) but does not itself show what they were told.
@@ -701,7 +701,7 @@ claims:
         today by a number of hostile vessels attacking two U.S. destroyers with torpedoes." The enacted preamble says Communist
         naval units "have deliberately and repeatedly attacked United States naval vessels". House: the Record prints 416-0 (Roll No. 210, p. 18555; see tonkin-house-debate-aug7). Signed 10 August per Senate.gov (secondary).
       accessible: true
-      ref: [src-congressional-record-1964]
+      sources: [src-congressional-record-1964]
     basis: >
       # V: the Senate vote and dissenters read in the Record (primary). The presence of the 4 August address in the debate
       #    and the preamble's "repeatedly" read in the Record. "Central to the case" is still an interpretation: the whole debate
@@ -730,7 +730,7 @@ claims:
       type: floor-statement
       description: "Congressional Record, Senate, 6 Aug 1964, pp. 18399-18400 [read on the page image, p. 18399]."
       accessible: true
-      ref: [src-congressional-record-1964-aug6]
+      sources: [src-congressional-record-1964-aug6]
 
   - id: tonkin-aug1964-debate-no-doubt-voiced
     state: searched_gap
@@ -757,7 +757,7 @@ claims:
         aggressive action directed against the shores of North Vietnam" [OCR wording, not verified on the image]: senators were acting on what
         they were told, which is the P8 question the dig has not yet answered.
       accessible: true
-      ref: [src-congressional-record-1964-aug6, src-congressional-record-1964]
+      sources: [src-congressional-record-1964-aug6, src-congressional-record-1964]
 
   - id: tonkin-house-debate-aug7
     state: established
@@ -784,7 +784,7 @@ claims:
       type: legislative-record
       description: "Congressional Record, House, 7 Aug 1964, pp. 18538-18555 (roll call p. 18555), with a Senate message at p. 18612. Delegated reading; quoted passages image-checked by that reader."
       accessible: true
-      ref: [src-congressional-record-1964-house]
+      sources: [src-congressional-record-1964-house]
 
   - id: tonkin-resolution-repealed-1970
     state: established
@@ -810,7 +810,7 @@ claims:
         Congressional Record, Senate, 24 June 1970, p. 21132 [read]: "The result was announced-yeas 81, nays 10" [No. 167 Leg.],
         "So Mr. DOLE's amendment (No. 715) was agreed to." Voteview numbers the same roll call 398 in its index.
       accessible: true
-      ref: [src-congressional-record-1970]
+      sources: [src-congressional-record-1970]
 
   - id: tonkin-1970-vote-not-clean-measure
     state: established
@@ -846,7 +846,7 @@ claims:
         to it, of course." Nay list p. 21132. Reasons of Allen (p. 21123), Hollings (p. 21122), Stennis (p. 21121), McGee (pp. 21130-31) per the
         delegated reading.
       accessible: true
-      ref: [src-congressional-record-1970]
+      sources: [src-congressional-record-1970]
 
   - id: tonkin-bait-order
     state: searched_gap
