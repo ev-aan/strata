@@ -116,9 +116,12 @@ Every excavation or open question page carries:
 
 ## 6. How to contribute
 
-1. **Fork the repository** and make your changes on a branch.
-2. **Open a pull request** and fill in the checklist. A maintainer reviews and merges it.
-3. **To challenge a finding,** open an issue with the "Challenge a finding" form. Name the ID (for example `C-03` or `F7`) and the source that anchors your challenge. Challenges without an anchor are not logged. With one, they are logged whether accepted or not.
+1. **Fork the repository** and make your changes on a branch. Nothing is pushed to `main` directly.
+2. **Open a pull request** and fill in the checklist. CI runs the validator, then an independent review
+   agent checks the judgment rules (anchors actually say what claims say, honest weights, no borrowed
+   weight, plain surface lines) and merges only if it approves. Changes to the rules themselves are
+   escalated to the owner. The full process is in [`docs/REVIEW.md`](docs/REVIEW.md).
+3. **To challenge a finding or add evidence,** press "Challenge or add evidence" on the claim, or open an issue with the "Challenge a finding or submit evidence" form. A challenge must name one claim and give a source we can check; counts, reactions and repeats carry no weight. Admitted challenges are logged in the excavation's challenges ledger whichever way they come out, and declined ones are listed with the reason. The rules are in [`docs/CHALLENGES.md`](docs/CHALLENGES.md).
 4. **To propose a new open question,** open an issue. Name:
    - the question
    - the oracle

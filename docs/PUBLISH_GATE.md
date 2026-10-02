@@ -22,7 +22,7 @@ A subject listed under `publish` in `build/site.yaml` must have `build/subjects/
    - confirm every nonprimary anchor behind an established or refuted claim is stated as a limit;
    - read the assessment against the claims it cites: the answer, the lean, and the three key points must not say more than the claims do;
    - check images and quotations for rights (short quotations only; thumbnails and links for copyrighted images).
-3. Set `status`, `reviewed_by`, `reviewed_on`, and list any `open_items`. Agent output is not authority: the reviewer verifies the key quotes personally.
+3. Set `status`, `reviewed_by`, `reviewed_on`, and list any `open_items`. The reviewer is the independent review agent of [`REVIEW.md`](REVIEW.md), never the author. Agent output is not authority: the reviewer verifies the key quotes personally.
 4. Add the subject to `publish` in `build/site.yaml`. Merging to main deploys it.
 
 ## Limits
