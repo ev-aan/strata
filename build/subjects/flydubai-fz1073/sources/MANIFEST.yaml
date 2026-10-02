@@ -336,7 +336,7 @@ sources:
       was not seen [read]'
     tested_by: Stratah session, 2026-10-02 (not an independent review; the statement is a party's own)
     gaps:
-    - The Arabic original and the release hour were not seen; the item body ends with the stamp '21:31 Local Time 18:31 GMT', probably the agency's dispatch stamp (an inference; it was identical in fetches about 30 minutes apart; not confirmed).
+    - The Arabic original and the release hour were not seen; the item body ends with the stamp '21:31 Local Time 18:31 GMT', probably the agency's dispatch stamp (an inference; it was identical in fetches about 30 minutes apart; not confirmed). The page's own embedded field published_at 1790879513 (1 Oct 2026 18:31:53 UTC) matches it; that is the page's publication field, not the agency's release record.
     - No time zone is given for the times in the text; Saudi time (UTC+3) is assumed.
     - Not archived by an independent capture.
     next_step: Read the Arabic SPA item and note its release time; obtain an independent web-archive capture.
