@@ -1,0 +1,127 @@
+subject:
+  id: enuma-elish
+  title: "Enūma Eliš (Babylonian Epic of Creation)"
+  incipit: "enūma eliš lā nabû šamāmū — \"When on high the heavens had not been named\""
+  provenance_note: >
+    Recovered in fragmentary form by A. H. Layard, 1849, from the Library of
+    Ashurbanipal at Nineveh (Kuyunjik collection). First published by George Smith,
+    1876. Same find-context and same discoverer-circle as the Gilgamesh flood tablet —
+    i.e. the literal origin point of the biblical-comparison frame this corpus reads against.
+  primary_edition: "Lambert, W. G. (2013). Babylonian Creation Myths. Eisenbrauns."
+
+claims:
+
+  - id: ee-structure
+    statement: >
+      The standard text is recorded in Akkadian (Standard Babylonian) on seven clay
+      tablets, ~1000 lines total, roughly 115–170 lines per tablet.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "Lambert 2013, composite edition of the seven tablets"
+      - class: synthetic
+        ref: "Convergent across Lambert 2013; standard reference summaries"
+    notes: "Material + primary-text + synthetic converge; no live dissent located."
+
+  - id: ee-provenance
+    statement: >
+      No surviving exemplar predates the Neo-Assyrian period; the earliest physical
+      witnesses come from Ashurbanipal's library and contemporaneous sites (Ashur,
+      Kish, Sultantepe). Manuscripts continue into the Seleucid period.
+    state: established
+    anchors:
+      - class: material
+        ref: "Find-distribution across Nineveh, Ashur, Kish, Sultantepe; Lambert 2013 plate apparatus"
+      - class: synthetic
+        ref: "Multiple reference syntheses agree no exemplar is older than Neo-Assyrian"
+    notes: >
+      Decay class: material (50y half-life). The gap between physical witness date
+      (1st millennium) and presumed composition date (2nd millennium) is the engine of
+      the dating dispute below — flagged, not smoothed over.
+
+  - id: ee-tablet-v-lacuna
+    statement: >
+      Most of Tablet V has never been recovered; aside from this lacuna the text is
+      nearly complete.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "Lambert 2013, apparatus to Tablet V"
+
+  - id: ee-narrative
+    statement: >
+      Narrative arc: theogony of paired primordial gods; Ea kills Apsû; Marduk is born,
+      defeats Tiamat in single combat, splits her body to form heaven and earth, and
+      fashions humanity from the blood of the slain Kingu; the poem closes with the gods
+      building Marduk's temple and reciting his fifty names.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "Lambert 2013, Tablets I–VII"
+
+  - id: ee-date
+    statement: >
+      Date of composition is unresolved. No single position commands consensus.
+    state: contested
+    positions:
+      - label: "Second Dynasty of Isin / Nebuchadnezzar I"
+        holder: "Lambert and many others"
+        ground: >
+          Marduk's elevation to head of the pantheon is tied to the return of his statue
+          from Elam under Nebuchadnezzar I; the poem omits Nabû, whose cult rose in the
+          1st millennium — bounding composition no older than ~12th c. and no newer than ~1060 BCE.
+      - label: "Kassite period"
+        holder: "Sommerfeld"
+        ground: "Countered by Lambert; rests on the An = Anum god-list assigning Enlil's number 50 to Marduk."
+      - label: "Old Babylonian period"
+        holder: "Dalley"
+        ground: "Maintained by Dalley; characterized by other scholars as unlikely."
+    anchors:
+      - class: synthetic
+        ref: "Lambert 2013; survey of the dating debate in secondary literature (incl. BYU Studia Antiqua review)"
+    notes: >
+      Exercises the contested-state rule: positions are held open with named holders and
+      grounds rather than collapsed to a single 'consensus' value. The Nabû-omission
+      argument is the strongest internal (primary-text) constraint and is recorded as a
+      ground, not as a settling of the claim.
+
+  - id: ee-marduk-legitimation
+    statement: >
+      The poem functions as theological-political legitimation of Marduk's (and Babylon's)
+      supremacy — its purpose, per its own epilogue, being to teach Marduk's greatness.
+    state: proposed
+    anchors:
+      - class: interpretive
+        ref: "Widely held reading; Lambert and others on the Marduk-exaltation function"
+      - class: primary-text
+        ref: "Epilogue's stated didactic purpose (Tablet VI–VII)"
+    notes: >
+      Decay class: interpretive (10y half-life). Strongly supported but a reading of
+      function, not a brute fact — held at 'proposed'. On-mission: this is the corpus
+      naming adoption-weight machinery (a text built to make one god's standing feel
+      like cosmic order) without itself adopting the frame.
+
+  - id: ee-title-misnomer
+    statement: >
+      "Epic of Creation" is arguably a misnomer; the bulk of the text concerns Marduk's
+      rise to kingship rather than cosmogony, better captured as an "Exaltation of Marduk."
+    state: proposed
+    anchors:
+      - class: interpretive
+        ref: "Foster's framing, as cited in the dating-debate literature"
+    notes: >
+      Single-author interpretive reading → held at 'proposed' under the proposed-cap rule.
+      Not promotable on weight of citation alone.
+
+  - id: ee-genesis-parallel
+    statement: >
+      The poem has been read as a parallel/antecedent to Genesis 1 (shared 'when' opening;
+      sea-as-chaos motif).
+    state: contested
+    anchors:
+      - class: interpretive
+        ref: "Long-running comparison literature; 'Chaldean Genesis' framing originating with George Smith"
+    notes: >
+      Adoption-weight flag. This frame is popular and old but is an interpretive overlay,
+      not a property of the text. Recorded as contested/interpretive precisely so its
+      popularity cannot masquerade as evidential weight. Cross-links to atra-hasis:ah-genesis-frame.

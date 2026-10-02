@@ -1,0 +1,124 @@
+subject:
+  id: sumerian-flood-story
+  title: "Sumerian Flood Story (the 'Eridu Genesis')"
+  incipit: "(ancient title unknown — opening 36 lines lost)"
+  provenance_note: >
+    The modern label "Eridu Genesis" was coined by Thorkild Jacobsen in 1981. The
+    ancient title is unknown (the tablet's opening is lost). ETCSL and CDLI catalogue it
+    neutrally as "The Flood Story." The "Genesis" in the common name is a 20th-century
+    interpretive frame, not a property of the text — recorded as such below.
+  primary_witness: "CBS 10673 (+ CBS 10867 join), Nippur, Old Babylonian, c. 1600 BCE; Penn Museum."
+  primary_edition: "Jacobsen, T. (1981). 'The Eridu Genesis', JBL 100. Earlier: Poebel, PBS V/1 (1914)."
+
+claims:
+
+  - id: sfs-witness
+    statement: >
+      The principal witness is CBS 10673 (joined with CBS 10867), a Sumerian tablet from
+      Nippur dated by script to c. 1600 BCE, of which only about one third survives (the
+      lower portion, six columns); the complete tablet is estimated at ~260 lines.
+    state: established
+    anchors:
+      - class: material
+        ref: "Penn Museum object record CBS 10673; ETCSL 1.07.04 / CDLI Q000357"
+    notes: >
+      Sources vary on exactly how much is recovered (Penn: ~one third; some summaries
+      claim more). Held to the holding institution's figure; the discrepancy is noted,
+      not averaged away.
+
+  - id: sfs-witnesses-three
+    statement: >
+      The composition is known from three principal witnesses of different date and place:
+      the Nippur tablet (Sumerian, c. 1600 BCE), an Ur fragment (UET VI/3 61, Sumerian,
+      c. 1600 BCE), and a bilingual Sumerian-Akkadian fragment from the Library of
+      Ashurbanipal at Nineveh (CT 46.5, c. 600 BCE). A further fragment was published in 2018.
+    state: established
+    anchors:
+      - class: material
+        ref: "Penn/ETCSL catalogue; CT 46 (Lambert & Millard 1965); 2018 fragment publication"
+
+  - id: sfs-recognition
+    statement: >
+      The Nippur tablet was excavated in the 1893 Penn expedition and recognized as a
+      flood account by Arno Poebel, published 1914 (PBS V/1).
+    state: established
+    anchors:
+      - class: synthetic
+        ref: "Poebel PBS V/1; standard history-of-scholarship accounts"
+
+  - id: sfs-name-coinage
+    statement: >
+      The title "Eridu Genesis" is a modern coinage of Thorkild Jacobsen (1981); the
+      ancient title is unrecoverable from the surviving text.
+    state: established
+    anchors:
+      - class: synthetic
+        ref: "Jacobsen 1981, JBL 100"
+    notes: >
+      On-mission: the NAME embeds the biblical comparison. Recording the coinage as a
+      datable scholarly act (rather than treating 'Eridu Genesis' as the text's identity)
+      is the corpus refusing to let a reception-frame pass as the thing itself.
+
+  - id: sfs-narrative
+    statement: >
+      Surviving narrative: An, Enlil, Enki, and Ninhursag fashion humanity (the
+      "black-headed people") and animals; kingship descends from heaven; five cities are
+      founded and allotted to deities (Eridu, Bad-Tibira, Larak, Sippar, Shuruppak); the
+      gods resolve to destroy humanity by flood; Enki warns Ziusudra at a wall; a storm
+      rages seven days and nights; Utu (the sun) reappears; Ziusudra sacrifices an ox and
+      sheep; An and Enlil grant him eternal life, settling him in Dilmun.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "CBS 10673, preserved columns; Jacobsen 1981 translation"
+    notes: "Each narrative beat above is among the preserved passages; the lacunae are isolated in the next claims."
+
+  - id: sfs-flood-cause
+    statement: >
+      The reason the gods resolve on the flood (commonly reconstructed as human 'noise'
+      disturbing Enlil, on the model of Atra-ḫasīs) falls within a lacuna in the Nippur
+      tablet and is not directly preserved.
+    state: contested
+    anchors:
+      - class: primary-text
+        ref: "Lacuna at top of CBS 10673 col. iii; ETCSL apparatus"
+      - class: interpretive
+        ref: "Reconstruction by analogy to Atra-ḫasīs; King List parallels"
+    notes: >
+      Critical honesty node. The shared 'noise' motif is ATTESTED in Atra-ḫasīs but
+      INFERRED here. This is exactly the per-node attestation distinction the thread
+      object below is built to preserve.
+
+  - id: sfs-n3514-join
+    statement: >
+      Whether fragment N 3514 belongs to this composition (potentially filling the
+      flood-decision lacuna) is unresolved: it does not physically join CBS 10673, and
+      comparison of hand and ductus is not decisive.
+    state: contested
+    anchors:
+      - class: material
+        ref: "Peterson, 'A New Sumerian Fragment...' (AuOr); non-join noted explicitly"
+    notes: "A clean 'we looked and could not confirm' — held open rather than asserted as a join."
+
+  - id: sfs-ziusudra
+    statement: >
+      The flood hero is Ziusudra, named as king (and likely priest) of Shuruppak;
+      he is the Sumerian counterpart of Akkadian Atra-ḫasīs and of Utnapishtim in
+      Gilgamesh XI.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "CBS 10673 (Ziusudra as king); cross-tradition identification standard in the literature"
+    notes: "'Priest' is partly restored ('priest of...'); the royal title is preserved."
+
+  - id: sfs-genesis-frame
+    statement: >
+      The text has been read as the Sumerian antecedent of the biblical flood, and is
+      the only Sumerian-language flood account.
+    state: contested
+    anchors:
+      - class: interpretive
+        ref: "Long reception tradition; the Jacobsen title; museum-reception literature"
+    notes: >
+      Adoption-weight flag — the third member of the reception-overlay thread. Twin to
+      enuma-elish:ee-genesis-parallel and atra-hasis:ah-genesis-frame.

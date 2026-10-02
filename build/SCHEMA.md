@@ -41,3 +41,22 @@ Conditional: `refutes_target` (when refuted); `next_step` (when searched_gap); `
 - ID scheme: `C-01` numbering (CONTRIBUTING) or slugs (PIE, Apollo, Tonkin). Suggested: numeric `id` plus a human `slug`.
 - `refutation_class` definitions and their evidential bars.
 - A validator. README-deploy.md refers to `build/conformance.py` and a 21-test suite; neither is in this repository.
+
+---
+## Reconciliation, 2026-10-02 (added after seeing the live corpus)
+
+v0.1 above was drafted from CONTRIBUTING.md and the HTML bounty pages **before** the owner's Mesopotamian corpus was available. That corpus is the established YAML standard, so v0.1 should yield to it where they differ. Differences found (see `build/imports/mesopotamia-corpus/`):
+
+| Topic | Live corpus | My Apollo/Tonkin files (v0.1) |
+|---|---|---|
+| Subject header | `subject:{id,title,incipit,provenance_note,primary_edition}` | flat `subject:`, plus headline block |
+| Claim IDs | slugs with a subject prefix (`ah-structure`); cross-references written `subject:claim` | slugs (`apollo-staged-hoax`); bounty HTML pages use `C-01` |
+| Evidence class | per anchor: `anchors:[{class, ref}]`, one claim can carry several classes | one `evidence_class` per claim plus one `anchor{}` |
+| Class spelling | `primary-text` | `primary_text` (changed to follow CONTRIBUTING.md) |
+| Contested claims | `positions:[{label, holder, ground}]` with named holders | one `anchor` of type `live-dispute` |
+| Weights | none in the claim files | `confidence`, `evidential_weight`, `adoption_weight`, `anchor_checked` |
+| Threads | `type: morphology` or `reception-overlay`; `members:[{claim, attestation}]`; rules T1-T4 | `type: reception-overlay` with `overlay_notes` and `firewall`; no `members` |
+| Attestation | per member: preserved, reconstructed, inferred, interpretive | none |
+
+**Consequence:** the ID question is largely answered by the live corpus: slugs with `subject:claim` references. Only the bounty pages use `C-01`.
+**Recommended v0.2 (needs the owner's main eight-rule validator and live schema to finish):** adopt the live corpus structure as the base; carry my extra fields (`confidence`, weights, `anchor_checked`, `would_change_if`, `next_step`, `divergence_note`, headline block) as additions only if the main validator accepts them; convert my threads to `members` with `attestation`; fold `positions` into my contested claims.

@@ -166,3 +166,17 @@ log:
       signal and is where independent origins are expected too. Variation in order or chapter
       is coded, not dismissed, and the dig states what level of variation each possible result
       would and would not exclude, before running anything.
+  - id: L-15
+    date: 2026-10-02
+    entry: >
+      OWNER SUPPLIED the earlier Mesopotamian corpus (Sumerian Flood Story, Atra-hasis,
+      Enuma Elish, threads, thread validator), imported unedited at
+      build/imports/mesopotamia-corpus/. These give dated, claim-by-claim anchors for the
+      NEAR EASTERN CLUSTER of this dig's corpus: for example the Nippur tablet CBS 10673
+      (about 1600 BCE), a bilingual Nineveh fragment (about 600 BCE), and the Atra-hasis
+      colophon dated to the reign of Ammi-saduqa (1646-1626 BCE). Under L-12 rule (4) these
+      three still count as ONE region cluster for counting. Their corpus already files the
+      biblical link as a reception overlay with no evidential weight, which fits L-12. The
+      Genesis flood text will be entered in this dig as its own entry with its own claims, and
+      any dependence on Mesopotamian texts will be tested as a claim, not assumed as an overlay.
+      The Gilgamesh subject file and the retranslation have not yet been received.
