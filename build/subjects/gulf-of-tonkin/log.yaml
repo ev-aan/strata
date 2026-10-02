@@ -41,3 +41,74 @@ log:
     entry: >
       OPEN: refutation_class not set on tonkin-aug4-attack-occurred; class definitions
       are not in the framework documents.
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      VERIFICATION PASS 2. The owner opened network access. NSA's own servers (nsa.gov,
+      media.defense.gov) returned HTTP 403, but the National Security Archive (George Washington
+      University) hosts the same material. READ DIRECTLY: the full Hanyok study (56 pages, OCR); the
+      White House staff meeting memorandum of 5 August 1964; nine pages of NSA intercept reports; the
+      LBJ-McNamara call transcriptions; Prados's footnoted essay (secondary). Checksums and
+      provenance: sources/MANIFEST.yaml. OCR is noisy and is flagged as such; wording that matters
+      was checked against the page text.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      CORRECTION to L-03 and to the earlier text of tonkin-midlevel-deliberate-skew. Earlier text said
+      the study found the skewing was deliberate "to cover up earlier errors". That motive came
+      from a press summary and is not in the study. The study says the objective was to support the
+      Navy's claim of a deliberate attack, that NSA personnel believed an attack had occurred and
+      rationalized the contradictory evidence away, that the exact how and why "remain unknown", that
+      the reason "will probably never be answered", and that the notion of administration pressure
+      "simply cannot be supported". It explicitly says the mishandling was "not done in a manner that
+      can be construed as conspiratorial, that is, with manufactured evidence and collusion at all
+      levels." The earlier statement that top officials "neither knew nor condoned" the skewing was
+      also a press paraphrase and is not stated in the passages read; the 2005 National Security
+      Archive posting says senior officials were "none the wiser about the gaps in the intelligence".
+      Both secondary.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      CORRECTION to the "90 percent" figure. Earlier text said "almost 90 percent of the intercepts
+      that would have contradicted the attack story". The study says the withheld information
+      "constituted nearly 90 percent of all available SIGINT" on 4 August, that 122 relevant products
+      were reviewed, that NSA's official version used 15 published reports, and that the six products
+      used in the chronology are "a bit more than 10 percent of the total available". The figure is
+      one analyst's count and has not been independently audited.
+  - id: L-10
+    date: 2026-10-02
+    entry: >
+      CORRECTION to the Herrick cable. Earlier text said it was "received in Washington at 13:27 on
+      4 August". The 28 August 1964 chronology, as quoted by Prados, says the report was SENT at
+      1:27 p.m. Washington time on 4 August. The Tonkin Gulf is 12 hours ahead of Washington. The
+      message itself has not been read. Also corrected: 34-A is described by the National Security
+      Archive as directed and controlled by the United States and executed by South Vietnamese
+      commandos; the earlier text said only "carried out by South Vietnamese forces".
+  - id: L-11
+    date: 2026-10-02
+    entry: >
+      NEW CLAIMS from primary reading: tonkin-senior-doubts-documented and
+      tonkin-bundy-welcomed-resolution (the 5 August memo); tonkin-mcnamara-aug4-call and
+      tonkin-mcnamara-34a-testimony (tape transcriptions); tonkin-maddox-warning-shots and
+      tonkin-original-text-missing (the study). The earlier single contested claim
+      tonkin-senior-knowledge is kept under its id, narrowed to "knew no attack occurred", with
+      positions for and against. Net effect on the conspiracy-adjacent gap: the documents read show
+      doubt and opportunism and do not show knowledge that nothing happened; the memo records the
+      speaker saying "There was an attack."
+  - id: L-12
+    date: 2026-10-02
+    entry: >
+      HEADLINE: headline_status moved from draft to review. Rule 5 is met for
+      tonkin-aug4-attack-occurred (refuted, high confidence, evidential weight 4, intercept reports
+      and study read directly). Publication awaits owner approval. Limits stated on the claim: the
+      refutation rests largely on Hanyok's re-analysis, the key original text is missing, and the
+      Herrick message was read only as quoted.
+  - id: L-13
+    date: 2026-10-02
+    entry: >
+      STILL TO DO: read the Herrick message and the 28 August 1964 chronology; FRUS 1964-68 vol. I
+      documents dated 4-7 August; the 6 August Senate executive session; the Congressional Record for
+      7 August; SNIE 50-2-64; the NSA's other declassified Tonkin documents (about 140); the LBJ
+      Library audio for the 3 and 4 August calls; the NSA's own copy of the Hanyok study to confirm
+      identity with the mirror used here. Also correct, in a new entry, the weak anchors in the
+      National Security Archive essay if any claim leans on it alone.

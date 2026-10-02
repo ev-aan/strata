@@ -5,16 +5,17 @@
 #   2. It may only state a claim that is established or refuted at HIGH confidence.
 #   3. `headline_claim` names that claim, so the link can be checked mechanically.
 #   4. If that claim's confidence or state changes, the headline must change.
-#   5. Publish only after the claim's evidence is at V2 (primary documents read).
-#      Current level is V1, so this headline is DRAFT until then.
+#   5. Publish only after the claim's anchors have been read directly (anchor_checked: primary).
 #   6. Plain words only. Name the belief being refuted AND what replaces it, and
 #      explain any term a general reader would not know (in the summary if not the title).
+# headline_status values: draft | review | published | parked
+#   review = meets rules 2, 3 and 5; waiting for the owner to approve.
 # ---------------------------------------------------------------------------
 headline: "No second Gulf of Tonkin attack happened on 4 August 1964"
 headline_claim: tonkin-aug4-attack-occurred
-headline_status: draft          # draft until V2, then published
+headline_status: review          # meets the rules as of 2026-10-02; owner approval pending
 search_summary: >
-  The 2 August clash was real; the 4 August attack was not. NSA's own historian found no North Vietnamese vessels present. Who knew, and when, is still open.
+  The 2 August clash was real; the 4 August attack was not. NSA's own historian found nothing happened that night. How much officials knew is still debated.
 
 subject: gulf-of-tonkin
 title: "Gulf of Tonkin Incidents (August 1964)"
@@ -22,58 +23,57 @@ description: >
   Two separate events are routinely fused: the 2 August 1964 clash between USS
   Maddox and North Vietnamese torpedo boats, and the reported 4 August attack that
   led to the Tonkin Gulf Resolution. Strata keeps them apart. The first happened.
-  The second, on the declassified record, did not. Two further questions are kept
-  separate again: who inside the intelligence chain skewed the record, and whether
-  senior officials KNEW. The first has a documented answer; the second is a genuine
-  gap, and it is where conspiracy claims and the evidence part ways. This dig is
-  also a calibration case: a real, documented failure of government reporting,
-  filed strictly on its own evidence so that it neither inflates nor excuses
-  claims in other digs.
+  The second, on the declassified record, did not. Three further questions are kept
+  separate again: how the false 4 August picture was assembled inside NSA, what senior
+  officials were told and when, and what they knew. The first two have documented
+  answers. The third is a genuine gap, and it is where conspiracy claims and the evidence
+  part ways. This dig is also a calibration case: a real, documented failure of
+  government reporting, filed strictly on its own evidence so that it neither inflates
+  nor excuses claims in other digs.
 
 # ---------------------------------------------------------------------------
-# VERIFICATION LEVELS (governance, not a claim). Used in every `# V:` line below.
-#   V0  recalled or single-source, not confirmed
-#   V1  facts agree across 2+ independent search results
-#       (secondary reporting; primary document NOT opened)
-#   V2  primary document opened and read directly
-# STATUS OF THIS DRAFT: the drafting environment blocks every primary host
-# (nsa.gov, media.defense.gov, history.state.gov, usni.org, ...), so NOTHING here
-# is V2. Best reached is V1. The Hanyok study is therefore known only through
-# press and history-site reports of it, which matters for the intent claims below.
+# VERIFICATION LEVELS (governance, not a claim).
+#   anchor_checked (per claim):  no | secondary | primary
+#     no         not checked, or recalled
+#     secondary  agreed across secondary sources; the primary document was not opened,
+#                or was opened only in part
+#     primary    the primary document was opened and the cited wording read directly
+#   `# V:` lines name what was read. Quotations marked [read] were checked against the
+#   page text; the pages are scans, so OCR noise is possible (see sources/MANIFEST.yaml).
 #
-# QUANTITIES USED (V1 unless noted):
-#   Tonkin Gulf Resolution ......... passed 7 Aug 1964; House 416-0 (about 40 min debate),
-#                                    Senate 88-2 (about 8 h 40 min debate; Morse, Gruening
-#                                    against); signed 10 Aug 1964
-#   Contrary SIGINT withheld ....... "almost 90 percent" of intercepts that would have
-#                                    conflicted with the attack story did not reach the
-#                                    Pentagon/White House (press report of Hanyok; V0 on the
-#                                    exact figure until the study is read)
-#   Hanyok study ................... written 2001 in the classified Cryptologic Quarterly;
-#                                    released 2005
-#   Herrick cable .................. flash precedence; received in Washington 13:27 on
-#                                    4 August (Washington time); says "No actual visual
-#                                    sightings by MADDOX"
-#   Giap / McNamara ................ Hanoi, November 1995
+# STATUS as of 2026-10-02 (second verification pass). Sources READ DIRECTLY this pass:
+#   [read] Hanyok study, 56 pages (hosted by the National Security Archive; NSA's own servers
+#          returned HTTP 403): src-hanyok-2001
+#   [read] White House staff meeting memorandum, 5 Aug 1964: src-bundy-memo-1964
+#   [read] NSA SIGINT intercept reports, 9 pages: src-intercepts-1964
+#   [read] LBJ-McNamara call transcriptions (transcribed by Prados): src-lbj-tapes-transcripts
+#   [secondary] Prados essay quoting footnoted primary documents: src-nsarchive-essay-2004
+#   NOT yet read: the Herrick message itself; the 28 Aug 1964 chronology; FRUS 1964-68 vol. I
+#   (only one document read); the Congressional floor debate; SNIE 50-2-64; the audio of the tapes.
 #
-# SOURCES (search-level):
-#   Hanyok study (NSA, and defense.gov mirror):
-#     https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/gulf-of-tonkin/articles/release-1/rel1_skunks_bogies.pdf
-#     https://media.defense.gov/2021/Jun/29/2002751691/-1/-1/0/SKUNKS.PDF
-#   Press and history reports of Hanyok:
-#     https://www.sfgate.com/news/article/Tonkin-Gulf-reports-cooked-Historian-s-2598276.php
-#     https://www.historynewsnetwork.org/article/17620
-#   US Naval Institute, "The Truth About Tonkin":
-#     https://www.usni.org/magazines/naval-history-magazine/2008/february/truth-about-tonkin
-#   Resolution vote (CFR, Britannica, Senate.gov):
-#     https://www.cfr.org/articles/twe-remembers-congress-passes-gulf-tonkin-resolution
-#     https://www.senate.gov/artandhistory/senate-stories/chairman-fulbright-and-the-tonkin-gulf-resolution.htm
-#   McNamara / Giap, Hanoi 1995:
-#     https://archive.seattletimes.com/archive/19951109/2151509/mcnamara-asks-for-truth-about-gulf-of-tonkin----giap-there-was-no-attack
+# QUANTITIES USED:
+#   Tonkin Gulf Resolution ......... passed 7 Aug 1964; House 416-0, Senate 88-2 (Morse and Gruening
+#                                    against); signed 10 Aug 1964 (secondary, several sources agree)
+#   SIGINT withheld ................ "nearly 90 percent of all available SIGINT" on 4 August was kept
+#                                    out of the post-attack summary reports and the October 1964 final
+#                                    report [read, Hanyok]. Study reviewed 122 relevant SIGINT
+#                                    products; NSA's official version used 15 published reports;
+#                                    the six products used in the chronology are "a bit more than
+#                                    10 percent of the total available" [read, Hanyok].
+#   Herrick message ................ report SENT at 1:27 p.m. Washington time on 4 August
+#                                    (Washington is 12 hours behind the Tonkin Gulf), per a 28 Aug 1964
+#                                    chronology quoted by Prados [secondary]. CORRECTION: the first
+#                                    draft said "received" at that time.
+#   McNamara-LBJ call .............. 9:43 a.m. Washington time, 4 August [read, transcription]
+#   Bundy staff meeting ............ 8 a.m., 5 August 1964 [read]
+#   Giap ........................... confirmed 2 Aug to McNamara in Hanoi, Nov 1995 (press); at a June
+#                                    1997 Hanoi conference said the 2 Aug response was ordered by a
+#                                    local naval command and that nothing happened on 4 Aug
+#                                    (Prados, an attendee) [secondary]
 # ---------------------------------------------------------------------------
 
 divergence_note: >
-  Evidence and adoption diverge on two points. On 4 August, historians agree no attack occurred, while the public memory of 1964 is of an attack. On intent, the popular framing ('false flag') is stronger than the record, which shows selective presentation by mid-level NSA officers and leaves senior knowledge contested. That gap is the product.
+  Evidence and adoption diverge on three points. On 4 August, historians agree no attack occurred, while the public memory of 1964 is of an attack. On method, the popular framing ('false flag', 'manufactured evidence') is stronger than the record: NSA's own historian found that only the SIGINT supporting the attack claim was passed up, calls the actions deliberate, but writes that this was not conspiratorial and involved no manufactured evidence or collusion at all levels. On knowledge, the documents show doubts reaching the White House within hours and a senior adviser welcoming the events as a justification, while the same documents show that adviser still believed an attack had happened. That gap is the product.
 
 claims:
 
@@ -84,52 +84,98 @@ claims:
       Gulf of Tonkin; the Maddox and supporting aircraft returned fire.
     evidence_class: primary_text
     confidence: high
-    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 5   # of 5; 5 allowed because anchor_checked is primary
+    anchor_checked: primary   # Hanyok study and intercept reports read directly
     adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
-      Not polled. Universal among historians; Hanoi's own account agrees (Giap, 1995).
+      Not polled. Universal among historians; Hanoi's own account agrees (Giap).
     would_change_if: >
       records from either side showing the 2 August clash did not occur as described
     anchor:
       type: contemporaneous-records-plus-adversary-account
       description: >
-        US Navy records and the NSA signals intelligence agree, and North Vietnamese
-        General Vo Nguyen Giap confirmed the 2 August attack to McNamara in 1995.
+        Hanyok writes that on 2 August "the SIGINT system performed admirably when it
+        provided sufficient warning to the Maddox to allow it to defend itself against the
+        attack by the three DRV torpedo boats" [read]. Prados reports photographs of the
+        boats and a dud shell kept by Admiral Moorer (secondary). Giap confirmed the
+        2 August action; at a 1997 conference he said it was ordered by a local naval
+        command and not by Hanoi (secondary).
       accessible: true
     basis: >
-      # V: V1 (Navy history summaries, USNI, Seattle Times and UPI reports agree).
-      # TO REACH V2: Naval History and Heritage Command Tonkin Gulf crisis account.
+      # V: Hanyok study read; intercept reports read; Giap via Prados and press.
+      # TO REACH A FULLER CHECK: the Navy's own action reports (Naval History and Heritage Command).
       Established on records from both sides. Giap's statement is testimony and is
-      used only as corroboration of the records, never as the anchor.
+      corroboration only, never the anchor. See tonkin-maddox-warning-shots for a documented
+      omission about the start of the engagement.
+
+  - id: tonkin-maddox-warning-shots
+    state: established
+    statement: >
+      On 2 August the Maddox fired three warning rounds at the approaching North
+      Vietnamese boats before they attacked. The Johnson administration did not report
+      this and said the Vietnamese boats fired first.
+    evidence_class: interpretive
+    confidence: moderate
+    evidential_weight: 3   # of 5
+    anchor_checked: primary   # Hanyok's account read; the Navy records he draws on were not
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Little known to the public.
+    would_change_if: >
+      Navy action reports or the Maddox log showing the warning rounds were not fired, or were reported at the time
+    next_step: >
+      Read the Maddox action report and the Navy's official history of the engagement; log whether the warning rounds appear.
+    anchor:
+      type: historian-account-of-records
+      description: >
+        Hanyok: "At about 1505G, the Maddox fired three rounds to warn off the communist
+        boats. This initial action was never reported by the Johnson administration, which
+        insisted that the Vietnamese boats fired first." [read]
+      accessible: true
+    basis: >
+      # V: one author's account, read directly; the underlying Navy records not read.
+      Filed as interpretive because it is a scholar's narration of records we have not seen.
+      It shows the 2 August engagement began less one-sidedly than the administration said,
+      and it does NOT undo tonkin-aug2-maddox-engaged: the boats did attack.
 
   - id: tonkin-34a-raids-preceded
     state: established
     statement: >
-      South Vietnamese commando raids on North Vietnamese islands under the US-backed
-      OPLAN 34A (night of 30-31 July 1964) preceded the Maddox incident, and Hanoi
-      associated the American destroyer with those raids.
+      Covert OPLAN 34-A raids on North Vietnamese coastal targets, including the islands
+      Hon Me and Hon Ngu, preceded the Maddox engagement (about half past midnight on
+      31 July) and were followed by another raid on the night of 3/4 August. The Maddox's
+      mission was to collect North Vietnamese radio and radar emissions, expected to rise
+      after a raid. Hanoi associated the destroyer with the raids.
     evidence_class: primary_text
     confidence: moderate
-    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 3   # of 5; capped at 4 until the primary documents are read
+    anchor_checked: secondary   # McNamara's own recorded words read; operational records not
     adoption_weight: 4   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
       Not polled. Accepted by historians; less widely known to the public.
     would_change_if: >
-      records showing the 30-31 July raids were not 34A, or were not linked in Hanoi's view to the Maddox
+      records showing the raids were not 34-A, or that Hanoi did not connect the destroyer to them
+    next_step: >
+      Read SNIE 50-2-64 (May 1964) and the declassified OPLAN 34-A documents; confirm the raid dates and who controlled the boats.
     anchor:
       type: declassified-operational-record
       description: >
-        Declassified accounts describe 34A as conceived and overseen by the Defense
-        Department with CIA support and carried out by South Vietnamese forces; the
-        Maddox was on an intelligence patrol near the raided islands.
+        On 3 August McNamara told LBJ the link to OPLAN 34-A should be explained to Congress:
+        "There's no question but what that had bearing on. And on Friday night, as you
+        probably know, we had four [PT] boats from Vietnam manned by Vietnamese or other
+        nationals, attack two islands." [read, transcription]. Prados reports that 34-A was
+        directed and paid for by the United States, that the targets were chosen by the CIA,
+        and that SNIE 50-2-64 shows the US directed 34-A to pressure Hanoi (secondary); the
+        raids are described elsewhere as carried out by South Vietnamese forces.
       accessible: true
     basis: >
-      # V: V1 (USNI and the OPLAN 34A summaries agree on dates and attribution).
-      # TO REACH V2: USNI article; NSA release documents.
-      Established as context. It says Hanoi had a reason to attack the Maddox on
-      2 August; it does NOT say the US arranged the 2 August clash. See tonkin-bait-order.
+      # V: McNamara's words read in a transcription of the tape; the operational detail and the
+      #    SNIE are from Prados (secondary). CORRECTION: the first draft said 34-A was
+      #    "carried out by South Vietnamese forces"; sources agree South Vietnamese commandos
+      #    executed it, but the National Security Archive's reading is that the United States
+      #    directed and controlled it. Both are kept in the description.
+      Established as context. It says Hanoi had a reason to attack the Maddox on 2 August; it does
+      NOT say the US arranged the 2 August clash. See tonkin-bait-order.
 
   - id: tonkin-aug4-attack-occurred
     state: refuted
@@ -138,140 +184,358 @@ claims:
       Turner Joy a second time.
     evidence_class: primary_text
     confidence: high
-    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 4   # of 5; not 5: the key originals are missing and the re-analysis is Hanyok's
+    anchor_checked: primary   # intercept reports and the study read; Herrick message read only as quoted
     adoption_weight: 2   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
-      Historians: a consensus that no second attack occurred (a Naval Historical Center historian, Edward Marolda, reversed the Navy's earlier account). The public: not measured; in 1964 the attack was widely believed.
+      Historians: a consensus that no second attack occurred (Hanyok's NSA study; Prados; Moise; and
+      a Naval Historical Center historian reversed the Navy's earlier account). The public: not
+      measured; in 1964 the attack was widely believed.
     would_change_if: >
-      new intercepts, ship logs or North Vietnamese records showing boats present and firing on 4 August
+      new intercepts, ship logs or North Vietnamese records showing boats present and firing on 4 August, or recovery of the missing original Vietnamese text showing it concerned 4 August
     refutes_target: "A second North Vietnamese attack took place on 4 August 1964"
     anchor:
       type: signals-intelligence-reexamination
       description: >
-        NSA historian Robert Hanyok re-examined the full set of intercepts and
-        concluded no second attack occurred and no North Vietnamese vessels were
-        present; the intercepts presented as 4 August reporting concerned the
-        2 August action. Captain John Herrick, the on-scene commander, cabled
-        (flash precedence, received in Washington 13:27 on 4 August Washington time):
-        "Review of action makes many reported contacts and torpedoes fired appear
-        doubtful. Freak weather effects on radar and overeager sonarmen may have
-        accounted for many reports ... No actual visual sightings by MADDOX ...
-        Suggest complete evaluation before any further action taken."
+        The intercept reports cited as evidence of 4 August read as follows [read]: Report 7
+        (instructions to ready two Swatow boats for "military operations" that night; boat
+        T-333 to join if oil can be found); Report 12 (04/1630Z, a Swatow boat reports an
+        enemy aircraft "falling into the sea; enemy vessel perhaps wounded"); Report 13
+        (04/1644Z, "we shot at two enemy airplanes and at least one was damaged. We sacrificed
+        two comrades"). Report 13 mentions aircraft and not ships. Hanyok, who had access to
+        122 relevant SIGINT products, concludes: "no attack happened that night", and that
+        "Hanoi's navy was engaged in nothing that night but the salvage of two of the boats
+        damaged on 2 August" [read]. He also reports: no intercept showed an attack being planned,
+        much less carried out [read]. The Navy's on-scene commander, Captain Herrick, sent a flash
+        message (1:27 p.m. Washington time, 4 August) that many contacts "appear doubtful",
+        that "freak weather effects" and "overeager sonarmen" may account for many reports, and
+        that there were "no visual sightings" by the Maddox [quoted by Prados from a 28 Aug 1964
+        chronology; secondary]. A pilot overhead, Stockdale, later wrote there was "absolutely no
+        gunfire except our own" (secondary). Hanoi has consistently denied any 4 August action;
+        Bundy's own staff meeting recorded that "Hanoi has denied making the second attack" [read].
       accessible: true
     basis: >
-      # V: V1 for Hanyok's conclusion (NSA release pages, SFGate, HNN agree), V1 for
-      #    the Herrick wording (USNI and others quote it identically), V1 for the
-      #    1995 Giap statement ("nothing happened on our side on the 4th of August").
-      # TO REACH V2: the Hanyok study (media.defense.gov SKUNKS.PDF) and the Herrick
-      #    message text.
-      Rule 9 satisfied: names its target and rests on primary documents. Giap's
-      statement agrees and is treated as corroboration only.
+      # V: the intercept reports and Hanyok's study were read. The Herrick message, Stockdale and
+      #    Giap are via Prados (secondary).
+      # LIMIT: the refutation's weight rests largely on Hanyok's re-analysis of the intercepts.
+      #    Hanyok also reports that the original decrypted Vietnamese text of the key "after-action"
+      #    report, and a translation, cannot be located (see tonkin-original-text-missing). We did
+      #    not repeat his analysis.
+      Rule 9 satisfied: names its target and rests on primary documents (the intercept reports),
+      read through a named analysis. Consensus is not the basis. Giap and Stockdale are
+      corroboration only.
+
+  - id: tonkin-original-text-missing
+    state: searched_gap
+    statement: >
+      The original decrypted Vietnamese text of the key "after-action" intercept used to
+      support the 4 August attack, and an important translation from the San Miguel
+      listening station, cannot be located.
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3   # of 5; absence anchor, capped
+    anchor_checked: primary   # Hanyok's statement read
+    adoption_weight: 1   # of 5
+    adoption_note: >
+      Not measured. Little known to the public.
+    would_change_if: >
+      the original text or the San Miguel translation is found
+    next_step: >
+      Search the National Archives, NSA, CIA and LBJ Library finding aids for the original Vietnamese text and the San Miguel translation; log every hit and every miss.
+    anchor:
+      type: documented-absence
+      description: >
+        Hanyok: "the original decrypted Vietnamese text, and an important translation from San
+        Miguel cannot be located." [read] He calls it "unusual" that the original text could not be
+        found (and was not used as early as October 1964), and that these are the only missing
+        papers in the San Miguel reports "allows for suspicion to shade any further discourses". A
+        1972 note cited by Hanyok records NSA's deputy director, Dr. Louis Tordella, conceding that
+        the 4 August intercept could refer to the 2 August attack, and being unable to produce the
+        original. Report 13 above is the NSA summary that was relied on; the original it summarized
+        is the missing item.
+      accessible: true
+    basis: >
+      An absence is capped as a weaker kind of anchor. This is a documented gap: the study states
+      it. It does not show anyone removed the text; it shows the check cannot be completed.
 
   - id: tonkin-sigint-selectively-presented
     state: established
     statement: >
-      The signals intelligence reaching senior decision-makers about 4 August was
-      assembled and presented in a way that omitted contradicting material and did
-      not give them the complete picture.
-    evidence_class: primary_text
+      The signals intelligence about 4 August reaching senior decision-makers was
+      assembled and presented in a way that left out almost all the material showing no
+      attack, and did not give them the complete and objective picture.
+    evidence_class: interpretive
     confidence: moderate
-    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 4   # of 5
+    anchor_checked: primary   # the study read; the 122 products not re-audited by us
     adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
       Not measured. Accepted among historians who have read the NSA study; little known to the public.
     would_change_if: >
-      the full intercept set shows the omitted material was not contradictory, or the roughly 90% figure is not found in the study
+      an independent audit of the 122 products shows the omitted material did not contradict the attack story
+    next_step: >
+      Obtain the NSA's declassified set of 140 documents and spot-check Hanyok's account of which products were and were not used.
     anchor:
       type: internal-historian-finding
       description: >
-        The NSA study concludes that SIGINT "was presented in such a manner as to
-        preclude responsible decision makers in the Johnson administration from
-        having the complete and objective narrative of events of 4 August 1964."
-        A press report of the study says almost 90 percent of the intercepts that
-        would have contradicted the attack story were left out of reports to the
-        Pentagon and White House, and that forwarded messages contained
-        "severe analytic errors, unexplained translation changes, and the
-        conjunction of two messages into one translation."
+        Hanyok [read]: "SIGINT information was presented in such a manner as to preclude
+        responsible decisionmakers in the Johnson administration from having the complete and
+        objective narrative of events of 4 August 1964. Instead, only SIGINT that supported the
+        claim that the communists had attacked the two destroyers was given to administration
+        officials." The withheld information "constituted nearly 90 percent of all available
+        SIGINT". The handful of reports supporting an attack "contained severe analytic errors,
+        unexplained translation changes, and the conjunction of two unrelated messages". The
+        six products used in the NSA chronology are "a bit more than 10 percent of the total
+        available"; the other 90 percent was not offered to congressional committees.
       accessible: true
     basis: >
-      # V: V1 for the "preclude" sentence (quoted identically in several places).
-      #    V0 for the "almost 90 percent" figure: from one press report, not checked
-      #    against the study.
-      # TO REACH V2: Hanyok study, sections on omitted and altered intercepts.
-      Established that the presentation was selective. This claim does not say who
-      did it or why; see tonkin-midlevel-deliberate-skew and tonkin-senior-knowledge.
+      # V: read directly. CORRECTION: the first draft said the omitted share was "almost 90 percent
+      #    of the intercepts that would have contradicted the attack story", from a press summary.
+      #    The study's wording is that the withheld material was nearly 90 percent of ALL available
+      #    SIGINT on 4 August. This is a count by one analyst, not independently audited.
+      # Filed interpretive because it is the analyst's reading and count; independent analyses
+      #    (Prados, Jones, Cline, Moise) reach compatible conclusions about the timing and content
+      #    of the intercepts, which is why the state is established and not proposed.
+      Established that the presentation was selective. This claim does not say why; see
+      tonkin-midlevel-deliberate-skew and tonkin-senior-knowledge.
 
   - id: tonkin-midlevel-deliberate-skew
     state: proposed
     statement: >
-      Mid-level NSA officers deliberately skewed the 4 August intelligence, to cover
-      up earlier errors rather than to pursue a political goal.
-    evidence_class: synthetic
+      Individuals at NSA deliberately presented only the SIGINT that supported the attack
+      claim, in an active effort to make it fit the Navy's account, without manufacturing
+      evidence and without a conspiracy at all levels. Hanyok judges that they themselves
+      believed the attack had happened and rationalized the contradictory evidence away. The
+      exact how and why are not known.
+    evidence_class: interpretive
     confidence: moderate
-    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 3   # of 5
+    anchor_checked: primary   # the study read
     adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
-      Not measured. Rests on one internal historian's inference; not widely discussed.
+      Not measured. Rests on one internal historian's inference; the popular version
+      ('manufactured evidence') goes further than the study does.
     would_change_if: >
-      a document showing the skewing was mistaken rather than deliberate, or showing direction from outside the mid-level officers
+      a document showing the omissions were mistaken rather than deliberate, or showing direction from outside the NSA personnel, or evidence that intercepts were fabricated
+    next_step: >
+      Read the oral-history interviews in the NSA's 2005 release and check what participants said about how reports were chosen.
     anchor:
       type: inference-from-pattern
       description: >
-        Hanyok, per press reports, inferred deliberate skewing from a pattern:
-        uncorrected translation errors, altered intercept times and selective
-        citation. He concluded motive was concealment of earlier errors, and that top
-        NSA and defense officials and President Johnson neither knew nor condoned it.
+        Hanyok [read]: "From this evidence, one can easily deduce the deliberate nature of
+        these actions... This was an active effort to make SIGINT fit the claim of what happened
+        during the evening of 4 August." And: "This mishandling of the SIGINT was not done in a
+        manner that can be construed as conspiratorial, that is, with manufactured evidence and
+        collusion at all levels. Rather, the objective of these individuals was to support the
+        Navy's claim that the Desoto patrol had been deliberately attacked." On motive: "The
+        question why the NSA personnel handled the product the way they did will probably never be
+        answered. The notion that they were under 'pressure' to deliver the story that the
+        administration wanted simply cannot be supported." Also: the NSA personnel "believed that
+        [the attack] had occurred"; "The overwhelming body of reports, if used, would have told the
+        story that no attack had happened. So a conscious effort ensued to demonstrate that the
+        attack occurred"; "what was issued in the Gulf of Tonkin summaries beginning late on
+        4 August was deliberately skewed to support the notion that there had been an attack... That
+        the NSA personnel believed that the attack happened and rationalized the contradictory
+        evidence away is probably all that is necessary to know in order to understand what was
+        done." He finds no "smoking gun" memoranda or notes in the files outlining any plan or
+        stating a justification.
       accessible: true
     basis: >
-      # V: V1 for the conclusion as reported (SFGate, HNN and a news summary agree);
-      #    V0 for the motive, which is Hanyok's inference, not a document.
-      # CORRECTION from first draft: it said the study left "error or design" open
-      #    and that the contested question was intent in general. The reported
-      #    finding is more specific: deliberate at mid-level, with motive inferred,
-      #    and senior officials found not to have known.
-      # TO REACH V2: the study's concluding section.
-      Held at proposed: intent and motive are inferred from a pattern of documents,
-      and the inference comes from a single internal historian.
+      # V: read directly.
+      # CORRECTIONS from the earlier draft, which relied on a press summary: (1) it gave the
+      #    motive as "to cover up earlier errors". That is not what the study says; the study
+      #    says the objective was to support the Navy's claim and that the reason "will probably
+      #    never be answered". (2) It said Hanyok concluded that top officials "neither knew nor
+      #    condoned" it; the study text read here says there was no evidence of administration
+      #    pressure on NSA, and does not make that exact statement in the passages read.
+      Held at proposed: intent is inferred from a pattern, by a single internal historian.
+
+  - id: tonkin-senior-doubts-documented
+    state: established
+    statement: >
+      By 8 a.m. on 5 August 1964, the White House national security adviser told staff that
+      the evidence for the second attack was "less than we had yesterday", because of
+      "eliminating double counting and mistaken signals", that details such as the number of
+      boats and torpedoes were "still somewhat uncertain", and that Hanoi had denied making
+      the attack. He also said "This much seemed certain: There was an attack."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5; one document, a record by an attendee and not a transcript
+    anchor_checked: primary   # the memo read
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Known to historians; little known to the public.
+    would_change_if: >
+      evidence the memorandum is not authentic, or a different record of the same meeting
+    anchor:
+      type: contemporaneous-memorandum
+      description: >
+        Memorandum for the Record, White House Staff Meeting, 5 August 1964 [read]: "On the first
+        attack, the evidence would be pretty good. On the second one the amount of evidence we
+        have today is less than we had yesterday. This resulted primarily from correlating bits
+        and pieces of information eliminating double counting and mistaken signals. This much
+        seemed certain: There was an attack. How many PT boats were involved, how many torpedoes
+        were fired, etc. -- all this was still somewhat uncertain. This matter may be of some
+        importance since Hanoi has denied making the second attack."
+      accessible: true
+    basis: >
+      # V: the memorandum was read (OCR; wording cross-checked against Prados's quotation).
+      # The author is given as William Y. Smith, a military aide, by Prados (secondary).
+      This shows senior doubts about the extent of the attack at the level of the White House
+      two days before the Resolution passed. It also shows the speaker still believed an attack
+      had happened. Both parts must be kept. It is therefore evidence about doubt, and evidence
+      against the stronger claim that he knew nothing had happened.
+
+  - id: tonkin-bundy-welcomed-resolution
+    state: established
+    statement: >
+      At the same meeting, when a new staffer questioned the need for a congressional
+      resolution, the national security adviser replied jokingly that the matter should
+      perhaps not be thought through too far; as for himself, he "welcomed the recent events
+      as justification for a resolution the Administration had wanted for some time."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5; one attendee's record of a spoken remark
+    anchor_checked: primary   # the memo read
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Quoted in historical works; little known to the public.
+    would_change_if: >
+      a second record of the meeting showing the remark was different or not made
+    anchor:
+      type: contemporaneous-memorandum
+      description: >
+        Same memorandum [read]: "Bundy, in reply, jokingly told him perhaps the matter should not
+        be thought through too far. For his own part, he welcomed the recent events as
+        justification for a resolution the Administration had wanted for some time."
+      accessible: true
+    basis: >
+      # V: read directly.
+      Establishes that a senior official described the events as a convenient justification for a
+      resolution already wanted. It does not show the events were staged, that he doubted an attack
+      occurred, or that anyone lied; the memo says he thought an attack had occurred. It records
+      opportunism, which is a different claim from fabrication.
+
+  - id: tonkin-mcnamara-aug4-call
+    state: established
+    statement: >
+      At 9:43 a.m. Washington time on 4 August, before any attack on the destroyers was
+      reported, McNamara told President Johnson the ship was "allegedly" to be attacked that
+      night, and they discussed what to authorize if it was attacked.
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3   # of 5
+    anchor_checked: secondary   # a transcription by Prados read; the audio not heard
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Known to historians.
+    would_change_if: >
+      the LBJ Library audio or its own transcript differing materially from this transcription
+    next_step: >
+      Listen to, or read the LBJ Library's own transcript of, the 4 August 9:43 a.m. call.
+    anchor:
+      type: recorded-conversation-transcription
+      description: >
+        McNamara [read, Prados transcription]: "...the tracks are laid down very clearly; they go
+        through the three command channels to get out there; this ship is allegedly uh to be
+        attacked tonight - we don't like to see a change in operation plan of this kind at this
+        time." He then reports a recommendation that the commander "be authorized to pursue the
+        attacking vessels in the event he is attacked and destroy their bases."
+      accessible: true
+    basis: >
+      # V: read in a published transcription (primary_text by way of a secondary transcription).
+      It shows Washington was already acting on intercepts mistakenly read as pointing to 4 August
+      before the alleged action. Conditional planning ("in the event he is attacked") is ordinary
+      and is not wrongdoing; the claim is only about timing. Prados's commentary that retaliation
+      was discussed "in spite of the fact that no attack has yet occurred" is an interpretation.
+
+  - id: tonkin-mcnamara-34a-testimony
+    state: established
+    statement: >
+      On 3 August McNamara privately told President Johnson that OPLAN 34-A "had bearing on"
+      the Maddox engagement and should be explained to Congress. At an executive session on
+      6 August he told senators "Our Navy played absolutely no part in, was not aware of, any
+      South Vietnamese actions, if there were any."
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3   # of 5
+    anchor_checked: secondary   # the 3 Aug transcription read; the 6 Aug testimony quoted by Prados
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Known to historians; central to the 1968 Senate hearings on Tonkin.
+    would_change_if: >
+      the committee record of 6 August showing different wording, or context that reconciles the two statements
+    next_step: >
+      Read Executive Sessions of the Senate Foreign Relations Committee, Historical Series, vol. XVI (1988), p. 293, and the 3 August LBJ call transcript.
+    anchor:
+      type: recorded-statement-versus-testimony
+      description: >
+        3 August call [read, Prados transcription]: "...explain this Op Plan 34-A, these covert
+        operations. There's no question but what that had bearing on." 6 August executive session
+        [quoted by Prados, citing the committee's published record]: "Our Navy played absolutely no
+        part in, was not aware of, any South Vietnamese actions, if there were any." Prados
+        concludes the statement was "highly misleading". NSArchive's note on the tapes says
+        McNamara "would take the position in later public hearings that he was unaware of any such
+        link".
+      accessible: true
+    basis: >
+      # V: the private statement read; the public one via secondary quotation.
+      Documents a gap between what was said privately and what was said to Congress about the
+      context of the 2 August engagement. It is about 34-A and the Maddox, not about 4 August.
+      "Misleading" is Prados's word and is held as his interpretation.
 
   - id: tonkin-senior-knowledge
     state: contested
     statement: >
-      Senior administration officials knew the 4 August attack was doubtful or false
-      when they ordered reprisal strikes and sought the Resolution, as opposed to
-      acting on a genuine, if flawed, belief that it happened.
+      Senior administration officials knew the 4 August attack had not occurred when they
+      ordered reprisal strikes and sought the Resolution, as opposed to acting on a genuine,
+      if flawed, belief that it happened.
     evidence_class: primary_text
     confidence: low
-    evidential_weight: 2   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 2   # of 5
+    anchor_checked: primary   # the memo, the tape transcription and the study read
     adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
       Not measured. 'They lied us into war' is a popular framing; historians are divided on who knew what.
     would_change_if: >
-      dated senior communications between the doubt cable and the Resolution showing knowledge or its absence
+      a dated senior communication stating, or clearly showing knowledge, that no attack had occurred, or a document showing senior officials were told the SIGINT was being filtered
     next_step: >
-      Read FRUS 1964-68 vol. I and the Herrick message for senior communications dated 4-7 August 1964, and log who received the doubts and what they did.
+      Read FRUS 1964-68 vol. I documents dated 4-7 August 1964 and the LBJ Library tapes for those days; log who said what about whether an attack occurred.
+    positions:
+      - label: "Knew it was false"
+        holder: "The popular 'false flag' claim"
+        ground: >
+          The Herrick doubt cable (sent 1:27 p.m. Washington time, 4 August) reached Washington;
+          McNamara acted on the intercepts before any attack was reported; the adviser
+          welcomed the events as justification; McNamara's later statement to Congress about 34-A
+          was misleading. Prados argues the record shows Washington "rushing to a judgment".
+      - label: "Believed an attack happened, on weak and filtered evidence"
+        holder: "Hanyok; the reading of Bundy's memo"
+        ground: >
+          Bundy recorded "This much seemed certain: There was an attack." Hanyok found only
+          SIGINT supporting the attack reached administration officials; he writes that the notion
+          NSA staff were under pressure from the administration "simply cannot be supported"; and he
+          found no "smoking gun" memoranda or notes in the NSA files outlining a plan or stating a
+          justification. The National Security Archive's 2005 posting summarizes the study as
+          finding senior officials "none the wiser about the gaps in the intelligence" (secondary).
+          Prados's own essay says "senior officials knew of the 'double counting and mistaken
+          signals'", which is knowledge of doubt, and not that nothing had happened.
     anchor:
       type: live-dispute
       description: >
-        For knowing: Herrick's doubt cable reached Washington on the day of the
-        decision, about 13:27 Washington time on 4 August, before the reprisal
-        orders. Against: Hanyok found no senior knowledge of the skewed SIGINT,
-        and McNamara later conceded only "serious misjudgments" (Hanoi, 1995).
-        Doubts existing in the building is not the same as officials knowing the
-        attack was false.
+        Doubts reached the White House within hours, and a senior official welcomed the events as
+        justification. The same record shows that official still thought an attack had happened,
+        and the study found the SIGINT reaching senior officials had been filtered. "Knew of doubts"
+        and "knew nothing happened" are different claims; the documents read support the first and
+        do not settle the second.
       accessible: true
     basis: >
-      # V: V1 for the Herrick receipt time (one source family, USNI-derived; treat as
-      #    V0 for the exact clock time until the message is read); V1 for Hanyok's
-      #    conclusion and for the 1995 statements.
-      # TO REACH V2: dated senior communications between the Herrick cable and the
-      #    Resolution (see the open test dt-who-knew-when in tests.yaml).
-      Genuinely contested: the documents reviewed so far do not discriminate between
-      "should have known" and "knew". Held at contested, low confidence. This is the
-      dig's central conspiracy-adjacent gap.
+      # V: the memo, the tape transcription of the 4 August call and the study were read directly.
+      # The earlier draft carried an exact clock time of "received 13:27" for the Herrick message;
+      #    the chronology says it was SENT at 1:27 p.m. Washington time. Correct the earlier text.
+      Genuinely contested. Held at contested, low confidence. This remains the dig's central
+      conspiracy-adjacent gap, but it is now much narrower than before: the documents show doubt
+      and opportunism and do not show knowledge that no attack occurred.
 
   - id: tonkin-resolution-rested-on-aug4
     state: established
@@ -280,8 +544,8 @@ claims:
       reported attacks, with the 4 August report central to the administration's case.
     evidence_class: primary_text
     confidence: moderate
-    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 3   # of 5; capped at 4 until the floor debate is read
+    anchor_checked: secondary
     adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
       Not polled. The vote counts and the text are not disputed.
@@ -296,39 +560,41 @@ claims:
         further aggression," and it was later used as the legal basis for escalation.
       accessible: true
     basis: >
-      # V: V1 for the vote counts and dissenters (CFR, Britannica, Senate.gov and
-      #    others agree) and the quoted text. CLEARED: the vote counts were V0
-      #    recalled figures in the first draft.
-      # "Rested on 4 August" is an interpretation of the debate record and has NOT
-      #    been checked against the floor debate; that part stays V0, hence moderate.
-      # TO REACH V2: archives.gov Tonkin Gulf Resolution; the Congressional Record.
+      # V: vote counts, dissenters and quoted text agree across several sources (secondary).
+      # "Rested on 4 August" is an interpretation of the debate record and has NOT been checked
+      #    against the floor debate; that part stays unchecked, hence moderate.
+      # TO CHECK: archives.gov Tonkin Gulf Resolution; the Congressional Record, 7 Aug 1964.
 
   - id: tonkin-bait-order
     state: searched_gap
     statement: >
-      No declassified document located so far shows an order to provoke the 2 August
+      No document read or reported so far shows an order to provoke the 2 August
       clash by sending the Maddox in as bait.
     evidence_class: primary_text
     confidence: low
-    evidential_weight: 2   # of 5; capped at 4 while anchor_checked is no
-    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    evidential_weight: 2   # of 5; absence anchor, capped
+    anchor_checked: secondary   # searched in the study text, the essay and the tape page; not the full releases
     adoption_weight: 2   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
       Not measured. Circulates in popular accounts; no document found.
     would_change_if: >
       a document ordering or planning the Maddox patrol as a provocation is found
     next_step: >
-      Full-text search the NSA Tonkin releases (2005-2006) and FRUS 1964-68 vol. I for provocation or bait language; log every hit and every miss.
+      Read SNIE 50-2-64 and the NSA's remaining declassified Tonkin documents (about 140 released in 2005); search each for provocation or bait language; log every hit and every miss.
     anchor:
       type: absence-in-searched-record
       description: >
-        Large sets of Tonkin materials have been declassified (including the 2005 NSA
-        release), and the sources reviewed do not report such an order. The context
-        (tonkin-34a-raids-preceded) makes the suspicion understandable.
+        Text searches of the Hanyok study found no mention of bait; its only uses of "provocation"
+        concern the Aug 4 incident as the pretext for the Resolution and September 1964 patrols.
+        Prados's essay and the tape commentary say the Maddox's mission was to record North
+        Vietnamese radio and radar emissions expected to rise after a 34-A raid (so the patrol was
+        coordinated with the raids), and that the mission commander "had been briefed in Taiwan
+        previously that there would be" no attack and was unaware of the raids. None describes an
+        order to provoke.
       accessible: true
     basis: >
-      # V: V0. This is an absence in a record this draft has not read.
-      # TO REACH V2: full-text search of the NSA release set and FRUS 1964-68 vol. I
-      #    for provocation language.
-      A searched gap, not a refutation: absence in what has been released is not
-      proof of absence. A found document would move this claim.
+      # V: the search of the study was by machine text search of OCR output (noisy); the essay and
+      #    tape page were read. The full release set was not.
+      A searched gap, not a refutation: absence in what has been read is not proof of absence. The
+      coordination of the patrol with the raids is documented; it is not an order to provoke.
+      A found document would move this claim.

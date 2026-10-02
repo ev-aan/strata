@@ -16,12 +16,22 @@ threads:
         "The attack never happened" is correct for 4 August and wrong for 2 August.
         Collapsing the two erases the part that did happen (tonkin-aug2-maddox-engaged).
       - >
-        "False flag" asserts deliberate staging by the US. The record supports
-        selective presentation of intelligence (tonkin-sigint-selectively-presented),
-        reportedly deliberate at mid-level in NSA to cover earlier errors
-        (tonkin-midlevel-deliberate-skew, proposed), and early doubts in Washington.
-        Whether senior officials knew stays contested (tonkin-senior-knowledge), and
-        a bait order is unfound (tonkin-bait-order).
+        "Manufactured evidence" and "false flag" assert deliberate staging by the US. The
+        record read supports something narrower: only the SIGINT supporting the attack
+        claim reached administration officials (tonkin-sigint-selectively-presented), which
+        NSA's own historian calls deliberate on the part of individuals at NSA but "not...
+        conspiratorial, that is, with manufactured evidence and collusion at all levels"
+        (tonkin-midlevel-deliberate-skew, proposed). He writes that NSA staff believed the
+        attack had happened and rationalized the contradictory evidence away.
+      - >
+        "The administration lied" mixes documented and undocumented parts. Documented: doubts
+        reached the White House within hours (tonkin-senior-doubts-documented); a senior
+        adviser welcomed the events as justification for a resolution already wanted
+        (tonkin-bundy-welcomed-resolution); McNamara's testimony to the Senate about 34-A
+        differed from what he told the President privately (tonkin-mcnamara-34a-testimony).
+        Not documented in what was read: any statement that no attack had occurred
+        (tonkin-senior-knowledge, contested), or an order to provoke the clash
+        (tonkin-bait-order). The same adviser's memo says "There was an attack."
       - >
         Tonkin is often cited as general proof that official accounts of any event
         are fabricated. A documented case lends no weight to a different claim;
@@ -31,6 +41,7 @@ threads:
       This thread records reception. It is mechanically barred (confers_weight: false)
       from lending evidential weight to any claim. A reader arriving with the
       "false flag" framing should see which part is established (4 August did not
-      happen; the intelligence was presented selectively), which part is proposed
-      (mid-level deliberate skewing), which is contested (senior knowledge), and which
-      is an unfound document (a bait order).
+      happen; the intelligence was presented selectively; doubts and opportunism are
+      documented), which part is proposed (deliberate skewing by individuals at NSA, not
+      conspiratorial in the historian's words), which is contested (whether senior officials
+      knew nothing had happened), and which is an unfound document (a bait order).

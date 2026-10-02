@@ -14,35 +14,46 @@ discriminating_tests:
         (radar, sonar, visual) should support it.
       no-attack: >
         IF no attack occurred, the cited intercepts should turn out to describe the
-        earlier 2 August action, and the ship records should be doubtful or
-        contradicted.
+        earlier 2 August action or non-combat activity, the timing should not fit, and the
+        ship records should be doubtful or contradicted.
     result:
       type: primary_text
       finding: >
-        NSA's re-examination of the full intercept set found the cited reports
-        referred to the 2 August action and no North Vietnamese vessels were present
-        on 4 August. The on-scene commander's flash message, received in Washington
-        the same day, questioned the radar and sonar contacts and reported no
-        visual sightings by Maddox.
+        The intercept reports themselves were read (nine pages, NSA reports sent to the White
+        House). Report 13 (04/1644Z) says a boat "shot at two enemy airplanes and at least one was
+        damaged; we sacrificed two comrades"; it mentions aircraft and not ships. Report 12 (04/1630Z)
+        describes an enemy aircraft falling into the sea. The reports that spoke of preparations
+        (Report 7) describe readying boats for "military operations" that night, which NSA's own
+        historian read, with later Phu Bai reports, as a salvage and tow operation. Hanyok, with the
+        full set of 122 relevant products, concludes no attack happened and that Hanoi's navy was
+        engaged in nothing that night but salvage of two boats damaged on 2 August. The on-scene
+        commander's flash message (sent 1:27 p.m. Washington time, 4 August) questioned the
+        contacts and reported no visual sightings by the Maddox.
       accessible: true
     resolves: >
-      The refutation rests on re-reading the original records, not on which account
-      is more widely believed. Verification level V1 (search-corroborated); the study itself
-      has not been opened.
+      The refutation rests on re-reading the original reports, not on which account is more widely
+      believed. LIMITS: we read the reports and the study; we did not repeat the analysis of all 122
+      products, and the original Vietnamese text of the key report is missing (tonkin-original-text-missing).
+      The Herrick message was read only as quoted in a secondary source.
     note: >
-      D3 satisfied. Giap's 1995 testimony agrees but is not what retires the claim.
-      The test does NOT answer who skewed the record or why, or whether senior
-      officials knew; tonkin-midlevel-deliberate-skew stays proposed and
-      tonkin-senior-knowledge stays contested.
+      D3 satisfied. Giap's testimony agrees but is not what retires the claim. The test does NOT
+      answer who skewed the record or why, or whether senior officials knew;
+      tonkin-midlevel-deliberate-skew stays proposed and tonkin-senior-knowledge stays contested.
 
 # ---------------------------------------------------------------------------
-# OPEN TESTS (not filed; no result yet):
+# OPEN TESTS (not filed; no result that retires a claim):
 #   - dt-who-knew-when (would discriminate tonkin-senior-knowledge):
-#     do dated senior-level communications between the Herrick cable (received in
-#     Washington 13:27, 4 August) and the 7 August Resolution show knowledge of the
-#     doubts, and did anyone act on them? The cable's arrival time is the one dated
-#     fact in hand; what officials did with it is not. FRUS 1964-68 vol. I is the
-#     likely source. Needs V2 access.
-#   - dt-bait-order (would discriminate tonkin-bait-order): any document ordering
-#     the Maddox patrol as a provocation.
+#     do dated senior-level communications between the Herrick message (sent 1:27 p.m.
+#     Washington time, 4 August) and the 7 August Resolution show knowledge that no attack
+#     occurred? PARTIAL RESULT, 2026-10-02: the documents read so far show (a) doubt reaching
+#     the White House by 8 a.m. on 5 August, (b) the same speaker recording that "There was an
+#     attack", (c) a remark welcoming the events as justification for a resolution, and (d) the
+#     4 August 9:43 a.m. McNamara-LBJ call acting on intercepts before any attack was reported.
+#     None states that nothing happened. Still needed: FRUS 1964-68 vol. I documents dated
+#     4-7 August; the LBJ Library tapes for those days; the 6 August Senate executive session.
+#   - dt-bait-order (would discriminate tonkin-bait-order): any document ordering the Maddox
+#     patrol as a provocation. Not found in what has been read; the full 2005 NSA release and
+#     SNIE 50-2-64 remain unread.
+#   - dt-original-text (would discriminate tonkin-original-text-missing): locate the original
+#     decrypted Vietnamese text and the San Miguel translation.
 # ---------------------------------------------------------------------------
