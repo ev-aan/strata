@@ -29,3 +29,9 @@ log:
       (Senate roll 481: 88-2, nays Gruening and Morse; House roll 197: 416-0) and linked from the
       Tonkin timeline. One discrepancy logged: Voteview's per-member Senate file has one more yea
       than its summary row; unresolved.
+  - id: L-05
+    date: "2026-10-02"
+    entry: >
+      Owner agreed the authenticity-of-motive idea fits politics, not every kind of dig. Added P9 (inducement
+      claims, tiers decisive/supporting/context, default searched_gap), P10 (consistency over time, synthetic,
+      cap 3) and P11 (motive and sincerity not assessed) to SCHEMA.md as politics-only rules.

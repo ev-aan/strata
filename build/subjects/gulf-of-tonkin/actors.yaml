@@ -1,5 +1,7 @@
 # Actors for the Gulf of Tonkin dig, built to build/SCHEMA.md "Actors, statements and votes" (P1 to P8).
 # Only items from documents read in this dig appear. Empty buckets say what was searched.
+# Politics-only rules P9-P11 apply: inducement claims default searched_gap (none filed or searched yet);
+# every actor: Motive and sincerity are not assessed.
 # Alignment labels: kept | broke | changed_with_stated_reason | no_specific_commitment | not_determinable.
 subject: gulf-of-tonkin
 as_of: "2026-10-02"

@@ -159,6 +159,23 @@ actors:
 - **P7 Same neutrality for all parties and sides.** Selection rules are written before records are read
   (see `build/subjects/congress-promise-vote/protocol.yaml`). Subjects are never swapped to find a result.
 
+### Politics-only additions (draft, 2026-10-02): apply ONLY to digs about officials and votes
+Scope note: these rules are not part of the general schema. They are used only where the subject is what a
+public official did and why it might have happened. Other subjects (documents, events, natural questions) do not use them.
+- **P9 Inducement claims (pressure or payment) are their own claims**, filed per actor, default `searched_gap`
+  (never "clean"). Evidence tiers:
+  - `decisive`: conviction or plea, official ethics or inspector-general finding, a recorded communication, or an
+    admission by a participant. One is enough to establish the claim.
+  - `supporting`: documented contacts, or a donation followed by a vote with a source linking them. Never enough alone.
+  - `context`: timing or money alone. Shown beside the vote, carries no weight toward the claim.
+  - Absence of a decisive item is recorded as "not found, searched: <places>", not as evidence of independence.
+- **P10 Consistency over time (analysis, class `synthetic`)** is computed the same way for every actor in a dig:
+  position stability on the matter across dated events, with a published baseline for how often members change
+  or break with their party. It describes behaviour, not belief, and is capped at weight 3.
+- **P11 Sincerity and motive are not assessed.** Every actor page carries the fixed line:
+  "Motive and sincerity are not assessed." Authorship questions (who wrote a speech or statement) are handled by the
+  authenticity rules A1 to A10, not by P-rules.
+
 ### Applied so far
 - Tonkin: `actors.yaml` built for Johnson, McNamara, Bundy, Morse, Gruening (2026-10-02); vote links to the roll-call data.
 - Politics pilot: protocol conforms to P1 to P7.

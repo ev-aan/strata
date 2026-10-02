@@ -47,6 +47,10 @@ shared_standard: >
   Follows build/SCHEMA.md 'Actors, statements and votes' (rules P1 to P7) so this dig and the
   Tonkin dig present votes and officials the same way.
 
+politics_only_rules: >
+  P9 (inducement claims, default searched_gap), P10 (consistency over time, capped at 3) and P11 (sincerity not
+  assessed) apply here and to other digs about officials. They are not part of the general schema.
+
 outputs:
   - actors.yaml  (same four buckets for every actor)
   - claims.yaml  (promise facts, vote facts, outcome facts; each with anchor and anchor_checked)
