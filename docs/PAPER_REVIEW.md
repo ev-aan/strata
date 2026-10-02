@@ -1,4 +1,4 @@
-# Reviewing an academic paper (process v0.1, 2026-10-02)
+# Reviewing an academic paper (process v0.1, 2026-10-02) — PARKED, see docs/FUTURE.md
 
 Owner decisions: the paper itself stays private; only the review is published; no finding changes a dig by itself. Every finding is a proposal that must pass the project's criteria and then be approved by the owner.
 
