@@ -9,6 +9,7 @@ Source of truth: `build/subjects/<subject>/{claims,tests,threads,log}.yaml`. Pag
 | `tests.yaml` | `discriminating_tests[]` (question, retires, predicts, result, resolves, note) |
 | `threads.yaml` | reception overlays; `confers_weight: false` is required |
 | `log.yaml` | append-only `log[]`; entries are never edited |
+| `transmission.yaml` | how a claim spread, as dated chains; `confers_weight: false` is required |
 
 ## Claim fields (required unless noted)
 `id`, `state`, `statement`, `evidence_class`, `confidence`, `evidential_weight` (1-5), `anchor_checked`, `adoption_weight` (1-5), `adoption_note`, `would_change_if`, `anchor{type,description,accessible}`, `basis`.
@@ -55,7 +56,7 @@ v0.1 above was drafted from CONTRIBUTING.md and the HTML bounty pages **before**
 | Class spelling | `primary-text` | `primary_text` (changed to follow CONTRIBUTING.md) |
 | Contested claims | `positions:[{label, holder, ground}]` with named holders | one `anchor` of type `live-dispute` |
 | Weights | none in the claim files | `confidence`, `evidential_weight`, `adoption_weight`, `anchor_checked` |
-| Threads | `type: morphology` or `reception-overlay`; `members:[{claim, attestation}]`; rules T1-T4 | `type: reception-overlay` with `overlay_notes` and `firewall`; no `members` |
+| Threads | `type: morphology` or `reception-overlay`; `members:[{claim, attestation}]`; rules TH1-TH4 | `type: reception-overlay` with `overlay_notes` and `firewall`; no `members` |
 | Attestation | per member: preserved, reconstructed, inferred, interpretive | none |
 
 **Consequence:** the ID question is largely answered by the live corpus: slugs with `subject:claim` references. Only the bounty pages use `C-01`.
@@ -244,16 +245,23 @@ standing rule's "transmission chain": a myth is documented as seriously as the h
 never counts as evidence. First used in `incandescent-lamp`; the format is in that file's header.
 
 - **X1** every chain sets `confers_weight: false`.
-- **X2** every event names a source listed in `sources/MANIFEST.yaml` and says `read: yes | no`.
-- **X3** no claim may cite a chain id in its anchors (same firewall as threads, T2).
-- **X4** `about` resolves to a claim in the subject.
+- **X2** every event names a source listed in `sources/MANIFEST.yaml` and says `read: yes | no`. A subject with a `transmission.yaml` must have a non-empty manifest; with none, X2 fails (it does not pass silently).
+- **X3** no claim may cite a chain id in its anchors (same firewall as threads, TH2).
+- **X4** `about` is written `subject:claim-id` and resolves to a claim in the same subject.
 
-Thread rules now enforced in the validator:
-- **T1** members resolve to a claim; write them as `subject:claim-id` (bare ids warn).
-- **T2** no claim cites a thread id in its anchors.
-- **T4** reception-overlay members are only `contested` or `interpretive` claims. Settled myths go in
-  `transmission.yaml`, pointed to with `see_transmission`.
-- Claims marked `absence_anchor: true` are capped at provisional confidence.
+- Display (intended, not yet implemented in the site builder): an event with `read: no` is shown as "reported", never as checked.
+
+Thread rules, now enforced in the validator across all subjects. Named TH1-TH4 here (the import corpus
+called them T1-T4) so they do not clash with the timeline rules T1-T7:
+- **TH1** members resolve to a claim in some subject; write them as `subject:claim-id` (bare ids warn).
+- **TH2** no claim, in any subject, cites a thread or transmission-chain id in its anchors. Matching is by
+  whole id; prose in `basis` may point a reader to a thread.
+- **TH3** (morphology threads) members carry an attestation; not yet enforced here.
+- **TH4** reception-overlay members are `contested` claims, or `interpretive` claims that are not settled
+  (not established or refuted). Settled myths go in `transmission.yaml`, pointed to with `see_transmission`.
+- Thread and chain ids are unique across the whole repository.
+- Claims marked `absence_anchor: true` are capped at provisional or low confidence. Whether a claim should
+  carry the flag is a reviewer's judgment (`docs/REVIEW.md`, B).
 
 ## N25. Anchor format (one format for every excavation, enforced by conformance)
 

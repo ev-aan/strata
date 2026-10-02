@@ -1,16 +1,16 @@
 subject: incandescent-lamp
 
-# Reception overlays (rule T4): confers_weight: false, and members may only be contested or
+# Reception overlays (rule TH4): confers_weight: false, and members may only be contested or
 # interpretive claims. Refuted priority myths are NOT members; how they spread is traced in
 # transmission.yaml and pointed to with `see_transmission` (a pointer, not membership).
-# Member ids use the subject:claim form (rule T1).
+# Member ids use the subject:claim form (rule TH1).
 
 threads:
 
   - id: thread-national-priority
     type: reception-overlay
     title: "'Our inventor came first': the national light-bulb stories"
-    confers_weight: false   # T4
+    confers_weight: false   # TH4
     description: >
       Six countries have an answer to "Who invented the light bulb?": the United States (Edison), Britain
       (Swan), Canada (Woodward and Evans), Germany (Göbel), Russia (Lodygin) and Belgium (de Changy). Each

@@ -87,7 +87,7 @@ that's the disease asking for a costume. Don't.
 The review gate in `docs/REVIEW.md` only holds if `main` refuses direct pushes. In GitHub:
 Settings → Branches → Add branch ruleset (or "Add rule") for `main`:
 
-- Require a pull request before merging (1 approval is not needed; the review agent posts its verdict as a review)
+- Require a pull request before merging (no approval count; the review agent posts its verdict as a comment, see the known limit in docs/REVIEW.md)
 - Require status checks to pass: `conformance`
 - Block force pushes
 - Do not allow bypassing the above settings, so the rule applies to admins and agents too
