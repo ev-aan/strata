@@ -1,0 +1,183 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch2/pt_534.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_534
+pt_number: 534
+display_name: "PT 534 — For the Protection of the Pyramid Enclosure Against Osiris and His Cycle"
+sethe_phrase_range:
+  value: "§§ 1267a–1279d (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 2."
+  note: "High phrase numbers suggest this falls in Sethe vol. 2."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  theological_note: >
+    PT 534 is the only spell in Mercer's classification that explicitly
+    protects against Osiris. Its title — 'For the Protection of the Pyramid
+    Enclosure Against Osiris and His Cycle' — is among the most theologically
+    anomalous in the corpus. Osiris is the king's divine template for resurrection
+    throughout the PT, yet here he is a force to be protected against.
+    This paradox is the primary interpretive problem of PT 534.
+  later_attestations:
+    - source: "Coffin Texts and later protective spells"
+      state: searched_gap
+      note: "Whether this anti-Osiris protective tradition persists into CT: searched_gap."
+
+location:
+  chamber: searched_gap
+  wall: searched_gap
+  note: >
+    PT 534's wall placement in Teti's corpus requires Allen 2005 Teti section.
+    Its high Sethe number (534) places it beyond the antechamber in the corridor
+    or vestibule range, or possibly on outer walls. Mercer's category heading
+    suggests it is a standalone enclosure-protection spell — it may occupy a
+    position near the pyramid entrance rather than the burial chamber.
+  physical_condition: searched_gap
+
+ritual_class:
+  classes:
+    - apotropaic
+    - protective
+  note: >
+    PT 534 is classified under 'For The Protection of the Pyramid Enclosure Against
+    Osiris and His Cycle' — a category appearing in Mercer's index as Chapter XXVI
+    (a single utterance, not a series). The singular 'Utterance 534' under this
+    heading suggests PT 534 is the entire protective enclosure corpus for this theme.
+    'The pyramid enclosure' (Hw.t nTr = 'the god's mansion' or the entire pyramid
+    complex) needs protection — from Osiris himself and from 'his cycle' (his
+    divine family/Ennead). This inverts the entire Osirian identification program.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 2."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 2."
+
+translations:
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 534. Chapter XXVI."
+    note: >
+      Mercer's Chapter XXVI contains only Utterance 534. The full translation
+      is at sacred-texts.com, Chapter XXVI. Access required for exact text.
+      The chapter heading — 'For the Protection of the Pyramid Enclosure
+      Against Osiris and His Cycle' — is Mercer's classification, not necessarily
+      a direct translation of the utterance title.
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 534."
+
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+
+lexical_anchors:
+  - term_transliteration: "wsir"
+    term_mdc: "wsir"
+    semantic_field: "Osiris — here as threat, not benefactor"
+    notes: >
+      Throughout the PT corpus, Osiris is the king's model for resurrection and
+      the divine identity the king inherits. In PT 534 — as classified by Mercer —
+      Osiris is the entity against whom the pyramid enclosure must be protected.
+      This is the central paradox: the deity who guarantees resurrection is also
+      a source of threat to the burial complex. Possible explanations:
+      1. The Osirian cycle (death, dismemberment, reassembly) poses a risk
+         to the intact burial — Osiris's dismemberment should not be replicated
+         in the pyramid.
+      2. Osiris's power over the dead means he can claim the king — the pyramid
+         must protect the king's freedom from Osiris's realm.
+      3. Seth (Osiris's enemy) is the actual threat and 'Osiris and his cycle'
+         refers to the entire conflict cycle rather than Osiris alone.
+    translation_disputes:
+      readings:
+        - reading: "Protection against Osiris himself"
+        - reading: "Protection against the Osirian conflict cycle (Seth, dismemberment, etc.)"
+          note: "Mercer's chapter heading is the only available framing — exact spell content: searched_gap."
+
+  - term_transliteration: "Hw.t nTr"
+    semantic_field: "The pyramid enclosure / god's mansion"
+    notes: >
+      Hw.t nTr = 'mansion of the god' — used for temple enclosures and pyramid
+      complexes. The 'pyramid enclosure' requiring protection includes not just
+      the pyramid structure but the entire mortuary complex: causeway, mortuary
+      temple, valley temple, subsidiary pyramids. The enclosure as protected space
+      is a fundamental concept of Egyptian sacred geography.
+    attestation_range: "Hw.t nTr throughout Egyptian administrative and religious texts."
+
+divergence_points:
+  - id: osiris_as_threat
+    claim: "In PT 534 Osiris is a threat to the pyramid enclosure"
+    state: contested
+    positions:
+      - scholar: "Mercer 1952 (classification)"
+        reading: >
+          Chapter XXVI heading: 'For The Protection of the Pyramid Enclosure
+          Against Osiris and His Cycle.' Osiris is explicitly named as the
+          entity requiring protection against.
+      - scholar: "Alternative interpretation"
+        reading: >
+          'Osiris and his cycle' may not mean Osiris is an active threat —
+          it may mean the spell protects against the kind of fate Osiris suffered
+          (dismemberment, death, loss of sovereignty). The protection is against
+          an Osirian fate, not against Osiris as an agent.
+      - scholar: "Seth-as-true-threat reading"
+        reading: >
+          The Osirian cycle involves Seth as the destructive agent. Protecting
+          against 'Osiris and his cycle' = protecting against Seth's action
+          within the Osirian mythological framework.
+    note: >
+      This is the most theologically difficult divergence point in the entire dig.
+      The paradox of Osirian identification (king as Osiris for resurrection)
+      combined with Osirian protection (enclosure protected against Osiris) is
+      unresolved in the secondary literature consulted. Allen 2005's analysis
+      is the required source. If Osiris is genuinely a threat here, it reveals
+      a tension in Old Kingdom theology that later traditions resolved by
+      strengthening the Osirian positive valence and suppressing this protective-against-Osiris strand.
+
+  - id: single_utterance_chapter
+    claim: "Mercer's Chapter XXVI contains only PT 534 — suggesting this is a uniquely isolated spell"
+    state: proposed
+    positions:
+      - scholar: "Mercer 1952 index"
+        reading: "'Chapter XXVI. For The Protection of the Pyramid Enclosure Against Osiris and His Cycle, Utterance 534' — one utterance, one chapter."
+    note: >
+      Single-utterance chapters in Mercer's classification are unusual — most
+      categories contain multiple spells. PT 534 as a single-chapter entry
+      suggests it is functionally distinct from all surrounding spells.
+      Whether this reflects the Egyptian original's structure or Mercer's
+      classification difficulty with an anomalous spell is a methodological question.
+
+transmission_events:
+  - event: "Teti pyramid corpus"
+    date_start: -2345
+    date_end: -2323
+    source: "Mercer 1952 classification includes Teti corpus; Allen 2005 Teti section."
+  - event: "Later tradition — whether the anti-Osirian protective strand persists: searched_gap"
+    state: searched_gap
+
+parallel_pyramids:
+  unas: searched_gap
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+  note: >
+    PT 534's high number places it beyond Unas. Whether it appears in Pepi I/II
+    requires concordance check. If it is unique to Teti, it would join PT 1–7 and
+    PT 373 as Teti-specific utterances — making the anti-Osirian stance a Teti
+    theological addition.
+
+notes: >
+  PT 534 is included precisely because it is the most anomalous utterance in the
+  corpus by theological category: it protects the pyramid against the deity who
+  guarantees the king's resurrection. This paradox sits at the heart of Old Kingdom
+  funerary theology — the same divine figure who saves the king is also, in some
+  sense, a threat to the intact burial. Understanding this tension is essential to
+  understanding the full complexity of PT theology beyond the standard
+  resurrection-narrative account. The spell is systematically under-discussed in
+  popular and semi-scholarly secondary literature precisely because it doesn't
+  fit the standard story.

@@ -1,0 +1,110 @@
+id: pt_260
+pt_number: 260
+display_name: "PT 260 — Antechamber West/South Wall Final Spell: The King Triumphs"
+sethe_phrase_range:
+  value: "§§ 321a–323b (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Unas pyramid, antechamber — west wall to south wall boundary"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: >
+        Pyramidtextsonline.com wall index places PT 260 spanning the boundary
+        between the west wall (PT 254–260) and south wall (PT 260–272) — it
+        is the hinge spell between the two walls. 'West Wall: 254–260; South
+        Wall: 260–272.'
+      source: "Pyramidtextsonline.com antechamber wall index."
+
+location:
+  chamber: antechamber
+  wall: west_to_south_boundary
+  column_direction: unknown
+  note: >
+    PT 260 occupies the boundary between the antechamber west wall and south wall
+    in the Unas corpus. Its exact placement in Teti's antechamber — which follows
+    the same architectural program — requires Allen 2005 Teti section to confirm.
+    The boundary placement is itself architecturally meaningful: the spirit
+    completes its westward passage and turns south.
+  physical_condition: searched_gap
+
+ritual_class:
+  - stellar_ascent
+  - osirian
+  note: >
+    PT 260 belongs to the antechamber sequence where the spirit moves through the
+    Akhet. The west wall spells (PT 254–260) concern the spirit's emergence from
+    the Duat and passage through the Akhet. The south wall spells (PT 260–272)
+    concern the king's triumph over enemies and recognition by the gods (Mercer's
+    chapter VIII: 'The Deceased King Triumphs Over His Enemies and is Recognized
+    by the Gods, Utterances 260–262'). PT 260 thus straddles both themes.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+
+translations:
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 260."
+    note: "PT 260 falls within 'The Deceased King Triumphs Over His Enemies' group."
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 260."
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+
+lexical_anchors:
+  - term_transliteration: "nHm"
+    semantic_field: "Rescue / snatch away / triumph"
+    notes: >
+      The 'triumph' spells in this section often use nHm (snatch away, rescue,
+      prevail) and related power verbs. The king prevails over named enemies —
+      this is protective magic with an aggressive vector.
+    attestation_range: "nHm throughout PT corpus in triumph/protection contexts."
+
+divergence_points:
+  - id: pt260_wall_boundary
+    claim: "PT 260 is the final spell on the west wall and opening of the south wall simultaneously"
+    state: proposed
+    positions:
+      - scholar: "Pyramidtextsonline.com (Unas wall index)"
+        reading: "PT 260 bridges west wall (254–260) and south wall (260–272)"
+    note: >
+      The dual listing suggests PT 260 is a hinge spell. Whether this is a
+      scribal overlap (the spell physically wraps the corner) or an
+      indexing convention requires examination of the Piankoff 1968 plates.
+
+transmission_events:
+  - event: "Unas pyramid, antechamber west/south wall boundary"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com."
+  - event: "Teti pyramid, antechamber"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 (Teti follows same program as Unas)."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 260 is included as the wall-boundary representative for the antechamber
+  west-to-south transition. Its primary interest is architectural: the moment
+  the spirit completes its westward emergence from the Duat and turns toward
+  the south (toward the east gable portal). All three translation fields are
+  searched_gap — this is a priority unlock alongside Sethe 1908.

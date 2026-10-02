@@ -1,0 +1,186 @@
+id: pt_001_007
+pt_number: "1–7"
+display_name: "Sarcophagus Inscriptions — PT 1–7"
+sethe_phrase_range:
+  value: "§§ 1a–10d (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Die altägyptischen Pyramidentexte, vol. 1. Leipzig."
+  note: "Phrase numbers for PT 1–7 must be verified directly from Sethe vol. 1."
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: >
+    Co-extensive with Teti's reign. No independent radiocarbon date for the
+    sarcophagus carving. Reign dates from Shaw 2000, Oxford History of Ancient Egypt.
+  carving_event_note: >
+    PT 1–7 are unique to the interior of Teti's sarcophagus. This is the first
+    time Pyramid Texts appear on a royal sarcophagus anywhere in the
+    archaeological record. The Unas sarcophagus (predecessor) was left without
+    inscription. This event is a discrete dated innovation in the textual tradition.
+  later_attestations:
+    - source: "Coffin Texts"
+      approximate_date_start: -2055
+      approximate_date_end: -1650
+      note: >
+        Some PT 1–7 content survived into Middle Kingdom Coffin Texts, but
+        direct lineage mapping requires Faulkner CT concordance to confirm.
+      state: searched_gap
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: sarcophagus_interior
+  wall: interior
+  column_direction: unknown
+  note: >
+    Inscribed as a single horizontal band around the interior of the sarcophagus vessel.
+    This is not a wall inscription — it is the sarcophagus body itself as a text surface.
+    Direction of reading (right-to-left / left-to-right) requires direct examination
+    of Sethe 1908 plates or Maspero 1894 publication.
+  physical_condition: >
+    Sarcophagus body well-preserved; lid fragment only — lid text (if any) lost.
+    Source: Dodson & Ikram 2008; Dailynewsegypt.com citing site examination.
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  - protective
+  - threshold
+  note: >
+    PT 1–7 are the earliest spells in Sethe's numbering, occupying the most
+    intimate physical space — inside the vessel holding the body. Their function
+    is protective of the body at its closest point of contact with the text.
+    Allen (2005, note 3) identifies these as the sarcophagus inscriptions proper,
+    distinct from the wall corpus.
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe, K. 1908. Vol. 1. Plates of Teti sarcophagus text."
+    note: >
+      Unicode Egyptian Hieroglyphs block (U+13000–U+1342F) can render these
+      signs once the Sethe plate sequence is transcribed. Font required:
+      Noto Sans Egyptian Hieroglyphs or equivalent Gardiner-set font.
+      The sign sequence is the primary material anchor — all translations
+      are derivatives of this record.
+
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe, K. 1908. Vol. 1. Teti sarcophagus section."
+    note: >
+      Manuel de Codage (MdC) ASCII encoding is the machine-readable canonical
+      form. Once Sethe plates are accessed, each sign maps to a Gardiner code
+      (e.g. G17 = owl = m; N35 = water = n). The MdC string is the permanent
+      anchor that does not depend on font rendering.
+
+  gardiner_sign_list_notes: searched_gap
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: allen_2005
+    scope: "PT 1–7 general characterisation"
+    text: >
+      Allen (2005, note 3) identifies PT 1–7 as the specific spells inscribed on
+      Teti's sarcophagus interior, describing them as 'Pyramid Texts proper' —
+      distinguishing them from the king's titulary inscribed on other sarcophagi
+      (Pepi I, Merenre, Pepi II).
+    full_text_translation: searched_gap
+    required_source: "Allen, J.P. 2005. The Ancient Egyptian Pyramid Texts. pp. 65ff (Teti corpus)."
+    divergence_flag: false
+    note: >
+      Allen's Teti corpus begins at p. 65 of the 2005 edition. The individual
+      translations of PT 1–7 are there. Access required to extract verbatim text.
+
+  - translator_id: mercer_1952
+    full_text_translation: searched_gap
+    required_source: "Mercer, S.A.B. 1952. Vol. I. Teti texts section."
+    divergence_flag: false
+    note: "Public domain. Full text available at sacred-texts.com."
+
+  - translator_id: faulkner_1969
+    full_text_translation: searched_gap
+    required_source: "Faulkner, R.O. 1969. The Ancient Egyptian Pyramid Texts. Oxford."
+    divergence_flag: false
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "dd-mdw"
+    term_mdc: "Dd-mdw"
+    semantic_field: "Recitation heading"
+    notes: >
+      The monogram dd-mdw ('words to be spoken' / 'recitation') appears for the
+      first time in Teti's corpus as a heading before utterances. Its first
+      attestation as a monogram — not the full phrase — is a Teti scribal
+      innovation. Sethe's edition uses this as the structural division marker.
+    attestation_range: >
+      From Teti onward in all pyramid text corpora. Absent as monogram in Unas.
+    source: "Allen 2005, p. 14 note 4; Memphistours.co.uk corroborating summary."
+
+  - term_transliteration: "pr-dwAt"
+    semantic_field: "Per Duat — House of the Duat (underworld)"
+    notes: >
+      The sarcophagus chamber is identified in the texts as the pr-dwAt.
+      The sarcophagus itself is therefore the innermost point of the Duat —
+      the place of maximum death before transformation begins.
+    source: "Allen 2005, p. 12."
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: sarcophagus_material
+    claim: "The sarcophagus is carved from greywacke"
+    state: contested
+    positions:
+      - scholar: "Dodson & Ikram 2008"
+        reading: "Greywacke"
+      - scholar: "Multiple web sources (Egyptunitedtours, Egyptfuntours)"
+        reading: "Basalt"
+    note: >
+      Greywacke and basalt are visually similar dark metamorphic/volcanic stones.
+      The discrepancy may reflect different site examinations or translational
+      ambiguity of the Arabic term used by Egyptian archaeologists. Requires
+      direct petrographic analysis to resolve. This is a material evidence
+      question, not an interpretive one.
+    required_source: >
+      Maspero 1882 original excavation report; Lehner 1997 Complete Pyramids;
+      or direct petrographic analysis of the sarcophagus.
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "First inscription of royal sarcophagus with Pyramid Texts"
+    date: -2345
+    date_end: -2323
+    significance: >
+      Before Teti, royal sarcophagi bore no inscriptions. The Unas sarcophagus
+      (predecessor, -2375 to -2345 approximately) was left blank. Teti's
+      scribes extended the text program to the sarcophagus interior — a
+      discrete innovation in the spatial theology of the burial.
+    source: "Allen 2005, note 3; Dodson & Ikram 2008."
+
+# ─── NOTES ────────────────────────────────────────────────────────────────────
+
+notes: >
+  The specific content of PT 1–7 is not widely cited in secondary literature —
+  most scholarly attention goes to the wall texts and the Cannibal Hymn.
+  This makes PT 1–7 a high-priority gap: they are the most intimate textual
+  layer (physically nearest the body) and the most under-documented in
+  accessible sources. The Sethe 1908 edition is the essential unlock.
+  Until that access is established, the translation fields remain searched_gap —
+  correctly so. A searched_gap with a named required source is more honest
+  than a paraphrased approximation.
+
+parallel_pyramids:
+  unas: false      # Unas sarcophagus uninscribed
+  pepi_i: false    # Pepi I sarcophagus bears titulary only (PT 8–9), not PT 1–7
+  merenre: false
+  pepi_ii: false
+  note: "PT 1–7 are unique to Teti's sarcophagus in the Old Kingdom corpus."

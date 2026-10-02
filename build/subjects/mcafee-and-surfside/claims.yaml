@@ -1,9 +1,23 @@
 # ---------------------------------------------------------------------------
 # SEARCH HEADLINE (rules 1-7 as in the other digs; see gulf-of-tonkin/claims.yaml)
 # ---------------------------------------------------------------------------
-headline: "Was the Surfside Collapse Tied to John McAfee's Death? No: NIST Says It Began in Early June 2021"
+headline: "Surfside Collapse (2021): Not Tied to John McAfee's Death, NIST Says It Began Earlier in June"
 headline_claim: surfside-deliberate-timed-to-mcafee
-headline_status: review          # meets the rules as of 2026-10-02; owner approval pending
+headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
+assessment:
+  question: "Was the Surfside condominium collapse tied to John McAfee's death?"
+  answer: "no"
+  headline: "No. NIST places the start of the failure in early June 2021, before McAfee died (high confidence)."
+  text: >
+    NIST finds the collapse began in early June 2021 at two connections and traces its causes to the original design and construction. The posts linking it to McAfee depend on a tweet that the sources read show was not posted and on a claimed unit that the sources read do not support; both are rated moderate confidence, because the archive and property-record checks are still to be done.
+    The dates one day apart are real but carry no weight, because the failure began earlier. Two limits: we read NIST's public pages, not the full technical report, and the cause of McAfee's death rests on Spanish findings of suicide with no
+    independent review found. Those doubting that finding are recorded as doubt, not evidence.
+  key_points:
+    - "The collapse began at two structural connections, with causes in the original design and construction."
+    - "The posts linking the two rest on a tweet and a unit that the sources read do not support."
+    - "Doubts about his death are recorded as doubt: the Spanish findings say suicide and no independent review was found."
+  basis: [surfside-deliberate-timed-to-mcafee, surfside-failure-began-before-mcafee-death, mcafee-june8-tweet-posted, mcafee-owned-unit, mcafee-spanish-finding-suicide]
+  would_settle: "Physical evidence of an external cause of the collapse, or evidence that McAfee or his data were connected to the building."
 search_summary: >
   Was the Surfside condo collapse linked to John McAfee's death? No. NIST says the failure began in early June 2021, before he died, and the "hidden files" tweet was fabricated.
 url_slug: surfside-collapse-john-mcafee-death-no-link-nist-failure-began-early-june-2021
@@ -48,6 +62,7 @@ claims:
       Spanish court approved his extradition to the United States on tax charges; the extradition was not final.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: secondary   # official statements read through news and fact-check reports
     adoption_weight: 5   # of 5
@@ -75,6 +90,7 @@ claims:
       saying there were "no indications of anything other than a violent death of suicidal origin, nothing at all".
     evidence_class: primary_text
     confidence: high
+    statement_kind: reported   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5; this is the strength of the claim that the finding exists
     anchor_checked: secondary   # official words read through PolitiFact and AFP
     adoption_weight: 3   # of 5
@@ -104,6 +120,7 @@ claims:
       inquiry, has been found.
     evidence_class: primary_text
     confidence: low
+    statement_kind: search_result   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 2   # of 5; absence anchor, capped
     anchor_checked: secondary
     adoption_weight: 3   # of 5
@@ -132,6 +149,7 @@ claims:
       approximately 1:30 a.m. EDT, with mass casualties; the final death toll was reported as 98.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 5   # of 5; the date and time are from the investigating agency's own page, read directly
     anchor_checked: primary   # NIST page read; the toll is from secondary reports
     adoption_weight: 5   # of 5
@@ -160,6 +178,7 @@ claims:
       the tower, and the failure spread through parts of the tower.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5; the investigating agency's own conclusion; the full report not read
     anchor_checked: primary   # NIST page and update read
     adoption_weight: 4   # of 5
@@ -194,6 +213,7 @@ claims:
       building's distress were visible in the weeks before the collapse.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: primary   # the two NIST pages read
     adoption_weight: 2   # of 5
@@ -220,6 +240,19 @@ claims:
       to him.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
+    assumptions:
+      - text: "NIST's account of the failure, read in its public summary pages and not in the full technical report, is accurate and complete enough to rule out a separate deliberate cause."
+        if_wrong: "Evidence of sabotage or an external cause, or a link between McAfee or his data and the building, would change the claim. The summary read does not say whether sabotage was specifically tested and excluded."
+    alternatives:
+      - text: "The collapse was deliberate and its timing was a coincidence."
+        why_not_preferred: "NIST finds the failure began in early June 2021 at two connections, with causes in the original design and construction, and no source read shows a deliberate act."
+    confidence_reasons:
+      start: high
+      start_because: "The anchor was read directly (primary)."
+      steps:
+        - {domain: indirectness, effect: none, reason: "Only NIST's public pages were read, not the technical report. Considered and not applied because the claim is a conjunction, and the dates alone (failure began before the death) refute 'timed to follow McAfee's death'."}
+      reviewed: false
     evidential_weight: 4   # of 5
     anchor_checked: primary   # the NIST pages read
     adoption_weight: 1   # of 5
@@ -250,6 +283,7 @@ claims:
       and would release it to the press if he was arrested or disappeared; he did not say where the files were.
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: reported   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3   # of 5; the tweet was not read directly
     anchor_checked: secondary   # quoted by PolitiFact, USA Today and TheCount
     adoption_weight: 4   # of 5
@@ -279,6 +313,7 @@ claims:
       files I have are located on hard drives in my condo near 88th Street and Collins Avenue just north of Miami Beach."
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3   # of 5; the main anchor is an absence, capped
     anchor_checked: secondary   # fact-checkers' searches read; our own capture check was blocked
     adoption_weight: 2   # of 5
@@ -314,6 +349,7 @@ claims:
       John McAfee, or his wife, owned a unit in Champlain Towers South.
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3   # of 5; absence anchor, capped
     anchor_checked: secondary   # an AP review of property records, read through USA Today
     adoption_weight: 2   # of 5
@@ -343,6 +379,7 @@ claims:
       McAfee died on 23 June 2021 and the building collapsed about 24 hours later; the dates are one day apart.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: primary   # the NIST date read; the death date is secondary
     adoption_weight: 5   # of 5

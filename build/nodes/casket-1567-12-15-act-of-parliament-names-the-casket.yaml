@@ -1,0 +1,29 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1567-12-15-act-of-parliament-names-the-casket
+rev: 2
+type: event
+label: '15 Dec: Act of Parliament names the casket documents'
+time: '1567-12-15T12:00:00Z'
+precision: day
+kind: analysis
+status: single
+what: Expunged from the records; survives because it was printed in 1568.
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
+about:
+- object-casket-and-letters-1567
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event b6.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

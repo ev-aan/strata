@@ -10,12 +10,20 @@
 #   6. Plain words only. Name the belief being refuted AND what replaces it, and
 #      explain any term a general reader would not know (in the summary if not the title).
 # ---------------------------------------------------------------------------
-headline: "No, English and Hindi's common ancestor did not come from Turkey"
-headline_claim: pie-steppe-homeland
+headline: "Proto-Indo-European: English, Hindi and Latin Descend From One Reconstructed Language"
+headline_claim: pie-exists-as-real-language
 headline_status: draft          # draft until V2, then published
+headline_hold: >
+  2026-10-02 review. Do not publish. (1) FIXED: the headline used to say the ancestor did not come from Turkey while resting on the steppe claim;
+  it now headlines only the existence of the ancestor language, and the homeland is left out until re-rated. (2) This claim and anatolian-daughter-hypothesis
+  carry high confidence with no anchor read in this project (anchor_checked missing); the literature is not settled that
+  way: a 2023 Bayesian study (Heggarty et al., Science) favours an earlier, Anatolian-linked date, and a 2025 study
+  (Lazaridis et al., Nature) places a stem population south of the Caucasus. These are recalled, not read here, so they are
+  to be read before the claim is rated. Until then the steppe claim should be treated as contested, not refuted-the-rival.
+  (3) The anatolian-daughter statement joins two ideas (a daughter branch, and Anatolia as the homeland) and refutes both with
+  one anchor. (4) weights, anchor_checked and would_change_if are missing on every claim.
 search_summary: >
-  English, Hindi, Russian and Latin share one ancestor language. Ancient DNA places its homeland on the steppe north of the Black Sea, not in Anatolia (Turkey).
-
+  Do English, Hindi, Russian and Latin share one ancestor language? Yes, as a reconstruction. Where and when it was spoken (steppe or Anatolia) is still debated.
 subject: proto-indo-european
 title: "Proto-Indo-European: A Reconstructed Language"
 description: >

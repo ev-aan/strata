@@ -1,0 +1,34 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1882-05-eaton-told-of-goebel-claim
+rev: 1
+type: event
+label: 'May 1882: Dickerson and Dickerson tell Edison''s lawyer Eaton of Goebel''s claimed lamps'
+time: '1882-05-15T12:00:00Z'
+precision: month
+kind: witness
+status: single
+what: '54 F. 678, summarising Sherburne B. Eaton''s affidavit: ''in May, 1882, the law firm of Dickerson & Dickerson called
+  his attention to the alleged inventions of Henry Goebel''; Goebel''s representative was William C. Dreyer; the Edison company''s
+  executive committee ''decided that Goebel had nothing worth buying''.'
+sources:
+- title: Edison Electric Light Co. v. Beacon Vacuum Pump & Electrical Co., 54 F. 678 (C.C.D. Mass., 18 Feb 1893), Colt J.
+  url: https://static.case.law/f/54/cases/0678-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-54-f-678
+  source_type: official_record
+  access: read
+window:
+  earliest: '1882-05-01'
+  latest: '1882-05-31'
+  begin_note: 'Eaton: ''in May, 1882''.'
+  end_note: Same.
+manifest:
+  subject: incandescent-lamp
+  source: src-54f678
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (finding B3). Date and place re-checked against
+    the cited source.'
+date_basis: stated

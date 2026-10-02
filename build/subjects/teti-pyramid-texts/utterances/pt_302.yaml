@@ -1,0 +1,193 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch2/pt_302.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_302
+pt_number: 302
+display_name: "PT 302 — Antechamber North Wall Opening: Departure from the Akhet"
+sethe_phrase_range:
+  value: "§§ 459a–461c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Unas pyramid, antechamber north wall (opening spell)"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: "Pyramidtextsonline.com: Antechamber North Wall 302–312."
+      source: "Pyramidtextsonline.com antechamber north wall index."
+
+location:
+  chamber: antechamber
+  wall: north
+  column_direction: east_to_west
+  note: >
+    The north wall of the antechamber is the final antechamber wall before
+    the corridor leading out of the pyramid. Allen (2005) identifies it as the
+    point where 'the newborn spirit encountered spells enabling it to leave
+    the Akhet.' PT 302 opens this departure sequence — the spirit has been
+    transformed in the Akhet (antechamber) and now moves toward the sky via
+    the corridor, vestibule, and ascending corridor.
+    North = toward the circumpolar stars (the imperishable stars) in Egyptian
+    astronomical theology. The north wall departure is directionally coded.
+  physical_condition: searched_gap
+
+ritual_class:
+  classes:
+    - stellar_ascent
+    - solar_ascent
+  note: >
+    The north wall departure spells (PT 302–312) enable the spirit to leave the
+    Akhet and cross toward the sky 'in company with the Sun and other gods'
+    (Allen 2005, p. 12). PT 302 opens this sequence — it is the first of the
+    outward-bound personal spells after the full antechamber transformation.
+    Allen: 'Moving to the north wall of the antechamber, the newborn spirit
+    encountered spells enabling it to leave the Akhet.'
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+
+translations:
+  - translator_id: piankoff_modernised
+    text: >
+      Unas antechamber north wall (pyramidtextsonline.com/antenorth.html) opens
+      PT 302 (§ 459):
+      'Excitement in heaven! "We see something new!" say the gods of Primeval Times.
+      O Ennead, a (new) Horus is in the sunlight, the lords of forms serve him,
+      the Two whole Enneads turn for him,
+      as he sits on the seat of the Lord of All (nb tm).
+      Unas takes heaven, he splits its brass,
+      Unas is led on the ways of the Becoming One (xpr).'
+    source: "Pyramidtextsonline.com antechamber north wall; khaledgamean.wordpress.com Unas antechamber translation."
+    divergence_flag: false
+    notes: >
+      'A new Horus is in the sunlight' — the king is identified as a new Horus
+      at the moment of departure from the antechamber. The gods of Primeval Times
+      exclaim: 'We see something new!' — the resurrection is cosmically unprecedented.
+      'Splits its brass' — the sky (pt) is described as made of metal (biA, brass/iron),
+      and the king breaks through it. 'Becoming One (xpr)' = Khepri, the scarab god
+      of dawn transformation — also the verb xpr = 'become/transform.'
+
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 302."
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 302."
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+
+lexical_anchors:
+  - term_transliteration: "biA n pt"
+    term_mdc: "biA n pt"
+    semantic_field: "Bronze/iron of the sky — the celestial metal"
+    notes: >
+      The sky (pt) is described as made of biA — a metallic substance,
+      variously translated as copper, bronze, or iron. The king 'splits' or
+      'breaks through' this metal sky. biA is associated with meteoritic iron
+      in later Egyptian texts (biA n pt = 'iron from the sky' = meteorite).
+      Whether the PT usage intends literal metal or metaphorical solidity is
+      a translation question. The image of breaking through a metal sky to
+      reach the stars is one of the most vivid in the corpus.
+    translation_disputes:
+      readings:
+        - reading: "'Splits its brass' (Piankoff modernised)"
+        - reading: "'Breaks open the iron' (Faulkner alternative)"
+          note: "biA = metal; the specific metal (copper/bronze/iron) varies by translator."
+    attestation_range: "biA n pt appears in later contexts explicitly for meteoritic iron."
+
+  - term_transliteration: "xpr"
+    term_mdc: "xpr"
+    semantic_field: "Become / transform / Khepri (scarab god of dawn)"
+    notes: >
+      xpr is simultaneously a verb ('become'), a noun ('transformation'), and the
+      name of the god Khepri (the rising sun as scarab). 'The ways of the Becoming
+      One' — the path the king follows is the path of dawn transformation itself.
+      The scarab rolling its dung ball = the sun rolling across the sky = the king
+      transforming from death to new existence. Three semantic registers in one sign.
+    attestation_range: >
+      xpr is ubiquitous throughout Egyptian religious literature from PT through demotic.
+
+  - term_transliteration: "psDt"
+    semantic_field: "Ennead — the Nine Gods"
+    notes: >
+      psDt = 'the Nine' (from psDt = nine). The Great Ennead (Heliopolis):
+      Atum, Shu, Tefnut, Geb, Nut, Osiris, Isis, Seth, Nephthys.
+      The 'Two whole Enneads' (psDtj) = Great and Small Enneads together.
+      All divine beings witness and serve the transformed king.
+    attestation_range: "psDt runs through all Egyptian religious literature."
+
+divergence_points:
+  - id: sky_metal_identity
+    claim: "The king 'splits the brass/iron of the sky' — what metal is biA?"
+    state: contested
+    positions:
+      - scholar: "Piankoff (modernised)"
+        reading: "Brass"
+      - scholar: "Faulkner 1969 (expected)"
+        reading: "Iron / copper — biA rendered differently"
+        note: "Faulkner's exact rendering: searched_gap."
+      - scholar: "Allen 2005"
+        reading: searched_gap
+    note: >
+      The metallurgy matters theologically: copper/bronze is a Old Kingdom
+      prestige metal; iron is associated with the sky (meteoritic) and with
+      Seth's bones. If biA here = meteoritic iron, the king breaks through
+      sky-metal made of the same substance as divine bones. Sethe 1908 sign
+      analysis would confirm which metal sign appears at this position.
+
+  - id: new_horus_declaration
+    claim: "PT 302 is the moment the king is declared a 'new Horus' — a cosmically unprecedented event"
+    state: proposed
+    positions:
+      - scholar: "Piankoff/Unas text"
+        reading: >
+          'Excitement in heaven! "We see something new!" say the gods of
+          Primeval Times. O Ennead, a (new) Horus is in the sunlight.'
+          The divine exclamation ('something new!') frames the resurrection as
+          unprecedented even to the primordial gods. The king is not merely
+          reborn — he is a new cosmological fact.
+      - scholar: "Alternative: formulaic claim, not literal novelty"
+        reading: >
+          The 'something new' exclamation may be a ritual formula — a standard
+          acclamation at the king's appearance — rather than a theological claim
+          about literal cosmic novelty. Each king's resurrection would prompt the
+          same formula, making it repeated rather than unique.
+    note: >
+      The distinction matters: is each king's resurrection genuinely unprecedented
+      (ontological claim) or is it formulaically announced as unprecedented
+      (performative convention)? The answer determines the theological weight
+      of the 'new Horus' identification.
+
+transmission_events:
+  - event: "Unas pyramid, antechamber north wall (opening spell)"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com; khaledgamean.wordpress.com."
+  - event: "Teti pyramid, antechamber north wall"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 architectural analysis, p. 12."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 302 is the first departure spell — the moment the transformed king leaves
+  the Akhet and moves toward the sky. The divine exclamation ('We see something
+  new!') makes it the most dramatically announced moment in the corpus outside
+  PT 373. The king-as-new-Horus identification links back to PT 213's Osirian
+  identification: the complete program moves from Osiris (burial chamber south wall)
+  through the Cannibal Hymn's power absorption to Horus (antechamber north wall departure).
+  Osiris → power absorption → new Horus → sky.

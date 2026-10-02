@@ -1,0 +1,38 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1881-09-13-nichols-latimer-patent-247097
+rev: 1
+type: event
+label: '13 Sep 1881: Nichols and Latimer, US patent 247,097 ''Electric Lamp'''
+time: '1881-09-13T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'US 247,097, ''Electric Lamp'', Joseph V. Nichols of Brooklyn and Lewis H. Latimer ''of the city, county, and State
+  of New York'', application filed 18 April 1881, dated 13 Sep 1881: ''Improvements in Incandescent Electric Lamps'' in which
+  the carbon strip is secured to the metallic wires, ''more especially ... the method of mounting the carbons or connecting
+  them with the wires'': wires pass through perforated ends of the carbon strip and are bent over into contact with it.'
+sources:
+- title: US Patent 247,097, J. V. Nichols and L. H. Latimer, Electric Lamp (dated 13 Sep 1881)
+  url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0247097
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-patent-247097
+  source_type: official_record
+  access: read
+place:
+  name: New York City
+  lat: 40.7127
+  lon: -74.006
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 175905
+  note: The source gives the person's residence or the firm as 'of New York, N. Y.' without a street.
+manifest:
+  subject: incandescent-lamp
+  source: src-us247097
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (finding A6). Date and place re-checked against
+    the cited source.'
+date_basis: stated

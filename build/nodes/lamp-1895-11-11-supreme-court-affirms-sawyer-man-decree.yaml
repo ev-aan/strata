@@ -1,0 +1,31 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1895-11-11-supreme-court-affirms-sawyer-man-decree
+rev: 1
+type: event
+label: '11 Nov 1895: Supreme Court affirms the dismissal of the Sawyer-Man suit (The Incandescent Lamp Patent)'
+time: '1895-11-11T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: '159 U.S. 465 (argued 29-30 Oct 1894, decided 11 Nov 1895; the scan''s heading misprints the year as ''1815''), Brown
+  J.: ''we are all agreed that the claims of this patent, with the exception of the third [carbonised paper], are too indefinite
+  to be the subject of a valid monopoly''; the question of priority ''becomes unnecessary''; ''the decree of the Circuit Court
+  is Affirmed''. The Court also recounts Edison''s search among ''about forty different kinds of bamboo'' and says he ''despatched
+  a man to Japan''.'
+sources:
+- title: The Incandescent Lamp Patent, 159 U.S. 465 (decided 11 Nov 1895), Library of Congress scan of United States Reports
+  url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep159/usrep159465/usrep159465.pdf
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-reports-159-465
+  source_type: official_record
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-scotus-1895
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a16; label corrected (finding 4a). Date and
+    place re-checked against the cited source.'
+date_basis: stated

@@ -1,0 +1,29 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1586-06-30-phelippes-forges-a-postscript-to-mary
+rev: 2
+type: event
+label: '1586: Phelippes forges a postscript to Mary''s letter to Babington (a different case)'
+time: '1586-06-30T12:00:00Z'
+precision: year
+kind: document
+status: single
+what: Per open question Q-001 (formerly bounty B-001) (claim casket-babington-postscript-forged-1586; source not read in this
+  dig). It shows forging Mary's letters was possible; it adds no weight to claims about 1567.
+sources:
+- title: 'NSA, To Catch a Queen (declassified 2011): not read, nsa.gov blocks the cloud session'
+  url: https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/to-catch-a-queen.pdf
+  authenticity: not read; secondary
+  origin: nsa-to-catch-a-queen
+  source_type: official_history
+  access: cited_only
+link: https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/to-catch-a-queen.pdf
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k13.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

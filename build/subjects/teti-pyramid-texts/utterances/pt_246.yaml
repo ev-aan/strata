@@ -1,0 +1,244 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch1/pt_246.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_246
+pt_number: 246
+display_name: "PT 246 — Threshold Spell: Stand at the Door of the Akhet"
+sethe_phrase_range:
+  value: "§§ 254a–255c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Unas pyramid, passage south wall"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: >
+        PT 244–246 occupy the south wall of the passage in both Unas and Teti.
+        PT 246 is the final spell of the passage south wall — the last spell
+        before the antechamber threshold.
+      source: "Pyramidtextsonline.com passage south wall index: PT 244–246."
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: passage_south
+  wall: south
+  column_direction: west_to_east
+  note: >
+    PT 246 is the final spell on the south wall of the horizontal passage —
+    the last text the king's spirit encounters before entering the antechamber
+    (the Akhet). Allen (2005, p. 12) notes: 'The final spell of the sarcophagus
+    chamber rituals (PT 246) urges the king to "stand at the door of the Akhet"
+    (Pyr. 255a).' Allen explicitly identifies PT 246 as the architectural
+    threshold between the Per Duat (burial chamber = underworld) and the
+    Akhet (antechamber = horizon of transformation).
+    Note: Allen's framing places PT 246 architecturally in the sarcophagus
+    chamber sequence even though physically it is in the passage — the
+    threshold is both spatial and textual.
+  physical_condition: >
+    Passage south wall condition in Teti: searched_gap (Leclant reports required).
+    Allen (2005) notes that in Unas and Teti only the southern end of the
+    corridor is inscribed — the rest of the corridor is blank.
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  classes:
+    - threshold
+    - stellar_ascent
+  note: >
+    PT 246 is the architectural liminal spell — it marks the exact moment
+    of passage from the Duat (underworld/death/body) to the Akhet (horizon/
+    transformation/spirit). The command 'stand at the door of the Akhet'
+    is not a description of movement — it is the spell that enables movement.
+    In Egyptian theological architecture, the passage physically IS the door.
+    This is the most spatially self-referential spell in the corpus:
+    the king reads the command to cross the threshold at the exact point
+    of crossing it.
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Passage south wall, Teti."
+
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+    partial_note: >
+      The phrase Allen cites (Pyr. 255a) — 'stand at the door of the Akhet' —
+      would render approximately in MdC as:
+      aHa.k r sb3 n Axt
+      (aHa = stand; sb3 = door/star; Axt = Akhet/horizon)
+      This is a reconstruction from the Allen citation, not a confirmed MdC.
+
+  gardiner_sign_list_notes: >
+    Key signs:
+    - sb3: (N14 star + O1 house) — 'door' AND 'star.' The same sign serves
+      both meanings. A 'door of the Akhet' is written with the star sign —
+      the threshold and the star are the same hieroglyph.
+      This is one of the most semantically charged sign-uses in the corpus.
+    - Axt: (N27 horizon between mountains) — 'Akhet': horizon, place of
+      the sun's rising and setting, place of transformation.
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: allen_2005
+    text: >
+      '[The king is urged to] stand at the door of the Akhet.'
+      (Pyr. 255a — direct citation from Allen 2005, p. 12 introduction)
+    source: "Allen, J.P. 2005. p. 12. Introduction to architectural theology of the corpus."
+    divergence_flag: false
+    notes: >
+      This is Allen's citation in his architectural analysis, not a full
+      utterance translation. The complete PT 246 translation in Allen's
+      Teti corpus section (pp. 65+) is searched_gap.
+      Allen's point is that PT 246 is the final act of the burial chamber
+      ritual sequence — 'stand at the door' = the last command before
+      the spirit moves to the antechamber.
+
+  - translator_id: piankoff_modernised
+    text: searched_gap
+    required_source: "Pyramidtextsonline.com Unas passage south wall text."
+    note: >
+      The Unas passage south wall (PT 244–246) is listed in the pyramidtextsonline.com
+      index but the full translation for PT 246 specifically was not retrieved.
+      PT 244–246 are available at pyramidtextsonline.com/passsouth.html.
+
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 246."
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 246."
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "sb3"
+    term_mdc: "sb3"
+    semantic_field: "Door AND Star — the threshold sign"
+    notes: >
+      sb3 is one of the most important signs in the PT corpus precisely because
+      it carries two meanings simultaneously: 'door' (architectural threshold)
+      and 'star' (celestial body). When the king 'stands at the sb3 of the Akhet,'
+      he stands at the star-door — the point where the horizon opens into the
+      stellar realm. The sign encodes the theology: passing through a door and
+      becoming a star are the same act.
+      Allen (2005) and Faulkner are both aware of this double meaning;
+      how each handles the ambiguity in translation is a divergence point.
+    attestation_range: >
+      sb3 as 'star' is ubiquitous in the stellar/astral ascent passages of the PT.
+      The 'Imperishable Stars' (Ax.w) are literally the 'Imperishable sb3.w.'
+    translation_disputes:
+      readings:
+        - reading: "'Door of the horizon' (architectural)"
+          scholars: ["Allen 2005 (in architectural context)"]
+        - reading: "'Star of the Akhet' (stellar)"
+          scholars: ["Alternative reading — the king becomes a star, not passes through a door"]
+      note: >
+        Both readings are grammatically valid. The chosen reading shapes whether
+        PT 246 is about spatial transition (door) or ontological transformation (star).
+        This is the most significant lexical divergence point in the threshold spell.
+
+  - term_transliteration: "Axt"
+    term_mdc: "Axt"
+    semantic_field: "Akhet — horizon, place of becoming akh"
+    notes: >
+      Axt carries the root Ax (akh, transfigured spirit). Allen (2005) argues
+      that Axt means 'place of becoming Akh' — not simply 'horizon.' The king
+      does not merely cross the horizon; he undergoes the transformation that
+      makes him an Ax at the Axt. The antechamber (Akhet) is the architectural
+      embodiment of this transformation zone.
+    source: "Allen 2005 cited in arxiv.org/pdf/2412.20407 via Bauval 2013."
+    translation_disputes:
+      readings:
+        - reading: "Horizon (conventional)"
+          scholars: ["Mercer", "older tradition"]
+        - reading: "Place of Becoming Akh (functional etymology)"
+          scholars: ["Allen 2005"]
+      note: >
+        Allen's etymological argument is philologically grounded (Ax + t suffix
+        = place of Ax-ing). If correct, it changes the meaning of 'rise from
+        the Akhet' throughout the corpus: not 'rise from the horizon' but
+        'rise from the place of spiritual transformation.'
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: sb3_door_vs_star
+    claim: "sb3 in PT 246 §255a refers to a door (architectural) or a star (celestial)"
+    state: contested
+    positions:
+      - scholar: "Allen 2005 (architectural reading)"
+        reading: >
+          sb3 = door. The king stands at the door of the Akhet = the passageway
+          between burial chamber and antechamber. The architecture IS the theology.
+      - scholar: "Stellar reading"
+        reading: >
+          sb3 = star. 'Stand at the star of the Akhet' = become a star at the
+          horizon. The king's goal is stellar transformation, not spatial transit.
+    note: >
+      The two readings are not mutually exclusive — the sb3 sign encodes both.
+      But translation forces a choice. Allen's architectural reading (2005) is
+      the more recent scholarly position. The extent to which it differs from
+      Faulkner's rendering requires direct comparison.
+    required_source: "Faulkner 1969 Utterance 246; Allen 2005 Teti corpus."
+
+  - id: akhet_etymology_theological_consequence
+    claim: "Axt means 'place of becoming Akh' (Allen) not simply 'horizon' (traditional)"
+    state: proposed
+    positions:
+      - scholar: "Allen, J.P. 2005"
+        reading: >
+          'Axt is the place in which the king undergoes the final transformation
+          from the inertness of death and night to the form that allows him to
+          live effectively — that is, as an Akh.' It is the 'Place of Becoming Akh.'
+        source: "Allen 2005, cited by Bauval 2013, arxiv.org/pdf/2412.20407."
+      - scholar: "Traditional Egyptology"
+        reading: >
+          Axt = horizon (the point between sky and earth where sun rises/sets).
+          The king rises 'from the Akhet' = from the horizon, as the sun rises.
+    note: >
+      Allen's argument rests on etymological analysis of Ax + t locative suffix.
+      If accepted, it revises the meaning of dozens of PT passages that use
+      'Akhet' in the solar-rise context. This is a high-stakes interpretive
+      claim with corpus-wide consequences.
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "Unas pyramid, passage south wall (final spell)"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com passage south wall index: PT 244–246."
+  - event: "Teti pyramid, passage south wall (final spell)"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 architectural analysis, p. 12; citing Pyr. 255a."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 246 is architecturally the most significant utterance in this set because
+  it is the only spell that explicitly identifies its own physical location
+  as a theological boundary. The king reads 'stand at the door' while standing
+  in the passage that IS the door. This self-referential quality is not found
+  elsewhere in the corpus at this level of explicitness.
+  The sb3 sign's double meaning (door/star) means the inscription itself
+  encodes the transformation: the king is commanded to stand at a door
+  that is simultaneously a star. Crossing a threshold and becoming stellar
+  are written with the same hieroglyph.

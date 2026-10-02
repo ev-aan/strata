@@ -1,0 +1,61 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1568-12-westminster-conference-examines-the-letters
+rev: 3
+type: event
+label: '7-14 Dec 1568: Westminster conference examines the letters; minute of 14 Dec records ''no difference'' found on collation'
+time: '1568-12-08T12:00:00Z'
+precision: range
+kind: analysis
+status: single
+end: '1568-12-14T12:00:00Z'
+what: 'Henderson quotes the Privy Council minute: Morton''s declaration ''exhibited upon his oath the 9th of December: In
+  collation whereof no difference was found''; copies in the memorial of the sessions of 7 and 8 Dec. A claim by the commissioners,
+  not a test.'
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
+place:
+  name: Westminster, London
+  lat: 51.4994
+  lon: -0.1245
+  precision: site
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 1567699 (Palace of Westminster)
+  note: Henderson says only 'Westminster'; the building is not stated, so this is the area.
+about:
+- object-casket-and-letters-1567
+related:
+- node: casket-1568-12-westminster-examination-collation-minute
+  kind: part_of
+  grade: established
+  why: The collation from 9 Dec to the minute of 14 Dec (the related node) is the later part of the sessions described here
+    (7 to 14 Dec).
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the Casket Letters timeline, event k9. NOT merged with b9: this one is dated 7-14 Dec 1568 and b9
+    9-14 Dec 1568. The two dates are unreconciled in the original timeline; both are kept.'
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed; related links graded with a stated reason.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'Schema v0.6: added a time window with reasons for each boundary. Also corrected the link to the collation node:
+    it is part of this conference, not a rival dating (an earlier note called the 7-14 and 9-14 Dec ranges unreconciled; the
+    node texts show they describe the whole sessions and the collation phase).'
+date_basis: stated
+window:
+  earliest: '1568-12-07'
+  latest: '1568-12-14'
+  certainly_covers:
+    from: '1568-12-09'
+    to: '1568-12-14'
+  begin_note: The memorial records sessions on 7 and 8 Dec; Morton exhibited his declaration on 9 Dec, when the collation
+    began (Henderson, quoting the Privy Council minute).
+  end_note: The minute of 14 Dec records that no difference was found on collation.

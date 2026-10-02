@@ -1,0 +1,57 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1879-12-31-menlo-park-visitors-no-formal-exhibition
+rev: 1
+type: event
+label: '30-31 Dec 1879: crowds at Menlo Park see Edison''s lights; Edison calls the announcement unauthorised'
+time: '1879-12-31T12:00:00Z'
+precision: day
+kind: media
+status: reported
+what: 'New York Herald, 31 Dec 1879 (dateline ''Menlo Park, N. J., Dec. 30''): Menlo Park ''thronged with visitors'' all day;
+  sixty lights; ''the Inventor has fixed no day for a general inspection by the public at large''. New-York Tribune, 1 Jan
+  1880: ''The unauthorized announcement'' that the lights would be exhibited ''drew scores of persons to that place last evening''
+  (31 Dec); Edison ''disclaimed any intention of giving any formal exhibition''; ''between fifty and sixty lights burning'';
+  headline ''No public exhibition promised or given'' (the headline''s OCR is damaged and is read as that).'
+sources:
+- title: 'New York Herald, 31 Dec 1879, p. 3: ''The Horseshoes Still Shining'' (Menlo Park dateline 30 Dec)'
+  url: https://www.loc.gov/resource/sn83030313/1879-12-31/ed-1/?sp=3
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: ny-herald-1879-12-31
+  source_type: news
+  access: read
+- title: 'New-York Tribune, 1 Jan 1880, p. 8: ''Edison''s Electric Light'' (visitors at Menlo Park the evening before)'
+  url: https://www.loc.gov/resource/sn83030214/1880-01-01/ed-1/?sp=8
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: ny-tribune-1880-01-01
+  source_type: news
+  access: read
+place:
+  name: Menlo Park, Edison, New Jersey
+  lat: 40.564
+  lon: -74.3476
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM way 1372807911 (Menlo Park neighbourhood, now in Edison Township)
+  note: Named as 'Menlo Park, N. J.' in the sources. The laboratory's exact site is not given in them, so only the settlement
+    is placed.
+window:
+  earliest: '1879-12-30'
+  latest: '1879-12-31'
+  begin_note: The Herald's dateline is 30 Dec.
+  end_note: The Tribune of 1 Jan reports 'last evening', 31 Dec.
+manifest:
+  subject: incandescent-lamp
+  source: src-herald-1879-12-31
+related:
+- node: lamp-1879-12-21-herald-announces-new-years-eve-exhibition
+  kind: responds_to
+  grade: established
+  why: The Tribune calls the 'unauthorized announcement' of an exhibition the cause of the crowd; the announcement is the
+    Herald's of 21 Dec.
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b6, widened to the event the Tribune and the
+    Herald each report. Date and place re-checked against the cited source.'
+date_basis: stated

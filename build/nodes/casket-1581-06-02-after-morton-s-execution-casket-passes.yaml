@@ -1,0 +1,40 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1581-06-02-after-morton-s-execution-casket-passes
+rev: 3
+type: event
+label: 'After Morton''s execution (1581): casket passes to the Earl of Gowrie'
+time: '1581-06-02T12:00:00Z'
+precision: year
+kind: analysis
+status: single
+what: 'Henderson: delivered by Morton''s natural son James, Prior of Pluscardin, to Gowrie, who refused Elizabeth''s ambassador.
+  The year of Morton''s execution is from outside Henderson''s passage read (recalled: 1581).'
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
+about:
+- object-casket-and-letters-1567
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k11.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `derived`; each source given an origin,
+    a source_type and how it was accessed.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'Schema v0.6: added a time window; the node time is a placeholder inside it because Henderson gives no date for
+    the transfer.'
+date_basis: derived
+window:
+  earliest: '1581-01-01'
+  latest: '1584-12-31'
+  begin_note: After Morton's execution, whose year (1581) is recalled, not read.
+  end_note: By the execution of Gowrie (about 1584, also recalled) the casket is said to have passed to Arran, so Gowrie's
+    holding ended by then.

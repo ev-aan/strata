@@ -1,0 +1,358 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch1/pt_373.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_373
+pt_number: 373
+display_name: "PT 373 — Rise Up, O Teti: Named Resurrection Address"
+sethe_phrase_range:
+  value: "§§ 653a–655d (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  name_specificity_note: >
+    PT 373 is one of the few utterances that addresses the king by personal name
+    ('Rise up, O Teti') rather than by the generic 'N' placeholder.
+    This makes it uniquely dateable to Teti's reign in a way that shared-corpus
+    utterances are not — the name 'Ttj' (Teti) is the anchor.
+  later_attestations:
+    - source: "Unas pyramid — absent"
+      note: >
+        PT 373 in its Teti-named form is specific to Teti. The underlying
+        resurrection formula may appear in Unas with 'Unas' substituted,
+        but the utterance as named address to Teti is Teti-specific.
+        Whether a parallel Unas version exists at this PT number requires
+        Allen concordance to confirm.
+      state: searched_gap
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: burial_chamber
+  wall: south
+  column_direction: west_to_east
+  note: >
+    PT 373 belongs to the Resurrection Ritual on the south wall — the same
+    ritual complex as PT 213 and PT 217. It is a later spell in the sequence
+    (PT 373 >> PT 213 in Sethe numbering, further east on the wall).
+    Allen (2005) identifies the south wall Resurrection Ritual as 'longer spells
+    designed to release the deceased's spirit.' PT 373 is among the longer spells
+    by virtue of its extended address formula.
+  physical_condition: >
+    South wall of Teti's burial chamber: fragmentary. Specific condition of PT 373
+    in Teti's chamber requires Leclant restoration reports. The Wikipedia citation
+    of the Teti-named text confirms legibility of at least the key phrases at
+    some point in the record.
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  classes:
+    - resurrection_ritual
+    - stellar_ascent
+    - osirian
+  note: >
+    PT 373 is the named resurrection command — the direct imperative to the
+    specific king ('Rise up, O Teti'). It combines:
+    1. Body reconstitution ('take your head, collect your bones, gather your limbs')
+    2. Purification ('shake the earth from your flesh')
+    3. Provision ('take your bread that rots not, your beer that sours not')
+    4. Access authority ('stand at the gates that bar the common people')
+    5. Divine kinship ('takes you into heaven, to your father Geb')
+    6. Stellar destination ('sets you before the imperishable stars')
+    The progression from body → provision → gates → heaven → stars is a complete
+    resurrection narrative in one utterance.
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Teti south wall."
+    note: >
+      The cartouche for 'Teti' (Ttj) in this utterance is among the most
+      directly photographable and confirmable signs in the chamber — Teti's
+      cartouche contains bread loaves (two T signs = /t/) and a seated man
+      or cobra (possibly /j/ sound). The Hmolpedia article confirms:
+      'A selection of the Pyramid Texts of king Teti, showing his cartouche,
+      with two bread glyphs, carto-phono: /t/ sound, and one read glyph,
+      carto-phono: /i/.' (Gardiner: X1 + X1 + Z4 or similar)
+    cartouche_mdc: "t-t-i" # Teti = Ttj, cartouche confirmed from Hmolpedia
+    cartouche_source: "Hmolpedia.com Pyramid Texts article, citing image."
+
+  mdc_transliteration:
+    value: >
+      Partial from secondary sources (opening formula widely cited):
+      iHi iHi / aha N / iT.k tp.k / sAq.k qsw.k /
+      mni.k awt.k / ngg.k tA m iwf.k /
+      iT.k t.k n xpr-dAt / hnkt.k n xpr-Dsr /
+      aHa.k Hr sbA.w Hbs.w rAyw /
+      pr mj-ti.k Xr.f / iTi.f Drt.k /
+      in.f tw r pt r it.k Gb /
+      rSwt.f m ii.k / di.f n.k Drt.w.f /
+      sn.f tw / Hzz.f tw / di.f tw xft Ax.w / Ax.w nTr.w n Hh
+    source: >
+      Reconstructed from Wikipedia PT article (English text) back-translating
+      through standard MdC conventions. NOT a confirmed Sethe text.
+      Treat as indicative transliteration only — each sign requires verification
+      against Sethe 1908 plates.
+    state: partial
+    caveat: >
+      This is a back-transliteration from English translation, not a forward
+      transliteration from the hieroglyphic source. It should be treated as
+      a working hypothesis for the MdC field, not as the confirmed text.
+      Every morpheme must be verified against Sethe vol. 1.
+
+  gardiner_sign_list_notes: >
+    Key signs from partial transliteration:
+    - iHi: (possibly D2 face + H6 feather) — exclamation/cry; 'Oho!'
+      The precise sign for iHi is itself debated — see divergence_points.
+    - aha: (A29 man with hand raised) — 'stand up / rise'
+    - tp: (D1 head) — 'head'
+    - qsw: (bone determinative, F46 or similar) — 'bones'
+    - awt: (plural limbs, F21 or F23 + Z2 plural strokes) — 'limbs'
+    - tA: (N16 flat land) — 'earth'
+    - iwf: (F32 flesh/body) — 'flesh'
+    - t: (X1 bread loaf) — 'bread'
+    - hnkt: (W22 beer jug) — 'beer'
+    - sbA: (N14 star + O1 door) — 'gate/star' (same sign as sb3 in PT 246)
+    - Ax.w: (G25 ibis plural) — 'imperishable spirits/stars'
+    Cartouche of Teti: X1-X1-Z4 (t-t-i = Ttj) confirmed from Hmolpedia.
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: mercer_1952
+    text: >
+      "Oho! Oho! Rise, O Teti!
+      Take thy head, collect thy bones,
+      Gather thy limbs, shake the earth from thy flesh!
+      Take thy bread that rots not, thy beer that sours not,
+      Stand at the gates which bar the common people!
+      The gate-keeper comes out to thee, he grasps thy hand,
+      Takes thee into heaven, to thy father Geb.
+      He rejoices at thy coming, gives thee his hands,
+      Kisses thee, caresses thee,
+      Sets thee before the spirits, the imperishable stars.
+      The hidden ones worship thee,
+      The great ones surround thee,
+      The watchers wait on thee."
+    source: "Mercer, S.A.B. 1952. Utterance 373. Confirmed from Wikipedia PT article and religion.fandom.com."
+    divergence_flag: false
+    notes: >
+      This is the most-cited English rendering. It is the version quoted in
+      Wikipedia's Pyramid Texts article and widely reproduced. Mercer's
+      archaic 'thee/thy' has been modernised to 'you/your' in Piankoff/Allen
+      lineages. The content is stable — divergences are in the details.
+
+  - translator_id: piankoff_modernised
+    text: >
+      "Oho! Oho! Rise up, O [King]!
+      Take your head, collect your bones,
+      Gather your limbs, shake the earth from your flesh!
+      Take your bread that rots not, your beer that sours not,
+      Stand at the gates that bar the common people!
+      The gatekeeper comes out to you, he grasps your hand,
+      Takes you into heaven, to your father Geb.
+      He rejoices at your coming, gives you his hands,
+      Kisses you, caresses you,
+      Sets you before the spirits, the imperishable stars...
+      The hidden ones worship you,
+      The great ones surround you,
+      The watchers wait [on you]."
+    source: >
+      Wikipedia Pyramid Texts article (Teti version cited directly);
+      Religion.fandom.com Pyramid Texts article. Piankoff/Allen modernised lineage.
+    divergence_flag: false
+    notes: >
+      The Wikipedia citation of this version confirms it as the Teti-specific
+      rendering (the article explicitly uses it as the example of the Teti resurrection
+      address). 'Common people' vs. 'rAyw' — the gated community of the afterlife
+      excludes non-royalty; the king has privileged access.
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 373."
+    divergence_flag: false
+    note: "Faulkner's 1969 rendering of PT 373 not independently retrieved."
+
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+. Spell corresponding to PT 373."
+    divergence_flag: false
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "iHi"
+    term_mdc: "iHi"
+    semantic_field: "Exclamation / cry — 'Oho!'"
+    notes: >
+      The opening word iHi (repeated twice: iHi iHi) is an exclamation without
+      lexical equivalent in English. 'Oho!' (Mercer, Piankoff) is a conventional
+      rendering. The sign(s) used for iHi in the original are uncertain from
+      secondary sources — this is a searched_gap requiring Sethe plates.
+      The repetition (twice) mirrors the sp-4 rubric logic: a doubled cry has
+      greater efficacy than a single one. It may also mirror the 'two lands'
+      (Upper and Lower Egypt) as an address to the king in his dual aspect.
+    translation_disputes:
+      readings:
+        - reading: "'Oho! Oho!' (Mercer, Piankoff)"
+        - reading: "'Ho! Ho!' (some older translations)"
+          note: "The exclamatory force is consensus; the specific English word is conventional."
+
+  - term_transliteration: "sAq qsw"
+    term_mdc: "sAq.k qsw.k"
+    semantic_field: "Gather / collect your bones"
+    notes: >
+      sAq = gather/collect; qsw = bones (plural). The body reconstitution formula
+      (head + bones + limbs) directly addresses the Osirian mythology: Osiris was
+      dismembered by Seth and his body gathered by Isis. The king's body reconstitution
+      echoes Osiris's. But qsw (bones) also carries the sense of the skeletal
+      structure — the framework on which the body is rebuilt.
+      'Collect your bones' is a command to reassemble from the inside out:
+      skeleton first, then flesh ('shake the earth from your flesh').
+    attestation_range: "Body-reconstitution formula appears in multiple PT resurrection spells."
+
+  - term_transliteration: "t n xpr-dAt"
+    term_mdc: "t.k n xpr-dAt"
+    semantic_field: "Bread that rots not — imperishable provision"
+    notes: >
+      xpr-dAt = 'that does not decay / that does not become dAt (putrid).'
+      dAt = putrefaction, the transformation of matter through decomposition.
+      xpr-dAt negates this: the king's afterlife bread is the bread of
+      non-decomposition. Similarly hnkt n xpr-Dsr = 'beer that does not turn
+      sour' (xpr-Dsr = 'that does not become sacred/inert' — Dsr also means
+      'sacred' in the sense of removed from use).
+      The provision formula is a direct statement of the king's eternal maintenance:
+      he will not go hungry, and his sustenance will not fail.
+    translation_disputes:
+      readings:
+        - reading: "'Bread that rots not' (Mercer, Piankoff)"
+        - reading: "'Imperishable bread' (alternative formulation)"
+          note: "The negation of putrefaction is clear; the English rendering is conventional."
+
+  - term_transliteration: "sbA Hbs rAyw"
+    term_mdc: "sbA.w Hbs.w rAyw"
+    semantic_field: "Gates that bar the common people"
+    notes: >
+      sbA.w = gates/stars (same sign as sb3 in PT 246 — see lexical note there).
+      Hbs.w = barred/closed/veiled (from Hbs = to cover/bar).
+      rAyw = 'common people' / 'those of the mouth' — people outside the royal sphere.
+      The gates that bar the common people are simultaneously the star-gates
+      of the afterlife heaven that only the king may pass.
+      The king's privileged access to the afterlife is architectural (a gate),
+      social (common people excluded), and stellar (the gate = a star).
+    attestation_range: "Gate-of-heaven imagery throughout PT corpus."
+
+  - term_transliteration: "Ax.w nTr.w n HH"
+    term_mdc: "Ax.w nTr.w n HH"
+    semantic_field: "Imperishable Stars — the divine stellar beings"
+    notes: >
+      Ax.w = imperishable spirits/stars (plural of Ax).
+      nTr.w = gods (plural).
+      HH = millions / eternity (also the god Heh, personification of infinity).
+      'The imperishable stars / the divine beings of eternity' — the circumpolar
+      stars that never set below the horizon. The king is set among these
+      never-setting stars. Unlike the sun (which sets and rises) or transient
+      stars, the circumpolar stars are 'imperishable' — always visible.
+    attestation_range: >
+      The Ax.w nTr.w n HH formula is one of the most constant elements of
+      the stellar ascent theology throughout the PT corpus.
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: gatekeeper_identity
+    claim: "The gatekeeper who 'comes out to you and grasps your hand' is identified"
+    state: searched_gap
+    note: >
+      The English translations identify only 'the gatekeeper' — mj-ti or
+      iry-aA (doorkeeper). The specific divine identity of this figure (is it
+      Geb? A specific deity? A generic afterlife official?) is not specified
+      in the widely available translations. The Sethe plates and Allen 2005
+      commentary would clarify. The figure then takes the king 'to your father
+      Geb' — so the gatekeeper and Geb are distinct figures.
+
+  - id: father_geb
+    claim: "Geb is identified as the king's father"
+    state: proposed
+    positions:
+      - scholar: "Standard reading of PT 373"
+        reading: >
+          Geb (earth god, father of Osiris, Isis, Seth, Nephthys) is identified
+          as the king's divine father. This is consistent with the Osirian theology:
+          as Osiris, the king's mythological father is Geb. But the king's actual
+          father (the previous pharaoh) is also sometimes called Geb by extension.
+      - scholar: "Alternative reading"
+        reading: >
+          'Your father Geb' refers to the earth itself — Geb as the ground from
+          which the king rises (the 'earth from your flesh' that was shaken off
+          is Geb's domain). The king returns to his divine father by escaping
+          the earth.
+    note: >
+      Both readings are consistent with Egyptian theology. The Osirian reading
+      (Geb = mythological father of Osiris/king) is the dominant scholarly
+      position. The earth-return reading is an interpretive alternative.
+
+  - id: imperishable_stars_destination
+    claim: "The king's final destination is among the circumpolar stars (imperishable stars)"
+    state: established
+    positions:
+      - scholar: "Scholarly consensus"
+        reading: >
+          The Ax.w nTr.w n HH = the circumpolar stars, which never set below
+          the horizon and are thus 'imperishable.' The king joins them as an
+          Ax himself. This is the stellar-ascent theology consistent with the
+          architectural program (star-ceiling of the burial chamber).
+    source: >
+      Allen 2005 introduction; multiple secondary sources confirm circumpolar
+      star identification for Ax.w in the PT corpus.
+    note: >
+      This is one of the few established interpretive claims in this dig —
+      the evidence is convergent (textual + astronomical + architectural).
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "Teti pyramid, burial chamber south wall — original carving"
+    date_start: -2345
+    date_end: -2323
+    note: >
+      PT 373 in its Teti-named form ('Rise up, O Teti') is unique to this
+      pyramid. The naming of the king in the text is the primary anchor.
+    source: "Wikipedia PT article; Allen 2005."
+  - event: "Generic resurrection formula in later PT corpora (with different names)"
+    note: >
+      The resurrection command formula (iHi iHi / aha N / iT tp...) persists
+      in Pepi I, Merenre, Pepi II with those kings' names substituted.
+      The transmission is formulaic, not verbatim.
+    state: searched_gap
+    required_source: "Allen 2005 concordance; Mercer 1952 indices."
+
+parallel_pyramids:
+  unas: searched_gap
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+  note: >
+    The Teti-named form is Teti-specific. Whether a Unas-named parallel at this
+    PT number exists requires concordance check. The formula is generic but the
+    name-address is not.
+
+notes: >
+  PT 373 is the most direct personal address in the corpus — it calls the king
+  by name, commands him in the imperative, and narrates his entire resurrection
+  journey in one spell. It functions as a concentrated version of the entire
+  south wall ritual program. The body reconstitution (bones, limbs, flesh),
+  the provision (bread, beer), the gated access, the divine escort, the stellar
+  destination — this is the complete theological sequence of Egyptian resurrection
+  in approximately 15 lines.
+  The repeated iHi ('Oho!') opening is unique in its double-exclamation structure.
+  No other PT utterance opens with this exact double-cry pattern addressed to a
+  named king. This makes PT 373 the most individually distinctive and
+  archaeologically anchored utterance in the corpus.

@@ -1,0 +1,259 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch1/pt_032.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_032
+pt_number: 32
+display_name: "PT 32 — The Mouth-Opening Meal"
+sethe_phrase_range:
+  value: "§§ 23a–24c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  notable_non_pyramid_attestation:
+    - source: "Mortuary temple libation table, pyramid of Pepi I"
+      approximate_date: -2289
+      note: >
+        Allen (2005, note 1) records: 'The earliest instance of a Pyramid Text
+        outside the pyramid chambers is a copy of PT 32 on the support for a
+        libation table in the mortuary temple of Pepi I's pyramid (Leclant 1990).'
+        This makes PT 32 the first PT utterance to appear outside the pyramid
+        chamber context — a significant transmission event.
+      source: "Allen 2005, p. 14, note 1; citing Leclant 1990."
+  later_attestations:
+    - source: "Unas pyramid, passage north wall"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: "Shared corpus with Unas. Unas predates Teti."
+      source: "Pyramidtextsonline.com wall index: passage north includes PT 32."
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: burial_chamber
+  wall: north
+  column_direction: west_to_east
+  note: >
+    PT 32 sits within the north wall Offering Ritual complex. In Unas it appears
+    on the passage north wall (pyramidtextsonline.com). The precise wall assignment
+    in Teti's corpus requires Allen 2005 (Teti section, pp. 65+) to confirm.
+  physical_condition: >
+    North wall of Teti's burial chamber exists 'mostly as disjointed fragments'
+    (Madain Project). Legibility of PT 32 specifically: searched_gap.
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  classes:
+    - offering_ritual
+    - threshold
+  note: >
+    PT 32 is the heading spell of the 'Mouth-Opening Meal' — the ritual sequence
+    that enables the deceased king to eat, speak, breathe, and see in the afterlife.
+    Allen (2005) titles this section 'The Mouth-Opening Meal' (capitalised),
+    treating it as a named ritual unit. It is a threshold spell: the moment the
+    mouth opens is the moment the king crosses from inert body to active spirit.
+    Allen's title for PT 32 is: 'Content for you shall be the Sun in the sky,
+    and he shall content for you the Two Ladies.'
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Teti and Unas north wall sections."
+
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908; or Allen 2005 with MdC notation."
+    partial_note: >
+      From the transliteration document (Scribd, citing Faulkner dictionary),
+      the wp-r formula ('open the mouth') in context runs approximately:
+      wp.i n.k r.k — 'I open your mouth for you'
+      This is from PT 26, the flint-spreader rite immediately preceding PT 32.
+      The PT 32 MdC proper requires direct source access.
+
+  gardiner_sign_list_notes: >
+    Key sign: wp (D21 mouth + F25 leg = 'open') — the central sign of the
+    entire Opening of the Mouth ceremony. The mouth sign (r / D21) is both
+    the phoneme /r/ and the determinative for 'mouth' and 'speech.'
+    Its use here is semantically loaded beyond its phonetic value.
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: allen_2005
+    text: >
+      "Content for you shall be the Sun in the sky,
+      and he shall content for you the Two Ladies."
+    source: >
+      Allen, J.P. 2005. Utterance 32 / 'The Mouth-Opening Meal' heading.
+      Cited in DOKUMEN.PUB full text of Allen 2005, p. 17.
+    divergence_flag: true
+    notes: >
+      Allen's rendering is notably terse — this is the heading line of the meal,
+      not the full spell. 'The Two Ladies' (Nebty) = Nekhbet (vulture, Upper Egypt)
+      and Wadjet (cobra, Lower Egypt) — the two protective goddesses of kingship.
+      Their contentment is a legitimacy affirmation.
+
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 32."
+    note: "Public domain at sacred-texts.com."
+    divergence_flag: false
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 32."
+    divergence_flag: false
+
+  - translator_id: piankoff_modernised
+    text: >
+      "Take the tip of the bodily breast of Horus, take it into your mouth!
+      A jar of milk.
+      Take the full breast of your sister Isis, bring it unto your mouth!
+      An empty menes-jar."
+    source: "Pyramidtextsonline.com modernised Piankoff, Utterance 32 (Unas version)."
+    divergence_flag: true
+    notes: >
+      This Piankoff/Unas version is substantially different in content from
+      Allen's rendering of PT 32. Two possibilities:
+      1. These are different sections within the PT 32 unit (Allen = heading; Piankoff = body)
+      2. The Teti and Unas versions of PT 32 carry variant text
+      This is a genuine divergence point requiring source comparison.
+      The capitalized rubrics ('A jar of milk', 'An empty menes-jar') are
+      offering descriptions — material objects enumerated alongside the spell text.
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "wp-r"
+    term_mdc: "wp-r"
+    semantic_field: "Open the mouth — the central ritual act"
+    notes: >
+      wp (open) + r (mouth). The Opening of the Mouth (wpt-r) ceremony is one of
+      the most important rituals in Egyptian funerary practice. The ceremony
+      involved a lector priest (xrj-Hbt) with assistants physically touching
+      instruments to the mouth and eyes of the mummy or statue, reciting spells.
+      PT 32 is structurally positioned as the meal-phase of this ceremony — the
+      opened mouth must now be fed.
+    attestation_range: >
+      The Opening of the Mouth ceremony runs from Old Kingdom through New Kingdom
+      (Book of the Dead chapter 23). It was also performed on cult statues.
+    translation_disputes:
+      readings:
+        - reading: "'Open' as physical act vs. ritual declaration"
+          note: "Whether the priest physically opened the mouth or declared it open
+                 through speech is a performance question, not a translation question."
+
+  - term_transliteration: "Nbty"
+    term_mdc: "Nbty"
+    semantic_field: "The Two Ladies — Nekhbet and Wadjet"
+    notes: >
+      The Two Ladies (Nbty) = Nekhbet (vulture goddess of Upper Egypt) + Wadjet
+      (cobra goddess of Lower Egypt). Their contentment in PT 32 frames the
+      mouth-opening meal as a legitimation of kingship across both Egypts.
+      'The Sun shall content for you the Two Ladies' — Ra as guarantor of
+      royal legitimacy extended into the afterlife.
+    attestation_range: "Nbty is one of the five royal titles of Egyptian kingship."
+
+  - term_transliteration: "mnD"
+    term_mdc: "mnD"
+    semantic_field: "Breast (of Horus, of Isis)"
+    notes: >
+      In the Piankoff/Unas version of PT 32, the king is offered the breast of
+      Horus and the breast of Isis — nourishment as divine milk. mnD refers
+      specifically to the nipple/breast as a source of milk. The offering jars
+      (milk jar, empty menes-jar) listed in the rubrics are the physical ritual
+      objects that accompanied the recitation.
+    translation_disputes:
+      readings:
+        - reading: "Breast (anatomical)"
+          scholars: ["Mercer", "Piankoff", "Faulkner"]
+        - reading: "'Tip of the bodily breast' — Faulkner's more anatomical rendering"
+          note: "Allen 2005 uses a different framing — his rendering must be confirmed."
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: pt32_allen_vs_piankoff
+    claim: >
+      Allen (2005) and Piankoff render substantially different content for PT 32.
+    state: contested
+    positions:
+      - scholar: "Allen, J.P. 2005"
+        reading: >
+          'Content for you shall be the Sun in the sky, and he shall content
+          for you the Two Ladies.' — Solar legitimacy framing.
+      - scholar: "Piankoff (modernised, Unas)"
+        reading: >
+          'Take the tip of the bodily breast of Horus... Take the full breast
+          of your sister Isis...' — Divine nourishment framing.
+    resolution: searched_gap
+    note: >
+      The divergence may be resolved by recognising that Allen renders the
+      heading line of PT 32 and Piankoff renders the body — or that the Teti
+      and Unas versions genuinely differ. The Allen 2005 Teti corpus (pp. 65+)
+      must be compared directly with the Unas version to determine which.
+      This is a priority gap: two named scholars appear to render different
+      content for the same utterance number.
+
+  - id: ritual_objects_as_text
+    claim: "The offering rubrics (e.g. 'A jar of milk') are part of the spell text"
+    state: proposed
+    positions:
+      - scholar: "Piankoff (and implicitly Allen)"
+        reading: >
+          The capitalized rubrics are stage directions or object labels, not
+          spoken text. They record the physical offerings placed alongside
+          the recitation.
+      - scholar: "Alternative interpretation"
+        reading: >
+          In a carved text with no separate rubric colour (unlike Coffin Texts
+          which use red for rubrics), the distinction between spoken text and
+          stage direction is an editorial judgment, not a textual fact.
+    note: >
+      In later manuscripts (Coffin Texts, Book of the Dead) rubrics are often
+      written in red ink to distinguish them from the black main text.
+      In the carved Pyramid Texts, this colour distinction does not exist.
+      The boundaries are editorial reconstructions by translators.
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "Unas pyramid, passage north wall"
+    date_start: -2375
+    date_end: -2345
+    note: "Shared corpus with Unas (predecessor)."
+    source: "Pyramidtextsonline.com."
+  - event: "Teti pyramid"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005; Madain Project."
+  - event: "Libation table, mortuary temple of Pepi I"
+    approximate_date: -2289
+    note: >
+      First instance of a PT utterance outside a pyramid chamber.
+      PT 32 appears on a libation table support — a cultic object in the
+      mortuary temple, not the burial chamber. This extends the text from
+      sealed tomb to active ritual space.
+    source: "Allen 2005, note 1, citing Leclant 1990."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: true
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 32 is architecturally and ritually central: it is the title-spell of the
+  Mouth-Opening Meal, the ritual sequence that enables the deceased king to
+  function in the afterlife. Its appearance outside the pyramid chamber
+  (Pepi I mortuary temple libation table) shows the spell had active ritual
+  use beyond the burial context — it was recited, not just inscribed.
+  This dual function (inscribed protection + oral ritual) is a key interpretive
+  question for the entire PT corpus.

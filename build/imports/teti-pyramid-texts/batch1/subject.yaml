@@ -1,0 +1,225 @@
+subject_id: teti_pyramid_texts
+display_name: "Pyramid Texts of King Teti — Burial Chamber, Saqqara"
+subject_class: primary_text_corpus
+
+# ─── CHRONOLOGICAL ANCHORS (for timegraph) ───────────────────────────────────
+# All dates BCE. Uncertainty ranges are scholarly consensus, not guesses.
+# The timegraph should render these as a band, not a point.
+
+chronology:
+  teti_reign:
+    date_start: -2345          # BCE, conventional; Shaw 2000
+    date_end: -2323            # BCE, conventional; Shaw 2000
+    uncertainty_years: 10      # ±10 yr is standard for early 6th Dynasty
+    basis: "Egyptian king-list synchronisation + carbon-14 on associated organic material"
+    source: "Shaw, I. (ed.) 2000. The Oxford History of Ancient Egypt. OUP."
+
+  pyramid_construction:
+    date_start: -2345
+    date_end: -2323
+    note: "Construction co-extensive with reign; inscription dates assumed same window"
+
+  pyramid_discovered:
+    date: "1882-01-01"         # Maspero opened the pyramid, January 1882
+    precision: year
+    source: "Maspero, G. 1882. Recueil des Travaux, vol. 3."
+
+  sethe_edition:
+    date: "1908-01-01"
+    precision: year
+    note: "Canonical hieroglyphic critical edition. Vols 1–2 of 4."
+    source: "Sethe, K. 1908–1910. Die altägyptischen Pyramidentexte. Leipzig."
+
+  mercer_translation:
+    date: "1952-01-01"
+    precision: year
+    source: "Mercer, S.A.B. 1952. The Pyramid Texts in Translation and Commentary. New York."
+
+  faulkner_translation:
+    date: "1969-01-01"
+    precision: year
+    source: "Faulkner, R.O. 1969. The Ancient Egyptian Pyramid Texts. Oxford: Clarendon."
+
+  allen_translation:
+    date: "2005-01-01"
+    precision: year
+    source: "Allen, J.P. 2005. The Ancient Egyptian Pyramid Texts. SBL Press."
+
+  leclant_restoration:
+    date_start: "1958-01-01"
+    date_end: "1999-01-01"     # Approximate; major restoration work on Teti, Pepi I, Unas
+    precision: year
+    source: "Lauer, J-P., Sainte-Fare Garnot, J., Leclant, J. — reported in Allen 2005."
+
+# ─── PHYSICAL RECORD ─────────────────────────────────────────────────────────
+
+physical_record:
+  location: "Saqqara Necropolis, North Saqqara, Egypt"
+  coordinates: "29.8715° N, 31.2165° E"
+  structure: "Pyramid of Teti (Teti I, first king, Sixth Dynasty)"
+  original_name: "Teti's-places-are-enduring"   # Egyptian: Dd-swt-Ttj
+  current_condition: "Exterior largely collapsed; interior chambers intact and open to public"
+
+  chambers_bearing_texts:
+    - id: sarcophagus_interior
+      description: "Interior of greywacke/basalt sarcophagus — PT 1–7 only"
+      note: "First royal sarcophagus ever to bear inscriptions (Teti innovation)"
+    - id: burial_chamber
+      description: "Main burial room, west of antechamber"
+      walls: [north, south, east, west_gable, east_gable]
+      ceiling: "Painted dark blue with gold five-pointed stars (cosmological program)"
+    - id: antechamber
+      description: "Central chamber under pyramid apex"
+      walls: [north, south, east, west, east_gable, west_gable]
+    - id: passage_south
+      description: "Southern end of horizontal corridor — inscribed in Teti and Unas only"
+    - id: serdab_niches
+      description: "Eastern room with three niches; possible statue emplacements; not inscribed"
+
+  sarcophagus:
+    material: "Greywacke (some sources: basalt — material ambiguity is real)"
+    external_length_m: 2.777
+    status: "Unfinished — lid fragment only; canopic pit is an unlined hole"
+    inscription_band: "Single band of PT 1–7 on interior — not exterior"
+    source: "Dodson, A. & Ikram, S. 2008. The Tomb in Ancient Egypt. Thames & Hudson."
+
+# ─── TRANSLATION LINEAGE ─────────────────────────────────────────────────────
+# All utterance files cite from this registry. Do not add translator entries
+# without updating this block.
+
+translators:
+  - id: sethe_1908
+    scholar: "Kurt Sethe"
+    language: "German"
+    date: 1908
+    role: "Canonical hieroglyphic edition + German translation. Standard reference for sign sequences."
+    note: "4 vols; translation/commentary published posthumously over 30 years."
+
+  - id: mercer_1952
+    scholar: "Samuel A.B. Mercer"
+    language: "English"
+    date: 1952
+    role: "First complete English translation. Based on Sethe. Now public domain."
+    caveat: "Grammatical analysis superseded in many areas by Faulkner and Allen."
+
+  - id: faulkner_1969
+    scholar: "Raymond O. Faulkner"
+    language: "English"
+    date: 1969
+    role: "Standard scholarly English translation for 50+ years."
+    caveat: |
+      Does not reflect wall-to-wall sequence (follows Sethe's artificial publication order).
+      Grammatical understanding of some verbal forms now revised by Allen.
+      Allen 2005 preface notes 'considerably different interpretations' in some passages.
+
+  - id: allen_2005
+    scholar: "James P. Allen"
+    language: "English"
+    date: 2005
+    role: "Most current scholarly English translation. Reflects wall sequence. Includes Teti corpus."
+    note: "Curator of Egyptian Art, Metropolitan Museum of Art at time of publication."
+
+# ─── ARCHITECTURAL THEOLOGY (established claims) ─────────────────────────────
+# These are the interpretive framework claims for reading the spatial program.
+# Each utterance file may reference these by ID.
+
+architectural_program:
+  per_duat:
+    claim: >
+      The sarcophagus chamber is identified in the texts themselves as the 'Per Duat'
+      (pr-dwAt), meaning 'House of the Duat' — the underworld. Text on north and south
+      walls runs west-to-east, mirroring the sun's path through the Duat.
+    evidence_class: primary_text
+    state: established
+    source: "Allen, J.P. 2005. Introduction, p. 12. Citing PT internal identifiers."
+
+  akhet_as_antechamber:
+    claim: >
+      The antechamber represents the Akhet — the horizon, place of transformation.
+      It lies east of the burial chamber (east = sunrise). PT 247 (first antechamber
+      spell) addresses the king as one emerging from the Duat. The transition is
+      described as moving from the night-bark to the day-bark.
+    evidence_class: primary_text + interpretive
+    state: proposed
+    source: "Allen, J.P. 2005. p. 12. Also: pyramidofman.com analysis citing Allen."
+
+  column_direction:
+    claim: >
+      Text columns run bottom-to-top. The visual direction of reading enacts the
+      content: spells lift the king upward. Spells nearest the sarcophagus focus on
+      body protection and the command to rise.
+    evidence_class: material
+    state: established
+    source: "Observable from photographic record; confirmed in Allen 2005 intro."
+
+  wall_theme_assignment:
+    claim: >
+      East wall: spells of sunrise, rebirth, entry into day.
+      West wall: realm of the dead, protective spells.
+      North wall: offering ritual.
+      South wall: resurrection ritual.
+      These assignments are not rigid — spells overlap themes — but are the
+      dominant functional pattern identified by Allen.
+    evidence_class: interpretive
+    state: proposed
+    source: "Allen, J.P. 2005. pp. 10–13. Historyskills.com summary corroborates."
+
+# ─── TETI-SPECIFIC INNOVATIONS ───────────────────────────────────────────────
+
+teti_innovations:
+  dd_mdw_monogram:
+    claim: >
+      Teti's pyramid is the first to use the monogram for 'recitation' (dd-mdw) as a
+      heading before each utterance. This is a scribal innovation not present in
+      the Unas corpus.
+    evidence_class: material
+    state: established
+    source: "Allen, J.P. 2005. p. 14, note 4. Memphistours.co.uk summary corroborates."
+
+  sarcophagus_inscription:
+    claim: >
+      PT 1–7 inscribed on the interior of Teti's sarcophagus is the first instance
+      of a royal sarcophagus bearing Pyramid Text inscriptions anywhere in the
+      archaeological record.
+    evidence_class: material
+    state: established
+    source: "Allen, J.P. 2005. note 3. Dodson & Ikram 2008."
+
+  spell_count:
+    claim: "Teti's corpus contains 301 spells — 18 more than Unas's 283."
+    evidence_class: synthetic
+    state: established
+    source: "Grokipedia citing Allen concordance; confirmed Allen 2005 structure."
+
+  osiris_emphasis:
+    claim: >
+      Teti's corpus shows a stronger identification of the king as 'Osiris-Teti'
+      compared to Unas, where solar-Ra identification predominates. This represents
+      a theological shift that persisted into all subsequent pyramid text traditions.
+    evidence_class: interpretive
+    state: proposed
+    caveat: >
+      Requires anchoring to specific utterance counts — qualitative pattern claim
+      without quantitative attestation in publicly available secondary literature.
+      Allen 2005 is the required source to verify.
+    source: "Egyptfuntours.com citing Allen; pattern noted in multiple secondary sources."
+
+  morning_ritual:
+    claim: >
+      Teti's pyramid (along with Pepi I, Merenre, and Pepi II) includes the
+      Morning Ritual on the antechamber east wall. This ritual is absent from
+      Unas's corpus — a textual addition in Teti's iteration.
+    evidence_class: primary_text
+    state: established
+    source: "Allen, J.P. 2005. p. 12: 'in the pyramids of Teti, Pepi I, and Merenre'."
+
+# ─── SCHEMA NOTES FOR UTTERANCE FILES ────────────────────────────────────────
+# Every utterance YAML in /utterances/ must conform to utterance_schema.yaml.
+# Key versioning: add new utterances by PT number; never renumber existing entries.
+# Hieroglyphic and MdC fields: mark searched_gap with sethe_1908 as required source
+# until Sethe edition is directly accessed.
+# Date fields: all utterance files inherit chronology from this subject.yaml.
+# Timegraph nodes: each utterance is a dated text event. The carving date is
+# co-extensive with Teti's reign (-2345 to -2323). Later manuscript attestations
+# (Coffin Texts, Book of the Dead) are separate timegraph nodes on the
+# transmission_events field of the relevant claim.

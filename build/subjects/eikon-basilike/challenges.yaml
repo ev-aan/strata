@@ -1,0 +1,35 @@
+# Challenges ledger. Append-only. result: answered | partly_answered | open | finding_changed
+subject: eikon-basilike
+challenges:
+  - id: ch-01
+    logged: 2026-10-02
+    challenge: "Parliament's propagandists planted the plagiarised prayer in the King's Book to discredit it."
+    raised_by: "Claim told about the prayer; no single source"
+    touches: [eikon-pamela-prayer-planted, eikon-milton-pamela-charge, eikon-pamela-prayer-is-sidneys]
+    test: "Separate what is documented (the match and Milton's use of it) from who put the prayer in an edition."
+    result: open
+    answer: "Documented: the prayer matches Sidney's Arcadia and Milton used that against the book. Not shown: that anyone arranged its insertion. That needs evidence about the printing, meaning which editions carry the prayer and when."
+  - id: ch-02
+    logged: 2026-10-02
+    challenge: "Charles I wrote the book himself."
+    raised_by: "Traditional royalist view"
+    touches: [eikon-charles-wrote-book, eikon-text-lacks-charles-habits, eikon-no-long-chapter-in-charles-range]
+    test: "Compare the text's measured style with Charles's own writing."
+    result: open
+    answer: "Contested, low confidence. A first measurement finds the tested text does not carry Charles's measured habits, but that is proposed at low confidence and no published computational study was found."
+  - id: ch-03
+    logged: 2026-10-02
+    challenge: "John Gauden wrote it."
+    raised_by: "Gauden's own claim after the Restoration"
+    touches: [eikon-gauden-claimed-authorship, eikon-style-singles-out-gauden]
+    test: "Separate the fact that he claimed it from whether the claim is true."
+    result: open
+    answer: "That he claimed authorship is established. Whether it is true is not: measured style singling him out is not shown."
+  - id: ch-04
+    logged: 2026-10-02
+    challenge: "The first edition has no Pamela prayer, so Milton's charge was false."
+    raised_by: "Possible reading of our own test"
+    touches: [eikon-tested-text-has-no-pamela-prayer, eikon-text-tested-is-second-issue, eikon-milton-pamela-charge]
+    test: "Check which edition the tested text is and which editions carry the prayer."
+    result: partly_answered
+    answer: "The text tested is the first edition, second issue, and it contains no such prayer. The prayer is in later editions. What is established is that Milton made the charge; the dig does not rule on whether his target edition matches."

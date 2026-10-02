@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1894-05-01-seventh-circuit-affirms-wisconsin-goebel-ruling
+rev: 1
+type: event
+label: '1 May 1894: Seventh Circuit affirms the Wisconsin injunction (the appeal in the same case)'
+time: '1894-05-01T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: '61 F. 834 (7th Cir., 1 May 1894), on appeal from the preliminary injunction in 57 F. 616: the right of an owner of
+  a patent upheld after protracted litigation to a preliminary injunction can be defeated only by a new defence proved convincingly;
+  the court says that, ''without designing to suggest what result should be reached upon final hearing'', the story of Goebel''s
+  early lamps ''is surrounded by such an atmosphere of improbability'' that until sifted and sustained at final hearing it
+  ought not to invade the patent holder''s monopoly. This is the same case on appeal reviewing a discretionary preliminary
+  ruling, not a fourth case.'
+sources:
+- title: Electric Manufacturing Co. v. Edison Electric Light Co., 61 F. 834 (7th Cir., 1 May 1894)
+  url: https://static.case.law/f/61/cases/0834-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-61-f-834
+  source_type: official_record
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-61f834
+related:
+- node: lamp-1893-07-20-seaman-grants-injunction-goebel-defence-wisconsin
+  kind: part_of
+  grade: established
+  why: The appeal is from the order granted in 57 F. 616.
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a15 (split). Date and place re-checked against
+    the cited source.'
+date_basis: stated

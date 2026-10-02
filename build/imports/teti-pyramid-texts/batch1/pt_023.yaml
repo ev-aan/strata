@@ -1,0 +1,208 @@
+id: pt_023
+pt_number: 23
+display_name: "PT 23 — Efflux Offering / Voice Has Come"
+sethe_phrase_range:
+  value: "§§ 15a–15c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Pyramid of Unas (north wall, passage)"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: >
+        PT 23 appears in the Unas pyramid (north wall of passage, listed in
+        pyramidtextsonline.com wall index as passage north: 199, 32, 23, 25, 200).
+        Unas predates Teti — this utterance is shared corpus, not Teti-original.
+    - source: "Coffin Texts (Middle Kingdom)"
+      approximate_date_start: -2055
+      approximate_date_end: -1650
+      state: searched_gap
+      note: "Coffin Text equivalent requires Allen CT concordance to confirm."
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: burial_chamber
+  wall: north
+  column_direction: west_to_east
+  note: >
+    The north wall of the burial chamber bears the Offering Ritual in both
+    Unas and Teti. Allen (2005, p. 11) identifies the north wall as the primary
+    locus of offering texts — the deceased king in his sarcophagus (against the
+    west wall) would 'spiritually see and read' the north wall directly.
+    PT 23 also appears in the Unas passage (north wall) — placement varies
+    slightly between corpora.
+  physical_condition: >
+    The north and south walls of Teti's burial chamber 'now exist mostly as
+    disjointed fragments' (Madain Project, citing Lehner 1997 and Dodson & Ikram 2008).
+    Condition is worse than Unas. Specific legibility of PT 23 in Teti's
+    chamber requires Leclant/Labrousse restoration reports to confirm.
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  - offering_ritual
+  note: >
+    PT 23 belongs to the Offering Ritual complex on the north wall.
+    Its specific content concerns the efflux (rDw) — bodily fluid of Osiris,
+    a ritual substance associated with the Nile flood and regeneration.
+    The priest commands the king to 'take' this efflux, preventing spiritual
+    weariness. The closing formula 'the voice has come out for you' is a
+    resurrection affirmation recited four times (sp 4).
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Teti north wall section."
+
+  mdc_transliteration:
+    value: >
+      Partial MdC recoverable from Unas version (pyramidtextsonline.com sign plates):
+      iT n.k rDw pr(w) im.k / n wrD ib.k Xr.s / Dd-mdw sp-4 / in n.k xrw
+    source: >
+      Partial reconstruction from pyramidtextsonline.com Unas transliteration plates
+      and Scribd transliteration document (anonymous, citing Faulkner dictionary).
+    state: partial
+    caveat: >
+      This MdC is from the Unas version. Teti's version may carry variant spellings.
+      Treat as indicative only — not a confirmed Teti-specific reading.
+      The Sethe 1908 Teti plates are required for the authoritative Teti MdC.
+
+  gardiner_sign_list_notes: >
+    Key signs (from Unas version context):
+    - rDw: 'efflux' — typically written with liquid determinative (Gardiner N35A or W14)
+    - wrD: 'be weary' — verb with man determinative (A2 or A17 class)
+    - xrw: 'voice' — written with mouth sign (D21) + bird determinative (G1 or G43)
+    Teti-specific sign variants: searched_gap (Sethe plates required).
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: mercer_1952
+    text: >
+      "Take to thee the outflow which came forth from thee,
+      that thy heart be not weary thereof.
+      To be said four times: Take! The voice went forth for thee."
+    source: "Mercer, S.A.B. 1952. Utterance 23. Sacred-texts.com (public domain)."
+    divergence_flag: false
+    notes: >
+      The formula 'sp 4' (to be said four times) is a ritual repetition directive —
+      not part of the utterance text itself. Mercer renders it as a stage direction.
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner, R.O. 1969. Utterance 23."
+    divergence_flag: false
+    note: "Faulkner's rendering of PT 23 not independently verified from source."
+
+  - translator_id: allen_2005
+    text: >
+      Piankoff/pyramidtextsonline.com modernised version (closest available to Allen):
+      "Take the efflux which comes out of you, that your heart may not be weary thereby.
+      To say four times: Take! The voice has come out for you."
+    source: "Pyramidtextsonline.com, modernised Piankoff. Allen 2005 direct text: searched_gap."
+    divergence_flag: false
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "rDw"
+    term_mdc: "rDw"
+    semantic_field: "Efflux, bodily outflow, generative fluid"
+    notes: >
+      rDw refers to the liquid that flows from the body of Osiris — associated
+      with the Nile inundation in Egyptian theology (the flood as Osiris's efflux).
+      In the offering ritual context it is a purifying and vitalising substance
+      offered back to the deceased king. The command to 'take' it prevents the
+      heart from becoming wrD (weary/exhausted).
+    attestation_range: "Widespread in PT corpus; offering ritual texts generally."
+    translation_disputes:
+      - reading: "Outflow / efflux"
+        scholars: ["Mercer", "Faulkner", "Allen"]
+        note: "Consensus on basic meaning; nuance of which bodily fluid disputed in scholarship."
+
+  - term_transliteration: "xrw"
+    term_mdc: "xrw"
+    semantic_field: "Voice, sound, cry"
+    notes: >
+      'The voice has come out for you' (in n.k xrw) is a resurrection affirmation —
+      the voice returning to the dead king signals reanimation. The phoneme xrw
+      carries connotations of both literal voice and status (xrw also means
+      'the justified' in funerary contexts, as in mAa-xrw, 'true of voice').
+    attestation_range: "Pervasive in PT corpus; mAa-xrw formula runs through all dynasties."
+    translation_disputes:
+      - reading: "Voice"
+        scholars: ["Mercer", "Piankoff/Allen modernised"]
+        note: "No substantive divergence on xrw here."
+
+  - term_transliteration: "sp-4"
+    term_mdc: "sp-4"
+    semantic_field: "Ritual repetition directive — 'four times'"
+    notes: >
+      sp-4 is a rubric, not utterance text. It directs the officiating priest to
+      repeat the formula four times. The number four corresponds to the four
+      cardinal directions and the four sons of Horus — a numerological completeness.
+      Mercer and others translate it as a stage direction in parentheses.
+    attestation_range: "Ubiquitous in offering ritual texts."
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: rdw_identity
+    claim: "The rDw (efflux) offered in PT 23 is specifically the efflux of Osiris"
+    state: proposed
+    positions:
+      - scholar: "General scholarly consensus"
+        reading: >
+          rDw in offering ritual contexts is Osirian efflux — Nile flood association,
+          purifying and vitalising function.
+      - scholar: "Alternative reading"
+        reading: >
+          rDw could refer more broadly to the king's own bodily fluids — a self-referential
+          purification. The text says 'efflux which came forth from thee' (pr(w) im.k),
+          using second person — which could mean the king's own efflux, not Osiris's.
+    note: >
+      The 'thee' / 'you' pronoun referent is the grammatical crux. Is the priest
+      offering back to the king his own efflux (reflexive purification) or Osiris's
+      efflux (divine substance)? The MdC im.k (from you) favours the former,
+      but the Osirian theological context favours the latter. Requires Faulkner
+      and Allen commentary to determine which reading each scholar takes.
+    required_source: "Faulkner 1969 commentary; Allen 2005 notes."
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "Appears in Unas pyramid, passage north wall"
+    date_start: -2375
+    date_end: -2345
+    note: "Unas predates Teti. PT 23 is shared corpus."
+    source: "Pyramidtextsonline.com wall index."
+  - event: "Appears in Teti pyramid, burial chamber north wall"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005; Madain Project citing Lehner 1997."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 23 is short and its content is not disputed in the secondary literature.
+  The interpretive questions are at the lexical level (rDw identity) rather
+  than the translation level. The 'sp-4' rubric is an important scribal feature —
+  it is a performance instruction embedded in a carved text, which raises the
+  question of oral vs. inscribed function: were these texts recited at burial,
+  or were they sufficient as carved? The prevailing view (Allen) is that the
+  texts serve both functions.

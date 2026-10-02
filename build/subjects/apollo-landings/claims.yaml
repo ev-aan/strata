@@ -10,7 +10,7 @@
 #   6. Plain words only. Name the belief being refuted AND what replaces it, and
 #      explain any term a general reader would not know (in the summary if not the title).
 # ---------------------------------------------------------------------------
-headline: "No, the Apollo Moon landings were not faked"
+headline: "Apollo Moon Landings (1969-72): Not Faked, Independent Physical Evidence Shows"
 headline_claim: apollo-staged-hoax
 headline_status: draft          # draft until V2, then published
 dig_status: parked              # parked 2026-10-01 by owner; do not publish or extend
@@ -26,7 +26,7 @@ search_summary: >
 subject: apollo-landings
 title: "Apollo Crewed Lunar Landings (1969-1972)"
 description: >
-  The claim "humans landed on the Moon" is unusually well suited to Strata because
+  The claim "humans landed on the Moon" is unusually well suited to Stratah because
   it does not have to rest on NASA's word. This dig keeps three things distinct:
   (1) what is physically left on the Moon and checkable by anyone with the right
   instrument, (2) what was brought back and studied by laboratories outside NASA,
