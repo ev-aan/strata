@@ -1,0 +1,136 @@
+subject: flydubai-fz1073
+dig_status: scoping          # no claims drafted; live event, facts still changing
+event_status: live           # an investigation is open; reports are being revised
+as_of: 2026-10-02
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+# GUARDRAILS FOR THIS DIG (set before any claim is written):
+#  - A captain was seriously wounded, passengers were endangered, and a suspect is in custody and
+#    unidentified by authorities. We do not name the suspect, do not speculate about his religion,
+#    ethnicity or beliefs, and do not treat an accusation as a finding.
+#  - "Manufactured" is a claim to be TESTED. It must say who manufactured what, how, and what
+#    evidence would show it. A discrepancy in reporting is not evidence of fabrication; it is a
+#    discrepancy to be resolved.
+#  - Early reporting on a live event is often wrong. Every fact is logged with its source and time,
+#    and later changes are new entries.
+
+log:
+  - id: L-01
+    date: 2026-10-02
+    entry: >
+      TOPIC OPENED by the owner: the Flydubai flight FZ1073 incident (Dubai to Tel Aviv, Wednesday
+      30 September 2026). The owner's two observations: (1) the pilot is reported to be an Omani
+      national although, as the owner understands it, Omanis are not allowed into Israel; (2) the
+      timing "seems too convenient". The owner's overall impression is that something looks
+      inconsistent and manufactured. Scoping only. All facts below are secondary reporting
+      (news and aviation sites) unless stated; no investigation report exists yet.
+  - id: L-02
+    date: 2026-10-02
+    entry: >
+      WHAT IS REPORTED, WITH SOURCES (secondary): Flight FZ1073, a Boeing 737 MAX 8 (registration
+      A6-FKF), left Dubai for Tel Aviv. About two and a half hours into the flight the aircraft
+      lost altitude and turned north; squawk 7700 (general emergency) at 05:31 UTC and 7500
+      (unlawful interference) at 05:38 UTC per Flightradar24, as reported by AirLive, MiGFlug, Al
+      Jazeera; Israeli fighters were scrambled. A fight occurred in the cockpit; the captain, an
+      Indian national, was stabbed and seriously wounded; the first officer is the suspect. Passengers
+      and cabin crew entered the cockpit; two off-duty pilots among the passengers helped bring the
+      aircraft down. It landed at Tabuk, Saudi Arabia. Saudi Arabia's interior ministry said
+      preliminary investigations, with a UAE security team, "revealed an assault on the captain by
+      the co-pilot, resulting in various injuries to both". Both men left for Abu Dhabi on
+      1 October with an Emirati security team. About 174 people were on board. Sources read:
+      CNN (30 Sep, updated 1 Oct); CNN live blog (1 Oct); NPR; Al Jazeera; AirLive; MiGFlug;
+      AeroCorner; ThePrint; RTE. The Times of Israel and Haaretz were not readable (HTTP 403 /
+      paywall).
+  - id: L-03
+    date: 2026-10-02
+    entry: >
+      DISCREPANCIES IN THE NUMBERS (not yet resolved). (a) Takeoff time: Flightradar24-based
+      reports (AirLive, MiGFlug, AeroCorner timeline) say 03:05 UTC, which is just after 7 a.m. in
+      Dubai; CNN says "6:05 a.m. local time (10:05 p.m. ET)", which corresponds to 02:05 UTC if
+      "local" is Dubai. CNN's later times (distress call 8:31 a.m., touchdown 9:54 a.m.) fit
+      UTC+3 and the Flightradar24 times, so CNN's departure time and its ET conversion appear to be an
+      error or a mix of time zones. (b) The drop: CNN says 17,400 ft in just under two minutes;
+      Flightradar24 as quoted by Al Jazeera and Reuters says about 14,000 ft in under 30 seconds
+      (30,875 ft to 16,750 ft); another outlet says about 34,000 ft to about 19,000 ft in about
+      90 seconds. These can all be true for different start and end points and different time
+      windows, but only the raw altitude track can say. (c) Landing: CNN 9:54 a.m. (UTC+3 is
+      06:54 UTC); MiGFlug "between about 06:45 and 07:00 UTC". These agree within the stated range.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      OBSERVATION 1, THE OMANI NATIONALITY. What the reports say. Israel's Prime Minister said the
+      suspect is an Omani national (CNN; Bloomberg headline). CNN's own report notes that Oman and
+      Israel have no diplomatic relations and that "it is not yet clear how the Omani pilot would
+      have obtained clearance to fly to Israel". An Israeli official told CNN one of the main questions
+      being investigated is why the crew included a pilot from a country with which Israel has no
+      diplomatic relations. Reports citing an Israeli Transportation Ministry source (via the
+      Jerusalem Post, quoted by ThePrint) say Flydubai's agreement to operate in Israel requires
+      pilots on the route to come from states that have normalised relations with Israel, and call
+      the presence of an Omani pilot "a clear breach"; reports differ on whether that clause is in
+      Flydubai's own agreement or the UAE-Israel agreement. CNN quotes an Israeli security official that
+      Shin Bet is supposed to vet all airline personnel flying in from the UAE; another account says
+      in practice no Israeli agency vets foreign crew, and that one possibility under examination is
+      dual citizenship with a second passport from a country with relations (V0-V1, via search
+      summaries; to verify). An Omani official reportedly confirmed to CBS that the man was born in
+      Oman and holds Omani citizenship (search summary; not read). Oman had not commented in the
+      reports read. Israel's transport minister demanded Flydubai's Israel flights be suspended;
+      Flydubai suspended them.
+      READING: the owner's point is real and is already a question asked by Israeli officials and
+      reporters. A reported breach of a crew-nationality rule is evidence of a vetting or rostering
+      failure, or of a rule not applied as described. It does not by itself show the event was
+      arranged: it fits at least five explanations (vetting failure; dual nationality; the rule not
+      covering crew in the way reported; a roster change; deliberate placement). What would tell them
+      apart: the text of the agreement and its crew clause; the airline's roster records and who
+      assigned the first officer to this flight; the first officer's passports and prior routes;
+      Shin Bet vetting records; the Israeli civil aviation authority's inquiry.
+  - id: L-05
+    date: 2026-10-02
+    entry: >
+      OBSERVATION 2, "THE TIMING IS TOO CONVENIENT": NOT YET TESTABLE AS STATED. A claim of
+      convenient timing needs a beneficiary, an outcome and a mechanism. Neither is stated yet.
+      Questions put to the owner: convenient for whom, and for what? Candidate readings, listed so
+      each can be checked and none is assumed: (i) the event came 7 days before the third
+      anniversary of 7 October; (ii) the period around an Israeli election (date to be verified; the
+      scheduled date is believed to be 27 October 2026, V0); (iii) the ongoing regional conflict
+      (reports in the sources of Israeli strikes on Iran and of Iranian strikes affecting Oman, V0;
+      leads only); (iv) consequences already visible: Flydubai suspended Israel flights; Israel's
+      transport minister asked for an inquiry into the UAE agreement; the investigation is being run
+      jointly by Israel and the UAE (Herzog). METHOD: a convenience claim must name a prediction that
+      chance would not make, and must be compared with how often events of any kind fall near
+      some significant date (almost every date is near something). Without that comparison it
+      cannot be filed as evidence.
+  - id: L-06
+    date: 2026-10-02
+    entry: >
+      OTHER OPEN POINTS ON THE RECORD (not the owner's, logged because they bear on consistency).
+      (1) The two pilots who flew the plane down: Israel's Prime Minister said another air crew;
+      Flydubai said "on-duty Flydubai crew travelling on the flight"; CNN reports "reserve pilots" and
+      says their details have not been shared; MiGFlug says two off-duty pilots travelling as
+      passengers. A CNN aviation analyst called extra pilots on a flight "fairly unusual" unless
+      being repositioned. Their identities and why they were aboard are unconfirmed. (2) The weapon:
+      Israel's Prime Minister suggested a knife or an axe; Saudi and UAE statements read do not
+      say. (3) Motive: Israel's Prime Minister said the suspect "underwent Islamist radical
+      indoctrination" and, to another interviewer, that it was too early to declare a motive; the
+      US President said an Iran link was likely "based on what I'm hearing" but gave no detail;
+      Flydubai said the motive is unknown and asked for no premature speculation; the UAE says it is
+      investigating whether the violence was linked to terrorism. (4) Early Israeli reporting said a
+      hijacking was ruled out, then the event was treated as a terror incident. (5) Rumours about
+      the crew's nationality circulated and were checked by Snopes (not read yet).
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      WHAT WOULD SETTLE WHAT. Raw flight data (ADS-B tracks with altitude, speed and squawk by
+      timestamp) would settle the drop numbers and the timeline. The flight data and cockpit voice
+      recorders (UAE civil aviation investigators) would settle what happened in the cockpit. The
+      agreement text and the roster would settle the crew-nationality question. Witness accounts are
+      numerous and independent of each other (many passengers, Israelis and others; two Australians;
+      four US-Israeli dual citizens), which is itself evidence about what happened on board,
+      separate from any government statement.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      NEXT STEPS (not started): obtain raw ADS-B data for A6-FKF on 30 September and extract
+      altitude, time and squawk; read the Saudi interior ministry statement in full; read the
+      Snopes check; find the text of the UAE-Israel air services agreement and any crew clause; read
+      Israeli civil aviation authority statements; track the UAE investigation; ask the owner what
+      "convenient" means. Hold all claims until then. Re-check every fact against later reports and
+      log changes as new entries.

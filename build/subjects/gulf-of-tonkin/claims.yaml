@@ -8,14 +8,22 @@
 #   5. Publish only after the claim's anchors have been read directly (anchor_checked: primary).
 #   6. Plain words only. Name the belief being refuted AND what replaces it, and
 #      explain any term a general reader would not know (in the summary if not the title).
+#   7. Search wording. A headline should carry the name people actually search for (here
+#      "Gulf of Tonkin Incident"), the date or year, and the source of the finding, so a
+#      reader can judge it before clicking. Aim for 70-95 characters; the first 60 must make
+#      sense on their own because search results cut off there. The summary should open with
+#      the question people ask ("Did ... happen?"), answer it in the first clause, and stay
+#      under 200 characters. `url_slug` is lowercase words joined by hyphens.
 # headline_status values: draft | review | published | parked
 #   review = meets rules 2, 3 and 5; waiting for the owner to approve.
 # ---------------------------------------------------------------------------
-headline: "No second Gulf of Tonkin attack happened on 4 August 1964"
+headline: "Gulf of Tonkin Incident: No Second Attack Happened on August 4, 1964, NSA's Own Study Found"
 headline_claim: tonkin-aug4-attack-occurred
 headline_status: review          # meets the rules as of 2026-10-02; owner approval pending
 search_summary: >
-  The 2 August clash was real; the 4 August attack was not. NSA's own historian found nothing happened that night. How much officials knew is still debated.
+  Did a second Gulf of Tonkin attack happen on August 4, 1964? No. NSA's own historian found it never happened, though the August 2 clash was real. What officials knew is still debated.
+
+url_slug: gulf-of-tonkin-incident-no-second-attack-august-4-1964
 
 subject: gulf-of-tonkin
 title: "Gulf of Tonkin Incidents (August 1964)"

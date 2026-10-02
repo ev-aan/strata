@@ -112,3 +112,13 @@ log:
       Library audio for the 3 and 4 August calls; the NSA's own copy of the Hanyok study to confirm
       identity with the mirror used here. Also correct, in a new entry, the weak anchors in the
       National Security Archive essay if any claim leans on it alone.
+  - id: L-14
+    date: 2026-10-02
+    entry: >
+      HEADLINE REVISED at the owner's request (the earlier one was too short to be understood or
+      found). Earlier: "No second Gulf of Tonkin attack happened on 4 August 1964". Now: "Gulf of Tonkin
+      Incident: No Second Attack Happened on August 4, 1964, NSA's Own Study Found" (91 characters; the
+      first 60 read as a complete thought). The summary now opens with the question people search for
+      and answers it. A url_slug field was added. Rule 7 on search wording was added to the headline
+      guidance. headline_status remains review (owner approval pending). The claim behind it,
+      tonkin-aug4-attack-occurred, is unchanged.
