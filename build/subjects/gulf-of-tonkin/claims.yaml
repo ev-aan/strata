@@ -553,9 +553,9 @@ claims:
       Congress passed the Tonkin Gulf Resolution (7 August 1964) in response to the
       reported attacks, with the 4 August report central to the administration's case.
     evidence_class: primary_text
-    confidence: moderate
-    evidential_weight: 4   # of 5; the Record's roll call and the printed presidential address were read, the full debate was not
-    anchor_checked: primary   # Congressional Record, Senate, 7 Aug 1964, pp. 18459-18471 (partly read)
+    confidence: high
+    evidential_weight: 4   # of 5 (the cap); the Record's roll call, the printed address and the floor manager's opening were read; the full debate was searched by keyword, not read line by line
+    anchor_checked: primary   # Congressional Record, Senate, 6 Aug 1964 pp. 18399-18400 and 7 Aug 1964 pp. 18459-18471
     adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
       Not polled. The vote counts and the text are not disputed.
@@ -578,6 +578,53 @@ claims:
       # V: the Senate vote and dissenters read in the Record (primary). The presence of the 4 August address in the debate
       #    and the preamble's "repeatedly" read in the Record. "Central to the case" is still an interpretation: the whole debate
       #    (about 11 columns-pages) was searched for key terms, not read line by line.
+
+  - id: tonkin-fulbright-opening-aug4-as-fact
+    state: established
+    statement: >
+      Opening the Senate debate on 6 August 1964, Fulbright told the Senate: "On August 4 the Maddox and another destroyer,
+      the C. Turner Joy, were again attacked by North Vietnamese torpedo boats in international waters. The attack, which lasted for over
+      2 hours, was without any doubt a calculated act of military aggression." He also said the committees had approved the resolution with only
+      one dissenting vote.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 5   # of 5; the Record's page read on the image
+    anchor_checked: primary
+    adoption_weight: 3   # of 5
+    adoption_note: "Not measured."
+    would_change_if: "a different printing of the speech in the permanent Record"
+    next_step: "Read what the two committees were told before reporting (Foreign Relations and Armed Services joint session, 6 Aug; Senate Historical Series vol. XVI)."
+    anchor:
+      type: floor-statement
+      description: "Congressional Record, Senate, 6 Aug 1964, pp. 18399-18400 [read on the page image, p. 18399]."
+      accessible: true
+      ref: [src-congressional-record-1964-aug6]
+
+  - id: tonkin-aug1964-debate-no-doubt-voiced
+    state: searched_gap
+    statement: >
+      No passage has been found in the Senate debates of 6 and 7 August 1964 in which a senator questioned whether the 4 August attack
+      on the destroyers occurred. Senators whose words were found citing it treated it as fact: Fulbright ("without any doubt"),
+      Smathers ("The facts are indisputable"), Keating ("no doubt whatsoever that the second attack"), Scott and Russell (who mention the
+      "second attack" and where the ship was). Others in the same debate (Morse, McGovern) raised the earlier raids and how close the destroyers
+      patrolled to the coast.
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 2   # of 5; absence anchor, capped at provisional
+    anchor_checked: secondary   # keyword search of OCR text for 'August 4', 'second attack', 'night of the 4th' and nearby terms; quotes other than Fulbright's not checked on the page images
+    adoption_weight: 2   # of 5
+    adoption_note: "Not measured."
+    would_change_if: "a senator's words in the debate casting doubt on whether the 4 August attack occurred"
+    next_step: "Read both days in full, page by page (6 Aug pp. 18399-18436; 7 Aug pp. 18441-18471), verify each quote on its image; also the House debate of 7 Aug (pp. 18538 ff.)."
+    anchor:
+      type: absence-in-searched-record
+      description: >
+        Machine search of the Congressional Record text (OCR, column order partly scrambled). The search terms were tied to 4 August; a doubt
+        expressed in other words would be missed. Church (6 Aug) said the destroyers, "from all that we have been told, were not engaged in any
+        aggressive action directed against the shores of North Vietnam" [OCR wording, not verified on the image]: senators were acting on what
+        they were told, which is the P8 question the dig has not yet answered.
+      accessible: true
+      ref: [src-congressional-record-1964-aug6, src-congressional-record-1964]
 
   - id: tonkin-resolution-repealed-1970
     state: established

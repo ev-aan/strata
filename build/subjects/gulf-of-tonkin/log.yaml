@@ -166,3 +166,18 @@ log:
       the page image. Page images (not the 42 and 62 MB PDFs) are stored with sha256 in sources/congressional-record/. Voteview numbers
       the same roll calls 481 (1964) and 398 (1970); the Record's own numbers are 520 and 167. NEXT: read the full 6-7 Aug 1964 debates for
       who cited the 4 August attack and what senators were told (P8); read the 1970 debate and amendment text; the House Record.
+  - id: L-18
+    date: "2026-10-02"
+    entry: >
+      SENATE DEBATES OF 6-7 AUGUST 1964 SEARCHED (not read line by line). Sources: Congressional Record granules pt14-3-2 (6 Aug, Senate
+      pp. 18339-18440) and pt14-4-1 (7 Aug, pp. 18441-18471) from govinfo; text via pdftotext -raw (column order partly scrambled, so only the
+      quoted passage was verified on the page image). RESULTS: (1) Fulbright's opening (p. 18399) states the 4 August attack as fact: 'without
+      any doubt a calculated act of military aggression' (claim tonkin-fulbright-opening-aug4-as-fact, verified on the image). (2) Keyword search
+      for the 4 August attack ('August 4', 'second attack', 'night of the 4th', related terms) found it cited as fact by Fulbright, Smathers
+      ('The facts are indisputable'), Keating ('no doubt whatsoever'), and mentioned by Scott and Russell; NO passage found questioning whether it
+      occurred (new claim tonkin-aug1964-debate-no-doubt-voiced, searched_gap; keyword search can miss doubt phrased differently). (3) Morse and
+      McGovern raised the earlier raids on Hon Me and Hon Ngu and how close the destroyers patrolled; Church said the ships, 'from all that we have been
+      told', were not engaged in aggressive action: senators acted on what they were told, which this dig has NOT yet established (P8). Claim
+      tonkin-resolution-rested-on-aug4 raised to confidence high (weight 4, the cap). KEYWORD STATS were screening only: a
+      speaker-level count of turns is unreliable because the text layer interleaves columns. NEXT: read both days page by page on the images;
+      read the House debate (7 Aug, pp. 18538 ff.); read what the joint committee was told on 6 Aug (Senate Historical Series vol. XVI).

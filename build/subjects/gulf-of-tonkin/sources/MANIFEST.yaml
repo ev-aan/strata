@@ -140,3 +140,19 @@ sources:
       checked: 2026-10-02
     stored_as: "page images sources/congressional-record/crec-1970-p21119-019.png and crec-1970-p21132-032.png (full 62 MB file not stored)"
     image_sha256: {p21119: 6f4c79df6d4b929237dea41dec46c8467e69165ffba15bc03ddb50f9749f25bc, p21132: 0cf5547d25a755a54493958d46d61a291a3a9f9155e6a173ac01b4dff41ec440}
+  - id: src-congressional-record-1964-aug6
+    title: "Congressional Record, Vol. 110, Part 14 (Senate, 6 August 1964), GPO bound edition, granule GPO-CRECB-1964-pt14-3-2"
+    document_class: primary_text (official proceedings)
+    url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-3-2.pdf
+    pdf_sha256: b46e183f2a2686b42d0decf0329dd70f0d122b4c08db4cb63cb0c9dd9439f55c
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
+      tests: ["Page 18399 (Fulbright's opening) read on the page image; wording matches the text layer"]
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps: ["Two-column scan; text layer interleaves columns, so only the quoted passage was checked on the image", "Debate searched, not read in full"]
+      checked: 2026-10-02
+    stored_as: "page image sources/congressional-record/crec-1964-p18399-061.png (full file not stored)"
+    image_sha256: f8d3095874651358c8e3fb4a7d87e475b436e3a0c2e4115ec5574c12e35846bd
+
