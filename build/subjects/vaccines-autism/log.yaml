@@ -311,3 +311,26 @@ log:
       text in Europe PMC and JAMA refused: still unread, now said so in the MMR claim anchor.
       Owner decisions (headline wording; the surname "Poling" in the case name, put to the owner
       in L-19) are unchanged.
+  - id: L-22
+    date: 2026-10-02
+    entry: >
+      Answers to review round 4 (resolution is the reviewer's). R4-1: the two Federal Circuit
+      opinions were downloaded directly from cafc.uscourts.gov and the passages read. No.
+      2009-5128: in Cedillo and Snyder the petitioners presented MMR combined with thimerosal-
+      containing vaccines; "The Hazlehursts initially presented that theory of causation, but in
+      post-hearing briefing they relied on the theory that Yates's autism was caused by the MMR
+      vaccine alone." No. 2010-5004: the special master found the evidence did not show "that
+      the MMR vaccine alone or in combination with TCVs can cause autism in general".
+      va-omnibus-test-cases is corrected: the statement no longer says the first group's theory
+      was only MMR plus thimerosal, the what-it-is-not line no longer says MMR alone was never
+      ruled on, and the basis says MMR alone was argued in Hazlehurst and rejected. The whole
+      opinions were not read, so anchor_checked stays secondary. R4-3: L-19 said nothing was
+      dropped when key points 2 and 3 were joined; that was wrong. The year of the retraction
+      (2010) and the court's finding on the ethics statement left the first screen; both remain
+      in the full reasoning. R4-4: the IOM (2004) is now quoted ("favors rejection of a causal
+      relationship", for MMR and thimerosal-containing vaccines). R4-5: the divergence note says
+      the other 11 WHO-reviewed studies suggested an association, with very low strength of
+      evidence. R4-6: agency pages removed from the anchors of va-cdc-page-2025 (WHO) and
+      va-causes-largely-unknown (CDC page); no weight changed. R4-7: timeline events a14 and a18
+      now list the Federal Circuit opinions. Not done here: R4-2 (an earlier reviewer's note in
+      review.yaml quotes the child's first name; reviewer notes are not the author's to edit).

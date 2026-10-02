@@ -51,6 +51,8 @@ sources:
   src-eurosurv-2008:         {title: "Eurosurveillance, 3 Jul 2008", url: "https://www.eurosurveillance.org/content/10.2807/ese.13.27.18919-en", authenticity: "authenticated, strong"}
   src-hornig-2008:           {title: "Hornig et al., PLoS ONE 2008", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526159/", authenticity: "authenticated, strong"}
   src-oap-decisions:         {title: "Court of Federal Claims, autism decisions", url: "https://www.uscfc.uscourts.gov/autism-decisions-and-background-information", authenticity: "authenticated, moderate"}
+  src-cafc-cedillo-2010:     {title: "Federal Circuit, Cedillo v. Secretary of HHS, No. 2010-5004 (27 Aug 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/10-5004.pdf", authenticity: "authenticated, strong"}
+  src-cafc-hazlehurst-2010:  {title: "Federal Circuit, Hazlehurst v. Secretary of HHS, No. 2009-5128 (13 May 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/09-5128.pdf", authenticity: "authenticated, strong"}
   src-bmj-gmc-2010:          {title: "BMJ 2010;340:c2803 (GMC decision)", url: "https://www.bmj.com/content/340/bmj.c2803", authenticity: "news report"}
   src-lancet-retraction-2010: {title: "Lancet 2010;375:445 retraction notice (not read; BMJ 2010;340:c696 reports on it)", url: "https://www.bmj.com/content/340/bmj.c696", authenticity: "authenticated, moderate (notice not read)"}
   src-guardian-lancet-2010:  {title: "The Guardian, 2 Feb 2010: Lancet retracts 'utterly false' MMR paper", url: "https://www.theguardian.com/society/2010/feb/02/lancet-retracts-mmr-paper", authenticity: "news report"}
@@ -118,7 +120,7 @@ events:
   - {id: a13, panel: years, lane: research, time: "2008-09-04T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-hornig-2008],
      label: "Sep 2008: Hornig et al. find no persistent measles RNA in the gut (4% vs 8%)",
      detail: "Three blinded labs, including the original one [read]."}
-  - {id: a14, panel: years, lane: legal, time: "2009-02-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
+  - {id: a14, panel: years, lane: legal, time: "2009-02-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions, src-cafc-cedillo-2010, src-cafc-hazlehurst-2010],
      label: "12 Feb 2009: special masters deny the first three autism test cases (Cedillo, Hazlehurst, Snyder)",
      detail: "Denials confirmed in the Federal Circuit opinions 10-5004 and 09-5128 (footnote 1 of the first), which also say the Court of Federal Claims affirmed Hazlehurst and Snyder and that the Petitioners' Steering Committee proposed the test-case approach [opened]; the special masters' decisions themselves were not opened."}
   - {id: a15, panel: years, lane: origin, time: "2010-02-02T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-guardian-lancet-2010, src-lancet-retraction-2010],
@@ -130,7 +132,7 @@ events:
   - {id: a17, panel: years, lane: origin, time: "2010-05-24T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-bmj-gmc-2010, src-walker-smith-2012],
      label: "24 May 2010: GMC strikes off Wakefield and Walker-Smith",
      detail: "Murch not guilty of serious professional misconduct [judgment para 1; BMJ]."}
-  - {id: a18, panel: years, lane: legal, time: "2010-08-27T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
+  - {id: a18, panel: years, lane: legal, time: "2010-08-27T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions, src-cafc-cedillo-2010],
      label: "27 Aug 2010: Federal Circuit affirms Cedillo",
      detail: "Hazlehurst had been affirmed on 13 May 2010; Snyder was not appealed (Federal Circuit 10-5004, footnote 1) [opened]."}
   - {id: a19, panel: years, lane: media, time: "2011-01-05T12:00:00Z", precision: day, kind: media, status: reported, sources: [src-deer-2011, src-godlee-2011],

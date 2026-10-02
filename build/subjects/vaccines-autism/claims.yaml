@@ -36,8 +36,9 @@ assessment:
     general claim "vaccines cause autism" is filed as unsupported, not as refuted. The reverse link is established:
     rubella in pregnancy can cause autism, and the vaccine prevents it. What health bodies say
     is shown separately because it is adoption, not evidence: the US Institute of Medicine
-    (2004) and the WHO's vaccine safety committee (December 2025) found no evidence of a causal
-    link; since
+    (2004) said the evidence "favors rejection of a causal relationship" for MMR and for
+    thimerosal-containing vaccines, and the WHO's vaccine safety committee (December 2025)
+    found no evidence of a causal link; since
     November 2025 the CDC's page has said the "no link" statement is not evidence-based, a
     change the US Health Secretary said he ordered (va-cdc-page-2025).
   key_points:
@@ -216,8 +217,9 @@ divergence_note: >
   measles, mumps and rubella cause autism, 13% of US adults said true, 68% false and 19%
   were unsure (Annenberg). Since November 2025 the gap has a new
   shape. The US health department's own CDC page now calls "vaccines do not cause autism"
-  not an evidence-based claim, while the WHO's safety committee (which found 20 of 31
-  primary studies showed no association and the other 11 of very low strength), the AAP and the
+  not an evidence-based claim, while the WHO's safety committee (20 of 31 primary
+  studies found no association; the other 11 suggested one, with very low strength of
+  evidence), the AAP and the
   studies themselves find no evidence of a link. Nothing in the evidence changed between those two dates; what changed was
   adoption by an institution. Strata records both statements, and gives neither of them
   evidential weight. The real open edges are narrow: a very rare susceptible group cannot
@@ -1419,9 +1421,12 @@ claims:
       In the US vaccine court's Omnibus Autism Proceeding, which the Federal Circuit describes
       as addressing approximately 5,000 autism claims, the Petitioners' Steering Committee
       proposed a test-case approach. In the first group of three test cases (Cedillo,
-      Hazlehurst, Snyder; the theory was MMR plus thimerosal), the special masters denied all
-      three petitions in 2009 and the Court of Federal Claims affirmed; the Federal Circuit
+      Hazlehurst, Snyder; Cedillo and Snyder argued MMR plus thimerosal-containing vaccines, and
+      the Hazlehursts, after first arguing the same, relied on MMR alone in post-hearing
+      briefing), the special masters denied all three petitions in 2009 and the Court of Federal Claims affirmed; the Federal Circuit
       affirmed Hazlehurst (13 May 2010) and Cedillo (27 Aug 2010), and Snyder was not appealed.
+      In Cedillo the special master found the evidence did not show "that the MMR vaccine alone
+      or in combination with TCVs can cause autism in general".
       The court's list also shows decisions in three further cases (King, Mead, Dwyer) dated
       12 Mar 2010; those were not opened and their outcome is not stated here, beyond the
       remark in Bruesewitz n.25 that the special masters "have thus far uniformly rejected" the
@@ -1463,7 +1468,7 @@ claims:
     what_it_is_not:
       - "Not a scientific proof that no child's autism was ever caused by a vaccine."
       - "Not a judgment on the families' honesty or on their children's suffering."
-      - "Not a ruling on the theory of MMR alone, which an earlier pass reports was never presented (not re-checked)."
+      - "Not a ruling on the later test cases (King, Mead, Dwyer): those decisions were not opened."
     positions:
       - label: "A caution, not a finding either way"
         holder: "Justice Sotomayor's dissent in Bruesewitz (2011), n.25"
@@ -1476,7 +1481,8 @@ claims:
         ground: "The families' experts did not show causation by the legal standard."
     basis: >
       A failure of proof by a preponderance of the evidence is a legal finding, not a
-      scientific proof of no link. The third planned theory (MMR alone) was never presented.
+      scientific proof of no link. MMR alone was argued in Hazlehurst and rejected; the
+      Federal Circuit affirmed (No. 2009-5128, read).
 
   - id: va-bruesewitz-no-autism-finding
     state: established
@@ -1759,7 +1765,7 @@ claims:
       type: stated-limit
       description: "Heritability is high but explains variation, not individual cases (see va-heritability-high)."
       accessible: true
-      sources: [src-cdc-autism-page, src-sandin-2017]
+      sources: [src-sandin-2017]
     basis: "Not knowing the cause is not evidence for any particular cause, vaccines included."
 
   # =====================================================================
@@ -1921,7 +1927,7 @@ claims:
         2025; Kennedy said he ordered it [secondary: STAT, 21 Nov 2025]. Revised again about
         22 Jul 2026 [secondary].
       accessible: true
-      sources: [src-cdc-autism-page, src-stat-cdc-page-2025, src-who-gacvs-2025]
+      sources: [src-cdc-autism-page, src-stat-cdc-page-2025]
     positions:
       - label: "Yes, a link is possible"
         holder: "HHS and the current CDC page"
