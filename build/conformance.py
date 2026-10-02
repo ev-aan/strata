@@ -176,7 +176,7 @@ def check_subject(r, sdir):
         h = d.get("headline")
         if h and not 70 <= len(h) <= 95:
             r.warn(subject, f"headline is {len(h)} characters; aim for 70-95 (rule 7)")
-        if claims and not h and d.get("dig_status") not in ("parked", "pilot_draft", "data"):
+        if claims and not h and d.get("dig_status") not in ("parked", "pilot_draft", "data", "open_corpus"):
             r.warn(subject, "has claims but no headline and no dig_status; a complete dig needs a specific headline")
 
     chpath = os.path.join(sdir, "challenges.yaml")

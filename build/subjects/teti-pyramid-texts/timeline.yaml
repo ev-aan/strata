@@ -1,0 +1,37 @@
+timeline:
+  id: teti-pyramid-texts
+  title: "Teti's pyramid texts: when they were carved, and when we got them (2375 BCE to 2005 CE)"
+  as_of: "2026-10-02"
+  note: >
+    Dates before the common era are written as negative years. Old Kingdom dates are conventional and differ between authorities; every
+    dot is a claim from the imported files and none is checked here, so all are drawn as single-source.
+lanes:
+  ancient: {label: "Carving and earlier corpus"}
+  modern:  {label: "Discovery, editions, translations"}
+sources:
+  s_import: {title: "Imported Teti files (batch 1 subject.yaml), earlier chat output; not checked against the cited works", url: "", authenticity: "provenance known, weak; unchecked"}
+events:
+  - {id: t1, lane: ancient, time: "-2375-01-01T00:00:00Z", end: "-2345-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "About 2375-2345 BCE: Pyramid of Unas inscribed (the earlier pyramid with texts)",
+     detail: "From the files' transmission events. Unas predates Teti, so utterances shared with Unas are not Teti-original."}
+  - {id: t2, lane: ancient, time: "-2345-01-01T00:00:00Z", end: "-2323-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "About 2345-2323 BCE: Teti's reign and pyramid texts (conventional dates, Shaw 2000)",
+     detail: "Claim teti-reign-conventional-dates, proposed. The file's plus or minus 10 years is unchecked."}
+  - {id: t3, lane: ancient, time: "-2055-01-01T00:00:00Z", end: "-1650-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "About 2055-1650 BCE: Coffin Texts (later attestation; the files mark any equivalent a gap)",
+     detail: "The files say a Coffin Text equivalent needs Allen's concordance to confirm."}
+  - {id: t4, lane: modern, time: "1882-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "1882: Maspero opens Teti's pyramid (per the file; unchecked)",
+     detail: "The file cites Maspero, Recueil des Travaux, vol. 3. The year of opening was not checked and may differ."}
+  - {id: t5, lane: modern, time: "1908-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "1908: Sethe's critical edition begins to appear",
+     detail: "Sethe 1908-1910, Leipzig. The hieroglyphic text this dig still lacks."}
+  - {id: t6, lane: modern, time: "1952-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "1952: Mercer's English translation", detail: "The files call it public domain; not checked."}
+  - {id: t7, lane: modern, time: "1958-01-01T00:00:00Z", end: "1999-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "About 1958-1999: restoration work on the Teti, Pepi I and Unas texts (Lauer, Sainte-Fare Garnot, Leclant)",
+     detail: "Reported in Allen 2005 per the file; approximate."}
+  - {id: t8, lane: modern, time: "1969-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "1969: Faulkner's English translation", detail: "Standard English translation for decades, per the file."}
+  - {id: t9, lane: modern, time: "2005-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
+     label: "2005: Allen's English translation (follows the wall sequence)", detail: "In copyright; sections of it are cited in the claims."}

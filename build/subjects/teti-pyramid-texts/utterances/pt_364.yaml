@@ -1,0 +1,215 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch2/pt_364.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_364
+pt_number: 364
+display_name: "PT 364 — Nut as Sarcophagus/Coffin/Tomb: The Sky-Mother Receives"
+sethe_phrase_range:
+  value: "§§ 615a–616d (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Middle Kingdom Coffin Texts"
+      approximate_date_start: -2055
+      approximate_date_end: -1650
+      note: >
+        PT 364's identification of Nut with the sarcophagus/coffin/tomb is the
+        theological basis for Nut's ubiquitous presence on coffin lids from the
+        New Kingdom onward. The specific CT equivalent: searched_gap.
+      source: >
+        Graur (arxiv 2409.10265) confirms: 'Faulkner (1969: 119) translated
+        the relevant part of the spell as: "you having been given to your mother
+        Nut in her name of Sarcophagus, she has embraced you in her name of
+        Coffin, and you have been brought to her in her name of Tomb."'
+        This is PT 364.
+    - source: "New Kingdom coffin decoration tradition"
+      approximate_date_start: -1550
+      note: >
+        Nut's depiction on coffin lids ('Nut spread herself above you, she
+        protects you') descends directly from PT 364's identification of Nut
+        with the sarcophagus. This is one of the longest-running transmission
+        chains in Egyptian religion.
+      source: "Graur, arxiv 2409.10265, citing Hollis 2019."
+
+location:
+  chamber: burial_chamber
+  wall: west_gable
+  column_direction: west_to_east
+  note: >
+    Allen (2005) notes: 'The west gable of the burial chamber is inscribed with
+    protective spells; in later pyramids the gable was used for texts commending
+    the king to Nut.' PT 364's Nut-identification is consistent with the west
+    gable's protective function. The sarcophagus stands against the west wall
+    directly below the west gable — Nut's protective embrace physically arcs
+    over the sarcophagus.
+    In Unas: the west gable bore protective spells (PT 226–243). The specific
+    placement of PT 364 in Teti's corpus requires Allen 2005 Teti section.
+  physical_condition: searched_gap
+
+ritual_class:
+  classes:
+    - protective
+    - osirian
+  note: >
+    PT 364 is the Nut-as-container spell. Nut is identified with three architectural
+    forms: the sarcophagus (nbt = 'she who contains'), the coffin (embrace),
+    and the tomb structure itself. The king is given to Nut in each form —
+    three nested identifications making Nut simultaneously the sky-goddess,
+    the stone vessel, and the entire burial complex. This is protective theology
+    at its most architecturally intimate: the physical sarcophagus IS the goddess.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+
+translations:
+  - translator_id: faulkner_1969
+    text: >
+      "You having been given to your mother Nut in her name of 'Sarcophagus',
+      she has embraced you in her name of 'Coffin', and you have been brought
+      to her in her name of 'Tomb'."
+    source: >
+      Faulkner, R.O. 1969. PT 364, p. 119. Cited in Graur (2024),
+      arxiv.org/pdf/2409.10265.
+    divergence_flag: true
+    notes: >
+      Three Nut-names: Sarcophagus (nb.t? — 'she of the chest/container'),
+      Coffin (krs.t? — 'she who embraces'), Tomb (js.t? — 'she of the place').
+      Each is a different architectural scale: the innermost stone vessel →
+      the wooden coffin → the entire underground structure. Nut contains the
+      king at every scale simultaneously.
+
+  - translator_id: allen_2005
+    text: >
+      "You have been given to your mother Nut in her identity of the entombment,
+      she has collected you in her identity of the tomb chamber,
+      and you have been elevated to her in her identity of the tomb's superstructure."
+    source: >
+      Allen, J.P. 2015 (2nd ed. SBL). PT 364, p. 84. Cited in Graur (2024),
+      arxiv.org/pdf/2409.10265.
+    divergence_flag: true
+    notes: >
+      Allen translates Nut's three 'identities' (Allen's term for Faulkner's
+      'names') using architectural terms: 'entombment', 'tomb chamber',
+      'tomb's superstructure.' This shifts from vessel-metaphor (Faulkner's
+      sarcophagus/coffin/tomb) to architectural layers (entombment process /
+      interior chamber / exterior structure). The theological claim is the
+      same — Nut encompasses the entire burial complex — but Allen's rendering
+      is more architecturally literal and less metaphorical.
+
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 364."
+
+lexical_anchors:
+  - term_transliteration: "nb.t sAH"
+    semantic_field: "Nut's name as Sarcophagus"
+    notes: >
+      The specific Egyptian term for the first Nut-name ('Sarcophagus' in
+      Faulkner; 'entombment' in Allen) requires MdC from Sethe to confirm.
+      Faulkner renders it as 'Sarcophagus' (a Greek word for the Egyptian
+      stone vessel). Allen renders it as 'entombment' (a process, not an object).
+      The Egyptian original is likely a word meaning 'container' or 'place of
+      resting' — nb.t (she of the...) + a vessel/rest word.
+    translation_disputes:
+      readings:
+        - reading: "'Sarcophagus' — vessel/container (Faulkner)"
+        - reading: "'Entombment' — process (Allen)"
+      note: "This is a confirmed Faulkner vs. Allen divergence on the same word."
+    source: "Graur 2024 citation of Faulkner 1969: 119 and Allen 2015: 84."
+
+  - term_transliteration: "Nt"
+    term_mdc: "Nt"
+    semantic_field: "Nut — sky goddess, cosmic mother, sarcophagus"
+    notes: >
+      Nut (Nt) is the sky — depicted as an arching woman whose body spans the
+      earth. Her role in the PT is as cosmic mother who receives and protects
+      the deceased king. In PT 364, Nut IS the sarcophagus — the physical stone
+      vessel that holds the body is identified with the goddess whose body arches
+      over the world. The theological identification is both intimate (stone vessel)
+      and cosmic (sky goddess). PT 427–435 (In Praise of Nut) is an entire
+      section of Nut hymns; PT 364 is the Nut-as-architecture spell.
+    attestation_range: >
+      Nut's association with coffins/sarcophagi runs from Old Kingdom PT through
+      Roman Period coffin decoration. PT 364 is the earliest explicit statement
+      of the Nut-as-container theology.
+
+divergence_points:
+  - id: nut_names_vs_identities
+    claim: "Nut's three appellations in PT 364 are 'names' (Faulkner) or 'identities' (Allen)"
+    state: contested
+    positions:
+      - scholar: "Faulkner 1969"
+        reading: >
+          'In her name of Sarcophagus... in her name of Coffin... in her name of
+          Tomb.' The Egyptian rn = 'name' — Nut has three names that correspond to
+          three architectural forms. A name is an identity in Egyptian theology:
+          knowing a god's name gives power over it.
+      - scholar: "Allen 2005/2015"
+        reading: >
+          'In her identity of the entombment... in her identity of the tomb
+          chamber... in her identity of the tomb's superstructure.' Allen uses
+          'identity' rather than 'name' — a more modern rendering that avoids
+          the name-magic connotation of rn and focuses on functional role.
+    note: >
+      This divergence is about how to render rn (name/identity) in a theological
+      context. Faulkner preserves the name-magic valence; Allen opts for
+      functional description. Both are defensible; they produce different
+      theological readings of the spell.
+    source: "Graur 2024 citing both translations."
+
+  - id: nut_architectural_scale
+    claim: "Nut's three 'names' correspond to sarcophagus/coffin/tomb (Faulkner) or entombment/chamber/superstructure (Allen)"
+    state: contested
+    positions:
+      - scholar: "Faulkner 1969"
+        reading: "Three vessel forms — sarcophagus (innermost) → coffin (middle) → tomb (outer)"
+      - scholar: "Allen 2005/2015"
+        reading: "Three architectural phases — entombment (process) → chamber (interior) → superstructure (exterior pyramid)"
+    note: >
+      Faulkner's three vessels follow a nesting logic (small → medium → large container).
+      Allen's three phases follow a process logic (action → interior space → exterior
+      structure). The Egyptian original would resolve which reading is correct:
+      do the three terms refer to objects (vessel types) or spaces/processes?
+      This requires Sethe 1908 MdC for the three terms.
+
+transmission_events:
+  - event: "Teti pyramid, burial chamber west gable (placement confirmed by ritual class)"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 architectural analysis; Graur 2024."
+  - event: "Coffin lid decoration tradition (Nut as coffin protector)"
+    approximate_date_start: -1550
+    note: >
+      Nut's ubiquitous presence on coffin lids from the New Kingdom onward
+      descends theologically from PT 364's identification of Nut with the coffin.
+      This is not a transmission of the text but of the theological principle.
+    source: "Graur 2024, arxiv.org/pdf/2409.10265, citing Hollis 2019."
+
+parallel_pyramids:
+  unas: searched_gap
+  pepi_i: true
+  merenre: searched_gap
+  pepi_ii: true
+  note: >
+    PT 364 appears in Pepi I ('O Osiris Pepi, Nut, your mother, spreads herself
+    above you') and is attested in the Nut-praise sections of later corpora.
+    Unas attestation: searched_gap.
+
+notes: >
+  PT 364 is the theological anchor for one of the longest-running identification
+  chains in Egyptian religion: Nut = coffin. This identification, first stated
+  explicitly here, generated the iconographic tradition of painting Nut on coffin
+  interiors that ran for 1,500+ years. The Faulkner vs. Allen divergence is
+  the most cleanly documented translation disagreement in this batch —
+  both renderings are available from a single secondary source (Graur 2024)
+  with exact page citations. This makes PT 364 the highest-quality divergence
+  record in the second set.

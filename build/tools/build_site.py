@@ -32,7 +32,7 @@ ul.l{list-style:none;padding:0}ul.l li{padding:12px 0;border-top:1px solid var(-
 def page(title, body, desc="", canonical="", extra_head="", depth=0):
     up = "../" * depth
     nav = (f'<nav><a class="b" href="{up}">{E(CFG["name"])}</a><a href="{up}digs/">Digs</a><a href="{up}method/">Method</a>'
-           f'<a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
+           f'<a href="{up}atlas/">Atlas</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
     meta = f'<meta name="description" content="{E(desc)}">' if desc else ""
     og = (f'<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">'
           f'<meta property="og:type" content="article"><meta property="og:site_name" content="{E(CFG["name"])}">'
@@ -78,7 +78,7 @@ for d in ("method", "bounties"):
     if os.path.isdir(os.path.join(ROOT, d)): shutil.copytree(os.path.join(ROOT, d), os.path.join(OUT, d))
 open(os.path.join(OUT, ".nojekyll"), "w").close()
 
-digs, corrections, urls = [], [], ["/", "/digs/", "/method/", "/corrections/", "/about/"]
+digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/method/", "/corrections/", "/about/"]
 for sub in CFG["publish"]:
     base = os.path.join(ROOT, "build", "subjects", sub)
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
@@ -151,6 +151,9 @@ write("digs/index.html", page("Digs", f'<p class="eyebrow">Digs</p><h1>What we h
 crow = "".join(f'<li><span class="mono">{E(d)}</span> · <a href="../digs/{E(sl)}/">{E(h)}</a><br>{E(t)}</li>' for d, sub, sl, h, t in sorted(corrections, reverse=True)) or "<li>No corrections logged yet.</li>"
 write("corrections/index.html", page("Corrections", f'<p class="eyebrow">Corrections</p><h1>What we got wrong, and fixed</h1><p>Every correction made to a published dig is logged and stays visible. The logs are append-only: an entry is never deleted or rewritten, only added to.</p><ul class="l">{crow}</ul>', "Corrections to Stratah digs.", "/corrections/", depth=1))
 write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG["name"])}: {E(CFG["tagline"])}</h1><p>{E(" ".join(CFG["about"].split()))}</p><p>See the <a href="../method/">method</a> for the rules, and <a href="../corrections/">corrections</a> for what we have fixed.</p>', " ".join(CFG["about"].split())[:200], "/about/", depth=1))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_atlas
+write("atlas/index.html", build_atlas.build_atlas_html(CFG["publish"])[0])
 write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>https://{CFG['domain']}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls) + "</urlset>")
 write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: https://{CFG['domain']}/sitemap.xml\n")
 write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Digs\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open dig'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")

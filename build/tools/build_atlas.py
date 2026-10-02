@@ -9,13 +9,27 @@ Used by build_site.py (function build_atlas_html) for site/atlas/.
 Time runs left (past) to right (future). Each dig is a row; vertical position inside a row only avoids overlap.
 `axis` per event: 'real' (default; when it happened or was recorded) or 'narrative' (when a story says it happened).
 The two axes are switched, never mixed. YAML is the source; this page is generated."""
-import os, sys, glob, json, html, datetime, yaml
+import os, sys, glob, json, html, datetime, re, yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SUBJ = os.path.join(ROOT, "build", "subjects")
 
+def _days(y, m, d):
+    # days since 1970-01-01 in the proleptic Gregorian calendar (astronomical years, so 1 BCE is year 0)
+    y -= m <= 2
+    era = y // 400
+    yoe = y - era * 400
+    doy = (153 * (m + (-3 if m > 2 else 9)) + 2) // 5 + d - 1
+    doe = yoe * 365 + yoe // 4 - yoe // 100 + doy
+    return era * 146097 + doe - 719468
+
 def ms(iso):
     s = str(iso).replace("Z", "")
+    if s.startswith("-") or len(s.split("-")[0]) > 4:
+        m = re.match(r"^(-?\d+)-(\d\d)-(\d\d)", s)
+        yy = int(m.group(1))
+        yy = yy + 1 if yy < 0 else yy       # negative years are BCE as written: -2345 is 2345 BCE (astronomical -2344)
+        return _days(yy, int(m.group(2)), int(m.group(3))) * 86400000
     d = datetime.datetime.fromisoformat(s) if "T" in s else datetime.datetime.fromisoformat(s + "T00:00:00")
     return int((d - datetime.datetime(1970, 1, 1)).total_seconds() * 1000)
 
@@ -59,11 +73,11 @@ input[type=search]{font:13px system-ui;padding:3px 10px;border:1px solid var(--l
 main{flex:1;display:flex;min-height:0}#stage{flex:1;min-width:0;position:relative;overflow:hidden;touch-action:none}svg{width:100%;height:100%;display:block;cursor:grab}svg:active{cursor:grabbing}
 #panel{width:340px;max-width:44vw;border-left:1px solid var(--line);background:var(--panel);padding:14px;overflow:auto;font-size:14px}#panel h2{font:500 16px Georgia,serif;margin:.2em 0 .4em}.mono{font:11.5px ui-monospace,monospace;color:var(--mute)}
 a{color:var(--c0)}.note{color:var(--mute);font-size:13px}.rowlabel{font:600 12px system-ui;cursor:pointer}
-@media (max-width:760px){main{flex-direction:column}#panel{width:100%;max-width:none;height:38vh;border-left:0;border-top:1px solid var(--line)}}
+@media (max-width:760px){#filters{display:none}#filters.open{display:flex;max-height:34vh;overflow:auto}main{flex-direction:column}#panel{width:100%;max-width:none;height:30vh;border-left:0;border-top:1px solid var(--line)}}
 </style></head><body>
 <header><h1>ATLAS</h1><span class="mono">time runs left (past) to right (future); wheel or pinch to zoom, drag to pan</span>
 <span><button class="tog on" id="axReal">Real-world time</button> <button class="tog" id="axNarr" disabled title="No narrative timelines yet">Narrative time</button></span>
-<span><button id="fit">Fit all</button> <button id="zin">+</button> <button id="zout">&minus;</button></span></header>
+<span><button id="ftog" onclick="document.getElementById('filters').classList.toggle('open')">Filters</button> <button id="fit">Fit all</button> <button id="zin">+</button> <button id="zout">&minus;</button></span></header>
 <div id="filters"></div>
 <main><div id="stage"><svg id="svg" role="img" aria-label="Timeline of events across the digs"></svg></div>
 <aside id="panel"><h2>Pick a dot</h2><p class="note">Each row is one dig. Click a dot for what happened, how we know, and the source. Shapes show the kind of source; a dashed, pale dot means one source or a date only.</p>
@@ -79,8 +93,8 @@ let t0=Math.min(...allEv.map(e=>e.t)),t1=Math.max(...allEv.map(e=>e.e||e.t));con
 let view={a:t0,b:t1};const YEAR=365.2425*86400000;
 function el(n,a,p){const x=document.createElementNS(NS,n);for(const k in a)x.setAttribute(k,a[k]);if(p)p.appendChild(x);return x}
 function fmt(e){const d=new Date(e.t);const y=d.getUTCFullYear(),m=d.getUTCMonth(),dd=d.getUTCDate();const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
- let s=e.p==='year'?String(y):e.p==='month'?M[m]+' '+y:dd+' '+M[m]+' '+y;if(e.p==='exact'||e.p==='approx'){const hh=String(d.getUTCHours()).padStart(2,'0'),mm=String(d.getUTCMinutes()).padStart(2,'0');if(hh+mm!=='1200'&&hh+mm!=='0000')s+=' '+hh+':'+mm+' UTC'}
- if(e.e){const f=new Date(e.e);s+=' to '+f.getUTCDate()+' '+M[f.getUTCMonth()]+' '+f.getUTCFullYear()}return s+(e.p==='approx'?' (approx.)':e.p==='range'?' (range)':'')}
+ const Y=v=>v<=0?(1-v)+' BCE':String(v);let s=e.p==='year'?Y(y):e.p==='month'?M[m]+' '+y:dd+' '+M[m]+' '+y;if(e.p==='exact'||e.p==='approx'){const hh=String(d.getUTCHours()).padStart(2,'0'),mm=String(d.getUTCMinutes()).padStart(2,'0');if(hh+mm!=='1200'&&hh+mm!=='0000')s+=' '+hh+':'+mm+' UTC'}
+ if(e.e){const f=new Date(e.e);s+=' to '+(e.p==='year'?'':f.getUTCDate()+' '+M[f.getUTCMonth()]+' ')+Y(f.getUTCFullYear())}return s+(e.p==='approx'?' (approx.)':e.p==='range'?' (range)':'')}
 const COL=i=>'var(--c'+(i%8)+')';
 function marker(k,x,y,r,col,hollow,dash,g,ev){let s;const sw=1.6;const at={fill:hollow?'none':col,'fill-opacity':hollow?1:.85,stroke:col,'stroke-width':sw};if(dash)at['stroke-dasharray']='3 2';
  if(k==='circle')s=el('circle',Object.assign({cx:x,cy:y,r:r},at),g);else if(k==='square')s=el('rect',Object.assign({x:x-r,y:y-r,width:2*r,height:2*r,rx:2},at),g);
@@ -89,9 +103,11 @@ function marker(k,x,y,r,col,hollow,dash,g,ev){let s;const sw=1.6;const at={fill:
  else{const p=[];for(let i=0;i<6;i++){const a=Math.PI/3*i;p.push((x+r*1.2*Math.cos(a))+','+(y+r*1.2*Math.sin(a)))}s=el('polygon',Object.assign({points:p.join(' ')},at),g)}
  s.style.cursor='pointer';s.addEventListener('click',ev=>{ev.stopPropagation();show(g.__e)});return s}
 function ticks(a,b,w){const ppy=w/((b-a)/YEAR);let unit,step;const out=[];
- if(ppy>2400){unit='day';step=1}else if(ppy>180){unit='month';step=1}else if(ppy>60){unit='year';step=1}else if(ppy>25){unit='year';step=5}else if(ppy>6){unit='year';step=10}else if(ppy>2.5){unit='year';step=25}else{unit='year';step=100}
+ if(ppy>2400){unit='day';step=1}else if(ppy>180){unit='month';step=1}else if(ppy>60){unit='year';step=1}else if(ppy>25){unit='year';step=5}else if(ppy>6){unit='year';step=10}else if(ppy>2.5){unit='year';step=25}else if(ppy>0.6){unit='year';step=100}else if(ppy>0.25){unit='year';step=250}else if(ppy>0.12){unit='year';step=500}else{unit='year';step=1000}
  const A=new Date(a);let y=A.getUTCFullYear(),m=A.getUTCMonth(),d=A.getUTCDate();
- if(unit==='year'){y=Math.floor(y/step)*step;for(;;y+=step){const t=Date.UTC(y,0,1);const tt=new Date(0);tt.setUTCFullYear(y,0,1);const tm=tt.getTime();if(tm>b)break;if(tm>=a)out.push([tm,String(y)])}}
+ if(unit==='year'){const set=new Map();const k0=Math.floor(A.getUTCFullYear()/step)-1,k1=Math.ceil(new Date(b).getUTCFullYear()/step)+1;
+  for(let k=Math.max(k0,1);k<=k1;k++){set.set(k*step,k*step)} for(let k=-k1-1;k<=-k0+1;k++){if(k>0)set.set(1-k*step,1-k*step)}
+  for(const yy of [...set.keys()].sort((p,q)=>p-q)){const tt=new Date(0);tt.setUTCFullYear(yy,0,1);const tm=tt.getTime();if(tm>b||tm<a)continue;out.push([tm,yy<=0?(1-yy)+' BCE':String(yy)])}}
  else if(unit==='month'){const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];const c=new Date(Date.UTC(y,m,1));while(c.getTime()<=b){if(c.getTime()>=a)out.push([c.getTime(),M[c.getUTCMonth()]+' '+c.getUTCFullYear()]);c.setUTCMonth(c.getUTCMonth()+1)}}
  else{const c=new Date(Date.UTC(y,m,d));while(c.getTime()<=b){if(c.getTime()>=a)out.push([c.getTime(),c.getUTCDate()+' '+c.toLocaleString('en',{month:'short',timeZone:'UTC'})+' '+c.getUTCFullYear()]);c.setUTCDate(c.getUTCDate()+1)}}
  return out}
