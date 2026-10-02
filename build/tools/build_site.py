@@ -75,12 +75,13 @@ def claim_html(c):
             f'<li><span class="pill">{E(s["domain"].replace("_", " "))}: {E({"none": "no change", "down1": "down one", "down2": "down two", "up1": "up one"}[s["effect"]])}</span> {E(s["reason"])}</li>' for s in cr["steps"]) + '</ul>' + ('<p class="small">These reasons were drafted by the project and have not yet been reviewed.</p>' if not cr.get("reviewed") else "")
     if c.get("disputed_by"): more += '<p><b>Disputed by.</b></p><ul class="l">' + "".join(f'<li>{E(d["who"])}: {E(d["position"])}<br><span class="small">{E(d["via"])}{"" if d.get("source_read") else " (source not read here)"}</span></li>' for d in c["disputed_by"]) + '</ul>'
     if more: bits += f'<details><summary>Evidence and limits</summary>{more}</details>'
+    bits += f'<p style="margin:10px 0 0">{challenge_link(c.get("id"))}</p>'
     return f'<div class="claim" id="{E(c.get("id"))}">{bits}</div>'
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nodes as _nodes
 NODES = _nodes.load_nodes()
-CUR = {"slug": ""}
+CUR = {"slug": "", "sub": ""}
 ASSESS = {}
 TAX = yaml.safe_load(open(os.path.join(ROOT, "build", "taxonomy.yaml")))
 AREAS, QTYPES = TAX["areas"], TAX["question_types"]
@@ -104,6 +105,12 @@ def node_html(nid, verb=""):
             f'<br><span class="small">{srcs}</span></li>')
 
 ANS = {"yes": "Yes", "no": "No", "leans_yes": "Leans yes", "leans_no": "Leans no", "unsettled": "Unsettled", "partly": "Partly"}
+
+def challenge_link(claim_id, label="Challenge or add evidence"):
+    """Opens the structured challenge form with the excavation and claim filled in. A challenge is evidence that must pass the admission test (docs/CHALLENGES.md)."""
+    q = f'template=challenge.yml&excavation={CUR["sub"]}&claim={claim_id}&title=Challenge%3A+{claim_id}'
+    return f'<a href="{E(CFG["source_url"])}/issues/new?{q}" target="_blank" rel="noopener" class="small" style="border:1px solid var(--line);border-radius:6px;padding:2px 9px;text-decoration:none;white-space:nowrap">{E(label)}</a>'
+
 
 def short_line(v, claims=None):
     """The short answer, for example 'Unsettled, leans slightly toward yes' or 'No (high confidence)'."""
@@ -144,7 +151,8 @@ def assessment_html(v, slug, prefix="", show_question=True, claims=None):
             f'<p style="font-size:21px;line-height:1.4;margin:6px 0 10px"><b>{E(v["headline"])}</b></p>'
             f'<ul style="margin:0 0 8px;padding-left:20px">{kp}</ul>{lean}{rate}'
             f'<p class="small"><b>What would settle it.</b> {E(v["would_settle"])}</p>'
-            f'<details><summary>The full reasoning</summary>{more}</details></section>')
+            f'<details><summary>The full reasoning</summary>{more}</details>'
+            f'<p style="margin:12px 0 0">{challenge_link("assessment", "Challenge this assessment")} <span class="small">A challenge needs a specific claim and evidence we can check. <a href="{prefix}method/#challenges">How challenges work</a>.</span></p></section>')
 
 order = {"refuted": 0, "established": 1, "contested": 2, "proposed": 3, "searched_gap": 4}
 if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -177,6 +185,7 @@ for sub in CFG["publish"]:
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
     slug = cl.get("url_slug") or sub
     CUR["slug"] = slug
+    CUR["sub"] = sub
     head = cl.get("headline") or cl.get("title")
     status = cl.get("headline_status", "draft")
     byid = {c["id"]: c for c in cl["claims"]}
@@ -210,9 +219,9 @@ for sub in CFG["publish"]:
     chp = os.path.join(base, "challenges.yaml")
     if os.path.exists(chp):
         chs = yaml.safe_load(open(chp)).get("challenges", [])
-        lab = {"answered": "answered: finding stands", "partly_answered": "partly answered", "open": "open: not yet testable", "finding_changed": "finding changed"}
+        lab = {"declined": "declined: did not meet the admission test", "answered": "answered: finding stands", "partly_answered": "partly answered", "open": "open: not yet testable", "finding_changed": "finding changed"}
         body += ('<h2>Challenges addressed</h2><p>Objections raised against this excavation, in the form people raise them, with the test we ran and where it stands. '
-                 'Open ones are shown as plainly as answered ones. Have one we missed? <a href="' + E(CFG["issues_url"]) + '">Send it</a>.</p>')
+                 'Open ones are shown as plainly as answered ones. To add a challenge or evidence, use the button on the claim: it must name the claim and give a source we can check, because disagreement, popularity and repetition carry no weight. <a href="../../method/#challenges">How challenges work</a>.</p>')
         for ch in chs:
             ref = " ".join(f'<a href="#{E(x)}">{E(x)}</a>' for x in ch.get("touches") or [])
             body += (f'<div class="claim"><p><b>{E(ch["challenge"])}</b></p><p><span class="pill s-{"established" if ch["result"] == "answered" else "contested"}">{E(lab[ch["result"]])}</span> '

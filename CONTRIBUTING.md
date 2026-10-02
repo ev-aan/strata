@@ -132,3 +132,7 @@ The public marks dig sites; contributors do the excavation.
 - Code: MIT (`LICENSE`).
 - Written content: CC BY 4.0 (`LICENSE-CONTENT.md`).
 - Historical sources: public domain.
+
+## Challenges and submitted evidence
+
+A challenge is a submission of evidence that must pass an admission test; counts, reactions and repeats carry no weight. See docs/CHALLENGES.md. Use the "Challenge or add evidence" button on a claim, which opens the structured issue form.

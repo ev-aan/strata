@@ -261,8 +261,19 @@ def check_subject(r, sdir):
             for k in ("challenge", "raised_by", "test", "result", "answer"):
                 if not ch.get(k):
                     r.err(f"{subject}:{cid}", f"challenge missing `{k}`")
-            if ch.get("result") not in ("answered", "partly_answered", "open", "finding_changed"):
+            if ch.get("result") not in ("answered", "partly_answered", "open", "finding_changed", "declined"):
                 r.err(f"{subject}:{cid}", f"challenge result `{ch.get('result')}` is not allowed")
+            ik = ch.get("intake")
+            if ik is not None:
+                for k_ in ("issue", "decided", "criteria"):
+                    if not ik.get(k_):
+                        r.err(f"{subject}:{cid}", f"challenge intake needs `{k_}`")
+                crit = ik.get("criteria") or {}
+                for s_ in ("S1", "S2", "S3", "S4", "S5"):
+                    if crit.get(s_) not in ("pass", "fail"):
+                        r.err(f"{subject}:{cid}", f"intake criterion {s_} must be pass or fail")
+                if ch.get("result") != "declined" and any(v == "fail" for v in crit.values()):
+                    r.err(f"{subject}:{cid}", "a challenge that failed an admission criterion cannot have an admitted result")
             for ref in ch.get("touches") or []:
                 if ref not in ids:
                     r.err(f"{subject}:{cid}", f"challenge touches unknown claim `{ref}`")
