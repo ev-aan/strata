@@ -109,7 +109,7 @@ events:
      detail: "Quoted by Prados from the Senate Foreign Relations Committee's published executive sessions (vol. XVI, p. 293); the record was not read directly."}
   - {id: e7, panel: overview, lane: cong, time: "1964-08-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_crec64, s_vote_s, s_vote_h, s_senate, s_cfr], link: "https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf#page=30",
      label: "7 Aug: Tonkin Gulf Resolution passes (House 416-0, Senate 88-2)",
-     detail: "Signed 10 August. Senate: read in the Congressional Record, p. 18470 (yeas 88, nays 2: Gruening and Morse; 10 not voting). House 416-0 from Voteview's roll-call data (roll 197); the House Record was not read."}
+     detail: "Signed 10 August. Senate: read in the Congressional Record, p. 18470 (yeas 88, nays 2: Gruening and Morse; 10 not voting). House: the Record prints 416-0 on Roll No. 210 (p. 18555), under suspension of the rules (see claim tonkin-house-debate-aug7)."}
   - {id: e8, panel: overview, lane: intel, time: "1964-08-08T12:00:00Z", precision: day, kind: document, status: single, sources: [s_essay],
      label: "8 Aug: CIA cover note sends Bundy the selected intercepts",
      detail: "Prados: a cover note of 8 August accompanied the intercepts 'selected by CIA and NSA' that the White House had requested."}

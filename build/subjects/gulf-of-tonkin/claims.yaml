@@ -620,8 +620,7 @@ claims:
         Morse; 10 not voting) and says "So the joint resolution (H.J. Res. 1145) was passed". The debate prints, as
         "Exhibit 1", the President's address of 4 August: "The initial attack on the destroyer Maddox on August 2 was repeated
         today by a number of hostile vessels attacking two U.S. destroyers with torpedoes." The enacted preamble says Communist
-        naval units "have deliberately and repeatedly attacked United States naval vessels". House 416-0 per Voteview (roll 197); the House
-        Record not read. Signed 10 August per Senate.gov (secondary).
+        naval units "have deliberately and repeatedly attacked United States naval vessels". House: the Record prints 416-0 (Roll No. 210, p. 18555; see tonkin-house-debate-aug7). Signed 10 August per Senate.gov (secondary).
       accessible: true
       ref: [src-congressional-record-1964]
     basis: >
@@ -675,6 +674,30 @@ claims:
         they were told, which is the P8 question the dig has not yet answered.
       accessible: true
       ref: [src-congressional-record-1964-aug6, src-congressional-record-1964]
+
+  - id: tonkin-house-debate-aug7
+    state: established
+    statement: >
+      The House passed the Tonkin Gulf Resolution on 7 August 1964 under suspension of the rules: the Record prints "yeas 416, nays 0,
+      answered 'present' 1, not voting 14" (Roll No. 210, p. 18555; the one "present" is Powell), on Morgan's motion to pass H.J. Res. 1145
+      "with an amendment". In the debate (pp. 18538-18555, read in full by a delegated reader) only Zablocki cited the 4 August attack by date
+      ("on August 4--U.S. destroyers, the Maddox and the C. Turner Joy, were again attacked... The attack lasted 2 hours"); Albert, Broomfield and
+      Roush referred to two attacks without dates; no Member doubted that the attack occurred or asked about the evidence for it; no Member named
+      OPLAN 34-A or South Vietnamese raids. Several (Derwinski, Chamberlain, Alger) complained about the information given to Congress, and Halleck,
+      Morgan and Barry referred to what they were told at White House or committee briefings.
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 4   # of 5 (the cap); Record pages 18538-18555 read in full by a delegated reader with page-image checks of quoted passages; later pages keyword-searched only
+    anchor_checked: primary
+    adoption_weight: 3   # of 5
+    adoption_note: "Not measured."
+    would_change_if: "a re-reading of the pages showing a Member who questioned the attack or the evidence, or the later pages (18556-18625) containing relevant debate"
+    next_step: "Re-check the Zablocki, Halleck, Barry and Chamberlain quotes on the images myself; read the committee amendment text (the 'Constitution of the United States' wording) and reconcile 'with an amendment' in the House with the Senate message that it passed H.J. Res. 1145 'without amendment' (p. 18612); read what the Foreign Affairs Committee was told (its report)."
+    anchor:
+      type: legislative-record
+      description: "Congressional Record, House, 7 Aug 1964, pp. 18538-18555 (roll call p. 18555), with a Senate message at p. 18612. Delegated reading; quoted passages image-checked by that reader."
+      accessible: true
+      ref: [src-congressional-record-1964-house]
 
   - id: tonkin-resolution-repealed-1970
     state: established

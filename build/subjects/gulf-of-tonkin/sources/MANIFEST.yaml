@@ -169,4 +169,18 @@ sources:
       gaps: ["OCR text layer, some pages letter-spaced; page numbers taken from the text layer, not verified on images", "A 1968 record: what it says about 1964 is a later account"]
       checked: 2026-10-02
     stored_as: "sources/mcnamara-1968-hearing.ocr.txt (OCR text, public domain; the 24 MB PDF is not stored)"
+  - id: src-congressional-record-1964-house
+    title: "Congressional Record, Vol. 110, Part 14 (House, 7 August 1964), GPO bound edition, granule GPO-CRECB-1964-pt14-4-2"
+    document_class: primary_text (official proceedings)
+    url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-2.pdf
+    pdf_sha256: 71e2c32e90a8180f151325e420415fc1ea2a078ddac00314eb1d2198986d0cda
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
+      tests: ["Roll call (p. 18555) read on the page image by the delegated reader; counts agree with Voteview (416-0)"]
+      tested_by: "Strata session with a delegated reader, 2026-10-02 (not an independent review)"
+      gaps: ["Pages 18556-18625 keyword-searched only", "No page images stored yet for this file"]
+      checked: 2026-10-02
+    stored_as: "not stored (full PDF not kept)"
 
