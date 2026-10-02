@@ -1,0 +1,27 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1567-12-letters-probably-shown-to-the-nobles-and-parliament
+rev: 1
+type: event
+label: '4 and 15 Dec 1567: letters probably shown to the Confederate Nobles and in Parliament'
+time: '1567-12-15T12:00:00Z'
+precision: day
+kind: analysis
+status: single
+what: 'Henderson: ''highly probable that they were shown either at the meeting of the Confederate Nobles held on the 4th December,
+  or at the meeting of Parliament held on the 15th, or at both''. The Act of 15 Dec was expunged from the records and survives
+  because it was printed in 1568. The two descriptions of the letters differ (''subscrivit'' only in the minute).'
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+about:
+- object-casket-and-letters-1567
+related:
+- casket-1567-12-04-confederate-nobles-meet
+- casket-1567-12-15-act-of-parliament-names-the-casket
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k6. Overlaps the 4 Dec and 15 Dec events (b5, b6), which are kept
+    as their own nodes.

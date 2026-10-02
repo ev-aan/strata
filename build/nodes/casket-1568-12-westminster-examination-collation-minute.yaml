@@ -1,0 +1,32 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1568-12-westminster-examination-collation-minute
+rev: 1
+type: event
+label: '9-14 Dec 1568: Westminster examination and collation minute'
+time: '1568-12-09T12:00:00Z'
+precision: range
+kind: analysis
+status: single
+end: '1568-12-14T12:00:00Z'
+what: As in Panel A.
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+place:
+  name: Westminster, London
+  lat: 51.4994
+  lon: -0.1245
+  precision: site
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 1567699 (Palace of Westminster)
+  note: Henderson says only 'Westminster'; the building is not stated, so this is the area.
+about:
+- object-casket-and-letters-1567
+related:
+- casket-1568-12-westminster-conference-examines-the-letters
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event b9. NOT merged with k9 (see there).

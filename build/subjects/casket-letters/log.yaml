@@ -45,3 +45,11 @@ log:
       confidence; casket-originals-lost is established but capped at confidence 'provisional' (an absence anchor), so the headline cannot meet the rule. headline_status is
       now 'draft'. It would move to 'review' if the loss of the originals is anchored to primary evidence (for example the Bowes correspondence in the Calendar of State Papers,
       reachable at british-history.ac.uk) and the claim's confidence can be raised, or if a different claim is chosen. The text of the headline is unchanged.
+  - id: L-06
+    date: 2026-10-02
+    entry: >
+      SHARED NODES, PLACES AND OBJECTS (pilot). The timeline's events are now shared nodes (build/nodes/casket-*), 7 of them with a place that Henderson's text names (Kirk-o'-Field in Edinburgh, Carberry Hill, York, Westminster);
+      events with no place named in the text read have none. Coordinates are from OpenStreetMap Nominatim at city, site or region precision (Carberry Hill itself was not found, so a nearby point is used and flagged as approximate within about 2 km).
+      Two objects were added: the casket with its letters (originals lost) and the French copies of Letters 3 to 6, with two 1889 location events (Hatfield; the Record Office, London) from Henderson p. 68.
+      Where the copies are held today is a stated gap: 1889 is the latest source read. MERGED: seven events drawn twice (detail panel and overview) became one node each. NOT MERGED, and an inconsistency in the original timeline:
+      the Westminster conference is dated 7-14 Dec 1568 in the overview (k9) and 9-14 Dec 1568 in the detail panel (b9). Both are kept as separate nodes linked by `related` until the Record or a second source settles the first date.

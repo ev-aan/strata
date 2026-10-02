@@ -266,7 +266,7 @@ def check_nodes(r):
         for k in ("rev", "type", "label", "time", "kind", "status", "what", "history"):
             if n.get(k) in (None, ""):
                 r.err(w, f"missing `{k}`")
-        if n.get("type") not in ("event", "document", "image", "recording", "dataset"):
+        if n.get("type") not in ("event", "document", "image", "recording", "dataset", "object"):
             r.err(w, f"unknown type `{n.get('type')}`")
         if n.get("status") not in ("single", "reported", "disputed", "inferred"):
             r.err(w, f"unknown status `{n.get('status')}`")
@@ -289,6 +289,17 @@ def check_nodes(r):
                 r.err(w, f"media file missing: {m['file']}")
             elif m.get("sha256") and hashlib.sha256(open(fp, "rb").read()).hexdigest() != m["sha256"]:
                 r.err(w, "media sha256 does not match the file")
+        pl = n.get("place")
+        if pl:
+            if not pl.get("name"):
+                r.err(w, "place needs a `name`")
+            if pl.get("lat") is not None or pl.get("lon") is not None:
+                if not (isinstance(pl.get("lat"), (int, float)) and -90 <= pl["lat"] <= 90 and isinstance(pl.get("lon"), (int, float)) and -180 <= pl["lon"] <= 180):
+                    r.err(w, "place lat/lon out of range")
+                if pl.get("precision") not in ("exact", "site", "city", "region"):
+                    r.err(w, "place with coordinates needs `precision` (exact | site | city | region)")
+                if not pl.get("source"):
+                    r.err(w, "place with coordinates needs the `source` of the coordinates")
         mf = n.get("manifest")
         if mf:
             mp = os.path.join(SUBJECTS, mf["subject"], "sources", "MANIFEST.yaml")
@@ -296,6 +307,11 @@ def check_nodes(r):
             if mf["source"] not in ids:
                 r.err(w, f"manifest entry `{mf['source']}` not found in {mf['subject']}")
     for fid, n in nodes.items():
+        for ref in n.get("about") or []:
+            if ref not in nodes:
+                r.err(f"node:{fid}", f"`about` refers to unknown node `{ref}`")
+            elif nodes[ref].get("type") != "object":
+                r.warn(f"node:{fid}", f"`about` node `{ref}` is not of type object")
         for k in ("related", "evidences"):
             for ref in n.get(k) or []:
                 if ref not in nodes:

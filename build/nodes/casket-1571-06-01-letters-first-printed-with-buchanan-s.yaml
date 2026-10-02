@@ -1,0 +1,21 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1571-06-01-letters-first-printed-with-buchanan-s
+rev: 1
+type: event
+label: '1571: letters first printed with Buchanan''s Detectio (Latin and Scots); French translation 1572'
+time: '1571-06-01T12:00:00Z'
+precision: year
+kind: analysis
+status: single
+what: 'Henderson, citing Skelton: ''first made public in 1571, appended to the Detectio Mariae Reginae of Buchanan''; only
+  three letters in Latin appended to the Latin version; French translation in 1572. Printed French is probably a retranslation
+  (claim casket-french-printed-retranslation, proposed).'
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k10.

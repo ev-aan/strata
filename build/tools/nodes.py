@@ -10,7 +10,7 @@ import os, glob, yaml
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 NODES_DIR = os.path.join(ROOT, "build", "nodes")
-TYPES = {"event", "document", "image", "recording", "dataset"}
+TYPES = {"event", "document", "image", "recording", "dataset", "object"}
 KINDS = {"data", "document", "official", "witness", "analysis", "media"}
 STATUSES = {"single", "reported", "disputed", "inferred"}
 
@@ -58,6 +58,9 @@ def resolve_timeline(T, nodes=None):
         r = {"id": e["id"], "panel": e.get("panel"), "lane": e.get("lane"), "node": nid,
              "time": n["time"], "precision": n.get("precision", "day"), "kind": n.get("kind", "analysis"),
              "status": n.get("status", "single"), "sources": ids, "label": n.get("label", nid)}
+        for k in ("place", "about"):
+            if n.get(k):
+                r[k] = n[k]
         for k in ("end", "alt_time", "alt_tag", "alt_note", "link"):
             if n.get(k) is not None:
                 r[k] = n[k]

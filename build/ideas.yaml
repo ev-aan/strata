@@ -17,6 +17,12 @@ ideas:
     summary: >
       Events, documents and images are kept once as shared nodes, and digs refer to them, so a correction reaches every dig that uses them.
       Done for the Gulf of Tonkin family. The other digs still hold their own copies.
+  - id: object-map
+    title: Where objects were found and where they are now, on a map
+    status: exploring
+    summary: >
+      Tablets, manuscripts and other objects, with where they were made, found, moved and are held today, each stage a dated event with a place.
+      The Atlas has a Map view. Started with the Casket Letters; the Nippur flood tablet comes next once its museum record is found.
   - id: atlas-overview-strip
     title: A mini-map for very long timelines on the Atlas
     status: parked

@@ -197,3 +197,9 @@ A node is one dated artifact (an event, a document, an image, a recording, a dat
 - N8. A dataset (for example a set of roll calls) is one node that points at its records. Individual records become nodes only when a dig cites them.
 
 Tools: `build/tools/nodes.py` expands references in memory for the timeline renderer and the Atlas. `build/tools/migrate_tonkin_nodes.py` was the one-off pilot move of the Tonkin family.
+
+### Places and objects on nodes (added 2026-10-02)
+- N9. Any node may carry `place: {name, lat, lon, precision (exact | site | city | region), uncertainty_km (optional), source, note}`. A place needs a `source` for its coordinates (a gazetteer such as OpenStreetMap Nominatim counts as orientation, not as evidence that the event happened there). Give a place only where a source read names it; otherwise leave it out. Never guess a find-spot: say it is unknown.
+- N10. An object (a tablet, a manuscript, a casket) is a node of `type: object` with ordinary descriptive fields (`object: {class, material, museum, accession, held_now: {status, as_of, note}}`). Its life is told by ordinary event nodes (made, found, acquired, moved, held, published), each with its own date and place, and each pointing at the object with `about: [object id]`. There is no separate custody structure. `held_now` always carries an `as_of` date and a source, or says `not established`.
+- N11. Published coordinates follow the precision the source gives (owner decision 2026-10-02), and the `precision` field says which it is.
+The Atlas has a Map view (Leaflet and OpenStreetMap tiles, loaded only when the Map button is pressed) that shows nodes with coordinates, filtered like the timeline, with a time slider and dashed custody routes between events about the same object.

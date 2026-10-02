@@ -59,7 +59,7 @@ def load(subjects):
                         "k": e.get("kind", "analysis"), "st": e.get("status", "single"), "l": " ".join(str(e.get("label", "")).split()),
                         "d": " ".join(str(e.get("detail", "")).split()), "lane": (lanes.get(e.get("lane")) or {}).get("label", e.get("lane", "")),
                         "link": e.get("link") or (ss[0]["url"] if ss else ""), "src": ss, "axis": e.get("axis", "real"),
-                        "alt": ({"t": ms(e["alt_time"]), "note": e.get("alt_note", "")} if e.get("alt_time") else None), "node": e.get("node", ""), "sh": [s for s in e.get("shared_by", []) if s != sub]})
+                        "alt": ({"t": ms(e["alt_time"]), "note": e.get("alt_note", "")} if e.get("alt_time") else None), "node": e.get("node", ""), "pl": e.get("place"), "ab": e.get("about", []), "sh": [s for s in e.get("shared_by", []) if s != sub]})
         if evs: data.append({"id": sub, "title": title_dig, "tl_title": tl.get("title", ""), "slug": slug, "events": sorted(evs, key=lambda x: x["t"])})
     return data
 
@@ -73,16 +73,17 @@ header{padding:10px 16px;border-bottom:1px solid var(--line);display:flex;flex-w
 .tog,.chip,button{font:12px ui-monospace,monospace;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:3px 11px;cursor:pointer}.chip.off{opacity:.35}.tog.on{background:var(--ink);color:var(--bg)}button:disabled,.tog:disabled{opacity:.4;cursor:not-allowed}
 #filters{padding:6px 16px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:12px ui-monospace,monospace;color:var(--mute)}
 input[type=search]{font:13px system-ui;padding:3px 10px;border:1px solid var(--line);border-radius:99px;background:var(--panel);color:var(--ink);width:170px}
-main{flex:1;display:flex;min-height:0}#stage{flex:1;min-width:0;position:relative;overflow-x:hidden;overflow-y:auto;touch-action:pan-y}svg{width:100%;height:100%;display:block;cursor:grab}svg:active{cursor:grabbing}
+main{flex:1;display:flex;min-height:0}#stage{flex:1;min-width:0;position:relative;overflow-x:hidden;overflow-y:auto;touch-action:pan-y}#svg{width:100%;height:100%;display:block;cursor:grab}#svg:active{cursor:grabbing}
 #panel{width:340px;max-width:44vw;border-left:1px solid var(--line);background:var(--panel);padding:14px;overflow:auto;font-size:14px}#panel h2{font:500 16px Georgia,serif;margin:.2em 0 .4em}.mono{font:11.5px ui-monospace,monospace;color:var(--mute)}
 a{color:var(--c0)}.note{color:var(--mute);font-size:13px}.clist{padding-left:18px}.clist li{margin:6px 0}.rowlabel{font:600 12px system-ui;cursor:pointer}
 @media (max-width:760px){header .mono{display:none}#filters{display:none}#filters.open{display:flex;max-height:34vh;overflow:auto}main{flex-direction:column}#panel{width:100%;max-width:none;height:30vh;border-left:0;border-top:1px solid var(--line)}}
 </style></head><body>
 <header><h1>ATLAS</h1><span class="mono">time runs left (past) to right (future); scroll to see every dig. Pinch, drag, double-tap or the + &minus; buttons on a row zoom that row; tap a numbered bubble to open the group. Switch to one shared axis to compare digs</span>
 <span><button class="tog on" id="axReal">Real-world time</button> <button class="tog" id="axNarr" disabled title="No narrative timelines yet">Narrative time</button></span>
-<span><button class="tog on" id="scaleBtn" title="Switch between each dig on its own time scale and all digs on one shared axis">Each dig on its own scale</button> <button id="ftog" onclick="document.getElementById('filters').classList.toggle('open')">Filters</button> <button id="fit">Fit all</button> <button id="zin">+</button> <button id="zout">&minus;</button></span></header>
+<span><button class="tog on" id="viewTl">Timeline</button> <button class="tog" id="viewMap" title="Show events that have a place on a map">Map</button></span>
+<span id="scaleWrap"><button class="tog on" id="scaleBtn" title="Switch between each dig on its own time scale and all digs on one shared axis">Each dig on its own scale</button> <button id="ftog" onclick="document.getElementById('filters').classList.toggle('open')">Filters</button> <button id="fit">Fit all</button> <button id="zin">+</button> <button id="zout">&minus;</button></span></header>
 <div id="filters"></div>
-<main><div id="stage"><svg id="svg" role="img" aria-label="Timeline of events across the digs"></svg></div>
+<main><div id="stage"><svg id="svg" role="img" aria-label="Timeline of events across the digs"></svg><div id="mapbox" style="display:none;height:100%;position:relative"><div id="map" style="position:absolute;inset:0 0 44px 0"></div><div id="maptime" style="position:absolute;left:0;right:0;bottom:0;height:44px;padding:8px 14px;font:12px ui-monospace,monospace;background:var(--panel);border-top:1px solid var(--line)"><label>Show events up to <b id="asofLbl"></b> <input type="range" id="asof" style="width:60%;vertical-align:middle"></label> <span id="mapNote" class="note"></span></div></div></div>
 <aside id="panel"><h2>Pick a dot</h2><p class="note">Each row is one dig. Click a dot for what happened, how we know, and the source. Shapes show the kind of source; a dashed, pale dot means one source or a date only.</p>
 <p class="note"><b>Zoom:</b> pinch or drag a row, double-tap it, use the + and &minus; buttons on the row (&#10226; resets it), or tap a numbered bubble to open that group of events.</p>
 <p class="note">Rows share one time axis, so far-apart events in different digs are visible side by side. Narrative time (when a story says something happened) is kept apart from real-world time and switches in once narrative events exist.</p></aside></main>
@@ -119,7 +120,26 @@ function ticks(a,b,w){const H1=3600000,D1=86400000,out=[],need=84,span=b-a,Mn=['
  return out}
 function passes(e){if(state.off.has(e.dig))return false;if(e.axis!==state.axis)return false;if(state.kinds.size&&!state.kinds.has(e.k))return false;if(state.statuses.size&&!state.statuses.has(e.st))return false;
  if(state.q){const s=(e.l+' '+e.d+' '+e.lane).toLowerCase();if(!s.includes(state.q))return false}return true}
-function draw(){W=stage.clientWidth;H=stage.clientHeight;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML='';rowsGeo=[];
+state.view='tl';
+function colOf(i){return getComputedStyle(document.documentElement).getPropertyValue('--c'+(i%8)).trim()||'#1f5fa8'}
+let LM=null,mapObj=null,mapLayer=null;
+function loadLeaflet(cb){if(window.L){cb();return}const c=document.createElement('link');c.rel='stylesheet';c.href='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css';document.head.appendChild(c);const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js';s.onload=cb;s.onerror=()=>{document.getElementById('mapNote').textContent='The map library could not be loaded (needs an internet connection).'};document.head.appendChild(s)}
+const placed=allEv.filter(e=>e.pl&&e.pl.lat!=null);
+function setView(v){state.view=v;document.getElementById('viewTl').classList.toggle('on',v==='tl');document.getElementById('viewMap').classList.toggle('on',v==='map');
+ document.getElementById('svg').style.display=v==='tl'?'block':'none';document.getElementById('mapbox').style.display=v==='map'?'block':'none';document.getElementById('scaleWrap').style.display=v==='tl'?'':'none';
+ if(v==='map'){loadLeaflet(()=>{if(!mapObj){mapObj=L.map('map',{worldCopyJump:true}).setView([30,10],2);L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(mapObj);mapLayer=L.layerGroup().addTo(mapObj);
+   const ts=placed.map(e=>e.t);const sl=document.getElementById('asof');sl.min=Math.min(...ts);sl.max=Math.max(...ts)+86400000;sl.step=1;sl.value=sl.max;sl.oninput=()=>drawMap(false)}drawMap(true)})}else draw()}
+function drawMap(fit){if(!mapObj)return;mapLayer.clearLayers();const asof=+document.getElementById('asof').value;document.getElementById('asofLbl').textContent=fmt({t:asof,p:'day'});
+ const evs=placed.filter(e=>passes(e)&&e.t<=asof);const pts=[];const groups={};
+ for(const e of evs){const di=DATA.findIndex(d=>d.id===e.dig),col=colOf(di);const ll=[e.pl.lat,e.pl.lon];pts.push(ll);
+  if(e.pl.uncertainty_km)L.circle(ll,{radius:e.pl.uncertainty_km*1000,color:col,weight:1,fillOpacity:.08}).addTo(mapLayer);
+  const m=L.circleMarker(ll,{radius:8,color:col,weight:2,fillColor:col,fillOpacity:e.pl.precision==='exact'||e.pl.precision==='site'?.8:.35}).addTo(mapLayer);
+  m.bindTooltip(fmt(e)+': '+e.l+' ('+e.pl.name+', '+e.pl.precision+')');m.on('click',()=>{show(e)});
+  for(const o of e.ab||[]){(groups[o]=groups[o]||[]).push(e)}}
+ for(const o in groups){const g=groups[o].sort((a,b)=>a.t-b.t);if(g.length>1)L.polyline(g.map(e=>[e.pl.lat,e.pl.lon]),{color:'#888',weight:2,dashArray:'5 6'}).addTo(mapLayer).bindTooltip('custody route: '+o)}
+ document.getElementById('mapNote').textContent=evs.length+' of '+placed.length+' placed events. Faint circles and pale dots mean the place is approximate.';
+ mapObj.invalidateSize();if(fit&&pts.length){setTimeout(()=>{mapObj.invalidateSize();mapObj.fitBounds(pts,{maxZoom:9,padding:[40,40]})},80)}}
+function draw(){if(state.view==='map'){drawMap(false);return}W=stage.clientWidth;H=stage.clientHeight;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML='';rowsGeo=[];
  const L=LW(),R=14,T=34,pw=W-L-R;const X=t=>L+(t-view.a)/(view.b-view.a)*pw;
  const defs=el('g',{},svg);const digs=DATA.filter(d=>!state.off.has(d.id));
  // axis ticks
@@ -157,7 +177,7 @@ function show(e){const d=DATA.find(x=>x.id===e.dig);const p=document.getElementB
  const links=[];if(e.link)links.push(`<a href="${e.link}" target="_blank" rel="noopener">Open the source</a>`);
  if(d.slug&&!window.ATLAS_PRIVATE)links.push(`<a href="../digs/${d.slug}/">Read the dig</a>`);if(d.slug&&!window.ATLAS_PRIVATE)links.push(`<a href="../digs/${d.slug}/timeline/">Dig timeline</a>`);
  p.innerHTML=`<p class="mono">${d.title}</p><h2>${esc(e.l)}</h2><p class="mono">${fmt(e)} · ${esc(e.lane)}</p><p>${esc(e.d)}</p>`+(e.alt?`<p class="note">Another source gives ${new Date(e.alt.t).toUTCString().slice(5,16)}: ${esc(e.alt.note)}</p>`:'')+
- (e.node?`<p class="note">Shared node <b>${esc(e.node)}</b>${e.sh&&e.sh.length?' &middot; also used in: '+e.sh.map(s=>esc((DATA.find(x=>x.id===s)||{title:s}).title)).join(', '):''}</p>`:'')+`<p class="mono">kind: ${SHAPE_LABEL[KIND[e.k]]||e.k} · status: ${e.st}</p><p><b>Sources</b></p><ul>`+e.src.map(s=>`<li>${s.url?`<a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}</a>`:esc(s.title)}<br><span class="note">${esc(s.auth)}</span></li>`).join('')+`</ul><p>${links.join(' · ')}</p>`}
+ (e.pl?`<p class="note">Place: <b>${esc(e.pl.name)}</b>${e.pl.lat!=null?' ('+e.pl.lat+', '+e.pl.lon+', '+esc(e.pl.precision)+')':''}${e.pl.note?'<br>'+esc(e.pl.note):''}${e.pl.source?'<br><span class="mono">'+esc(e.pl.source)+'</span>':''}</p>`:'')+(e.node?`<p class="note">Shared node <b>${esc(e.node)}</b>${e.sh&&e.sh.length?' &middot; also used in: '+e.sh.map(s=>esc((DATA.find(x=>x.id===s)||{title:s}).title)).join(', '):''}</p>`:'')+`<p class="mono">kind: ${SHAPE_LABEL[KIND[e.k]]||e.k} · status: ${e.st}</p><p><b>Sources</b></p><ul>`+e.src.map(s=>`<li>${s.url?`<a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}</a>`:esc(s.title)}<br><span class="note">${esc(s.auth)}</span></li>`).join('')+`</ul><p>${links.join(' · ')}</p>`}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function zoomTo(d){const ev=d.events.filter(e=>e.axis===state.axis);if(!ev.length)return;const a=Math.min(...ev.map(e=>e.t)),b=Math.max(...ev.map(e=>e.e||e.t));const p=(b-a)*0.08+86400000*3;view={a:a-p,b:b+p};draw()}
 function zoom(f,cx){const w=view.b-view.a,c=view.a+w*cx;const nw=Math.max(60000,Math.min(t1-t0,w*f));view={a:c-nw*cx,b:c+nw*(1-cx)};draw()}
@@ -169,6 +189,7 @@ function build(){const f=document.getElementById('filters');f.innerHTML='<span>d
 function fitAll(){const ev=allEv.filter(e=>e.axis===state.axis);if(ev.length){let a=Math.min(...ev.map(e=>e.t)),b=Math.max(...ev.map(e=>e.e||e.t));const p=(b-a)*0.04+86400000*30;view={a:a-p,b:b+p}}draw()}
 function syncScale(){stage.scrollTop=0;const b=document.getElementById('scaleBtn'),own=state.scale==='own';b.classList.toggle('on',own);b.textContent=own?'Each dig on its own scale':'All digs on one shared axis';
  for(const id of ['fit','zin','zout']){const x=document.getElementById(id);x.disabled=own;x.title=own?'Switch to the shared axis to zoom and compare digs':''}if(!own&&!window.__fitted){window.__fitted=1;fitAll();return}draw()}
+document.getElementById('viewTl').onclick=()=>setView('tl');const vm=document.getElementById('viewMap');if(!placed.length){vm.disabled=true;vm.title='No event has a place yet'}else vm.onclick=()=>setView('map');
 document.getElementById('scaleBtn').onclick=()=>{state.scale=state.scale==='own'?'shared':'own';syncScale()};
 document.getElementById('fit').onclick=fitAll;document.getElementById('zin').onclick=()=>zoom(.5,.5);document.getElementById('zout').onclick=()=>zoom(2,.5);
 svg.addEventListener('wheel',e=>{if(!(e.ctrlKey||e.metaKey||e.shiftKey))return;e.preventDefault();const r=svg.getBoundingClientRect();const cx=Math.min(1,Math.max(0,(e.clientX-r.left-LW())/(r.width-LW()-14)));const T=tgt(e.clientY);if(!T)return;if(T.key==='*')zoom(e.deltaY<0?.8:1.25,cx);else zoomRow(T.key,e.deltaY<0?.8:1.25,cx)},{passive:false});

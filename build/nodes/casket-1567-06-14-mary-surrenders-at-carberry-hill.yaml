@@ -1,0 +1,31 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1567-06-14-mary-surrenders-at-carberry-hill
+rev: 1
+type: event
+label: '14 Jun 1567: Mary surrenders at Carberry Hill'
+time: '1567-06-14T12:00:00Z'
+precision: day
+kind: analysis
+status: disputed
+alt_time: '1567-06-15T12:00:00Z'
+alt_tag: other accounts
+alt_note: Many accounts give 15 June for Carberry Hill (recalled, not read in this dig).
+what: Henderson gives the 14th; Mary is taken to Edinburgh and on the 16th to Lochleven.
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+place:
+  name: Carberry Hill, East Lothian
+  lat: 55.916
+  lon: -3.0206
+  precision: region
+  uncertainty_km: 2
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    the point is Carberry Tower (OSM way 170342435), used as a nearby proxy because Carberry Hill itself was not found
+  note: 'Approximate: within about 2 km.'
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k4. Merged with b3 (the same event drawn in the detail panel).
