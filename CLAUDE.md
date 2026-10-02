@@ -12,8 +12,8 @@ All changes go through `docs/REVIEW.md`:
 3. Open a pull request into `main`.
 4. Hand the PR to a **separate** review agent that has not seen your work, with only the PR number,
    the repository and `docs/REVIEW.md`. Do not review your own PR.
-5. The review agent posts its verdict on the PR and merges only on APPROVE. Changes to rules,
-   `CONTRIBUTING.md`, `SCHEMA.md`, `conformance.py` or `docs/REVIEW.md` are escalated to the owner,
+5. The review agent posts its verdict on the PR and merges only on APPROVE. Changes to the gate
+   itself (the "What only the owner merges" list in `docs/REVIEW.md`) are escalated to the owner,
    never merged by an agent.
 
 ## Content rules that are easy to get wrong
