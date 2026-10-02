@@ -238,3 +238,28 @@ log:
       rewritten; the assessment headline already avoids it), Rule 9 for statistics, naming living
       persons. Not verified: the Lancet 2004 and 2010 notices, bmj.com articles, the GMC findings,
       the Poling decision, Banks and other compensated cases, the Hviid and Madsen full texts.
+  - id: L-19
+    date: 2026-10-02
+    entry: >
+      OWNER DECISIONS (ev-aan, in conversation, 2026-10-02 20:00-20:01 UTC). Recorded as given;
+      earlier entries are not edited. (1) PR #6 (publication status, PS1 to PS4): adopt. Logged on
+      PR #6; it is merged by the owner, not by an agent, after the pending re-assessment. PR #9
+      (the superseded proposal) closed. (2) Health bodies on the first screen: yes. Key point 2 of
+      the assessment now gives the WHO safety committee (Dec 2025, no evidence of a causal link)
+      and the CDC page since Nov 2025 (disputes the "no link" statement), labelled as adoption, not
+      evidence; the full reasoning adds the IOM (2004) and the Health Secretary's statement. The
+      former key points 2 and 3 are joined into key point 3; nothing in them was dropped. They are
+      not added to `basis`. (3) Rule 9 and statistics (answers L-05): option (a). Statistics cannot
+      prove a claim false; they can state that no evidence supports it. The general claims stay
+      filed as unsupported (proposed, weight 1, with the discriminating test), not refuted, and the
+      assessment text now says so. No rule or schema change. (4) Naming people: names in the
+      public record are allowed, except people who are minors, victims, or in an ongoing
+      investigation; authors and public figures are fine. Applied: the child in the 2007
+      compensation case is no longer named in the dig's own text (claim va-poling-concession,
+      timeline people list); the NPR quote now reads "[the child]". The case is still called the
+      Poling case, because that is how the public record and the cited 2006 case report (whose
+      first author is her father) are named; whether the surname should also go is put to the owner.
+      Stored source texts (court opinions) are verbatim public records and are not altered. No
+      other person named in the dig is a minor, a victim or, as far as checked, under an ongoing
+      investigation. Still open: the search headline wording; `corrected` as a PS3 warning (PR #6
+      section 9).
