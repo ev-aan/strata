@@ -323,7 +323,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_atlas
 write("atlas/index.html", build_atlas.build_atlas_html(CFG["publish"])[0])
 _ideas = yaml.safe_load(open(os.path.join(ROOT, "build", "ideas.yaml")))
-_lab = {"parked": "parked", "exploring": "exploring", "done": "done"}
+_lab = {"roadmap": "roadmap", "parked": "parked", "exploring": "exploring", "done": "done"}
 _li = "".join(f'<li id="{E(i["id"])}"><b>{E(i["title"])}</b> <span class="pill">{E(_lab.get(i["status"], i["status"]))}</span><br>{E(" ".join(str(i["summary"]).split()))}</li>' for i in _ideas["ideas"])
 write("ideas/index.html", page("Ideas for exploration", f'<p class="eyebrow">Ideas</p><h1>Ideas for exploration</h1><p>{E(" ".join(str(_ideas["intro"]).split()))}</p><ul class="l">{_li}</ul><p><a href="{E(CFG["issues_url"])}">Suggest an idea or a dig</a>.</p>', "Ideas and possible next digs for Stratah, with their status.", "/ideas/", depth=1))
 _QMAP = {"casket-letters": "casket-letters", "eikon-basilike": "eikon-basilike"}

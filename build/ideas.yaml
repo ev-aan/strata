@@ -1,7 +1,7 @@
 # Ideas for exploration. YAML is the source; /ideas/ on the site is generated from it by build/tools/build_site.py.
-# status: parked (designed or noted, not scheduled) | exploring (being worked on) | done
+# status: roadmap (committed direction, built later) | parked (designed or noted, not scheduled) | exploring (being worked on) | done
 intro: >
-  Things we may build or excavate next. Parked means noted, not scheduled. If one matters to you, or you have a better idea,
+  Things we may build or excavate next. Roadmap means we intend to build it, later. Parked means noted, not scheduled. If one matters to you, or you have a better idea,
   tell us. Ideas about the method are as welcome as ideas about topics.
 ideas:
   - id: paper-review
@@ -66,3 +66,10 @@ ideas:
     summary: >
       Like a news wire, but for checked statements: a finding, an object record or a timeline can be published for others to carry, with a mark that anyone can verify
       showing exactly which review it passed, when, and whether it has since been corrected or withdrawn. The reader of a copy can always trace it back to the review record.
+  - id: gap-tickets
+    title: Every gap is shown, and every open gap gets a dig ticket
+    status: roadmap
+    summary: >
+      There will always be things we do not know. Each dig will list its open questions plainly, a Frontier page will gather them across digs, and each open gap will get a ticket
+      that anyone with a registered GitHub account can pick up. Tickets can only be issued by registered accounts; counts of tickets or accounts carry no weight.
+      A proposal is being drafted and must pass assessment before anything is built.

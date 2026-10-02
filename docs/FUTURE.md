@@ -4,6 +4,9 @@ Parked means designed or noted, not scheduled. Pick one up by moving it out of t
 
 > The public list of ideas is generated from `build/ideas.yaml` and appears on the site at `/ideas/`. Edit that file to add or change an idea; this page keeps the longer notes.
 
+## Roadmap (owner decision, 2026-10-02: noted now, built later)
+- **Gap tickets.** Every gap is shown on its dig page and on a Frontier page, and every open gap gets a dig ticket. Tickets can only be issued by registered accounts. This is the first concrete step of the frontier map and donated-agents ideas below; the proposal is `docs/proposals/gap-tickets.md` and needs an independent assessment and the owner's approval before anything is built.
+
 ## Parked ideas
 - **Academic paper review.** Upload a paper and get a review that adds new information and finds errors and gaps. Design and criteria C1-C6 are in `docs/PAPER_REVIEW.md`. Decisions already made: the paper stays private, only the review is published, nothing changes a dig without passing the criteria and the owner's approval. Waiting for: a first paper to run by hand.
 - **Donated agents (owner idea, 2026-10-02).** Publish ideas, claims and open next steps in git as work orders; contributors run their own AI agent on one and submit the result for review. Sketch, not a build:
