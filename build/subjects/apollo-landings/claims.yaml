@@ -217,7 +217,7 @@ claims:
       #    independent records, not the crewed/robotic distinction.
 
   - id: apollo-robotic-only-alternative
-    state: refuted
+    state: proposed            # was refuted; changed 2026-10-02 (log L-09): Rule 9 bars a refutation resting on synthetic evidence
     statement: >
       The Apollo reflectors, samples and site hardware were delivered by uncrewed
       missions, with no humans on the surface.

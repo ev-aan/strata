@@ -76,3 +76,11 @@ log:
       debate, the 28 May bill text and any 2022 campaign pledge are unread; no Wayback snapshots yet. WHAT THE TEST SHOWED
       ABOUT THE METHOD: raw-page capture beats search summaries for quotes; the selection rule needed six clarifications
       before running (L-06) which suggests the protocol should name chamber and bill type up front.
+  - id: L-09
+    date: "2026-10-02"
+    entry: >
+      CONFORMANCE FIX (review against CONTRIBUTING.md rules 1 and 3). Three claims
+      (pv-barragan-prevote-commitment, pv-alford-promise-undated, pv-inducement-both)
+      lacked adoption_weight and would_change_if; both added (adoption not measured,
+      weight 1). The dig lacked a divergence_note; one added stating that no gap is
+      measurable yet. No claim's state, statement or evidential weight changed.
