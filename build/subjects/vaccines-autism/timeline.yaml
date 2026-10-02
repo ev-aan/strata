@@ -53,6 +53,8 @@ sources:
   src-cafc-cedillo-2010:     {title: "Federal Circuit, Cedillo v. HHS, No. 2010-5004 (27 Aug 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/10-5004.pdf", authenticity: "authenticated, strong"}
   src-cafc-hazlehurst-2010:  {title: "Federal Circuit, Hazlehurst v. HHS, No. 2009-5128 (13 May 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/09-5128.pdf", authenticity: "authenticated, strong"}
   src-oap-decisions:         {title: "Court of Federal Claims, autism decisions", url: "https://www.uscfc.uscourts.gov/autism-decisions-and-background-information", authenticity: "authenticated, moderate"}
+  src-cafc-cedillo-2010:     {title: "Federal Circuit, Cedillo v. Secretary of HHS, No. 2010-5004 (27 Aug 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/10-5004.pdf", authenticity: "authenticated, strong"}
+  src-cafc-hazlehurst-2010:  {title: "Federal Circuit, Hazlehurst v. Secretary of HHS, No. 2009-5128 (13 May 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/09-5128.pdf", authenticity: "authenticated, strong"}
   src-bmj-gmc-2010:          {title: "BMJ 2010;340:c2803 (GMC decision)", url: "https://www.bmj.com/content/340/bmj.c2803", authenticity: "news report"}
   src-lancet-retraction-2010: {title: "Lancet 2010;375:445 retraction notice (not read; BMJ 2010;340:c696 reports on it)", url: "https://www.bmj.com/content/340/bmj.c696", authenticity: "authenticated, moderate (notice not read)"}
   src-guardian-lancet-2010:  {title: "The Guardian, 2 Feb 2010: Lancet retracts 'utterly false' MMR paper", url: "https://www.theguardian.com/society/2010/feb/02/lancet-retracts-mmr-paper", authenticity: "news report"}
@@ -132,7 +134,7 @@ events:
   - {id: a17, panel: years, lane: origin, time: "2010-05-24T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-bmj-gmc-2010, src-walker-smith-2012],
      label: "24 May 2010: GMC strikes off Wakefield and Walker-Smith",
      detail: "Murch not guilty of serious professional misconduct [judgment para 1; BMJ]."}
-  - {id: a18, panel: years, lane: legal, time: "2010-08-27T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-cafc-cedillo-2010, src-cafc-hazlehurst-2010, src-oap-decisions],
+  - {id: a18, panel: years, lane: legal, time: "2010-08-27T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions, src-cafc-cedillo-2010],
      label: "27 Aug 2010: Federal Circuit affirms Cedillo",
      detail: "Hazlehurst had been affirmed on 13 May 2010; Snyder was not appealed (Federal Circuit 10-5004, footnote 1) [opened]."}
   - {id: a19, panel: years, lane: media, time: "2011-01-05T12:00:00Z", precision: day, kind: media, status: reported, sources: [src-deer-2011, src-godlee-2011],

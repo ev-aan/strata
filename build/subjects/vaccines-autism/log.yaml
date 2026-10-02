@@ -314,33 +314,45 @@ log:
   - id: L-22
     date: 2026-10-02
     entry: >
-      REVISION ROUND 5 (author response to review round 4, R4-1 to R4-10; each verified first).
-      R4-1 (blocking): CORRECTION. va-omnibus-test-cases said the first group's theory "was MMR
-      plus thimerosal" and that MMR alone "was never presented". The Federal Circuit opinions
-      cited as opened say otherwise: in Hazlehurst (09-5128) the petitioners, in post-hearing
-      briefing, "relied on the theory that [the child's] autism was caused by the MMR vaccine
-      alone" (denial affirmed), and in Cedillo (10-5004) the special master found the evidence
-      did not show that "the MMR vaccine alone or in combination with TCVs" can cause autism. The
-      statement, anchor, what_it_is_not and basis are corrected; the never-presented statement is
-      withdrawn. No timeline or summary line repeated it. Whether King, Mead and Dwyer tested
-      other theories was not checked. R4-3: CORRECTION OF L-19, which said nothing was dropped
-      when the former key points 2 and 3 were joined; the retraction year (2010) and the court's
-      finding on the ethics statement left the first screen (both stayed in the assessment text).
-      Key point 3 now restores both. R4-4: the assessment gives the IOM's wording and scope (the
-      evidence favors rejecting a causal relationship, for MMR and for thimerosal-containing
-      vaccines). R4-5: the divergence_note says the other 11 WHO studies suggested an association.
-      R4-8: the divergence_note no longer says nothing in the evidence changed between November
-      2025 and the earlier position; the assessment text carries the aluminum caveat (the autism-only
-      figure read only in a press release; moderate). R4-9: the stale "open design question" wording
-      for Rule 9 is replaced by the owner's decision of L-19 in va-mmr-causes-autism and
-      dt-mmr-cohorts. R4-10: the 2006 case report (Poling et al., ref 85 of Rossignol and Frye) may
-      concern the same child as the compensation concession; not verified, so the scale and
-      positions no longer treat them as independent; va-retraction-reasons confidence is moderate.
-      R4-6: the WHO page leaves va-cdc-page-2025's anchor.sources and the CDC page leaves
-      va-causes-largely-unknown's (adoption, in adoption notes). R4-7: timeline a14 and a18 link the
-      Federal Circuit opinions. R4-2: the child's first name, which an earlier reviewer note in
-      review.yaml quoted from NPR, was redacted there to "[the child]" (commit 5b14b9b); it
-      remains in git history, which a redaction cannot change. No log entry was edited, so no
-      `redacts` entry applies (SCHEMA N26 covers log entries only). Owner decisions untouched:
-      headline wording, the surname in the case name, `corrected` as a PS3 warning,
-      headline_status draft, refutation_class.
+      Answers to review round 4 (resolution is the reviewer's). R4-1: the two Federal Circuit
+      opinions were downloaded directly from cafc.uscourts.gov and the passages read. No.
+      2009-5128: in Cedillo and Snyder the petitioners presented MMR combined with thimerosal-
+      containing vaccines; "The Hazlehursts initially presented that theory of causation, but in
+      post-hearing briefing they relied on the theory that Yates's autism was caused by the MMR
+      vaccine alone." No. 2010-5004: the special master found the evidence did not show "that
+      the MMR vaccine alone or in combination with TCVs can cause autism in general".
+      va-omnibus-test-cases is corrected: the statement no longer says the first group's theory
+      was only MMR plus thimerosal, the what-it-is-not line no longer says MMR alone was never
+      ruled on, and the basis says MMR alone was argued in Hazlehurst and rejected. The whole
+      opinions were not read, so anchor_checked stays secondary. R4-3: L-19 said nothing was
+      dropped when key points 2 and 3 were joined; that was wrong. The year of the retraction
+      (2010) and the court's finding on the ethics statement left the first screen; both remain
+      in the full reasoning. R4-4: the IOM (2004) is now quoted ("favors rejection of a causal
+      relationship", for MMR and thimerosal-containing vaccines). R4-5: the divergence note says
+      the other 11 WHO-reviewed studies suggested an association, with very low strength of
+      evidence. R4-6: agency pages removed from the anchors of va-cdc-page-2025 (WHO) and
+      va-causes-largely-unknown (CDC page); no weight changed. R4-7: timeline events a14 and a18
+      now list the Federal Circuit opinions. Not done here: R4-2 (an earlier reviewer's note in
+      review.yaml quotes the child's first name; reviewer notes are not the author's to edit).
+  - id: L-23
+    date: 2026-10-02
+    entry: >
+      Round 5, second author pass (merged onto L-22, which answered R4-1 and R4-3 to R4-7 while this
+      pass was prepared; those answers are kept). This pass adds what L-22 left. R4-2: verified that
+      the child's first name, which an earlier reviewer note in review.yaml quoted from NPR, is no
+      longer in any file of the dig (redacted to "[the child]" in commit 5b14b9b); it remains in
+      git history, which a redaction cannot change; no log entry was edited, so no `redacts` entry
+      applies (SCHEMA N26 covers log entries only). R4-8: the divergence_note no longer says
+      "nothing in the evidence changed" between the two positions (no claim shows that); it says the
+      dig lists new 2025 items (the Danish aluminium cohort, the Henry Ford draft, the WHO
+      reviews) and none is read as changing what the large studies show for autism, while what
+      visibly changed was adoption by an institution; the assessment text now carries the aluminum
+      caveat (the autism-only figure was read only in a press release; moderate confidence). R4-9:
+      the stale "open design question (L-05)" wording for Rule 9 in va-mmr-causes-autism and in the
+      dt-mmr-cohorts note is replaced by the owner's decision of L-19 (option (a); no rule
+      change). R4-10: the 2006 case report (Poling et al., ref 85 of Rossignol and Frye) may
+      concern the same child as the compensation concession; not verified, so the short-answer
+      scale and the mito positions no longer present them as independent; va-retraction-reasons
+      confidence is moderate (both Lancet notices unread; the 2004 non-disclosure admission rests on
+      one secondary review). R4-3, additionally: key point 3 of the assessment restores the 2010
+      retraction year and the court's finding on the ethics statement. Owner decisions untouched.
