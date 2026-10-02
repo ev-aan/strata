@@ -1,0 +1,196 @@
+timeline:
+  id: vaccines-autism
+  title: "Vaccines and autism: the claim, the tests and the institutions (1998 to 2026)"
+  as_of: "2026-10-02"
+  note: >
+    Times are UTC; every event here is known to the day, month or year only, so dots are
+    hollow or drawn as bars. Publication dates are issue or online dates as given in the
+    cited record. Events marked "single" or "reported" rest on one source or on reporting
+    rather than a document read for this dig. Panel B enlarges 2025-2026, when the US
+    institutional position changed.
+panels:
+  - id: years
+    title: "Panel A: 1998 to 2020 (one tick per two years)"
+    start: "1998-01-01T00:00:00Z"
+    end:   "2020-12-31T00:00:00Z"
+    tick_years: 2
+    lanes: [origin, research, legal, institutions, media]
+  - id: recent
+    title: "Panel B: June 2025 to October 2026 (one tick per two months)"
+    start: "2025-06-01T00:00:00Z"
+    end:   "2026-10-15T00:00:00Z"
+    tick_hours: 1464
+    lanes: [research, legal, institutions, media]
+lanes:
+  origin:       {label: "The 1998 paper and the UK"}
+  research:     {label: "Studies"}
+  legal:        {label: "Courts and compensation"}
+  institutions: {label: "Health agencies"}
+  media:        {label: "Media and statements"}
+people:
+  - {who: "Andrew Wakefield", detail: "Lead author of the 1998 paper; struck off the UK register in May 2010 (BMJ c2803); abandoned his appeal ([2012] EWHC 503 para 1)."}
+  - {who: "John Walker-Smith", detail: "Senior co-author; struck off in 2010; the High Court quashed that decision on 7 Mar 2012."}
+  - {who: "Brian Deer", detail: "Journalist whose comparison of the paper with hospital records was published by the BMJ in Jan 2011."}
+  - {who: "William W. Thompson", detail: "CDC scientist and co-author of DeStefano 2004; issued a statement through his lawyers on 27 Aug 2014."}
+  - {who: "Hannah Poling", detail: "Child whose compensation case the US government conceded in Nov 2007 (as reported)."}
+  - {who: "Robert F. Kennedy Jr.", detail: "Author of 'Deadly Immunity' (2005); US Secretary of Health and Human Services from 2025; said he ordered the Nov 2025 CDC page change (STAT)."}
+  - {who: "Mark Geier", detail: "Author of early papers reporting a link; Maryland licence revoked 22 Aug 2012 (court record)."}
+sources:
+  src-wakefield-1998:        {title: "Wakefield et al., Lancet 1998 (PubMed record, retracted)", url: "https://europepmc.org/article/MED/9500320", authenticity: "authenticated, moderate"}
+  src-mmwr-1999:             {title: "AAP and USPHS joint statement, MMWR 9 Jul 1999", url: "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm4826a3.htm", authenticity: "authenticated, moderate"}
+  src-taylor-1999:           {title: "Taylor et al., Lancet 1999", url: "https://europepmc.org/article/MED/10376617", authenticity: "authenticated, moderate"}
+  src-simpsonwood-2000:      {title: "Simpsonwood transcript, CDC Stacks", url: "https://stacks.cdc.gov/view/cdc/253137", authenticity: "authenticated, moderate"}
+  src-madsen-2002:           {title: "Madsen et al., NEJM 2002", url: "https://europepmc.org/article/MED/12421889", authenticity: "authenticated, moderate"}
+  src-destefano-2004:        {title: "DeStefano et al., Pediatrics 2004", url: "https://europepmc.org/article/MED/14754936", authenticity: "authenticated, moderate"}
+  src-murch-2004:            {title: "Murch et al., Retraction of an interpretation, Lancet 2004", url: "https://europepmc.org/article/MED/15016483", authenticity: "authenticated, moderate"}
+  src-nhs-immunisation-2004-05: {title: "NHS Immunisation Statistics, England 2004-05", url: "https://digital.nhs.uk/data-and-information/publications/statistical/nhs-immunisation-statistics/nhs-immunisation-statistics-england-2004-05", authenticity: "authenticated, strong"}
+  src-iom-2004:              {title: "IOM, Vaccines and Autism (2004)", url: "https://nap.nationalacademies.org/read/10997/chapter/2", authenticity: "authenticated, strong"}
+  src-salon-2011:            {title: "Salon, Correcting our record (16 Jan 2011)", url: "https://www.salon.com/2011/01/16/dangerous_immunity/", authenticity: "authenticated, strong"}
+  src-walker-smith-2012:     {title: "Walker-Smith v GMC [2012] EWHC 503 (Admin)", url: "https://caselaw.nationalarchives.gov.uk/ewhc/admin/2012/503", authenticity: "authenticated, strong"}
+  src-poling-cnn-2008:       {title: "CNN, 6 Mar 2008", url: "https://www.cnn.com/2008/HEALTH/conditions/03/06/vaccines.autism/index.html", authenticity: "news report"}
+  src-eurosurv-2008:         {title: "Eurosurveillance, 3 Jul 2008", url: "https://www.eurosurveillance.org/content/10.2807/ese.13.27.18919-en", authenticity: "authenticated, strong"}
+  src-hornig-2008:           {title: "Hornig et al., PLoS ONE 2008", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526159/", authenticity: "authenticated, strong"}
+  src-oap-decisions:         {title: "Court of Federal Claims, autism decisions", url: "https://www.uscfc.uscourts.gov/autism-decisions-and-background-information", authenticity: "authenticated, moderate"}
+  src-bmj-gmc-2010:          {title: "BMJ 2010;340:c2803 (GMC decision)", url: "https://www.bmj.com/content/340/bmj.c2803", authenticity: "news report"}
+  src-lancet-retraction-2010: {title: "BMJ 2010;340:c696 (Lancet retraction)", url: "https://www.bmj.com/content/340/bmj.c696", authenticity: "authenticated, moderate (as quoted)"}
+  src-godlee-2011:           {title: "Godlee et al., BMJ 2011;342:c7452", url: "https://www.bmj.com/content/342/bmj.c7452", authenticity: "authenticated, moderate"}
+  src-thompson-2014:         {title: "Thompson statement, 27 Aug 2014 (third-party copy)", url: "https://cdctruth.org/", authenticity: "authenticated, weak"}
+  src-deer-2011:             {title: "Deer, BMJ 2011;342:c5347", url: "https://www.bmj.com/content/342/bmj.c5347", authenticity: "authenticated, moderate"}
+  src-bruesewitz:            {title: "Bruesewitz v. Wyeth, 562 U.S. 223 (2011)", url: "https://www.law.cornell.edu/supremecourt/text/09-152", authenticity: "authenticated, moderate"}
+  src-geier-md-2015:         {title: "Md. Court of Special Appeals, 2015 (Geier)", url: "https://mdcourts.gov/data/opinions/cosa/2015/0722s14.pdf", authenticity: "authenticated, strong"}
+  src-hooker-2014-retraction: {title: "Retraction note, Transl Neurodegener 2014;3:22", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4183946/", authenticity: "authenticated, strong"}
+  src-cdc-2004-study-statement: {title: "CDC statement on the 2004 study (archive)", url: "https://archive.cdc.gov/", authenticity: "authenticated, moderate"}
+  src-jain-2015:             {title: "Jain et al., JAMA 2015", url: "https://europepmc.org/article/MED/25898051", authenticity: "authenticated, moderate"}
+  src-mawson-2017:           {title: "Mawson et al., J Transl Sci 2017", url: "https://www.oatext.com/pdf/JTS-3-186.pdf", authenticity: "authenticated, moderate"}
+  src-hviid-2019:            {title: "Hviid et al., Ann Intern Med 2019", url: "https://europepmc.org/article/MED/30831578", authenticity: "authenticated, moderate"}
+  src-andersson-2025:        {title: "Andersson et al., Ann Intern Med 2025", url: "https://europepmc.org/article/MED/40658954", authenticity: "authenticated, moderate"}
+  src-livescience-2025:      {title: "Live Science, journal refuses call to retract (13 Aug 2025)", url: "https://www.livescience.com/health/medicine-drugs/prominent-medical-journal-refuses-rfks-call-to-retract-a-vaccine-study", authenticity: "news report"}
+  src-henry-ford-draft:      {title: "Henry Ford draft, Senate hearing record", url: "https://www.hsgac.senate.gov/wp-content/uploads/Entered-into-hearing-record-Impact-of-Childhood-Vaccination-on-Short-and-Long-Term-Chronic-Health-Outcomes-in-Children-A-Birth-Cohort-Study.pdf", authenticity: "authenticated, moderate"}
+  src-henry-ford-statement:  {title: "Henry Ford Health statement, 26 Sep 2025", url: "https://www.henryford.com/news/2025/09/vaccine-study-henry-ford-health", authenticity: "authenticated, moderate"}
+  src-stat-cdc-page-2025:    {title: "STAT, 21 Nov 2025", url: "https://www.statnews.com/2025/11/21/rfk-jr-ordered-vaccines-autism-cdc-website-change/", authenticity: "news report"}
+  src-cdc-autism-page:       {title: "CDC, Autism and Vaccines (dated 22 Jul 2026)", url: "https://www.cdc.gov/vaccine-safety/about/autism.html", authenticity: "authenticated, moderate"}
+  src-who-gacvs-2025:        {title: "WHO GACVS statement, 11 Dec 2025", url: "https://www.who.int/news/item/11-12-2025-statement-gacvs-vaccines-autism", authenticity: "authenticated, moderate"}
+  src-acp-injunction-2026:   {title: "ACP, Federal judge blocks immunization schedule changes (Mar 2026)", url: "https://www.acponline.org/acp-newsroom/federal-judge-blocks-immunization-schedule-changes-stays-acip-member-appointments", authenticity: "professional-body report; order not read"}
+  src-hooker-miller-2020-eoc: {title: "SAGE Open Med, Expression of Concern, 18 May 2026", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC13187378/", authenticity: "authenticated, strong"}
+  src-eo-14420:              {title: "Executive Order 14420, Federal Register doc 2026-16730", url: "https://www.federalregister.gov/d/2026-16730", authenticity: "read via fetch tool"}
+  src-annenberg-2026:        {title: "Annenberg Public Policy Center, 29 Sep 2026", url: "https://www.annenbergpublicpolicycenter.org/about-1-in-3-americans-say-rfk-jr-recommends-measles-vaccine/", authenticity: "authenticated, moderate"}
+events:
+  # ---------------- Panel A ----------------
+  - {id: a01, panel: years, lane: origin, time: "1998-02-28T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-wakefield-1998],
+     label: "28 Feb 1998: Lancet publishes Wakefield et al. (12 children)",
+     detail: "Parents linked onset to MMR in 8 of 12 [abstract]. Retracted 2010."}
+  - {id: a02, panel: years, lane: research, time: "1999-06-12T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-taylor-1999],
+     label: "Jun 1999: Taylor et al. find no clustering of autism after MMR (498 cases)",
+     detail: "Regression within 2 months: relative incidence 0.92 [abstract]."}
+  - {id: a03, panel: years, lane: institutions, time: "1999-07-09T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-mmwr-1999],
+     label: "9 Jul 1999: AAP and US Public Health Service ask for thimerosal to be removed, as a precaution",
+     detail: "The statement says there were no data or evidence of harm [read via fetch tool]."}
+  - {id: a04, panel: years, lane: institutions, time: "2000-06-07T00:00:00Z", end: "2000-06-08T23:59:00Z", precision: range, kind: official, status: reported, sources: [src-simpsonwood-2000],
+     label: "7-8 Jun 2000: Simpsonwood meeting reviews preliminary thimerosal data",
+     detail: "Autism: 'a slight, but not significant, increase' in the pages read [via fetch tool]."}
+  - {id: a05, panel: years, lane: research, time: "2002-11-07T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-madsen-2002],
+     label: "Nov 2002: Madsen et al., 537,303 Danish children, RR 0.92",
+     detail: "No association with MMR [abstract]."}
+  - {id: a06, panel: years, lane: research, time: "2004-02-01T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-destefano-2004],
+     label: "Feb 2004: DeStefano et al. (CDC), age at MMR and autism",
+     detail: "Whole-sample OR 1.49 for vaccination before 36 months, attributed to early-intervention requirements [abstract]."}
+  - {id: a07, panel: years, lane: origin, time: "2004-03-06T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-murch-2004],
+     label: "6 Mar 2004: 10 of the 13 authors retract the paper's interpretation",
+     detail: "Wakefield, Linnell and Harvey are not among the signatories [author list read]."}
+  - {id: a08, panel: years, lane: origin, time: "2003-04-01T00:00:00Z", end: "2004-03-31T23:59:00Z", precision: range, kind: data, status: reported, sources: [src-nhs-immunisation-2004-05],
+     label: "2003-04: MMR coverage at age 2 in England bottoms out at 79.9%",
+     detail: "Down from 91.8% in 1995-96 [read]."}
+  - {id: a09, panel: years, lane: institutions, time: "2004-06-30T12:00:00Z", precision: year, kind: official, status: reported, sources: [src-iom-2004],
+     label: "2004: IOM: the evidence favors rejecting a causal link (MMR and thimerosal)",
+     detail: "Leaves a very small susceptible subset unexcluded, with no evidence for it [read]."}
+  - {id: a10, panel: years, lane: media, time: "2005-06-15T12:00:00Z", precision: month, kind: media, status: reported, sources: [src-salon-2011],
+     label: "Jun 2005: 'Deadly Immunity' published by Salon and Rolling Stone",
+     detail: "Corrected five times; Salon removed it in Jan 2011 [read]."}
+  - {id: a11, panel: years, lane: legal, time: "2007-11-15T12:00:00Z", precision: month, kind: official, status: reported, sources: [src-poling-cnn-2008],
+     label: "Nov 2007: US government concedes the Poling case",
+     detail: "Aggravation of a mitochondrial disorder with features of autism, as quoted in 2008 reporting; the document was not read."}
+  - {id: a12, panel: years, lane: origin, time: "2008-06-20T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-eurosurv-2008],
+     label: "20 Jun 2008: HPA reports measles endemic again in the UK",
+     detail: "Attributed to almost a decade of low MMR coverage [read, as quoted by Eurosurveillance]."}
+  - {id: a13, panel: years, lane: research, time: "2008-09-04T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-hornig-2008],
+     label: "Sep 2008: Hornig et al. find no persistent measles RNA in the gut (4% vs 8%)",
+     detail: "Three blinded labs, including the original one [read]."}
+  - {id: a14, panel: years, lane: legal, time: "2009-02-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
+     label: "12 Feb 2009: vaccine court rejects the three MMR-plus-thimerosal test cases",
+     detail: "Cedillo, Hazlehurst, Snyder [via fetch tool]."}
+  - {id: a15, panel: years, lane: origin, time: "2010-02-02T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-lancet-retraction-2010],
+     label: "2 Feb 2010: The Lancet retracts the 1998 paper",
+     detail: "Names the referral and ethics statements as incorrect [as quoted by the BMJ]."}
+  - {id: a16, panel: years, lane: legal, time: "2010-03-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
+     label: "12 Mar 2010: vaccine court rejects the three thimerosal-only test cases",
+     detail: "King, Mead, Dwyer; about 4,800 claims pending [via fetch tool]."}
+  - {id: a17, panel: years, lane: origin, time: "2010-05-24T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-bmj-gmc-2010, src-walker-smith-2012],
+     label: "24 May 2010: GMC strikes off Wakefield and Walker-Smith",
+     detail: "Murch not guilty of serious professional misconduct [judgment para 1; BMJ]."}
+  - {id: a18, panel: years, lane: legal, time: "2010-08-27T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
+     label: "27 Aug 2010: Federal Circuit affirms Cedillo",
+     detail: "Hazlehurst had been affirmed on 13 May 2010 [via fetch tool]."}
+  - {id: a19, panel: years, lane: media, time: "2011-01-05T12:00:00Z", precision: day, kind: media, status: reported, sources: [src-deer-2011, src-godlee-2011],
+     label: "5 Jan 2011: BMJ publishes Deer's records comparison; its editors call the paper fraudulent",
+     detail: "Deer: 3 of 9 'regressive autism' children had no autism diagnosis in the records [read via fetch tool]. The fraud judgment is the editorial's (Godlee et al.)."}
+  - {id: a20, panel: years, lane: legal, time: "2011-02-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-bruesewitz],
+     label: "22 Feb 2011: Bruesewitz v. Wyeth: design-defect suits preempted; no autism finding",
+     detail: "Autism appears only in the dissent's footnote 25 [read]."}
+  - {id: a21, panel: years, lane: origin, time: "2012-03-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-walker-smith-2012],
+     label: "7 Mar 2012: High Court quashes Walker-Smith's striking-off",
+     detail: "Same judgment: no respectable body of opinion supports the MMR-autism hypothesis (para 7) [read]."}
+  - {id: a22, panel: years, lane: legal, time: "2012-08-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-geier-md-2015],
+     label: "22 Aug 2012: Maryland revokes Mark Geier's licence",
+     detail: "Lupron protocol for autistic children; misleading consent methods [read]."}
+  - {id: a23, panel: years, lane: media, time: "2014-08-27T12:00:00Z", precision: day, kind: witness, status: single, sources: [src-thompson-2014, src-cdc-2004-study-statement],
+     label: "27 Aug 2014: CDC co-author William Thompson says a subgroup result was omitted from DeStefano 2004",
+     detail: "Read in a third-party copy; the CDC's response addresses the same point [read]."}
+  - {id: a24, panel: years, lane: research, time: "2014-10-03T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-hooker-2014-retraction],
+     label: "3 Oct 2014: Hooker's reanalysis of the CDC data retracted",
+     detail: "Undeclared competing interests; concerns about methods and statistics [read]."}
+  - {id: a25, panel: years, lane: research, time: "2015-04-21T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-jain-2015],
+     label: "Apr 2015: Jain et al.: no increase in children with an affected older sibling",
+     detail: "95,727 children [abstract]."}
+  - {id: a26, panel: years, lane: research, time: "2017-04-24T12:00:00Z", precision: day, kind: analysis, status: reported, sources: [src-mawson-2017],
+     label: "24 Apr 2017: Mawson et al. survey reports OR 4.2 for autism",
+     detail: "Self-selected online survey; 3 unvaccinated cases [read]."}
+  - {id: a27, panel: years, lane: research, time: "2019-03-05T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-hviid-2019],
+     label: "Mar 2019: Hviid et al., 657,461 Danish children, HR 0.93",
+     detail: "No increase in subgroups; no clustering after vaccination [abstract]."}
+  # ---------------- Panel B ----------------
+  - {id: b01, panel: recent, lane: research, time: "2025-07-15T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-andersson-2025],
+     label: "Jul 2025: Danish aluminum cohort (1,224,176 children): no increase",
+     detail: "Autism HR 0.93 per mg [press release]."}
+  - {id: b02, panel: recent, lane: institutions, time: "2025-08-01T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-livescience-2025],
+     label: "1 Aug 2025: HHS Secretary calls for the aluminum paper's retraction",
+     detail: "Reported by Reuters and Live Science."}
+  - {id: b02b, panel: recent, lane: research, time: "2025-08-11T12:00:00Z", precision: day, kind: media, status: reported, sources: [src-livescience-2025],
+     label: "11 Aug 2025: the journal's editor says she sees no reason for retraction",
+     detail: "Reported by Reuters (11 Aug) and Live Science (13 Aug)."}
+  - {id: b03, panel: recent, lane: institutions, time: "2025-09-09T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-henry-ford-draft],
+     label: "9 Sep 2025: unpublished Henry Ford draft entered into a Senate hearing record",
+     detail: "Its autism result: adjusted HR 0.62 (0.10 to 3.69), 23 vs 1 cases [read]."}
+  - {id: b04, panel: recent, lane: media, time: "2025-09-26T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-henry-ford-statement],
+     label: "26 Sep 2025: Henry Ford Health says the draft was shelved for data and methods problems",
+     detail: "[read via fetch tool]"}
+  - {id: b05, panel: recent, lane: institutions, time: "2025-11-20T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-stat-cdc-page-2025],
+     label: "19-20 Nov 2025: CDC page changed: 'vaccines do not cause autism' called not evidence-based",
+     detail: "Kennedy said he ordered the change (STAT, 21 Nov 2025)."}
+  - {id: b06, panel: recent, lane: institutions, time: "2025-12-11T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-who-gacvs-2025],
+     label: "11 Dec 2025: WHO safety committee: no evidence of a causal relationship",
+     detail: "31 primary studies and 5 meta-analyses, 2010-2025 [read via fetch tool]."}
+  - {id: b07, panel: recent, lane: legal, time: "2026-03-16T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-acp-injunction-2026],
+     label: "16 Mar 2026: federal court stays the new schedule and the new ACIP's votes (AAP v. Kennedy)",
+     detail: "On appeal to the First Circuit; the order was not read."}
+  - {id: b08, panel: recent, lane: research, time: "2026-05-18T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-hooker-miller-2020-eoc],
+     label: "18 May 2026: expression of concern on Hooker & Miller 2020",
+     detail: "The article is under investigation [read]."}
+  - {id: b09, panel: recent, lane: institutions, time: "2026-07-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-cdc-autism-page],
+     label: "22 Jul 2026: CDC page revised again",
+     detail: "Adds that scientists have not identified the root causes of autism [read via fetch tool]."}
+  - {id: b10, panel: recent, lane: institutions, time: "2026-08-10T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-eo-14420],
+     label: "10 Aug 2026: Executive Order 14420 orders a childhood-schedule reassessment",
+     detail: "Does not mention autism [read via fetch tool]."}
+  - {id: b11, panel: recent, lane: media, time: "2026-09-29T12:00:00Z", precision: day, kind: data, status: reported, sources: [src-annenberg-2026],
+     label: "29 Sep 2026: survey: 68% of US adults say MMR does not cause autism, 13% say it does",
+     detail: "Fielded 4-17 Aug 2026; statistically unchanged since 2022 [read via fetch tool]."}

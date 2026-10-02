@@ -1,0 +1,110 @@
+subject: vaccines-autism
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+
+log:
+  - id: L-01
+    date: 2026-10-02
+    entry: >
+      Dig opened at the owner's request: "does vaccines cause autism?" First scope agreed was
+      the MMR and Wakefield core only. Repository schema read (build/SCHEMA.md,
+      build/conformance.py, CONTRIBUTING.md) and apollo-landings and gulf-of-tonkin used as
+      templates.
+  - id: L-02
+    date: 2026-10-02
+    entry: >
+      OWNER DECISIONS. (1) Scope widened: Wakefield is the founding core, and the dig also
+      covers ingredients (thimerosal, aluminum), schedule and timing, insider and legal claims,
+      and prevalence and institutions. (2) Open questions are filed as searched gaps. (3) Every
+      claim shows the "No" case and the "Yes" case where one exists, and the dig answers in the
+      form "No, except in this particular case". Implemented as a `short_answer` block naming
+      the claims behind each exception, and `positions` with Yes and No labels on each claim.
+  - id: L-03
+    date: 2026-10-02
+    entry: >
+      Source pass in five parallel reading streams (origin; MMR studies; ingredients and
+      schedule; insider and legal; prevalence and institutions), plus congenital rubella and
+      mitochondrial disease. Reachable: PubMed Central and Europe PMC, the UK National
+      Archives case-law service, NHS Digital, Eurosurveillance, the US Senate site, the
+      Maryland courts, Cornell LII, eCFR, Salon. Refused this environment: thelancet.com,
+      bmj.com (partly), nejm.org, acpjournals.org, jamanetwork.com, the UK Government Web
+      Archive (GMC documents), archive.org, hrsa.gov, publications.aap.org, the Court of
+      Federal Claims PDF host (for direct download). Nothing was obtained through mirrors.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      VERIFICATION RULE used in this dig. anchor_checked: primary only where the full document
+      was downloaded and read directly (sha256 in sources/MANIFEST.yaml). Documents read only
+      through a summarizing fetch tool, as abstracts, or as quoted by others are `secondary`,
+      even when the whole document passed through the tool. Under this rule the headline claim
+      is secondary, so the headline stays draft.
+  - id: L-05
+    date: 2026-10-02
+    entry: >
+      OPEN DESIGN QUESTION for the owner. Rule 9 lets a refutation rest only on material or
+      primary-text evidence, and CONTRIBUTING.md classes statistics as `synthetic`. The
+      population studies that answer this dig are statistics. Result: the general claims
+      ("MMR causes autism", "the rise proves vaccines") cannot be filed as refuted, however
+      strong the evidence. They are filed as `proposed` at weight 1 with `retired_by` naming
+      the discriminating test. Options: (a) keep this, and say so on the page; (b) treat
+      register records of vaccination and diagnosis as material and the computed estimate as
+      the reading of them; (c) add the statistical temple with its own refutation bar
+      (pre-registered analysis, replication in an independent population). Recommendation:
+      (c), since this dig cannot be done fully honestly in the forensic temple alone.
+  - id: L-06
+    date: 2026-10-02
+    entry: >
+      Headline drafted ("Do Vaccines Cause Autism? No, Large Studies Find; Two Narrow
+      Exceptions Explained") and held as draft. To publish: read the full texts of Hviid 2019
+      and Madsen 2002 (publisher sites refused here; a local session with a browser should
+      reach them), then move va-mmr-no-detectable-increase to anchor_checked: primary.
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      refutation_class is not set on the five refuted claims, because the classes'
+      evidential bars are not defined in this repository (see docs/COORDINATION.md). Proposed
+      when they are: va-wakefield-paper-account-accurate -> fabrication (pending the GMC
+      documents); va-thimerosal-removed-because-harmful -> narrative_drift;
+      va-simpsonwood-autism-hidden -> narrative_drift; va-henry-ford-shows-autism ->
+      misattribution; va-measles-rna-gut -> none of the five fits a good-faith hypothesis that
+      failed a test, which suggests the gradient needs an "honest_error" or "failed_hypothesis"
+      class.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      Contradictions found and resolved in the files: (1) the 1998 abstract says parents
+      linked onset to MMR in 8 of 12, the full text "parents or physician"; both are kept.
+      (2) The partial retraction was signed by 10 of 13 authors (Wakefield, Linnell and Harvey
+      did not sign); "10 of 12" counts without Wakefield. (3) Legal Aid figures differ
+      (judgment: 25,000 GBP in Dec 1996; Deer: an initial 55,000 GBP in Jun 1996); neither is
+      used in a claim. (4) The 2000 and 2006 "1 in 150" and "1 in 110" figures are not printed
+      in the MMWR abstracts; per-1,000 figures are used. (5) Mawson 2017 prints identical ADHD
+      and autism rows. (6) An image-duplication allegation against Mold 2018 was searched for
+      and not found; not filed.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      Not yet read and needed: the GMC findings (2010); the Lancet 1998 full text and the 2004
+      and 2010 notices; the Poling Rule 4(c) report and award; the full Simpsonwood transcript;
+      the Andersson 2025 correction and supplement; Honda 2005 figures; the Jain 2015 erratum;
+      the DeStefano 2004 full text; the court order in AAP v. Kennedy.
+  - id: L-10
+    date: 2026-10-02
+    entry: >
+      INDEPENDENT CHECK by a separate reader who had not written the files: about 175 items
+      checked, about 132 passed, about 12 unverifiable here. Corrected in the same session:
+      (1) the short answer said vaccinated-versus-unvaccinated studies covered thimerosal and
+      aluminum; they compare exposure levels, and the answer now says so and names the
+      unvaccinated gap. (2) Mawson's OR 4.2 is any vaccination, not full vaccination.
+      (3) Jain 2015: 95,727 is all children with older siblings; 1,929 had an affected sibling.
+      (4) Poling: 2010 compensation and the Table-injury framing were not supported by the cited
+      sources; removed from the statement, and the concession date is now "late 2007".
+      Overstatements narrowed: the 2% bound applies to the largest MMR study only; the Danish
+      unexplained share is a range (13% to 67%); aluminum statement split into what was read
+      (neurodevelopmental, abstract) and the press-release autism figure; vaccine-court appeals
+      limited to the 2009 decisions; Henry Ford's autism null is now called uninformative in
+      both directions. Yes positions strengthened where the strongest real evidence was missing:
+      Henry Ford's significant neurodevelopmental results; Hooker & Miller's chart-confirmed
+      subset (OR 13.0, 27/403 vs 3/737); the unverified "generation zero" Simpsonwood analysis;
+      the 2006 Poling case report. Tags corrected where a fetch tool, not a full read, was used.
+      Cochrane's autism estimate confirmed to be the two Danish cohorts (657,461 + 537,303 =
+      1,194,764).

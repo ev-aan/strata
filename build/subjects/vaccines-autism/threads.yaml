@@ -1,0 +1,93 @@
+subject: vaccines-autism
+
+threads:
+
+  - id: thread-wakefield-transmission
+    type: reception-overlay
+    title: "How the MMR-autism claim spread (1998 to 2026)"
+    confers_weight: false   # T4: required for reception overlays
+    description: >
+      The route the claim took, recorded as transmission so that its reach is never read as
+      support. Each step is dated in timeline.yaml.
+    overlay_notes:
+      - >
+        1998: a case series of 12 children in The Lancet (va-wakefield-paper-account-accurate).
+        In England, MMR coverage at age 2 fell to 79.9% by 2003-04 and measles was endemic again
+        by 2008 (va-uk-mmr-uptake-fall).
+      - >
+        2000-2005: the concern moves to thimerosal in the US; the Simpsonwood transcript and
+        "Deadly Immunity" (2005) carry it (va-simpsonwood-autism-hidden, va-deadly-immunity-retracted).
+      - >
+        2008-2011: the Poling concession, the vaccine-court test cases, the Lancet retraction
+        and the BMJ fraud findings; each side cites a different one of these.
+      - >
+        2014-2016: the Thompson statement and the film "Vaxxed" (va-destefano-race-subset).
+      - >
+        2025-2026: the claim is adopted by the US health department; the CDC page changes
+        (va-cdc-page-2025), and the Henry Ford draft is entered into the Senate record
+        (va-henry-ford-shows-autism).
+    firewall: >
+      Reach, repetition and official endorsement are adoption. None of the steps above lends
+      evidential weight to any claim in this dig, including the refuted ones and the
+      established ones.
+
+  - id: thread-real-pieces
+    type: reception-overlay
+    title: "Real facts carrying a conclusion they do not support"
+    confers_weight: false
+    description: >
+      Most of the strongest-sounding evidence for a link starts from something true. This
+      thread records, for each, the true part and the added conclusion, so a reader can see
+      which is which.
+    overlay_notes:
+      - >
+        Poling (va-poling-concession). True: a government concession of an encephalopathy
+        aggravating a mitochondrial disorder with features of autism. Added: "vaccines cause
+        autism" in general.
+      - >
+        Thompson (va-destefano-race-subset). True: race results were reported only for a
+        subsample, and a co-author says a significant subgroup result was left out. Added:
+        that the subgroup result shows MMR causes autism (va-thompson-subgroup-real is open).
+      - >
+        Thimerosal removal (va-thimerosal-removed-because-harmful). True: it was removed.
+        Added: that removal shows harm; the 1999 statement says otherwise.
+      - >
+        Simpsonwood (va-simpsonwood-autism-hidden). True: an early signal for some
+        neurodevelopmental outcomes, discussed in a closed meeting. Added: an autism finding,
+        hidden.
+      - >
+        Walker-Smith (va-wakefield-sanctions). True: his sanction was quashed. Added: that the
+        1998 work was vindicated; the same judgment says the opposite.
+      - >
+        The CDC page (va-cdc-page-2025). True: studies cannot rule out every possible effect.
+        Added: that this makes "vaccines do not cause autism" unsupported.
+      - >
+        Henry Ford (va-henry-ford-shows-autism). True: an unpublished record-based comparison
+        with unvaccinated children exists. Added: that it found more autism; its own tables
+        do not.
+    firewall: >
+      The true part of each item stands on its own claim and weight. The added conclusion
+      gains nothing from being attached to a true fact.
+
+  - id: thread-institutional-stance
+    type: reception-overlay
+    title: "What institutions say, in both directions"
+    confers_weight: false
+    description: >
+      Institutional statements are adoption. They are recorded here, dated, on both sides,
+      so that neither the old consensus nor the new US position can stand in for evidence.
+    overlay_notes:
+      - "IOM 2004: the evidence favors rejecting a causal link for MMR and for thimerosal."
+      - "CDC before Nov 2025: studies have shown no link between vaccines and autism."
+      - "CDC from Nov 2025: 'vaccines do not cause autism' is not an evidence-based claim."
+      - "WHO GACVS, 11 Dec 2025: no evidence of a causal relationship."
+      - "AAP, Nov 2025: there is no link between vaccines and autism."
+      - >
+        US federal court, 16 Mar 2026 (AAP v. Kennedy): preliminary injunction staying the
+        January 2026 schedule change and the new ACIP's appointments and votes; on appeal
+        (argument set for 6 Oct 2026). The order concerns process, not autism.
+      - "Executive Order 14420 (10 Aug 2026): orders a schedule reassessment; does not mention autism."
+    firewall: >
+      Rule 2 applies symmetrically: a health agency asserting a link adds no weight to it, and
+      a health agency denying a link adds no weight to that. The weights in claims.yaml come
+      from the anchors, not from this thread.

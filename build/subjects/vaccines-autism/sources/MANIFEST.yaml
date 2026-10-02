@@ -1,0 +1,520 @@
+# Sources for the vaccines-autism dig, with authenticity entries (rules A1-A10, build/SCHEMA.md).
+# No article text is stored in this repository; copies were read in the session workspace and
+# are identified by sha256 so a reader can fetch the same file and compare.
+# read: full = downloaded and read directly; abstract = PubMed/Europe PMC record only;
+# tool = read through a summarizing fetch tool; quoted = known only as quoted by other sources.
+# Standard test for journal records: "PubMed/Europe PMC record matches DOI, journal, authors and
+# date; retraction and correction links checked in Europe PMC [read]".
+retrieved: 2026-10-02
+sources:
+
+  # ---------------- Origin ----------------
+  - id: src-wakefield-1998
+    title: "Wakefield AJ et al. Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children. Lancet 1998;351:637-41 (RETRACTED 2010)"
+    url: https://europepmc.org/article/MED/9500320
+    document_class: primary_text
+    read: abstract (thelancet.com refused; full-text passages known as quoted in [2012] EWHC 503 paras 153-157)
+    sha256: 57294fcf24c55b8fd59014af3670843022781242150eb589b85cae979342ea53
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed record PMID 9500320 with retraction links to PMIDs 15016483 and 20137807.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], next_step: "Read the retracted full text via a library copy.", checked: 2026-10-02}
+  - id: src-murch-2004
+    title: "Murch SH et al. Retraction of an interpretation. Lancet 2004;363:750"
+    url: https://europepmc.org/article/MED/15016483
+    document_class: primary_text
+    read: abstract (metadata and author list; the notice text is known as quoted)
+    sha256: 98912601e6c99bc55094996405c9243cd4ae89dd512932f733366dd80d9c7ba5
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed record PMID 15016483.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Notice text not read."], next_step: "Read the notice in The Lancet.", checked: 2026-10-02}
+  - id: src-lancet-retraction-2010
+    title: "The Editors of The Lancet. Retraction. Lancet 2010;375:445 (as reported in BMJ 2010;340:c696)"
+    url: https://www.bmj.com/content/340/bmj.c696
+    document_class: primary_text (notice) known through a secondary report
+    read: quoted (BMJ news report read through a fetch tool; PubMed metadata read)
+    sha256: 8cc25fbe5d4bbb7b7fc8e53b3e80371dd2b7655dafbab090e3151518b40184c8
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed record PMID 20137807 (issue 6 Feb 2010); BMJ news of 2 Feb 2010 quotes it.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The notice's own text was not read; its closing wording is unverified."], next_step: "Read the notice in The Lancet.", checked: 2026-10-02}
+  - id: src-walker-smith-2012
+    title: "Walker-Smith v General Medical Council [2012] EWHC 503 (Admin), Mitting J, 7 March 2012"
+    url: https://caselaw.nationalarchives.gov.uk/ewhc/admin/2012/503
+    document_class: primary_text (judgment)
+    read: full
+    sha256: 642c3c5882119ad2f393c2b3c89840e001c760e23bc97dd63a79a03de1087fcb
+    authenticity: {status: authenticated, strength: strong, provenance: "The National Archives' Find Case Law service, the official UK record of judgments (XML).", tests: ["Official host [read]", "Header date, judge and case number internally consistent [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-bmj-gmc-2010
+    title: "Kmietowicz Z. Wakefield is struck off for the 'serious and wide-ranging findings against him'. BMJ 2010;340:c2803"
+    url: https://www.bmj.com/content/340/bmj.c2803
+    document_class: secondary (news report of the GMC decision)
+    read: tool
+    authenticity: {status: not_applicable, basis: "A news report; the GMC's own documents were refused by the UK Government Web Archive."}
+  - id: src-deer-2011
+    title: "Deer B. How the case against the MMR vaccine was fixed. BMJ 2011;342:c5347"
+    url: https://www.bmj.com/content/342/bmj.c5347
+    document_class: interpretive (investigative report against hospital records)
+    read: tool (summary box)
+    authenticity: {status: authenticated, strength: moderate, provenance: "Published by the BMJ; PubMed PMID 21209059.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The underlying hospital records were not seen."], next_step: "None available: the records are confidential.", checked: 2026-10-02}
+  - id: src-godlee-2011
+    title: "Godlee F, Smith J, Marcovitch H. Wakefield's article linking MMR vaccine and autism was fraudulent. BMJ 2011;342:c7452"
+    url: https://www.bmj.com/content/342/bmj.c7452
+    document_class: interpretive (editorial)
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "BMJ; PubMed PMID 21209060.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-hornig-2008
+    title: "Hornig M et al. Lack of association between measles virus vaccine and autism with enteropathy: a case-control study. PLoS ONE 2008;3(9):e3140"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2526159/
+    document_class: material (laboratory results) reported in a primary paper
+    read: full (Europe PMC full-text XML)
+    sha256: a28549267c049a4de49fa7bba9a1424a41baf1b22b058ed6fd2e4fbb5afa91eb
+    authenticity: {status: authenticated, strength: strong, provenance: "Open-access copy from Europe PMC; not retracted.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-nhs-immunisation-2004-05
+    title: "Information Centre. NHS Immunisation Statistics, England 2004-05 (Statistical Bulletin 2005/05)"
+    url: https://digital.nhs.uk/data-and-information/publications/statistical/nhs-immunisation-statistics/nhs-immunisation-statistics-england-2004-05
+    document_class: primary_text (official statistics)
+    read: full
+    sha256: 449a29952a6e57d87db2dcc654e98fd5ad3c15691c0387b63947b23e3da2a68c
+    authenticity: {status: authenticated, strength: strong, provenance: "NHS Digital publication archive (files.digital.nhs.uk).", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-eurosurv-2008
+    title: "Eurosurveillance editorial team. Measles once again endemic in the United Kingdom. Euro Surveill 2008;13(27):18919"
+    url: https://www.eurosurveillance.org/content/10.2807/ese.13.27.18919-en
+    document_class: primary_text (surveillance report quoting the HPA)
+    read: full
+    sha256: da49c0670b35f0f13cca0b3ce26dc9d2e00a85e6ea5a3c5c5955121e8768dd0d
+    authenticity: {status: authenticated, strength: strong, provenance: "Publisher PDF (ECDC journal).", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The HPA bulletin it quotes was refused."], checked: 2026-10-02}
+  - id: src-ukhsa-measles-historic
+    title: "UKHSA. Measles: historic confirmed cases, notifications and deaths (gov.uk, updated 6 Aug 2026)"
+    url: https://www.gov.uk/government/publications/measles-historic-confirmed-cases-notifications-and-deaths
+    document_class: primary_text (official statistics)
+    read: full
+    sha256: 05b267427ca903e9e55b92c7dbef743fe9d585fbd277fbce73d570d21fa1b493
+    authenticity: {status: authenticated, strength: strong, provenance: "gov.uk.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+
+  # ---------------- MMR studies ----------------
+  - id: src-madsen-2002
+    title: "Madsen KM et al. A population-based study of measles, mumps, and rubella vaccination and autism. N Engl J Med 2002;347:1477-82"
+    url: https://europepmc.org/article/MED/12421889
+    document_class: synthetic (cohort statistics)
+    read: abstract (nejm.org refused)
+    sha256: f813c1d1fac16611b2da89cd14988772815f61711c825a29ccc794d94371aaa7
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 12421889; no retraction or correction.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], next_step: "Read the full text (headline requirement).", checked: 2026-10-02}
+  - id: src-hviid-2019
+    title: "Hviid A et al. Measles, Mumps, Rubella Vaccination and Autism: A Nationwide Cohort Study. Ann Intern Med 2019;170:513-20"
+    url: https://europepmc.org/article/MED/30831578
+    document_class: synthetic
+    read: abstract (acpjournals.org refused)
+    sha256: 0812247b77823ca68491a2204418e1a124c8c918664dd348ddc83a59eeba5ff6
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 30831578; no retraction or correction.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text and subgroup tables not read."], next_step: "Read the full text (headline requirement).", checked: 2026-10-02}
+  - id: src-taylor-1999
+    title: "Taylor B et al. Autism and measles, mumps, and rubella vaccine: no epidemiological evidence for a causal association. Lancet 1999;353:2026-29"
+    url: https://europepmc.org/article/MED/10376617
+    document_class: synthetic
+    read: abstract
+    sha256: d7a0fab021143c1bb572f09248385e3ece6db20445b80e9948058977fdecd15f
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 10376617.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], checked: 2026-10-02}
+  - id: src-smeeth-2004
+    title: "Smeeth L et al. MMR vaccination and pervasive developmental disorders: a case-control study. Lancet 2004;364:963-69"
+    url: https://europepmc.org/article/MED/15364187
+    document_class: synthetic
+    read: abstract
+    sha256: bfc1c30d6cc8aa673a30c878b37c4c6c41fe84c784da8af02648aa09c7023e95
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 15364187.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], checked: 2026-10-02}
+  - id: src-jain-2015
+    title: "Jain A et al. Autism occurrence by MMR vaccine status among US children with older siblings with and without autism. JAMA 2015;313:1534-40"
+    url: https://europepmc.org/article/MED/25898051
+    document_class: synthetic
+    read: abstract
+    sha256: ac5b401f1c31497d2e7e2bb50e894770acf0bf0a5cee5893b4e7374bc306df50
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 25898051; erratum JAMA 2016;315:204 listed.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The erratum was not read."], next_step: "Read the erratum before quoting figures on a published page.", checked: 2026-10-02}
+  - id: src-taylor-2014
+    title: "Taylor LE, Swerdfeger AL, Eslick GD. Vaccines are not associated with autism: an evidence-based meta-analysis. Vaccine 2014;32:3623-29"
+    url: https://europepmc.org/article/MED/24814559
+    document_class: synthetic
+    read: abstract
+    sha256: ecfb48bde1455d94dfb5846d8711616a7177ddbaee84df69b241baea09d94ba9
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 24814559.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Forest plots and heterogeneity not read."], checked: 2026-10-02}
+  - id: src-cochrane-2021
+    title: "Di Pietrantonj C et al. Vaccines for measles, mumps, rubella, and varicella in children. Cochrane Database Syst Rev 2021;CD004407.pub5"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8607336/
+    document_class: synthetic
+    read: abstract (abstract and plain-language summary)
+    sha256: a6d28b787978c199a8c4eeb171c4d06d02ba4d71db5b72c39f7c5b8baa7a7676
+    authenticity: {status: authenticated, strength: moderate, provenance: "PMC record; supersedes pub4 (2020).", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Which two studies were pooled for autism was not seen."], next_step: "Read the review's autism analysis.", checked: 2026-10-02}
+  - id: src-honda-2005
+    title: "Honda H, Shimizu Y, Rutter M. No effect of MMR withdrawal on the incidence of autism: a total population study. J Child Psychol Psychiatry 2005;46:572-79"
+    url: https://europepmc.org/article/MED/15877763
+    document_class: synthetic
+    read: abstract (Wiley refused)
+    sha256: 653e7c3d09cf02f98d42409f1968d117350a73e0806f75a0d5e04c8349c5e6aa
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 15877763.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Incidence figures not read."], checked: 2026-10-02}
+  - id: src-iom-2004
+    title: "Institute of Medicine. Immunization Safety Review: Vaccines and Autism. National Academies Press, 2004 (Executive Summary)"
+    url: https://nap.nationalacademies.org/read/10997/chapter/2
+    document_class: interpretive (consensus review)
+    read: full (Executive Summary chapter)
+    sha256: a341fc0ed46f364246e29bcf18aa7a5c78b844aee71341992d20593afa42cd6f
+    authenticity: {status: authenticated, strength: strong, provenance: "National Academies Press.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Body chapters not read."], checked: 2026-10-02}
+
+  # ---------------- Ingredients and schedule ----------------
+  - id: src-mmwr-1999
+    title: "AAP and USPHS. Thimerosal in vaccines: a joint statement. MMWR 1999;48(26), 9 July 1999"
+    url: https://www.cdc.gov/mmwr/preview/mmwrhtml/mm4826a3.htm
+    document_class: primary_text
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "cdc.gov MMWR archive.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Read through a fetch tool; quotes not byte-checked."], next_step: "Download and read directly.", checked: 2026-10-02}
+  - id: src-fda-thimerosal
+    title: "FDA. Thimerosal and Vaccines (updated 15 Jan 2025)"
+    url: https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/thimerosal-and-vaccines
+    document_class: primary_text (regulator's page)
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "fda.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-hhs-thimerosal-2025
+    title: "HHS. Thimerosal (mercury) removed from US flu vaccines, adopting the ACIP vote (23 Jul 2025)"
+    url: https://www.hhs.gov/press-room/thimerosal-mercury-removed-from-us-flu-vaccines-acip.html
+    document_class: primary_text (agency release)
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "hhs.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-cdc-thimerosal
+    title: "CDC. Thimerosal and Vaccines (updated 28 Oct 2025)"
+    url: https://www.cdc.gov/vaccine-safety/about/thimerosal.html
+    document_class: primary_text (agency page)
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "cdc.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-verstraeten-2003
+    title: "Verstraeten T et al. Safety of thimerosal-containing vaccines: a two-phased study of computerized health maintenance organization databases. Pediatrics 2003;112:1039-48"
+    url: https://europepmc.org/article/MED/14595043
+    document_class: synthetic
+    read: abstract
+    sha256: 8bb80c3d4c7dd51255fda1db50c7e95462de9253c513b27ae6e88178b1ef60c1
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 14595043; erratum 2004 listed.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Erratum not read."], checked: 2026-10-02}
+  - id: src-hviid-2003
+    title: "Hviid A et al. Association between thimerosal-containing vaccine and autism. JAMA 2003;290:1763-66"
+    url: https://europepmc.org/article/MED/14519711
+    document_class: synthetic
+    read: abstract
+    sha256: db0f3e9e88564945dd98b5f5c78561c257da84e6c91166bf56173af13aa7bab0
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 14519711.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-madsen-2003
+    title: "Madsen KM et al. Thimerosal and the occurrence of autism: negative ecological evidence from Danish population-based data. Pediatrics 2003;112:604-6"
+    url: https://europepmc.org/article/MED/12949291
+    document_class: synthetic
+    read: abstract
+    sha256: 9d5439ec708d316dd7312dcb99156af00cf08e15ae1c9466a98f0e5c903cb320
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 12949291.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-schechter-2008
+    title: "Schechter R, Grether JK. Continuing increases in autism reported to California's developmental services system: mercury in retrograde. Arch Gen Psychiatry 2008;65:19-24"
+    url: https://europepmc.org/article/MED/18180424
+    document_class: synthetic
+    read: abstract
+    sha256: 071d04d3b774a326e3b0cee1cfe0986a6237e7fa32f7ce7c8f45c0725f5c27c1
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 18180424.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-price-2010
+    title: "Price CS et al. Prenatal and infant exposure to thimerosal from vaccines and immunoglobulins and risk of autism. Pediatrics 2010;126:656-64"
+    url: https://europepmc.org/article/MED/20837594
+    document_class: synthetic
+    read: abstract
+    sha256: 7348574042c010a1d7dad01104379ad4a5003a04c7ec0af42cca64368f04acf8
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 20837594.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-andersson-2025
+    title: "Andersson NW et al. Aluminum-adsorbed vaccines and chronic diseases in childhood: a nationwide cohort study. Ann Intern Med 2025;178:1369-77 (correction 178:1527)"
+    url: https://europepmc.org/article/MED/40658954
+    document_class: synthetic
+    read: abstract; autism hazard ratio from the ACP press release (https://www.eurekalert.org/news-releases/1090832)
+    sha256: 3736a4a696d091a1f60696f496153d776f86b66b62f9e3473dc4710a17efc3a5
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 40658954; correction PMID 40674587.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text, correction and supplement not read."], next_step: "Read the full text, the correction and the supplement.", checked: 2026-10-02}
+  - id: src-who-gacvs-2025
+    title: "WHO Global Advisory Committee on Vaccine Safety. Statement on vaccines and autism, 11 December 2025"
+    url: https://www.who.int/news/item/11-12-2025-statement-gacvs-vaccines-autism
+    document_class: interpretive (expert review)
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "who.int.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-doyon-plourde-2026
+    title: "Doyon-Plourde P et al. Aluminium adjuvants in vaccines and potential health effects: systematic review. BMJ 2026;393:e088921"
+    url: https://europepmc.org/article/MED/42091164
+    document_class: synthetic
+    read: abstract
+    sha256: dfd7cbd092fc8e956b4f223d1a376f58db9eb674899d8a9809ba7554634b7f99
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 42091164; doi:10.1136/bmj-2025-088921.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read; the autism result is taken from the source pass, not re-read here."], next_step: "Read the review's autism findings.", checked: 2026-10-02}
+  - id: src-jablonowski-2026
+    title: "Jablonowski K, Hooker B. Reanalysis of Andersson et al. 2025. Integr Med (Encinitas) 2026 (PMID 42730380)"
+    url: https://europepmc.org/article/MED/42730380
+    document_class: synthetic
+    read: abstract
+    sha256: 787f0f8393b3979b555e2738f04fbb634ce73f8b69dc5aaf7e49f10ddb4c70b6
+    authenticity: {status: authenticated, strength: weak, provenance: "PubMed PMID 42730380.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text unreachable; claim about the supplement unchecked."], next_step: "Read it alongside the Andersson supplement.", checked: 2026-10-02}
+  - id: src-mold-2018
+    title: "Mold M, Umar D, King A, Exley C. Aluminium in brain tissue in autism. J Trace Elem Med Biol 2018;46:76-82"
+    url: https://www.sciencedirect.com/science/article/pii/S0946672X17308763
+    document_class: material (measurements) without controls
+    read: abstract and article page (tool); criticism via Retraction Watch, 13 Dec 2017
+    sha256: cf2d8a6cfa3301c84ac47f80ad9139bafec2d5a66a33983a131490b9fa61c5f9
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 29413113; no correction or expression of concern listed.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["PubPeer could not be checked."], checked: 2026-10-02}
+  - id: src-destefano-2013
+    title: "DeStefano F, Price CS, Weintraub ES. Increasing exposure to antibody-stimulating proteins and polysaccharides in vaccines is not associated with risk of autism. J Pediatr 2013;163:561-67"
+    url: https://europepmc.org/article/MED/23545349
+    document_class: synthetic
+    read: abstract
+    sha256: 6bae6ec2cd1dd608f8ec4b1225783c507b541df0441b31db02a15ec5863ded5f
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 23545349.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-iom-2013
+    title: "Institute of Medicine. The Childhood Immunization Schedule and Safety. National Academies Press, 2013 (Summary)"
+    url: https://www.ncbi.nlm.nih.gov/books/NBK206938/
+    document_class: interpretive (consensus review)
+    read: tool (Summary chapter)
+    sha256: a7a9a1d2ea0847152bef9a99ae36eb741c72e2a3ab8c53afca1b0433835b748e
+    authenticity: {status: authenticated, strength: strong, provenance: "NCBI Bookshelf copy of the NAP report.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-mawson-2017
+    title: "Mawson AR, Ray BD, Bhuiyan AR, Jacob B. Pilot comparative study on the health of vaccinated and unvaccinated 6- to 12-year-old U.S. children. J Transl Sci 2017;3(3)"
+    url: https://www.oatext.com/pdf/JTS-3-186.pdf
+    document_class: synthetic (survey statistics)
+    read: full
+    sha256: be5437c04ac588721dd1ecb3f3c7f0688892c3370e34ddb61d96163ac78bca9d
+    authenticity: {status: authenticated, strength: moderate, provenance: "Publisher PDF (OA Text). Earlier accepted abstract withdrawn by Frontiers in Public Health in Nov 2016 (secondary: Retraction Watch).", tests: ["Publisher host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-hooker-miller-2021
+    title: "Hooker BS, Miller NZ. Health effects in vaccinated versus unvaccinated children, with covariates for breastfeeding status and type of birth. J Transl Sci 2021;7"
+    url: https://www.oatext.com/pdf/JTS-7-459.pdf
+    document_class: synthetic (survey statistics)
+    read: full
+    sha256: 413846a86d8b3ec0cb4b72605360b54ac3b4913d5d2ec59eb90a3b002e92ca22
+    authenticity: {status: authenticated, strength: moderate, provenance: "Publisher PDF (OA Text).", tests: ["Publisher host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-hooker-miller-2020-eoc
+    title: "SAGE Open Medicine. Expression of Concern for Hooker & Miller 2020 (18 May 2026)"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13187378/
+    document_class: primary_text (journal notice)
+    read: full
+    sha256: 699a59101ee04c38b0ec1eaf2fdf18eb20b9bb5904abbbb19ad59896c0be5f89
+    authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-henry-ford-draft
+    title: "Lamerato L, Chatfield A, Tang A, Zervos M. Impact of Childhood Vaccination on Short and Long-Term Chronic Health Outcomes in Children: A Birth Cohort Study (unpublished draft, entered into the record of the Senate PSI hearing, 9 Sep 2025)"
+    url: https://www.hsgac.senate.gov/wp-content/uploads/Entered-into-hearing-record-Impact-of-Childhood-Vaccination-on-Short-and-Long-Term-Chronic-Health-Outcomes-in-Children-A-Birth-Cohort-Study.pdf
+    document_class: primary_text (the draft) reporting synthetic results
+    read: full (24 pages)
+    sha256: 92df016032c84ad4742585fc4087d84fbdd8125d386ae1414fe571103a31d18d
+    authenticity: {status: authenticated, strength: moderate, provenance: "Served by senate.gov as entered into the hearing record; Henry Ford Health's statement of 26 Sep 2025 confirms the draft and its authors.", tests: ["Official host [read]", "Content match with Henry Ford Health's description of the draft [read via fetch tool]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not peer reviewed; no final version exists."], checked: 2026-10-02}
+  - id: src-henry-ford-statement
+    title: "Henry Ford Health. Statement on vaccine study, 26 Sep 2025"
+    url: https://www.henryford.com/news/2025/09/vaccine-study-henry-ford-health
+    document_class: primary_text (institution's statement)
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "henryford.com.", tests: ["Institution's own host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-siri-testimony
+    title: "Aaron Siri, written testimony, Senate PSI hearing, 9 Sep 2025"
+    url: https://www.hsgac.senate.gov/subcommittees/investigations/hearings/how-the-corruption-of-science-has-impacted-public-perception-and-policies-regarding-vaccines/siri-testimony-2/
+    document_class: primary_text (testimony)
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "senate.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-ozonoff-2010
+    title: "Ozonoff S et al. A prospective study of the emergence of early behavioral signs of autism. J Am Acad Child Adolesc Psychiatry 2010;49:256-66"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2923050/
+    document_class: synthetic (observational measures)
+    read: full (NIH author manuscript)
+    sha256: a0e160c24dcafecea249eaa78bd25f8bd8227e0c835e238269d7b10dd8e4f390
+    authenticity: {status: authenticated, strength: strong, provenance: "PMC author manuscript.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+
+  # ---------------- Insider and legal ----------------
+  - id: src-destefano-2004
+    title: "DeStefano F et al. Age at first measles-mumps-rubella vaccination in children with autism and school-matched control subjects. Pediatrics 2004;113:259-66"
+    url: https://europepmc.org/article/MED/14754936
+    document_class: synthetic
+    read: abstract (publisher refused)
+    sha256: 95e83d01fa852c265a9e950daffe52029e062f89503cd14623af7908f0050407
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 14754936.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text and race-stratified tables not read."], next_step: "Read the full text.", checked: 2026-10-02}
+  - id: src-thompson-2014
+    title: "Statement of William W. Thompson, Ph.D., Regarding the 2004 Article Examining the Possibility of a Relationship Between MMR Vaccine and Autism (Morgan Verkamp LLC, 27 Aug 2014)"
+    url: https://cdctruth.org/
+    document_class: primary_text (statement)
+    read: full (a third-party PDF printout of the law firm's page, hosted under cdctruth.org/wp-content/uploads/; exact file path not recorded in this pass; the original URL now returns 404)
+    sha256: 3bed9a718869d4f1c5621c386089e1b9eead31f02cbd46e6720f33f97c056747
+    authenticity: {status: authenticated, strength: weak, provenance: "Web-to-PDF conversion of the Morgan Verkamp page hosted by an advocacy site (cdctruth.org); the law firm's own page is gone.", tests: ["Content match with the CDC's response, which addresses the same claims [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not compared with an archive capture of the law firm's page (archive.org refused)."], next_step: "Compare with an Internet Archive capture of morganverkamp.com from Aug 2014.", checked: 2026-10-02}
+  - id: src-cdc-2004-study-statement
+    title: "CDC. Statement: 2004 MMR and Autism Study (archived page, last reviewed 24 Aug 2020)"
+    url: https://archive.cdc.gov/
+    document_class: primary_text (agency statement)
+    read: full (archived page; exact archive path not recorded in this pass)
+    sha256: 3fed56fc33b8e8dc099e34bae0c15cb65e3dc47c7a92ec8fbdc750a63c4e310e
+    authenticity: {status: authenticated, strength: moderate, provenance: "archive.cdc.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Original 2014 issue date and full archive URL not recorded."], next_step: "Record the exact archive URL.", checked: 2026-10-02}
+  - id: src-hooker-2014
+    title: "Hooker BS. Measles-mumps-rubella vaccination timing and autism among young African American boys: a reanalysis of CDC data. Transl Neurodegener 2014;3:16 (RETRACTED)"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4128611/
+    document_class: synthetic
+    read: full
+    sha256: ba7d983ebe4af5e937401e257cac4374ad92110bf964e78939a086d3ee30e66f
+    authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text; tagged Retracted Publication.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-hooker-2014-retraction
+    title: "Retraction Note. Transl Neurodegener 2014;3:22 (3 Oct 2014)"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4183946/
+    document_class: primary_text (journal notice)
+    read: full
+    sha256: 9f40a964a3402f019fe766298f2aefe237a2aa2ba2b8dcbd18b3c97709322c30
+    authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-simpsonwood-2000
+    title: "Scientific Review of Vaccine Safety Datalink Information, 7-8 June 2000, Simpsonwood Retreat Center (transcript, 259 pp.)"
+    url: https://stacks.cdc.gov/view/cdc/253137
+    document_class: primary_text (transcript)
+    read: tool (about pages 1-57)
+    authenticity: {status: authenticated, strength: moderate, provenance: "CDC Stacks, the CDC's own repository.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["About 200 pages not read; no local copy (direct download refused)."], next_step: "Download and read the full PDF.", checked: 2026-10-02}
+  - id: src-salon-2011
+    title: "Lauerman K. Correcting our record. Salon, 16 Jan 2011"
+    url: https://www.salon.com/2011/01/16/dangerous_immunity/
+    document_class: primary_text (publisher notice)
+    read: full
+    sha256: 1cf40aaddf84eaf767a8871127477a53d02d054ab4cb3e5b6b1f43b65223eb03
+    authenticity: {status: authenticated, strength: strong, provenance: "salon.com.", tests: ["Publisher host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-poling-cnn-2008
+    title: "CNN. Vaccine case draws new attention to autism debate (6 Mar 2008)"
+    url: https://www.cnn.com/2008/HEALTH/conditions/03/06/vaccines.autism/index.html
+    document_class: secondary (news report quoting the concession and CDC)
+    read: tool
+    authenticity: {status: not_applicable, basis: "A news report. The Rule 4(c) report itself was not reachable."}
+  - id: src-poling-npr-2008
+    title: "NPR. Case Stokes Debate About Autism, Vaccines (7 Mar 2008)"
+    url: https://www.npr.org/2008/03/07/87974932/case-stokes-debate-about-autism-vaccines
+    document_class: secondary
+    read: search result only (not opened)
+    authenticity: {status: not_applicable, basis: "A news report; corroboration only."}
+  - id: src-oap-decisions
+    title: "US Court of Federal Claims. Autism decisions and background information (Cedillo, Hazlehurst, Snyder 2009; King, Mead, Dwyer 2010) and Federal Circuit affirmances"
+    url: https://www.uscfc.uscourts.gov/autism-decisions-and-background-information
+    document_class: primary_text (court decisions)
+    read: tool (the court's file host refused direct download)
+    authenticity: {status: authenticated, strength: moderate, provenance: "uscfc.uscourts.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["No local copies; reporter citations unverified."], next_step: "Download the six decisions and two Federal Circuit opinions.", checked: 2026-10-02}
+  - id: src-bruesewitz
+    title: "Bruesewitz v. Wyeth LLC, 562 U.S. 223 (2011)"
+    url: https://www.law.cornell.edu/supremecourt/text/09-152
+    document_class: primary_text (opinion)
+    read: full (syllabus, opinion, concurrence, dissent)
+    sha256: 9f6d713f25bbe5e962c3789b1b7e260502cc1ce277fde6d142fa37f338c12faf
+    authenticity: {status: authenticated, strength: moderate, provenance: "Cornell LII copy; supremecourt.gov PDF returned 404.", tests: ["Content match across the four parts; case number and vote consistent [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not byte-compared with the official slip opinion."], checked: 2026-10-02}
+  - id: src-vicp-table
+    title: "42 CFR 100.3, Vaccine Injury Table (eCFR, as of 30 Sep 2026)"
+    url: https://www.ecfr.gov/current/title-42/chapter-I/subchapter-J/part-100/section-100.3
+    document_class: primary_text (regulation)
+    read: full
+    sha256: 171e87b4fe1665cd98b9701672240b1413debbed8e8d1d48e78e3a2f261e9d5d
+    authenticity: {status: authenticated, strength: strong, provenance: "eCFR versioner API.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-geier-md-2015
+    title: "Maryland Court of Special Appeals, Geier v. Maryland State Board of Physicians, Nos. 722 & 2256, Sept. Term 2014 (1 Oct 2015); with the 2017 and 2019 opinions"
+    url: https://mdcourts.gov/data/opinions/cosa/2015/0722s14.pdf
+    document_class: primary_text (court opinions)
+    read: full
+    sha256: ca4c1e0b9cf2300872fb5c1bb138e44df69c9be379a1e1ae23e6db2e47541dda
+    authenticity: {status: authenticated, strength: strong, provenance: "mdcourts.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The Board's own order not read."], checked: 2026-10-02}
+  - id: src-stat-geier-2025
+    title: "STAT. Report on David Geier's role at HHS (26 Mar 2025), following the Washington Post (25 Mar 2025)"
+    url: https://www.statnews.com/
+    document_class: secondary
+    read: tool (exact article URL not recorded in this pass)
+    authenticity: {status: not_applicable, basis: "A news report; HHS has not published the appointment."}
+
+  # ---------------- Prevalence and causes ----------------
+  - id: src-addm-2007
+    title: "CDC ADDM Network. Prevalence of autism spectrum disorders, surveillance year 2000. MMWR Surveill Summ 2007;56(1):1-11"
+    url: https://europepmc.org/article/MED/17287714
+    document_class: synthetic (surveillance statistics)
+    read: abstract (cdc.gov refused)
+    sha256: 12a5da55933e1058b5b76d20abda80f3e1e353f8c94b2a584e5d65bbc6282bce
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 17287714.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-addm-2025
+    title: "Shaw KA et al. Prevalence and early identification of autism spectrum disorder, surveillance year 2022. MMWR Surveill Summ 2025;74(2):1-22"
+    url: https://europepmc.org/article/MED/40232988
+    document_class: synthetic
+    read: abstract
+    sha256: a3b3bebfaae7e88be96657eaf5f598456e8906483944660d0ba5d4610d5b5e0b
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 40232988.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-hansen-2015
+    title: "Hansen SN, Schendel DE, Parner ET. Explaining the increase in the prevalence of autism spectrum disorders. JAMA Pediatr 2015;169:56-62"
+    url: https://europepmc.org/article/MED/25365033
+    document_class: synthetic
+    read: abstract
+    sha256: 503449feb02971500ed8f2d56ac8fbd71e0137d5d80e0ee5880dbb6849b2ba2c
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 25365033.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-shattuck-2006
+    title: "Shattuck PT. The contribution of diagnostic substitution to the growing administrative prevalence of autism in US special education. Pediatrics 2006;117:1028-37"
+    url: https://europepmc.org/article/MED/16585296
+    document_class: synthetic
+    read: abstract
+    sha256: c4626aa8d96014aa5dd007ad8649acbd60240ceb32afa8f241b80bc7de265cbc
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 16585296.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-rosen-2021
+    title: "Rosen NE, Lord C, Volkmar FR. The Diagnosis of Autism: From Kanner to DSM-III to DSM-5 and Beyond. J Autism Dev Disord 2021"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8531066/
+    document_class: interpretive (review)
+    read: full
+    sha256: 7075ad8bed58661da38faa146105d7e6bbd805da59b67e17c71d5b53c375ac39
+    authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-sandin-2017
+    title: "Sandin S et al. The Heritability of Autism Spectrum Disorder. JAMA 2017;318:1182-84"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5818813/
+    document_class: synthetic
+    read: full
+    sha256: 8f380fdf562928617b29956861d88b0b717045e3654b69bcc3773ce55ad0a33a
+    authenticity: {status: authenticated, strength: strong, provenance: "PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-bai-2019
+    title: "Bai D et al. Association of Genetic and Environmental Factors With Autism in a 5-Country Cohort. JAMA Psychiatry 2019;76:1035-43"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6646998/
+    document_class: synthetic
+    read: full (key points and abstract extracted from the full text)
+    sha256: 84b5411982fab5fa8cd0071f60485cf0675933c40129c5c6c50b0be23deea4a9
+    authenticity: {status: authenticated, strength: strong, provenance: "PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-modabbernia-2017
+    title: "Modabbernia A, Velthorst E, Reichenberg A. Environmental risk factors for autism: an evidence-based review of systematic reviews and meta-analyses. Mol Autism 2017;8:13"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5356236/
+    document_class: synthetic (review)
+    read: full
+    sha256: b2b96b816883f0f692a0b14ec07d1fa783e50c209dd80a37bf2d87f9e000d977
+    authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-cdc-autism-page
+    title: "CDC. Autism and Vaccines (page dated 22 Jul 2026)"
+    url: https://www.cdc.gov/vaccine-safety/about/autism.html
+    document_class: primary_text (agency page)
+    read: tool (three fetches on 2 Oct 2026)
+    authenticity: {status: authenticated, strength: moderate, provenance: "cdc.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Read through a fetch tool; the Nov 2025 version not read from an archive."], next_step: "Capture the live page and an archive copy of the Nov 2025 version.", checked: 2026-10-02}
+  - id: src-stat-cdc-page-2025
+    title: "STAT. RFK Jr. confirms he ordered CDC website changes on vaccines and autism (21 Nov 2025)"
+    url: https://www.statnews.com/2025/11/21/rfk-jr-ordered-vaccines-autism-cdc-website-change/
+    document_class: secondary
+    read: search result and source pass (secondary)
+    authenticity: {status: not_applicable, basis: "A news report."}
+  - id: src-annenberg-2026
+    title: "Annenberg Public Policy Center. About 1 in 3 Americans Say RFK Jr. Recommends Measles Vaccine (29 Sep 2026; ASAPH survey, 4-17 Aug 2026)"
+    url: https://www.annenbergpublicpolicycenter.org/about-1-in-3-americans-say-rfk-jr-recommends-measles-vaccine/
+    document_class: secondary (survey report) used only for adoption weight
+    read: tool
+    authenticity: {status: authenticated, strength: moderate, provenance: "annenbergpublicpolicycenter.org.", tests: ["Publisher host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+
+  # ---------------- Exceptions and open questions ----------------
+  - id: src-chess-1977
+    title: "Chess S. Follow-up report on autism in congenital rubella. J Autism Child Schizophr 1977;7:69-81"
+    url: https://europepmc.org/article/MED/576606
+    document_class: material (clinical examination)
+    read: abstract
+    sha256: 5eb6b230410117bcfd9b3c8e165fad0340b8d2f585274a80aaae514ef01491c8
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 576606.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], checked: 2026-10-02}
+  - id: src-chess-1978
+    title: "Chess S, Fernandez P, Korn S. Behavioral consequences of congenital rubella. J Pediatr 1978;93:699-703"
+    url: https://europepmc.org/article/MED/702254
+    document_class: material
+    read: abstract
+    sha256: 633ff79fb309c3ead06c2d17feb314d74bb60bae50b93ecb544780844078318e
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 702254.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], checked: 2026-10-02}
+  - id: src-berger-2011
+    title: "Berger BE, Navar-Boggan AM, Omer SB. Congenital rubella syndrome and autism spectrum disorder prevented by rubella vaccination, United States, 2001-2010. BMC Public Health 2011;11:340"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3123590/
+    document_class: synthetic (model)
+    read: full
+    sha256: 660241b627280d31e53bd54661c4e01390eebd2316e51020b570b3138b1bba27
+    authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC open-access full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-rossignol-frye-2012
+    title: "Rossignol DA, Frye RE. Mitochondrial dysfunction in autism spectrum disorders: a systematic review and meta-analysis. Mol Psychiatry 2012;17:290-314"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3285768/
+    document_class: synthetic (review)
+    read: full
+    sha256: eabc3a28a7d0d2a4ae184b91d9173d485d698de3c957009f39cfc91ac51d46f0
+    authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-poling-2006
+    title: "Poling JS, Frye RE, Shoffner J, Zimmerman AW. Developmental regression and mitochondrial dysfunction in a child with autism. J Child Neurol 2006"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2536523/
+    document_class: synthetic (case report with a retrospective chart series)
+    read: abstract
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 16566887; PMC2536523.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], checked: 2026-10-02}
+  - id: src-shoffner-2010
+    title: "Shoffner J et al. Fever plus mitochondrial disease could be risk factors for autistic regression. J Child Neurol 2010;25:429-34"
+    url: https://europepmc.org/article/MED/19773461
+    document_class: synthetic (retrospective chart review)
+    read: abstract
+    sha256: d9e87df1463f95cec20b7addf9c94c0241357e4f996aaf55f03557853481406e
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 19773461.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], next_step: "Read the full text.", checked: 2026-10-02}
