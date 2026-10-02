@@ -1,0 +1,77 @@
+# Publish-gate review record (docs/PUBLISH_GATE.md). status: pending | passed | passed_with_open_items | grandfathered | failed
+subject: eikon-basilike
+status: grandfathered
+checks:
+- check: 'conformance: no errors for this subject'
+  result: FAIL
+  detail: 'ERROR    publish-gate:eikon-basilike: published subject has no review.yaml (docs/PUBLISH_GATE.md)'
+- check: headline present, 70-95 characters
+  result: pass
+  detail: 93 characters
+- check: headline claim is established/refuted at high confidence with a primary check, or status is draft
+  result: pass
+  detail: 'eikon-milton-pamela-charge: established, high, anchor_checked primary; headline_status draft'
+- check: headline_status is draft or review before the gate passes
+  result: pass
+  detail: draft
+- check: assessment present with question, answer, headline, text, basis, would_settle
+  result: pass
+  detail: ''
+- check: assessment has exactly three key_points
+  result: pass
+  detail: '3'
+- check: assessment states no percentage
+  result: pass
+  detail: ''
+- check: taxonomy entry (area and question types)
+  result: pass
+  detail: ''
+- check: every claim has statement_kind
+  result: pass
+  detail: ''
+- check: every searched gap names its next step
+  result: pass
+  detail: ''
+- check: sources manifest exists
+  result: pass
+  detail: ''
+- check: every source has an authenticity block
+  result: pass
+  detail: ''
+- check: log has entries
+  result: pass
+  detail: ''
+- check: timeline present (dates exist, so a timeline is required)
+  result: pass
+  detail: ''
+open_items:
+- 'conformance: no errors for this subject: ERROR    publish-gate:eikon-basilike: published subject has no review.yaml (docs/PUBLISH_GATE.md)'
+- Established claims anchored below primary are shown on the page as limits (anchor_checked).
+needs_manual_check:
+- '1 established/refuted claims anchored below primary: eikon-gauden-claimed-authorship'
+- 'quote not matched in stored sources (OCR noise possible): eikon-milton-pamela-charge (match 0.00): "the 3d. Book of Sir
+  Philips Arcadia p. 248..."'
+- 'quote not matched in stored sources (OCR noise possible): eikon-milton-pamela-charge (match 0.44): "the first Prayer of
+  his Majestie, deliverd to Dr. Juxon..."'
+- 'quote not matched in stored sources (OCR noise possible): eikon-milton-pamela-charge (match 0.00): "...a Prayer stol''n
+  word for word from the mouth of Heathen fiction pra..."'
+- 'quote not matched in stored sources (OCR noise possible): eikon-milton-pamela-charge (match 0.00): "...may satisfie thir
+  own eyes at leasure in the 3d. Book of Sir Philip..."'
+- 'quote not matched in stored sources (OCR noise possible): eikon-text-tested-is-second-issue (match 0.00): "This issue appeared
+  within a few days of the death the King, probably ..."'
+- 'dates, names, patent or document numbers: verify each against the source'
+- every refuted claim names its target and rests on material or primary-text evidence (Rule 9)
+- no claim goes beyond what was read; anything not read is marked not read
+conformance_warnings: 2
+established_or_refuted_without_primary_check:
+- eikon-gauden-claimed-authorship
+quotes:
+  found_in_stored_sources: 0
+  not_found_in_stored_sources: 5
+  no_stored_source_to_check_against: 0
+reviewed_by: Claude (build session), partial review; no independent reviewer
+reviewed_on: '2026-10-02'
+notes: 'Published by the owner before the gate existed. Read directly: the EEBO-TCP texts of the King''s Book, Eikonoklastes
+  (1650 edition) and related papers, and the printed passages quoted. The authorship claims rest on summaries from the Q-002
+  page and were not each re-read. Computed results were reproduced from the published code, which tests the code and not the
+  method. Headline status is draft.'

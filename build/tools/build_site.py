@@ -166,6 +166,11 @@ os.makedirs(os.path.join(OUT, "bounties"), exist_ok=True)
 open(os.path.join(OUT, "bounties", "index.html"), "w", encoding="utf-8").write(
     f'<!doctype html><meta charset="utf-8"><title>Moved</title><meta http-equiv="refresh" content="0; url=../#questions"><link rel="canonical" href="https://{CFG["domain"]}/#questions"><p>These pages are now <a href="../#questions">open questions</a>.</p>')
 
+for _s in CFG["publish"]:
+    _rp = os.path.join(ROOT, "build", "subjects", _s, "review.yaml")
+    _st = (yaml.safe_load(open(_rp)) or {}).get("status") if os.path.exists(_rp) else None
+    if _st not in ("passed", "passed_with_open_items", "grandfathered"):
+        sys.exit(f"Refusing to publish `{_s}`: its review.yaml is missing or not passed (status: {_st}). See docs/PUBLISH_GATE.md.")
 digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/ideas/", "/method/", "/corrections/", "/about/"]
 for sub in CFG["publish"]:
     base = os.path.join(ROOT, "build", "subjects", sub)
@@ -213,6 +218,10 @@ for sub in CFG["publish"]:
             body += (f'<div class="claim"><p><b>{E(ch["challenge"])}</b></p><p><span class="pill s-{"established" if ch["result"] == "answered" else "contested"}">{E(lab[ch["result"]])}</span> '
                      f'<span class="small">raised by: {E(ch["raised_by"])}</span></p><p>{E(" ".join(str(ch["answer"]).split()))}</p>'
                      f'<details><summary>Test and claims</summary><p>{E(ch["test"])}</p>{("<p>" + ref + "</p>") if ref else ""}</details></div>')
+    _rv = yaml.safe_load(open(os.path.join(base, "review.yaml"))) if os.path.exists(os.path.join(base, "review.yaml")) else {}
+    _rl = {"passed": "passed", "passed_with_open_items": "passed with open items", "grandfathered": "published before the review gate existed; partial review, no independent reviewer"}.get(_rv.get("status"), "")
+    if _rl:
+        body += f'<h2>Publication review</h2><p class="small">Status: <b>{E(_rl)}</b> · reviewed {E(_rv.get("reviewed_on", ""))}. {E(" ".join(str(_rv.get("notes", "")).split()))} <a href="review.yaml">The review record</a>.</p>'
     body += '<h2>All claims</h2>' + "".join(claim_html(c) for c in sorted(cl["claims"], key=lambda c: order.get(c.get("state"), 9)))
     if srcs:
         body += '<h2>Sources</h2><ul class="l">'
@@ -230,6 +239,7 @@ for sub in CFG["publish"]:
          "publisher": {"@type": "Organization", "name": CFG["name"], "url": f"https://{CFG['domain']}/"}}).replace("</", "<\\/") + '</script>'
     write(f"digs/{slug}/index.html", page(head, body, " ".join(str(cl.get("search_summary", "")).split()), f"/digs/{slug}/", ld, depth=2))
     shutil.copy(os.path.join(base, "claims.yaml"), os.path.join(OUT, "digs", slug, "claims.yaml"))
+    if os.path.exists(os.path.join(base, "review.yaml")): shutil.copy(os.path.join(base, "review.yaml"), os.path.join(OUT, "digs", slug, "review.yaml"))
     if srcs: shutil.copy(mp, os.path.join(OUT, "digs", slug, "MANIFEST.yaml"))
     if has_tl:
         os.makedirs(os.path.join(OUT, "digs", slug, "timeline"), exist_ok=True)

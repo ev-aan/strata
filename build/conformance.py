@@ -318,6 +318,20 @@ def check_history(r, base):
             r.err(rel, f"claim `{cid}` was deleted; retire it with a state change, never remove it")
 
 
+def check_publish_gate(r):
+    sp = os.path.join(os.path.dirname(SUBJECTS), "site.yaml")
+    if not os.path.exists(sp):
+        return
+    for s in (load(sp) or {}).get("publish") or []:
+        rp = os.path.join(SUBJECTS, s, "review.yaml")
+        if not os.path.exists(rp):
+            r.err(f"publish-gate:{s}", "published subject has no review.yaml (docs/PUBLISH_GATE.md)")
+            continue
+        st = (load(rp) or {}).get("status")
+        if st not in ("passed", "passed_with_open_items", "grandfathered"):
+            r.err(f"publish-gate:{s}", f"review status `{st}` does not allow publishing")
+
+
 def check_taxonomy(r, subjects):
     tp = os.path.join(os.path.dirname(SUBJECTS), "taxonomy.yaml")
     if not os.path.exists(tp):
@@ -554,6 +568,7 @@ def main():
         except yaml.YAMLError as e:
             r.err(os.path.basename(sdir), f"YAML does not parse: {e}")
     check_taxonomy(r, subjects)
+    check_publish_gate(r)
     check_definitions(r)
     nodes = check_nodes(r)
     if args.base:
