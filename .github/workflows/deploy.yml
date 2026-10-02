@@ -1,9 +1,11 @@
-name: Deploy to GitHub Pages
+name: Check and deploy to GitHub Pages
+
+# Every push and pull request runs the conformance check (build/conformance.py).
+# The site deploys only from main, and only if the check passes.
 
 on:
   push:
-    branches:
-      - main
+  pull_request:
 
 permissions:
   contents: read
@@ -11,11 +13,38 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
+  conformance:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (full history, for the append-only log check)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install YAML parser
+        run: python3 -m pip install --quiet pyyaml
+
+      - name: Run conformance check
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="origin/${{ github.base_ref }}"
+          else
+            BASE="${{ github.event.before }}"
+          fi
+          if [ -n "$BASE" ] && git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            python3 build/conformance.py --base "$BASE"
+          else
+            echo "No earlier commit to compare against; skipping history rules."
+            python3 build/conformance.py
+          fi
+
   deploy:
+    needs: conformance
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
