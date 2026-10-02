@@ -2,7 +2,7 @@
 
 Stratah shows the honestly weighted shape of what is known. It keeps the evidence for a belief separate from the number of people who hold it, and it stays honest about what is not yet known. Anyone can propose a dig, a test or a challenge. Every contribution has to follow the rules below. A change that breaks them is not merged, however good its conclusion looks.
 
-The same rules are on the site at [ev-aan.github.io/strata/method/](https://ev-aan.github.io/strata/method/).
+The same rules are on the site at [ev-aan.github.io/stratah/method/](https://ev-aan.github.io/stratah/method/).
 
 ---
 
