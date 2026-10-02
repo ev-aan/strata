@@ -48,3 +48,14 @@ log:
       number': ascending roll number, 2023 before 2024. (f) Member rule unchanged: first by last name from each party
       whose vote differed from that party's majority on that roll call. Not-voting and Present do not count as
       differing. If a clarification turns out to be wrong it will be logged, not edited.
+  - id: L-07
+    date: "2026-10-02"
+    entry: >
+      SELECTION APPLIED mechanically per L-06 (no member record read yet). Fetched all 724 House roll calls of 2023 and
+      517 of 2024 from the Clerk's XML (1,241 files). 357 were bill or joint-resolution passage votes; 20 met the
+      at-least-10-per-party-per-side test (full list: candidates.yaml). FIRST candidate by roll number: 2023 roll 243,
+      31 May 2023, H.R. 3746, 'Fiscal Responsibility Act', On Passage, 314 yea 117 nay (D 165-46, R 149-71), Passed.
+      Members (first by last name whose vote differed from their party's majority): DEMOCRAT Barragan (CA, bioguide
+      B001300), voted No against a Yea majority; REPUBLICAN Alford (MO, bioguide A000379), voted No against a Yea
+      majority. Both selections are final under rule item 5: no swapping if no promise is found.
+      NOTE: the rule selects members who differ from their party, so findings describe unusual cases (limit already in protocol).

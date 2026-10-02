@@ -1,0 +1,223 @@
+rule: build/subjects/congress-promise-vote/log.yaml L-06
+generated: '2026-10-02'
+candidates:
+- year: 2023
+  roll: 243
+  date: 31-May-2023
+  bill: H R 3746
+  question: On Passage
+  description: Fiscal Responsibility Act
+  D_yea: 165
+  D_nay: 46
+  R_yea: 149
+  R_nay: 71
+  source: https://clerk.house.gov/evs/2023/roll243.xml
+- year: 2023
+  roll: 364
+  date: 20-Jul-2023
+  bill: H R 3935
+  question: On Passage
+  description: Securing Growth and Robust Leadership in American Aviation Act
+  D_yea: 164
+  D_nay: 38
+  R_yea: 187
+  R_nay: 31
+  source: https://clerk.house.gov/evs/2023/roll364.xml
+- year: 2023
+  roll: 365
+  date: 25-Jul-2023
+  bill: H R 1338
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Satellite And Telecommunications Streamlining Act
+  D_yea: 87
+  D_nay: 113
+  R_yea: 163
+  R_nay: 50
+  source: https://clerk.house.gov/evs/2023/roll365.xml
+- year: 2023
+  roll: 708
+  date: 11-Dec-2023
+  bill: H R 5378
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Lower Costs, More Transparency Act
+  D_yea: 154
+  D_nay: 31
+  R_yea: 166
+  R_nay: 40
+  source: https://clerk.house.gov/evs/2023/roll708.xml
+- year: 2023
+  roll: 715
+  date: 12-Dec-2023
+  bill: H R 4531
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Support for Patients and Communities Reauthorization Act
+  D_yea: 196
+  D_nay: 11
+  R_yea: 190
+  R_nay: 26
+  source: https://clerk.house.gov/evs/2023/roll715.xml
+- year: 2024
+  roll: 30
+  date: 31-Jan-2024
+  bill: H R 7024
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Tax Relief for American Families and Workers Act
+  D_yea: 188
+  D_nay: 23
+  R_yea: 169
+  R_nay: 47
+  source: https://clerk.house.gov/evs/2024/roll030.xml
+- year: 2024
+  roll: 38
+  date: 6-Feb-2024
+  bill: H R 7217
+  question: On Motion to Suspend the Rules and Pass
+  description: Israel Security Supplemental Appropriations Act
+  D_yea: 46
+  D_nay: 166
+  R_yea: 204
+  R_nay: 14
+  source: https://clerk.house.gov/evs/2024/roll038.xml
+- year: 2024
+  roll: 86
+  date: 13-Mar-2024
+  bill: H R 7521
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Protecting Americans from Foreign Adversary Controlled Applications Act
+  D_yea: 155
+  D_nay: 50
+  R_yea: 197
+  R_nay: 15
+  source: https://clerk.house.gov/evs/2024/roll086.xml
+- year: 2024
+  roll: 119
+  date: 12-Apr-2024
+  bill: H R 7888
+  question: On Passage
+  description: Reforming Intelligence and Securing America Act
+  D_yea: 147
+  D_nay: 59
+  R_yea: 126
+  R_nay: 88
+  source: https://clerk.house.gov/evs/2024/roll119.xml
+- year: 2024
+  roll: 136
+  date: 17-Apr-2024
+  bill: H R 4639
+  question: On Passage
+  description: Fourth Amendment Is Not For Sale Act
+  D_yea: 96
+  D_nay: 109
+  R_yea: 123
+  R_nay: 90
+  source: https://clerk.house.gov/evs/2024/roll136.xml
+- year: 2024
+  roll: 145
+  date: 20-Apr-2024
+  bill: H R 8038
+  question: On Passage
+  description: 21st Century Peace through Strength Act
+  D_yea: 174
+  D_nay: 33
+  R_yea: 186
+  R_nay: 25
+  source: https://clerk.house.gov/evs/2024/roll145.xml
+- year: 2024
+  roll: 152
+  date: 20-Apr-2024
+  bill: H R 8034
+  question: On Passage
+  description: Israel Security Supplemental Appropriations Act, 2024
+  D_yea: 173
+  D_nay: 37
+  R_yea: 193
+  R_nay: 21
+  source: https://clerk.house.gov/evs/2024/roll152.xml
+- year: 2024
+  roll: 172
+  date: 1-May-2024
+  bill: H R 6090
+  question: On Passage
+  description: Antisemitism Awareness Act
+  D_yea: 133
+  D_nay: 70
+  R_yea: 187
+  R_nay: 21
+  source: https://clerk.house.gov/evs/2024/roll172.xml
+- year: 2024
+  roll: 210
+  date: 15-May-2024
+  bill: H R 6572
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Deploying American Blockchains Act
+  D_yea: 158
+  D_nay: 44
+  R_yea: 176
+  R_nay: 35
+  source: https://clerk.house.gov/evs/2024/roll210.xml
+- year: 2024
+  roll: 357
+  date: 22-Jul-2024
+  bill: H R 1631
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Pro Codes Act
+  D_yea: 105
+  D_nay: 78
+  R_yea: 143
+  R_nay: 49
+  source: https://clerk.house.gov/evs/2024/roll357.xml
+- year: 2024
+  roll: 401
+  date: 9-Sep-2024
+  bill: H R 1157
+  question: On Motion to Suspend the Rules and Pass
+  description: Countering the PRC Malign Influence Fund Authorization Act
+  D_yea: 179
+  D_nay: 11
+  R_yea: 172
+  R_nay: 25
+  source: https://clerk.house.gov/evs/2024/roll401.xml
+- year: 2024
+  roll: 440
+  date: 23-Sep-2024
+  bill: S 2228
+  question: On Motion to Suspend the Rules and Pass
+  description: Building Chips in America Act
+  D_yea: 79
+  D_nay: 112
+  R_yea: 178
+  R_nay: 13
+  source: https://clerk.house.gov/evs/2024/roll440.xml
+- year: 2024
+  roll: 447
+  date: 24-Sep-2024
+  bill: H R 7073
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Next Generation Pipelines Research and Development Act
+  D_yea: 186
+  D_nay: 21
+  R_yea: 187
+  R_nay: 20
+  source: https://clerk.house.gov/evs/2024/roll447.xml
+- year: 2024
+  roll: 492
+  date: 6-Dec-2024
+  bill: H R 5349
+  question: On Passage
+  description: Crucial Communism Teaching Act
+  D_yea: 156
+  D_nay: 34
+  R_yea: 171
+  R_nay: 28
+  source: https://clerk.house.gov/evs/2024/roll492.xml
+- year: 2024
+  roll: 511
+  date: 17-Dec-2024
+  bill: H R 1101
+  question: On Motion to Suspend the Rules and Pass, as Amended
+  description: Lumbee Fairness Act
+  D_yea: 187
+  D_nay: 10
+  R_yea: 124
+  R_nay: 86
+  source: https://clerk.house.gov/evs/2024/roll511.xml
