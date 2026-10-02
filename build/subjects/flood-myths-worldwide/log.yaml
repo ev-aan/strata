@@ -117,3 +117,52 @@ log:
       earlier list: wikipedia.org (links and orientation only), ruthenia.ru,
       folkloredatabase.com, biorxiv.org, helsinki.fi, scientificamerican.com, usgs.gov,
       researchgate.net.
+  - id: L-12
+    date: 2026-10-02
+    entry: >
+      DESIGN PRINCIPLE, set by the owner: do not root the dig in the biblical record just
+      because it survives and is easy to read. The aim is neither to disprove it nor to
+      confirm it. The aim is to find what the evidence supports, with the biblical account as
+      ONE entry among many. Binding rules that follow:
+      (1) Genesis is coded with the same fields, the same inclusion rules and the same evidence
+      class rules as every other entry; it gets no special field, no default position and no
+      template role.
+      (2) SURVIVAL BIAS is named as a risk: a text survives, is edited, translated and indexed
+      because an institution kept it, not because it is more original. Easy access must not
+      become extra weight. Earliest surviving record is also not the same as earliest origin;
+      a tradition we cannot read is not a younger one.
+      (3) EVERY RESULT IS REPORTED THREE WAYS: with all entries, with Genesis removed, and with
+      the whole connected Near Eastern cluster removed. A result that depends on Genesis being
+      present, or on that cluster, is reported as such.
+      (4) NO PSEUDO-REPLICATION: traditions in contact (Mesopotamia, the Levant, Greece,
+      Egypt) are grouped into one region cluster for counting, so connected stories are not
+      tallied as independent confirmations of one another.
+      (5) NEUTRAL WORDING: no result is written as a verdict on any scripture's truth; the dig
+      speaks of texts, dates, motifs and dependence.
+  - id: L-13
+    date: 2026-10-02
+    entry: >
+      CORRECTION TO L-07 (appended; L-07 stays as written): the inclusion rule and several
+      fields in L-07 are shaped like the Noah story. "Some people survive", a vessel, a bird
+      release, an offering and a later covenant are features of the Mesopotamian and biblical
+      versions. Using them as filters or required fields would find Noah-shaped stories by
+      construction and hide flood stories with other shapes (for example flood as the end of an
+      age, no survivors, or survivors by other means). REVISED DESIGN: (a) inclusion rests only
+      on "a narrative of a past catastrophe in which water destroys or reshapes human
+      settlement"; survival, vessel, birds, offerings and covenant become CODED FIELDS with
+      values including "absent" and "not stated", never filters. (b) The field list is drawn
+      from a standard cross-cultural motif index (the Berezkin catalogue and the Thompson
+      index) plus a pre-pass reading a spread of traditions chosen without reference to
+      Genesis, and includes an open "other motifs" field. (c) Fields are fixed and logged
+      before coding starts.
+  - id: L-14
+    date: 2026-10-02
+    entry: >
+      CONSEQUENCE FOR THE TESTS: the likeness question is now two questions that must not be
+      mixed. (i) Do flood stories share a broad core (water catastrophe, survival, warning)
+      beyond what catastrophe stories in general share? (ii) Do particular DETAILED sequences
+      (the same ordered steps) recur beyond chance? Detail matching is the stronger signal and
+      is where connected traditions are expected to match; broad-core matching is the weaker
+      signal and is where independent origins are expected too. Variation in order or chapter
+      is coded, not dismissed, and the dig states what level of variation each possible result
+      would and would not exclude, before running anything.
