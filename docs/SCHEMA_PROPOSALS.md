@@ -17,4 +17,8 @@
 3. The owner decides. The decision and its reason are logged on the pull request, whichever way it goes.
 4. Only then is the change made, in its own commit, with the validator updated in the same change.
 
+## Applies to everyone, and to this document
+The standards apply equally to every proposer: the owner, collaborators, outside contributors and agents. None has a shortcut.
+The owner's own role and authority can be adjusted in future, by the same path: a proposal that meets the standards, a true independent assessment of it, and then the owner's final approval. An assessment alone does not change the role, and approval without an assessment does not either. This document is changed by the same path.
+
 A rule that fails to meet the standards is declined with the reason recorded. Urgent fixes to a validator bug follow the same path with the failing case attached.
