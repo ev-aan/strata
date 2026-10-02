@@ -46,9 +46,10 @@ discriminating_tests:
         increase [abstract].
       accessible: true
     resolves: >
-      Tests one named susceptible group; finds no excess. The intervals are wide and below 1,
-      which suggests families delayed vaccination after an affected child (selection), so the
-      result supports "no increase", not "protection".
+      Tests one named susceptible group; finds no excess. The intervals are wide and below 1.
+      Strata's interpretation, not the paper's finding: families may have delayed vaccination
+      after an affected child (selection), so the result supports "no increase", not
+      "protection".
     note: "An erratum to Jain 2015 exists (JAMA 2016;315:204) and was not read."
 
   - id: dt-time-window

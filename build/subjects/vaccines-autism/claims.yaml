@@ -19,31 +19,25 @@ url_slug: do-vaccines-cause-autism
 assessment:
   question: "Do vaccines cause autism?"
   answer: "no"
-  headline: "No. Studies of more than a million children find no link (high confidence), with one narrow legal concession and one untested question about mitochondrial disease."
+  headline: "No. Large studies of children's records find no link (high confidence); a 2007 legal concession and an untested question about mitochondrial disease are explained below."
   text: >
-    A 2014 meta-analysis of 10 studies (5 cohort and 5 case-control studies; about 1.27 million
-    participants, a total added up here from the abstract's two figures) found no association, and
-    two nationwide Danish cohorts following 1,194,764 children found no more autism after MMR. The
-    Danish studies come largely from one register group and overlap with each other; studies
-    outside those registers (a UK case-control study, a US cohort of children with older siblings,
-    a US case-control study of thimerosal) also found no excess. Children exposed to more
-    thimerosal or aluminum were not diagnosed more often. The 1998 paper that started the scare
-    was retracted in 2010. The High Court found in 2012 that its ethics-approval statement was
-    untrue, and a 2011 BMJ investigation reported that its diagnoses and onset dates did not match
-    the children's records (records that no one outside the BMJ has seen). Institutional
-    statements, such as the WHO committee's of December 2025, are recorded separately as
-    adoption and are not counted as evidence. One family's compensation claim was conceded in
-    2007 for a child with a pre-existing mitochondrial disorder; that was a legal decision in a
-    no-fault program, not a scientific finding. Whether fever after vaccination can trigger regression in children with
-    mitochondrial disease has not been tested in a controlled study. Two limits: no study can show
-    an effect is exactly zero, and no large record-based study has yet compared fully unvaccinated
-    children with vaccinated ones. The reverse link is established: rubella in pregnancy can cause
-    autism, and the vaccine prevents it.
+    Two nationwide Danish cohorts following 1,194,764 children found no more autism after MMR,
+    and studies in the UK (1,294 cases) and the US (95,727 children with older siblings) agree.
+    Children exposed to more thimerosal or aluminum were not diagnosed with autism more often.
+    The 1998 paper that started the scare was retracted in 2010; a court later found its
+    ethics statement untrue, and a 2011 BMJ investigation reported that its account of the
+    children did not match their records. In 2007 the US government conceded one family's
+    compensation claim for a child with a pre-existing mitochondrial disorder; that was a legal
+    decision, not a scientific finding. Whether fever after vaccination can trigger regression
+    in children with mitochondrial disease has not been tested in a controlled study. Two
+    limits: no study can show an effect is exactly zero, and no large record-based study has yet
+    compared fully unvaccinated children with vaccinated ones. The reverse link is established:
+    rubella in pregnancy can cause autism, and the vaccine prevents it.
   key_points:
-    - "Ten pooled studies (about 1.27 million participants, summed here) and two Danish cohorts (1,194,764) found no more autism in vaccinated children."
-    - "The 1998 paper was retracted in 2010; a court found its ethics statement untrue, and the BMJ reported its data did not match records."
-    - "Exceptions: a 2007 compensation concession (a legal decision, not science) and an untested question on fever in mitochondrial disease."
-  basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-ethics-statement-untrue, va-wakefield-records-vs-paper, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
+    - "Two Danish cohorts (1,194,764 children) and studies in the UK and US found no more autism in children who got MMR."
+    - "The 1998 paper behind the scare was retracted in 2010; a court later found its ethics statement untrue."
+    - "Open: a 2007 compensation concession (a legal decision, not science) and an untested question on fever in mitochondrial disease."
+  basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
   rated_claim: va-mmr-no-detectable-increase
   would_settle: >
     A large record-based study finding clearly more autism after vaccination; a controlled study of
@@ -61,71 +55,47 @@ short_answer:
   # The summary below is the first thing a reader sees. Every figure is tied to a source
   # and a verification level; nothing is added up across studies that may share children.
   summary: >
-    Across studies covering more than a million children, vaccines have not been found to
-    cause autism. A 2014 meta-analysis of 10 studies (about 1.27 million participants) found no
-    link; two nationwide Danish studies following 1,194,764 children found no more autism after
-    MMR; and studies outside the Danish registers (UK, US) point the same way. Institutions'
-    statements are listed separately under `institutional_statements` as adoption, not evidence.
+    Across studies following more than a million children's records, vaccines have not been
+    found to cause autism. Two nationwide Danish cohorts following 1,194,764 children found no
+    more autism after MMR; studies in the UK and the US agree; and a 2014 analysis pooling 5
+    cohort studies (1,256,407 children) and 5 case-control studies (9,920 children) found no
+    association. These figures are studies; what health agencies say is recorded separately, as
+    adoption.
   summary_figures:
-    - figure: "10 studies, about 1.27 million participants, no association"
-      detail: >
-        Taylor, Swerdfeger & Eslick 2014: 5 cohort studies (1,256,407 children) and 5
-        case-control studies (9,920 participants). The abstract gives the two figures and no
-        total: 1,266,327 is their sum, added up by Strata, and it may count some of the same
-        Danish children as the Danish studies below (not checked).
-      source: src-taylor-2014
-      checked: abstract
     - figure: "1,194,764 children, no increase after MMR"
       detail: >
         Madsen 2002 (537,303 children born in Denmark 1991-1998; RR 0.92) and Hviid 2019
         (657,461 born 1999-2010; HR 0.93, 95% CI 0.85 to 1.02). The two birth cohorts do not
-        overlap; they are also the two studies in Cochrane's 2021 pooled estimate.
-      source: [src-madsen-2002, src-hviid-2019, src-cochrane-2021]
+        overlap. Both come from the same national register and research group.
+      source: [src-madsen-2002, src-hviid-2019]
       checked: abstract
-    - figure: "Studies independent of the Danish registers"
+    - figure: "UK and US studies, no increase after MMR"
       detail: >
-        Smeeth 2004 (UK case-control, 1,294 cases and 4,469 controls; OR 0.86, 0.68 to 1.09),
-        Jain 2015 (US cohort of 95,727 children with older siblings; no increase), and for
-        thimerosal Price 2010 (US case-control, 256 cases and 752 controls). The large Danish
-        studies (Madsen, Hviid and colleagues) come from one register group, and Cochrane's
-        1,194,764 children are the two Danish MMR cohorts, so Danish agreement is one line of
-        evidence, not several.
-      source: [src-smeeth-2004, src-jain-2015, src-price-2010]
+        UK: Smeeth 2004, 1,294 cases and 4,469 controls, OR 0.86 (0.68 to 1.09); Taylor 1999,
+        498 cases, no clustering after MMR. US: Jain 2015, 95,727 children with older
+        siblings, no increase including among 1,929 whose older sibling had autism.
+      source: [src-smeeth-2004, src-taylor-1999, src-jain-2015]
+      checked: abstract
+    - figure: "5 cohort studies (1,256,407 children) and 5 case-control studies (9,920 children), no association"
+      detail: >
+        Taylor, Swerdfeger & Eslick 2014. The two groups are given separately, as in the
+        abstract; their cohort children are largely Danish.
+      source: src-taylor-2014
       checked: abstract
     - figure: "Not summed"
       detail: >
         These counts are not added together. Many of the same Danish children appear in more
         than one study (the thimerosal cohort, born 1990-1996, and the aluminum cohort, born
-        1997-2018, overlap the MMR cohorts' birth years), and the meta-analysis may include
-        Danish studies, so a combined total would count the same children more than once.
-  institutional_statements:      # ADOPTION, not evidence (rule 2). Shown beside the figures, never among them.
-    - who: "WHO Global Advisory Committee on Vaccine Safety, 11 Dec 2025"
-      source: src-who-gacvs-2025
-      checked: "page read directly 2 Oct 2026"
-      text: >
-        The statement reports that 20 of the 31 primary studies it reviewed (2010 to Aug 2025)
-        found no evidence of an association, and all five meta-analyses found none. The other
-        eleven studies suggested a potential association; nine of them came from one research
-        group in the United States, and the committee judged them to have very low strength of
-        evidence and a high risk of bias. The committee concluded that there is no evidence of a
-        causal relationship. This is the committee's reading of the studies, not a separate study.
-    - who: "Institute of Medicine, 2004 (and 2013 on the schedule)"
-      source: src-iom-2004
-      checked: "executive summary read"
-      text: >
-        Favored rejection of a causal relationship for MMR and for thimerosal-containing
-        vaccines, while stating that it could not rule out a very small subset or very unusual
-        circumstances and found no evidence for that hypothesis.
+        1997-2018, overlap the MMR cohorts' birth years), and the meta-analysis includes
+        Danish data, so a combined total would count the same children more than once.
   basis: >
     For MMR, studies following more than a million children find no more autism among
     vaccinated than unvaccinated children (va-mmr-no-detectable-increase). For thimerosal
     and aluminum, children with more exposure were not diagnosed with autism more often
     (va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase). The paper
-    that started the scare made an ethics-approval statement a court found untrue
-    (va-wakefield-ethics-statement-untrue); a BMJ investigation reports its data did not match
-    the children's records (va-wakefield-records-vs-paper, which rests on records no one outside
-    the BMJ has seen and is held at proposed); whether its referral wording misled is contested
-    (va-wakefield-referral-wording). No large record-based study has yet compared
+    that started the scare was retracted; a court found its ethics statement untrue
+    (va-wakefield-paper-account-accurate), and a BMJ investigation reported that its account
+    of the children did not match their records (va-wakefield-records-mismatch). No large record-based study has yet compared
     fully unvaccinated children with vaccinated ones (va-fully-unvaccinated-gap).
   except:
     - claim: va-poling-concession
@@ -135,25 +105,17 @@ short_answer:
         mitochondrial disorder, which showed features of autism. This was a
         compensation decision, not a scientific finding that vaccines cause autism.
       scale: >
-        The best-known concession; this dig did not find or check others. Other compensated
-        cases with autism-spectrum features have been reported (for example Banks, 2007, where
-        the court's description was a developmental delay after ADEM, a subthreshold condition
-        with some features of autism): that is a search lead only, not opened here. Poling's
-        case was itself designated a potential test case in 2007 (her lawyer's account, CNN)
-        before the government conceded it. The same court had some 5,000 autism petitions
-        pending (Bruesewitz dissent n.25; CNN: "nearly 5,000"), and all six test cases chosen
-        to present the families' strongest theories were decided against the families.
-      scale_sources: [src-poling-cnn-2008, src-poling-npr-2008, src-bruesewitz, src-oap-decisions]
+        The best-known concession, not a count: other compensated cases with autism-like
+        features were not checked. Her case had been designated a potential test case before
+        the concession. The same court received some 5,000 autism petitions, and all six test
+        cases chosen to present the families' strongest theories were rejected.
+      scale_sources: [src-poling-cnn-2008, src-bruesewitz, src-oap-decisions]
       what_it_is:
+        - "A concession by the US government in one family's compensation claim: the program concluded her underlying illness was 'significantly aggravated' by vaccines (as reported by CNN)."
         - >
-          A decision by the US government to concede the link between the vaccines and this
-          child's injury and move the case to damages. CNN reports that the program "concluded"
-          the vaccines "significantly aggravated" her underlying illness; NPR reports the
-          government said it was possible the vaccines "may have exacerbated" the disorder.
-          The sealed decision itself was not read, so which wording it uses is not checked.
-        - >
-          Made inside a no-fault compensation program (see va-compensation-program). Whether the
-          program's presumption for listed injuries was used in this case was not checked.
+          Made inside a no-fault program built to pay faster and more easily than a court
+          case (see va-compensation-program); whether its presumption for listed injuries
+          applied in her case was not checked.
         - "A statement about one child, who had a pre-existing mitochondrial disorder."
       what_it_is_not:
         - "Not a scientific study, and not a test of whether vaccines cause autism."
@@ -168,12 +130,11 @@ short_answer:
         with autism), small case series report regression after fever, including a few
         after a fever that followed a routine vaccination. No controlled study has tested this.
       scale: >
-        Mitochondrial disease affects about 1 in 10,000 people overall. One review (Rossignol
-        & Frye 2012) lists regression after a post-vaccination fever in at least 5 children
-        across two reports: 4 children in one series of 28, and one more child in a 2006 case
-        report by Poling and colleagues. That is what one review lists, not a systematic count. No rate per vaccination
-        can be calculated from evidence this small.
-      scale_sources: [src-rossignol-frye-2012, src-shoffner-2010]
+        Mitochondrial disease affects about 1 in 10,000 people overall. Reports of regression
+        after a post-vaccination fever found so far: at least 5 children in two reports (4 in one
+        series of 28, and one case report), as collected in one review; this is not a systematic
+        count. No rate per vaccination can be calculated from evidence this small.
+      scale_sources: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006]
     - claim: va-small-effect-not-excludable
       text: >
         A limit, not an exception. No study can prove an effect is exactly zero. The largest
@@ -212,13 +173,6 @@ source_notices:
     notice: >
       RETRACTED. Hooker's 2014 reanalysis of CDC data on MMR and African-American boys was
       retracted by its journal in October 2014. It is cited here only to record the claim it made.
-  - source: src-hooker-miller-2021
-    notice: >
-      STATUS. No notice was found for this 2021 paper (J Transl Sci 2021;7; searched Europe PMC;
-      the paper is not indexed there). A different paper by the same authors, their 2020 SAGE
-      Open Medicine paper on developmental delays, asthma, ear infections and gastrointestinal
-      disorders, carries an expression of concern dated 18 May 2026 ("under investigation").
-      That notice does not cover this 2021 paper, which is the one cited for autism.
   - source: src-henry-ford-draft
     notice: >
       UNPUBLISHED. The Henry Ford Health vaccinated-versus-unvaccinated study is a draft that was
@@ -256,8 +210,8 @@ divergence_note: >
   evidential weight. The real open edges are narrow: a very rare susceptible group cannot
   be excluded by population data, fever-related regression in mitochondrial disease is
   untested, the whole schedule has never been studied as one exposure, and in the one
-  Danish analysis of children born 1980-1991, part of the rise (about 40%, somewhere between
-  13% and 67%) is not explained by the two reporting changes it measured.
+  national analysis of the rise, part of it (about 40%, somewhere between 13% and 67%) is
+  not explained by the two reporting changes it measured.
 
 claims:
 
@@ -267,6 +221,7 @@ claims:
 
   - id: va-mmr-no-detectable-increase
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In population studies covering more than a million children, children who received
       MMR were diagnosed with autism no more often than children who did not. The largest
@@ -274,20 +229,16 @@ claims:
       hazard ratio of 0.93 (95% CI 0.85 to 1.02).
     evidence_class: synthetic
     confidence: high
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5; capped at 4 while anchor_checked is secondary
-    anchor_checked: secondary   # abstracts read for Madsen 2002, Hviid 2019, Smeeth 2004, Jain 2015, Taylor 2014, Cochrane 2021 (institutional statements are not anchors: see adoption_note)
+    anchor_checked: secondary   # abstracts read for Madsen 2002, Hviid 2019, Smeeth 2004, Jain 2015, Taylor 1999, Taylor 2014, Cochrane 2021
     adoption_weight: 4   # of 5, shown separately; never combined with evidential_weight
     adoption_note: >
       Annenberg ASAPH, fielded 4-17 Aug 2026 (n=1,904): asked whether vaccines for diseases
       like measles, mumps and rubella cause autism, 68% of US adults said false, 13% true,
-      19% unsure. Institutions that hold the same view: the Institute of Medicine (2004, "the
-      evidence favors rejection of a causal relationship", executive summary read), the WHO
-      GACVS (Dec 2025; its page reports 20 of 31 primary studies and all 5 meta-analyses null,
-      and 11 studies suggesting an association, 9 of them from one US group, judged very low
-      strength and high risk of bias) and the AAP. The CDC's own page has disputed it since
-      Nov 2025 (see va-cdc-page-2025). All of this is adoption: information, not evidence, and
-      none of it is used in the anchor.
+      19% unsure. Institutions: the IOM (2004) said the evidence "favors rejection of a causal
+      relationship"; the WHO's safety committee (Dec 2025) found no evidence of a causal
+      relationship; the CDC's own page has disputed the "no link" statement since Nov 2025 (see
+      va-cdc-page-2025). Adoption is information, not evidence.
     would_change_if: >
       a register-based cohort of comparable size finds a hazard ratio clearly above 1 with
       a confidence interval that excludes 1; or a full-text reading of Madsen 2002 or Hviid
@@ -305,16 +256,12 @@ claims:
         group [abstract]. Meta-analysis (cohort data on 1,256,407 children): MMR OR 0.84
         (0.70 to 1.01) [abstract]. Cochrane 2021: rate
         ratio 0.93 (0.85 to 1.01), 2 studies, 1,194,764 children, moderate certainty
-        [abstract]. Independence: the two Danish cohorts and the other large Danish studies
-        come from one register group, and Cochrane's two studies are those two Danish cohorts;
-        the lines independent of the Danish registers are the UK case-control study (Smeeth
-        2004) and the US cohort of children with older siblings (Jain 2015), with the US
-        thimerosal case-control study (Price 2010) for thimerosal only. [Abstracts only.]
+        [abstract].
       accessible: true
       sources: [src-madsen-2002, src-hviid-2019, src-smeeth-2004, src-jain-2015, src-taylor-2014, src-cochrane-2021, src-taylor-1999, src-destefano-2004]
     positions:
       - label: "No"
-        holder: "The register and claims-database studies above; Cochrane 2021 (which pools two of them)"
+        holder: "The register and claims-database studies above; IOM 2004; Cochrane 2021; WHO GACVS 2025"
         ground: >
           Every large study with recorded vaccination and recorded diagnosis finds an
           estimate at or below 1. The largest has an upper bound of 1.02.
@@ -335,21 +282,21 @@ claims:
       vaccination after early signs), and that bias runs in both directions. The
       meta-analysis case-control pools (0.85 to 0.90) combine MMR, thimerosal and mercury
       exposures and are not MMR estimates. (2) Cochrane's 2-study estimate (0.93, 0.85 to
-      1.01, 1,194,764 children) is the two Danish cohorts above: 657,461 + 537,303 =
-      1,194,764. It is not an independent line of evidence, and neither is the rest of the
-      large Danish literature (Madsen, Hviid and colleagues, one register group); Taylor 2014's
-      cohort children may also include Danish children (not checked). The independent
-      replications are Smeeth 2004 (UK), Jain 2015 (US) and, for thimerosal, Price 2010 (US).
-      TO REACH PRIMARY: read the full texts of Hviid 2019 (Ann Intern Med) and Madsen
+      1.01, 1,194,764 children) matches the sum of the two Danish cohorts above (657,461 +
+      537,303 = 1,194,764; our arithmetic, the abstract does not name the studies). It is not
+      an independent line of evidence. (3) Independence: the large Danish studies come from
+      one national register and one research group, and the meta-analysis's cohort children
+      are largely Danish. The independent populations are the UK (Taylor 1999; Smeeth 2004)
+      and the US (Jain 2015; DeStefano 2004), and they agree. TO REACH PRIMARY: read the full texts of Hviid 2019 (Ann Intern Med) and Madsen
       2002 (NEJM); both publishers refused this environment.
 
   - id: va-mmr-causes-autism
     state: proposed
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       The MMR vaccine causes autism.
     evidence_class: interpretive
     confidence: provisional
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 1   # of 5
     anchor_checked: secondary
     adoption_weight: 2   # of 5
@@ -377,7 +324,7 @@ claims:
           Parents saw onset soon after MMR; some surveys report higher autism among
           vaccinated children.
       - label: "No"
-        holder: "Population cohorts (institutions that agree are listed as adoption in va-mmr-no-detectable-increase)"
+        holder: "Population cohorts; IOM 2004; WHO GACVS 2025"
         ground: "See va-mmr-no-detectable-increase and the discriminating tests."
     basis: >
       Filed as `proposed` rather than `refuted`. Rule 9 lets a refutation rest only on
@@ -391,252 +338,206 @@ claims:
   # =====================================================================
 
   - id: va-wakefield-paper-account-accurate
-    # SPLIT, see log L-16. The original single claim bundled three limbs that the evidence treats
-    # differently. The limbs now have their own claims; this one remains as the umbrella so the
-    # id (cited in the threads and the log) is not reused for something narrower.
-    state: contested
-    statement: >
-      The 1998 Lancet paper accurately described how its 12 children came to the study,
-      that the work had ethics approval, and when their symptoms began.
-    evidence_class: primary_text
-    confidence: moderate
-    statement_kind: judgment
-    evidential_weight: 3   # of 5; the limbs differ (ethics: 5, referral: 4, records: 3); see the three claims
-    anchor_checked: secondary   # the umbrella is held at its weakest limb's check; the ethics and referral limbs were read in the primary judgment
-    adoption_weight: 1   # of 5
-    adoption_note: "Not measured. The paper was retracted in 2010; few now defend its account."
-    would_change_if: >
-      any of the three limbs changes: see va-wakefield-ethics-statement-untrue,
-      va-wakefield-records-vs-paper and va-wakefield-referral-wording
-    parts: [va-wakefield-ethics-statement-untrue, va-wakefield-records-vs-paper, va-wakefield-referral-wording]
-    disputed_by:
-      - {who: "Mitting J, High Court of England and Wales", kind: person, position: "On the referral limb only: 'consecutively referred' means no more than 'referred successively' and did not imply routine referral (para 157).", source_read: true, via: src-walker-smith-2012}
-    anchor:
-      type: umbrella
-      description: >
-        This claim is the umbrella for three separate limbs; each has its own anchor and weight.
-        Ethics-approval statement: untrue per the High Court (para 153) [read]. Referral wording:
-        contested between the GMC panel and the High Court (paras 156-158) [read]. Diagnosis and
-        onset against hospital records: the BMJ's 2011 reading of records nobody else has seen
-        [secondary]. Do not read the weight of one limb onto another.
-      accessible: true
-      sources: [src-walker-smith-2012, src-deer-2011, src-godlee-2011]
-    positions:
-      - label: "Yes (accurate)"
-        holder: "Wakefield (his statements were not read for this dig)"
-        ground: >
-          On the referral limb the High Court did not accept that the paper misled (para 157)
-          [read]. This applies to Walker-Smith only; Wakefield abandoned his appeal (para 1).
-      - label: "No (not accurate), on two of the three limbs"
-        holder: "The High Court (ethics statement); the BMJ (diagnoses and onset)"
-        ground: "See the three limb claims."
-    basis: >
-      Split after independent review (log L-16). The earlier single claim had weight 5 and a
-      primary check for all three limbs; only the ethics limb earned that. refutation_class is
-      not set (log L-07).
-
-  - id: va-wakefield-ethics-statement-untrue
     state: refuted
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     refutes_target: >
-      The 1998 Lancet paper's "Ethical approval and consent" statement: "Investigations were
-      approved by the Ethical Practices Committee of the Royal Free Hospital NHS Trust, and
-      parents gave informed consent."
+      Wakefield AJ et al., Lancet 1998;351:637-41: the paper's statement that its
+      investigations were approved by the Royal Free ethics committee
     statement: >
-      The ethics-approval and consent statement printed in the 1998 Lancet paper was accurate.
+      The 1998 Lancet paper's statement that its investigations had ethics approval was true.
+      (Narrowed on 2026-10-02, log L-16: this claim first bundled ethics approval, referral and
+      onset. Referral is now va-wakefield-referral-description; diagnosis and onset are
+      va-wakefield-records-mismatch.)
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported
-    evidential_weight: 5   # of 5, for the refutation of this one sentence
-    anchor_checked: primary   # Walker-Smith v GMC [2012] EWHC 503 (Admin) read in full (National Archives XML)
+    evidential_weight: 5   # of 5, for the refutation
+    anchor_checked: primary   # Walker-Smith v GMC [2012] EWHC 503 (Admin) read in full
     adoption_weight: 1   # of 5
-    adoption_note: "Not measured. The paper was retracted in 2010; few now defend this statement."
+    adoption_note: "Not measured. The paper was retracted in 2010; few now defend it."
     would_change_if: >
-      the Royal Free ethics committee records show that approval and consent were as the paper
-      says
+      the Royal Free ethics committee records show the investigations were approved as the
+      paper stated
     anchor:
-      type: court-judgment
+      type: court-record
       description: >
-        [2012] EWHC 503 (Admin), Mitting J, para 153: the judgment quotes the paper's wording,
-        records that neither Murch nor Walker-Smith saw the published wording before publication
-        (unchallenged evidence), and states: "This statement was untrue and should not have been
-        included in the paper." [read]. The judgment does not say who wrote the sentence.
+        Walker-Smith v GMC [2012] EWHC 503 (Admin), para 153: the paper's ethics statement
+        "was untrue and should not have been included in the paper" [read]. The same judgment
+        quashed the GMC's findings against Walker-Smith on other grounds (paras 186-187) and
+        did not disturb this one. The paper itself (abstract) and the GMC findings (not
+        reachable) were not read.
       accessible: true
       sources: [src-walker-smith-2012]
     positions:
-      - label: "Yes (accurate)"
-        holder: "Royal Free and University College Medical School, 2004 (Prof. Hodgson's letter to the Lancet, as reported by the Guardian, 2 Feb 2010)"
+      - label: "Yes (true)"
+        holder: "The Lancet's 2004 statement, as described in a 2011 review"
         ground: >
-          "We are entirely satisfied that the investigations performed on children reported in
-          the Lancet paper had been subjected to appropriate and rigorous ethical scrutiny"
-          [secondary: Guardian, read]. The GMC and the High Court later found otherwise.
+          In 2004 the Lancet cleared the authors of ethical violations (as described in Indian
+          J Psychiatry 2011 [read]; the 2004 statement itself was not read).
       - label: "No (untrue)"
-        holder: "The High Court (2012); the GMC panel (2010)"
-        ground: >
-          Para 153 of the judgment (read). The GMC panel found children had undergone invasive
-          tests for research purposes without valid ethical approval [secondary: Guardian,
-          2 Feb 2010]; the panel's own findings were not read.
+        holder: "The High Court (2012)"
+        ground: "The ethics statement was untrue (para 153) [read]."
     basis: >
-      Narrow on purpose: this claim is only about the ethics sentence. The judge's remark is
-      made in a case about Walker-Smith's sanction; Wakefield abandoned his appeal, so no court
-      ruled on his own conduct. refutation_class is not set (log L-07).
+      Held at weight 5 because the narrowed statement rests on one primary document read in
+      full. refutation_class is not set (log L-07). The earlier, wider statement overstated
+      what para 153 supports (review round 1, B1).
 
-  - id: va-wakefield-records-vs-paper
+  - id: va-wakefield-records-mismatch
     state: proposed
     statement: >
-      The 1998 paper's account of its children's diagnoses and of when symptoms began did not
-      match their hospital records. A 2011 BMJ investigation reported this, and the BMJ's
-      editors judged the paper fraudulent.
+      The 1998 paper's account of its 12 children's diagnoses and of when their symptoms began
+      did not match their hospital records: of 9 described as having regressive autism, 3 had
+      no autism diagnosis, and 5 of the 12 described as previously normal had documented
+      earlier developmental concerns.
+    statement_kind: reported
     evidence_class: interpretive
     confidence: provisional
-    statement_kind: reported
-    evidential_weight: 3   # of 5; secondary: the BMJ pieces were read through a fetch tool in an earlier pass and bmj.com is blocked now
-    anchor_checked: secondary
-    adoption_weight: 2   # of 5
+    evidential_weight: 3   # of 5; one investigator's comparison with records, read only as a summary
+    anchor_checked: secondary   # BMJ summary box and editorial read through a fetch tool; the records were not seen
+    adoption_weight: 4   # of 5
     adoption_note: >
-      Not measured. Commonly compressed into "retracted for faked data", which merges the 2010
-      retraction with the BMJ's 2011 findings (see va-retraction-reasons).
+      Not measured. Widely reported since 2011; the BMJ's editors endorsed it and called the
+      paper fraudulent [read via fetch tool]. Endorsement is adoption, not evidence.
     would_change_if: >
-      the underlying records are made available and an independent reader confirms or fails to
-      confirm the BMJ's comparison; or the BMJ pieces, once read in full, say something
-      different from how they were summarised
+      the children's records, or a second independent comparison of them, show the published
+      account was accurate
     anchor:
-      type: investigative-report-and-editorial
+      type: investigative-records-comparison
       description: >
-        Deer, BMJ 2011;342:c5347: of the 9 children described as having regressive autism, 3
-        had no autism diagnosis in the records, and 5 of the 12 described as previously normal
-        had documented earlier developmental concerns [BMJ summary box, read via fetch tool in
-        an earlier pass; not re-read, bmj.com refused this session]. Godlee, Smith, Marcovitch,
-        BMJ 2011;342:c7452: the editors concluded that none of the 12 cases was free of
-        misrepresentation or undisclosed alteration [same status]. Indian J Psychiatry 2011
-        (PMC3136032, read in full) summarises the BMJ series as finding the authors "guilty of
-        deliberate fraud". The 2012 judgment, recounting the case histories, records that a
-        consultant child psychiatrist wrote on 28 Jan 1997 that he "did not think an autistic
-        spectrum diagnosis was merited" for child 8 [read]; how the paper listed child 8 was not
-        checked. The hospital records themselves are confidential and were not seen.
+        Deer, BMJ 2011;342:c5347, summary box: "Three of nine children reported with
+        regressive autism did not have autism diagnosed at all"; five of the 12 described as
+        previously normal "had documented pre-existing developmental concerns"; some onsets
+        reported as within days of MMR were recorded as months later [read via fetch tool].
+        Godlee et al., BMJ 2011;342:c7452: none of the 12 cases was free of misrepresentation
+        or undisclosed alteration [read via fetch tool].
       accessible: true
-      sources: [src-deer-2011, src-godlee-2011, src-indian-jpsych-2011, src-walker-smith-2012]
+      sources: [src-deer-2011, src-godlee-2011]
     positions:
-      - label: "Yes (records do not match)"
-        holder: "Deer (BMJ); Godlee, Smith and Marcovitch (BMJ editors)"
-        ground: "Comparison of the paper with the hospital records, as summarised above."
-      - label: "No (the paper was accurate)"
-        holder: "Wakefield (his response to the BMJ was not read for this dig)"
-        ground: "Not stated here: not read."
+      - label: "Accurate"
+        holder: "Wakefield (his statements were not read for this dig)"
+        ground: "He has disputed the BMJ's findings; his response was not read here."
+      - label: "Not accurate"
+        holder: "Deer; the BMJ editors"
+        ground: "The records comparison above."
     basis: >
-      This is the BMJ's finding, not the Lancet's, and the 2010 retraction does not depend on
-      it. It is held at proposed because it rests on one investigation of records nobody else has
-      seen, read here only in summary. It is not a finding by a court.
+      Split from va-wakefield-paper-account-accurate (review round 1, B1). Filed as proposed:
+      it is one investigator's comparison, endorsed by a journal, whose underlying records are
+      confidential and were not seen. TO STRENGTHEN: read the full BMJ articles and the GMC
+      findings of fact, which examined the same records.
 
-  - id: va-wakefield-referral-wording
+  - id: va-wakefield-referral-description
     state: contested
     statement: >
       The 1998 paper's description of its children as "consecutively referred" was misleading.
+    statement_kind: judgment
     evidence_class: primary_text
     confidence: moderate
-    statement_kind: judgment
-    evidential_weight: 4   # of 5
-    anchor_checked: primary   # [2012] EWHC 503 (Admin) read in full, including the panel's charge 31-32 wording it quotes
+    evidential_weight: 3   # of 5; raised from 2 in round 3: the panel's charge wording is quoted in the judgment read in full
+    anchor_checked: primary   # the High Court judgment read in full, including the panel's charges 31-32 as quoted at para 156; the Lancet notice and the panel's own findings only as reported
     adoption_weight: 2   # of 5
     adoption_note: "Not measured."
-    would_change_if: >
-      the GMC panel's own findings or the Lancet's 2010 notice are read and say something other
-      than how they are reported here
+    would_change_if: "the GMC findings of fact or the Lancet's 2010 notice are read and change the picture"
     disputed_by:
-      - {who: "Mitting J, High Court of England and Wales", kind: person, position: "'Consecutively referred' means no more than that the children were referred successively; the words did not imply routine referral (para 157).", source_read: true, via: src-walker-smith-2012}
+      - {who: "Mr Justice Mitting, High Court of England and Wales", kind: person, position: "'Consecutively referred' meant only that the children were referred successively; the panel's contrary reading was rejected for Walker-Smith.", source_read: true, via: src-walker-smith-2012}
+      - {who: "The Lancet editors (2010 retraction, as quoted)", kind: institution, position: "The 'consecutively referred' statement was incorrect.", source_read: false, via: src-lancet-retraction-2010}
     anchor:
-      type: court-judgment
+      type: live-dispute
       description: >
-        The GMC panel found proved against Walker-Smith that the description "consecutively
-        referred" implied a routine referral, that the referrals of four children (1, 5, 9, 10)
-        were not routine, and that the description was "irresponsible" and "misleading" (charges
-        31-32, quoted in the judgment) [read]. Mitting J, para 157: "The phrase 'consecutively
-        referred' means no more than that the children were referred successively, rather than as
-        a single batch ... The words did not imply routine referral", and the paper "made it clear
-        that this was not a routine referral. It was a referral generated by the concerns of
-        parents about a possible link." [read]. Para 158: that four referral letters did not
-        mention intestinal symptoms was "factually accurate ... but of no significance", because
-        Walker-Smith elicited gastrointestinal symptoms at clinic [read].
+        [2012] EWHC 503 (Admin), para 156 (quoting the panel's charges 31-32 against
+        Walker-Smith): the panel found that "consecutively referred" implied a routine referral,
+        that the referrals of four children (1, 5, 9, 10) were not routine, and that the
+        description was "irresponsible" and "misleading" [read]. Para 157: the phrase "means no
+        more than that the children were referred successively, rather than as a single batch ...
+        The words did not imply routine referral", and the paper "made it clear that this was not
+        a routine referral. It was a referral generated by the concerns of parents about a
+        possible link" [read]. Para 158: that four referral letters did not mention intestinal
+        symptoms was "factually accurate ... but of no significance", because Walker-Smith
+        elicited gastrointestinal symptoms at clinic [read]. The 2010 Lancet notice is reported
+        to name the statement as incorrect [secondary: BMJ c696, not re-read; the notice was not
+        read]. The panel's own findings were not reachable.
       accessible: true
-      sources: [src-walker-smith-2012]
+      sources: [src-walker-smith-2012, src-lancet-retraction-2010]
     positions:
-      - label: "Yes (misleading)"
-        holder: "The GMC panel (2010); the Lancet's 2010 retraction notice (reported, not read)"
+      - label: "Misleading"
+        holder: "The GMC panel (2010); The Lancet's 2010 notice (as quoted)"
         ground: >
           A general reader would take "consecutively referred" to mean routine referral with no
-          active part played by the investigators. Secondary accounts say the notice called the
-          referral description incorrect (as quoted in BMJ c696, not re-read; Indian J Psychiatry
-          2011 says the paper reported its sampling as consecutive when it was selective).
-      - label: "No (not misleading)"
-        holder: "Mitting J, High Court, 2012"
-        ground: "Para 157 as quoted above."
+          active part played by the investigators (the panel's reading, quoted at para 156).
+      - label: "Not shown to be misleading"
+        holder: "The High Court (2012), for Walker-Smith"
+        ground: "The words meant only 'referred successively' (para 157), and the paper itself made clear the referral came from parents' concerns."
     basis: >
-      Both sides agree the children were not routine referrals; the dispute is about what the
-      printed words conveyed to a reader. The High Court's ruling is in Walker-Smith's case; it
-      quashed the panel's decision on him and did not rule on Wakefield, whose appeal was
-      abandoned. This limb carries no weight for or against the paper's other limbs.
+      Split from va-wakefield-paper-account-accurate (review round 1, B1). Genuinely contested
+      on the documents read. Both sides agree the children were not routine referrals; the
+      dispute is about what the printed words conveyed. The High Court's ruling is in
+      Walker-Smith's case; it quashed the panel's decision on him and did not rule on Wakefield,
+      whose appeal was abandoned.
 
   - id: va-retraction-reasons
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      The 1998 paper was withdrawn in stages, for different stated reasons, and its data
-      problems were documented separately. In 2004, 10 of its 13 authors retracted its
-      interpretation (the paper itself stayed in the journal), saying no causal link was
-      established because the data were insufficient; at the same time the Lancet admitted that
-      financial interests had not been disclosed. In February 2010, days after the GMC's
-      findings of fact of 28 January 2010, the Lancet retracted the whole paper. In January
-      2011 the BMJ published its comparison with hospital records and its fraud judgment, which
-      are the BMJ's findings, not the Lancet's.
+      The paper's interpretation was retracted in 2004 and the paper itself in 2010, for
+      different reasons, and the records problems were documented separately. In 2004, 10 of
+      its 13 authors retracted its interpretation, saying no causal link was established
+      because the data were insufficient, and The Lancet said the paper had failed to disclose
+      financial interests (the paper itself stayed in the journal). In February 2010, days after
+      the GMC's findings of fact of 28 January 2010, The Lancet retracted the whole paper; its
+      editor said the statements in the paper were "utterly false". The notice's own wording was
+      not read. Evidence that its diagnoses and onset dates did not match the children's records
+      was published afterwards, in the BMJ in January 2011, and is the BMJ's finding, not The
+      Lancet's.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported
-    evidential_weight: 4   # of 5; capped: neither Lancet notice was read (thelancet.com refused)
-    anchor_checked: secondary   # notices known as reported (Indian J Psychiatry 2011 read in full; Guardian 2 Feb 2010 read; BMJ not reachable); author list read
+    evidential_weight: 4   # of 5; capped: both Lancet notices known only as quoted
+    anchor_checked: secondary   # notices known as reported (Indian J Psychiatry 2011 and the Guardian of 2 Feb 2010 read directly in round 3; BMJ c696 not reachable); author list read
     adoption_weight: 2   # of 5
     adoption_note: >
       Not measured. Commonly compressed into "retracted for faked data", which merges the
       2010 retraction with the 2011 findings.
-    would_change_if: "the Lancet notices themselves give different reasons from how they are reported"
+    would_change_if: "the Lancet notices themselves give different reasons from how they are quoted"
     anchor:
-      type: journal-notices-and-reports
+      type: journal-notices-as-quoted
       description: >
-        2004 (retraction of an interpretation): "no causal link was established between MMR
-        vaccine and autism as the data were insufficient" and the Lancet's admission that
-        Wakefield et al. had "failed to disclose financial interests" [secondary: Indian J
-        Psychiatry 2011, PMC3136032, read in full]; the signatories are 10 of the 13 authors, not
-        Wakefield, Linnell or Harvey [author list read, Europe PMC]. 2010: the Lancet retracted
-        the paper after the GMC's findings of fact (28 Jan 2010, [2012] EWHC 503, para 1, read);
-        its editor said the statements in the paper were "utterly false" and that he "was
-        deceived" [Guardian, 2 Feb 2010, read]. The notice itself (Lancet 2010;375:445, 6 Feb 2010
-        issue, PMID 20137807) was NOT read: its wording, and which statements it names, are not
-        quoted here. The Guardian also reports that in 2004 the Lancet had asked the Royal Free
-        to investigate and that Royal Free inquiry "found no problems": that 2004 inquiry, not the
-        GMC hearing, is the "earlier investigation" in that account. 2011: the records comparison
-        and the editors' fraud judgment (see va-wakefield-records-vs-paper) [secondary].
+        2004: "no causal link was established between MMR vaccine and autism as the data were
+        insufficient", and The Lancet's admission that the authors had failed to disclose
+        financial interests, as described in Indian J Psychiatry 2011 [read; the 2004 notices
+        themselves were not read]. Signatories: 10 of the 13 authors, not Wakefield, Linnell or
+        Harvey [author list read]. 2010: the Lancet retracted the whole paper, announced on 2 Feb
+        2010 (notice in the 6 Feb 2010 issue, Lancet 2010;375:445), after the GMC's findings of
+        fact of 28 Jan 2010 ([2012] EWHC 503, para 1, read); the editor, Richard Horton, told the
+        Guardian "the statements in the paper were utterly false" and "I feel I was deceived"
+        [Guardian, 2 Feb 2010, read directly in round 3]. The notice itself was NOT read, so its
+        wording is not quoted here; the earlier pass's quotation of it (via BMJ c696, "contrary to
+        the findings of an earlier investigation", naming the referral and ethics-approval claims)
+        could not be re-checked and the gloss is not used. For context, the Guardian reports that
+        in 2004 the Lancet asked the Royal Free to investigate and the Royal Free's Prof. Hodgson
+        wrote that it "had found no problems": the 2004 inquiry, not the GMC hearing, is the
+        "earlier investigation" in that account. 2011: the BMJ records comparison and the editors'
+        fraud judgment [read via fetch tool; see va-wakefield-records-mismatch].
       accessible: true
-      sources: [src-murch-2004, src-indian-jpsych-2011, src-lancet-retraction-2010, src-guardian-lancet-2010, src-walker-smith-2012, src-deer-2011, src-godlee-2011]
+      sources: [src-murch-2004, src-indian-jpsych-2011, src-guardian-lancet-2010, src-lancet-retraction-2010, src-walker-smith-2012, src-deer-2011, src-godlee-2011]
     positions:
       - label: "Yes, pulled because of data problems"
         holder: "Common account"
         ground: >
-          The data were insufficient (2004), and the records did not match the paper (BMJ, 2011).
+          The data were insufficient (2004), and the records did not match the paper (2011).
       - label: "Not as stated in the retraction"
-        holder: "The 2010 retraction, as reported"
+        holder: "The 2010 retraction, as reported (the notice was not read)"
         ground: >
-          The Lancet retracted after the GMC's findings about the paper's statements (the editor
+          The Lancet retracted after the GMC's findings about the paper's statements (its editor
           called them "utterly false"). The records evidence came a year later and is the BMJ's
           finding, not the Lancet's.
     basis: >
-      Three grounds on three dates, kept apart: (1) 2004, interpretation retracted by 10 authors,
-      insufficient data, plus the Lancet's admission of undisclosed funding; the paper stayed
-      published; (2) 2010, the whole paper retracted by the Lancet after the GMC findings; (3)
-      2011, the BMJ's records comparison and fraud judgment. "Retracted over ethics paperwork"
-      is used to wave the case away, and "retracted for fraud" credits the retraction with a
-      finding it did not make. A caveat on the 2010 notice: the Lancet's editor says the
-      statements in the paper were false; the notice's own words are unread. TO REACH PRIMARY:
-      read both notices in The Lancet.
+      Both halves of the common account are true; they belong to different documents and
+      dates. Keeping them apart matters because "retracted over ethics paperwork" is used to
+      wave the case away, and "retracted for fraud" credits the retraction with a finding it
+      did not make. An earlier version of this claim said the "earlier investigation" was the
+      GMC hearing; that gloss was unsupported and is removed (review round 1, B2). TO REACH
+      PRIMARY: read the 2004 and 2010 notices in The Lancet.
 
   - id: va-measles-rna-gut
     state: refuted
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     refutes_target: >
       The mechanism proposed by the Wakefield group (1998-2002): persistent measles vaccine
       virus in the gut of children with autism and bowel symptoms
@@ -644,8 +545,7 @@ claims:
       Children with autism and bowel symptoms carry persistent measles virus in the gut,
       linking MMR to their condition.
     evidence_class: material
-    confidence: moderate   # was high; lowered after review round 1 (N7): one small gut replication, supported by two blood studies
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
+    confidence: moderate
     evidential_weight: 4   # of 5; a small study (38 children), but blinded and including the original laboratory
     anchor_checked: primary   # Hornig 2008 full text read
     adoption_weight: 1   # of 5
@@ -662,11 +562,8 @@ claims:
         was found in 1 case (4%) and 1 control (8%). MMR before bowel-symptom onset: 12 of 25
         cases vs 3 of 13 controls (P=0.13). The earlier report had found measles RNA in the
         ileum of 75% of children with autism vs 6% of controls [read, as cited in the paper].
-        Two other studies tested blood, not gut, and also found no measles virus nucleic acid in
-        children with autism: Afzal et al. 2006 (J Med Virol) and D'Souza, Fombonne & Ward 2006
-        (Pediatrics) [abstracts]. They are indirect for a gut mechanism.
       accessible: true
-      sources: [src-hornig-2008, src-afzal-2006, src-dsouza-2006]
+      sources: [src-hornig-2008]
     positions:
       - label: "Yes"
         holder: "The earlier report cited by Hornig (75% vs 6%)"
@@ -675,12 +572,11 @@ claims:
         holder: "Hornig et al. 2008"
         ground: "Blinded testing in three laboratories, including the original one, found 4% vs 8%."
     basis: >
-      Material evidence (biopsies tested by RT-PCR), read in full. Small, so held at weight 4 and
-      moderate confidence (lowered from high in round 1: one 38-child gut replication; the two
-      blood studies are supporting but indirect).
+      Material evidence (biopsies tested by RT-PCR), read in full. Small, so held at weight 4.
 
   - id: va-wakefield-sanctions
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Andrew Wakefield was struck off the UK medical register in May 2010 and did not
       complete his appeal, so the decision stands. John Walker-Smith's striking-off was
@@ -688,7 +584,6 @@ claims:
       professional misconduct.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5
     anchor_checked: primary   # the 2012 judgment read in full
     adoption_weight: 3   # of 5
@@ -721,6 +616,7 @@ claims:
 
   - id: va-uk-mmr-uptake-fall
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In England, MMR coverage by the second birthday fell from 91.8% in 1995-96 to 79.9% in
       2003-04, then began to rise. In 2008 the Health Protection Agency reported that
@@ -728,7 +624,6 @@ claims:
       coverage.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5 for the figures
     anchor_checked: primary   # NHS Immunisation Statistics 2004-05 and Eurosurveillance 2008 read in full
     adoption_weight: 3   # of 5
@@ -758,21 +653,21 @@ claims:
 
   - id: va-thimerosal-no-detectable-increase
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Children exposed to more thimerosal (a mercury-based preservative) in vaccines were not
       diagnosed with autism more often, and autism diagnoses kept rising after thimerosal
       was removed from routine childhood vaccines (Denmark 1992; United States 1999-2001).
     evidence_class: synthetic
     confidence: high
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5
-    anchor_checked: secondary   # abstracts (the IOM summary is adoption, not an anchor)
+    anchor_checked: secondary   # abstracts; IOM 2004 summary read in full
     adoption_weight: 4   # of 5
     adoption_note: >
-      Not measured separately. The IOM (2004) found the evidence "favors rejection" for
-      thimerosal-containing vaccines [executive summary read]: adoption, not used in the anchor.
-      In July 2025 HHS adopted an ACIP vote to use only
-      thimerosal-free flu vaccines, citing the 1999 pledge [read via fetch tool].
+      Not measured separately. The IOM (2004) said the evidence "favors rejection" for
+      thimerosal-containing vaccines [read]. In July 2025 HHS adopted an ACIP vote to use only
+      thimerosal-free flu vaccines, citing the 1999 pledge [read via fetch tool]. Adoption is
+      information, not evidence.
     would_change_if: >
       a cohort with individual exposure records finds autism rising with thimerosal dose,
       or diagnoses fall in birth cohorts after removal once reporting changes are accounted for
@@ -783,14 +678,13 @@ claims:
         per 25 micrograms of ethylmercury [abstract]. US case-control with clinically
         confirmed cases (256 cases, 752 controls): no increased risk at any exposure window
         [abstract]. California caseload kept rising through 2007 after removal [abstract].
-        Danish incidence rose after removal in 1992 [abstract]. Independence: the Danish studies
-        (Hviid 2003, Madsen 2003) are one register group; the US studies (Price 2010, Schechter &
-        Grether 2008, Verstraeten 2003) are separate data.
+        Danish incidence rose after removal in 1992 [abstract]. Independent populations:
+        Denmark (Hviid 2003; Madsen 2003) and the US (Price 2010; Schechter 2008).
       accessible: true
       sources: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-cdc-thimerosal, src-verstraeten-2003, src-hhs-thimerosal-2025]
     positions:
       - label: "No"
-        holder: "Hviid 2003, Price 2010, Schechter & Grether 2008, Madsen 2003"
+        holder: "Hviid 2003, Price 2010, Schechter & Grether 2008, Madsen 2003, IOM 2004"
         ground: "No dose-response; no fall after removal."
       - label: "Yes (what exists)"
         holder: "Verstraeten (preliminary screen, 2000); Geier & Geier (2003, 2004)"
@@ -805,6 +699,7 @@ claims:
 
   - id: va-thimerosal-removed-because-harmful
     state: refuted
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     refutes_target: >
       The claim that thimerosal was removed from US childhood vaccines in 1999-2001 because
       it had been found to cause harm
@@ -813,9 +708,8 @@ claims:
       harm.
     evidence_class: primary_text
     confidence: high
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
-    evidential_weight: 4   # of 5; primary read; held at 4 because the statement records what agencies said, not what officials privately believed
-    anchor_checked: primary   # MMWR 1999;48(26) notice read directly from cdc.gov (sha256 in the manifest)
+    evidential_weight: 5   # of 5
+    anchor_checked: primary   # MMWR 1999;48(26) downloaded and read in full
     adoption_weight: 2   # of 5
     adoption_note: "Not measured."
     would_change_if: >
@@ -824,61 +718,49 @@ claims:
     anchor:
       type: primary-policy-statement
       description: >
-        MMWR 1999;48(26), "Thimerosal in Vaccines: A Joint Statement of the American Academy of
-        Pediatrics and the Public Health Service": "there are no data or evidence of any harm
-        caused by the level of exposure that some children may have encountered"; "because any
-        potential risk is of concern, the Public Health Service (PHS), the American Academy of
-        Pediatrics (AAP), and vaccine manufacturers agree that thimerosal-containing vaccines
-        should be removed as soon as possible" [read directly]. The statement does not use the
-        word "precautionary". It also says "some children could be exposed to a cumulative level
-        of mercury over the first 6 months of life that exceeds one of the federal guidelines on
-        methyl mercury", which "now requires a weighing of two different types of risks", and
-        calls the neurodevelopmental risk "the unknown and probably much smaller risk, if
-        any" next to the risks of not vaccinating [read directly].
+        AAP and US Public Health Service, MMWR 1999;48(26): "there are no data or evidence of
+        any harm caused by the level of exposure that some children may have encountered";
+        nevertheless, "because any potential risk is of concern", thimerosal-containing
+        vaccines "should be removed as soon as possible". The same statement says some children
+        "could be exposed to a cumulative level of mercury over the first 6 months of life that
+        exceeds one of the federal guidelines on methyl mercury" [read].
       accessible: true
       sources: [src-mmwr-1999, src-fda-thimerosal]
     positions:
-      - label: "Yes"
+      - label: "Yes (what is real)"
         holder: "Common reading: removal as an admission"
         ground: >
-          The agencies acknowledged that some children could exceed a federal methylmercury
-          guideline in the first 6 months, and asked for removal as soon as possible; they would
-          not remove an ingredient they thought carried no risk at all.
+          The 1999 statement itself says some infants could exceed one federal guideline for
+          methylmercury, and removal followed.
       - label: "No"
         holder: "The 1999 statement itself"
         ground: >
-          It says there were "no data or evidence of any harm" at the exposure in use and gives
-          the reason for removal as "because any potential risk is of concern". It describes a
-          guideline margin and an unknown, probably much smaller, risk, not a finding of harm.
+          It says there were no data or evidence of harm at the exposure levels in use, and
+          that removal was recommended because any potential risk is of concern.
     basis: >
       The statement records what the agencies said at the time. It does not show what each
       official privately believed.
 
   - id: va-aluminum-no-detectable-increase
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In a cohort of 1,224,176 Danish children, more aluminum from vaccines in the first two
       years was not associated with more neurodevelopmental disorders (hazard ratio 0.93 per
-      milligram, 95% CI 0.90 to 0.97). The study's outcomes include autism spectrum
-      disorder, and a figure for autism alone (0.93, 0.89 to 0.97) has been reported, but it is
-      not in the abstract and was not verified in this pass (the press release and full text
-      were not reachable); do not rely on it.
+      milligram, 95% CI 0.90 to 0.97); the reported figure for autism alone is the same
+      (0.93, 0.89 to 0.97), read so far only in the journal's press release.
     evidence_class: synthetic
     confidence: moderate
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 3   # of 5; the autism figure itself was read only in a press release
     anchor_checked: secondary
     adoption_weight: 3   # of 5
     adoption_note: >
-      The WHO GACVS (Dec 2025) reviewed 10 randomized trials and 7 large cohort studies and
-      found no association between aluminium-adjuvanted vaccines and chronic or systemic
-      diseases; that review was about chronic and systemic disease generally, not autism
-      specifically, and it notes two ecological studies that reported an association with ASD
-      prevalence, which it rated at critical risk of bias and very low evidence [page read]. That
-      is adoption, not an anchor here.
       The US Health Secretary called for the paper's retraction in August 2025; the editor
-      declined [secondary: Reuters, Live Science]. Executive Order 14420 (Aug 2026) orders
-      HHS to pursue alternatives to aluminum adjuvants without citing autism [read via fetch tool].
+      declined [secondary: Reuters, Live Science]. The WHO's safety committee (Dec 2025) cited
+      a review of 10 trials and 7 cohort studies finding no association between aluminium
+      adjuvants and chronic or systemic disease generally, not autism specifically [read].
+      Executive Order 14420 (Aug 2026) orders HHS to pursue alternatives to aluminum adjuvants
+      without citing autism [read via fetch tool]. Adoption is information, not evidence.
     would_change_if: >
       the paper's full text, its published correction or its updated supplement shows an
       autism association in the main analysis (a 2026 reanalysis says the updated supplement
@@ -888,13 +770,13 @@ claims:
       description: >
         Andersson et al., Ann Intern Med 2025: 1,224,176 children born 1997-2018; any
         neurodevelopmental disorder HR 0.93 (0.90 to 0.97) per mg [abstract]; autism spectrum
-        disorder HR 0.93 (0.89 to 0.97) [secondary: ACP press release, not re-checked]. A 2026 BMJ
-        systematic review found no association [abstract].
+        disorder HR 0.93 (0.89 to 0.97) [secondary: ACP press release; not in the abstract].
+        A 2026 BMJ systematic review found no association [abstract].
       accessible: true
       sources: [src-andersson-2025, src-doyon-plourde-2026, src-jablonowski-2026]
     positions:
       - label: "No"
-        holder: "Andersson 2025 main analysis; Doyon-Plourde 2026"
+        holder: "Andersson 2025 main analysis; WHO GACVS 2025; Doyon-Plourde 2026"
         ground: "No increase with dose."
       - label: "Yes (what exists)"
         holder: "HHS Secretary Kennedy; Jablonowski & Hooker 2026"
@@ -912,12 +794,12 @@ claims:
 
   - id: va-aluminum-brain-tissue
     state: proposed
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Aluminum found in brain tissue from people with autism shows that vaccine aluminum
       contributes to autism.
     evidence_class: interpretive
     confidence: provisional
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 1   # of 5
     anchor_checked: secondary   # abstract and article page read
     adoption_weight: 2   # of 5
@@ -953,12 +835,12 @@ claims:
 
   - id: va-antigen-count-no-increase
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Children who received more vaccine antigens in their first two years were not
       diagnosed with autism more often.
     evidence_class: synthetic
     confidence: moderate
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 3   # of 5; one study
     anchor_checked: secondary
     adoption_weight: 2   # of 5
@@ -978,12 +860,12 @@ claims:
 
   - id: va-whole-schedule-gap
     state: searched_gap
+    statement_kind: search_result   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       The full childhood schedule (number, timing, order and combination of vaccines) has
       not been studied as one exposure for autism.
     evidence_class: primary_text
     confidence: moderate
-    statement_kind: search_result   # set by the author in review round 3, to be reviewed
     evidential_weight: 3   # of 5, for the existence of the gap
     anchor_checked: secondary   # IOM 2013 summary read through a fetch tool
     adoption_weight: 3   # of 5
@@ -1007,15 +889,16 @@ claims:
 
   - id: va-signs-emerge-in-schedule-window
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      In one prospective study of 25 infants later diagnosed with autism, social signs were
-      highly comparable to typical infants' at 6 months and declined afterwards in most; a
-      minority, however, showed clear signs before the first birthday. Signs emerged between about
-      6 and 18 months, the same period in which many vaccines are given.
+      In one prospective study of 25 infants later diagnosed with autism (mostly younger
+      siblings of children with autism), social behaviours were comparable with other infants
+      at 6 months and declined between about 6 and 18 months, the same period in which many
+      vaccines are given. In the same study, parents reported clear signs before the first
+      birthday in 11 children, and a loss of skills in only 4.
     evidence_class: synthetic
     confidence: moderate
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
-    evidential_weight: 4   # of 5; small prospective study
+    evidential_weight: 3   # of 5; one small prospective study
     anchor_checked: primary   # Ozonoff 2010 author manuscript read in full
     adoption_weight: 2   # of 5
     adoption_note: "Not measured."
@@ -1026,26 +909,21 @@ claims:
         Ozonoff et al. 2010: 25 infants later diagnosed with autism and 25 typically
         developing infants, assessed at 6, 12, 18, 24 and 36 months. Gaze to faces, social
         smiles and vocalizations were highly comparable at 6 months and declined afterwards
-        in most of the autism group (19 of 22); only 4 of 23 parents reported a loss of
-        skills [read]. By parent report (ADI-R, 23 of the 25): 3 children had typical
-        development then regression, 1 had early signs and later regression, 8 showed neither
-        early signs nor regression (a plateau), and 11 showed clear signs of autism before the
-        first birthday and no regression [read]. The sample is small and sibling-based, so
-        "usually" is a description of this study, not a general rate.
+        in most of the autism group (19 of 22). By parent report, 11 showed clear signs before
+        the first birthday and no regression, and 4 lost skills [read].
       accessible: true
       sources: [src-ozonoff-2010]
     basis: >
-      The study did not look at vaccines. It helps explain why parents can see onset after a
-      vaccination: the two happen in the same months. Held at moderate confidence and as a
-      description of one small study (round 1, N4). It does not by itself test cause.
+      The study did not look at vaccines. It explains why parents so often see onset after a
+      vaccination: the two happen in the same months. It does not by itself test cause.
 
   - id: va-timing-shows-cause
     state: proposed
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Because autism signs appeared soon after a vaccination, the vaccination caused them.
     evidence_class: interpretive
     confidence: provisional
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 1   # of 5
     anchor_checked: secondary
     adoption_weight: 3   # of 5
@@ -1080,13 +958,13 @@ claims:
 
   - id: va-vax-unvax-surveys
     state: proposed
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Vaccinated children have several times the autism rate of unvaccinated children
       (Mawson 2017, any vaccination: OR 4.2; Hooker & Miller 2021, fully vaccinated: OR 5.03,
       and any vaccination with chart-confirmed diagnoses: OR 13.0).
     evidence_class: synthetic
     confidence: provisional
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 1   # of 5
     anchor_checked: primary   # both papers read in full
     adoption_weight: 2   # of 5
@@ -1125,22 +1003,19 @@ claims:
       and the practices were ones unvaccinated families chose; 3 unvaccinated autism cases
       carry each estimate. An earlier version of Mawson's study was accepted and then pulled
       by a different journal (Frontiers in Public Health) in 2016 [secondary: Retraction
-      Watch]. Hooker & Miller's separate 2020 paper in SAGE Open Medicine (a different paper:
-      "Analysis of health outcomes in vaccinated and unvaccinated children: Developmental delays,
-      asthma, ear infections and gastrointestinal disorders") carries an expression of concern
-      dated 18 May 2026 ("under investigation") [read]. That notice does not cover the 2021 J
-      Transl Sci paper cited here for autism; no notice for the 2021 paper was found (it is not
-      indexed in Europe PMC, so the search is silent either way). This is the strongest published "yes"
+      Watch]. The expression of concern dated 18 May 2026 [read] covers Hooker & Miller's
+      separate 2020 SAGE Open Medicine paper (which did not analyze autism), not the 2021 paper
+      cited here, which has no notice recorded. This is the strongest published "yes"
       on vaccinated versus unvaccinated, and it is why va-fully-unvaccinated-gap matters.
 
   - id: va-fully-unvaccinated-gap
     state: searched_gap
+    statement_kind: search_result   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       No large study with recorded vaccinations and clinically recorded diagnoses has
       compared autism in fully unvaccinated children with vaccinated children.
     evidence_class: synthetic
     confidence: moderate
-    statement_kind: search_result   # set by the author in review round 3, to be reviewed
     evidential_weight: 3   # of 5, for the existence of the gap
     anchor_checked: secondary
     adoption_weight: 3   # of 5
@@ -1167,6 +1042,7 @@ claims:
 
   - id: va-henry-ford-shows-autism
     state: refuted
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     refutes_target: >
       Claims that the unpublished Henry Ford Health vaccinated-versus-unvaccinated study
       (Lamerato et al., entered into the US Senate hearing record on 9 Sep 2025) shows that
@@ -1175,7 +1051,6 @@ claims:
       The unpublished Henry Ford Health study found that vaccinated children have more autism.
     evidence_class: primary_text
     confidence: high
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5
     anchor_checked: primary   # the 24-page draft read in full from the Senate website
     adoption_weight: 2   # of 5
@@ -1211,12 +1086,12 @@ claims:
 
   - id: va-henry-ford-why-unpublished
     state: contested
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Henry Ford Health left the study unpublished because of flaws in its data and methods,
       not to hide its results.
     evidence_class: primary_text
     confidence: low
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 2   # of 5
     anchor_checked: secondary   # both statements read through a fetch tool
     adoption_weight: 2   # of 5
@@ -1253,6 +1128,7 @@ claims:
 
   - id: va-destefano-race-subset
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       The 2004 CDC study of age at MMR vaccination (DeStefano et al.) reported results by race
       only for a subsample of children with Georgia birth certificates. In 2014 a co-author,
@@ -1260,7 +1136,6 @@ claims:
       suggesting higher risk in African-American boys vaccinated before 36 months.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: secondary   # Thompson statement read in a third-party copy; DeStefano abstract; CDC statement read
     adoption_weight: 3   # of 5
@@ -1269,20 +1144,14 @@ claims:
     anchor:
       type: statement-and-agency-response
       description: >
-        Thompson, 27 Aug 2014 press release: "I regret that my coauthors and I omitted
-        statistically significant information in our 2004 article published in the journal
-        Pediatrics. The omitted data suggested that African American males who received the MMR
-        vaccine before age 36 months were at increased risk for autism. Decisions were made
-        regarding which findings to report after the data were collected, and I believe that the
-        final study protocol was not followed." [read, in a printout of the law firm's page
-        submitted as Vermont House testimony, 6 May 2015; the law firm's own page is gone]. The
+        Thompson, 27 Aug 2014: "my coauthors and I omitted statistically significant
+        information in our 2004 article" [read, third-party copy of the law firm's page]. The
         CDC's archived statement agrees that race was reported only for the birth-certificate
         sample and says the data remain available for reanalysis [read]. The paper's whole
-        sample: 624 cases, 1,824 controls; vaccination before 36 months OR 1.49 (1.04 to 2.14) in
-        the total sample and 1.23 (0.64 to 2.36) in the birth-certificate sample, attributed by
-        the authors to vaccination required for early-intervention programs; the abstract also
-        reports no significant association for the 18- and 24-month cutoffs in any case
-        subgroup, including children with regression [abstract, read this pass].
+        sample: 624 cases, 1,824 controls; no significant association for vaccination before
+        18 or 24 months, including in children with developmental regression; vaccination before
+        36 months OR 1.49 (1.04 to 2.14), attributed by the authors to vaccination required for
+        early-intervention programs [abstract].
       accessible: true
       sources: [src-thompson-2014, src-cdc-2004-study-statement, src-destefano-2004]
     basis: >
@@ -1293,12 +1162,12 @@ claims:
 
   - id: va-thompson-subgroup-real
     state: searched_gap
+    statement_kind: search_result   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Whether the omitted subgroup result reflects a real effect of MMR timing on autism in
       African-American boys.
     evidence_class: synthetic
     confidence: low
-    statement_kind: search_result   # set by the author in review round 3, to be reviewed
     evidential_weight: 2   # of 5
     anchor_checked: primary   # Hooker 2014 and its retraction notice read in full
     adoption_weight: 2   # of 5
@@ -1337,6 +1206,7 @@ claims:
 
   - id: va-simpsonwood-autism-hidden
     state: refuted
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     refutes_target: >
       The claim that the transcript of the June 2000 Simpsonwood meeting shows the CDC found
       that thimerosal caused autism and hid it
@@ -1345,9 +1215,8 @@ claims:
       and hid the finding.
     evidence_class: primary_text
     confidence: high
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
-    evidential_weight: 4   # of 5; the whole transcript was downloaded and searched; held at 4 because the earlier internal analysis critics cite is not in it
-    anchor_checked: primary   # full 259-page CDC Stacks PDF downloaded and text-searched 2 Oct 2026 (sha256 in the manifest); every mention of autism and the passages on confidentiality read
+    evidential_weight: 4   # of 5
+    anchor_checked: primary   # full 260-page CDC Stacks PDF downloaded; every passage mentioning autism read
     adoption_weight: 2   # of 5
     adoption_note: "Not measured. Popularized by 'Deadly Immunity' (2005)."
     would_change_if: >
@@ -1356,20 +1225,18 @@ claims:
     anchor:
       type: transcript-and-publication
       description: >
-        In the full transcript (259 pages, CDC Stacks; text-extracted, so OCR noise is possible),
-        Verstraeten's presentation says of autism: "we don't see much of a trend except for a
-        slight, but not significant, increase for the highest exposure. The overall test for
-        trend is statistically not significant", and for speech delays "a suggestion of a trend"
-        with an overall test "highly statistically significant above one"; later, limiting to
-        children seen at least twice, the autism relative risk "is no different than one"
-        and was "replicated" across case definitions [read]. A discussant notes only 13 autism
-        cases were in the chart review. The chair asks participants to treat the data as
-        "embargoed" and "highly protected" until a public release at the ACIP meeting on 21-22
-        June 2000, i.e. weeks later (a request for confidentiality before a planned public
-        release, which is what the transcript shows, not a decision to withhold) [read]. The study was
-        published in 2003 with both phases: no consistent associations, and no significant
-        increase for autism in any analysis [abstract]. The "generation zero" analysis that
-        critics cite does not appear in the transcript text (no match for "generation").
+        Transcript p. 44: "This is the result for autism, in which we don't see much of a trend
+        except for a slight, but not significant, increase for the highest exposure. The overall
+        test for trend is statistically not significant." The preliminary screen's signals
+        concerned speech delay, attention deficit disorder and the neurodevelopmental group
+        [read; full text searched, all eight autism passages read]. Later, limiting to children
+        seen at least twice, the autism relative risk "is no different than one" and was
+        replicated across case definitions [read]. The chair asks participants to treat the data
+        as "embargoed" and "very highly protected" until a public release at the ACIP meeting
+        on 21-22 June 2000, weeks later: a request for confidentiality ahead of a planned
+        public release, which is what the transcript shows, not a decision to withhold [read].
+        The study was published in 2003 with both phases: no consistent associations, and no
+        significant increase for autism in any analysis [abstract].
       accessible: true
       sources: [src-simpsonwood-2000, src-verstraeten-2003]
     positions:
@@ -1379,25 +1246,23 @@ claims:
           There was an early signal for some neurodevelopmental outcomes, discussed in a
           closed meeting before publication. Critics also cite an earlier internal analysis
           (the "generation zero" run) reported to show a higher relative risk for autism at
-          the highest early exposure; it does not appear in the transcript and is not verified
-          here.
+          the highest early exposure; it is not in the transcript and is not verified here.
       - label: "No"
-        holder: "The transcript; the 2003 paper"
+        holder: "The transcript pages read; the 2003 paper"
         ground: "The autism result was not significant, and the study was published."
     basis: >
-      Read in full this pass (log L-16), so the earlier "most of the transcript not read" limit is
-      gone. What remains unverified is the earlier internal analysis critics cite; it is not in
-      this transcript, and the claim does not rule on it. The transcript is a public CDC record
-      on CDC Stacks.
+      Re-anchored to the full transcript (review round 1, N2). The phrase "generation zero" does
+      not occur in the transcript; the earlier internal analysis critics cite under that name
+      was not seen and stays unverified.
 
   - id: va-deadly-immunity-retracted
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Salon removed Robert F. Kennedy Jr.'s 2005 article "Deadly Immunity", which linked
       thimerosal to autism, in January 2011, after five earlier corrections.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5
     anchor_checked: primary   # Salon's notice read in full
     adoption_weight: 2   # of 5
@@ -1419,6 +1284,7 @@ claims:
 
   - id: va-compensation-program
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       The US Vaccine Injury Compensation Program is a no-fault scheme, designed to pay injured
       people faster and more easily than a lawsuit. For an injury on its Table that appears
@@ -1427,7 +1293,6 @@ claims:
       causation. Payments come from an excise tax on each vaccine dose.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5
     anchor_checked: primary   # Bruesewitz v. Wyeth opinion and syllabus read in full; 42 CFR 100.3 read
     adoption_weight: 2   # of 5
@@ -1463,45 +1328,43 @@ claims:
 
   - id: va-poling-concession
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In late 2007 the US government conceded, in Hannah Poling's vaccine-compensation case, a
       link between her vaccinations and her injury. CNN reports that the program "concluded"
       the vaccinations "significantly aggravated" an underlying illness (a mitochondrial
       disorder) that had predisposed her to symptoms of autism; NPR reports the government said
-      it was possible the vaccines "may have exacerbated" the disorder. The exact wording of the
-      government's report was not read.
+      it was possible the vaccines "may have exacerbated" the disorder. The two reports word it
+      differently and the government's report was not read.
     evidence_class: primary_text
     confidence: moderate
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5; capped: the concession is known only as quoted
-    anchor_checked: secondary   # CNN and NPR read directly; the sealed decision and the Rule 4(c) report were not read
+    anchor_checked: secondary   # CNN and NPR opened directly (revision round 3); the sealed decision and the Rule 4(c) report were not read
     adoption_weight: 3   # of 5
     adoption_note: "Not measured. Often cited as 'the government admitted vaccines cause autism'."
     would_change_if: "the Rule 4(c) report itself says something different from how it was quoted"
     anchor:
-      type: government-concession-as-quoted
+      type: concession-as-reported
       description: >
-        CNN, 6 Mar 2008 [read]: "A federal program intended to compensate victims of injuries
-        caused by vaccines concluded last November that Hannah Poling's underlying illness that
-        had predisposed her to symptoms of autism was 'significantly aggravated' by the
-        vaccinations she received as a toddler"; the decision "had been sealed"; the family's
-        lawyer says that "last fall, shortly before a deadline for expert testimony", the
-        government conceded the link and moved the case to damages (his account), and that the
-        case had been designated a potential test case in 2007. CDC director Julie Gerberding:
-        "The government has made absolutely no statement indicating that vaccines are a cause of
-        autism." NPR, 7 Mar 2008 [read]: lawyers for HHS "agreed to pay"; "in its ruling, the
-        government said it was possible that the vaccines Hannah received may have exacerbated
-        that disorder"; Gerberding as above. The two reports word the concession differently
-        ("concluded ... significantly aggravated" versus "possible ... may have exacerbated"),
-        and neither reproduces the document. A fuller phrase attributed to the government's Rule
-        4(c) report in Salon (Mar 2008) was not re-checked and is not used. The decision itself,
-        and the 2010 compensation reports, were not read.
+        CNN (6 Mar 2008): the program concluded in November 2007 that the child's underlying
+        illness was "significantly aggravated" by vaccines; her case had been designated a
+        potential test case before the concession, made shortly before a deadline for expert
+        testimony (the family lawyer's account); CDC director Julie Gerberding said the
+        government had made "absolutely no statement indicating that vaccines are a cause of
+        autism" [read directly in round 3]. NPR (7 Mar 2008): lawyers for HHS "agreed to pay"
+        and "in its ruling, the government said it was possible that the vaccines Hannah received
+        may have exacerbated that disorder" [read directly in round 3]. The two reports therefore
+        word the concession differently ("concluded ... significantly aggravated" versus
+        "possible ... may have exacerbated"); the statement above gives both. The fuller wording
+        ("an underlying mitochondrial disorder ... features of autism spectrum disorder") is
+        known only as quoted in Salon (Mar 2008) and was not re-checked. The Rule 4(c) report
+        and the 2010 decision were not read.
       accessible: true
       sources: [src-poling-cnn-2008, src-poling-npr-2008]
     what_it_is:
-      - "The government's concession, in late 2007, of a link between the vaccinations and one child's injury, as reported by CNN and NPR."
+      - "A concession by the US government in one family's compensation claim, reported in March 2008: the program concluded her underlying illness was 'significantly aggravated' by vaccines."
       - "About one child with a pre-existing mitochondrial disorder."
-      - "Made inside the no-fault compensation program (va-compensation-program); whether its presumption for listed injuries applied in this case was not checked."
+      - "Made inside a no-fault compensation program (va-compensation-program); whether a Table presumption applied in her case was not checked."
     what_it_is_not:
       - "Not a scientific finding that vaccines cause autism, in her or anyone else."
       - "Not a verdict after the evidence was tried; it was conceded."
@@ -1511,33 +1374,31 @@ claims:
         holder: "Common reading of the case"
         ground: "The government accepted that vaccines led to this child's autism-like condition."
       - label: "No, not in general"
-        holder: "HHS and CDC (2008); the framing of the concession"
+        holder: "CDC director Julie Gerberding (Mar 2008)"
         ground: >
-          The concession concerned a pre-existing mitochondrial disorder aggravated in one child,
-          and the CDC director said at the time that it was not a statement that vaccines cause
-          autism. Which compensation rule the concession rested on was not checked.
+          The concession concerned aggravation of one child's pre-existing mitochondrial
+          disorder; the government made no statement that vaccines cause autism.
     basis: >
       This is the narrow "yes" in the short answer, and it is a legal concession, not a
-      scientific test. The compensation program has a low bar by design
-      (va-compensation-program); a concession in it does not show mechanism. Reports that she
-      was compensated in 2010 were not checked against the decision. The wording of the
-      concession differs between the two reports read, so the claim is held at moderate
-      confidence and `established` only for the fact of a concession. It points to the open question in va-mito-fever-regression. TO REACH
+      scientific test. The compensation rules allow a presumption of causation for listed
+      injuries; whether it applied here was not checked. Other compensated cases with
+      autism-like features may exist and were not checked, so this is the best-known case,
+      not a count. It points to the open question in va-mito-fever-regression. TO REACH
       PRIMARY: obtain Poling v. Secretary of HHS, No. 02-1466V, from the Court of Federal
       Claims (the posted PDF has moved).
 
   - id: va-omnibus-test-cases
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In the US vaccine court's Omnibus Autism Proceeding, all six test cases, chosen by the
       families' own steering committee to present their strongest theories (MMR plus
       thimerosal, and thimerosal alone), were decided against the families in 2009 and 2010,
       out of some 5,000 autism petitions (Bruesewitz dissent, n.25). The court's decision list
-      shows review decisions in 2009 and Federal Circuit decisions in 2010 on three of the cases
-      (the decisions themselves were not opened).
+      shows review decisions in 2009 and Federal Circuit decisions in 2010 on three of the
+      cases; the decisions themselves were not opened, so their outcome on review is not stated.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5; capped while anchor_checked is secondary
     anchor_checked: secondary   # decisions read through a fetch tool (the court CDN refused direct download)
     adoption_weight: 3   # of 5
@@ -1548,14 +1409,14 @@ claims:
       description: >
         Special masters' decisions of 12 Feb 2009 (Cedillo, Hazlehurst, Snyder) and 12 Mar
         2010 (King, Mead, Dwyer): all denied [court's decision list, read directly 2 Oct 2026:
-        dates and case names; the decisions were not opened]. Cedillo: the evidence was
+        dates and case names only; the decisions were not opened]. Cedillo: the evidence was
         "overwhelmingly contrary to the petitioners' contentions" [as read through a fetch tool in
         an earlier pass; not re-checked]. The list also shows Court of Federal Claims decisions on
         24 Jul, 6 Aug and 11 Aug 2009 (Hazlehurst, Cedillo, Snyder) and Federal Circuit decisions
         on 13 May 2010 (Hazlehurst) and 27 Aug 2010 (Cedillo); that these affirmed was not opened.
         Number of petitions: "some 5,000" (Bruesewitz dissent, n.25, read); CNN 2008: "nearly
         5,000 other autism claims are pending". The figures "more than 5,000 filed" and "about
-        4,800 pending" were not found in any source read this pass.
+        4,800 pending" were not found in any source read in revision round 3 and are dropped.
       accessible: true
       sources: [src-oap-decisions]
     what_it_is:
@@ -1566,13 +1427,11 @@ claims:
       - "Not a judgment on the families' honesty or on their children's suffering."
       - "Not a ruling on the theory of MMR alone, which was never presented."
     positions:
-      - label: "A caution, not a position that the question is open"
+      - label: "A caution, not a finding either way"
         holder: "Justice Sotomayor's dissent in Bruesewitz (2011), n.25"
         ground: >
-          The footnote says the special masters "have thus far uniformly rejected the alleged
-          causal link between vaccines and autism" and adds that "those rulings do not
-          necessarily mean that no such causal link exists" [read]. It is a remark in a dissent
-          about litigation risk, not an assessment that the science is open.
+          The footnote notes the special masters "uniformly rejected" the link, and adds that
+          those rulings do not necessarily mean no causal link exists [read].
       - label: "No"
         holder: "The special masters"
         ground: "The families' experts did not show causation by the legal standard."
@@ -1582,13 +1441,13 @@ claims:
 
   - id: va-bruesewitz-no-autism-finding
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       The US Supreme Court's 2011 decision in Bruesewitz v. Wyeth held that federal law bars
       design-defect lawsuits against vaccine makers. It made no finding about autism; the
       case concerned seizures and developmental delay after DTP.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5
     anchor_checked: primary   # syllabus, opinion, concurrence and dissent read in full
     adoption_weight: 2   # of 5
@@ -1609,24 +1468,18 @@ claims:
     what_it_is_not:
       - "Not a finding that vaccines are unsafe or that any particular injury happened."
       - "Not about autism: the case concerned seizures and developmental delay after DTP."
-      - >
-          Not immunity from all suits: claims over manufacturing defects or failures to warn are
-          not barred by this holding. But the opinion also notes that manufacturers are
-          "generally immunized from liability for failure to warn if they have complied with all
-          regulatory requirements (including but not limited to warning requirements) and have
-          given the warning either to the claimant or the claimant's physician", so a failure-to-warn
-          claim is hard to bring where the manufacturer complied [read, Cornell LII].
+      - "Not immunity from all suits: manufacturing-defect claims are not barred, and failure-to-warn claims are barred only where the maker complied with regulatory requirements and gave the warning."
     basis: "Filed because both sides cite it; it bears on liability, not on causation."
 
   - id: va-vicp-table-no-autism
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Autism is not on the US Vaccine Injury Table. Encephalopathy or encephalitis within 5 to
       15 days of a measles-containing vaccine is. The Poling concession was described as an
       encephalopathy, but the Table in force when it was decided was not read.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5
     anchor_checked: primary   # 42 CFR 100.3 read in full (eCFR, as of 30 Sep 2026)
     adoption_weight: 2   # of 5
@@ -1643,35 +1496,31 @@ claims:
     what_it_is:
       - "A list of injuries that the compensation program presumes are vaccine-caused when they appear within set time windows."
     what_it_is_not:
-      - >
-          Not a statement that each listed injury was proved to be caused by the vaccine, and not
-          the same thing as a scientific finding. It is a legal list: set in the statute, changed
-          by rulemaking with notice, a public hearing and at least 180 days of public comment,
-          and on petition of the Advisory Commission on Childhood Vaccines or anyone else
-          (42 U.S.C. 300aa-14(c), read). Its contents are informed by, but not the same as, the
-          science.
+      - "Not a scientific list of what vaccines cause: it is a legal list, informed by but not the same as scientific findings."
       - "Not a bar to claims: families can still try to prove an unlisted injury."
     basis: >
-      The Table is a compensation list, written to pay quickly with a low bar. Whether an injury
-      is on it is a legal matter, set by statute and rulemaking; it is not by itself a scientific
-      finding that the vaccine does or does not cause the injury.
+      The Table is a compensation list, written to pay quickly with a low bar. It is set by
+      statute and changed by rulemaking with notice, a public hearing and at least 180 days of
+      public comment, on petition of the Advisory Commission on Childhood Vaccines or anyone else
+      (42 U.S.C. 300aa-14(c), read on Cornell LII). Whether an injury is on it is a legal matter,
+      informed by but not the same as a scientific finding that the vaccine does or does not
+      cause the injury. The role of Institute of Medicine reviews in changing the Table was not
+      verified here.
 
   - id: va-geier-licence
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      Mark Geier, a co-author of early papers reporting a link between thimerosal-containing
-      vaccines and autism (see va-thimerosal-no-detectable-increase), had his Maryland medical
-      licence revoked by the State Board of Physicians on 22 August 2012. The Board found, among
-      other things, that he treated autistic children with the drug Lupron outside its approved
-      use without adequate examination, prescribed chelation without documenting a reason, and
-      provided "informed consent" forms that were "misleading and in at least one case blatantly
-      false". The revocation was affirmed by the circuit court (2014) and the Court of Special
-      Appeals (2015).
+      Mark Geier, author of the main early papers reporting a vaccine-autism link, had his
+      Maryland medical licence revoked by the State Board of Physicians on 22 August 2012. The
+      Board found, among other things, that he treated autistic children with the drug Lupron
+      outside its approved use without adequate examination, started chelation without
+      documenting a reason, and provided "informed consent" forms it called misleading and in
+      at least one case blatantly false.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 5   # of 5
-    anchor_checked: primary   # Geier v. Md. State Bd. of Physicians, 223 Md. App. 404 (29 May 2015), read in full; the 1 Oct 2015 opinion read for dates only; the 2017 and 2019 opinions were NOT read
+    anchor_checked: primary   # Geier v. Md. State Bd. of Physicians, 223 Md. App. 404 (29 May 2015, No. 1095) read in full in round 3; the 1 Oct 2015 and 2019 opinions read earlier
     adoption_weight: 2   # of 5
     adoption_note: "Not measured."
     would_change_if: "the revocation is overturned"
@@ -1679,29 +1528,29 @@ claims:
       type: court-record
       description: >
         Geier v. Maryland State Board of Physicians, 223 Md. App. 404, 116 A.3d 1026 (Court of
-        Special Appeals, No. 1095, Sept. Term 2014, filed 29 May 2015) [read in full]: the Board's
-        Final Decision and Order of 22 Aug 2012 revoked the licence (after an exceptions hearing
-        on 23 May 2012). The Board found that he treated patients with Lupron, "a medication that
-        was not approved by the U.S. Food and Drug Administration ... for use on children in the
-        absence of precocious puberty", without an adequate examination; that he prescribed
+        Special Appeals, No. 1095, Sept. Term 2014, filed 29 May 2015), the appeal of the
+        licence revocation [read in full]: the Board's Final Decision and Order of 22 Aug 2012
+        revoked the licence. The Board found that he treated patients with Lupron, "a medication
+        that was not approved by the U.S. Food and Drug Administration ... for use on children in
+        the absence of precocious puberty", without an adequate examination; that he prescribed
         chelation "without documenting a reason ... and without adequate documented informed
         consent", which "violated the standard of quality care"; and, in setting the sanction,
-        that he provided "informed consent" forms that were "misleading and in at least one case
-        blatantly false". Circuit court affirmance: 9 Apr 2014 (amended order 9 Jul 2014). The
-        Board's charges included failing to keep adequate medical records. The summary suspension
-        of 27 Apr 2011, the charges and the 2012 date also appear in the 1 Oct 2015 opinion
-        (Nos. 722 and 2256, a later suit by the Geiers against the Board) [read]. The Board's own
-        order was not read; the 2017 and 2019 Maryland opinions were not read. In March 2025 HHS
-        reportedly engaged his son David Geier to study vaccine data [secondary: STAT, 26 Mar
-        2025, read]; HHS has not published his role.
+        that he provided "informed consent" forms that were "misleading and in at least one
+        case blatantly false". The circuit court affirmed on 9 Apr 2014. The charges included
+        failing to keep adequate medical records. The 1 Oct 2015 opinion (Nos. 722 and 2256, a
+        later suit by the Geiers against the Board) gives the summary suspension of 27 Apr 2011
+        and the same dates, and the 2019 opinion (No. 338) describes the Board's conclusion in
+        similar words [read]. The Board's own order was not read.
       accessible: true
-      sources: [src-geier-md-2015-licence, src-geier-md-2015, src-stat-geier-2025]
+      sources: [src-geier-md-2015-licence, src-geier-md-2015, src-geier-md-2019]
     basis: >
       The revocation concerns clinical practice, not the validity of the Geiers' data; their
-      papers are weighed on their own methods. (The IOM's 2004 appraisal of the identified Geier
-      papers, "uninterpretable, and therefore noncontributory", is an expert appraisal of those
-      papers and is recorded under va-thimerosal-no-detectable-increase, not here.) Motive is
-      not assessed.
+      papers are weighed on their own methods. The IOM's 2004 appraisal of those specific
+      papers ("uninterpretable, and therefore noncontributory") is an appraisal, not evidence
+      about vaccines, and is kept out of the anchor. Motive is not assessed. Separately, in March
+      2025 HHS reportedly engaged David Geier to study vaccine data [secondary: STAT]; HHS has
+      not published his role. Whether living persons stay named here is an owner decision
+      (review round 1, section 6).
 
   # =====================================================================
   # F. PREVALENCE AND CAUSES
@@ -1709,15 +1558,15 @@ claims:
 
   - id: va-rise-mostly-reporting
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In Denmark, changes in diagnostic criteria and the inclusion of outpatient diagnoses
-      explain about 60% (95% CI 33% to 87%) of the increase in autism diagnoses for children
-      born 1980-1991. In the United States, the surveillance series for 8-year-olds changed its
-      definition, sources and sites over time, so its rise cannot be read as a rise in the same
-      thing; this does not measure what share of the US rise is reporting.
+      explain about 60% (95% CI 33% to 87%) of the rise in autism diagnoses among children born
+      1980-1991. In the US, the CDC surveillance series rose from 6.7 to 32.2 per 1,000 between
+      2000 and 2022 while its definitions, record sources and sites changed, so the share of the
+      US rise due to reporting cannot be read from it.
     evidence_class: synthetic
     confidence: moderate
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 3   # of 5
     anchor_checked: secondary   # abstracts; DSM review read in full
     adoption_weight: 3   # of 5
@@ -1736,21 +1585,19 @@ claims:
       accessible: true
       sources: [src-hansen-2015, src-shattuck-2006, src-addm-2007, src-addm-2025, src-rosen-2021]
     basis: >
-      Scope (round 1, N6): the 60% figure is Danish, for births 1980-1991 and two named
-      reporting changes. The US figures are listed to show that the measurement changed, not to
-      estimate a US share. The famous "1 in 150" for 2000 is CDC framing; the report itself gives 6.7 per 1,000.
+      The famous "1 in 150" for 2000 is CDC framing; the report itself gives 6.7 per 1,000.
       Site-level figures in 2022 range from 9.7 to 53.1 per 1,000, which shows how much case
       finding moves the number.
 
   - id: va-rise-remainder-unexplained
     state: searched_gap
+    statement_kind: search_result   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In the Danish analysis of children born 1980-1991, part of the rise in autism diagnoses
       (about 40%, with a range from 13% to 67%) is not explained by the two reporting changes
       measured, and its causes are not known.
     evidence_class: synthetic
     confidence: moderate
-    statement_kind: search_result   # set by the author in review round 3, to be reviewed
     evidential_weight: 3   # of 5
     anchor_checked: secondary
     adoption_weight: 3   # of 5
@@ -1771,12 +1618,12 @@ claims:
 
   - id: va-rise-proves-vaccines
     state: proposed
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       The rise in autism diagnoses alongside an expanding vaccine schedule shows that vaccines
       cause autism.
     evidence_class: interpretive
     confidence: provisional
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 1   # of 5
     anchor_checked: secondary
     adoption_weight: 3   # of 5
@@ -1804,12 +1651,12 @@ claims:
 
   - id: va-heritability-high
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Most of the variation in autism risk between people is genetic: heritability is
       estimated at about 80% (83% in Sweden; a median of 80.8% across five countries).
     evidence_class: synthetic
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: primary   # Sandin 2017 and Bai 2019 read in full
     adoption_weight: 3   # of 5
@@ -1830,13 +1677,13 @@ claims:
 
   - id: va-known-environmental-factors
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Some non-genetic factors are reliably associated with autism: older parents, valproate
       taken in pregnancy (likely causal), and birth complications involving lack of oxygen.
       A review of systematic reviews classed vaccination as unrelated to autism risk.
     evidence_class: synthetic
     confidence: moderate
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: primary   # Modabbernia 2017 read in full
     adoption_weight: 2   # of 5
@@ -1854,11 +1701,11 @@ claims:
 
   - id: va-causes-largely-unknown
     state: searched_gap
+    statement_kind: search_result   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       For most individual children with autism, the specific cause has not been identified.
     evidence_class: synthetic
     confidence: high
-    statement_kind: search_result   # set by the author in review round 3, to be reviewed
     evidential_weight: 3   # of 5
     anchor_checked: secondary
     adoption_weight: 4   # of 5
@@ -1881,6 +1728,7 @@ claims:
 
   - id: va-rubella-causes-autism-vaccine-prevents
     state: established
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Rubella infection in pregnancy can cause autism in the child. In a follow-up of 243
       children with congenital rubella, 7% had autism in the preschool years. The rubella
@@ -1888,7 +1736,6 @@ claims:
       autism cases prevented in 2001-2010 (range 830 to 6,225).
     evidence_class: material
     confidence: moderate
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5; Chess read as abstracts; the model read in full
     anchor_checked: secondary
     adoption_weight: 1   # of 5
@@ -1913,12 +1760,12 @@ claims:
 
   - id: va-mito-fever-regression
     state: proposed
+    statement_kind: judgment   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       In children with mitochondrial disease, fever, including fever after a routine
       vaccination, may trigger autistic regression.
     evidence_class: synthetic
     confidence: provisional
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 2   # of 5
     anchor_checked: secondary   # the review read in full; the case series as abstract and as cited
     adoption_weight: 1   # of 5
@@ -1936,7 +1783,8 @@ claims:
         Rossignol & Frye 2012 (meta-analysis): mitochondrial disease in 5.0% (3.2% to 6.9%) of
         children with autism, against about 0.01% in the general population; in one series of
         28 children with both, 17 regressed, 12 of them with a fever over 101F, including 4 of
-        those 12 after a fever following routine vaccination; the reviewers state it is not
+        those 12 after a fever following routine vaccination, and one further child in a case
+        report regressed after a post-vaccination fever; the reviewers state it is not
         clear whether mitochondrial dysfunction contributed to or caused the regression [read].
         Shoffner et al. 2010 (that series): none regressed with vaccination unless a fever was
         present [abstract].
@@ -1964,6 +1812,7 @@ claims:
 
   - id: va-small-effect-not-excludable
     state: searched_gap
+    statement_kind: search_result   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     gap_type: structural
     gap_reason: >
       No study can show that an effect is exactly zero. The largest MMR cohort (HR 0.93, 95%
@@ -1971,33 +1820,28 @@ claims:
       studies have wider margins (upper bounds 1.09 to 1.24 for MMR and thimerosal); and
       population data cannot by themselves rule out an effect confined to a very rare
       susceptible group.
-      The IOM said so in 2004, adding that there was no evidence for such a group either
-      (adoption: see adoption_note).
+      The IOM said so in 2004, adding that there was no evidence for such a group either.
     statement: >
       Population studies cannot rule out a very small average effect, or an effect confined
       to a very rare susceptible group.
     evidence_class: synthetic
     confidence: high
-    statement_kind: judgment   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5
-    anchor_checked: secondary   # abstracts; the IOM statement of the same limit is adoption, noted below
+    anchor_checked: secondary   # Hviid 2019 abstract; the limit itself is a property of any null result
     adoption_weight: 3   # of 5
     adoption_note: >
-      The IOM said the same in 2004: it could not rule out that vaccines contribute to autism in
-      some small subset or very unusual circumstances, and found no evidence for that hypothesis
-      [executive summary read]; that is an institution's statement of the limit, not an anchor.
-      Cited by the CDC page since Nov 2025 as the reason "vaccines do not cause autism" is not
-      evidence-based (see va-cdc-page-2025).
+      The IOM (2004) said it could not rule out that vaccines contribute to autism in some
+      small subset or very unusual circumstances, and that there was no evidence for that
+      either [read]. The CDC page has cited the same limit since Nov 2025 as the reason "vaccines
+      do not cause autism" is not evidence-based (see va-cdc-page-2025). Adoption, not evidence.
     would_change_if: "never fully closed by population data; narrowed by tests of named subgroups (see va-mito-fever-regression)"
     anchor:
       type: stated-limit
       description: >
-        Hviid 2019: HR 0.93 with upper confidence limit 1.02, so any average relative increase
-        compatible with the data is at most about 2% [abstract]; the same logic gives wider
-        limits for smaller studies. Named subgroups tested so far (siblings of children with
-        autism; children with other risk factors) showed no increase [abstracts]. That a rare
-        susceptible group cannot be excluded by population data is a statement about what such
-        data can show.
+        Hviid 2019: HR 0.93 (0.85 to 1.02), an upper bound of about a 2% relative increase
+        [abstract]. Named subgroups tested so far (siblings of children with autism; children
+        with other risk factors) showed no increase [abstracts]. That a null result cannot show
+        an effect is exactly zero is a property of the method, not a finding of any study.
       accessible: true
       sources: [src-hviid-2019, src-jain-2015]
     basis: >
@@ -2007,6 +1851,7 @@ claims:
 
   - id: va-cdc-page-2025
     state: established
+    statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Since 19-20 November 2025 the CDC's "Autism and Vaccines" page has said the claim
       "vaccines do not cause autism" is not evidence-based because studies have not ruled out
@@ -2014,7 +1859,6 @@ claims:
       personally ordered the change.
     evidence_class: primary_text
     confidence: high
-    statement_kind: reported   # set by the author in review round 3, to be reviewed
     evidential_weight: 4   # of 5, for what the page says
     anchor_checked: secondary   # live page read through a fetch tool, 2 Oct 2026
     adoption_weight: 3   # of 5
@@ -2032,7 +1876,7 @@ claims:
         2025; Kennedy said he ordered it [secondary: STAT, 21 Nov 2025]. Revised again about
         22 Jul 2026 [secondary].
       accessible: true
-      sources: [src-cdc-autism-page, src-stat-cdc-page-2025]
+      sources: [src-cdc-autism-page, src-stat-cdc-page-2025, src-who-gacvs-2025]
     positions:
       - label: "Yes, a link is possible"
         holder: "HHS and the current CDC page"
@@ -2040,11 +1884,10 @@ claims:
       - label: "No link"
         holder: "WHO GACVS (Dec 2025); AAP"
         ground: >
-          There is no evidence of a causal relationship between vaccines and autism. The WHO page
-          reports that 20 of the 31 primary studies it reviewed and all 5 meta-analyses found no
-          association, and that the other 11 studies (9 from one US group) suggested one but were
-          judged very low strength with a high risk of bias [WHO page read]. This is the
-          committee's reading, recorded as adoption.
+          No evidence of a causal relationship. The WHO's review counted 20 of 31 primary
+          studies finding no association and all 5 meta-analyses null; the other 11 studies,
+          nine from one US group, suggested an association and were rated very low strength
+          with a high risk of bias [read].
     basis: >
       Filed as a fact about an institution's statement. Under rule 2 it confers no evidential
       weight in either direction; neither does the CDC's earlier statement that there is no
