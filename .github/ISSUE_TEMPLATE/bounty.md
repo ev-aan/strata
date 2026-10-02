@@ -1,6 +1,6 @@
 ---
 name: Propose a bounty
-about: Suggest an open problem for Strata to excavate
+about: Suggest an open problem for Stratah to excavate
 title: "Bounty proposal: [subject]"
 labels: bounty-proposal
 ---

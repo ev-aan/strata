@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a Strata timeline.yaml to a self-contained HTML page with inline SVG.
+"""Render a Stratah timeline.yaml to a self-contained HTML page with inline SVG.
 
 Usage: python3 build/tools/render_timeline.py build/subjects/<subject>/timeline.yaml
 Writes timeline.html next to the YAML. YAML is the source of truth; never edit the HTML by hand.

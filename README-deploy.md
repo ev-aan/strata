@@ -1,4 +1,4 @@
-# Pushing Strata online
+# Pushing Stratah online
 
 Two paths. Pick one. **GitHub Pages** is recommended — it keeps your
 existing CI and the new deploy in a single pipeline, no new accounts.
@@ -75,7 +75,7 @@ live field names / entry points. Each is a one-line edit:
 
 ## How this maps to the architecture
 
-The deploy pipeline is itself a small expression of the Strata discipline:
+The deploy pipeline is itself a small expression of the Stratah discipline:
 the build does not publish on the strength of "it probably still works"
 (adoption weight). It publishes only on a passing material check —
 conformance + tests (evidential weight). If you ever find yourself tempted

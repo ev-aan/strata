@@ -1,6 +1,6 @@
 ---
 name: Challenge a finding
-about: Dispute a claim, finding or test result on a Strata page
+about: Dispute a claim, finding or test result on a Stratah page
 title: "Challenge: [ID] on [page]"
 labels: challenge
 ---

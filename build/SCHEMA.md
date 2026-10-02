@@ -1,4 +1,4 @@
-# Strata YAML schema, draft v0.1 (proposal, not yet agreed)
+# Stratah YAML schema, draft v0.1 (proposal, not yet agreed)
 
 Source of truth: `build/subjects/<subject>/{claims,tests,threads,log}.yaml`. Pages, headlines, meta descriptions and JSON-LD are generated from these files. Everything below is taken from `CONTRIBUTING.md` unless marked **PROPOSED**.
 
