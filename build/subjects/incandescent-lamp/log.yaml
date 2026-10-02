@@ -263,3 +263,11 @@ log:
       assignment line; Nichols of Brooklyn and Latimer of New York) and US 252,386 (assignor to the United States Electric Lighting Company): the timeline Latimer entry now says only the 1882 patent names an assignee; the Russia overlay note says
       "privilege (patent)", as Kommersant does. Lead, no claim change: 159 U.S. 465 names the English patent to Greener and Staite of 1846 (charcoal "reduced to a state of powder") and 54 F. 678 (and 40 F. 21) name Roberts of 1852 (a graphite rod operating in
       vacuum, per Howell and Schroeder) as prior art; they are searched-gap leads for the earliest-patent claims (their abridgments in the 1859 volume were not read for this purpose) and are not filed as claims.
+  - id: L-24
+    date: 2026-10-02
+    entry: >
+      OWNER DECISIONS on the three open items (recorded by the author at the coordinator's instruction; L-23 and earlier stay as written). (1) Publish with headline_status draft: no change. (2) Keep
+      lamp-10000-ways-quote refuted at provisional: no change. (3) Lodygin's privilege No. 1619 and the backdated priority date of 2 Oct 1872 are shown but flagged as single-source: in lamp-lodygin-1872-74, node
+      lamp-1874-07-11-lodygin-russian-privilege (rev 3) and the timeline note, both details come from one newspaper history (Kommersant 6822124) with no scan, and the same page says the Russian patent came "only a
+      year" after the 1872 petition ("Российский патент ему удалось получить только через год", re-read), which does not fit a July 1874 grant, so the number and date are unverified; confidence for those details is low; the claim's state
+      (proposed, low) is unchanged.

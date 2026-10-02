@@ -309,7 +309,7 @@ claims:
       Fontaine (1878) says that in 1873 a Russian physicist, Lodygin, invented a new lamp in which small carbon bars are heated in a
       hermetically sealed glass receiver from which the oxygen is expelled, and that in 1874 the St Petersburg Academy of Sciences awarded
       him "a high prize" (the Lomonosov prize) on a report by Wild; Fontaine adds "Nothing is less practical nor less studied than the apparatus of this inventor."
-      Kommersant (2024) gives 1872 for Lodygin's first demonstration (the sentence that gives 1872 names no place; elsewhere the page speaks of a demonstration "in Petersburg") and says the home patent office issued him privilege No. 1619 on 11 July 1874 with its priority dated "retroactively, from 2 October 1872".
+      Kommersant (2024) gives 1872 for Lodygin's first demonstration (the sentence that gives 1872 names no place; elsewhere the page speaks of a demonstration "in Petersburg") and says the home patent office issued him privilege No. 1619 on 11 July 1874 with its priority dated "retroactively, from 2 October 1872" (one newspaper history, no scan; the same page says the Russian patent came "only a year" after the 1872 petition, which does not fit July 1874, so the number and date are unverified, low confidence).
     statement_kind: reported
     evidence_class: primary_text
     confidence: low
@@ -333,6 +333,8 @@ claims:
       #    dated retroactively, from 2 October 1872"); the first version of this revision wrongly said they were not (corrected in log L-19). They rest on one later
       #    newspaper history with no scan of the privilege. The often-quoted 50,000-rouble prize is not supported by either source: Fontaine says only
       #    "a high prize"; the figure is printed in Howell and Schroeder (1927).
+      PRIVILEGE DETAILS, LOW CONFIDENCE (owner decision, L-24): the number 1619 and the backdated priority date 2 Oct 1872 come from one newspaper history (Kommersant 6822124) with no scan of the privilege, and the same page
+      says the Russian patent came "only a year" after the 1872 petition ("только через год"), which does not fit a July 1874 grant; the number and date are unverified. They are shown, not relied on.
       SINGLE-CHANNEL FLAG: the contemporary anchor is Fontaine alone (shared with lamp-de-changy-belgium); Kommersant is a later newspaper
       history and gives dates and a privilege number without a scan. Next step: read the Academy's 1874 prize report.
       Rods in a sealed vessel are real prior art; Fontaine says they did not last. Fontaine's own phrase "capital errors" refers to the report.
