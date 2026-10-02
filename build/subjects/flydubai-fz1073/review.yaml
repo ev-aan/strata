@@ -1,5 +1,5 @@
 subject: flydubai-fz1073
-status: revisions_requested
+status: passed_with_open_items
 checks:
 - check: 'conformance: no errors for this subject'
   result: pass
@@ -43,7 +43,12 @@ checks:
 - check: timeline present (dates exist, so a timeline is required)
   result: pass
   detail: ''
-open_items: []
+open_items:
+- 'Eight established claims are anchored below primary (flight-times, both-pilots-injured, crew-details, copilot-custody-unnamed, israel-says-omani, motive-statements, timing-dates, political-use-alleged), each with an exception line and capped at moderate; the page must show them as limits.'
+- 'Not verified by any reviewer: raw ADS-B, recorders, hospital records, the Saudi Interior Ministry original and its Arabic text, Tabuk airport original, WAM originals, Flightradar24, FlightAware track log, gov.il, Bloomberg, Axios, Times of Israel, Haaretz. The event-simulated question is a searched gap (low confidence) for that reason.'
+- 'Gargash''s own words were not read (CNN''s report only); the date of Netanyahu''s CNN interview (30 Sep or 1 Oct) is open; the landing time (06:45 versus about 06:58 UTC) and first-signal times are open; the fz1073-omani-barred-rule claim is proposed at low confidence and neither agreement text is published.'
+- 'Owner decision: L-15 (append-only) names a private passenger in full; redact as an exception or leave. Owner decision: whether the captain stays named in timeline.yaml people (and in one URL slug and the stored GCAA text).'
+- 'Live event: re-review at each significant update; headline stays draft; the subject is not in build/site.yaml or build/news.yaml and the owner decides whether to add it.'
 needs_manual_check:
 - '8 established/refuted claims anchored below primary: fz1073-flight-times, fz1073-both-pilots-injured, fz1073-copilot-custody-unnamed, fz1073-israel-says-omani,
   fz1073-motive-statements, fz1073-timing-dates, fz1073-political-use-alleged, fz1073-event-simulated'
@@ -93,7 +98,7 @@ quotes:
   found_in_stored_sources: 12
   not_found_in_stored_sources: 53
   no_stored_source_to_check_against: 0
-reviewed_by: independent review agent (second reviewer)
+reviewed_by: independent review agent (third reviewer)
 reviewed_on: '2026-10-02'
 notes: 'Round 1 of an independent peer review. The reviewer did not write the dig. Verdict: revisions requested (not failed): the core facts (diversion
   and landing at Tabuk, injuries, UAE investigation, who-said-what on nationality and motive) check out against the sources, but four findings
@@ -409,6 +414,8 @@ rounds:
         inconsistency step now says a third Israeli speaker, no inconsistency; Herzog added to the statement and anchor; timeline b17 added. Log
         L-23.'
       commit: recorded in the commit that adds this response
+    resolved: true
+    reviewer_note: "Verified. I opened The National (1 Oct): Herzog, BBC Radio 4, Thursday (1 Oct 2026 was a Thursday), alleged the co-pilot is Omani; he also called him a 'terrorist' and said 'It's too early to say' on an Iran link. The claim now lists Herzog as a third Israeli speaker; 'slip' is gone from the claim, comparison item (6) and the inconsistency step; timeline b17 added; L-23 corrects L-17 as a new entry. Author commit is 2ef6e22."
   - id: R2-2
     target: headline; assessment key_points[0]
     severity: blocking
@@ -426,6 +433,8 @@ rounds:
         Saudi ministry says co-pilot assaulted captain; no evidence of staging found'' (93 characters, draft); key point 1 attributes ''altercation''
         to flydubai and the UAE and ''assault with injuries to both'' to the Saudi ministry as quoted.'
       commit: recorded in the commit that adds this response
+    resolved: true
+    reviewer_note: "Verified. Headline (93 characters, draft) now says only what the Saudi ministry says, as quoted. I re-read the ministry wording in the CNN live blog ('revealed an assault on the captain by the co-pilot, resulting in various injuries to both') and Al Jazeera ('the pilot was assaulted by his co-pilot, resulting in various injuries to both'). Key point 1 gives 'altercation' to flydubai (Statement 2, stored) and the UAE (MoFA, stored) and 'assault with injuries to both' to the Saudi ministry. Author commit is 2ef6e22."
   - id: R2-3
     target: assessment.text; divergence_note; timeline.yaml people
     severity: non_blocking
@@ -438,6 +447,8 @@ rounds:
       note: 'Verified: CNN says ''a top UAE official''. Assessment text and divergence note now use it; timeline gets people entries and Panel
         B events b17 (Herzog, 1 Oct, via The National) and b18 (Gargash, 2 Oct, via CNN), both marked as accusations.'
       commit: recorded in the commit that adds this response
+    resolved: true
+    reviewer_note: "Verified. CNN explainer (opened by curl; WebFetch was blocked 451): 'Anwar Gargash, a top UAE official, on Friday described the incident as a \"dangerous terrorist act,\"'. 'senior adviser' is gone from the assessment text and divergence_note; the claims say 'a top UAE official (CNN's description)' and that Gargash's own words were not read. Timeline has people entries plus b17 (Herzog, 1 Oct) and b18 (Gargash, 2 Oct), both marked accusations, day precision, placeholder hours stated."
   - id: R2-4
     target: fz1073-israel-says-omani; node b10 in timeline.yaml; motive-statements
     severity: non_blocking
@@ -452,6 +463,8 @@ rounds:
       note: 'Verified: CNN does not date the interview. Claim and timeline b10 now say 30 Sep or 1 Oct (CNN does not give the date); the Fox remark
         is reported in 1 Oct pieces.'
       commit: recorded in the commit that adds this response
+    resolved: true
+    reviewer_note: "Verified. The CNN explainer gives no date for 'Netanyahu told CNN that the suspect was an Omani national'; in the CNN live blog 'said Wednesday' attaches to the detention remark. Claim and b10 now say 30 Sep or 1 Oct and keep the Fox remark to 1 Oct reports; b10 says its midday 1 Oct time is a day-precision marker."
   - id: R2-5
     target: log.yaml L-15; fz1073-reports-inconsistent alternatives
     severity: non_blocking
@@ -465,3 +478,6 @@ rounds:
       note: (a) L-15 not edited; L-23 notes it names a passenger, that the name appears nowhere else (searched claims, timeline, transmission,
         manifest, nodes) and that redaction is the owner's decision; L-22/L-17 wording corrected there. (b) 'transposition' removed from the alternative.
       commit: recorded in the commit that adds this response
+    resolved: true
+    reviewer_note: "Verified. (a) Log diff against 9619273: only appended entries L-22 and L-23, no earlier line altered; L-23 records that L-15 names a passenger, that the name appears nowhere else (I grepped claims, timeline, transmission, manifest, nodes: none), and leaves redaction to the owner (carried as an open item). (b) 'a transposition' is gone from the alternative, which now says the landing time has no explanation yet and is listed as open."
+notes_round3_resolution: "ROUND 3 (third independent reviewer, did not write the dig or earlier rounds). All five round 2 requests (R2-1 to R2-5) are resolved by my own check; rounds 1 and 2 together have no unresolved blocking request (R1-1 to R1-3 and R2-1, R2-2 were the blocking ones). Sources I opened this round: The National (Herzog: Omani, 'terrorist', 'too early to say', Thursday), CNN explainer (Gargash 'a top UAE official'; Omani statement undated), CNN live blog (Saudi ministry 'revealed an assault on the captain by the co-pilot, resulting in various injuries to both'; 'said Wednesday' belongs to the detention remark), Al Jazeera Saudi piece ('the pilot was assaulted by his co-pilot'), plus the stored flydubai, MoFA and GCAA texts for 'altercation'. Fresh pass: headline is 93 characters and draft; key points do not exceed the claims; co-pilot unnamed; no passenger name or occupation-plus-act in claims, timeline, transmission, manifest or nodes (grep; the name remains only in log L-15 and the CNN page itself); no speculation on religion, ethnicity or beliefs; accusations (Netanyahu, Herzog, Katz, Gargash, Trump) are recorded as accusations; log diff against 9619273 is append-only (L-22 and L-23 added, nothing earlier changed). Conformance: 0 errors, 92 warnings repository-wide, 8 for this subject (established below primary, each with an exception line). review_dig mechanical checks all pass. Minor leftovers, non-blocking: b10, b17 and b18 use placeholder hours at day precision (stated in each detail); the Herzog quote 'terrorist' and 'too early to say' were read through a page summary tool, not a raw text dump, so a human may re-check the exact words; the WebFetch result for The National did not reproduce the 'Omani citizen, although that does not mean anything' sentence the second reviewer quoted, which I did not re-verify."
