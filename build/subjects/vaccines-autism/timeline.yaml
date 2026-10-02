@@ -52,14 +52,16 @@ sources:
   src-hornig-2008:           {title: "Hornig et al., PLoS ONE 2008", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526159/", authenticity: "authenticated, strong"}
   src-oap-decisions:         {title: "Court of Federal Claims, autism decisions", url: "https://www.uscfc.uscourts.gov/autism-decisions-and-background-information", authenticity: "authenticated, moderate"}
   src-bmj-gmc-2010:          {title: "BMJ 2010;340:c2803 (GMC decision)", url: "https://www.bmj.com/content/340/bmj.c2803", authenticity: "news report"}
-  src-lancet-retraction-2010: {title: "BMJ 2010;340:c696 (Lancet retraction)", url: "https://www.bmj.com/content/340/bmj.c696", authenticity: "authenticated, moderate (as quoted)"}
+  src-lancet-retraction-2010: {title: "Lancet 2010;375:445 retraction notice (not read; BMJ 2010;340:c696 reports on it)", url: "https://www.bmj.com/content/340/bmj.c696", authenticity: "authenticated, moderate (notice not read)"}
   src-godlee-2011:           {title: "Godlee et al., BMJ 2011;342:c7452", url: "https://www.bmj.com/content/342/bmj.c7452", authenticity: "authenticated, moderate"}
-  src-thompson-2014:         {title: "Thompson statement, 27 Aug 2014 (third-party copy)", url: "https://cdctruth.org/", authenticity: "authenticated, weak"}
+  src-thompson-2014:         {title: "Thompson statement, 27 Aug 2014 (third-party copy)", url: "https://legislature.vermont.gov/Documents/2016/WorkGroups/House%20Health%20Care/Bills/H.98/Witness%20Testimony/H.98~Jennifer%20Stella~William%20Thompson%20Statement~5-6-2015.pdf", authenticity: "authenticated, weak"}
   src-deer-2011:             {title: "Deer, BMJ 2011;342:c5347", url: "https://www.bmj.com/content/342/bmj.c5347", authenticity: "authenticated, moderate"}
   src-bruesewitz:            {title: "Bruesewitz v. Wyeth, 562 U.S. 223 (2011)", url: "https://www.law.cornell.edu/supremecourt/text/09-152", authenticity: "authenticated, moderate"}
-  src-geier-md-2015:         {title: "Md. Court of Special Appeals, 2015 (Geier)", url: "https://mdcourts.gov/data/opinions/cosa/2015/0722s14.pdf", authenticity: "authenticated, strong"}
+  src-geier-md-2015:         {title: "Md. Court of Special Appeals, 1 Oct 2015 (Geiers v. Board)", url: "https://mdcourts.gov/data/opinions/cosa/2015/0722s14.pdf", authenticity: "authenticated, strong"}
+  src-geier-md-2015-licence: {title: "Md. Court of Special Appeals, Geier v. Board of Physicians, 223 Md. App. 404 (29 May 2015)", url: "https://www.mdcourts.gov/data/opinions/cosa/2015/1095s14.pdf", authenticity: "authenticated, strong"}
+  src-guardian-lancet-2010:  {title: "The Guardian, 2 Feb 2010: Lancet retracts 'utterly false' MMR paper", url: "https://www.theguardian.com/society/2010/feb/02/lancet-retracts-mmr-paper", authenticity: "news report"}
   src-hooker-2014-retraction: {title: "Retraction note, Transl Neurodegener 2014;3:22", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4183946/", authenticity: "authenticated, strong"}
-  src-cdc-2004-study-statement: {title: "CDC statement on the 2004 study (archive)", url: "https://archive.cdc.gov/", authenticity: "authenticated, moderate"}
+  src-cdc-2004-study-statement: {title: "CDC statement on the 2004 study (archive)", url: "https://archive.cdc.gov/www_cdc_gov/vaccinesafety/concerns/autism/cdc2004pediatrics.html", authenticity: "authenticated, moderate"}
   src-jain-2015:             {title: "Jain et al., JAMA 2015", url: "https://europepmc.org/article/MED/25898051", authenticity: "authenticated, moderate"}
   src-mawson-2017:           {title: "Mawson et al., J Transl Sci 2017", url: "https://www.oatext.com/pdf/JTS-3-186.pdf", authenticity: "authenticated, moderate"}
   src-hviid-2019:            {title: "Hviid et al., Ann Intern Med 2019", url: "https://europepmc.org/article/MED/30831578", authenticity: "authenticated, moderate"}
@@ -108,7 +110,7 @@ events:
      detail: "Corrected five times; Salon removed it in Jan 2011 [read]."}
   - {id: a11, panel: years, lane: legal, time: "2007-11-15T12:00:00Z", precision: month, kind: official, status: reported, sources: [src-poling-cnn-2008],
      label: "Nov 2007: US government concedes the Poling case",
-     detail: "Aggravation of a mitochondrial disorder with features of autism, as quoted in 2008 reporting; the document was not read."}
+     detail: "CNN: the program 'concluded' the vaccinations 'significantly aggravated' an underlying illness; NPR: 'possible' they 'may have exacerbated' a mitochondrial disorder. Both read; the decision itself was not."}
   - {id: a12, panel: years, lane: origin, time: "2008-06-20T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-eurosurv-2008],
      label: "20 Jun 2008: HPA reports measles endemic again in the UK",
      detail: "Attributed to almost a decade of low MMR coverage [read, as quoted by Eurosurveillance]."}
@@ -117,13 +119,13 @@ events:
      detail: "Three blinded labs, including the original one [read]."}
   - {id: a14, panel: years, lane: legal, time: "2009-02-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
      label: "12 Feb 2009: vaccine court rejects the three MMR-plus-thimerosal test cases",
-     detail: "Cedillo, Hazlehurst, Snyder [via fetch tool]."}
-  - {id: a15, panel: years, lane: origin, time: "2010-02-02T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-lancet-retraction-2010],
+     detail: "Cedillo, Hazlehurst, Snyder [court's decision list, read; the decisions were not opened]."}
+  - {id: a15, panel: years, lane: origin, time: "2010-02-02T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-guardian-lancet-2010, src-lancet-retraction-2010],
      label: "2 Feb 2010: The Lancet retracts the 1998 paper",
-     detail: "Names the referral and ethics statements as incorrect [as quoted by the BMJ]."}
+     detail: "Announced days after the GMC's findings of fact of 28 Jan 2010; the editor called the paper's statements 'utterly false' [Guardian, read]. The notice itself (6 Feb 2010 issue) was not read."}
   - {id: a16, panel: years, lane: legal, time: "2010-03-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
      label: "12 Mar 2010: vaccine court rejects the three thimerosal-only test cases",
-     detail: "King, Mead, Dwyer; about 4,800 claims pending [via fetch tool]."}
+     detail: "King, Mead, Dwyer [court's decision list, read; the decisions were not opened]."}
   - {id: a17, panel: years, lane: origin, time: "2010-05-24T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-bmj-gmc-2010, src-walker-smith-2012],
      label: "24 May 2010: GMC strikes off Wakefield and Walker-Smith",
      detail: "Murch not guilty of serious professional misconduct [judgment para 1; BMJ]."}
@@ -139,12 +141,12 @@ events:
   - {id: a21, panel: years, lane: origin, time: "2012-03-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-walker-smith-2012],
      label: "7 Mar 2012: High Court quashes Walker-Smith's striking-off",
      detail: "Same judgment: no respectable body of opinion supports the MMR-autism hypothesis (para 7) [read]."}
-  - {id: a22, panel: years, lane: legal, time: "2012-08-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-geier-md-2015],
+  - {id: a22, panel: years, lane: legal, time: "2012-08-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-geier-md-2015-licence],
      label: "22 Aug 2012: Maryland revokes Mark Geier's licence",
-     detail: "Lupron protocol for autistic children; misleading consent methods [read]."}
+     detail: "The Board found he gave Lupron to autistic children outside its approved use without adequate examination, and used consent forms it called misleading and in one case blatantly false (223 Md. App. 404, quoting the Board's order) [read]."}
   - {id: a23, panel: years, lane: media, time: "2014-08-27T12:00:00Z", precision: day, kind: witness, status: single, sources: [src-thompson-2014, src-cdc-2004-study-statement],
      label: "27 Aug 2014: CDC co-author William Thompson says a subgroup result was omitted from DeStefano 2004",
-     detail: "Read in a third-party copy; the CDC's response addresses the same point [read]."}
+     detail: "Read in a printout of the law firm's page (Vermont House testimony, 2015); the CDC's response addresses the same point [read]."}
   - {id: a24, panel: years, lane: research, time: "2014-10-03T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-hooker-2014-retraction],
      label: "3 Oct 2014: Hooker's reanalysis of the CDC data retracted",
      detail: "Undeclared competing interests; concerns about methods and statistics [read]."}
@@ -178,7 +180,7 @@ events:
      detail: "Kennedy said he ordered the change (STAT, 21 Nov 2025)."}
   - {id: b06, panel: recent, lane: institutions, time: "2025-12-11T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-who-gacvs-2025],
      label: "11 Dec 2025: WHO safety committee: no evidence of a causal relationship",
-     detail: "31 primary studies and 5 meta-analyses, 2010-2025 [read via fetch tool]."}
+     detail: "20 of 31 primary studies and all 5 meta-analyses null; 11 studies (9 from one US group) suggested an association, rated very low strength and high risk of bias [page read]. Adoption, not evidence."}
   - {id: b07, panel: recent, lane: legal, time: "2026-03-16T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-acp-injunction-2026],
      label: "16 Mar 2026: federal court stays the new schedule and the new ACIP's votes (AAP v. Kennedy)",
      detail: "On appeal to the First Circuit; the order was not read."}
