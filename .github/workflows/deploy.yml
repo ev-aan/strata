@@ -53,13 +53,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install YAML parser
+        run: python3 -m pip install --quiet pyyaml
+
+      - name: Build the site from YAML (only digs listed in build/site.yaml are published)
+        run: python3 build/tools/build_site.py
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'site'
 
       - name: Deploy to GitHub Pages
         id: deployment

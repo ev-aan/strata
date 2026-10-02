@@ -1,0 +1,16 @@
+# Site configuration for build/tools/build_site.py. YAML is the source; the site is generated from it.
+name: Stratah
+domain: stratah.org
+tagline: What do we actually know?
+issues_url: https://github.com/ev-aan/stratah/issues/new/choose
+source_url: https://github.com/ev-aan/stratah
+# Digs listed here are published. Everything else stays in the repository as work in progress and is NOT put on the site.
+# Add a subject folder name to publish it; remove it to take it down. Each needs a headline block in its claims.yaml.
+publish:
+  - gulf-of-tonkin
+about: >
+  Stratah is a record of what we can establish, what we cannot, and how we know. Each dig takes a long-running question,
+  often one surrounded by conspiracy claims, and files every claim with its evidence, how confident we are, and what
+  would change our mind. Evidence and popularity are kept apart: a claim can be widely believed and thinly supported, or the reverse.
+  Documents are tested for authenticity before they are trusted, and timelines link every point to its source.
+  The data behind every page is plain YAML you can read and challenge.
