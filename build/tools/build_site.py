@@ -105,6 +105,17 @@ def node_html(nid, verb=""):
 
 ANS = {"yes": "Yes", "no": "No", "leans_yes": "Leans yes", "leans_no": "Leans no", "unsettled": "Unsettled", "partly": "Partly"}
 
+def short_line(v, claims=None):
+    """The short answer, for example 'Unsettled, leans slightly toward yes' or 'No (high confidence)'."""
+    rc = (claims or {}).get(v.get("rated_claim") or (v.get("basis") or [None])[0])
+    line = ANS.get(v["answer"], v["answer"])
+    if v.get("lean"):
+        line += f', leans {v["lean"]["strength"]}ly toward {v["lean"].get("short") or v["lean"]["toward"]}'
+    elif v["answer"] in ("yes", "no") and rc and rc.get("confidence"):
+        line += f' ({rc["confidence"]} confidence)'
+    return line
+
+
 def assessment_html(v, slug, prefix="", show_question=True, claims=None):
     """Executive summary first: the answer, three key points, the ratings of the central claim and what would settle it. The reasoning folds underneath.
     No percentages: see SCHEMA N23."""
@@ -125,13 +136,9 @@ def assessment_html(v, slug, prefix="", show_question=True, claims=None):
             + (f'<p>{E(v["lean"]["because"])}</p><p class="small"><b>Why the lean is not a finding.</b> {E(v["lean"]["caveats"])}</p>' if v.get("lean") else "")
             + f'<p class="small">Based on: {links}</p>'
             + '<p class="small">We give no probability figure. Confidence words describe how sure we are of the basis, and no source supplies a number that would not be invented.</p>')
-    line = ANS.get(v["answer"], v["answer"])
-    if v.get("lean"):
-        line += f', leans {v["lean"]["strength"]}ly toward {v["lean"].get("short") or v["lean"]["toward"]}'
-    elif v["answer"] in ("yes", "no") and rc and rc.get("confidence"):
-        line += f' ({rc["confidence"]} confidence)'
+    line = short_line(v, claims)
     strip = (f'<p class="eyebrow" style="margin:18px 0 0">The short answer</p>'
-             f'<p style="font-size:clamp(28px,6vw,40px);line-height:1.15;margin:2px 0 16px;font-weight:600"><span class="{cls}">{E(line)}</span></p>')
+             f'<p style="font-size:clamp(28px,6vw,40px);line-height:1.15;margin:2px 0 16px;font-weight:400;color:var(--ink)">{E(line)}</p>')
     return (strip + f'<section class="claim" style="border:1px solid var(--line);border-left:7px solid var(--amber);padding:18px 20px" id="where-it-stands"><h2 style="font-size:30px;border:0;margin:0 0 2px;padding:0">Where it stands</h2>'
             f'<p class="eyebrow" style="margin:0 0 12px">Current assessment · as of {TODAY}</p>{("<p><b>" + E(v["question"]) + "</b></p>") if show_question else ""}'
             f'<p style="font-size:21px;line-height:1.4;margin:6px 0 10px"><b>{E(v["headline"])}</b></p>'
@@ -179,7 +186,7 @@ for sub in CFG["publish"]:
     banner = (f'<div class="banner"><b>Open excavation.</b> This question is still being worked. The headline finding is stated at the confidence shown below; '
               f'not every source has been read in full, and each claim says which. Claims so far: {E(tally)}.</div>' if status != "published" else "")
     _a = TAX["assignments"].get(sub, {})
-    META[slug] = {"sub": sub, "area": _a.get("area"), "areas": _a.get("areas", []), "types": _a.get("types", []), "popular": bool(_a.get("popular_claims"))}
+    META[slug] = {"question": (cl.get("assessment") or {}).get("question"), "short": short_line(cl["assessment"], {c["id"]: c for c in cl["claims"]}) if cl.get("assessment") else "", "sub": sub, "area": _a.get("area"), "areas": _a.get("areas", []), "types": _a.get("types", []), "popular": bool(_a.get("popular_claims"))}
     _tags = ""
     if _a.get("area"):
         _tags = (f'<p class="small">Area: <a href="../../areas/{E(_a["area"])}/">{E(AREAS[_a["area"]]["name"])}</a>'
@@ -242,7 +249,7 @@ def _li(s, h, sm, st):
     m = META.get(s, {})
     areas_all = [x for x in ([m.get("area")] + m.get("areas", [])) if x]
     tag = (f'<br><span class="small">{E(AREAS[m["area"]]["name"])} · ' + ", ".join(E(QTYPES[x]["name"]) for x in m.get("types", [])) + (" · starts from a widely shared claim" if m.get("popular") else "") + "</span>") if m.get("area") else ""
-    return (f'<li data-areas="{" ".join(areas_all)}" data-types="{" ".join(m.get("types", []))}" data-popular="{1 if m.get("popular") else 0}"><a href="{E(s)}/"><b>{E(h)}</b></a>{tag}<br><span class="small">{E(" ".join(str(sm).split()))}</span>'
+    return (f'<li data-areas="{" ".join(areas_all)}" data-types="{" ".join(m.get("types", []))}" data-popular="{1 if m.get("popular") else 0}"><a href="{E(s)}/"><b>{E(m.get("question") or h)}</b></a>{("<br>" + E(m["short"])) if m.get("short") else ""}{tag}{"" if m.get("short") else "<br><span class=small>" + E(" ".join(str(sm).split())) + "</span>"}'
             f'{"" if st == "published" else " <span class=pill>open excavation</span>"}</li>')
 items = "".join(_li(*d) for d in digs)
 used_areas = [k for k in AREAS if any(k in ([META[s]["area"]] + META[s]["areas"]) for s, *_ in digs)]
@@ -279,8 +286,8 @@ for _sub, _qd in _QMAP.items():
 _hp = os.path.join(OUT, "index.html")
 if os.path.exists(_hp):
     _h = open(_hp, encoding="utf-8").read()
-    _cards = "".join(f'<a class="dig-card" href="digs/{E(s)}/" style="display:block"><div class="dig-icon">&#9672;</div><div class="dig-name">{E(h)}</div>'
-                     f'<div class="dig-meta">{E(" ".join(str(sm).split()))} {"" if st == "published" else "(Open excavation)"}</div></a>' for s, h, sm, st in digs)
+    _cards = "".join(f'<a class="dig-card" href="digs/{E(s)}/" style="display:block"><div class="dig-icon">&#9672;</div><div class="dig-name">{E(META[s].get("question") or h)}</div>'
+                     f'<div class="dig-meta"><span style="color:var(--ink)">{E(META[s].get("short", ""))}</span>{"" if META[s].get("short") else "<br>" + E(" ".join(str(sm).split()))} {"" if st == "published" else "(Open excavation)"}</div></a>' for s, h, sm, st in digs)
     _h = re.sub(r"<!--EXCAVATIONS:start.*?-->.*?<!--EXCAVATIONS:end-->", lambda m: f'<div class="dig-grid" style="grid-template-columns:1fr">{_cards}</div>', _h, flags=re.S)
     open(_hp, "w", encoding="utf-8").write(_h)
 write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>https://{CFG['domain']}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls) + "</urlset>")
