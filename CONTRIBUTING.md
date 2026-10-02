@@ -1,8 +1,8 @@
-# Contributing to Strata
+# Contributing to Stratah
 
-Strata shows the honestly weighted shape of what is known. It keeps the evidence for a belief separate from the number of people who hold it, and it stays honest about what is not yet known. Anyone can propose a dig, a test or a challenge. Every contribution has to follow the rules below. A change that breaks them is not merged, however good its conclusion looks.
+Stratah shows the honestly weighted shape of what is known. It keeps the evidence for a belief separate from the number of people who hold it, and it stays honest about what is not yet known. Anyone can propose a dig, a test or a challenge. Every contribution has to follow the rules below. A change that breaks them is not merged, however good its conclusion looks.
 
-The same rules are on the site at [ev-aan.github.io/strata/method/](https://ev-aan.github.io/strata/method/).
+The same rules are on the site at [ev-aan.github.io/stratah/method/](https://ev-aan.github.io/stratah/method/).
 
 ---
 
@@ -30,11 +30,11 @@ The same rules are on the site at [ev-aan.github.io/strata/method/](https://ev-a
 
 | State | Meaning |
 |---|---|
-| `established` | Anchored to the world and checked. |
+| `established` | Anchored to the world and checked: the primary source itself was read (`anchor_checked: primary`). A well-supported claim filed before that check is re-anchored, not downgraded. |
 | `proposed` | One author's reading or a new result. Capped at provisional confidence until independently reviewed. |
 | `contested` | Live positions with real evidence on more than one side. |
 | `refuted` | Fails against material or primary-text evidence (Rule 9). |
-| `searched_gap` | We looked and do not know yet. Must name the exact next step. This is not a failure. |
+| `searched_gap` | We looked and do not know yet. Must name the exact next step. If the gap can never be closed by the method itself (a structural gap), it says so instead: `gap_type: structural` and a `gap_reason`. This is not a failure. |
 
 **Evidence classes**, each with its own decay half-life:
 
@@ -87,7 +87,7 @@ Learned the hard way on bounties B-001 and B-002. Every step is required.
 11. **Publish everything:** code, corpus lists with source identifiers, fixed random seeds, raw outputs. Another person must be able to rerun it and get the same numbers.
 12. **Keep failed and superseded runs on the page.** A first result that did not survive the controls stays in the log, marked as such. This is what makes the surviving result believable.
 13. **Say what the result does not show,** in plain words, next to what it does.
-14. **Get outside review before a claim leaves `proposed`.** A named specialist outside Strata reviews it. Agreement with a famous scholar is not confirmation.
+14. **Get outside review before a claim leaves `proposed`.** A named specialist outside Stratah reviews it. Agreement with a famous scholar is not confirmation.
 15. **Write plain-and-true surface lines.** No hype. "Compelling" is one bad word from clickbait.
 
 ---

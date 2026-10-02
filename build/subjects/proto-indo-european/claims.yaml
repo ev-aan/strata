@@ -211,6 +211,10 @@ claims:
 
   - id: pre-pie-ancestor
     state: searched_gap
+    gap_type: structural
+    gap_reason: >
+      The comparative method needs attested descendants to compare. Beyond the deepest
+      reconstructable node there are none, so no find of the usual kind can close this.
     statement: >
       The ancestor of PIE itself (the language that preceded the proto-language,
       including any pre-PIE/Indo-Anatolian stage and its own parent) cannot currently

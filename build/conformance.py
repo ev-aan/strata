@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Strata conformance check.
+"""Stratah conformance check.
 
 Runs the mechanical rules from CONTRIBUTING.md over every subject in
 build/subjects/. Deploys are blocked when it finds an ERROR.
@@ -117,17 +117,26 @@ def check_claim(r, subject, c, legacy):
             r.err(where, f"unknown refutation_class `{rc}`")
 
     if state == "searched_gap" and not c.get("next_step"):
-        soft(where, "searched_gap must name its `next_step`")
+        if c.get("gap_type") == "structural":
+            if not c.get("gap_reason"):
+                r.err(where, "structural gap must give its `gap_reason`")
+        else:
+            r.err(where, "searched_gap must name its `next_step`, "
+                         "or be marked `gap_type: structural` with a `gap_reason`")
+    if c.get("gap_type") is not None and c.get("gap_type") != "structural":
+        r.err(where, f"unknown gap_type `{c.get('gap_type')}`")
     if state == "proposed" and conf == "high":
         r.err(where, "proposed is capped at provisional confidence, not high")
 
     if "wikipedia.org" in yaml.safe_dump(c.get("anchor", "")) + yaml.safe_dump(c.get("anchors", "")):
         r.err(where, "Wikipedia may be linked for orientation but is never an anchor")
 
-    # Open question, not yet ruled on: does `established` require a primary check?
+    # Owner decision 2026-10-02: established requires a primary check, and
+    # claims filed before that are re-anchored rather than downgraded. Warn
+    # (not block) while that re-anchoring is in progress.
     if state == "established" and checked != "primary":
-        r.warn(where, f"established but anchor_checked is `{checked}` "
-                      "(Method page: established = anchored and checked)")
+        r.warn(where, f"established but anchor_checked is `{checked}`: "
+                      "re-anchor to the primary source (do not downgrade)")
 
 
 def check_subject(r, sdir):
