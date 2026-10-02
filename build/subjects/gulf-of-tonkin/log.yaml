@@ -233,3 +233,7 @@ log:
       dig because they were the same event: the 2 Aug Maddox engagement (here e2, there t1) and the 24 Jun 1970 Senate repeal vote (here g9, there v44, one node vote-RS0910398 with both source
       records). NOT merged: the votes dig's 4 Aug summary event (t2) overlaps events f1 to f8 here, so it is its own node linked by `related`; the 7 Aug resolution event (e7) summarises two chamber votes,
       which are their own nodes linked by `related`. The rendered timeline text is unchanged except for those points.
+  - id: L-23
+    date: 2026-10-02
+    entry: >
+      CORRECTION. In this dig's timeline, the 24 Jun 1970 Senate repeal vote (event g9) listed as a source the Voteview page for the 7 Aug 1964 Senate vote (roll call 481), a different vote. Merging that event with the Johnson-era votes dig's copy exposed it. The node vote-RS0910398 now cites the Voteview page for the 1970 vote (roll call 398), as rev 2. The dot's main link (the Congressional Record page) and the vote count were not affected. LINKED CLAIMS to nodes: 16 claims now name the nodes that evidence them in `anchor.nodes`, and the dig page shows each node with its source and, for the page images, a thumbnail linking to the original.

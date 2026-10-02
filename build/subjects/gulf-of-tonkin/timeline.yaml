@@ -111,4 +111,4 @@ events:
   - {id: g5, panel: after, lane: nsa_internal, node: tonkin-2001-03-01-hanyok-study-in-nsa-s-classified-cryptologic, rev: 1}
   - {id: g6, panel: after, lane: declass, node: tonkin-2003-03-15-the-five-intercept-reports-declassified, rev: 1}
   - {id: g7, panel: after, lane: declass, node: tonkin-2005-12-01-nsa-declassifies-about-140-documents-including-the, rev: 1}
-  - {id: g9, panel: after, lane: cong, node: vote-RS0910398, rev: 1}
+  - {id: g9, panel: after, lane: cong, node: vote-RS0910398, rev: 2}

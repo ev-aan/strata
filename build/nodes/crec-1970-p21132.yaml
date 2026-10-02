@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: crec-1970-p21132
-rev: 1
+rev: 2
 type: image
 label: Congressional Record, Senate, 24 Jun 1970, p. 21132, roll call on the Dole amendment (page image)
 time: '1970-06-24T12:00:00Z'
@@ -16,6 +16,10 @@ sources:
 media:
   file: ../subjects/gulf-of-tonkin/sources/congressional-record/crec-1970-p21132-032.png
   sha256: 0cf5547d25a755a54493958d46d61a291a3a9f9155e6a173ac01b4dff41ec440
+  thumb: media/crec-1970-p21132.thumb.jpg
+  thumb_sha256: b7e7f74097fd2bdc1f78c9fcb447eb110b85403beace796b236f2f8f6f757041
+  original_url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf
+  rights: public_domain
 manifest:
   subject: gulf-of-tonkin
   source: src-congressional-record-1970
@@ -26,3 +30,6 @@ history:
 - rev: 1
   date: '2026-10-02'
   change: Created from the stored page image; sha256 recomputed and equals the value in the dig's sources manifest.
+- rev: 2
+  date: '2026-10-02'
+  change: Added a 640x833 thumbnail, the original's url and the rights status (public_domain).

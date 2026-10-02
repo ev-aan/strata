@@ -302,6 +302,23 @@ def check_nodes(r):
                     r.err(f"node:{fid}", f"`{k}` refers to unknown node `{ref}`")
         if n.get("derived_from") and n["derived_from"] not in nodes:
             r.err(f"node:{fid}", f"derived_from unknown node `{n['derived_from']}`")
+    for fid, n in nodes.items():
+        m = n.get("media") or {}
+        if m.get("thumb"):
+            tp_ = os.path.normpath(os.path.join(ndir, m["thumb"]))
+            if not os.path.exists(tp_):
+                r.err(f"node:{fid}", f"thumbnail missing: {m['thumb']}")
+            elif m.get("thumb_sha256") and hashlib.sha256(open(tp_, "rb").read()).hexdigest() != m["thumb_sha256"]:
+                r.err(f"node:{fid}", "thumbnail sha256 does not match the file")
+        if m.get("file") and m.get("rights") not in ("public_domain", "thumbnail_only", "licensed", "unknown"):
+            r.warn(f"node:{fid}", "media has no `rights` status (public_domain | thumbnail_only | licensed | unknown)")
+    for sdir in sorted(glob.glob(os.path.join(SUBJECTS, "*"))):
+        cp_ = os.path.join(sdir, "claims.yaml")
+        if os.path.exists(cp_):
+            for c in (load(cp_) or {}).get("claims", []):
+                for ref in ((c.get("anchor") or {}).get("nodes") or []) if isinstance(c.get("anchor"), dict) else []:
+                    if ref not in nodes:
+                        r.err(f"{os.path.basename(sdir)}:{c.get('id')}", f"anchor refers to unknown node `{ref}`")
     for sdir in sorted(glob.glob(os.path.join(SUBJECTS, "*"))):
         tp = os.path.join(sdir, "timeline.yaml")
         if not os.path.exists(tp):

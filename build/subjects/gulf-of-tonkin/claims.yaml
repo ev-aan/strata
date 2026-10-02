@@ -102,6 +102,7 @@ claims:
     would_change_if: >
       records from either side showing the 2 August clash did not occur as described
     anchor:
+      nodes: [tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese]
       type: contemporaneous-records-plus-adversary-account
       description: >
         Hanyok writes that on 2 August "the SIGINT system performed admirably when it
@@ -136,6 +137,7 @@ claims:
     next_step: >
       Read the Maddox action report and the Navy's official history of the engagement; log whether the warning rounds appear.
     anchor:
+      nodes: [tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese]
       type: historian-account-of-records
       description: >
         Hanyok: "At about 1505G, the Maddox fired three rounds to warn off the communist
@@ -168,6 +170,7 @@ claims:
     next_step: >
       Read SNIE 50-2-64 (May 1964) and the declassified OPLAN 34-A documents; confirm the raid dates and who controlled the boats.
     anchor:
+      nodes: [tonkin-1964-07-30-34-a-raid-on-hon-me-and, tonkin-1964-08-03-second-34-a-raid-night-of-3]
       type: declassified-operational-record
       description: >
         On 3 August McNamara told LBJ the link to OPLAN 34-A should be explained to Congress:
@@ -205,6 +208,7 @@ claims:
       new intercepts, ship logs or North Vietnamese records showing boats present and firing on 4 August, or recovery of the missing original Vietnamese text showing it concerned 4 August
     refutes_target: "A second North Vietnamese attack took place on 4 August 1964"
     anchor:
+      nodes: [tonkin-1964-08-04-second-attack-reported-then-refuted, tonkin-1964-08-04-herrick-s-doubt-message-sent, tonkin-1964-08-04-report-12-boat-reports-an-enemy-aircraft, tonkin-1964-08-04-report-13-we-shot-at-two-enemy, tonkin-1964-08-04-report-7-boats-told-to-be-ready]
       type: signals-intelligence-reexamination
       description: >
         The intercept reports cited as evidence of 4 August read as follows [read]: Report 7
@@ -286,6 +290,7 @@ claims:
     next_step: >
       Obtain the NSA's declassified set of 140 documents and spot-check Hanyok's account of which products were and were not used.
     anchor:
+      nodes: [tonkin-1964-08-08-cia-cover-note-sends-bundy-the-selected]
       type: internal-historian-finding
       description: >
         Hanyok [read]: "SIGINT information was presented in such a manner as to preclude
@@ -378,6 +383,7 @@ claims:
     would_change_if: >
       evidence the memorandum is not authentic, or a different record of the same meeting
     anchor:
+      nodes: [tonkin-1964-08-05-white-house-staff-meeting-memo-evidence-less]
       type: contemporaneous-memorandum
       description: >
         Memorandum for the Record, White House Staff Meeting, 5 August 1964 [read]: "On the first
@@ -413,6 +419,7 @@ claims:
     would_change_if: >
       a second record of the meeting showing the remark was different or not made
     anchor:
+      nodes: [tonkin-1964-08-05-white-house-staff-meeting-memo-evidence-less]
       type: contemporaneous-memorandum
       description: >
         Same memorandum [read]: "Bundy, in reply, jokingly told him perhaps the matter should not
@@ -444,6 +451,7 @@ claims:
     next_step: >
       Listen to, or read the LBJ Library's own transcript of, the 4 August 9:43 a.m. call.
     anchor:
+      nodes: [tonkin-1964-08-04-mcnamara-to-lbj-ship-allegedly-to-be]
       type: recorded-conversation-transcription
       description: >
         McNamara [read, Prados transcription]: "...the tracks are laid down very clearly; they go
@@ -477,6 +485,7 @@ claims:
     next_step: >
       Read the 6 August 1964 transcript itself (the edited joint hearing, and Executive Sessions vol. XVI, pp. 291-299) and listen to the 3 August LBJ call; confirm the page numbers of the 1968 quotation on the page images.
     anchor:
+      nodes: [tonkin-1964-08-03-mcnamara-to-lbj-explain-oplan-34-a]
       type: recorded-statement-versus-testimony
       description: >
         6 August testimony as read by Chairman Fulbright into the hearing of 20 Feb 1968 (S. Hrg. 90-187, p. 30, "page 23 of the
@@ -512,6 +521,7 @@ claims:
     would_change_if: "the 3 and 6 August 1964 committee records showing that what he told the senators then differs from this account"
     next_step: "Read the 3 August informal meeting record, if any survives, and the 6 August transcript (Executive Sessions vol. XVI) to test his 1968 account against 1964."
     anchor:
+      nodes: [tonkin-1968-02-20-mcnamara-cites-unimpeachable-intercepts-to-the-senate]
       type: congressional-hearing-testimony
       description: "Hearing before the Senate Committee on Foreign Relations, 20 Feb 1968 (S. Hrg. 90-187), prepared statement pp. 14-16 and the questioning pp. 30-31 [read, OCR text]."
       accessible: true
@@ -536,6 +546,7 @@ claims:
     would_change_if: "the 6 August transcript showing the intercepts were mentioned to the committees"
     next_step: "Read the 6 August 1964 transcript to test 'none of those intercepts were mentioned'."
     anchor:
+      nodes: [tonkin-1968-02-20-mcnamara-cites-unimpeachable-intercepts-to-the-senate]
       type: congressional-hearing-statement
       description: "S. Hrg. 90-187, 20 Feb 1968, p. 80 [read, OCR text; the page number is from the text layer]. Fulbright qualified the point with 'I don't believe'."
       accessible: true
@@ -614,6 +625,7 @@ claims:
     next_step: >
       Read the whole Senate debate of 6-7 August 1964 and the House debate of 7 August; log which speakers cite the 4 August attack and which do not.
     anchor:
+      nodes: [tonkin-1964-08-07-tonkin-gulf-resolution-passes, crec-1964-p18470]
       type: legislative-record
       description: >
         Congressional Record, 7 Aug 1964 [read]: p. 18470 gives the Senate roll call "yeas 88, nays 2" (nays Gruening and
@@ -644,6 +656,7 @@ claims:
     would_change_if: "a different printing of the speech in the permanent Record"
     next_step: "Read what the two committees were told before reporting (Foreign Relations and Armed Services joint session, 6 Aug; Senate Historical Series vol. XVI)."
     anchor:
+      nodes: [tonkin-1964-08-06-fulbright-opens-senate-debate-aug4-as-fact, crec-1964-p18399]
       type: floor-statement
       description: "Congressional Record, Senate, 6 Aug 1964, pp. 18399-18400 [read on the page image, p. 18399]."
       accessible: true
@@ -694,6 +707,7 @@ claims:
     would_change_if: "a re-reading of the pages showing a Member who questioned the attack or the evidence, or the later pages (18556-18625) containing relevant debate"
     next_step: "Re-check the Zablocki, Halleck, Barry and Chamberlain quotes on the images myself; read the committee amendment text (the 'Constitution of the United States' wording) and reconcile 'with an amendment' in the House with the Senate message that it passed H.J. Res. 1145 'without amendment' (p. 18612); read what the Foreign Affairs Committee was told (its report)."
     anchor:
+      nodes: [vote-RH0880197]
       type: legislative-record
       description: "Congressional Record, House, 7 Aug 1964, pp. 18538-18555 (roll call p. 18555), with a Senate message at p. 18612. Delegated reading; quoted passages image-checked by that reader."
       accessible: true
@@ -714,6 +728,7 @@ claims:
     would_change_if: "the Record's roll call being corrected"
     next_step: "Read the amendment text (Amendment No. 715) and the later vote on S. Con. Res. 64 (10 July 1970, 57-5 per Voteview) in the Record."
     anchor:
+      nodes: [vote-RS0910398, crec-1970-p21132]
       type: legislative-record
       description: >
         Congressional Record, Senate, 24 June 1970, p. 21132 [read]: "The result was announced-yeas 81, nays 10" [No. 167 Leg.],
@@ -739,6 +754,7 @@ claims:
     would_change_if: "a reading of the pages showing a different reason for any of the ten, or of the pages 1-14 and 34-45 not yet read in full"
     next_step: "Re-check each non-Fulbright quote on its page image; read the 22 June debate (the Record file read did not include it) and the text of Amendment No. 715."
     anchor:
+      nodes: [vote-RS0910398, crec-1970-p21119, crec-1970-p21131, crec-1970-p21132]
       type: floor-statement
       description: >
         Congressional Record, Senate, 24 June 1970. Fulbright, p. 21131 [read on the page image]: "I said earlier that I would vote for the

@@ -547,7 +547,7 @@ events:
   panel: years
   lane: senate
   node: vote-RS0910398
-  rev: 1
+  rev: 2
 - id: v45
   panel: years
   lane: senate
@@ -630,7 +630,7 @@ events:
   panel: repeal
   lane: senate
   node: vote-RS0910398
-  rev: 1
+  rev: 2
 - id: v45r
   panel: repeal
   lane: senate

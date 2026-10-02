@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: vote-RS0910398
-rev: 1
+rev: 2
 type: event
 label: '24 Jun 1970: Senate votes 81-10 to repeal the Tonkin Resolution (Dole amendment)'
 time: '1970-06-24T12:00:00Z'
@@ -15,9 +15,10 @@ sources:
 - title: 'Congressional Record, Senate, 24 June 1970 (p. 21132: roll call 81-10)'
   url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf#page=32
   authenticity: GPO bound Record, authenticated, strong
-- title: Voteview, Senate roll call 481, 7 Aug 1964, H.J.Res. 1145 (88 yea, 2 nay)
-  url: https://voteview.com/rollcall/RS0880481
-  authenticity: dataset of the official roll call; Congressional Record not read
+- title: Voteview, Senate roll call 398, 24 Jun 1970 (91st Congress), Dole amendment to H.R. 15628 to repeal the Gulf of Tonkin
+    Resolution (81 yea, 10 nay)
+  url: https://voteview.com/rollcall/RS0910398
+  authenticity: dataset of the official roll call; counts agree with the Congressional Record page read (p. 21132)
 link: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf#page=32
 created: '2026-10-02'
 history:
@@ -25,3 +26,8 @@ history:
   date: '2026-10-02'
   change: Created from the Gulf of Tonkin timeline, event g9. Merged with votes-johnson-tonkin roll-call event v44 (the same
     Senate vote, Voteview roll call).
+- rev: 2
+  date: '2026-10-02'
+  change: 'CORRECTION: the second source was the Voteview page for the 7 Aug 1964 Senate vote (roll call 481), carried over
+    from the original Gulf of Tonkin timeline event g9, where it was attached to the 1970 vote by mistake. Replaced with the
+    Voteview page for the 24 Jun 1970 vote (roll call 398). Found when the two digs'' copies of this event were merged.'

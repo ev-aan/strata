@@ -65,8 +65,31 @@ def claim_html(c):
     if desc: more += f'<p><b>Anchor.</b> {E(" ".join(str(desc).split()))}</p>'
     if c.get("would_change_if"): more += f'<p><b>Would change if.</b> {E(" ".join(str(c["would_change_if"]).split()))}</p>'
     if nxt: more += f'<p><b>Next step.</b> {E(" ".join(str(nxt).split()))}</p>'
+    nl = an.get("nodes") if isinstance(an, dict) else None
+    if nl: more += '<p><b>Evidence nodes.</b></p><ul class="l" style="overflow:auto">' + "".join(node_html(x) for x in nl) + '</ul>'
     if more: bits += f'<details><summary>Evidence and limits</summary>{more}</details>'
     return f'<div class="claim" id="{E(c.get("id"))}">{bits}</div>'
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import nodes as _nodes
+NODES = _nodes.load_nodes()
+CUR = {"slug": ""}
+
+def node_html(nid):
+    n = NODES.get(nid)
+    if not n: return ""
+    m = n.get("media") or {}
+    srcs = " · ".join(f'<a href="{E(s["url"])}" target="_blank" rel="noopener">{E(s["title"])}</a>' if s.get("url") else E(s["title"]) for s in (n.get("sources") or [])[:2])
+    img = ""
+    if m.get("thumb"):
+        fn = os.path.basename(m["thumb"])
+        os.makedirs(os.path.join(OUT, "digs", CUR["slug"], "media"), exist_ok=True)
+        shutil.copy(os.path.join(_nodes.NODES_DIR, m["thumb"]), os.path.join(OUT, "digs", CUR["slug"], "media", fn))
+        orig = m.get("original_url") or ""
+        tag = f'<img src="media/{E(fn)}" alt="{E(n["label"])}" loading="lazy" style="max-width:220px;border:1px solid var(--line);border-radius:6px;float:right;margin:0 0 6px 12px">'
+        img = f'<a href="{E(orig)}" target="_blank" rel="noopener">{tag}</a>' if orig else tag
+    return (f'<li>{img}<b>{E(n["label"])}</b> <span class="small">· {E(str(n["time"])[:10])} · {E(n["type"])} · node {E(nid)} rev {E(n["rev"])}</span>'
+            f'<br><span class="small">{srcs}</span></li>')
 
 order = {"refuted": 0, "established": 1, "contested": 2, "proposed": 3, "searched_gap": 4}
 if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -83,6 +106,7 @@ for sub in CFG["publish"]:
     base = os.path.join(ROOT, "build", "subjects", sub)
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
     slug = cl.get("url_slug") or sub
+    CUR["slug"] = slug
     head = cl.get("headline") or cl.get("title")
     status = cl.get("headline_status", "draft")
     byid = {c["id"]: c for c in cl["claims"]}

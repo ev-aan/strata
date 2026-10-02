@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: crec-1964-p18470
-rev: 1
+rev: 2
 type: image
 label: Congressional Record, Senate, 7 Aug 1964, p. 18470, roll call on the resolution (page image)
 time: '1964-08-07T12:00:00Z'
@@ -16,6 +16,10 @@ sources:
 media:
   file: ../subjects/gulf-of-tonkin/sources/congressional-record/crec-1964-p18470-30.png
   sha256: 6dab8ad713e7031730bed4d34fa61163e62a2684318dfcdc34a3fadf67ce354a
+  thumb: media/crec-1964-p18470.thumb.jpg
+  thumb_sha256: 49ec6d3bda80fb5c6a612816ad4d9c8fdd3606883d66ac4c272ad30aea1496a7
+  original_url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf
+  rights: public_domain
 manifest:
   subject: gulf-of-tonkin
   source: src-congressional-record-1964
@@ -26,3 +30,6 @@ history:
 - rev: 1
   date: '2026-10-02'
   change: Created from the stored page image; sha256 recomputed and equals the value in the dig's sources manifest.
+- rev: 2
+  date: '2026-10-02'
+  change: Added a 640x872 thumbnail, the original's url and the rights status (public_domain).
