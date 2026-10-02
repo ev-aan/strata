@@ -32,7 +32,7 @@ ul.l{list-style:none;padding:0}ul.l li{padding:12px 0;border-top:1px solid var(-
 def page(title, body, desc="", canonical="", extra_head="", depth=0):
     up = "../" * depth
     nav = (f'<nav><a class="b" href="{up}">{E(CFG["name"])}</a><a href="{up}digs/">Active Excavations</a><a href="{up}method/">Method</a>'
-           f'<a href="{up}atlas/">Atlas</a><a href="{up}ideas/">Ideas</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
+           f'<a href="{up}atlas/">Atlas</a><a href="{up}ideas/">Ideas</a><a href="{up}start/">Start a dig</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
     meta = f'<meta name="description" content="{E(desc)}">' if desc else ""
     og = (f'<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">'
           f'<meta property="og:type" content="article"><meta property="og:site_name" content="{E(CFG["name"])}">'
@@ -182,7 +182,7 @@ for _s in CFG["publish"]:
     _st = (yaml.safe_load(open(_rp)) or {}).get("status") if os.path.exists(_rp) else None
     if _st not in ("passed", "passed_with_open_items", "grandfathered"):
         sys.exit(f"Refusing to publish `{_s}`: its review.yaml is missing or not passed (status: {_st}). See docs/PUBLISH_GATE.md.")
-digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/ideas/", "/method/", "/corrections/", "/about/"]
+digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/ideas/", "/start/", "/method/", "/corrections/", "/about/"]
 for sub in CFG["publish"]:
     base = os.path.join(ROOT, "build", "subjects", sub)
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
@@ -290,6 +290,17 @@ for _k in used_areas:
     urls.append(f"/areas/{_k}/")
 crow = "".join(f'<li><span class="mono">{E(d)}</span> · <a href="../digs/{E(sl)}/">{E(h)}</a><br>{E(t)}</li>' for d, sub, sl, h, t in sorted(corrections, reverse=True)) or "<li>No corrections logged yet.</li>"
 write("corrections/index.html", page("Corrections", f'<p class="eyebrow">Corrections</p><h1>What we got wrong, and fixed</h1><p>Every correction made to a published excavation is logged and stays visible. The logs are append-only: an entry is never deleted or rewritten, only added to.</p><ul class="l">{crow}</ul>', "Corrections to Stratah digs.", "/corrections/", depth=1))
+_rules = open(os.path.join(ROOT, "docs", "AGENT_RULES.md"), encoding="utf-8").read().strip()
+_start = (f'<p class="eyebrow">Start a dig</p><h1>Run your own dig with your own AI</h1>'
+          f'<p>These are all of our rules in one block. Copy them into the instructions (system prompt, custom instructions or project instructions) of any AI that can read sources, '
+          f'then give it one question. It will build claims, sources, a timeline and a log the way we do. A dig done this way is a draft until someone who did not write it reviews it.</p>'
+          f'<p><button id="cp" type="button" style="font:13px \'IBM Plex Mono\',monospace;padding:8px 14px;border:1px solid var(--line);background:var(--ink);color:var(--bg,#fff);cursor:pointer">Copy all rules</button> <span class="small" id="cpm"></span></p>'
+          f'<pre id="rules" style="white-space:pre-wrap;word-wrap:break-word;font:13px/1.55 \'IBM Plex Mono\',ui-monospace,monospace;border:1px solid var(--line);padding:16px;max-height:70vh;overflow:auto">{E(_rules)}</pre>'
+          f'<p class="small">To have your dig considered here, <a href="{E(CFG["issues_url"])}">open an issue</a> or a pull request; it goes through the same review as ours (<a href="../method/">method</a>).</p>'
+          '<script>document.getElementById("cp").onclick=function(){var t=document.getElementById("rules").innerText,m=document.getElementById("cpm");'
+          'function ok(){m.textContent="Copied."}function no(){var r=document.createRange();r.selectNodeContents(document.getElementById("rules"));var g=getSelection();g.removeAllRanges();g.addRange(r);m.textContent="Select and copy manually."}'
+          'if(navigator.clipboard){navigator.clipboard.writeText(t).then(ok,no)}else{no()}}</script>')
+write("start/index.html", page("Start your own dig", _start, "All of Stratah's rules in one copy-and-paste block, for running your own evidence-weighted dig with any AI.", "/start/", depth=1))
 write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG["name"])}: {E(CFG["tagline"])}</h1><p>{E(" ".join(CFG["about"].split()))}</p><p>See the <a href="../method/">method</a> for the rules, and <a href="../corrections/">corrections</a> for what we have fixed.</p>', " ".join(CFG["about"].split())[:200], "/about/", depth=1))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_atlas
