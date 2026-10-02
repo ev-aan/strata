@@ -296,7 +296,7 @@ rounds:
   - id: R1-6
     target: fz1073-surgeon; log L-17, L-20; timeline people
     severity: non_blocking
-    finding: claims.yaml names a private passenger ('Dr. Shota Musaev, a dentist on board', in the anchor description of fz1073-surgeon), while
+    finding: claims.yaml names a private passenger ('[name redacted, see L-24], a dentist on board', in the anchor description of fz1073-surgeon), while
       L-17 and L-20 and the timeline note say passenger names were removed and passengers are identified by role only. Remove the name from the
       claim (the quote can be trimmed to 'a dentist on board'), and note in a new log entry that the statement in L-17 did not hold for claims.yaml.
       In the timeline people list, 'a plumber who says he held the attacker' and 'a dentist who tied the attacker' combine an occupation with

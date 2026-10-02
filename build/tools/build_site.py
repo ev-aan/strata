@@ -304,7 +304,8 @@ write("start/index.html", page("Start your own dig", _start, "All of Stratah's r
 _news = yaml.safe_load(open(os.path.join(ROOT, "build", "news.yaml"), encoding="utf-8"))
 _nrows = ""
 for _e in _news.get("entries") or []:
-    _d = next((x for x in digs if x[0] == _e["subject"]), None)
+    _cl = yaml.safe_load(open(os.path.join(ROOT, "build", "subjects", _e["subject"], "claims.yaml"), encoding="utf-8")) if _e["subject"] in CFG["publish"] else None
+    _d = next((x for x in digs if _cl and x[0] == (_cl.get("url_slug") or _e["subject"])), None)
     if not _d: continue
     _nrows += (f'<li><a href="../digs/{_d[0]}/"><b>{E(_d[1])}</b></a> <span class="pill">{E(_news["status_labels"].get(_e.get("status"), _e.get("status", "")))}</span>'
                f'<br><span class="small">As of {E(_e.get("as_of", ""))}.</span> {E(" ".join(str(_d[2]).split()))}</li>')

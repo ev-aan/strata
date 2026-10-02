@@ -235,7 +235,7 @@ log:
       search tool claimed a Sky News video showed deployed masks; that summary was internally contradictory and is NOT used. Whether the cabin stayed
       pressurised is not shown in anything read (needs the flight data and cabin altitude trace). (3) PILOTS: Gulf News and Migflug say two OFF-DUTY FLYDUBAI
       pilots were travelling as passengers (staff travel on the operator's own flight). A search summary said they were a South African and a New Zealander;
-      that was NOT confirmed in a page read. (4) 'SURGEON': CNN quotes Shota Musaev, 'a dentist on board', who said he tied the attacker with headphone cords
+      that was NOT confirmed in a page read. (4) 'SURGEON': CNN quotes [name redacted, see L-24], 'a dentist on board', who said he tied the attacker with headphone cords
       and zip ties; Migflug says passengers described 'an Israeli doctor' treating the captain. No report read says 'surgeon'. A cabin-crew member is seen in
       video calling for a doctor (CNN). (1) CLEAN CABIN: not assessable from text; a smooth push-over and pull-out (L-14 arithmetic) would leave loose items
       in place. Videos not independently verified or authenticated (no authenticity block yet; see docs/AUTHENTICITY.md). (5) STATISTICS: illustrative Poisson
@@ -321,3 +321,11 @@ log:
     entry: >
       REVIEW ROUND 2 RESPONSE (new entry; earlier entries stay). (1) R2-1 correction: L-17 and the claims described The National's attribution of the 'Omani' statement to President Herzog as 'likely a slip'. That was wrong. The National reports (1 Oct) that on BBC Radio 4 on Thursday Herzog 'alleged that the co-pilot is Omani'; he is a third Israeli speaker, with Netanyahu and an Israeli official. The claim, the comparison item and the timeline are corrected; no inconsistency exists there. (2) R2-2: the headline and first key point said more than the claims: the airline and the UAE foreign ministry say 'an altercation'; only the Saudi interior ministry, as quoted by news outlets, says 'an assault on the captain by the co-pilot, resulting in various injuries to both'; 'attack' is the Israeli officials' word. Both are rewritten to attribute exactly (headline 93 characters, still a draft).
       (3) R2-3: CNN's description 'a top UAE official' is used for Anwar Gargash everywhere (earlier text said 'senior adviser'); Gargash (CNN, Friday 2 Oct) and Herzog (BBC Radio 4, 1 Oct, via The National) now appear in the timeline as accusations. (4) R2-4: CNN does not date its interview with Netanyahu in which he said the suspect is Omani; the pages give a window of 30 September or 1 October. The claim and timeline now say so; the Fox 'indoctrination' remark is reported in 1 October pieces. (5) R2-5: the 'transposition' alternative left from the withdrawn landing-time guess is removed from fz1073-reports-inconsistent. NOTE ON L-15: the append-only entry L-15 still names a private passenger in full (item 4, 'SURGEON') as the person CNN calls a dentist. It was not edited or redacted here, because the log is append-only; whether a redaction is acceptable as an exception for a personal name is for the owner to decide. That name is not used in claims.yaml, timeline.yaml, transmission.yaml, the manifest or any node (checked by search on 2 Oct); L-22 and L-17 were wrong to say names were removed everywhere.
+  - id: L-24
+    date: 2026-10-02
+    redacts: [L-15]
+    entry: >
+      REDACTION (owner decision, 2026-10-02; the one exception to the append-only rule, made openly). Entry L-15 and the review record named a private passenger whom CNN quoted as a witness.
+      Our guardrail (docs/NEWS_REVIEW.md) is not to name private individuals who authorities have not named, and the log is published on the dig page. The owner decided to redact the name.
+      The name has been replaced with "[name redacted, see L-24]" in L-15 and in the review record's request R2-5 text; nothing else in L-15 was changed, and it is still the case that no other file of this dig uses the name.
+      Limit: the repository's version history still holds the earlier text, so this is a redaction of the published record, not an erasure from git.

@@ -426,7 +426,10 @@ def check_history(r, base):
             if lid not in new_entries:
                 r.err(rel, f"log entry `{lid}` was removed (rule 6: append, never erase)")
             elif new_entries[lid] != e:
-                r.err(rel, f"log entry `{lid}` was edited (rule 6: corrections are new entries)")
+                # Owner-approved redaction (SCHEMA N26): allowed only if a NEW entry names it in `redacts` and says why.
+                redacted = any(lid in (x.get("redacts") or []) and x.get("id") not in old_entries for x in new_entries.values())
+                if not redacted:
+                    r.err(rel, f"log entry `{lid}` was edited (rule 6: corrections are new entries)")
     for cpath in glob.glob(os.path.join(SUBJECTS, "*", "claims.yaml")):
         rel = os.path.relpath(cpath, ROOT)
         old = git_show(base, rel)

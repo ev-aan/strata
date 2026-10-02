@@ -9,6 +9,7 @@ status_labels:
   live: "Live: facts are still changing"
   settled: "Settled: the main claims are resolved on the evidence we have"
   closed: "Closed: no further updates expected"
-entries: []
-# Candidates held back until they pass the publish gate (not shown on the site):
-#   - subject: flydubai-fz1073   # scoping; no claims drafted yet; guardrails already set in its log
+entries:
+  - subject: flydubai-fz1073
+    status: live
+    as_of: 2026-10-02

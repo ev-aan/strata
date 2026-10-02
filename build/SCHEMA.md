@@ -270,3 +270,6 @@ anchor:
 
 Not allowed: an `anchors:` list, `ref:` inside the anchor, an anchor that is a bare string, a missing `type` or `description`.
 A searched gap uses `type: search-record` and says in `description` what was searched and where. Conformance reports each breach as an error.
+
+## N26. Redaction (the one exception to append-only)
+A log entry may be edited only to remove personal data (for example a private person's name) and only with the owner's decision. The same change adds a NEW log entry with `redacts: [<id>]` that says what was removed, why, and who decided. Conformance allows an edit to an old entry only when a new entry names it in `redacts`. Version history still holds the earlier text; a redaction changes the published record, not git.
