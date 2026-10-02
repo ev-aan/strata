@@ -48,7 +48,7 @@ sources:
     url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
     authenticity: authenticated, moderate (see gulf-of-tonkin sources)
   s_tonkin_dig:
-    title: Strata Gulf of Tonkin dig, timeline
+    title: Stratah Gulf of Tonkin dig, timeline
     url: ../gulf-of-tonkin/timeline.html
     authenticity: this repository
 events:

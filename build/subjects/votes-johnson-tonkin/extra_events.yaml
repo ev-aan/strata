@@ -6,7 +6,7 @@ panels:
 lanes: {}
 sources:
   s_hanyok: {title: "Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), NSArchive copy", url: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf", authenticity: "authenticated, moderate (see gulf-of-tonkin sources)"}
-  s_tonkin_dig: {title: "Strata Gulf of Tonkin dig, timeline", url: "../gulf-of-tonkin/timeline.html", authenticity: "this repository"}
+  s_tonkin_dig: {title: "Stratah Gulf of Tonkin dig, timeline", url: "../gulf-of-tonkin/timeline.html", authenticity: "this repository"}
 events:
   - {id: t1, panel: years, lane: tonkin, time: "1964-08-02T08:05:00Z", precision: approx, kind: analysis, status: reported, sources: [s_hanyok], link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=17", label: "2 Aug 1964: Maddox fires warning rounds; boats attack (claim tonkin-aug2-maddox-engaged)", detail: "See the Gulf of Tonkin dig."}
   - {id: t2, panel: years, lane: tonkin, time: "1964-08-04T15:00:00Z", precision: approx, kind: analysis, status: reported, sources: [s_hanyok], link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=49", label: "4 Aug 1964: reported second attack that, per NSA's own study, did not happen (claim tonkin-aug4-attack-occurred, refuted)", detail: "See the Gulf of Tonkin dig."}

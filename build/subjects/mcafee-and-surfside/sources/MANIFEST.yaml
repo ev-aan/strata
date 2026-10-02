@@ -14,7 +14,7 @@ sources:
       tests:
         - "Domain and certificate: an official .gov site [read]"
         - "Content match: the June 2026 findings reported by independent outlets (NBC, NPR, ENR, in search results) agree with the page"
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps: ["The page summarizes a video; the technical report was not read."]
       next_step: "Read NIST's technical report."
       checked: 2026-10-02
@@ -23,7 +23,7 @@ sources:
     url: https://www.nist.gov/news-events/news/2025/09/champlain-towers-south-investigation-nears-completion-technical-work
     document_class: primary_text
     read: yes, directly
-    authenticity: {status: authenticated, strength: strong, provenance: "nist.gov news release with date; consistent with the June 2026 page", tests: ["Official .gov domain [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+    authenticity: {status: authenticated, strength: strong, provenance: "nist.gov news release with date; consistent with the June 2026 page", tests: ["Official .gov domain [read]"], tested_by: "Stratah session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-snopes
     title: "Snopes, Did John McAfee Hide Files at Collapsed Miami Building? (25 Jun 2021, Dan Evon)"
     url: https://www.snopes.com/fact-check/john-mcafee-files-miami-building/
@@ -86,7 +86,7 @@ sources:
         - "Third-party archives: hundreds of tweets archived on Archive.is after his death; none matches (Snopes)"
         - "Template match: a genuine 8 June tweet carries the same timestamp as the screenshot (USA Today)"
         - "Account analysis tools (AccountAnalysis.app, AllMyTweets): two tweets on 8 June, neither about files or a condo (PolitiFact)"
-      tested_by: "PolitiFact, Snopes, USA Today (independent organizations; their methods overlap). Not repeated by Strata."
+      tested_by: "PolitiFact, Snopes, USA Today (independent organizations; their methods overlap). Not repeated by Stratah."
       decisive_anachronism: null
       gaps:
         - "The main anchor is an absence, which the framework caps at provisional; the template match is a positive indicator."
