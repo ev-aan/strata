@@ -277,14 +277,18 @@ A log entry may be edited only to remove personal data (for example a private pe
 ## Publication status (added 2026-10-02 under docs/proposals/publication-status.md)
 
 Why: a retracted or flagged paper must never read as a sound study. Publication status is a fact
-about a source, not a claim state: it lives on the source entry, and the page shows it with every
-claim that cites the source and in a list at the top.
+about a source, not a claim state: it lives on the source entry. The page shows it in a list at the
+top (`source_notices`) and as a notice on each claim that lists the source in its own
+`flagged_sources`; a status is also tagged in the Sources list. The validator makes this
+mandatory only for retracted and withdrawn sources (an expression of concern is a warning;
+`corrected` and `unpublished` are not enforced), and only where a claim cites the source by id.
 
 ### What silence means
 A source with no `publication` block has **not been looked up**. It does not mean "not retracted".
 Only a `publication` block records that someone looked; `checked: <date>` says when. No rule requires
 a lookup: the validator can enforce what is recorded, never what was not. Every dig page that records
-any status says so under its Sources heading. (A dig with no manifest cannot record any status.)
+any status says so under its Sources heading; a dig that records none shows no sentence (today that is
+all six published digs). (A dig with no manifest cannot record any status.)
 
 ### On each source (`sources/MANIFEST.yaml`), optional
 ```yaml
@@ -323,15 +327,29 @@ as `published` with the history in `reason`.
 ### Scope of PS3, exactly
 PS3 looks for a manifest source id as a string anywhere in every `*.yaml` file directly in the
 subject folder (`claims.yaml`, `timeline.yaml`, `tests.yaml`, `transmission.yaml`, `actors.yaml`,
-`threads.yaml`, `challenges.yaml`), except `log.yaml`, `review.yaml`, `sources.yaml` and the
-manifest, which record work and review rather than cite evidence, and except the `flagged_sources`
-and `source_notices` keys. The citing item acknowledges with `flagged_sources` on itself or on an
-enclosing item; one at the top level of a file does not count. In a claim, an id in
-`anchor.sources` or `reception_records` is a citation. In `timeline.yaml`, `tests.yaml`,
-`transmission.yaml` and `actors.yaml` an acknowledgement is recorded and checked but the page does
-not yet show it beside the event; only the claim page and the top list do. It does **not** see:
-- sources cited on shared nodes (`build/nodes/*.yaml`): a node's `sources` are inline entries, not
-  manifest ids, and carry no `publication`, so a retracted paper reached only through `anchor.nodes`
-  is not detected;
-- a source named only in prose, a title or a URL;
-- a dig that has no manifest, or whose claims do not list manifest ids in `anchor.sources`.
+`threads.yaml`, `challenges.yaml`), whatever the field (for example `anchor.sources`,
+`scale_sources`, `reception_records`, a `source:` on a statement or chain event), except
+`log.yaml`, `review.yaml`, `sources.yaml` and the manifest, which record work and review rather than
+cite evidence, and except the `flagged_sources` and `source_notices` keys. It also follows a claim's
+`anchor.nodes` to each shared node that has `manifest: {subject, source}` naming this subject, and
+treats that `source` as cited by the claim.
+
+The citing item acknowledges with `flagged_sources` on itself or on an enclosing item (timeline
+event, test, chain, statement). One at the top level of a file does not count. In `claims.yaml` only
+the claim itself can acknowledge: a `flagged_sources` placed inside the claim (for example in
+`anchor`) is an error, because the page reads only the claim's own list. In `timeline.yaml`,
+`tests.yaml`, `transmission.yaml` and `actors.yaml` an acknowledgement is recorded and checked but
+the page does not yet show it beside the event; only the claim page and the top list do. It does
+**not** see:
+- a node source that is an inline entry (`title`, `url`) with no `manifest` pointer: those carry no
+  `publication`, so a retracted paper reached only that way is not detected;
+- a node whose `manifest.subject` is another subject;
+- a source named only in prose, a title or a URL, or used as a YAML key;
+- a dig that has no manifest, or whose claims cite no manifest id (directly or through a node).
+
+### Changing a status after publication
+Recording or changing a status on a dig that is already published is a correction under
+`docs/PUBLISH_GATE.md`: it needs a new `log.yaml` entry saying what was recorded and when. The
+manifest `publication` block is not itself a history; an earlier status survives only in version
+control and the log. Recording a retraction turns the validator red until the claims carry
+`flagged_sources` and `source_notices` (intended).

@@ -218,7 +218,7 @@ def load_sources(sdir):
         p = os.path.join(sdir, name)
         if os.path.exists(p):
             return {s.get("id"): s for s in (load(p) or {}).get("sources") or []
-                    if isinstance(s, dict)}
+                    if isinstance(s, dict) and isinstance(s.get("id"), str)}
     return {}
 
 
@@ -227,27 +227,53 @@ PS_SKIP_FILES = {"log.yaml", "review.yaml", "sources.yaml"}
 PS_ACK_KEYS = ("flagged_sources", "source_notices")
 
 
-def _ps_walk(o, ids, acks, item, depth, file, hits, ack_lists):
-    """Find every string equal to a manifest id in `o`. A hit is acknowledged if the item it sits in,
-    or an enclosing item below the file's top level, lists the id in `flagged_sources`."""
+def _ps_nodes(subject, nodes_dir=None):
+    """node id -> manifest source id, for shared nodes that point into this subject's manifest."""
+    out = {}
+    for path in glob.glob(os.path.join(nodes_dir or os.path.join(ROOT, "build", "nodes"), "*.yaml")):
+        try:
+            n = load(path)
+        except yaml.YAMLError:
+            continue
+        mf = n.get("manifest") if isinstance(n, dict) else None
+        if isinstance(mf, dict) and mf.get("subject") == subject and isinstance(mf.get("source"), str):
+            out[n.get("id")] = mf["source"]
+    return out
+
+
+def _ps_walk(o, ids, acks, item, depth, file, hits, ack_lists, nodemap):
+    """Find every string equal to a manifest id in `o`, and every `nodes:` reference to a shared node
+    that points to a manifest id. A hit is acknowledged if the item it sits in, or an enclosing item
+    below the file's top level, lists the id in `flagged_sources`. In claims.yaml only the claim itself
+    can acknowledge (the page reads the claim's own list)."""
     if isinstance(o, dict):
         mine = o.get("flagged_sources")
         if isinstance(mine, list) and depth > 0:
-            ack_lists.append((file, o.get("id") or item, [x for x in mine if isinstance(x, str)]))
-            acks = acks | {x for x in mine if isinstance(x, str)}
+            names = [x for x in mine if isinstance(x, str)]
+            if file == "claims.yaml" and depth != 2:
+                hits.append(("misplaced", file, item, False, names))
+            else:
+                ack_lists.append((file, o.get("id") or item, names))
+                acks = acks | set(names)
         item = o.get("id") if isinstance(o.get("id"), str) else item
+        nl = o.get("nodes")
+        if isinstance(nl, list):
+            for ref in nl:
+                nid = ref.get("node") if isinstance(ref, dict) else ref
+                if isinstance(nid, str) and nid in nodemap and nodemap[nid] in ids:
+                    hits.append((nodemap[nid], file, item, nodemap[nid] in acks, None))
         for k, v in o.items():
             if k in PS_ACK_KEYS:
                 continue
-            _ps_walk(v, ids, acks, item, depth + 1, file, hits, ack_lists)
+            _ps_walk(v, ids, acks, item, depth + 1, file, hits, ack_lists, nodemap)
     elif isinstance(o, list):
         for v in o:
-            _ps_walk(v, ids, acks, item, depth + 1, file, hits, ack_lists)
+            _ps_walk(v, ids, acks, item, depth + 1, file, hits, ack_lists, nodemap)
     elif isinstance(o, str) and o in ids:
-        hits.append((o, file, item, o in acks))
+        hits.append((o, file, item, o in acks, None))
 
 
-def check_publication(r, subject, sdir, claims, d):
+def check_publication(r, subject, sdir, claims, d, nodes_dir=None):
     """Rules PS1-PS4 (build/SCHEMA.md, Publication status): a retracted or flagged publication can
     never be cited as if it were sound, and its status must be shown with the claim and at the top."""
     sources = load_sources(sdir)
@@ -257,7 +283,7 @@ def check_publication(r, subject, sdir, claims, d):
         if pub is None:
             continue
         st = pub.get("status") if isinstance(pub, dict) else None
-        if st not in PUB_STATUS:
+        if not isinstance(st, str) or st not in PUB_STATUS:
             r.err(f"{subject}:{sid}", f"PS1: publication status `{st}` must be one of "
                                       + " | ".join(sorted(PUB_STATUS)))
             continue
@@ -267,6 +293,7 @@ def check_publication(r, subject, sdir, claims, d):
                 r.err(f"{subject}:{sid}", f"PS2: a `{st}` publication needs its `date` and `notice`")
             flagged[sid] = st
     hits, ack_lists = [], []
+    nodemap = _ps_nodes(subject, nodes_dir) if sources else {}
     if sources:
         for path in sorted(glob.glob(os.path.join(sdir, "*.yaml"))):
             fn = os.path.basename(path)
@@ -276,8 +303,12 @@ def check_publication(r, subject, sdir, claims, d):
                 doc = load(path)
             except yaml.YAMLError:
                 continue                      # reported elsewhere
-            _ps_walk(doc, set(sources), frozenset(), None, 0, fn, hits, ack_lists)
-    for sid, fn, item, acked in hits:
+            _ps_walk(doc, set(sources), frozenset(), None, 0, fn, hits, ack_lists, nodemap)
+    for sid, fn, item, acked, names in hits:
+        if sid == "misplaced":
+            r.err(f"{subject}:{item}", "PS3: `flagged_sources` must be on the claim itself, not inside it "
+                                       "(the page reads only the claim's own list)")
+            continue
         st = flagged.get(sid)
         if st and not acked:
             msg = (f"PS3: cites `{sid}`, which is {st.replace('_', ' ')}; list it in "
@@ -292,6 +323,9 @@ def check_publication(r, subject, sdir, claims, d):
     shown = set()
     for n in d.get("source_notices") or []:
         if isinstance(n, dict):
+            if not isinstance(n.get("source"), str):
+                r.err(subject, "PS4: a `source_notices` entry has no `source` id (a string)")
+                continue
             shown.add(n.get("source"))
             if n.get("source") not in recorded:
                 r.err(subject, f"PS4: `source_notices` names `{n.get('source')}`, which has no "

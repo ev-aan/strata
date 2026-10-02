@@ -28,7 +28,7 @@ Limit of this evidence: the retractions are as recorded in the dig's manifest (t
 
 Commands and outputs are in sections 1, 5 and 7. Summary of what was checked:
 - `main` validator on the dig, with and without its flags: 0 errors both ways (section 1).
-- Where a manifest source id can appear in a subject folder, over all 15 digs on `main`: scripted walk of every `*.yaml` in each subject folder for strings equal to a manifest id. Ids occur in `claims.yaml` (`anchor.sources`, `reception_records`), `transmission.yaml` (`chains.events.source`), `actors.yaml` (`statements`, `actions`, `commitments` `.source`) and `timeline.yaml` (event `sources`; the dig only). They do not occur in shared nodes: a node's `sources` are inline entries (`title`, `url`, `origin`), not manifest ids.
+- Where a manifest source id can appear in a subject folder, over all 15 digs on `main`: scripted walk of every `*.yaml` in each subject folder for strings equal to a manifest id. Ids occur in `claims.yaml` (`anchor.sources`, `reception_records`), `transmission.yaml` (`chains.events.source`), `actors.yaml` (`statements`, `actions`, `commitments` `.source`) and `timeline.yaml` (event `sources`; the dig only). Shared nodes reach manifest ids by a different route (corrected after the second assessment, which found my earlier statement wrong): a node's `sources` are inline entries, but 48 of the 107 nodes (41 for `incandescent-lamp`, 7 for `gulf-of-tonkin`) carry `manifest: {subject, source}` (SCHEMA, Nodes), and claims reach those nodes through `anchor.nodes` (58 references in `incandescent-lamp`, 9 in `gulf-of-tonkin`).
 - The previous version of PS3 (this branch before this revision) read only `anchor.sources`. Injection of a retracted status into each source in turn showed it missed 30 of 121 citation sites in `incandescent-lamp` and 14 of 25 in `gulf-of-tonkin` (section 7).
 
 ## 3. The proposed change, exactly
@@ -56,11 +56,15 @@ Chosen: **(b)**, the smaller change. Reasons:
 What (b) changes: `build/SCHEMA.md` now says, under "What silence means", that a source with no `publication` block has not been looked up and that this is not "not retracted"; `checked: <date>` is an optional field on the block that says when. The page shows, under its Sources heading, for any dig that records at least one status: "Publication status is recorded only for sources someone looked up. A source with no status shown has not been checked for a retraction or correction; that is not the same as clean." Digs that record none show nothing about publication status at all (they do not imply a check, and their pages are unchanged, section 5). A dig with no manifest cannot record any status (7 of the 15 digs, section 5); the SCHEMA text says so.
 
 ### 3.2 Scope of PS3 (assessment required change 3)
-PS3 is extended and its scope is stated exactly in `build/SCHEMA.md` ("Scope of PS3, exactly"). It now looks for a manifest source id as a string in every `*.yaml` file directly in the subject folder (`claims.yaml`, `timeline.yaml`, `tests.yaml`, `transmission.yaml`, `actors.yaml`, `threads.yaml`, `challenges.yaml`), not just `anchor.sources`. Excluded: `log.yaml` and `review.yaml` (they record work and review, and the log is append-only), the manifest, and the `flagged_sources` and `source_notices` keys themselves. The citing item acknowledges with `flagged_sources` on itself or on an enclosing item (claim, timeline event, test, chain, statement); a `flagged_sources` at the top level of a file does not count, so one line cannot silence a whole file.
+PS3 is extended (the node route and the claim-only acknowledgement were added after the second assessment) and its scope is stated exactly in `build/SCHEMA.md` ("Scope of PS3, exactly"). It now looks for a manifest source id as a string in every `*.yaml` file directly in the subject folder (`claims.yaml`, `timeline.yaml`, `tests.yaml`, `transmission.yaml`, `actors.yaml`, `threads.yaml`, `challenges.yaml`), not just `anchor.sources`. Excluded: `log.yaml` and `review.yaml` (they record work and review, and the log is append-only), the manifest, and the `flagged_sources` and `source_notices` keys themselves. The citing item acknowledges with `flagged_sources` on itself or on an enclosing item (claim, timeline event, test, chain, statement); a `flagged_sources` at the top level of a file does not count, so one line cannot silence a whole file.
 
-Not covered, stated in SCHEMA.md: shared nodes (their sources are not manifest ids and have no `publication`, so a retracted paper reached only through `anchor.nodes` is not detected); a source named only in prose, a title or a URL; a dig with no manifest or whose claims do not list manifest ids in `anchor.sources` (`mcafee-and-surfside` and `teti-pyramid-texts` have manifests but cite none of their 17 ids from claims, so PS3 cannot apply to them).
+PS3 also follows a claim's `anchor.nodes` to each node whose `manifest` names this subject and treats that `source` as cited by the claim (acknowledged by the claim's `flagged_sources`). On the 15 digs this changes nothing in the validator output (every such source is also cited directly, and no `publication` block exists); in the injection test it adds the node sites (gulf-of-tonkin 25 to 34, incandescent-lamp 121 to 179 PS3 errors summed over injections). In `claims.yaml` only the claim itself can acknowledge: a `flagged_sources` placed inside the claim, for example in `anchor`, is an error, because the page renders only the claim's own list.
 
-Real effect: on the dig, the extended PS3 finds one site the previous PS3 missed, `timeline.yaml` event `a01` (Lancet paper published, 1998-02-28), which cites the retracted paper without a flag (section 5).
+Not covered, stated in SCHEMA.md: a node source that is an inline entry with no `manifest` pointer (no `publication`, so not detected); a node whose `manifest.subject` is another subject; a source named only in prose, a title, a URL or a YAML key; a dig with no manifest or whose claims cite no manifest id, directly or through a node (`mcafee-and-surfside` and `teti-pyramid-texts` have manifests but cite none of their 17 ids from claims, so PS3 cannot apply to them).
+
+Real effect: on the dig as it stood at 035bb40, the extended PS3 found one site the previous PS3 missed, `timeline.yaml` event `a01` (Lancet paper published, 1998-02-28), which cited the retracted paper without a flag (section 5). The dig's author has since flagged it (8efc00d).
+
+Malformed values are errors, not crashes: a non-string `publication.status` is PS1, a `source_notices` entry without a string `source` is PS4, and a non-string manifest id is ignored (tests in `test_publication_status.py`).
 
 ### 3.3 Page rendering (assessment required change 4)
 SCHEMA.md said the page shows the status; `build_site.py` did not. Now implemented, minimal:
@@ -119,7 +123,7 @@ Ran 16 tests ... OK
 
 Pages: `build_site.py` was run before and after on the same tree and the two outputs compared file by file. The only difference in any file is the added `.pubnote` CSS rule on the shared stylesheet line; every body is byte-identical (no `publication` block exists in the six published digs, so none of the new markup appears).
 
-Dig not on main, for the record (`dig/vaccines-autism` at 035bb40 overlaid on this tree; read only):
+Dig not on main, for the record (`dig/vaccines-autism` at 035bb40 overlaid on this tree; read only). The warning figure is 104 here (93 on main plus 11 for the dig), re-run on main 035a82d for this revision; the second assessor reported 105 and I could not reproduce that figure, with the same 104 at the dig's later head 8efc00d. At 8efc00d, where the dig has flagged `a01` itself, this branch gives 0 errors, 104 warnings.
 
 | Validator | Result |
 |---|---|
@@ -127,9 +131,9 @@ Dig not on main, for the record (`dig/vaccines-autism` at 035bb40 overlaid on th
 | this branch before this revision (PS3 on `anchor.sources` only) | 0 errors, 104 warnings |
 | this branch now | 1 error, 104 warnings: `vaccines-autism:timeline.yaml:a01: PS3: cites src-wakefield-1998, which is retracted; list it in flagged_sources on that item` |
 | this branch now, with `flagged_sources: [src-wakefield-1998]` added to event `a01` | 0 errors, 104 warnings (warning list identical to `main`'s) |
-| this branch now, with the dig's three claim-level `flagged_sources` and its `source_notices` removed | 6 errors: 3 PS3 on the claims, 1 PS3 on `a01`, 2 PS4 (against 0 errors on `main`, section 1B) |
+| this branch now, with the dig's three claim-level `flagged_sources` and its `source_notices` removed | 6 errors: 3 PS3 on the claims, 1 PS3 on `a01`, 2 PS4 (against 0 errors on `main`, section 1) |
 
-Migration for that dig, owned by its author and not made here: one flag on event `a01`. Rendering on that dig (scratch publish, section 3.3): notices list first, a notice on each flagged claim, tagged Sources list.
+Migration for that dig, owned by its author and not made here: one flag on event `a01` (since made by the author on its branch). Rendering on that dig (scratch publish, section 3.3): notices list first, a notice on each flagged claim, tagged Sources list.
 
 ## 6. Alternatives considered
 
@@ -163,19 +167,19 @@ Before this revision the same injection found 91 of the 121 sites in `incandesce
 
 **(c) What is not neutral, stated plainly.** The rules enforce what was recorded. A dig on a topic that draws scrutiny gets its sources looked up; another that does not may never be. Nothing in the validator can see an unrecorded retraction. That asymmetry belongs to whoever looks, not to the rules, and it is why 3.1 says silence means unchecked, why the page says so, and why an automated lookup is the recommended follow-up (section 6.4).
 
-## 8. Files changed by this revision
+## 8. Files changed by this revision (second revision, after the second independent assessment)
 
-`docs/proposals/publication-status.md` (new), `build/SCHEMA.md` (section rewritten), `build/conformance.py` (PS3 and PS4 extended), `build/tools/pubstatus.py` (new), `build/tools/build_site.py` (renders the above), `build/tools/test_publication_status.py` (new). `build/SCHEMA.md` and `build/conformance.py` are owner-only changes under `CLAUDE.md`; they are made on this branch only so the owner can judge the proposal, and no agent merges them.
+`docs/proposals/publication-status.md` (new), `build/SCHEMA.md` (section rewritten), `build/conformance.py` (PS3 and PS4 extended, node route, claim-only acknowledgement, malformed-value guards), `build/tools/pubstatus.py` (new), `build/tools/build_site.py` (renders the above), `build/tools/test_publication_status.py` (new, 19 tests). Also added: `build/SCHEMA.md` now states that a status recorded or changed after publication is a correction under `docs/PUBLISH_GATE.md` with a new log entry (the manifest block is not itself a history), and its "Why" sentence says only what is enforced and shown. `build/SCHEMA.md` and `build/conformance.py` are owner-only changes under `CLAUDE.md`; they are made on this branch only so the owner can judge the proposal, and no agent merges them.
 
 ## 9. Independent assessment and decision
 
 Assessment of the revised proposal by an independent reviewer against the seven standards of `docs/SCHEMA_PROPOSALS.md`: pending.
 
 Decisions left to the owner:
-1. Adopt (b), "silence means unchecked" with a page sentence, or require `checked` dates (section 3.1)?
-2. Keep `corrected` exempt, or raise it to a PS3 warning (3.4)? Effect on today's digs: none (no `publication` blocks on `main`); on the dig: three warnings.
-3. Accept that PS3 errors on the dig's `timeline.yaml` event `a01` until its author flags it, and that nodes remain outside PS3 (3.2)? Alternative: make non-claim sites a warning, which weakens the rule for those sites.
-4. Whether to add the manual retraction check to the review checklist (section 6.2), and whether to commission the automated-lookup tool (6.4).
-5. Whether the timeline page should also show an event's `flagged_sources` (not done here).
+1. Adopt (b), "silence means unchecked", or require `checked` dates (section 3.1)? Trade-offs: (b) is the smaller change and adds no warnings, but its page sentence appears only on digs that record a status, and none of the six published digs does, so their pages say nothing about publication status and silence can be read as clean; a site-wide sentence (About page, or a note on every dig's Sources) would fix that but changes published pages. Required `checked` dates need a journal-article field and give an asserted, not verified, lookup.
+2. Keep `corrected` exempt, or raise it to a PS3 warning (3.4)? Exempt avoids notices on sound claims and cannot judge materiality; a warning surfaces every corrected source but cannot tell an affiliation erratum from a corrected table. Effect: none on today's digs (no `publication` blocks on `main`); three warnings on the dig.
+3. Non-claim citation sites (timeline, tests, actors, transmission): keep them as errors, or make them warnings (3.2)? An error is stronger but forces a flag that readers do not see on those pages (the page shows it only in the top list); a warning weakens the rule for those sites. Showing the flag on the timeline page (5) would make the error meaningful.
+4. Add the manual retraction check to the review checklist (section 6.2): cheap, catches unrecorded retractions no rule can, varies by reviewer. And whether to commission a Retraction Watch/Crossref lookup tool that fills `publication`, as a separate proposal (6.4): the best answer to selective checking, but needs a licence and a network dependency.
+5. Whether the timeline page should also show an event's `flagged_sources` (not done here; small, but changes the timeline renderer).
 
 Owner decision: pending.

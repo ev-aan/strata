@@ -28,10 +28,10 @@ def make(files, sources, base=None):
     return d
 
 
-def run(d):
+def run(d, nodes_dir=None):
     r = cf.Report()
     claims_doc = cf.load(os.path.join(d, "claims.yaml")) if os.path.exists(os.path.join(d, "claims.yaml")) else {}
-    cf.check_publication(r, "s", d, claims_doc.get("claims") or [], claims_doc)
+    cf.check_publication(r, "s", d, claims_doc.get("claims") or [], claims_doc, nodes_dir=nodes_dir or tempfile.mkdtemp())
     return r
 
 
@@ -127,6 +127,38 @@ class Rules(unittest.TestCase):
                 out.append(sorted(e.split(": ", 1)[1] for e in r.errors))
         self.assertTrue(all(o == out[0] for o in out))
         self.assertEqual(len(out[0]), 2)
+
+    def test_node_reach(self):
+        nd = tempfile.mkdtemp()
+        for nid, subj in (("n1", "s"), ("n2", "other")):
+            with open(os.path.join(nd, nid + ".yaml"), "w") as f:
+                yaml.safe_dump({"id": nid, "manifest": {"subject": subj, "source": "src-a"}}, f)
+        def only_node(nid, flagged=None):
+            c = {"id": "c1", "state": "established", "anchor": {"type": "x", "description": "d", "nodes": [{"node": nid, "verb": "supports"}]}}
+            if flagged:
+                c["flagged_sources"] = flagged
+            return c
+        base = lambda c: make({"claims.yaml": {"source_notices": NOTICE, "claims": [c]}}, [src(RETRACTED)])
+        r = run(base(only_node("n1")), nd)
+        self.assertEqual(sum("PS3" in e for e in r.errors), 1)
+        self.assertEqual(run(base(only_node("n1", ["src-a"])), nd).errors, [])
+        self.assertEqual(run(base(only_node("n2")), nd).errors, [])   # node points into another subject
+        self.assertEqual(run(base({"id": "c1", "state": "established", "anchor": {"type": "x", "description": "d", "nodes": ["n1"]}}), nd).errors.__len__(), 1)  # bare node id form
+
+    def test_ack_inside_anchor_does_not_count(self):
+        c = claim()
+        c["anchor"]["flagged_sources"] = ["src-a"]
+        r = run(make({"claims.yaml": {"source_notices": NOTICE, "claims": [c]}}, [src(RETRACTED)]))
+        self.assertTrue(any("on the claim itself" in e for e in r.errors))
+        self.assertTrue(any("cites `src-a`" in e for e in r.errors))
+
+    def test_malformed_values_give_errors_not_a_crash(self):
+        r = run(make({"claims.yaml": {"claims": []}}, [src({"status": ["retracted"]})]))
+        self.assertTrue(any("PS1" in e for e in r.errors))
+        r = run(make({"claims.yaml": {"source_notices": [{"source": ["src-a"], "notice": "n"}, "junk"], "claims": []}}, [src(RETRACTED)]))
+        self.assertTrue(any("PS4" in e and "no `source` id" in e for e in r.errors))
+        r = run(make({"claims.yaml": {"claims": [claim()]}}, [{"id": ["x"], "title": "t"}, src(RETRACTED)]))
+        self.assertTrue(any("PS3" in e for e in r.errors))
 
 
 class Rendering(unittest.TestCase):
