@@ -5,7 +5,7 @@
 # anchored only to abstracts so far (secondary), so the headline stays DRAFT until
 # the full texts of Madsen 2002 and Hviid 2019 are read (see log L-06).
 # ---------------------------------------------------------------------------
-headline: "Do Vaccines Cause Autism? No, Large Studies Find; Two Narrow Exceptions Explained"
+headline: "Do Vaccines Cause Autism? No, Large Studies Find; Two Narrow Open Items Explained"
 headline_claim: va-mmr-no-detectable-increase
 headline_status: draft          # draft until the headline claim reaches anchor_checked: primary
 search_summary: >
@@ -22,7 +22,9 @@ assessment:
   headline: "No. Large studies of children's records find no link (high confidence); a 2007 legal concession and an untested question about mitochondrial disease are explained below."
   text: >
     Two nationwide Danish cohorts following 1,194,764 children found no more autism after MMR,
-    and studies in the UK (1,294 cases) and the US (95,727 children with older siblings) agree.
+    and studies in the UK (a case-control study of pervasive developmental disorders, 1,294 cases,
+    with similar results when restricted to autism) and the US (95,727 children with older
+    siblings) agree.
     Children exposed to more thimerosal were not diagnosed with autism more often; for
     aluminum, a Danish cohort found no increase in neurodevelopmental disorders (read in the
     abstract), and its autism-only figure was read only in a press release, so that claim is
@@ -44,7 +46,7 @@ assessment:
     November 2025 the CDC's page has said the "no link" statement is not evidence-based, a
     change the US Health Secretary said he ordered (va-cdc-page-2025).
   key_points:
-    - "Two Danish cohorts (1,194,764 children) and studies in the UK and US found no more autism in children who got MMR."
+    - "Two Danish cohorts (1,194,764 children) and UK and US studies found no more autism after MMR (the UK study: pervasive developmental disorders, similar for autism)."
     - "Health bodies (adoption, not evidence): WHO's safety committee found no evidence of a causal link (2025); since Nov 2025 the CDC's page disputes the 'no link' statement."
     - "The 1998 paper was retracted in 2010; a court found its ethics statement untrue. Open: a 2007 legal concession (not science); fever in mitochondrial disease (untested)."
   basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
@@ -68,7 +70,8 @@ short_answer:
   summary: >
     Across studies following more than a million children's records, vaccines have not been
     found to cause autism. Two nationwide Danish cohorts following 1,194,764 children found no
-    more autism after MMR; studies in the UK and the US agree; and a 2014 analysis pooling 5
+    more autism after MMR; studies in the UK (of pervasive developmental disorders, with similar results
+    for autism) and the US agree; and a 2014 analysis pooling 5
     cohort studies (1,256,407 children) and 5 case-control studies (9,920 children) found no
     association. These figures are studies; what health agencies say is recorded separately, as
     adoption.
@@ -82,7 +85,8 @@ short_answer:
       checked: abstract
     - figure: "UK and US studies, no increase after MMR"
       detail: >
-        UK: Smeeth 2004, 1,294 cases and 4,469 controls, OR 0.86 (0.68 to 1.09); Taylor 1999,
+        UK: Smeeth 2004, a study of pervasive developmental disorders (1,294 cases and 4,469 controls,
+        OR 0.86, 0.68 to 1.09; findings similar when restricted to autism); Taylor 1999,
         498 cases, no clustering after MMR. US: Jain 2015, 95,727 children with older
         siblings, no increase including among 1,929 whose older sibling had autism.
       source: [src-smeeth-2004, src-taylor-1999, src-jain-2015]
@@ -147,7 +151,7 @@ short_answer:
         Mitochondrial disease affects about 1 in 10,000 people overall. Reports of regression
         after a post-vaccination fever found so far: at least 5 children in two reports (4 in one
         series of 28, and one case report), as collected in one review; this is not a systematic
-        count. The case report (Poling et al. 2006) may concern the same child as the
+        count. The 2006 case report may concern the same child as the
         compensation concession; that is not shown by any source read, so the two are not
         independent evidence until it is checked. No rate per vaccination can be calculated from evidence this small.
       scale_sources: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006]
@@ -1366,8 +1370,7 @@ claims:
     state: established
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      In late 2007 the US government conceded, in one child's vaccine-compensation case (the Poling
-      case), a link between her vaccinations and her injury. CNN reports that the program "concluded"
+      In late 2007 the US government conceded, in one child's vaccine-compensation case, a link between her vaccinations and her injury. CNN reports that the program "concluded"
       the vaccinations "significantly aggravated" an underlying illness (a mitochondrial
       disorder) that had predisposed her to symptoms of autism; NPR reports the government said
       it was possible the vaccines "may have exacerbated" the disorder. The two reports word it
@@ -1420,7 +1423,7 @@ claims:
       injuries; whether it applied here was not checked. Other compensated cases with
       autism-like features may exist and were not checked, so this is the best-known case,
       not a count. It points to the open question in va-mito-fever-regression. TO REACH
-      PRIMARY: obtain Poling v. Secretary of HHS, No. 02-1466V, from the Court of Federal
+      PRIMARY: obtain docket 02-1466V, from the Court of Federal
       Claims (the posted PDF has moved).
 
   - id: va-omnibus-test-cases
@@ -1536,7 +1539,7 @@ claims:
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Autism is not on the US Vaccine Injury Table. Encephalopathy or encephalitis within 5 to
-      15 days of a measles-containing vaccine is. Whether the Poling concession fell under a
+      15 days of a measles-containing vaccine is. Whether the 2007 compensation concession fell under a
       Table injury was not checked: the Table in force when it was decided was not read.
     evidence_class: primary_text
     confidence: high
@@ -1830,7 +1833,7 @@ claims:
     evidential_weight: 2   # of 5
     anchor_checked: secondary   # the review read in full; the case series as abstract and as cited
     adoption_weight: 1   # of 5
-    adoption_note: "Not measured; known mainly through the Poling case."
+    adoption_note: "Not measured; known mainly through the 2007 compensation case."
     would_change_if: >
       a prospective study of children with confirmed mitochondrial disease records fevers
       from all causes and finds regression clustering after them, or finds none
@@ -1853,7 +1856,7 @@ claims:
       sources: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006]
     positions:
       - label: "Yes (possible)"
-        holder: "Shoffner 2010; Poling et al. 2006 (case report; possibly the same child as the Poling concession, not verified, so not counted as separate support)"
+        holder: "Shoffner 2010; a 2006 case report (possibly the same child as the 2007 compensation concession, not verified, so not counted as separate support)"
         ground: >
           Regression after fever is documented in this group, a few after post-vaccination
           fevers.

@@ -28,7 +28,7 @@ notes: >
   [2012] EWHC 503 paras 1, 7, 153, 156-159, 186-187; Guardian 2 Feb 2010; Indian J Psychiatry 2011
   (Europe PMC); Europe PMC records for Lancet 1998, 2004 and 2010; Md. Ct. Spec. App. Nos. 1095
   (full), 722/2256 and 338 (passages); WHO GACVS statement; MMWR 1999;48(26); Simpsonwood transcript
-  (full PDF, pp. 44, 255-256); CNN and NPR on Poling; 42 U.S.C. 300aa-14(c); Bruesewitz (Cornell
+  (full PDF, pp. 44, 255-256); CNN and NPR on the compensation concession; 42 U.S.C. 300aa-14(c); Bruesewitz (Cornell
   LII syllabus, opinion, dissent n.25); SAGE expression of concern and Hooker & Miller 2021;
   Thompson 2014 PDF; CDC 2004 study statement; CDC autism page (22 Jul 2026); STAT 21 Nov 2025 and
   26 Mar 2025; Salon 16 Jan 2011; IOM 2004 summary; Federal Circuit opinions 2010-5004 (Cedillo) and
@@ -36,7 +36,7 @@ notes: >
   Hviid 2019 (6,517 cases, 5,025,754 person-years, HR 0.93, 0.85-1.02), Taylor 1999, Smeeth 2004,
   Jain 2015, Taylor 2014 (1,256,407 and 9,920), Cochrane 2021 (1,194,764; RR 0.93, 0.85-1.01),
   Hviid 2003, Madsen 2003, Schechter 2008, Price 2010, DeStefano 2004 and 2013, Honda 2005, Chess
-  1978, Andersson 2025, Hansen 2015, ADDM 2022, Shoffner 2010, Poling 2006; full text of Rossignol
+  1978, Andersson 2025, Hansen 2015, ADDM 2022, Shoffner 2010, the 2006 case report; full text of Rossignol
   and Frye 2012, Hornig 2008, Ozonoff 2010; the Henry Ford draft (Tables 2 and 3, follow-up). All
   numbers, dates, case ids and quotations checked in these sources matched the dig, with the
   exceptions listed in round 3.
@@ -193,23 +193,23 @@ rounds:
     resolved: true
     reviewer_note: "Read the WHO statement at the manifest URL (sha256 0012b1a3... matches): 31 primary studies (16 thiomersal, 15 broader); 20 of 31 and all five meta-analyses found no association; the other 11 (nine from one US group) suggested one, 'very low strength of evidence and a high risk of bias'. The first-screen summary, summary_figures and assessment carry no WHO figure; Taylor 2014 is given as 1,256,407 (5 cohort) and 9,920 (5 case-control) per the abstract, with no sum. The institution question on the first screen stays an owner decision. Nit: divergence_note says the WHO 'say[s] there is no link' without the 20-of-31 qualifier (R3-6)."
   - id: F2
-    target: va-poling-concession what_it_is; short_answer Poling item
+    target: va-poling-concession what_it_is; short_answer compensation-concession item
     severity: blocking
     finding: '"Made under no-fault rules where causation can be presumed" is in no source read; "decision not to contest" understates CNN''s "concluded ... significantly aggravated".'
     author_response: {action: fixed, note: 'Both places now use CNN''s wording ("concluded" ... "significantly aggravated") and say the program is no-fault but that whether its presumption applied here was not checked. The No position no longer says "compensated under the injury table''s presumption".', commit: 6446a36}
     resolved: true
-    reviewer_note: "Statement and the short answer use CNN's 'concluded' and 'significantly aggravated', and give NPR's 'possible ... may have exacerbated'. No presumption line remains in the Poling claim."
+    reviewer_note: "Statement and the short answer use CNN's 'concluded' and 'significantly aggravated', and give NPR's 'possible ... may have exacerbated'. No presumption line remains in the concession claim."
   - id: F3
     target: short_answer mitochondrial scale
     severity: non_blocking
     finding: '"4 children in one series of 28" omits a fifth child in a case report; "amount to" implies a census.'
-    author_response: {action: fixed, note: 'Now "at least 5 children in two reports (4 in one series of 28, and one case report), as collected in one review; this is not a systematic count". The claim anchor and sources include the case report (Poling et al. 2006).', commit: 6446a36}
+    author_response: {action: fixed, note: 'Now "at least 5 children in two reports (4 in one series of 28, and one case report), as collected in one review; this is not a systematic count". The claim anchor and sources include the case report (a 2006 case report).', commit: 6446a36}
     resolved: true
-    reviewer_note: "Rossignol and Frye 2012 (Europe PMC full text): one series of 28, 17 regressed, 12 with fever >101F, 4 of 12 after fever following routine vaccination; 'also reported in another child' (refs 25, 85). 'At least 5 children in two reports ... not a systematic count' is accurate. Shoffner 2010 abstract: 'None showed regression with vaccination unless a febrile response was present'. I could not confirm from what I read that the one case report is Poling 2006 (its abstract does not mention vaccination); the review cites refs 25 and 85."
+    reviewer_note: "Rossignol and Frye 2012 (Europe PMC full text): one series of 28, 17 regressed, 12 with fever >101F, 4 of 12 after fever following routine vaccination; 'also reported in another child' (refs 25, 85). 'At least 5 children in two reports ... not a systematic count' is accurate. Shoffner 2010 abstract: 'None showed regression with vaccination unless a febrile response was present'. I could not confirm from what I read that the one case report is the 2006 case report (its abstract does not mention vaccination); the review cites refs 25 and 85."
   - id: F4
-    target: short_answer Poling scale
+    target: short_answer concession scale
     severity: non_blocking
-    finding: 'Poling was itself designated a potential test case (CNN); "one known concession" is unverified; ">5,000" and "about 4,800 pending" unchecked.'
+    finding: 'The concession case was itself designated a potential test case (CNN); "one known concession" is unverified; ">5,000" and "about 4,800 pending" unchecked.'
     author_response: {action: fixed, note: 'Now "the best-known concession, not a count: other compensated cases with autism-like features were not checked"; adds that her case had been designated a potential test case before the concession; uses "some 5,000 autism petitions" with the Bruesewitz dissent added as its source. Other compensated cases (Banks and others) were not investigated: deferred as an open item.', commit: 6446a36}
     resolved: true
     reviewer_note: "CNN confirms 'designated as a potential test case'. The '>5,000' and '4,800 pending' figures are gone. 'Some 5,000' is in Bruesewitz dissent n.25 but as a figure the respondent noted ('currently pending'); see R3-8."
@@ -254,7 +254,7 @@ rounds:
     finding: 'Positive: "not a finding that vaccines cause autism" paired with "not a proof that none ever did"; no new living person named.'
     author_response: {action: fixed, note: 'No action needed.'}
     resolved: true
-    reviewer_note: "Agree. The dig pairs 'not a finding that vaccines cause autism' with 'not a proof that none ever did' and includes the strongest opposing items (Taylor 1999 cluster, DeStefano 36-month OR, Thompson, Hooker, Poling, mitochondrial series, Mawson and Hooker-Miller, Henry Ford draft, WHO's 11 studies, the CDC page). Round 3 adds sourced mentions of Richard Horton, Prof. Hodgson and Julie Gerberding; naming remains an owner decision."
+    reviewer_note: "Agree. The dig pairs 'not a finding that vaccines cause autism' with 'not a proof that none ever did' and includes the strongest opposing items (Taylor 1999 cluster, DeStefano 36-month OR, Thompson, Hooker, the compensation concession, mitochondrial series, Mawson and Hooker-Miller, Henry Ford draft, WHO's 11 studies, the CDC page). Round 3 adds sourced mentions of Richard Horton, Prof. Hodgson and Julie Gerberding; naming remains an owner decision."
 - round: 3
   reviewed_on: 2026-10-02
   head: 8efc00d
@@ -270,9 +270,9 @@ rounds:
     resolved_in_round: 4
     reviewer_note: "Verified (f71be42): src-cdc-thimerosal and src-hhs-thimerosal-2025 are gone from anchor.sources of va-thimerosal-no-detectable-increase; the anchor description uses only the Danish and US studies; both agency sources are now named in adoption_note (b20ad59). B4 resolved with it."
   - id: R3-2
-    target: va-vicp-table-no-autism (statement); threads.yaml thread-real-pieces (Poling note)
+    target: va-vicp-table-no-autism (statement); threads.yaml thread-real-pieces (compensation-concession note)
     severity: blocking
-    finding: 'The word "encephalopathy" is applied to the Poling concession in two places with no source read: the claim statement says "The Poling concession was described as an encephalopathy", and thread-real-pieces says "True: a government concession of an encephalopathy aggravating a mitochondrial disorder with features of autism". Neither CNN nor NPR (both opened) contains it, and va-poling-concession itself says the fuller wording is known only as quoted in Salon and was not re-checked. This is a medical description of a named private person that goes beyond what was read, and the thread presents it as "True". Remove it, or attribute it ("as quoted in Salon, not re-checked") and drop "True:".'
+    finding: 'The word "encephalopathy" is applied to the 2007 compensation concession in two places with no source read: the claim statement says "The 2007 compensation concession was described as an encephalopathy", and thread-real-pieces says "True: a government concession of an encephalopathy aggravating a mitochondrial disorder with features of autism". Neither CNN nor NPR (both opened) contains it, and va-poling-concession itself says the fuller wording is known only as quoted in Salon and was not re-checked. This is a medical description of a named private person that goes beyond what was read, and the thread presents it as "True". Remove it, or attribute it ("as quoted in Salon, not re-checked") and drop "True:".'
     evidence: 'grep for "encephalopath" in the CNN and NPR pages: no hits. claims.yaml va-poling-concession anchor: "known only as quoted in Salon (Mar 2008) and was not re-checked".'
     author_response: {action: fixed, note: '"encephalopathy" removed from va-vicp-table-no-autism (now: whether the concession fell under a Table injury was not checked) and from thread-real-pieces, which now says "As reported (CNN, NPR)" with both wordings and no "True:". The child is also no longer named in the dig''s own text (owner rule, log L-19).'}
     resolved: true
@@ -309,10 +309,10 @@ rounds:
     severity: non_blocking
     finding: '(a) The owner decision on "Two Narrow Exceptions Explained" (N10) is not the only line that can read as "vaccines cause autism in two cases": va-poling-concession.basis calls the concession "the narrow ''yes'' in the short answer", short_answer.except heads them "One legal exception" and "One open question", and description item (3) says "the real exceptions". The assessment headline and key points do not. Suggest "what remains open" wording throughout, with the owner. (b) thread-wakefield-transmission says "2025-2026: the claim is adopted by the US health department"; the CDC page says only that studies have not ruled the possibility out. Reword. (c) divergence_note says the WHO "say there is no link" without the 20-of-31 qualifier used elsewhere.'
     evidence: 'CDC autism page (22 Jul 2026): "Scientific studies have not ruled out the possibility that infant vaccines contribute to the development of autism." WHO page: 20 of 31 no association, 11 suggested one.'
-    author_response: {action: fixed, note: '(b) thread reworded to what the CDC page says; (c) divergence_note now gives the WHO 20-of-31 qualifier. (a) the other lines that read as exceptions are reworded (the short answer items now headed "What remains open, 1" and "2", the Poling basis, description item 3); only the search headline stays with the owner (N10). L-21.'}
+    author_response: {action: fixed, note: '(b) thread reworded to what the CDC page says; (c) divergence_note now gives the WHO 20-of-31 qualifier. (a) the other lines that read as exceptions are reworded (the short answer items now headed "What remains open, 1" and "2", the concession basis, description item 3); only the search headline stays with the owner (N10). L-21.'}
     resolved: true
     resolved_in_round: 4
-    reviewer_note: "(a) Verified (b20ad59): short_answer items now headed 'What remains open, 1' and '2'; the Poling basis says 'not an exception to the finding'; description item (3) says 'the narrow items that remain open'. Only the search headline (N10) still says 'Exceptions', and that is the owner's. (b) Verified (f71be42): the thread now says what the CDC page says (page read via fetch tool: 'not an evidence-based claim'; 'have not ruled out the possibility'). (c) The WHO 20-of-31 qualifier is in divergence_note; it omits that the other 11 suggested an association (R4-5, non-blocking)."
+    reviewer_note: "(a) Verified (b20ad59): short_answer items now headed 'What remains open, 1' and '2'; the concession basis says 'not an exception to the finding'; description item (3) says 'the narrow items that remain open'. Only the search headline (N10) still says 'Exceptions', and that is the owner's. (b) Verified (f71be42): the thread now says what the CDC page says (page read via fetch tool: 'not an evidence-based claim'; 'have not ruled out the possibility'). (c) The WHO 20-of-31 qualifier is in divergence_note; it omits that the other 11 suggested an association (R4-5, non-blocking)."
   - id: R3-7
     target: va-aluminum-no-detectable-increase adoption_note; va-mito-fever-regression positions
     severity: non_blocking
@@ -444,11 +444,11 @@ rounds:
     target: va-mito-fever-regression; short_answer 'What remains open, 2' scale; va-poling-concession
     severity: non_blocking
     reviewer: second fourth-round reviewer
-    finding: "In Rossignol and Frye 2012 the 'one further child' refs are 25 and 85, and ref 85 is Poling et al. 2006 ('a child with autism'). That case report may concern the same child as the compensation concession (not shown by any source the dig read). The scale ('at least 5 children in two reports') and the positions list them side by side, which could read as independent corroboration. Say it is not verified whether they are one child, or verify. Also, for R3-5 (marked resolved by the other fourth reviewer): the wording is fixed, but my decision on the open question is that va-retraction-reasons should be confidence moderate, not high, while both Lancet notices are unread and the 2004 non-disclosure admission rests on one secondary review."
-    author_response: {action: fixed, note: 'Verified (refs 25 and 85 of Rossignol and Frye; 85 is Poling et al. 2006). Whether it is the same child as the concession is not shown by any source read; the short-answer scale and the mito positions now say so and do not count them as independent. va-retraction-reasons confidence lowered to moderate. L-23.'}
+    finding: "In Rossignol and Frye 2012 the 'one further child' refs are 25 and 85, and ref 85 is a 2006 case report ('a child with autism'). That case report may concern the same child as the compensation concession (not shown by any source the dig read). The scale ('at least 5 children in two reports') and the positions list them side by side, which could read as independent corroboration. Say it is not verified whether they are one child, or verify. Also, for R3-5 (marked resolved by the other fourth reviewer): the wording is fixed, but my decision on the open question is that va-retraction-reasons should be confidence moderate, not high, while both Lancet notices are unread and the 2004 non-disclosure admission rests on one secondary review."
+    author_response: {action: fixed, note: 'Verified (refs 25 and 85 of Rossignol and Frye; 85 is a 2006 case report). Whether it is the same child as the concession is not shown by any source read; the short-answer scale and the mito positions now say so and do not count them as independent. va-retraction-reasons confidence lowered to moderate. L-23.'}
     resolved: true
     resolved_in_round: 5
-    reviewer_note: "Verified as to wording by me. The short-answer scale for 'What remains open, 2' says the 2006 case report 'may concern the same child as the compensation concession; that is not shown by any source read, so the two are not independent evidence'; the mito position holder says 'possibly the same child ..., not verified, so not counted as separate support'; the Poling concession claim does not present them as independent. va-retraction-reasons is now confidence moderate (statement and anchor say the notices were not read). That ref 85 of Rossignol and Frye is Poling 2006 was not re-checked by me (the review's reference list was not re-opened)."
+    reviewer_note: "Verified as to wording by me. The short-answer scale for 'What remains open, 2' says the 2006 case report 'may concern the same child as the compensation concession; that is not shown by any source read, so the two are not independent evidence'; the mito position holder says 'possibly the same child ..., not verified, so not counted as separate support'; the concession claim does not present them as independent. va-retraction-reasons is now confidence moderate (statement and anchor say the notices were not read). That ref 85 of Rossignol and Frye is the 2006 case report was not re-checked by me (the review's reference list was not re-opened)."
 - round: 5
   reviewed_on: 2026-10-02
   head: dcbaafb
@@ -472,17 +472,17 @@ rounds:
     evidence: 'Smeeth 2004 abstract (Europe PMC 15364187).'
 open_items_proposed_by_author:
   - 'Other compensated vaccine-injury cases with autism-like features (for example Banks v. HHS, 2007) not investigated (F4).'
-  - 'The Lancet 2004 and 2010 notices, the 1998 full text, the GMC findings, the BMJ articles and the Poling decision remain unread; the claims that rest on them say so.'
+  - 'The Lancet 2004 and 2010 notices, the 1998 full text, the GMC findings, the BMJ articles and the 2007 compensation decision remain unread; the claims that rest on them say so.'
   - 'Madsen 2002 and Hviid 2019 full texts not read; the headline stays draft until they are.'
 open_items:
   - 'Eleven established claims rest on secondary reads (abstracts, news, fetched pages), including the headline claim va-mmr-no-detectable-increase; the search headline stays draft until the Madsen 2002 and Hviid 2019 full texts are read. The page must show these as limits.'
-  - 'Sources not read by anyone: the Lancet 2004 and 2010 notices; the BMJ 2011 articles (Deer, Godlee) and BMJ c696 and c2803; the 1998 paper full text; the GMC findings; the Poling Rule 4(c) report and decision; the special masters decisions (Cedillo, Hazlehurst, Snyder themselves; King, Mead and Dwyer outcomes); the Maryland Board order; the JAMA 2016 erratum to Jain 2015; the Annals correction to Andersson 2025 (PMID 40674587); full texts of Madsen 2002 and Hviid 2019. thelancet.com and bmj.com refuse automated fetches. Not re-opened by me: NHS immunisation statistics (403), Thompson 2014, DeStefano 2004, Rossignol and Frye refs 25 and 85.'
+  - 'Sources not read by anyone: the Lancet 2004 and 2010 notices; the BMJ 2011 articles (Deer, Godlee) and BMJ c696 and c2803; the 1998 paper full text; the GMC findings; the Rule 4(c) report and decision; the special masters decisions (Cedillo, Hazlehurst, Snyder themselves; King, Mead and Dwyer outcomes); the Maryland Board order; the JAMA 2016 erratum to Jain 2015; the Annals correction to Andersson 2025 (PMID 40674587); full texts of Madsen 2002 and Hviid 2019. thelancet.com and bmj.com refuse automated fetches. Not re-opened by me: NHS immunisation statistics (403), Thompson 2014, DeStefano 2004, Rossignol and Frye refs 25 and 85.'
   - 'Non-blocking, round 5: R5-1 (a minor first name in log L-22; owner decision and a redacts entry), R5-2 (Smeeth 2004 is PDD, including autism).'
   - 'N10 and F9 stay unresolved as owner decisions (below); the author did not fix them and neither blocks.'
   - 'Other compensated vaccine-injury cases with autism-like features (for example Banks v. HHS, 2007) not investigated (F4).'
 owner_decisions_open:
   - 'Headline wording: "Two Narrow Exceptions Explained" can be read as vaccines causing autism in two cases (N10); the assessment headline does not say it.'
-  - 'The surname in the Poling case name (claim ids va-poling-concession, timeline label, threads, the 2006 case-report citation) under the naming rule of L-19.'
+  - 'The surname in the case name (claim ids va-poling-concession, timeline label, threads, the 2006 case-report citation) under the naming rule of L-19.'
   - '`corrected` as a PS3 warning, and the publication-status schema, PR #6, adopted by the owner but not yet merged (F9); source_notices and the other unvalidated surface fields.'
   - 'headline_status is draft and the headline claim is established at high confidence on a secondary anchor.'
   - 'refutation_class on the refuted claims (log L-07).'

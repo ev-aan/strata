@@ -84,7 +84,7 @@ log:
     date: 2026-10-02
     entry: >
       Not yet read and needed: the GMC findings (2010); the Lancet 1998 full text and the 2004
-      and 2010 notices; the Poling Rule 4(c) report and award; the full Simpsonwood transcript;
+      and 2010 notices; the Rule 4(c) report and award; the full Simpsonwood transcript;
       the Andersson 2025 correction and supplement; Honda 2005 figures; the Jain 2015 erratum;
       the DeStefano 2004 full text; the court order in AAP v. Kennedy.
   - id: L-10
@@ -96,7 +96,7 @@ log:
       aluminum; they compare exposure levels, and the answer now says so and names the
       unvaccinated gap. (2) Mawson's OR 4.2 is any vaccination, not full vaccination.
       (3) Jain 2015: 95,727 is all children with older siblings; 1,929 had an affected sibling.
-      (4) Poling: 2010 compensation and the Table-injury framing were not supported by the cited
+      (4) the compensation concession: 2010 compensation and the Table-injury framing were not supported by the cited
       sources; removed from the statement, and the concession date is now "late 2007".
       Overstatements narrowed: the 2% bound applies to the largest MMR study only; the Danish
       unexplained share is a range (13% to 67%); aluminum statement split into what was read
@@ -105,7 +105,7 @@ log:
       both directions. Yes positions strengthened where the strongest real evidence was missing:
       Henry Ford's significant neurodevelopmental results; Hooker & Miller's chart-confirmed
       subset (OR 13.0, 27/403 vs 3/737); the unverified "generation zero" Simpsonwood analysis;
-      the 2006 Poling case report. Tags corrected where a fetch tool, not a full read, was used.
+      the 2006 case report. Tags corrected where a fetch tool, not a full read, was used.
       Cochrane's autism estimate confirmed to be the two Danish cohorts (657,461 + 537,303 =
       1,194,764).
   - id: L-11
@@ -134,7 +134,7 @@ log:
       studies and 1,266,327 children (Taylor 2014, abstract); 1,194,764 children in two
       non-overlapping Danish MMR cohorts (abstracts); 31 studies and 5 meta-analyses (WHO
       GACVS 2025, via fetch tool). Counts are deliberately not summed, because the same Danish
-      children appear in several studies. Added `scale` to each exception: Poling is one
+      children appear in several studies. Added `scale` to each exception: the compensation concession is one
       known concession against more than 5,000 autism claims; mitochondrial disease is about 1
       in 10,000 people, with 4 published post-vaccination-fever regressions in one series; the
       small-effect ceiling is about 2.6 extra diagnoses per 100,000 children per year (Strata's
@@ -150,9 +150,8 @@ log:
       read in full), which explains the no-fault design, the presumption of causation for Table
       injuries and the burden on the government to disprove it. Added `what_it_is` and
       `what_it_is_not` to va-poling-concession, va-omnibus-test-cases, va-vicp-table-no-autism,
-      va-bruesewitz-no-autism-finding and to the Poling exception in the short answer. Each line
-      rests on the anchor already cited for that claim; nothing new is asserted about the
-      Poling decision itself, which remains unread.
+      va-bruesewitz-no-autism-finding and to the compensation-concession item in the short answer. Each line
+      rests on the anchor already cited for that claim; nothing new is asserted about the 2007 compensation decision itself, which remains unread.
   - id: L-15
     date: 2026-10-02
     entry: >
@@ -178,7 +177,7 @@ log:
       adoption notes; independence of populations stated (Danish register vs UK and US studies).
       F1: WHO removed from the first-screen figures; the WHO count is now stated accurately where
       kept (20 of 31 null, 11 suggesting an association, all 5 meta-analyses null); the Taylor 2014
-      figures are given as two groups, not a sum. F2/F4/N3: Poling uses the sourced wording
+      figures are given as two groups, not a sum. F2/F4/N3: the concession claim uses the sourced wording
       ("concluded ... significantly aggravated"), drops the unsupported presumption line, notes it
       was a potential test case, and calls it the best-known case, not a count; NPR now opened.
       F3: mitochondrial count is "at least 5 children in two reports". F5, F6: Injury Table and
@@ -222,7 +221,7 @@ log:
       chair's request to treat the data as embargoed until the public ACIP release of 21-22 June
       2000 (read in the transcript) is added; it is a confidentiality request before a planned
       release, not a withholding. F2/F4: NPR's "possible ... may have exacerbated" and CNN's
-      "concluded ... significantly aggravated" are both given and the Poling statement no longer
+      "concluded ... significantly aggravated" are both given and the concession statement no longer
       carries the Salon-only wording; the "more than 5,000 filed" and "about 4,800 pending"
       figures (found in no source read) are removed from the omnibus claim and the timeline, and
       the 2009 and 2010 review outcomes are no longer stated (the decisions were not opened; the
@@ -237,7 +236,7 @@ log:
       ambiguity "exceptions can read as 'vaccines do cause autism in two cases'" is flagged, not
       rewritten; the assessment headline already avoids it), Rule 9 for statistics, naming living
       persons. Not verified: the Lancet 2004 and 2010 notices, bmj.com articles, the GMC findings,
-      the Poling decision, Banks and other compensated cases, the Hviid and Madsen full texts.
+      the 2007 compensation decision, Banks and other compensated cases, the Hviid and Madsen full texts.
   - id: L-19
     date: 2026-10-02
     entry: >
@@ -256,8 +255,7 @@ log:
       public record are allowed, except people who are minors, victims, or in an ongoing
       investigation; authors and public figures are fine. Applied: the child in the 2007
       compensation case is no longer named in the dig's own text (claim va-poling-concession,
-      timeline people list); the NPR quote now reads "[the child]". The case is still called the
-      Poling case, because that is how the public record and the cited 2006 case report (whose
+      timeline people list); the NPR quote now reads "[the child]". The case is still called the 2007 compensation case, because that is how the public record and the cited 2006 case report (whose
       first author is her father) are named; whether the surname should also go is put to the owner.
       Stored source texts (court opinions) are verbatim public records and are not altered. No
       other person named in the dig is a minor, a victim or, as far as checked, under an ongoing
@@ -296,7 +294,7 @@ log:
       now say only this; "chosen to present their strongest theories" and "all six denied" are
       dropped as unsourced; confidence moderate. R3-6 (a): lines other than the owner-decision
       headline that carried the "exceptions" reading were the short answer's "One legal
-      exception" and "One open question" (now "What remains open, 1" and "2"), the Poling basis
+      exception" and "One open question" (now "What remains open, 1" and "2"), the concession basis
       ("the narrow 'yes'", now "the one legal item ... not an exception to the finding") and the
       description item (3) "the real exceptions" (now "the narrow items that remain open").
       R3-7: the WHO's two ecological aluminium-ASD studies (critical risk of bias, very low
@@ -309,7 +307,7 @@ log:
       opinion" (para 7) is removed from the va-wakefield-sanctions anchor and positions and from
       timeline a21. The JAMA 2016 erratum to Jain 2015 ("Incorrect Variable Description") has no
       text in Europe PMC and JAMA refused: still unread, now said so in the MMR claim anchor.
-      Owner decisions (headline wording; the surname "Poling" in the case name, put to the owner
+      Owner decisions (headline wording; the surname in the case name, put to the owner
       in L-19) are unchanged.
   - id: L-22
     date: 2026-10-02
@@ -318,7 +316,7 @@ log:
       opinions were downloaded directly from cafc.uscourts.gov and the passages read. No.
       2009-5128: in Cedillo and Snyder the petitioners presented MMR combined with thimerosal-
       containing vaccines; "The Hazlehursts initially presented that theory of causation, but in
-      post-hearing briefing they relied on the theory that Yates's autism was caused by the MMR
+      post-hearing briefing they relied on the theory that [the child]'s autism was caused by the MMR
       vaccine alone." No. 2010-5004: the special master found the evidence did not show "that
       the MMR vaccine alone or in combination with TCVs can cause autism in general".
       va-omnibus-test-cases is corrected: the statement no longer says the first group's theory
@@ -350,9 +348,65 @@ log:
       caveat (the autism-only figure was read only in a press release; moderate confidence). R4-9:
       the stale "open design question (L-05)" wording for Rule 9 in va-mmr-causes-autism and in the
       dt-mmr-cohorts note is replaced by the owner's decision of L-19 (option (a); no rule
-      change). R4-10: the 2006 case report (Poling et al., ref 85 of Rossignol and Frye) may
+      change). R4-10: the 2006 case report (ref 85 of Rossignol and Frye) may
       concern the same child as the compensation concession; not verified, so the short-answer
       scale and the mito positions no longer present them as independent; va-retraction-reasons
       confidence is moderate (both Lancet notices unread; the 2004 non-disclosure admission rests on
       one secondary review). R4-3, additionally: key point 3 of the assessment restores the 2010
       retraction year and the court's finding on the ethics statement. Owner decisions untouched.
+  - id: L-24
+    date: 2026-10-02
+    entry: >
+      CONTENT DECISION 1, the search headline: content decision delegated by the owner to the AI in
+      conversation 2026-10-02; decided by the AI on these grounds. The headline "Do Vaccines Cause
+      Autism? No, Large Studies Find; Two Narrow Exceptions Explained" is replaced by "Do Vaccines
+      Cause Autism? No, Large Studies Find; Two Narrow Open Items Explained" (81 characters, within
+      70 to 95). Grounds: "exceptions" can be read as "vaccines do cause autism in two cases",
+      which the dig does not say (two independent reviewers flagged it as N10 and R3-6); the two
+      items are a 2007 compensation concession that is not science and an untested question about
+      mitochondrial disease, so "open items" describes them. headline_status stays `draft`
+      because the headline claim (va-mmr-no-detectable-increase) still needs a primary read of
+      Madsen 2002 and Hviid 2019. The headline appears once in the dig's files (claims.yaml);
+      earlier log entries and review.yaml quote the old headline as history and are not changed.
+  - id: L-25
+    date: 2026-10-02
+    entry: >
+      CONTENT DECISION 2, the family surname of the child in the 2007 compensation case: content
+      decision delegated by the owner to the AI in conversation 2026-10-02; decided by the AI on
+      these grounds. REDACTION under SCHEMA N26. The child was a minor and is the injured party; the
+      owner's policy of L-19 is that such people are not named in the dig's own text. The surname
+      is removed from display text, labels, people lists and prose of claims.yaml, threads.yaml,
+      timeline.yaml and review.yaml, and from these earlier log entries, whose wording now says
+      "the compensation concession", "the 2007 compensation case" or "a 2006 case report" in its
+      place: L-09, L-10, L-13, L-14, L-16, L-18, L-19, L-21, L-23. It is kept only (a) in claim and
+      source ids such as va-poling-concession and src-poling-cnn-2008, which are identifiers that
+      SCHEMA says are never renamed or reused, and which the page may show; (b) in the
+      bibliographic citation of the 2006 case report's authors in the manifest and in verbatim
+      stored source texts; (c) nowhere else (the court docket is cited as "docket 02-1466V", without
+      party names). The names are in public records, so this changes the published record, not git
+      history, which still holds the earlier text. Decided by the AI under the owner's delegation.
+      timeline.html is regenerated from timeline.yaml with the dig's own tool.
+    redacts: [L-09, L-10, L-13, L-14, L-16, L-18, L-19, L-21, L-23]
+  - id: L-26
+    date: 2026-10-02
+    entry: >
+      CONTENT DECISION 3, a minor litigant's first name in this log: content decision delegated by
+      the owner to the AI in conversation 2026-10-02; decided by the AI on these grounds.
+      REDACTION under SCHEMA N26. Entry L-22 quoted the Federal Circuit's opinion in Hazlehurst
+      with the first name of the minor petitioner; that first name is replaced by "[the child]" in
+      L-22. Why: owner policy (L-19) that names of minors are not published; the name is in the
+      public court opinion, so this changes the published record of this dig, not git history.
+      Checked: no other log entry, no review.yaml text and no other file of the dig (outside
+      verbatim stored court opinions in sources/) carries the first name of a minor. Decided by the AI
+      under the owner's delegation.
+    redacts: [L-22]
+  - id: L-27
+    date: 2026-10-02
+    entry: >
+      CONTENT DECISION 4, Smeeth 2004: content decision delegated by the owner to the AI in
+      conversation 2026-10-02; decided by the AI on these grounds. The assessment text, key point 1,
+      the short-answer summary and the figure detail said the UK study found no more "autism". The
+      abstract (Europe PMC, read again today) says the study is of pervasive developmental disorders
+      (1,294 cases, OR 0.86, 0.68 to 1.09) and that "findings were similar when restricted to
+      children with a diagnosis of autism". The four places now say so. Ground: say what the study
+      measured, with the autism-restricted result as the abstract states it.
