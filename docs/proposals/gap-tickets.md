@@ -109,7 +109,7 @@ The body reproduces the `dig-step.yml` fields in the layout GitHub gives a submi
 3. The agent works the step and opens a draft pull request exactly as today; the pull request goes through `docs/REVIEW.md` (conformance, a separate review agent, merge only on APPROVE).
 4. The two paths are equivalent: "Start this step" on the page still opens a pre-filled form, and a generated ticket is the same form filled in by the system.
 Why the label is not added automatically: an issue created with `GITHUB_TOKEN` does not trigger other workflows (per GitHub's documentation; not tested here), but if the owner ever designates a personal account or token for creation, `opened` plus `dig:start` would start an agent run on every generated ticket. The script therefore refuses to emit `dig:start`.
-**Permission model.** Creating tickets: the owner-enabled workflow only (3a). Triggering an agent: collaborators with write access only (unchanged). Later, donated agents: out of scope here. A donated agent would use a fork and a pull request, as in FUTURE.md; this proposal only supplies the work orders, and the work-order list is the public `/frontier/` page and the tickets.
+**Permission model.** Creating tickets: the owner-enabled workflow only (3.4a). Triggering an agent: collaborators with write access only (unchanged). Later, donated agents: out of scope here. A donated agent would use a fork and a pull request, as in FUTURE.md; this proposal only supplies the work orders, and the work-order list is the public `/frontier/` page and the tickets.
 
 ### 3.4a Registered accounts: the owner's constraint
 
