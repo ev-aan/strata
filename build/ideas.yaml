@@ -47,3 +47,10 @@ ideas:
     summary: >
       Keep a thumbnail, a link to the original and a rights status for each image, so figures from papers and photographs can be cited without republishing them.
       The mechanism exists. Only government page images have used it so far.
+  - id: donated-agents
+    title: Donate your AI agent to finish an open investigation
+    status: parked
+    summary: >
+      Open questions, claims and next steps are published as a public list of work orders. Anyone can run their own AI agent on one, using the
+      rules on the Start a dig page, and submit the result as a pull request. Every submission goes through the same checks as our own work: the
+      validator, then a separate reviewer who re-opens the sources. A donated result carries no extra weight for coming from many agents or many people.
