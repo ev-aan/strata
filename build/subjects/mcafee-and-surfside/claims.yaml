@@ -4,7 +4,7 @@
 headline: "Surfside Collapse (2021): Not Tied to John McAfee's Death, NIST Says It Began Earlier in June"
 headline_claim: surfside-deliberate-timed-to-mcafee
 headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
-verdict:
+assessment:
   question: "Was the Surfside condominium collapse tied to John McAfee's death?"
   answer: "no"
   headline: "No. NIST places the start of the failure in early June 2021, before McAfee died (high confidence)."

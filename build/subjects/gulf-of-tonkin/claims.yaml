@@ -20,7 +20,7 @@
 headline: "Gulf of Tonkin Incident: The August 4, 1964 Attack Never Happened, NSA's Own Study Found"
 headline_claim: tonkin-aug4-attack-occurred
 headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
-verdict:
+assessment:
   question: "Did North Vietnamese boats attack US destroyers a second time on 4 August 1964?"
   answer: "no"
   headline: "No. The second attack did not happen (high confidence). What senior officials knew about that is unsettled."

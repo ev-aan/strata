@@ -4,7 +4,7 @@
 headline: "Casket Letters (Mary Queen of Scots, 1567): No Originals Survive, Only Copies and Translations"
 headline_claim: casket-originals-lost
 headline_status: draft           # rule 2 needs a claim established or refuted at HIGH confidence; casket-originals-lost is capped at provisional (absence anchor), so this stays draft
-verdict:
+assessment:
   question: "Are the Casket Letters genuine, that is, did Mary Queen of Scots write them to Bothwell?"
   answer: unsettled
   headline: "Unsettled. No original survives, so the letters themselves cannot be tested, and what survives is too thin to decide."

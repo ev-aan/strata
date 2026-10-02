@@ -81,7 +81,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nodes as _nodes
 NODES = _nodes.load_nodes()
 CUR = {"slug": ""}
-VERD = {}
+ASSESS = {}
 TAX = yaml.safe_load(open(os.path.join(ROOT, "build", "taxonomy.yaml")))
 AREAS, QTYPES = TAX["areas"], TAX["question_types"]
 META = {}   # slug -> {sub, area, areas, types, popular}
@@ -105,18 +105,19 @@ def node_html(nid, verb=""):
 
 ANS = {"yes": "Yes", "no": "No", "leans_yes": "Leans yes", "leans_no": "Leans no", "unsettled": "Unsettled", "partly": "Partly"}
 
-def verdict_html(v, slug, prefix=""):
+def assessment_html(v, slug, prefix=""):
     """The bottom-line box: the question, the answer in words, why, and what would settle it. No percentages: see SCHEMA N23."""
     if not v: return ""
     cls = {"yes": "s-established", "no": "s-refuted", "unsettled": "s-contested", "partly": "s-contested"}.get(v["answer"], "s-contested")
     links = " ".join(f'<a href="{prefix}digs/{E(slug)}/#{E(c)}">{E(c)}</a>' for c in v.get("basis", []))
-    return (f'<div class="claim" style="border-width:2px"><p class="eyebrow">Where this stands</p><p><b>{E(v["question"])}</b></p>'
+    return (f'<section class="claim" style="border:1px solid var(--line);border-left:7px solid var(--amber);padding:18px 20px" id="where-it-stands"><h2 style="font-size:30px;border:0;margin:0 0 2px;padding:0">Where it stands</h2>'
+            f'<p class="eyebrow" style="margin:0 0 12px">Current assessment · as of {TODAY}</p><p><b>{E(v["question"])}</b></p>'
             f'<p><span class="pill {cls}">{E(ANS.get(v["answer"], v["answer"]))}</span> <b>{E(v["headline"])}</b></p>'
             f'<p>{E(" ".join(str(v["text"]).split()))}</p>'
             + (f'<p><b>Which way the evidence leans:</b> {E(v["lean"]["strength"])}ly toward <b>{E(v["lean"]["toward"])}</b>. {E(v["lean"]["because"])}</p><p class="small"><b>Why this is not a finding.</b> {E(v["lean"]["caveats"])}</p>' if v.get("lean") else "") +
             f'<p class="small"><b>What would settle it.</b> {E(v["would_settle"])}</p>'
             f'<p class="small">Based on: {links}</p>'
-            f'<p class="small">We give no probability figure. Confidence words describe how sure we are of the basis, and no source supplies a number that would not be invented.</p></div>')
+            f'<p class="small">We give no probability figure. Confidence words describe how sure we are of the basis, and no source supplies a number that would not be invented.</p></section>')
 
 order = {"refuted": 0, "established": 1, "contested": 2, "proposed": 3, "searched_gap": 4}
 if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -167,8 +168,8 @@ for sub in CFG["publish"]:
                  + (" · Starts from a widely shared claim" if _a.get("popular_claims") else "") + "</p>")
     body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{_tags}{banner}'
             f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>')
-    body += verdict_html(cl.get("verdict"), slug)
-    VERD[sub] = (cl.get("verdict"), slug)
+    body += assessment_html(cl.get("assessment"), slug)
+    ASSESS[sub] = (cl.get("assessment"), slug)
     if hc: body += f'<h2>The headline finding</h2>{claim_html(hc)}'
     body += f'<p>{E(" ".join(str(cl.get("description", "")).split()))}</p>'
     if cl.get("divergence_note"): body += f'<h2>Where evidence and belief differ</h2><p>{E(" ".join(str(cl["divergence_note"]).split()))}</p>'
@@ -250,9 +251,9 @@ write("ideas/index.html", page("Ideas for exploration", f'<p class="eyebrow">Ide
 _QMAP = {"casket-letters": "casket-letters", "eikon-basilike": "eikon-basilike"}
 for _sub, _qd in _QMAP.items():
     _qp = os.path.join(OUT, "questions", _qd, "index.html")
-    if os.path.exists(_qp) and _sub in VERD and VERD[_sub][0]:
+    if os.path.exists(_qp) and _sub in ASSESS and ASSESS[_sub][0]:
         _q = open(_qp, encoding="utf-8").read()
-        _q = re.sub(r"<!--VERDICT-->", lambda m: verdict_html(VERD[_sub][0], VERD[_sub][1], prefix="../../"), _q, count=1)
+        _q = re.sub(r"<!--ASSESSICT-->", lambda m: assessment_html(ASSESS[_sub][0], ASSESS[_sub][1], prefix="../../"), _q, count=1)
         open(_qp, "w", encoding="utf-8").write(_q)
 _hp = os.path.join(OUT, "index.html")
 if os.path.exists(_hp):
