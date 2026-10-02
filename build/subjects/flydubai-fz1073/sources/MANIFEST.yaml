@@ -336,7 +336,7 @@ sources:
       was not seen [read]'
     tested_by: Stratah session, 2026-10-02 (not an independent review; the statement is a party's own)
     gaps:
-    - The Arabic original and the release hour were not seen; the page's footer clock (18:31 GMT) is a render clock.
+    - The Arabic original and the release hour were not seen; the item body ends with the stamp '21:31 Local Time 18:31 GMT', probably the agency's dispatch stamp (an inference; it was identical in fetches about 30 minutes apart; not confirmed).
     - No time zone is given for the times in the text; Saudi time (UTC+3) is assumed.
     - Not archived by an independent capture.
     next_step: Read the Arabic SPA item and note its release time; obtain an independent web-archive capture.
@@ -603,12 +603,12 @@ sources:
 - id: src-walla
   title: Walla (Israeli outlet) reports relayed by AeroTime (30 Sep 2026)
   url: https://www.aerotime.aero/articles/flydubai-fz1073-diverts-saudi-arabia-7500-code
-  document_class: not read
-  read: 'no'
+  document_class: secondary (an aviation news site relaying Walla; Walla's own pages were not opened)
+  read: 'yes, the AeroTime page directly (raw HTML, 2 Oct 2026); Walla itself not read'
   authenticity:
-    status: unchecked
-    basis: Walla's originals were not opened; the AeroTime relay was not re-read in this pass.
-    next_step: Read it from a network or browser that is not refused.
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when. Its log time 'September 30, 2026, 17:10 (UTC +3)' (14:10 UTC) was confirmed on the page and is used for D10.
+    next_step: Read Walla's original reports if a network allows it.
 - id: src-israeli-pmo-video
   title: Israeli Prime Minister's Office video statements and interviews (CBS Evening News, Fox News, CNN, BBC Radio 4) of 30 Sep to 2 Oct 2026
   url: https://www.pmo.gov.il/en

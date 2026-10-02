@@ -1,10 +1,10 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: fz1073-2026-09-30-landing-tabuk
-rev: 3
+rev: 4
 type: event
-label: '30 Sep: FZ1073 lands at Tabuk, 9:45 a.m. local (06:45 UTC), per the Saudi Interior Ministry'
+label: '30 Sep: FZ1073 lands at Tabuk, 9:45 a.m. (no zone given; 06:45 UTC if Saudi time), per the Saudi Interior Ministry'
 time: '2026-09-30T06:45:00Z'
-precision: exact
+precision: approx
 kind: official
 status: disputed
 what: The Saudi Interior Ministry statement, read in English on the Saudi Press Agency, says the aircraft "landed safely at 9:45 a.m. with 174
@@ -82,3 +82,8 @@ history:
   change: 'Deep-dive pass: the Saudi statement was read in its original English on the Saudi Press Agency; its text gives ''9:45 a.m.'' with no
     time zone, so 06:45 UTC is derived by assuming Saudi time (date_basis now derived). Al Jazeera''s 2 Oct piece (06:58 GMT) added as a source.
     Landing time remains open.'
+- rev: 4
+  date: '2026-10-02'
+  change: 'Review round 4 (R4-4): the label said ''local'', which the ministry text does not say (Al Jazeera''s rendering adds it); it now reads
+    ''9:45 a.m. (no zone given; 06:45 UTC if Saudi time)''. Precision changed from exact to approx, because the time is derived under an assumed
+    zone and the node is disputed. The time, the alternative time and the sources are unchanged. Log L-31.'

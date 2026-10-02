@@ -96,7 +96,7 @@ chains:
         form: "NewsGuard reported that a political party orchestrated the attack."
         source: src-ls-newsguard
         read: yes
-        note: "Lead Stories (2 Oct 19:28 UTC): NewsGuard told Lead Stories it did not make the claim and that such posts appear connected to a Russian influence campaign (NewsGuard's own page was not readable)."
+        note: "Lead Stories (2 Oct 19:28 UTC): NewsGuard told Lead Stories it did not make the claim; Lead Stories reports that NewsGuard said the post appears connected to a 'Russian disinformation campaign' (the NewsGuard email it quotes says 'a Russian influence campaign'); NewsGuard's own page was not readable."
       - id: tx-f-06
         date: "2026-10-02"
         precision: day
