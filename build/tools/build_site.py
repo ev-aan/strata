@@ -64,7 +64,7 @@ def claim_html(c):
     more = ""
     if desc: more += f'<p><b>Anchor.</b> {E(" ".join(str(desc).split()))}</p>'
     if c.get("would_change_if"): more += f'<p><b>Would change if.</b> {E(" ".join(str(c["would_change_if"]).split()))}</p>'
-    if nxt: more += f'<p><b>Next step.</b> {E(" ".join(str(nxt).split()))}</p>'
+    if nxt: more += f'<p><b>Next step.</b> {E(" ".join(str(nxt).split()))}</p>' + _da.start_link(CUR.get("sub"), c)
     nl = an.get("nodes") if isinstance(an, dict) else None
     if nl: more += '<p><b>Evidence nodes.</b></p><ul class="l" style="overflow:auto">' + "".join(node_html(x) for x in nl) + '</ul>'
     if more: bits += f'<details><summary>Evidence and limits</summary>{more}</details>'
@@ -72,6 +72,7 @@ def claim_html(c):
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nodes as _nodes
+import dig_actions as _da
 NODES = _nodes.load_nodes()
 CUR = {"slug": ""}
 TAX = yaml.safe_load(open(os.path.join(ROOT, "build", "taxonomy.yaml")))
@@ -121,6 +122,7 @@ for sub in CFG["publish"]:
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
     slug = cl.get("url_slug") or sub
     CUR["slug"] = slug
+    CUR["sub"] = sub
     head = cl.get("headline") or cl.get("title")
     status = cl.get("headline_status", "draft")
     byid = {c["id"]: c for c in cl["claims"]}

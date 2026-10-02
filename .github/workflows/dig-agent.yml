@@ -1,0 +1,44 @@
+name: Dig agent
+
+# When an issue labelled `dig:start` is opened, Claude works the step and opens a draft pull request.
+# Only users with write access to this repository can trigger it; anyone else's issue is ignored by the action.
+# The pull request runs the normal conformance check, and nothing is published until a maintainer merges it.
+#
+# Setup (once, by the owner): add a repository secret named CLAUDE_CODE_OAUTH_TOKEN
+# (or ANTHROPIC_API_KEY, and swap the line below). See docs/DIG_AGENT.md.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: dig-agent-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  dig:
+    if: contains(github.event.issue.labels.*.name, 'dig:start')
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install YAML parser
+        run: python3 -m pip install --quiet pyyaml
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          label_trigger: "dig:start"
+          track_progress: true
+          claude_args: |
+            --max-turns 60
+            --append-system-prompt "You are the Stratah dig agent. The issue names a subject (a folder under build/subjects/), optionally a claim ID, and one step to work. Before you start, read CONTRIBUTING.md, build/SCHEMA.md, docs/AUTHENTICITY.md and the subject's files. Rules: change only that subject's YAML and add new files inside it. Never edit another subject, the site generator, workflows or rules. Never erase anything: corrections and revisions are new entries in the subject's log.yaml. Keep evidential and adoption weight separate. Peer review, prestige, citation counts and popularity are adoption weight, never evidence. Class each source by its content (material, primary_text, synthetic, interpretive). A claim from a study needs author, year, DOI and page or table. Wikipedia is never an anchor. Mark anchor_checked: primary only if you actually read the primary document. If a source is unreachable, say so and leave the claim as a searched_gap with a precise next_step. A single new source makes a claim proposed, not established. Run python3 build/conformance.py and fix every error you introduced. Then open a DRAFT pull request that explains what you read, what you could not reach, and how each weight moved and why. Reply on the issue with the PR link and a three-line summary."
