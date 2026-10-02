@@ -166,7 +166,7 @@ rounds:
         anchor (low confidence); lean strength lowered to slight; confidence_reasons arithmetic removed with the refutation; FlightAware no longer
         described as recording the emergency; headline claim moved to fz1073-diverted-tabuk; headline reworded (94 characters, draft). Owner decision
         applied: Rule 9 as written. Log L-22.'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-2
     target: fz1073-motive-statements; divergence_note; assessment key point 3
     severity: blocking
@@ -185,7 +185,7 @@ rounds:
       note: 'Verified in nat.txt/CNN explainer text: only flydubai says motive is unknown; the UAE MoFA says motives, terrorist link and prior
         planning are being examined. Corrected the statement, divergence_note, motive-not-established and the assessment; recorded Gargash (CNN,
         Friday 2 Oct), Herzog (The National, BBC Radio 4, 1 Oct) and Katz as accusations with who, when and source. Log L-22.'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-3
     target: fz1073-omani-barred-rule
     severity: blocking
@@ -206,7 +206,7 @@ rounds:
       note: 'Verified in the JPost 30 Sep and 2 Oct pages: ''explicitly states'' is the paper''s own voice; the 2 Oct sources address the bilateral
         agreement. Claim restated first-order as state proposed, low, with each side tied to its instrument (a flydubai agreement, b bilateral
         agreement, c unnamed instrument, d not read), and an assumption that the two items concern different documents. Log L-22.'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-4
     target: fz1073-motive-statements
     severity: non_blocking
@@ -221,7 +221,7 @@ rounds:
       note: 'Verified: Ynet''s wording is ''we know that the attacker pilot underwent Islamist radical indoctrination''; CNN''s live-blog wording
         is CNN''s own paraphrase. The statement now quotes only ''underwent Islamist radical indoctrination'' attributed to Fox via Ynet; Ynet''s
         exact sentence and CNN''s labelled paraphrase are in the anchor. Dates 1 and 2 Oct kept (match CBS and CNN).'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-5
     target: fz1073-crew-and-passengers-secured-aircraft
     severity: non_blocking
@@ -236,7 +236,7 @@ rounds:
       note: 'Verified: the primary texts say only that on-duty crew travelling on the flight secured and landed the aircraft and that passengers
         assisted. fz1073-crew-and-passengers-secured-aircraft is trimmed to that (primary, high); the number of pilots, the cockpit door and passenger
         entry moved to the new fz1073-crew-details (secondary, moderate, with an exception line).'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-6
     target: fz1073-surgeon; log L-17, L-20; timeline people
     severity: non_blocking
@@ -251,7 +251,7 @@ rounds:
         passenger''). Timeline occupations paired with acts removed. L-17 and L-20''s statement corrected in L-22. Captain named in the timeline
         only; manifest title no longer carries the name (the Emirates 24|7 URL slug and the stored GCAA text do, noted in L-22). Checked manifest,
         nodes, claims, timeline, transmission for passenger names: none remain.'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-7
     target: fz1073-reports-inconsistent; fz1073-flight-times; node fz1073-2026-09-30-landing-tabuk
     severity: non_blocking
@@ -268,7 +268,7 @@ rounds:
         final signal as 10:58 a.m. UAE (06:58 UTC). The ''transposed digits'' guess is withdrawn; landing time moved to the open list in fz1073-reports-inconsistent;
         the flight-times claim says AirNav implies a later touchdown and that the first-signal times (05:28:48 vs 05:31) are unresolved; node
         fz1073-2026-09-30-landing-tabuk is rev 2 with the AirNav source added; 06:45 stays attributed to the Saudi ministry and Tabuk airport.'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-8
     target: assessment (answer, lean, text, key points); fz1073-israel-says-omani
     severity: non_blocking
@@ -286,7 +286,7 @@ rounds:
       note: (i) headline and key point reworded from 'well documented' to what the airline and authorities report; (ii) the assessment says 'seriously
         wounded' is not the Saudi wording; (iii) israel-says-omani and the assessment mention CBS's unnamed Omani official; (iv) israel-says-omani
         capped at moderate with a risk_of_bias step (all outlets trace to the Israeli side).
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-9
     target: timeline.yaml
     severity: non_blocking
@@ -302,7 +302,7 @@ rounds:
       note: '(i) lane id and label are now additional_pilots / ''Two additional pilots (unnamed)''; (ii) lane label ''First officer (accused by
         officials, not named)''; (iii) description now says he left Saudi Arabia for Abu Dhabi with an Emirati security team; (iv) b16 unchanged:
         the zone is stated as an assumption in its detail.'
-      commit: see the commit that adds this response
+      commit: 8495c38
   - id: R1-10
     target: log.yaml
     severity: non_blocking
@@ -313,4 +313,4 @@ rounds:
       action: fixed
       note: New log entry L-22 records the corrections for R1-1 to R1-9 and the author's responses; L-21's owner question is noted as answered
         in the reviewer's direction pending the owner.
-      commit: see the commit that adds this response
+      commit: 8495c38
