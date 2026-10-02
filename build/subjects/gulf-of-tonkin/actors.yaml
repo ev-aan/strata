@@ -36,9 +36,11 @@ actors:
       - {date: "1964-08-04", venue: "phone call with Johnson, 9:43 a.m. EDT", visibility: private,
          text_quote: "...this ship is allegedly uh to be attacked tonight",
          source: src-lbj-tapes-transcripts, claim: tonkin-mcnamara-aug4-call, anchor_checked: secondary}
-      - {date: "1964-08-06", venue: "Senate executive session", visibility: "public later (published 1988)",
-         text_quote: "Our Navy played absolutely no part in, was not aware of, any South Vietnamese actions, if there were any.",
-         source: src-nsarchive-essay-2004, claim: tonkin-mcnamara-34a-testimony, anchor_checked: secondary}
+      - {date: "1964-08-06", venue: "joint session of the Senate Foreign Relations and Armed Services Committees", visibility: "published later (edited transcript 1966; read here as quoted in the 1968 hearing)",
+         text_quote: "Our Navy played absolutely no part in, was not associated with, was not aware of, any South Vietnamese action, if there were any.",
+         source: src-sfrc-1968-hearing, claim: tonkin-mcnamara-34a-testimony, anchor_checked: primary}
+      - {date: "1968-02-20", venue: "Senate Foreign Relations Committee hearing", visibility: public, source: src-sfrc-1968-hearing, claim: tonkin-mcnamara-1968-account, anchor_checked: primary,
+         text_quote: "I informed members of this committee of these activities of the South Vietnamese in an informal meeting on August 3, 1964, after the attack on the Maddox."}
     commitments: []
     commitments_searched: "No dated, specific commitment about the Resolution or 34-A found in what was read."
     actions: []
@@ -48,8 +50,10 @@ actors:
       was not aware of South Vietnamese actions. Both sourced; the 6 August wording is quoted by Prados, committee volume unread.
     alignment: not_determinable
     alignment_note: >
-      The private (3 Aug) and testimony (6 Aug) statements differ on 34-A. The record read does not show whether he meant
-      different things (for example the Navy versus the wider operation) or contradicted himself. Public and private are kept separate (P4).
+      The private (3 Aug) and testimony (6 Aug) statements differ on 34-A. In 1968 he said the 6 August statement concerned whether the ship
+      commanders knew of the raids, that he had told the committee about the raids on 3 and 6 August, and that the Government knew; Morse
+      said at that hearing he was "still in doubt" whether the Navy was oblivious. The 1964 transcripts, which would test his 1968 account,
+      are not yet read, so the label stays not_determinable. Public and private are kept separate (P4).
     motive_map: {possible: [], acted_on_evidence: [], weight: "none (P6)"}
 
   - id: bundy

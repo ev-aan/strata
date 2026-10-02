@@ -155,4 +155,18 @@ sources:
       checked: 2026-10-02
     stored_as: "page image sources/congressional-record/crec-1964-p18399-061.png (full file not stored)"
     image_sha256: f8d3095874651358c8e3fb4a7d87e475b436e3a0c2e4115ec5574c12e35846bd
+  - id: src-sfrc-1968-hearing
+    title: "The Gulf of Tonkin, the 1964 Incidents. Hearing before the Committee on Foreign Relations, U.S. Senate, 90th Congress, 2nd Session, with Robert S. McNamara, 20 Feb 1968 (S. Hrg. 90-187), Part 1"
+    document_class: primary_text (official hearing record)
+    url: https://www.govinfo.gov/content/pkg/CHRG-90shrg90187/pdf/CHRG-90shrg90187.pdf
+    pdf_sha256: bd6cfd61a0b98f4094c57895e5e1917a73941041e3d77dfcee248d1d9d574024
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "Government Publishing Office hearing, fetched from govinfo.gov"
+      tests: ["Hearing text read; quotations of the 1964 testimony are also read in context with McNamara's confirmation (p. 30)"]
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps: ["OCR text layer, some pages letter-spaced; page numbers taken from the text layer, not verified on images", "A 1968 record: what it says about 1964 is a later account"]
+      checked: 2026-10-02
+    stored_as: "sources/mcnamara-1968-hearing.ocr.txt (OCR text, public domain; the 24 MB PDF is not stored)"
 

@@ -462,37 +462,87 @@ claims:
   - id: tonkin-mcnamara-34a-testimony
     state: established
     statement: >
-      On 3 August McNamara privately told President Johnson that OPLAN 34-A "had bearing on"
-      the Maddox engagement and should be explained to Congress. At an executive session on
-      6 August he told senators "Our Navy played absolutely no part in, was not aware of, any
-      South Vietnamese actions, if there were any."
+      On 3 August 1964 McNamara privately told President Johnson that OPLAN 34-A "had bearing on" the Maddox engagement and
+      should be explained to Congress. In formal testimony to the joint Senate committees on 6 August 1964 he said: "Our Navy
+      played absolutely no part in, was not associated with, was not aware of, any South Vietnamese action, if there were any."
     evidence_class: primary_text
-    confidence: moderate
-    evidential_weight: 3   # of 5
-    anchor_checked: secondary   # the 3 Aug transcription read; the 6 Aug testimony quoted by Prados
+    confidence: high
+    evidential_weight: 4   # of 5
+    anchor_checked: primary   # the 6 Aug wording as read into the 1968 hearing record (text layer); the 3 Aug call via Prados's transcription
     adoption_weight: 2   # of 5
     adoption_note: >
       Not measured. Known to historians; central to the 1968 Senate hearings on Tonkin.
     would_change_if: >
-      the committee record of 6 August showing different wording, or context that reconciles the two statements
+      the 1964 transcript itself (Executive Sessions vol. XVI, or the 1966 edited hearing) showing different wording
     next_step: >
-      Read Executive Sessions of the Senate Foreign Relations Committee, Historical Series, vol. XVI (1988), p. 293, and the 3 August LBJ call transcript.
+      Read the 6 August 1964 transcript itself (the edited joint hearing, and Executive Sessions vol. XVI, pp. 291-299) and listen to the 3 August LBJ call; confirm the page numbers of the 1968 quotation on the page images.
     anchor:
       type: recorded-statement-versus-testimony
       description: >
-        3 August call [read, Prados transcription]: "...explain this Op Plan 34-A, these covert
-        operations. There's no question but what that had bearing on." 6 August executive session
-        [quoted by Prados, citing the committee's published record]: "Our Navy played absolutely no
-        part in, was not aware of, any South Vietnamese actions, if there were any." Prados
-        concludes the statement was "highly misleading". NSArchive's note on the tapes says
-        McNamara "would take the position in later public hearings that he was unaware of any such
-        link".
+        6 August testimony as read by Chairman Fulbright into the hearing of 20 Feb 1968 (S. Hrg. 90-187, p. 30, "page 23 of the
+        transcript of hearings") [read, OCR text]: "Our Navy played absolutely no part in, was not associated with, was not aware of,
+        any South Vietnamese action, if there were any. I want to make that very clear to you. The Maddox was operating in international
+        waters, was carrying out a routine patrol..." McNamara, asked by Senator Cooper, confirmed it: "That is correct" and that it was
+        his belief then and now. 3 August call [Prados transcription]: "...explain this Op Plan 34-A, these covert operations. There's no
+        question but what that had bearing on."
       accessible: true
+      ref: [src-sfrc-1968-hearing, src-lbj-tapes-transcripts]
     basis: >
-      # V: the private statement read; the public one via secondary quotation.
-      Documents a gap between what was said privately and what was said to Congress about the
-      context of the 2 August engagement. It is about 34-A and the Maddox, not about 4 August.
-      "Misleading" is Prados's word and is held as his interpretation.
+      # V: the 1964 wording is read in the 1968 hearing record, where both Fulbright and McNamara treat it as accurate.
+      The two statements are about different things as McNamara later explained (see tonkin-mcnamara-1968-account); whether the
+      6 August wording left senators with a false impression is an interpretation and is held on the positions of Morse (disputed it)
+      and McNamara (defended it). Prados calls it "highly misleading"; that stays his judgement.
+
+  - id: tonkin-mcnamara-1968-account
+    state: established
+    statement: >
+      In his prepared statement of 20 February 1968 McNamara said he had told the Senate Foreign Relations Committee about the South
+      Vietnamese raids "in an informal meeting on August 3, 1964, after the attack on the Maddox", that the subject "was again raised in
+      lesser detail" in his testimony on 6 August, that Senator Morse asked that day about a connection between the patrol and the raids
+      and he answered "that there was no connection", and that he "learned subsequent to my testimony of August 6, 1964, that another
+      South Vietnamese bombardment took place on the night of August 3-4". On the second attack he said "some uncertainty existed, and to
+      this day exists, about some of the precise details of the attack. But there should be no uncertainty about the fact that an attack
+      took place."
+    evidence_class: primary_text
+    confidence: high   # that he said it; what he said is his own account four years later
+    evidential_weight: 4   # of 5
+    anchor_checked: primary   # S. Hrg. 90-187 read (OCR text); page numbers from the text layer
+    adoption_weight: 2   # of 5
+    adoption_note: "Not measured. Known to historians of the Tonkin hearings."
+    would_change_if: "the 3 and 6 August 1964 committee records showing that what he told the senators then differs from this account"
+    next_step: "Read the 3 August informal meeting record, if any survives, and the 6 August transcript (Executive Sessions vol. XVI) to test his 1968 account against 1964."
+    anchor:
+      type: congressional-hearing-testimony
+      description: "Hearing before the Senate Committee on Foreign Relations, 20 Feb 1968 (S. Hrg. 90-187), prepared statement pp. 14-16 and the questioning pp. 30-31 [read, OCR text]."
+      accessible: true
+      ref: [src-sfrc-1968-hearing]
+    basis: >
+      An account given four years after the events, by the person whose conduct is at issue. It is evidence of what he said in 1968,
+      and of what he claims he said in 1964; it is not independent confirmation of the 1964 events.
+
+  - id: tonkin-fulbright-1968-evidence-uncertain
+    state: established
+    statement: >
+      At the hearing of 20 February 1968 Fulbright, as chairman, said: "I think this committee ... it was very unfair to ask us to vote upon a
+      resolution when the state of the evidence was as uncertain as I think it now is ... none of those intercepts were mentioned to us, I
+      don't believe, in the testimony on August 6. Your statement and General Wheeler's was without any doubt, any equivocation that
+      there was an all-out attack."
+    evidence_class: primary_text
+    confidence: high   # that he said it
+    evidential_weight: 4   # of 5
+    anchor_checked: primary
+    adoption_weight: 2   # of 5
+    adoption_note: "Not measured."
+    would_change_if: "the 6 August transcript showing the intercepts were mentioned to the committees"
+    next_step: "Read the 6 August 1964 transcript to test 'none of those intercepts were mentioned'."
+    anchor:
+      type: congressional-hearing-statement
+      description: "S. Hrg. 90-187, 20 Feb 1968, p. 80 [read, OCR text; the page number is from the text layer]. Fulbright qualified the point with 'I don't believe'."
+      accessible: true
+      ref: [src-sfrc-1968-hearing]
+    basis: >
+      This is Fulbright's 1968 view and recollection about what the committees were told in 1964. It bears on what senators knew when they voted
+      (P8) but does not itself show what they were told.
 
   - id: tonkin-senior-knowledge
     state: contested
