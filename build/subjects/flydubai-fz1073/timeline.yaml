@@ -6,10 +6,12 @@ timeline:
   title: "Flydubai FZ1073, 30 September 2026: who did what, and when"
   as_of: "2026-10-02"
   note: >
-    Live event. Reports are being revised. All clock times are UTC unless a note says otherwise.
-    Dubai is UTC+4; Tabuk and Israel are UTC+3 in this period. The suspect is not publicly
-    identified by authorities and is not named here. Named people are those whom the cited reports
-    name and who spoke publicly or are officials.
+    Live event, as of 2026-10-02. Reports are being revised. All clock times are UTC unless a note says otherwise.
+    Dubai is UTC+4; Tabuk and Israel are UTC+3 in this period. The co-pilot is not publicly named by any
+    authority and is not named here. Named people are officials, and the captain (named by India's government,
+    Israel's and the UAE's authorities and all outlets read); passengers are identified by role only.
+    Places are given only where a source names them, with coordinates from a gazetteer (orientation only).
+    Each event states how its time was arrived at (date_basis).
 
 panels:
   - id: flight
@@ -20,9 +22,9 @@ panels:
     axes: [{label: "Dubai time (UTC+4)", offset_hours: 4}]
     lanes: [aircraft, captain, first_officer, offduty_pilots, passengers, cabin, israel_mil, saudi]
   - id: aftermath
-    title: "Panel B: statements and actions, 30 September to 1 October (dates only; times mostly not reported)"
-    start: "2026-09-30T00:00:00Z"
-    end:   "2026-10-02T00:00:00Z"
+    title: "Panel B: statements and actions, 29 September to 2 October (times where reported, otherwise the day)"
+    start: "2026-09-29T00:00:00Z"
+    end:   "2026-10-03T00:00:00Z"
     tick_hours: 12
     lanes: [flydubai, israel_gov, israel_agencies, saudi_gov, uae, us, other]
 
@@ -44,122 +46,139 @@ lanes:
   other:           {label: "Others"}
 
 people:
-  - {who: "Captain", detail: "Reported as Capt. Smit Machchhar, from India (CNN). Stabbed; surgery; reported in stable condition (a local politician in his home district, via CNN)."}
-  - {who: "First officer (suspect)", detail: "Not publicly identified by authorities. Israel's Prime Minister says he is an Omani national; reported stabbing the captain and trying to crash the plane (Israeli claims); Saudi ministry: 'an assault on the captain by the co-pilot, resulting in various injuries to both'. Taken to Abu Dhabi. Not charged in anything read."}
-  - {who: "Two off-duty pilots", detail: "Passengers who took the controls. Netanyahu: 'another air crew'; Flydubai: 'on-duty Flydubai crew travelling on the flight'; CNN: 'reserve pilots', details not shared. Identities unconfirmed."}
-  - {who: "Yaniv Hayoun (passenger)", detail: "Says he held the attacker in a chokehold and dragged him from the cockpit, then briefly held the controls (CNN, his own account to Netanyahu)."}
-  - {who: "Dr. Shota Musaev (passenger)", detail: "A dentist; says he tied the attacker with headphone cords and zip ties and treated the captain (CNN)."}
-  - {who: "Other passengers quoted", detail: "Mika Bauman, Assaf Rajuan (CNN); Dalia Shpigel (Haaretz via Al Jazeera). About 174 on board, 27 children, mostly Israeli; four US-Israeli dual citizens; two Australians."}
-  - {who: "Cabin crew", detail: "Unnamed; a crew member is seen calling for a doctor and for a pilot in verified video (CNN)."}
-  - {who: "Benjamin Netanyahu", detail: "Israel's Prime Minister; made the main public claims about the attack, the suspect's nationality and 'Islamist radical indoctrination'; also said it was too early to declare a motive (Al Jazeera)."}
-  - {who: "Isaac Herzog", detail: "Israel's President; called it a 'great miracle'; said Israel and the UAE will investigate in depth together."}
-  - {who: "Miri Regev", detail: "Israel's Transportation Minister; demanded Flydubai's Israel flights be suspended and an inquiry into the UAE agreement (ThePrint)."}
-  - {who: "Danny Danon", detail: "Israel's UN ambassador; said there was 'no doubt' it was an attempt to bring the plane down (Al Jazeera)."}
+  - {who: "Captain", detail: "Indian national, named by India's Ministry of External Affairs, Israel's Prime Minister, the UAE civil aviation authority and all outlets read. Seriously wounded; surgery; reported out of danger (a local politician via CNN); moved to Abu Dhabi 1 Oct; the airline says he has returned to the UAE after medical clearance."}
+  - {who: "First officer (co-pilot, accused)", detail: "Not named by any authority and not named here. Described by Israel's Prime Minister and an Israeli official as an Omani national; the Saudi ministry says he assaulted the captain and both were injured. Left Saudi Arabia for Abu Dhabi 1 Oct with an Emirati security team. No charge reported in anything read. An accusation is not a finding."}
+  - {who: "Two additional pilots", detail: "Flydubai crew travelling on the flight who landed the aircraft: 'on-duty flydubai crew travelling on the flight' (flydubai); 'another air crew' (Netanyahu); 'reserve pilots' (CNN, Reuters); 'off-duty' (CBS); 'British pilots' (one passenger to CNN). Identities not shared."}
+  - {who: "Passengers who intervened", detail: "About five or six passengers entered the cockpit (a passenger to CNN). Identified here by role only: a plumber who says he held the attacker and briefly held the controls; a dentist who says he tied the attacker and treated the captain; others quoted by CNN, Haaretz and Ynet. About 170 on board (counts differ), mostly Israeli; four US-Israeli dual citizens; two Australians."}
+  - {who: "Cabin crew", detail: "Unnamed; a crew member is seen calling for a doctor and for a pilot in video verified by CNN."}
+  - {who: "Benjamin Netanyahu", detail: "Israel's Prime Minister; made the main public claims about the attack, the co-pilot's nationality and 'Islamist radical indoctrination'; also said it was too early to declare a motive or an Iran link (CNN, Al Jazeera). On 29 Sep warned of attacks before the election."}
+  - {who: "Isaac Herzog", detail: "Israel's President; called it a 'great miracle'; said Israel and the UAE will 'investigate the incident in depth together'."}
+  - {who: "Miri Regev", detail: "Israel's Transportation Minister; asked Shin Bet to halt flydubai's Israel flights and asked the civil aviation authority to look at whether the UAE violated the aviation agreement."}
+  - {who: "Israel Katz", detail: "Israel's Defence Minister; called it an 'attempted jihadist terror attack' (Al Jazeera, CNN; no evidence given)."}
+  - {who: "Yair Lapid", detail: "Israel's opposition leader; said the 29 Sep warning had nothing to do with planes, and accused Netanyahu of trying to 'hitch a pathetic ride' (Al Jazeera)."}
   - {who: "Donald Trump", detail: "US President; said an Iran link was likely 'based on what I'm hearing', gave no detail (CNN live blog)."}
   - {who: "Penny Wong", detail: "Australian Foreign Minister; confirmed two Australian passengers (CNN)."}
-  - {who: "Flydubai spokesperson", detail: "'An altercation'; motives 'unknown'; asked all parties to 'refrain from premature speculation' (Al Jazeera)."}
-  - {who: "Saudi Interior Ministry", detail: "Statement 1 Oct: assault by the co-pilot on the captain, both injured; both left for Abu Dhabi with an Emirati team (CNN)."}
-  - {who: "Israeli agencies", detail: "Shin Bet, Mossad, the military and the transport ministry are involved in the investigation (Israeli official to CNN)."}
-  - {who: "UAE authorities", detail: "Say they are investigating whether the violence was linked to terrorism; received the suspect (CNN live blog)."}
-  - {who: "Flightradar24", detail: "Tracking-data provider; the source of most timing in Panel A."}
+  - {who: "flydubai", detail: "Four numbered statements on its newsroom (read): incident en route; 'an altercation' in the flight deck; Israel flights suspended; CEO statement on 2 Oct."}
+  - {who: "Saudi Interior Ministry", detail: "Statement 1 Oct: assault on the captain by the co-pilot, injuries to both; landing 9:45 a.m. local with 174 passengers and eight crew; both left for Abu Dhabi with an Emirati team. Read through Al Jazeera and CNN; the original was not reached."}
+  - {who: "UAE authorities", detail: "Attorney-General ordered a Public Prosecution team to investigate (MoFA statement, read); the civil aviation authority called it a 'security incident' and on 2 Oct commended the captain, crew and passengers."}
+  - {who: "Israeli agencies", detail: "Shin Bet, Mossad, the military and the transport ministry are involved in the Israeli review (an Israeli official to CNN)."}
+  - {who: "Trackers", detail: "FlightAware (read: list page), AirNav Radar (read: blog), Flightradar24 (not reached; known through reports)."}
 
 sources:
+  s_flydubai:  {title: "flydubai newsroom, Updates on FZ 1073 (statements 1 to 4)", url: "https://news.flydubai.com/updates-on-fz-1073-dxb-tlv-on-30-september-2026"}
+  s_mofa:      {title: "UAE Ministry of Foreign Affairs, UAE Following Incident Involving flydubai Flight to Tel Aviv (1 Oct)", url: "https://www.mofa.gov.ae/en/MediaHub/News/2026/10/1/UAE-fly-dubai"}
+  s_gcaa:      {title: "Emirates 24|7, GCAA commends courage of the captain and crew (2 Oct), carrying the GCAA statement", url: "https://www.emirates247.com/uae/gcaa-commends-courage-of-captain-machchhar-smit-crew-of-flydubai-flight-fz1073/6282"}
+  s_flightaware: {title: "FlightAware, FZ1073 (FDB1073) flight history", url: "https://www.flightaware.com/live/flight/FDB1073/history"}
   s_cnn:       {title: "CNN, What happened inside the Flydubai flight to Israel? (30 Sep, updated 1 Oct)", url: "https://www.cnn.com/2026/09/30/middleeast/flydubai-israel-plane-pilot-hijacking-incident-latam-hnk-intl"}
   s_cnn_live:  {title: "CNN live blog, 1 October", url: "https://www.cnn.com/2026/10/01/world/live-news/flydubai-flight-israel-pilot-passengers-intl"}
-  s_airlive:   {title: "AirLive, Flydubai flight squawked 7500", url: "https://airlive.net/incident/2026/09/30/flydubai-flight-squawked-7500-unlawful-interference-or-hijack-on-approach-to-tel-aviv/"}
-  s_migflug:   {title: "MiGFlug, flydubai FZ1073", url: "https://migflug.com/afterburner/flydubai-fz1073-squawk-7500-hijack-alert-israeli-jets-tabuk-2026/"}
-  s_aerocorner: {title: "AeroCorner, Flydubai FZ1073 Cockpit Stabbing", url: "https://aerocorner.com/news/flydubai-fz1073-tel-aviv-tabuk-diversion-7500/"}
-  s_aljazeera: {title: "Al Jazeera, What happened on the diverted Flydubai flight", url: "https://www.aljazeera.com/news/2026/9/30/what-happened-on-diverted-flydubai-flight-from-dubai-to-tel-aviv"}
+  s_aljazeera: {title: "Al Jazeera, What happened on the diverted Flydubai flight (updated 1 Oct)", url: "https://www.aljazeera.com/news/2026/9/30/what-happened-on-diverted-flydubai-flight-from-dubai-to-tel-aviv"}
+  s_aj_saudi:  {title: "Al Jazeera, Flydubai co-pilot 'assaulted' captain: initial Saudi probe (1 Oct)", url: "https://www.aljazeera.com/news/2026/10/1/flydubai-co-pilot-assaulted-captain-before-landing-initial-saudi-probe"}
+  s_aj_uae:    {title: "Al Jazeera, UAE investigates possible 'terrorist' link (1 Oct)", url: "https://www.aljazeera.com/news/2026/10/1/uae-investigates-possible-terrorist-link-in-attack-on-flight-to-israel"}
+  s_khaleej:   {title: "Khaleej Times, Flydubai FZ1073 timeline (2 Oct; times in UAE time)", url: "https://www.khaleejtimes.com/business/aviation/flydubai-dubai-tel-aviv-diverted-flight-from-altercation-to-probe"}
+  s_airnav:    {title: "AirNav Radar blog, Flydubai FZ1073 diverts to Tabuk (30 Sep)", url: "https://www.airnavradar.com/blog/flydubai-fz1073-diverts-to-tabuk-after-mid-air-cockpit-incident"}
+  s_reuters:   {title: "Reuters via KFGO, Israeli officials to question co-pilot (2 Oct)", url: "https://kfgo.com/2026/10/02/israeli-officials-to-question-co-pilot-of-flydubai-flight-source-says/"}
+  s_jp_192:    {title: "Jerusalem Post, Regev orders flydubai flights halted (30 Sep)", url: "https://www.jpost.com/israel-news/defense-news/article-910192"}
+  s_jp_405:    {title: "Jerusalem Post, Omani suspect held no second nationality, sources say (2 Oct)", url: "https://www.jpost.com/israel-news/article-910405"}
+  s_ynet:      {title: "Ynetnews, co-pilot transferred to UAE (2 Oct)", url: "https://www.ynetnews.com/article/rkwxox2qfg"}
   s_theprint:  {title: "ThePrint, Can an Omani pilot fly a plane to Israel?", url: "https://theprint.in/world/can-an-omani-pilot-fly-a-plane-to-israel-flydubai-clause-israels-aviation-pact-with-uae-under-lens/3058939/"}
-  s_airnav:    {title: "AirNav Radar blog, Flydubai FZ1073 diverts to Tabuk (30 Sep, 18:18 UTC)", url: "https://www.airnavradar.com/blog/flydubai-fz1073-diverts-to-tabuk-after-mid-air-cockpit-incident"}
-  s_fr24:      {title: "Flightradar24 post on X, quoted in a search result (post not read)", url: "https://x.com/flightradar24/status/2105219645229645874"}
+  s_cbs:       {title: "CBS News, What we're learning about the co-pilot (updated 2 Oct)", url: "https://www.cbsnews.com/news/flydubai-plane-attempted-crash-hijacking-israel-dubai-what-to-know/"}
+  s_abc:       {title: "ABC News Verify, Fake news spreading online (1 Oct, updated 2 Oct)", url: "https://www.abc.net.au/news/2026-10-01/verify-flight-misinformation-fz1073-tel-aviv-dubai/107215774"}
+  s_jp_349:    {title: "Jerusalem Post, Watchdogs uncovered conspiracy theories (1 Oct), reporting an advocacy group's counts", url: "https://www.jpost.com/diaspora/antisemitism/article-910349"}
 
 # kind: data = machine-recorded; official = government or company statement; witness = a person's account;
 #       media = a news outlet's own report or inference.
-# status: reported = 2+ sources agree; single = one source; disputed = sources differ; inferred = our inference.
+# status: reported = 2+ independent sources agree; single = one source; disputed = sources differ; inferred = our inference.
+# date_basis: stated | derived (a time-zone conversion by us) | inferred | publication_proxy | dataset_field.
 events:
   # ---------------- Panel A (UTC) ----------------
-  - {id: a1,  panel: flight, lane: aircraft, time: "2026-09-30T03:05:00Z", precision: exact, kind: data,  status: disputed, sources: [s_airlive, s_migflug, s_aerocorner, s_cnn],
-     alt_time: "2026-09-30T02:05:00Z",
-     alt_tag: "CNN time",
-     alt_note: "CNN: 6:05 a.m. local = 10:05 p.m. ET = 02:05 UTC if local means Dubai",
-     label: "Takeoff from Dubai",
-     detail: "03:05 UTC (just after 7 a.m. Dubai time) per Flightradar24-based reports. DISCREPANCY: CNN says 6:05 a.m. local (10:05 p.m. ET), which is 02:05 UTC if local means Dubai. CNN's later times fit UTC+3 and the other sources."}
-  - {id: a2,  panel: flight, lane: aircraft, time: "2026-09-30T05:21:00Z", precision: exact, kind: data,  status: single, sources: [s_fr24],
-     label: "Altitude fluctuations begin",
-     detail: "From a Flightradar24 post quoted in a search result; the post itself was not read."}
-  - {id: a3,  panel: flight, lane: aircraft, time: "2026-09-30T05:22:00Z", precision: exact, kind: data,  status: disputed, sources: [s_aljazeera, s_cnn, s_airlive, s_airnav],
-     label: "Rapid descent",
-     detail: "DISCREPANCY: about 14,000 ft in under 30 seconds (30,875 to 16,750 ft; Flightradar24 via Al Jazeera/Reuters) versus 17,400 ft in just under two minutes (CNN) versus about 34,000 to about 19,000 ft in about 90 seconds (another outlet). AirNav Radar reports a peak descent rate of about -30,900 ft/min and a drop from 34,000 ft to 15,000 ft 'in just a few minutes', which is compatible with all three: a very steep first half-minute inside a longer descent. Only the raw altitude track can confirm."}
-  - {id: a4,  panel: flight, lane: first_officer, time: "2026-09-30T05:22:00Z", precision: approx, kind: media, status: inferred, sources: [s_aljazeera],
-     label: "Cockpit struggle (start, inferred)",
-     detail: "Reports say the struggle began when the captain was stabbed and the jet plunged; the start time of the fight is not given. Placed at the time of the drop as an inference."}
-  - {id: a5,  panel: flight, lane: captain, time: "2026-09-30T05:22:00Z", precision: approx, kind: official, status: reported, sources: [s_cnn, s_cnn_live],
-     label: "Captain stabbed",
-     detail: "Israeli PM: the first officer stabbed the captain. Saudi ministry: an assault by the co-pilot on the captain, injuries to both. Exact time not reported; placed at the start of the incident."}
-  - {id: a6,  panel: flight, lane: aircraft, time: "2026-09-30T05:31:00Z", precision: exact, kind: data,  status: disputed, sources: [s_airlive, s_migflug, s_aljazeera, s_cnn, s_airnav],
+  - {id: a1,  panel: flight, lane: aircraft, node: fz1073-2026-09-30-departure-dubai, rev: 1,
+     note: "CNN's '6:05 a.m. local time' is 03:05 UTC on the UTC+3 clock CNN uses elsewhere, so this is no longer drawn as a discrepancy; CNN's '10:05 p.m. ET' is one hour off (see log L-17)."}
+  - {id: a2,  panel: flight, lane: aircraft, time: "2026-09-30T05:21:00Z", precision: exact, date_basis: stated, kind: data,  status: reported, sources: [s_aljazeera, s_khaleej],
+     label: "Altitude fluctuations begin; steep descent",
+     detail: "Flightradar24: altitude fluctuations from 05:21 UTC (Al Jazeera); steep descent from about 9:21 a.m. UAE time, which is 05:21 UTC (Khaleej Times). Tracking then showed a descent, a climb and a second steep descent; about 15,000 ft by 05:33 UTC (Khaleej Times)."}
+  - {id: a3,  panel: flight, lane: aircraft, time: "2026-09-30T05:22:00Z", precision: approx, date_basis: stated, kind: data,  status: disputed, sources: [s_aljazeera, s_cnn, s_airnav, s_reuters],
+     label: "Rapid descent (size disputed)",
+     detail: "DISCREPANCY BETWEEN SLICES OF ONE DIVE: about 14,000 ft in under 30 seconds (Flightradar24 via Al Jazeera), 16,625 ft in just over 30 seconds (Flightradar24 via Reuters, 2 Oct), 17,400 ft in just under two minutes (CNN), 34,000 to 15,000 ft in a few minutes with a peak of about -30,900 ft/min (AirNav Radar). Only the raw altitude track can settle it; none was read."}
+  - {id: a4,  panel: flight, lane: first_officer, time: "2026-09-30T05:22:00Z", precision: approx, date_basis: inferred, kind: media, status: inferred, sources: [s_aljazeera],
+     label: "Cockpit struggle (start; time not reported, placed at the drop)",
+     detail: "Reports say the struggle began when the captain was stabbed and the jet plunged; the start time is not given. Placed at the time of the drop as an inference."}
+  - {id: a5,  panel: flight, lane: captain, time: "2026-09-30T05:22:00Z", precision: approx, date_basis: inferred, kind: official, status: reported, sources: [s_cnn, s_cnn_live, s_aj_saudi],
+     label: "Captain injured (time not reported)",
+     detail: "Saudi ministry: an assault by the co-pilot on the captain, injuries to both. Israel's Prime Minister and passengers: the captain was stabbed. The time is not reported; placed at the start of the incident as an inference."}
+  - {id: a6,  panel: flight, lane: aircraft, time: "2026-09-30T05:31:00Z", precision: exact, date_basis: stated, kind: data,  status: disputed, sources: [s_aljazeera, s_cnn, s_airnav],
      alt_time: "2026-09-30T05:28:48Z", alt_tag: "AirNav", alt_note: "AirNav Radar: squawk 7700 at 05:28:48 UTC",
-     label: "Squawk 7700 (emergency); distress call",
-     detail: "05:31 UTC per Flightradar24. DISCREPANCY BETWEEN TWO INDEPENDENT TRACKERS: AirNav Radar says 05:28:48 UTC, about two minutes earlier. CNN gives a distress call at 8:31 a.m. (matches 05:31 UTC if UTC+3). Only the raw data from each can say why they differ (reception time, reporting delay, or a different message)."}
-  - {id: a7,  panel: flight, lane: aircraft, time: "2026-09-30T05:38:00Z", precision: exact, kind: data,  status: disputed, sources: [s_airlive, s_migflug, s_airnav],
+     label: "Squawk 7700 (emergency)",
+     detail: "05:31 UTC per Flightradar24 (Al Jazeera); AirNav Radar says 05:28:48 UTC, about two minutes earlier. CNN's 'distress call at 8:31 a.m.' is this squawk on the UTC+3 clock (05:31 UTC), not the radio call. Why two trackers differ is not known (reception time, delay or a different message)."}
+  - {id: a7,  panel: flight, lane: aircraft, time: "2026-09-30T05:38:00Z", precision: exact, date_basis: stated, kind: data,  status: disputed, sources: [s_aljazeera, s_airnav],
      alt_time: "2026-09-30T05:35:00Z", alt_tag: "AirNav", alt_note: "AirNav Radar: squawk 7500 at about 05:35 UTC",
      label: "Squawk 7500 (unlawful interference)",
-     detail: "05:38 UTC per Flightradar24; about 05:35 UTC per AirNav Radar (a three-minute difference, with 7700 to 7500 about six to seven minutes apart in both). Code 7500 signals unlawful interference. AirNav also reports the code returning to 7700 on approach to Tabuk (7700, 7500, 7700). Who set the codes is not reported."}
-  - {id: a8,  panel: flight, lane: passengers, time: "2026-09-30T05:45:00Z", precision: range, end: "2026-09-30T06:10:00Z", kind: witness, status: inferred, sources: [s_cnn, s_aerocorner],
-     label: "Passengers and crew enter the cockpit; the attacker is restrained (time not reported)",
-     detail: "Passenger accounts: a chokehold and removal from the cockpit (Hayoun), tied with headphone cords and zip ties (Musaev). The time of day is not reported; the bar spans the period between the squawk change and the loss of tracking and is an inference."}
-  - {id: a9,  panel: flight, lane: offduty_pilots, time: "2026-09-30T05:50:00Z", precision: range, end: "2026-09-30T06:10:00Z", kind: media, status: disputed, sources: [s_cnn, s_cnn_live],
-     label: "Off-duty pilots take the controls (time not reported)",
-     detail: "DISCREPANCY IN DESCRIPTION: Netanyahu says another air crew; Flydubai says on-duty Flydubai crew; CNN says reserve pilots, details not shared. The aircraft is reported to have levelled at about 15,000 ft. Time inferred."}
-  - {id: a10, panel: flight, lane: israel_mil, time: "2026-09-30T05:40:00Z", precision: range, end: "2026-09-30T06:30:00Z", kind: media, status: single, sources: [s_aerocorner, s_aljazeera],
+     detail: "05:38 UTC per Flightradar24 (Al Jazeera); about 05:35 UTC per AirNav Radar. AirNav also reports the code returning to 7700 on approach to Tabuk (7700, 7500, 7700). Who set the codes is not reported."}
+  - {id: a14, panel: flight, lane: saudi, time: "2026-09-30T05:44:00Z", precision: exact, date_basis: derived, kind: official, status: single, sources: [s_khaleej],
+     label: "Distress call received by Tabuk air traffic control",
+     detail: "Tabuk airport statement as quoted by Khaleej Times: its air traffic control centre received a distress call at 8:44 a.m. Saudi time (UTC+3), converted to 05:44 UTC by us."}
+  - {id: a8,  panel: flight, lane: passengers, time: "2026-09-30T05:45:00Z", precision: range, end: "2026-09-30T06:10:00Z", date_basis: inferred, kind: witness, status: inferred, sources: [s_cnn, s_cnn_live],
+     label: "Passengers and crew enter the cockpit; the co-pilot is restrained (time not reported)",
+     detail: "Passenger accounts: a chokehold and removal from the cockpit; tied with headphone cords and zip ties; 'about five others' helped (a passenger to CNN). The time of day is not reported; the bar is an inference between the squawk change and the landing."}
+  - {id: a9,  panel: flight, lane: offduty_pilots, time: "2026-09-30T05:50:00Z", precision: range, end: "2026-09-30T06:10:00Z", date_basis: inferred, kind: media, status: disputed, sources: [s_cnn, s_flydubai, s_cbs],
+     label: "Additional pilots take the controls (time not reported)",
+     detail: "DISCREPANCY IN DESCRIPTION: flydubai says 'on-duty flydubai crew travelling on the flight'; Netanyahu says another air crew; CNN says reserve pilots; CBS says off-duty. Accounts differ on who first reached the controls. Time inferred."}
+  - {id: a10, panel: flight, lane: israel_mil, time: "2026-09-30T05:40:00Z", precision: range, end: "2026-09-30T06:30:00Z", date_basis: inferred, kind: media, status: single, sources: [s_aljazeera],
      label: "Israeli fighter jets scrambled (time not reported)",
-     detail: "Reported by several outlets without a time."}
-  - {id: a11, panel: flight, lane: aircraft, time: "2026-09-30T06:11:00Z", precision: exact, kind: data,  status: single, sources: [s_airlive],
-     label: "Tracking coverage interrupted",
-     detail: "Per AirLive, citing Flightradar24 data."}
-  - {id: a12, panel: flight, lane: saudi, time: "2026-09-30T06:45:00Z", precision: range, end: "2026-09-30T07:00:00Z", kind: data, status: disputed, sources: [s_migflug, s_cnn],
-     label: "Landing at Tabuk",
-     detail: "MiGFlug: between about 06:45 and 07:00 UTC. CNN: 9:54 a.m. (zone not stated; 06:54 UTC if UTC+3). Consistent within the range."}
-  - {id: a13, panel: flight, lane: cabin, time: "2026-09-30T05:45:00Z", precision: range, end: "2026-09-30T06:10:00Z", kind: media, status: single, sources: [s_cnn],
+     detail: "Reported by Al Jazeera (via Reuters) without a time; a Jerusalem Post statement from the Air Force describes the procedure for such flights without confirming this one."}
+  - {id: a11, panel: flight, lane: aircraft, time: "2026-09-30T06:58:00Z", precision: approx, date_basis: stated, kind: data,  status: single, sources: [s_airnav],
+     label: "Last ADS-B message received by AirNav Radar",
+     detail: "AirNav Radar: last ADS-B data received 'at approximately 06:58 UTC'. (An earlier version of this timeline gave 06:11 UTC for loss of tracking coverage from an aggregator; that is superseded and not repeated here, see log L-17.)"}
+  - {id: a12, panel: flight, lane: saudi, node: fz1073-2026-09-30-landing-tabuk, rev: 1}
+  - {id: a13, panel: flight, lane: cabin, time: "2026-09-30T05:45:00Z", precision: range, end: "2026-09-30T06:10:00Z", date_basis: inferred, kind: media, status: single, sources: [s_cnn],
      label: "Cabin crew call for a doctor and a pilot (video; time not reported)",
-     detail: "Video shared on social media and verified by CNN shows people crowded at the cockpit door, a cabin crew member shouting at passengers to sit down and calling for a doctor, and a voice calling 'We need a pilot'. Time inferred."}
-  # ---------------- Panel B (dates; placed at midday UTC when no time is reported) ----------------
-  - {id: b1,  panel: aftermath, lane: flydubai, time: "2026-09-30T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_aljazeera, s_cnn_live],
-     label: "Flydubai: 'an altercation'; crew landed it; motives unknown",
-     detail: "Asked all parties to 'refrain from premature speculation'."}
-  - {id: b2,  panel: aftermath, lane: israel_gov, time: "2026-09-30T13:00:00Z", precision: day, kind: official, status: reported, sources: [s_cnn, s_aljazeera],
-     label: "Netanyahu: pilot stabbed colleague, tried to crash plane",
-     detail: "Also convened an emergency meeting with defense officials."}
-  - {id: b3,  panel: aftermath, lane: israel_gov, time: "2026-09-30T14:00:00Z", precision: day, kind: official, status: single, sources: [s_aerocorner],
-     label: "Early Israeli reports: hijacking ruled out",
-     detail: "Per Times of Israel as reported by AeroCorner; the event was then treated as a possible terror attack."}
-  - {id: b4,  panel: aftermath, lane: israel_gov, time: "2026-09-30T18:00:00Z", precision: day, kind: official, status: reported, sources: [s_cnn],
-     label: "Passengers flown to Israel; Herzog: 'great miracle', joint probe with the UAE",
-     detail: "Substitute Flydubai aircraft from Tabuk to Ben Gurion."}
-  - {id: b5,  panel: aftermath, lane: flydubai, time: "2026-09-30T20:00:00Z", precision: day, kind: official, status: single, sources: [s_theprint],
-     label: "Flydubai suspends Israel flights",
-     detail: "Described as temporary. Israeli minister Regev had demanded it."}
-  - {id: b6,  panel: aftermath, lane: us, time: "2026-09-30T20:00:00Z", precision: day, kind: official, status: single, sources: [s_cnn_live],
+     detail: "Video shared on social media and verified by CNN shows people crowded at the cockpit door, a cabin crew member calling for a doctor, and a voice calling 'We need a pilot'. Time inferred."}
+  # ---------------- Panel B (times where reported; otherwise placed at midday UTC with precision day) ----------------
+  - {id: b0,  panel: aftermath, lane: israel_gov, node: fz1073-2026-09-29-netanyahu-election-warning-tel-nof, rev: 1}
+  - {id: b3,  panel: aftermath, lane: israel_gov, time: "2026-09-30T06:57:00Z", precision: approx, date_basis: derived, kind: official, status: single, sources: [s_khaleej],
+     label: "Early Israeli security sources: hijacking ruled out",
+     detail: "Khaleej Times, citing the Times of Israel (not read), 10:57 a.m. UAE time. The event was then treated as a possible terror attack."}
+  - {id: b2,  panel: aftermath, lane: israel_gov, time: "2026-09-30T13:00:00Z", precision: day, date_basis: publication_proxy, kind: official, status: reported, sources: [s_cnn, s_aljazeera],
+     label: "Netanyahu: one pilot stabbed the other, apparently tried to crash the plane",
+     detail: "Video statement of 30 Sep; the time of day is not stated. Said another air crew entered the cockpit and stabilised the aircraft."}
+  - {id: b1,  panel: aftermath, lane: flydubai, time: "2026-09-30T13:30:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_flydubai, s_khaleej],
+     label: "flydubai: 'an altercation' in the flight deck; crew landed it; motives unknown",
+     detail: "Statement 2 (read). Khaleej Times gives about 5:30 p.m. UAE time. Asked all parties to 'refrain from premature speculation'."}
+  - {id: b4,  panel: aftermath, lane: israel_gov, time: "2026-09-30T15:50:00Z", precision: approx, date_basis: stated, kind: official, status: reported, sources: [s_aljazeera, s_cnn],
+     label: "Replacement flight reaches Ben Gurion; Herzog: 'great miracle', joint probe with the UAE",
+     detail: "Al Jazeera, citing the Times of Israel: the replacement flight landed 'shortly before 16:00 GMT'. Passengers left Tabuk at 5:40 p.m. Saudi time (Saudi ministry)."}
+  - {id: b5,  panel: aftermath, lane: flydubai, time: "2026-09-30T19:00:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_flydubai, s_khaleej],
+     label: "flydubai suspends Israel flights, 'at the request of the authorities'",
+     detail: "Statement 3 and the CEO's statement 4 (read); Khaleej Times gives 11 p.m. UAE time. Israeli minister Regev had asked for it."}
+  - {id: b6,  panel: aftermath, lane: us, time: "2026-09-30T20:00:00Z", precision: day, date_basis: publication_proxy, kind: official, status: single, sources: [s_cnn],
      label: "US officials: four US citizens aboard; Trump spoke to Netanyahu",
      detail: "Four American citizens who also hold Israeli nationality (two US officials to CNN)."}
-  - {id: b7,  panel: aftermath, lane: other, time: "2026-09-30T20:00:00Z", precision: day, kind: official, status: single, sources: [s_cnn],
+  - {id: b7,  panel: aftermath, lane: other, time: "2026-09-30T20:00:00Z", precision: day, date_basis: publication_proxy, kind: official, status: single, sources: [s_cnn],
      label: "Australia: two Australians aboard (Wong)",
      detail: ""}
-  - {id: b8,  panel: aftermath, lane: saudi_gov, time: "2026-10-01T09:00:00Z", precision: day, kind: official, status: reported, sources: [s_cnn_live],
-     label: "Saudi ministry: assault by co-pilot, both hurt; both pilots leave for Abu Dhabi",
-     detail: "With an Emirati security team, after being medically cleared."}
-  - {id: b9,  panel: aftermath, lane: uae, time: "2026-10-01T10:00:00Z", precision: day, kind: official, status: single, sources: [s_cnn_live],
-     label: "UAE: investigating a possible terrorism link",
-     detail: ""}
-  - {id: b10, panel: aftermath, lane: israel_gov, time: "2026-10-01T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_cnn, s_cnn_live],
-     label: "Netanyahu: suspect Omani, 'Islamist radical indoctrination'",
-     detail: "Interviews with CNN and Fox News. The same reports note motive is not confirmed."}
-  - {id: b11, panel: aftermath, lane: us, time: "2026-10-01T14:00:00Z", precision: day, kind: official, status: single, sources: [s_cnn_live],
+  - {id: b9,  panel: aftermath, lane: uae, time: "2026-10-01T06:57:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_mofa, s_khaleej, s_aj_uae],
+     label: "UAE Attorney-General orders an investigation, including any terrorist link or prior planning",
+     detail: "UAE MoFA statement (read); Khaleej Times gives 10:57 a.m. UAE time for the announcement and 1:33 p.m. for the ministry."}
+  - {id: b8,  panel: aftermath, lane: saudi_gov, time: "2026-10-01T09:00:00Z", precision: day, date_basis: stated, kind: official, status: reported, sources: [s_aj_saudi, s_cnn_live],
+     label: "Saudi ministry: assault by co-pilot, injuries to both; both leave for Abu Dhabi",
+     detail: "Statement issued 'on Thursday' (1 Oct); the hour is not given. With an Emirati security team, after being medically cleared. Read through Al Jazeera and CNN."}
+  - {id: b10, panel: aftermath, lane: israel_gov, time: "2026-10-01T12:00:00Z", precision: day, date_basis: stated, kind: official, status: reported, sources: [s_cnn, s_cnn_live, s_aj_uae],
+     label: "Netanyahu: co-pilot Omani, 'underwent Islamist radical indoctrination'",
+     detail: "Interviews with CNN and Fox News on 1 Oct. The same reports note motive is not confirmed; he also said it was too early to say whether Iran was involved."}
+  - {id: b11, panel: aftermath, lane: us, time: "2026-10-01T14:00:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_cnn_live, s_ynet],
      label: "Trump: Iran link likely, 'based on what I'm hearing'; no detail",
-     detail: "'Could be. Could be.'"}
-  - {id: b12, panel: aftermath, lane: israel_gov, time: "2026-10-01T15:00:00Z", precision: day, kind: official, status: single, sources: [s_theprint],
-     label: "Regev: suspend Flydubai; inquiry into the UAE agreement",
-     detail: ""}
-  - {id: b13, panel: aftermath, lane: israel_agencies, time: "2026-10-01T16:00:00Z", precision: day, kind: media, status: disputed, sources: [s_theprint, s_cnn],
+     detail: "'Could be. Could be.' The same day a senior Israeli official told Ynet that investigators had so far ruled out an Iranian connection."}
+  - {id: b12, panel: aftermath, lane: israel_gov, time: "2026-10-01T15:00:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_theprint, s_jp_192],
+     label: "Regev: suspend flydubai; asks whether the UAE violated the agreement",
+     detail: "Her request to Shin Bet to halt the flights is dated 30 Sep by the Jerusalem Post."}
+  - {id: b13, panel: aftermath, lane: israel_agencies, time: "2026-10-01T16:00:00Z", precision: day, date_basis: publication_proxy, kind: media, status: disputed, sources: [s_theprint, s_cnn_live, s_jp_405],
      label: "Crew-nationality rule: reported 'breach'; vetting under review",
-     detail: "A transport ministry source (via the Jerusalem Post) says pilots on the route must come from states with normalised relations; reports differ on where the clause sits. Shin Bet is meant to vet UAE crews; another account says no agency does this in practice."}
+     detail: "A transport ministry source says pilots on the route must come from states with normalised relations. On 2 Oct other sources told the Jerusalem Post that the bilateral agreement does not stipulate this. Shin Bet is meant to vet UAE crews; whether it did is not known."}
+  - {id: b14, panel: aftermath, lane: flydubai, time: "2026-10-02T09:00:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_flydubai, s_reuters],
+     label: "flydubai CEO's first public comment: a 'safety incident'; 'many questions'",
+     detail: "Statement 4 (read): all 172 passengers and crew safe; the Captain returned to the UAE; flights to Tel Aviv suspended at the authorities' request. Reuters dates his first public comments to Friday 2 Oct."}
+  - {id: b15, panel: aftermath, lane: uae, time: "2026-10-02T09:30:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_gcaa],
+     label: "UAE civil aviation authority: commends captain, crew, passengers; no comment on claims",
+     detail: "Statement via WAM (as carried by Emirates 24|7, 2 Oct): the captain is in good condition; findings will be announced through official channels."}
+  - {id: b16, panel: aftermath, lane: israel_agencies, time: "2026-10-02T07:34:00Z", precision: approx, date_basis: derived, kind: media, status: single, sources: [s_jp_405],
+     label: "Israeli sources (unnamed): the co-pilot held no second nationality",
+     detail: "Jerusalem Post, 2 Oct 10:34 (page clock taken as Israel time, UTC+3, so 07:34 UTC; the zone is not stated). Anonymous sources; not confirmed by any authority."}

@@ -1,5 +1,5 @@
 subject: flydubai-fz1073
-dig_status: scoping          # no claims drafted; live event, facts still changing
+dig_status: drafted          # claims drafted 2026-10-02 for independent review (see L-16); live event, facts still changing
 event_status: live           # an investigation is open; reports are being revised
 as_of: 2026-10-02
 # Append-only excavation log. Corrections are new entries; earlier entries are never edited.
@@ -246,3 +246,63 @@ log:
       of helpers exist because helpers helped (survivorship). WHAT WOULD ACTUALLY TEST IT: the airline's staff-travel booking records for the flight (obtainable
       only by investigators), passenger manifest roles, and the pilots' names confirmed by the airline. GENUINE OPEN QUESTIONS in the record (CNN quoting an Israeli
       official): how the cockpit door was opened, and how a weapon came on board. None of this tests whether the event was staged; no evidence either way found.
+  - id: L-16
+    date: 2026-10-02
+    entry: >
+      AUTHOR PASS STARTED (claims drafted from the scoping log; all earlier entries kept). Scope: turn the scoping dig into a News Review entry, claim by claim, for an independent reviewer; the author does not
+      write review.yaml and does not add the subject to the site or news lists. FILES: claims.yaml (24 claims, an assessment block, headline draft), sources/MANIFEST.yaml (33 sources, each with an authenticity
+      entry and read: yes or no), timeline.yaml (rebuilt; 31 events with date_basis and precision; three events now use shared nodes with places), three shared nodes (fz1073-2026-09-30-departure-dubai,
+      fz1073-2026-09-30-landing-tabuk, fz1073-2026-09-29-netanyahu-election-warning-tel-nof), transmission.yaml (how the 'staged' story spread; confers no weight), taxonomy entry (already present; unchanged).
+      PRIMARY MATERIAL READ DIRECTLY: flydubai's own statements 1 to 4 (news.flydubai.com; text stored in sources/); the UAE Ministry of Foreign Affairs statement of 1 Oct (mofa.gov.ae; stored); FlightAware's
+      flight-history listing (departure 07:05 at +04 for the 30 Sep flight; later flights Cancelled). READ THROUGH OUTLETS ONLY (originals not reached): the Saudi Interior Ministry statement (1 Oct), the Tabuk airport
+      statement, the UAE Attorney-General's order (WAM), the GCAA statement of 2 Oct (read as carried by Emirates 24|7), Netanyahu's interviews, Flightradar24's data. NOT REACHED: Bloomberg, Axios, Washington Post,
+      The Times of Israel, Haaretz, The New Arab, Taylor and Francis, The Week, NewsGuard, Gulf Business, gov.il (HTTP 403 or errors); Flightradar24 and AirNav flight pages (Cloudflare 403); OpenSky history (account
+      needed, 403); ADS-B Exchange history (not served); FlightAware's per-flight track log (HTTP 429 after the list page loaded); the WAM, Saudi Press Agency, GCAA and Israeli PMO front pages loaded but are scripted and
+      showed no release; X posts. A search for a Snopes check of this event found none. Wikipedia was not used as an anchor.
+  - id: L-17
+    date: 2026-10-02
+    entry: >
+      CORRECTIONS TO EARLIER ENTRIES AND TO THE TIMELINE (new entry; the earlier text stays). (1) L-03(a) said CNN's departure time ('6:05 a.m. local time (10:05 p.m. ET)') 'appears to be an error or a mix of time zones'.
+      Re-read: CNN's other times (distress call 8:31, touchdown 9:54) are on UTC+3; 6:05 a.m. on UTC+3 is 03:05 UTC, the same instant as FlightAware (07:05 at +04), AirNav Radar and Flightradar24. So the 'local time' is
+      consistent and only CNN's '10:05 p.m. ET' is wrong, by one hour (03:05 UTC is 11:05 p.m. EDT). The takeoff 'ghost' marker has been removed from the timeline. (2) L-03(c): CNN's touchdown at 9:54 a.m. differs from 9:45
+      a.m. local (06:45 UTC) given by the Saudi Interior Ministry (via Al Jazeera) and by Tabuk airport (via Khaleej Times); 9:54 looks like transposed digits, but CNN's source is not stated; it is kept as a ghost marker on the landing
+      node, not resolved. L-03(c) said these 'agree within the stated range' using MiGFlug's range; the narrower official time is now used. (3) L-02 and L-03 gave CNN's 'distress call at 8:31 a.m.' as the distress call; it matches the squawk 7700
+      time (05:31 UTC), while Tabuk air traffic control logged a radio distress call at 8:44 a.m. Saudi time (05:44 UTC, Khaleej Times). (4) L-03(b): the drop. Flightradar24 as quoted by Al Jazeera on 30 Sep gave about 14,000 ft in under 30 seconds; Reuters
+      on 2 Oct, also from Flightradar24, gives 16,625 ft in just over 30 seconds; CNN via IBTimes gives more than 16,000 ft in 35 seconds with ground speed from about 460 to nearly 700 mph; these are revisions and different slices, still unresolved.
+      (5) Timeline: an event 'tracking coverage interrupted at 06:11 UTC' (AirLive) was removed because that report was not re-read and AirNav Radar's last message (about 06:58 UTC, read) is used instead; the AirLive, MiGFlug and AeroCorner
+      pages cited in L-02 were not re-read in this pass (MiGFlug's co-pilot explainer was). (6) Names: the earlier timeline people list named several passengers and quoted others. This pass removes passenger names and keeps roles only,
+      because passengers are private individuals who are not needed to test any claim; the captain is kept by name in the timeline only (named by India's foreign ministry, the Israeli and UAE authorities and every outlet read) and is not
+      named in claims.yaml. The co-pilot is not named anywhere: no authority has named him (checked against CNN, CBS, Reuters and The National on 2 Oct). The earlier names remain in git history.
+      (7) Passenger counts: Saudi ministry 174 passengers and eight crew; flydubai CEO 172 passengers and crew; Netanyahu and Reuters 174: unresolved. (8) L-02 said the hijacking was 'ruled out' and the first officer 'is the suspect';
+      these are Israeli early reports and officials' statements; the Saudi ministry says an assault by the co-pilot on the captain with injuries to both.
+  - id: L-18
+    date: 2026-10-02
+    entry: >
+      CORRECTIONS TO L-15 (new entry). (1) Masks: L-15 said oxygen masks drop when cabin pressure altitude rises above about 14,000 ft and 'not when the aircraft descends'. That is general knowledge and was not taken from a source read in
+      this dig. The Conversation (read) says early passenger accounts suggest the masks did not deploy and that such rapid descents are 'usually reserved for an emergency situation where the cabin loses pressure', where the masks 'are supposed to drop'. Neither
+      source read gives the deployment rule, the cabin altitude, or whether the cabin lost pressure; the claim is held as a searched gap (fz1073-masks-clean-cabin) until the aircraft maker's description and the cabin-altitude record are read. (2) Pilots: L-15
+      reported a search summary saying the two additional pilots were a South African and a New Zealander (not confirmed). CNN's live blog now has a passenger saying 'two other pilots on board, British pilots', in row six; flydubai says 'on-duty flydubai crew travelling on the flight'; CBS says
+      off-duty; the identities have not been shared. The nationalities are therefore unresolved and are not used. (3) 'Surgeon': still no report read says surgeon; CNN, Ynet and a passenger say a dentist treated the captain. (4) The L-15 Poisson arithmetic
+      is synthetic and is not an anchor (stated in claim fz1073-extra-pilots-statistics).
+  - id: L-19
+    date: 2026-10-02
+    entry: >
+      WHAT WAS REPORTED WHEN, AND BY WHOM (times as reported; UAE time is UTC+4, Saudi and Israel UTC+3). 30 Sep: 05:21 UTC descent begins (Flightradar24, via Al Jazeera and Khaleej Times); 05:28:48 or 05:31 squawk 7700 (AirNav or Flightradar24); about 05:35 or 05:38
+      squawk 7500; 05:44 distress call to Tabuk ATC (Tabuk airport, via Khaleej Times); 06:45 landing (Saudi Interior Ministry, via Al Jazeera). About 10:57 UAE time Israeli security sources said a hijacking was ruled out (Times of Israel, via Khaleej Times; not read). 2:48 p.m. UAE time: Tabuk airport says captain and co-pilot injured and taken to hospital.
+      About 5:30 p.m. UAE time flydubai Statement 2: 'an altercation occurred in the flight deck', crew landed it. 9:29 p.m. UAE time: the UAE civil aviation authority calls it a 'security incident'. 11 p.m. UAE time: flydubai suspends Israel flights (Statement 3; the CEO later says at the authorities' request). Late 30 Sep: Netanyahu, in a video, says one pilot stabbed the other and apparently tried to crash the plane; Israeli
+      sources tell the Jerusalem Post the co-pilot is believed Omani and a transport ministry source calls it 'a clear breach' of Flydubai's agreement. 1 Oct: the UAE Attorney-General orders an investigation (about 10:57 a.m. UAE time; MoFA statement later); the Saudi ministry says the co-pilot assaulted the captain with injuries to both, and both fly to Abu Dhabi; Netanyahu tells CNN the suspect is Omani and tells Fox he 'underwent Islamist radical indoctrination';
+      Trump says an Iran link is likely 'based on what I'm hearing'; a senior Israeli official tells Ynet no Iran link has been found so far and that he most likely acted alone. 2 Oct: the flydubai CEO's first comments (Statement 4); the GCAA commends captain, crew and passengers and will not comment on claims; the Jerusalem Post, from unnamed sources, says the co-pilot held no second nationality and that the Israel-UAE aviation agreement does not require
+      pilots from states with ties to Israel; Reuters says Israeli officials are expected to question him in the UAE. Before the flight: 29 Sep Netanyahu says there are signs enemies will try to attack before the election (Jerusalem Post); Lapid says it was not about planes (30 Sep, Al Jazeera). The Israeli election is 27 Oct (Reuters).
+  - id: L-20
+    date: 2026-10-02
+    entry: >
+      THE OWNER'S OBSERVATIONS, TESTED AS CLAIMS (results; the tests were defined in L-04, L-05, L-11 and L-12 before the data was looked at in this pass). (1) OMANI PILOT: that Israeli officials said so is documented (fz1073-israel-says-omani); that it is true is not publicly confirmed by any non-Israeli authority (fz1073-omani-nationality-unconfirmed,
+      searched gap); whether a rule bars Omani pilots from the route is disputed between an Israeli transport ministry source (rule in Flydubai's agreement; 'clear breach') and other unnamed Israeli sources (the bilateral agreement has no such clause), and ThePrint's reading of the 2020 agreement finds nothing on pilot nationality (fz1073-omani-barred-rule, contested, low confidence);
+      Israel's entry rule for Omani nationals was not read (gov.il 403) and Oman's boycott decree (a 2023 vote criminalising contact with Israelis, via the Jewish Chronicle) is about contacts. The reading in L-04 stands: a reported rule breach points to a rostering or vetting failure and fits at least five explanations; it does not show an arrangement. (2) TIMING: the dates are facts (fz1073-timing-dates);
+      'convenient' needs a beneficiary and mechanism and a base rate, none yet shown (fz1073-timing-convenient, searched gap); the political-use allegation is documented as an allegation (fz1073-political-use-alleged). (3) 'MANUFACTURED': the narrow variant 'wholly simulated' is refuted at moderate confidence by independent records (fz1073-event-simulated); the variants 'arranged or allowed' are open with no evidence found (fz1073-arranged-or-allowed). 'Inconsistent': some differences are explained,
+      some are open (fz1073-reports-inconsistent). Masks, clean cabin, surgeon and statistics: searched gaps, see L-18. GUARDRAIL CHECK: the co-pilot is not named by any authority; he is not named here. Nothing in the claims speculates about anyone's religion, ethnicity or beliefs; Netanyahu's words on 'Islamist radical indoctrination' are recorded as what an official said, with the note that no material has been shown.
+  - id: L-21
+    date: 2026-10-02
+    entry: >
+      NEXT STEPS AND DECISIONS FOR THE OWNER (not done). (a) Download the raw tracker data (AirNav Radar 'download the data'; Flightradar24 CSV) from a browser, compare squawk and altitude timestamps, and settle fz1073-descent-magnitude and the two-to-three minute squawk difference. (b) Read the Saudi Press Agency, WAM and GCAA originals. (c) Obtain Israel's entry rule for Omani nationals and any crew clause (Israeli civil aviation authority operating conditions; the 2020 agreement text). (d) Compute the timing base rate under a pre-registered definition (L-12 test 5). (e) Watch the UAE Public Prosecution and GCAA for findings and re-review at each significant update (docs/NEWS_REVIEW.md).
+      OWNER DECISIONS: whether a refutation at moderate confidence of the narrow 'wholly simulated' variant is acceptable on this evidence or should be held as a searched gap until raw data is read; whether passengers and the captain may be named at all; the headline stays a draft because no claim reached established or refuted at high confidence on a primary read for the headline claim. Not added to site.yaml publish or news.yaml; no review.yaml written.
