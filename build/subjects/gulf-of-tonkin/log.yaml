@@ -136,3 +136,16 @@ log:
       events do not change: every ordering that matters (the 'allegedly' call before the reported
       attack, Herrick's doubt message and the Bundy memo before the Resolution) holds under either
       convention.
+  - id: L-16
+    date: "2026-10-02"
+    entry: >
+      ACTORS TEST (owner-approved): built actors.yaml for Johnson, McNamara, Bundy, Morse and Gruening to the
+      shared standard (SCHEMA.md P1-P8), using only documents already read. RESULTS: (1) Bundy's two memo remarks
+      fit statements; neither is a commitment, so alignment is no_specific_commitment. (2) McNamara's 3 Aug private
+      remark and 6 Aug testimony on 34-A differ; the record read cannot say whether that is contradiction or
+      different scope, so alignment is not_determinable (a verdict would go beyond the evidence). (3) Johnson, Morse
+      and Gruening have empty statement/commitment buckets with the searches still needed (Public Papers of the
+      Presidents; Congressional Record 6-7 Aug). (4) The test exposed a missing rule, now P8: record what each actor
+      could have known on the date. Without it the 'broke' label would be unfair for the vote, since what senators were
+      told on 6 Aug is unread. (5) The vote dots rest on Voteview (secondary); the official roll call is still to read.
+      Nothing in this dig changed state as a result.

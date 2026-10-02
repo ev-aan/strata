@@ -141,7 +141,7 @@ actors:
 `vote` (official; square), `statement` (witness; diamond), `commitment` (document; hexagon),
 `filing` (official; square, e.g. a donation or disclosure). Every dot still links to its source (T1).
 
-### Rules P1 to P7 (politicians and officials)
+### Rules P1 to P8 (politicians and officials)
 - **P1 Same dig for everyone.** Each actor gets the same four buckets (statements, commitments, actions,
   alignment). If a bucket is empty it says "searched, none found" with the places searched (a searched_gap).
 - **P2 Commitment is specific.** A dated, attributable statement of what they would do on this matter.
@@ -155,10 +155,10 @@ actors:
 - **P5 Money is context.** A dated filing beside a vote shows timing only. The page states that timing
   does not show causation unless a source documents the link.
 - **P6 Motive carries no evidential weight.** It is listed in `motive_map` and labelled so.
+- **P8 Information available at the time.** For every action, record what the actor could have known on that date, from the sources, or `not_determined`. A mismatch between a statement and later facts is not a broken commitment unless the information was available to them then. (Added after the Tonkin test; the vote is the clearest case.)
 - **P7 Same neutrality for all parties and sides.** Selection rules are written before records are read
   (see `build/subjects/congress-promise-vote/protocol.yaml`). Subjects are never swapped to find a result.
 
 ### Applied so far
-- Tonkin: the 7 Aug 1964 vote now links to the roll-call data (Senate 481, House 197). Still to do for P1:
-  `actors.yaml` for Johnson, McNamara, Bundy, Morse, Gruening, filled bucket by bucket from the sources read.
+- Tonkin: `actors.yaml` built for Johnson, McNamara, Bundy, Morse, Gruening (2026-10-02); vote links to the roll-call data.
 - Politics pilot: protocol conforms to P1 to P7.

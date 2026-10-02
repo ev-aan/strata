@@ -1,0 +1,106 @@
+# Actors for the Gulf of Tonkin dig, built to build/SCHEMA.md "Actors, statements and votes" (P1 to P8).
+# Only items from documents read in this dig appear. Empty buckets say what was searched.
+# Alignment labels: kept | broke | changed_with_stated_reason | no_specific_commitment | not_determinable.
+subject: gulf-of-tonkin
+as_of: "2026-10-02"
+actors:
+
+  - id: johnson
+    name: "Lyndon B. Johnson"
+    role_at_event: "President of the United States"
+    statements:
+      - {date: "1964-08-04", venue: "phone call with McNamara", visibility: private,
+         text_quote: "(discussion of what to authorize 'in the event he is attacked' before any attack was reported)",
+         source: src-lbj-tapes-transcripts, claim: tonkin-mcnamara-aug4-call, anchor_checked: secondary}
+    commitments: []
+    commitments_searched: >
+      Public statements by Johnson on 4-10 August 1964 were not read in this dig. NEXT: Public Papers of the
+      Presidents 1963-64 (govinfo) and the 4 August broadcast text.
+    actions:
+      - {date: "1964-08-05", kind: order, what: "US retaliatory air strikes on North Vietnam", source: src-hanyok-2001, anchor_checked: secondary}
+      - {date: "1964-08-10", kind: signature, what: "Signed the Tonkin Gulf Resolution (Senate.gov history page; signing date not checked in the statute)", source: "https://www.senate.gov/artandhistory/senate-stories/chairman-fulbright-and-the-tonkin-gulf-resolution.htm", anchor_checked: secondary}
+    information_at_time_of_actions: "Not yet determined; see tonkin-senior-knowledge (contested)."
+    alignment: not_determinable
+    alignment_note: "No public commitment was searched in primary text; not_determinable until the Public Papers are read."
+    motive_map: {possible: ["A resolution wanted for some time (Bundy memo), election year"], acted_on_evidence: [], weight: "none (P6)"}
+
+  - id: mcnamara
+    name: "Robert S. McNamara"
+    role_at_event: "Secretary of Defense"
+    statements:
+      - {date: "1964-08-03", venue: "phone call with Johnson", visibility: private,
+         text_quote: "...explain this Op Plan 34-A, these covert operations. There's no question but what that had bearing on.",
+         source: src-lbj-tapes-transcripts, claim: tonkin-mcnamara-34a-testimony, anchor_checked: secondary}
+      - {date: "1964-08-04", venue: "phone call with Johnson, 9:43 a.m. EDT", visibility: private,
+         text_quote: "...this ship is allegedly uh to be attacked tonight",
+         source: src-lbj-tapes-transcripts, claim: tonkin-mcnamara-aug4-call, anchor_checked: secondary}
+      - {date: "1964-08-06", venue: "Senate executive session", visibility: "public later (published 1988)",
+         text_quote: "Our Navy played absolutely no part in, was not aware of, any South Vietnamese actions, if there were any.",
+         source: src-nsarchive-essay-2004, claim: tonkin-mcnamara-34a-testimony, anchor_checked: secondary}
+    commitments: []
+    commitments_searched: "No dated, specific commitment about the Resolution or 34-A found in what was read."
+    actions: []
+    actions_searched: "No vote (executive branch). Orders and testimony appear under statements. FRUS vol. I not yet read."
+    information_at_time_of_statements: >
+      On 3 August he had told Johnson 34-A 'had bearing on' the Maddox engagement; on 6 August he told senators the Navy
+      was not aware of South Vietnamese actions. Both sourced; the 6 August wording is quoted by Prados, committee volume unread.
+    alignment: not_determinable
+    alignment_note: >
+      The private (3 Aug) and testimony (6 Aug) statements differ on 34-A. The record read does not show whether he meant
+      different things (for example the Navy versus the wider operation) or contradicted himself. Public and private are kept separate (P4).
+    motive_map: {possible: [], acted_on_evidence: [], weight: "none (P6)"}
+
+  - id: bundy
+    name: "McGeorge Bundy"
+    role_at_event: "National Security Adviser"
+    statements:
+      - {date: "1964-08-05", venue: "White House staff meeting, 8 a.m. (attendee's memorandum)", visibility: private,
+         text_quote: "On the second one the amount of evidence we have today is less than we had yesterday ... This much seemed certain: There was an attack.",
+         source: src-bundy-memo-1964, claim: tonkin-senior-doubts-documented, anchor_checked: primary}
+      - {date: "1964-08-05", venue: "same meeting", visibility: private,
+         text_quote: "he welcomed the recent events as justification for a resolution the Administration had wanted for some time",
+         source: src-bundy-memo-1964, claim: tonkin-bundy-welcomed-resolution, anchor_checked: primary}
+    commitments: []
+    commitments_searched: "Nothing dated and specific about the vote itself found in what was read."
+    actions: []
+    actions_searched: "Executive branch; no vote. CIA cover note of 8 August 1964 sent to him (Prados) is a receipt, not an action."
+    information_at_time_of_statements: "Stated himself that the evidence was 'less than we had yesterday' and doubts were 'still somewhat uncertain'."
+    alignment: no_specific_commitment
+    motive_map:
+      possible: ["Wanted a resolution 'for some time' (own recorded words)"]
+      acted_on_evidence: ["His own recorded remark welcomes the events as justification. It shows opportunism toward the resolution; it does not show he believed no attack occurred (same memo: 'There was an attack')."]
+      weight: "none (P6): the remark is filed as a statement (claim tonkin-bundy-welcomed-resolution), not as motive-based proof"
+    memo_authorship_note: "Author of the memo named by Prados as William Y. Smith; the OCR of the scan does not show the author line."
+
+  - id: morse
+    name: "Wayne Morse (D-OR)"
+    role_at_event: "US Senator"
+    statements: []
+    statements_searched: "No statement read in this dig. NEXT: Congressional Record, Senate debate 6-7 August 1964 (govinfo)."
+    commitments: []
+    actions:
+      - {date: "1964-08-07", kind: vote, what: "Voted nay on H.J.Res. 1145 (Senate roll call 481, 88-2)",
+         source: "https://voteview.com/rollcall/RS0880481", anchor_checked: secondary,
+         note: "Voteview member file; official Senate record and Congressional Record not yet read."}
+    information_at_time_of_actions: "Not determined. Prados notes Senate committee executive sessions on 6 August; their content and who attended were not read."
+    alignment: not_determinable
+
+  - id: gruening
+    name: "Ernest Gruening (D-AK)"
+    role_at_event: "US Senator"
+    statements: []
+    statements_searched: "No statement read in this dig. NEXT: as for Morse."
+    commitments: []
+    actions:
+      - {date: "1964-08-07", kind: vote, what: "Voted nay on H.J.Res. 1145 (Senate roll call 481, 88-2)",
+         source: "https://voteview.com/rollcall/RS0880481", anchor_checked: secondary}
+    information_at_time_of_actions: "Not determined."
+    alignment: not_determinable
+
+# Collective actor: Congress as a body. The 88 senators and 416 representatives who voted yea are
+# not profiled; the pilot method (P1-P8) would be run on named members only after a neutral selection rule.
+bodies:
+  - id: congress-88
+    what: "House 416-0 (roll 197), Senate 88-2 (roll 481), 7 Aug 1964"
+    source: ["https://voteview.com/rollcall/RH0880197", "https://voteview.com/rollcall/RS0880481"]
+    note: "What members knew when voting is the open question (P8). Tied to tonkin-senior-knowledge (contested)."
