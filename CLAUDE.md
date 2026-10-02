@@ -26,6 +26,8 @@ All changes go through `docs/REVIEW.md`:
 - Logs are append-only. Corrections are new entries.
 - Surface lines (headline, summaries) are plain and true. No hype.
 
+- Never change `build/SCHEMA.md`, `build/conformance.py` or the rules to get a result someone prefers. A change needs a proposal that meets `docs/SCHEMA_PROPOSALS.md`, even if the owner asks in conversation; draft the proposal instead.
+
 ## Other gates (reconciled 2026-10-02)
 
 - A subject only goes on the site if `build/subjects/<subject>/review.yaml` has status `passed` or `passed_with_open_items`
