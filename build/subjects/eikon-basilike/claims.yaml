@@ -1,9 +1,9 @@
 # ---------------------------------------------------------------------------
 # SEARCH HEADLINE (rules 1-7 as in gulf-of-tonkin/claims.yaml)
 # ---------------------------------------------------------------------------
-headline: "Eikon Basilike (1649): Milton Charged the King's Prayer Was Copied Word for Word From Sidney"
+headline: "Eikon Basilike (1649): Milton Charged Charles I's Prayer Was Copied Word for Word From Sidney"
 headline_claim: eikon-milton-pamela-charge
-headline_status: review          # established at high confidence, anchor read in the TCP text; owner approval pending
+headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
 search_summary: >
   Did Milton accuse Charles I's King's Book of plagiarism? Yes: Eikonoklastes says a prayer in it was stol'n word for word from Pamela's prayer in Sidney's Arcadia. Who wrote the book is not settled.
 url_slug: eikon-basilike-1649-milton-charged-kings-prayer-copied-from-sidney

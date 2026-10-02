@@ -34,9 +34,12 @@ def page(title, body, desc="", canonical="", extra_head="", depth=0):
     nav = (f'<nav><a class="b" href="{up}">{E(CFG["name"])}</a><a href="{up}digs/">Digs</a><a href="{up}method/">Method</a>'
            f'<a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
     meta = f'<meta name="description" content="{E(desc)}">' if desc else ""
+    og = (f'<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">'
+          f'<meta property="og:type" content="article"><meta property="og:site_name" content="{E(CFG["name"])}">'
+          + (f'<meta property="og:url" content="https://{CFG["domain"]}{canonical}">' if canonical else ""))
     can = f'<link rel="canonical" href="https://{CFG["domain"]}{canonical}">' if canonical else ""
     return (f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{E(title)}</title>{meta}{can}{extra_head}<link rel="preconnect" href="https://fonts.googleapis.com">'
+            f'<title>{E(title)}{"" if title.startswith(CFG["name"]) or len(title) > 70 else " | " + E(CFG["name"])}</title>{meta}{can}{og}{extra_head}<link rel="preconnect" href="https://fonts.googleapis.com">'
             f'<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=IBM+Plex+Mono&display=swap" rel="stylesheet">'
             f'<style>{CSS}</style></head><body><div class="w">{nav}{body}'
             f'<footer>Built {TODAY} from YAML in the repository. <a href="{E(CFG["source_url"])}">Source</a> · '
@@ -75,7 +78,7 @@ for d in ("method", "bounties"):
     if os.path.isdir(os.path.join(ROOT, d)): shutil.copytree(os.path.join(ROOT, d), os.path.join(OUT, d))
 open(os.path.join(OUT, ".nojekyll"), "w").close()
 
-digs, corrections = [], []
+digs, corrections, urls = [], [], ["/", "/digs/", "/method/", "/corrections/", "/about/"]
 for sub in CFG["publish"]:
     base = os.path.join(ROOT, "build", "subjects", sub)
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
@@ -88,8 +91,11 @@ for sub in CFG["publish"]:
     mp = os.path.join(base, "sources", "MANIFEST.yaml")
     if os.path.exists(mp): srcs = yaml.safe_load(open(mp)).get("sources", [])
     has_tl = os.path.exists(os.path.join(base, "timeline.html"))
-    banner = ('<div class="banner"><b>Under review.</b> This page follows the project rules but its headline and findings are '
-              'not yet final. Open questions are listed with each claim.</div>' if status != "published" else "")
+    n = {}
+    for c in cl["claims"]: n[c.get("state")] = n.get(c.get("state"), 0) + 1
+    tally = ", ".join(f"{v} {k.replace('_', ' ')}" for k, v in sorted(n.items(), key=lambda kv: order.get(kv[0], 9)))
+    banner = (f'<div class="banner"><b>Open dig.</b> This question is still being worked. The headline finding is stated at the confidence shown below; '
+              f'not every source has been read in full, and each claim says which. Claims so far: {E(tally)}.</div>' if status != "published" else "")
     body = (f'<p class="eyebrow">Dig · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{banner}'
             f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>')
     if hc: body += f'<h2>The headline finding</h2>{claim_html(hc)}'
@@ -108,7 +114,9 @@ for sub in CFG["publish"]:
     body += f'<h2>The data</h2><p>These pages are generated from plain YAML: <a href="claims.yaml">claims.yaml</a>' + (' · <a href="MANIFEST.yaml">sources manifest</a>' if srcs else "") + '. If you can show a finding is wrong, <a href="' + E(CFG["issues_url"]) + '">challenge it</a>.</p>'
     summ = " ".join(str(cl.get("search_summary", "")).split())
     ld = '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": head, "description": summ,
-         "inLanguage": "en", "dateModified": TODAY, "publisher": {"@type": "Organization", "name": CFG["name"]}}).replace("</", "<\\/") + '</script>'
+         "inLanguage": "en", "dateModified": TODAY, "isAccessibleForFree": True, "url": f"https://{CFG['domain']}/digs/{slug}/",
+         "mainEntityOfPage": f"https://{CFG['domain']}/digs/{slug}/", "about": cl.get("title"),
+         "publisher": {"@type": "Organization", "name": CFG["name"], "url": f"https://{CFG['domain']}/"}}).replace("</", "<\\/") + '</script>'
     write(f"digs/{slug}/index.html", page(head, body, " ".join(str(cl.get("search_summary", "")).split()), f"/digs/{slug}/", ld, depth=2))
     shutil.copy(os.path.join(base, "claims.yaml"), os.path.join(OUT, "digs", slug, "claims.yaml"))
     if srcs: shutil.copy(mp, os.path.join(OUT, "digs", slug, "MANIFEST.yaml"))
@@ -117,6 +125,8 @@ for sub in CFG["publish"]:
         shutil.copy(os.path.join(base, "timeline.html"), os.path.join(OUT, "digs", slug, "timeline", "index.html"))
         shutil.copy(os.path.join(base, "timeline.yaml"), os.path.join(OUT, "digs", slug, "timeline", "timeline.yaml"))
     digs.append((slug, head, cl.get("search_summary", ""), status))
+    urls.append(f"/digs/{slug}/")
+    if has_tl: urls.append(f"/digs/{slug}/timeline/")
     lp = os.path.join(base, "log.yaml")
     if os.path.exists(lp):
         for e in yaml.safe_load(open(lp)).get("log", []):
@@ -125,9 +135,12 @@ for sub in CFG["publish"]:
                 corrections.append((str(e.get("date", "")), sub, slug, head, m.group(0).strip()))
 
 items = "".join(f'<li><a href="{E(s)}/"><b>{E(h)}</b></a><br><span class="small">{E(" ".join(str(sm).split()))}</span>'
-                f'{"" if st == "published" else " <span class=pill>under review</span>"}</li>' for s, h, sm, st in digs)
+                f'{"" if st == "published" else " <span class=pill>open dig</span>"}</li>' for s, h, sm, st in digs)
 write("digs/index.html", page("Digs", f'<p class="eyebrow">Digs</p><h1>What we have dug into</h1><p>Each dig files its claims with evidence, confidence and limits.</p><ul class="l">{items}</ul>', "Digs published on Stratah.", "/digs/", depth=1))
 crow = "".join(f'<li><span class="mono">{E(d)}</span> · <a href="../digs/{E(sl)}/">{E(h)}</a><br>{E(t)}</li>' for d, sub, sl, h, t in sorted(corrections, reverse=True)) or "<li>No corrections logged yet.</li>"
 write("corrections/index.html", page("Corrections", f'<p class="eyebrow">Corrections</p><h1>What we got wrong, and fixed</h1><p>Every correction made to a published dig is logged and stays visible. The logs are append-only: an entry is never deleted or rewritten, only added to.</p><ul class="l">{crow}</ul>', "Corrections to Stratah digs.", "/corrections/", depth=1))
 write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG["name"])}: {E(CFG["tagline"])}</h1><p>{E(" ".join(CFG["about"].split()))}</p><p>See the <a href="../method/">method</a> for the rules, and <a href="../corrections/">corrections</a> for what we have fixed.</p>', " ".join(CFG["about"].split())[:200], "/about/", depth=1))
+write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>https://{CFG['domain']}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls) + "</urlset>")
+write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: https://{CFG['domain']}/sitemap.xml\n")
+write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Digs\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open dig'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
 print(f"site built in {OUT}: {len(digs)} dig(s), {len(corrections)} correction note(s)")

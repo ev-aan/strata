@@ -17,9 +17,9 @@
 # headline_status values: draft | review | published | parked
 #   review = meets rules 2, 3 and 5; waiting for the owner to approve.
 # ---------------------------------------------------------------------------
-headline: "Gulf of Tonkin Incident: No Second Attack Happened on August 4, 1964, NSA's Own Study Found"
+headline: "Gulf of Tonkin Incident: The August 4, 1964 Attack Never Happened, NSA's Own Study Found"
 headline_claim: tonkin-aug4-attack-occurred
-headline_status: review          # meets the rules as of 2026-10-02; owner approval pending
+headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
 search_summary: >
   Did a second Gulf of Tonkin attack happen on August 4, 1964? No. NSA's own historian found it never happened, though the August 2 clash was real. What officials knew is still debated.
 
