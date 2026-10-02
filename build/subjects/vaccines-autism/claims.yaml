@@ -31,13 +31,21 @@ assessment:
     decision, not a scientific finding. Whether fever after vaccination can trigger regression
     in children with mitochondrial disease has not been tested in a controlled study. Two
     limits: no study can show an effect is exactly zero, and no large record-based study has yet
-    compared fully unvaccinated children with vaccinated ones. The reverse link is established:
-    rubella in pregnancy can cause autism, and the vaccine prevents it.
+    compared fully unvaccinated children with vaccinated ones. Studies of records are statistics:
+    they cannot prove a claim false, but they can show that no evidence supports it, so the
+    general claim "vaccines cause autism" is filed as unsupported, not as refuted. The reverse link is established:
+    rubella in pregnancy can cause autism, and the vaccine prevents it. What health bodies say
+    is shown separately because it is adoption, not evidence: the US Institute of Medicine
+    (2004) and the WHO's vaccine safety committee (December 2025) found no evidence of a causal
+    link; since
+    November 2025 the CDC's page has said the "no link" statement is not evidence-based, a
+    change the US Health Secretary said he ordered (va-cdc-page-2025).
   key_points:
     - "Two Danish cohorts (1,194,764 children) and studies in the UK and US found no more autism in children who got MMR."
-    - "The 1998 paper behind the scare was retracted in 2010; a court later found its ethics statement untrue."
-    - "Open: a 2007 compensation concession (a legal decision, not science) and an untested question on fever in mitochondrial disease."
+    - "Health bodies (adoption, not evidence): WHO's safety committee found no evidence of a causal link (2025); since Nov 2025 the CDC's page disputes the 'no link' statement."
+    - "The 1998 paper behind the scare was retracted. Open: a 2007 legal concession (not science) and an untested question on fever in mitochondrial disease."
   basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
+  # Key point 2 states institutional positions on the first screen by owner decision 2026-10-02 (log L-19). They are adoption, not basis.
   rated_claim: va-mmr-no-detectable-increase
   would_settle: >
     A large record-based study finding clearly more autism after vaccination; a controlled study of
@@ -112,7 +120,7 @@ short_answer:
         5,000 autism claims; the first three test cases were denied and the denials upheld on
         review (Federal Circuit opinions opened), and three more decided in March 2010 were not
         opened.
-      scale_sources: [src-poling-cnn-2008, src-bruesewitz, src-oap-decisions]
+      scale_sources: [src-poling-cnn-2008, src-bruesewitz, src-oap-decisions, src-cafc-cedillo-2010, src-cafc-hazlehurst-2010]
       what_it_is:
         - "A concession by the US government in one family's compensation claim: the program concluded her underlying illness was 'significantly aggravated' by vaccines (as reported by CNN)."
         - >
@@ -208,10 +216,9 @@ divergence_note: >
   measles, mumps and rubella cause autism, 13% of US adults said true, 68% false and 19%
   were unsure (Annenberg). Since November 2025 the gap has a new
   shape. The US health department's own CDC page now calls "vaccines do not cause autism"
-  not an evidence-based claim because studies have not ruled out the possibility, while the
-  WHO's safety committee (20 of 31 primary studies and all five meta-analyses found no
-  association; 11 studies suggested one, rated very low strength and high risk of bias), the
-  AAP and the large studies say there is no evidence of a link. Nothing in the evidence changed between those two dates; what changed was
+  not an evidence-based claim, while the WHO's safety committee (which found 20 of 31
+  primary studies showed no association and the other 11 of very low strength), the AAP and the
+  studies themselves find no evidence of a link. Nothing in the evidence changed between those two dates; what changed was
   adoption by an institution. Strata records both statements, and gives neither of them
   evidential weight. The real open edges are narrow: a very rare susceptible group cannot
   be excluded by population data, fever-related regression in mitochondrial disease is
@@ -486,9 +493,8 @@ claims:
       The paper's interpretation was retracted in 2004 and the paper itself in 2010, for
       different reasons, and the records problems were documented separately. In 2004, 10 of
       its 13 authors retracted its interpretation, saying no causal link was established
-      because the data were insufficient; a 2011 review describes the Lancet as admitting at the
-      same time that the paper had failed to disclose financial interests (the Lancet's own
-      statement was not read; the paper itself stayed in the journal). In February 2010, days after
+      because the data were insufficient, and, as described in a 2011 review, The Lancet said the
+      paper had failed to disclose financial interests (the paper itself stayed in the journal). In February 2010, days after
       the GMC's findings of fact of 28 January 2010, The Lancet retracted the whole paper; its
       editor said the statements in the paper were "utterly false". The notice's own wording was
       not read. Evidence that its diagnoses and onset dates did not match the children's records
@@ -1249,10 +1255,10 @@ claims:
         concerned speech delay, attention deficit disorder and the neurodevelopmental group
         [read; full text searched, all eight autism passages read]. Later, limiting to children
         seen at least twice, the autism relative risk "is no different than one" and was
-        replicated across case definitions [read]. Dr. Bernier (CDC), at pp. 255-256, asks
-        participants to treat the data as "embargoed" and "very highly protected" until a public
-        release at the ACIP meeting on 21-22 June 2000, weeks later (the meeting's chair
-        was Dr. Johnston): a request for confidentiality ahead of a planned
+        replicated across case definitions [read]. Dr. Bernier, answering a question about copies,
+        asks participants to treat the data
+        as "embargoed" and "very highly protected" until a public release at the ACIP meeting
+        on 21-22 June 2000, weeks later: a request for confidentiality ahead of a planned
         public release, which is what the transcript shows, not a decision to withhold [read].
         The study was published in 2003 with both phases: no consistent associations, and no
         significant increase for autism in any analysis [abstract].
@@ -1349,8 +1355,8 @@ claims:
     state: established
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      In late 2007 the US government conceded, in Hannah Poling's vaccine-compensation case, a
-      link between her vaccinations and her injury. CNN reports that the program "concluded"
+      In late 2007 the US government conceded, in one child's vaccine-compensation case (the Poling
+      case), a link between her vaccinations and her injury. CNN reports that the program "concluded"
       the vaccinations "significantly aggravated" an underlying illness (a mitochondrial
       disorder) that had predisposed her to symptoms of autism; NPR reports the government said
       it was possible the vaccines "may have exacerbated" the disorder. The two reports word it
@@ -1371,7 +1377,7 @@ claims:
         testimony (the family lawyer's account); CDC director Julie Gerberding said the
         government had made "absolutely no statement indicating that vaccines are a cause of
         autism" [read directly in round 3]. NPR (7 Mar 2008): lawyers for HHS "agreed to pay"
-        and "in its ruling, the government said it was possible that the vaccines Hannah received
+        and "in its ruling, the government said it was possible that the vaccines [the child] received
         may have exacerbated that disorder" [read directly in round 3]. The two reports therefore
         word the concession differently ("concluded ... significantly aggravated" versus
         "possible ... may have exacerbated"); the statement above gives both. The fuller wording
@@ -1423,7 +1429,7 @@ claims:
     evidence_class: primary_text
     confidence: moderate
     evidential_weight: 4   # of 5; capped while anchor_checked is secondary
-    anchor_checked: secondary   # Federal Circuit opinions 10-5004 and 09-5128 opened and the cited passages read, not read in full; the special masters' decisions and the second group not opened
+    anchor_checked: secondary   # decisions read through a fetch tool (the court CDN refused direct download)
     adoption_weight: 3   # of 5
     adoption_note: "Not measured."
     would_change_if: "a later decision reopens the theories on new evidence"
@@ -1509,10 +1515,8 @@ claims:
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Autism is not on the US Vaccine Injury Table. Encephalopathy or encephalitis within 5 to
-      15 days of a measles-containing vaccine is. No link between the Poling concession and the
-      Table is claimed: neither CNN nor NPR describes the concession as an encephalopathy (the
-      word appears only in wording attributed to Salon, not re-checked), and the Table in force
-      when it was decided was not read.
+      15 days of a measles-containing vaccine is. Whether the Poling concession fell under a
+      Table injury was not checked: the Table in force when it was decided was not read.
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5   # of 5
@@ -1546,8 +1550,8 @@ claims:
     state: established
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      Mark Geier, a co-author of papers reporting an association between thimerosal-containing
-      vaccines and autism (see va-thimerosal-no-detectable-increase), had his
+      Mark Geier, co-author of papers reporting an association (see
+      va-thimerosal-no-detectable-increase), had his
       Maryland medical licence revoked by the State Board of Physicians on 22 August 2012. The
       Board found, among other things, that he treated autistic children with the drug Lupron
       outside its approved use without adequate examination, started chelation without
