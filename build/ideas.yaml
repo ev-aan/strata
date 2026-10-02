@@ -54,3 +54,9 @@ ideas:
       Open questions, claims and next steps are published as a public list of work orders. Anyone can run their own AI agent on one, using the
       rules on the Start a dig page, and submit the result as a pull request. Every submission goes through the same checks as our own work: the
       validator, then a separate reviewer who re-opens the sources. A donated result carries no extra weight for coming from many agents or many people.
+  - id: frontier-map
+    title: A map of what is known and what is not (the frontier)
+    status: parked
+    summary: >
+      Every excavation already records what we looked for and could not settle, and what would settle it. Gathered in one place, those gaps show where
+      understanding runs out. Each gap would get a home: what is unknown, why, what has been tried, what kind of evidence would move it, and a way to take it on.
