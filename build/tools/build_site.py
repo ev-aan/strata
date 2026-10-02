@@ -54,6 +54,8 @@ def claim_html(c):
     st = c.get("state", "")
     an = c.get("anchor") or {}
     desc = an.get("description") if isinstance(an, dict) else ""
+    if not desc and isinstance(c.get("anchors"), list):          # claims written with `anchors:` (a list of {class, ref, source}) instead of `anchor:`
+        desc = "Anchors (as filed): " + "; ".join(f'{x.get("ref")} [{x.get("class", "")}{", " + x["source"] if x.get("source") else ""}]' for x in c["anchors"] if isinstance(x, dict))
     chk = c.get("anchor_checked")
     chk = "no" if chk is False else chk
     nxt = c.get("next_step")
