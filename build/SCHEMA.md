@@ -60,3 +60,13 @@ v0.1 above was drafted from CONTRIBUTING.md and the HTML bounty pages **before**
 
 **Consequence:** the ID question is largely answered by the live corpus: slugs with `subject:claim` references. Only the bounty pages use `C-01`.
 **Recommended v0.2 (needs the owner's main eight-rule validator and live schema to finish):** adopt the live corpus structure as the base; carry my extra fields (`confidence`, weights, `anchor_checked`, `would_change_if`, `next_step`, `divergence_note`, headline block) as additions only if the main validator accepts them; convert my threads to `members` with `attestation`; fold `positions` into my contested claims.
+
+---
+## Timelines (added 2026-10-02)
+
+`build/subjects/<subject>/timeline.yaml` holds events, people and sources for a subject where *who did what, and when* matters (live events, intelligence chains). `build/tools/render_timeline.py <path>` generates `timeline.html` beside it. The YAML is the source of truth.
+
+- `panels[]`: a time window with its own scale and `lanes` (one lane per actor or group).
+- `events[]`: `id`, `panel`, `lane`, `time` (UTC ISO), `precision` (exact | approx | range | day), optional `end`, `kind` (data | official | witness | media), `status` (reported | single | disputed | inferred), `sources[]`, `label`, `detail`; optional `alt_time` and `alt_note` to draw a second source's time for the same event.
+- `people[]` and `sources[]` list everyone and everything cited. Rules for people: name only officials and people the cited reports name who spoke publicly; never name an unidentified suspect.
+- Every `sources` reference must resolve; every event's lane must exist in its panel. A validator should check both.
