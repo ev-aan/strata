@@ -1,0 +1,35 @@
+subject: mcafee-and-surfside
+
+threads:
+
+  - id: thread-mcafee-surfside-link
+    type: reception-overlay
+    title: "'McAfee hid files in the building and it was destroyed'"
+    confers_weight: false   # T4: required for reception overlays
+    description: >
+      How the link reached the public: a screenshot of a tweet, an Instagram post, and posts claiming McAfee, or a claimed son, had a
+      unit in the building. It joins two real events one day apart with a fabricated item and a real 2019 statement about files.
+    overlay_notes:
+      - >
+        The dates are real: death on 23 June, collapse on 24 June (mcafee-surfside-dates-coincide). Their closeness carries no
+        evidential weight; the failure began earlier (surfside-failure-began-before-mcafee-death).
+      - >
+        "31TB" is real: McAfee tweeted on 9 June 2019 that he had 31+ terabytes of incriminating data on government corruption
+        (mcafee-31tb-2019-tweet). He did not say where. The fabricated image attached that figure to a Miami condo. A genuine
+        statement lends no weight to the fabricated one (mcafee-june8-tweet-posted).
+      - >
+        "He didn't kill himself" is the slogan of a doubt held by his widow and lawyer. It is recorded as doubt. The only forensic and
+        judicial findings read say suicide (mcafee-spanish-finding-suicide); no independent review was found
+        (mcafee-cause-independent-review). No evidence of homicide was located in what was read. A parallel with another case is a
+        parallel of rhetoric, not evidence.
+      - >
+        An Instagram post of a plain letter "Q" appeared minutes after news of his death and has been linked by fact-checkers to a
+        conspiracy movement; it is unclear who controlled the account (PolitiFact). It confers no weight on any claim.
+      - >
+        A claimed son with an office in the building: the sports analyst of that name said he has no condo in Florida (Snopes);
+        no record of such a son was found. This is part of the same fabricated chain.
+    firewall: >
+      This thread records reception. It is mechanically barred (confers_weight: false) from lending evidential weight to any claim.
+      A reader arriving with the story should be able to see which parts are documented (the dates; the 2019 tweet), which are
+      fabricated (the June 8 screenshot), which are unsupported (a unit owned, a deliberate collapse), and what remains unchecked (the
+      cause of death beyond the official finding).

@@ -1,0 +1,53 @@
+subject: dyatlov-pass
+dig_status: scoping          # no claims drafted yet; feasibility only
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+
+log:
+  - id: L-01
+    date: 2026-10-01
+    entry: >
+      TOPIC SELECTED: the 1959 Dyatlov Pass deaths. Nine hikers died in the northern
+      Urals on the night of 1-2 February 1959. The question: what physical event drove
+      them out of the tent, and does the evidence support or exclude each proposed cause
+      (slab avalanche; weapons test or other state involvement; other)?
+      Why this topic: it has a physical oracle, open sources, a documented official
+      investigation, and a dense popular overlay of conspiracy claims. It is also
+      independent of the Apollo and Tonkin digs (no shared government actor).
+  - id: L-02
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, ORACLE: yes, in part. A snow-slab avalanche mechanism has been
+      modelled physically (Gaume and Puzrin, Communications Earth & Environment, open
+      access, published 28 January 2021: a slab avalanche is "plausible"; it uses the
+      Material Point Method). A 2022 follow-up in the same journal reports expeditions
+      that found avalanches at the pass. Modelling shows plausibility, not proof; the
+      claim must be filed that way. V1 (search results agree); not yet read.
+  - id: L-03
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, SOURCES OPEN: mostly. (a) The two Nature journal papers are open access.
+      (b) An official copy of the 1959 criminal case was obtained from the State Archive of
+      the Sverdlovsk Region in 2012 and its digitized pages and translations are hosted at
+      dyatlovpass.com. That host is a private site, so anything cited from it is labelled
+      secondary until checked against the archive's own copy. (c) The 2019 Russian
+      prosecutor's reinvestigation concluded in 2020 that an avalanche was the most likely
+      cause (TASS, Moscow Times reports). V1. Russian-language originals have not been read.
+  - id: L-04
+    date: 2026-10-01
+    entry: >
+      FEASIBILITY, CAUTIONS (logged now so they are not lost): (1) the 1959 investigation
+      closed the case citing "an unknown compelling force", which is documentation of a
+      gap, not a finding about weapons or anything else; (2) several hikers' injuries
+      (chest and skull) are the main point critics raise against an avalanche, and the
+      2021 paper addressed them by modelling; whether that settles it needs the
+      pathology reports read in the original; (3) the conspiracy overlay (secret weapons
+      test, radiation traces, other) must go in threads.yaml with confers_weight false and
+      each item mapped to the claim it touches.
+  - id: L-05
+    date: 2026-10-01
+    entry: >
+      NEXT STEPS (not started): write the test down before collecting anything (what each
+      possible result would and would not show); read both open-access papers directly;
+      pull the pathology and tent-inspection protocols from the case file and check each
+      against the archive's copy; then draft claims. Blocked on source access for the
+      Nature papers and the case-file host until the network allowlist is widened.

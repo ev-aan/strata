@@ -1,0 +1,133 @@
+subject: {id: congress-promise-vote, title: "Promise, vote and outcome: H.R. 3746 (Fiscal Responsibility Act, 2023), two members"}
+dig_status: pilot_draft
+note: >
+  Pilot of the politics standard (SCHEMA.md P1-P11). Members were chosen by the pre-registered rule (log L-06, L-07)
+  and are unusual by construction: each voted against their party's majority. The page records documented facts only.
+  Motive and sincerity are not assessed.
+divergence_note: >
+  Added 2026-10-02 (log L-09). No measurable gap yet. Both votes are anchored to the
+  official roll call and neither is disputed, so evidence and adoption agree on what
+  happened. The open questions (pre-vote commitments, any inducement) have no
+  evidential answer yet and no measured public belief either. A gap will only be
+  shown once a public claim about either member's reasons is found and measured.
+claims:
+  - id: pv-house-passed-hr3746
+    state: established
+    statement: "The House passed H.R. 3746, the Fiscal Responsibility Act, on 31 May 2023, 314 to 117 (Democrats 165-46, Republicans 149-71)."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 5
+    anchor_checked: primary
+    adoption_weight: 5
+    adoption_note: "Not disputed."
+    would_change_if: "the official roll call being corrected or shown not to be authentic"
+    anchor: {type: official-roll-call, ref: src-roll-243, description: "Clerk XML read: 'On Passage', result Passed, 9:21 PM, 31-May-2023."}
+  - id: pv-enacted
+    state: established
+    statement: "H.R. 3746 passed the Senate on 1 June 2023 and was approved on 3 June 2023 as Public Law 118-5."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4
+    anchor_checked: primary
+    adoption_weight: 5
+    adoption_note: "Not disputed."
+    would_change_if: "the statute's legislative-history note being shown wrong"
+    next_step: "Read the Senate roll call to anchor the Senate vote itself."
+    anchor: {type: statute, ref: src-plaw-118-5, description: "Slip law read: 'Approved June 3, 2023'; legislative history: 'May 31, considered and passed House. June 1, considered and passed Senate.'"}
+  - id: pv-barragan-voted-no
+    state: established
+    statement: "Rep. Nanette Barragan (D-CA, B001300) voted No on H.R. 3746 on 31 May 2023, against a Democratic majority of 165 Yea to 46 Nay."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 5
+    anchor_checked: primary
+    adoption_weight: 5
+    adoption_note: "Not disputed."
+    would_change_if: "the official roll call being corrected"
+    anchor: {type: official-roll-call, ref: src-roll-243}
+  - id: pv-alford-voted-no
+    state: established
+    statement: "Rep. Mark Alford (R-MO, A000379) voted No on H.R. 3746 on 31 May 2023, against a Republican majority of 149 Yea to 71 Nay."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 5
+    anchor_checked: primary
+    adoption_weight: 5
+    adoption_note: "Not disputed."
+    would_change_if: "the official roll call being corrected"
+    anchor: {type: official-roll-call, ref: src-roll-243}
+  - id: pv-barragan-stated-reasons
+    state: established
+    statement: >
+      On 1 June 2023 Barragan's office released a statement giving her reasons for voting No: it "sets a dangerous precedent
+      for future negotiations", weakens environmental protections (NEPA changes and the Mountain Valley Pipeline), freezes
+      federal investments for two years, and changes SNAP. It also said "President Biden did the best he could".
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4
+    anchor_checked: primary
+    adoption_weight: 3
+    adoption_note: "Not measured."
+    would_change_if: "an earlier or fuller statement of her reasons"
+    anchor: {type: press-release, ref: src-barragan-statement, description: "Read in full (raw page text) from barragan.house.gov, dated 1 June 2023."}
+    checks_of_her_factual_claims:
+      - {claim: "The bill changes NEPA", result: "supported: Sec. 321 amends the National Environmental Policy Act of 1969 (Public Law text read)"}
+      - {claim: "The bill approves the Mountain Valley Pipeline", result: "supported in part: Sec. 324 is titled 'Expediting completion of the Mountain Valley Pipeline' and contains congressional findings and approvals; legal effect not analysed"}
+      - {claim: "Funding freezes for two years without inflation", result: "not checked (discretionary caps for FY2024-25 are in Division A; not analysed)"}
+      - {claim: "SNAP changes", result: "not checked beyond the table of contents"}
+  - id: pv-alford-stated-reasons
+    state: established
+    statement: >
+      In his 1 June 2023 e-newsletter Alford gave four reasons for voting No: the 1 percent cap on FY2025 military spending
+      "operates as a cut"; a "two-year extension of $4 trillion or 13%" against the one-year, $1.5 trillion House Republican
+      position; the administrative pay-as-you-go measure is not enforceable because of a waiver; and "I swore to Missourians
+      that I would fight to get rid of the new 87,000 IRS agents", and the bill "only cuts $1.4 billion of the $80 billion".
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4
+    anchor_checked: primary
+    adoption_weight: 3
+    adoption_note: "Not measured."
+    would_change_if: "an earlier or fuller statement of his reasons"
+    anchor: {type: official-newsletter, ref: src-alford-newsletter, description: "Read in full (raw page text) from alford.house.gov; header 'June 1st', year inferred."}
+    checks_of_his_factual_claims:
+      - {claim: "The bill cuts only $1.4 billion for IRS", result: "supported: Sec. 251 rescinds $1,389,525,000 of unobligated IRA funds for the IRS"}
+      - {claim: "Total allocated is $80 billion; 87,000 agents", result: "not checked here"}
+      - {claim: "OMB Director can waive pay-go if 'necessary for the agency to carry out it's programs'", result: "partly supported: Sec. 265 allows a waiver, but its wording is 'necessary for the delivery of essential services' or 'necessary for effective program delivery'. His quoted phrase does not appear in the enacted text read; it may come from a different version of the bill. Unresolved."}
+      - {claim: "A two-year extension of $4 trillion or 13%", result: "partly checked: Sec. 401 suspends the debt limit until 1 January 2025 (about 19 months from 3 June 2023), as a date, not a dollar amount; the $4 trillion figure was not checked"}
+  - id: pv-barragan-prevote-commitment
+    state: searched_gap
+    statement: "A dated, specific public commitment by Barragan on how she would vote on a debt-limit deal before 31 May 2023 was not found."
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 1
+    anchor_checked: no
+    adoption_weight: 1
+    adoption_note: Not measured.
+    would_change_if: "a dated, attributable pre-vote statement by Barragan on the debt-limit deal is found (closes the gap)"
+    next_step: "Search the Congressional Record and her floor remarks and social posts, 1 Apr to 31 May 2023; browser needed for congress.gov and archived posts."
+    searched: "Her official site search for 'debt ceiling' (no relevant hits), and two web searches. This is thin."
+  - id: pv-alford-promise-undated
+    state: proposed
+    statement: >
+      Alford states that before taking office he "swore to Missourians" he would fight to get rid of the new IRS agents.
+      The original pledge (date, venue, wording) has not been found; the only record read is his own later statement.
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 2
+    anchor_checked: secondary
+    adoption_weight: 1
+    adoption_note: Not measured.
+    would_change_if: "the original 2022 pledge is found with date and wording (raises it), or a search of his archived campaign material finds no such pledge (lowers it)"
+    next_step: "Find the 2022 campaign pledge, website text or debate remarks (archived campaign site, local news)."
+  - id: pv-inducement-both
+    state: searched_gap
+    statement: "No documented pressure or payment (P9 tiers) connecting either member's vote to a third party has been searched for yet; none is claimed."
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 1
+    anchor_checked: no
+    adoption_weight: 1
+    adoption_note: Not measured. No public claim of inducement for either member was found to measure.
+    would_change_if: "a decisive-tier item (P9) is found for either member, or the named searches are run and recorded as not found"
+    next_step: "FEC filings and House financial-disclosure reports for each member, 2022-2023; lobbying filings on H.R. 3746. Timing alone would be context only (P9)."

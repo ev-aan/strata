@@ -1,0 +1,102 @@
+# THREAD OBJECTS — cross-dig synthesis primitive (prototype)
+#
+# A thread connects claims ACROSS subjects. It is an authoring/synthesis act, so it is
+# kept mechanically firewalled from evidential weight by two rules the validator enforces:
+#
+#   RULE T1 (no-orphan):   every member must reference a real claim id (subject:claim-id).
+#   RULE T2 (firewall):    a thread id may NEVER appear in any claim's `anchors`.
+#                          Synthesis cannot be cited as evidence FOR a claim. This is the
+#                          mechanical defeat of "narrative connection smuggled in as proof."
+#   RULE T3 (weakest-node): a morphology thread must tag each member's attestation
+#                          (preserved | reconstructed | inferred). The thread is only as
+#                          strong as its weakest-attested node, and the validator surfaces
+#                          that node so a reconstruction can't masquerade as universal.
+#   RULE T4 (overlay):     a reception-overlay thread must set confers_weight: false and
+#                          may contain only contested/interpretive members.
+#
+# TYPES instantiated here (only those THIS dig actually required — earned, not pre-installed):
+#   morphology         — a shared structural motif across texts (Campbell-adjacent, but
+#                        disciplined by per-node attestation).
+#   reception-overlay  — a frame imposed by MODERN reception, a property of how the texts
+#                        were read, never of the texts. Carries zero evidential weight.
+
+threads:
+
+  - id: thread-flood-transmission
+    type: morphology
+    title: "The flood narrative across the Mesopotamian tradition"
+    confers_weight: false
+    description: >
+      The same flood narrative recurs and morphs across three compositions of different
+      language and date: the Sumerian Flood Story (Ziusudra), Atra-ḫasīs (Atra-ḫasīs),
+      and Gilgamesh XI (Utnapishtim). The hero is one figure under three names; the boat,
+      the seven-day storm, the bird/return-of-light, the sacrifice, and the grant of
+      eternal life recur. Direction of transmission is a separate, partly interpretive question.
+    members:
+      - claim: "sumerian-flood-story:sfs-narrative"
+        attestation: preserved
+      - claim: "sumerian-flood-story:sfs-ziusudra"
+        attestation: preserved
+      - claim: "atra-hasis:ah-narrative"
+        attestation: preserved
+      - claim: "atra-hasis:ah-gilgamesh-dependency"
+        attestation: preserved
+      - claim: "gilgamesh:tablet-xi-flood"   # NOTE: id to reconcile with seed corpus
+        attestation: preserved
+
+  - id: thread-noise-then-flood
+    type: morphology
+    title: "Human 'noise' as the trigger for divine destruction"
+    confers_weight: false
+    description: >
+      In Atra-ḫasīs the gods send the flood because human overpopulation and 'noise'
+      rob Enlil of sleep. The same motif is commonly read into the Sumerian Flood Story —
+      but there the flood's cause sits in a lacuna and is RECONSTRUCTED, not preserved.
+      This thread exists partly to make that asymmetry visible rather than to assert a
+      seamless shared motif.
+    members:
+      - claim: "atra-hasis:ah-narrative"
+        attestation: preserved
+      - claim: "sumerian-flood-story:sfs-flood-cause"
+        attestation: reconstructed
+    # weakest node here is 'reconstructed' — the validator will surface it, so this
+    # connection is honestly presented as "attested once, inferred once."
+
+  - id: thread-humanity-from-divine-substance
+    type: morphology
+    title: "Humanity fashioned from divine substance"
+    confers_weight: false
+    description: >
+      Across creation accounts, humanity is made from a divine or earthen substance to
+      serve the gods: from the blood of slain Kingu (Enūma Eliš), from clay mixed with a
+      slain god's blood (Atra-ḫasīs), and as the fashioned 'black-headed people'
+      (Sumerian Flood Story). This is the one motif that legitimately spans the creation
+      text AND the flood texts — Enūma Eliš belongs here but NOT in the flood threads above.
+    members:
+      - claim: "enuma-elish:ee-narrative"
+        attestation: preserved
+      - claim: "atra-hasis:ah-narrative"
+        attestation: preserved
+      - claim: "sumerian-flood-story:sfs-narrative"
+        attestation: preserved
+
+  - id: thread-biblical-genesis-reception
+    type: reception-overlay
+    title: "The biblical-Genesis frame imposed at modern rediscovery"
+    confers_weight: false
+    description: >
+      Each text was absorbed into a biblical-comparison frame at the moment of its modern
+      reception: Enūma Eliš as 'Chaldean Genesis' / Gen 1 parallel, Atra-ḫasīs via Smith's
+      'Chaldean Account of Genesis', and the Sumerian Flood Story via the very name
+      'Eridu Genesis' (Jacobsen 1981). This is a property of 19th–20th c. reading, often
+      entangled with expeditions funded to corroborate scripture. It is the single
+      adoption-weight overlay this corpus most exists to keep from masquerading as
+      evidential weight. confers_weight is false and the firewall rule bars it from being
+      cited as support for any claim.
+    members:
+      - claim: "enuma-elish:ee-genesis-parallel"
+        attestation: interpretive
+      - claim: "atra-hasis:ah-genesis-frame"
+        attestation: interpretive
+      - claim: "sumerian-flood-story:sfs-genesis-frame"
+        attestation: interpretive

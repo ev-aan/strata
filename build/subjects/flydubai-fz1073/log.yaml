@@ -1,0 +1,248 @@
+subject: flydubai-fz1073
+dig_status: scoping          # no claims drafted; live event, facts still changing
+event_status: live           # an investigation is open; reports are being revised
+as_of: 2026-10-02
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+# GUARDRAILS FOR THIS DIG (set before any claim is written):
+#  - A captain was seriously wounded, passengers were endangered, and a suspect is in custody and
+#    unidentified by authorities. We do not name the suspect, do not speculate about his religion,
+#    ethnicity or beliefs, and do not treat an accusation as a finding.
+#  - "Manufactured" is a claim to be TESTED. It must say who manufactured what, how, and what
+#    evidence would show it. A discrepancy in reporting is not evidence of fabrication; it is a
+#    discrepancy to be resolved.
+#  - Early reporting on a live event is often wrong. Every fact is logged with its source and time,
+#    and later changes are new entries.
+
+log:
+  - id: L-01
+    date: 2026-10-02
+    entry: >
+      TOPIC OPENED by the owner: the Flydubai flight FZ1073 incident (Dubai to Tel Aviv, Wednesday
+      30 September 2026). The owner's two observations: (1) the pilot is reported to be an Omani
+      national although, as the owner understands it, Omanis are not allowed into Israel; (2) the
+      timing "seems too convenient". The owner's overall impression is that something looks
+      inconsistent and manufactured. Scoping only. All facts below are secondary reporting
+      (news and aviation sites) unless stated; no investigation report exists yet.
+  - id: L-02
+    date: 2026-10-02
+    entry: >
+      WHAT IS REPORTED, WITH SOURCES (secondary): Flight FZ1073, a Boeing 737 MAX 8 (registration
+      A6-FKF), left Dubai for Tel Aviv. About two and a half hours into the flight the aircraft
+      lost altitude and turned north; squawk 7700 (general emergency) at 05:31 UTC and 7500
+      (unlawful interference) at 05:38 UTC per Flightradar24, as reported by AirLive, MiGFlug, Al
+      Jazeera; Israeli fighters were scrambled. A fight occurred in the cockpit; the captain, an
+      Indian national, was stabbed and seriously wounded; the first officer is the suspect. Passengers
+      and cabin crew entered the cockpit; two off-duty pilots among the passengers helped bring the
+      aircraft down. It landed at Tabuk, Saudi Arabia. Saudi Arabia's interior ministry said
+      preliminary investigations, with a UAE security team, "revealed an assault on the captain by
+      the co-pilot, resulting in various injuries to both". Both men left for Abu Dhabi on
+      1 October with an Emirati security team. About 174 people were on board. Sources read:
+      CNN (30 Sep, updated 1 Oct); CNN live blog (1 Oct); NPR; Al Jazeera; AirLive; MiGFlug;
+      AeroCorner; ThePrint; RTE. The Times of Israel and Haaretz were not readable (HTTP 403 /
+      paywall).
+  - id: L-03
+    date: 2026-10-02
+    entry: >
+      DISCREPANCIES IN THE NUMBERS (not yet resolved). (a) Takeoff time: Flightradar24-based
+      reports (AirLive, MiGFlug, AeroCorner timeline) say 03:05 UTC, which is just after 7 a.m. in
+      Dubai; CNN says "6:05 a.m. local time (10:05 p.m. ET)", which corresponds to 02:05 UTC if
+      "local" is Dubai. CNN's later times (distress call 8:31 a.m., touchdown 9:54 a.m.) fit
+      UTC+3 and the Flightradar24 times, so CNN's departure time and its ET conversion appear to be an
+      error or a mix of time zones. (b) The drop: CNN says 17,400 ft in just under two minutes;
+      Flightradar24 as quoted by Al Jazeera and Reuters says about 14,000 ft in under 30 seconds
+      (30,875 ft to 16,750 ft); another outlet says about 34,000 ft to about 19,000 ft in about
+      90 seconds. These can all be true for different start and end points and different time
+      windows, but only the raw altitude track can say. (c) Landing: CNN 9:54 a.m. (UTC+3 is
+      06:54 UTC); MiGFlug "between about 06:45 and 07:00 UTC". These agree within the stated range.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      OBSERVATION 1, THE OMANI NATIONALITY. What the reports say. Israel's Prime Minister said the
+      suspect is an Omani national (CNN; Bloomberg headline). CNN's own report notes that Oman and
+      Israel have no diplomatic relations and that "it is not yet clear how the Omani pilot would
+      have obtained clearance to fly to Israel". An Israeli official told CNN one of the main questions
+      being investigated is why the crew included a pilot from a country with which Israel has no
+      diplomatic relations. Reports citing an Israeli Transportation Ministry source (via the
+      Jerusalem Post, quoted by ThePrint) say Flydubai's agreement to operate in Israel requires
+      pilots on the route to come from states that have normalised relations with Israel, and call
+      the presence of an Omani pilot "a clear breach"; reports differ on whether that clause is in
+      Flydubai's own agreement or the UAE-Israel agreement. CNN quotes an Israeli security official that
+      Shin Bet is supposed to vet all airline personnel flying in from the UAE; another account says
+      in practice no Israeli agency vets foreign crew, and that one possibility under examination is
+      dual citizenship with a second passport from a country with relations (V0-V1, via search
+      summaries; to verify). An Omani official reportedly confirmed to CBS that the man was born in
+      Oman and holds Omani citizenship (search summary; not read). Oman had not commented in the
+      reports read. Israel's transport minister demanded Flydubai's Israel flights be suspended;
+      Flydubai suspended them.
+      READING: the owner's point is real and is already a question asked by Israeli officials and
+      reporters. A reported breach of a crew-nationality rule is evidence of a vetting or rostering
+      failure, or of a rule not applied as described. It does not by itself show the event was
+      arranged: it fits at least five explanations (vetting failure; dual nationality; the rule not
+      covering crew in the way reported; a roster change; deliberate placement). What would tell them
+      apart: the text of the agreement and its crew clause; the airline's roster records and who
+      assigned the first officer to this flight; the first officer's passports and prior routes;
+      Shin Bet vetting records; the Israeli civil aviation authority's inquiry.
+  - id: L-05
+    date: 2026-10-02
+    entry: >
+      OBSERVATION 2, "THE TIMING IS TOO CONVENIENT": NOT YET TESTABLE AS STATED. A claim of
+      convenient timing needs a beneficiary, an outcome and a mechanism. Neither is stated yet.
+      Questions put to the owner: convenient for whom, and for what? Candidate readings, listed so
+      each can be checked and none is assumed: (i) the event came 7 days before the third
+      anniversary of 7 October; (ii) the period around an Israeli election (date to be verified; the
+      scheduled date is believed to be 27 October 2026, V0); (iii) the ongoing regional conflict
+      (reports in the sources of Israeli strikes on Iran and of Iranian strikes affecting Oman, V0;
+      leads only); (iv) consequences already visible: Flydubai suspended Israel flights; Israel's
+      transport minister asked for an inquiry into the UAE agreement; the investigation is being run
+      jointly by Israel and the UAE (Herzog). METHOD: a convenience claim must name a prediction that
+      chance would not make, and must be compared with how often events of any kind fall near
+      some significant date (almost every date is near something). Without that comparison it
+      cannot be filed as evidence.
+  - id: L-06
+    date: 2026-10-02
+    entry: >
+      OTHER OPEN POINTS ON THE RECORD (not the owner's, logged because they bear on consistency).
+      (1) The two pilots who flew the plane down: Israel's Prime Minister said another air crew;
+      Flydubai said "on-duty Flydubai crew travelling on the flight"; CNN reports "reserve pilots" and
+      says their details have not been shared; MiGFlug says two off-duty pilots travelling as
+      passengers. A CNN aviation analyst called extra pilots on a flight "fairly unusual" unless
+      being repositioned. Their identities and why they were aboard are unconfirmed. (2) The weapon:
+      Israel's Prime Minister suggested a knife or an axe; Saudi and UAE statements read do not
+      say. (3) Motive: Israel's Prime Minister said the suspect "underwent Islamist radical
+      indoctrination" and, to another interviewer, that it was too early to declare a motive; the
+      US President said an Iran link was likely "based on what I'm hearing" but gave no detail;
+      Flydubai said the motive is unknown and asked for no premature speculation; the UAE says it is
+      investigating whether the violence was linked to terrorism. (4) Early Israeli reporting said a
+      hijacking was ruled out, then the event was treated as a terror incident. (5) Rumours about
+      the crew's nationality circulated and were checked by Snopes (not read yet).
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      WHAT WOULD SETTLE WHAT. Raw flight data (ADS-B tracks with altitude, speed and squawk by
+      timestamp) would settle the drop numbers and the timeline. The flight data and cockpit voice
+      recorders (UAE civil aviation investigators) would settle what happened in the cockpit. The
+      agreement text and the roster would settle the crew-nationality question. Witness accounts are
+      numerous and independent of each other (many passengers, Israelis and others; two Australians;
+      four US-Israeli dual citizens), which is itself evidence about what happened on board,
+      separate from any government statement.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      NEXT STEPS (not started): obtain raw ADS-B data for A6-FKF on 30 September and extract
+      altitude, time and squawk; read the Saudi interior ministry statement in full; read the
+      Snopes check; find the text of the UAE-Israel air services agreement and any crew clause; read
+      Israeli civil aviation authority statements; track the UAE investigation; ask the owner what
+      "convenient" means. Hold all claims until then. Re-check every fact against later reports and
+      log changes as new entries.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      TIMELINE DIAGRAM ADDED at the owner's suggestion (a timeline with all people involved helps on
+      cases like this). Data: timeline.yaml (26 events, 18 people and bodies, 8 sources, each event
+      with a kind of source and a status). Diagram: timeline.html, generated by
+      build/tools/render_timeline.py; never edited by hand. Panel A is the flight in UTC with a second
+      axis in Dubai time; Panel B is the statements and actions of 30 September to 1 October. The
+      one-hour takeoff discrepancy is drawn as a "ghost" marker at CNN's implied time. Events whose time
+      is not reported are drawn hollow and marked as inference. Where an event time was inferred,
+      the table says so. The suspect is not named; named people are officials and those who spoke
+      publicly. CAUTION: the diagram records what is reported and where reports differ. It is not a
+      finding.
+  - id: L-10
+    date: 2026-10-02
+    entry: >
+      OWNER'S TIMING HYPOTHESIS, NOW STATED: the timing is "convenient" because of an upcoming election in
+      Israel. FACTS (secondary; Al Jazeera and other reports): Israel's Knesset election is scheduled for
+      27 October 2026, 27 days after the flight; 38 candidate lists were submitted; reported polls on
+      23 September showed Netanyahu leading preference polls among named leaders and no party likely to win a
+      majority; one report says it is the first Knesset election held on schedule rather than early
+      since 1988. The flight was 7 days before the third anniversary of 7 October. Whether any of this
+      is more than coincidence is what a test must say.
+  - id: L-11
+    date: 2026-10-02
+    entry: >
+      TWO DIFFERENT CLAIMS MUST NOT BE MIXED. (A) The event was manufactured or staged. (B) A real
+      event is being used politically, in its timing or its framing. (B) is ordinary politics and can be
+      shown from public statements; (A) is an extraordinary allegation about a real attack with a
+      seriously wounded captain and about 174 people at risk. Variants of (A) and who would have had to
+      take part, drawn from the reporting: (A1) staged entirely: the captain (Indian national, wounded,
+      Saudi hospital, surgery), the first officer (in custody), two off-duty pilots, cabin crew, about 174
+      passengers of several nationalities including two Australians and four US-Israeli dual citizens,
+      Flydubai (a UAE company), Saudi authorities (whose interior ministry reported an assault and
+      injuries with a UAE team present) and UAE authorities, plus the trackers' data (two independent trackers
+      recorded the dive and the squawk codes). (A2) a real attack deliberately allowed or arranged (a
+      vetting failure by design): would require the vetting and rostering records, not yet seen.
+      (A3) a real attack with a real vetting failure, later politically exploited. (A4) a real attack and a
+      coincidence in timing. The independence of the sources matters: Saudi Arabia, the UAE, Flydubai,
+      Indian and Australian officials, and two independent aviation trackers are not the Israeli
+      government. A claim that the event was staged by Israeli actors would need to explain why those
+      independent parties' records agree with it. This is a statement about what the allegation requires,
+      not a finding.
+  - id: L-12
+    date: 2026-10-02
+    entry: >
+      TESTS THAT COULD SEPARATE THEM, defined before looking: (1) INDEPENDENT RECORDS OF THE DIVE: do
+      two or more independent trackers agree on the altitude and squawk sequence? (They do on the
+      sequence 7700, 7500, 7700 and on a dive of about 14,000 to 19,000 ft; they differ by about three minutes
+      in time; see L-13.) (2) INDEPENDENT NON-ISRAELI OFFICIAL RECORD: the Saudi interior ministry statement
+      and the UAE investigation. (3) WITNESS INDEPENDENCE: accounts from passengers of different
+      nationalities who do not know each other. (4) THE CREW-NATIONALITY RULE: the agreement text, the
+      roster and vetting records (see L-04). (5) TIMING BASE RATE: how often do aviation security
+      incidents involving Israel-linked flights occur in any given 4-week window, and where were the
+      statements and polls before and after? (6) FRAMING: how did officials' statements change in
+      the days after, and did polling move? Pre-registration: any pattern must be named here before
+      the data is looked at.
+  - id: L-13
+    date: 2026-10-02
+    entry: >
+      OPEN DATA SOURCES FOR THE FLIGHT, AND WHAT WORKED. Aircraft: A6-FKF, Boeing 737 MAX 8; ICAO
+      address 8965D1 (hexdb.io). Reachable: AirNav Radar's blog (read). Blocked from this environment:
+      Flightradar24's blog and CSV (Cloudflare check, HTTP 403); AirNav's flight page and log (403);
+      ADS-B Exchange history ("direct access not permitted"); OpenSky history (needs an account, 403). The
+      ADS-B Exchange sample archive publishes only the first day of each month. NOT FOUND: any public
+      ATC audio or ACARS feed for the event. FINDING FROM AIRNAV (secondary): squawk 7700 at 05:28:48 UTC
+      and 7500 at about 05:35 UTC, against Flightradar24's 05:31 and 05:38: about three minutes apart
+      between two independent networks. AirNav also reports a peak descent rate of about -30,900 ft/min and
+      a fall from 34,000 ft to 15,000 ft in a few minutes, which fits Flightradar24's 14,125 ft in 29
+      seconds and is not incompatible with CNN's 17,400 ft in just under two minutes: they appear to measure
+      different parts of one dive. NEXT STEP FOR THE OWNER (a browser is needed): download the CSV data
+      from the Flightradar24 incident page and the AirNav Radar blog page (it says "download the data"),
+      and drop both files into this folder; then compare the timestamps and altitudes directly.
+  - id: L-14
+    date: 2026-10-02
+    entry: >
+      OWNER QUESTION: how could the dive be survivable for passengers, and how was no one hurt? PREMISE CORRECTED from reports read: not
+      everyone was unhurt. Al Jazeera (30 Sep 2026): footage on board 'appears to show the injured pilot lying on the cabin floor with several
+      stab wounds, and a passenger with a bloody head wound'; both pilots hospitalised at Tabuk (Tabuk airport statement via Al Ekhbariya). NBC:
+      Magen David Adam's paramedic said at least one passenger, in his 50s, was taken to hospital with a 'chest injury' after the passengers reached
+      Tel Aviv. The cause of the passengers' injuries (the fight, the dive, or something else) is NOT stated in what was read. ARITHMETIC ON REPORTED
+      FIGURES (not measured loads): 30,900 ft/min is 515 ft/s (157 m/s), a vertical SPEED, which by itself produces no g-force; passengers feel
+      CHANGES in vertical speed. To reach that speed from level, a push-over at 0.5 g downward gives a seat load of +0.5 g in 32 s (8,243 ft fallen), at
+      1 g downward 0 g in 16 s (4,122 ft), at 2 g downward -1 g in 8 s (2,061 ft). To stop it, a pull-out at a load factor of 1.5 g takes 32 s (8,243 ft),
+      at 2 g 16 s (4,122 ft), at 2.5 g 11 s (2,748 ft). A 15,000-19,000 ft descent with that peak is therefore compatible with a smooth profile (about
+      +0.5 g to +1.5 g), which a belted passenger tolerates; an abrupt push-over below 0 g would lift unbelted people off their seats. Whether the
+      load factor went below zero cannot be told from tracker data. CORRECTION TO L-13: it said Flightradar24's '14,125 ft in 29 seconds' fits the peak
+      rate. It does not fit: 14,125 ft in 29 s is 29,200 ft/min on average, nearly the whole peak rate with almost no time to build it up, which would
+      need an implausibly abrupt change; CNN's 17,400 ft in just under two minutes averages 8,700 ft/min. The 29 s figure is probably a sampling artefact
+      or measures a different slice; treat as UNRESOLVED until the raw ADS-B CSV is read. WHAT WOULD SETTLE IT: the flight data recorder's vertical
+      acceleration trace (held by investigators), the raw tracker data, seat-belt sign status, and the medical records of the injured passengers.
+  - id: L-15
+    date: 2026-10-02
+    entry: >
+      OWNER CLAIMS TESTED: (1) 'the cabin is very clean'; (2) 'the air masks have not dropped'; (3) 'two other pilots on board'; (4) 'a surgeon and a number of
+      other folks'; (5) 'statistically difficult to put together'. READ (page text): CNN (30 Sep, 1 Oct), Gulf News, Migflug, The Conversation. FINDINGS.
+      (2) MASKS: The Conversation reports that early passenger accounts say the masks did not deploy. Oxygen masks drop when cabin pressure altitude rises
+      (about 14,000 ft), not when the aircraft descends; a sealed, pressurised cabin in a steep descent need not drop them. An explainer written by a
+      search tool claimed a Sky News video showed deployed masks; that summary was internally contradictory and is NOT used. Whether the cabin stayed
+      pressurised is not shown in anything read (needs the flight data and cabin altitude trace). (3) PILOTS: Gulf News and Migflug say two OFF-DUTY FLYDUBAI
+      pilots were travelling as passengers (staff travel on the operator's own flight). A search summary said they were a South African and a New Zealander;
+      that was NOT confirmed in a page read. (4) 'SURGEON': CNN quotes Shota Musaev, 'a dentist on board', who said he tied the attacker with headphone cords
+      and zip ties; Migflug says passengers described 'an Israeli doctor' treating the captain. No report read says 'surgeon'. A cabin-crew member is seen in
+      video calling for a doctor (CNN). (1) CLEAN CABIN: not assessable from text; a smooth push-over and pull-out (L-14 arithmetic) would leave loose items
+      in place. Videos not independently verified or authenticated (no authenticity block yet; see docs/AUTHENTICITY.md). (5) STATISTICS: illustrative Poisson
+      arithmetic on an aeroplane of 180 passengers. P(at least 2 off-duty pilots of the operating airline) is about 0.1% if 0.5% of passengers are staff and 5% of
+      staff are pilots, about 3% at 1%/15%, about 19% at 3%/15%, about 48% at 3%/30%. The inputs (share of staff travellers, share who are pilots) are unknown, so
+      'statistically difficult' cannot be asserted or rejected yet. P(at least one dentist) about 11% to 31% depending on the assumed rate (0.9 to 3 per 1,000, 70%
+      Israeli share, all ASSUMED, not sourced). Two cautions: (a) many flights fly every day, so some flight somewhere will show any given combination; (b) reports
+      of helpers exist because helpers helped (survivorship). WHAT WOULD ACTUALLY TEST IT: the airline's staff-travel booking records for the flight (obtainable
+      only by investigators), passenger manifest roles, and the pilots' names confirmed by the airline. GENUINE OPEN QUESTIONS in the record (CNN quoting an Israeli
+      official): how the cockpit door was opened, and how a weapon came on board. None of this tests whether the event was staged; no evidence either way found.

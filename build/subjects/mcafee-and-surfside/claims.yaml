@@ -1,0 +1,360 @@
+# ---------------------------------------------------------------------------
+# SEARCH HEADLINE (rules 1-7 as in the other digs; see gulf-of-tonkin/claims.yaml)
+# ---------------------------------------------------------------------------
+headline: "Was the Surfside Collapse Tied to John McAfee's Death? No: NIST Says It Began in Early June 2021"
+headline_claim: surfside-deliberate-timed-to-mcafee
+headline_status: review          # meets the rules as of 2026-10-02; owner approval pending
+search_summary: >
+  Was the Surfside condo collapse linked to John McAfee's death? No. NIST says the failure began in early June 2021, before he died, and the "hidden files" tweet was fabricated.
+url_slug: surfside-collapse-john-mcafee-death-no-link-nist-failure-began-early-june-2021
+
+subject: mcafee-and-surfside
+title: "John McAfee's Death and the Surfside Condo Collapse (June 2021)"
+description: >
+  Two real events one day apart: the death of John McAfee in a Spanish prison cell on 23 June 2021, and the
+  partial collapse of Champlain Towers South in Surfside, Florida, on 24 June 2021. A claim grew that the building
+  was destroyed to remove files he had hidden there, and that his death is connected. This dig keeps three
+  questions separate, each with its own evidence: how McAfee died, why the building fell, and whether anything
+  links them. It also tests the item the link depends on, a screenshot of a tweet, as a case of proving
+  a digital item false. People died at Surfside and McAfee had a family; nothing here makes a claim about
+  any person beyond what the cited records say.
+
+# ---------------------------------------------------------------------------
+# VERIFICATION (see the Tonkin dig for the level definitions)
+#   anchor_checked: no | secondary | primary
+# READ DIRECTLY 2026-10-02: NIST's Champlain Towers South page and its 9 Sep 2025 news update (official .gov);
+#   Snopes (25 Jun 2021), PolitiFact (25 and 28 Jun 2021), USA Today fact check (via Yahoo), AFP report (The Local, 2023),
+#   AirNav-style secondary reports are NOT used here. Fact-checks are secondary sources about a primary item (the tweet).
+# NOT POSSIBLE FROM THIS ENVIRONMENT: the Internet Archive's capture of @officialmcafee (its availability record exists but
+#   the content is blocked); the Miami-Dade property appraiser (bot challenge); the GAO report (403); the Spanish court ruling.
+# QUANTITIES: 98 deaths (final, secondary: Gulf News/Miami-Dade); collapse "approximately 1:30 a.m. EDT" (NIST) vs 1:22 a.m.
+#   (other sources); 136 units, 12 floors (secondary); demolition of the remainder on 4 Jul 2021 (secondary).
+# ---------------------------------------------------------------------------
+
+divergence_note: >
+  Evidence and belief diverge in two places. On the collapse, an official physical investigation finds a structural
+  failure that began weeks earlier, while a story linking it to McAfee's death circulated widely on Instagram,
+  Twitter, Reddit and blogs (USA Today). That story rested on a fabricated image. On McAfee's death, the only forensic
+  and judicial findings read say suicide, while his widow and his lawyer publicly doubted it and the slogan "he didn't
+  kill himself" spread. Doubt by people who knew him is real and is recorded as such; no evidence of homicide has been
+  located in what was read, and the claims are filed on their evidence, not on the strength of belief.
+
+claims:
+
+  - id: mcafee-death-facts
+    state: established
+    statement: >
+      John McAfee, aged 75, was found dead in his cell at a prison near Barcelona on 23 June 2021, hours after a
+      Spanish court approved his extradition to the United States on tax charges; the extradition was not final.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5
+    anchor_checked: secondary   # official statements read through news and fact-check reports
+    adoption_weight: 5   # of 5
+    adoption_note: >
+      Not polled. Undisputed.
+    would_change_if: >
+      Spanish court or prison records giving a different date or circumstances
+    anchor:
+      type: official-statement-via-reports
+      description: >
+        PolitiFact (25 Jun 2021): found dead 23 June; the Spanish courts approved extradition that day; the extradition
+        was open to appeal and still needed Cabinet approval (per the AP). The Catalan justice department said medics
+        tried unsuccessfully to revive him. AFP (The Local, 29 Sep 2023): found dead 23 June, hours after the extradition
+        approval; arrested at Barcelona airport in October 2020; a US indictment alleged he failed to file tax returns
+        between 2014 and 2018 and he could have faced up to 30 years.
+      accessible: true
+    basis: >
+      # V: PolitiFact and the AFP report read; the underlying court and prison records were not.
+
+  - id: mcafee-spanish-finding-suicide
+    state: established
+    statement: >
+      Spanish authorities found that McAfee died by suicide: the Catalan justice department said "Everything points to
+      death by suicide", and in a ruling dated 24 July 2023, made public on 29 September 2023, a court closed its inquiry
+      saying there were "no indications of anything other than a violent death of suicidal origin, nothing at all".
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5; this is the strength of the claim that the finding exists
+    anchor_checked: secondary   # official words read through PolitiFact and AFP
+    adoption_weight: 3   # of 5
+    adoption_note: >
+      Not polled. Widely doubted online; his widow and lawyer disputed it publicly.
+    would_change_if: >
+      a court or forensic record that contradicts the reported finding, or a successful later inquiry
+    next_step: >
+      Read the ruling itself (Spanish court, 24 July 2023) and any autopsy summary; log what each states.
+    anchor:
+      type: official-finding-via-reports
+      description: >
+        PolitiFact (25 Jun 2021) quotes the Catalan justice department: "Everything points to death by suicide."
+        AFP (29 Sep 2023): although an autopsy determined he died by suicide, his widow demanded further checks and another
+        autopsy; the court ruling said "nothing in the final autopsy" questioned the original conclusions and the ruling
+        cannot be appealed.
+      accessible: true
+    basis: >
+      # V: official words as quoted by two outlets; the ruling and the autopsy were not read.
+      This claim is about what the authorities FOUND, not about the truth of the cause. It is filed established because
+      the finding and its wording are documented. See mcafee-cause-independent-review for what is not yet checked.
+
+  - id: mcafee-cause-independent-review
+    state: searched_gap
+    statement: >
+      No independent examination of the cause of McAfee's death, separate from the Spanish authorities' own autopsy and
+      inquiry, has been found.
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 2   # of 5; absence anchor, capped
+    anchor_checked: secondary
+    adoption_weight: 3   # of 5
+    adoption_note: >
+      Not measured. Central to the doubt voiced by his widow.
+    would_change_if: >
+      an independent autopsy report or review is published
+    next_step: >
+      Find whether a second autopsy was done or refused (AFP says the widow requested one and further checks); read the court ruling for what it says about requests made; log every hit and miss.
+    anchor:
+      type: absence-in-searched-record
+      description: >
+        AFP reports the widow asked for further checks and another autopsy; the court's ruling is quoted as finding
+        nothing in the final autopsy that questioned the original conclusions. No independent review was found in what
+        was read.
+      accessible: true
+    basis: >
+      An absence anchor is capped. A gap in checking is not evidence of wrongdoing; it is the reason the family's doubt
+      cannot be settled from the records read. The slogan "he didn't kill himself" is recorded in threads.yaml and
+      lends no weight to any claim.
+
+  - id: surfside-collapse-facts
+    state: established
+    statement: >
+      Champlain Towers South, a 12-floor condominium in Surfside, Florida, partially collapsed on 24 June 2021 at
+      approximately 1:30 a.m. EDT, with mass casualties; the final death toll was reported as 98.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 5   # of 5; the date and time are from the investigating agency's own page, read directly
+    anchor_checked: primary   # NIST page read; the toll is from secondary reports
+    adoption_weight: 5   # of 5
+    adoption_note: >
+      Not polled. Undisputed.
+    would_change_if: >
+      NIST or the county revising the time or the toll
+    anchor:
+      type: investigating-agency-page
+      description: >
+        NIST [read]: "On June 24, 2021, Champlain Towers South, a 12-floor condominium in Surfside, Florida, partially
+        collapsed at approximately 1:30 a.m. EDT. The collapse happened suddenly and has resulted in mass casualties."
+        Other reports give 1:22 a.m.; the toll of 98 is from secondary reports (Gulf News, NPR, GAO listing), not read
+        in a primary record here. The remaining structure was demolished on 4 July 2021 (secondary).
+      accessible: true
+    basis: >
+      # V: NIST page read directly (official .gov). The 1:30 versus 1:22 difference is unresolved and drawn as a ghost
+      # marker on the timeline; it does not affect any claim.
+
+  - id: surfside-structural-failure
+    state: established
+    statement: >
+      NIST's technical findings (June 2026) conclude the collapse began when two connections between garage columns and
+      the pool deck failed, transferring load to structural elements too weak because of problems from the original
+      design and construction; when the pool deck slab broke away it damaged two connections supporting that part of
+      the tower, and the failure spread through parts of the tower.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5; the investigating agency's own conclusion; the full report not read
+    anchor_checked: primary   # NIST page and update read
+    adoption_weight: 4   # of 5
+    adoption_note: >
+      Not polled. Accepted by engineers; the popular story differs.
+    would_change_if: >
+      NIST's final report or a peer review contradicting these findings
+    next_step: >
+      Read NIST's technical report (not only the page summary), and check whether it states which scenarios were excluded.
+    anchor:
+      type: official-investigation
+      description: >
+        NIST [read], June 2026 technical findings: "the team concluded that the collapse began in early June, when two
+        connections between garage columns and the pool deck failed ... the failure of these connections transferred their
+        load to other structural elements that were not strong enough to support them due to problems that stemmed from the
+        original design and construction of the building ... when the pool deck slab broke away from the building, it damaged
+        two connections supporting that part of the tower that caused the failure to enter and spread throughout parts of the
+        tower." NIST's 9 September 2025 update [read]: the failure likely started in the pool deck, with "indications of the
+        building's distress that were visible in the weeks before", including a sliding glass door that came off its frame, a
+        horizontal crack in a planter wall, and the vertical shifting of a gate; and an analysis of reinforcement corrosion,
+        concrete shrinkage and improperly built construction joints.
+      accessible: true
+    basis: >
+      # V: both NIST pages read directly. The page text is a summary of a video; the underlying technical report was not read.
+      # Search reports also say design deficiencies, construction deviations, added loads and corrosion were found, and that
+      # vibration, settlement and roofing work were not direct causes; those details are secondary here.
+
+  - id: surfside-failure-began-before-mcafee-death
+    state: established
+    statement: >
+      By NIST's account the collapse process began in early June 2021, before McAfee died on 23 June, and signs of the
+      building's distress were visible in the weeks before the collapse.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5
+    anchor_checked: primary   # the two NIST pages read
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Little known outside the engineering and news coverage of the findings.
+    would_change_if: >
+      NIST's report placing the start of the failure after 23 June
+    anchor:
+      type: official-investigation
+      description: >
+        See surfside-structural-failure: "the collapse began in early June" [read, NIST June 2026]; distress "visible in the
+        weeks before" [read, NIST Sep 2025].
+      accessible: true
+    basis: >
+      # V: derived from the same NIST text. "Collapse began" is NIST's wording for the failure of the first two connections,
+      # not for the visible fall of the building.
+      A causal chain that runs from McAfee's death to the building's failure cannot hold if the failure started earlier. This
+      claim does not say anything about why anyone believed otherwise.
+
+  - id: surfside-deliberate-timed-to-mcafee
+    state: refuted
+    statement: >
+      The Surfside collapse was a deliberate act, timed to follow John McAfee's death, to destroy files or data attributed
+      to him.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5
+    anchor_checked: primary   # the NIST pages read
+    adoption_weight: 1   # of 5
+    adoption_note: >
+      Not measured. It spread widely on Instagram, Twitter, Reddit and blogs in June 2021 (USA Today), and was rated false by
+      several fact-checkers.
+    would_change_if: >
+      physical evidence of an external cause of the collapse, or evidence that McAfee or his data were connected to the building
+    refutes_target: "The Surfside collapse was a deliberate act timed to follow McAfee's death to destroy his data"
+    anchor:
+      type: investigation-timeline-against-claim
+      description: >
+        NIST [read]: the failure began in early June 2021 at two garage-column and pool-deck connections, with documented
+        distress in the preceding weeks and causes in the original design and construction. The link claimed depends on a
+        fabricated tweet (mcafee-june8-tweet-posted) and a unit McAfee did not own (mcafee-owned-unit). Officials said there was
+        no evidence of foul play (Miami-Dade's mayor, via USA Today; secondary).
+      accessible: true
+    basis: >
+      # V: NIST read directly; the claim's other supports are examined in their own claims.
+      # LIMIT: the NIST summary read does not say whether explosives or sabotage were specifically tested and excluded; its
+      #    structural account is sufficient to explain the failure and starts earlier than the death. Read the technical report.
+      Rule 9 satisfied: names its target and rests on a primary investigation, not on consensus or on the fact-checks.
+
+  - id: mcafee-31tb-2019-tweet
+    state: established
+    statement: >
+      On 9 June 2019 McAfee tweeted from Cuba that he had "31+" terabytes of "incriminating data" on corruption in governments
+      and would release it to the press if he was arrested or disappeared; he did not say where the files were.
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3   # of 5; the tweet was not read directly
+    anchor_checked: secondary   # quoted by PolitiFact, USA Today and TheCount
+    adoption_weight: 4   # of 5
+    adoption_note: >
+      Not measured. The origin of the "31TB" in the fabricated image.
+    would_change_if: >
+      an archived copy of the account showing different wording, or no such tweet
+    next_step: >
+      Open the tweet's archived capture and confirm wording and date.
+    anchor:
+      type: social-post-via-reports
+      description: >
+        PolitiFact: "In a June 2019 tweet, McAfee claimed to have '31+' terabytes of 'incriminating data' about government
+        corruption and threatened to release it if he was ever arrested." USA Today: "The only McAfee tweet about 31 terabytes
+        of files is from June 9, 2019 ... he never said where the files were located." TheCount quotes: "If I'm arrested or
+        disappear, 31+ terabytes of incriminating data will be released to the press."
+      accessible: true
+    basis: >
+      # V: three outlets agree on the date and content; the post itself was not read. Per AUTHENTICITY rule A8 a digital item needs
+      #    an independent capture; the fact-checkers' agreement is moderate support only.
+      A genuine statement about files does not lend weight to the fabricated tweet that borrowed its figure.
+
+  - id: mcafee-june8-tweet-posted
+    state: refuted
+    statement: >
+      McAfee posted, on 8 June 2021, a tweet saying "If anything ever happens to me, please know that the 31TB (terabytes) of
+      files I have are located on hard drives in my condo near 88th Street and Collins Avenue just north of Miami Beach."
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3   # of 5; the main anchor is an absence, capped
+    anchor_checked: secondary   # fact-checkers' searches read; our own capture check was blocked
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Circulated as a screenshot on Instagram and Twitter from 25 June 2021.
+    would_change_if: >
+      an independent capture of his account showing the post, or a platform record that it was posted and deleted
+    refutes_target: "McAfee posted the 8 June 2021 tweet about 31TB of files in a Miami condo"
+    next_step: >
+      Open the Internet Archive's capture of @officialmcafee (25 June 2021, 20:38 UTC; its availability record exists) in a browser and look for the post; ask the platform whether any such post was ever made and deleted.
+    anchor:
+      type: digital-item-absence-plus-template
+      description: >
+        Four independent organizations checked: PolitiFact (28 Jun 2021: no June 8 tweet on the verified account's timeline;
+        two tweets were sent on June 8, neither about files or a condo; no match in Twitter advanced search or AllMyTweets;
+        an emailed platform spokesperson), Snopes (25 Jun 2021: not on the timeline; no retweets or quote tweets; after his death
+        users archived hundreds of his tweets on Archive.is and Snopes found no such message), USA Today (a genuine June 8
+        tweet has the same timestamp as the screenshot, "indicating it could have been the template for a digitally fabricated
+        tweet"), and Check Your Fact (a rating only; its work was not read). The screenshot also quotes "88th Street" while the building's address was given as
+        8777 Collins Avenue.
+      accessible: true
+    basis: >
+      # V: four fact-checks read; none of their searches was repeated here. Absence anchors are capped at provisional by the
+      #    framework; the template match and the independent searches are what lift this to moderate.
+      # AUTHENTICITY: the item is recorded as forged, strength moderate, in sources/MANIFEST.yaml (src-alleged-tweet-image),
+      #    under rules A3 (two independent testers) and A8 (independent capture needed; not yet read by us).
+      Rule 9 satisfied: names its target. The refutation does not rest on consensus: it rests on searches of the account's own
+      record by several independent parties. It is not rated high because we have not repeated them.
+
+  - id: mcafee-owned-unit
+    state: refuted
+    statement: >
+      John McAfee, or his wife, owned a unit in Champlain Towers South.
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3   # of 5; absence anchor, capped
+    anchor_checked: secondary   # an AP review of property records, read through USA Today
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured.
+    would_change_if: >
+      a property record showing ownership by McAfee, his wife or an entity of his in the building
+    refutes_target: "McAfee or his wife owned a unit in Champlain Towers South"
+    next_step: >
+      Search the Miami-Dade Property Appraiser and Clerk of Courts records for owner names McAfee at the building's folios (a browser is needed; the site blocks this environment).
+    anchor:
+      type: property-record-absence
+      description: >
+        USA Today: "An Associated Press review of property records at the Champlain Towers South Condo building found that neither
+        McAfee nor his wife, Janice McAfee, are listed as owners of any units." PolitiFact: "no evidence he owned a condo in the
+        building or had any other connection to it." A search of Miami-Dade public property tax records found no indication McAfee
+        owned property near or in it (search report). A claimed son, "Pat McAfee", said by the screenshot to have an office there:
+        the sports analyst of that name said he has no condo in Florida (Snopes).
+      accessible: true
+    basis: >
+      # V: reported property-record reviews read; the records themselves not seen by us. An absence in a record is capped. Ownership
+      #    through a company or a nominee would not appear under his name; the review does not rule that out.
+
+  - id: mcafee-surfside-dates-coincide
+    state: established
+    statement: >
+      McAfee died on 23 June 2021 and the building collapsed about 24 hours later; the dates are one day apart.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5
+    anchor_checked: primary   # the NIST date read; the death date is secondary
+    adoption_weight: 5   # of 5
+    adoption_note: >
+      Not polled. This is the fact the story starts from.
+    would_change_if: >
+      either date being revised
+    anchor:
+      type: two-dated-events
+      description: >
+        See mcafee-death-facts (23 June) and surfside-collapse-facts (24 June, about 1:30 a.m. EDT).
+      accessible: true
+    basis: >
+      The coincidence is real and is kept on the page as a documented fact. A coincidence in dates carries no evidential weight
+      (threads.yaml, confers_weight: false). The collapse process began earlier (surfside-failure-began-before-mcafee-death).

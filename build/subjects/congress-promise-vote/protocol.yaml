@@ -1,0 +1,73 @@
+# PRE-REGISTERED PROTOCOL (draft for owner approval). Written before any subject is chosen
+# or any politician's record is read. Changes after approval are logged, never silent.
+subject: congress-promise-vote
+status: protocol_draft            # no subjects chosen, no claims filed
+purpose: >
+  Show, for one bill and one legislator at a time, what was promised, how they voted, and what
+  happened, as a dated timeline where every dot links to a primary record. The page records
+  documented facts. It does not rate, rank or score any person.
+
+question: >
+  For the chosen vote, did the legislator's recorded vote match their documented, dated public
+  commitments, and what did the vote do?
+
+scope:
+  legislature: US Congress (House and Senate)
+  data_sources:                        # all reachable from the cloud session on 2026-10-02
+    votes_house:  "https://clerk.house.gov/evs/<year>/roll<NNN>.xml (official Clerk roll-call XML)"
+    votes_senate: "https://www.senate.gov/legislative/LIS/roll_call_votes/vote<congress><session>/vote_<congress>_<session>_<NNNNN>.xml"
+    votes_history: "https://voteview.com (all roll calls since 1789; for cross-checks, not the anchor)"
+    bill_text_and_record: "https://www.govinfo.gov (Congressional Record, bill text); api.congress.gov (needs a free key)"
+    donations: "https://www.fec.gov (official filings; api.open.fec.gov needs a key)"
+  blocked_from_cloud: [congress.gov website, opensecrets.org, govtrack api]   # use a browser session if needed
+  anchor_rule: >
+    Official roll-call XML is the anchor for how someone voted. Promises are anchored only to the
+    politician's own dated words (floor speech in the Congressional Record, official press release,
+    campaign filing, video). Press paraphrase is secondary and capped.
+
+neutral_selection_rule:                # applied mechanically, results not looked at first
+  1: "Fix a window: roll calls of final passage in the most recently completed Congress."
+  2: "Candidate bills: final-passage votes where at least 10 members of each party voted on each side."
+  3: "Order candidates by roll-call number; take the first. Record the rule, the list and the pick."
+  4: "Candidate legislators: for the picked bill, the first member by last name from each party whose
+      vote differed from the party majority (a free choice, so a promise is more likely to exist)."
+  5: "If no documented promise can be found for a member, say so; do not swap members to find one."
+  6: "Same method, same fields, for both parties. Publish the full candidate list."
+
+evidence_rules:
+  - 'Every event is an official record or the person''s own dated words; each dot links to it.'
+  - '"Promise" means a specific, dated, attributable statement of what they would do on this bill or issue. Vague values language is not a promise.'
+  - 'Alignment is stated as one of: kept / broke / no_specific_promise / changed_with_stated_reason. Never a score.'
+  - 'A change of position with a stated reason is not ''broke''. The reason is quoted with its link.'
+  - 'Motive is recorded in a motive_map and carries no weight (docs/ framework: motive is not evidence).'
+  - 'Donations are shown as dated filings next to the vote. They are context. Timing alone shows no causation, and the page says so.'
+  - 'Constituent opinion is out of scope for the pilot (polls need their own authenticity and sampling checks).'
+
+shared_standard: >
+  Follows build/SCHEMA.md 'Actors, statements and votes' (rules P1 to P7) so this dig and the
+  Tonkin dig present votes and officials the same way.
+
+politics_only_rules: >
+  P9 (inducement claims, default searched_gap), P10 (consistency over time, capped at 3) and P11 (sincerity not
+  assessed) apply here and to other digs about officials. They are not part of the general schema.
+
+outputs:
+  - actors.yaml  (same four buckets for every actor)
+  - claims.yaml  (promise facts, vote facts, outcome facts; each with anchor and anchor_checked)
+  - timeline.yaml and timeline.html  (promise -> committee -> vote -> signing -> effect)
+  - sources/MANIFEST.yaml  (sha256, capture, authenticity block for each record)
+  - log.yaml  (append only)
+
+known_limits:
+  - A recorded vote shows what someone did, not why.
+  - Roll-call XML covers recorded votes only; voice votes and committee work need other records.
+  - Promises made privately or in untranscribed speech cannot be anchored.
+  - One bill and one member per party is an illustration of the method, not a finding about Congress.
+
+feasibility_check_2026-10-02:
+  house_roll_xml: "read OK (2023 roll 1: 435 members with party and vote)"
+  senate_roll_xml: "reachable (HTTP 200)"
+  voteview_csv: "reachable (HTTP 200, 29 MB)"
+  govinfo: reachable
+  fec: "web reachable; API needs a key"
+  congress_gov: "403 from cloud; use a browser session"

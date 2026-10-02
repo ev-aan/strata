@@ -1,0 +1,96 @@
+# Sources for the McAfee and Surfside dig, with authenticity entries (rules A1-A10, build/SCHEMA.md).
+# Nothing here is stored as a copy except where noted; every source is cited by URL.
+retrieved: 2026-10-02
+sources:
+  - id: src-nist-page
+    title: "NIST, Champlain Towers South Collapse (page updated 22 June 2026)"
+    url: https://www.nist.gov/disaster-and-failure-studies/champlain-towers-south-collapse
+    document_class: primary_text (the investigating agency's own page)
+    read: yes, directly
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "Served from nist.gov, an official US government domain over HTTPS; the page states its creation (30 Jun 2021) and update (22 Jun 2026) dates."
+      tests:
+        - "Domain and certificate: an official .gov site [read]"
+        - "Content match: the June 2026 findings reported by independent outlets (NBC, NPR, ENR, in search results) agree with the page"
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps: ["The page summarizes a video; the technical report was not read."]
+      next_step: "Read NIST's technical report."
+      checked: 2026-10-02
+  - id: src-nist-news-2025
+    title: "NIST, Champlain Towers South Investigation Nears Completion of Technical Work (9 Sep 2025)"
+    url: https://www.nist.gov/news-events/news/2025/09/champlain-towers-south-investigation-nears-completion-technical-work
+    document_class: primary_text
+    read: yes, directly
+    authenticity: {status: authenticated, strength: strong, provenance: "nist.gov news release with date; consistent with the June 2026 page", tests: ["Official .gov domain [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-snopes
+    title: "Snopes, Did John McAfee Hide Files at Collapsed Miami Building? (25 Jun 2021, Dan Evon)"
+    url: https://www.snopes.com/fact-check/john-mcafee-files-miami-building/
+    document_class: secondary (fact-check of a primary digital item)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A fact-check, not a historical document. Its claims about the account record are the thing being tested."}
+  - id: src-politifact-0625
+    title: "PolitiFact, Rumors surrounding John McAfee's death linked to QAnon conspiracy (25 Jun 2021)"
+    url: https://api.politifact.com/article/2021/jun/25/rumors-surrounding-john-mcafees-death-linked-qanon
+    document_class: secondary
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A fact-check."}
+  - id: src-politifact-0628
+    title: "PolitiFact, Image suggesting John McAfee stored files at collapsed Fla. condo tower is fake (28 Jun 2021)"
+    url: https://politifact.com/factchecks/2021/jun/28/instagram-posts/image-suggesting-john-mcafee-stored-files-collapse/
+    document_class: secondary
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A fact-check. Lists its sources: Twitter advanced search, AllMyTweets, AccountAnalysis.app, an email to a Twitter spokesperson."}
+  - id: src-usatoday
+    title: "USA Today fact check, No evidence John McAfee owned unit in partially collapsed Florida condo (via Yahoo)"
+    url: https://www.yahoo.com/news/fact-check-no-evidence-john-215403780.html
+    document_class: secondary
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A fact-check; cites an AP property-records review."}
+  - id: src-afp-local
+    title: "AFP via The Local, Spain court shelves probe into John McAfee prison death (29 Sep 2023)"
+    url: https://www.thelocal.es/20230929/spain-court-shelves-probe-into-john-mcafee-prison-death
+    document_class: secondary (wire report of a court ruling)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A wire report. The court ruling itself (dated 24 July 2023) was not read."}
+  - id: src-thecount
+    title: "TheCount.com, Did John McAfee Own A Florida Condo In The Now Collapsed Champlain Towers? (26 Jun 2021)"
+    url: https://thecount.com/2021/06/26/john-mcafee-tweet-champlain-towers-south-collins-avenue-surfside-florida-collapse/
+    document_class: secondary (weak; used only to corroborate the wording of the 2019 tweet)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A news site of mixed reliability; not an anchor for any claim on its own."}
+  - id: src-wayback-profile
+    title: "Internet Archive capture of twitter.com/officialmcafee, 25 Jun 2021 20:38:56 UTC (availability record)"
+    url: http://web.archive.org/web/20210625203856/https://twitter.com/officialmcafee
+    document_class: independent capture of a digital item
+    read: NO - the capture's content is blocked from this environment ("Blocked by egress policy"); only its availability record was read
+    authenticity:
+      status: unchecked
+      provenance: "Internet Archive availability API returned a snapshot dated 20210625203856 with status 200."
+      tests: []
+      gaps: ["Content not read. Per rule A8 this is the independent capture that would carry the most weight."]
+      next_step: "Open the link in a browser, scroll the visible timeline, and note whether any tweet mentions files, a condo or Miami."
+      checked: 2026-10-02
+  - id: src-alleged-tweet-image
+    title: "Screenshot of an alleged 8 June 2021 tweet from @officialmcafee (circulated on Instagram from 25 Jun 2021)"
+    url: null
+    document_class: digital item (a screenshot); the image itself was not seen by us, only its text as quoted by the fact-checkers
+    read: NO - text only, as quoted
+    authenticity:
+      status: forged
+      strength: moderate
+      provenance: "First seen as an Instagram post of 25 Jun 2021 (PolitiFact); no earlier source found; no archived original, no retweets or quote tweets (Snopes)."
+      tests:
+        - "Account timeline and advanced search: no such tweet (PolitiFact, USA Today, Snopes)"
+        - "Third-party archives: hundreds of tweets archived on Archive.is after his death; none matches (Snopes)"
+        - "Template match: a genuine 8 June tweet carries the same timestamp as the screenshot (USA Today)"
+        - "Account analysis tools (AccountAnalysis.app, AllMyTweets): two tweets on 8 June, neither about files or a condo (PolitiFact)"
+      tested_by: "PolitiFact, Snopes, USA Today (independent organizations; their methods overlap). Not repeated by Strata."
+      decisive_anachronism: null
+      gaps:
+        - "The main anchor is an absence, which the framework caps at provisional; the template match is a positive indicator."
+        - "The image was not seen by us; the Internet Archive capture of the profile could not be read; the platform's own records were not confirmed (PolitiFact emailed a spokesperson; no statement is quoted)."
+      next_step: "Read the Internet Archive capture in a browser and, if possible, obtain the original image and compare its fonts, layout and metadata with a genuine post of that date."
+      checked: 2026-10-02
+      rule_note: "A3 satisfied by two independent testers; A8 not fully met (independent capture unread)."

@@ -1,0 +1,51 @@
+# Built to SCHEMA.md P1-P11. Every actor page: Motive and sincerity are not assessed.
+subject: congress-promise-vote
+as_of: "2026-10-02"
+actors:
+  - id: barragan
+    name: "Nanette Diaz Barragan (D-CA-44)"
+    bioguide: B001300
+    role_at_event: "US Representative"
+    selected_by: "pre-registered rule, L-07: first Democrat by last name who voted against the party majority on roll 243"
+    statements:
+      - {date: "2023-06-01", venue: "press release", visibility: public, source: src-barragan-statement, claim: pv-barragan-stated-reasons, anchor_checked: primary,
+         text_quote: "this compromise sets a dangerous precedent for future negotiations, imposes restrictions and cuts funding for programs Americans need, and weakens environmental protections that will primarily harm communities of color and low-income communities. That is why I voted against the bill."}
+    commitments: []
+    commitments_searched: "Official site search, two web searches. None found before the vote (claim pv-barragan-prevote-commitment)."
+    actions:
+      - {date: "2023-04-26", kind: vote, what: "Nay on H.R. 2811 Limit, Save, Grow Act (roll 199; passed 217-215)", source: src-roll-199, anchor_checked: primary}
+      - {date: "2023-05-31", kind: vote, what: "Nay on H.R. 3746 (roll 243; passed 314-117)", source: src-roll-243, anchor_checked: primary}
+    information_at_time_of_actions: not_determined
+    alignment: no_specific_commitment
+    alignment_note: "No dated pre-vote commitment found, so nothing to compare against. Not a finding that none exists."
+    inducement: {state: searched_gap, tiers_found: [], searched: [], next: "FEC, House financial disclosures, lobbying filings"}
+    motive_map: {possible: [], acted_on_evidence: [], weight: "none (P6)"}
+    fixed_line: "Motive and sincerity are not assessed."
+  - id: alford
+    name: "Mark Alford (R-MO-4)"
+    bioguide: A000379
+    role_at_event: "US Representative"
+    selected_by: "pre-registered rule, L-07: first Republican by last name who voted against the party majority on roll 243"
+    statements:
+      - {date: "2023-06-01", venue: "official e-newsletter", visibility: public, source: src-alford-newsletter, claim: pv-alford-stated-reasons, anchor_checked: primary,
+         text_quote: "I swore to Missourians that I would fight to get rid of the new 87,000 IRS agents that will do nothing but harass hardworking Americans. To say the least, this legislation falls well short of fulfilling that promise."}
+    commitments:
+      - {date: undated, specific: true, source: src-alford-newsletter, claim: pv-alford-promise-undated, anchor_checked: secondary,
+         text_quote: "when I came to Washington, I swore to Missourians that I would fight to get rid of the new 87,000 IRS agents",
+         note: "Reported by himself after the vote. The original pledge was not found, so date, venue and wording are unverified."}
+    actions:
+      - {date: "2023-04-26", kind: vote, what: "Yea on H.R. 2811 Limit, Save, Grow Act (roll 199; passed 217-215); Nay on the Democratic motion to recommit (roll 198)", source: src-roll-199, anchor_checked: primary}
+      - {date: "2023-05-31", kind: vote, what: "Nay on H.R. 3746 (roll 243; passed 314-117)", source: src-roll-243, anchor_checked: primary}
+    information_at_time_of_actions: not_determined
+    alignment: not_determinable
+    alignment_note: >
+      His Nay is consistent in direction with the promise he reports. Under P2 the commitment must be dated and attributable;
+      only his own later statement has been read, so this is not scored. The bill did rescind $1,389,525,000 of IRS funds
+      (Sec. 251), which matches his '$1.4 billion'; the $80 billion and 87,000 figures were not checked.
+    inducement: {state: searched_gap, tiers_found: [], searched: [], next: "FEC, House financial disclosures, lobbying filings"}
+    motive_map: {possible: [], acted_on_evidence: [], weight: "none (P6)"}
+    fixed_line: "Motive and sincerity are not assessed."
+observation: >
+  Both members voted No, and each gave reasons from opposite directions (Barragan: too little spending and weaker
+  environmental rules; Alford: too much spending and too little cut). The recorded vote alone cannot show which reasons
+  a No stands for. This is a description of the two statements, not an inference about either person.

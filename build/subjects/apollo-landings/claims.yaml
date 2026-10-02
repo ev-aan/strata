@@ -1,0 +1,381 @@
+# ---------------------------------------------------------------------------
+# SEARCH HEADLINE (for search engines and AI answer tools; render as <title>,
+# <h1>, og:title, and JSON-LD). Rules:
+#   1. It states the finding, short and specific, in plain words.
+#   2. It may only state a claim that is established or refuted at HIGH confidence.
+#   3. `headline_claim` names that claim, so the link can be checked mechanically.
+#   4. If that claim's confidence or state changes, the headline must change.
+#   5. Publish only after the claim's evidence is at V2 (primary documents read).
+#      Current level is V1, so this headline is DRAFT until then.
+#   6. Plain words only. Name the belief being refuted AND what replaces it, and
+#      explain any term a general reader would not know (in the summary if not the title).
+# ---------------------------------------------------------------------------
+headline: "No, the Apollo Moon landings were not faked"
+headline_claim: apollo-staged-hoax
+headline_status: draft          # draft until V2, then published
+dig_status: parked              # parked 2026-10-01 by owner; do not publish or extend
+park_reason: >
+  Primary sources (NASA, NTRS, arXiv, IOP, NAS) are blocked in the working environment,
+  so no anchor can be checked. Nothing here is verified against a primary document.
+resume_when: >
+  Primary hosts are reachable. Then run the V2 targets in docs/verification/2026-10-01-apollo-tonkin.md
+  (NASA TN D-7080 dose table; ranging papers; Luna 16/20/24 masses; LROC and JAXA captions).
+search_summary: >
+  Four outside stations in three countries still bounce lasers off Apollo's reflectors, and about 150 labs studied 381.7 kg of lunar rock. See the evidence.
+
+subject: apollo-landings
+title: "Apollo Crewed Lunar Landings (1969-1972)"
+description: >
+  The claim "humans landed on the Moon" is unusually well suited to Strata because
+  it does not have to rest on NASA's word. This dig keeps three things distinct:
+  (1) what is physically left on the Moon and checkable by anyone with the right
+  instrument, (2) what was brought back and studied by laboratories outside NASA,
+  and (3) the popular "hoax" narrative, which is filed as reception, not evidence.
+  A hoax only works if ONE fake produces ALL of the independent material records
+  below at once; each claim states what it does and does not prove on its own.
+
+# ---------------------------------------------------------------------------
+# VERIFICATION LEVELS (governance, not a claim). Used in every `# V:` line below.
+#   V0  recalled or single-source, not confirmed
+#   V1  numbers or facts agree across 2+ independent search results
+#       (secondary reporting; primary document NOT opened)
+#   V2  primary document opened and the figure read directly
+# STATUS OF THIS DRAFT: the drafting environment blocks every primary host
+# (nasa.gov, ntrs.nasa.gov, arxiv.org, iopscience, nsa.gov, ...), so NOTHING here
+# is V2. Best reached is V1. A claim is not promoted on V1 alone to a stronger
+# state than its evidence class supports. `# TO REACH V2:` lines name the document.
+#
+# QUANTITIES USED (all V1 unless noted):
+#   Apollo samples returned ........ 381.7 kg, 2,196 samples, 6 missions
+#       by mission (kg): A11 21.8 | A12 34.3 | A14 42.3 | A15 77.3 | A16 95.7 | A17 110.5
+#   Soviet robotic returns ......... Luna 16 101 g | Luna 20 55 g | Luna 24 170.1 g = 326.1 g
+#       (Luna 20 appears as 30 g in some sources: unresolved, see claim)
+#   Mass ratio, Apollo / Luna ...... 381,700 g / 326.1 g = about 1,170 to 1
+#   Earth-based ranging stations ... 4 (APOLLO NM-USA, McDonald TX-USA, Matera ITALY,
+#                                       Grasse FRANCE): 3 countries
+#   Retroreflector arrays .......... 3 Apollo (11: 100 cubes, 14: 100, 15: 300) + 2 Lunokhod
+#   Photon return, Apollo 15 ....... about 63 per second at APOLLO vs about 0.1 per
+#                                    second at Grasse (same array, different stations)
+#   Orbiters imaging the sites ..... 3 agencies (NASA LRO, JAXA SELENE, ISRO Chandrayaan-2)
+#   Lunar-sample ages (Sm-Nd, U-Pb)  about 4.40 to 4.47 billion years (anorthosites)
+#   Crew-average skin dose (rad) ... 0.16 (A8) to 1.14 (A14); mean over nine
+#                                    lunar-distance missions 0.46; limit 400 rad skin
+#
+# SOURCES (search-level):
+#   Ranging stations / rates:  https://arxiv.org/pdf/0712.3539  https://arxiv.org/pdf/1704.06443
+#                              https://www.iers.org/SharedDocs/Publikationen/EN/IERS/Publications/tn/TechnNote34/tn34_097.pdf
+#                              https://arxiv.org/pdf/1009.5720 (Lunokhod 1 reflector, ranged by outside stations)
+#   Sample masses:             https://www.psrd.hawaii.edu/Dec09/Apollo-lunar-samples.html
+#                              https://www.nationalacademies.org/read/25312/chapter/4
+#   Sample ages:               https://www.psrd.hawaii.edu/April04/lunarAnorthosites.html
+#   Orbital imaging:           https://phys.org/news/2011-09-lroc-images-sharper-views-apollo.html
+#                              https://global.jaxa.jp/press/2008/05/20080520_kaguya_e.html
+#                              https://www.hou.usra.edu/meetings/lpsc2026/pdf/1044.pdf
+#   Dose table:                https://ntrs.nasa.gov/api/citations/19730010172/downloads/19730010172.pdf
+#   Lost tapes:                https://www.space.com/6994-nasa-erased-moonwalk-tapes-restores-copies.html
+# ---------------------------------------------------------------------------
+
+divergence_note: >
+  Evidence and adoption mostly agree: most people accept the landings, and the independent records support them. The gap is a persistent minority (6% in 1999, about 11-12% later) and where doubt concentrates: the footage, radiation, and the lost original tapes. The tapes gap is documented, which is why it deserves a plain answer. The weakest evidential point is crewed versus robotic, not staged versus real.
+
+claims:
+
+  - id: apollo-retroreflectors-on-moon
+    state: established
+    statement: >
+      Passive laser retroreflector arrays exist on the lunar surface at the Apollo 11,
+      14 and 15 sites and are ranged routinely by observatories outside NASA.
+    evidence_class: material
+    confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Accepted across the relevant sciences; ranging stations still use the arrays.
+    would_change_if: >
+      an outside station reports no return from a site's coordinates under conditions where one is expected, or ranging records are shown not to be independent of NASA
+    anchor:
+      type: independent-instrument-reproducibility
+      description: >
+        Four stations in three countries supply the Earth-Moon range observations:
+        APOLLO (New Mexico) and McDonald (Texas) in the US, Matera in Italy, and
+        Grasse in France. Return rates differ by station and array (Apollo 15: about
+        63 photons/s at APOLLO vs about 0.1/s at Grasse), as expected from telescope
+        aperture, and the Lunokhod 1 reflector, once lost, was re-found by outside
+        ranging. Each station's data is its own record.
+      accessible: true
+    basis: >
+      # V: V1. Station list and rate figures agree across arXiv 0712.3539, the IERS
+      #    technical note and the Grasse paper (search summaries).
+      # CORRECTION from first draft: it listed Japan and Australia as ranging
+      #    stations. The sources reviewed do not support that; removed.
+      # TO REACH V2: read arXiv 1704.06443 (Grasse) and the APOLLO papers directly.
+      This proves objects are at the sites. It does NOT by itself prove humans placed
+      them: Soviet Lunokhod rovers carry reflectors too. See apollo-robotic-only-alternative.
+
+  - id: apollo-samples-are-lunar
+    state: established
+    statement: >
+      Apollo returned 381.7 kg of lunar material (2,196 samples across six missions),
+      authentically lunar, and studied by laboratories in many countries.
+    evidence_class: material
+    confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Universal among sample scientists; labs in many countries have studied the material.
+    would_change_if: >
+      an outside laboratory shows a documented returned sample to be terrestrial, or the 381.7 kg total is shown to be wrong
+    anchor:
+      type: multi-laboratory-convergence
+      description: >
+        Apollo material went to around 150 laboratories worldwide (about 27 of the
+        initial ~110 Apollo 11 investigators were from the UK, Germany, Canada,
+        Japan, Finland and Switzerland). Radiometric dating of anorthosites gives
+        crystallization ages of about 4.40 to 4.47 billion years, older than most
+        terrestrial rock. A 1971 NASA / Soviet Academy of Sciences agreement
+        exchanged Apollo and Luna samples (Luna 16 samples to NASA on 10 June 1971).
+      accessible: true
+    basis: >
+      # V: V1 for masses (PSRD, plus other results agree) and the lab numbers.
+      #    V0 for "no terrestrial rock matches" as a blanket statement: removed; the
+      #    defensible claim is lunar ORIGIN as judged by many labs, not a single test.
+      # TO REACH V2: PSRD Apollo samples page; NASA sample curation reports.
+      Lunar origin of the rocks is established. Like the reflectors, rocks alone do
+      not prove a crew collected them; Soviet Luna missions returned lunar material
+      robotically, but in grams, not kilograms (see apollo-robotic-only-alternative).
+
+  - id: apollo-sites-imaged-by-non-nasa-orbiters
+    state: established
+    statement: >
+      Orbital imagery from NASA and from other space agencies shows Apollo hardware
+      and disturbed ground at the landing sites.
+    evidence_class: material
+    confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 4   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Accepted among planetary scientists; less widely known to the public.
+    would_change_if: >
+      the JAXA or ISRO imaging is shown not to match the claimed sites, or the SELENE halo is attributed to something else
+    anchor:
+      type: independent-orbital-imaging
+      description: >
+        NASA's LRO (September 2011 low-altitude passes, about 22 km closest approach)
+        imaged descent stages, instrument packages, rover tracks and foot trails at
+        Apollo 12, 14 and 17. India's Chandrayaan-2 OHRC (about 0.25 to 0.26 m per
+        pixel) imaged the descent stage at Apollo 11 and the Apollo 12 site. Japan's
+        SELENE Terrain Camera (JAXA release, 20 May 2008) detected the exhaust "halo"
+        at the Apollo 15 site, the first detection since the mission.
+      accessible: true
+    basis: >
+      # V: V1 for LRO (Phys.org, NASA APOD, SpaceNews agree), SELENE (JAXA release,
+      #    Universe Today, iTWire agree), Chandrayaan-2 resolution and descent-stage
+      #    imaging (LPSC abstract, ScienceDirect paper).
+      # V0 -> REMOVED: the first draft said Chandrayaan-2 shows foot trails at the
+      #    sites. That came from a social-media post only. At about 0.25 m per pixel
+      #    a foot trail is marginal, and no paper confirms it. Not claimed here.
+      # NOTE ON INDEPENDENCE: LRO is NASA's, but its images are public. The
+      #    independent anchors are SELENE (JAXA) and Chandrayaan-2 (ISRO).
+      # TO REACH V2: JAXA release; the OHRC LPSC abstract (hou.usra.edu 2026/1044).
+
+  - id: apollo-crewed-landings-occurred
+    state: established
+    statement: >
+      Six Apollo missions (11, 12, 14, 15, 16, 17) landed crews on the Moon, and the
+      crews walked on the surface and collected the returned samples.
+    evidence_class: material
+    confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 4   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      US polls: about 89% rejected 'staged' in 1999 (Gallup); 11-12% accepted it in 2019 and 2021 YouGov surveys. Polls ask 'staged', not 'crewed vs robotic'.
+    would_change_if: >
+      independent (non-NASA) imaging of tracks or trails, or independent surface-station data, is found; or a robotic-only delivery is shown feasible at 381.7 kg
+    anchor:
+      type: convergence-of-independent-records
+      description: >
+        No single record carries this claim. It stands because independent material
+        records agree: reflectors ranged by four outside stations in three countries,
+        381.7 kg of samples studied by about 150 labs, three space agencies' orbiters
+        imaging the sites, and a returned mass about 1,170 times the Soviet robotic
+        total. Each is individually insufficient; together they fit one explanation.
+      accessible: true
+    basis: >
+      Filed material because every load-bearing anchor is a physical record that
+      outside parties can re-measure. Contemporaneous Soviet non-challenge is NOT
+      counted here (see apollo-soviet-non-challenge).
+      # V: inherits the weakest V of its anchors, so V1.
+      # CONFIDENCE LOWERED high -> moderate in this pass. "Crewed" (as against
+      #    "delivered by something") depends on apollo-robotic-only-alternative, which
+      #    is moderate because its track imagery is not independent. A claim cannot be
+      #    more certain than the weakest link it needs. The narrower claim that the
+      #    landings were not staged (apollo-staged-hoax) stays high: it needs only the
+      #    independent records, not the crewed/robotic distinction.
+
+  - id: apollo-robotic-only-alternative
+    state: proposed            # was refuted; changed 2026-10-02 (log L-09): Rule 9 bars a refutation resting on synthetic evidence
+    statement: >
+      The Apollo reflectors, samples and site hardware were delivered by uncrewed
+      missions, with no humans on the surface.
+    evidence_class: synthetic
+    confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 1   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. Rarely proposed outside specialist discussion.
+    would_change_if: >
+      independent imaging of rover tracks or foot trails is found (raises it), or a documented robotic return of hundreds of kg is shown (lowers it)
+    refutes_target: "Apollo artifacts were placed and collected robotically only"
+    anchor:
+      type: capability-ratio-plus-surface-traces
+      description: >
+        Returned mass was 381.7 kg against 326.1 g for all three successful Soviet
+        robotic sample returns (Luna 16, 20, 24): about 1,170 times more, from six
+        sites rather than three. LRO also images foot trails and rover tracks, but
+        those images are NASA's own and are the one anchor here that is not independent.
+      accessible: true
+    basis: >
+      # V: V1 for masses (Luna 101 g / 55 g / 170.1 g agree across Wikipedia pages,
+      #    lroc.sese.asu.edu, and a 170.1 g news item). Luna 20 shows 30 g vs 55 g in
+      #    different sources; the 55 g figure is used and the discrepancy is flagged.
+      # CHANGED from first draft: was filed material/high. It rests partly on an
+      #    inference about what robotic missions of that era could do, which is
+      #    synthetic, and the track imagery is not independent. Now synthetic/moderate.
+      # WHAT WOULD RAISE IT: independent (non-NASA) imaging of rover tracks or foot
+      #    trails, or independent seismic or other data from the surface stations.
+      # TO REACH V2: Luna 16/20/24 sample-return papers; LROC image captions.
+      Rule 9 satisfied for the refutation: it names its target and gives its anchors.
+      It is the strongest serious alternative to the landings, and the only one that
+      survives the reflector and sample claims individually.
+
+  - id: apollo-staged-hoax
+    state: refuted
+    statement: >
+      The Apollo landings were staged on Earth and never took place.
+    evidence_class: material
+    confidence: high
+    evidential_weight: 4   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 1   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Gallup 1999: about 6% doubted the landings. YouGov 2019: 11% of US adults. Economist/YouGov 2021: 12%. UK YouGov 2012: 12%. A Newsweek headline reports about half of Russians in one poll (not read; unchecked).
+    would_change_if: >
+      any one of the independent records (outside ranging, foreign lab dating, other nations' imaging) is shown to fail or to depend on NASA
+    refutes_target: "Apollo landings were staged / faked"
+    anchor:
+      type: convergence-against-fabrication
+      description: >
+        A staged event would need to have produced, simultaneously: reflectors that
+        four outside stations in three countries still range; 381.7 kg of rock that
+        about 150 labs date to 4.4+ billion years; and later imaging by Japan's and
+        India's spacecraft matching the claimed sites. See dt-independent-records.
+      accessible: true
+    basis: >
+      Refuted by material anchors, not by NASA's authority or by popularity. The
+      point is that the hoax claim needs one fake to defeat several unrelated,
+      independently verifiable records, and it must also explain why the same
+      reflectors respond to Italian and French lasers.
+      # V: V1. The refutation does not depend on any single V0 item above.
+      It names its target and does not claim that every individual question raised
+      about the footage has a settled answer.
+
+  - id: apollo-soviet-non-challenge
+    state: proposed
+    statement: >
+      The Soviet Union, which monitored the missions and had strong motive to expose
+      a fake, did not publicly challenge the landings, and later exchanged samples.
+    evidence_class: synthetic
+    confidence: low
+    evidential_weight: 2   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. Widely repeated as an argument; its public form is stronger than its documentation.
+    would_change_if: >
+      Soviet primary documents or press from 1969 are found that either confirm or contest the landing
+    anchor:
+      type: argument-from-silence
+      description: >
+        Luna 15 was in lunar orbit during Apollo 11, and the 1971 sample exchange is
+        documented. The inference is that a rival with the means and motive would
+        have objected to a fake.
+      accessible: true
+    basis: >
+      # V: V0 -> LOWERED from moderate to low. A targeted search found NO explicit
+      #    contemporaneous Soviet statement confirming the landing, and noted that
+      #    public Soviet statements were evasive. What IS documented is the sample
+      #    exchange (V1), which is already counted in apollo-samples-are-lunar.
+      # TO REACH V2: Soviet press and diplomatic record, 1969; Jodrell Bank / Lovell
+      #    recordings of Luna 15 (jb.man.ac.uk, blocked here).
+      Held at proposed deliberately. A rival's silence is an inference, not a
+      measurement. Not used by any established claim in this dig.
+
+  - id: apollo-radiation-survivable
+    state: established
+    statement: >
+      Apollo crews crossed the Van Allen belts and spent days beyond low Earth orbit
+      without receiving a dangerous radiation dose.
+    evidence_class: material
+    confidence: moderate
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 3   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not measured. The Van Allen belts argument is a staple of hoax claims, so doubt is common; expert acceptance is high.
+    would_change_if: >
+      dosimetry outside NASA's records, or a recomputation of the belt transit from independent belt data, differing materially from the table
+    anchor:
+      type: dosimetry-plus-belt-physics
+      description: >
+        Crew-average skin doses for the nine lunar-distance missions ranged from
+        0.16 rad (Apollo 8) to 1.14 rad (Apollo 14), mean 0.46 rad, against a
+        400 rad skin limit set for the program (blood-forming organs about 40% lower
+        than skin). Most of each dose came from belt passage. Mission values include
+        Apollo 11 at 0.18 rad and Apollo 17 at 0.55 rad.
+      accessible: true
+    basis: >
+      # V: V1. The table is reported identically in several summaries of NASA TN
+      #    D-7080 (Apollo Experience Report: Protection Against Radiation).
+      # TO REACH V2: NASA TN D-7080 (ntrs.nasa.gov/citations/19730010172), table of
+      #    crew-average doses.
+      Confidence capped at moderate: the dose records are NASA-originated, so only
+      the belt physics is independently measured. The claim is about dose, not the
+      absence of any risk. Note the 400 rad figure is the program's limit, not a
+      harm threshold.
+
+  - id: apollo-original-sstv-tapes-lost
+    state: searched_gap
+    statement: >
+      The original Apollo 11 slow-scan television tapes (45 tapes) were erased and
+      reused; the surviving footage comes from station recordings.
+    evidence_class: primary_text
+    confidence: moderate   # capped: absence anchor (framework rule)
+    evidential_weight: 3   # of 5; capped at 4 while anchor_checked is no
+    anchor_checked: no   # V1: agreed across secondary sources, primary not opened (see header)
+    adoption_weight: 5   # of 5, shown separately; never combined with evidential_weight
+    adoption_note: >
+      Not polled. Widely known and accepted.
+    would_change_if: >
+      the 45 original tapes, or records of their disposal that contradict NASA's 2009 account, are found
+    next_step: >
+      Read NASA's 2009 Apollo 11 tape-search report and Goddard's tape inventory and disposal records; log what each shows about the 45 tapes and the dates.
+    anchor:
+      type: documented-absence
+      description: >
+        At a 16 July 2009 NASA briefing, Richard Nafzger (Goddard) reported that the
+        45 original tapes were among several hundred thousand recalled, degaussed
+        and reused, and "the slow-scan recordings are no longer." A restoration
+        by Lowry Digital used recordings from Goldstone (US) and from Parkes and
+        Honeysuckle Creek (Australia), about two and a half hours.
+      accessible: true
+    basis: >
+      # V: V1 (Space.com, NBC, Fox, and others agree on date, count and speaker).
+      # TO REACH V2: NASA's 2009 Apollo 11 tape-search report.
+      A real, documented gap that the hoax narrative feeds on. It lowers the quality
+      of one footage source and nothing else; it does not touch the reflectors,
+      samples or orbital imagery, which are independent of the tapes.

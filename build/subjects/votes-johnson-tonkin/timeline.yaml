@@ -1,0 +1,816 @@
+timeline:
+  id: votes-johnson-tonkin
+  title: Votes touching Vietnam during Johnson's presidency and the repeal of the Tonkin Resolution (1964 to 1970)
+  as_of: '2026-10-02'
+  note: 'Selection rule (log it): roll calls whose description, question or bill contains vietnam, viet nam, southeast asia, tonkin, indochina or gulf of. This is
+    a crude keyword filter: it includes some off-topic votes and will miss Vietnam-related votes that lack those words. Times are not recorded for these votes, so
+    each dot is drawn at noon UTC on its date (date precision only). Every dot links to its roll-call page.'
+panels:
+- id: years
+  bands:
+  - label: Johnson (from 22 Nov 1963)
+    from: '1963-11-22T00:00:00Z'
+    to: '1969-01-20T00:00:00Z'
+  - label: Nixon
+    from: '1969-01-20T00:00:00Z'
+    to: '1971-01-31T00:00:00Z'
+  title: 'Panel A: 1963 to 1971 (one tick per year)'
+  start: '1963-11-01T00:00:00Z'
+  end: '1971-01-31T00:00:00Z'
+  tick_years: 1
+  lanes:
+  - tonkin
+  - house
+  - senate
+- id: repeal
+  title: 'Panel B: June and July 1970, the votes to repeal the Gulf of Tonkin Resolution (one tick per week)'
+  start: '1970-06-01T00:00:00Z'
+  end: '1970-07-20T00:00:00Z'
+  tick_hours: 168
+  lanes:
+  - house
+  - senate
+lanes:
+  tonkin:
+    label: Gulf of Tonkin dig events
+  house:
+    label: House votes
+  senate:
+    label: Senate votes
+people: []
+sources:
+  s_vv:
+    title: Voteview roll-call data (secondary index; official record is the anchor from 1990, the Congressional Record before)
+    url: https://voteview.com
+    authenticity: dataset; counts spot-checked for 2009-2026 against official XML, not for these years
+  s_hanyok:
+    title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), NSArchive copy
+    url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
+    authenticity: authenticated, moderate (see gulf-of-tonkin sources)
+  s_tonkin_dig:
+    title: Strata Gulf of Tonkin dig, timeline
+    url: ../gulf-of-tonkin/timeline.html
+    authenticity: this repository
+events:
+- id: v1
+  panel: years
+  lane: house
+  time: '1964-08-07T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0880197
+  label: '1964-08-07: House HJRE1145 H.j. res. 1145. support the president''s actions in retaliati'
+  detail: 'H.j. res. 1145. support the president''s actions in retaliating to attacks against u.s. naval forces off viet nam and pledge u.s. assistance Result: n/a;
+    yea 416, nay 0. Roll call 197.'
+- id: v2
+  panel: years
+  lane: senate
+  time: '1964-08-07T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0880481
+  label: '1964-08-07: Senate HJRE1145 H.j.res. 1145. support president''s actions in ordering retal'
+  detail: 'H.j.res. 1145. support president''s actions in ordering retaliation against attacks on u.s. forces by north viet nam & pledge u.s. determina Result: n/a;
+    yea 88, nay 2. Roll call 481.'
+- id: v3
+  panel: years
+  lane: senate
+  time: '1965-04-09T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890045
+  label: '1965-04-09: Senate HR2362 To amend h.r. 2362, the 1965 elementary and secondary educat'
+  detail: 'To amend h.r. 2362, the 1965 elementary and secondary education act of 1965, by adding a new title which would extend gi benefits to veteran Result: n/a;
+    yea 27, nay 64. Roll call 45.'
+- id: v4
+  panel: years
+  lane: senate
+  time: '1965-06-07T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890086
+  label: '1965-06-07: Senate S1837 To amend s. 1837, the 1965 foreign assistance act of 1965, b'
+  detail: 'To amend s. 1837, the 1965 foreign assistance act of 1965, by providing $89 million authorization for economic assistance to southeast asia Result: n/a;
+    yea 22, nay 45. Roll call 86.'
+- id: v5
+  panel: years
+  lane: senate
+  time: '1965-06-07T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890087
+  label: '1965-06-07: Senate S1837 To amend s. 1837, the 1965 foreign assistance act of 1965, b'
+  detail: 'To amend s. 1837, the 1965 foreign assistance act of 1965, by authorizing $89 million for expanded economic assistance to southeast asia. Result: n/a;
+    yea 42, nay 26. Roll call 87.'
+- id: v6
+  panel: years
+  lane: senate
+  time: '1965-07-19T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890164
+  label: '1965-07-19: Senate S9 To amend s. 9, the cold war veterans'' readjustment assistanc'
+  detail: 'To amend s. 9, the cold war veterans'' readjustment assistance act, with a substitute amendment providing education and readjustment benefits Result: n/a;
+    yea 31, nay 53. Roll call 164.'
+- id: v7
+  panel: years
+  lane: house
+  time: '1965-10-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0890182
+  label: '1965-10-01: House HR10871 To recommit h.r. 10871, the foreign assistance appropriation'
+  detail: 'To recommit h.r. 10871, the foreign assistance appropriations, with instructions to the conferees to insist on disagreement to amendment no. Result: n/a;
+    yea 164, nay 174. Roll call 182.'
+- id: v8
+  panel: years
+  lane: house
+  time: '1966-02-24T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0890214
+  label: '1966-02-24: House HR12169 To recommit h.r. 12169, the supplemental foreign assistance '
+  detail: 'To recommit h.r. 12169, the supplemental foreign assistance authorization, with instructions to limit funds for vietnam, laos, thailand, and Result: n/a;
+    yea 169, nay 213. Roll call 214.'
+- id: v9
+  panel: years
+  lane: senate
+  time: '1966-03-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890270
+  label: '1966-03-01: Senate S2791 To table morse amendment to s. 2791, the 1966 supplemental m'
+  detail: 'To table morse amendment to s. 2791, the 1966 supplemental military authorizations (vietnam). the amendment repeals the southeast asia reso Result: n/a;
+    yea 92, nay 5. Roll call 270.'
+- id: v10
+  panel: years
+  lane: senate
+  time: '1966-03-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890271
+  label: '1966-03-01: Senate S2791 To table gurening amendment to s. 2791, the 1966 supplementa'
+  detail: 'To table gurening amendment to s. 2791, the 1966 supplemental military authorizations. the amendment provides that draftees could not be se Result: n/a;
+    yea 94, nay 2. Roll call 271.'
+- id: v11
+  panel: years
+  lane: senate
+  time: '1966-07-25T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890365
+  label: '1966-07-25: Senate S3584 To amend s. 3584, the foreign assistance act, by requiring t'
+  detail: 'To amend s. 3584, the foreign assistance act, by requiring tighter procurement standards for iron and steel products purchased with aid fund Result: n/a;
+    yea 64, nay 14. Roll call 365.'
+- id: v12
+  panel: years
+  lane: senate
+  time: '1966-10-11T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0890481
+  label: '1966-10-11: Senate HR15748 To pass h.r. 15748, a bill authorizing special leave for vol'
+  detail: 'To pass h.r. 15748, a bill authorizing special leave for voluntary extended tour of duty in vietnam in armed forces. Result: n/a; yea 68, nay 2. Roll call
+    481.'
+- id: v13
+  panel: years
+  lane: house
+  time: '1966-10-13T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0890367
+  label: '1966-10-13: House HR12047 To pass h.r. 12047, a bill pertaining to vietnam and obstruc'
+  detail: 'To pass h.r. 12047, a bill pertaining to vietnam and obstruction of armed forces. Result: n/a; yea 275, nay 64. Roll call 367.'
+- id: v14
+  panel: years
+  lane: senate
+  time: '1967-03-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900025
+  label: '1967-03-01: Senate S665 To amend s. 665. the vote is on an amendment offered by clar'
+  detail: 'To amend s. 665. the vote is on an amendment offered by clark, which was itself amended by substituting the mansfield amendment, urging tha Result: n/a;
+    yea 72, nay 19. Roll call 25.'
+- id: v15
+  panel: years
+  lane: house
+  time: '1967-03-02T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900017
+  label: '1967-03-02: House HR4515 To recommit h.r. 4515, a bill to authorize supplemental mili'
+  detail: 'To recommit h.r. 4515, a bill to authorize supplemental military procurement, research & development, and construction, with instructions to Result: n/a;
+    yea 18, nay 372. Roll call 17.'
+- id: v16
+  panel: years
+  lane: house
+  time: '1967-03-08T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900018
+  label: '1967-03-08: House HR4515 Conference report on h.r. 4515, a bill to authorize suppleme'
+  detail: 'Conference report on h.r. 4515, a bill to authorize supplemental military procurement, research and development, and construction. as amend Result: n/a;
+    yea 364, nay 13. Roll call 18.'
+- id: v17
+  panel: years
+  lane: senate
+  time: '1967-03-15T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900046
+  label: '1967-03-15: Senate To agree to executive reservation no. 2 to ex.d, providing t'
+  detail: 'To agree to executive reservation no. 2 to ex.d, providing that a consular convention with the soviet union will not take effect until the p Result: n/a;
+    yea 25, nay 67. Roll call 46.'
+- id: v18
+  panel: years
+  lane: senate
+  time: '1967-03-15T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900049
+  label: '1967-03-15: Senate To agree to executive understanding no. 1, with reference to'
+  detail: 'To agree to executive understanding no. 1, with reference to executive d. the understanding adds to the resolution of ratification the hope Result: n/a;
+    yea 38, nay 51. Roll call 49.'
+- id: v19
+  panel: years
+  lane: house
+  time: '1967-03-16T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900022
+  label: '1967-03-16: House HR7123 To pass h.r. 7123, the supplemental defense appropriations b'
+  detail: 'To pass h.r. 7123, the supplemental defense appropriations bill 1967, which provides $12 billion for support of armed forces in vietnam. Result: n/a; yea
+    385, nay 11. Roll call 22.'
+- id: v20
+  panel: years
+  lane: senate
+  time: '1967-03-20T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900051
+  label: '1967-03-20: Senate HR7123 To pass h.r. 7123, a bill to provide $12 billion in addition'
+  detail: 'To pass h.r. 7123, a bill to provide $12 billion in additional funds for support of military operations in southeast asia. Result: n/a; yea 77, nay 3.
+    Roll call 51.'
+- id: v21
+  panel: years
+  lane: senate
+  time: '1967-05-11T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900087
+  label: '1967-05-11: Senate S1432 To amend s. 1432, by making service in southeast asia volunt'
+  detail: 'To amend s. 1432, by making service in southeast asia voluntary. Result: n/a; yea 2, nay 75. Roll call 87.'
+- id: v22
+  panel: years
+  lane: senate
+  time: '1967-10-10T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900224
+  label: '1967-10-10: Senate HR10345 To amend h.r. 10345, departments of state, justice, and comm'
+  detail: 'To amend h.r. 10345, departments of state, justice, and commerce, and the judiciary and related agencies appropriation bill, 1968, by adding Result: n/a;
+    yea 74, nay 15. Roll call 224.'
+- id: v23
+  panel: years
+  lane: house
+  time: '1967-10-18T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900166
+  label: '1967-10-18: House HJR888 To amend h.j. res. 888, continuing appropriations bill of 19'
+  detail: 'To amend h.j. res. 888, continuing appropriations bill of 1968, by providing that federal agencies shall in fiscal 1968 spend no more than i Result: n/a;
+    yea 238, nay 164. Roll call 166.'
+- id: v24
+  panel: years
+  lane: house
+  time: '1967-11-08T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900201
+  label: '1967-11-08: House S1872 Conference report on s. 1872, foreign assistance act of 1967'
+  detail: 'Conference report on s. 1872, foreign assistance act of 1967;to recommit the bill to the conference committee with instructions to house man Result: n/a;
+    yea 196, nay 200. Roll call 201.'
+- id: v25
+  panel: years
+  lane: house
+  time: '1967-11-08T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900202
+  label: '1967-11-08: House S1872 Conference report on s. 1872, foreign assistance act of 1967'
+  detail: 'Conference report on s. 1872, foreign assistance act of 1967; to pass the report which recommends appropriating $141,799,000 less than the o Result: n/a;
+    yea 205, nay 188. Roll call 202.'
+- id: v26
+  panel: years
+  lane: senate
+  time: '1967-11-30T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900290
+  label: '1967-11-30: Senate SRES180 To pass s. res. 180, expressing the sense of the senate in f'
+  detail: 'To pass s. res. 180, expressing the sense of the senate in favor of u.s. initiation of efforts to assure that the u.n. security council will Result: n/a;
+    yea 82, nay 0. Roll call 290.'
+- id: v27
+  panel: years
+  lane: house
+  time: '1967-12-11T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900234
+  label: '1967-12-11: House HJR888 To recede and concur with the senate in senate amendment no.'
+  detail: 'To recede and concur with the senate in senate amendment no. 2, with an amendment, to h.j. res. 888, continuing appropriations bill for fisc Result: n/a;
+    yea 368, nay 26. Roll call 234.'
+- id: v28
+  panel: years
+  lane: senate
+  time: '1968-03-28T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900375
+  label: '1968-03-28: Senate HR15414 To amend the smathers-williams amendment to h.r. 15414, by i'
+  detail: 'To amend the smathers-williams amendment to h.r. 15414, by imposing a 20% sucharge on taxpayers trading with communist countries supplying n Result: n/a;
+    yea 38, nay 44. Roll call 375.'
+- id: v29
+  panel: years
+  lane: house
+  time: '1968-05-14T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0900319
+  label: '1968-05-14: House HR16165 To amend h.r. 16165, a bill to extend the agricultural trade'
+  detail: 'To amend h.r. 16165, a bill to extend the agricultural trade development and assistance act of 1954, by prohibiting financing of sales of co Result: n/a;
+    yea 369, nay 21. Roll call 319.'
+- id: v30
+  panel: years
+  lane: senate
+  time: '1968-06-26T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0900478
+  label: '1968-06-26: Senate HR17734 To amend h.r. 17734, second supplemental appropriations for '
+  detail: 'To amend h.r. 17734, second supplemental appropriations for fiscal 1968, by reducing funds for b-52 bombing operations in vietnam. Result: n/a; yea 10,
+    nay 79. Roll call 478.'
+- id: v31
+  panel: years
+  lane: senate
+  time: '1969-09-17T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910078
+  label: '1969-09-17: Senate S2546 To amend s. 2546, by setting troop level for u.s. armed forc'
+  detail: 'To amend s. 2546, by setting troop level for u.s. armed forces at 3,461,000, and to reduce that level by the same number of troops which are Result: n/a;
+    yea 71, nay 10. Roll call 78.'
+- id: v32
+  panel: years
+  lane: house
+  time: '1969-12-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910142
+  label: '1969-12-01: House HRES722 To order the previous question on h. res. 722, the rule for '
+  detail: 'To order the previous question on h. res. 722, the rule for consideration of h.res. 613, a vietnam resolution. Result: n/a; yea 225, nay 132. Roll call
+    142.'
+- id: v33
+  panel: years
+  lane: house
+  time: '1969-12-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910143
+  label: '1969-12-01: House HRES722 To adopt h.res. 722, the rule for consideration of h.res. 61'
+  detail: 'To adopt h.res. 722, the rule for consideration of h.res. 613, the vietnam resolution. Result: n/a; yea 252, nay 100. Roll call 143.'
+- id: v34
+  panel: years
+  lane: house
+  time: '1969-12-02T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910144
+  label: '1969-12-02: House HRES613 To recommit h.res. 613, the vietnam resolution to committee '
+  detail: 'To recommit h.res. 613, the vietnam resolution to committee with instructions to report back with an amendment requesting the president to c Result: n/a;
+    yea 392, nay 0. Roll call 144.'
+- id: v35
+  panel: years
+  lane: house
+  time: '1969-12-02T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910145
+  label: '1969-12-02: House HRES613 To pass h. res. 613, toward peace with justice in vietnam.'
+  detail: 'To pass h. res. 613, toward peace with justice in vietnam. Result: n/a; yea 334, nay 55. Roll call 145.'
+- id: v36
+  panel: years
+  lane: senate
+  time: '1969-12-12T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910201
+  label: '1969-12-12: Senate HR14580 To amend h.r. 14580, a bill providing for fiscal 1970 author'
+  detail: 'To amend h.r. 14580, a bill providing for fiscal 1970 authorizations for foreign aid program, to encourage vietnamese land reform programs b Result: n/a;
+    yea 33, nay 51. Roll call 201.'
+- id: v37
+  panel: years
+  lane: house
+  time: '1969-12-15T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910157
+  label: '1969-12-15: House HCR454 To pass h.con.res. 454 calling for humane treatment and rele'
+  detail: 'To pass h.con.res. 454 calling for humane treatment and release of american prisoners of war held by north vietnam and the national liberati Result: n/a;
+    yea 405, nay 0. Roll call 157.'
+- id: v38
+  panel: years
+  lane: senate
+  time: '1970-06-03T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id001
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910383
+  label: '1970-06-03: Senate HR15628 To amend h.r. 15628 so as to make inoperative provisions tha'
+  detail: 'To amend h.r. 15628 so as to make inoperative provisions that limit u.s. military involvement in cambodia during any period in which the pre Result: n/a;
+    yea 36, nay 54. Roll call 383.'
+- id: v39
+  panel: years
+  lane: house
+  time: '1970-06-08T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id002
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910262
+  label: '1970-06-08: House HRES976 To adopt a committee amendment regarding the size of the com'
+  detail: 'To adopt a committee amendment regarding the size of the committee of the house authorized by h.res. 976 to study firsthand the recent devel Result: n/a;
+    yea 227, nay 95. Roll call 262.'
+- id: v40
+  panel: years
+  lane: house
+  time: '1970-06-08T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id003
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910263
+  label: '1970-06-08: House HRES976 To order the previous question on h.res. 976, to authorize a'
+  detail: 'To order the previous question on h.res. 976, to authorize a select committee of the house to study firsthand the recent developments in sou Result: n/a;
+    yea 246, nay 80. Roll call 263.'
+- id: v41
+  panel: years
+  lane: senate
+  time: '1970-06-11T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id004
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910384
+  label: '1970-06-11: Senate HR15628 To amend h.r. 15628, by providing that nothing in the propos'
+  detail: 'To amend h.r. 15628, by providing that nothing in the proposed church-cooper amendment shall preclude the president from taking such actions Result: n/a;
+    yea 47, nay 52. Roll call 384.'
+- id: v42
+  panel: years
+  lane: senate
+  time: '1970-06-17T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id005
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910389
+  label: '1970-06-17: Senate HR15628 To amend h.r. 15628, so as to enable the united states to pr'
+  detail: 'To amend h.r. 15628, so as to enable the united states to provide the proposed international fighter aircraft to thailand as well as to sout Result: n/a;
+    yea 36, nay 45. Roll call 389.'
+- id: v43
+  panel: years
+  lane: senate
+  time: '1970-06-22T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id006
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910392
+  label: '1970-06-22: Senate HR15628 To table dole (kan.) amendment to h.r. 15628, said amendment'
+  detail: 'To table dole (kan.) amendment to h.r. 15628, said amendment providing to repeal the gulf of tonkin resolution effective at the end of the 9 Result: n/a;
+    yea 15, nay 67. Roll call 392.'
+- id: v44
+  panel: years
+  lane: senate
+  time: '1970-06-24T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id007
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910398
+  label: '1970-06-24: Senate HR15628 To amend h.r. 15628 by repealing the gulf of tonkin resoluti'
+  detail: 'To amend h.r. 15628 by repealing the gulf of tonkin resolution effective at the end of the 91st congress. Result: n/a; yea 81, nay 10. Roll call 398.'
+- id: v45
+  panel: years
+  lane: senate
+  time: '1970-06-29T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id008
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910412
+  label: '1970-06-29: Senate HR15628 To table allot amendment to h.r. 15628, adding a new section'
+  detail: 'To table allot amendment to h.r. 15628, adding a new section barring funds for use in vietnam after december 31, 1970, for any purpose arisi Result: n/a;
+    yea 62, nay 29. Roll call 412.'
+- id: v46
+  panel: years
+  lane: senate
+  time: '1970-07-10T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: &id009
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910467
+  label: '1970-07-10: Senate SCR64 To adopt s. con. res. 64, to terminate the tonkin gulf resol'
+  detail: 'To adopt s. con. res. 64, to terminate the tonkin gulf resolution, after adopting committee substitute amendment, and an amendment to make t Result: n/a;
+    yea 57, nay 5. Roll call 467.'
+- id: v47
+  panel: years
+  lane: senate
+  time: '1970-09-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910503
+  label: '1970-09-01: Senate HR17123 To amend h.r. 17123 so as to limit to 280,000 the maximum nu'
+  detail: 'To amend h.r. 17123 so as to limit to 280,000 the maximum number of u.s. troops in vietnam after april 30, 1971 and providing for complete t Result: n/a;
+    yea 39, nay 55. Roll call 503.'
+- id: v48
+  panel: years
+  lane: senate
+  time: '1970-09-01T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RS0910504
+  label: '1970-09-01: Senate HR17123 To amend h.r. 17123 so as to bar use of funds to send drafte'
+  detail: 'To amend h.r. 17123 so as to bar use of funds to send draftees to vietnam unless they volunteer for such duty. Result: n/a; yea 22, nay 71. Roll call 504.'
+- id: v49
+  panel: years
+  lane: house
+  time: '1970-12-07T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources:
+  - s_vv
+  link: https://voteview.com/rollcall/RH0910395
+  label: '1970-12-07: House HRES1282 To suspend the rules and pass h. res. 1282, in support for e'
+  detail: 'To suspend the rules and pass h. res. 1282, in support for efforts to rescue american prisoners of war incarcerated in north vietnam. Result: n/a; yea
+    347, nay 15. Roll call 395.'
+- id: v38r
+  panel: repeal
+  lane: senate
+  time: '1970-06-03T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id001
+  link: https://voteview.com/rollcall/RS0910383
+  label: '1970-06-03: Senate HR15628 To amend h.r. 15628 so as to make inoperative provisions tha'
+  detail: 'To amend h.r. 15628 so as to make inoperative provisions that limit u.s. military involvement in cambodia during any period in which the pre Result: n/a;
+    yea 36, nay 54. Roll call 383.'
+- id: v39r
+  panel: repeal
+  lane: house
+  time: '1970-06-08T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id002
+  link: https://voteview.com/rollcall/RH0910262
+  label: '1970-06-08: House HRES976 To adopt a committee amendment regarding the size of the com'
+  detail: 'To adopt a committee amendment regarding the size of the committee of the house authorized by h.res. 976 to study firsthand the recent devel Result: n/a;
+    yea 227, nay 95. Roll call 262.'
+- id: v40r
+  panel: repeal
+  lane: house
+  time: '1970-06-08T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id003
+  link: https://voteview.com/rollcall/RH0910263
+  label: '1970-06-08: House HRES976 To order the previous question on h.res. 976, to authorize a'
+  detail: 'To order the previous question on h.res. 976, to authorize a select committee of the house to study firsthand the recent developments in sou Result: n/a;
+    yea 246, nay 80. Roll call 263.'
+- id: v41r
+  panel: repeal
+  lane: senate
+  time: '1970-06-11T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id004
+  link: https://voteview.com/rollcall/RS0910384
+  label: '1970-06-11: Senate HR15628 To amend h.r. 15628, by providing that nothing in the propos'
+  detail: 'To amend h.r. 15628, by providing that nothing in the proposed church-cooper amendment shall preclude the president from taking such actions Result: n/a;
+    yea 47, nay 52. Roll call 384.'
+- id: v42r
+  panel: repeal
+  lane: senate
+  time: '1970-06-17T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id005
+  link: https://voteview.com/rollcall/RS0910389
+  label: '1970-06-17: Senate HR15628 To amend h.r. 15628, so as to enable the united states to pr'
+  detail: 'To amend h.r. 15628, so as to enable the united states to provide the proposed international fighter aircraft to thailand as well as to sout Result: n/a;
+    yea 36, nay 45. Roll call 389.'
+- id: v43r
+  panel: repeal
+  lane: senate
+  time: '1970-06-22T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id006
+  link: https://voteview.com/rollcall/RS0910392
+  label: '1970-06-22: Senate HR15628 To table dole (kan.) amendment to h.r. 15628, said amendment'
+  detail: 'To table dole (kan.) amendment to h.r. 15628, said amendment providing to repeal the gulf of tonkin resolution effective at the end of the 9 Result: n/a;
+    yea 15, nay 67. Roll call 392.'
+- id: v44r
+  panel: repeal
+  lane: senate
+  time: '1970-06-24T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id007
+  link: https://voteview.com/rollcall/RS0910398
+  label: '1970-06-24: Senate HR15628 To amend h.r. 15628 by repealing the gulf of tonkin resoluti'
+  detail: 'To amend h.r. 15628 by repealing the gulf of tonkin resolution effective at the end of the 91st congress. Result: n/a; yea 81, nay 10. Roll call 398.'
+- id: v45r
+  panel: repeal
+  lane: senate
+  time: '1970-06-29T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id008
+  link: https://voteview.com/rollcall/RS0910412
+  label: '1970-06-29: Senate HR15628 To table allot amendment to h.r. 15628, adding a new section'
+  detail: 'To table allot amendment to h.r. 15628, adding a new section barring funds for use in vietnam after december 31, 1970, for any purpose arisi Result: n/a;
+    yea 62, nay 29. Roll call 412.'
+- id: v46r
+  panel: repeal
+  lane: senate
+  time: '1970-07-10T12:00:00Z'
+  precision: day
+  kind: official
+  status: single
+  sources: *id009
+  link: https://voteview.com/rollcall/RS0910467
+  label: '1970-07-10: Senate SCR64 To adopt s. con. res. 64, to terminate the tonkin gulf resol'
+  detail: 'To adopt s. con. res. 64, to terminate the tonkin gulf resolution, after adopting committee substitute amendment, and an amendment to make t Result: n/a;
+    yea 57, nay 5. Roll call 467.'
+- id: t1
+  panel: years
+  lane: tonkin
+  time: '1964-08-02T08:05:00Z'
+  precision: approx
+  kind: analysis
+  status: reported
+  sources:
+  - s_hanyok
+  link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=17
+  label: '2 Aug 1964: Maddox fires warning rounds; boats attack (claim tonkin-aug2-maddox-engaged)'
+  detail: See the Gulf of Tonkin dig.
+- id: t2
+  panel: years
+  lane: tonkin
+  time: '1964-08-04T15:00:00Z'
+  precision: approx
+  kind: analysis
+  status: reported
+  sources:
+  - s_hanyok
+  link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=49
+  label: '4 Aug 1964: reported second attack that, per NSA''s own study, did not happen (claim tonkin-aug4-attack-occurred, refuted)'
+  detail: See the Gulf of Tonkin dig.

@@ -1,0 +1,131 @@
+subject:
+  id: atra-hasis
+  title: "Atra-ḫasīs (Babylonian Story of the Flood)"
+  incipit: "enūma ilū awīlum — \"When the gods (were) man\" (rendering disputed)"
+  provenance_note: >
+    Fragments first assembled and translated by George Smith as part of "The Chaldean
+    Account of Genesis"; the hero's name corrected from "Atarpi" to Atra-ḫasīs by
+    Heinrich Zimmern, 1899. The "Chaldean Genesis" packaging is the same biblical-frame
+    origin point flagged across this corpus.
+  primary_edition: "Lambert, W. G. & Millard, A. R. (1969). Atra-ḫasīs: The Babylonian Story of the Flood. Oxford: Clarendon."
+
+claims:
+
+  - id: ah-structure
+    statement: >
+      The principal Old Babylonian recension is an edition in three tablets, in Akkadian.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "Lambert & Millard 1969, edition of the three-tablet OB recension"
+      - class: synthetic
+        ref: "Convergent in subsequent literature (e.g. Sippar Library VI survey)"
+
+  - id: ah-date-colophon
+    statement: >
+      The most complete copy is dated by its colophon to the reign of Ammi-ṣaduqa
+      (1646–1626 BCE, middle chronology), great-great-grandson of Hammurabi — making
+      Atra-ḫasīs one of the oldest near-complete Akkadian literary texts known.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "Colophon of the main MS; Lambert & Millard 1969, pp. 31–41"
+      - class: synthetic
+        ref: "Battenfield survey; Wikipedia/CDLI summaries concur on the Ammi-ṣaduqa colophon"
+
+  - id: ah-scribe-name
+    statement: >
+      The scribe named in the colophon is now standardly read Ipiq-Aya ("the junior scribe").
+    state: contested
+    positions:
+      - label: "Ipiq-Aya"
+        holder: "Current standard reading (Dalley 1989 and later)"
+        ground: "Re-collation of the colophon signs."
+      - label: "Ku-Aya"
+        holder: "Lambert & Millard 1969"
+        ground: "Original reading in the editio princeps."
+      - label: "Kasap-Aya / Azag-Aya"
+        holder: "Variant readings in the record (incl. Clay)"
+        ground: "Alternate sign values proposed at various points."
+    anchors:
+      - class: primary-text
+        ref: "Colophon; Lambert & Millard 1969 vs. later collations"
+    notes: >
+      SHOWCASE of the temporal-reconfirmation rule. 'Ku-Aya' was a primary-text reading
+      (40y half-life) established in 1969. 1969→2026 is ~57 years — more than one half-life
+      — and the reading was in fact revised, not merely re-aged. The claim is therefore
+      held 'contested' with the supersession visible, rather than silently overwritten.
+      A reading changing is data the system should preserve, not erase.
+
+  - id: ah-incipit
+    statement: >
+      The opening line (enūma ilū awīlum) is famously problematic; no consensus rendering
+      has emerged.
+    state: contested
+    anchors:
+      - class: primary-text
+        ref: "Sippar Library VI survey, noting the incipit 'rendered in various ways, without consensus'"
+    notes: "Held contested at the level of the reading itself — an honest 'we do not agree on what this says.'"
+
+  - id: ah-narrative
+    statement: >
+      Narrative: humanity is made from clay mixed with the blood of a slain god to bear
+      the lesser gods' labor; human overpopulation and 'noise' prompt Enlil to cull
+      humankind by plague, then drought/famine, then a flood; Enki warns Atra-ḫasīs to
+      build a boat; survival is followed by the institution of population controls.
+    state: established
+    anchors:
+      - class: primary-text
+        ref: "Lambert & Millard 1969, Tablets I–III"
+
+  - id: ah-gilgamesh-dependency
+    statement: >
+      A version of the Atra-ḫasīs flood was paraphrased/incorporated into the Standard
+      Babylonian Gilgamesh, Tablet XI.
+    state: established
+    anchors:
+      - class: synthetic
+        ref: "Lambert & Millard 1969; Tigay, analysis of the editorial relationship"
+      - class: primary-text
+        ref: "Parallel passages between Atra-ḫasīs III and Gilgamesh XI"
+    notes: >
+      Directly ties this subject into the existing Gilgamesh corpus. The *fact* of the
+      dependency is established; Tigay's specific reading of *which* omissions were
+      deliberate editorial acts (the gods' hunger/thirst lines) is interpretive and
+      should be carried as a separate 'proposed' claim if deepened.
+
+  - id: ah-lambert-millard-edition
+    statement: >
+      Lambert & Millard 1969 is the foundational modern reconstruction, assembling
+      fragments from the British Museum and Yale Babylonian Collection into a
+      near-complete narrative.
+    state: established
+    anchors:
+      - class: synthetic
+        ref: "Lambert & Millard 1969; universally treated as the editio princeps in later work"
+
+  - id: ah-sippar-recension
+    statement: >
+      First-millennium tablets from the Neo-Babylonian Šamaš temple library at Sippar
+      align closely with the Kuyunjik (Nineveh) recension, implying a consistent
+      late recension descended from the Old Babylonian version; this late format runs to
+      perhaps ten or eleven tablets of ~50 lines/side.
+    state: proposed
+    anchors:
+      - class: material
+        ref: "Sippar Library excavation (Al-Jadir, Univ. of Baghdad); 'Tablets from the Sippar Library VI: Atra-ḫasīs'"
+    notes: >
+      Decay class: material, but recent and single-context — held at 'proposed' pending
+      wider corroboration. Flagged as the live edge of the dig.
+
+  - id: ah-genesis-frame
+    statement: >
+      Atra-ḫasīs has been read as an antecedent of the biblical flood / "the other Genesis."
+    state: contested
+    anchors:
+      - class: interpretive
+        ref: "George Smith, 'Chaldean Account of Genesis'; long comparison tradition"
+    notes: >
+      Adoption-weight flag, twin to enuma-elish:ee-genesis-parallel. The biblical frame is
+      the popular interpretive overlay this corpus exists to keep from masquerading as
+      evidential weight. Recorded as contested/interpretive on purpose.
