@@ -31,7 +31,7 @@ ul.l{list-style:none;padding:0}ul.l li{padding:12px 0;border-top:1px solid var(-
 
 def page(title, body, desc="", canonical="", extra_head="", depth=0):
     up = "../" * depth
-    nav = (f'<nav><a class="b" href="{up}">{E(CFG["name"])}</a><a href="{up}digs/">Digs</a><a href="{up}method/">Method</a>'
+    nav = (f'<nav><a class="b" href="{up}">{E(CFG["name"])}</a><a href="{up}digs/">Active Excavations</a><a href="{up}method/">Method</a>'
            f'<a href="{up}atlas/">Atlas</a><a href="{up}ideas/">Ideas</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
     meta = f'<meta name="description" content="{E(desc)}">' if desc else ""
     og = (f'<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">'
@@ -181,7 +181,7 @@ for sub in CFG["publish"]:
 
 items = "".join(f'<li><a href="{E(s)}/"><b>{E(h)}</b></a><br><span class="small">{E(" ".join(str(sm).split()))}</span>'
                 f'{"" if st == "published" else " <span class=pill>open dig</span>"}</li>' for s, h, sm, st in digs)
-write("digs/index.html", page("Digs", f'<p class="eyebrow">Digs</p><h1>What we have dug into</h1><p>Each dig files its claims with evidence, confidence and limits.</p><ul class="l">{items}</ul>', "Digs published on Stratah.", "/digs/", depth=1))
+write("digs/index.html", page("Active excavations", f'<p class="eyebrow">Active excavations</p><h1>What we are excavating</h1><p>Each excavation files its claims with evidence, confidence and limits.</p><ul class="l">{items}</ul>', "Active excavations on Stratah: each files its claims with evidence, confidence and limits.", "/digs/", depth=1))
 crow = "".join(f'<li><span class="mono">{E(d)}</span> · <a href="../digs/{E(sl)}/">{E(h)}</a><br>{E(t)}</li>' for d, sub, sl, h, t in sorted(corrections, reverse=True)) or "<li>No corrections logged yet.</li>"
 write("corrections/index.html", page("Corrections", f'<p class="eyebrow">Corrections</p><h1>What we got wrong, and fixed</h1><p>Every correction made to a published dig is logged and stays visible. The logs are append-only: an entry is never deleted or rewritten, only added to.</p><ul class="l">{crow}</ul>', "Corrections to Stratah digs.", "/corrections/", depth=1))
 write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG["name"])}: {E(CFG["tagline"])}</h1><p>{E(" ".join(CFG["about"].split()))}</p><p>See the <a href="../method/">method</a> for the rules, and <a href="../corrections/">corrections</a> for what we have fixed.</p>', " ".join(CFG["about"].split())[:200], "/about/", depth=1))
@@ -194,5 +194,5 @@ _li = "".join(f'<li id="{E(i["id"])}"><b>{E(i["title"])}</b> <span class="pill">
 write("ideas/index.html", page("Ideas for exploration", f'<p class="eyebrow">Ideas</p><h1>Ideas for exploration</h1><p>{E(" ".join(str(_ideas["intro"]).split()))}</p><ul class="l">{_li}</ul><p><a href="{E(CFG["issues_url"])}">Suggest an idea or a dig</a>.</p>', "Ideas and possible next digs for Stratah, with their status.", "/ideas/", depth=1))
 write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>https://{CFG['domain']}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls) + "</urlset>")
 write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: https://{CFG['domain']}/sitemap.xml\n")
-write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Digs\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open dig'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
+write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Active excavations\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open dig'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
 print(f"site built in {OUT}: {len(digs)} dig(s), {len(corrections)} correction note(s)")
