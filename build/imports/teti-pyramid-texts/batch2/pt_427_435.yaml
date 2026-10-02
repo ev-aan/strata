@@ -1,0 +1,247 @@
+id: pt_427_435
+pt_number: "427–435"
+display_name: "PT 427–435 — In Praise of Nut: The First Nut Hymn Series"
+sethe_phrase_range:
+  value: "§§ 777a–789c (approximate)"
+  state: partial
+  note: >
+    Mercer's sacred-texts.com edition (public domain) provides the phrase numbers
+    §§ 777–789 for PT 427–435 directly. This is more precisely anchored than
+    most entries.
+  source: "Sacred-texts.com Mercer edition, Chapter XIX, In Praise of Nut."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Second Nut series: PT 443–452"
+      note: "A second Nut praise series (PT 443–452) exists in the same corpus — not a later attestation but a companion series."
+    - source: "Coffin Texts Nut spells"
+      approximate_date_start: -2055
+      note: "Nut praise tradition continues extensively in CT. Specific concordance: searched_gap."
+      state: searched_gap
+    - source: "New Kingdom Book of the Dead — Nut chapters"
+      approximate_date_start: -1550
+      note: "Nut's role as cosmic mother and protector continues throughout. Specific BD concordance: searched_gap."
+      state: searched_gap
+
+location:
+  chamber: burial_chamber
+  wall: west_gable
+  column_direction: west_to_east
+  note: >
+    Allen (2005) notes the west gable of the burial chamber bears 'protective
+    spells' and 'texts commending the king to Nut' (in later pyramids). The
+    Nut praise series fits the west gable protective function. Precise Teti
+    placement of PT 427–435 requires Allen 2005 Teti section.
+    Note: the second Nut series (PT 443–452) may occupy a different wall or
+    a different pyramid's version of the same location.
+  physical_condition: searched_gap
+
+ritual_class:
+  - protective
+  - osirian
+  note: >
+    The Nut hymns are protective invocations — calling on Nut to spread over,
+    embrace, and protect her divine son (the king). The dominant image is Nut
+    as cosmic canopy: 'Nut, spread thyself over thy son, Osiris N.' (PT 427).
+    Each short utterance in the series is a variation on the same protective
+    theme: Nut protects the king, the king shall not die, Nut is mighty.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+    partial_note: >
+      The opening formula 'Nut, spread yourself over your son' would render
+      approximately: Nt pX.T Hr sA.k wsir N
+      This is a back-transliteration from Mercer — not confirmed from Sethe.
+  gardiner_sign_list_notes: >
+    Key signs:
+    - pX: (O50 or N1 sky + arms) — 'spread over/arch over' — the central
+      Nut-gesture, her body arching across the sky
+    - sA: son (G38 duck or Z4)
+    - mwt: mother (G14 vulture)
+    - Nt: Nut — sky goddess (N1 sky sign + t feminine + G41 or N35 phonetics)
+
+translations:
+  - translator_id: mercer_1952
+    text: >
+      "Utterance 427 (§ 777a–c):
+      To say: Nut, spread thyself over thy son, Osiris N.;
+      [protect him from all evil things].
+      Thou art come, that thou mayest protect thy son;
+      come now, protect this Great One.
+
+      Utterance 429 (§ 779a–c):
+      To say by Geb: Nut, thou art become (spiritually) mighty;
+      thou wast (already physically) mighty in the womb of thy mother, Tefnut,
+      before thou wast born.
+      Protect N. with life and well-being. He shall not die.
+
+      Utterance 432 (§ 782a–c):
+      To say: Great lady, who didst become heaven,
+      thou didst become (physically) mighty,
+      thou art become victorious, thou hast filled every place with thy beauty.
+      The whole earth lies beneath you, you possess it.
+
+      Utterance 435 (§ 786a–787b):
+      To say: I am Nut, 'the Granary.'
+      I have proclaimed the name of Osiris N.,
+      namely, 'Horus, beloved of the two lands, N.';
+      'King of Upper and Lower Egypt, N.';
+      'nb.ti, beloved of the Corporation, N.';
+      'falcon over gold, N.';
+      'heir of Geb, his beloved N.';
+      'beloved of all the gods, N.';
+      given all life, stability, prosperity, health, joy like Re,
+      thou livest for ever."
+    source: "Mercer, S.A.B. 1952. Utterances 427–435. Sacred-texts.com, Chapter XIX."
+    divergence_flag: true
+    notes: >
+      PT 427–435 contains nine utterances of varying length. Mercer's rendering
+      is available for the full series at sacred-texts.com. Selected utterances
+      shown above. PT 435 is remarkable: Nut speaks in first person ('I am Nut,
+      the Granary') and recites the king's five royal titles — this is the
+      full royal titulary formula embedded within a goddess-speech. 'The Granary'
+      (nb.t-HAp.t or similar) is an epithet of Nut not widely attested elsewhere.
+      Nut as grain-store connects sky-goddess to agricultural provision — an
+      unusual semantic association requiring lexical investigation.
+
+  - translator_id: allen_2005
+    text: >
+      Allen (2005, Pepi I section, PT 432):
+      'Great One who became sky, you became mighty, you became great,
+      you filled every place with your beauty. The whole earth is beneath you,
+      you have taken it. As you surround earth and all things in your embrace,
+      so have you taken [the king] in your embrace, imperishable.'
+    source: >
+      Touregypt.net Pepi I text, Utterance 432 (Allen rendering);
+      also confirmed from arxiv 2404.01458 citing Allen 2015.
+    divergence_flag: true
+    notes: >
+      Mercer (PT 432): 'thou hast filled every place with thy beauty. The whole
+      earth lies beneath you, you possess it.' Allen (PT 432): 'you filled every
+      place with your beauty. The whole earth is beneath you, you have taken it.'
+      The core content is stable; phrasing differs. Allen adds 'As you surround
+      earth... so have you taken [the king] in your embrace, imperishable' —
+      which makes the cosmological parallel to the protective embrace explicit.
+      Whether Mercer's version omits this or Allen's version adds it is a
+      question requiring Sethe MdC comparison.
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterances 427–435."
+
+lexical_anchors:
+  - term_transliteration: "pX.T"
+    term_mdc: "pX.T"
+    semantic_field: "Spread over / arch over — Nut's protective gesture"
+    notes: >
+      pX (also bX or pH) = 'spread, arch, extend.' Nut spreads her body over
+      the deceased as the sky arches over the earth. This verb is the central
+      action of the Nut hymns — everything else is elaboration of this one
+      gesture. The verb form pX.T is imperative/hortative: 'spread yourself!'
+      — the command to Nut to perform her cosmic function for the deceased king.
+    attestation_range: >
+      pX in the Nut-spread formula runs through all PT Nut hymns, Coffin Text
+      Nut spells, and New Kingdom coffin decoration captions.
+
+  - term_transliteration: "nb.t HAp.t"
+    semantic_field: "'The Granary' — Nut's unusual epithet in PT 435"
+    notes: >
+      Nut as 'the Granary' (nb.t HAp.t or similar — exact MdC requires Sethe)
+      connects the sky-goddess to agricultural provision. The epithet may relate
+      to Nut's role as receiver of the dead and regenerator of life — she
+      'stores' the deceased as a granary stores seed, then releases them as
+      new life. The grain-cycle parallel to death-and-resurrection is explicit
+      in later Egyptian theology. This is the earliest instance of this specific
+      Nut epithet in the recoverable record.
+    attestation_range: >
+      Nut-as-granary attested primarily here. Later parallels: searched_gap.
+
+  - term_transliteration: "Nt wrt"
+    term_mdc: "Nt wrt"
+    semantic_field: "Great Nut / Great Lady — formal address"
+    notes: >
+      Nt wrt = 'Nut the Great' or 'Great Lady who became heaven.'
+      The PT 432 address 'Great lady who became heaven' (Mercer) / 'Great One
+      who became sky' (Allen) is the formal opening of the Nut cosmological hymn.
+      wrt = 'great' (feminine form of wr). The 'became heaven' formula
+      (xpr.t m pt) describes Nut's cosmogonic act — she became the sky,
+      she did not originate as sky. This is a moment of transformation
+      encoded in the divine biography.
+    translation_disputes:
+      - reading: "'Great lady who became heaven' (Mercer)"
+      - reading: "'Great One who became sky' (Allen)"
+        note: "pt = 'sky/heaven' — both renderings are accurate. 'Lady' vs. 'One' reflects
+               feminine gender marking in Old Egyptian."
+
+divergence_points:
+  - id: nut_mighty_womb
+    claim: >
+      PT 429 says Nut 'was physically mighty in the womb of her mother Tefnut
+      before she was born' (Mercer).
+    state: proposed
+    positions:
+      - scholar: "Mercer 1952"
+        reading: >
+          Nut was spiritually mighty (through Geb's decree) but was already
+          physically mighty in Tefnut's womb before birth. The distinction
+          between physical and spiritual power is Mercer's parenthetical
+          interpretation.
+      - scholar: "Alternative"
+        reading: >
+          The distinction 'physical vs. spiritual' is Mercer's gloss, not the
+          Egyptian text. The original may simply say Nut was mighty before birth —
+          a statement of innate power without the physical/spiritual distinction.
+    note: >
+      Mercer frequently adds parenthetical interpretive glosses to clarify his
+      readings. These glosses are interpretive claims, not translations.
+      The physical/spiritual distinction at PT 429 is a Mercer insertion that
+      should be flagged — it may not be in the original.
+
+  - id: nut_granary_epithet
+    claim: "The epithet 'the Granary' for Nut in PT 435 is a unique agricultural identification"
+    state: proposed
+    positions:
+      - scholar: "Mercer 1952 (literal rendering)"
+        reading: "'I am Nut, the Granary'" — taking the epithet literally as agricultural storage
+    note: >
+      Whether 'Granary' (nb.t HAp.t?) is a literal agricultural epithet or a
+      metaphorical one (Nut stores the dead as grain is stored, then releases
+      them) is an interpretive question. Allen 2005's rendering of this epithet
+      would clarify: searched_gap.
+
+transmission_events:
+  - event: "Teti pyramid corpus (placement in burial chamber west gable region)"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 architectural analysis; Mercer 1952."
+  - event: "Second Nut series PT 443–452 (companion series in the same corpus)"
+    date_start: -2345
+    date_end: -2323
+    note: "The two Nut series (427–435 and 443–452) bookend a 'miscellaneous' section (436–442)."
+
+parallel_pyramids:
+  unas: searched_gap
+  pepi_i: true
+  merenre: searched_gap
+  pepi_ii: true
+  note: >
+    The Nut praise series is attested in Pepi I (touregypt.net confirms PT 432,
+    446). Unas attestation and specific PT numbers: searched_gap.
+
+notes: >
+  PT 427–435 is filed as a single entry because the nine utterances constitute
+  a coherent liturgical series — the First Nut Hymn cycle. Individual utterances
+  within the series can be split into separate records as the dig deepens.
+  PT 435's first-person Nut speech is the most unusual element: a goddess
+  speaks in first person to proclaim the king's royal titulary. This is the
+  only point in the PT corpus where a deity explicitly recites the five royal
+  titles — making PT 435 a coronation-in-absentia embedded in a funerary text.

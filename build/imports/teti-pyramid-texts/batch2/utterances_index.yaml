@@ -1,0 +1,388 @@
+subject_id: teti_pyramid_texts
+file: utterances_index.yaml
+purpose: >
+  Master index of all utterance files in this dig. Add new utterances here
+  when created. Never renumber existing entries — new utterances insert by
+  PT number order. The index is the timegraph entry point for this subject.
+
+# ─── UTTERANCE REGISTRY ───────────────────────────────────────────────────────
+
+utterances:
+  - id: pt_001_007
+    pt_number: "1–7"
+    display: "Sarcophagus Inscriptions"
+    file: utterances/pt_001_007.yaml
+    location: sarcophagus_interior
+    ritual_class: [protective, threshold]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: true          # Unique to Teti — not in any predecessor
+    primary_text_status: searched_gap
+    translation_status: searched_gap
+    priority: HIGH             # First inscribed sarcophagus — architectural innovation
+
+  - id: pt_023
+    pt_number: 23
+    display: "Efflux Offering / Voice Has Come"
+    file: utterances/pt_023.yaml
+    location: burial_chamber_north
+    ritual_class: [offering_ritual]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: partial  # Unas MdC reconstructed; Teti MdC searched_gap
+    translation_status: partial   # Mercer confirmed; Faulkner/Allen searched_gap
+
+  - id: pt_032
+    pt_number: 32
+    display: "The Mouth-Opening Meal"
+    file: utterances/pt_032.yaml
+    location: burial_chamber_north
+    ritual_class: [offering_ritual, threshold]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas, pepi_i]
+    notable: "First PT utterance to appear outside pyramid chambers (Pepi I mortuary temple)"
+    primary_text_status: searched_gap
+    translation_status: partial   # Allen heading confirmed; body searched_gap
+
+  - id: pt_213
+    pt_number: 213
+    display: "Resurrection Address — You Have Not Gone Dead"
+    file: utterances/pt_213.yaml
+    location: burial_chamber_south
+    ritual_class: [resurrection_ritual, osirian]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: partial  # Unas MdC partial; Teti MdC searched_gap
+    translation_status: partial   # Mercer + Piankoff confirmed; Allen searched_gap
+    key_divergence: osiris_king_title  # Titular vs. contextual Osirian identification
+
+  - id: pt_217
+    pt_number: 217
+    display: "Solar Ascent — Cardinal Direction Announcements"
+    file: utterances/pt_217.yaml
+    location: burial_chamber_south
+    ritual_class: [resurrection_ritual, solar_ascent]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: searched_gap
+    translation_status: partial   # Piankoff confirmed; others searched_gap
+    notable: "Contains life-and-death authority formula — extreme royal power claim"
+
+  - id: pt_246
+    pt_number: 246
+    display: "Threshold Spell — Stand at the Door of the Akhet"
+    file: utterances/pt_246.yaml
+    location: passage_south
+    ritual_class: [threshold, stellar_ascent]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: searched_gap
+    translation_status: partial   # Allen architectural citation confirmed; full text searched_gap
+    key_divergence: sb3_door_vs_star  # Threshold sign = door AND star
+
+  - id: pt_273_274
+    pt_number: "273–274"
+    display: "The Cannibal Hymn"
+    file: utterances/pt_273_274.yaml
+    location: antechamber_east_gable
+    ritual_class: [stellar_ascent, solar_ascent, apotropaic]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    restricted_distribution: true  # Only Unas and Teti in Old Kingdom
+    primary_text_status: partial   # Sethe page range confirmed (pp. 205–216); MdC searched_gap
+    translation_status: partial    # Mercer + Piankoff partial; Allen searched_gap
+    key_divergence: cannibalism_interpretation  # Refuted literal reading; stellar interpretation proposed
+    label_claim: >
+      The label 'Cannibal Hymn' is itself a claim requiring examination.
+      Assigned 1882 (Maspero publication era). Has massive adoption weight.
+
+  - id: pt_373
+    pt_number: 373
+    display: "Rise Up, O Teti — Named Resurrection Address"
+    file: utterances/pt_373.yaml
+    location: burial_chamber_south
+    ritual_class: [resurrection_ritual, stellar_ascent, osirian]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: true              # Named address to Teti — name is the anchor
+    primary_text_status: partial   # Cartouche confirmed; MdC partial (back-transliterated)
+    translation_status: partial    # Mercer + Piankoff confirmed; Allen searched_gap
+    anchor_utterance: true         # Starting point for methodology demonstration
+    notable: "Only PT utterance with double iHi exclamation addressed to a named king"
+
+# ─── TIMEGRAPH SUMMARY ────────────────────────────────────────────────────────
+# All eight utterance entries share the carving date window.
+# The timegraph should render:
+# 1. A band: -2345 to -2323 (±10 yr) — all carvings
+# 2. Discrete nodes within the band for specific innovations:
+#    - sarcophagus inscription (PT 1–7): first instance — no predecessor
+#    - dd-mdw monogram: first use, same date band
+# 3. Transmission nodes AFTER the band:
+#    - PT 32 on Pepi I libation table: ~-2289
+#    - PT 273–274 as Coffin Text 573: -2055 to -1650
+# 4. Discontinuity: PT 273–274 absent from Book of the Dead: ~-1550 onward
+
+timegraph_nodes:
+  - id: teti_reign_and_carving
+    type: date_range
+    start: -2345
+    end: -2323
+    uncertainty: 10
+    label: "Teti pyramid texts carved"
+    covers: [pt_001_007, pt_023, pt_032, pt_213, pt_217, pt_246, pt_273_274, pt_373]
+
+  - id: pt32_pepi1_mortuary_temple
+    type: transmission_event
+    date: -2289
+    label: "PT 32 appears outside pyramid — Pepi I mortuary temple libation table"
+    significance: "First Pyramid Text utterance in a non-sealed ritual space"
+
+  - id: cannibal_hymn_coffin_texts
+    type: transmission_event
+    start: -2055
+    end: -1650
+    label: "PT 273–274 as Coffin Text Spell 573 — private/non-royal use"
+    significance: "Royal exclusivity of the Cannibal Hymn broken; content modified"
+
+  - id: cannibal_hymn_dropped
+    type: discontinuity
+    date: -1550
+    label: "Cannibal Hymn absent from Book of the Dead — transmission ends"
+    significance: "Active selection against transmission; reason undocumented"
+
+# ─── PRIMARY SOURCE GAPS (consolidated) ───────────────────────────────────────
+# These are the single most important source to unlock this dig.
+# Ranked by impact on number of searched_gap fields.
+
+primary_source_gaps:
+  - rank: 1
+    source: "Sethe, K. 1908–1910. Die altägyptischen Pyramidentexte. Leipzig. Vol. 1."
+    impact: >
+      Resolves: all hieroglyphic_unicode fields, all MdC transliteration fields,
+      sethe_phrase_range fields, and several translation divergence points.
+      This is the canonical hieroglyphic source for the entire dig.
+    confirmed_location_within_source: "pp. 205–216 for PT 273–274; remainder by section."
+
+  - rank: 2
+    source: "Allen, J.P. 2005. The Ancient Egyptian Pyramid Texts. SBL Press. pp. 65–96 (Teti corpus)."
+    impact: >
+      Resolves: allen_2005 translation fields for all utterances, wall sequence
+      confirmation for Teti-specific placement, Akhet etymology, Osirian emphasis
+      quantification, and concordance between Sethe numbers and Allen's wall-order system.
+
+  - rank: 3
+    source: "Leclant, J. et al. Restoration reports (1958–1999). Saqqara pyramid projects."
+    impact: >
+      Resolves: physical_condition fields for Teti's specific walls.
+      The burial chamber north/south wall condition in Teti (vs. Unas) is documented
+      only in these reports. Required to assess what is still legible in situ.
+
+# ─── ADDING FUTURE UTTERANCES ─────────────────────────────────────────────────
+
+adding_utterances:
+  instruction: >
+    To add a new utterance:
+    1. Create utterances/pt_{number}.yaml following utterance_schema.yaml
+    2. Add an entry to the utterances list above in PT number order
+    3. Add any new timegraph nodes to the timegraph_nodes list
+    4. Update primary_source_gaps if a new source gap is identified
+    5. Do NOT renumber existing entries
+    6. All dates must be integers (BCE as negative) for timegraph compatibility
+
+  candidate_utterances:
+    - pt: 23
+      note: "Already included — note this is a reminder to not duplicate"
+    - pt: 260
+      note: "Final spell of antechamber west wall — transition to east wall sequence"
+    - pt: 301
+      note: "Final spell of antechamber east wall — prelude to Cannibal Hymn"
+    - pt: 302
+      note: "First spell of antechamber north wall — departure from Akhet"
+    - pt: 437
+      note: "In Praise of Nut — the sky goddess who receives the king"
+    - pt: 510
+      note: "The king appears as Sobek — animal-form transformation"
+    - pt: 534
+      note: "For the Protection of the Pyramid Enclosure — apotropaic limit case"
+
+# ─── BATCH 2 UTTERANCES (added) ───────────────────────────────────────────────
+
+  - id: pt_247
+    pt_number: 247
+    display: "Your Son Horus Has Acted for You — First Antechamber Spell"
+    file: utterances/pt_247.yaml
+    location: antechamber_west_gable
+    ritual_class: [threshold, osirian]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: searched_gap
+    translation_status: partial
+    key_divergence: pt247_content_discrepancy
+    priority: HIGH
+    note: "Architectural hinge — last ritual text; all subsequent spells are personal"
+
+  - id: pt_260
+    pt_number: 260
+    display: "Antechamber West/South Wall Boundary Spell"
+    file: utterances/pt_260.yaml
+    location: antechamber_west_south_boundary
+    ritual_class: [stellar_ascent, osirian]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: searched_gap
+    translation_status: searched_gap
+
+  - id: pt_301
+    pt_number: 301
+    display: "Antechamber East Wall Final Spell — Prelude to Cannibal Hymn"
+    file: utterances/pt_301.yaml
+    location: antechamber_east_wall
+    ritual_class: [protective, stellar_ascent]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: searched_gap
+    translation_status: searched_gap
+    note: "Final east wall spell; morning ritual precedes it in Teti (Teti innovation)"
+
+  - id: pt_302
+    pt_number: 302
+    display: "Antechamber North Wall Opening — A New Horus in the Sunlight"
+    file: utterances/pt_302.yaml
+    location: antechamber_north_wall
+    ritual_class: [stellar_ascent, solar_ascent]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: searched_gap
+    translation_status: partial
+    notable: "Divine exclamation 'We see something new!' — king declared a new Horus"
+
+  - id: pt_304
+    pt_number: 304
+    display: "The Ladder Spell — Daughter of Anubis at the Heaven-Hatch"
+    file: utterances/pt_304.yaml
+    location: antechamber_north_wall
+    ritual_class: [stellar_ascent, apotropaic]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [unas]
+    primary_text_status: searched_gap
+    translation_status: partial
+    notable: "Ladder motif — most archaic ascent mechanism in corpus"
+
+  - id: pt_364
+    pt_number: 364
+    display: "Nut as Sarcophagus/Coffin/Tomb"
+    file: utterances/pt_364.yaml
+    location: burial_chamber_west_gable
+    ritual_class: [protective, osirian]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    shared_with: [pepi_i, pepi_ii]
+    primary_text_status: searched_gap
+    translation_status: partial
+    key_divergence: nut_names_vs_identities
+    notable: "Faulkner vs. Allen divergence confirmed from secondary source — highest quality divergence record"
+
+  - id: pt_427_435
+    pt_number: "427–435"
+    display: "In Praise of Nut — First Nut Hymn Series"
+    file: utterances/pt_427_435.yaml
+    location: burial_chamber_west_gable
+    ritual_class: [protective, osirian]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    primary_text_status: searched_gap
+    translation_status: partial
+    notable: "PT 435 — Nut speaks in first person, reciting the five royal titles"
+
+  - id: pt_510
+    pt_number: 510
+    display: "The King Appears as Sobek — Animal-Form Transformation"
+    file: utterances/pt_510.yaml
+    location: antechamber_east
+    ritual_class: [stellar_ascent, apotropaic]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    primary_text_status: partial
+    translation_status: searched_gap
+    notable: "Explicit sexual content; Sobek parentage discrepancy (Nut vs. Neith)"
+
+  - id: pt_534
+    pt_number: 534
+    display: "Protection of Pyramid Enclosure Against Osiris"
+    file: utterances/pt_534.yaml
+    location: searched_gap
+    ritual_class: [apotropaic, protective]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: searched_gap
+    primary_text_status: searched_gap
+    translation_status: searched_gap
+    key_divergence: osiris_as_threat
+    priority: HIGH
+    notable: "Most theologically anomalous: protects against Osiris — the king's own divine model"
+
+  - id: pt_539
+    pt_number: 539
+    display: "A Litany of Ascension"
+    file: utterances/pt_539.yaml
+    location: searched_gap
+    ritual_class: [stellar_ascent, solar_ascent]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    primary_text_status: searched_gap
+    translation_status: searched_gap
+    notable: "Only litany-genre utterance in the dig — structurally distinct from all others"
+
+  - id: pt_570
+    pt_number: 570
+    display: "New Birth of the King as a God in Heaven"
+    file: utterances/pt_570.yaml
+    location: searched_gap
+    ritual_class: [resurrection_ritual, stellar_ascent, osirian]
+    timegraph_date_start: -2345
+    timegraph_date_end: -2323
+    teti_unique: false
+    primary_text_status: searched_gap
+    translation_status: partial
+    notable: "Theological culmination of the entire PT program — new birth, not resurrection"
+
+# ─── BATCH 2 TIMEGRAPH NODES ──────────────────────────────────────────────────
+
+  - id: pt442_stellar_birth_orion
+    type: theological_claim
+    date_start: -2345
+    date_end: -2323
+    label: "King born with Orion and Sothis — stellar birth theology in PT 442/570"
+    significance: "Links royal resurrection to annual Sirius heliacal rising and Nile flood"
+
+  - id: nut_as_coffin_tradition
+    type: transmission_event
+    date_start: -1550
+    label: "Nut painted on coffin lids — PT 364 theology transmitted to coffin decoration"
+    significance: "1500+ year transmission of Nut-as-container from PT 364"
