@@ -43,7 +43,12 @@ evidence_rules:
   - 'Donations are shown as dated filings next to the vote. They are context. Timing alone shows no causation, and the page says so.'
   - 'Constituent opinion is out of scope for the pilot (polls need their own authenticity and sampling checks).'
 
+shared_standard: >
+  Follows build/SCHEMA.md 'Actors, statements and votes' (rules P1 to P7) so this dig and the
+  Tonkin dig present votes and officials the same way.
+
 outputs:
+  - actors.yaml  (same four buckets for every actor)
   - claims.yaml  (promise facts, vote facts, outcome facts; each with anchor and anchor_checked)
   - timeline.yaml and timeline.html  (promise -> committee -> vote -> signing -> effect)
   - sources/MANIFEST.yaml  (sha256, capture, authenticity block for each record)

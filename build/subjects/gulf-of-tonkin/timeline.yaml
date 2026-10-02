@@ -77,6 +77,8 @@ sources:
   s_tapes:    {title: "LBJ tapes on the Gulf of Tonkin (transcriptions by Prados)", url: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tapes.htm", authenticity: "transcription; audio not heard"}
   s_press:    {title: "National Security Archive posting, 1 Dec 2005, on the NSA release", url: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/press20051201.htm", authenticity: "secondary account"}
   s_senate:   {title: "Senate.gov, Chairman Fulbright and the Tonkin Gulf Resolution", url: "https://www.senate.gov/artandhistory/senate-stories/chairman-fulbright-and-the-tonkin-gulf-resolution.htm", authenticity: "official history; vote counts not read in the Record"}
+  s_vote_s:   {title: "Voteview, Senate roll call 481, 7 Aug 1964, H.J.Res. 1145 (88 yea, 2 nay)", url: "https://voteview.com/rollcall/RS0880481", authenticity: "dataset of the official roll call; Congressional Record not read"}
+  s_vote_h:   {title: "Voteview, House roll call 197, 7 Aug 1964, H.J.Res. 1145 (416 yea, 0 nay)", url: "https://voteview.com/rollcall/RH0880197", authenticity: "dataset of the official roll call; Congressional Record not read"}
   s_cfr:      {title: "Council on Foreign Relations, Congress passes the Gulf of Tonkin Resolution", url: "https://www.cfr.org/articles/twe-remembers-congress-passes-gulf-tonkin-resolution", authenticity: "secondary"}
   s_seattle:  {title: "Seattle Times, 9 Nov 1995: McNamara asks for truth about Gulf of Tonkin, Giap: there was no attack", url: "https://archive.seattletimes.com/archive/19951109/2151509/mcnamara-asks-for-truth-about-gulf-of-tonkin----giap-there-was-no-attack", authenticity: "news archive"}
 
@@ -103,9 +105,9 @@ events:
   - {id: e6, panel: overview, lane: cong, time: "1964-08-06T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_essay],
      label: "6 Aug: McNamara tells senators the Navy 'was not aware of' South Vietnamese actions",
      detail: "Quoted by Prados from the Senate Foreign Relations Committee's published executive sessions (vol. XVI, p. 293); the record was not read directly."}
-  - {id: e7, panel: overview, lane: cong, time: "1964-08-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_senate, s_cfr],
+  - {id: e7, panel: overview, lane: cong, time: "1964-08-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_vote_s, s_vote_h, s_senate, s_cfr], link: "https://voteview.com/rollcall/RS0880481",
      label: "7 Aug: Tonkin Gulf Resolution passes (House 416-0, Senate 88-2)",
-     detail: "Signed 10 August. Counts agree across several sources; the Congressional Record was not read."}
+     detail: "Signed 10 August. Totals read in Voteview's roll-call data (Senate roll 481, House roll 197) and agree with the Senate history page and CFR. The two Senate nays are Ernest Gruening (D-AK) and Wayne Morse (D-OR) in Voteview's member file. Voteview's per-member file for Senate roll 481 lists one more yea than the 88 in its summary row; unresolved, so totals follow the summary row. The Congressional Record was not read."}
   - {id: e8, panel: overview, lane: intel, time: "1964-08-08T12:00:00Z", precision: day, kind: document, status: single, sources: [s_essay],
      label: "8 Aug: CIA cover note sends Bundy the selected intercepts",
      detail: "Prados: a cover note of 8 August accompanied the intercepts 'selected by CIA and NSA' that the White House had requested."}

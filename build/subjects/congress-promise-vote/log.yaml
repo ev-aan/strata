@@ -20,3 +20,12 @@ log:
       and no claims filed. Constituent-opinion comparison deliberately left out of the pilot.
       NEXT: owner approves or amends the protocol; then apply the selection rule mechanically
       and log the candidate list before reading any member's record.
+  - id: L-04
+    date: "2026-10-02"
+    entry: >
+      Owner asked for consistency between this dig and others that contain votes (Tonkin).
+      Added SCHEMA.md 'Actors, statements and votes' (P1 to P7) and an actors.yaml standard.
+      Test on Tonkin: the 7 Aug 1964 vote totals were read in Voteview's roll-call data
+      (Senate roll 481: 88-2, nays Gruening and Morse; House roll 197: 416-0) and linked from the
+      Tonkin timeline. One discrepancy logged: Voteview's per-member Senate file has one more yea
+      than its summary row; unresolved.
