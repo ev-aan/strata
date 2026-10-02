@@ -51,7 +51,7 @@ open_items:
   co-pilot was assigned, Israeli part in the investigation, no findings yet, motive, the Fars lead, timing, event-simulated, arranged-or-allowed, masks,
   surgeon, extra pilots, raw tracks, original statements, legal texts. Five claims are proposed, not established: passenger-controls, spokesperson-and-katz-accounts,
   terrorist-label-single-outlet (single-source, provisional), omani-barred-rule (low) and reports-inconsistent (provisional).'
-- 'Unresolved discrepancies (inventory items D2, D3, D4, D5, D8, D9, D12, D13, D14, D16, D19, D20, D21, D23 in fz1073-reports-inconsistent): landing time
+- 'Unresolved discrepancies (inventory items D2, D3, D4, D5, D8, D9, D12, D13, D14, D16, D19, D20, D21, D22, D23 in fz1073-reports-inconsistent): landing time
   (06:45 versus about 06:58 UTC versus CNN 9:54), squawk times, the early ''emergency alert shortly after takeoff'' wording, descent figures, weapon, replacement-flight
   time, where the Prime Minister first said Omani, the crew-nationality rule, persons on board (182 versus 172), passenger injuries, rewritten headlines,
   the Jerusalem Post page clock, the rudder, oxygen masks, the date and place of the captain''s call.'
@@ -65,9 +65,8 @@ open_items:
 - The Fars lead (fz1073-fars-israel-plan-lead) rests on one survey and neither original was opened; whether an Iranian-agency allegation about Israel belongs
   on the page at all is an owner decision.
 - 'Pending formats proposal: the media timeline (three panels, 91 events) stays in this dig until the owner decides on a separate page.'
-- Non-blocking requests R4-1 to R4-9 are open for the author at the next update; none changes a finding. The author must respond fixed, disputed or deferred
-  (docs/PUBLISH_GATE.md).
-- 'Live event: this record covers the page as of 2 October 2026 about 21:30 UTC; it needs re-review at each significant update; the headline stays a draft.'
+- 'Round 4 requests R4-1 to R4-9 are resolved (fifth reviewer). Two non-blocking round 5 requests are open for the author at the next update (R5-1: record the published_at field of the Saudi item page; R5-2: place of birth is reported two ways). The author must respond fixed, disputed or deferred (docs/PUBLISH_GATE.md).'
+- 'Live event: this record covers the page as of 2 October 2026 about 23:50 UTC; it needs re-review at each significant update; the headline stays a draft.'
 needs_manual_check:
 - '8 established/refuted claims anchored below primary: fz1073-flight-times, fz1073-both-pilots-injured, fz1073-copilot-custody-unnamed, fz1073-israel-says-omani,
   fz1073-motive-statements, fz1073-timing-dates, fz1073-political-use-alleged, fz1073-event-simulated'
@@ -119,7 +118,7 @@ quotes:
   found_in_stored_sources: 22
   not_found_in_stored_sources: 131
   no_stored_source_to_check_against: 0
-reviewed_by: independent review agent (fourth reviewer)
+reviewed_by: independent review agent (fifth reviewer)
 reviewed_on: '2026-10-02'
 notes: 'Round 1 of an independent peer review. The reviewer did not write the dig. Verdict: revisions requested (not failed): the core facts (diversion
   and landing at Tabuk, injuries, UAE investigation, who-said-what on nationality and motive) check out against the sources, but four findings
@@ -525,6 +524,8 @@ rounds:
       action: fixed
       note: 'Re-fetched https://www.spa.gov.sa/en/w2691027 with curl at 23:32 UTC: the line ''21:31 Local Time 18:31 GMT'' is unchanged and sits inside the item''s body text, so it is not a render clock (a page clock would read about 23:32). Treated as a probable dispatch stamp (inference; Arabic not seen; release hour unconfirmed). Timeline b8 and m40 placed at 18:31 UTC approximate (date_basis inferred), CNN''s 18:41:32 stays the earliest outlet time; fz1073-original-statements-gap, the manifest and the stored-text header corrected. L-25 stays as written; new entry L-31.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Verified by curl at 23:37 UTC 2 Oct (raw HTML): the stamp ''21:31 Local Time 18:31 GMT'' is in the item''s own body (og:description and article body) and ends the stored text; stored header, manifest, claim original-statements-gap, b8 and m40 (18:31 UTC, approximate, date_basis inferred) all say ''probably the dispatch stamp, inference, Arabic not seen, release hour unconfirmed''. New evidence the author did not use: the page''s embedded JSON carries published_at 1790879513, which is Thu 1 Oct 2026 18:31:53 UTC, matching the stamp (and CNN''s 18:41:32 entry ten minutes later). It supports the inference; it is still a page field, not the agency''s release record, so ''unconfirmed'' stays right (R5-1).'
   - id: R4-2
     target: fz1073-israel-says-omani (confidence_reasons step 2; statement); log L-30 (D2)
     severity: non_blocking
@@ -545,6 +546,8 @@ rounds:
       action: fixed
       note: 'Re-opened CBS''s first story (and checked the others cited): it reports an unnamed Omani official, not Netanyahu saying ''Omani'' on CBS, so the CBS Evening News venue rests on NBC alone. Re-read NPR, the Bloomberg reprint and Reuters at KFGO for the core. fz1073-israel-says-omani now states the core (NBC, CNN, NPR, Reuters, Bloomberg reprint; wire copies once) and step 2 is corrected; the CBS venue (NBC only), ''told CNN'' (CNN only) and Herzog''s ''Omani'' (The National only) moved to fz1073-terrorist-label-single-outlet. src-npr-0930 and src-bloomberg-spokesman added to the sources; Arab News dropped from the rationale. L-31.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Verified by curl: CBS''s three pages (first story, co-pilot piece, Trump piece) contain no remark by the Prime Minister that the pilot is Omani; they carry an unnamed Omani official''s statement and later sources. The core (the PM said the pilot is Omani) is carried by NBC (''Omani citizen ... on the CBS program on Wednesday night''), CNN (''Netanyahu told CNN that the suspect was an Omani national''), NPR (''said on Fox & Friends he is from Oman''), Reuters at KFGO (''whom he has identified as an Omani national'') and the Bloomberg text on the Spokesman-Review (''was Omani, according to Israeli Prime Minister''): five separate newsrooms and bylines; KFGO and the Spokesman reprint are wire copies counted once. The CBS venue (NBC only), ''told CNN'' (CNN only) and Herzog''s ''Omani'' (The National only) now sit in the proposed single-outlet claim. All quoted wording matches the pages. All five trace to the same Israeli speaker (stated in the risk_of_bias step).'
   - id: R4-3
     target: fz1073-reports-inconsistent (statement and anchor inventory)
     severity: non_blocking
@@ -559,6 +562,8 @@ rounds:
       action: fixed
       note: 'Recounted from the anchor: 23 numbered items, D17 and D18 not used, 21 usable; explained 6 (D1, D6, D7, D10, D11, D15, plus D3b which is part of the open D3), open 15 with D22 moved from explained to open. Statement, alternatives text and anchor headings now agree (''fewer than a third''). L-31.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Recounted from the anchor: 23 items, D17 and D18 not used, 21 usable; explained D1, D6, D7, D10, D11, D15 (6, D3b is the explained part of the open D3); open D2, D3, D4, D5, D8, D9, D12, D13, D14, D16, D19, D20, D21, D22, D23 (15); 6 + 15 = 21; D22 is under open; statement, alternatives text (''fewer than a third'') and anchor headings agree.'
   - id: R4-4
     target: timeline.yaml people (Saudi Interior Ministry); a5; fz1073-captain-wounds basis; timeline note
     severity: non_blocking
@@ -577,6 +582,8 @@ rounds:
       action: fixed
       note: '(a) people entry for the Saudi Interior Ministry now says the English text was read, quotes ''altercation'', and gives no zone for 9:45 a.m. (b) captain-wounds basis and the timeline header note no longer say the captain is named in the timeline (L-30). (c) landing node rev 4: label ''9:45 a.m. (no zone given; 06:45 UTC if Saudi time)'', precision approx; timeline a12 pinned to rev 4. a5 was not changed (no stale wording found in it).'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Verified in the files: people entry for the Saudi Interior Ministry quotes ''altercation'' and says no zone, English read; captain-wounds basis and timeline header no longer say the captain is named; landing node rev 4 label ''9:45 a.m. (no zone given; 06:45 UTC if Saudi time)'', precision approx, history entry appended (earlier revs untouched); a12 pinned to rev 4. Timeline.html regenerated. Guardrail grep: the captain''s name only in the Emirates 24|7 URL slug (MANIFEST, timeline.yaml s_gcaa, timeline.html hrefs) and the stored GCAA text.'
   - id: R4-5
     target: timeline.yaml m48 and m02; fz1073-no-findings-yet
     severity: non_blocking
@@ -589,6 +596,8 @@ rounds:
       action: fixed
       note: 'Re-fetched Dubai Eye (datePublished 14:21:02 UTC) and the flydubai page (article:published_time 2026-09-30T08:20:00+00:00, modified 2026-10-02T14:04:03+00:00). m48 now sits at 14:21:02 and names Dubai Eye as the earliest outlet time, with the page metadata caveat, then Reuters 14:22:58; m02 says the page metadata (08:20:00) is 12 minutes after CNN''s 08:07:51 and is a page creation time. L-31.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Re-fetched: Dubai Eye datePublished 2026-10-02T14:21:02+00:00 (''Friday, 2 October 2026 18:21''); flydubai page article:published_time 2026-09-30T08:20:00+00:00 and modified 2026-10-02T14:04:03+00:00; Reuters at KFGO datePublished 14:22:58, modified 15:17:59; CNN live blog entry 08:07:51Z present (08:20:00 is 12 minutes after). m48 (14:21:02, publication_proxy, metadata caveat) and m02 (page creation time caveat) now say what the pages show.'
   - id: R4-6
     target: assessment.text; headline_claim
     severity: non_blocking
@@ -604,6 +613,8 @@ rounds:
       action: fixed
       note: 'Assessment text split: parties state the cockpit incident or altercation, the diversion and the landing (the Saudi text also the injuries); departure about 03:05 UTC, the descent from about 05:21 and the squawk codes are labelled tracker data that no party states. headline_claim accepts only one id (conformance checks it as a single claim), so it stays fz1073-diverted-tabuk with a comment beside it; fz1073-both-pilots-injured (the first clause) was added to assessment.basis. Left to the reviewer: whether to make both-pilots-injured the headline claim instead. L-31.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Assessment text now separates the parties'' statements from tracker data and says that no party states the departure time, the descent or the squawk codes: matches the sources. On the headline claim: fz1073-diverted-tabuk and fz1073-both-pilots-injured are both established, high, primary, so either passes the headline rule; the headline is a draft and its second clause (''no evidence of staging found'') rests on a searched gap that no id can carry. Keeping diverted-tabuk with both ids in the basis is acceptable; the owner can pick both-pilots-injured at publication if the first clause is to lead (owner decision, not a request).'
   - id: R4-7
     target: fz1073-fakes-debunked; transmission.yaml tx-f-05; timeline m53
     severity: non_blocking
@@ -616,6 +627,8 @@ rounds:
       action: fixed
       note: 'Re-read Lead Stories: its own words are ''a Russian disinformation campaign'' while the NewsGuard email it quotes says ''a Russian influence campaign''. transmission tx-f-05, m53 and the fakes-debunked claim now use Lead Stories'' wording attributed to NewsGuard as reported by Lead Stories and give the email wording too. The leaked-argument video is described as AI-generated per Lead Stories (95.8 detector score), in the claim, label and anchor. L-31.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Verified at Lead Stories: the NewsGuard page says ''NewsGuard said the post appears to be connected to a Russian disinformation campaign''; the quoted NewsGuard email says ''a Russian influence campaign''; the leaked-video page reports the Hive Moderation tool at 95.8 percent ''Likely to be AI-Generated'' and audio from a 2017 road-rage video. transmission tx-f-05, m53 and the claim (statement, anchor) now use Lead Stories'' wording and attribute the AI-generated verdict to Lead Stories. The NewsGuard and Lead Stories staff named in the pages are not repeated.'
   - id: R4-8
     target: fz1073-descent-magnitude; fz1073-extra-pilots-statistics (absence_anchor)
     severity: non_blocking
@@ -627,6 +640,8 @@ rounds:
       action: fixed
       note: 'Not set, with the reason stated: descent-magnitude is a conflict between published figures and extra-pilots-statistics is an assumption claim, neither an absence of a record. Each basis now says so; confidence stays low with a next step.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Agreed. REVIEW.md B treats an unmarked claim whose support is ''no record was found'' as blocking; descent-magnitude (a conflict between published figures) and extra-pilots-statistics (an assumption about unpublished inputs) are not supported by a missing record, both are low confidence with a next step, and each basis now says so. The 16 other gaps carry absence_anchor: true.'
   - id: R4-9
     target: timeline.yaml sources; claims.yaml (sources lists)
     severity: non_blocking
@@ -639,6 +654,21 @@ rounds:
       action: fixed
       note: 'src-reuters-kfgo and src-bloomberg-spokesman added to fz1073-motive-statements sources and quoted in its anchor (checked: Reuters carries ''indoctrination'' and the Omani identification; the Bloomberg reprint carries ''indoctrination'' and ''too early to say'' on Iran but not ''heavy price'', which stays with CBS and CNN). src-walla marked read (AeroTime page opened; ''September 30, 2026, 17:10 (UTC +3)'' = 14:10 UTC confirmed) and added to fz1073-reports-inconsistent sources.'
       commit: cfffe42
+    resolved: true
+    reviewer_note: 'Verified: src-reuters-kfgo (carries ''indoctrination'' and ''identified as an Omani national'' and ''heavy price'' for those involved) and src-bloomberg-spokesman (''indoctrination'', ''too early to say'' on Iran; it has no ''heavy price'') are in the sources of fz1073-motive-statements and quoted; src-walla is marked read as the AeroTime relay, secondary, and is in the reports-inconsistent sources (D10, 17:10 UTC+3 = 14:10 UTC).'
+- round: 5
+  reviewed_on: '2026-10-02'
+  reviewer: fifth independent reviewer (did not write the dig, rounds 1 to 4 or the author responses)
+  scope: Author responses to R4-1 to R4-9 (commits cfffe42 and 4bc06ab), log L-31 and L-32, and everything changed since a88dd65 (claims, timeline.yaml and timeline.html, transmission, manifest, stored SPA text, landing node rev 4).
+  requests:
+  - id: R5-1
+    target: fz1073-original-statements-gap; timeline b8 and m40; manifest src-saudi-moi-original
+    severity: non_blocking
+    finding: 'The dig infers that the stamp 21:31 Local Time 18:31 GMT is the agency dispatch stamp. The raw page of https://www.spa.gov.sa/en/w2691027 also embeds "published_at":1790879513 in its JSON, which is Thursday 1 October 2026 18:31:53 UTC, the same minute. Record it as the page''s own publication field (a page field, not the agency''s release record; Arabic still unseen) and say whether it changes b8 and m40 (placed at 18:31:00, approximate). No change of lane, order or finding.'
+  - id: R5-2
+    target: fz1073-israel-says-omani (statement); fz1073-omani-nationality-unconfirmed
+    severity: non_blocking
+    finding: 'The statement says CBS reports that an unnamed Omani official said the co-pilot was born in Oman and holds Omani citizenship. CBS''s Friday piece (src-cbs-copilot, opened) quotes other sources saying he is an Omani citizen who was not born in Oman, and CNN''s explainer (src-cnn-explainer, opened) quotes a source saying he was born in the UAE; the dig does not mention this conflict (grep for "born in the UAE" and "not born in Oman" finds nothing). The statement is attributed and accurate as written, but a reader of it alone would not know that place of birth is itself reported two ways. Add one clause, or a line in the nationality claim. Not blocking: the established claim asserts who said what, not nationality.'
 notes_round3_resolution: "ROUND 3 (third independent reviewer, did not write the dig or earlier rounds). All five round 2 requests (R2-1 to R2-5) are resolved by my own check; rounds 1 and 2 together have no unresolved blocking request (R1-1 to R1-3 and R2-1, R2-2 were the blocking ones). Sources I opened this round: The National (Herzog: Omani, 'terrorist', 'too early to say', Thursday), CNN explainer (Gargash 'a top UAE official'; Omani statement undated), CNN live blog (Saudi ministry 'revealed an assault on the captain by the co-pilot, resulting in various injuries to both'; 'said Wednesday' belongs to the detention remark), Al Jazeera Saudi piece ('the pilot was assaulted by his co-pilot'), plus the stored flydubai, MoFA and GCAA texts for 'altercation'. Fresh pass: headline is 93 characters and draft; key points do not exceed the claims; co-pilot unnamed; no passenger name or occupation-plus-act in claims, timeline, transmission, manifest or nodes (grep; the name remains only in log L-15 and the CNN page itself); no speculation on religion, ethnicity or beliefs; accusations (Netanyahu, Herzog, Katz, Gargash, Trump) are recorded as accusations; log diff against 9619273 is append-only (L-22 and L-23 added, nothing earlier changed). Conformance: 0 errors, 92 warnings repository-wide, 8 for this subject (established below primary, each with an exception line). review_dig mechanical checks all pass. Minor leftovers, non-blocking: b10, b17 and b18 use placeholder hours at day precision (stated in each detail); the Herzog quote 'terrorist' and 'too early to say' were read through a page summary tool, not a raw text dump, so a human may re-check the exact words; the WebFetch result for The National did not reproduce the 'Omani citizen, although that does not mean anything' sentence the second reviewer quoted, which I did not re-verify."
 notes_round4: 'ROUND 4 (fourth independent reviewer; did not write the dig, rounds 1 to 3 or the deep-dive update). VERDICT: passed_with_open_items. No
   blocking request: nothing I found would lead a reader to a wrong finding, and the headline, key points, answer and lean say no more than the claims. Nine
@@ -696,3 +726,24 @@ notes_round4: 'ROUND 4 (fourth independent reviewer; did not write the dig, roun
   media timeline gets its own page. NOT VERIFIED: the Arabic SPA text; the actual release hour; WAM and Tabuk originals; the BBC statement; NewsGuard''s
   page; France 24; Times of Israel; Bloomberg''s own page; raw ADS-B; I did not open the Reuters copies on the Jerusalem Post and Cyprus Mail (the dig says
   the text is the same).'
+notes_round5: >-
+  ROUND 5 (fifth independent reviewer; did not write the dig, rounds 1 to 4 or the author responses). VERDICT: passed_with_open_items. R4-1 to R4-9 are all
+  resolved by my own check (see each reviewer_note); no blocking request remains. Two new non-blocking requests (R5-1, R5-2). WHAT I OPENED (curl, raw HTML,
+  2 Oct 2026 about 23:30 to 23:50 UTC): the Saudi Press Agency item (stamp and its embedded published_at 18:31:53 UTC), CBS (three pages), NBC, NPR, CNN
+  explainer and CNN 30 Sep live blog (JSON-LD stamp 08:07:51Z), Reuters at KFGO (14:22:58 and 15:17:59), the Spokesman-Review Bloomberg text, the flydubai
+  newsroom page (published 08:20:00, modified 14:04:03 UTC), Dubai Eye (14:21:02 UTC), Lead Stories (two pages), ABC Verify. FRESH PASS over git diff
+  a88dd65..HEAD (claims, timeline.yaml, timeline.html, transmission, manifest, the stored SPA text, landing node rev 4, log): every changed sentence says
+  no more than the pages show; the israel-says-omani rewrite is correct (CBS carries no Prime Minister remark; the three one-outlet elements moved to the
+  proposed claim); the 6 + 15 = 21 count is right and D22 is under open; L-31 and L-32 are the only log changes (append-only, no earlier line touched); the
+  landing node history only gains rev 4; b8 and m40 at 18:31:00 UTC with date_basis inferred match the SPA stamp and the page field. GUARDRAILS: grep of
+  the dig folder, nodes, timeline.html and transmission for the suspect's name (as printed by CBS and Lead Stories), the captain's name, the passengers named
+  in the pages read, the BBC presenter in the deepfake and the NewsGuard and Lead Stories staff found nothing outside the Emirates 24|7 URL slug (MANIFEST,
+  timeline.yaml s_gcaa, timeline.html hrefs) and the stored verbatim GCAA text, as L-30 allows. Nothing speculates on motive, religion, ethnicity or beliefs;
+  accusations are attributed as accusations. CHECKS: python3 build/conformance.py --base origin/main reports 0 errors (95 warnings repository-wide);
+  review_dig.py mechanical checks all pass (quote check: 22 found, 139 not in stored sources, as before). JUDGEMENTS: headline_claim may stay
+  fz1073-diverted-tabuk (R4-6 note); R4-8 is right, no absence flag is needed on descent-magnitude and extra-pilots-statistics. NOT VERIFIED: the Arabic SPA text
+  and the real release hour; WAM, Tabuk airport and Times of Israel originals; the BBC statement; NewsGuard's own page; Bloomberg's own page; raw ADS-B; the
+  interviews themselves and Gargash's own words; I did not re-open every outlet cited in the discrepancy inventory (only those listed above). OWNER
+  DECISIONS I SUPPORT: L-32 D1 (the Fars lead stays as an unverified lead), D2 (the GCAA link stays; the slug cannot be altered; the page shows the link
+  title, not the address), D3 (the media timeline stays until the formats proposal), D4 (headline stays a draft). For the owner: whether to switch the
+  headline claim to fz1073-both-pilots-injured at publication.
