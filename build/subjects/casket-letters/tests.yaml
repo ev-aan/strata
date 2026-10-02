@@ -1,0 +1,43 @@
+subject: casket-letters
+discriminating_tests:
+  - id: dt-001-retired
+    bounty_id: DT-001
+    status: retired_before_running
+    question: "Do the surviving French casket texts match the function-word habits of Mary's authenticated French letters better than other French writers of her time?"
+    retired_because: "Finding F6: about 1,750 words of French, far below the published floor (about 2,500-5,000 words) for word-frequency attribution. No data was collected under it."
+    note: "Rules were fixed before any result (90% calibration bar). Retiring a test for failing its own feasibility check is a result, kept in the record."
+  - id: dt-002
+    bounty_id: DT-002
+    question: "Do the surviving French casket texts share long phrases with Mary's authenticated letters more often than chance and ordinary period French explain?"
+    retires: casket-french-lean-mary
+    predicts:
+      phrase-linked: "A genuine letter, or a forger working from Mary's real letters, would share phrases with Mary's corpus above the control rate."
+      not-linked: "Counts against both, unless the corpus is too thin."
+    method: >
+      Three-word phrases (spelling normalised, phrases made only of common words ignored) of each casket text were checked against equal-sized samples of Mary's
+      French (Labanoff vols 1-2, about 31,800 words) and of Catherine de Medici's (La Ferriere vols 2-3), 30 random samples each, fixed seed 7.
+      Ratio = Mary share / Catherine share; above 1 leans Mary.
+    result:
+      type: synthetic
+      finding: >
+        Median ratios: Letter III 1.59 (90% 1.25-1.78), IV 1.49 (1.23-1.88), V 1.55 (1.10-2.66), VI 1.35 (0.94-1.64); Letter II opening 0.01 (too short, ignored).
+        Calibration with held-out letters: Mary's median 1.44, 57/60 correct; Catherine's 0.64, 58/60 correct (115/120).
+      accessible: true
+      run_files: "bounties/casket-letters/data/ (README, extract.py, pilot.py, compare.py, boot.py, casket_fr.json, dt002_results.txt)"
+    positive_control: "Partial pass (finding F8): without being pointed at it, the search found, at rank 3 of ~77,000 passages, Mary's letter from Ripon of 27 Jan 1569 with the same opening construction as Letter II; two higher hits were OCR noise and an editorial translation."
+    errors_and_limits:
+      - "F10: the pre-set bar of 3x could never have worked (Mary's own letters reach 3 only once in 60 tries). Both readings are reported: under the pre-set rule no letter is linked; under the calibrated rule (above 1) all four lean Mary."
+      - "F11: genre confound. Catherine's published letters are mostly official dispatches; the shared phrases ('toute ma vie', 'de ma vie', 'en ce monde', 'ce porteur vous dira') are personal-letter language."
+      - "Texts via OCR of nineteenth-century prints; the copies' scribes changed spelling; the French is about 1,750 words in all."
+    resolves: "The surviving French letters read like Mary's more than like Catherine's, about as strongly as Mary's own do. That fits genuine and composite alike and does not show guilt."
+    reproduction:
+      date: "2026-10-02"
+      by: "Strata session (not an independent review)"
+      what: "Downloaded the five Internet Archive OCR files named in the run-files README, ran extract.py and boot.py unchanged."
+      result: "Reproduced exactly: median ratios (III 1.59, IV 1.49, V 1.55, VI 1.35, II-open 0.01), 90% ranges, and calibration (Mary 57/60, Catherine 58/60). Henderson's French word counts from extract.py are 670, 469, 254 and 389 raw OCR words (the published table uses 657, 443, 226, 387 after cleaning in compare.py)."
+      difference: "The 'most frequent shared phrases' lists differ between runs (set ordering is not fixed); the ratios do not. The README's fixed seed fixes the resampling, not those listings."
+    note: "Not reviewed outside the project: claim stays proposed. A reproduction by the same project on the same texts shows the code is deterministic in its results; it does not test the method."
+# OPEN
+#   - G-05 (genre-matched control, personal letters by another French-writing woman of the 1560s)
+#   - G-03 (full 2023 plaintexts as a held-out check)
+#   - G-04 (an outside reviewer)

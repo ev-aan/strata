@@ -1,0 +1,178 @@
+# ---------------------------------------------------------------------------
+# SEARCH HEADLINE (rules 1-7 as in gulf-of-tonkin/claims.yaml)
+# ---------------------------------------------------------------------------
+headline: "Casket Letters (1567): No Originals Survive, Only Copies and Translations of Mary's Letters"
+headline_claim: casket-originals-lost
+headline_status: review          # drafted 2026-10-02 from bounty B-001; owner approval pending
+search_summary: >
+  Did Mary Queen of Scots write the Casket Letters? No original survives, only copies and translations, so the debate rests on those. The 1586 forgery is a different case.
+url_slug: casket-letters-mary-queen-of-scots-no-originals-survive-copies-translations
+
+subject: casket-letters
+title: "The Casket Letters (Mary Queen of Scots, 1567 to 1587)"
+migrated_from: "bounties/casket-letters/index.html (bounty B-001, opened 2026-10-01 by the Strata/Stratah project). The page and its run files are unchanged; this subject restates its claims in the YAML standard. Bounty IDs (C-01..C-06, F1..F11, DT-001, DT-002, G-01..G-05) are kept as `bounty_id` so nothing is renumbered."
+description: >
+  In June 1567 Mary's enemies said they had found a silver casket with letters and sonnets from her to the Earl of Bothwell.
+  Read as genuine, the letters tie her to the murder of her husband Lord Darnley. They were shown to Elizabeth I's commissioners
+  in 1568 and the originals later vanished. This dig keeps four things apart: that the originals are lost (documented), what the
+  surviving copies and translations are (copies of unknown fidelity), whether the letters are genuine (contested; no independent test has
+  decided it), and the 1586 forgery in Mary's correspondence (documented, but a different case that lends the 1567 letters no weight).
+  A narrow computed test of the four surviving French texts is reported with its limits.
+divergence_note: >
+  Evidence and belief diverge in two places. First, the composite view (real letters altered or spliced) is the most adopted among modern
+  historians but, like the genuine and forged views, rests on interpretation, not an independent test. Second, the popular 'Mary was
+  framed' framing borrows credibility from the documented 1586 forgery, which says nothing about the 1567 letters.
+
+claims:
+  - id: casket-originals-lost
+    bounty_id: C-02
+    state: established
+    statement: "The original Casket Letters are lost: only copies, translations and printed versions survive."
+    evidence_class: primary_text
+    confidence: provisional
+    evidential_weight: 3   # of 5; absence anchor, capped
+    anchor_checked: secondary   # Henderson (1889) read in OCR on its chain of custody
+    adoption_weight: 5   # of 5
+    adoption_note: "Universal in the literature."
+    would_change_if: "an original surfaced and was authenticated"
+    next_step: "Read Henderson ch. IV in full and the Bowes correspondence he cites; separate the loss (documented) from who destroyed them (proposed, below)."
+    anchor:
+      type: absence-in-searched-record
+      description: >
+        Henderson (1889), ch. II-IV [read in OCR]: Morton kept the casket from 20 June 1567; Regent Moray received it from the Privy Council
+        on 16 Sept 1568 and took it to York and Westminster; Morton had it back, and 'after Morton's execution they were delivered by his natural son,
+        James, Prior of Pluscardin, to the Earl of Gowrie', then probably passed to Arran; the 'original copies of the Scottish translations
+        disappeared completely from human ken'. No original has been traced since.
+      accessible: true
+      ref: [src-henderson-1889]
+  - id: casket-destroyer-james-vi
+    bounty_id: "C-02 depth"
+    state: proposed
+    statement: "James VI destroyed the originals (around 1584)."
+    evidence_class: interpretive
+    confidence: low
+    evidential_weight: 2
+    anchor_checked: secondary
+    adoption_weight: 2
+    adoption_note: "Several sources say James is 'believed' to have destroyed them."
+    would_change_if: "a contemporary record of the destruction, or of their later whereabouts"
+    next_step: "Read Henderson's chapter 'By whom were they destroyed?' (By Mary's accusers? the Marian party? James VI?) and the Bowes correspondence."
+    anchor:
+      type: scholarly-conjecture
+      description: "Henderson (1889) lists three candidates and argues from the Bowes correspondence that the box passed to Gowrie and then probably Arran; he does not report a record of the destruction. Held apart from the loss itself."
+      ref: [src-henderson-1889]
+  - id: casket-babington-postscript-forged-1586
+    bounty_id: C-01
+    state: established
+    statement: "In 1586 Walsingham's decipherer Thomas Phelippes forged an enciphered postscript to Mary's letter to Anthony Babington, asking for the names of the conspirators."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4
+    anchor_checked: no
+    adoption_weight: 5
+    adoption_note: "Standard account of the Babington Plot."
+    would_change_if: "the archived document being shown to be in another hand or of another date"
+    next_step: "Read the document at the UK National Archives (or its published catalogue entry) and the NSA history 'To Catch a Queen'; nsa.gov was blocked from the cloud session."
+    anchor:
+      type: archive-document
+      description: "Surviving at the UK National Archives and described consistently by the NSA's history and archive sources (per bounty B-001; not read in this dig). A DIFFERENT case from 1567: it shows forging Mary's letters was possible and was done, and adds no weight to the claim that the 1567 letters were forged."
+      ref: [src-nsa-to-catch-a-queen]
+  - id: casket-french-printed-retranslation
+    bounty_id: C-03
+    state: proposed
+    statement: "The French versions printed in the 1570s are not copies of the originals: they were translated back into French from the Latin, which was itself translated from the Scots."
+    evidence_class: interpretive
+    confidence: moderate
+    evidential_weight: 3
+    anchor_checked: secondary   # Henderson read for the Detectio's publication history; his argument for the retranslation not yet re-read
+    adoption_weight: 3
+    adoption_note: "Standard among specialists; little known outside them."
+    would_change_if: "a close comparison of the printed French with the French copies at the Record Office and Hatfield showing the printed French derives from them"
+    next_step: "Read Henderson's appendix (the Latin and French versions) side by side with the copies' texts."
+    anchor:
+      type: scholarly-argument
+      description: "Argued by Henderson (1889-90). Henderson's account of publication: the Latin and Scots Detectio of 1571 and a French translation of 1572 (ch. IV, read in OCR)."
+      ref: [src-henderson-1889]
+  - id: casket-four-french-copies-survive
+    bounty_id: F5
+    state: established
+    statement: "French copies of only four of the letters survive: Nos. 3 and 5 at the Record Office and Nos. 4 and 6 at Hatfield. Letters 7 and 8 exist only in print, and Letter II survives in French only as its opening sentence and a phrase Cecil wrote in the margin."
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3
+    anchor_checked: secondary
+    adoption_weight: 3
+    adoption_note: "Not measured."
+    would_change_if: "another French copy being found, or Henderson's list being corrected"
+    anchor:
+      type: scholarly-catalogue
+      description: "Henderson (1889, p. 68), as quoted on the bounty page: 'The copies of the original French versions of the letters now known to exist are Nos. 3 and 5 in the Record Office, and Nos. 4 and 6 at Hatfield.' The book was read in OCR in this dig; the archive holdings themselves were not seen."
+      ref: [src-henderson-1889, src-casket-french-copies]
+  - id: casket-authenticity-contested
+    bounty_id: C-04
+    state: contested
+    statement: "The Casket Letters are Mary's genuine letters to Bothwell."
+    evidence_class: interpretive
+    confidence: low
+    evidential_weight: 2
+    anchor_checked: no
+    adoption_weight: 2
+    adoption_note: "Minority among modern biographers; National Museums Scotland says it is 'widely thought' they were doctored."
+    would_change_if: "an independent test (handwriting of an original, or a validated computed comparison on enough text) that discriminates the positions, or the text being found to contain anachronism"
+    positions:
+      - {label: "Genuine", holder: "Robertson and Hume (18th c.); T. F. Henderson (1889); Jenny Wormald", ground: "Most of Elizabeth's commissioners accepted them after comparing the handwriting with Mary's; Wormald argues the lords' reluctance to produce them and their later destruction imply real evidence. Both are inferences, not tests."}
+      - {label: "Forged", holder: "Adam Blackwood (16th c.); Walter Goodall (1754); William Tytler", ground: "Motive, a broken chain of custody, no signatures, addresses or dates. Motive and opportunity show a forgery was possible, not that one happened."}
+      - {label: "Composite (genuine letters altered or spliced)", holder: "Harry Bresslau (1882); Antonia Fraser (1969); John Guy (2004)", ground: "Guy estimates about 1,500-1,800 words of Letter II likely genuine and 1,000-1,200 likely interpolated, from internal inconsistencies: careful reading, not measurement. The most common modern view."}
+    anchor:
+      type: scholarly-positions
+      description: "Positions as summarised in bounty B-001 from the sources it lists; not each re-read here. Authenticity of the SOURCES (the copies) is tracked separately in sources/MANIFEST.yaml; 'genuine' here means authored by Mary as letters to Bothwell."
+      ref: [src-henderson-1889]
+  - id: casket-no-computed-study-found
+    bounty_id: C-05
+    state: searched_gap
+    statement: "No computational style comparison of the casket texts against Mary's authenticated French letters has been published, in two web searches."
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 1
+    anchor_checked: no
+    adoption_weight: 1
+    adoption_note: "Not a claim anyone holds."
+    would_change_if: "a published computed comparison being found"
+    next_step: "Search Google Scholar, Cryptologia and Digital Scholarship in the Humanities; ask the 2023 decipherment team. NARROWED (finding F7): manual comparisons do exist (Bresslau 1882, Sepp); what is unfound is a systematic computed comparison across all surviving French text."
+    searched: "Two web searches by the bounty author; no wider search yet."
+  - id: casket-french-lean-mary
+    bounty_id: C-06
+    state: proposed
+    statement: "The four surviving French casket letters (III-VI) share three-word phrases with Mary's authenticated French letters more than with Catherine de Medici's, at levels typical of Mary's own letters."
+    evidence_class: synthetic
+    confidence: low
+    evidential_weight: 2
+    anchor_checked: secondary   # texts via 19th-century print and OCR; test code and outputs published in bounties/casket-letters/data/
+    adoption_weight: 1
+    adoption_note: "New 2026-10-01. Agrees in direction with Bresslau (1882); agreement, not confirmation."
+    would_change_if: "a genre-matched control (G-05) erasing the lean, a reviewer finding an error, or a rerun on cleaner texts"
+    next_step: "Control with personal letters by another French-writing woman of the 1560s (G-05); outside review before leaving proposed."
+    anchor:
+      type: computed-result
+      description: >
+        Test DT-002 (see tests.yaml). Median Mary:Catherine ratios: Letter III 1.59, IV 1.49, V 1.55, VI 1.35 (90% ranges 1.25-1.78,
+        1.23-1.88, 1.10-2.66, 0.94-1.64). Calibration: held-out Mary letters placed correctly 57/60, Catherine's 58/60. The pre-set bar of 3x was
+        unusable and is reported (finding F10). The lean may reflect personal-letter language, not authorship (F11). It fits a genuine
+        letter and a composite built from real letters equally; it does not show guilt.
+      ref: [src-labanoff-1844, src-laferriere-catherine, src-henderson-1889]
+    basis: "Our own computed result, not reviewed by anyone outside the project."
+  - id: casket-too-short-for-wordfreq
+    bounty_id: F6
+    state: established
+    statement: "The surviving French text of the four letters is about 1,750 words (about 630, 500, 240 and 400 for Letters III-VI, +/-20%), well below the length at which word-frequency authorship methods are reliable (Eder 2010: 'simply disastrous' below about 3,000 words for novels; about 2,500 for Latin prose at best)."
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3
+    anchor_checked: secondary
+    adoption_weight: 2
+    adoption_note: "Not measured."
+    would_change_if: "a recount from the archive copies, or evidence that a word-frequency method works on texts of this length"
+    anchor:
+      type: count-and-citation
+      description: "Line count of Henderson's appendix by the bounty author (OCR, +/-20%); Eder (2010) as cited on the bounty page, not re-read here."
+      ref: [src-henderson-1889, src-eder-2010]

@@ -1,0 +1,88 @@
+subject: casket-letters
+retrieved: "2026-10-02"
+# Authenticity here has two levels (SCHEMA.md A9): the authenticity of each SOURCE as a document, and the separate question of whether the
+# lost casket originals were Mary's. The second is claim casket-authenticity-contested, not a source property. Wikipedia pages linked on the
+# bounty page are orientation only and are not sources here.
+sources:
+  - id: src-henderson-1889
+    title: "T. F. Henderson, The Casket Letters and Mary Queen of Scots (Edinburgh, 1889), Google-scanned copy on the Internet Archive"
+    document_class: primary_text (the texts printed in the appendix) plus interpretive (the argument)
+    url: https://archive.org/details/casketlettersan00hendgoog
+    authenticity:
+      status: authenticated
+      strength: moderate
+      provenance: "Public-domain 1889 book; Internet Archive identifier casketlettersan00hendgoog; OCR text downloaded 2026-10-02."
+      tests:
+        - "The bounty page's quotation from p. 68 ('The copies of the original French versions of the letters now known to exist are Nos. 3 and 5 in the Record Office, and Nos. 4 and 6 at Hatfield') is present in the OCR text [read]"
+        - "The Bresslau/Catherine de Medici passage the bounty page cites (pp. 69-70) is present in the OCR text [read]"
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps:
+        - "OCR text: dates, names and quotations were checked only where quoted; page numbers in the OCR are noisy."
+        - "Henderson argues for the genuineness of the letters; his judgments (for example that the copies 'must be regarded as thoroughly authenticated transcripts') are an advocate's reading and are not independent evidence."
+      checked: 2026-10-02
+    sha256_ocr_text: f6020382ca137663dc8cfc7ece2045bf95a7679f0b18cfbfa1b6087d6e50c9b3
+    stored_as: "sources/henderson-1889.djvu.txt (OCR text, public domain)"
+  - id: src-casket-french-copies
+    title: "The French copies of casket Letters III and V (Public Record Office) and IV and VI (Hatfield, Cecil papers); English translations of 1, 2, 5 (Record Office) and 4, 6 (Hatfield)"
+    document_class: primary_text (copies of lost originals)
+    authenticity:
+      status: unchecked
+      strength: weak
+      provenance: "Held at the National Archives and Hatfield House; seen in this dig only through Henderson's printing and description."
+      tests:
+        - "Henderson reports a collation minute of 14 Dec 1568 by the commissioners: 'In collation whereof no difference was found' [read in OCR]. A claim by the commissioners, not a test of the copies."
+      tested_by: "not independently tested"
+      gaps:
+        - "The copies carry 'alterations and corrections' in other hands (Henderson, p. 68); who made them and when is not established here."
+        - "Not seen. The relation of the copies to the lost originals is exactly what is disputed (A9: copies and translations need their own authenticity entries)."
+      next_step: "Examine catalogue entries and digitised images at the National Archives (SP 53) and Hatfield; record hand, paper, date and corrections."
+      checked: 2026-10-02
+  - id: src-labanoff-1844
+    title: "A. Labanoff (ed.), Lettres, instructions et memoires de Marie Stuart, vols. 1-2 (1844); Internet Archive lettresinstructi01mary, lettresinstructi02maryuoft"
+    document_class: primary_text (edition of Mary's letters)
+    url: https://archive.org/details/lettresinstructi01mary
+    authenticity:
+      status: authenticated
+      strength: moderate
+      provenance: "Public-domain nineteenth-century edition, Internet Archive scans; used by the bounty's test via OCR."
+      tests: ["Not re-checked in this session; used as described on the bounty page."]
+      tested_by: "bounty B-001 author (computed test); not independently reviewed"
+      gaps:
+        - "Copies were made by clerks, so spelling is normalised in the test; autograph and secretary letters are not separated."
+        - "OCR noise and an editorial French translation of a letter Mary wrote in another language were found in the pilot (finding F8) and had to be filtered."
+      checked: 2026-10-02
+  - id: src-laferriere-catherine
+    title: "H. de la Ferriere (ed.), Lettres de Catherine de Medicis, vols. 2-3; Internet Archive lettresdecatheri02cathuoft, lettresdecatheri03cathuoft"
+    document_class: primary_text (control corpus)
+    authenticity:
+      status: authenticated
+      strength: moderate
+      provenance: "Public-domain edition; used as the control corpus in test DT-002."
+      tests: ["Not re-checked in this session."]
+      tested_by: "bounty B-001 author"
+      gaps: ["Mostly official dispatches, so a genre difference from the intimate casket letters (finding F11)."]
+      checked: 2026-10-02
+  - id: src-lasry-2023
+    title: "G. Lasry, N. Biermann, S. Tomokiyo, 'Deciphering Mary Stuart's lost letters from 1578-1584', Cryptologia 47(2): 101-202 (2023)"
+    document_class: primary_text (deciphered letters) plus interpretive
+    url: https://doi.org/10.1080/01611194.2022.2160677
+    authenticity:
+      status: unchecked
+      strength: moderate
+      provenance: "Peer-reviewed open-access paper; prints one full letter and summaries of the rest."
+      gaps: ["Not read in this session; plaintexts are not fully public (finding F1)."]
+      checked: 2026-10-02
+  - id: src-nsa-to-catch-a-queen
+    title: "NSA, 'To Catch a Queen' (declassified 2011)"
+    document_class: secondary
+    url: https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/to-catch-a-queen.pdf
+    authenticity:
+      status: unchecked
+      gaps: ["nsa.gov blocks the cloud session (HTTP 403); not read in this dig."]
+      next_step: "Read in a browser; re-anchor the 1586 postscript claim to the National Archives document."
+      checked: 2026-10-02
+  - id: src-eder-2010
+    title: "M. Eder, 'Does size matter? Authorship attribution, small samples, big problem', Digital Humanities 2010 abstract"
+    document_class: interpretive (method)
+    url: https://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-744.html
+    authenticity: {status: unchecked, gaps: ["Cited by the bounty page; not read in this session."], checked: 2026-10-02}

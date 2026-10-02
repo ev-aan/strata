@@ -1,0 +1,89 @@
+timeline:
+  id: casket-letters
+  title: "The Casket Letters: who held them, when, and what survives (1567 to 1587)"
+  as_of: "2026-10-02"
+  note: >
+    Dates follow Henderson (1889) and are old-style (Julian). Times of day are not recorded except where noted, so most dots are date-only
+    and drawn hollow. Where another source is recalled to give a different date it is shown as a ghost marker and marked as not read. Every dot links
+    to its source; the book is a scholar's account (and an advocate's for genuineness), so the dots are claims about the record, not proof of it.
+    The 1586 Babington postscript is a different case and sits on its own row.
+panels:
+  - id: years
+    title: "Panel A: 1567 to 1587 (one tick per year)"
+    start: "1567-01-01T00:00:00Z"
+    end:   "1587-06-30T00:00:00Z"
+    tick_years: 1
+    lanes: [scotland, england, texts, babington]
+  - id: y1567
+    title: "Panel B: February 1567 to January 1569 (one tick per month)"
+    start: "1567-02-01T00:00:00Z"
+    end:   "1569-01-15T00:00:00Z"
+    tick_hours: 2160
+    lanes: [scotland, england, texts]
+lanes:
+  scotland: {label: "Scotland"}
+  england:  {label: "England (York, Westminster)"}
+  texts:    {label: "The letters and their copies"}
+  babington: {label: "1586 Babington postscript (separate case)"}
+people:
+  - {who: "Mary, Queen of Scots", detail: "Queen of Scotland; the letters are said to be hers, to the Earl of Bothwell."}
+  - {who: "James Hepburn, Earl of Bothwell", detail: "Accused of Darnley's murder, acquitted 12 April 1567; married Mary on 15 May 1567 (Henderson)."}
+  - {who: "Henry Stewart, Lord Darnley", detail: "Mary's husband; killed in the explosion at Kirk-o'-Field."}
+  - {who: "James Douglas, Earl of Morton", detail: "Received the casket on 20 June 1567 (his own declaration, Westminster, Dec 1568); executed 1581."}
+  - {who: "James Stewart, Earl of Moray (Regent)", detail: "Took the casket from the Privy Council on 16 Sept 1568 and carried it to England."}
+  - {who: "William Cecil", detail: "Elizabeth's secretary; the French copies at Hatfield come from his papers."}
+  - {who: "T. F. Henderson", detail: "Scholar whose 1889 book is the main source read here; argued for the letters' genuineness."}
+sources:
+  s_hend: {title: "T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read", url: "https://archive.org/details/casketlettersan00hendgoog", authenticity: "authenticated edition, moderate; an advocate's account"}
+  s_nsa:  {title: "NSA, To Catch a Queen (declassified 2011): not read, nsa.gov blocks the cloud session", url: "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/to-catch-a-queen.pdf", authenticity: "not read; secondary"}
+events:
+  - {id: k1, panel: years, lane: scotland, time: "1567-02-10T02:00:00Z", precision: approx, kind: analysis, status: single, sources: [s_hend],
+     label: "10 Feb 1567: Darnley killed in the Kirk-o'-Field explosion (about 2 a.m.)",
+     detail: "Henderson: 'The explosion at Kirk-o'-Field took place about two o'clock in the morning of the 10th February 1567.'"}
+  - {id: k2, panel: years, lane: scotland, time: "1567-04-12T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend],
+     label: "12 Apr 1567: Bothwell acquitted of the murder",
+     detail: "Henderson calls the trial 'notoriously and palpably delusive'; that is his judgment."}
+  - {id: k3, panel: years, lane: scotland, time: "1567-05-15T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend],
+     label: "15 May 1567: Mary marries Bothwell",
+     detail: "Henderson: pardoned him on 12 May, created him Duke of Orkney, and on the 15th 'gave him her hand in marriage'."}
+  - {id: k4, panel: years, lane: scotland, time: "1567-06-14T12:00:00Z", precision: day, kind: analysis, status: disputed, alt_time: "1567-06-15T12:00:00Z", alt_tag: "other accounts", alt_note: "Many accounts give 15 June for Carberry Hill (recalled, not read in this dig).", sources: [s_hend],
+     label: "14 Jun 1567: Mary surrenders at Carberry Hill",
+     detail: "Henderson gives the 14th; Mary is taken to Edinburgh and on the 16th to Lochleven."}
+  - {id: k5, panel: years, lane: texts, time: "1567-06-20T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend],
+     label: "20 Jun 1567: the casket comes into Morton's possession (per Morton's declaration)",
+     detail: "Morton's declaration was made at Westminster in Dec 1568; the casket was opened on the 21st with Maitland present. A claim by the party that held the casket."}
+  - {id: k6, panel: years, lane: scotland, time: "1567-12-15T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend],
+     label: "4 and 15 Dec 1567: letters probably shown to the Confederate Nobles and in Parliament",
+     detail: "Henderson: 'highly probable that they were shown either at the meeting of the Confederate Nobles held on the 4th December, or at the meeting of Parliament held on the 15th, or at both'. The Act of 15 Dec was expunged from the records and survives because it was printed in 1568. The two descriptions of the letters differ ('subscrivit' only in the minute)."}
+  - {id: k7, panel: years, lane: texts, time: "1568-09-16T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend],
+     label: "16 Sep 1568: Regent Moray receives the casket from the Privy Council",
+     detail: "Henderson: Moray gave the Council a receipt for the casket, which had been in Morton's keeping, before setting out for York."}
+  - {id: k8, panel: years, lane: england, time: "1568-10-15T12:00:00Z", precision: month, kind: analysis, status: single, sources: [s_hend],
+     label: "Oct 1568: conference at York",
+     detail: "Henderson's chapter on the York Commission. Whether the French versions were produced at York is a question he discusses; the date is given only as 'October' in the passages read."}
+  - {id: k9, panel: years, lane: england, time: "1568-12-08T12:00:00Z", precision: range, end: "1568-12-14T12:00:00Z", kind: analysis, status: single, sources: [s_hend],
+     label: "7-14 Dec 1568: Westminster conference examines the letters; minute of 14 Dec records 'no difference' found on collation",
+     detail: "Henderson quotes the Privy Council minute: Morton's declaration 'exhibited upon his oath the 9th of December: In collation whereof no difference was found'; copies in the memorial of the sessions of 7 and 8 Dec. A claim by the commissioners, not a test."}
+  - {id: k10, panel: years, lane: texts, time: "1571-06-01T12:00:00Z", precision: year, kind: analysis, status: single, sources: [s_hend],
+     label: "1571: letters first printed with Buchanan's Detectio (Latin and Scots); French translation 1572",
+     detail: "Henderson, citing Skelton: 'first made public in 1571, appended to the Detectio Mariae Reginae of Buchanan'; only three letters in Latin appended to the Latin version; French translation in 1572. Printed French is probably a retranslation (claim casket-french-printed-retranslation, proposed)."}
+  - {id: k11, panel: years, lane: texts, time: "1581-06-02T12:00:00Z", precision: year, kind: analysis, status: single, sources: [s_hend],
+     label: "After Morton's execution (1581): casket passes to the Earl of Gowrie",
+     detail: "Henderson: delivered by Morton's natural son James, Prior of Pluscardin, to Gowrie, who refused Elizabeth's ambassador. The year of Morton's execution is from outside Henderson's passage read (recalled: 1581)."}
+  - {id: k12, panel: years, lane: texts, time: "1584-06-01T12:00:00Z", precision: year, kind: analysis, status: inferred, sources: [s_hend],
+     label: "After Gowrie's execution (about 1584): casket probably passes to Arran; originals then disappear",
+     detail: "Henderson: 'The likelihood is that, after the execution of the Earl of Gowrie... they passed into Arran's hands'; the original copies of the Scottish translations 'disappeared completely from human ken'. The year is recalled, not read; who destroyed them is open (claim casket-destroyer-james-vi, proposed)."}
+  - {id: k13, panel: years, lane: babington, time: "1586-06-30T12:00:00Z", precision: year, kind: document, status: single, sources: [s_nsa],
+     label: "1586: Phelippes forges a postscript to Mary's letter to Babington (a different case)",
+     link: "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/to-catch-a-queen.pdf",
+     detail: "Per bounty B-001 (claim casket-babington-postscript-forged-1586; source not read in this dig). It shows forging Mary's letters was possible; it adds no weight to claims about 1567."}
+  # ---- Panel B: 1567 to Jan 1569, in months ----
+  - {id: b1, panel: y1567, lane: scotland, time: "1567-02-10T02:00:00Z", precision: approx, kind: analysis, status: single, sources: [s_hend], label: "10 Feb 1567: Kirk-o'-Field explosion", detail: "As in Panel A."}
+  - {id: b2, panel: y1567, lane: scotland, time: "1567-05-15T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend], label: "15 May: Mary marries Bothwell", detail: "As in Panel A."}
+  - {id: b3, panel: y1567, lane: scotland, time: "1567-06-14T12:00:00Z", precision: day, kind: analysis, status: disputed, alt_time: "1567-06-15T12:00:00Z", alt_tag: "other accounts", alt_note: "Many accounts give 15 June (recalled).", sources: [s_hend], label: "14 Jun: Carberry Hill", detail: "As in Panel A."}
+  - {id: b4, panel: y1567, lane: texts, time: "1567-06-20T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend], label: "20 Jun: casket to Morton", detail: "Per Morton's declaration of Dec 1568."}
+  - {id: b5, panel: y1567, lane: scotland, time: "1567-12-04T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend], label: "4 Dec: Confederate Nobles meet (letters probably shown)", detail: "Henderson's 'highly probable'."}
+  - {id: b6, panel: y1567, lane: scotland, time: "1567-12-15T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend], label: "15 Dec: Act of Parliament names the casket documents", detail: "Expunged from the records; survives because it was printed in 1568."}
+  - {id: b7, panel: y1567, lane: texts, time: "1568-09-16T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hend], label: "16 Sep 1568: Moray receives the casket", detail: "As in Panel A."}
+  - {id: b8, panel: y1567, lane: england, time: "1568-10-15T12:00:00Z", precision: month, kind: analysis, status: single, sources: [s_hend], label: "Oct 1568: York conference", detail: "As in Panel A."}
+  - {id: b9, panel: y1567, lane: england, time: "1568-12-09T12:00:00Z", precision: range, end: "1568-12-14T12:00:00Z", kind: analysis, status: single, sources: [s_hend], label: "9-14 Dec 1568: Westminster examination and collation minute", detail: "As in Panel A."}
