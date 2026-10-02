@@ -1,0 +1,35 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1882-early-curtis-hears-goebel-story
+rev: 1
+type: event
+label: 'Early 1882: counsel Curtis first hears Goebel''s story (lamps ''as early as about 1850'')'
+time: '1882-02-15T12:00:00Z'
+precision: month
+kind: witness
+status: single
+what: '54 F. 678, summarising Leonard E. Curtis''s affidavit: he ''first heard of Henry Goebel in the early part of 1882'',
+  and Goebel told him he ''had made incandescent lamps like Edison''s as early as about 1850'', used ''for laboratory experiments''
+  and not continued ''for more than a year or two after 1850''. Curtis inquired again in 1892 (Sawyer-Man injunction motion)
+  and the defence was put forward in the 1893 suits.'
+sources:
+- title: Edison Electric Light Co. v. Beacon Vacuum Pump & Electrical Co., 54 F. 678 (C.C.D. Mass., 18 Feb 1893), Colt J.
+  url: https://static.case.law/f/54/cases/0678-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-54-f-678
+  source_type: official_record
+  access: read
+window:
+  earliest: '1882-01-01'
+  latest: '1882-04-30'
+  begin_note: '''The early part of 1882'' (this dig reads it as January to April).'
+  end_note: Same.
+manifest:
+  subject: incandescent-lamp
+  source: src-54f678
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (findings A4, B3). Date and place re-checked
+    against the cited source.'
+date_basis: derived

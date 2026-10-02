@@ -1,0 +1,56 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1873-lodygin-carbon-rod-lamps
+rev: 1
+type: event
+label: '1872-73: Lodygin''s carbon-rod lamps in St Petersburg'
+time: '1873-01-01T12:00:00Z'
+precision: year
+kind: document
+status: disputed
+alt_time: '1872-01-01T12:00:00Z'
+alt_tag: '1872'
+alt_note: Kommersant (2024) gives 1872 for the first demonstration; Fontaine (1878) gives 1873.
+what: 'Fontaine (1878): ''in 1873 a Russian physicist, M. Lodyguine, resuscitated both [lighting by incandescence and its
+  principle], and invented a new lamp''. The St Petersburg Academy''s report by Wild, quoted by Fontaine, says Lodygin replaced
+  platinum with small carbon bars heated in a hermetically sealed glass receiver from which oxygen is expelled; Fontaine adds
+  ''Nothing is less practical nor less studied than the apparatus of this inventor.'' Kommersant (2024) gives 1872 for the
+  first demonstration and says early samples lasted 30-40 minutes.'
+sources:
+- title: Hippolyte Fontaine, Electric Lighting (English translation, 1878), pp. 171-173 (Lodygin and the St Petersburg Academy's
+    report)
+  url: https://archive.org/details/electriclightin00fontgoog
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: fontaine-1878
+  derives_from: academy-wild-report-1874
+  source_type: scholarly
+  access: read
+- title: Kommersant (St Petersburg), 'Why Lodygin's invention became Edison's lamp' (doc 6822124)
+  url: https://www.kommersant.ru/doc/6822124
+  authenticity: 'not applicable: newspaper history, no scan of the privilege (see the dig''s sources manifest)'
+  origin: kommersant-6822124
+  source_type: news
+  access: read
+place:
+  name: Saint Petersburg
+  lat: 59.9387
+  lon: 30.3162
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 421007
+  note: Fontaine names the St Petersburg Academy of Sciences and says Lodygin was 'a Russian physicist'; Kommersant says Lodygin
+    worked in St Petersburg.
+window:
+  earliest: '1872-01-01'
+  latest: '1873-12-31'
+  begin_note: Kommersant gives 1872 for the first demonstration.
+  end_note: Fontaine gives 1873 for the invention of the new lamp.
+manifest:
+  subject: incandescent-lamp
+  source: src-fontaine-1878
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a5. Date and place re-checked against the cited
+    source.'
+date_basis: stated

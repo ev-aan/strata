@@ -1,0 +1,48 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society
+rev: 1
+type: event
+label: 'Dec 1878: Swan describes a carbon-rod lamp that blackened its globe (Newcastle Chemical Society)'
+time: '1878-12-18T12:00:00Z'
+precision: month
+kind: document
+status: single
+what: 'Chemical News 39: at the Newcastle Chemical Society meeting, Mr. J. W. Swan in the chair (the meeting ''immediately
+  preceding Christmas''), the chairman ''described an experiment he had recently performed on the production of light, by
+  passing a current of electricity through a slender rod of carbon enclosed in an exhausted globe'', current from a Siemens
+  dynamo-electric machine ''of the second or 6000 candle size''. The rod ''glow[ed] with great splendour'', the glass ''became
+  coated with a sooty deposit on its inside'', and the rod ''became curved to the form of a bow, as if from softening''. B.
+  S. Proctor''s note in the same volume (read 27 Mar 1879) says that ''at our meeting in December, 1878, Mr. J. W. Swan exhibited
+  an electric lamp ... which had broken down''. The report prints no day.'
+sources:
+- title: 'Chemical News 39 (28 Mar 1879, p. 133; 18 Apr 1879, p. 168): Newcastle Chemical Society report, and B. S. Proctor,
+    ''On the smoke of an electric lamp'''
+  url: https://archive.org/details/s713id13691410
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: chemnews-39-1879
+  source_type: news
+  access: read
+place:
+  name: Newcastle upon Tyne
+  lat: 54.9738
+  lon: -1.6132
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 142282
+  note: The source names the Newcastle-upon-Tyne society; the hall or room is not named, so only the city is placed.
+window:
+  earliest: '1878-12-01'
+  latest: '1878-12-24'
+  begin_note: 'Proctor: ''our meeting in December, 1878''.'
+  end_note: Swan's remark places it at the meeting 'immediately preceding Christmas'.
+manifest:
+  subject: incandescent-lamp
+  source: src-chemnews-1879
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline events a9 and b1 (one event). The 18 Dec day on the
+    earlier timeline came from secondary summaries (Grace''s Guide, Histelec) that this dig did not keep; it is retained only
+    as the best single date inside the December window. Date and place re-checked against the cited source.'
+date_basis: derived

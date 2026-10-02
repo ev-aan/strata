@@ -38,3 +38,4 @@ assignments:
   congress-promise-vote: {area: politics,          areas: [],                                                     types: [what_did_they_know],                 popular_claims: false}
   votes-2009-present:    {area: politics,          areas: [],                                                     types: [did_it_happen],                      popular_claims: false}
   votes-johnson-tonkin:  {area: politics,          areas: [history],                                              types: [did_it_happen],                      popular_claims: false}
+  incandescent-lamp:     {area: technology,        areas: [history, law_justice],                                 types: [origin, is_claim_true],          popular_claims: true}

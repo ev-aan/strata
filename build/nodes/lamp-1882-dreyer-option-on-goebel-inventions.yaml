@@ -1,0 +1,35 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1882-dreyer-option-on-goebel-inventions
+rev: 1
+type: event
+label: '1882: Dreyer takes a paid option on Goebel''s electric-lighting inventions'
+time: '1882-07-01T12:00:00Z'
+precision: year
+kind: witness
+status: single
+what: '54 F. 678, summarising William G. Dreyer''s affidavit: ''in 1882 he did procure from [Goebel] an option for three months
+  of all his inventions relating to electric lighting'' for $500, extended for three months for another $425. Goebel said
+  he had made small incandescent lamps called the ''fiddle bow''; Dreyer ''made every effort to find one, but never succeeded''.
+  No month is given.'
+sources:
+- title: Edison Electric Light Co. v. Beacon Vacuum Pump & Electrical Co., 54 F. 678 (C.C.D. Mass., 18 Feb 1893), Colt J.
+  url: https://static.case.law/f/54/cases/0678-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-54-f-678
+  source_type: official_record
+  access: read
+window:
+  earliest: '1882-01-01'
+  latest: '1882-12-31'
+  begin_note: 'Dreyer: ''in 1882''.'
+  end_note: Same.
+manifest:
+  subject: incandescent-lamp
+  source: src-54f678
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (finding B3). Date and place re-checked against
+    the cited source.'
+date_basis: stated

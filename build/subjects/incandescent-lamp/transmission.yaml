@@ -27,37 +27,65 @@ chains:
     title: "How 'Göbel invented the light bulb in 1854' spread"
     confers_weight: false
     events:
+      - id: tx-g-10
+        date: "1882-02-15"
+        precision: month
+        step: origin
+        carrier: "Göbel, telling counsel Leonard E. Curtis (as Curtis later swore)"
+        form: "Göbel says he made incandescent lamps like Edison's 'as early as about 1850', used only for laboratory experiments and not continued for more than a year or two after 1850."
+        source: src-54f678
+        read: yes
+        note: "Earliest dated trace found: Curtis 'first heard of Henry Goebel in the early part of 1882' (his affidavit, as summarised in 54 F. 678). The 'about 1850' detail is Curtis's, not the Nov 1882 offer's. The date is a month inside the window January to April 1882; node lamp-1882-early-curtis-hears-goebel-story."
+      - id: tx-g-11
+        date: "1882-05-15"
+        precision: month
+        step: repetition
+        carrier: "Dickerson and Dickerson, lawyers, to S. B. Eaton for the Edison company"
+        form: "The firm calls Eaton's attention to Göbel's alleged inventions; Dreyer is Göbel's representative; the Edison company's committee decides he 'had nothing worth buying'."
+        source: src-54f678
+        read: yes
+        note: "Eaton's affidavit, as summarised in 54 F. 678: 'in May, 1882'. Node lamp-1882-05-eaton-told-of-goebel-claim."
+      - id: tx-g-12
+        date: "1882-07-01"
+        precision: year
+        step: repetition
+        carrier: "William C. Dreyer, trying to form a company"
+        form: "Dreyer takes a three-month option on all Göbel's electric-lighting inventions for $500, extended for $425; 'he made every effort to find' a fiddle bow lamp 'but never succeeded'."
+        source: src-54f678
+        read: yes
+        note: "Dreyer's affidavit, as summarised in 54 F. 678: 'in 1882'. No month given. Node lamp-1882-dreyer-option-on-goebel-inventions."
       - id: tx-g-01
         date: "1882-11-28"
         precision: day
-        step: origin
+        step: amplification
         carrier: "Göbel's son, offering the rights to the Edison company"
-        form: "Göbel's electric-lighting inventions are offered for $20,000 after an option by William C. Dreyer earlier in 1882; Göbel says he made lamps like Edison's about 1850."
+        form: "Henry Goebel, Jr. offers the inventions and good will of his father to the Edison company for $20,000; on 12 December 1882 he is told the company does not wish to buy."
         source: src-54f678
         read: yes
-        note: "Earliest dated trace found, as recorded in the 1893 Boston opinion. The Edison company declined."
+        note: "NOT the earliest trace: Curtis (early 1882), the Dickersons' approach (May 1882) and Dreyer's option (1882) are earlier. The first version called this the earliest dated trace and gave the 'about 1850' detail here; both are corrected (see the log). Node lamp-1882-11-28-goebel-offer-to-edison-company."
       - id: tx-g-02
-        date: "1892-10-01"
-        precision: month
+        date: "1892-10-18"
+        precision: day
         step: amplification
         carrier: "Defence lawyers (Bull) in the Edison patent suits"
         form: "'Fiddle bow' lamps Nos. 1-3 are produced as exhibits said to date from the 1850s."
         source: src-54f678
         read: yes
+        note: "Goebel, Jr. delivered lamp No. 1 to Mr. Bull in New York on 18 Oct 1892 and No. 2 (with No. 3) on 28 Nov 1892, with the carbons detached from the lead-in wires (Bull's affidavit as summarised in 54 F. 678). Affidavits for the Edison side, noted in 57 F. 616, allege that Goebel, Jr. admitted making lamps 1-3 in 1892 for the suit; that is an untested allegation, which was not denied and was met with the reply that he was venal. The first version dated this event to 'Oct 1892' only."
       - id: tx-g-03
         date: "1893-02-18"
         precision: day
         step: correction
-        carrier: "Circuit Court, Boston (Colt J.)"
-        form: "The story is 'extremely improbable'; lamp No. 4 could not predate 1872."
+        carrier: "Circuit Court, D. Massachusetts (Colt J.)"
+        form: "'It is extremely improbable that Henry Goebel constructed a practical incandescent lamp in 1854'; lamp No. 4 could not have been made before 1872 ('simply impossible'); lamps 1-3, if made, were 'experimental toys'. Injunction granted on a preliminary motion."
         source: src-54f678
         read: yes
       - id: tx-g-04
         date: "1893-04-21"
         precision: day
         step: dispute
-        carrier: "Circuit Court, St. Louis (Hallett J.)"
-        form: "A fair preponderance of testimony supports Göbel; injunction refused."
+        carrier: "Circuit Court, E.D. Missouri (Hallett J.)"
+        form: "'A fair preponderance of testimony in support of the Goebel claim'; injunction refused on condition of a $20,000 bond."
         source: src-56f496
         read: yes
         note: "The legend's strongest institutional support, and a preliminary ruling only."
@@ -65,7 +93,7 @@ chains:
         date: "1893-07-20"
         precision: day
         step: correction
-        carrier: "Circuit Court, Oconto, Wisconsin (Seaman J.)"
+        carrier: "Circuit Court, E.D. Wisconsin (Seaman J.), on a motion against lamp makers at Oconto"
         form: "Follows Boston, disapproves St. Louis; injunction granted."
         source: src-57f616
         read: yes
@@ -74,9 +102,10 @@ chains:
         precision: day
         step: correction
         carrier: "Seventh Circuit Court of Appeals"
-        form: "The story is surrounded by 'an atmosphere of improbability'; affirmed."
+        form: "Without designing to suggest what result should be reached upon final hearing, the story is surrounded by 'such an atmosphere of improbability' that it ought not to invade the patent until sifted at final hearing; affirmed."
         source: src-61f834
         read: yes
+        note: "The same case as tx-g-05, on appeal; not a separate case."
       - id: tx-g-07
         date: "1900-01-01"
         precision: decade
@@ -85,7 +114,7 @@ chains:
         form: "Göbel, a German, invented the light bulb before Edison."
         source: src-rohde-2007
         read: no
-        note: "Reported only by summaries of Rohde (2007) and the goebel-projekt site (V0). Needs dated examples."
+        note: "NOT READ. Reported only by summaries of Rohde (2007) and the goebel-projekt site (V0); no dated German example (street name, school text, newspaper) was read. Needs dated examples."
       - id: tx-g-08
         date: "2007-01-01"
         precision: year
@@ -94,6 +123,7 @@ chains:
         form: "The court record does not support Göbel as inventor; he was neither unrecognised genius nor fraudster."
         source: src-rohde-2007
         read: no
+        note: "NOT READ. The book was not opened; this is what summaries on lerncafe.de, goebel-projekt and radiomuseum.org say it concludes (V0)."
       - id: tx-g-09
         date: "2026-10-02"
         precision: read_on
@@ -101,7 +131,8 @@ chains:
         carrier: "Town of Springe (official site)"
         form: "Whether Göbel invented the first bulb is 'debatable'; the town loves him anyway."
         source: src-springe
-        read: yes
+        read: no
+        note: "UNVERIFIED. Recorded as read in the first session, but the page URL was not kept; on 2026-10-02 the home page was fetched and the wording could not be found again. Do not rely on it."
 
   - id: tx-canada-sale
     about: "incandescent-lamp:lamp-canada-invented-claim"
@@ -126,13 +157,14 @@ chains:
         read: yes
         note: "Earliest trace of the purchase claim, 25 years on and second-hand. The same journal rejected the priority argument."
       - id: tx-c-03
-        date: "2017-01-01"
-        precision: year
+        date: "2017-03-21"
+        precision: day
         step: institutionalisation
-        carrier: "CBC"
+        carrier: "CBC (Chris Chang-Yen Phillips, for Canada 2017)"
         form: "The Canadian patent was 'behind Edison's breakthrough'; carbon used 'as the filament'; Edison bought the rights in Canada and the US."
         source: src-cbc-2017
         read: yes
+        note: "Posted 21 Mar 2017 per the page (re-read 2026-10-02)."
       - id: tx-c-04
         date: "2026-10-02"
         precision: read_on
@@ -141,7 +173,7 @@ chains:
         form: "More effective than any earlier electric light; sold to Edison for $5,000."
         source: src-canadas-history
         read: yes
-        note: "No sources cited. Publication date not recorded in this session."
+        note: "No sources cited. Publication date not recorded in this session; re-read 2026-10-02: 'in 1879 they sold the patent to Edison for $5,000', still no date for the page."
       - id: tx-c-05
         date: "2026-10-02"
         precision: read_on
@@ -150,7 +182,7 @@ chains:
         form: "1879 sale for $5,000; a 'stronger vacuum than Swan's'."
         source: src-canadian-encyclopedia
         read: yes
-        note: "Cites popular books (Melady; Nader et al.), not documents. The patent refills the globe with gas, contradicting 'stronger vacuum'."
+        note: "Recorded in the first session as citing popular books (Melady; Nader et al.), not documents. The page could not be re-opened on 2026-10-02 (HTTP 403), so this record is unverified. The US patent refills the globe with gas, contradicting 'stronger vacuum'."
 
   - id: tx-lodygin-priority
     about: "incandescent-lamp:lamp-lodygin-first-claim"
@@ -184,14 +216,14 @@ chains:
         read: yes
         note: "The large prize figure appears in an American company history, not a Russian one. Fontaine says only 'a high prize'."
       - id: tx-l-04
-        date: "1947-01-01"
+        date: "1947-12-31"
         precision: year
         step: institutionalisation
-        carrier: "Soviet priority campaign against 'kowtowing to the West' (1947-48)"
-        form: "Lodygin, not Edison, invented the electric light."
-        source: src-kommersant-lodygin
-        read: no
-        note: "Reported by Kommersant (doc 5338615), V0. No Soviet text from the 1940s read."
+        carrier: "Soviet newspapers during the campaign against 'kowtowing to the West' (from May 1947)"
+        form: "The incandescent lamp was made by the Russian scientist Lodygin before Edison, who only improved it."
+        source: src-kommersant-campaign
+        read: yes
+        note: "The source named, a Kommersant history (doc 5338615), WAS read on 2026-10-02: it says the campaign began with an article of 9 May 1947 and that within the following year Soviet newspapers reported this. NO Soviet newspaper of 1947-48 was read and the page names no issue; the placement of the claim in that campaign is therefore reported, not verified. The first version cited the wrong Kommersant page (doc 6822124) for it and did not list doc 5338615 in the manifest."
 
   - id: tx-10000-ways
     about: "incandescent-lamp:lamp-10000-ways-quote"

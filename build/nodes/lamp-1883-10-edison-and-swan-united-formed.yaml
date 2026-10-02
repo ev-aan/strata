@@ -1,0 +1,33 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1883-10-edison-and-swan-united-formed
+rev: 1
+type: event
+label: 'Oct 1883: Edison and Swan United Electric Light Company formed by merger'
+time: '1883-10-15T12:00:00Z'
+precision: month
+kind: official
+status: single
+what: 'Edison Papers company page: ''established in October 1883 as the result of a merger between the Edison Electric Light
+  Company, Ltd. and the Swan United Electric Light Company, Ltd.'' No day is given.'
+sources:
+- title: Edison Papers company page, Edison and Swan United Electric Light Company, Ltd.
+  url: https://edison.rutgers.edu/life-of-edison/companies/company-details/electric-light,-foreign/edison-and-swan-united-electric-light-company-ltd
+  authenticity: 'not applicable: later or editorial source, used only for what it says (see the dig''s sources manifest)'
+  origin: edison-papers-ediswan
+  source_type: secondary_report
+  access: read
+window:
+  earliest: '1883-10-01'
+  latest: '1883-10-31'
+  begin_note: The page says October 1883.
+  end_note: The page says October 1883.
+manifest:
+  subject: incandescent-lamp
+  source: src-ediswan
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b13; the earlier ''26 Oct'' day had no source
+    and is dropped. Date and place re-checked against the cited source.'
+date_basis: stated

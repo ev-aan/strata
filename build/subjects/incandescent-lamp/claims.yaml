@@ -1,13 +1,37 @@
 # ---------------------------------------------------------------------------
-# SEARCH HEADLINE (rules as in apollo-landings/claims.yaml). DRAFT until owner review.
+# SEARCH HEADLINE (rules as in apollo-landings/claims.yaml). DRAFT: the second half of the headline rests on a
+# contested claim (lamp-swan-before-edison / lamp-first-practical-priority), not on the headline claim, so it stays draft.
 # ---------------------------------------------------------------------------
-headline: "No one person invented the light bulb. Edison made the first one that was practical to sell and wire into a system."
+headline: "No one person invented the bulb: patents date to 1841; Edison's priority over Swan is unsettled"
 headline_claim: lamp-edison-sole-inventor
 headline_status: draft
 dig_status: open
 search_summary: >
-  Patents from 1841 and 1845, Swan's 1878 lamp and four 1890s court cases show at least six people
-  built incandescent lamps before Edison's. What Edison made first was a practical system. See the evidence.
+  Who invented the light bulb? Not Edison alone: British patents of 1841 and 1845 already describe electric lamps with a heated
+  conductor in an exhausted globe, Swan reported a glowing carbon rod in 1878, and Edison's 1880 patent was upheld by US courts
+  for a high-resistance carbon filament in an all-glass bulb. Whether Edison or Swan first made a practical lamp is unsettled.
+
+assessment:
+  question: "Who invented the light bulb?"
+  answer: partly
+  headline: "Partly Edison, but not him alone: patents for electric lamps go back to 1841, and whether Edison or Swan first made a practical lamp is unsettled."
+  text: >
+    "The light bulb" covers at least four different firsts: a patent for an electric lamp, a lamp that glows in an exhausted globe, a lamp
+    practical to make and use, and a lamp run from a central supply. On the first two, the documents read here put others ahead of Edison:
+    de Moleyns (British patent of 1841) and King for Starr (1845), and, as a reported experiment, Swan's glowing carbon rod of December 1878.
+    On the third, the courts found Edison's lamp "practically operative and successful" and upheld his patent on a high-resistance carbon
+    filament in an all-glass exhausted bulb; Swan, by his own account, had a treated-thread lamp in October 1880 and Swan lamps lit
+    Cragside (1880) and the Savoy stage (28 December 1881), both before Edison's Pearl Street service began on 4 September 1882, but no
+    document read shows who first made or sold a practical lamp. On the fourth, Edison's company is the one documented. The national
+    stories (Goebel, Lodygin, de Changy, Woodward and Evans, Latimer) each hold one real record and stretch it into "first"; Goebel's
+    1854 lamps rest on testimony that US courts weighed differently on preliminary motions, with no dated document from before 1882 either way.
+    One standard was used for every claimant (see the description). We therefore say "partly", not "Edison" and not "Swan".
+  key_points:
+    - "British patents of 1841 and 1845 describe electric lamps with a heated conductor in an exhausted globe, so Edison was not the first to describe or patent one."
+    - "US courts upheld Edison's 1880 patent for a high-resistance carbon filament in an all-glass bulb; his company began Pearl Street service on 4 September 1882."
+    - "Swan reported a glowing carbon rod in 1878, and Swan lamps lit Cragside (1880) and the Savoy stage (1881); who first made or sold a practical lamp is not documented."
+  basis: [lamp-edison-sole-inventor, lamp-edison-patent-upheld, lamp-first-practical-priority, lamp-swan-before-edison, lamp-pearl-street, lamp-goebel-claim]
+  would_settle: "A dated sale, order, price list or company record showing which of Swan's or Edison's lamps was first made and sold for ordinary use, and a dated pre-1882 document for or against Goebel's lamps."
 
 subject: incandescent-lamp
 question: "Who invented the light bulb?"
@@ -19,11 +43,19 @@ description: >
   be anchored to a dated document from the time. The founding core runs from Davy's battery lights
   to the 1895 Supreme Court ruling that closed the patent fight. Later metal filaments (tungsten,
   1900s) are out of scope for now except where a claimant's own patent reaches into them.
+  THE STANDARD, stated so that it can be checked (and applied to Edison's side as well): (S1) a claim that someone did something by a
+  date is "established" only if a dated document of the time that records it was read directly; a document known only as quoted in
+  one later book, or a later self-account, is a single channel (filed as proposed, contested or a searched gap, never established).
+  (S2) A claim that someone was "first" is refuted only by a dated document, read directly, that shows an earlier person did the same
+  thing; the absence of an earlier document never refutes it (that is a searched gap, capped at provisional). (S3) A patent proves what
+  was claimed and described on its date, not that a lamp was built or worked; "built" needs a report of the lamp. (S4) A court's
+  finding on affidavits is primary text for what the court found, not a document of the period it describes. Under S1 to S4 the
+  claims for de Changy and Lodygin are single-channel (Fontaine), Goebel's 1854 lamps are contested, and Swan's 1850s work is a gap.
 
 # ---------------------------------------------------------------------------
 # VERIFICATION LEVELS (as in apollo-landings):
 #   V0 single source | V1 2+ independent secondary sources agree | V2 primary document opened and read
-# What was opened at V2 in this session (2026-10-02):
+# What was opened at V2 in the first session (2026-10-02):
 #   US patents 223,898 (Edison), 181,613 (Woodward), 252,386 (Latimer), 47,632 and 266,358 (Göbel),
 #     575,002 (Lodygin): USPTO image server and Google Patents
 #   Court opinions: 40 F. 21 (1889), 47 F. 454 (1891), 52 F. 300 (1892), 54 F. 678, 56 F. 496,
@@ -33,23 +65,29 @@ description: >
 #   Chemical News 39 (1879) and 42 (1880): Swan's demonstrations and his own 1880 lecture
 #   Scientific American 12 Sep 1874: Canadian patent 3,738 listing
 #   NY Herald 21 and 31 Dec 1879; NY Tribune 1 Jan 1880 and 5 Sep 1882 (Chronicling America)
-#   Davy, Elements of Chemical Philosophy (1812); Fontaine, Electric Lighting (1878 trans.)
+#   Davy, Elements of Chemical Philosophy (1812; the Bradford and Inskeep edition on the Internet Archive);
+#     Fontaine, Electric Lighting (1878 trans.)
 #   Dyer and Martin, Edison: His Life and Inventions (1910), vol. II pp. 615-616
 #   Electrical World and Engineer, 14 Apr 1900
-# Blocked: Google Patents (intermittently), Espacenet, Library and Archives Canada,
-#   the Edison Papers notebook viewer (browser challenge, not bypassed). No Edison notebook page
-#   was opened directly; notebook facts come from the Edison Papers' own editorial essays (V1).
+# Re-read in the revision of 2026-10-02: all the court opinions, the Supreme Court scan, the abridgments (pp. 62-63, 97-98),
+#   Chemical News 39 (pp. 133, 168 and Proctor's note) and 42 (pp. 227-230), Fontaine pp. 169-173 and 186-191, the Tribune of
+#   5 Sep 1882 and 1 Jan 1880, the Herald of 21 and 31 Dec 1879, both Kommersant pages, the Edison Papers essay, the
+#   Edison Papers edition of Batchelor's notebook entry of 22 Oct 1879 (Doc. 1831), the Edison Papers pages on Latimer and on
+#   Edison and Swan United, the Times transcription, the IET blog, and US 247,097 (new). Davy's 1812 pp. 85-86 and Edison's
+#   patent text were re-read from the first session's OCR files.
+# Blocked or unreachable in the revision: the Edison Papers notebook viewer (browser check; the notebook images were not opened),
+#   The Canadian Encyclopedia (HTTP 403), Google Patents (intermittent), Espacenet, Library and Archives Canada.
 # ---------------------------------------------------------------------------
 
 divergence_note: >
   Adoption says "Edison" almost everywhere, and in each claimant's country it says "ours". The evidence
-  says the question is badly formed: "invented" covers at least five different firsts (light from
-  electric heating, a patent, a working carbon lamp in a vacuum, a lamp practical to make and sell,
-  a complete wired system), and they have different answers. The national stories each hold one true
-  fact (a real patent, a real demonstration) and then stretch it into "first". The two loudest
-  priority claims against Edison, Göbel's 1854 lamps and the Canadian sale, are the two with the
-  weakest records: nothing dated before 1882 for Göbel, and no document of a sale for Woodward and
-  Evans. The gap left open is honest: Swan's 1850s work survives only in his own 1880 account.
+  says the question is badly formed: "invented" covers at least four different firsts (a patent, a lamp
+  that glows in an exhausted globe, a lamp practical to make and use, a complete wired system), and they have different
+  answers. The national stories each hold one true fact (a real patent, a real report, a real demonstration) and then stretch it into
+  "first". The two loudest priority claims against Edison, Göbel's 1854 lamps and the Canadian sale, have the weakest
+  records: no dated document from before 1882 either way for Göbel (the courts split on preliminary motions), and no document of a sale for Woodward and
+  Evans. Two gaps are left open and are not closed by either side: Swan's early work survives only in his own 1880 account, and nothing read shows who first sold
+  a practical lamp, Swan or Edison.
 
 claims:
 
@@ -59,8 +97,9 @@ claims:
     state: established
     statement: >
       Humphry Davy published an account of a brilliant arc of light between two charcoal points,
-      powered by the Royal Institution's 2,000-plate battery. This is an arc light, not an
-      incandescent lamp: the light comes from a spark jumping a gap, not from a solid glowing inside a bulb.
+      powered by the Royal Institution's 2,000-plate battery; the charcoal itself was "ignited to whiteness". This is an arc light, not an
+      incandescent lamp: the light comes mainly from a discharge across a gap, not from a solid glowing inside a bulb.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -74,19 +113,21 @@ claims:
       by others exist and are not yet dug)
     anchor:
       type: primary_text
-      description: Davy, Elements of Chemical Philosophy (London, 1812), pp. 85-86
+      description: "Davy, Elements of Chemical Philosophy (1812; the Bradford and Inskeep edition scanned on the Internet Archive), pp. 85-86, read in OCR."
       sources: [src-davy-1812]
+      nodes: [{node: lamp-1812-davy-publishes-carbon-arc, verb: supports}]
     basis: >
       # V: V2 for the text. The book gives no date for the demonstration; 1808, 1809 and 1810
-      #    all trace to later histories. Date filed as a gap (lamp-davy-dates).
+      #    all trace to later histories (the Supreme Court in 1895 says 1810). Date filed as a gap (lamp-davy-dates).
       Proves electricity could make useful light by 1812. Does not bear on the incandescent lamp.
 
   - id: lamp-davy-dates
     state: searched_gap
     statement: >
-      The date of Davy's first arc demonstration (given variously as 1808, 1809 or 1810) and whether
-      his 1802 papers describe wires or charcoal glowing as a light source are not yet read in the
+      The date of Davy's first arc demonstration (given variously as 1808, 1809 or 1810; the Supreme Court in 1895 says "as early as
+      1810") and whether his 1802 papers describe wires or charcoal glowing as a light source are not yet read in the
       original.
+    statement_kind: search_result
     evidence_class: primary_text
     confidence: low
     evidential_weight: 1
@@ -98,9 +139,9 @@ claims:
       Read Davy's 1802 papers in the Journals of the Royal Institution, vol. 1 (the University of
       Pennsylvania transcription returned 403 from here; try the Royal Institution archive or a Google Books scan).
     anchor:
-      type: primary_text
-      description: Journals of the Royal Institution, vol. 1 (1802), not read
-      sources: [src-davy-1812]
+      type: search-record
+      description: "Searched: Davy's 1812 book (no date for the demonstration) and the Supreme Court's passage (a court's statement, 1810). Not read: Journals of the Royal Institution, vol. 1 (1802)."
+      sources: [src-davy-1812, src-scotus-1895]
     basis: "A search snippet quotes iron wire 'rendered white-hot'. Not read; V0."
 
   - id: lamp-de-la-rue-1840
@@ -110,6 +151,7 @@ claims:
       1840 has no primary record found. The trail leads to a 1927 history that dates a de la Rue lamp
       to 1820 and says its vacuum is unexplained, while a 1923 Smithsonian history credits the 1840
       platinum-coil lamp to William Grove instead.
+    statement_kind: search_result
     evidence_class: synthetic
     confidence: low
     evidential_weight: 1
@@ -125,21 +167,23 @@ claims:
       Search de la Rue's and Grove's papers in Philosophical Magazine and Proceedings of the Royal
       Society, 1838-1845, for a platinum lamp; then check which history first wrote "de la Rue, 1840".
     anchor:
-      type: synthetic
-      description: 'Howell and Schroeder, History of the Incandescent Lamp (1927): ''De la Rue ... 1820''; Schroeder, History of Electric Light (Smithsonian, 1923): Grove, 1840'
+      type: search-record
+      description: "Howell and Schroeder, History of the Incandescent Lamp (1927): 'De la Rue ... 1820'; Schroeder, History of Electric Light (Smithsonian, 1923): Grove, 1840. Searched and not found: Fontaine (1878), the 1859 British abridgments."
       sources: [src-howell-schroeder-1927, src-schroeder-1923]
     basis: >
       # V: V2 for what the two histories say; V0 or less for the lamp itself.
-      Fontaine (1878), Hammer (1900) and the 1859 British patent abridgments do not mention a de la
-      Rue lamp. Absence is not refutation, so this stays a gap, not refuted. The likeliest reading is a
+      Fontaine (1878) and the 1859 British patent abridgments do not mention a de la
+      Rue lamp. Absence is not refutation (S2), so this stays a gap, not refuted. The likeliest reading is a
       merge of the 1820 de la Rue story with Grove's 1840 lamp, which is itself unread.
 
   - id: lamp-de-moleyns-patent
     state: established
     statement: >
-      Frederick de Moleyns received British patent No. 9053 on 21 August 1841 for a lamp in which
-      powdered charcoal falls between two platinum coils inside an exhausted glass globe and glows
-      when current passes.
+      Frederick de Moleyns received British patent No. 9053 on 21 August 1841. One of its heads is "a means of generating the electric light"
+      by supplying pulverized charcoal to the junction of two platinum-wire coil electrodes, the whole enclosed in an exhausted glass
+      globe. The Patent Office's abridgment does not use the words "glow" or "incandescent"; the Supreme Court (1895) describes the patent
+      as one for an incandescent electric lamp using finely pulverized boxwood charcoal or plumbago.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -149,19 +193,22 @@ claims:
     would_change_if: "the full specification shows a different design from the abridgment"
     anchor:
       type: primary_text
-      description: 'Patents for Inventions: Abridgments of Specifications relating to Electricity and Magnetism (1859), pp. 62-63; 159 U.S. 465 (1895) cites the de Moleyns patent as prior art'
+      description: "Patents for Inventions: Abridgments of Specifications relating to Electricity and Magnetism (1859), pp. 62-63 (No. 9053, A.D. 1841, August 21): second head quoted; 159 U.S. 465 (1895), the Court's description of the patent."
       sources: [src-abridgments-1859, src-scotus-1895]
+      nodes: [{node: lamp-1841-08-21-de-moleyns-patent-9053, verb: supports}]
     basis: >
       # V: V2 for the abridgment (the Patent Office's own published summary). The full specification
-      #    was not read.
+      #    was not read. The abridgment describes a flow of powdered charcoal at the electrodes, which reads like an arc fed with charcoal;
+      #    whether the lamp glows as an incandescent body is the Supreme Court's description, not the abridgment's.
       Whether this is the first such patent is a separate, absence-based claim: lamp-earliest-patent.
 
   - id: lamp-earliest-patent
     state: established
     statement: >
-      No incandescent-lamp patent earlier than de Moleyns's of 1841 has been found. The 1859 British
+      No patent earlier than de Moleyns's of 1841 for an electric light with a heated solid in an enclosed globe has been found. The 1859 British
       abridgments list none earlier, and Fontaine's 1878 search found nothing before King's 1845 patent
-      (he had missed de Moleyns too).
+      ("The first document on the question that we have found"; he had missed de Moleyns too).
+    statement_kind: search_result
     evidence_class: primary_text
     confidence: provisional   # absence anchor: capped at provisional
     evidential_weight: 3
@@ -174,7 +221,7 @@ claims:
       heated solid is found
     anchor:
       type: primary_text
-      description: 'Abridgments ... Electricity and Magnetism (1859): no earlier lighting entry; Fontaine (1878): earliest document found was King''s 1845 patent'
+      description: "Abridgments ... Electricity and Magnetism (1859): no earlier lighting entry read; Fontaine (1878), p. 169: 'The first document on the question that we have found, is an English patent of the 4th November, 1845.'"
       sources: [src-abridgments-1859, src-fontaine-1878]
     basis: >
       Two searched absences in two countries' records (British abridgments; a French engineer's survey).
@@ -183,10 +230,13 @@ claims:
   - id: lamp-starr-king-patent
     state: established
     statement: >
-      British patent No. 10,919 of 4 November 1845, issued to Edward Augustin King "(a communication)",
-      covers a lamp with a carbon rod enclosed in a Torricellian vacuum (the empty space above a column
-      of mercury). The inventor behind the communication is identified by later sources as John
-      Wellington Starr of Cincinnati.
+      British patent No. 10,919 of 4 November 1845, issued to Edward Augustin King "(a communication)", covers "the application of
+      continuous metallic and carbon conductors, intensely heated by the passage of a current of electricity, to the purposes of
+      illumination": thin platinum foil, or carbon enclosed in a Torricellian vacuum (the empty space above a column
+      of mercury). Judge Colt (1893) says Starr "suggested in the King patent a lamp composed of a thin pencil of carbon, inclosed in a
+      Torricellian vacuum"; Fontaine (1878) draws the lamp as a carbon rod in a glass bell over mercury. The abridgment does not name
+      Starr; later sources identify the inventor behind the communication as John Wellington Starr of Cincinnati.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -198,99 +248,119 @@ claims:
       identification is contradicted by a document from the 1840s
     anchor:
       type: primary_text
-      description: 'Abridgments ... Electricity and Magnetism (1859), p. 97; 54 F. 678 (1893) at 680-681: the court discusses Starr''s lamp as prior art'
-      sources: [src-abridgments-1859, src-54f678]
+      description: "Abridgments ... Electricity and Magnetism (1859), pp. 97-98 (No. 10,919); 40 F. 21 (1889), quoting the specification; 54 F. 678 (1893): the court's description of Starr's lamp as prior art; Fontaine (1878), pp. 169-170."
+      sources: [src-abridgments-1859, src-40f21, src-54f678, src-fontaine-1878]
+      nodes: [{node: lamp-1845-11-04-king-starr-patent-10919, verb: supports}]
     basis: >
-      # V: V2 for the patent abridgment and for the 1893 court's discussion. The Starr identity is V1
-      #    (Hammer 1900, Schroeder 1923, Judge Colt). Carbon in a vacuum, the core idea of the later
-      #    lamp, is patented here 34 years before Edison's US patent.
+      # V: V2 for the patent abridgment and for the courts' and Fontaine's descriptions. The Starr identity is V1 (Judge Colt;
+      #    Schroeder 1923; Howell and Schroeder 1927, whose authors overlap, so they are one channel). The full specification was not read.
+      Carbon in a vacuum, the core idea of the later lamp, is patented here 34 years before Edison's US patent. A patent shows the design
+      described on its date, not that a lamp was built (S3).
 
   - id: lamp-de-changy-belgium
-    state: established
+    state: proposed
     statement: >
-      By 1858 the Belgian inventor de Changy had made platinum incandescent lamps sealed in glass,
-      intended for mines, as reported to the Paris Academy of Sciences by Marcellin Jobard in a letter
-      dated 27 February 1858.
+      Fontaine (1878) prints a communication he says "M. Jobart, of Brussels" made to the Academy of Sciences on 27 February 1858
+      about the lamps of de Changy: small lamps "enclosed in hermetically sealed glass tubes", lit by "the incandescence of platinum",
+      intended for mines and street lighting, one of which "was lit in the hollow of my hand". Fontaine places de Changy "in Belgium"
+      and dates his substitution of platinum for carbon to 1857; Howell and Schroeder (1927) call him a French civil engineer who held a
+      Belgian patent of 1856. His nationality is therefore not settled here. This is one witness (Jobard) relayed through one book.
+    statement_kind: reported
     evidence_class: primary_text
-    confidence: moderate
-    evidential_weight: 3
+    confidence: low
+    evidential_weight: 2
     anchor_checked: secondary
     adoption_weight: 2
-    adoption_note: "Promoted in Belgium; Howell and Schroeder (1927) call de Changy French."
-    would_change_if: "Jobard's report in the Comptes rendus (1858) is read and says otherwise"
+    adoption_note: "Promoted in Belgium (not sourced in this dig); Howell and Schroeder (1927) call de Changy French."
+    would_change_if: "Jobard's report in the Comptes rendus (1858) is read and says otherwise, or confirms it in the original"
     anchor:
       type: primary_text
-      description: Jobard's 1858 report, quoted in Fontaine, Electric Lighting (1878), pp. 186-187
-      sources: [src-fontaine-1878]
+      description: "Jobard's 1858 communication as quoted in Fontaine, Electric Lighting (1878), pp. 186-187; Howell and Schroeder (1927), p. 33 (nationality and patent)."
+      sources: [src-fontaine-1878, src-howell-schroeder-1927]
+      nodes: [{node: lamp-1858-02-27-jobard-reports-de-changy-lamps, verb: supports}]
     basis: >
-      # V: V2 for Fontaine's quotation; the Comptes rendus original not opened, so anchor_checked is
-      #    secondary. A Belgian patent No. 3244 of 28 Aug 1856 is cited by Hammer (1900) only (V0).
-      INSULARITY FLAG: this claim and lamp-lodygin-1872-74 both rest on one book, Fontaine (1878). One
-      contemporary engineer quoting two reports is a single channel; re-anchor each to its original
-      (Comptes rendus 1858; the Academy's 1874 report) before raising either.
+      # V: V2 for Fontaine's quotation; the Comptes rendus original was not opened, so anchor_checked is secondary.
+      #    Lowered from established (first version of this dig): under S1 a document known only through one later quotation is a single
+      #    channel. A Belgian patent of 1856 is given by Howell and Schroeder only; Hammer (1900), cited in the first version, was not read.
+      SINGLE-CHANNEL FLAG: this claim and lamp-lodygin-1872-74 both rest on one book, Fontaine (1878), which is the only channel to
+      the Comptes rendus 1858 report and to the Academy's 1874 report. Re-anchor each to its original before raising either.
+      Whether the tubes were exhausted is not stated in the passage read.
       A separate claim that Jobard made a carbon-in-vacuum lamp in 1838 was not found in Fontaine,
       Hammer, Schroeder or the abridgments, and is not filed as a claim here.
 
   # =========================== RUSSIA: LODYGIN ===========================
 
   - id: lamp-lodygin-1872-74
-    state: established
+    state: proposed
     statement: >
-      Alexander Lodygin built carbon-rod lamps in a sealed vessel without oxygen in St Petersburg
-      in 1872-73 and received the Lomonosov Prize of the St Petersburg Academy of Sciences in 1874.
-      A Russian privilege (patent) followed in 1874.
+      Fontaine (1878) says that in 1873 a Russian physicist, Lodygin, invented a new lamp in which small carbon bars are heated in a
+      hermetically sealed glass receiver from which the oxygen is expelled, and that in 1874 the St Petersburg Academy of Sciences awarded
+      him "a high prize" (the Lomonosov prize) on a report by Wild; Fontaine adds "Nothing is less practical nor less studied than the apparatus of this inventor."
+      Kommersant (2024) gives 1872 for Lodygin's first demonstration, in St Petersburg, and 11 July 1874 for his patent (privilege).
+    statement_kind: reported
     evidence_class: primary_text
-    confidence: moderate
-    evidential_weight: 3
+    confidence: low
+    evidential_weight: 2
     anchor_checked: secondary
     adoption_weight: 4
     adoption_note: "Standard in Russian textbooks and media; little known elsewhere."
-    would_change_if: "the Academy's 1874 prize report or the privilege itself is read and disagrees"
+    would_change_if: "the Academy's 1874 prize report or the privilege itself is read and disagrees or confirms"
     anchor:
-      type: primary_text + synthetic
-      description: Academy report by Wild, quoted in Fontaine (1878), pp. 171-173; Russian privilege No. 1619, 11 July 1874, priority 2 Oct 1872 (Kommersant; lamptech)
+      type: primary_text + secondary
+      description: "Academy report by Wild, quoted in Fontaine (1878), pp. 171-173; Kommersant (St Petersburg, doc 6822124): 1872 first demonstration and petition, patent 11 July 1874."
       sources: [src-fontaine-1878, src-kommersant-lodygin]
+      nodes:
+        - {node: lamp-1873-lodygin-carbon-rod-lamps, verb: supports}
+        - {node: lamp-1874-lomonosov-prize-lodygin, verb: supports}
+        - {node: lamp-1874-07-11-lodygin-russian-privilege, verb: supports}
     basis: >
-      # V: V2 for Fontaine. Privilege number and dates V1. Dates disagree: Fontaine says 1873,
-      #    Russian accounts 1872. The often-quoted 50,000-rouble prize is not supported: Fontaine says
-      #    only "a high prize" and one family source says 1,000 roubles.
-      INSULARITY FLAG: the primary-text anchor is Fontaine alone (shared with lamp-de-changy-belgium);
-      the privilege details come from a newspaper. Next step: read the Academy's 1874 prize report.
-      Fontaine, a contemporary, called the apparatus "nothing less practical". Rods in a sealed
-      vessel are real prior art; they did not last.
+      # V: V2 for Fontaine's quotation, V0 for the newspaper. Lowered from established and re-scoped (first version of this dig): under S1 the
+      #    Academy report is known only through one later book. Dates disagree: Fontaine says 1873, Kommersant 1872 (shown as a ghost marker).
+      #    The Russian privilege number 1619 and the priority date 2 Oct 1872 recorded in the first version are in neither Kommersant page
+      #    read and are dropped. The often-quoted 50,000-rouble prize is not supported by either source: Fontaine says only
+      #    "a high prize"; the figure is printed in Howell and Schroeder (1927).
+      SINGLE-CHANNEL FLAG: the contemporary anchor is Fontaine alone (shared with lamp-de-changy-belgium); Kommersant is a later newspaper
+      history and gives dates only. Next step: read the Academy's 1874 prize report.
+      Rods in a sealed vessel are real prior art; Fontaine says they did not last. Fontaine's own phrase "capital errors" refers to the report.
 
   - id: lamp-lodygin-first-claim
     state: refuted
-    refutes_target: "Lodygin was the first inventor of the incandescent lamp"
+    refutes_target: "Lodygin was the first inventor of the incandescent lamp (the first to describe or patent it)"
     refutation_class: narrative_drift
     statement: >
-      Lodygin did make carbon incandescent lamps before Edison, but he was not the first: British
-      patents of 1841 (de Moleyns) and 1845 (King for Starr) already cover glowing conductors in
-      evacuated glass, the second using carbon.
+      Lodygin was not the first to describe or patent an electric lamp with a heated conductor in an enclosed globe: British patents of 1841
+      (de Moleyns) and 1845 (King, for Starr) already describe glowing conductors in evacuated glass, the second using carbon.
+      Those patents show earlier published designs, not that a lamp was built or worked (S3), so this does not show that anyone built a
+      carbon lamp before Lodygin; the claim "first to build a working lamp" is not tested here.
+    statement_kind: judgment
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
     anchor_checked: primary
     adoption_weight: 4
     adoption_note: >
-      Widely taught in Russia. A Russian newspaper history (Kommersant) places the strongest
-      "Lodygin before Edison" push in the 1947-48 campaign against "kowtowing to the West"; that
-      placement is V0 and not used as evidence here.
-    would_change_if: "the 1841 or 1845 patents are shown not to describe working incandescent lamps"
+      Widely taught in Russia. A Russian newspaper history (Kommersant, doc 5338615, read) places the
+      "Lodygin before Edison" push in the 1947-48 campaign against "kowtowing to the West": it says that within a year of May 1947 Soviet newspapers
+      reported that Lodygin made the lamp before Edison. That placement is V0, rests on one newspaper history, and is not used as evidence here.
+    would_change_if: "the 1841 or 1845 patents are shown not to describe lamps with a heated conductor in an enclosed globe, or a document earlier than Lodygin's records a working carbon lamp"
     anchor:
       type: primary_text
-      description: British patents 9053 (1841) and 10,919 (1845), abridgments
+      description: "British patents 9053 (1841) and 10,919 (1845), as abridged by the Patent Office (1859), pp. 62-63 and 97-98."
       sources: [src-abridgments-1859]
+      nodes:
+        - {node: lamp-1841-08-21-de-moleyns-patent-9053, verb: supports}
+        - {node: lamp-1845-11-04-king-starr-patent-10919, verb: supports}
     basis: >
       The true part ("before Edison") is kept in lamp-lodygin-1872-74. The drift is from "before
       Edison" to "first". Class narrative_drift, not institutional_propaganda: the Soviet campaign
-      is reported but not anchored here.
+      is reported by one newspaper history and is not anchored here.
 
   - id: lamp-lodygin-refractory-metals
     state: established
     statement: >
-      Lodygin's US patent 575,002 (filed 4 January 1893, granted 12 January 1897) covers lamp
-      filaments of refractory metals including tungsten and molybdenum.
+      Lodygin's US patent 575,002 (filed 4 January 1893, granted 12 January 1897; Lodygin "a citizen of Russia, residing in the city of
+      Pittsburg") covers lamp filaments of refractory metals including molybdenum and tungsten.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -300,8 +370,9 @@ claims:
     would_change_if: "the patent text is shown to cover something other than metal filaments"
     anchor:
       type: primary_text
-      description: US 575,002, Illuminant for incandescent lamps
+      description: "US 575,002, Illuminant for incandescent lamps (Google Patents rendering of the USPTO record)."
       sources: [src-us575002]
+      nodes: [{node: lamp-1897-01-12-lodygin-patent-575002, verb: supports}]
     basis: >
       # V: V2. Outside this dig's founding core (metal filaments are the 1900s); filed because it is
       #    Lodygin's own record. The story that he sold tungsten rights to General Electric in 1906 is
@@ -310,6 +381,7 @@ claims:
   - id: lamp-lodygin-ge-sale
     state: searched_gap
     statement: "Whether, when and for what Lodygin sold patent rights to General Electric (often given as 1906)."
+    statement_kind: search_result
     evidence_class: primary_text
     confidence: low
     evidential_weight: 1
@@ -319,9 +391,8 @@ claims:
     would_change_if: "a USPTO assignment record or GE document is found"
     next_step: "Search USPTO assignment records for patent 575,002 and the GE archives (Schenectady) for Lodyguine."
     anchor:
-      type: synthetic
-      description: skillbox.ru; minervaclassics.com (no documents cited)
-      sources: [src-kommersant-lodygin]
+      type: search-record
+      description: "Seen in search results in the first session: skillbox.ru and minervaclassics.com (no documents cited). Neither is in the sources manifest and neither was re-read in the revision; the Kommersant page read (doc 6822124) does not mention General Electric."
     basis: "V1 only as repetition."
 
   # =========================== CANADA: WOODWARD AND EVANS ===========================
@@ -329,11 +400,11 @@ claims:
   - id: lamp-woodward-evans-patent
     state: established
     statement: >
-      Henry Woodward and Mathew Evans of Toronto received Canadian patent No. 3,738 on 3 August 1874
-      for an electric light. Woodward alone received US patent 181,613 (filed 4 January 1875, dated
-      29 August 1876). The lamp is a shaped carbon rod between two electrodes in a glass globe that is
-      emptied of air and refilled with a thin gas that will not react with carbon. It has no thin
-      filament and no high vacuum.
+      Henry Woodward and M. Evans (Matthew, per Electrical World, 1900) of Toronto received Canadian patent No. 3,738 on 3 August 1874
+      for "Woodward and Evans' Electric Light". Woodward alone received US patent 181,613 (filed 4 January 1875, dated
+      29 August 1876). In it a piece of carbon between two electrodes is put in a globe that is emptied of air and then filled with a
+      rarefied gas "that will not unite chemically with the carbon when hot". The patent describes no thin filament and no high vacuum.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -343,57 +414,64 @@ claims:
     would_change_if: "the Canadian specification itself (not read) describes a different lamp from the US patent"
     anchor:
       type: primary_text
-      description: 'US 181,613 (1876), full specification read; Scientific American 31:11 (12 Sep 1874), Canadian patent list: No. 3,738, Aug. 3, 1874'
+      description: 'US 181,613 (1876), full specification read; Scientific American 31:11 (12 Sep 1874), Canadian patent list: "3,738 ... H. Woodward and M. Evans, Toronto, Ont. ... Aug. 3, 1874" (OCR damaged, read by hand).'
       sources: [src-us181613, src-sciam-1874]
+      nodes:
+        - {node: lamp-1874-08-03-woodward-evans-canadian-patent, verb: supports}
+        - {node: lamp-1876-08-29-woodward-us-patent-181613, verb: supports}
     basis: >
       # V: V2 for the US patent and for the 1874 listing. The Library and Archives Canada record
-      #    returned 403. The 24 July 1874 filing date is V0 (Canadian Encyclopedia only).
-      The US patent names later assignees in Toronto and Lindsay, Ontario, not Edison.
+      #    returned 403. The 24 July 1874 filing date is V0 (Canadian Encyclopedia only, which could not be re-opened on 2026-10-02).
+      The US patent names later assignees in Toronto and Lindsay, Canada, not Edison. The first name Matthew is from Electrical World (1900), not the patent list.
 
   - id: lamp-woodward-evans-performance
-    state: established
+    state: proposed
     statement: >
-      The Woodward and Evans lamp was not developed into a product. A 1900 trade-press account based
-      on Toronto informants called the first lamp "a very crude affair" and said investors would not
-      put up more money; the French engineer Fontaine, touring the US in 1876-77, mentions the patent
-      only briefly.
+      A trade-press piece of 14 April 1900 (Electrical World and Engineer), based on two Toronto electrical men, says the first lamp was built
+      at Morrison's brass foundry in Toronto and was "a very crude affair", that Woodward filled the globe with nitrogen after
+      exhausting the air, that investors declined to put up more money, and that Woodward left for Europe. Fontaine, who toured the US the
+      year before his 1877 French edition, mentions the 1876 patent only in passing. No contemporary report of the lamp working in use,
+      or being made for sale, was found.
+    statement_kind: reported
     evidence_class: primary_text
-    confidence: moderate
-    evidential_weight: 3
+    confidence: low
+    evidential_weight: 2
     anchor_checked: secondary
+    absence_anchor: true
     adoption_weight: 2
     adoption_note: "Popular Canadian accounts say it was 'more effective than any' earlier light; no source given."
     would_change_if: "a contemporary 1874-79 report of the lamp working in use is found"
     anchor:
       type: primary_text
-      description: Electrical World and Engineer 35:15 (14 Apr 1900); Fontaine, Electric Lighting (1878), p. 190
+      description: "Electrical World and Engineer 35:15 (14 Apr 1900): the Toronto informants' account; Fontaine, Electric Lighting (1878), pp. 190-191: 'a patent taken out by Mr. Henry Woodward, in 1876'."
       sources: [src-elecworld-1900, src-fontaine-1878]
     basis: >
-      # V: V2 for both texts; the 1900 piece is second-hand testimony 25 years on, so anchor_checked
-      #    is secondary. No record of commercial production found.
+      # V: V2 for both texts; the 1900 piece is second-hand testimony 25 years on. Lowered from established and marked as resting partly on
+      #    absence: under S1 a later second-hand account is a single channel. No record of commercial production found.
 
   - id: lamp-edison-bought-woodward
     state: searched_gap
     statement: >
       Whether Edison bought the Woodward and Evans patent rights, and when and for how much (popular
       accounts: 1879, $5,000). No document of a purchase was found.
+    statement_kind: search_result
     evidence_class: primary_text
     confidence: low
     evidential_weight: 1
     anchor_checked: no
     adoption_weight: 4
     adoption_note: >
-      Stated as fact by CBC (2017), Canada's History and The Canadian Encyclopedia; none cites a document.
+      Stated as fact by CBC (2017), Canada's History and The Canadian Encyclopedia (the last could not be re-opened on 2026-10-02); none cites a document.
       One site gives both 1879 and 1885.
     would_change_if: "an assignment, contract, payment record or Edison letter about Woodward is found"
     next_step: >
-      Search the Edison Papers (Rutgers) for "Woodward" (blocked here by a browser check), the USPTO
+      Search the Edison Papers (Rutgers) for "Woodward" (the notebook viewer is blocked here by a browser check), the USPTO
       assignment digests for patent 181,613 after 1876, and Library and Archives Canada assignment
       records for Canadian patent 3,738.
     anchor:
-      type: primary_text
-      description: 'Electrical World 1900: purchase reported second-hand, no date or price'
-      sources: [src-elecworld-1900]
+      type: search-record
+      description: "Electrical World 1900: the purchase is reported second-hand by two Toronto electrical men, 'purchased by Mr. Edison at the time when he was making his original investigations', with no date or price. US 181,613 shows no assignment to Edison."
+      sources: [src-elecworld-1900, src-us181613]
     basis: >
       The earliest trace found is 1900, second-hand, from two Toronto electrical men. The 1876 US patent
       shows no assignment to Edison. A purchase is plausible (Edison bought other patents to clear
@@ -404,10 +482,11 @@ claims:
     refutes_target: "Woodward and Evans invented the light bulb, and Edison's lamp was built on their patent"
     refutation_class: narrative_drift
     statement: >
-      Woodward and Evans did not invent the incandescent lamp (carbon in a vacuum was patented in
-      Britain in 1845), and their patented lamp is a different design from the one Edison patented: a
-      carbon rod in thin gas, against Edison's thin high-resistance carbon filament in an all-glass
-      high-vacuum bulb.
+      Woodward and Evans were not the first to patent an electric lamp with carbon in an enclosed globe (carbon in a vacuum was
+      patented in Britain in 1845), and their patented lamp is a different design from the one Edison patented: a piece of carbon in a
+      rarefied gas, against Edison's thin high-resistance carbon filament in an all-glass globe exhausted to about one-millionth of an
+      atmosphere. No document read shows that Edison used their design.
+    statement_kind: judgment
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -419,8 +498,11 @@ claims:
       describes a filament in high vacuum
     anchor:
       type: primary_text
-      description: US 181,613 (1876) vs US 223,898 (1880), both read; US 223,898; British patent 10,919 (1845)
+      description: "US 181,613 (1876) against US 223,898 (1880), both read in full; British patent 10,919 (1845), abridgment p. 97."
       sources: [src-us181613, src-us223898, src-abridgments-1859]
+      nodes:
+        - {node: lamp-1876-08-29-woodward-us-patent-181613, verb: supports}
+        - {node: lamp-1880-01-27-edison-patent-223898-granted, verb: supports}
     reception_records:   # what the popular claim says; carries no weight
       - src-cbc-2017
       - src-canadas-history
@@ -428,16 +510,17 @@ claims:
     basis: >
       The true core (a real 1874 Canadian patent for an electric lamp) is kept. The drift is twofold:
       "a lamp" becomes "the lamp", and a possible patent purchase becomes "Edison's breakthrough".
-      The Canadian Encyclopedia's "stronger vacuum than Swan's" is contradicted by the patent, which
-      refills the globe with gas.
+      The Canadian Encyclopedia's "stronger vacuum than Swan's" (as recorded in the first session; the page could not be re-opened on 2026-10-02)
+      is contradicted by the patent, which refills the globe with gas.
 
   # =========================== BRITAIN: SWAN ===========================
 
   - id: lamp-swan-1850s
     state: searched_gap
     statement: >
-      Joseph Swan's experiments with carbonised paper in a vacuum "about twenty years" before 1880 are
+      Joseph Swan's experiment with a carbonised-paper arch in a vacuum "about twenty years ago" (that is, about 1860) is
       known only from his own lecture of 20 October 1880. No record from the 1850s or early 1860s was found.
+    statement_kind: search_result
     evidence_class: primary_text
     confidence: low
     evidential_weight: 2
@@ -449,20 +532,22 @@ claims:
       Search Swan's papers (Tyne and Wear Archives) and the 1929 memoir by his children (not on
       archive.org) for contemporaneous records.
     anchor:
-      type: primary_text
-      description: Swan, lecture of 20 Oct 1880, Chemical News 42 (5 Nov 1880), pp. 227-230
+      type: search-record
+      description: "Swan, lecture of 20 Oct 1880, Chemical News 42 (5 Nov 1880), pp. 227-230, read: 'an experiment which I tried about twenty years ago'; the carbon arch 'became red-hot' and bent until it broke. Nothing contemporary found."
       sources: [src-chemnews-1880]
+      nodes: [{node: lamp-1880-10-20-swan-lecture-lit-and-phil, verb: supports}]
     basis: >
-      # V: V2 for the lecture. He says the carbon arch "became red-hot" and broke. This is a
-      #    self-account given while he was disputing priority with Edison, so it is a primary text for
-      #    what Swan claimed, not for what happened in the 1850s.
+      # V: V2 for the lecture. The id says 1850s because the first version of this dig did; Swan says "about twenty years ago", i.e. about 1860.
+      #    This is a self-account given while he was disputing priority with Edison, so it is a primary text for what Swan claimed, not for
+      #    what happened around 1860 (S4; the same standard as for the other claimants).
 
   - id: lamp-swan-1878
     state: established
     statement: >
-      Shortly before Christmas 1878, Swan described to the Newcastle Chemical Society an experiment with
-      a slender carbon rod in an exhausted glass globe, powered by a Siemens dynamo. The rod glowed
-      brightly, but the glass was coated inside with a sooty deposit and the rod bent into a bow.
+      In December 1878, at the Newcastle Chemical Society meeting "immediately preceding Christmas", Swan (in the chair) described an experiment
+      in which a Siemens dynamo current was passed through a slender rod of carbon in an exhausted globe. The rod glowed with great
+      splendour, but the glass became coated inside with a sooty deposit and the rod curved into a bow "as if from softening".
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -472,37 +557,45 @@ claims:
     would_change_if: "the Society's own minutes show a different lamp or a live, durable demonstration"
     anchor:
       type: primary_text
-      description: Chemical News 39 (28 Mar 1879) p. 133 and (18 Apr 1879) p. 168
+      description: "Chemical News 39 (28 Mar 1879) p. 133, the meeting 'immediately preceding Christmas' with Swan in the chair, and (18 Apr 1879) p. 168, the chairman's experiment; B. S. Proctor's note in the same volume: 'At our meeting in December, 1878, Mr. J. W. Swan exhibited an electric lamp'."
       sources: [src-chemnews-1879]
+      nodes: [{node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, verb: supports}]
     basis: >
-      # V: V2. The exact day, 18 December, is V1 (Grace's Guide; Histelec). The report says he
-      #    "described an experiment"; it does not clearly say the lamp was lit before the members.
+      # V: V2. The report prints no day (the first version of this dig gave 18 December from secondary summaries it did not keep).
+      #    The report says the chairman "described an experiment"; Proctor says Swan "exhibited an electric lamp ... which had broken down".
+      #    Neither says the lamp was lit before the members.
       A working principle with a known failure (blackening), not a lasting lamp.
 
   - id: lamp-swan-early-1879
     state: established
     statement: >
-      In early 1879 Swan showed an incandescent lamp in action to a large audience at the Newcastle
-      Literary and Philosophical Society, a lamp made only of glass, platinum and carbon.
+      In his lecture of 20 October 1880 to the Newcastle Literary and Philosophical Society, Swan said of "this little lamp, which I showed
+      here two years ago in action" that it was "composed entirely of three substances, namely, glass, platinum, and carbon", and he began
+      by referring to his last lecture on electric lighting "almost two years ago". No 1879 report of the showing was found. Secondary
+      accounts date it 3 February 1879 (or 17 January).
+    statement_kind: reported
     evidence_class: primary_text
     confidence: moderate
-    evidential_weight: 4
+    evidential_weight: 3
     anchor_checked: primary
     adoption_weight: 4
     adoption_note: "British accounts treat 3 February 1879 as the date the light bulb was first shown."
-    would_change_if: "Society records show no such demonstration in 1879"
+    would_change_if: "Society records show no such demonstration in 1879, or a contemporary report describes it"
     anchor:
       type: primary_text
-      description: Swan's own reference, 20 Oct 1880, to 'this little lamp, which I showed here two years ago in action'
+      description: "Swan, lecture of 20 Oct 1880, Chemical News 42 (5 Nov 1880), pp. 227 and 230, read: 'this little lamp, which I showed here two years ago in action'."
       sources: [src-chemnews-1880]
+      nodes: [{node: lamp-1879-02-03-swan-shows-lamp-lit-and-phil, verb: supports}]
     basis: >
-      # V: V2 that Swan said so in 1880; the date is disputed (3 Feb 1879 per Newcastle University and
-      #    the Linda Hall Library; 17 Jan 1879 per Histelec). No 1879 report found in Nature (Dec 1878 to
-      #    Mar 1879 searched) or Chemical News. See lamp-swan-litphil-date.
+      # V: V2 that Swan said so in 1880 (a self-account, S4: primary for what he said, not for what happened); the date is not in it. The
+      #    3 Feb 1879 date (Newcastle University and the Linda Hall Library) and 17 Jan 1879 (Histelec) are from secondary summaries seen only as
+      #    search results. No 1879 report found in Nature (Dec 1878 to Mar 1879 searched) or Chemical News. The first version of this
+      #    claim said "to a large audience"; Swan says only that "many here" will remember it. See lamp-swan-litphil-date.
 
   - id: lamp-swan-litphil-date
     state: searched_gap
     statement: "The exact date and content of Swan's early-1879 Literary and Philosophical Society demonstration."
+    statement_kind: search_result
     evidence_class: primary_text
     confidence: low
     evidential_weight: 1
@@ -512,18 +605,20 @@ claims:
     would_change_if: "the Society's 1879 minutes or a Newcastle newspaper report is read"
     next_step: "Read the Lit and Phil's 1879 minute book or annual report, and the Newcastle Daily Chronicle for Jan-Feb 1879."
     anchor:
-      type: synthetic
-      description: Newcastle University Special Collections blog; Linda Hall Library; Histelec (dates disagree)
-      sources: [src-linda-hall-swan]
+      type: search-record
+      description: "Newcastle University Special Collections blog; Linda Hall Library; Histelec (dates disagree), seen only as search summaries; Swan's 1880 lecture gives only 'two years ago'."
+      sources: [src-linda-hall-swan, src-chemnews-1880]
     basis: "Two secondary dates, no primary."
 
   - id: lamp-swan-before-edison
     state: contested
     statement: >
-      Whether Swan, not Edison, should be credited with the incandescent lamp. Swan showed a carbon lamp
-      in a vacuum (Dec 1878, early 1879) before Edison's first long-burning test (Oct 1879), but his
-      1878 lamp used a rod that blackened the glass, his practical treated-thread lamp came in 1880,
-      and he took no patent on the basic lamp before Edison's British patent of November 1879.
+      Whether Swan, not Edison, should be credited with the incandescent lamp. Swan reported a glowing carbon rod in an exhausted
+      globe in December 1878 (a rod that blackened the glass and bent) and said in 1880 that he had shown a glass, platinum and carbon
+      lamp "two years ago"; Edison's laboratory kept a thread lamp lit 13 1/2 hours on 22 October 1879 and applied for its patent on
+      4 November 1879; the lamp he showed in October 1880 had a carbon "extremely thin — a mere hair", and he said blackening of the globe stopped once the vacuum and contacts were good.
+      No Swan patent on the basic lamp dated before Edison's was found, but Swan's patents were not searched.
+    statement_kind: judgment
     evidence_class: primary_text
     confidence: moderate
     evidential_weight: 4
@@ -532,23 +627,34 @@ claims:
     adoption_note: "Split by country: 'Swan' in Britain, 'Edison' in the US."
     would_change_if: "Swan's 1879 lamp is shown to have lasted in use, or an earlier Swan patent on the basic lamp is found"
     positions:
-      - {label: "Swan first", holder: "Swan himself (Chemical News, Nov 1880); British popular accounts", ground: "public demonstrations a year before Edison's test"}
-      - {label: "Edison first to a practical lamp", holder: "US courts (47 F. 454; 52 F. 300)", ground: "patent on a high-resistance filament in an all-glass high vacuum, Nov 1879"}
-      - {label: "Neither first; both improvers", holder: "this dig's reading", ground: "carbon in a vacuum patented 1845; each solved different problems"}
+      - {label: "Swan first", holder: "Swan himself (Chemical News, Nov 1880); British popular accounts", ground: "a glowing carbon lamp shown in 1878-79, before Edison's October 1879 test"}
+      - {label: "Edison first to a practical lamp", holder: "US courts (47 F. 454; 52 F. 300)", ground: "Edison first to make a high-resistance carbon burner and combine it into 'a lamp which was practically operative and successful'"}
+      - {label: "Neither first; both improvers", holder: "this dig's reading", ground: "carbon in a vacuum was patented in 1845; each solved different problems; the facts of each position are anchored"}
+    disputed_by:
+      - {who: "J. W. Swan", kind: person, position: "Edison was not the first to use carbonised paper in an incandescent lamp, and Swan's glass, platinum and carbon lamp was shown earlier", source_read: "Chemical News 42 (5 Nov 1880), pp. 227-230", via: "his own lecture, given while disputing priority with Edison"}
+      - {who: "Wallace J. (47 F. 454) and Lacombe J. (52 F. 300)", kind: institution, position: "Edison's patent covers the first lamp that was practically operative and successful", source_read: "47 F. 454; 52 F. 300", via: "a patent suit between the Edison company and a rival, not a priority contest with Swan"}
     anchor:
       type: primary_text
-      description: Chemical News 1879 and 1880; US 223,898
-      sources: [src-chemnews-1879, src-us223898]
+      description: "Chemical News 39 (1879) and 42 (1880), read; Edison Papers, Doc. 1831 (notebook transcription), read; 47 F. 454 (1891); US 223,898."
+      sources: [src-chemnews-1879, src-chemnews-1880, src-edison-papers-doc1831, src-47f454, src-us223898]
+      nodes:
+        - {node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, verb: supports}
+        - {node: lamp-1879-02-03-swan-shows-lamp-lit-and-phil, verb: qualifies}
+        - {node: lamp-1879-10-22-batchelor-cotton-thread-lamp, verb: qualifies}
     basis: >
       Contested on what "credit" means, not on the facts. The facts in each position are anchored.
       Swan's own patents begin with British No. 4933 of 27 Nov 1880 (V1, not read); Grace's Guide
-      mentions 1860 and 1878 patents with no numbers (V0, doubtful).
+      mentions 1860 and 1878 patents with no numbers (V0, doubtful). Edison's British patent of 10 Nov 1879 is listed on the USPTO
+      certificate printed with US 223,898 (the number is illegible in the scan).
 
   - id: lamp-swan-in-use
     state: established
     statement: >
-      Swan lamps were in practical use in Britain by 1880-81: at Cragside, Lord Armstrong's house, in 1880,
-      and on the stage of the Savoy Theatre, London, from 28 December 1881.
+      The Times of 29 December 1881 (read in a transcription) reports that Swan incandescent lamps lit the stage of the Savoy Theatre,
+      London, for the first time at a performance of Patience on the afternoon of 28 December 1881; the auditorium had had electric light
+      since the theatre opened. An IET archives blog says Armstrong lit Cragside, his house at Rothbury, Northumberland, with Swan lamps in 1880
+      and described them in a letter to The Engineer of 17 January 1881.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: moderate
     evidential_weight: 3
@@ -558,43 +664,97 @@ claims:
     would_change_if: "Armstrong's 1881 letter or the Times report gives different dates"
     anchor:
       type: primary_text
-      description: Armstrong, letter in The Engineer, 17 Jan 1881 (IET Archives NAEST 046/24), not read; The Times, 29 Dec 1881, as transcribed by the Gilbert and Sullivan Archive
+      description: "The Times, 29 Dec 1881, as transcribed by the Gilbert and Sullivan Archive (the original page was not compared); IET Archives blog on Armstrong's letter of 17 Jan 1881 (IET Archives NAEST 046/24), the letter itself not read."
       sources: [src-iet-cragside, src-times-savoy]
+      nodes:
+        - {node: lamp-1881-12-28-savoy-stage-lit-by-swan-lamps, verb: supports}
+        - {node: lamp-1880-cragside-lit-with-swan-lamps, verb: supports}
     basis: >
-      # V: V1 for Cragside; Times report read in transcription, not the original page. Histelec gives
-      #    29 Dec and 1,200 lamps (V0).
+      # V: V1 for Cragside; Times report read in transcription, not the original page. The first version said Swan lamps were in use "from
+      #    28 December 1881" on the Savoy stage; The Times describes one experimental performance. Histelec gives 29 Dec and 1,200 lamps (V0).
+      The blog's "first house in the world to be lit by hydro-electricity" is not used.
+
+  - id: lamp-first-practical-priority
+    state: contested
+    statement: >
+      Who first made, and who first sold, a lamp practical for ordinary use is not settled by anything read here. Edison's laboratory had
+      by 16 November 1879 a lamp it called "the first lamp that answers the purpose we have wished" (carbonised card), and Wallace J. (1891)
+      found Edison "the first to make a carbon of materials and by a process which was especially designed to impart high specific
+      resistance to it" and the first to combine such a burner with the necessary adjuncts, so that "he made a lamp which was practically
+      operative and successful". Edison's company turned on its first Pearl Street district on 4 September 1882. Swan said in
+      October 1880 that he now used a material better than carbonised cardboard; Swan lamps lit Cragside in 1880 (an IET blog; the letter
+      of 17 January 1881 is not read) and the Savoy stage on 28 December 1881. Both Swan dates come before Pearl Street, and no document
+      read shows who sold the first lamp.
+    statement_kind: judgment
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 3
+    anchor_checked: secondary
+    adoption_weight: 4
+    adoption_note: "Popular accounts name Edison as the maker of the first practical bulb; British accounts name Swan."
+    would_change_if: >
+      a dated sale, order, price list or company record for lamps by Swan or Edison before the other's is found, or Armstrong's letter and
+      the original Times page are read and give different dates
+    positions:
+      - {label: "Edison first practical", holder: "US courts (47 F. 454; 52 F. 300); popular accounts in the US", ground: "a high-resistance carbon burner in an all-glass vacuum, found 'practically operative and successful'; patent 223,898 filed 4 Nov 1879"}
+      - {label: "Swan's lamps in use first", holder: "Swan (1880 lecture); British accounts", ground: "Swan lamps at Cragside (1880) and the Savoy (28 Dec 1881) before Pearl Street (4 Sep 1882); sale not documented"}
+      - {label: "Not decided by the documents read", holder: "this dig's reading", ground: "the courts compared Edison's lamp with prior art in the patent suits, not with Swan's sales; the Swan dates rest on a blog and a transcription"}
+    disputed_by:
+      - {who: "J. W. Swan", kind: person, position: "His glass, platinum and carbon lamp was shown before Edison's, and Edison was not first to use carbonised paper", source_read: "Chemical News 42 (1880), pp. 227-230", via: "his own lecture"}
+    anchor:
+      type: primary_text
+      description: "47 F. 454 (1891), Wallace J., quoted; Edison Papers essay and Doc. 1831 (22 Oct and 16 Nov 1879); NY Tribune 5 Sep 1882, p. 8 (Pearl Street); Chemical News 42 (1880); IET Archives blog (Cragside); The Times 29 Dec 1881 via transcription (Savoy)."
+      sources: [src-47f454, src-edison-papers-essay, src-edison-papers-doc1831, src-tribune-1882-09-05, src-chemnews-1880, src-iet-cragside, src-times-savoy]
+      nodes:
+        - {node: lamp-1891-47f454-wallace-upholds-edison-lamp-patent, verb: supports}
+        - {node: lamp-1879-11-16-first-lamp-that-answers-the-purpose, verb: supports}
+        - {node: lamp-1882-09-04-pearl-street-district-service-begins, verb: supports}
+        - {node: lamp-1881-12-28-savoy-stage-lit-by-swan-lamps, verb: qualifies}
+        - {node: lamp-1880-cragside-lit-with-swan-lamps, verb: qualifies}
+    basis: >
+      New in the revision of 2026-10-02: the first version put "first practical to make and sell" into Edison's column although the Swan dates
+      precede Pearl Street and nothing read shows a first sale. Kept contested at low confidence, with evidential weight 3, because
+      two of the three Swan anchors are a blog and a transcription (S1) and the court finding compares Edison with the prior art in the case,
+      not with Swan's commercial lamps. Contested on dates and on what "practical" and "first" mean.
 
   # =========================== UNITED STATES: EDISON ===========================
 
   - id: lamp-edison-oct-1879-test
     state: established
     statement: >
-      Charles Batchelor's laboratory notebook for 22 October 1879 records a carbonised cotton thread
-      lamp that burned for 13 1/2 hours before being pushed brighter, after which it cracked about an
-      hour later. Edison's laboratory dated its first lamp that "answers the purpose", a carbonised
-      cardboard horseshoe, to 16 November 1879.
+      The Edison Papers' edition of Charles Batchelor's laboratory notebook entry for 22 October 1879 records a lamp of carbonised cotton
+      thread ("6 cord thread No 24") that was "on from 1.30 AM till 3 pm 13 1/2 hour and was then raised to 3 gas jets for 1 hour then
+      cracked glass & busted". The Papers' essay says that by 16 November 1879 the laboratory had "the first lamp that answers the
+      purpose we have wished", a carbonised card horseshoe.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: moderate
     evidential_weight: 4
     anchor_checked: secondary
     adoption_weight: 4
     adoption_note: "Popular accounts give 13.5 or 40 hours, and 21 or 22 October. 40 hours was not found in any source opened."
-    would_change_if: "the notebook page (Edison Papers N052105) is read and gives a different figure"
+    would_change_if: "the notebook image (N-79-07-31, p. 105; Edison Papers digital edition TAED N052:52) is read and gives a different figure"
     anchor:
       type: primary_text
-      description: Batchelor notebook, 22 Oct 1879, as transcribed in the Edison Papers essay 'The Carbon Filament Lamp'
-      sources: [src-edison-papers-essay]
+      description: "Papers of Thomas A. Edison, Doc. 1831 (a transcription of Batchelor's notebook entry, '[Menlo Park,] Oct 22nd 1879 9 A.M.'); Edison Papers essay 'The Carbon-Filament Lamp' (22 Oct and 16 Nov 1879)."
+      sources: [src-edison-papers-doc1831, src-edison-papers-essay]
+      nodes:
+        - {node: lamp-1879-10-22-batchelor-cotton-thread-lamp, verb: supports}
+        - {node: lamp-1879-11-16-first-lamp-that-answers-the-purpose, verb: supports}
     basis: >
-      # V: V1. The Edison Papers is the documentary edition, so its transcription is strong, but the
-      #    page itself was behind a browser check and was not opened. The 1892 appeals court (52 F. 300,
-      #    V2) agrees that a stable carbon filament was "not gained until October, 1879".
+      # V: V1 to V2. The Edison Papers is the documentary edition, and its transcription (Doc. 1831) was read directly in the revision of
+      #    2026-10-02, but the notebook image behind the TAED viewer was behind a browser check and was not opened, so anchor_checked stays
+      #    secondary. The first version cited the notebook as N052105 (wrong: the edition gives N-79-07-31:105, TAED N052:52) and
+      #    quoted 52 F. 300 for "not gained until October, 1879"; those words were not found in the text of that opinion read in the
+      #    revision and are dropped. The essay says "By November 16", not that the lamp is dated to that day.
 
   - id: lamp-edison-patent
     state: established
     statement: >
-      Edison's US patent 223,898, "Electric-Lamp", was filed on 4 November 1879 and granted on
+      Edison's US patent 223,898, "Electric-Lamp", was applied for on 4 November 1879 (signed 1 November) and granted on
       27 January 1880. Its first claim is a carbon filament of high resistance; its second is carbon
       filaments in a receiver made entirely of glass, exhausted of air, with wires sealed through the glass.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -604,20 +764,25 @@ claims:
     would_change_if: "the USPTO record is shown to be misread"
     anchor:
       type: primary_text
-      description: 'US 223,898, full specification and claims; 52 F. 300 (1892): ''application filed November 4, 1879'''
-      sources: [src-us223898, src-52f300]
+      description: "US 223,898, full specification and claims (signed 1 Nov 1879; patented 27 Jan 1880); 40 F. 21 (1889): 'applied for November 4, 1879, and issued January 27, 1880'."
+      sources: [src-us223898, src-40f21]
+      nodes:
+        - {node: lamp-1879-11-04-edison-files-patent-223898, verb: supports}
+        - {node: lamp-1880-01-27-edison-patent-223898-granted, verb: supports}
     basis: >
       # V: V2. The specification names a "mercury-pump" and a vacuum of "one-millionth of an
-      #    atmosphere"; it does not name Sprengel (see lamp-sprengel-link).
+      #    atmosphere"; it does not name Sprengel (see lamp-sprengel-link). The first version cited 52 F. 300 for the filing date; the
+      #    quoted words were not found in the text read, and 40 F. 21 is cited instead. The application file wrapper was not read.
 
   - id: lamp-edison-high-resistance
     state: established
     statement: >
-      What set Edison's lamp apart, as his patent and the courts described it, was high resistance (about
-      100 ohms and up) in a thin carbon filament in an all-glass high-vacuum bulb, which let many lamps run
+      What set Edison's lamp apart, as his patent and the courts described it, was high resistance (100 to 500 ohms in the patent's
+      example) in a thin carbon filament in an all-glass high-vacuum bulb, which let many lamps run
       side by side ("in multiple arc") from one supply without enormous copper mains. The high-resistance
-      idea itself was not unique to him: the 1891 court noted Lane-Fox's 1878 British patents and Edison's
-      own French patent of May 1879.
+      idea itself was not unique to him: the 1891 court noted Lane-Fox's 1878-79 British patents and a letter of his to the Times of
+      December 1878, and the 1892 appeals court noted Edison's own French patent of May 1879 (a platinum burner) as already stating it.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -627,18 +792,26 @@ claims:
     would_change_if: "the 1891-92 opinions are shown to rest the patent on something else"
     anchor:
       type: primary_text
-      description: US 223,898 specification; 47 F. 454 (1891), Wallace J.
-      sources: [src-us223898, src-47f454]
+      description: "US 223,898 specification; 47 F. 454 (1891), Wallace J. (Lane-Fox patents and letter); 52 F. 300 (1892), Lacombe J. (Edison's French patent No. 130,910 of 28 May 1879)."
+      sources: [src-us223898, src-47f454, src-52f300]
     basis: >
-      # V: V2. The courts upheld the patent on a specific combination, not on the principle of glowing
-      #    carbon in a vacuum, which they accepted was old.
+      # V: V2. In the courts' words (not this dig's): Wallace J. held Edison "the first to make a carbon of materials and by a process which was
+      #    especially designed to impart high specific resistance to it", the first to make it in a form with "high total resistance", and
+      #    the first to combine such a burner with "the necessary adjuncts of lamp construction"; Colt J. (54 F. 678) records the earlier ruling as
+      #    holding that claim 2 "covered a broad and fundamental invention, namely, an incandescent lamp, composed of a carbon filament,
+      #    hermetically sealed in an all glass chamber exhausted to a practically perfect vacuum, and having leading-in wires of platinum".
+      #    The first version said the courts upheld the patent "on that specific combination, not on the idea of the lamp"; that paraphrase
+      #    is replaced by these quotations.
 
   - id: lamp-menlo-park-dec-1879
     state: contested
     statement: >
       Whether Edison gave a public demonstration on New Year's Eve 1879. The New York Herald of 21 December
-      1879 announced one; the New York Tribune of 1 January 1880 reported crowds at Menlo Park with
-      "no public exhibition promised or given" and called the announcement unauthorized.
+      1879 reported that "the first public exhibition" of his light was "announced to take place on New Year's Eve at Menlo Park"; the
+      Herald of 31 December (dateline Menlo Park, 30 December) said "the public exhibition may be said to be actually going on now"; the
+      New-York Tribune of 1 January 1880 reported crowds at Menlo Park the evening before under a headline that no public exhibition was
+      "promised or given", called the announcement "unauthorized" and quoted Edison as disclaiming "any formal exhibition".
+    statement_kind: judgment
     evidence_class: primary_text
     confidence: moderate
     evidential_weight: 4
@@ -648,21 +821,31 @@ claims:
     would_change_if: "an Edison laboratory record or third newspaper settles the event's nature"
     positions:
       - {label: "Public exhibition on 31 Dec", holder: "NY Herald, 21 Dec 1879; later popular accounts", ground: "the Herald's announcement"}
-      - {label: "Open-house crowds, no formal exhibition", holder: "NY Tribune, 1 Jan 1880; NY Herald, 31 Dec 1879 ('crowds thronging' from 30 Dec)", ground: "same-week reports"}
+      - {label: "Open-house crowds, no formal exhibition", holder: "NY Tribune, 1 Jan 1880; NY Herald, 31 Dec 1879 ('thronged with visitors' from 30 Dec; 'fixed no day for a general inspection')", ground: "same-week reports; Edison's own disclaimer as quoted by the Tribune"}
+    disputed_by:
+      - {who: "New-York Tribune (1 Jan 1880)", kind: work, position: "No public exhibition was promised or given; the announcement was unauthorised", source_read: "NY Tribune, 1 Jan 1880, p. 8", via: "reporter's account quoting Edison"}
+      - {who: "New York Herald (21 Dec 1879)", kind: work, position: "A first public exhibition was announced for New Year's Eve", source_read: "NY Herald, 21 Dec 1879, p. 5", via: "unsigned article"}
     anchor:
       type: primary_text
-      description: NY Herald, 21 Dec 1879, p. 5; NY Herald, 31 Dec 1879, p. 3; NY Tribune, 1 Jan 1880, p. 8
+      description: "NY Herald, 21 Dec 1879, p. 5; NY Herald, 31 Dec 1879, p. 3 (dateline 30 Dec); NY Tribune, 1 Jan 1880, p. 8; all read in OCR of the Library of Congress scans (ALTO text)."
       sources: [src-herald-1879-12-21, src-herald-1879-12-31, src-tribune-1880-01-01]
+      nodes:
+        - {node: lamp-1879-12-21-herald-announces-new-years-eve-exhibition, verb: supports}
+        - {node: lamp-1879-12-31-menlo-park-visitors-no-formal-exhibition, verb: qualifies}
     basis: >
       # V: V2 (OCR of Chronicling America scans). Not disputed: lamps were lit and seen by many visitors
-      #    at Menlo Park in the last days of 1879. The Herald article is unsigned in the scan; the usual
-      #    attribution to Marshall Fox is not confirmed. It leads with carbonised paper, not thread.
+      #    at Menlo Park in the last days of 1879 (sixty lights per the Herald; fifty to sixty per the Tribune). The Herald article is unsigned in the scan; the usual
+      #    attribution to Marshall Fox is not confirmed. Its headings include "A scrap of paper" and "Success in a cotton thread".
+      #    The Tribune headline's OCR is damaged and is read as "no public exhibition promised or given".
 
   - id: lamp-edison-bamboo
     state: established
     statement: >
-      Edison's commercial lamps of 1880 onward used carbonised bamboo, chosen after trials of many
-      fibres; he sent an agent to Japan who sent back about 40 kinds of bamboo.
+      In the Supreme Court's 1895 account, which rests on trial testimony, Edison, after trying "thirty or forty different woods" and
+      many other fibres, found his best burner in a strip of bamboo (one that "formed the edge of a palm-leaf fan", in the OCR's 'palmieaf'), "despatched a man
+      to Japan" to arrange supplies, and the messenger he sent "to different parts of Japan and China sent him about forty different
+      kinds of bamboo". The Court describes the commercial Edison lamp of the case as having a burner of carbonised bamboo.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 4
@@ -672,18 +855,21 @@ claims:
     would_change_if: "Edison laboratory or factory records give a different material or date"
     anchor:
       type: primary_text
-      description: 159 U.S. 465 (1895), the Court's account of Edison's bamboo search
+      description: "159 U.S. 465 (1895), Brown J., the Court's account of Edison's search, read in the Library of Congress scan."
       sources: [src-scotus-1895]
     basis: >
-      # V: V2 for the Court's account, which rests on trial testimony. A court-built lamp to the 1880
+      # V: V2 for the Court's account, which rests on trial testimony. The first version said the commercial lamps "of 1880 onward" used
+      #    bamboo and that an agent "sent back about 40 kinds"; the opinion does not date the lamps to 1880 and says the messenger sent
+      #    them from Japan and China. The date is dropped. A court-built lamp to the 1880
       #    design lasted 600 hours (52 F. 300, expert testimony, V2). Lamp-life claims are filed only at
       #    that strength.
 
   - id: lamp-pearl-street
     state: established
     statement: >
-      Edison's company turned on its first central-station district service from Pearl Street, New York,
-      at 3 p.m. on 4 September 1882.
+      On 4 September 1882, at 3 p.m., the Edison Electric Illuminating Company turned on the electric light in part of the first of its
+      districts in New York, supplied from a central station on Pearl Street just below Fulton Street (New-York Tribune, 5 September 1882).
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -693,15 +879,17 @@ claims:
     would_change_if: "company records give a different date"
     anchor:
       type: primary_text
-      description: NY Tribune, 5 Sep 1882, p. 8
+      description: "NY Tribune, 5 Sep 1882, p. 8, read in the ALTO OCR text of the Library of Congress scan: 'The company at 3 p.m. turned on the electric light in part of the first of the districts ... The central station ... is at ... Pearl-st., just below Fulton-st.'; 'yesterday' dates it to 4 September."
       sources: [src-tribune-1882-09-05]
-    basis: "# V: V2. Generation, wiring and metering were the commercial invention; the lamp was one part."
+      nodes: [{node: lamp-1882-09-04-pearl-street-district-service-begins, verb: supports}]
+    basis: "# V: V2. Generation, wiring and metering were the commercial invention; the lamp was one part. The street number is garbled in the OCR and is not used."
 
   - id: lamp-sprengel-link
     state: searched_gap
     statement: >
       The common statement that Edison's vacuum came from Hermann Sprengel's mercury pump (1865) is not
       yet anchored. Edison's patent and the 1879 Herald say only "mercury pump".
+    statement_kind: search_result
     evidence_class: primary_text
     confidence: low
     evidential_weight: 2
@@ -711,20 +899,24 @@ claims:
     would_change_if: "an Edison laboratory record or Francis Upton letter names the Sprengel design"
     next_step: "Search the Edison Papers for 'Sprengel' (1879), and read Sprengel's 1865 paper in J. Chem. Soc."
     anchor:
-      type: primary_text
-      description: 'US 223,898: ''mercury-pump'', no name'
-      sources: [src-us223898]
-    basis: "Plausible and widely agreed, but nothing read names the source of the pump."
+      type: search-record
+      description: "US 223,898: 'mercury-pump', no name; NY Herald 21 Dec 1879: 'mercury pump'. Swan (1880) names the Sprengel pump for his own lamps."
+      sources: [src-us223898, src-herald-1879-12-21, src-chemnews-1880]
+    basis: "Plausible and widely agreed, but nothing read names the source of Edison's pump."
 
   # =========================== THE PATENT FIGHT ===========================
 
   - id: lamp-sawyer-man-priority
     state: established
     statement: >
-      In the US Patent Office, an interference declared in September 1880 between Edison and William Sawyer
-      and Albon Man, over carbon made from paper, ended in early 1885 with the Commissioner of Patents
-      awarding priority to Sawyer and Man. Their resulting patent (317,076) was then held invalid in 1889
-      as claiming too broadly, and the Supreme Court affirmed on 11 November 1895.
+      In the US Patent Office, an interference declared in September 1880 between Edison (application of December 1879) and William Sawyer
+      and Albon Man (application of 9 January 1880), over carbon made from paper, was "not finally decided until the beginning of 1885",
+      when the Commissioner of Patents awarded priority of invention to Sawyer and Man (as 40 F. 21 recounts it). Their patent (No. 317,076,
+      granted 12 May 1885) was held invalid in 1889: apart from its third claim (carbonised paper), it amounted to a claim to all fibrous
+      carbons. The Supreme Court affirmed the decree on 11 November 1895, holding that the claims "with the exception of the third, are too
+      indefinite to be the subject of a valid monopoly" and that the question of priority "becomes unnecessary"; it did not itself decide that
+      Sawyer and Man's third claim was invalid, which was admitted not to be infringed by the Edison lamp.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -734,88 +926,128 @@ claims:
     would_change_if: "the Patent Office interference record is read and disagrees with the 1889 opinion's account"
     anchor:
       type: primary_text
-      description: Consolidated Electric Light Co. v. McKeesport Light Co., 40 F. 21 (1889); The Incandescent Lamp Patent, 159 U.S. 465 (1895)
+      description: "Consolidated Electric Light Co. v. McKeesport Light Co., 40 F. 21 (1889), Bradley J.; The Incandescent Lamp Patent, 159 U.S. 465 (1895), Brown J., headnote and the passages 'we are all agreed that the claims of this patent, with the exception of the third, are too indefinite' and 'becomes unnecessary'."
       sources: [src-40f21, src-scotus-1895]
+      nodes:
+        - {node: lamp-1885-early-sawyer-man-win-interference, verb: supports}
+        - {node: lamp-1889-10-05-bradley-holds-sawyer-man-claims-invalid, verb: supports}
+        - {node: lamp-1895-11-11-supreme-court-affirms-sawyer-man-decree, verb: supports}
     basis: >
       # V: V2. The priority award is recorded in testimony quoted in the 1889 opinion, not in the
       #    Commissioner's decision itself (not read). Some popular accounts date the Patent Office ruling
-      #    to 1883; the 1889 opinion says the case was not decided until early 1885.
+      #    to 1883; the 1889 opinion says the case was not decided until the beginning of 1885.
+      #    Corrected in the revision (see log): the first version, and a first draft of the log, overstated what the Supreme Court held. The scan's
+      #    heading misprints the decision date as 1815 and the headnote the patent date as 14 May; the term, the argument dates and 40 F. 21 fix 1895 and 12 May.
 
   - id: lamp-edison-patent-upheld
     state: established
     statement: >
       Edison's lamp patent was upheld in court: in Edison Electric Light Co. v. United States Electric
       Lighting Co., the second claim (carbon filaments in an all-glass exhausted bulb) was held valid and
-      infringed in 1891, and the appeals court affirmed on 4 October 1892.
+      infringed in 1891 (July, per 57 F. 616), and the appeals court affirmed on 4 October 1892.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
     anchor_checked: primary
     adoption_weight: 2
-    adoption_note: "Rarely mentioned; the US patent ran out in November 1894, two years later."
+    adoption_note: "Rarely mentioned; the patent's term was tied to foreign patents, so its end is not stated in anything read here."
     would_change_if: "the opinions are misread"
     anchor:
       type: primary_text
-      description: 47 F. 454 (C.C.S.D.N.Y. 1891); 52 F. 300 (2d Cir. 1892)
-      sources: [src-47f454, src-52f300]
+      description: "47 F. 454 (C.C.S.D.N.Y. 1891); 52 F. 300 (2d Cir. 4 Oct 1892); 57 F. 616 (1893) for the July 1891 date of the first judgment."
+      sources: [src-47f454, src-52f300, src-57f616]
+      nodes:
+        - {node: lamp-1891-47f454-wallace-upholds-edison-lamp-patent, verb: supports}
+        - {node: lamp-1892-10-04-appeals-court-affirms-edison-patent, verb: supports}
     basis: >
-      # V: V2. Claim 1 was held not infringed. Expiry on 17 Nov 1894 is derived from the 1892
-      #    opinion's tie to Canadian patent 10,654; no opinion read states that date (V1, derived).
+      # V: V2. Claim 1 was held not infringed. Expiry: 52 F. 300 holds the patent unaffected by the lapse of a Swedish patent (directly or through
+      #    Canadian patent No. 10,654 of 17 Nov 1879, whose 5-year term was extended by 10 on a fee paid 4 May 1883) and holds the
+      #    Commissioner's attempted "certificate of correction" limiting its term "wholly void". No document read states when the US patent
+      #    expired; the first version's "17 Nov 1894" is derived and unverified.
 
   # =========================== GERMANY: GÖBEL ===========================
 
   - id: lamp-goebel-claim
-    state: refuted
-    refutes_target: "Heinrich Göbel built practical carbon-filament lamps in New York in 1854, before Edison"
-    refutation_class: motivated_error
+    state: contested
     statement: >
-      The claim that Göbel made practical carbon-filament lamps in 1854 has no record before 1882 and
-      was found improbable by three of the four US courts that heard it in 1893-94. It surfaced in
-      patent-market dealings in 1882 and was put forward in 1893 as a defence against Edison's patent.
-      One exhibit, lamp No. 4, the Boston court found could not have been made before 1872.
+      Whether Heinrich (Henry) Göbel built practical carbon-filament lamps in New York in 1854, before Edison. No dated document from
+      before 1882 that records such lamps has been found, on either side. On motions for preliminary injunctions, the Boston court (54 F.
+      678, Colt J.) found it "extremely improbable that Henry Goebel constructed a practical incandescent lamp in 1854" while saying the
+      weight of evidence "is in the direction that he made" the three early "fiddle bow" lamps or similar ones, but "assuming they were
+      made, they do not anticipate the invention of Edison. At most they were experimental toys"; and found it "simply impossible, under
+      the circumstances, to believe that a lamp so constructed [lamp No. 4] could have been made by Goebel before 1872" (a finding on
+      credibility). The Wisconsin court (57 F. 616, Seaman J.), and the Seventh Circuit on appeal in the
+      same case (61 F. 834), held the new defence not proved on the motion (the Seventh Circuit saying it was "without designing to suggest what result should be reached upon final hearing"); the St. Louis court (56 F. 496, Hallett J.) found "a fair preponderance of
+      testimony in support of the Goebel claim" and refused an injunction on condition of a $20,000 bond. That is two cases against one, on a preliminary
+      record and under different burdens of proof.
+    statement_kind: judgment
     evidence_class: primary_text
-    confidence: moderate
-    evidential_weight: 4
+    confidence: low
+    evidential_weight: 3
     anchor_checked: primary
     adoption_weight: 3
     adoption_note: >
       Taught in Germany for over a century (streets and schools named for Göbel; promoted under the Nazi
-      state, per V0 sources). His hometown, Springe, still calls the question "debatable" (springe.de, read).
+      state, per V0 sources). His hometown, Springe, is reported in the first version of this dig to call the question "debatable" (springe.de);
+      that wording could not be found again on 2026-10-02 and is unverified.
     would_change_if: >
       a dated document from before 1879 (newspaper, advertisement, letter, patent caveat) describing
-      Göbel's lamp is found
+      Göbel's lamp is found, or a full trial record tests the affidavits
+    positions:
+      - {label: "Improbable or not proved", holder: "Colt J. (D. Mass.), Seaman J. (E.D. Wis.), Seventh Circuit", ground: "the state of the art, the lamps' defective vacuum, lamp No. 4's impossible date, and the rule that a new defence against an upheld patent needs convincing proof"}
+      - {label: "A fair preponderance of testimony for Göbel", holder: "Hallett J. (E.D. Mo.)", ground: "affidavits of witnesses 'of good repute', recent test lamps 'reasonably effective', and a defence that 'puts the case in doubt' sufficing to refuse an injunction"}
+      - {label: "No dated document before 1882 either way", holder: "this dig's reading", ground: "the earliest dated traces are Curtis (early 1882), Eaton (May 1882), Dreyer's option (1882) and the 28 Nov 1882 offer; Göbel's only lamp patent (1882) is a socket detail"}
+    disputed_by:
+      - {who: "Colt J. (54 F. 678)", kind: person, position: "Extremely improbable that Göbel built a practical lamp in 1854; lamps 1 to 3, if made, were experimental toys that do not anticipate Edison", source_read: "54 F. 678 (D. Mass., 18 Feb 1893)", via: "preliminary injunction on affidavits"}
+      - {who: "Seaman J. (57 F. 616) and the Seventh Circuit (61 F. 834)", kind: institution, position: "The Göbel defence is not proved by convincing evidence; the story is surrounded by 'an atmosphere of improbability'", source_read: "57 F. 616 and 61 F. 834", via: "one case, preliminary injunction and appeal"}
     anchor:
       type: primary_text
-      description: '54 F. 678 (D. Mass., 18 Feb 1893), Colt J.: ''extremely improbable''; 57 F. 616 (E.D. Wis., 20 Jul 1893), Seaman J.; 61 F. 834 (7th Cir., 1 May 1894): ''an atmosphere of improbability''; US 266,358 (1882): Göbel''s own lamp patent is a socket detail, its second claim rejected over Edison; COUNTER-RECORD: 56 F. 496 (E.D. Mo., 21 Apr 1893), Hallett J., found the Göbel testimony credible enough to refuse an injunction'
-      sources: [src-54f678, src-57f616, src-61f834, src-us266358, src-56f496]
+      description: "54 F. 678 (D. Mass., 18 Feb 1893), Colt J.; 56 F. 496 (E.D. Mo., 21 Apr 1893), Hallett J.; 57 F. 616 (E.D. Wis., 20 Jul 1893), Seaman J.; 61 F. 834 (7th Cir., 1 May 1894); US 266,358 (1882), Göbel's lamp patent, a socket detail; US 47,632 (1865), Göbel's sewing-machine hemmer."
+      sources: [src-54f678, src-56f496, src-57f616, src-61f834, src-us266358, src-us47632]
+      nodes:
+        - {node: lamp-1893-02-18-colt-rules-on-goebel-defence-boston, verb: disputes}
+        - {node: lamp-1893-04-21-hallett-refuses-injunction-goebel-defence-st-louis, verb: supports}
+        - {node: lamp-1893-07-20-seaman-grants-injunction-goebel-defence-wisconsin, verb: disputes}
+        - {node: lamp-1894-05-01-seventh-circuit-affirms-wisconsin-goebel-ruling, verb: disputes}
+        - {node: lamp-1882-early-curtis-hears-goebel-story, verb: qualifies}
+        - {node: lamp-1882-05-eaton-told-of-goebel-claim, verb: qualifies}
+        - {node: lamp-1882-dreyer-option-on-goebel-inventions, verb: qualifies}
+        - {node: lamp-1882-10-24-goebel-patent-266358, verb: qualifies}
+        - {node: lamp-1882-11-28-goebel-offer-to-edison-company, verb: qualifies}
+        - {node: lamp-1865-05-09-goebel-sewing-machine-hemmer-patent, verb: qualifies}
     basis: >
-      # V: V2 for all opinions and the patent. Counter-record kept visible: in St. Louis, Judge Hallett
-      #    (56 F. 496, 21 Apr 1893) found "a fair preponderance of testimony" for Göbel and refused an
-      #    injunction. All four were preliminary rulings on affidavits, not full trials, so confidence is
-      #    moderate, not high.
-      Class motivated_error, not fabrication: the dig has not read evidence that Göbel invented the
-      story. Rohde (2007) reportedly found the false details came largely from the lawyers' presentation
-      (V0; book not read). Göbel's 1882 patent on a small lamp part sits badly with having invented the
-      whole lamp 28 years earlier.
+      # V: V2 for all opinions and both patents. Changed from "refuted" in the revision of 2026-10-02, under the dig's single standard
+      #    (S2, S4): a refutation needs a dated document read directly that shows the claim false; the record has the court rulings and
+      #    no dated document either way before 1882. The rulings are findings on affidavits, preliminary and not a trial; the absence of a
+      #    pre-1882 document does not refute (the same reason the dig keeps de la Rue, Davy and Swan's 1850s as gaps). The first version also
+      #    counted "four courts" and "three of four"; the Seventh Circuit appeal is the same case as the Wisconsin ruling, so it is
+      #    two against one. About forty affidavits, five of them by Göbel's children and one by a niece, put his lamps between 1850 and
+      #    1882 (Colt J.); the Edison side's affidavits deny lamp displays about 1860 and say lamps 1-3 were never practically operative.
+      #    Göbel's 1882 patent on a small lamp part sits badly with having invented the whole lamp 28 years earlier, but that is an inference.
+      #    Rohde (2007) reportedly found the false details came largely from the lawyers' presentation (V0; book not read).
+      #    The earliest dated traces are not the 28 Nov 1882 offer alone: Curtis first heard of Göbel "in the early part of 1882" (he made further
+      #    inquiries in 1892; the defence was put forward in the 1893 suits), Eaton was told in May 1882, and Dreyer took an option in 1882.
 
   - id: lamp-goebel-rohde
     state: searched_gap
     statement: "What Hans-Christian Rohde's 2007 study of the court record found about how the Göbel story was built."
+    statement_kind: search_result
     evidence_class: synthetic
     confidence: low
     evidential_weight: 2
     anchor_checked: no
     adoption_weight: 2
-    adoption_note: "Accepted in German history-of-technology writing; Springe has not retracted."
+    adoption_note: "Accepted in German history-of-technology writing (per V0 summaries); Springe has not retracted (not verified)."
     would_change_if: "the book is read"
     next_step: >
       Read Rohde, Die Göbel-Legende (zu Klampen, 2007), and Dittmann's review in Technikgeschichte 74(2), 2007,
       pp. 149-160 (paywalled).
     anchor:
-      type: synthetic
-      description: Rohde 2007, via lerncafe.de, goebel-projekt, radiomuseum.org (V1 that it refutes Göbel)
+      type: search-record
+      description: "Rohde 2007, known only through summaries on lerncafe.de, goebel-projekt and radiomuseum.org, which say the court record does not support Göbel as inventor; the book was not read."
       sources: [src-rohde-2007]
-    basis: "Synthetic class: a modern study of the record. Cannot serve as a primary refutation (Rule 9)."
+    basis: "Synthetic class: a modern study of the record. Cannot serve as a primary refutation (Rule 9) and is not used as support for any claim here."
 
   # =========================== ATTRIBUTION MYTHS ===========================
 
@@ -823,9 +1055,11 @@ claims:
     state: established
     statement: >
       Lewis Latimer's US patent 252,386, "Process of Manufacturing Carbons" (filed 19 February 1881,
-      granted 17 January 1882), improves how carbon filaments are made: blanks are carbonised inside
-      cardboard envelopes so they do not break or warp. It was assigned to the United States Electric
-      Lighting Company, Hiram Maxim's firm and a rival of Edison's.
+      granted 17 January 1882), improves how carbon filaments are made: blanks of paper or wood are carbonised inside cardboard envelopes
+      so that they are protected from sticking, breaking and warping. It was assigned to the United States Electric
+      Lighting Company of New York. With J. V. Nichols he also held US patent 247,097, "Electric Lamp" (filed 18 April 1881, dated
+      13 September 1881), for mounting the carbon strip on its wires.
+    statement_kind: reported
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -835,26 +1069,40 @@ claims:
     would_change_if: "the patent record is misread"
     anchor:
       type: primary_text
-      description: US 252,386
-      sources: [src-us252386]
-    basis: "# V: V2. His later work for Edison's companies is real in secondary accounts but not anchored here; see lamp-latimer-edison-role."
+      description: "US 252,386 and US 247,097, both read in OCR of the USPTO scans (claims and assignment lines)."
+      sources: [src-us252386, src-us247097]
+      nodes:
+        - {node: lamp-1882-01-17-latimer-patent-252386, verb: supports}
+        - {node: lamp-1881-09-13-nichols-latimer-patent-247097, verb: supports}
+    basis: >
+      # V: V2. The first version called the company "Hiram Maxim's firm and a rival of Edison's" and anchored that to the patent; the
+      #    patent names only the United States Electric Lighting Company. That Maxim was its chief engineer, that it was one of Edison's
+      #    competitors and that Latimer worked for it from March 1880 (in Bridgeport, Connecticut, before the company moved to Brooklyn)
+      #    come from the Queens Library essay hosted by the Edison Papers (secondary, read in the revision; node
+      #    lamp-1880-03-latimer-joins-us-electric-lighting-bridgeport). A company of the same name was the defendant in the Edison company's suit
+      #    upheld in 47 F. 454 and 52 F. 300 (identity assumed from the name). His later work for Edison's companies is in
+      #    lamp-latimer-edison-role.
 
   - id: lamp-latimer-edison-role
     state: searched_gap
     statement: "Latimer's later role with the Edison companies (engineering staff, patent expert witness, Edison Pioneers)."
-    evidence_class: primary_text
+    statement_kind: search_result
+    evidence_class: synthetic
     confidence: low
     evidential_weight: 2
-    anchor_checked: no
+    anchor_checked: secondary
     adoption_weight: 3
     adoption_note: "Widely stated; well supported in secondary accounts."
     would_change_if: "Edison company records or court testimony naming him are read"
     next_step: "Read the Latimer papers (Queens Borough Public Library) and the Edison Papers for Latimer, 1884-1912."
     anchor:
-      type: synthetic
-      description: Edison Papers page hosting a Queens Library exhibit (not read in depth)
-      sources: [src-edison-papers-essay]
-    basis: "Gap, not doubt: the secondary record is consistent."
+      type: search-record
+      description: "The Queens Borough Public Library essay 'Inventing a Better Life: Latimer's Technical Career', hosted by the Edison Papers (secondary, read 2026-10-02): from about 1885 Latimer was in the Engineering Department of the Edison Electric Light Company, from about 1889 in its Legal Department, testified in a number of cases, and was a founding Edison Pioneer in 1918. The essay cites records that were not read."
+      sources: [src-edison-papers-latimer]
+    basis: >
+      Gap, not doubt: the secondary record is consistent. The first version cited the Edison Papers essay 'The Carbon-Filament Lamp' (src-edison-papers-essay)
+      for this, which does not mention Latimer; the source is now the Queens Library essay, and the claim stays at anchor_checked secondary because
+      the underlying records (Latimer's logbook, company records, court testimony) were not read.
 
   - id: lamp-latimer-invented-claim
     state: refuted
@@ -862,45 +1110,66 @@ claims:
     refutation_class: misattribution
     statement: >
       Latimer did not invent the light bulb or the carbon filament. His 1882 patent is a manufacturing
-      improvement filed in 1881, after carbon filaments had been patented by Edison (1879-80) and carbon in
-      a vacuum by King (1845). His real contribution was making carbons more reliably, first for a rival company.
+      improvement filed in 1881, after carbon filaments had been patented by Edison (applied for November 1879, granted 1880) and carbon in
+      a vacuum by King (1845); his other 1881 patent with Nichols is for mounting the carbon on the wires. His real contribution was making
+      carbons more reliably, first for a rival company.
+    statement_kind: judgment
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
     anchor_checked: primary
     adoption_weight: 3
     adoption_note: "A modern corrective story that overshoots; it grows out of real neglect of Latimer's work."
-    would_change_if: "an earlier Latimer document claiming the filament or lamp itself is found"
+    would_change_if: "an earlier Latimer document claiming the filament or lamp itself is found, or US 247,097 or 252,386 is read as claiming the lamp"
     anchor:
       type: primary_text
-      description: US 252,386 (1882) against US 223,898 (1880)
-      sources: [src-us252386]
-    basis: "The attribution moves from a process patent to the whole invention. Recognition of his actual work stands."
+      description: "US 252,386 (1882) and US 247,097 (1881) against US 223,898 (1880) and the 1845 King patent (abridgment, p. 97)."
+      sources: [src-us252386, src-us247097, src-us223898, src-abridgments-1859]
+      nodes:
+        - {node: lamp-1882-01-17-latimer-patent-252386, verb: supports}
+        - {node: lamp-1881-09-13-nichols-latimer-patent-247097, verb: supports}
+        - {node: lamp-1880-01-27-edison-patent-223898-granted, verb: supports}
+    basis: >
+      The attribution moves from a process patent to the whole invention. Recognition of his actual work stands. "A rival company" rests on the
+      Queens Library essay (secondary) and on the company's name in the Edison suits.
 
   - id: lamp-10000-ways-quote
     state: refuted
     refutes_target: "Edison said 'I have not failed, I've just found 10,000 ways that won't work' about the light bulb"
     refutation_class: narrative_drift
     statement: >
-      The earliest version found is in Dyer and Martin's 1910 biography, where Walter Mallory recalls Edison
-      saying "I know several thousand things that won't work" during work on the nickel-iron storage battery,
-      not the lamp. The "10,000 ways" wording is not documented in Edison's lifetime.
+      The earliest version found is in Dyer and Martin's 1910 biography, where Walter Mallory recalls Edison saying "I know several
+      thousand things that won't work" about the nickel-iron storage battery after "over nine thousand experiments", not about the lamp; Mallory
+      adds that the experiments later "had run up to over ten thousand". The "10,000 ways" wording has not been found in anything
+      earlier than the modern forms traced by Quote Investigator (1946, 1982).
+    statement_kind: search_result
     evidence_class: primary_text
-    confidence: moderate
-    evidential_weight: 4
+    confidence: provisional
+    confidence_reasons:
+      start: high
+      start_because: "The 1910 text was read directly in a scan of the book (anchor checked: primary)."
+      steps:
+        - {domain: unreported_negative_results, effect: down1, reason: "The claim that the 10,000-ways wording about the lamp is not documented earlier rests on not finding it. The dig has not searched Edison's own papers, newspapers or letters of his lifetime, so absence cannot be shown."}
+        - {domain: indirectness, effect: down1, reason: "The 1910 text records Mallory's recollection, written down by Edison's authorised biographers; it is not Edison's own record and it says nothing about what he said about the lamp."}
+        - {domain: risk_of_bias, effect: down1, reason: "One recollection in an authorised biography is the only anchor; Quote Investigator, a secondary tracing, is kept out of the anchors."}
+      reviewed: false
+    evidential_weight: 3
     anchor_checked: primary
+    absence_anchor: true
     adoption_weight: 5
     adoption_note: "One of the most repeated quotations in English; nearly always attached to the light bulb."
-    would_change_if: "an earlier printed version about the lamp is found"
+    would_change_if: "an earlier printed or manuscript version about the lamp is found, or Edison's own record of the remark is found"
     anchor:
       type: primary_text
-      description: 'Dyer and Martin, Edison: His Life and Inventions (Harper, 1910), vol. II, pp. 615-616'
+      description: 'Dyer and Martin, Edison: His Life and Inventions (Harper, 1910), vol. II, pp. 615-616, read in OCR of the Internet Archive scan.'
       sources: [src-dyer-martin-1910]
     basis: >
-      # V: V2 for the 1910 text, the only anchor. Quote Investigator (secondary) traces the later
-      #    "999" (1946) and "10,000" (1982) forms; that history is in transmission.yaml (tx-10000-ways),
-      #    not here, and is not used for the refutation. Confidence moderate because "Edison never said it about the lamp"
-      #    partly rests on the absence of an earlier version.
+      # V: V2 for the 1910 text, the only anchor. Quote Investigator (secondary) traces the later "999" (1946) and "10,000" (1982)
+      #    forms; that history is in transmission.yaml (tx-10000-ways), not here, and is not used for the refutation.
+      #    Reworded in the revision: the first version said the wording was "not documented in Edison's lifetime". The 1910 book was itself
+      #    published in Edison's lifetime (he died in 1931), and one book cannot show what was or was not said or printed about the lamp in the
+      #    other twenty-odd years or earlier. The claim now says only "earliest version found" and is held at provisional confidence as an
+      #    absence claim.
 
   # =========================== THE HEADLINE ===========================
 
@@ -909,12 +1178,16 @@ claims:
     refutes_target: "Thomas Edison invented the light bulb (as its first or only inventor)"
     refutation_class: narrative_drift
     statement: >
-      Edison did not invent the incandescent lamp from nothing: incandescent lamps were patented in Britain
-      in 1841 and 1845, and lamps were built by Lodygin (1872-73), Woodward and Evans (1874) and Swan (1878)
-      before his. What Edison's team made first was a lamp practical to manufacture and sell, with a
-      high-resistance carbon filament in an all-glass high vacuum, designed for a parallel distribution
-      system, running from a central station by 1882. The courts upheld his patent on that specific
-      combination, not on the idea of the lamp.
+      Edison did not invent the incandescent lamp from nothing and was not its first or only inventor. British patents of 1841 (de Moleyns) and
+      1845 (King, for Starr) already described electric lamps with a heated conductor in an exhausted globe, the second with carbon; Woodward
+      patented a carbon lamp in rarefied gas in 1874-76; and Swan reported a glowing carbon rod in an exhausted globe in December 1878,
+      a rod that blackened its globe. Edison's own patent (1880) was upheld by US courts for a high-resistance carbon filament in an
+      all-glass exhausted bulb; in Wallace J.'s words Edison made "a lamp which was practically operative and successful" (47 F. 454, 1891), and
+      Colt J. records that the earlier ruling held claim 2 to cover "a broad and fundamental invention, namely, an incandescent lamp, composed
+      of a carbon filament, hermetically sealed in an all glass chamber exhausted to a practically perfect vacuum, and having leading-in
+      wires of platinum" (54 F. 678). Whether Edison or Swan was first to a practical lamp, and a complete wired system (Pearl Street, 1882),
+      are separate claims (lamp-first-practical-priority, lamp-pearl-street).
+    statement_kind: judgment
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
@@ -922,13 +1195,23 @@ claims:
     adoption_weight: 5
     adoption_note: "The default answer in the US and much of the world; reinforced by schoolbooks and the quote myth."
     would_change_if: >
-      the 1841 and 1845 patents are shown not to describe incandescent lamps, or the courts are shown to
-      have upheld Edison's patent on the general principle
+      the 1841 and 1845 patents are shown not to describe electric lamps with a heated conductor in an exhausted globe, or the courts are shown to
+      have upheld Edison's patent as the first lamp of any kind
     anchor:
       type: primary_text
-      description: 'British patents 9053 (1841) and 10,919 (1845); Chemical News 39 (1879): Swan''s 1878 lamp; 47 F. 454 (1891) and 52 F. 300 (1892); US 223,898'
-      sources: [src-abridgments-1859, src-chemnews-1879, src-47f454, src-us223898]
+      description: 'British patents 9053 (1841) and 10,919 (1845), Patent Office abridgments; Chemical News 39 (1879): Swan''s December 1878 rod lamp; US 181,613 (Woodward); 47 F. 454 (1891) and 52 F. 300 (1892); 54 F. 678 (1893), Colt J.; US 223,898.'
+      sources: [src-abridgments-1859, src-chemnews-1879, src-us181613, src-47f454, src-52f300, src-54f678, src-us223898]
+      nodes:
+        - {node: lamp-1841-08-21-de-moleyns-patent-9053, verb: supports}
+        - {node: lamp-1845-11-04-king-starr-patent-10919, verb: supports}
+        - {node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, verb: supports}
+        - {node: lamp-1891-47f454-wallace-upholds-edison-lamp-patent, verb: qualifies}
     basis: >
-      The true core is large and is kept in lamp-edison-patent, lamp-edison-high-resistance and
-      lamp-pearl-street. The drift is from "made the first practical one and a system to run it" to
-      "invented it". Edison's own patent does not claim the general idea.
+      The true core is large and is kept in lamp-edison-patent, lamp-edison-high-resistance, lamp-edison-patent-upheld and
+      lamp-pearl-street. The drift is from "made a lamp the courts called practical, and a system to run it" to
+      "invented it". Under the dig's standard (S2, S3) the refutation rests on dated documents (patents, a society report, a court
+      opinion) that show earlier descriptions and an earlier reported experiment, not on any claim that a lamp was built before Edison's
+      beyond Swan's reported rod. The first version also said lamps were "built" by Lodygin and by Woodward and Evans before Edison, and
+      that Edison's team "made first a lamp practical to manufacture and sell ... by 1882"; neither was anchored to this claim and
+      both are removed (Lodygin: lamp-lodygin-1872-74; Woodward: lamp-woodward-evans-patent, lamp-woodward-evans-performance; the practical lamp
+      and sale: lamp-first-practical-priority; Pearl Street: lamp-pearl-street).

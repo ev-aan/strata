@@ -1,0 +1,29 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1879-12-21-herald-announces-new-years-eve-exhibition
+rev: 1
+type: event
+label: '21 Dec 1879: NY Herald announces Edison''s light and a New Year''s Eve exhibition'
+time: '1879-12-21T12:00:00Z'
+precision: day
+kind: media
+status: single
+what: 'New York Herald, 21 Dec 1879, p. 5, ''Edison''s Light'' (headings include ''A scrap of paper'' and ''Success in a cotton
+  thread''): ''The near approach of the first public exhibition of Edison''s long looked for electric light, announced to
+  take place on New Year''s Eve at Menlo Park''. No byline is visible in the scan.'
+sources:
+- title: 'New York Herald, 21 Dec 1879, p. 5: ''Edison''s Light'''
+  url: https://www.loc.gov/resource/sn83030313/1879-12-21/ed-1/?sp=5
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: ny-herald-1879-12-21
+  source_type: news
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-herald-1879-12-21
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b5. Date and place re-checked against the cited
+    source.'
+date_basis: stated

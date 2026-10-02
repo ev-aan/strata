@@ -1,0 +1,44 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1891-47f454-wallace-upholds-edison-lamp-patent
+rev: 1
+type: event
+label: 'July 1891: Wallace J. holds Edison''s claim 2 valid and infringed (47 F. 454)'
+time: '1891-07-15T12:00:00Z'
+precision: month
+kind: official
+status: reported
+what: '47 F. 454 (C.C.S.D.N.Y., 1891), Wallace J.: Edison was ''the first to make a carbon of materials and by a process which
+  was especially designed to impart high specific resistance to it'', ''the first to make a carbon in the special form for
+  the special purpose of imparting to it high total resistance'', and ''the first to combine such a burner with the necessary
+  adjuncts of lamp construction to prevent its disintegration and give it sufficiently long life''; ''By doing these things
+  he made a lamp which was practically operative and successful''. The reporter prints ''1891'' only; 57 F. 616 says the judgment
+  was obtained in July 1891.'
+sources:
+- title: Edison Electric Light Co. v. United States Electric Lighting Co., 47 F. 454 (C.C.S.D.N.Y., 1891), Wallace J.
+  url: https://static.case.law/f/47/cases/0454-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-47-f-454
+  source_type: official_record
+  access: read
+- title: Edison Electric Light Co. v. Electric Manufacturing Co., 57 F. 616 (C.C.E.D. Wis., 20 Jul 1893), Seaman J. (gives
+    July 1891 for the judgment in 47 F. 454)
+  url: https://static.case.law/f/57/cases/0616-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-57-f-616
+  source_type: official_record
+  access: read
+window:
+  earliest: '1891-01-01'
+  latest: '1891-12-31'
+  begin_note: The reporter prints only '1891'.
+  end_note: Same; 57 F. 616 narrows it to July.
+manifest:
+  subject: incandescent-lamp
+  source: src-47f454
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (findings A8, 4a). Date and place re-checked
+    against the cited source.'
+date_basis: derived

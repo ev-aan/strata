@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1882-10-24-goebel-patent-266358
+rev: 1
+type: event
+label: '24 Oct 1882: Goebel''s US patent 266,358 ''Electric Incandescent Lamp'' (a lamp-socket detail)'
+time: '1882-10-24T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'US 266,358, Henry Goebel ''of the city, county, and State of New York'', assignor of one-half to John W. Kulenkamp;
+  application filed 23 January 1882, dated 24 October 1882: an electric vacuum-lamp in which the carbon conductor is secured
+  in flattened, spirally coiled ends of the lead-in wires and cemented. Both claims are for the sockets.'
+sources:
+- title: US Patent 266,358, H. Goebel, Electric Incandescent Lamp (dated 24 Oct 1882)
+  url: https://patents.google.com/patent/US266358A/en
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: us-patent-266358
+  source_type: official_record
+  access: read
+place:
+  name: New York City
+  lat: 40.7127
+  lon: -74.006
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 175905
+  note: The source gives the person's residence or the firm as 'of New York, N. Y.' without a street.
+manifest:
+  subject: incandescent-lamp
+  source: src-us266358
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b12 (split: the patent). Date and place re-checked
+    against the cited source.'
+date_basis: stated
