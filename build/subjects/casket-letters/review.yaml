@@ -1,0 +1,71 @@
+# Publish-gate review record (docs/PUBLISH_GATE.md). status: pending | passed | passed_with_open_items | grandfathered | failed
+subject: casket-letters
+status: grandfathered
+checks:
+- check: 'conformance: no errors for this subject'
+  result: FAIL
+  detail: 'ERROR    publish-gate:casket-letters: published subject has no review.yaml (docs/PUBLISH_GATE.md)'
+- check: headline present, 70-95 characters
+  result: pass
+  detail: 94 characters
+- check: headline claim is established/refuted at high confidence with a primary check, or status is draft
+  result: pass
+  detail: 'casket-originals-lost: established, provisional, anchor_checked secondary; headline_status draft'
+- check: headline_status is draft or review before the gate passes
+  result: pass
+  detail: draft
+- check: assessment present with question, answer, headline, text, basis, would_settle
+  result: pass
+  detail: ''
+- check: assessment has exactly three key_points
+  result: pass
+  detail: '3'
+- check: assessment states no percentage
+  result: pass
+  detail: ''
+- check: taxonomy entry (area and question types)
+  result: pass
+  detail: ''
+- check: every claim has statement_kind
+  result: pass
+  detail: ''
+- check: every searched gap names its next step
+  result: pass
+  detail: ''
+- check: sources manifest exists
+  result: pass
+  detail: ''
+- check: every source has an authenticity block
+  result: pass
+  detail: ''
+- check: log has entries
+  result: pass
+  detail: ''
+- check: timeline present (dates exist, so a timeline is required)
+  result: pass
+  detail: ''
+open_items:
+- 'conformance: no errors for this subject: ERROR    publish-gate:casket-letters: published subject has no review.yaml (docs/PUBLISH_GATE.md)'
+- Established claims anchored below primary are shown on the page as limits (anchor_checked).
+needs_manual_check:
+- '4 established/refuted claims anchored below primary: casket-originals-lost, casket-babington-postscript-forged-1586, casket-four-french-copies-survive,
+  casket-too-short-for-wordfreq'
+- 'dates, names, patent or document numbers: verify each against the source'
+- every refuted claim names its target and rests on material or primary-text evidence (Rule 9)
+- no claim goes beyond what was read; anything not read is marked not read
+conformance_warnings: 4
+established_or_refuted_without_primary_check:
+- casket-originals-lost
+- casket-babington-postscript-forged-1586
+- casket-four-french-copies-survive
+- casket-too-short-for-wordfreq
+quotes:
+  found_in_stored_sources: 0
+  not_found_in_stored_sources: 0
+  no_stored_source_to_check_against: 0
+reviewed_by: Claude (build session), partial review; no independent reviewer
+reviewed_on: '2026-10-02'
+notes: 'Published by the owner before the gate existed. Read directly: Henderson (1889) in OCR text. The 1586 forgery, the
+  French copies'' holdings and the contested-authenticity positions rest on Henderson or on the Q-001 page and were not each
+  re-read; the NSA account was not read (nsa.gov blocks this environment). Computed results were reproduced from the published
+  code. Headline status is draft.'

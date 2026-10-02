@@ -1,0 +1,69 @@
+timeline:
+  id: casket-letters
+  title: "The Casket Letters: who held them, when, and what survives (1567 to 1587)"
+  as_of: "2026-10-02"
+  note: >
+    Dates follow Henderson (1889) and are old-style (Julian). Times of day are not recorded except where noted, so most dots are date-only
+    and drawn hollow. Where another source is recalled to give a different date it is shown as a ghost marker and marked as not read. Every dot links
+    to its source; the book is a scholar's account (and an advocate's for genuineness), so the dots are claims about the record, not proof of it.
+    The 1586 Babington postscript is a different case and sits on its own row.
+panels:
+  - id: years
+    title: "Panel A: 1567 to 1587 (one tick per year)"
+    start: "1567-01-01T00:00:00Z"
+    end:   "1587-06-30T00:00:00Z"
+    tick_years: 1
+    lanes: [scotland, england, texts, babington]
+  - id: y1567
+    title: "Panel B: February 1567 to January 1569 (one tick per month)"
+    start: "1567-02-01T00:00:00Z"
+    end:   "1569-01-15T00:00:00Z"
+    tick_hours: 2160
+    lanes: [scotland, england, texts]
+  - id: later
+    title: "Panel C: 1889, where Henderson found the French copies (one tick per year)"
+    start: "1888-06-01T00:00:00Z"
+    end:   "1889-12-31T00:00:00Z"
+    tick_years: 1
+    lanes: [texts]
+lanes:
+  scotland: {label: "Scotland"}
+  england:  {label: "England (York, Westminster)"}
+  texts:    {label: "The letters and their copies"}
+  babington: {label: "1586 Babington postscript (separate case)"}
+people:
+  - {who: "Mary, Queen of Scots", detail: "Queen of Scotland; the letters are said to be hers, to the Earl of Bothwell."}
+  - {who: "James Hepburn, Earl of Bothwell", detail: "Accused of Darnley's murder, acquitted 12 April 1567; married Mary on 15 May 1567 (Henderson)."}
+  - {who: "Henry Stewart, Lord Darnley", detail: "Mary's husband; killed in the explosion at Kirk-o'-Field."}
+  - {who: "James Douglas, Earl of Morton", detail: "Received the casket on 20 June 1567 (his own declaration, Westminster, Dec 1568); executed 1581."}
+  - {who: "James Stewart, Earl of Moray (Regent)", detail: "Took the casket from the Privy Council on 16 Sept 1568 and carried it to England."}
+  - {who: "William Cecil", detail: "Elizabeth's secretary; the French copies at Hatfield come from his papers."}
+  - {who: "T. F. Henderson", detail: "Scholar whose 1889 book is the main source read here; argued for the letters' genuineness."}
+sources:
+  s_hend: {title: "T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read", url: "https://archive.org/details/casketlettersan00hendgoog", authenticity: "authenticated edition, moderate; an advocate's account"}
+  s_nsa:  {title: "NSA, To Catch a Queen (declassified 2011): not read, nsa.gov blocks the cloud session", url: "https://www.nsa.gov/portals/75/documents/news-features/declassified-documents/crypto-almanac-50th/to-catch-a-queen.pdf", authenticity: "not read; secondary"}
+events:
+  - {id: k1, panel: years, lane: scotland, node: casket-1567-02-10-darnley-killed-in-the-kirk-o, rev: 2}
+  - {id: k2, panel: years, lane: scotland, node: casket-1567-04-12-bothwell-acquitted-of-the-murder, rev: 2}
+  - {id: k3, panel: years, lane: scotland, node: casket-1567-05-15-mary-marries-bothwell, rev: 2}
+  - {id: k4, panel: years, lane: scotland, node: casket-1567-06-14-mary-surrenders-at-carberry-hill, rev: 2}
+  - {id: k5, panel: years, lane: texts, node: casket-1567-06-20-the-casket-comes-into-morton-s, rev: 2}
+  - {id: k6, panel: years, lane: scotland, node: casket-1567-12-letters-probably-shown-to-the-nobles-and-parliament, rev: 2}
+  - {id: k7, panel: years, lane: texts, node: casket-1568-09-16-regent-moray-receives-the-casket-from, rev: 2}
+  - {id: k8, panel: years, lane: england, node: casket-1568-10-15-conference-at-york, rev: 2}
+  - {id: k9, panel: years, lane: england, node: casket-1568-12-westminster-conference-examines-the-letters, rev: 3}
+  - {id: k10, panel: years, lane: texts, node: casket-1571-06-01-letters-first-printed-with-buchanan-s, rev: 2}
+  - {id: k11, panel: years, lane: texts, node: casket-1581-06-02-after-morton-s-execution-casket-passes, rev: 3}
+  - {id: k12, panel: years, lane: texts, node: casket-1584-06-01-after-gowrie-s-execution-casket-probably, rev: 3}
+  - {id: k13, panel: years, lane: babington, node: casket-1586-06-30-phelippes-forges-a-postscript-to-mary, rev: 2}
+  - {id: b1, panel: y1567, lane: scotland, node: casket-1567-02-10-darnley-killed-in-the-kirk-o, rev: 2}
+  - {id: b2, panel: y1567, lane: scotland, node: casket-1567-05-15-mary-marries-bothwell, rev: 2}
+  - {id: b3, panel: y1567, lane: scotland, node: casket-1567-06-14-mary-surrenders-at-carberry-hill, rev: 2}
+  - {id: b4, panel: y1567, lane: texts, node: casket-1567-06-20-the-casket-comes-into-morton-s, rev: 2}
+  - {id: b5, panel: y1567, lane: scotland, node: casket-1567-12-04-confederate-nobles-meet, rev: 2}
+  - {id: b6, panel: y1567, lane: scotland, node: casket-1567-12-15-act-of-parliament-names-the-casket, rev: 2}
+  - {id: b7, panel: y1567, lane: texts, node: casket-1568-09-16-regent-moray-receives-the-casket-from, rev: 2}
+  - {id: b8, panel: y1567, lane: england, node: casket-1568-10-15-conference-at-york, rev: 2}
+  - {id: b9, panel: y1567, lane: england, node: casket-1568-12-westminster-examination-collation-minute, rev: 3}
+  - {id: h4, panel: later, lane: texts, node: casket-1889-copies-of-letters-4-and-6-at-hatfield, rev: 2}
+  - {id: h3, panel: later, lane: texts, node: casket-1889-copies-of-letters-3-and-5-in-the-record-office, rev: 2}

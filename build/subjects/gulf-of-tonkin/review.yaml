@@ -1,0 +1,100 @@
+# Publish-gate review record (docs/PUBLISH_GATE.md). status: pending | passed | passed_with_open_items | grandfathered | failed
+subject: gulf-of-tonkin
+status: grandfathered
+checks:
+- check: 'conformance: no errors for this subject'
+  result: FAIL
+  detail: 'ERROR    publish-gate:gulf-of-tonkin: published subject has no review.yaml (docs/PUBLISH_GATE.md)'
+- check: headline present, 70-95 characters
+  result: pass
+  detail: 88 characters
+- check: headline claim is established/refuted at high confidence with a primary check, or status is draft
+  result: pass
+  detail: 'tonkin-aug4-attack-occurred: refuted, high, anchor_checked primary; headline_status draft'
+- check: headline_status is draft or review before the gate passes
+  result: pass
+  detail: draft
+- check: assessment present with question, answer, headline, text, basis, would_settle
+  result: pass
+  detail: ''
+- check: assessment has exactly three key_points
+  result: pass
+  detail: '3'
+- check: assessment states no percentage
+  result: pass
+  detail: ''
+- check: taxonomy entry (area and question types)
+  result: pass
+  detail: ''
+- check: every claim has statement_kind
+  result: pass
+  detail: ''
+- check: every searched gap names its next step
+  result: pass
+  detail: ''
+- check: sources manifest exists
+  result: pass
+  detail: ''
+- check: every source has an authenticity block
+  result: pass
+  detail: ''
+- check: log has entries
+  result: pass
+  detail: ''
+- check: timeline present (dates exist, so a timeline is required)
+  result: pass
+  detail: ''
+open_items:
+- 'conformance: no errors for this subject: ERROR    publish-gate:gulf-of-tonkin: published subject has no review.yaml (docs/PUBLISH_GATE.md)'
+- Established claims anchored below primary are shown on the page as limits (anchor_checked).
+needs_manual_check:
+- '2 established/refuted claims anchored below primary: tonkin-34a-raids-preceded, tonkin-mcnamara-aug4-call'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-maddox-warning-shots (match 0.42): "At about 1505G, the
+  Maddox fired three rounds to warn off the communis..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-34a-raids-preceded (match 0.49): "There''s no question
+  but what that had bearing on. And on Friday night,..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-aug4-attack-occurred (match 0.80): "we shot at two enemy
+  airplanes and at least one was damaged. We sacrif..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-sigint-selectively-presented (match 0.38): "SIGINT information
+  was presented in such a manner as to preclude respo..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-sigint-selectively-presented (match 0.79): "constituted
+  nearly 90 percent of all available SIGINT..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-sigint-selectively-presented (match 0.73): "a bit more
+  than 10 percent of the total available..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-midlevel-deliberate-skew (match 0.16): "The question why
+  the NSA personnel handled the product the way they di..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-midlevel-deliberate-skew (match 0.33): "The overwhelming
+  body of reports, if used, would have told the story t..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-midlevel-deliberate-skew (match 0.39): "what was issued
+  in the Gulf of Tonkin summaries beginning late on 4 Au..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-senior-doubts-documented (match 0.00): "eliminating double
+  counting and mistaken signals..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-bundy-welcomed-resolution (match 0.51): "welcomed the
+  recent events as justification for a resolution the Admin..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-bundy-welcomed-resolution (match 0.12): "Bundy, in reply,
+  jokingly told him perhaps the matter should not be th..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-mcnamara-aug4-call (match 0.07): "...the tracks are laid
+  down very clearly; they go through the three co..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-mcnamara-aug4-call (match 0.43): "be authorized to pursue
+  the attacking vessels in the event he is attac..."'
+- 'quote not matched in stored sources (OCR noise possible): tonkin-mcnamara-34a-testimony (match 0.45): "page 23 of the transcript
+  of hearings..."'
+- 'dates, names, patent or document numbers: verify each against the source'
+- every refuted claim names its target and rests on material or primary-text evidence (Rule 9)
+- no claim goes beyond what was read; anything not read is marked not read
+conformance_warnings: 2
+established_or_refuted_without_primary_check:
+- tonkin-34a-raids-preceded
+- tonkin-mcnamara-aug4-call
+quotes:
+  found_in_stored_sources: 6
+  not_found_in_stored_sources: 32
+  no_stored_source_to_check_against: 0
+reviewed_by: Claude (build session), partial review; no independent reviewer
+reviewed_on: '2026-10-02'
+notes: 'Published by the owner before the gate existed. Read directly during the build: Hanyok''s study, the Bundy staff-meeting
+  memo, the declassified intercept reports, the Congressional Record pages for 6-7 Aug 1964 and 24 Jun 1970 (checked on page
+  images), and the 1968 hearing text. Read only through secondary sources: the Prados essay and the LBJ tape transcriptions''
+  commentary, and Herrick''s message. Not read: FRUS, SNIE 50-2-64, the full floor debates (searched, not read in full). Quotes
+  from the Prados essay and tape transcriptions have no stored text here and were not re-checked in this review. Headline
+  status is draft.'

@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1897-01-12-lodygin-patent-575002
+rev: 1
+type: event
+label: '12 Jan 1897: Lodygin (of Pittsburgh), US patent 575,002 (metal filaments)'
+time: '1897-01-12T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: US 575,002, 'Illuminant for Incandescent Lamps', Alexander de Lodyguine, 'a citizen of Russia, residing in the city
+  of Pittsburg, in the county of Allegheny and State of Pennsylvania'; application filed 4 January 1893, dated 12 January
+  1897; filaments of refractory metals including molybdenum and tungsten.
+sources:
+- title: US Patent 575,002, A. de Lodyguine, Illuminant for Incandescent Lamps (dated 12 Jan 1897)
+  url: https://patents.google.com/patent/US575002A/en
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: us-patent-575002
+  source_type: official_record
+  access: read
+place:
+  name: Pittsburgh, Pennsylvania
+  lat: 40.4407
+  lon: -80.0026
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 188553
+  note: The patent gives Lodygin's residence as 'the city of Pittsburg, in the county of Allegheny and State of Pennsylvania'.
+manifest:
+  subject: incandescent-lamp
+  source: src-us575002
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (dates and place of lamp-lodygin-refractory-metals).
+    Date and place re-checked against the cited source.'
+date_basis: stated

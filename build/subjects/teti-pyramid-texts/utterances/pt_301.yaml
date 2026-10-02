@@ -1,0 +1,121 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch2/pt_301.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_301
+pt_number: 301
+display_name: "PT 301 — Antechamber East Wall Final Spell: Prelude to the Cannibal Hymn"
+sethe_phrase_range:
+  value: "§§ 457a–458d (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Unas pyramid, antechamber east wall (final spell before east gable)"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: "Pyramidtextsonline.com: Antechamber East Wall 277–301."
+      source: "Pyramidtextsonline.com antechamber east wall index."
+
+location:
+  chamber: antechamber
+  wall: east
+  column_direction: west_to_east
+  note: >
+    PT 301 is the final spell of the antechamber east wall — the last spell
+    before the east gable (which bears PT 273–274, the Cannibal Hymn, in Teti).
+    Allen (2005) describes the east wall as containing spells 'for control over
+    provisions and inimical forces and (in the pyramids of Teti, Pepi I, and
+    Merenre) the Morning Ritual.' PT 301 as the final east wall spell precedes
+    the east gable and the Cannibal Hymn — it is the last 'provision and control'
+    spell before the most theologically extreme utterance in the corpus.
+    Its function as prelude to PT 273–274 is architecturally significant.
+  physical_condition: searched_gap
+
+ritual_class:
+  classes:
+    - protective
+    - stellar_ascent
+  note: >
+    The antechamber east wall spells (PT 277–301) include spells for the spirit's
+    safe transition through the eastern portal of the Akhet (Allen 2005, p. 12).
+    PT 301 as the final east wall spell would be the last protective/transitional
+    spell before the Cannibal Hymn's extreme power-absorption imagery.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+
+translations:
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 301."
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 301."
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+
+lexical_anchors:
+  - term_transliteration: "Axt"
+    semantic_field: "Akhet — the eastern portal through which the spirit transitions"
+    notes: >
+      The east wall spells concern the spirit's passage through the eastern limit
+      of the Akhet. 'The last spell on the south wall addresses the gateway at the
+      eastern limit of the Akhet, and those on the east gable and most of the east
+      wall are meant to ensure the spirit's safe transition through this portal.'
+      (Allen 2005, p. 12). PT 301 as the east wall's final spell is the last
+      'safe passage' assurance before the east gable's Cannibal Hymn.
+    source: "Allen 2005, p. 12."
+
+divergence_points:
+  - id: east_wall_morning_ritual
+    claim: >
+      The antechamber east wall in Teti contains the Morning Ritual
+      (absent from Unas's corpus).
+    state: established
+    positions:
+      - scholar: "Allen, J.P. 2005"
+        reading: >
+          'The texts in the second group are somewhat different, consisting of
+          spells for control over provisions and inimical forces and (in the
+          pyramids of Teti, Pepi I, and Merenre) the Morning Ritual.'
+        source: "Allen 2005, p. 12."
+    note: >
+      This is one of Teti's documented innovations relative to Unas.
+      The Morning Ritual occupies part of the east wall in Teti but is absent
+      from Unas. PT 301's position as the final east wall spell before the
+      east gable places it after the Morning Ritual — making it a seal-spell
+      for the Teti-specific ritual addition. Which specific PT numbers constitute
+      the Morning Ritual in Teti requires Allen 2005 Teti section to confirm.
+
+transmission_events:
+  - event: "Unas pyramid, antechamber east wall (final spell)"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com."
+  - event: "Teti pyramid, antechamber east wall"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 architectural analysis."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 301 is included specifically for its position: the final spell before
+  the Cannibal Hymn. Understanding the transition from PT 301 to PT 273–274
+  is essential for reading the Cannibal Hymn in context — what theological
+  preparation does PT 301 provide? Is it a summative protection spell?
+  A provision seal? The east gable turn is the most dramatic in the
+  antechamber sequence. PT 301's content would illuminate the dramatic logic.

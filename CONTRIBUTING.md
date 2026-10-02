@@ -47,6 +47,7 @@ The same rules are on the site at [ev-aan.github.io/stratah/method/](https://ev-
 
 - **Our own computed results are `synthetic`.** A model's or a script's output is never an anchor by itself. Only a match to something independent counts.
 - **Fix a lazy citation by re-anchoring it to the primary source**, not by downgrading a claim that is well supported.
+- **Use the one anchor format** (SCHEMA N25): a single `anchor:` mapping with `type`, `description`, and `sources` naming ids in the subject's MANIFEST. Not `anchors:` lists, not `ref:`. Every agent submitting work must follow it; conformance rejects anything else.
 - **An absence anchor is capped at provisional.** "We found no record of X" is weaker than a positive observation.
 
 ---
@@ -59,22 +60,22 @@ The same rules are on the site at [ev-aan.github.io/stratah/method/](https://ev-
 
 ---
 
-## 4. Running a test or a bounty
+## 4. Running a test or an open question
 
-Learned the hard way on bounties B-001 and B-002. Every step is required.
+Learned the hard way on open questions Q-001 and Q-002 (formerly bounties B-001 and B-002). Every step is required.
 
 **Before any data is collected**
 
 1. **Check feasibility first.** Is there an oracle, something independent that could confirm an answer? Are the sources open? Is there enough text or data for the method? Log what you find, including dead ends.
 2. **Write the test down first.** Record the question, the method, the corpora, the controls and what each possible result would and would not show. Do this in the log, before you run anything.
-3. **Set decision thresholds from calibration, not by guessing.** In B-001 a guessed bar of 3× could never be met even by Mary's own letters. Run the method on texts of known authorship first, then set the bar from that.
+3. **Set decision thresholds from calibration, not by guessing.** In Q-001 a guessed bar of 3× could never be met even by Mary's own letters. Run the method on texts of known authorship first, then set the bar from that.
 
 **Controls (no result counts without them)**
 
-4. **Positive control.** The method must find a known answer it was not pointed at, for example the Pamela prayer in Sidney's *Arcadia* (B-002).
+4. **Positive control.** The method must find a known answer it was not pointed at, for example the Pamela prayer in Sidney's *Arcadia* (Q-002).
 5. **Held-out calibration.** Test the method on known material it was not built from. Leave out the whole source work, not just the passage.
-6. **Genre control.** Check whether the method is detecting the author or just the type of writing. In B-002, the Queen's letters scored as "Charles" until this was fixed.
-7. **Attractor control.** Check whether a large or varied comparison corpus pulls in everything. In B-002, 17 of 31 passages by unrelated clergy came out nearest Gauden.
+6. **Genre control.** Check whether the method is detecting the author or just the type of writing. In Q-002, the Queen's letters scored as "Charles" until this was fixed.
+7. **Attractor control.** Check whether a large or varied comparison corpus pulls in everything. In Q-002, 17 of 31 passages by unrelated clergy came out nearest Gauden.
 8. **Report distances and ranges, not "nearest wins".** Ask whether the questioned text sits inside the candidate's own range, compared with other writers' ranges.
 
 **Sources**
@@ -94,7 +95,7 @@ Learned the hard way on bounties B-001 and B-002. Every step is required.
 
 ## 5. Page and record conventions
 
-Every dig or bounty page carries:
+Every excavation or open question page carries:
 
 - **IDs that are never reused or renumbered:**
   - claims (C-01…)
@@ -116,19 +117,26 @@ Every dig or bounty page carries:
 
 ## 6. How to contribute
 
-1. **Fork the repository** and make your changes on a branch.
-2. **Open a pull request** and fill in the checklist. A maintainer reviews and merges it.
-3. **To challenge a finding,** open an issue with the "Challenge a finding" form. Name the ID (for example `C-03` or `F7`) and the source that anchors your challenge. Challenges without an anchor are not logged. With one, they are logged whether accepted or not.
-4. **To propose a new bounty,** open an issue. Name:
+1. **Fork the repository** and make your changes on a branch. Nothing is pushed to `main` directly.
+2. **Open a pull request** and fill in the checklist. CI runs the validator, then an independent review
+   agent checks the judgment rules (anchors actually say what claims say, honest weights, no borrowed
+   weight, plain surface lines) and merges only if it approves. Changes to the rules themselves are
+   escalated to the owner. The full process is in [`docs/REVIEW.md`](docs/REVIEW.md).
+3. **To challenge a finding or add evidence,** press "Challenge or add evidence" on the claim, or open an issue with the "Challenge a finding or submit evidence" form. A challenge must name one claim and give a source we can check; counts, reactions and repeats carry no weight. Admitted challenges are logged in the excavation's challenges ledger whichever way they come out, and declined ones are listed with the reason. The rules are in [`docs/CHALLENGES.md`](docs/CHALLENGES.md).
+4. **To propose a new open question,** open an issue. Name:
    - the question
    - the oracle
    - whether the sources are open
    - the conspiracy or popular claim it touches, if any.
 
-The public marks dig sites; contributors do the excavation.
+The public marks dig sites; contributors do the excavation. The owner has the final say on everything; see [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md) for where contributions come in and who decides.
 
 ## Licences
 
 - Code: MIT (`LICENSE`).
 - Written content: CC BY 4.0 (`LICENSE-CONTENT.md`).
 - Historical sources: public domain.
+
+## Challenges and submitted evidence
+
+A challenge is a submission of evidence that must pass an admission test; counts, reactions and repeats carry no weight. See docs/CHALLENGES.md. Use the "Challenge or add evidence" button on a claim, which opens the structured issue form.

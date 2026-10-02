@@ -81,3 +81,13 @@ the build does not publish on the strength of "it probably still works"
 conformance + tests (evidential weight). If you ever find yourself tempted
 to add `continue-on-error: true` to the validate job to "just get it live,"
 that's the disease asking for a costume. Don't.
+
+## Protect `main` (owner, one time)
+
+The review gate in `docs/REVIEW.md` only holds if `main` refuses direct pushes. In GitHub:
+Settings → Branches → Add branch ruleset (or "Add rule") for `main`:
+
+- Require a pull request before merging (1 approval is not needed; the review agent posts its verdict as a review)
+- Require status checks to pass: `conformance`
+- Block force pushes
+- Do not allow bypassing the above settings, so the rule applies to admins and agents too

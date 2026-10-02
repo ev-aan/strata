@@ -1,0 +1,30 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: vote-RH0910262
+rev: 2
+type: event
+label: '1970-06-08: House HRES976 To adopt a committee amendment regarding the size of the com'
+time: '1970-06-08T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'To adopt a committee amendment regarding the size of the committee of the house authorized by h.res. 976 to study firsthand
+  the recent devel Result: n/a; yea 227, nay 95. Roll call 262.'
+sources:
+- title: Voteview roll-call data (secondary index; official record is the anchor from 1990, the Congressional Record before)
+  url: https://voteview.com
+  authenticity: dataset; counts spot-checked for 2009-2026 against official XML, not for these years
+  origin: voteview
+  source_type: dataset
+  derives_from: us-congress-official-record
+  access: read
+link: https://voteview.com/rollcall/RH0910262
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from votes-johnson-tonkin roll-call event v39 (Voteview).
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

@@ -1,0 +1,43 @@
+# Challenges ledger. Append-only. result: answered | partly_answered | open | finding_changed
+subject: mcafee-and-surfside
+challenges:
+  - id: ch-01
+    logged: 2026-10-02
+    challenge: "McAfee hid files in the building and it was destroyed on purpose."
+    raised_by: "Social media posts, June 2021; no single source"
+    touches: [surfside-deliberate-timed-to-mcafee, mcafee-owned-unit, mcafee-31tb-2019-tweet]
+    test: "Set the claim against NIST's account of when and how the collapse began."
+    result: answered
+    answer: "Refuted at high confidence. NIST's account puts the start of failure in early June 2021, before McAfee died, with causes in the original design and construction. The link depends on a fabricated tweet and a unit McAfee did not own."
+  - id: ch-02
+    logged: 2026-10-02
+    challenge: "McAfee tweeted on 8 June 2021 that the 31TB of files were stored in a Miami building."
+    raised_by: "Screenshot circulated June 2021"
+    touches: [mcafee-june8-tweet-posted, mcafee-31tb-2019-tweet]
+    test: "Check whether the post exists, and what McAfee actually said about 31TB."
+    result: partly_answered
+    answer: "Refuted at moderate confidence. The real 31TB statement is from 9 June 2019 and names no place. A check against an archived copy of his account is still to be done by someone with a browser."
+  - id: ch-03
+    logged: 2026-10-02
+    challenge: "McAfee, his wife or a son owned a unit in the building."
+    raised_by: "Social media posts"
+    touches: [mcafee-owned-unit]
+    test: "Check ownership records and the claimed son's statement."
+    result: partly_answered
+    answer: "Refuted at moderate confidence: the named person says he owns no condo in Florida, and no record of such a son was found. A search of the Miami-Dade property records is still to be done."
+  - id: ch-04
+    logged: 2026-10-02
+    challenge: "The collapse came one day after his death, so it cannot be a coincidence."
+    raised_by: "Common argument"
+    touches: [mcafee-surfside-dates-coincide, surfside-failure-began-before-mcafee-death]
+    test: "Compare the dates with when the failure began."
+    result: answered
+    answer: "The dates are real (23 and 24 June). Their closeness carries no evidential weight, because the failure began earlier in June."
+  - id: ch-05
+    logged: 2026-10-02
+    challenge: "He did not kill himself."
+    raised_by: "His widow and lawyer, as reported; recorded as doubt"
+    touches: [mcafee-spanish-finding-suicide, mcafee-cause-independent-review]
+    test: "Look for forensic or judicial findings and for any independent review."
+    result: open
+    answer: "The only forensic and judicial findings read say suicide. No independent review of the cause of death was found, and no evidence of homicide was located in what was read. The court ruling itself has not been read in the original."

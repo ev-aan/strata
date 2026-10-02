@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1879-11-04-edison-files-patent-223898
+rev: 1
+type: event
+label: '4 Nov 1879: Edison applies for the patent that issues as 223,898'
+time: '1879-11-04T12:00:00Z'
+precision: day
+kind: official
+status: reported
+what: '40 F. 21 (Bradley J.): Edison''s patent ''applied for November 4, 1879, and issued January 27, 1880'' (the opinion''s
+  number is printed 228,898 in the scan, a misprint). The patent, in the scan read, is signed ''this 1st day of November,
+  A.D. 1879'', and the Edison Papers'' note says Edison ''executed'' the application on 1 November. The application file was
+  not read.'
+sources:
+- title: Consolidated Electric Light Co. v. McKeesport Light Co., 40 F. 21 (C.C.W.D. Pa., 5 Oct 1889), Bradley J.
+  url: https://static.case.law/f/40/cases/0021-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-40-f-21
+  source_type: official_record
+  access: read
+- title: US Patent 223,898, T. A. Edison, Electric-Lamp (granted 27 Jan 1880)
+  url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0223898
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-patent-223898
+  source_type: official_record
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-40f21
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b4; the earlier cite to 52 F. 300 is dropped:
+    the quoted words were not found in the text of that opinion read in the revision of 2026-10-02. Date and place re-checked
+    against the cited source.'
+date_basis: stated

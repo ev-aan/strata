@@ -1,0 +1,35 @@
+name: Start a dig step
+description: Start work on an open question or a next step in a dig. For trusted contributors, this sends the step to the Claude dig agent.
+title: "Dig step: "
+labels: ["dig:start"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This starts work on one open step of a dig. When a trusted contributor (anyone with write access to this repository) opens it, the Claude dig agent researches the step and opens a **draft pull request** with its proposed YAML changes. Nothing is published until a maintainer reviews and merges it.
+
+        Opened from a "Start this step" link on stratah.org, the fields below are already filled in.
+  - type: input
+    id: subject
+    attributes:
+      label: Subject
+      description: The dig's folder name under build/subjects/ (for example gulf-of-tonkin).
+    validations:
+      required: true
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID
+      description: The claim this step belongs to. Leave blank for a new line of inquiry within the subject.
+  - type: textarea
+    id: next_step
+    attributes:
+      label: The step
+      description: What has to be done. Usually the claim's `next_step`.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for the agent (optional)
+      description: Sources to read first, limits, or anything else to know.

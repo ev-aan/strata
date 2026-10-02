@@ -1,0 +1,40 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1882-09-04-pearl-street-district-service-begins
+rev: 1
+type: event
+label: '4 Sep 1882: Edison Electric Illuminating Company turns on light in the first Pearl Street district'
+time: '1882-09-04T12:00:00Z'
+precision: day
+kind: media
+status: single
+what: 'New-York Tribune, 5 Sep 1882, p. 8: ''The company at 3 p.m. turned on the electric light in part of the first of the
+  districts in which this kind of illumination is to be distributed from a common centre''; the ''central station ... is at
+  ... Pearl-st., just below Fulton-st.''; the report is of ''yesterday'' (Monday 4 Sep). Johnson is quoted as saying ''about
+  one-third of the district'' was lit. The company''s own records were not read.'
+sources:
+- title: 'New-York Tribune, 5 Sep 1882, p. 8: ''Electricity instead of gas'''
+  url: https://www.loc.gov/resource/sn83030214/1882-09-05/ed-1/?sp=8
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: ny-tribune-1882-09-05
+  source_type: news
+  access: read
+place:
+  name: Pearl Street at Fulton Street, Manhattan, New York
+  lat: 40.7078
+  lon: -74.0035
+  precision: site
+  uncertainty_km: 0.15
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM node 5888008463 (bus stop at the Pearl and Fulton Street crossing)
+  note: The Tribune says the central station is on 'Pearl-st., just below Fulton-st.'. The crossing is a proxy of about 100
+    m; the street number printed in the OCR text is not used.
+manifest:
+  subject: incandescent-lamp
+  source: src-tribune-1882-09-05
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline events a12 and b11 (one event). Date and place re-checked
+    against the cited source.'
+date_basis: stated

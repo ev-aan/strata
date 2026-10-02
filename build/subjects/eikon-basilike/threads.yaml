@@ -1,0 +1,12 @@
+subject: eikon-basilike
+threads:
+  - id: thread-prayer-was-planted
+    type: reception-overlay
+    title: "'Parliament's propagandists planted a plagiarised prayer in the King's Book to discredit it'"
+    confers_weight: false
+    description: "A claim told about the prayer that Milton attacked."
+    overlay_notes:
+      - "Documented: the prayer matches Sidney's Arcadia and Milton used that to attack the book (claims eikon-milton-pamela-charge, eikon-pamela-prayer-is-sidneys)."
+      - "Unproven: that someone on Milton's side arranged for the prayer to be inserted (claim eikon-pamela-prayer-planted). A real borrowing that was used against the King does not show who put it there; that needs evidence about the printing itself (which editions carry the prayer, and when)."
+      - "Separate from authorship: the text tested here has no prayers at all (claim eikon-tested-text-has-no-pamela-prayer)."
+    firewall: "Mechanically barred (confers_weight: false) from lending evidential weight to any claim."

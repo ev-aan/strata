@@ -1,0 +1,50 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1845-11-04-king-starr-patent-10919
+rev: 1
+type: event
+label: '4 Nov 1845: King (a communication), British patent No. 10,919'
+time: '1845-11-04T12:00:00Z'
+precision: day
+kind: document
+status: single
+what: 'Abridgment of British patent 10,919 (A.D. 1845, November 4), Edward Augustin King, ''a communication'': ''The application
+  of continuous metallic and carbon conductors, intensely heated by the passage of a current of electricity, to the purposes
+  of illumination.'' A current is passed through thin platinum foil under a glass shade; where carbon is used it is to be
+  enclosed in a ''Torricellian'' vacuum (the abridgment''s scan is damaged at that phrase; 40 F. 21 quotes the specification:
+  ''When carbon is used, it becomes necessary ... to exclude from it air and moisture ... it should be inclosed in a Torricellian
+  vacuum''). The abridgment does not name Starr; Judge Colt (54 F. 678, 1893) says ''Starr suggested in the King patent a
+  lamp composed of a thin pencil of carbon, inclosed in a Torricellian vacuum''. The full specification was not read.'
+sources:
+- title: GB Patent Office, Abridgments of Specifications relating to Electricity and Magnetism (1859), pp. 97-98 (No. 10,919,
+    King)
+  url: https://archive.org/details/patentsforinvent1766grea
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: gb-abridgments-1859
+  derives_from: gb-patent-10919-1845
+  source_type: official_record
+  access: read
+- title: Consolidated Electric Light Co. v. McKeesport Light Co., 40 F. 21 (C.C.W.D. Pa., 5 Oct 1889), Bradley J. (quotes
+    the King specification)
+  url: https://static.case.law/f/40/cases/0021-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-40-f-21
+  derives_from: gb-patent-10919-1845
+  source_type: official_record
+  access: read
+- title: Edison Electric Light Co. v. Beacon Vacuum Pump & Electrical Co., 54 F. 678 (C.C.D. Mass., 18 Feb 1893), Colt J.
+  url: https://static.case.law/f/54/cases/0678-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-54-f-678
+  derives_from: gb-patent-10919-1845
+  source_type: official_record
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-abridgments-1859
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a3. Date and place re-checked against the cited
+    source.'
+date_basis: stated

@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1882-01-17-latimer-patent-252386
+rev: 1
+type: event
+label: '17 Jan 1882: Latimer, US patent 252,386 ''Process of Manufacturing Carbons'''
+time: '1882-01-17T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: US 252,386, Lewis H. Latimer 'of New York, N. Y., assignor to the United States Electric Lighting Company, of same place';
+  application filed 19 February 1881, dated 17 January 1882; blanks are carbonised inside envelopes so that they do not stick,
+  break or warp. The patent does not describe the company or its relation to Edison.
+sources:
+- title: US Patent 252,386, L. H. Latimer, Process of Manufacturing Carbons (dated 17 Jan 1882)
+  url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0252386
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-patent-252386
+  source_type: official_record
+  access: read
+place:
+  name: New York City
+  lat: 40.7127
+  lon: -74.006
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 175905
+  note: The source gives the person's residence or the firm as 'of New York, N. Y.' without a street.
+manifest:
+  subject: incandescent-lamp
+  source: src-us252386
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b9. Date and place re-checked against the cited
+    source.'
+date_basis: stated

@@ -1,0 +1,70 @@
+name: Challenge a finding or submit evidence
+description: Dispute a claim, or add evidence to it. Needs a specific claim and a source that can be checked. Disagreement alone is not enough.
+title: "Challenge: "
+labels: ["challenge"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Read this first.** A challenge is a submission of evidence, not a vote. Counts of challenges, reactions, comments and repeats carry **no weight**. Disagreement, popularity and authority are not evidence.
+        To be admitted for review a challenge must (S1) name one claim and quote the statement you dispute, (S2) give at least one source we do not already cite, or a different reading of one we do, with a page or locator, (S3) say how we can check it, (S4) say how it bears on the claim, and (S5) rest on evidence, not opinion. Admitted challenges go through the same process as any finding, and the outcome is logged in public whichever way it goes. Full rules: [docs/CHALLENGES.md](https://github.com/ev-aan/stratah/blob/main/docs/CHALLENGES.md).
+  - type: input
+    id: excavation
+    attributes:
+      label: Excavation
+      description: The page's folder name (filled in when you come from a button on the page).
+    validations:
+      required: true
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID
+      description: One claim per challenge (for example tonkin-aug4-attack-occurred). Use `assessment` to challenge the "Where it stands" summary.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of challenge is this?
+      options:
+        - The statement is false
+        - A source is misread or misquoted
+        - A source is not authentic
+        - New evidence the claim does not account for
+        - The confidence is overstated or understated
+        - The claim is too broad or too narrow
+        - I am adding supporting data
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: The statement you dispute
+      description: Quote the exact words from the page, then say in one or two sentences what is wrong.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Your evidence
+      description: "For each source: full citation, a link or how to obtain it, the exact passage or page, and how you got it (so we can test its authenticity). A source we already cite only counts if you show a different reading of it."
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: How it changes the claim
+      description: What should the claim say instead, or what confidence, and why does your evidence support that? What result would settle it?
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you submit
+      options:
+        - label: I read the page and the claim's evidence, and the source is not one the page already cites (or I show a different reading of it).
+          required: true
+        - label: I understand that disagreement, popularity, repetition and authority are not evidence, and that more challenges do not change the outcome.
+          required: true
+        - label: The evidence is public, or I have the right to share it.
+          required: true

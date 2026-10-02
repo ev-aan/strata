@@ -1,0 +1,35 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: object-casket-french-copies-letters-3-to-6
+rev: 2
+type: object
+label: French copies of Casket Letters 3 to 6
+time: '1889-01-01T00:00:00Z'
+precision: year
+kind: analysis
+status: single
+what: 'Henderson (1889): French copies of Letters 3 and 5 are in the Record Office and of Letters 4 and 6 at Hatfield. Copies
+  of Letters 7 and 8 exist only in Scots or Latin forms (see claim casket-four-french-copies-survive).'
+object:
+  class: manuscript copies
+  held_now:
+    status: not established
+    as_of: '1889'
+    note: 1889 is the latest source read. Where the copies are held now has not been checked in the holdings of The National
+      Archives or Hatfield House.
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created as the object that the 1889 location events point to. Present location is a stated gap.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated
