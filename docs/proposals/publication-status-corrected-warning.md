@@ -19,26 +19,26 @@ They are cited at eight sites in that dig:
 Three of those claims (`va-mmr-no-detectable-increase`, the headline claim, and the thimerosal and aluminum claims) are in the dig's assessment `basis`, so a reader who relies on the answer is relying on these papers.
 
 ### Why a correction matters to a reader
-I opened the JAMA correction for Jain et al. (https://jamanetwork.com/journals/jama/article-abstract/2480998, abstract page only; the full text was not read). It is titled "Correction of Description of MMR Vaccine Receipt Coding and Minor Errors in MMR Vaccine and Autism Study" (JAMA 2016;315(2):202-204), and its abstract says the authors found "an incorrect description of when the measles-mumps-rubella (MMR) vaccine was received", and that correcting this and other minor errors "did not have a material effect on the findings". So in this case the correction concerns how exposure was defined and described, which is exactly what a reader needs to know to interpret an exposure-based comparison, and the authors themselves say the conclusion stands. Both facts are the reader's to weigh. A validator that says nothing hides both. I have no opened source on what the Verstraeten or Andersson corrections changed; the dig's manifest says "Not read" for them, which is itself the failure: the dig cites a paper whose correction nobody in the dig opened, and nothing flags it.
+The Jain correction exists and is a real published item: "Correction of Description of MMR Vaccine Receipt Coding and Minor Errors in MMR Vaccine and Autism Study", JAMA 2016 Jan;315(2):202-204 (PMID 26757474, doi 10.1001/jama.2015.17065; the dig's manifest cites page 204 only). Its title says what it corrects: the description of how MMR receipt was coded, which is how exposure is defined, and "minor errors". I read the correction's abstract on one page only (https://jamanetwork.com/journals/jama/article-abstract/2480998, through a fetch tool that summarises the page; jamanetwork.com returned 403 to the independent assessor and PubMed carries no abstract), so the following is a summary of the abstract, not a primary read of the correction: it says the correction did "not have a material effect on the findings" and that the conclusion stands. I did not open the full text. What a reader weighs is the authors' own statement plus the exposure-coding detail; a validator that says nothing hides both. I have no opened source on what the Verstraeten or Andersson corrections changed; the dig's manifest says "Not read" for them, which is itself the failure: the dig cites a paper whose correction nobody in the dig opened, and nothing flags it.
 
 ### Why exemption can hide it
 A correction can range from a typo in an affiliation to a changed table. The exemption in `build/SCHEMA.md` is right that the validator cannot tell which. It then draws the wrong conclusion: because it cannot judge weight, it makes no request at all. The citing item is silent whether or not the author ever looked, and a `flagged_sources` entry on a corrected source is optional and nothing prompts it. The author's own flag is the only place the page can show the correction beside the claim (`pubstatus.claim_notice_html`, label "Corrected source"), so exempting the status means the notice appears only if the author thought of it unprompted.
 
 ## 2. Evidence
 
-All run in scratch worktrees of `origin/main` (91f6218), with the dig's subject folder copied into `build/subjects/` to overlay it (the dig branch is behind main and lacks PS rules itself; its folder is validated with main's validator). Outputs are shown, not described.
+All run in scratch worktrees of `origin/main` (91f6218), with the dig's subject folder at 9a90bf0 and the dig's one-line `build/taxonomy.yaml` entry copied in to overlay it (the dig branch is behind main and lacks PS rules itself; its folder is validated with main's validator). The baseline is 104 warnings with the taxonomy entry; without it 105, because the missing entry is itself a warning (`taxonomy: vaccines-autism has no entry`). The first draft of this proposal said 105 to 113, which left the entry out; the delta of 8 is the same either way. Outputs are shown, not described.
 
 Today's validator on the overlay, corrected sources cited, no `flagged_sources`:
 ```
 $ python3 build/conformance.py | grep -c PS3
 0
-16 subjects and 107 shared nodes checked: 0 errors, 105 warnings
+16 subjects and 107 shared nodes checked: 0 errors, 104 warnings
 ```
-The same, after adding `flagged_sources` to the five claims and two events (and `source_notices` entries):
+The same, after adding `flagged_sources` to the five claims and two events (and `source_notices` entries appended):
 ```
 $ python3 build/conformance.py | grep -c PS3
 0
-16 subjects and 107 shared nodes checked: 0 errors, 105 warnings
+16 subjects and 107 shared nodes checked: 0 errors, 104 warnings
 ```
 Identical. Flagging or not flagging gives the same output today, which is the failure: the validator cannot distinguish a dig that saw the correction from one that did not.
 
@@ -56,12 +56,12 @@ Listing the source in `flagged_sources` on the citing item (or an enclosing item
 ```
 ERROR    vaccines-autism:None: PS3: `flagged_sources` must be on the claim itself, not inside it (the page reads only the claim's own list)
 ```
-so without a way out this warning could not be cleared at all. The patch therefore lets a `source_notices` entry for the source clear a `corrected` citation that is in `claims.yaml` outside any claim (the notice is shown first on the page, so the reader does see it). I made this narrow on purpose: it applies to `corrected` only. The identical unclearable site for a retracted or withdrawn source is an existing defect that I did not change; it should be raised separately (no dig on `main` hits it, because no dig has a `publication` block).
+so without a way out this warning could not be cleared at all. The patch therefore lets a `source_notices` entry for the source clear a `corrected` citation that is in `claims.yaml` outside any item with an `id` (the notice is shown first on the page, so the reader does see it). The exact condition is `item is None and fn == "claims.yaml"`. That is wider than "summary figure": it also covers an id-less claim and any top-level `claims.yaml` block such as `assessment` (assessor's observation, accepted: an id-less claim is reported by other rules, and the notice is a visible acknowledgement either way); the SCHEMA text in 3.3 says so. For these sites the warning does not tell the author to use `flagged_sources` (which errors there); it names the place and points to `source_notices`: `vaccines-autism:claims.yaml (outside any claim): PS3: cites <id>, which is corrected, outside any claim (for example in short_answer.summary_figures); add a source_notices entry for it, since flagged_sources is not read there; a warning, not an error`. In another file an item-less citation (for example a top-level `sources:` in `timeline.yaml`) gets the ordinary message and cannot be cleared; no dig on `main` has one (checked: item-less sites occur only in the dig's `claims.yaml`), and a synthetic test shows it. It applies to `corrected` only. The identical unclearable site for a retracted or withdrawn source is an existing defect that I did not change; it should be raised separately (no dig on `main` hits it, because no dig has a `publication` block).
 
 ### 3.3 Text added to `build/SCHEMA.md`
 ```diff
 diff --git a/build/SCHEMA.md b/build/SCHEMA.md
-index 9b9339c..e51a91c 100644
+index 9b9339c..53ffa37 100644
 --- a/build/SCHEMA.md
 +++ b/build/SCHEMA.md
 @@ -291,7 +291,7 @@ top (`source_notices`) and as a notice on each claim that lists the source in it
@@ -73,7 +73,7 @@ index 9b9339c..e51a91c 100644
  acknowledgement beside them.
  
  ### What silence means
-@@ -310,11 +310,13 @@ publication:
+@@ -310,12 +310,14 @@ publication:
    notice: <url or citation> # the notice itself (required for the same three)
    reason: >                 # optional: the notice's own stated reason, in plain words
  ```
@@ -82,17 +82,19 @@ index 9b9339c..e51a91c 100644
 -cites an erratum-bearing paper is not wrong to do so. They are shown on the page when recorded, and
 -an author may list one in `flagged_sources` to show a notice beside a claim. `date`/`notice` are
 -recommended for them. A paper whose earlier version was retracted and later republished is recorded
+-as `published` with the history in `reason`.
 +`corrected` and `unpublished` are **deliberately exempt** from `date` and `notice` (recommended for
 +them), and `unpublished` from PS3: whether a correction changes what a source can support is a
 +judgment, not a mechanical fact, and a dig that cites an erratum-bearing paper is not wrong to do
 +so. For that reason a cited `corrected` source is a **warning** under PS3, never an error: the
 +validator cannot tell an erratum to an affiliation from one to a table, so it asks the author to
 +show that the correction was seen (`flagged_sources`) and leaves the judgment to the author and the
-+reviewer. Both are shown on the page when recorded. A paper whose earlier version was retracted and later republished is recorded
- as `published` with the history in `reason`.
++reviewer. Both are shown on the page when recorded. A paper whose earlier version was retracted
++and later republished is recorded as `published` with the history in `reason`.
  
  ### In `claims.yaml`
-@@ -330,11 +332,16 @@ as `published` with the history in `reason`.
+ - `source_notices:` (top level) lists every retracted or withdrawn source, and may list others:
+@@ -330,11 +332,20 @@ as `published` with the history in `reason`.
  - **PS1** `publication.status` is one of the six values.
  - **PS2** `expression_of_concern`, `withdrawn` and `retracted` need `date` and `notice`.
  - **PS3** A retracted or withdrawn source may be cited only by an item that lists it in
@@ -103,14 +105,18 @@ index 9b9339c..e51a91c 100644
  - **PS4** Every retracted or withdrawn source has an entry in `source_notices` (error); every
    `source_notices` entry names a source with a recorded status and carries a `notice` (error).
  
-+A corrected source cited outside any claim in `claims.yaml` (for example a summary figure in
-+`short_answer`, which has no `flagged_sources` of its own that the page reads) is acknowledged by a
-+`source_notices` entry for it. The same site for a retracted or withdrawn source is unchanged.
++A corrected source cited in `claims.yaml` outside any item that has an `id` (for example a summary
++figure in `short_answer.summary_figures`, where a `flagged_sources` is an error because the page
++reads only a claim's own list) is acknowledged by a `source_notices` entry for it; this covers every
++such citation in `claims.yaml`, including an id-less claim. The same site for a retracted or
++withdrawn source is unchanged. A corrected source cited outside any item with an `id` in another file
++(for example a top-level `sources:` in `timeline.yaml`) has no way to clear the warning; no dig on
++`main` has one.
 +
  ### Scope of PS3, exactly
  PS3 looks for a manifest source id as a string anywhere in every `*.yaml` file directly in the
  subject folder (`claims.yaml`, `timeline.yaml`, `tests.yaml`, `transmission.yaml`, `actors.yaml`,
-@@ -367,4 +374,6 @@ control and the log. To have it appear on the public corrections page, put the w
+@@ -367,4 +378,6 @@ control and the log. To have it appear on the public corrections page, put the w
  CORRECTION in the log entry (`build_site.py` picks entries by that word); if the change alters a
  finding, follow the gate's revision loop (new log entry, revision round, independent check,
  visible correction). The validator does not enforce this paragraph. Recording a retraction turns the validator red until the claims carry
@@ -123,7 +129,7 @@ index 9b9339c..e51a91c 100644
 ### 3.4 Validator change, `build/conformance.py` (not applied)
 ```diff
 diff --git a/build/conformance.py b/build/conformance.py
-index 8e0c5d7..74152ad 100644
+index 8e0c5d7..4637096 100644
 --- a/build/conformance.py
 +++ b/build/conformance.py
 @@ -295,6 +295,8 @@ def check_publication(r, subject, sdir, claims, d, nodes_dir=None):
@@ -144,7 +150,7 @@ index 8e0c5d7..74152ad 100644
      seen = set()
      for sid, fn, item, acked, names in hits:
          if (sid, fn, item, acked) in seen:
-@@ -317,9 +321,13 @@ def check_publication(r, subject, sdir, claims, d, nodes_dir=None):
+@@ -317,10 +321,19 @@ def check_publication(r, subject, sdir, claims, d, nodes_dir=None):
                                         "(the page reads only the claim's own list)")
              continue
          st = flagged.get(sid)
@@ -156,18 +162,24 @@ index 8e0c5d7..74152ad 100644
 +            if st == "corrected":
 +                msg += "; a correction may or may not affect what it supports, so a warning, not an error"
              where = f"{subject}:{item}" if fn == "claims.yaml" else f"{subject}:{fn}:{item}"
++            if st == "corrected" and item is None and fn == "claims.yaml":
++                where = f"{subject}:claims.yaml (outside any claim)"
++                msg = (f"PS3: cites `{sid}`, which is corrected, outside any claim (for example in "
++                       "`short_answer.summary_figures`); add a `source_notices` entry for it, since "
++                       "`flagged_sources` is not read there; a warning, not an error")
              (r.err if st in ("retracted", "withdrawn") else r.warn)(where, msg)
      for fn, item, ids in ack_lists:
+         for sid in ids:
 ```
 The warning goes through the existing `r.warn` path in `check_publication`, so it appears in `build/conformance.py` output and in the `conformance_warnings` count that `build/tools/review_dig.py` gives a reviewer. The new warning text is: `PS3: cites <id>, which is corrected; list it in flagged_sources on that item (claim, event, test, statement) to show the status was seen; a correction may or may not affect what it supports, so a warning, not an error`.
 
 ### 3.5 Tests, `build/tools/test_publication_status.py`
 ```diff
 diff --git a/build/tools/test_publication_status.py b/build/tools/test_publication_status.py
-index 7ebf09c..eab622e 100644
+index 7ebf09c..ada8b2b 100644
 --- a/build/tools/test_publication_status.py
 +++ b/build/tools/test_publication_status.py
-@@ -105,11 +105,64 @@ class Rules(unittest.TestCase):
+@@ -105,11 +105,66 @@ class Rules(unittest.TestCase):
          self.assertEqual(r.errors, [])
          self.assertEqual(len(r.warnings), 1)
  
@@ -214,6 +226,8 @@ index 7ebf09c..eab622e 100644
 +        pub = {"status": "corrected"}
 +        r = run(make({"claims.yaml": doc}, [src(pub)]))
 +        self.assertEqual((r.errors, len(r.warnings)), ([], 1))
++        self.assertIn("source_notices", r.warnings[0])
++        self.assertNotIn("list it in", r.warnings[0])
 +        r = run(make({"claims.yaml": dict(doc, source_notices=NOTICE)}, [src(pub)]))
 +        self.assertEqual((r.errors, r.warnings), ([], []))
 +        # the same site for a retracted source stays an error (not changed by this proposal)
@@ -241,7 +255,8 @@ Results (run, not asserted): on `main` 21 tests pass; with the patch 27 pass; wi
 - Errors for `retracted` and `withdrawn` (PS3 error, PS4, PS2) are unchanged, as are the expression of concern warning and the `unpublished` exemption. A corrected source still needs no `date` or `notice`.
 - No existing finding, claim state, anchor, confidence or log is altered. No dig content changes. A dig with no `publication` block gets no new output (section 5).
 - Published pages: unchanged. `build_site.py` and `pubstatus.py` are not touched. Validator warnings are not published anywhere: they appear in the validator output and in the reviewer's `conformance_warnings` count, and nowhere on a page. A page shows a correction only if the author lists `flagged_sources` (notice beside a claim) or `source_notices` (list at the top), as today.
-- The warning does not block merge or publication: `conformance.py` exits clean with warnings (shown above: "0 errors, 113 warnings" is a pass), and `docs/PUBLISH_GATE.md` makes only a failing validator (errors) stop deployment; it does not mention warnings. The reviewer sees the count.
+- The warning does not block merge or publication: `conformance.py` exits clean with warnings (shown above: "0 errors, 112 warnings" is a pass; exit status 0), and `docs/PUBLISH_GATE.md` makes only a failing validator (errors) stop deployment; it does not mention warnings. The reviewer sees the count.
+- Flagging prints the manifest `reason` publicly beside the claim (`pubstatus.claim_notice_html`). SCHEMA says `reason` is the notice's own stated reason in plain words. An author who flags to clear a warning must first make `reason` say that, not a to-do: the dig's three reasons today are "Not read; check before quoting figures." (Jain), "Not read." (Verstraeten) and "Not read. A 2026 reanalysis says the updated supplement shows autism associations." (Andersson), which are internal notes and would be printed to readers as they stand. This is a cost of the change for any dig that records `corrected` without having read the notice.
 - It does not make any author read the correction. An author can list the source in `flagged_sources` without opening the erratum. The rule shows the correction was seen only in the sense that someone listed it; it is a prompt, not proof (same as the other PS rules).
 
 ## 5. Impact
@@ -256,9 +271,9 @@ $ diff before.txt after.txt   (15 digs, as on main)
 Per dig, from a scripted read of every `sources/MANIFEST.yaml`: no dig on `main` has a `publication` block on any source. Digs with a manifest and zero `publication` blocks: casket-letters (7 sources), congress-promise-vote (5), eikon-basilike (9), flydubai-fz1073 (33), gulf-of-tonkin (11), incandescent-lamp (44), mcafee-and-surfside (10), teti-pyramid-texts (7). Digs with no manifest: apollo-landings, chemtrails, dyatlov-pass, flood-myths-worldwide, proto-indo-european, votes-2009-present, votes-johnson-tonkin. Warnings added: 0 for each of the 15. Migration: none.
 
 ### 5.2 `origin/dig/vaccines-autism` overlay
-Before the patch: 105 warnings, 0 PS3 lines (shown in section 2). After:
+Before the patch: 104 warnings with the dig's taxonomy entry (105 without it), 0 PS3 lines (section 2). After, at dig commit 9a90bf0:
 ```
-WARNING  vaccines-autism:None: PS3: cites `src-jain-2015`, which is corrected ...
+WARNING  vaccines-autism:claims.yaml (outside any claim): PS3: cites `src-jain-2015`, which is corrected, outside any claim (for example in `short_answer.summary_figures`); add a `source_notices` entry for it ...
 WARNING  vaccines-autism:va-mmr-no-detectable-increase: PS3: cites `src-jain-2015`, which is corrected ...
 WARNING  vaccines-autism:va-thimerosal-no-detectable-increase: PS3: cites `src-verstraeten-2003`, which is corrected ...
 WARNING  vaccines-autism:va-aluminum-no-detectable-increase: PS3: cites `src-andersson-2025`, which is corrected ...
@@ -266,11 +281,11 @@ WARNING  vaccines-autism:va-simpsonwood-autism-hidden: PS3: cites `src-verstraet
 WARNING  vaccines-autism:va-small-effect-not-excludable: PS3: cites `src-jain-2015`, which is corrected ...
 WARNING  vaccines-autism:timeline.yaml:a25: PS3: cites `src-jain-2015`, which is corrected ...
 WARNING  vaccines-autism:timeline.yaml:b01: PS3: cites `src-andersson-2025`, which is corrected ...
-16 subjects and 107 shared nodes checked: 0 errors, 113 warnings
+16 subjects and 107 shared nodes checked: 0 errors, 112 warnings
 ```
-That is 8 warnings (the brief expected 3: it is 3 corrected sources, which are cited at 8 sites). Added 8 warnings, 0 errors; 105 becomes 113. The one reported as `vaccines-autism:None` is the summary figure; the message names no claim because the existing reporter prints the item id, which is empty there.
+(113 without the taxonomy entry.) That is 8 warnings (the brief expected 3: it is 3 corrected sources, which are cited at 8 sites). Added 8 warnings, 0 errors: 104 becomes 112 (105 becomes 113 without the taxonomy entry; an earlier draft gave only the second pair). The summary figure is reported as "outside any claim" with its own wording (section 3.2). The dig has since moved to c41e40f (L-28), where `va-mmr-no-detectable-increase` no longer cites Jain: there the same measurement gives 102 to 109, 7 sites. Figures in this proposal are at 9a90bf0 unless stated.
 
-Migration, run and checked: adding `flagged_sources` on the five claims and the two timeline events, and a `source_notices` entry for each of the three sources, brings the overlay back to `0 errors, 105 warnings` and no PS3 line. Adding only the seven `flagged_sources` leaves exactly one warning, the summary figure, and a `source_notices` entry for `src-jain-2015` clears it. The dig's owner-level content decisions are the author's; this proposal does not edit the dig. A published dig follows 5.3.
+Migration, run and checked: adding `flagged_sources` on the five claims and the two timeline events, and a `source_notices` entry for each of the three sources, brings the overlay back to `0 errors, 104 warnings` (the baseline) and no PS3 line. Adding only the seven `flagged_sources` leaves exactly one warning (105), the summary figure, and a `source_notices` entry for `src-jain-2015` clears it. **Migration trap, reproduced:** the dig already has `source_notices` entries for `src-wakefield-1998` and `src-hooker-2014`; the three new entries must be appended to that list. Replacing the list gives two PS4 errors (`src-wakefield-1998` and `src-hooker-2014` retracted with no entry). The dig's owner-level content decisions are the author's; this proposal does not edit the dig. A published dig follows 5.3.
 
 ### 5.3 Interaction with "Changing a status after publication"
 That rule (SCHEMA.md, end of Publication status) says recording or changing a status on a published dig is a correction under the gate and needs a new `log.yaml` entry. Recording a `corrected` status was silent before and now adds warnings, not errors: the dig stays green but the log entry is still required, and the added sentence in 3.3 asks that it say which citing items were looked at and whether any finding changed. If a finding changes, the gate's revision loop applies as before. Nothing in the validator enforces the log entry (as now).
@@ -303,13 +318,15 @@ These totals match the PS3 site counts the first proposal recorded for the retra
 (c) What is not neutral. Warnings appear only where someone recorded a correction. A dig on a topic that draws scrutiny gets its sources looked up and so gets warnings; one that does not may never be. That asymmetry belongs to who records, not to the rule, and is the one the first proposal already states (silence means unchecked). The proposal also adds more work for a dig that records more, which could discourage recording; that is the cost of the warning, and why it is not an error.
 
 ## 8. Decisions for the owner
-None expected beyond final approval after the independent assessment. Points the assessor and owner may wish to look at, each small:
-1. The `source_notices` clause for citations outside any claim (3.2). Without it the vaccines-autism summary figure keeps one uncleared warning; with it, the change is one extra condition. Alternative: leave that one warning on the dig.
-2. Whether non-claim sites should warn too (3.1) or only claims (alternative 4). Default here: all sites, the same as PS3 does.
-3. Separately, not part of this change: the same unclearable site gives an error for a retracted source cited in a summary figure (3.2). No dig on `main` is affected today; it should get its own proposal.
+None expected beyond final approval. The independent assessment (`assessment-corrected-warning.md`, verdict: meets the standards with specific changes, all now made) recommends the following. These are RECOMMENDATIONS only; the decision is the owner's.
+1. The `source_notices` clause for citations outside a claim (3.2): keep it, with its own warning wording and the SCHEMA text stating its full reach; and open a separate proposal for the existing retracted/withdrawn summary-figure defect (an unclearable error that no dig on `main` hits today).
+2. Non-claim sites (3.1): warn at all PS3 sites, as PS3 does. The warning sites equal the retracted error sites in every dig tested, and none is uncleared on `main`.
+3. Approve as a warning, not an error. Keep-exempt is rejected on the evidence in section 2.
+
+Also noted by the assessor: on the vaccines-autism dig dig-level warnings rise from 11 to 19, and three claims would show two warnings each; clearing is one pass (7 flags, 3 notices). A rule cleared without reading invites rubber-stamping; this is stated in section 4.
 
 ## 9. Files this proposal would change, if approved
 `build/SCHEMA.md` (the text in 3.3), `build/conformance.py` (3.4), `build/tools/test_publication_status.py` (3.5), each in the same owner-approved commit. This branch adds only `docs/proposals/publication-status-corrected-warning.md`.
 
 ## 10. Independent assessment and decision
-Assessment: pending. Owner decision: pending.
+Independent assessment: done (meets the standards with specific changes R1 to R5; this revision makes them). Owner decision: pending.
