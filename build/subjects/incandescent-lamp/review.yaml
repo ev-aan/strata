@@ -1,0 +1,259 @@
+subject: incandescent-lamp
+status: revisions_requested
+reviewed_by: independent review agent
+reviewed_on: 2026-10-02
+checks:
+- check: 'conformance: no errors for this subject'
+  result: pass
+  detail: 'whole repository run: 15 subjects and 107 shared nodes, 0 errors, 92 warnings; 2 warnings are for this subject (lamp-swan-in-use and lamp-edison-oct-1879-test are established but anchor_checked is secondary)'
+- check: headline present, 70-95 characters
+  result: pass
+  detail: '95 characters (at the upper limit)'
+- check: headline claim is established/refuted at high confidence with a primary check, or status is draft
+  result: pass
+  detail: 'lamp-edison-sole-inventor: refuted, high, anchor_checked primary; headline_status draft'
+- check: headline_status is draft or review before the gate passes
+  result: pass
+  detail: draft
+- check: assessment present with question, answer, headline, text, basis, would_settle
+  result: pass
+  detail: 'answer: partly'
+- check: assessment has exactly three key_points
+  result: pass
+  detail: '3'
+- check: assessment states no percentage
+  result: pass
+  detail: ''
+- check: taxonomy entry (area and question types)
+  result: pass
+  detail: ''
+- check: every claim has statement_kind
+  result: pass
+  detail: ''
+- check: every searched gap names its next step
+  result: pass
+  detail: ''
+- check: sources manifest exists
+  result: pass
+  detail: ''
+- check: every source has an authenticity block
+  result: pass
+  detail: ''
+- check: log has entries
+  result: pass
+  detail: ''
+- check: timeline present (dates exist, so a timeline is required)
+  result: pass
+  detail: ''
+quotes:
+  found_in_stored_sources: 0
+  not_found_in_stored_sources: 34
+  no_stored_source_to_check_against: 0
+  note: 'Nothing is stored in the subject folder, so the tool cannot match any quote. The reviewer opened the sources and matched the quotes by hand (see notes); the quotes that rest on the New York newspaper pages could not be matched because the Library of Congress host was not reachable.'
+rounds:
+- round: 1
+  reviewed_on: 2026-10-02
+  note: 'Two earlier review passes recorded no review.yaml; their findings are entered here as round 1 with the author responses taken from build/subjects/incandescent-lamp/log.yaml (entries L-10 to L-18; the requester cited them as L-13, L-16, L-17 and L-18, which in the file are L-13 to L-18 plus L-11 and L-12 for the blocking items). The author commits are 8495c38 (the revision content was swept into that commit by a parallel commit on the shared index) and b2dfecd (the empty commit that describes it). Every response was read against the sources by this reviewer, who did not write the dig.'
+  requests:
+  - id: R1-1
+    target: 'claims.yaml headline, search_summary, assessment'
+    severity: blocking
+    finding: 'The headline settled Edison versus Swan ("first practical to make and sell") although the dig''s own claims leave it open (Swan lamps at Cragside 1880 and the Savoy on 28 Dec 1881 precede Pearl Street on 4 Sep 1882); the headline was 115 characters.'
+    author_response: {action: fixed, note: 'L-11 and L-15: headline replaced by a 95-character line that says what the documents show and what stays open (Edison''s priority over Swan); headline_status stays draft; "first practical to make and sell" removed from lamp-edison-sole-inventor and made a contested claim, lamp-first-practical-priority; assessment block added (answer partly, three key points).', commit: 8495c38}
+    reviewer_check: 'Counted the headline (95 characters). Read lamp-first-practical-priority against 47 F. 454, the Edison Papers essay, The Times transcription and the IET blog: contested, low confidence, positions and a named disputant, and its statement matches what the sources say (Wallace J. quotes verified in 47 F. 454; "the first lamp that answers the purpose we have wished" verified in the Edison Papers essay; Savoy and Cragside dates verified in the transcription and the blog). The Pearl Street date rests on the New-York Tribune page, which could not be opened (see open_items). The wording "patents date to 1841" in the new headline is dealt with under R2-1.'
+    resolved: true
+  - id: R1-2
+    target: 'search_summary, headline, claims on the "six who built lamps"'
+    severity: blocking
+    finding: '"At least six people built lamps before Edison" rested on patents (designs, not builds) and on the four 1890s court cases, which are the Goebel cases the dig itself refutes; Swan''s 1878 lamp was a rod that blackened the globe (Chemical News 39).'
+    author_response: {action: fixed, note: 'L-11: the "six built" and "four court cases" wording removed; patents are described as designs (S3); Goebel counted as two cases against one; Swan''s December 1878 lamp stated as a rod that blackened its globe; lamp-edison-sole-inventor no longer says Lodygin or Woodward "built" lamps.', commit: 8495c38}
+    reviewer_check: 'Searched claims, threads, tests and timeline for "six", "built" and "four courts": none left in surface text (the remaining hits are comments in basis fields that describe the correction). Opened Chemical News 39 (28 Mar and 18 Apr 1879): the chairman Swan "described an experiment ... a slender rod of carbon enclosed in an exhausted globe", the rod "glow with great splendour", "the glass became coated with a sooty deposit on its inside" and the rod "became curved to the form of a bow, as if from softening"; Proctor''s note says Swan "exhibited an electric lamp ... which had broken down". Matches lamp-swan-1878.'
+    resolved: true
+  - id: R1-3
+    target: lamp-10000-ways-quote
+    severity: blocking
+    finding: '"Not documented in Edison''s lifetime" cannot rest on Dyer and Martin 1910 (should read "earliest version found", with the absence caveat in the confidence reasons).'
+    author_response: {action: fixed, note: 'L-12: reworded to "earliest version found"; confidence held at provisional (absence_anchor); confidence_reasons say why; weight lowered from 4 to 3.', commit: 8495c38}
+    reviewer_check: 'Opened Dyer and Martin vol. II (archive.org, edison.-his-life-and-inventions-volume-ii, 1910), pp. 615-616: Mallory says Edison had "made over nine thousand experiments" on the storage battery and replied "Results! Why, man, I have gotten a lot of results! I know several thousand things that won''t work."; "his experiments had run up to over ten thousand". Matches the claim. Also opened the Quote Investigator page: it places the same 1910 text as its earliest evidence and lists 1946 (999) and 1982 (10,000); it also lists a 1921 American Magazine interview and a 1882 Christian Union article by Edison that the dig does not record (R2-9, non-blocking).'
+    resolved: true
+  - id: R1-4
+    target: 'claims: lamp-sawyer-man-priority (a), lamp-edison-bamboo (b), lamp-de-moleyns-patent (c), lamp-de-changy-belgium (d), lamp-lodygin-1872-74 and lamp-lodygin-first-claim (e), lamp-swan-1878, lamp-swan-early-1879, lamp-swan-1850s (f)'
+    severity: blocking
+    finding: 'Factual errors: (a) the Supreme Court holding in 159 U.S. 465 (1895) was misstated; (b) bamboo and Japan wording; (c) the de Moleyns 1841 abridgment (p. 62) says only a means of generating the electric light by pulverized charcoal in an exhausted globe, and "glows" and "incandescent" are not its words; (d) de Changy''s nationality; (e) Kommersant doc 5338615 versus 6822124 misattribution; (f) Swan date wording (Chemical News 39 "immediately preceding Christmas"; Chemical News 42 "almost two years ago" and "about twenty years ago").'
+    author_response: {action: fixed, note: 'L-13 (correction of L-04: the Court said the claims except the third are too indefinite, priority becomes unnecessary, decree affirmed) and L-14 (b) to (f): bamboo and Japan restated from the opinion, de Moleyns restated from the abridgment, de Changy''s nationality left unsettled, the 1947-48 campaign statement moved to doc 5338615, Swan wording restated.', commit: 8495c38}
+    reviewer_check: '(a) fixed: read 159 U.S. 465 in the Library of Congress scan (OCR): "we are all agreed that the claims of this patent, with the exception of the third, are too indefinite to be the subject of a valid monopoly", priority "becomes unnecessary", "the decree of the Circuit Court is Affirmed", third claim admitted not infringed; heading misprint "1815" confirmed. (b) fixed: "thirty or forty different woods", "despatched a man to Japan", "to different parts of Japan and China sent him about forty different kinds of bamboo" verified; the OCR reads "palmieaf". (c) fixed in lamp-de-moleyns-patent and its node (abridgment p. 62-63 verified: "A means of generating the electric light, by constantly supplying the electrodes at their junction, with pulverized charcoal"; "The whole arrangement is enclosed in an exhausted glass globe"; no "glow" or "incandescent"; the Supreme Court says "finely pulverized boxwood charcoal or plumbago was used for an incandescent electric lamp"), BUT NOT fixed downstream: see R2-1. (d) fixed: Fontaine "M. de Changy, in Belgium" and "M. Jobart, of Brussels" and Howell and Schroeder "a French civil engineer, obtained a Belgian patent" in 1856 verified. (e) the misattribution is fixed (doc 5338615, page dated 6 May 2022, says the campaign began with the article of 9 May 1947 and that within the following year Soviet newspapers reported that Lodygin made the lamp before Edison), BUT the author''s statement that doc 6822124 does not contain the privilege number 1619 and the 2 Oct 1872 priority date is false: see R2-3. (f) fixed: "immediately preceding Christmas", "almost two years ago", "this little lamp, which I showed here two years ago in action", "about twenty years ago" all verified.'
+    resolved: false
+  - id: R1-5
+    target: 'lamp-goebel-claim, lamp-de-changy-belgium, lamp-lodygin-1872-74, the dig description, thread-national-priority, the assessment'
+    severity: blocking
+    finding: 'Uneven standard: Goebel was "refuted" on absence while Swan''s 1850s work, de la Rue, Davy and Rohde stayed searched gaps; de Changy and Lodygin were "established" on Fontaine alone; the meaning of "invent" differed between claimants; the thread text "every claimant is dug to the same standard" was unproven.'
+    author_response: {action: fixed, note: 'L-15: one standard (S1 to S4) stated in the description and applied to everyone; Goebel moved from refuted to contested at low confidence with positions and named disputants; de Changy, Lodygin and Woodward performance moved from established to proposed (single channel); the first-practical claim split out as contested; the thread sentence removed; lamp-lodygin-first-claim and lamp-canada-invented-claim scoped to "first to describe or patent".', commit: 8495c38}
+    reviewer_check: 'Verified the Goebel record in 54 F. 678, 56 F. 496, 57 F. 616 and 61 F. 834 (quotes in lamp-goebel-claim all match; two cases against one is right because 61 F. 834 is the appeal in the Wisconsin case). The standard is stated and the claim states are now consistent with S1 and S2 for Goebel, de Changy, Lodygin and Woodward. NOT fully fixed: the assessment text still says "One standard was used for every claimant" and still says the national stories "each ... stretch [one real record] into first", which pre-judges Goebel (contested) and de Changy (the Belgian first claim is not dug at all); the divergence_note calls Goebel''s record "the weakest" although it is the one with about forty affidavits. See R2-2.'
+    resolved: false
+  - id: R1-6
+    target: lamp-goebel-claim
+    severity: non_blocking
+    finding: 'Goebel courts counted as two cases against one: Colt 54 F. 678 "extremely improbable"; Seaman 57 F. 616 plus the Seventh Circuit appeal 61 F. 834; Hallett 56 F. 496 "fair preponderance".'
+    author_response: {action: fixed, note: 'L-16 A1: two against one, with precise quotations and the different burdens of proof.', commit: 8495c38}
+    reviewer_check: 'Verified in the four opinions: "extremely improbable that Henry Goebel constructed a practical incandescent lamp in 1854"; "The weight of evidence on this motion is in the direction that he made these lamps, or lamps similar in general appearance"; "assuming they were made, they do not anticipate the invention of Edison. At most they were experimental toys"; "simply impossible, under the circumstances, to believe that a lamp so constructed could have been made by Goebel before 1872"; "a fair preponderance of testimony in support of the Goebel claim"; $20,000 bond; "without designing to suggest what result should be reached upon final hearing"; "such an atmosphere of improbability"; "a defense which puts the case in doubt".'
+    resolved: true
+  - id: R1-7
+    target: 'lamp-goebel-claim, dig description'
+    severity: non_blocking
+    finding: '"No dated document before 1882", not "no record".'
+    author_response: {action: fixed, note: 'L-16 A2.', commit: 8495c38}
+    reviewer_check: 'Wording present in the claim, tests.yaml and the thread. The earliest dated traces (Curtis "in the early part of 1882", Eaton "in May, 1882", Dreyer "in 1882", the offer of 28 Nov 1882) verified in 54 F. 678; Goebel''s own application for US 266,358 was filed on 23 January 1882 (OCR of the USPTO scan), a dated document that the dig mentions only in the node.'
+    resolved: true
+  - id: R1-8
+    target: 'lamp-goebel-claim (US 266,358 and US 47,632)'
+    severity: non_blocking
+    finding: 'The rejection of the second claim of US 266,358 comes from 54 F. 678, not from the patent; US 47,632 needed an anchor.'
+    author_response: {action: fixed, note: 'L-16 A3: moved to the node and the basis; US 47,632 added as an anchor and a node.', commit: 8495c38}
+    reviewer_check: 'Opened both patents at the USPTO image server and OCR''d them: US 266,358 (filed 23 Jan 1882, patented 24 Oct 1882; two claims, both for flattened, spirally coiled wire sockets); US 47,632 (hemmers for sewing machines, 9 May 1865). 54 F. 678 says "The second claim, as drawn in the original application, was rejected by reference to the Edison patent now in suit."'
+    resolved: true
+  - id: R1-9
+    target: 'lamp-goebel-claim, transmission'
+    severity: non_blocking
+    finding: 'Curtis "early part of 1882".'
+    author_response: {action: fixed, note: 'L-16 A4, new events tx-g-10 to tx-g-12, node lamp-1882-early-curtis-hears-goebel-story.', commit: 8495c38}
+    reviewer_check: '54 F. 678: Curtis "first heard of Henry Goebel in the early part of 1882" and was told "as early as about 1850". Matches.'
+    resolved: true
+  - id: R1-10
+    target: 'lamp-latimer-patent'
+    severity: non_blocking
+    finding: 'The Maxim and United States Electric Lighting rivalry is not in US 252,386.'
+    author_response: {action: fixed, note: 'L-16 A5: anchored to the Queens Library essay hosted by the Edison Papers.', commit: 8495c38}
+    reviewer_check: 'US 252,386 names only "the United States Electric Lighting Company ... of same place". The essay (opened) says Latimer worked for Maxim, "then chief engineer at the U.S. Electric Lighting Company", that it was "only one of Edison''s competitors", Bridgeport from March 1880, the move to Brooklyn in 1880.'
+    resolved: true
+  - id: R1-11
+    target: 'lamp-latimer-patent, lamp-latimer-invented-claim'
+    severity: non_blocking
+    finding: 'Add US 247,097 (Nichols and Latimer); anchor King 1845 in the refutation.'
+    author_response: {action: fixed, note: 'L-16 A6.', commit: 8495c38}
+    reviewer_check: 'US 247,097 opened (filed 18 Apr 1881, dated 13 Sep 1881; "the method of mounting the carbons or connecting them with the wires"). King 1845 (abridgment p. 97) is an anchor of lamp-latimer-invented-claim.'
+    resolved: true
+  - id: R1-12
+    target: 'lamp-edison-high-resistance, lamp-edison-sole-inventor'
+    severity: non_blocking
+    finding: 'Edison sole-inventor wording should come from 47 F. 454 and 54 F. 678.'
+    author_response: {action: fixed, note: 'L-16 A8: the courts are quoted.', commit: 8495c38}
+    reviewer_check: 'Wallace J. (47 F. 454): "the first to make a carbon of materials and by a process which was especially designed to impart high specific resistance to it ... By doing these things he made a lamp which was practically operative and successful"; Colt J. (54 F. 678): the second claim "covered a broad and fundamental invention, namely, an incandescent lamp, composed of a carbon filament, hermetically sealed in an all glass chamber exhausted to a practically perfect vacuum, and having leading-in wires of platinum". Lane-Fox (two patents October 1878, one March 1879, and a letter to the Times of December 1878) and Edison''s French patent 130,910 of 28 May 1879 (52 F. 300) verified.'
+    resolved: true
+  - id: R1-13
+    target: 'lamp-edison-sole-inventor (Lodygin and Woodward "built"; "central station by 1882")'
+    severity: non_blocking
+    finding: 'The facts were not among that claim''s anchors.'
+    author_response: {action: fixed, note: 'L-16 A9: removed or moved to the claims that carry them.', commit: 8495c38}
+    reviewer_check: 'No "built" statement about Lodygin or Woodward remains in the surface text; lamp-woodward-evans-performance (Electrical World, 14 Apr 1900) verified: "The first incandescent lamp was constructed at Morrison''s brass foundry in Toronto, and was a very crude affair", nitrogen, investors "declined", "left for Europe".'
+    resolved: true
+  - id: R1-14
+    target: lamp-latimer-edison-role
+    severity: non_blocking
+    finding: 'Anchor mismatch (the Edison Papers carbon-filament essay does not mention Latimer).'
+    author_response: {action: fixed, note: 'L-16: anchor is the Queens Library essay, class synthetic, anchor_checked secondary.', commit: 8495c38}
+    reviewer_check: 'Essay verified: Engineering Department of the Edison Electric Light Company from about 1885, Legal Department about 1889, testimony, Edison Pioneers 1918.'
+    resolved: true
+  - id: R1-15
+    target: 'transmission.yaml tx-g-01, tx-g-07, tx-g-08, tx-g-09, tx-l-04; threads.yaml overlay_notes'
+    severity: non_blocking
+    finding: 'tx-g-01 called the "earliest trace" (Eaton May 1882, Curtis early 1882 and Dreyer 1882 are earlier or equal); read: no needed for tx-g-07, tx-g-08, tx-l-04; thread notes without source ids.'
+    author_response: {action: fixed, note: 'L-16 B3.', commit: 8495c38}
+    reviewer_check: 'tx-g-01 now says it is not the earliest; tx-g-07, tx-g-08 and tx-g-09 are read: no with notes; tx-l-04 cites the Kommersant page that was read and says no Soviet text was; overlay_notes carry source ids.'
+    resolved: true
+  - id: R1-16
+    target: 'sources/MANIFEST.yaml (Davy edition, springe)'
+    severity: non_blocking
+    finding: 'Davy edition is the American one (Bradford and Inskeep); the springe "debatable" wording is unverified.'
+    author_response: {action: fixed, note: 'L-16: manifest corrected; springe marked UNVERIFIED; Canadian Encyclopedia and the notebook viewer recorded as unreachable.', commit: 8495c38}
+    reviewer_check: 'archive.org metadata for elementschemica00davygoog: publisher Bradford and Inskeep, 1812, from the New York Public Library; the OCR text of pp. 85-86 matches the claim ("more than half the volume of the charcoal became ignited to whiteness", "a most brilliant ascending arch of light", battery of 2000 double plates). The Canadian Encyclopedia returned HTTP 403 to this reviewer as well.'
+    resolved: true
+- round: 2
+  reviewed_on: 2026-10-02
+  requests:
+  - id: R2-1
+    target: 'claims.yaml search_summary, headline, assessment.text, assessment.key_points[0], lamp-edison-sole-inventor, lamp-lodygin-first-claim, tests.yaml dt-which-first (continuation of R1-4 c)'
+    severity: blocking
+    finding: 'The de Moleyns claim itself is now correct (the abridgment says only "a means of generating the electric light" with pulverized charcoal between platinum coils "enclosed in an exhausted glass globe", and the dig''s own basis says it "reads like an arc fed with charcoal"), but the surface text still says the 1841 patent describes "electric lamps with a heated conductor in an exhausted globe" (search_summary and key point 1), "glowing conductors in evacuated glass" (lamp-lodygin-first-claim), "a lamp that glows in an exhausted globe ... de Moleyns (1841)" (assessment text), and the headline says "patents date to 1841". Only the Supreme Court (1895) calls the 1841 patent incandescent; the abridgment (pp. 62-63, opened) does not, and the full specification was not read. The 1845 King abridgment (pp. 97-98, opened) is the sound one for a heated carbon conductor ("intensely heated"; carbon "enclosed in a Torricellian vacuum"; the platinum form is under "a glass shade", not stated as exhausted). The dig''s own S3 (a patent shows a design, not a lamp) applies as well to "a lamp that glows".'
+    evidence: 'Abridgments of Specifications relating to Electricity and Magnetism (1859), archive.org patentsforinvent1766grea, pp. 62-63 and 97-98; 159 U.S. 465 (Library of Congress scan); the dig''s lamp-de-moleyns-patent basis.'
+    asked: 'Restate the 1841 patent in the surface text as an electric light fed with pulverized charcoal in an exhausted globe (the Supreme Court calls it incandescent), carry the heated-conductor wording only for 1845 (and say "carbon" there), and make the headline and key point 1 say what the 1845 patent shows or "patents go back to 1841 and 1845"; add lamp-de-moleyns-patent, lamp-starr-king-patent and lamp-earliest-patent to the assessment basis (key point 1 rests on them but they are not listed). Fix by a new log entry, not an edit of L-14.'
+  - id: R2-2
+    target: 'assessment.text, divergence_note, thread-national-priority description (continuation of R1-5)'
+    severity: blocking
+    finding: 'The assessment text says "One standard was used for every claimant" and that the national stories "(Goebel, Lodygin, de Changy, Woodward and Evans, Latimer) each hold one real record and stretch it into first"; the thread says "Each story takes one real record and stretches it into first. The pattern is similar in every country"; the divergence_note says Goebel and the Canadian sale "have the weakest records". These say more than the claims: Goebel is contested at low confidence (preliminary rulings split two to one; about forty affidavits per Colt J.), de Changy is proposed and his Belgian "first" claim is not dug at all (the dig says so in the thread), Latimer is not a national claim, and the depth and anchors differ (for example lamp-swan-in-use is established at moderate on a blog and a transcription, lamp-10000-ways-quote is refuted on one anchor and absence, de Moleyns and King rest on abridgments). The dig removed the thread sentence "every claimant is dug to the same standard" but the same assertion remains in the assessment.'
+    evidence: 'claims.yaml assessment.text, divergence_note; threads.yaml thread-national-priority; 54 F. 678 ("some forty affidavits"), 56 F. 496, 57 F. 616, 61 F. 834.'
+    asked: 'Say that one stated standard (S1 to S4) is applied, that depth differs, and that the Goebel and de Changy claims are not shown to be stretched (Goebel: contested; de Changy: proposed, first-claim not dug). Drop "weakest records" or replace it with what the record is (testimony of about forty affidavits, no dated document before 1882).'
+  - id: R2-3
+    target: 'lamp-lodygin-1872-74 basis, node lamp-1874-07-11-lodygin-russian-privilege, timeline.yaml a6 note, sources/MANIFEST.yaml src-kommersant-lodygin, log L-14 (e) and L-17 (12) (continuation of R1-4 e)'
+    severity: blocking
+    finding: 'The author states that Kommersant doc 6822124 "gives NO privilege number" and that the number 1619 and the priority date 2 October 1872 "are not in this page". They are. The page (dated 11 July 2024, opened by the reviewer) says: "11 июля 1874 года родное патентное ведомство выдало Александру Лодыгину «привилегию» № 1619. Интересно, что «приоритет» был указан задним числом, от 2 октября 1872 года." ("On 11 July 1874 the home patent office issued Alexander Lodygin privilege No. 1619. Interestingly the priority was dated retroactively, 2 October 1872"). The node text and the timeline note ("no privilege number in the page read") put a false statement about a source on the page. The Lomonosov prize and General Electric are indeed not in it (correct), and the "1947-48 campaign" sentence is in doc 5338615 (correct).'
+    evidence: 'https://www.kommersant.ru/doc/6822124 (retrieved by the reviewer 2026-10-02); https://www.kommersant.ru/doc/5338615.'
+    asked: 'Correct the statement in a new log entry, a new revision of the node, the timeline note and the manifest; restore the number and the backdated priority date with their single newspaper source (a later newspaper history, no scan of the privilege), or say that they are not used because they are not independently documented.'
+  - id: R2-4
+    target: 'lamp-swan-before-edison statement'
+    severity: blocking
+    finding: 'The sentence runs "Edison''s laboratory kept a thread lamp lit 13 1/2 hours ... and applied for its patent on 4 November 1879; the lamp he showed in October 1880 had a carbon ''extremely thin - a mere hair'', and he said blackening of the globe stopped once the vacuum and contacts were good." By the grammar "he" is Edison, but both quoted statements are Swan''s, from his 20 October 1880 lecture (Chemical News 42, pp. 227-230: "The carbon is extremely thin - a mere hair"). A reader of this contested headline claim would credit Edison with a lamp shown in October 1880 and with the blackening explanation.'
+    evidence: 'Chemical News 42 (5 Nov 1880), archive.org s713id13691440.'
+    asked: 'Name Swan in both places.'
+  - id: R2-5
+    target: 'sources and transcription of L-17 (2) and (3), lamp-edison-patent basis, lamp-edison-oct-1879-test basis'
+    severity: non_blocking
+    finding: 'The log and two basis notes say the words "application filed November 4, 1879" and "not gained until October, 1879" were not found in 52 F. 300 and were dropped. They are in the opinion (static.case.law f/52/cases/0300-01): "Lacombe, Circuit Judge. On January 27, 1880, under an application filed November 4, 1879, letters patent No. 223,898 were issued to Thomas A. Edison" and "The knowledge that practical stability could be given to a carbon filament was not gained until October, 1879." The correction itself was a false statement about a source, and the second sentence is a court''s statement relevant to lamp-first-practical-priority.'
+    evidence: 'https://static.case.law/f/52/cases/0300-01.json'
+    asked: 'A new log entry correcting L-17; consider citing the second sentence as a court statement in lamp-first-practical-priority (it is a court''s view, from the patent suit, not a dated record).'
+  - id: R2-6
+    target: 'lamp-swan-in-use, assessment.key_points[2]'
+    severity: non_blocking
+    finding: 'Under the dig''s own S1 a claim resting on a later secondary account of a document not read is single-channel and is not "established". The Cragside half of lamp-swan-in-use rests only on the 2023 IET archives blog (the blog says the arc lamps "were replaced by Armstrong in 1880 with 45 incandescent lamps" and that Armstrong wrote on 17 January 1881; the letter was not read); the Savoy half rests on a transcription of The Times of 29 December 1881 (verified: "when the stage was for the first time lit up by the electric light" and "The Swan incandescent lamps were used"; the original page not compared). Key point 3 states "Swan lamps lit Cragside (1880) and the Savoy stage (1881)" without the limit. The Savoy date alone precedes Pearl Street, so the conclusion survives.'
+    evidence: 'https://ietarchivesblog.org/2023/03/09/cragside-harnessing-the-power-of-water/ ; https://gsarchive.net/carte/savoy/electric.html'
+    asked: 'Split Cragside into its own proposed claim, or word key point 3 as "per an archive blog" and "per a transcription of The Times".'
+  - id: R2-7
+    target: 'nodes lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, lamp-1879-02-03-swan-shows-lamp-lit-and-phil (N14)'
+    severity: non_blocking
+    finding: 'The node `time` values carry days that no source read gives: 18 Dec 1878 (from summaries the dig did not keep, the node says so) and 3 Feb 1879 (from search summaries, access cited_only). date_basis is "derived". Chemical News prints no day (windows 1-24 Dec 1878 and 20 Oct 1878 to 20 Oct 1879 are fine).'
+    evidence: 'Chemical News 39 pp. 133 and 168; Chemical News 42 pp. 227-230.'
+    asked: 'Use the middle of the window as `time` with date_basis inferred, or say in the node that the day is the best single date from secondary pages.'
+  - id: R2-8
+    target: 'lamp-swan-before-edison, lamp-swan-early-1879 (Swan''s own dating)'
+    severity: non_blocking
+    finding: 'In the same lecture Swan dates the start of his carbon-in-globe work: "in October, 1877, I sent to Mr. Stearn a number of carbons, made from carbonised cardboard, with the request that he would get them mounted for me in glass globes by a glassblower". The dig quotes the "two years ago in action" and "twenty years ago" passages but not this one, which is the self-account that bears most on the Swan side of the priority dispute (S4: a self-account, primary for what Swan claimed).'
+    evidence: 'Chemical News 42 (5 Nov 1880), pp. 227-230.'
+    asked: 'Record it in lamp-swan-before-edison (positions or basis) as Swan''s claim, with the same S4 caveat.'
+  - id: R2-9
+    target: 'transmission.yaml tx-10000-ways, lamp-10000-ways-quote'
+    severity: non_blocking
+    finding: 'The Quote Investigator page the author read also reports a 1921 American Magazine interview in which Edison himself recounts the incident without a number, and an 1882 article by Edison in The Christian Union ("the enormous number of things that won''t work"). Neither is in the chain, and the claim''s would_change_if mentions "Edison''s own record". The refutation is therefore not about an absence of any Edison remark of this kind; the claim states only the earliest version found.'
+    evidence: 'https://quoteinvestigator.com/2012/07/31/edison-lot-results/'
+    asked: 'Add both as chain events (read: no, via Quote Investigator) and keep the claim at provisional.'
+  - id: R2-10
+    target: 'refuted claims lamp-10000-ways-quote, lamp-canada-invented-claim, lamp-lodygin-first-claim (S2, owner decision)'
+    severity: non_blocking
+    finding: 'Under S2 the absence of an earlier document never refutes; the 10,000-ways claim is refuted at provisional on one anchor plus absence (the claim says so), the second half of the Canadian target ("Edison''s lamp was built on their patent") is refuted by differing designs while the sale is a gap, and the Lodygin target was narrowed to "first to describe or patent" so that the refutation holds. Each is stated openly, and the reviewer does not object to the states, but the owner should know the dig leans on narrowing the target in two places.'
+    evidence: 'US 181,613 against US 223,898 (both OCR''d); Dyer and Martin pp. 615-616.'
+    asked: 'None required; owner to confirm that "refuted at provisional on absence" and narrowed targets are acceptable under N-rules before publication.'
+  - id: R2-11
+    target: 'timeline.yaml people'
+    severity: non_blocking
+    finding: '"Mathew Evans" in the people list against "Matthew" in claims.yaml (Electrical World, 1900: "Matthew Evans, a hotelkeeper"; the Canadian patent list prints the initial M.).'
+    evidence: 'Electrical World and Engineer 35:15, 14 Apr 1900.'
+    asked: 'Use one spelling.'
+open_items:
+- 'Round 2: four blocking requests (R2-1 to R2-4) and seven non-blocking requests are open; the author has not responded. The subject must not be added to build/site.yaml.'
+- 'Not reached by the reviewer: the Library of Congress newspaper pages (NY Tribune 5 Sep 1882 and 1 Jan 1880, NY Herald 21 and 31 Dec 1879; Cloudflare block), so lamp-pearl-street, lamp-menlo-park-dec-1879 and the Herald "mercury pump" line in lamp-sprengel-link, and the quotes in them, are unverified by any reviewer; The Canadian Encyclopedia (HTTP 403); Library and Archives Canada; the Edison Papers notebook image (N-79-07-31:105); Espacenet; Google Patents for 266,358 and 47,632 (read at the USPTO image server instead).'
+- 'Not read by anyone (author or reviewer): the full specifications of British patents 9053 (1841) and 10,919 (1845) (abridgments only); the Comptes rendus of 1858 (Jobard) and the St Petersburg Academy report of 1874 (Fontaine is the only channel); Armstrong''s letter of 17 January 1881; the original Times page of 29 December 1881; the Canadian specification of patent 3,738; Swan''s patents and the Lit and Phil minutes of 1879; Davy''s 1802 papers; Rohde (2007); the springe.de wording; Linda Hall and Newcastle University pages on 3 Feb 1879 (no URL kept); the Edison patent application file and the Patent Office interference record; Hammer (1900); Sprengel''s 1865 paper.'
+- 'Anchors below primary behind established claims (conformance warnings): lamp-swan-in-use (a blog and a transcription) and lamp-edison-oct-1879-test (the Edison Papers'' transcription, notebook image not opened). Both must be shown on the page as limits; see R2-6.'
+- 'Established and refuted claims anchored to the Patent Office abridgments (de Moleyns, King, and the refutations of Lodygin and Edison as sole inventor) have anchor_checked primary although the full specifications were not read; the abridgments are the Patent Office''s own summaries and the courts quote the same patents (40 F. 21 quotes the King specification), so the reviewer accepts primary for King and treats de Moleyns as in R2-1.'
+- 'Owner decisions after round 2: whether to publish with headline_status draft (the headline names an open question), whether the 10,000-ways claim may stay refuted at provisional (R2-10), and whether the 1619 privilege number and the backdated priority date are restored (R2-3). The review does not add the subject to build/site.yaml.'
+needs_manual_check:
+- 'Matched by hand against the sources the reviewer opened: lamp-de-moleyns-patent (abridgment pp. 62-63, 159 U.S. 465); lamp-earliest-patent (Fontaine p. 169); lamp-starr-king-patent (abridgment p. 97-98, Colt J.); lamp-lodygin-refractory-metals ("a citizen of Russia, residing in the city of Pittsburg", filed 4 Jan 1893, granted 12 Jan 1897); lamp-woodward-evans-patent ("that will not unite chemically with the carbon when hot"; Scientific American 12 Sep 1874 list, OCR "3,:38 ... H. Weodward and M. Evans, Toronto, Ont. ... Woodwara and Evans'' Electric Light. Aug. 3, 1874"); lamp-swan-1878; lamp-swan-early-1879; lamp-first-practical-priority (Wallace J.; Edison Papers essay); lamp-edison-oct-1879-test ("on from 1.30 AM till 3 pm 131/2 hour and was then raised to 3 gas jets for 1 hour then cracked glass & busted", Doc. 1831, N-79-07-31:105).'
+- 'Not matched, source not reached: the New York newspaper quotes in lamp-pearl-street and lamp-menlo-park-dec-1879.'
+- 'Refuted claims name their target and rest on primary text (Rule 9): lamp-lodygin-first-claim, lamp-canada-invented-claim, lamp-latimer-invented-claim, lamp-10000-ways-quote, lamp-edison-sole-inventor. The 10,000-ways claim also rests on absence (provisional, absence_anchor).'
+notes: |
+  Independent review, 2026-10-02, of the revised dig (author commits 8495c38 and b2dfecd). The reviewer did not write the dig or review it before and did not edit any dig file.
+  Sources opened by the reviewer (host in brackets): US patents 223,898, 181,613, 252,386, 247,097, 266,358 and 47,632 (USPTO image server, OCR by the reviewer) and 575,002 (Google Patents text); Federal Reporter 40, 47, 52, 54, 56, 57 and 61 F. (static.case.law); 159 U.S. 465 (tile.loc.gov scan); the 1859 British abridgments pp. 62-63 and 97-98 (archive.org); Chemical News 39 and 42 (archive.org); Fontaine 1878 (archive.org); Davy 1812 pp. 85-86 and the archive.org record (publisher Bradford and Inskeep); Dyer and Martin 1910 vol. II pp. 615-616 (archive.org); Howell and Schroeder 1927 and Schroeder 1923 (archive.org, passages on de la Rue 1820, de Changy 1856, the 50,000 rouble prize, Grove 1840); Scientific American 12 Sep 1874 and Electrical World and Engineer 14 Apr 1900 (archive.org OCR); Edison Papers essay, Doc. 1831 PDF, Latimer essay and Edison and Swan United page (edison.rutgers.edu); the IET archives blog; The Times transcription (gsarchive.net); Kommersant docs 6822124 and 5338615; CBC 2017, Canada's History and Quote Investigator.
+  Round 1 (the earlier passes): R1-1, R1-2, R1-3 and the non-blocking items R1-6 to R1-16 are resolved; R1-4 and R1-5 are not, for the reasons in their reviewer_check lines (R2-1 to R2-3). Because two blocking round 1 requests stay open and four blocking round 2 requests are new, the status is revisions_requested.
+  Fresh pass: more than twenty claims were checked against the sources (lamp-davy-arc, lamp-de-la-rue-1840, lamp-de-moleyns-patent, lamp-earliest-patent, lamp-starr-king-patent, lamp-de-changy-belgium, lamp-lodygin-1872-74, lamp-lodygin-first-claim, lamp-lodygin-refractory-metals, lamp-woodward-evans-patent, lamp-woodward-evans-performance, lamp-canada-invented-claim, lamp-swan-1850s, lamp-swan-1878, lamp-swan-early-1879, lamp-swan-before-edison, lamp-swan-in-use, lamp-first-practical-priority, lamp-edison-oct-1879-test, lamp-edison-patent, lamp-edison-high-resistance, lamp-edison-bamboo, lamp-sawyer-man-priority, lamp-edison-patent-upheld, lamp-goebel-claim, lamp-latimer-patent, lamp-latimer-invented-claim, lamp-10000-ways-quote, lamp-edison-sole-inventor). Every established or refuted claim was checked except lamp-pearl-street (the newspaper page was not reachable). Patent numbers and dates agree with the scans (Edison 223,898 signed 1 Nov 1879, patented 27 Jan 1880, two claims; Woodward 181,613 filed 4 Jan 1875, dated 29 Aug 1876, carbon in "a rarefied gas that will not unite chemically with the carbon when hot"; Latimer 252,386 filed 19 Feb 1881, dated 17 Jan 1882, assigned to the United States Electric Lighting Company; 247,097 filed 18 Apr 1881, dated 13 Sep 1881; Goebel 266,358 filed 23 Jan 1882, dated 24 Oct 1882; Lodygin 575,002 filed 4 Jan 1893, dated 12 Jan 1897). The court dates (5 Oct 1889, 4 Oct 1892, 18 Feb 1893, 21 Apr 1893, 20 Jul 1893, 1 May 1894, 11 Nov 1895) match the reporter data; the July 1891 judgment date is from 57 F. 616 and the decree date of 23 July 1891 from 54 F. 678.
+  Nodes: all 41 lamp nodes were listed with time, precision, date_basis, window and place. Dates agree with their sources; places are given only where a source names them and carry Nominatim orientation notes; state-level places for the court rulings are the districts the opinions name. The two exceptions are in R2-3 (a node text that misstates its source) and R2-7 (days that no source read gives). The Davy node and the Cragside node are honest about year-level precision.
+  Standard across claimants: Goebel (contested, low), de Changy and Lodygin (proposed, single channel through Fontaine), Woodward performance (proposed) and Swan 1850s (gap) are held to S1 to S4 consistently; the Edison side is held to it too (lamp-first-practical-priority is contested at low confidence; the 22 Oct 1879 test stays secondary). The residual unevenness is the assessment wording (R2-2) and the Cragside anchor (R2-6).
+  Assessment: the answer partly and the three key points are in line with the claims except for the 1841 wording (R2-1) and the Cragside limit (R2-6). headline_status draft is justified: the headline names an open question and its first half is carried by more than the headline claim.
+  Repository text: no personal names beyond the historical figures and the cited authors were found in the dig and its nodes; no model identifiers or contact details; no copyrighted images; quotations are short and attributed.
+  Mapping of the log entries the requester cited: L-11 (blocking 1 and 2), L-12 (blocking 3), L-13 and L-14 (blocking 4), L-15 (blocking 5), L-16 (non-blocking), L-17 (dates and places), L-18 (still unchecked). Two statements in L-14 and L-17 are false about their sources (R2-3, R2-5); the log is append-only, so the correction must be a new entry.
