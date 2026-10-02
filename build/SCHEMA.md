@@ -274,30 +274,64 @@ A searched gap uses `type: search-record` and says in `description` what was sea
 ## N26. Redaction (the one exception to append-only)
 A log entry may be edited only to remove personal data (for example a private person's name) and only with the owner's decision. The same change adds a NEW log entry with `redacts: [<id>]` that says what was removed, why, and who decided. Conformance allows an edit to an old entry only when a new entry names it in `redacts`. Version history still holds the earlier text; a redaction changes the published record, not git.
 
-## Publication status (added 2026-10-02; owner decision)
+## Publication status (added 2026-10-02 under docs/proposals/publication-status.md)
 
 Why: a retracted or flagged paper must never read as a sound study. Publication status is a fact
-about a source, not a claim state: it lives on the source entry, and the dig shows it at the top.
+about a source, not a claim state: it lives on the source entry, and the page shows it with every
+claim that cites the source and in a list at the top.
 
-### On each source (`sources/MANIFEST.yaml`), optional unless the work is flagged
+### What silence means
+A source with no `publication` block has **not been looked up**. It does not mean "not retracted".
+Only a `publication` block records that someone looked; `checked: <date>` says when. No rule requires
+a lookup: the validator can enforce what is recorded, never what was not. Every dig page that records
+any status says so under its Sources heading. (A dig with no manifest cannot record any status.)
+
+### On each source (`sources/MANIFEST.yaml`), optional
 ```yaml
 publication:
   status: published | unpublished | corrected | expression_of_concern | withdrawn | retracted
-  date: 2010-02-02          # date of the notice (required for flagged statuses)
-  notice: <url or citation> # the retraction, correction or concern notice (required for flagged)
-  reason: >                 # the notice's own stated reason, in plain words
+  checked: 2026-10-02       # optional: the date someone looked the source up
+  date: 2010-02-02          # date of the notice (required for expression_of_concern, withdrawn, retracted)
+  notice: <url or citation> # the notice itself (required for the same three)
+  reason: >                 # optional: the notice's own stated reason, in plain words
 ```
+`corrected` and `unpublished` are **deliberately exempt** from `date`, `notice` and PS3: whether a
+correction changes what a source can support is a judgment, not a mechanical fact, and a dig that
+cites an erratum-bearing paper is not wrong to do so. They are shown on the page when recorded, and
+an author may list one in `flagged_sources` to show a notice beside a claim. `date`/`notice` are
+recommended for them. A paper whose earlier version was retracted and later republished is recorded
+as `published` with the history in `reason`.
 
 ### In `claims.yaml`
-- `source_notices:` (top level) lists every retracted or withdrawn source with a plain sentence a
-  reader sees first, e.g. "This 1998 paper was retracted by The Lancet in 2010."
-- `flagged_sources: [ids]` on a claim that cites a flagged source (in `anchor.sources`, rule N25) knowingly (for example a claim
-  about the retraction itself, or a hypothesis traced to the paper). The page shows the status
-  beside the citation.
+- `source_notices:` (top level) lists every retracted or withdrawn source, and may list others:
+  `- {source: <manifest id>, notice: <plain sentence>}`, e.g. "This 1998 paper was retracted by The
+  Lancet in 2010." The page shows the list first, before the assessment.
+- `flagged_sources: [manifest ids]` on a claim that cites a flagged source knowingly (for example a
+  claim about the retraction itself, or a hypothesis traced to the paper). The page shows a notice
+  ("Retracted source", "Corrected source", "Unpublished source" and so on) on the claim, naming the
+  source, the notice date, the stated reason and the notice.
 
 ### Rules a validator enforces (build/conformance.py)
 - **PS1** `publication.status` is one of the six values.
 - **PS2** `expression_of_concern`, `withdrawn` and `retracted` need `date` and `notice`.
-- **PS3** A claim citing a retracted or withdrawn source must list it in `flagged_sources`
-  (error); for an expression of concern, a warning.
-- **PS4** Every retracted or withdrawn source has an entry in `source_notices` (error).
+- **PS3** A retracted or withdrawn source may be cited only by an item that lists it in
+  `flagged_sources` (error); for an expression of concern, a warning. A `flagged_sources` id must
+  resolve to a manifest source with a valid `publication` status (error).
+- **PS4** Every retracted or withdrawn source has an entry in `source_notices` (error); every
+  `source_notices` entry names a source with a recorded status and carries a `notice` (error).
+
+### Scope of PS3, exactly
+PS3 looks for a manifest source id as a string anywhere in every `*.yaml` file directly in the
+subject folder (`claims.yaml`, `timeline.yaml`, `tests.yaml`, `transmission.yaml`, `actors.yaml`,
+`threads.yaml`, `challenges.yaml`), except `log.yaml`, `review.yaml`, `sources.yaml` and the
+manifest, which record work and review rather than cite evidence, and except the `flagged_sources`
+and `source_notices` keys. The citing item acknowledges with `flagged_sources` on itself or on an
+enclosing item; one at the top level of a file does not count. In a claim, an id in
+`anchor.sources` or `reception_records` is a citation. In `timeline.yaml`, `tests.yaml`,
+`transmission.yaml` and `actors.yaml` an acknowledgement is recorded and checked but the page does
+not yet show it beside the event; only the claim page and the top list do. It does **not** see:
+- sources cited on shared nodes (`build/nodes/*.yaml`): a node's `sources` are inline entries, not
+  manifest ids, and carry no `publication`, so a retracted paper reached only through `anchor.nodes`
+  is not detected;
+- a source named only in prose, a title or a URL;
+- a dig that has no manifest, or whose claims do not list manifest ids in `anchor.sources`.

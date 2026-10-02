@@ -21,7 +21,7 @@ CSS = """:root{--sand:#F5F2EC;--sand2:#EAE5DC;--ink:#1A1814;--mid:#4A4640;--mute
 nav a{color:var(--mute);text-decoration:none}nav a.b{color:var(--ink);font:500 17px Georgia,serif;letter-spacing:.1em}a{color:var(--teal)}
 h1{font-weight:400;font-size:clamp(28px,5vw,42px);line-height:1.15;letter-spacing:-.01em;margin:.2em 0 .5em}h2{font-weight:500;font-size:22px;margin:2em 0 .5em;border-bottom:1px solid var(--line);padding-bottom:6px}
 .eyebrow,.mono{font:12px 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
-.banner{background:var(--amber-l);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:15px;margin:14px 0}.summary{font-size:20px;color:var(--mid);font-weight:300}
+.banner{background:var(--amber-l);border:1px solid var(--line);border-radius:8px;padding:10px 14px;font-size:15px;margin:14px 0}.pubnote{background:var(--coral-l);border:1px solid var(--coral);border-radius:8px;padding:10px 14px;font-size:15px;margin:12px 0}.pubnote p,.pubnote ul{margin:.3em 0}.summary{font-size:20px;color:var(--mid);font-weight:300}
 .claim{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:12px 0}.claim p{margin:.3em 0}
 .pill{display:inline-block;font:11.5px 'IBM Plex Mono',ui-monospace,monospace;border:1px solid currentColor;border-radius:99px;padding:1px 9px}
 .s-established{color:var(--teal)}.s-refuted{color:var(--coral)}.s-contested,.s-proposed{color:var(--amber)}.s-searched_gap{color:var(--mute)}
@@ -60,6 +60,7 @@ def claim_html(c):
     chk = "no" if chk is False else chk
     nxt = c.get("next_step")
     bits = f'<p><span class="pill s-{E(st)}">{E("refuted: the claim below is false" if st == "refuted" else st.replace("_", " "))}</span> <span class="small">confidence {E(c.get("confidence", "n/a"))}{(" · " + {"reported": "what a source says", "judgment": "our conclusion", "assumption": "an assumption", "search_result": "result of a search"}.get(c.get("statement_kind"), "")) if c.get("statement_kind") else ""}</span></p>'
+    bits += _ps.claim_notice_html(c, CUR.get("man") or {})
     bits += f'<p>{E(" ".join(str(c.get("statement", "")).split()))}</p>'
     bits += (f'<div class="meter"><span>Evidence</span><span class="dots">{dots(c.get("evidential_weight"))}</span>'
              f'<span>Public belief</span><span class="dots">{dots(c.get("adoption_weight"))}</span><span>Source checked</span><span>{E(chk)}</span></div>')
@@ -83,8 +84,9 @@ def claim_html(c):
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nodes as _nodes
 import dig_actions as _da
+import pubstatus as _ps
 NODES = _nodes.load_nodes()
-CUR = {"slug": "", "sub": ""}
+CUR = {"slug": "", "sub": "", "man": {}}
 ASSESS = {}
 TAX = yaml.safe_load(open(os.path.join(ROOT, "build", "taxonomy.yaml")))
 AREAS, QTYPES = TAX["areas"], TAX["question_types"]
@@ -196,6 +198,7 @@ for sub in CFG["publish"]:
     srcs = []
     mp = os.path.join(base, "sources", "MANIFEST.yaml")
     if os.path.exists(mp): srcs = yaml.safe_load(open(mp)).get("sources", [])
+    CUR["man"] = {x.get("id"): x for x in srcs if isinstance(x, dict)}
     has_tl = os.path.exists(os.path.join(base, "timeline.html"))
     n = {}
     for c in cl["claims"]: n[c.get("state")] = n.get(c.get("state"), 0) + 1
@@ -212,6 +215,7 @@ for sub in CFG["publish"]:
                  + (" · Starts from a widely shared claim" if _a.get("popular_claims") else "") + "</p>")
     _as = cl.get("assessment")
     body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(_as["question"] if _as else head)}</h1>{_tags}'
+            + _ps.notices_html(cl, CUR["man"])
             + assessment_html(_as, slug, show_question=False, claims={c["id"]: c for c in cl["claims"]}) + banner
             + ("" if _as else f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>'))
     ASSESS[sub] = (cl.get("assessment"), slug, {c["id"]: c for c in cl["claims"]})
@@ -236,12 +240,13 @@ for sub in CFG["publish"]:
         body += f'<h2>Publication review</h2><p class="small">Status: <b>{E(_rl)}</b> · reviewed {E(_rv.get("reviewed_on", ""))}. {E(" ".join(str(_rv.get("notes", "")).split()))} <a href="review.yaml">The review record</a>.</p>'
     body += '<h2>All claims</h2>' + "".join(claim_html(c) for c in sorted(cl["claims"], key=lambda c: order.get(c.get("state"), 9)))
     if srcs:
-        body += '<h2>Sources</h2><ul class="l">'
+        body += '<h2>Sources</h2>' + _ps.sources_note(srcs) + '<ul class="l">'
         for s in srcs:
             a = s.get("authenticity") or {}
             st = a.get("status", "") if isinstance(a, dict) else a
             u = s.get("url", "")
-            body += f'<li>{("<a href=" + chr(34) + E(u) + chr(34) + ">") if u else ""}{E(s.get("title"))}{"</a>" if u else ""} <span class="small">· authenticity: {E(st)}</span></li>'
+            _tag, _id = _ps.source_li_extra(s)
+            body += f'<li{_id}>{("<a href=" + chr(34) + E(u) + chr(34) + ">") if u else ""}{E(s.get("title"))}{"</a>" if u else ""} <span class="small">· authenticity: {E(st)}</span>{_tag}</li>'
         body += '</ul>'
     body += f'<h2>The data</h2><p>These pages are generated from plain YAML: <a href="claims.yaml">claims.yaml</a>' + (' · <a href="MANIFEST.yaml">sources manifest</a>' if srcs else "") + '. If you can show a finding is wrong, <a href="' + E(CFG["issues_url"]) + '">challenge it</a>.</p>'
     summ = " ".join(str(cl.get("search_summary", "")).split())

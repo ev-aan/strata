@@ -222,20 +222,36 @@ def load_sources(sdir):
     return {}
 
 
-def claim_refs(c):
-    a = c.get("anchor") if isinstance(c.get("anchor"), dict) else {}
-    refs = list(a.get("sources") or []) + list(a.get("ref") or [])
-    for a in c.get("anchors") or []:
-        if isinstance(a, dict):
-            refs += a.get("ref") or []
-    return refs
+# Files in a subject folder that record work or review rather than cite sources as evidence.
+PS_SKIP_FILES = {"log.yaml", "review.yaml", "sources.yaml"}
+PS_ACK_KEYS = ("flagged_sources", "source_notices")
+
+
+def _ps_walk(o, ids, acks, item, depth, file, hits, ack_lists):
+    """Find every string equal to a manifest id in `o`. A hit is acknowledged if the item it sits in,
+    or an enclosing item below the file's top level, lists the id in `flagged_sources`."""
+    if isinstance(o, dict):
+        mine = o.get("flagged_sources")
+        if isinstance(mine, list) and depth > 0:
+            ack_lists.append((file, o.get("id") or item, [x for x in mine if isinstance(x, str)]))
+            acks = acks | {x for x in mine if isinstance(x, str)}
+        item = o.get("id") if isinstance(o.get("id"), str) else item
+        for k, v in o.items():
+            if k in PS_ACK_KEYS:
+                continue
+            _ps_walk(v, ids, acks, item, depth + 1, file, hits, ack_lists)
+    elif isinstance(o, list):
+        for v in o:
+            _ps_walk(v, ids, acks, item, depth + 1, file, hits, ack_lists)
+    elif isinstance(o, str) and o in ids:
+        hits.append((o, file, item, o in acks))
 
 
 def check_publication(r, subject, sdir, claims, d):
-    """Rules PS1-PS4 (build/SCHEMA.md): a retracted or flagged publication can never
-    be cited as if it were sound, and its status must be shown at the top of the dig."""
+    """Rules PS1-PS4 (build/SCHEMA.md, Publication status): a retracted or flagged publication can
+    never be cited as if it were sound, and its status must be shown with the claim and at the top."""
     sources = load_sources(sdir)
-    flagged = {}
+    flagged, recorded = {}, {}
     for sid, s in sources.items():
         pub = s.get("publication")
         if pub is None:
@@ -245,21 +261,43 @@ def check_publication(r, subject, sdir, claims, d):
             r.err(f"{subject}:{sid}", f"PS1: publication status `{st}` must be one of "
                                       + " | ".join(sorted(PUB_STATUS)))
             continue
+        recorded[sid] = st
         if st in PUB_FLAGGED:
             if not pub.get("date") or not pub.get("notice"):
                 r.err(f"{subject}:{sid}", f"PS2: a `{st}` publication needs its `date` and `notice`")
             flagged[sid] = st
-    shown = {n.get("source") for n in d.get("source_notices") or [] if isinstance(n, dict)}
-    for c in claims:
-        if not isinstance(c, dict):
-            continue
-        ack = set(c.get("flagged_sources") or [])
-        for ref in claim_refs(c):
-            st = flagged.get(ref)
-            if st and ref not in ack:
-                msg = (f"PS3: cites `{ref}`, which is {st.replace('_', ' ')}; list it in "
-                       "`flagged_sources` so the status is shown with the claim")
-                (r.err if st in ("retracted", "withdrawn") else r.warn)(f"{subject}:{c.get('id')}", msg)
+    hits, ack_lists = [], []
+    if sources:
+        for path in sorted(glob.glob(os.path.join(sdir, "*.yaml"))):
+            fn = os.path.basename(path)
+            if fn in PS_SKIP_FILES:
+                continue
+            try:
+                doc = load(path)
+            except yaml.YAMLError:
+                continue                      # reported elsewhere
+            _ps_walk(doc, set(sources), frozenset(), None, 0, fn, hits, ack_lists)
+    for sid, fn, item, acked in hits:
+        st = flagged.get(sid)
+        if st and not acked:
+            msg = (f"PS3: cites `{sid}`, which is {st.replace('_', ' ')}; list it in "
+                   "`flagged_sources` on that item (claim, event, test, statement) to show the status was seen")
+            where = f"{subject}:{item}" if fn == "claims.yaml" else f"{subject}:{fn}:{item}"
+            (r.err if st in ("retracted", "withdrawn") else r.warn)(where, msg)
+    for fn, item, ids in ack_lists:
+        for sid in ids:
+            if sid not in recorded:
+                r.err(f"{subject}:{fn}:{item}", f"PS3: `flagged_sources` names `{sid}`, which has no "
+                                                "valid `publication` status in the manifest")
+    shown = set()
+    for n in d.get("source_notices") or []:
+        if isinstance(n, dict):
+            shown.add(n.get("source"))
+            if n.get("source") not in recorded:
+                r.err(subject, f"PS4: `source_notices` names `{n.get('source')}`, which has no "
+                               "valid `publication` status in the manifest")
+            if not str(n.get("notice") or "").strip():
+                r.err(subject, f"PS4: the `source_notices` entry for `{n.get('source')}` has no `notice` sentence")
     for sid, st in flagged.items():
         if st in ("retracted", "withdrawn") and sid not in shown:
             r.err(subject, f"PS4: `{sid}` is {st} but has no entry in `source_notices` "
