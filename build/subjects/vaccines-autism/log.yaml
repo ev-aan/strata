@@ -192,3 +192,9 @@ log:
       to every claim, marked to be reviewed. Not done here, left to the owner: the headline wording,
       institution counts on the first screen, Rule 9 for statistics, the publication-status schema
       (PR #6), naming living persons, refutation_class.
+  - id: L-17
+    date: 2026-10-02
+    entry: >
+      Timeline event a01 (the 1998 paper) now lists the retracted source in `flagged_sources`
+      and opens its detail with RETRACTED, as the widened PS3 on PR #6 requires for timeline
+      entries. Checked against that branch's validator: 0 errors for this subject.

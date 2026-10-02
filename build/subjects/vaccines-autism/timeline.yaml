@@ -77,9 +77,9 @@ sources:
   src-annenberg-2026:        {title: "Annenberg Public Policy Center, 29 Sep 2026", url: "https://www.annenbergpublicpolicycenter.org/about-1-in-3-americans-say-rfk-jr-recommends-measles-vaccine/", authenticity: "authenticated, moderate"}
 events:
   # ---------------- Panel A ----------------
-  - {id: a01, panel: years, lane: origin, time: "1998-02-28T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-wakefield-1998],
+  - {id: a01, panel: years, lane: origin, time: "1998-02-28T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-wakefield-1998], flagged_sources: [src-wakefield-1998],
      label: "28 Feb 1998: Lancet publishes Wakefield et al. (12 children)",
-     detail: "Parents linked onset to MMR in 8 of 12 [abstract]. Retracted 2010."}
+     detail: "RETRACTED in 2010. Parents linked onset to MMR in 8 of 12 [abstract]."}
   - {id: a02, panel: years, lane: research, time: "1999-06-12T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-taylor-1999],
      label: "Jun 1999: Taylor et al. find no clustering of autism after MMR (498 cases)",
      detail: "Regression within 2 months: relative incidence 0.92 [abstract]."}
