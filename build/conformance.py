@@ -173,12 +173,94 @@ def check_subject(r, sdir):
                     r.err(subject, f"published headline rests on `{hc}`, which is not "
                                    "established/refuted at high confidence with a primary check")
 
+    def resolve(ref):
+        """Return the claim for `subject:claim-id` (or a bare id) in this subject, or None.
+        Members of other subjects are reported separately (cross-subject check not built yet)."""
+        ref = str(ref)
+        if ":" in ref:
+            subj, cid = ref.split(":", 1)
+            if subj != subject:
+                return "other-subject"
+            return ids.get(cid)
+        return ids.get(ref)
+
+    weighted_ids = set()   # thread and transmission ids, for the T2/X3 firewall
+
     tpath = os.path.join(sdir, "threads.yaml")
+    thread_ids = set()
     if os.path.exists(tpath):
         d = load(tpath) or {}
         for t in d.get("threads") or []:
+            tid = t.get("id")
+            where = f"{subject}:{tid}"
+            thread_ids.add(tid)
             if t.get("confers_weight") is not False:
-                r.err(f"{subject}:{t.get('id')}", "threads must set `confers_weight: false`")
+                r.err(where, "threads must set `confers_weight: false`")
+            for m in t.get("members") or []:
+                ref = m.get("claim") if isinstance(m, dict) else m
+                if ":" not in str(ref):
+                    r.warn(where, f"member `{ref}`: write it as subject:claim-id (T1)")
+                target = resolve(ref)
+                if target == "other-subject":
+                    r.warn(where, f"member `{ref}` is in another subject; cross-subject check not built yet")
+                    continue
+                if target is None:
+                    r.err(where, f"member `{ref}` does not resolve to a claim (T1)")
+                    continue
+                if t.get("type") == "reception-overlay" and target.get("state") not in ("contested",) \
+                        and target.get("evidence_class") != "interpretive":
+                    r.err(where, f"reception-overlay member `{ref}` is `{target.get('state')}`; "
+                                 "only contested or interpretive claims may be members (T4). "
+                                 "Trace a settled myth in transmission.yaml instead")
+        weighted_ids |= thread_ids
+
+    # Transmission records (format proposed 2026-10-02, see build/SCHEMA.md): rules X1-X4.
+    xpath = os.path.join(sdir, "transmission.yaml")
+    chain_ids = set()
+    if os.path.exists(xpath):
+        d = load(xpath) or {}
+        manifest = {}
+        mpath = os.path.join(sdir, "sources", "MANIFEST.yaml")
+        if os.path.exists(mpath):
+            manifest = {s.get("id") for s in (load(mpath) or {}).get("sources") or []}
+        for ch in d.get("chains") or []:
+            cid = ch.get("id")
+            where = f"{subject}:{cid}"
+            chain_ids.add(cid)
+            if ch.get("confers_weight") is not False:
+                r.err(where, "transmission chains must set `confers_weight: false` (X1)")
+            target = resolve(ch.get("about"))
+            if target is None or target == "other-subject":
+                r.err(where, f"`about: {ch.get('about')}` does not resolve to a claim in this subject (X4)")
+            seen_events = set()
+            for e in ch.get("events") or []:
+                eid = e.get("id")
+                if eid in seen_events:
+                    r.err(where, f"duplicate event id `{eid}`")
+                seen_events.add(eid)
+                if not e.get("source"):
+                    r.err(where, f"event `{eid}` names no source (X2)")
+                elif manifest and e.get("source") not in manifest:
+                    r.err(where, f"event `{eid}` source `{e.get('source')}` is not in sources/MANIFEST.yaml (X2)")
+                if e.get("read") not in ("yes", "no", True, False):
+                    r.err(where, f"event `{eid}` must say `read: yes` or `read: no` (X2)")
+        weighted_ids |= chain_ids
+        for tid in thread_ids:
+            if tid in chain_ids:
+                r.err(subject, f"id `{tid}` is used for both a thread and a transmission chain")
+
+    # T2 / X3: synthesis and spread are never evidence. No claim may cite a thread or chain.
+    for c in ids.values():
+        anchor_text = yaml.safe_dump(c.get("anchor", "")) + yaml.safe_dump(c.get("anchors", ""))
+        for wid in weighted_ids:
+            if wid and wid in anchor_text:
+                r.err(f"{subject}:{c.get('id')}", f"cites `{wid}` as an anchor; threads and "
+                                                  "transmission chains confer no weight (T2/X3)")
+
+    # Absence anchors are capped at provisional confidence (CONTRIBUTING.md section 2).
+    for c in ids.values():
+        if c.get("absence_anchor") and c.get("confidence") not in ("provisional", "low"):
+            r.err(f"{subject}:{c.get('id')}", "absence anchor: confidence is capped at provisional")
 
     lpath = os.path.join(sdir, "log.yaml")
     if os.path.exists(lpath):

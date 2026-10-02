@@ -116,8 +116,11 @@ Every dig or bounty page carries:
 
 ## 6. How to contribute
 
-1. **Fork the repository** and make your changes on a branch.
-2. **Open a pull request** and fill in the checklist. A maintainer reviews and merges it.
+1. **Fork the repository** and make your changes on a branch. Nothing is pushed to `main` directly.
+2. **Open a pull request** and fill in the checklist. CI runs the validator, then an independent review
+   agent checks the judgment rules (anchors actually say what claims say, honest weights, no borrowed
+   weight, plain surface lines) and merges only if it approves. Changes to the rules themselves are
+   escalated to the owner. The full process is in [`docs/REVIEW.md`](docs/REVIEW.md).
 3. **To challenge a finding,** open an issue with the "Challenge a finding" form. Name the ID (for example `C-03` or `F7`) and the source that anchors your challenge. Challenges without an anchor are not logged. With one, they are logged whether accepted or not.
 4. **To propose a new bounty,** open an issue. Name:
    - the question

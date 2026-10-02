@@ -179,3 +179,21 @@ public official did and why it might have happened. Other subjects (documents, e
 ### Applied so far
 - Tonkin: `actors.yaml` built for Johnson, McNamara, Bundy, Morse, Gruening (2026-10-02); vote links to the roll-call data.
 - Politics pilot: protocol conforms to P1 to P7.
+
+## Transmission records and thread membership (added 2026-10-02, enforced by conformance.py)
+
+`build/subjects/<subject>/transmission.yaml` traces how a claim spread, step by dated step. It is the
+standing rule's "transmission chain": a myth is documented as seriously as the history, and its spread
+never counts as evidence. First used in `incandescent-lamp`; the format is in that file's header.
+
+- **X1** every chain sets `confers_weight: false`.
+- **X2** every event names a source listed in `sources/MANIFEST.yaml` and says `read: yes | no`.
+- **X3** no claim may cite a chain id in its anchors (same firewall as threads, T2).
+- **X4** `about` resolves to a claim in the subject.
+
+Thread rules now enforced in the validator:
+- **T1** members resolve to a claim; write them as `subject:claim-id` (bare ids warn).
+- **T2** no claim cites a thread id in its anchors.
+- **T4** reception-overlay members are only `contested` or `interpretive` claims. Settled myths go in
+  `transmission.yaml`, pointed to with `see_transmission`.
+- Claims marked `absence_anchor: true` are capped at provisional confidence.
