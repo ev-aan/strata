@@ -139,6 +139,63 @@ def check_claim(r, subject, c, legacy):
                       "re-anchor to the primary source (do not downgrade)")
 
 
+PUB_STATUS = {"published", "unpublished", "corrected", "expression_of_concern",
+              "withdrawn", "retracted"}
+PUB_FLAGGED = {"expression_of_concern", "withdrawn", "retracted"}
+
+
+def load_sources(sdir):
+    for name in (os.path.join("sources", "MANIFEST.yaml"), "sources.yaml"):
+        p = os.path.join(sdir, name)
+        if os.path.exists(p):
+            return {s.get("id"): s for s in (load(p) or {}).get("sources") or []
+                    if isinstance(s, dict)}
+    return {}
+
+
+def claim_refs(c):
+    refs = list((c.get("anchor") or {}).get("ref") or [])
+    for a in c.get("anchors") or []:
+        if isinstance(a, dict):
+            refs += a.get("ref") or []
+    return refs
+
+
+def check_publication(r, subject, sdir, claims, d):
+    """Rules PS1-PS4 (build/SCHEMA.md): a retracted or flagged publication can never
+    be cited as if it were sound, and its status must be shown at the top of the dig."""
+    sources = load_sources(sdir)
+    flagged = {}
+    for sid, s in sources.items():
+        pub = s.get("publication")
+        if pub is None:
+            continue
+        st = pub.get("status") if isinstance(pub, dict) else None
+        if st not in PUB_STATUS:
+            r.err(f"{subject}:{sid}", f"PS1: publication status `{st}` must be one of "
+                                      + " | ".join(sorted(PUB_STATUS)))
+            continue
+        if st in PUB_FLAGGED:
+            if not pub.get("date") or not pub.get("notice"):
+                r.err(f"{subject}:{sid}", f"PS2: a `{st}` publication needs its `date` and `notice`")
+            flagged[sid] = st
+    shown = {n.get("source") for n in d.get("source_notices") or [] if isinstance(n, dict)}
+    for c in claims:
+        if not isinstance(c, dict):
+            continue
+        ack = set(c.get("flagged_sources") or [])
+        for ref in claim_refs(c):
+            st = flagged.get(ref)
+            if st and ref not in ack:
+                msg = (f"PS3: cites `{ref}`, which is {st.replace('_', ' ')}; list it in "
+                       "`flagged_sources` so the status is shown with the claim")
+                (r.err if st in ("retracted", "withdrawn") else r.warn)(f"{subject}:{c.get('id')}", msg)
+    for sid, st in flagged.items():
+        if st in ("retracted", "withdrawn") and sid not in shown:
+            r.err(subject, f"PS4: `{sid}` is {st} but has no entry in `source_notices` "
+                           "at the top of claims.yaml")
+
+
 def check_subject(r, sdir):
     subject = os.path.basename(sdir)
     legacy = subject in LEGACY
@@ -159,6 +216,8 @@ def check_subject(r, sdir):
                 r.err(subject, f"duplicate claim id `{cid}`")
             ids[cid] = c
             check_claim(r, subject, c, legacy)
+
+        check_publication(r, subject, sdir, claims, d)
 
         hc = d.get("headline_claim")
         if hc is not None:

@@ -179,3 +179,31 @@ public official did and why it might have happened. Other subjects (documents, e
 ### Applied so far
 - Tonkin: `actors.yaml` built for Johnson, McNamara, Bundy, Morse, Gruening (2026-10-02); vote links to the roll-call data.
 - Politics pilot: protocol conforms to P1 to P7.
+
+## Publication status (added 2026-10-02; owner decision)
+
+Why: a retracted or flagged paper must never read as a sound study. Publication status is a fact
+about a source, not a claim state: it lives on the source entry, and the dig shows it at the top.
+
+### On each source (`sources/MANIFEST.yaml`), optional unless the work is flagged
+```yaml
+publication:
+  status: published | unpublished | corrected | expression_of_concern | withdrawn | retracted
+  date: 2010-02-02          # date of the notice (required for flagged statuses)
+  notice: <url or citation> # the retraction, correction or concern notice (required for flagged)
+  reason: >                 # the notice's own stated reason, in plain words
+```
+
+### In `claims.yaml`
+- `source_notices:` (top level) lists every retracted or withdrawn source with a plain sentence a
+  reader sees first, e.g. "This 1998 paper was retracted by The Lancet in 2010."
+- `flagged_sources: [ids]` on a claim that cites a flagged source knowingly (for example a claim
+  about the retraction itself, or a hypothesis traced to the paper). The page shows the status
+  beside the citation.
+
+### Rules a validator enforces (build/conformance.py)
+- **PS1** `publication.status` is one of the six values.
+- **PS2** `expression_of_concern`, `withdrawn` and `retracted` need `date` and `notice`.
+- **PS3** A claim citing a retracted or withdrawn source must list it in `flagged_sources`
+  (error); for an expression of concern, a warning.
+- **PS4** Every retracted or withdrawn source has an entry in `source_notices` (error).
