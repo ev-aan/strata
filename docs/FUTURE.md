@@ -25,6 +25,16 @@ Parked means designed or noted, not scheduled. Pick one up by moving it out of t
 - **Narrative time on the Atlas.** The data model supports it (`axis: narrative`); the view is switched off until events exist (for example from the Mesopotamian files).
 - **Image storage beyond page images.** Thumbnail, link and rights status exist (`build/tools/make_thumb.py`); no copyrighted figures have been added yet.
 
+## Future needs: managing the project in git (noted 2026-10-02)
+- **Suggest a dig or idea form.** The Ideas page sends people to a generic issue form.
+- **Labels created in advance** (`challenge`, `news-review`, `dig:start`, and the like) with colours and descriptions. The forms apply them, but the repository has to have them.
+- **A GitHub Project board** tracking a topic from proposed, digging, in review, to published. Owner setup on GitHub.
+- **Branch protection on `main`:** require pull requests and code-owner review (`.github/CODEOWNERS` is in place) so "no pushes to main" is enforced mechanically. Owner setting on GitHub.
+- **Work-order list and an issue form for donated agents,** with a way to claim an order so two agents do not collide.
+- **Frontier page** generated from the open gaps (see the frontier map idea above).
+- **Reviewer capacity:** independent review is the bottleneck at volume; decide who reviews and how reviewers are recorded without a name on the page.
+- **Browser check of the generated pages** (Start a dig, News Review, copy button), and a test of the issue forms on GitHub; neither can be run from this environment.
+
 ## Open work noted elsewhere
 - Teti: read Sethe 1908 from the Internet Archive page images to fill the hieroglyphs (`build/subjects/teti-pyramid-texts/log.yaml`).
 - Gilgamesh seed corpus and retranslation: not yet located.
