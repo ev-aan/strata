@@ -122,3 +122,17 @@ log:
       and answers it. A url_slug field was added. Rule 7 on search wording was added to the headline
       guidance. headline_status remains review (owner approval pending). The claim behind it,
       tonkin-aug4-attack-occurred, is unchanged.
+  - id: L-15
+    date: 2026-10-02
+    entry: >
+      TIMELINE ADDED (timeline.yaml, timeline.html; build/tools/render_timeline.py): 24 events in three
+      panels (30 Jul to 8 Aug; 4 to 5 Aug in hours with Washington and Gulf clocks; 1964 to 2005). Each
+      dot links to its main source; PDF links open the page. CORRECTION arising: earlier text in this
+      dig (claims.yaml header, log L-10) said Washington is 12 hours behind the Tonkin Gulf. In August
+      1964 Washington was on daylight time (UTC-4), so the difference was 11 hours. The Prados essay
+      says 12 and converts GMT to Washington at UTC-5. Events given in Washington clock time (the
+      Herrick message, the calls, the staff meeting) therefore carry about one hour of uncertainty; the
+      Herrick message is drawn as a one-hour bar for that reason. The conclusions about the order of
+      events do not change: every ordering that matters (the 'allegedly' call before the reported
+      attack, Herrick's doubt message and the Bundy memo before the Resolution) holds under either
+      convention.

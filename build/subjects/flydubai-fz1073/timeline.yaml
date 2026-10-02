@@ -17,6 +17,7 @@ panels:
     start: "2026-09-30T01:30:00Z"
     end:   "2026-09-30T07:30:00Z"
     tick_minutes: 30
+    axes: [{label: "Dubai time (UTC+4)", offset_hours: 4}]
     lanes: [aircraft, captain, first_officer, offduty_pilots, passengers, cabin, israel_mil, saudi]
   - id: aftermath
     title: "Panel B: statements and actions, 30 September to 1 October (dates only; times mostly not reported)"
@@ -79,6 +80,7 @@ events:
   # ---------------- Panel A (UTC) ----------------
   - {id: a1,  panel: flight, lane: aircraft, time: "2026-09-30T03:05:00Z", precision: exact, kind: data,  status: disputed, sources: [s_airlive, s_migflug, s_aerocorner, s_cnn],
      alt_time: "2026-09-30T02:05:00Z",
+     alt_tag: "CNN time",
      alt_note: "CNN: 6:05 a.m. local = 10:05 p.m. ET = 02:05 UTC if local means Dubai",
      label: "Takeoff from Dubai",
      detail: "03:05 UTC (just after 7 a.m. Dubai time) per Flightradar24-based reports. DISCREPANCY: CNN says 6:05 a.m. local (10:05 p.m. ET), which is 02:05 UTC if local means Dubai. CNN's later times fit UTC+3 and the other sources."}

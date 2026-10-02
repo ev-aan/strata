@@ -10,6 +10,21 @@ sources:
     author: Robert J. Hanyok (NSA historian)
     published: Cryptologic Quarterly, early 2001 (classified); declassified 2005-12-01
     document_class: study (an analysis; interpretive reading of primary intercepts)
+    authenticity:
+      status: authenticated
+      strength: moderate
+      provenance: >
+        Declassified by NSA on 1 December 2005 (National Security Archive posting of that date; Scott Shane's
+        New York Times report of 31 October 2005 is cited there). The copy read is hosted by the National
+        Security Archive (George Washington University), which obtained it from NSA's release.
+      tests:
+        - "Internal markers present in the scan: Cryptologic Quarterly masthead, classification banners, statutory redaction marks (b)(3)-P.L. 86-36 [read]"
+        - "Content match: sentences quoted in independent press and archive summaries (for example the 'preclude responsible decisionmakers' sentence) appear word for word in this copy [read]"
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps:
+        - "Not byte-compared with NSA's own copy; nsa.gov and media.defense.gov returned HTTP 403 to this environment."
+      next_step: "Obtain NSA's copy from a network that is not refused, or from an independent web archive, and compare SHA-256."
+      checked: 2026-10-02
     url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
     pdf_sha256: 1aeff1441e15b5574d9846faf593a6a727e2df418c1e6af705870ec76a2716f3
     pdf_pages: 56
@@ -23,6 +38,20 @@ sources:
   - id: src-bundy-memo-1964
     title: "Memorandum for the Record: White House Staff Meeting, 5 August 1964, 8 a.m."
     document_class: primary_text (record by an attendee; not a verbatim transcript)
+    authenticity:
+      status: authenticated
+      strength: moderate
+      provenance: >
+        Cited by Prados from the Lyndon B. Johnson Library holdings; hosted by the National Security Archive.
+      tests:
+        - "Markers in the scan: 'Memorandum for Record', date and subject lines, UNCLASSIFIED stamps on each page [read]"
+        - "Content match: the passages Prados quotes in his 2004 essay appear in this copy word for word [read]"
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps:
+        - "The author line is not legible in the scan; authorship is from Prados (William Y. Smith)."
+        - "The LBJ Library original was not seen."
+      next_step: "Check the LBJ Library catalogue entry and, if possible, its scan."
+      checked: 2026-10-02
     url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin.pdf
     pdf_sha256: 77729eb941b3e88208cc3ce236a583fac0c3cf7e05e77c0c5a61d8059a98681f
     stored_as: sources/bundy-staff-meeting-memo-1964-08-05.pdf (+ .ocr.txt)
@@ -30,6 +59,21 @@ sources:
   - id: src-intercepts-1964
     title: "Gulf of Tonkin signals intercept reports (CIA/NSA selection sent to the White House, Aug 1964)"
     document_class: primary_text (NSA SIGINT reports, sanitized, declassified 2003)
+    authenticity:
+      status: authenticated
+      strength: moderate
+      provenance: >
+        Declassified March 2003 on a Mandatory Declassification Review request (Prados); copies from the
+        LBJ Library; hosted by the National Security Archive.
+      tests:
+        - "Stamps on the pages: NARA declassification-review marks (E.O. 12958, Sec. 3.6, date 3-13-03) and 'COPY LBJ LIBRARY' [read]"
+        - "Content match: report numbers, date-time groups and wording agree with what Prados and Hanyok describe [read]"
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps:
+        - "Sanitized copies; some date-time groups are unreadable in the OCR."
+        - "These are NSA summary reports of intercepts, not the raw intercepts."
+      next_step: "Compare the report text with the NSA's 2005 release of the same reports."
+      checked: 2026-10-02
     url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf
     pdf_sha256: 6d52d14df3442b090c1e3c00f06f37e93226cc678241edb225f1b3e943996faa
     pdf_pages: 9
@@ -39,16 +83,30 @@ sources:
     title: "The Gulf of Tonkin Incident, 40 Years Later (essay)"
     author: John Prados (National Security Archive Electronic Briefing Book 132)
     document_class: interpretive (secondary); quotes primary documents with footnotes
+    authenticity:
+      status: not_applicable
+      basis: "A modern essay, not offered as a historical document. Its quotations of primary documents are checked where we hold the document."
     url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
     stored_as: not stored (copyrighted); cited by URL and short quotation only
   - id: src-lbj-tapes-transcripts
     title: "LBJ tapes on the Gulf of Tonkin incident (transcriptions with commentary)"
     author: transcribed by John Prados, The White House Tapes (New Press, 2003)
     document_class: primary_text via a secondary transcription (the audio is at the LBJ Library)
+    authenticity:
+      status: unchecked
+      provenance: "Transcribed by John Prados in The White House Tapes (2003); the audio is at the LBJ Library."
+      tests: []
+      gaps:
+        - "Audio not heard. Wording differs slightly between the transcription ('Op Plan 34-A') and the essay's quotation ('OPLAN 34-A')."
+      next_step: "Compare with the LBJ Library audio or its own transcript."
+      checked: 2026-10-02
     url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tapes.htm
     stored_as: not stored (copyrighted); cited by URL and short quotation only
   - id: src-nsarchive-press-2005
     title: "Tonkin Gulf Intelligence 'Skewed' According to Official History and Intercepts (posting)"
     url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/press20051201.htm
     document_class: secondary
+    authenticity:
+      status: not_applicable
+      basis: "A secondary news posting."
     stored_as: not stored; cited by URL

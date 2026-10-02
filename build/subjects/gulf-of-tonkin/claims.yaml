@@ -69,9 +69,11 @@ description: >
 #                                    the six products used in the chronology are "a bit more than
 #                                    10 percent of the total available" [read, Hanyok].
 #   Herrick message ................ report SENT at 1:27 p.m. Washington time on 4 August
-#                                    (Washington is 12 hours behind the Tonkin Gulf), per a 28 Aug 1964
+#                                    (Washington, on daylight time, is 11 hours behind the Tonkin Gulf; the Prados essay says 12), per a 28 Aug 1964
 #                                    chronology quoted by Prados [secondary]. CORRECTION: the first
-#                                    draft said "received" at that time.
+#                                    draft said "received" at that time. CLOCK NOTE: Washington was on
+#                                    daylight time, so it was 11 hours behind the Gulf, not 12; Prados
+#                                    converts at UTC-5, so a Washington clock time may be an hour out.
 #   McNamara-LBJ call .............. 9:43 a.m. Washington time, 4 August [read, transcription]
 #   Bundy staff meeting ............ 8 a.m., 5 August 1964 [read]
 #   Giap ........................... confirmed 2 Aug to McNamara in Hanoi, Nov 1995 (press); at a June

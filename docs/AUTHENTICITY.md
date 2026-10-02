@@ -1,6 +1,6 @@
 # How a document is shown to be forged, or genuine (draft method note, 2026-10-02)
 
-Status: a proposal for the Strata framework. Cases below were checked against search-level sources; none was read at the primary level, so treat each as an illustration of method, not as a claim.
+Status: a proposal for the Strata framework. The rules in section 6 are now written as checkable rules A1 to A10 in `build/SCHEMA.md` (draft v0.2), and applied to the Tonkin sources in `build/subjects/gulf-of-tonkin/sources/MANIFEST.yaml`. Cases below were checked against search-level sources; none was read at the primary level, so treat each as an illustration of method, not as a claim.
 
 ## 1. The question has three different parts
 | Question | Example |

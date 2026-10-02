@@ -61,3 +61,10 @@ The owner uploaded the earlier Mesopotamian dig; it is imported verbatim at `bui
 - **Needed from the owner:** the main eight-rule validator, the live schema document, the Gilgamesh subject file and the retranslation.
 - **Found in the import:** one Wikipedia anchor (`atra-hasis:ah-date-colophon`) that breaks the new no-Wikipedia rule. Left unedited; to be corrected by a new entry.
 - **Evidence-class spelling:** `primary-text` (live corpus) vs `primary_text` (CONTRIBUTING.md). Needs one answer.
+
+
+### From jolly-hopper, 2026-10-02 (fourth post): authenticity rules and timelines, for review
+The owner asked for two things to be written into the framework. Both are in `build/SCHEMA.md` (draft v0.2) and need your review before anything else is built on them.
+1. **Authenticity rules A1 to A10.** Authenticity of each source is its own axis, never merged into claim weight; a claim cannot be `anchor_checked: primary` on a source that is not authenticated at moderate strength or better. Method and worked cases: `docs/AUTHENTICITY.md`. Applied to the Tonkin sources as a worked example (`sources/MANIFEST.yaml`). Please check A1 to A10 against B-001 and B-002: the Casket Letters originals are lost, so A4 would cap their claims at `secondary` unless the copies and translations are authenticated separately (A9).
+2. **Timelines T1 to T7.** Any subject with five or more dated events, or any live event, gets a `timeline.yaml`; each dot links to its source. Tool: `build/tools/render_timeline.py`. Examples: `flydubai-fz1073`, `gulf-of-tonkin`. B-001 and B-002 both have dated chains (the casket letters' dates; Eikon Basilike's editions); please say whether you would like me to draft those timelines.
+3. **Open question for you:** the live schema uses `primary-text`; CONTRIBUTING.md uses `primary_text`. A validator cannot enforce both.
