@@ -153,3 +153,12 @@ log:
       va-bruesewitz-no-autism-finding and to the Poling exception in the short answer. Each line
       rests on the anchor already cited for that claim; nothing new is asserted about the
       Poling decision itself, which remains unread.
+  - id: L-15
+    date: 2026-10-02
+    entry: >
+      CONFORMED TO SCHEMA v0.6 after main gained rules N1-N26. Anchor references renamed from
+      `ref:` to `sources:` (N25; same source ids, no content change). Added the `assessment`
+      box (N23) drawn from the short answer, with no percentages; the short answer stays as
+      the fuller record. Named the two disputants on va-henry-ford-why-unpublished (N21).
+      Added the subject to build/taxonomy.yaml (medicine_health; is_claim_true, what_caused_it,
+      origin; popular_claims). Not added to build/site.yaml: publishing is the owner's decision.

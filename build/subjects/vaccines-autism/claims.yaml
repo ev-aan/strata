@@ -13,6 +13,38 @@ search_summary: >
 url_slug: do-vaccines-cause-autism
 
 # ---------------------------------------------------------------------------
+# ASSESSMENT (SCHEMA N23): the "Where it stands" box the site shows first.
+# Drawn from short_answer below; no percentages (N23).
+# ---------------------------------------------------------------------------
+assessment:
+  question: "Do vaccines cause autism?"
+  answer: "no"
+  headline: "No. Studies of more than a million children find no link (high confidence), with one narrow legal concession and one untested question about mitochondrial disease."
+  text: >
+    A 2014 analysis pooling 10 studies of 1,266,327 children found no association, two nationwide
+    Danish cohorts following 1,194,764 children found no more autism after MMR, and the WHO's
+    vaccine safety committee (December 2025; 31 studies and 5 meta-analyses) found no causal
+    relationship. Children exposed to more thimerosal or aluminum were not diagnosed more often.
+    The 1998 paper that started the scare was retracted in 2010, and its account of its 12 children
+    did not match their records. One family's compensation claim was conceded in 2007 for a child
+    with a pre-existing mitochondrial disorder; that was a legal decision under no-fault rules, not
+    a scientific finding. Whether fever after vaccination can trigger regression in children with
+    mitochondrial disease has not been tested in a controlled study. Two limits: no study can show
+    an effect is exactly zero, and no large record-based study has yet compared fully unvaccinated
+    children with vaccinated ones. The reverse link is established: rubella in pregnancy can cause
+    autism, and the vaccine prevents it.
+  key_points:
+    - "Ten pooled studies (1,266,327 children) and two Danish cohorts (1,194,764) found no more autism in vaccinated children."
+    - "The 1998 paper behind the scare was retracted in 2010; its account of its 12 children did not match their records."
+    - "Exceptions: a 2007 compensation concession (a legal decision, not science) and an untested question on fever in mitochondrial disease."
+  basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
+  rated_claim: va-mmr-no-detectable-increase
+  would_settle: >
+    A large record-based study finding clearly more autism after vaccination; a controlled study of
+    fever-related regression in mitochondrial disease; or a national register comparison of fully
+    unvaccinated children showing an excess.
+
+# ---------------------------------------------------------------------------
 # SHORT ANSWER (owner decision 2026-10-02, log L-02): every dig answers the question
 # with "No" or "Yes" AND names the exceptions where they exist. Each line points to the
 # claim that carries its weight. The answer is only as strong as those claims.
@@ -214,7 +246,7 @@ claims:
         ratio 0.93 (0.85 to 1.01), 2 studies, 1,194,764 children, moderate certainty
         [abstract]. IOM 2004: "the evidence favors rejection of a causal relationship" [read].
       accessible: true
-      ref: [src-madsen-2002, src-hviid-2019, src-smeeth-2004, src-jain-2015, src-taylor-2014, src-cochrane-2021, src-iom-2004, src-taylor-1999, src-destefano-2004, src-annenberg-2026]
+      sources: [src-madsen-2002, src-hviid-2019, src-smeeth-2004, src-jain-2015, src-taylor-2014, src-cochrane-2021, src-iom-2004, src-taylor-1999, src-destefano-2004, src-annenberg-2026]
     positions:
       - label: "No"
         holder: "The register and claims-database studies above; IOM 2004; Cochrane 2021; WHO GACVS 2025"
@@ -266,7 +298,7 @@ claims:
         text, parents or physicians) linked onset to MMR in 8, and on later parent surveys.
         See va-wakefield-paper-account-accurate and va-vax-unvax-surveys.
       accessible: true
-      ref: [src-wakefield-1998, src-mawson-2017, src-hooker-miller-2021]
+      sources: [src-wakefield-1998, src-mawson-2017, src-hooker-miller-2021]
     flagged_sources: [src-wakefield-1998]   # retracted; shown beside this claim (rule PS3)
     positions:
       - label: "Yes"
@@ -321,7 +353,7 @@ claims:
         concluded that none of the 12 cases was free of misrepresentation or undisclosed
         alteration [read via fetch tool].
       accessible: true
-      ref: [src-walker-smith-2012, src-lancet-retraction-2010, src-murch-2004, src-deer-2011, src-godlee-2011]
+      sources: [src-walker-smith-2012, src-lancet-retraction-2010, src-murch-2004, src-deer-2011, src-godlee-2011]
     positions:
       - label: "Yes (accurate)"
         holder: "Wakefield (his statements were not read for this dig)"
@@ -373,7 +405,7 @@ claims:
         which reported its findings of fact on 28 Jan 2010, five days before the retraction.
         2011: the records comparison and the editors' fraud judgment [read via fetch tool].
       accessible: true
-      ref: [src-murch-2004, src-indian-jpsych-2011, src-lancet-retraction-2010, src-deer-2011, src-godlee-2011]
+      sources: [src-murch-2004, src-indian-jpsych-2011, src-lancet-retraction-2010, src-deer-2011, src-godlee-2011]
     positions:
       - label: "Yes, pulled because of data problems"
         holder: "Common account"
@@ -418,7 +450,7 @@ claims:
         cases vs 3 of 13 controls (P=0.13). The earlier report had found measles RNA in the
         ileum of 75% of children with autism vs 6% of controls [read, as cited in the paper].
       accessible: true
-      ref: [src-hornig-2008]
+      sources: [src-hornig-2008]
     positions:
       - label: "Yes"
         holder: "The earlier report cited by Hornig (75% vs 6%)"
@@ -452,7 +484,7 @@ claims:
         (para 1). The same judgment says there is now no respectable body of opinion that
         supports a causal link between "MMR vaccine and autism/enterocolitis" (para 7) [all read].
       accessible: true
-      ref: [src-walker-smith-2012, src-bmj-gmc-2010]
+      sources: [src-walker-smith-2012, src-bmj-gmc-2010]
     positions:
       - label: "Yes, this vindicates the work"
         holder: "Common reading in vaccine-sceptic media"
@@ -492,7 +524,7 @@ claims:
         of May 2008 [read]. Notifications in England and Wales: 3,670 (2007), 5,088 (2008)
         [read, UKHSA table].
       accessible: true
-      ref: [src-nhs-immunisation-2004-05, src-eurosurv-2008, src-ukhsa-measles-historic]
+      sources: [src-nhs-immunisation-2004-05, src-eurosurv-2008, src-ukhsa-measles-historic]
     basis: >
       The figures show the fall in coverage and the return of measles. That the 1998 paper
       caused the fall is the HPA's and most observers' reading, and is plausible on timing,
@@ -531,7 +563,7 @@ claims:
         Danish incidence rose after removal in 1992 [abstract]. IOM 2004: evidence "favors
         rejection" for thimerosal-containing vaccines [read].
       accessible: true
-      ref: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-iom-2004, src-cdc-thimerosal, src-verstraeten-2003, src-hhs-thimerosal-2025]
+      sources: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-iom-2004, src-cdc-thimerosal, src-verstraeten-2003, src-hhs-thimerosal-2025]
     positions:
       - label: "No"
         holder: "Hviid 2003, Price 2010, Schechter & Grether 2008, Madsen 2003, IOM 2004"
@@ -572,7 +604,7 @@ claims:
         possible, while stating there were no data or evidence of any harm at the level of
         exposure in use; it called the move precautionary [read via fetch tool].
       accessible: true
-      ref: [src-mmwr-1999, src-fda-thimerosal]
+      sources: [src-mmwr-1999, src-fda-thimerosal]
     positions:
       - label: "Yes"
         holder: "Common reading: removal as an admission"
@@ -613,7 +645,7 @@ claims:
         reviewed 10 trials and 7 cohort studies on aluminum and found no association [read via
         fetch tool]. A 2026 BMJ systematic review found no association [abstract].
       accessible: true
-      ref: [src-andersson-2025, src-who-gacvs-2025, src-doyon-plourde-2026, src-jablonowski-2026]
+      sources: [src-andersson-2025, src-who-gacvs-2025, src-doyon-plourde-2026, src-jablonowski-2026]
     positions:
       - label: "No"
         holder: "Andersson 2025 main analysis; WHO GACVS 2025; Doyon-Plourde 2026"
@@ -655,7 +687,7 @@ claims:
         from people without autism, and the paper did not trace the aluminum to any source
         [abstract and article page].
       accessible: true
-      ref: [src-mold-2018]
+      sources: [src-mold-2018]
     positions:
       - label: "Yes"
         holder: "Mold, Umar, King, Exley 2018"
@@ -691,7 +723,7 @@ claims:
         increase in antigens 0.999 at 3 months, 7 months and 2 years, with narrow intervals
         [abstract].
       accessible: true
-      ref: [src-destefano-2013]
+      sources: [src-destefano-2013]
     basis: >
       Measures antigen count, not the number of shots, adjuvants or timing, and has no
       unvaccinated group. See va-whole-schedule-gap.
@@ -719,7 +751,7 @@ claims:
         also found that few studies had assessed the entire schedule and that its number,
         frequency, timing and order had not been systematically examined [read via fetch tool].
       accessible: true
-      ref: [src-iom-2013]
+      sources: [src-iom-2013]
     basis: >
       A gap is not evidence of harm. The IOM judged new randomized trials of the schedule not
       justified; observational designs remain possible.
@@ -746,7 +778,7 @@ claims:
         in most of the autism group (19 of 22); only 4 of 23 parents reported a loss of
         skills [read].
       accessible: true
-      ref: [src-ozonoff-2010]
+      sources: [src-ozonoff-2010]
     basis: >
       The study did not look at vaccines. It explains why parents so often see onset after a
       vaccination: the two happen in the same months. It does not by itself test cause.
@@ -771,7 +803,7 @@ claims:
       type: parent-reports
       description: "Parents' reports of onset after vaccination, as in the 1998 paper (8 of 12)."
       accessible: true
-      ref: [src-wakefield-1998, src-taylor-1999, src-hviid-2019, src-ozonoff-2010]
+      sources: [src-wakefield-1998, src-taylor-1999, src-hviid-2019, src-ozonoff-2010]
     flagged_sources: [src-wakefield-1998]   # retracted; shown beside this claim (rule PS3)
     positions:
       - label: "Yes"
@@ -817,7 +849,7 @@ claims:
         (3.73 to 45.0); no correction for multiple tests; recall and selection bias
         acknowledged [read].
       accessible: true
-      ref: [src-mawson-2017, src-hooker-miller-2021, src-hooker-miller-2020-eoc, src-henry-ford-draft]
+      sources: [src-mawson-2017, src-hooker-miller-2021, src-hooker-miller-2020-eoc, src-henry-ford-draft]
     positions:
       - label: "Yes"
         holder: "Mawson et al. 2017; Hooker & Miller 2021"
@@ -864,7 +896,7 @@ claims:
         surveys are self-selected. Searched: Europe PMC 2010-2026 for vaccinated/unvaccinated
         and autism in titles (33 hits reviewed by the MMR source pass).
       accessible: true
-      ref: [src-henry-ford-draft, src-mawson-2017, src-hooker-miller-2021, src-hviid-2019]
+      sources: [src-henry-ford-draft, src-mawson-2017, src-hooker-miller-2021, src-hviid-2019]
     basis: >
       Absence anchor: what we looked for and did not find. Fully unvaccinated children
       differ from others in healthcare use and diagnosis-seeking, which any such study must
@@ -893,7 +925,7 @@ claims:
         p=0.60. The authors write that no significant association was found between vaccine
         exposure and autism, adding that the number of cases was small [read].
       accessible: true
-      ref: [src-henry-ford-draft]
+      sources: [src-henry-ford-draft]
     positions:
       - label: "Yes (what the draft does show)"
         holder: "How the draft is cited"
@@ -925,6 +957,9 @@ claims:
     adoption_weight: 2   # of 5
     adoption_note: "Not measured."
     would_change_if: "the internal peer-review record or the authors' own account is published"
+    disputed_by:
+      - {who: "Henry Ford Health", kind: institution, position: "Shelved on internal review for data and methods problems.", source_read: true, via: src-henry-ford-statement}
+      - {who: "Aaron Siri", kind: person, position: "The authors feared professional consequences.", source_read: true, via: src-siri-testimony}
     anchor:
       type: live-dispute
       description: >
@@ -934,7 +969,7 @@ claims:
         professional consequences [read via fetch tool]. The authors did not respond to
         Michigan Public [secondary].
       accessible: true
-      ref: [src-henry-ford-statement, src-siri-testimony]
+      sources: [src-henry-ford-statement, src-siri-testimony]
     positions:
       - label: "Flawed methods"
         holder: "Henry Ford Health"
@@ -976,7 +1011,7 @@ claims:
         attributed by the authors to vaccination required for early-intervention programs
         [abstract].
       accessible: true
-      ref: [src-thompson-2014, src-cdc-2004-study-statement, src-destefano-2004]
+      sources: [src-thompson-2014, src-cdc-2004-study-statement, src-destefano-2004]
     basis: >
       Both sides agree on the fact of the subsample reporting; they disagree on whether it
       broke the protocol and on what it means. Thompson's same statement says he would never
@@ -1008,7 +1043,7 @@ claims:
         competing interests that compromised peer review and for concerns about the
         validity of the methods and statistics [both read].
       accessible: true
-      ref: [src-hooker-2014, src-hooker-2014-retraction, src-thompson-2014, src-destefano-2004]
+      sources: [src-hooker-2014, src-hooker-2014-retraction, src-thompson-2014, src-destefano-2004]
     flagged_sources: [src-hooker-2014]   # retracted; shown beside this claim (rule PS3)
     positions:
       - label: "Yes"
@@ -1053,7 +1088,7 @@ claims:
         both phases: no consistent associations, and no significant increase for autism in
         any analysis [abstract].
       accessible: true
-      ref: [src-simpsonwood-2000, src-verstraeten-2003]
+      sources: [src-simpsonwood-2000, src-verstraeten-2003]
     positions:
       - label: "Yes (what is real)"
         holder: "Critics of the CDC"
@@ -1091,7 +1126,7 @@ claims:
         a mercury figure that overstated exposure against the EPA limit and a wrong statement
         that the rotavirus vaccine contained thimerosal [read].
       accessible: true
-      ref: [src-salon-2011]
+      sources: [src-salon-2011]
     basis: >
       A publisher withdrawing an article is reception, not evidence about thimerosal. Filed
       because the article is a main route by which the claim spread in the US. Whether
@@ -1123,7 +1158,7 @@ claims:
         causation"; claimants need not show the vaccine was defective [read]. The syllabus:
         compensation is paid out of a fund created by an excise tax on each vaccine dose [read].
       accessible: true
-      ref: [src-bruesewitz, src-vicp-table]
+      sources: [src-bruesewitz, src-vicp-table]
     what_it_is:
       - "A compensation system with a deliberately low bar, so injured people are paid quickly."
       - "A legal presumption of causation for listed injuries within set time windows."
@@ -1165,7 +1200,7 @@ claims:
         vaccines cause autism [read via fetch tool]. The 2010 compensation decision was not
         read.
       accessible: true
-      ref: [src-poling-cnn-2008, src-poling-npr-2008]
+      sources: [src-poling-cnn-2008, src-poling-npr-2008]
     what_it_is:
       - "The government's decision not to contest one family's compensation claim, made in late 2007."
       - "About one child with a pre-existing mitochondrial disorder."
@@ -1217,7 +1252,7 @@ claims:
         pending in March 2010. The Court of Federal Claims affirmed in 2009; the Federal
         Circuit affirmed Hazlehurst (13 May 2010) and Cedillo (27 Aug 2010) [read via fetch tool].
       accessible: true
-      ref: [src-oap-decisions]
+      sources: [src-oap-decisions]
     what_it_is:
       - "Six decisions by special masters that the families' theories were not proved to the legal standard (more likely than not)."
       - "Cases chosen by the families' own lawyers to present their strongest theories."
@@ -1257,7 +1292,7 @@ claims:
         Bruesewitz v. Wyeth LLC, 562 U.S. 223 (2011), 6-2: the 1986 Act preempts all
         design-defect claims [read]. "Autism" appears only in the dissent, footnote 25 [read].
       accessible: true
-      ref: [src-bruesewitz]
+      sources: [src-bruesewitz]
     what_it_is:
       - "A ruling that families cannot sue vaccine makers over a vaccine's design; such claims go to the compensation program."
       - >
@@ -1289,7 +1324,7 @@ claims:
         lists encephalopathy or encephalitis at 5-15 days [read]. A search of the Federal
         Register for rules amending the Table since 2023 found none [searched].
       accessible: true
-      ref: [src-vicp-table]
+      sources: [src-vicp-table]
     what_it_is:
       - "A list of injuries that the compensation program presumes are vaccine-caused when they appear within set time windows."
     what_it_is_not:
@@ -1322,7 +1357,7 @@ claims:
         therefore noncontributory" [read]. In March 2025 HHS reportedly engaged his son David Geier
         to study vaccine data [secondary: STAT]; HHS has not published his role.
       accessible: true
-      ref: [src-geier-md-2015, src-iom-2004, src-stat-geier-2025]
+      sources: [src-geier-md-2015, src-iom-2004, src-stat-geier-2025]
     basis: >
       The revocation concerns clinical practice, not the validity of the Geiers' data; their
       papers are weighed on their own methods (IOM 2004). Motive is not assessed.
@@ -1356,7 +1391,7 @@ claims:
         (DSM-5 from 2016; record-based case definition from 2018; 6 to 16 sites) [abstracts].
         DSM-5 (2013) merged several diagnoses into one autism spectrum [read].
       accessible: true
-      ref: [src-hansen-2015, src-shattuck-2006, src-addm-2007, src-addm-2025, src-rosen-2021]
+      sources: [src-hansen-2015, src-shattuck-2006, src-addm-2007, src-addm-2025, src-rosen-2021]
     basis: >
       The famous "1 in 150" for 2000 is CDC framing; the report itself gives 6.7 per 1,000.
       Site-level figures in 2022 range from 9.7 to 53.1 per 1,000, which shows how much case
@@ -1383,7 +1418,7 @@ claims:
       type: residual
       description: "Hansen 2015: 60% explained, interval 33% to 87%; the rest unexplained [abstract]."
       accessible: true
-      ref: [src-hansen-2015]
+      sources: [src-hansen-2015]
     basis: >
       Any vaccine explanation for the remainder would have to fit the null individual-level
       results above and the natural experiments in tests.yaml.
@@ -1407,7 +1442,7 @@ claims:
       type: coincident-trends
       description: "Both trends rose over the same decades; see va-rise-mostly-reporting."
       accessible: true
-      ref: [src-addm-2025, src-honda-2005, src-schechter-2008, src-madsen-2003]
+      sources: [src-addm-2025, src-honda-2005, src-schechter-2008, src-madsen-2003]
     positions:
       - label: "Yes"
         holder: "Current HHS leadership; vaccine-sceptic organizations"
@@ -1439,7 +1474,7 @@ claims:
         0.83 (0.79 to 0.87) [read]. Bai et al. 2019: 2,001,631 children in five countries;
         median 80.8% (73.2% to 85.5%), from 50.9% (Finland) to 86.8% (Israel) [read].
       accessible: true
-      ref: [src-sandin-2017, src-bai-2019]
+      sources: [src-sandin-2017, src-bai-2019]
     basis: >
       Heritability describes variation in a population; it does not mean 80% of each case is
       genetic, and it leaves room for environmental factors, including ones that act with
@@ -1465,7 +1500,7 @@ claims:
         and 21%; all studies of prenatal valproate found strong associations, likely causal;
         vaccination, thimerosal and maternal smoking classed as unrelated [read].
       accessible: true
-      ref: [src-modabbernia-2017]
+      sources: [src-modabbernia-2017]
     basis: "Published 2017; it does not cover later work on acetaminophen or preterm cohorts."
 
   - id: va-causes-largely-unknown
@@ -1487,7 +1522,7 @@ claims:
       type: stated-limit
       description: "Heritability is high but explains variation, not individual cases (see va-heritability-high)."
       accessible: true
-      ref: [src-cdc-autism-page, src-sandin-2017]
+      sources: [src-cdc-autism-page, src-sandin-2017]
     basis: "Not knowing the cause is not evidence for any particular cause, vaccines included."
 
   # =====================================================================
@@ -1518,7 +1553,7 @@ claims:
         16,600 congenital rubella cases and 1,228 autism cases prevented in the US in
         2001-2010 [read].
       accessible: true
-      ref: [src-chess-1977, src-chess-1978, src-berger-2011]
+      sources: [src-chess-1977, src-chess-1978, src-berger-2011]
     basis: >
       The clinical finding is material (examined children); the prevention figure is a model
       (synthetic) and carries the model's assumptions. This is the one established causal
@@ -1554,7 +1589,7 @@ claims:
         Shoffner et al. 2010 (that series): none regressed with vaccination unless a fever was
         present [abstract].
       accessible: true
-      ref: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006]
+      sources: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006]
     positions:
       - label: "Yes (possible)"
         holder: "Shoffner 2010; Poling et al. 2006 (case report); the Poling concession"
@@ -1606,7 +1641,7 @@ claims:
         (siblings of children with autism; children with other risk factors) showed no
         increase [abstracts].
       accessible: true
-      ref: [src-iom-2004, src-hviid-2019, src-jain-2015]
+      sources: [src-iom-2004, src-hviid-2019, src-jain-2015]
     basis: >
       This is true of every null result in medicine. What matters is how large an effect has
       been ruled out: for MMR in the largest study, nothing larger than a very small relative
@@ -1638,7 +1673,7 @@ claims:
         2025; Kennedy said he ordered it [secondary: STAT, 21 Nov 2025]. Revised again about
         22 Jul 2026 [secondary].
       accessible: true
-      ref: [src-cdc-autism-page, src-stat-cdc-page-2025, src-who-gacvs-2025]
+      sources: [src-cdc-autism-page, src-stat-cdc-page-2025, src-who-gacvs-2025]
     positions:
       - label: "Yes, a link is possible"
         holder: "HHS and the current CDC page"
