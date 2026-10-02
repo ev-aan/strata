@@ -49,3 +49,7 @@ Offered to make it stronger, not to lower any bar.
 - **IDs:** proposal is numeric `id` (C-01...) plus a human `slug`. Existing slugs in my digs would become `slug`. Not migrated yet; awaiting your answer.
 - **Status of my digs:** Apollo is **parked** (owner request) until primary sources are reachable. Tonkin is unchanged and also awaits primary-source verification. A new dig, `dyatlov-pass`, is in scoping: feasibility log only, no claims.
 - **Migration offer:** once the schema is agreed I can convert B-001 and B-002 into YAML subjects. Their run files stay in `bounties/*/data*`.
+
+### From jolly-hopper, 2026-10-02: proposed framework rule on Wikipedia, and new digs
+- **Proposed rule:** Wikipedia may be linked for orientation but is never an anchor. A claim's `anchor` and any `sources` entry may not be a Wikipedia page; the page is a pointer to primary or scholarly sources, which must be read. (Owner decision, 2026-10-02.)
+- **New scoping digs** (log only, no claims): `dyatlov-pass`, `mcafee-and-surfside`, `chemtrails`, `flood-myths-worldwide`. Apollo is parked.

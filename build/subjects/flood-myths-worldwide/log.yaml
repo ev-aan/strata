@@ -1,0 +1,119 @@
+subject: flood-myths-worldwide
+dig_status: scoping          # no claims drafted; feasibility and design only
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+# Name note: the homepage lists a separate "Flood narratives / Mesopotamian texts" dig. This is
+# a different dig (cross-cultural). The Gilgamesh dig and retranslation are not in this
+# repository and are set aside by the owner for now (L-02).
+
+log:
+  - id: L-01
+    date: 2026-10-02
+    entry: >
+      TOPIC OPENED by the owner. The owner's observation: flood stories recur across many
+      cultures with shared themes, and variation in chapter order is too easily used to dismiss
+      the likeness. Questions raised: do they describe one event, similar events far apart in
+      space and time, or something inherited? And is Genesis a collection of narratives from
+      many cultures? Scoping only. Facts below are V1 (search results agree) unless marked;
+      no primary document was opened.
+  - id: L-02
+    date: 2026-10-02
+    entry: >
+      OWNER DECISIONS: (a) the earlier Gilgamesh dig and retranslation are set aside until
+      found; they may be on another device and are not in this repository. (b) Wikipedia may
+      be linked for orientation but is never a source: no claim may cite it as its anchor, and
+      the "List of flood myths" is a pointer to be checked, not a dataset. Proposed as a
+      framework rule in docs/COORDINATION.md.
+  - id: L-03
+    date: 2026-10-02
+    entry: >
+      THE QUESTION SPLITS INTO FOUR, FILED SEPARATELY (the popular version fuses them):
+      Q1 Is the likeness between flood stories greater than chance? (a base-rate question)
+      Q2 If so, is it inheritance (diffusion, or a very old shared source) or independent origin?
+      Q3 Is there one event behind them, or many? (a physical-evidence question)
+      Q4 Is Genesis a collection of narratives from many cultures? (a textual question, handled
+         in its own dig, one source unit at a time)
+      THIS DIG covers Q1 and Q2 and the corpus they need. Q3 is a separate dig of per-event
+      claims. Q4 is a separate dig.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      FEASIBILITY, EXISTING DATA AND SCHOLARSHIP (V1). (1) Berezkin's folklore and mythology
+      catalogue is reported as about 50,000 oral-text abstracts for 945 groups, classified
+      into 2,461 motifs, and has been used with genetic data to test population movement
+      against cultural diffusion. (2) Michael Witzel proposes a very old "Laurasian" layer of
+      mythology that includes flood myths; critics say such ancient diffusion is hard to prove.
+      (3) Julien d'Huy has run statistical phylogenetic analyses of flood-myth motifs and
+      reports spread with early migrations; the literature notes that fit is uneven (an
+      index of contradiction is moderate to high in some regions such as Eurasia) and that
+      trees are a poor model where stories mix. Each of these is INTERPRETIVE or SYNTHETIC
+      evidence under CONTRIBUTING.md and cannot serve as a refutation or a proof (Rule 9).
+      They are the methods and datasets to test, not conclusions to adopt.
+  - id: L-05
+    date: 2026-10-02
+    entry: >
+      FEASIBILITY, POSITIVE CONTROLS (V1). The method must find known answers it was not
+      pointed at. Two candidates: (1) the 1700 Cascadia earthquake: Native oral histories,
+      Japan's "orphan tsunami" records, buried-forest radiocarbon dates and tree rings agree on
+      the evening of 26 January 1700; a story-plus-independent-record case with a precise date.
+      (2) Nunn and Reid (Australian Geographer, 2016): 21 coastal Aboriginal stories read as
+      memories of postglacial sea-level rise, 7,000 to 13,000 years old. It is one team's
+      study, and no replication was found in the sources reviewed; it is a candidate control,
+      not an established one. NEGATIVE CONTROL still needed: pairs of traditions known to be
+      unconnected, which this dig must find before it sets any threshold.
+  - id: L-06
+    date: 2026-10-02
+    entry: >
+      FEASIBILITY, DOCUMENTED CASES OF BORROWING (V1). Proverbs 22:17-23:11 and the Egyptian
+      Instruction of Amenemope (about 1100 BCE; British Museum papyrus): nearly all scholars
+      accept a literary relationship, as a deliberate adaptation and not a translation. Use:
+      a known-dependence positive control for the text-comparison method, and an example of the
+      kind of evidence (a dated manuscript, saying-by-saying parallels) that dependence claims
+      must meet. Whether Genesis draws on several cultures is Q4, not decided here.
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      CORPUS DESIGN (to be written down BEFORE any data is collected, per CONTRIBUTING.md
+      section 4). Entry fields: culture or people; earliest record and its date; record type
+      (written, oral transcribed, oral recorded); source and evidence class of that record;
+      POST-CONTACT FLAG (recorded after sustained contact with Abrahamic traditions or
+      missionary activity, yes, no or unknown); flood cause; warning given; survivors and how;
+      vessel or refuge; bird or animal release; offering after the flood; later covenant or
+      consequence. INCLUSION RULES: set before collecting; a story counts as a flood story only
+      if water destroys human settlement and some people survive; stories that mention water
+      only in passing are excluded and LISTED with the reason. CONTROL CORPUS: non-flood
+      catastrophe stories (fire, drought, darkness) coded with the same fields, so the question
+      is whether flood motifs co-occur beyond what catastrophe stories in general do.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      METHOD OPTIONS (not chosen). (a) Motif co-occurrence against a null model built from the
+      control corpus. (b) Distance in coded features compared across regions, as in the
+      King's Book test. (c) Phylogenetic trees (d'Huy), treated with caution because stories
+      mix and trees assume descent. DECISION RULE: thresholds are set from the positive and
+      negative controls, never guessed (CONTRIBUTING.md item 3). Any result from this dig is
+      synthetic and stays proposed until outside review.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      KNOWN RISKS (logged now). Post-contact contamination of recorded oral stories; selection
+      bias if only striking matches are collected; coding bias, since the person coding motifs
+      knows the hypothesis; translation loss; the base rate (floods are the commonest natural
+      hazard, so independent invention is expected in river and coastal peoples); and the
+      Wikipedia list's mixed quality. Mitigations to design: blind or second coding of a
+      sample; the post-contact flag; a published list of excluded stories.
+  - id: L-10
+    date: 2026-10-02
+    entry: >
+      NOT YET KNOWN, STATED PLAINLY: the corpus size we can realistically code; whether the
+      Berezkin catalogue's flood motifs map onto our fields; whether any robust negative
+      control exists; and whether the base-rate test can separate inheritance from independent
+      invention at all. If it cannot, the dig files Q2 as a searched_gap and says exactly why.
+  - id: L-11
+    date: 2026-10-02
+    entry: >
+      NEXT STEPS (not started, blocked on source access): read Berezkin's catalogue
+      documentation; read the d'Huy synthesis and a critique; read Nunn and Reid and a
+      Cascadia primary paper; write the test down; then build the corpus. Hosts needed beyond the
+      earlier list: wikipedia.org (links and orientation only), ruthenia.ru,
+      folkloredatabase.com, biorxiv.org, helsinki.fi, scientificamerican.com, usgs.gov,
+      researchgate.net.
