@@ -263,3 +263,18 @@ log:
       other person named in the dig is a minor, a victim or, as far as checked, under an ongoing
       investigation. Still open: the search headline wording; `corrected` as a PS3 warning (PR #6
       section 9).
+  - id: L-20
+    date: 2026-10-02
+    entry: >
+      Answers to review round 3 (review.yaml; resolution is the reviewer's). R3-1: agency pages
+      (HHS 2025 release, CDC thimerosal page) removed from the thimerosal claim's anchor sources.
+      R3-2: "encephalopathy" removed where no source read supports it (Vaccine Injury Table claim,
+      thread-real-pieces); the thread now reports the concession as CNN and NPR word it. R3-4: the
+      Simpsonwood embargo request is Dr. Bernier's, and the PDF has 259 pages; this corrects L-18
+      and the earlier "260". R3-5: the 2004 non-disclosure admission is attributed to the 2011
+      review. R3-6 (b, c): the transmission thread and divergence note reworded. R3-8: "some 5,000"
+      attributed to the respondent. R3-10: Geier described as co-author of papers reporting an
+      association. Not done in this pass, because they need sources read: R3-3 (the two Federal
+      Circuit opinions), R3-7 (WHO aluminium studies; Rossignol and Frye's further sentence), R3-9
+      (va-whole-schedule-gap's own search record; para 7; the Jain erratum). R3-6 (a) stays with the
+      owner with the headline.

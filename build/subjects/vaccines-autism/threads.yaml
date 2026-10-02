@@ -23,7 +23,8 @@ threads:
       - >
         2014-2016: the Thompson statement and the film "Vaxxed" (va-destefano-race-subset).
       - >
-        2025-2026: the claim is adopted by the US health department; the CDC page changes
+        2025-2026: the US health department's CDC page says studies have not ruled the possibility
+        out and calls "vaccines do not cause autism" not evidence-based
         (va-cdc-page-2025), and the Henry Ford draft is entered into the Senate record
         (va-henry-ford-shows-autism).
     firewall: >
@@ -41,8 +42,9 @@ threads:
       which is which.
     overlay_notes:
       - >
-        Poling (va-poling-concession). True: a government concession of an encephalopathy
-        aggravating a mitochondrial disorder with features of autism. Added: "vaccines cause
+        Poling (va-poling-concession). As reported (CNN, NPR): a government concession that
+        vaccines significantly aggravated, or possibly exacerbated, a mitochondrial disorder
+        in one child with features of autism; the concession document was not read. Added: "vaccines cause
         autism" in general.
       - >
         Thompson (va-destefano-race-subset). True: race results were reported only for a

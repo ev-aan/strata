@@ -372,7 +372,7 @@ sources:
     title: "Scientific Review of Vaccine Safety Datalink Information, 7-8 June 2000, Simpsonwood Retreat Center (transcript, 259 pp.)"
     url: https://stacks.cdc.gov/view/cdc/253137
     document_class: primary_text (transcript)
-    read: full (260-page PDF downloaded 2026-10-02; text searched and every autism passage read)
+    read: full (259-page PDF downloaded 2026-10-02; text searched and every autism passage read)
     sha256: c2b0333f052dd6f71e477ab7e2e7bee9effc8402dbd60253dcc6f25c787a847c
     stored_as: sources/simpsonwood-transcript-2000.ocr.txt   # plain text for the quote check; US government work, public domain; machine text extracted from the PDF, OCR noise possible
     authenticity: {status: authenticated, strength: moderate, provenance: "CDC Stacks, the CDC's own repository.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Text extracted from a scan; passages other than those mentioning autism were not read line by line."], checked: 2026-10-02}

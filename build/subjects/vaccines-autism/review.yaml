@@ -245,12 +245,14 @@ rounds:
     severity: blocking
     finding: 'Adoption sits in an anchor. The anchor lists src-hhs-thimerosal-2025 (an HHS release adopting an ACIP vote of July 2025) and src-cdc-thimerosal (the CDC page) among its sources, though the anchor description does not use them. Both are agency statements, i.e. adoption (CONTRIBUTING; round 1 B4). Remove both from anchor.sources; they may stay in adoption_note.'
     evidence: 'claims.yaml, va-thimerosal-no-detectable-increase, anchor.sources: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-cdc-thimerosal, src-verstraeten-2003, src-hhs-thimerosal-2025]; manifest entries at lines 184-195 are agency pages.'
+    author_response: {action: fixed, note: 'src-cdc-thimerosal and src-hhs-thimerosal-2025 removed from anchor.sources of va-thimerosal-no-detectable-increase.'}
     resolved: false
   - id: R3-2
     target: va-vicp-table-no-autism (statement); threads.yaml thread-real-pieces (Poling note)
     severity: blocking
     finding: 'The word "encephalopathy" is applied to the Poling concession in two places with no source read: the claim statement says "The Poling concession was described as an encephalopathy", and thread-real-pieces says "True: a government concession of an encephalopathy aggravating a mitochondrial disorder with features of autism". Neither CNN nor NPR (both opened) contains it, and va-poling-concession itself says the fuller wording is known only as quoted in Salon and was not re-checked. This is a medical description of a named private person that goes beyond what was read, and the thread presents it as "True". Remove it, or attribute it ("as quoted in Salon, not re-checked") and drop "True:".'
     evidence: 'grep for "encephalopath" in the CNN and NPR pages: no hits. claims.yaml va-poling-concession anchor: "known only as quoted in Salon (Mar 2008) and was not re-checked".'
+    author_response: {action: fixed, note: '"encephalopathy" removed from va-vicp-table-no-autism (now: whether the concession fell under a Table injury was not checked) and from thread-real-pieces, which now says "As reported (CNN, NPR)" with both wordings and no "True:". The child is also no longer named in the dig''s own text (owner rule, log L-19).'}
     resolved: false
   - id: R3-3
     target: va-omnibus-test-cases; timeline events a14, a16, a18; log L-18
@@ -262,18 +264,21 @@ rounds:
     severity: non_blocking
     finding: 'The anchor says "The chair asks participants to treat the data as embargoed"; in the transcript (pp. 255-256) the speaker is Dr. Bernier answering a question about copies, and the introduction names Dr. Johnston to chair. Say who spoke. The manifest, claim and log say a 260-page PDF; pdfinfo gives 259 pages.'
     evidence: 'stacks.cdc.gov/view/cdc/253137/cdc_253137_DS1.pdf (sha256 c2b0333f... as in the manifest).'
+    author_response: {action: fixed, note: 'the speaker is given as Dr. Bernier answering a question about copies; 259 pages in the claim and manifest. Log L-18 keeps its 260 (append-only); L-20 corrects it.'}
     resolved: false
   - id: R3-5
     target: va-retraction-reasons
     severity: non_blocking
     finding: 'The statement says "The Lancet said the paper had failed to disclose financial interests" as fact; the only source read is a 2011 secondary review. Say "as described in" in the statement, as the anchor does, and consider confidence moderate while both Lancet notices are unread.'
     evidence: 'Indian J Psychiatry 2011 (Europe PMC) reads: "an admission by the Lancet that Wakefield et al. had failed to disclose financial interests". Note the review says "10 of the 12 co-authors", which is the same 10 of 13 authors.'
+    author_response: {action: fixed, note: 'the statement now says "as described in a 2011 review". Confidence left for the reviewer.'}
     resolved: false
   - id: R3-6
     target: surface lines (headline, short_answer.except, va-poling-concession basis, thread-wakefield-transmission, divergence_note)
     severity: non_blocking
     finding: '(a) The owner decision on "Two Narrow Exceptions Explained" (N10) is not the only line that can read as "vaccines cause autism in two cases": va-poling-concession.basis calls the concession "the narrow ''yes'' in the short answer", short_answer.except heads them "One legal exception" and "One open question", and description item (3) says "the real exceptions". The assessment headline and key points do not. Suggest "what remains open" wording throughout, with the owner. (b) thread-wakefield-transmission says "2025-2026: the claim is adopted by the US health department"; the CDC page says only that studies have not ruled the possibility out. Reword. (c) divergence_note says the WHO "say there is no link" without the 20-of-31 qualifier used elsewhere.'
     evidence: 'CDC autism page (22 Jul 2026): "Scientific studies have not ruled out the possibility that infant vaccines contribute to the development of autism." WHO page: 20 of 31 no association, 11 suggested one.'
+    author_response: {action: partly, note: '(b) thread reworded to what the CDC page says; (c) divergence_note now gives the WHO 20-of-31 qualifier. (a) the "exceptions" wording stays with the owner together with the headline (N10).'}
     resolved: false
   - id: R3-7
     target: va-aluminum-no-detectable-increase adoption_note; va-mito-fever-regression positions
@@ -286,6 +291,7 @@ rounds:
     severity: non_blocking
     finding: '"Some 5,000 petitions" in Bruesewitz dissent n.25 is a figure the respondent noted ("currently pending"), not a finding. Attribute it so.'
     evidence: 'Dissent n.25: "Respondent notes that there are some 5,000 petitions alleging a causal link between certain vaccines and autism spectrum disorders that are currently pending".'
+    author_response: {action: fixed, note: '"some 5,000" attributed as a figure the respondent gave, noted in the dissent, in the claim and the short-answer scale.'}
     resolved: false
   - id: R3-9
     target: va-whole-schedule-gap; va-wakefield-sanctions (anchors)
@@ -297,6 +303,7 @@ rounds:
     target: va-geier-licence statement
     severity: non_blocking
     finding: '"Author of the main early papers reporting a vaccine-autism link" is a characterisation no source read supports (the IOM named the Geier papers but is adoption). Either anchor it or say "co-author of papers reporting an association (see va-thimerosal-no-detectable-increase)".'
+    author_response: {action: fixed, note: '"co-author of papers reporting an association (see va-thimerosal-no-detectable-increase)".'}
     resolved: false
 open_items_proposed_by_author:
   - 'Other compensated vaccine-injury cases with autism-like features (for example Banks v. HHS, 2007) not investigated (F4).'

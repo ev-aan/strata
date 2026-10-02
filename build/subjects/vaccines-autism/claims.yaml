@@ -36,12 +36,13 @@ assessment:
     general claim "vaccines cause autism" is filed as unsupported, not as refuted. The reverse link is established:
     rubella in pregnancy can cause autism, and the vaccine prevents it. What health bodies say
     is shown separately because it is adoption, not evidence: the US Institute of Medicine
-    (2004) and the WHO's vaccine safety committee (December 2025) found no causal link; since
+    (2004) and the WHO's vaccine safety committee (December 2025) found no evidence of a causal
+    link; since
     November 2025 the CDC's page has said the "no link" statement is not evidence-based, a
     change the US Health Secretary said he ordered (va-cdc-page-2025).
   key_points:
     - "Two Danish cohorts (1,194,764 children) and studies in the UK and US found no more autism in children who got MMR."
-    - "Health bodies (adoption, not evidence): WHO's safety committee found no causal link (2025); since Nov 2025 the CDC's page disputes the 'no link' statement."
+    - "Health bodies (adoption, not evidence): WHO's safety committee found no evidence of a causal link (2025); since Nov 2025 the CDC's page disputes the 'no link' statement."
     - "The 1998 paper behind the scare was retracted. Open: a 2007 legal concession (not science) and an untested question on fever in mitochondrial disease."
   basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
   # Key point 2 states institutional positions on the first screen by owner decision 2026-10-02 (log L-19). They are adoption, not basis.
@@ -114,7 +115,8 @@ short_answer:
       scale: >
         The best-known concession, not a count: other compensated cases with autism-like
         features were not checked. Her case had been designated a potential test case before
-        the concession. The same court received some 5,000 autism petitions, and all six test
+        the concession. Some 5,000 autism petitions were pending (a figure the respondent gave,
+        noted in the Bruesewitz dissent), and all six test
         cases chosen to present the families' strongest theories were rejected.
       scale_sources: [src-poling-cnn-2008, src-bruesewitz, src-oap-decisions]
       what_it_is:
@@ -211,8 +213,9 @@ divergence_note: >
   measles, mumps and rubella cause autism, 13% of US adults said true, 68% false and 19%
   were unsure (Annenberg). Since November 2025 the gap has a new
   shape. The US health department's own CDC page now calls "vaccines do not cause autism"
-  not an evidence-based claim, while the WHO, the AAP and the studies themselves say there
-  is no link. Nothing in the evidence changed between those two dates; what changed was
+  not an evidence-based claim, while the WHO's safety committee (which found 20 of 31
+  primary studies showed no association and the other 11 of very low strength), the AAP and the
+  studies themselves find no evidence of a link. Nothing in the evidence changed between those two dates; what changed was
   adoption by an institution. Strata records both statements, and gives neither of them
   evidential weight. The real open edges are narrow: a very rare susceptible group cannot
   be excluded by population data, fever-related regression in mitochondrial disease is
@@ -486,8 +489,8 @@ claims:
       The paper's interpretation was retracted in 2004 and the paper itself in 2010, for
       different reasons, and the records problems were documented separately. In 2004, 10 of
       its 13 authors retracted its interpretation, saying no causal link was established
-      because the data were insufficient, and The Lancet said the paper had failed to disclose
-      financial interests (the paper itself stayed in the journal). In February 2010, days after
+      because the data were insufficient, and, as described in a 2011 review, The Lancet said the
+      paper had failed to disclose financial interests (the paper itself stayed in the journal). In February 2010, days after
       the GMC's findings of fact of 28 January 2010, The Lancet retracted the whole paper; its
       editor said the statements in the paper were "utterly false". The notice's own wording was
       not read. Evidence that its diagnoses and onset dates did not match the children's records
@@ -688,7 +691,7 @@ claims:
         Danish incidence rose after removal in 1992 [abstract]. Independent populations:
         Denmark (Hviid 2003; Madsen 2003) and the US (Price 2010; Schechter 2008).
       accessible: true
-      sources: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-cdc-thimerosal, src-verstraeten-2003, src-hhs-thimerosal-2025]
+      sources: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-verstraeten-2003]
     positions:
       - label: "No"
         holder: "Hviid 2003, Price 2010, Schechter & Grether 2008, Madsen 2003, IOM 2004"
@@ -1223,7 +1226,7 @@ claims:
     evidence_class: primary_text
     confidence: high
     evidential_weight: 4   # of 5
-    anchor_checked: primary   # full 260-page CDC Stacks PDF downloaded; every passage mentioning autism read
+    anchor_checked: primary   # full 259-page CDC Stacks PDF downloaded; every passage mentioning autism read
     adoption_weight: 2   # of 5
     adoption_note: "Not measured. Popularized by 'Deadly Immunity' (2005)."
     would_change_if: >
@@ -1238,7 +1241,8 @@ claims:
         concerned speech delay, attention deficit disorder and the neurodevelopmental group
         [read; full text searched, all eight autism passages read]. Later, limiting to children
         seen at least twice, the autism relative risk "is no different than one" and was
-        replicated across case definitions [read]. The chair asks participants to treat the data
+        replicated across case definitions [read]. Dr. Bernier, answering a question about copies,
+        asks participants to treat the data
         as "embargoed" and "very highly protected" until a public release at the ACIP meeting
         on 21-22 June 2000, weeks later: a request for confidentiality ahead of a planned
         public release, which is what the transcript shows, not a decision to withhold [read].
@@ -1401,7 +1405,8 @@ claims:
       In the US vaccine court's Omnibus Autism Proceeding, all six test cases, chosen by the
       families' own steering committee to present their strongest theories (MMR plus
       thimerosal, and thimerosal alone), were decided against the families in 2009 and 2010,
-      out of some 5,000 autism petitions (Bruesewitz dissent, n.25). The court's decision list
+      out of some 5,000 autism petitions (a figure the respondent gave, as noted in the Bruesewitz
+      dissent, n.25). The court's decision list
       shows review decisions in 2009 and Federal Circuit decisions in 2010 on three of the
       cases; the decisions themselves were not opened, so their outcome on review is not stated.
     evidence_class: primary_text
@@ -1483,8 +1488,8 @@ claims:
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Autism is not on the US Vaccine Injury Table. Encephalopathy or encephalitis within 5 to
-      15 days of a measles-containing vaccine is. The Poling concession was described as an
-      encephalopathy, but the Table in force when it was decided was not read.
+      15 days of a measles-containing vaccine is. Whether the Poling concession fell under a
+      Table injury was not checked: the Table in force when it was decided was not read.
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5   # of 5
@@ -1518,7 +1523,8 @@ claims:
     state: established
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      Mark Geier, author of the main early papers reporting a vaccine-autism link, had his
+      Mark Geier, co-author of papers reporting an association (see
+      va-thimerosal-no-detectable-increase), had his
       Maryland medical licence revoked by the State Board of Physicians on 22 August 2012. The
       Board found, among other things, that he treated autistic children with the drug Lupron
       outside its approved use without adequate examination, started chelation without
