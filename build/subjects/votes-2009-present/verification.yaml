@@ -1,0 +1,4965 @@
+checked: 17052
+totals:
+  match: 16670
+  mismatch: 377
+  unreachable: 5
+note: match = yea, nay (and House date) equal the official XML. Speaker elections are skipped (they count names, not yea/nay). Differences are
+  listed with both counts; their causes are not analysed here. The official record wins.
+exceptions:
+- chamber: H
+  congress: 111
+  date: '2009-01-15'
+  n: 19
+  index_yea_nay:
+  - 273
+  - 152
+  result: mismatch
+  official_or_error:
+  - 275
+  - 152
+  - '2009-01-15'
+  url: https://clerk.house.gov/evs/2009/roll019.xml
+- chamber: H
+  congress: 111
+  date: '2009-01-15'
+  n: 20
+  index_yea_nay:
+  - 151
+  - 271
+  result: mismatch
+  official_or_error:
+  - 151
+  - 274
+  - '2009-01-15'
+  url: https://clerk.house.gov/evs/2009/roll020.xml
+- chamber: H
+  congress: 111
+  date: '2009-01-15'
+  n: 21
+  index_yea_nay:
+  - 142
+  - 278
+  result: mismatch
+  official_or_error:
+  - 142
+  - 282
+  - '2009-01-15'
+  url: https://clerk.house.gov/evs/2009/roll021.xml
+- chamber: H
+  congress: 111
+  date: '2009-01-15'
+  n: 22
+  index_yea_nay:
+  - 422
+  - 0
+  result: mismatch
+  official_or_error:
+  - 426
+  - 0
+  - '2009-01-15'
+  url: https://clerk.house.gov/evs/2009/roll022.xml
+- chamber: H
+  congress: 111
+  date: '2009-01-21'
+  n: 23
+  index_yea_nay:
+  - 423
+  - 0
+  result: mismatch
+  official_or_error:
+  - 427
+  - 1
+  - '2009-01-21'
+  url: https://clerk.house.gov/evs/2009/roll023.xml
+- chamber: H
+  congress: 111
+  date: '2009-01-28'
+  n: 42
+  index_yea_nay:
+  - 134
+  - 296
+  result: mismatch
+  official_or_error:
+  - 134
+  - 302
+  - '2009-01-28'
+  url: https://clerk.house.gov/evs/2009/roll042.xml
+- chamber: H
+  congress: 111
+  date: '2009-01-28'
+  n: 43
+  index_yea_nay:
+  - 116
+  - 314
+  result: mismatch
+  official_or_error:
+  - 116
+  - 320
+  - '2009-01-28'
+  url: https://clerk.house.gov/evs/2009/roll043.xml
+- chamber: H
+  congress: 111
+  date: '2009-01-28'
+  n: 44
+  index_yea_nay:
+  - 170
+  - 260
+  result: mismatch
+  official_or_error:
+  - 170
+  - 266
+  - '2009-01-28'
+  url: https://clerk.house.gov/evs/2009/roll044.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-05'
+  n: 100
+  index_yea_nay:
+  - 258
+  - 164
+  result: mismatch
+  official_or_error:
+  - 263
+  - 164
+  - '2009-03-05'
+  url: https://clerk.house.gov/evs/2009/roll100.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-05'
+  n: 101
+  index_yea_nay:
+  - 211
+  - 213
+  result: mismatch
+  official_or_error:
+  - 211
+  - 218
+  - '2009-03-05'
+  url: https://clerk.house.gov/evs/2009/roll101.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-05'
+  n: 102
+  index_yea_nay:
+  - 418
+  - 2
+  result: mismatch
+  official_or_error:
+  - 423
+  - 2
+  - '2009-03-05'
+  url: https://clerk.house.gov/evs/2009/roll102.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-12'
+  n: 122
+  index_yea_nay:
+  - 140
+  - 279
+  result: mismatch
+  official_or_error:
+  - 140
+  - 284
+  - '2009-03-12'
+  url: https://clerk.house.gov/evs/2009/roll122.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-18'
+  n: 133
+  index_yea_nay:
+  - 382
+  - 36
+  result: mismatch
+  official_or_error:
+  - 388
+  - 36
+  - '2009-03-18'
+  url: https://clerk.house.gov/evs/2009/roll133.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-18'
+  n: 134
+  index_yea_nay:
+  - 255
+  - 168
+  result: mismatch
+  official_or_error:
+  - 261
+  - 168
+  - '2009-03-18'
+  url: https://clerk.house.gov/evs/2009/roll134.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-18'
+  n: 135
+  index_yea_nay:
+  - 175
+  - 250
+  result: mismatch
+  official_or_error:
+  - 175
+  - 256
+  - '2009-03-18'
+  url: https://clerk.house.gov/evs/2009/roll135.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-18'
+  n: 136
+  index_yea_nay:
+  - 366
+  - 57
+  result: mismatch
+  official_or_error:
+  - 372
+  - 57
+  - '2009-03-18'
+  url: https://clerk.house.gov/evs/2009/roll136.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-18'
+  n: 137
+  index_yea_nay:
+  - 277
+  - 147
+  result: mismatch
+  official_or_error:
+  - 283
+  - 147
+  - '2009-03-18'
+  url: https://clerk.house.gov/evs/2009/roll137.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-18'
+  n: 138
+  index_yea_nay:
+  - 333
+  - 93
+  result: mismatch
+  official_or_error:
+  - 339
+  - 93
+  - '2009-03-18'
+  url: https://clerk.house.gov/evs/2009/roll138.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-26'
+  n: 157
+  index_yea_nay:
+  - 415
+  - 0
+  result: mismatch
+  official_or_error:
+  - 420
+  - 0
+  - '2009-03-26'
+  url: https://clerk.house.gov/evs/2009/roll157.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-26'
+  n: 158
+  index_yea_nay:
+  - 415
+  - 0
+  result: mismatch
+  official_or_error:
+  - 420
+  - 0
+  - '2009-03-26'
+  url: https://clerk.house.gov/evs/2009/roll158.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-26'
+  n: 159
+  index_yea_nay:
+  - 417
+  - 0
+  result: mismatch
+  official_or_error:
+  - 422
+  - 0
+  - '2009-03-26'
+  url: https://clerk.house.gov/evs/2009/roll159.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-26'
+  n: 160
+  index_yea_nay:
+  - 413
+  - 2
+  result: mismatch
+  official_or_error:
+  - 418
+  - 2
+  - '2009-03-26'
+  url: https://clerk.house.gov/evs/2009/roll160.xml
+- chamber: H
+  congress: 111
+  date: '2009-03-26'
+  n: 161
+  index_yea_nay:
+  - 148
+  - 267
+  result: mismatch
+  official_or_error:
+  - 148
+  - 272
+  - '2009-03-26'
+  url: https://clerk.house.gov/evs/2009/roll161.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-01'
+  n: 180
+  index_yea_nay:
+  - 228
+  - 192
+  result: mismatch
+  official_or_error:
+  - 228
+  - 198
+  - '2009-04-01'
+  url: https://clerk.house.gov/evs/2009/roll180.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-01'
+  n: 181
+  index_yea_nay:
+  - 240
+  - 180
+  result: mismatch
+  official_or_error:
+  - 246
+  - 180
+  - '2009-04-01'
+  url: https://clerk.house.gov/evs/2009/roll181.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-02'
+  n: 188
+  index_yea_nay:
+  - 81
+  - 346
+  result: mismatch
+  official_or_error:
+  - 84
+  - 348
+  - '2009-04-02'
+  url: https://clerk.house.gov/evs/2009/roll188.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-02'
+  n: 189
+  index_yea_nay:
+  - 111
+  - 317
+  result: mismatch
+  official_or_error:
+  - 111
+  - 322
+  - '2009-04-02'
+  url: https://clerk.house.gov/evs/2009/roll189.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-02'
+  n: 190
+  index_yea_nay:
+  - 109
+  - 317
+  result: mismatch
+  official_or_error:
+  - 113
+  - 318
+  - '2009-04-02'
+  url: https://clerk.house.gov/evs/2009/roll190.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-02'
+  n: 191
+  index_yea_nay:
+  - 137
+  - 289
+  result: mismatch
+  official_or_error:
+  - 137
+  - 293
+  - '2009-04-02'
+  url: https://clerk.house.gov/evs/2009/roll191.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-23'
+  n: 200
+  index_yea_nay:
+  - 419
+  - 0
+  result: mismatch
+  official_or_error:
+  - 424
+  - 0
+  - '2009-04-23'
+  url: https://clerk.house.gov/evs/2009/roll200.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-23'
+  n: 201
+  index_yea_nay:
+  - 418
+  - 1
+  result: mismatch
+  official_or_error:
+  - 423
+  - 1
+  - '2009-04-23'
+  url: https://clerk.house.gov/evs/2009/roll201.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-23'
+  n: 202
+  index_yea_nay:
+  - 194
+  - 232
+  result: mismatch
+  official_or_error:
+  - 194
+  - 236
+  - '2009-04-23'
+  url: https://clerk.house.gov/evs/2009/roll202.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-23'
+  n: 203
+  index_yea_nay:
+  - 160
+  - 265
+  result: mismatch
+  official_or_error:
+  - 160
+  - 271
+  - '2009-04-23'
+  url: https://clerk.house.gov/evs/2009/roll203.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-30'
+  n: 225
+  index_yea_nay:
+  - 271
+  - 154
+  result: mismatch
+  official_or_error:
+  - 276
+  - 154
+  - '2009-04-30'
+  url: https://clerk.house.gov/evs/2009/roll225.xml
+- chamber: H
+  congress: 111
+  date: '2009-04-30'
+  n: 226
+  index_yea_nay:
+  - 279
+  - 149
+  result: mismatch
+  official_or_error:
+  - 284
+  - 149
+  - '2009-04-30'
+  url: https://clerk.house.gov/evs/2009/roll226.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-07'
+  n: 238
+  index_yea_nay:
+  - 240
+  - 176
+  result: mismatch
+  official_or_error:
+  - 245
+  - 176
+  - '2009-05-07'
+  url: https://clerk.house.gov/evs/2009/roll238.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-07'
+  n: 239
+  index_yea_nay:
+  - 171
+  - 247
+  result: mismatch
+  official_or_error:
+  - 171
+  - 252
+  - '2009-05-07'
+  url: https://clerk.house.gov/evs/2009/roll239.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-07'
+  n: 240
+  index_yea_nay:
+  - 167
+  - 254
+  result: mismatch
+  official_or_error:
+  - 167
+  - 259
+  - '2009-05-07'
+  url: https://clerk.house.gov/evs/2009/roll240.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-07'
+  n: 241
+  index_yea_nay:
+  - 171
+  - 250
+  result: mismatch
+  official_or_error:
+  - 171
+  - 255
+  - '2009-05-07'
+  url: https://clerk.house.gov/evs/2009/roll241.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-13'
+  n: 249
+  index_yea_nay:
+  - 264
+  - 160
+  result: mismatch
+  official_or_error:
+  - 270
+  - 160
+  - '2009-05-13'
+  url: https://clerk.house.gov/evs/2009/roll249.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-13'
+  n: 250
+  index_yea_nay:
+  - 426
+  - 2
+  result: mismatch
+  official_or_error:
+  - 432
+  - 2
+  - '2009-05-13'
+  url: https://clerk.house.gov/evs/2009/roll250.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-13'
+  n: 251
+  index_yea_nay:
+  - 419
+  - 7
+  result: mismatch
+  official_or_error:
+  - 425
+  - 7
+  - '2009-05-13'
+  url: https://clerk.house.gov/evs/2009/roll251.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-14'
+  n: 255
+  index_yea_nay:
+  - 329
+  - 97
+  result: mismatch
+  official_or_error:
+  - 334
+  - 97
+  - '2009-05-14'
+  url: https://clerk.house.gov/evs/2009/roll255.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-14'
+  n: 256
+  index_yea_nay:
+  - 428
+  - 0
+  result: mismatch
+  official_or_error:
+  - 433
+  - 0
+  - '2009-05-14'
+  url: https://clerk.house.gov/evs/2009/roll256.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-14'
+  n: 257
+  index_yea_nay:
+  - 428
+  - 0
+  result: mismatch
+  official_or_error:
+  - 433
+  - 0
+  - '2009-05-14'
+  url: https://clerk.house.gov/evs/2009/roll257.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-20'
+  n: 279
+  index_yea_nay:
+  - 422
+  - 0
+  result: mismatch
+  official_or_error:
+  - 427
+  - 0
+  - '2009-05-20'
+  url: https://clerk.house.gov/evs/2009/roll279.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-21'
+  n: 288
+  index_yea_nay:
+  - 415
+  - 0
+  result: mismatch
+  official_or_error:
+  - 420
+  - 0
+  - '2009-05-21'
+  url: https://clerk.house.gov/evs/2009/roll288.xml
+- chamber: H
+  congress: 111
+  date: '2009-05-21'
+  n: 289
+  index_yea_nay:
+  - 412
+  - 2
+  result: mismatch
+  official_or_error:
+  - 417
+  - 2
+  - '2009-05-21'
+  url: https://clerk.house.gov/evs/2009/roll289.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-04'
+  n: 304
+  index_yea_nay:
+  - 219
+  - 206
+  result: mismatch
+  official_or_error:
+  - 219
+  - 211
+  - '2009-06-04'
+  url: https://clerk.house.gov/evs/2009/roll304.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-04'
+  n: 305
+  index_yea_nay:
+  - 306
+  - 117
+  result: mismatch
+  official_or_error:
+  - 310
+  - 118
+  - '2009-06-04'
+  url: https://clerk.house.gov/evs/2009/roll305.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-04'
+  n: 308
+  index_yea_nay:
+  - 157
+  - 254
+  result: mismatch
+  official_or_error:
+  - 157
+  - 258
+  - '2009-06-04'
+  url: https://clerk.house.gov/evs/2009/roll308.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-10'
+  n: 320
+  index_yea_nay:
+  - 251
+  - 171
+  result: mismatch
+  official_or_error:
+  - 257
+  - 171
+  - '2009-06-10'
+  url: https://clerk.house.gov/evs/2009/roll320.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-10'
+  n: 321
+  index_yea_nay:
+  - 204
+  - 219
+  result: mismatch
+  official_or_error:
+  - 205
+  - 224
+  - '2009-06-10'
+  url: https://clerk.house.gov/evs/2009/roll321.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-10'
+  n: 322
+  index_yea_nay:
+  - 424
+  - 0
+  result: mismatch
+  official_or_error:
+  - 429
+  - 0
+  - '2009-06-10'
+  url: https://clerk.house.gov/evs/2009/roll322.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-10'
+  n: 323
+  index_yea_nay:
+  - 426
+  - 0
+  result: mismatch
+  official_or_error:
+  - 432
+  - 0
+  - '2009-06-10'
+  url: https://clerk.house.gov/evs/2009/roll323.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-10'
+  n: 324
+  index_yea_nay:
+  - 178
+  - 248
+  result: mismatch
+  official_or_error:
+  - 178
+  - 254
+  - '2009-06-10'
+  url: https://clerk.house.gov/evs/2009/roll324.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-10'
+  n: 325
+  index_yea_nay:
+  - 183
+  - 239
+  result: mismatch
+  official_or_error:
+  - 183
+  - 245
+  - '2009-06-10'
+  url: https://clerk.house.gov/evs/2009/roll325.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-10'
+  n: 326
+  index_yea_nay:
+  - 422
+  - 3
+  result: mismatch
+  official_or_error:
+  - 428
+  - 3
+  - '2009-06-10'
+  url: https://clerk.house.gov/evs/2009/roll326.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-16'
+  n: 350
+  index_yea_nay:
+  - 176
+  - 124
+  result: mismatch
+  official_or_error:
+  - 179
+  - 124
+  - '2009-06-16'
+  url: https://clerk.house.gov/evs/2009/roll350.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-17'
+  n: 353
+  index_yea_nay:
+  - 405
+  - 14
+  result: mismatch
+  official_or_error:
+  - 411
+  - 14
+  - '2009-06-17'
+  url: https://clerk.house.gov/evs/2009/roll353.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-17'
+  n: 354
+  index_yea_nay:
+  - 419
+  - 4
+  result: mismatch
+  official_or_error:
+  - 425
+  - 4
+  - '2009-06-17'
+  url: https://clerk.house.gov/evs/2009/roll354.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-17'
+  n: 355
+  index_yea_nay:
+  - 416
+  - 2
+  result: mismatch
+  official_or_error:
+  - 422
+  - 2
+  - '2009-06-17'
+  url: https://clerk.house.gov/evs/2009/roll355.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 356
+  index_yea_nay:
+  - 140
+  - 277
+  result: mismatch
+  official_or_error:
+  - 140
+  - 283
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll356.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 357
+  index_yea_nay:
+  - 412
+  - 3
+  result: mismatch
+  official_or_error:
+  - 418
+  - 3
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll357.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 358
+  index_yea_nay:
+  - 383
+  - 35
+  result: mismatch
+  official_or_error:
+  - 389
+  - 35
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll358.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 359
+  index_yea_nay:
+  - 105
+  - 317
+  result: mismatch
+  official_or_error:
+  - 105
+  - 323
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll359.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 360
+  index_yea_nay:
+  - 212
+  - 210
+  result: mismatch
+  official_or_error:
+  - 212
+  - 216
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll360.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 362
+  index_yea_nay:
+  - 161
+  - 264
+  result: mismatch
+  official_or_error:
+  - 161
+  - 270
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll362.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 363
+  index_yea_nay:
+  - 337
+  - 87
+  result: mismatch
+  official_or_error:
+  - 343
+  - 87
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll363.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 364
+  index_yea_nay:
+  - 165
+  - 251
+  result: mismatch
+  official_or_error:
+  - 165
+  - 257
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll364.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 365
+  index_yea_nay:
+  - 416
+  - 0
+  result: mismatch
+  official_or_error:
+  - 422
+  - 0
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll365.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 366
+  index_yea_nay:
+  - 208
+  - 212
+  result: mismatch
+  official_or_error:
+  - 208
+  - 218
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll366.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 367
+  index_yea_nay:
+  - 177
+  - 242
+  result: mismatch
+  official_or_error:
+  - 177
+  - 248
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll367.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 368
+  index_yea_nay:
+  - 261
+  - 157
+  result: mismatch
+  official_or_error:
+  - 262
+  - 162
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll368.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 369
+  index_yea_nay:
+  - 188
+  - 230
+  result: mismatch
+  official_or_error:
+  - 188
+  - 236
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll369.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 370
+  index_yea_nay:
+  - 147
+  - 271
+  result: mismatch
+  official_or_error:
+  - 147
+  - 275
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll370.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 371
+  index_yea_nay:
+  - 412
+  - 1
+  result: mismatch
+  official_or_error:
+  - 417
+  - 1
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll371.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 372
+  index_yea_nay:
+  - 161
+  - 256
+  result: mismatch
+  official_or_error:
+  - 161
+  - 262
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll372.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 373
+  index_yea_nay:
+  - 134
+  - 288
+  result: mismatch
+  official_or_error:
+  - 134
+  - 294
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll373.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 374
+  index_yea_nay:
+  - 115
+  - 305
+  result: mismatch
+  official_or_error:
+  - 115
+  - 311
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll374.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 375
+  index_yea_nay:
+  - 123
+  - 298
+  result: mismatch
+  official_or_error:
+  - 123
+  - 303
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll375.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 376
+  index_yea_nay:
+  - 129
+  - 289
+  result: mismatch
+  official_or_error:
+  - 129
+  - 295
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll376.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 377
+  index_yea_nay:
+  - 102
+  - 311
+  result: mismatch
+  official_or_error:
+  - 102
+  - 317
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll377.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 378
+  index_yea_nay:
+  - 130
+  - 289
+  result: mismatch
+  official_or_error:
+  - 130
+  - 295
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll378.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 379
+  index_yea_nay:
+  - 107
+  - 314
+  result: mismatch
+  official_or_error:
+  - 107
+  - 320
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll379.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 380
+  index_yea_nay:
+  - 100
+  - 312
+  result: mismatch
+  official_or_error:
+  - 100
+  - 318
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll380.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 381
+  index_yea_nay:
+  - 119
+  - 300
+  result: mismatch
+  official_or_error:
+  - 119
+  - 306
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll381.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-18'
+  n: 382
+  index_yea_nay:
+  - 124
+  - 298
+  result: mismatch
+  official_or_error:
+  - 124
+  - 303
+  - '2009-06-18'
+  url: https://clerk.house.gov/evs/2009/roll382.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 435
+  index_yea_nay:
+  - 340
+  - 85
+  result: mismatch
+  official_or_error:
+  - 345
+  - 85
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll435.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 436
+  index_yea_nay:
+  - 373
+  - 52
+  result: mismatch
+  official_or_error:
+  - 375
+  - 55
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll436.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 437
+  index_yea_nay:
+  - 280
+  - 145
+  result: mismatch
+  official_or_error:
+  - 282
+  - 148
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll437.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 438
+  index_yea_nay:
+  - 418
+  - 6
+  result: mismatch
+  official_or_error:
+  - 423
+  - 6
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll438.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 439
+  index_yea_nay:
+  - 238
+  - 185
+  result: mismatch
+  official_or_error:
+  - 240
+  - 187
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll439.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 440
+  index_yea_nay:
+  - 133
+  - 290
+  result: mismatch
+  official_or_error:
+  - 134
+  - 294
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll440.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 441
+  index_yea_nay:
+  - 201
+  - 226
+  result: mismatch
+  official_or_error:
+  - 202
+  - 230
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll441.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 442
+  index_yea_nay:
+  - 346
+  - 82
+  result: mismatch
+  official_or_error:
+  - 349
+  - 84
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll442.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 443
+  index_yea_nay:
+  - 113
+  - 313
+  result: mismatch
+  official_or_error:
+  - 113
+  - 318
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll443.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 444
+  index_yea_nay:
+  - 110
+  - 317
+  result: mismatch
+  official_or_error:
+  - 110
+  - 322
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll444.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 445
+  index_yea_nay:
+  - 82
+  - 343
+  result: mismatch
+  official_or_error:
+  - 82
+  - 348
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll445.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 446
+  index_yea_nay:
+  - 114
+  - 312
+  result: mismatch
+  official_or_error:
+  - 114
+  - 317
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll446.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 447
+  index_yea_nay:
+  - 110
+  - 313
+  result: mismatch
+  official_or_error:
+  - 110
+  - 318
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll447.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-24'
+  n: 448
+  index_yea_nay:
+  - 112
+  - 315
+  result: mismatch
+  official_or_error:
+  - 112
+  - 320
+  - '2009-06-24'
+  url: https://clerk.house.gov/evs/2009/roll448.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-25'
+  n: 453
+  index_yea_nay:
+  - 136
+  - 274
+  result: mismatch
+  official_or_error:
+  - 138
+  - 278
+  - '2009-06-25'
+  url: https://clerk.house.gov/evs/2009/roll453.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-25'
+  n: 454
+  index_yea_nay:
+  - 218
+  - 190
+  result: mismatch
+  official_or_error:
+  - 224
+  - 190
+  - '2009-06-25'
+  url: https://clerk.house.gov/evs/2009/roll454.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-25'
+  n: 455
+  index_yea_nay:
+  - 171
+  - 238
+  result: mismatch
+  official_or_error:
+  - 171
+  - 244
+  - '2009-06-25'
+  url: https://clerk.house.gov/evs/2009/roll455.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-25'
+  n: 456
+  index_yea_nay:
+  - 186
+  - 220
+  result: mismatch
+  official_or_error:
+  - 186
+  - 226
+  - '2009-06-25'
+  url: https://clerk.house.gov/evs/2009/roll456.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-25'
+  n: 457
+  index_yea_nay:
+  - 218
+  - 193
+  result: mismatch
+  official_or_error:
+  - 224
+  - 193
+  - '2009-06-25'
+  url: https://clerk.house.gov/evs/2009/roll457.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-25'
+  n: 458
+  index_yea_nay:
+  - 410
+  - 0
+  result: mismatch
+  official_or_error:
+  - 416
+  - 0
+  - '2009-06-25'
+  url: https://clerk.house.gov/evs/2009/roll458.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 467
+  index_yea_nay:
+  - 202
+  - 221
+  result: mismatch
+  official_or_error:
+  - 202
+  - 225
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll467.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 468
+  index_yea_nay:
+  - 169
+  - 254
+  result: mismatch
+  official_or_error:
+  - 169
+  - 259
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll468.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 469
+  index_yea_nay:
+  - 170
+  - 257
+  result: mismatch
+  official_or_error:
+  - 170
+  - 261
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll469.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 470
+  index_yea_nay:
+  - 123
+  - 299
+  result: mismatch
+  official_or_error:
+  - 123
+  - 305
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll470.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 471
+  index_yea_nay:
+  - 122
+  - 303
+  result: mismatch
+  official_or_error:
+  - 122
+  - 309
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll471.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 472
+  index_yea_nay:
+  - 122
+  - 295
+  result: mismatch
+  official_or_error:
+  - 122
+  - 301
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll472.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 473
+  index_yea_nay:
+  - 131
+  - 290
+  result: mismatch
+  official_or_error:
+  - 131
+  - 296
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll473.xml
+- chamber: H
+  congress: 111
+  date: '2009-06-26'
+  n: 474
+  index_yea_nay:
+  - 114
+  - 311
+  result: mismatch
+  official_or_error:
+  - 114
+  - 317
+  - '2009-06-26'
+  url: https://clerk.house.gov/evs/2009/roll474.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-08'
+  n: 483
+  index_yea_nay:
+  - 422
+  - 4
+  result: mismatch
+  official_or_error:
+  - 427
+  - 4
+  - '2009-07-08'
+  url: https://clerk.house.gov/evs/2009/roll483.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 498
+  index_yea_nay:
+  - 260
+  - 161
+  result: mismatch
+  official_or_error:
+  - 266
+  - 161
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll498.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 499
+  index_yea_nay:
+  - 398
+  - 27
+  result: mismatch
+  official_or_error:
+  - 404
+  - 27
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll499.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 500
+  index_yea_nay:
+  - 421
+  - 3
+  result: mismatch
+  official_or_error:
+  - 426
+  - 3
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll500.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 501
+  index_yea_nay:
+  - 135
+  - 287
+  result: mismatch
+  official_or_error:
+  - 135
+  - 292
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll501.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 502
+  index_yea_nay:
+  - 185
+  - 243
+  result: mismatch
+  official_or_error:
+  - 185
+  - 248
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll502.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 503
+  index_yea_nay:
+  - 122
+  - 301
+  result: mismatch
+  official_or_error:
+  - 122
+  - 307
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll503.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 504
+  index_yea_nay:
+  - 111
+  - 314
+  result: mismatch
+  official_or_error:
+  - 111
+  - 320
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll504.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 505
+  index_yea_nay:
+  - 115
+  - 313
+  result: mismatch
+  official_or_error:
+  - 115
+  - 319
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll505.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 506
+  index_yea_nay:
+  - 103
+  - 322
+  result: mismatch
+  official_or_error:
+  - 103
+  - 328
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll506.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 507
+  index_yea_nay:
+  - 97
+  - 327
+  result: mismatch
+  official_or_error:
+  - 97
+  - 333
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll507.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 508
+  index_yea_nay:
+  - 140
+  - 287
+  result: mismatch
+  official_or_error:
+  - 140
+  - 292
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll508.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 516
+  index_yea_nay:
+  - 255
+  - 168
+  result: mismatch
+  official_or_error:
+  - 261
+  - 168
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll516.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 517
+  index_yea_nay:
+  - 156
+  - 265
+  result: mismatch
+  official_or_error:
+  - 156
+  - 271
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll517.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 518
+  index_yea_nay:
+  - 172
+  - 253
+  result: mismatch
+  official_or_error:
+  - 172
+  - 259
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll518.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 519
+  index_yea_nay:
+  - 295
+  - 131
+  result: mismatch
+  official_or_error:
+  - 297
+  - 135
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll519.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 520
+  index_yea_nay:
+  - 174
+  - 250
+  result: mismatch
+  official_or_error:
+  - 174
+  - 256
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll520.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 521
+  index_yea_nay:
+  - 423
+  - 2
+  result: mismatch
+  official_or_error:
+  - 429
+  - 2
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll521.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-09'
+  n: 522
+  index_yea_nay:
+  - 164
+  - 262
+  result: mismatch
+  official_or_error:
+  - 164
+  - 268
+  - '2009-07-09'
+  url: https://clerk.house.gov/evs/2009/roll522.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-10'
+  n: 528
+  index_yea_nay:
+  - 62
+  - 354
+  result: mismatch
+  official_or_error:
+  - 62
+  - 358
+  - '2009-07-10'
+  url: https://clerk.house.gov/evs/2009/roll528.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-15'
+  n: 543
+  index_yea_nay:
+  - 257
+  - 172
+  result: mismatch
+  official_or_error:
+  - 261
+  - 172
+  - '2009-07-15'
+  url: https://clerk.house.gov/evs/2009/roll543.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-15'
+  n: 544
+  index_yea_nay:
+  - 357
+  - 69
+  result: mismatch
+  official_or_error:
+  - 362
+  - 69
+  - '2009-07-15'
+  url: https://clerk.house.gov/evs/2009/roll544.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-15'
+  n: 545
+  index_yea_nay:
+  - 427
+  - 0
+  result: mismatch
+  official_or_error:
+  - 432
+  - 0
+  - '2009-07-15'
+  url: https://clerk.house.gov/evs/2009/roll545.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-15'
+  n: 546
+  index_yea_nay:
+  - 425
+  - 4
+  result: mismatch
+  official_or_error:
+  - 429
+  - 4
+  - '2009-07-15'
+  url: https://clerk.house.gov/evs/2009/roll546.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-15'
+  n: 547
+  index_yea_nay:
+  - 426
+  - 1
+  result: mismatch
+  official_or_error:
+  - 431
+  - 1
+  - '2009-07-15'
+  url: https://clerk.house.gov/evs/2009/roll547.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 555
+  index_yea_nay:
+  - 146
+  - 276
+  result: mismatch
+  official_or_error:
+  - 146
+  - 279
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll555.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 556
+  index_yea_nay:
+  - 172
+  - 247
+  result: mismatch
+  official_or_error:
+  - 172
+  - 250
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll556.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 557
+  index_yea_nay:
+  - 184
+  - 243
+  result: mismatch
+  official_or_error:
+  - 184
+  - 247
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll557.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 558
+  index_yea_nay:
+  - 149
+  - 278
+  result: mismatch
+  official_or_error:
+  - 149
+  - 282
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll558.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 559
+  index_yea_nay:
+  - 89
+  - 338
+  result: mismatch
+  official_or_error:
+  - 89
+  - 342
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll559.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 560
+  index_yea_nay:
+  - 115
+  - 310
+  result: mismatch
+  official_or_error:
+  - 115
+  - 314
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll560.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 561
+  index_yea_nay:
+  - 94
+  - 332
+  result: mismatch
+  official_or_error:
+  - 94
+  - 336
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll561.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 562
+  index_yea_nay:
+  - 93
+  - 333
+  result: mismatch
+  official_or_error:
+  - 93
+  - 337
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll562.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 563
+  index_yea_nay:
+  - 114
+  - 314
+  result: mismatch
+  official_or_error:
+  - 114
+  - 318
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll563.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 564
+  index_yea_nay:
+  - 102
+  - 322
+  result: mismatch
+  official_or_error:
+  - 102
+  - 326
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll564.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 565
+  index_yea_nay:
+  - 120
+  - 308
+  result: mismatch
+  official_or_error:
+  - 120
+  - 311
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll565.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 566
+  index_yea_nay:
+  - 119
+  - 309
+  result: mismatch
+  official_or_error:
+  - 119
+  - 312
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll566.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 567
+  index_yea_nay:
+  - 99
+  - 328
+  result: mismatch
+  official_or_error:
+  - 99
+  - 332
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll567.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 568
+  index_yea_nay:
+  - 104
+  - 321
+  result: mismatch
+  official_or_error:
+  - 104
+  - 325
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll568.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-16'
+  n: 569
+  index_yea_nay:
+  - 74
+  - 352
+  result: mismatch
+  official_or_error:
+  - 74
+  - 356
+  - '2009-07-16'
+  url: https://clerk.house.gov/evs/2009/roll569.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 578
+  index_yea_nay:
+  - 421
+  - 0
+  result: mismatch
+  official_or_error:
+  - 424
+  - 0
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll578.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 579
+  index_yea_nay:
+  - 420
+  - 1
+  result: mismatch
+  official_or_error:
+  - 423
+  - 1
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll579.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 580
+  index_yea_nay:
+  - 167
+  - 256
+  result: mismatch
+  official_or_error:
+  - 167
+  - 259
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll580.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 581
+  index_yea_nay:
+  - 121
+  - 300
+  result: mismatch
+  official_or_error:
+  - 121
+  - 303
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll581.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 582
+  index_yea_nay:
+  - 89
+  - 335
+  result: mismatch
+  official_or_error:
+  - 89
+  - 338
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll582.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 583
+  index_yea_nay:
+  - 89
+  - 332
+  result: mismatch
+  official_or_error:
+  - 89
+  - 335
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll583.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 584
+  index_yea_nay:
+  - 102
+  - 315
+  result: mismatch
+  official_or_error:
+  - 102
+  - 318
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll584.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 585
+  index_yea_nay:
+  - 125
+  - 298
+  result: mismatch
+  official_or_error:
+  - 125
+  - 301
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll585.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 586
+  index_yea_nay:
+  - 81
+  - 338
+  result: mismatch
+  official_or_error:
+  - 81
+  - 341
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll586.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 587
+  index_yea_nay:
+  - 111
+  - 313
+  result: mismatch
+  official_or_error:
+  - 111
+  - 316
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll587.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 588
+  index_yea_nay:
+  - 133
+  - 287
+  result: mismatch
+  official_or_error:
+  - 133
+  - 290
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll588.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 589
+  index_yea_nay:
+  - 128
+  - 296
+  result: mismatch
+  official_or_error:
+  - 128
+  - 299
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll589.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-17'
+  n: 590
+  index_yea_nay:
+  - 119
+  - 305
+  result: mismatch
+  official_or_error:
+  - 119
+  - 308
+  - '2009-07-17'
+  url: https://clerk.house.gov/evs/2009/roll590.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 620
+  index_yea_nay:
+  - 152
+  - 270
+  result: mismatch
+  official_or_error:
+  - 152
+  - 276
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll620.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 621
+  index_yea_nay:
+  - 136
+  - 278
+  result: mismatch
+  official_or_error:
+  - 136
+  - 284
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll621.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 622
+  index_yea_nay:
+  - 116
+  - 307
+  result: mismatch
+  official_or_error:
+  - 116
+  - 313
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll622.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 623
+  index_yea_nay:
+  - 181
+  - 246
+  result: mismatch
+  official_or_error:
+  - 181
+  - 252
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll623.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 624
+  index_yea_nay:
+  - 145
+  - 281
+  result: mismatch
+  official_or_error:
+  - 145
+  - 287
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll624.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 625
+  index_yea_nay:
+  - 166
+  - 261
+  result: mismatch
+  official_or_error:
+  - 166
+  - 267
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll625.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 626
+  index_yea_nay:
+  - 152
+  - 273
+  result: mismatch
+  official_or_error:
+  - 152
+  - 279
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll626.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 627
+  index_yea_nay:
+  - 108
+  - 321
+  result: mismatch
+  official_or_error:
+  - 108
+  - 327
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll627.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 628
+  index_yea_nay:
+  - 105
+  - 322
+  result: mismatch
+  official_or_error:
+  - 105
+  - 328
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll628.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 629
+  index_yea_nay:
+  - 124
+  - 304
+  result: mismatch
+  official_or_error:
+  - 124
+  - 310
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll629.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 630
+  index_yea_nay:
+  - 125
+  - 304
+  result: mismatch
+  official_or_error:
+  - 125
+  - 310
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll630.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 631
+  index_yea_nay:
+  - 98
+  - 325
+  result: mismatch
+  official_or_error:
+  - 98
+  - 331
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll631.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 632
+  index_yea_nay:
+  - 105
+  - 323
+  result: mismatch
+  official_or_error:
+  - 105
+  - 329
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll632.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 633
+  index_yea_nay:
+  - 105
+  - 324
+  result: mismatch
+  official_or_error:
+  - 105
+  - 329
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll633.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 634
+  index_yea_nay:
+  - 124
+  - 303
+  result: mismatch
+  official_or_error:
+  - 124
+  - 309
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll634.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-23'
+  n: 635
+  index_yea_nay:
+  - 109
+  - 320
+  result: mismatch
+  official_or_error:
+  - 109
+  - 326
+  - '2009-07-23'
+  url: https://clerk.house.gov/evs/2009/roll635.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-24'
+  n: 641
+  index_yea_nay:
+  - 280
+  - 137
+  result: mismatch
+  official_or_error:
+  - 284
+  - 137
+  - '2009-07-24'
+  url: https://clerk.house.gov/evs/2009/roll641.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-24'
+  n: 642
+  index_yea_nay:
+  - 211
+  - 213
+  result: mismatch
+  official_or_error:
+  - 211
+  - 218
+  - '2009-07-24'
+  url: https://clerk.house.gov/evs/2009/roll642.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-24'
+  n: 643
+  index_yea_nay:
+  - 182
+  - 242
+  result: mismatch
+  official_or_error:
+  - 183
+  - 247
+  - '2009-07-24'
+  url: https://clerk.house.gov/evs/2009/roll643.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-24'
+  n: 644
+  index_yea_nay:
+  - 199
+  - 223
+  result: mismatch
+  official_or_error:
+  - 199
+  - 229
+  - '2009-07-24'
+  url: https://clerk.house.gov/evs/2009/roll644.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 661
+  index_yea_nay:
+  - 264
+  - 165
+  result: mismatch
+  official_or_error:
+  - 269
+  - 165
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll661.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 662
+  index_yea_nay:
+  - 48
+  - 367
+  result: mismatch
+  official_or_error:
+  - 48
+  - 373
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll662.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 663
+  index_yea_nay:
+  - 122
+  - 303
+  result: mismatch
+  official_or_error:
+  - 124
+  - 307
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll663.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 664
+  index_yea_nay:
+  - 77
+  - 341
+  result: mismatch
+  official_or_error:
+  - 77
+  - 347
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll664.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 665
+  index_yea_nay:
+  - 69
+  - 345
+  result: mismatch
+  official_or_error:
+  - 69
+  - 351
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll665.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 666
+  index_yea_nay:
+  - 76
+  - 344
+  result: mismatch
+  official_or_error:
+  - 76
+  - 350
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll666.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 667
+  index_yea_nay:
+  - 82
+  - 335
+  result: mismatch
+  official_or_error:
+  - 82
+  - 341
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll667.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 668
+  index_yea_nay:
+  - 78
+  - 342
+  result: mismatch
+  official_or_error:
+  - 78
+  - 348
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll668.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 669
+  index_yea_nay:
+  - 83
+  - 332
+  result: mismatch
+  official_or_error:
+  - 83
+  - 338
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll669.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 670
+  index_yea_nay:
+  - 118
+  - 298
+  result: mismatch
+  official_or_error:
+  - 118
+  - 304
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll670.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 671
+  index_yea_nay:
+  - 82
+  - 336
+  result: mismatch
+  official_or_error:
+  - 82
+  - 342
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll671.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 672
+  index_yea_nay:
+  - 81
+  - 348
+  result: mismatch
+  official_or_error:
+  - 81
+  - 353
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll672.xml
+- chamber: H
+  congress: 111
+  date: '2009-07-30'
+  n: 673
+  index_yea_nay:
+  - 99
+  - 332
+  result: mismatch
+  official_or_error:
+  - 99
+  - 338
+  - '2009-07-30'
+  url: https://clerk.house.gov/evs/2009/roll673.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-16'
+  n: 705
+  index_yea_nay:
+  - 179
+  - 247
+  result: mismatch
+  official_or_error:
+  - 179
+  - 253
+  - '2009-09-16'
+  url: https://clerk.house.gov/evs/2009/roll705.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-16'
+  n: 706
+  index_yea_nay:
+  - 363
+  - 62
+  result: mismatch
+  official_or_error:
+  - 369
+  - 62
+  - '2009-09-16'
+  url: https://clerk.house.gov/evs/2009/roll706.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-16'
+  n: 707
+  index_yea_nay:
+  - 410
+  - 14
+  result: mismatch
+  official_or_error:
+  - 416
+  - 14
+  - '2009-09-16'
+  url: https://clerk.house.gov/evs/2009/roll707.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 710
+  index_yea_nay:
+  - 161
+  - 257
+  result: mismatch
+  official_or_error:
+  - 161
+  - 262
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll710.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 711
+  index_yea_nay:
+  - 167
+  - 245
+  result: mismatch
+  official_or_error:
+  - 167
+  - 251
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll711.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 712
+  index_yea_nay:
+  - 126
+  - 295
+  result: mismatch
+  official_or_error:
+  - 126
+  - 301
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll712.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 713
+  index_yea_nay:
+  - 422
+  - 2
+  result: mismatch
+  official_or_error:
+  - 428
+  - 2
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll713.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 714
+  index_yea_nay:
+  - 422
+  - 0
+  result: mismatch
+  official_or_error:
+  - 428
+  - 0
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll714.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 715
+  index_yea_nay:
+  - 419
+  - 5
+  result: mismatch
+  official_or_error:
+  - 425
+  - 5
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll715.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 716
+  index_yea_nay:
+  - 419
+  - 0
+  result: mismatch
+  official_or_error:
+  - 425
+  - 0
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll716.xml
+- chamber: H
+  congress: 111
+  date: '2009-09-17'
+  n: 717
+  index_yea_nay:
+  - 165
+  - 259
+  result: mismatch
+  official_or_error:
+  - 165
+  - 265
+  - '2009-09-17'
+  url: https://clerk.house.gov/evs/2009/roll717.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-22'
+  n: 801
+  index_yea_nay:
+  - 162
+  - 251
+  result: mismatch
+  official_or_error:
+  - 162
+  - 256
+  - '2009-10-22'
+  url: https://clerk.house.gov/evs/2009/roll801.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-22'
+  n: 802
+  index_yea_nay:
+  - 391
+  - 24
+  result: mismatch
+  official_or_error:
+  - 395
+  - 24
+  - '2009-10-22'
+  url: https://clerk.house.gov/evs/2009/roll802.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-22'
+  n: 803
+  index_yea_nay:
+  - 409
+  - 5
+  result: mismatch
+  official_or_error:
+  - 414
+  - 5
+  - '2009-10-22'
+  url: https://clerk.house.gov/evs/2009/roll803.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-22'
+  n: 804
+  index_yea_nay:
+  - 402
+  - 9
+  result: mismatch
+  official_or_error:
+  - 407
+  - 9
+  - '2009-10-22'
+  url: https://clerk.house.gov/evs/2009/roll804.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-22'
+  n: 805
+  index_yea_nay:
+  - 415
+  - 0
+  result: mismatch
+  official_or_error:
+  - 420
+  - 0
+  - '2009-10-22'
+  url: https://clerk.house.gov/evs/2009/roll805.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-22'
+  n: 806
+  index_yea_nay:
+  - 405
+  - 6
+  result: mismatch
+  official_or_error:
+  - 410
+  - 6
+  - '2009-10-22'
+  url: https://clerk.house.gov/evs/2009/roll806.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-23'
+  n: 812
+  index_yea_nay:
+  - 393
+  - 0
+  result: mismatch
+  official_or_error:
+  - 398
+  - 0
+  - '2009-10-23'
+  url: https://clerk.house.gov/evs/2009/roll812.xml
+- chamber: H
+  congress: 111
+  date: '2009-10-29'
+  n: 828
+  index_yea_nay:
+  - 365
+  - 54
+  result: mismatch
+  official_or_error:
+  - 370
+  - 55
+  - '2009-10-29'
+  url: https://clerk.house.gov/evs/2009/roll828.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-04'
+  n: 845
+  index_yea_nay:
+  - 423
+  - 0
+  result: mismatch
+  official_or_error:
+  - 427
+  - 0
+  - '2009-11-04'
+  url: https://clerk.house.gov/evs/2009/roll845.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-04'
+  n: 846
+  index_yea_nay:
+  - 422
+  - 0
+  result: mismatch
+  official_or_error:
+  - 427
+  - 0
+  - '2009-11-04'
+  url: https://clerk.house.gov/evs/2009/roll846.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-04'
+  n: 847
+  index_yea_nay:
+  - 246
+  - 174
+  result: mismatch
+  official_or_error:
+  - 251
+  - 174
+  - '2009-11-04'
+  url: https://clerk.house.gov/evs/2009/roll847.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-04'
+  n: 848
+  index_yea_nay:
+  - 348
+  - 71
+  result: mismatch
+  official_or_error:
+  - 353
+  - 71
+  - '2009-11-04'
+  url: https://clerk.house.gov/evs/2009/roll848.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-04'
+  n: 849
+  index_yea_nay:
+  - 244
+  - 173
+  result: mismatch
+  official_or_error:
+  - 249
+  - 173
+  - '2009-11-04'
+  url: https://clerk.house.gov/evs/2009/roll849.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-06'
+  n: 869
+  index_yea_nay:
+  - 249
+  - 168
+  result: mismatch
+  official_or_error:
+  - 253
+  - 168
+  - '2009-11-06'
+  url: https://clerk.house.gov/evs/2009/roll869.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-06'
+  n: 870
+  index_yea_nay:
+  - 165
+  - 257
+  result: mismatch
+  official_or_error:
+  - 165
+  - 262
+  - '2009-11-06'
+  url: https://clerk.house.gov/evs/2009/roll870.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-06'
+  n: 871
+  index_yea_nay:
+  - 186
+  - 236
+  result: mismatch
+  official_or_error:
+  - 186
+  - 241
+  - '2009-11-06'
+  url: https://clerk.house.gov/evs/2009/roll871.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-06'
+  n: 872
+  index_yea_nay:
+  - 193
+  - 231
+  result: mismatch
+  official_or_error:
+  - 193
+  - 236
+  - '2009-11-06'
+  url: https://clerk.house.gov/evs/2009/roll872.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-06'
+  n: 873
+  index_yea_nay:
+  - 196
+  - 227
+  result: mismatch
+  official_or_error:
+  - 196
+  - 232
+  - '2009-11-06'
+  url: https://clerk.house.gov/evs/2009/roll873.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-18'
+  n: 899
+  index_yea_nay:
+  - 353
+  - 75
+  result: mismatch
+  official_or_error:
+  - 358
+  - 75
+  - '2009-11-18'
+  url: https://clerk.house.gov/evs/2009/roll899.xml
+- chamber: H
+  congress: 111
+  date: '2009-11-18'
+  n: 900
+  index_yea_nay:
+  - 367
+  - 62
+  result: mismatch
+  official_or_error:
+  - 371
+  - 63
+  - '2009-11-18'
+  url: https://clerk.house.gov/evs/2009/roll900.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-10'
+  n: 953
+  index_yea_nay:
+  - 235
+  - 182
+  result: mismatch
+  official_or_error:
+  - 240
+  - 182
+  - '2009-12-10'
+  url: https://clerk.house.gov/evs/2009/roll953.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-10'
+  n: 954
+  index_yea_nay:
+  - 172
+  - 252
+  result: mismatch
+  official_or_error:
+  - 172
+  - 257
+  - '2009-12-10'
+  url: https://clerk.house.gov/evs/2009/roll954.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-10'
+  n: 955
+  index_yea_nay:
+  - 223
+  - 202
+  result: mismatch
+  official_or_error:
+  - 228
+  - 202
+  - '2009-12-10'
+  url: https://clerk.house.gov/evs/2009/roll955.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-10'
+  n: 956
+  index_yea_nay:
+  - 303
+  - 120
+  result: mismatch
+  official_or_error:
+  - 304
+  - 124
+  - '2009-12-10'
+  url: https://clerk.house.gov/evs/2009/roll956.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-10'
+  n: 957
+  index_yea_nay:
+  - 145
+  - 280
+  result: mismatch
+  official_or_error:
+  - 150
+  - 280
+  - '2009-12-10'
+  url: https://clerk.house.gov/evs/2009/roll957.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-10'
+  n: 958
+  index_yea_nay:
+  - 95
+  - 328
+  result: mismatch
+  official_or_error:
+  - 98
+  - 330
+  - '2009-12-10'
+  url: https://clerk.house.gov/evs/2009/roll958.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-10'
+  n: 959
+  index_yea_nay:
+  - 145
+  - 279
+  result: mismatch
+  official_or_error:
+  - 150
+  - 279
+  - '2009-12-10'
+  url: https://clerk.house.gov/evs/2009/roll959.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-11'
+  n: 960
+  index_yea_nay:
+  - 151
+  - 270
+  result: mismatch
+  official_or_error:
+  - 153
+  - 271
+  - '2009-12-11'
+  url: https://clerk.house.gov/evs/2009/roll960.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-11'
+  n: 961
+  index_yea_nay:
+  - 166
+  - 256
+  result: mismatch
+  official_or_error:
+  - 166
+  - 259
+  - '2009-12-11'
+  url: https://clerk.house.gov/evs/2009/roll961.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-11'
+  n: 962
+  index_yea_nay:
+  - 225
+  - 198
+  result: mismatch
+  official_or_error:
+  - 228
+  - 198
+  - '2009-12-11'
+  url: https://clerk.house.gov/evs/2009/roll962.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-11'
+  n: 963
+  index_yea_nay:
+  - 185
+  - 241
+  result: mismatch
+  official_or_error:
+  - 188
+  - 241
+  - '2009-12-11'
+  url: https://clerk.house.gov/evs/2009/roll963.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-11'
+  n: 964
+  index_yea_nay:
+  - 274
+  - 149
+  result: mismatch
+  official_or_error:
+  - 277
+  - 149
+  - '2009-12-11'
+  url: https://clerk.house.gov/evs/2009/roll964.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-11'
+  n: 965
+  index_yea_nay:
+  - 208
+  - 220
+  result: mismatch
+  official_or_error:
+  - 208
+  - 223
+  - '2009-12-11'
+  url: https://clerk.house.gov/evs/2009/roll965.xml
+- chamber: H
+  congress: 111
+  date: '2009-12-11'
+  n: 966
+  index_yea_nay:
+  - 175
+  - 248
+  result: mismatch
+  official_or_error:
+  - 175
+  - 251
+  - '2009-12-11'
+  url: https://clerk.house.gov/evs/2009/roll966.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-03'
+  n: 34
+  index_yea_nay:
+  - 412
+  - 5
+  result: mismatch
+  official_or_error:
+  - 417
+  - 5
+  - '2010-02-03'
+  url: https://clerk.house.gov/evs/2010/roll034.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-03'
+  n: 35
+  index_yea_nay:
+  - 391
+  - 31
+  result: mismatch
+  official_or_error:
+  - 396
+  - 31
+  - '2010-02-03'
+  url: https://clerk.house.gov/evs/2010/roll035.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-03'
+  n: 36
+  index_yea_nay:
+  - 414
+  - 3
+  result: mismatch
+  official_or_error:
+  - 419
+  - 3
+  - '2010-02-03'
+  url: https://clerk.house.gov/evs/2010/roll036.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-03'
+  n: 37
+  index_yea_nay:
+  - 412
+  - 4
+  result: mismatch
+  official_or_error:
+  - 416
+  - 4
+  - '2010-02-03'
+  url: https://clerk.house.gov/evs/2010/roll037.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-03'
+  n: 38
+  index_yea_nay:
+  - 412
+  - 4
+  result: mismatch
+  official_or_error:
+  - 417
+  - 4
+  - '2010-02-03'
+  url: https://clerk.house.gov/evs/2010/roll038.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-04'
+  n: 39
+  index_yea_nay:
+  - 418
+  - 0
+  result: mismatch
+  official_or_error:
+  - 424
+  - 0
+  - '2010-02-04'
+  url: https://clerk.house.gov/evs/2010/roll039.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-04'
+  n: 40
+  index_yea_nay:
+  - 413
+  - 4
+  result: mismatch
+  official_or_error:
+  - 419
+  - 4
+  - '2010-02-04'
+  url: https://clerk.house.gov/evs/2010/roll040.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-04'
+  n: 41
+  index_yea_nay:
+  - 417
+  - 6
+  result: mismatch
+  official_or_error:
+  - 423
+  - 6
+  - '2010-02-04'
+  url: https://clerk.house.gov/evs/2010/roll041.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-04'
+  n: 42
+  index_yea_nay:
+  - 424
+  - 0
+  result: mismatch
+  official_or_error:
+  - 430
+  - 0
+  - '2010-02-04'
+  url: https://clerk.house.gov/evs/2010/roll042.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-26'
+  n: 69
+  index_yea_nay:
+  - 241
+  - 166
+  result: mismatch
+  official_or_error:
+  - 246
+  - 166
+  - '2010-02-26'
+  url: https://clerk.house.gov/evs/2010/roll069.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-26'
+  n: 70
+  index_yea_nay:
+  - 396
+  - 11
+  result: mismatch
+  official_or_error:
+  - 401
+  - 11
+  - '2010-02-26'
+  url: https://clerk.house.gov/evs/2010/roll070.xml
+- chamber: H
+  congress: 111
+  date: '2010-02-26'
+  n: 71
+  index_yea_nay:
+  - 405
+  - 1
+  result: mismatch
+  official_or_error:
+  - 410
+  - 1
+  - '2010-02-26'
+  url: https://clerk.house.gov/evs/2010/roll071.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-15'
+  n: 207
+  index_yea_nay:
+  - 291
+  - 109
+  result: mismatch
+  official_or_error:
+  - 294
+  - 109
+  - '2010-04-15'
+  url: https://clerk.house.gov/evs/2010/roll207.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-28'
+  n: 227
+  index_yea_nay:
+  - 411
+  - 0
+  result: mismatch
+  official_or_error:
+  - 416
+  - 0
+  - '2010-04-28'
+  url: https://clerk.house.gov/evs/2010/roll227.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-28'
+  n: 228
+  index_yea_nay:
+  - 412
+  - 2
+  result: mismatch
+  official_or_error:
+  - 417
+  - 2
+  - '2010-04-28'
+  url: https://clerk.house.gov/evs/2010/roll228.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-29'
+  n: 234
+  index_yea_nay:
+  - 222
+  - 175
+  result: mismatch
+  official_or_error:
+  - 223
+  - 179
+  - '2010-04-29'
+  url: https://clerk.house.gov/evs/2010/roll234.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-29'
+  n: 235
+  index_yea_nay:
+  - 163
+  - 232
+  result: mismatch
+  official_or_error:
+  - 164
+  - 236
+  - '2010-04-29'
+  url: https://clerk.house.gov/evs/2010/roll235.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-29'
+  n: 236
+  index_yea_nay:
+  - 13
+  - 381
+  result: mismatch
+  official_or_error:
+  - 13
+  - 386
+  - '2010-04-29'
+  url: https://clerk.house.gov/evs/2010/roll236.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-29'
+  n: 237
+  index_yea_nay:
+  - 297
+  - 99
+  result: mismatch
+  official_or_error:
+  - 301
+  - 100
+  - '2010-04-29'
+  url: https://clerk.house.gov/evs/2010/roll237.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-29'
+  n: 238
+  index_yea_nay:
+  - 11
+  - 382
+  result: mismatch
+  official_or_error:
+  - 11
+  - 387
+  - '2010-04-29'
+  url: https://clerk.house.gov/evs/2010/roll238.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-29'
+  n: 239
+  index_yea_nay:
+  - 111
+  - 281
+  result: mismatch
+  official_or_error:
+  - 112
+  - 285
+  - '2010-04-29'
+  url: https://clerk.house.gov/evs/2010/roll239.xml
+- chamber: H
+  congress: 111
+  date: '2010-04-29'
+  n: 240
+  index_yea_nay:
+  - 171
+  - 219
+  result: mismatch
+  official_or_error:
+  - 171
+  - 223
+  - '2010-04-29'
+  url: https://clerk.house.gov/evs/2010/roll240.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-06'
+  n: 252
+  index_yea_nay:
+  - 180
+  - 232
+  result: mismatch
+  official_or_error:
+  - 180
+  - 237
+  - '2010-05-06'
+  url: https://clerk.house.gov/evs/2010/roll252.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-06'
+  n: 253
+  index_yea_nay:
+  - 190
+  - 223
+  result: mismatch
+  official_or_error:
+  - 190
+  - 228
+  - '2010-05-06'
+  url: https://clerk.house.gov/evs/2010/roll253.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-12'
+  n: 262
+  index_yea_nay:
+  - 411
+  - 6
+  result: mismatch
+  official_or_error:
+  - 417
+  - 6
+  - '2010-05-12'
+  url: https://clerk.house.gov/evs/2010/roll262.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-12'
+  n: 263
+  index_yea_nay:
+  - 163
+  - 252
+  result: mismatch
+  official_or_error:
+  - 163
+  - 258
+  - '2010-05-12'
+  url: https://clerk.house.gov/evs/2010/roll263.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-12'
+  n: 264
+  index_yea_nay:
+  - 248
+  - 173
+  result: mismatch
+  official_or_error:
+  - 254
+  - 173
+  - '2010-05-12'
+  url: https://clerk.house.gov/evs/2010/roll264.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-12'
+  n: 265
+  index_yea_nay:
+  - 244
+  - 174
+  result: mismatch
+  official_or_error:
+  - 250
+  - 174
+  - '2010-05-12'
+  url: https://clerk.house.gov/evs/2010/roll265.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-12'
+  n: 266
+  index_yea_nay:
+  - 407
+  - 10
+  result: mismatch
+  official_or_error:
+  - 413
+  - 10
+  - '2010-05-12'
+  url: https://clerk.house.gov/evs/2010/roll266.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-13'
+  n: 267
+  index_yea_nay:
+  - 243
+  - 171
+  result: mismatch
+  official_or_error:
+  - 248
+  - 171
+  - '2010-05-13'
+  url: https://clerk.house.gov/evs/2010/roll267.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-13'
+  n: 268
+  index_yea_nay:
+  - 414
+  - 0
+  result: mismatch
+  official_or_error:
+  - 419
+  - 0
+  - '2010-05-13'
+  url: https://clerk.house.gov/evs/2010/roll268.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-13'
+  n: 269
+  index_yea_nay:
+  - 414
+  - 0
+  result: mismatch
+  official_or_error:
+  - 419
+  - 0
+  - '2010-05-13'
+  url: https://clerk.house.gov/evs/2010/roll269.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 310
+  index_yea_nay:
+  - 417
+  - 0
+  result: mismatch
+  official_or_error:
+  - 421
+  - 0
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll310.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 311
+  index_yea_nay:
+  - 419
+  - 0
+  result: mismatch
+  official_or_error:
+  - 423
+  - 0
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll311.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 312
+  index_yea_nay:
+  - 337
+  - 85
+  result: mismatch
+  official_or_error:
+  - 341
+  - 85
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll312.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 313
+  index_yea_nay:
+  - 406
+  - 8
+  result: mismatch
+  official_or_error:
+  - 410
+  - 8
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll313.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 314
+  index_yea_nay:
+  - 368
+  - 52
+  result: mismatch
+  official_or_error:
+  - 372
+  - 52
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll314.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 315
+  index_yea_nay:
+  - 214
+  - 210
+  result: mismatch
+  official_or_error:
+  - 218
+  - 210
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll315.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 316
+  index_yea_nay:
+  - 191
+  - 229
+  result: mismatch
+  official_or_error:
+  - 193
+  - 231
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll316.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 317
+  index_yea_nay:
+  - 230
+  - 194
+  result: mismatch
+  official_or_error:
+  - 234
+  - 194
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll317.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-27'
+  n: 318
+  index_yea_nay:
+  - 249
+  - 172
+  result: mismatch
+  official_or_error:
+  - 253
+  - 172
+  - '2010-05-27'
+  url: https://clerk.house.gov/evs/2010/roll318.xml
+- chamber: H
+  congress: 111
+  date: '2010-05-28'
+  n: 333
+  index_yea_nay:
+  - 414
+  - 1
+  result: mismatch
+  official_or_error:
+  - 416
+  - 1
+  - '2010-05-28'
+  url: https://clerk.house.gov/evs/2010/roll333.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-10'
+  n: 347
+  index_yea_nay:
+  - 412
+  - 3
+  result: mismatch
+  official_or_error:
+  - 417
+  - 3
+  - '2010-06-10'
+  url: https://clerk.house.gov/evs/2010/roll347.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-10'
+  n: 348
+  index_yea_nay:
+  - 131
+  - 284
+  result: mismatch
+  official_or_error:
+  - 131
+  - 289
+  - '2010-06-10'
+  url: https://clerk.house.gov/evs/2010/roll348.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-10'
+  n: 349
+  index_yea_nay:
+  - 106
+  - 311
+  result: mismatch
+  official_or_error:
+  - 106
+  - 316
+  - '2010-06-10'
+  url: https://clerk.house.gov/evs/2010/roll349.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-10'
+  n: 350
+  index_yea_nay:
+  - 121
+  - 295
+  result: mismatch
+  official_or_error:
+  - 121
+  - 301
+  - '2010-06-10'
+  url: https://clerk.house.gov/evs/2010/roll350.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-10'
+  n: 351
+  index_yea_nay:
+  - 414
+  - 4
+  result: mismatch
+  official_or_error:
+  - 420
+  - 4
+  - '2010-06-10'
+  url: https://clerk.house.gov/evs/2010/roll351.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-10'
+  n: 352
+  index_yea_nay:
+  - 410
+  - 0
+  result: mismatch
+  official_or_error:
+  - 416
+  - 0
+  - '2010-06-10'
+  url: https://clerk.house.gov/evs/2010/roll352.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-17'
+  n: 371
+  index_yea_nay:
+  - 414
+  - 0
+  result: mismatch
+  official_or_error:
+  - 420
+  - 0
+  - '2010-06-17'
+  url: https://clerk.house.gov/evs/2010/roll371.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-17'
+  n: 372
+  index_yea_nay:
+  - 408
+  - 0
+  result: mismatch
+  official_or_error:
+  - 414
+  - 0
+  - '2010-06-17'
+  url: https://clerk.house.gov/evs/2010/roll372.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-17'
+  n: 373
+  index_yea_nay:
+  - 413
+  - 3
+  result: mismatch
+  official_or_error:
+  - 418
+  - 3
+  - '2010-06-17'
+  url: https://clerk.house.gov/evs/2010/roll373.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-24'
+  n: 388
+  index_yea_nay:
+  - 57
+  - 365
+  result: mismatch
+  official_or_error:
+  - 57
+  - 369
+  - '2010-06-24'
+  url: https://clerk.house.gov/evs/2010/roll388.xml
+- chamber: H
+  congress: 111
+  date: '2010-06-24'
+  n: 389
+  index_yea_nay:
+  - 270
+  - 152
+  result: mismatch
+  official_or_error:
+  - 274
+  - 152
+  - '2010-06-24'
+  url: https://clerk.house.gov/evs/2010/roll389.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-15'
+  n: 444
+  index_yea_nay:
+  - 417
+  - 3
+  result: mismatch
+  official_or_error:
+  - 423
+  - 3
+  - '2010-07-15'
+  url: https://clerk.house.gov/evs/2010/roll444.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-15'
+  n: 445
+  index_yea_nay:
+  - 415
+  - 0
+  result: mismatch
+  official_or_error:
+  - 421
+  - 0
+  - '2010-07-15'
+  url: https://clerk.house.gov/evs/2010/roll445.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-28'
+  n: 480
+  index_yea_nay:
+  - 353
+  - 64
+  result: mismatch
+  official_or_error:
+  - 353
+  - 69
+  - '2010-07-28'
+  url: https://clerk.house.gov/evs/2010/roll480.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-28'
+  n: 481
+  index_yea_nay:
+  - 128
+  - 291
+  result: mismatch
+  official_or_error:
+  - 128
+  - 296
+  - '2010-07-28'
+  url: https://clerk.house.gov/evs/2010/roll481.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 488
+  index_yea_nay:
+  - 206
+  - 211
+  result: mismatch
+  official_or_error:
+  - 206
+  - 217
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll488.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 489
+  index_yea_nay:
+  - 197
+  - 219
+  result: mismatch
+  official_or_error:
+  - 197
+  - 225
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll489.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 490
+  index_yea_nay:
+  - 169
+  - 246
+  result: mismatch
+  official_or_error:
+  - 169
+  - 252
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll490.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 492
+  index_yea_nay:
+  - 177
+  - 241
+  result: mismatch
+  official_or_error:
+  - 177
+  - 247
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll492.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 493
+  index_yea_nay:
+  - 159
+  - 259
+  result: mismatch
+  official_or_error:
+  - 159
+  - 265
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll493.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 494
+  index_yea_nay:
+  - 129
+  - 287
+  result: mismatch
+  official_or_error:
+  - 129
+  - 293
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll494.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 495
+  index_yea_nay:
+  - 163
+  - 254
+  result: mismatch
+  official_or_error:
+  - 163
+  - 260
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll495.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 496
+  index_yea_nay:
+  - 157
+  - 261
+  result: mismatch
+  official_or_error:
+  - 157
+  - 267
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll496.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 497
+  index_yea_nay:
+  - 165
+  - 252
+  result: mismatch
+  official_or_error:
+  - 165
+  - 258
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll497.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-29'
+  n: 498
+  index_yea_nay:
+  - 159
+  - 258
+  result: mismatch
+  official_or_error:
+  - 159
+  - 264
+  - '2010-07-29'
+  url: https://clerk.house.gov/evs/2010/roll498.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-30'
+  n: 507
+  index_yea_nay:
+  - 246
+  - 161
+  result: mismatch
+  official_or_error:
+  - 250
+  - 161
+  - '2010-07-30'
+  url: https://clerk.house.gov/evs/2010/roll507.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-30'
+  n: 508
+  index_yea_nay:
+  - 400
+  - 1
+  result: mismatch
+  official_or_error:
+  - 404
+  - 1
+  - '2010-07-30'
+  url: https://clerk.house.gov/evs/2010/roll508.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-30'
+  n: 509
+  index_yea_nay:
+  - 395
+  - 8
+  result: mismatch
+  official_or_error:
+  - 399
+  - 8
+  - '2010-07-30'
+  url: https://clerk.house.gov/evs/2010/roll509.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-30'
+  n: 510
+  index_yea_nay:
+  - 254
+  - 149
+  result: mismatch
+  official_or_error:
+  - 258
+  - 149
+  - '2010-07-30'
+  url: https://clerk.house.gov/evs/2010/roll510.xml
+- chamber: H
+  congress: 111
+  date: '2010-07-30'
+  n: 511
+  index_yea_nay:
+  - 212
+  - 195
+  result: mismatch
+  official_or_error:
+  - 216
+  - 195
+  - '2010-07-30'
+  url: https://clerk.house.gov/evs/2010/roll511.xml
+- chamber: H
+  congress: 111
+  date: '2010-09-16'
+  n: 529
+  index_yea_nay:
+  - 398
+  - 0
+  result: mismatch
+  official_or_error:
+  - 402
+  - 0
+  - '2010-09-16'
+  url: https://clerk.house.gov/evs/2010/roll529.xml
+- chamber: H
+  congress: 111
+  date: '2010-12-16'
+  n: 646
+  index_yea_nay:
+  - 189
+  - 233
+  result: mismatch
+  official_or_error:
+  - 194
+  - 233
+  - '2010-12-16'
+  url: https://clerk.house.gov/evs/2010/roll646.xml
+- chamber: S
+  congress: 112
+  date: '2012-03-08'
+  n: 28
+  index_yea_nay:
+  - 44
+  - 54
+  result: mismatch
+  official_or_error:
+  - 43
+  - 55
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1122/vote_112_2_00028.xml
+- chamber: H
+  congress: 112
+  date: '2013-01-01'
+  n: 655
+  index_yea_nay:
+  - 287
+  - 129
+  result: unreachable
+  official_or_error: no recorded votes
+  url: https://clerk.house.gov/evs/2013/roll655.xml
+- chamber: H
+  congress: 112
+  date: '2013-01-01'
+  n: 656
+  index_yea_nay:
+  - 410
+  - 5
+  result: unreachable
+  official_or_error: no recorded votes
+  url: https://clerk.house.gov/evs/2013/roll656.xml
+- chamber: H
+  congress: 112
+  date: '2013-01-01'
+  n: 657
+  index_yea_nay:
+  - 378
+  - 37
+  result: unreachable
+  official_or_error: no recorded votes
+  url: https://clerk.house.gov/evs/2013/roll657.xml
+- chamber: H
+  congress: 112
+  date: '2013-01-01'
+  n: 658
+  index_yea_nay:
+  - 408
+  - 10
+  result: unreachable
+  official_or_error: no recorded votes
+  url: https://clerk.house.gov/evs/2013/roll658.xml
+- chamber: H
+  congress: 112
+  date: '2013-01-01'
+  n: 659
+  index_yea_nay:
+  - 257
+  - 167
+  result: unreachable
+  official_or_error: no recorded votes
+  url: https://clerk.house.gov/evs/2013/roll659.xml
+- chamber: S
+  congress: 115
+  date: '2017-06-07'
+  n: 140
+  index_yea_nay:
+  - 92
+  - 7
+  result: mismatch
+  official_or_error:
+  - 91
+  - 8
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1151/vote_115_1_00140.xml
+- chamber: S
+  congress: 115
+  date: '2018-07-11'
+  n: 150
+  index_yea_nay:
+  - 95
+  - 4
+  result: mismatch
+  official_or_error:
+  - 94
+  - 5
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1152/vote_115_2_00150.xml
+- chamber: H
+  congress: 116
+  date: '2019-02-08'
+  n: 72
+  index_yea_nay:
+  - 172
+  - 242
+  result: mismatch
+  official_or_error:
+  - 172
+  - 246
+  - '2019-02-08'
+  url: https://clerk.house.gov/evs/2019/roll072.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-12'
+  n: 266
+  index_yea_nay:
+  - 192
+  - 228
+  result: mismatch
+  official_or_error:
+  - 192
+  - 230
+  - '2019-06-12'
+  url: https://clerk.house.gov/evs/2019/roll266.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-12'
+  n: 267
+  index_yea_nay:
+  - 191
+  - 229
+  result: mismatch
+  official_or_error:
+  - 191
+  - 231
+  - '2019-06-12'
+  url: https://clerk.house.gov/evs/2019/roll267.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-13'
+  n: 284
+  index_yea_nay:
+  - 186
+  - 235
+  result: mismatch
+  official_or_error:
+  - 186
+  - 237
+  - '2019-06-13'
+  url: https://clerk.house.gov/evs/2019/roll284.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-13'
+  n: 285
+  index_yea_nay:
+  - 158
+  - 264
+  result: mismatch
+  official_or_error:
+  - 158
+  - 266
+  - '2019-06-13'
+  url: https://clerk.house.gov/evs/2019/roll285.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-13'
+  n: 289
+  index_yea_nay:
+  - 150
+  - 271
+  result: mismatch
+  official_or_error:
+  - 150
+  - 273
+  - '2019-06-13'
+  url: https://clerk.house.gov/evs/2019/roll289.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-18'
+  n: 327
+  index_yea_nay:
+  - 174
+  - 240
+  result: mismatch
+  official_or_error:
+  - 174
+  - 244
+  - '2019-06-18'
+  url: https://clerk.house.gov/evs/2019/roll327.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-18'
+  n: 329
+  index_yea_nay:
+  - 170
+  - 244
+  result: mismatch
+  official_or_error:
+  - 170
+  - 248
+  - '2019-06-18'
+  url: https://clerk.house.gov/evs/2019/roll329.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-18'
+  n: 334
+  index_yea_nay:
+  - 131
+  - 287
+  result: mismatch
+  official_or_error:
+  - 131
+  - 292
+  - '2019-06-18'
+  url: https://clerk.house.gov/evs/2019/roll334.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-18'
+  n: 335
+  index_yea_nay:
+  - 110
+  - 310
+  result: mismatch
+  official_or_error:
+  - 110
+  - 315
+  - '2019-06-18'
+  url: https://clerk.house.gov/evs/2019/roll335.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-18'
+  n: 338
+  index_yea_nay:
+  - 123
+  - 298
+  result: mismatch
+  official_or_error:
+  - 123
+  - 303
+  - '2019-06-18'
+  url: https://clerk.house.gov/evs/2019/roll338.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-18'
+  n: 340
+  index_yea_nay:
+  - 134
+  - 288
+  result: mismatch
+  official_or_error:
+  - 134
+  - 293
+  - '2019-06-18'
+  url: https://clerk.house.gov/evs/2019/roll340.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-19'
+  n: 358
+  index_yea_nay:
+  - 146
+  - 283
+  result: mismatch
+  official_or_error:
+  - 146
+  - 288
+  - '2019-06-19'
+  url: https://clerk.house.gov/evs/2019/roll358.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-19'
+  n: 359
+  index_yea_nay:
+  - 197
+  - 232
+  result: mismatch
+  official_or_error:
+  - 197
+  - 237
+  - '2019-06-19'
+  url: https://clerk.house.gov/evs/2019/roll359.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-19'
+  n: 365
+  index_yea_nay:
+  - 132
+  - 297
+  result: mismatch
+  official_or_error:
+  - 132
+  - 302
+  - '2019-06-19'
+  url: https://clerk.house.gov/evs/2019/roll365.xml
+- chamber: S
+  congress: 116
+  date: '2019-06-19'
+  n: 176
+  index_yea_nay:
+  - 88
+  - 11
+  result: mismatch
+  official_or_error:
+  - 89
+  - 10
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00176.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-20'
+  n: 369
+  index_yea_nay:
+  - 192
+  - 234
+  result: mismatch
+  official_or_error:
+  - 192
+  - 240
+  - '2019-06-20'
+  url: https://clerk.house.gov/evs/2019/roll369.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-20'
+  n: 372
+  index_yea_nay:
+  - 84
+  - 340
+  result: mismatch
+  official_or_error:
+  - 84
+  - 345
+  - '2019-06-20'
+  url: https://clerk.house.gov/evs/2019/roll372.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-20'
+  n: 375
+  index_yea_nay:
+  - 113
+  - 312
+  result: mismatch
+  official_or_error:
+  - 113
+  - 318
+  - '2019-06-20'
+  url: https://clerk.house.gov/evs/2019/roll375.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-20'
+  n: 388
+  index_yea_nay:
+  - 128
+  - 298
+  result: mismatch
+  official_or_error:
+  - 128
+  - 304
+  - '2019-06-20'
+  url: https://clerk.house.gov/evs/2019/roll388.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-20'
+  n: 389
+  index_yea_nay:
+  - 132
+  - 293
+  result: mismatch
+  official_or_error:
+  - 132
+  - 299
+  - '2019-06-20'
+  url: https://clerk.house.gov/evs/2019/roll389.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-24'
+  n: 400
+  index_yea_nay:
+  - 180
+  - 232
+  result: mismatch
+  official_or_error:
+  - 180
+  - 236
+  - '2019-06-24'
+  url: https://clerk.house.gov/evs/2019/roll400.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-24'
+  n: 401
+  index_yea_nay:
+  - 181
+  - 232
+  result: mismatch
+  official_or_error:
+  - 181
+  - 236
+  - '2019-06-24'
+  url: https://clerk.house.gov/evs/2019/roll401.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-24'
+  n: 402
+  index_yea_nay:
+  - 145
+  - 269
+  result: mismatch
+  official_or_error:
+  - 145
+  - 273
+  - '2019-06-24'
+  url: https://clerk.house.gov/evs/2019/roll402.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-25'
+  n: 405
+  index_yea_nay:
+  - 131
+  - 283
+  result: mismatch
+  official_or_error:
+  - 131
+  - 287
+  - '2019-06-25'
+  url: https://clerk.house.gov/evs/2019/roll405.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-25'
+  n: 411
+  index_yea_nay:
+  - 191
+  - 224
+  result: mismatch
+  official_or_error:
+  - 191
+  - 226
+  - '2019-06-25'
+  url: https://clerk.house.gov/evs/2019/roll411.xml
+- chamber: H
+  congress: 116
+  date: '2019-06-26'
+  n: 415
+  index_yea_nay:
+  - 151
+  - 269
+  result: mismatch
+  official_or_error:
+  - 151
+  - 274
+  - '2019-06-26'
+  url: https://clerk.house.gov/evs/2019/roll415.xml
+- chamber: H
+  congress: 116
+  date: '2019-07-12'
+  n: 462
+  index_yea_nay:
+  - 201
+  - 220
+  result: mismatch
+  official_or_error:
+  - 201
+  - 221
+  - '2019-07-12'
+  url: https://clerk.house.gov/evs/2019/roll462.xml
+- chamber: H
+  congress: 116
+  date: '2019-09-20'
+  n: 539
+  index_yea_nay:
+  - 161
+  - 250
+  result: mismatch
+  official_or_error:
+  - 161
+  - 253
+  - '2019-09-20'
+  url: https://clerk.house.gov/evs/2019/roll539.xml
+- chamber: S
+  congress: 116
+  date: '2019-09-26'
+  n: 311
+  index_yea_nay:
+  - 82
+  - 15
+  result: mismatch
+  official_or_error:
+  - 81
+  - 16
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00311.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-18'
+  n: 565
+  index_yea_nay:
+  - 184
+  - 227
+  result: mismatch
+  official_or_error:
+  - 184
+  - 229
+  - '2019-10-18'
+  url: https://clerk.house.gov/evs/2019/roll565.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-18'
+  n: 566
+  index_yea_nay:
+  - 187
+  - 222
+  result: mismatch
+  official_or_error:
+  - 187
+  - 224
+  - '2019-10-18'
+  url: https://clerk.house.gov/evs/2019/roll566.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-23'
+  n: 581
+  index_yea_nay:
+  - 180
+  - 227
+  result: mismatch
+  official_or_error:
+  - 180
+  - 231
+  - '2019-10-23'
+  url: https://clerk.house.gov/evs/2019/roll581.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-30'
+  n: 593
+  index_yea_nay:
+  - 191
+  - 229
+  result: mismatch
+  official_or_error:
+  - 191
+  - 233
+  - '2019-10-30'
+  url: https://clerk.house.gov/evs/2019/roll593.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-30'
+  n: 594
+  index_yea_nay:
+  - 181
+  - 239
+  result: mismatch
+  official_or_error:
+  - 181
+  - 243
+  - '2019-10-30'
+  url: https://clerk.house.gov/evs/2019/roll594.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-30'
+  n: 595
+  index_yea_nay:
+  - 181
+  - 241
+  result: mismatch
+  official_or_error:
+  - 181
+  - 245
+  - '2019-10-30'
+  url: https://clerk.house.gov/evs/2019/roll595.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-30'
+  n: 598
+  index_yea_nay:
+  - 185
+  - 236
+  result: mismatch
+  official_or_error:
+  - 185
+  - 240
+  - '2019-10-30'
+  url: https://clerk.house.gov/evs/2019/roll598.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-30'
+  n: 599
+  index_yea_nay:
+  - 178
+  - 239
+  result: mismatch
+  official_or_error:
+  - 178
+  - 243
+  - '2019-10-30'
+  url: https://clerk.house.gov/evs/2019/roll599.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-30'
+  n: 600
+  index_yea_nay:
+  - 186
+  - 234
+  result: mismatch
+  official_or_error:
+  - 186
+  - 237
+  - '2019-10-30'
+  url: https://clerk.house.gov/evs/2019/roll600.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-31'
+  n: 605
+  index_yea_nay:
+  - 180
+  - 237
+  result: mismatch
+  official_or_error:
+  - 180
+  - 240
+  - '2019-10-31'
+  url: https://clerk.house.gov/evs/2019/roll605.xml
+- chamber: H
+  congress: 116
+  date: '2019-10-31'
+  n: 606
+  index_yea_nay:
+  - 185
+  - 228
+  result: mismatch
+  official_or_error:
+  - 185
+  - 231
+  - '2019-10-31'
+  url: https://clerk.house.gov/evs/2019/roll606.xml
+- chamber: H
+  congress: 116
+  date: '2019-11-15'
+  n: 618
+  index_yea_nay:
+  - 188
+  - 229
+  result: mismatch
+  official_or_error:
+  - 188
+  - 232
+  - '2019-11-15'
+  url: https://clerk.house.gov/evs/2019/roll618.xml
+- chamber: H
+  congress: 116
+  date: '2019-11-15'
+  n: 620
+  index_yea_nay:
+  - 210
+  - 211
+  result: mismatch
+  official_or_error:
+  - 210
+  - 214
+  - '2019-11-15'
+  url: https://clerk.house.gov/evs/2019/roll620.xml
+- chamber: S
+  congress: 116
+  date: '2019-12-04'
+  n: 380
+  index_yea_nay:
+  - 64
+  - 29
+  result: mismatch
+  official_or_error:
+  - 63
+  - 30
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00380.xml
+- chamber: S
+  congress: 116
+  date: '2019-12-12'
+  n: 397
+  index_yea_nay:
+  - 72
+  - 18
+  result: mismatch
+  official_or_error:
+  - 73
+  - 17
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00397.xml
+- chamber: H
+  congress: 116
+  date: '2020-01-10'
+  n: 9
+  index_yea_nay:
+  - 161
+  - 243
+  result: mismatch
+  official_or_error:
+  - 161
+  - 247
+  - '2020-01-10'
+  url: https://clerk.house.gov/evs/2020/roll009.xml
+- chamber: H
+  congress: 116
+  date: '2020-01-10'
+  n: 10
+  index_yea_nay:
+  - 170
+  - 235
+  result: mismatch
+  official_or_error:
+  - 170
+  - 239
+  - '2020-01-10'
+  url: https://clerk.house.gov/evs/2020/roll010.xml
+- chamber: S
+  congress: 116
+  date: '2020-03-05'
+  n: 65
+  index_yea_nay:
+  - 80
+  - 16
+  result: mismatch
+  official_or_error:
+  - 81
+  - 15
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1162/vote_116_2_00065.xml
+- chamber: S
+  congress: 116
+  date: '2020-10-23'
+  n: 216
+  index_yea_nay:
+  - 53
+  - 44
+  result: mismatch
+  official_or_error:
+  - 0
+  - 0
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1162/vote_116_2_00216.xml
+- chamber: S
+  congress: 117
+  date: '2022-11-15'
+  n: 355
+  index_yea_nay:
+  - 62
+  - 36
+  result: mismatch
+  official_or_error:
+  - 61
+  - 37
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00355.xml
+- chamber: S
+  congress: 119
+  date: '2025-01-30'
+  n: 26
+  index_yea_nay:
+  - 79
+  - 18
+  result: mismatch
+  official_or_error:
+  - 80
+  - 17
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00026.xml
+- chamber: S
+  congress: 119
+  date: '2025-02-24'
+  n: 89
+  index_yea_nay:
+  - 55
+  - 42
+  result: mismatch
+  official_or_error:
+  - 54
+  - 43
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00089.xml
+- chamber: S
+  congress: 119
+  date: '2025-03-11'
+  n: 114
+  index_yea_nay:
+  - 77
+  - 19
+  result: mismatch
+  official_or_error:
+  - 76
+  - 20
+  - null
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00114.xml
+analysis: 'Run 2026-10-02. 16,670 of 17,052 (97.8%) match the official XML on yea, nay and date. 364 House mismatches: 321 in the 111th and 43
+  in the 116th Congress, differing by 1 to 6 votes (one by 53, unexamined); the pattern fits non-voting Delegates and the Resident Commissioner,
+  who are listed in the Clerk''s files and who voted in the Committee of the Whole in those Congresses, but this was NOT confirmed. 13 Senate
+  mismatches: 11 are a one-vote swap between yea and nay, 1 is a parse failure of the checker (2020-10-23 roll 216), 1 not classified. 5 House
+  rolls dated 2013-01-01 (rolls 655-657 and two more) are filed by the Clerk under 2012, so the index''s year-based link is wrong for them. Official
+  records win; the index rows are not corrected here.'

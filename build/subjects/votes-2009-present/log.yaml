@@ -36,3 +36,12 @@ log:
       anchor_checked: secondary. NEXT: (a) party-line analysis needs member-level votes (Voteview HSall_votes.csv,
       large); (b) link each passage vote to its bill record and, for the politics standard, to promises (P1-P11);
       (c) party control, committee and cloture context.
+  - id: L-05
+    date: "2026-10-02"
+    entry: >
+      FULL VERIFICATION DONE (verification.yaml): 16,670 of 17,052 rows match the official XML (97.8%); 377 differ and 5 could
+      not be matched. House differences cluster in the 111th (321) and 116th (43) Congresses and are 1 to 6 votes, which fits
+      non-voting Delegates voting in the Committee of the Whole but is unconfirmed. Senate: 13 differences, 11 of them one vote
+      between yea and nay. The official record wins; the index is secondary and is not silently corrected. Five rows dated
+      2013-01-01 are filed by the Clerk under 2012 (link year wrong). A parse failure on Senate 2020-10-23 roll 216 is the
+      checker's, not proven a data error. KNOWN LIMIT: counts and dates only; vote descriptions and bill numbers were not checked.
