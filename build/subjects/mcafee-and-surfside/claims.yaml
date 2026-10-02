@@ -12,6 +12,10 @@ assessment:
     NIST finds the collapse began in early June 2021 at two connections and traces its causes to the original design and construction. The posts linking it to McAfee depend on a tweet that the sources read show was not posted and on a claimed unit that the sources read do not support; both are rated moderate confidence, because the archive and property-record checks are still to be done.
     The dates one day apart are real but carry no weight, because the failure began earlier. Two limits: we read NIST's public pages, not the full technical report, and the cause of McAfee's death rests on Spanish findings of suicide with no
     independent review found. Those doubting that finding are recorded as doubt, not evidence.
+  key_points:
+    - "The collapse began at two structural connections, with causes in the original design and construction."
+    - "The posts linking the two rest on a tweet and a unit that the sources read do not support."
+    - "Doubts about his death are recorded as doubt: the Spanish findings say suicide and no independent review was found."
   basis: [surfside-deliberate-timed-to-mcafee, surfside-failure-began-before-mcafee-death, mcafee-june8-tweet-posted, mcafee-owned-unit, mcafee-spanish-finding-suicide]
   would_settle: "Physical evidence of an external cause of the collapse, or evidence that McAfee or his data were connected to the building."
 search_summary: >

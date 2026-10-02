@@ -213,6 +213,12 @@ def check_subject(r, sdir):
             _txt = " ".join(str(vd.get(k_, "")) for k_ in ("headline", "text")) + " " + " ".join(str(v_) for v_ in (vd.get("lean") or {}).values())
             if "%" in _txt or "percent" in _txt.lower():
                 r.err(subject, "an assessment must not state a percentage: no source supplies one (SCHEMA N23)")
+            kp_ = vd.get("key_points") or []
+            if len(kp_) != 3:
+                r.warn(subject, "the assessment should give exactly three `key_points` (the executive summary)")
+            for k_ in kp_:
+                if len(str(k_)) > 170:
+                    r.warn(subject, "a key point is over 170 characters")
             if len(str(vd.get("headline", ""))) > 200:
                 r.warn(subject, "assessment headline is over 200 characters")
             _by = {c_.get("id"): c_ for c_ in claims}

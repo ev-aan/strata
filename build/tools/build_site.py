@@ -105,19 +105,32 @@ def node_html(nid, verb=""):
 
 ANS = {"yes": "Yes", "no": "No", "leans_yes": "Leans yes", "leans_no": "Leans no", "unsettled": "Unsettled", "partly": "Partly"}
 
-def assessment_html(v, slug, prefix=""):
-    """The bottom-line box: the question, the answer in words, why, and what would settle it. No percentages: see SCHEMA N23."""
+def assessment_html(v, slug, prefix="", show_question=True, claims=None):
+    """Executive summary first: the answer, three key points, the ratings of the central claim and what would settle it. The reasoning folds underneath.
+    No percentages: see SCHEMA N23."""
     if not v: return ""
     cls = {"yes": "s-established", "no": "s-refuted", "unsettled": "s-contested", "partly": "s-contested"}.get(v["answer"], "s-contested")
     links = " ".join(f'<a href="{prefix}digs/{E(slug)}/#{E(c)}">{E(c)}</a>' for c in v.get("basis", []))
+    kp = "".join(f"<li>{E(x)}</li>" for x in v.get("key_points", []))
+    rc = (claims or {}).get(v.get("rated_claim") or (v.get("basis") or [None])[0])
+    rate = ""
+    if rc:
+        rate = (f'<p class="small" style="margin:6px 0 10px"><b>Central claim:</b> {E(" ".join(str(rc["statement"]).split())[:140])}'
+                f'<br>Evidence <span class="dots">{dots(rc.get("evidential_weight"))}</span> &nbsp; Public belief <span class="dots">{dots(rc.get("adoption_weight"))}</span>'
+                f' &nbsp; Source checked: {E(rc.get("anchor_checked") if rc.get("anchor_checked") is not False else "no")}</p>')
+    lean = ""
+    if v.get("lean"):
+        lean = f'<p><b>Which way the evidence leans:</b> {E(v["lean"]["strength"])}ly toward <b>{E(v["lean"]["toward"])}</b>. This is not a finding.</p>'
+    more = (f'<p>{E(" ".join(str(v["text"]).split()))}</p>'
+            + (f'<p>{E(v["lean"]["because"])}</p><p class="small"><b>Why the lean is not a finding.</b> {E(v["lean"]["caveats"])}</p>' if v.get("lean") else "")
+            + f'<p class="small">Based on: {links}</p>'
+            + '<p class="small">We give no probability figure. Confidence words describe how sure we are of the basis, and no source supplies a number that would not be invented.</p>')
     return (f'<section class="claim" style="border:1px solid var(--line);border-left:7px solid var(--amber);padding:18px 20px" id="where-it-stands"><h2 style="font-size:30px;border:0;margin:0 0 2px;padding:0">Where it stands</h2>'
-            f'<p class="eyebrow" style="margin:0 0 12px">Current assessment · as of {TODAY}</p><p><b>{E(v["question"])}</b></p>'
-            f'<p><span class="pill {cls}">{E(ANS.get(v["answer"], v["answer"]))}</span> <b>{E(v["headline"])}</b></p>'
-            f'<p>{E(" ".join(str(v["text"]).split()))}</p>'
-            + (f'<p><b>Which way the evidence leans:</b> {E(v["lean"]["strength"])}ly toward <b>{E(v["lean"]["toward"])}</b>. {E(v["lean"]["because"])}</p><p class="small"><b>Why this is not a finding.</b> {E(v["lean"]["caveats"])}</p>' if v.get("lean") else "") +
+            f'<p class="eyebrow" style="margin:0 0 12px">Current assessment · as of {TODAY}</p>{("<p><b>" + E(v["question"]) + "</b></p>") if show_question else ""}'
+            f'<p style="font-size:21px;line-height:1.4;margin:6px 0 10px"><span class="pill {cls}">{E(ANS.get(v["answer"], v["answer"]))}</span> <b>{E(v["headline"])}</b></p>'
+            f'<ul style="margin:0 0 8px;padding-left:20px">{kp}</ul>{lean}{rate}'
             f'<p class="small"><b>What would settle it.</b> {E(v["would_settle"])}</p>'
-            f'<p class="small">Based on: {links}</p>'
-            f'<p class="small">We give no probability figure. Confidence words describe how sure we are of the basis, and no source supplies a number that would not be invented.</p></section>')
+            f'<details><summary>The full reasoning</summary>{more}</details></section>')
 
 order = {"refuted": 0, "established": 1, "contested": 2, "proposed": 3, "searched_gap": 4}
 if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -166,10 +179,11 @@ for sub in CFG["publish"]:
                  + "".join(f' · <a href="../../areas/{E(x)}/">{E(AREAS[x]["name"])}</a>' for x in _a.get("areas", []))
                  + " · Question: " + ", ".join(E(QTYPES[x]["name"]) for x in _a.get("types", []))
                  + (" · Starts from a widely shared claim" if _a.get("popular_claims") else "") + "</p>")
-    body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{_tags}{banner}'
-            f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>')
-    body += assessment_html(cl.get("assessment"), slug)
-    ASSESS[sub] = (cl.get("assessment"), slug)
+    _as = cl.get("assessment")
+    body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(_as["question"] if _as else head)}</h1>{_tags}'
+            + assessment_html(_as, slug, show_question=False, claims={c["id"]: c for c in cl["claims"]}) + banner
+            + ("" if _as else f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>'))
+    ASSESS[sub] = (cl.get("assessment"), slug, {c["id"]: c for c in cl["claims"]})
     if hc: body += f'<h2>The headline finding</h2>{claim_html(hc)}'
     body += f'<p>{E(" ".join(str(cl.get("description", "")).split()))}</p>'
     if cl.get("divergence_note"): body += f'<h2>Where evidence and belief differ</h2><p>{E(" ".join(str(cl["divergence_note"]).split()))}</p>'
@@ -253,7 +267,7 @@ for _sub, _qd in _QMAP.items():
     _qp = os.path.join(OUT, "questions", _qd, "index.html")
     if os.path.exists(_qp) and _sub in ASSESS and ASSESS[_sub][0]:
         _q = open(_qp, encoding="utf-8").read()
-        _q = re.sub(r"<!--ASSESSICT-->", lambda m: assessment_html(ASSESS[_sub][0], ASSESS[_sub][1], prefix="../../"), _q, count=1)
+        _q = re.sub(r"<!--ASSESSICT-->", lambda m: assessment_html(ASSESS[_sub][0], ASSESS[_sub][1], prefix="../../", claims=ASSESS[_sub][2]), _q, count=1)
         open(_qp, "w", encoding="utf-8").write(_q)
 _hp = os.path.join(OUT, "index.html")
 if os.path.exists(_hp):

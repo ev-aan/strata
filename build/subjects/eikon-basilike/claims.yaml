@@ -5,7 +5,7 @@ headline: "Eikon Basilike (1649): Milton Charged Charles I's Prayer Was Copied W
 headline_claim: eikon-milton-pamela-charge
 headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
 assessment:
-  question: "Who wrote Eikon Basilike, the King's Book of 1649: Charles I or John Gauden?"
+  question: "Who wrote the King's Book (Eikon Basilike): Charles I or John Gauden?"
   answer: unsettled
   headline: "Unsettled. Milton charged that a prayer in it was copied from Sidney (established). Who wrote the book is not decided."
   text: >
@@ -17,6 +17,10 @@ assessment:
     strength: slight
     because: "The first-edition text we tested does not carry Charles's measured writing habits: it sits as far from his own prose as other clergy do (claim eikon-text-lacks-charles-habits)."
     caveats: "Our own low-confidence result, unreviewed. It does not point to Gauden: that test has not been run (claim eikon-style-singles-out-gauden). The comparison is between kinds of writing as well as authors. The text tested has no prayers at all."
+  key_points:
+    - "Milton charged that a prayer in the book was 'stol'n word for word' from Pamela's prayer in Sidney's Arcadia. That is established."
+    - "Gauden claimed after the Restoration to have written it, and Charles I is also credited. Neither claim is settled."
+    - "Our early measurement leans slightly away from Charles as sole author, but it is unreviewed."
   basis: [eikon-milton-pamela-charge, eikon-gauden-claimed-authorship, eikon-charles-wrote-book, eikon-text-lacks-charles-habits, eikon-no-computed-study-found]
   would_settle: "Gauden's own letters read directly, an edition-by-edition account of when the Pamela prayer was added, and a reviewed measurement on enough genre-matched text."
 search_summary: >

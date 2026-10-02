@@ -5,9 +5,9 @@ headline: "Casket Letters (Mary Queen of Scots, 1567): No Originals Survive, Onl
 headline_claim: casket-originals-lost
 headline_status: draft           # rule 2 needs a claim established or refuted at HIGH confidence; casket-originals-lost is capped at provisional (absence anchor), so this stays draft
 assessment:
-  question: "Are the Casket Letters genuine, that is, did Mary Queen of Scots write them to Bothwell?"
+  question: "Did Mary Queen of Scots write the Casket Letters?"
   answer: unsettled
-  headline: "Unsettled. No original survives, so the letters themselves cannot be tested, and what survives is too thin to decide."
+  headline: "Unsettled. The evidence that would decide it does not survive."
   text: >
     The originals are lost (provisional confidence, because that rests on absence). What survives is a few French copies of four letters, about 1,750 words in all, which is too short for word-frequency tests,
     and Latin and Scots translations of the rest. The one measured comparison we know of leans slightly toward Mary's own phrasing, but it is our own unreviewed result and a difference in kind of writing could explain it.
@@ -18,6 +18,10 @@ assessment:
     strength: slight
     because: "The one measurement we have, on the four surviving French letters, finds more shared phrases with Mary's authenticated French letters than with Catherine de Medici's, at levels typical of Mary's own letters (claim casket-french-lean-mary)."
     caveats: "It is our own result and no one outside the project has reviewed it. A difference in kind of writing (private letters against formal papers) could explain it and has not been controlled for. The text is about 1,750 words, too short for the stronger tests. The surviving French copies may themselves be back-translations from Latin (claim casket-french-printed-retranslation, proposed). A lean is not a finding: it stays under 'Unsettled' until a basis claim reaches moderate confidence."
+  key_points:
+    - "No original letter survives, so the letters themselves cannot be examined."
+    - "What survives (French copies of four letters, about 1,750 words, and translations of the rest) is too little for the standard authorship tests."
+    - "Our one measurement leans slightly toward Mary, but it is unreviewed and is not a finding."
   basis: [casket-authenticity-contested, casket-originals-lost, casket-too-short-for-wordfreq, casket-french-lean-mary, casket-babington-postscript-forged-1586]
   would_settle: "An authenticated original, or a measured comparison on enough text, with a control of the same kind of writing, that survives review by someone outside the project."
 search_summary: >
