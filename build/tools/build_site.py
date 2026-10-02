@@ -42,7 +42,7 @@ def page(title, body, desc="", canonical="", extra_head="", depth=0):
             f'<title>{E(title)}{"" if title.startswith(CFG["name"]) or len(title) > 70 else " | " + E(CFG["name"])}</title>{meta}{can}{og}{extra_head}<link rel="preconnect" href="https://fonts.googleapis.com">'
             f'<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=IBM+Plex+Mono&display=swap" rel="stylesheet">'
             f'<style>{CSS}</style></head><body><div class="w">{nav}{body}'
-            f'<footer>Built {TODAY} from YAML in the repository. <a href="{E(CFG["source_url"])}">Source</a> · '
+            f'<footer>Content: <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">CC BY 4.0</a>; reuse with credit to "{E(CFG["name"])} (stratah.org)" and a note of any changes. Built {TODAY} from YAML in the repository. <a href="{E(CFG["source_url"])}">Source</a> · '
             f'<a href="{E(CFG["issues_url"])}">Challenge a finding</a></footer></div></body></html>')
 
 def write(rel, text):
@@ -246,7 +246,7 @@ for sub in CFG["publish"]:
     body += f'<h2>The data</h2><p>These pages are generated from plain YAML: <a href="claims.yaml">claims.yaml</a>' + (' · <a href="MANIFEST.yaml">sources manifest</a>' if srcs else "") + '. If you can show a finding is wrong, <a href="' + E(CFG["issues_url"]) + '">challenge it</a>.</p>'
     summ = " ".join(str(cl.get("search_summary", "")).split())
     ld = '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": head, "description": summ,
-         "inLanguage": "en", "dateModified": TODAY, "isAccessibleForFree": True, "url": f"https://{CFG['domain']}/digs/{slug}/",
+         "inLanguage": "en", "dateModified": TODAY, "isAccessibleForFree": True, "license": "https://creativecommons.org/licenses/by/4.0/", "url": f"https://{CFG['domain']}/digs/{slug}/",
          "mainEntityOfPage": f"https://{CFG['domain']}/digs/{slug}/", "about": cl.get("title"), "keywords": [AREAS[x]["name"] for x in ([META[slug]["area"]] + META[slug]["areas"]) if x] + [QTYPES[x]["name"] for x in META[slug]["types"]],
          "publisher": {"@type": "Organization", "name": CFG["name"], "url": f"https://{CFG['domain']}/"}}).replace("</", "<\\/") + '</script>'
     write(f"digs/{slug}/index.html", page(head, body, " ".join(str(cl.get("search_summary", "")).split()), f"/digs/{slug}/", ld, depth=2))
