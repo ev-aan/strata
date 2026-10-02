@@ -86,90 +86,29 @@ sources:
 
 # kind: data | document | official | witness | analysis | media     status: reported | single | disputed | inferred
 events:
-  # ---------------- Panel A: overview ----------------
-  - {id: e1, panel: overview, lane: covert, time: "1964-07-30T17:30:00Z", precision: approx, kind: analysis, status: single, sources: [s_essay],
-     label: "34-A raid on Hon Me and Hon Ngu (about 00:30 on 31 July, local)",
-     detail: "Prados: the raid 'hit at half past midnight, July 31'. Local time is UTC+7, so about 17:30 UTC on 30 July."}
-  - {id: e2, panel: overview, lane: ships, time: "1964-08-02T08:05:00Z", precision: approx, kind: analysis, status: reported, sources: [s_hanyok, s_essay],
-     label: "2 Aug: Maddox fires three warning rounds; North Vietnamese boats attack",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=17",
-     detail: "Hanyok: about 1505 Gulf time (08:05 UTC) the Maddox fired three rounds to warn off the boats; the administration did not report this and said the Vietnamese boats fired first. Jets from the Ticonderoga arrived within about fifteen minutes; one boat was left dead in the water and two damaged."}
-  - {id: e3, panel: overview, lane: wh, time: "1964-08-03T14:30:00Z", precision: exact, kind: document, status: reported, sources: [s_tapes, s_essay],
-     label: "McNamara to LBJ (10:30 a.m. EDT): explain OPLAN 34-A to Congress",
-     detail: "Transcription: 'explain this Op Plan 34-A, these covert operations. There's no question but what that had bearing on.'"}
-  - {id: e4, panel: overview, lane: covert, time: "1964-08-03T17:00:00Z", precision: range, end: "1964-08-03T23:00:00Z", kind: analysis, status: inferred, sources: [s_essay],
-     label: "Second 34-A raid, night of 3/4 August (time not stated)",
-     detail: "Prados: another raid on the night of 3/4 August as the destroyers began their run back up the Gulf. The bar is an inference for the local night, not a stated time."}
-  - {id: e5, panel: overview, lane: wh, time: "1964-08-05T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hanyok],
-     label: "5 Aug: US retaliatory air strikes on North Vietnam",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=49",
-     detail: "Hanyok refers to 'the retaliatory air strikes of 5 August'. Time of day not given here."}
-  - {id: e6, panel: overview, lane: cong, time: "1964-08-06T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_essay],
-     label: "6 Aug: McNamara tells senators the Navy 'was not aware of' South Vietnamese actions",
-     detail: "Quoted by Prados from the Senate Foreign Relations Committee's published executive sessions (vol. XVI, p. 293); the record was not read directly."}
-  - {id: e7, panel: overview, lane: cong, time: "1964-08-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_crec64, s_vote_s, s_vote_h, s_senate, s_cfr], link: "https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf#page=30",
-     label: "7 Aug: Tonkin Gulf Resolution passes (House 416-0, Senate 88-2)",
-     detail: "Signed 10 August. Senate: read in the Congressional Record, p. 18470 (yeas 88, nays 2: Gruening and Morse; 10 not voting). House: the Record prints 416-0 on Roll No. 210 (p. 18555), under suspension of the rules (see claim tonkin-house-debate-aug7)."}
-  - {id: e8, panel: overview, lane: intel, time: "1964-08-08T12:00:00Z", precision: day, kind: document, status: single, sources: [s_essay],
-     label: "8 Aug: CIA cover note sends Bundy the selected intercepts",
-     detail: "Prados: a cover note of 8 August accompanied the intercepts 'selected by CIA and NSA' that the White House had requested."}
-  # ---------------- Panel B: 4-5 August in hours ----------------
-  - {id: f1, panel: hours, lane: dvr, time: "1964-08-04T11:40:00Z", precision: exact, kind: document, status: single, sources: [s_intercepts, s_essay],
-     label: "Report 7: boats told to be ready for 'military operations' that night",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf#page=4",
-     detail: "Read: 'imminent plans of DRV naval action possibly against Desoto mission'; T-142 and T-146 to ready, T-333 to join if oil can be found. Date-time group 04/1140Z per Prados (the OCR of the group is unclear). Hanyok reads later Phu Bai reports as a salvage and tow operation."}
-  - {id: f2, panel: hours, lane: ships, time: "1964-08-04T12:40:00Z", precision: exact, kind: analysis, status: single, sources: [s_essay],
-     label: "Destroyers' first reported radar sightings (04/1240Z)",
-     detail: "Prados. The base of the Swatow boats, Quang Khe, was about 110 nautical miles from Hon Me, too far to reach in the time between the intercept and this report."}
-  - {id: f3, panel: hours, lane: wh, time: "1964-08-04T13:43:00Z", precision: exact, kind: document, status: reported, sources: [s_tapes, s_essay],
-     label: "McNamara to LBJ (9:43 a.m. EDT): ship 'allegedly' to be attacked tonight",
-     detail: "Read in transcription: 'this ship is allegedly uh to be attacked tonight'. Before any attack on the destroyers was reported. Conditional planning followed ('in the event he is attacked')."}
-  - {id: f4, panel: hours, lane: wh, time: "1964-08-04T14:53:00Z", precision: exact, kind: document, status: single, sources: [s_tapes],
-     label: "McNamara to LBJ (10:53 a.m. EDT): reports the supposed engagement",
-     detail: "Per the tapes commentary, McNamara 'mistakenly reports' what the aircraft saw. Details of the call were not read in full."}
-  - {id: f5, panel: hours, lane: ships, time: "1964-08-04T16:02:00Z", precision: exact, kind: analysis, status: single, sources: [s_essay],
-     label: "Destroyers report evading torpedoes and having 'sunk' a craft (04/1602Z)",
-     detail: "Prados. Stockdale, overhead, saw no boats and later wrote 'absolutely no gunfire except our own'."}
-  - {id: f6, panel: hours, lane: nsa_pan, time: "1964-08-04T16:30:00Z", precision: exact, kind: document, status: single, sources: [s_intercepts],
-     label: "Report 12: boat reports an enemy aircraft falling into the sea",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf#page=6",
-     detail: "Read: 'enemy aircraft was observed falling into the sea; enemy vessel perhaps wounded'. Mentions aircraft; the date-time group in the OCR is smudged (04/1630Z per Prados)."}
-  - {id: f7, panel: hours, lane: dvr, time: "1964-08-04T16:44:00Z", precision: exact, kind: document, status: reported, sources: [s_intercepts, s_hanyok],
-     label: "Report 13: 'we shot at two enemy airplanes... we sacrificed two comrades'",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf#page=7",
-     detail: "Read. The report speaks of aircraft, not ships. Hanyok: it appears to combine two separate messages into one translation, and 'comrades' was rendered as 'boats'; the original Vietnamese text cannot be located."}
-  - {id: f8, panel: hours, lane: herrick, time: "1964-08-04T17:27:00Z", precision: range, end: "1964-08-04T18:27:00Z", kind: analysis, status: disputed, sources: [s_essay],
-     label: "Herrick's doubt message SENT (1:27 p.m. Washington time)",
-     detail: "Prados, quoting a 28 Aug 1964 chronology: contacts 'appear doubtful'; 'freak weather effects' and 'over-eager sonarmen'; 'no visual sightings'. DISCREPANCIES: (1) earlier reports said the message was received at 1:27 p.m.; the chronology says sent. (2) The bar spans 17:27 to 18:27 UTC because it is unclear whether 'Washington time' means daylight time (UTC-4) or the UTC-5 that Prados uses to convert. The message itself was not read."}
-  - {id: f9, panel: hours, lane: wh, time: "1964-08-05T12:00:00Z", precision: exact, kind: document, status: reported, sources: [s_memo, s_essay],
-     label: "White House staff meeting memo (8 a.m. EDT): evidence 'less than we had yesterday'",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin.pdf",
-     detail: "Read. Bundy: evidence for the second attack 'less than we had yesterday', 'eliminating double counting and mistaken signals'; 'This much seemed certain: There was an attack.' Also: he 'welcomed the recent events as justification for a resolution the Administration had wanted for some time.'"}
-  # ---------------- Panel C: afterwards ----------------
-  - {id: g1, panel: after, lane: testimony, time: "1968-02-20T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_essay],
-     label: "1968: McNamara cites 'unimpeachable' intercepts to the Senate; does not leave copies",
-     detail: "Opening statement of 20 February 1968, quoted by Prados."}
-  - {id: g2, panel: after, lane: nsa_internal, time: "1972-01-20T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_hanyok],
-     label: "1972: NSA's deputy director concedes the 4 Aug intercept could refer to 2 Aug",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=51",
-     detail: "Hanyok's note 7: a 20 January 1972 meeting between Dr. Louis Tordella and SFRC staff chief Carl Marcy; Tordella could not produce the original."}
-  - {id: g3, panel: after, lane: testimony, time: "1995-11-09T12:00:00Z", precision: day, kind: media, status: single, sources: [s_seattle],
-     label: "1995: Giap tells McNamara in Hanoi that nothing happened on 4 Aug",
-     detail: "Seattle Times report of the 9 Nov 1995 meeting."}
-  - {id: g4, panel: after, lane: testimony, time: "1997-06-20T12:00:00Z", precision: range, end: "1997-06-23T12:00:00Z", kind: analysis, status: single, sources: [s_essay],
-     label: "1997: Hanoi conference; Giap says 2 Aug was ordered by a local command",
-     detail: "Prados attended; he reports Giap's statement to McNamara (his note 13)."}
-  - {id: g5, panel: after, lane: nsa_internal, time: "2001-03-01T12:00:00Z", precision: year, kind: document, status: single, sources: [s_hanyok],
-     label: "Early 2001: Hanyok study in NSA's classified Cryptologic Quarterly",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=3",
-     detail: "Per the National Security Archive's 2005 posting."}
-  - {id: g6, panel: after, lane: declass, time: "2003-03-15T12:00:00Z", precision: month, kind: document, status: reported, sources: [s_essay, s_intercepts],
-     label: "March 2003: the five intercept reports declassified",
-     link: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf#page=2",
-     detail: "Prados: declassified in March 2003 on a Mandatory Declassification Review request. The scan carries a NARA review stamp dated 3-13-03."}
-  - {id: g7, panel: after, lane: declass, time: "2005-12-01T12:00:00Z", precision: day, kind: document, status: reported, sources: [s_press, s_hanyok],
-     label: "1 Dec 2005: NSA declassifies about 140 documents, including the Hanyok study",
-     detail: "National Security Archive posting of 1 December 2005."}
-  - {id: g9, panel: after, lane: cong, time: "1970-06-24T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_crec70, s_vote_s], link: "https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf#page=32",
-     label: "24 Jun 1970: Senate votes 81-10 to repeal the Tonkin Resolution (Dole amendment)",
-     detail: "Read in the Congressional Record, p. 21132 [No. 167 Leg.]. The ten nays include Fulbright, who said in the same debate 'I am going to vote for its repeal' and objected to the procedure (p. 21119). See claim tonkin-resolution-repealed-1970."}
+  - {id: e1, panel: overview, lane: covert, node: tonkin-1964-07-30-34-a-raid-on-hon-me-and, rev: 2}
+  - {id: e2, panel: overview, lane: ships, node: tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese, rev: 2}
+  - {id: e3, panel: overview, lane: wh, node: tonkin-1964-08-03-mcnamara-to-lbj-explain-oplan-34-a, rev: 2}
+  - {id: e4, panel: overview, lane: covert, node: tonkin-1964-08-03-second-34-a-raid-night-of-3, rev: 2}
+  - {id: e5, panel: overview, lane: wh, node: tonkin-1964-08-05-us-retaliatory-air-strikes-on-north-vietnam, rev: 2}
+  - {id: e6, panel: overview, lane: cong, node: tonkin-1964-08-06-mcnamara-tells-senators-the-navy-was-not, rev: 2}
+  - {id: e6b, panel: overview, lane: cong, node: tonkin-1964-08-06-fulbright-opens-senate-debate-aug4-as-fact, rev: 2}
+  - {id: e7, panel: overview, lane: cong, node: tonkin-1964-08-07-tonkin-gulf-resolution-passes, rev: 2}
+  - {id: e8, panel: overview, lane: intel, node: tonkin-1964-08-08-cia-cover-note-sends-bundy-the-selected, rev: 2}
+  - {id: f1, panel: hours, lane: dvr, node: tonkin-1964-08-04-report-7-boats-told-to-be-ready, rev: 2}
+  - {id: f2, panel: hours, lane: ships, node: tonkin-1964-08-04-destroyers-first-reported-radar-sightings, rev: 2}
+  - {id: f3, panel: hours, lane: wh, node: tonkin-1964-08-04-mcnamara-to-lbj-ship-allegedly-to-be, rev: 2}
+  - {id: f4, panel: hours, lane: wh, node: tonkin-1964-08-04-mcnamara-to-lbj-reports-the-supposed-engagement, rev: 2}
+  - {id: f5, panel: hours, lane: ships, node: tonkin-1964-08-04-destroyers-report-evading-torpedoes-and-having-sunk, rev: 2}
+  - {id: f6, panel: hours, lane: nsa_pan, node: tonkin-1964-08-04-report-12-boat-reports-an-enemy-aircraft, rev: 2}
+  - {id: f7, panel: hours, lane: dvr, node: tonkin-1964-08-04-report-13-we-shot-at-two-enemy, rev: 2}
+  - {id: f8, panel: hours, lane: herrick, node: tonkin-1964-08-04-herrick-s-doubt-message-sent, rev: 2}
+  - {id: f9, panel: hours, lane: wh, node: tonkin-1964-08-05-white-house-staff-meeting-memo-evidence-less, rev: 2}
+  - {id: g1, panel: after, lane: testimony, node: tonkin-1968-02-20-mcnamara-cites-unimpeachable-intercepts-to-the-senate, rev: 2}
+  - {id: g2, panel: after, lane: nsa_internal, node: tonkin-1972-01-20-nsa-s-deputy-director-concedes-the-4, rev: 2}
+  - {id: g3, panel: after, lane: testimony, node: tonkin-1995-11-09-giap-tells-mcnamara-in-hanoi-that-nothing, rev: 2}
+  - {id: g4, panel: after, lane: testimony, node: tonkin-1997-06-20-hanoi-conference-giap-says-2-aug-was, rev: 2}
+  - {id: g5, panel: after, lane: nsa_internal, node: tonkin-2001-03-01-hanyok-study-in-nsa-s-classified-cryptologic, rev: 2}
+  - {id: g6, panel: after, lane: declass, node: tonkin-2003-03-15-the-five-intercept-reports-declassified, rev: 2}
+  - {id: g7, panel: after, lane: declass, node: tonkin-2005-12-01-nsa-declassifies-about-140-documents-including-the, rev: 2}
+  - {id: g9, panel: after, lane: cong, node: vote-RS0910398, rev: 4}

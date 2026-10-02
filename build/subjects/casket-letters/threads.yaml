@@ -1,0 +1,13 @@
+subject: casket-letters
+threads:
+  - id: thread-mary-was-framed
+    type: reception-overlay
+    title: "'Mary was framed by the state'"
+    confers_weight: false
+    description: >
+      The popular framing. Part is documented and part is not, and the two are kept apart.
+    overlay_notes:
+      - "Documented (1586): English intelligence forged text in Mary's correspondence to trap her and her allies (claim casket-babington-postscript-forged-1586; anchor not yet read here)."
+      - "Unproven (1567-68): the Casket Letters were forged by the Scottish lords who deposed her (claim casket-authenticity-contested)."
+      - "A proven forgery in 1586, by different people in another country, shows that forging Mary's letters was possible and was done. It adds no evidence that the 1567 letters were forged. Treating it as if it did borrows weight from a true story."
+    firewall: "Mechanically barred (confers_weight: false) from lending evidential weight to any claim."

@@ -21,7 +21,7 @@ claims:
     adoption_weight: 5
     adoption_note: "Not disputed."
     would_change_if: "the official roll call being corrected or shown not to be authentic"
-    anchor: {type: official-roll-call, ref: src-roll-243, description: "Clerk XML read: 'On Passage', result Passed, 9:21 PM, 31-May-2023."}
+    anchor: {type: official-roll-call, sources: [src-roll-243], description: "Clerk XML read: 'On Passage', result Passed, 9:21 PM, 31-May-2023."}
   - id: pv-enacted
     state: established
     statement: "H.R. 3746 passed the Senate on 1 June 2023 and was approved on 3 June 2023 as Public Law 118-5."
@@ -33,7 +33,7 @@ claims:
     adoption_note: "Not disputed."
     would_change_if: "the statute's legislative-history note being shown wrong"
     next_step: "Read the Senate roll call to anchor the Senate vote itself."
-    anchor: {type: statute, ref: src-plaw-118-5, description: "Slip law read: 'Approved June 3, 2023'; legislative history: 'May 31, considered and passed House. June 1, considered and passed Senate.'"}
+    anchor: {type: statute, sources: [src-plaw-118-5], description: "Slip law read: 'Approved June 3, 2023'; legislative history: 'May 31, considered and passed House. June 1, considered and passed Senate.'"}
   - id: pv-barragan-voted-no
     state: established
     statement: "Rep. Nanette Barragan (D-CA, B001300) voted No on H.R. 3746 on 31 May 2023, against a Democratic majority of 165 Yea to 46 Nay."
@@ -44,7 +44,7 @@ claims:
     adoption_weight: 5
     adoption_note: "Not disputed."
     would_change_if: "the official roll call being corrected"
-    anchor: {type: official-roll-call, ref: src-roll-243}
+    anchor: {type: official-roll-call, sources: [src-roll-243], description: "Official House roll call 243 (Clerk XML), the member's recorded vote; see the sources manifest."}
   - id: pv-alford-voted-no
     state: established
     statement: "Rep. Mark Alford (R-MO, A000379) voted No on H.R. 3746 on 31 May 2023, against a Republican majority of 149 Yea to 71 Nay."
@@ -55,7 +55,7 @@ claims:
     adoption_weight: 5
     adoption_note: "Not disputed."
     would_change_if: "the official roll call being corrected"
-    anchor: {type: official-roll-call, ref: src-roll-243}
+    anchor: {type: official-roll-call, sources: [src-roll-243], description: "Official House roll call 243 (Clerk XML), the member's recorded vote; see the sources manifest."}
   - id: pv-barragan-stated-reasons
     state: established
     statement: >
@@ -69,7 +69,7 @@ claims:
     adoption_weight: 3
     adoption_note: "Not measured."
     would_change_if: "an earlier or fuller statement of her reasons"
-    anchor: {type: press-release, ref: src-barragan-statement, description: "Read in full (raw page text) from barragan.house.gov, dated 1 June 2023."}
+    anchor: {type: press-release, sources: [src-barragan-statement], description: "Read in full (raw page text) from barragan.house.gov, dated 1 June 2023."}
     checks_of_her_factual_claims:
       - {claim: "The bill changes NEPA", result: "supported: Sec. 321 amends the National Environmental Policy Act of 1969 (Public Law text read)"}
       - {claim: "The bill approves the Mountain Valley Pipeline", result: "supported in part: Sec. 324 is titled 'Expediting completion of the Mountain Valley Pipeline' and contains congressional findings and approvals; legal effect not analysed"}
@@ -89,7 +89,7 @@ claims:
     adoption_weight: 3
     adoption_note: "Not measured."
     would_change_if: "an earlier or fuller statement of his reasons"
-    anchor: {type: official-newsletter, ref: src-alford-newsletter, description: "Read in full (raw page text) from alford.house.gov; header 'June 1st', year inferred."}
+    anchor: {type: official-newsletter, sources: [src-alford-newsletter], description: "Read in full (raw page text) from alford.house.gov; header 'June 1st', year inferred."}
     checks_of_his_factual_claims:
       - {claim: "The bill cuts only $1.4 billion for IRS", result: "supported: Sec. 251 rescinds $1,389,525,000 of unobligated IRA funds for the IRS"}
       - {claim: "Total allocated is $80 billion; 87,000 agents", result: "not checked here"}
@@ -107,6 +107,7 @@ claims:
     would_change_if: "a dated, attributable pre-vote statement by Barragan on the debt-limit deal is found (closes the gap)"
     next_step: "Search the Congressional Record and her floor remarks and social posts, 1 Apr to 31 May 2023; browser needed for congress.gov and archived posts."
     searched: "Her official site search for 'debt ceiling' (no relevant hits), and two web searches. This is thin."
+    anchor: {type: search-record, description: Her official site search for 'debt ceiling' (no relevant hits) and two web searches. This is thin.}
   - id: pv-alford-promise-undated
     state: proposed
     statement: >
@@ -120,6 +121,7 @@ claims:
     adoption_note: Not measured.
     would_change_if: "the original 2022 pledge is found with date and wording (raises it), or a search of his archived campaign material finds no such pledge (lowers it)"
     next_step: "Find the 2022 campaign pledge, website text or debate remarks (archived campaign site, local news)."
+    anchor: {type: search-record, description: 'His statement is read (src-alford-newsletter) but the promise itself is not dated or found: the 2022 pledge text has not been located.'}
   - id: pv-inducement-both
     state: searched_gap
     statement: "No documented pressure or payment (P9 tiers) connecting either member's vote to a third party has been searched for yet; none is claimed."
@@ -131,3 +133,4 @@ claims:
     adoption_note: Not measured. No public claim of inducement for either member was found to measure.
     would_change_if: "a decisive-tier item (P9) is found for either member, or the named searches are run and recorded as not found"
     next_step: "FEC filings and House financial-disclosure reports for each member, 2022-2023; lobbying filings on H.R. 3746. Timing alone would be context only (P9)."
+    anchor: {type: search-record, description: 'Nothing searched yet: FEC filings, disclosure reports and lobbying filings are still to be read.'}

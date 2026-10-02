@@ -1,0 +1,15 @@
+# News Review: current stories and rumours checked claim by claim, with a dated "what we knew when" log.
+# An entry appears on /news/ only if its subject is in build/site.yaml `publish` (so it has passed the publish gate).
+# The owner chooses what is opened. Suggestions come in through the issue form; nothing is opened without the owner's say-so.
+intro: >
+  News Review checks what is being said about a current story, one claim at a time, against sources we can open. It is a fact-check that keeps going:
+  early reports on a live event are often wrong, so every entry keeps a dated log of what was known when, and each correction is added, never overwritten.
+  We do not name suspects, speculate about anyone's beliefs or background, or treat an accusation as a finding. A discrepancy between reports is something to resolve, not proof that anything was manufactured.
+status_labels:
+  live: "Live: facts are still changing"
+  settled: "Settled: the main claims are resolved on the evidence we have"
+  closed: "Closed: no further updates expected"
+entries:
+  - subject: flydubai-fz1073
+    status: live
+    as_of: 2026-10-02

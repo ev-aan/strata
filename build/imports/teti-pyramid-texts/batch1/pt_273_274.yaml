@@ -1,0 +1,417 @@
+id: pt_273_274
+pt_number: "273–274"
+display_name: "PT 273–274 — The Cannibal Hymn"
+sethe_phrase_range:
+  value: "§§ 390a–414c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1. pp. 205–216 (confirmed page range from EEF bibliography)."
+  source_note: >
+    The EEF guide (egyptologyforum.org) confirms: 'Hieroglyphic text in: Kurt Sethe,
+    Die altägyptischen Pyramidentexte, vol. 1, Leipzig, 1908, pp. 205–216.'
+    This is the precise Sethe location for the Cannibal Hymn hieroglyphic text.
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  composition_note: >
+    The Cannibal Hymn is believed by several scholars to predate the Fifth Dynasty
+    pyramids in which it was first carved. Mercer (1952) notes: 'it is certain that
+    many of these texts came into existence before the final union of Upper and Lower
+    Egypt, and perhaps long before that date, which is now put at about 3000 BC.'
+    The hymn's archaic vocabulary supports a pre-pyramid composition, but no
+    direct evidence of an earlier written form exists.
+    The composition date is therefore a searched_gap distinct from the carving date.
+  later_attestations:
+    - source: "Unas pyramid, antechamber east wall gable"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: >
+        PT 273–274 appears in ONLY TWO Old Kingdom pyramids: Unas and Teti.
+        Wikipedia confirms: 'Apart from the burial of Unas, only the Pyramid of
+        Teti displays the Cannibal Hymn.'
+        This restricted distribution is archaeologically significant.
+      source: "Wikipedia Pyramid Texts article; EEF bibliography."
+    - source: "Coffin Texts Spell 573"
+      approximate_date_start: -2055
+      approximate_date_end: -1650
+      note: >
+        The Cannibal Hymn reappeared as Coffin Text Spell 573 in the Middle Kingdom.
+        Goebs (2004) presents a comparative analysis of PT vs. CT versions.
+        The CT version shows modification — some elements altered or omitted.
+      source: >
+        Wikipedia PT article; Goebs, K. 2004. 'The Cannibal Spell: continuity and
+        change in the Pyramid Text and Coffin Text versions.' In: Bickel & Mathieu
+        (eds), D'un monde à l'autre. Basel.
+    - source: "Book of the Dead"
+      note: "Dropped. The Cannibal Hymn was not transmitted into the Book of the Dead corpus."
+      source: "Wikipedia PT article: 'It was dropped by the time the Book of the Dead was being copied.'"
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: antechamber
+  wall: east_gable
+  column_direction: unknown
+  note: >
+    PT 273–274 occupies the east wall gable of the antechamber in the Unas pyramid.
+    The pyramidtextsonline.com wall index confirms: 'Antechamber East Wall Gable: 273–276.'
+    By architectural analogy (Allen's confirmed parallel structure), Teti's antechamber
+    east wall gable contains the same placement.
+    The east gable placement is theologically significant: the east = sunrise = rebirth.
+    The Cannibal Hymn on the east gable faces the direction of Re's dawn emergence.
+  physical_condition: >
+    Antechamber condition in Teti: fragmentary but better preserved than the burial
+    chamber north/south walls. Specific condition of east gable: searched_gap.
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  - stellar_ascent
+  - solar_ascent
+  - apotropaic
+  note: >
+    The ritual class of PT 273–274 is itself contested. Possible classifications:
+    1. Power acquisition ritual: the king absorbs divine power by consuming the gods.
+    2. Stellar transformation: Unas becomes the dawn sun by 'eating' the stars
+       (which disappear at sunrise — as the goddess Nut 'swallows' her star-children).
+    3. Apotropaic: the extreme violence of the imagery wards off hostile divine forces.
+    4. Archaic anthropophagy: a survival of cannibalistic funerary practice
+       (Faulkner 1924 — later retracted as unlikely given no archaeological evidence).
+    The ritual class assignment is genuinely contested and any Strata claim
+    about it must carry a divergence_point.
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: >
+      Sethe, K. 1908. Vol. 1, pp. 205–216. (Page range confirmed — this is the
+      most precisely located source gap in this dig.)
+    note: >
+      The EEF bibliography also cites: 'Photograph of the Unas version based on:
+      Alexandre Piankoff, The Pyramid of Unas, Princeton, 1968, pls. 28–30 —
+      read cols. 1–29 from right to left.' This photographic record exists
+      and provides the column sequence. Right-to-left reading direction is
+      confirmed for this specific text.
+    column_reading_direction: right_to_left
+    column_count: 29
+
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1, pp. 205–216."
+    partial_note: >
+      The opening line is widely cited in transliteration approximations.
+      The formula 'nTr pw anx Hr it.f / anx Hr mwt.f' — 'he is a god who
+      lives on his fathers / who lives on his mothers' — is the standard
+      scholarly summary of the hymn's theological premise. This is not a
+      full MdC but an indicative formula from secondary literature.
+
+  gardiner_sign_list_notes: >
+    Key signs documented in secondary literature:
+    - kA (F1 bull): 'bull' — 'the bull of heaven' (kA n pt) is the king's
+      celestial power-form in the hymn.
+    - wnn (seated man, A1): 'to be / to exist' — the king exists on divine sustenance.
+    - HkA (was-scepter variant): 'magic' — the gods are consumed for their HkA.
+    - Ax (G25 ibis): 'spirit' — the gods' spirits (Ax.w) are absorbed.
+    - nTr (flagpole, R8): 'god' — the gods (nTr.w) are the consumed beings.
+    The sign for 'cooking/slaughter' (the Shezmu passage) requires Sethe plates.
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: piankoff_modernised
+    text: >
+      "A god who lives on his fathers,
+      who feeds on his mothers...
+
+      [King] is the bull of heaven
+      Who rages in his heart,
+      Who lives on the being of every god,
+      Who eats their entrails
+      When they come, their bodies full of magic
+      From the Isle of Flame...
+
+      [King] is a possessor of offerings who knots the cord
+      And who himself prepares his meal.
+      [King] is the lord of offerings
+      Who knots the rope and himself prepares his meal.
+
+      Khons slays the lords for [King]
+      And cooks for him the oldest ones;
+      Those allotted to him, above;
+      The wardens of his portions, below.
+
+      [King] eats men, feeds on gods,
+      [King] is the lord of messengers
+      Who sends his messages.
+      It is the grasper-of-forelocks living in Kehew
+      Who lassoes them for [King].
+      It is the serpent with raised head
+      Who guards them for [King]
+      And ties them for him.
+      It is the god who brings and who has cooked for [King]
+      A portion of each one.
+
+      He eats their magic, swallows their spirits..."
+    source: "Pyramidtextsonline.com modernised Piankoff (Unas); Wikipedia PT article partial."
+    divergence_flag: true
+    notes: >
+      '[King]' = Unas in Unas pyramid; Teti in Teti pyramid. The name substitution
+      is the only structural difference. The hymn's violence is explicit and literal
+      in its imagery: gods are hunted, slaughtered by Khons, cooked, and consumed.
+      Shezmu (the wine-press god, here a divine executioner) prepares the meal.
+      The king absorbs the gods' magic (HkA) and spirits (Ax.w).
+
+  - translator_id: mercer_1952
+    text: >
+      (Utterance 273, selected phrases)
+      "The sky is overcast, the stars are beclouded,
+      The (celestial) bows quiver, the bones of the earth-gods tremble...
+      [King] rises as a great one, as lord of the attendants;
+      He sits with his back toward Keb (Geb)...
+      [King] is the bull of heaven who rages in his heart,
+      who lives on the being of every god,
+      who eats their entrails when they come,
+      their hearts (being) full of magic from the Island of Fire..."
+    source: "Mercer, S.A.B. 1952. Utterance 273, partial. Sacred-texts.com."
+    divergence_flag: true
+    notes: >
+      Mercer opens with a cosmic disturbance formula — the sky overcast, stars
+      obscured — which sets the scene of the king's appearance as an event that
+      disrupts the cosmic order. Piankoff's version does not foreground this
+      opening. Whether this is a Teti vs. Unas variant or a translation choice
+      requires comparison of the Sethe plates.
+      'Hearts full of magic' vs. 'bodies full of magic' — Mercer uses 'hearts'
+      (ib?), Piankoff uses 'bodies'. This is a lexical divergence requiring MdC.
+
+  - translator_id: faulkner_1969
+    text: >
+      (From Faulkner 1924 early translation, closely related to 1969 rendering):
+      Faulkner believed in 1924 that 'a custom of cannibalism was either in full
+      practice at the time when this text was carved in the pyramids of Unas and
+      Teti, or had died out long before these kings reigned, but had become
+      enshrined in the religious literature.'
+    source: >
+      Faulkner, R.O. 1924. 'The Cannibal Hymn from the Pyramid Texts.'
+      JEA article. Cited in CAES Vol. 2, 2016, p. 102–103.
+    divergence_flag: true
+    notes: >
+      Faulkner's 1924 position (pre-1969 main translation) was that the hymn
+      reflects actual prehistoric cannibalism. He later qualified this:
+      'as there is no evidence that cannibalism was practiced in Egypt in the
+      time of the Fifth and Sixth Dynasties, so Faulkner put forward the
+      following hypothesis: the practice of eating one's opponent...'
+      The 1969 translation text itself is searched_gap but his interpretive
+      framework is documented and is a major divergence point.
+
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen, J.P. 2005. Teti corpus, pp. 65+. Spells corresponding to PT 273–274."
+    divergence_flag: false
+    note: >
+      Allen's 2005 rendering is likely the most current authoritative translation.
+      His framing of the hymn (stellar/solar interpretation vs. literal cannibalism)
+      is expected to differ from Faulkner 1924. Confirmation requires source access.
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "HkA"
+    term_mdc: "HkA"
+    semantic_field: "Magic — the divine force consumed"
+    notes: >
+      HkA (heka) is the primordial creative force — the magic that allows the
+      gods to function. The king 'eats their magic' (wnm HkA.w.sn) — absorbing
+      the generative power of each god consumed. HkA is not merely 'trick magic'
+      but the fundamental creative energy of Egyptian cosmology.
+      By consuming HkA the king becomes more powerful than any individual god.
+    attestation_range: "HkA runs through the entire Egyptian tradition; deified as the god Heka."
+    translation_disputes:
+      - reading: "Magic (Piankoff, Allen)"
+      - reading: "Power / efficacy (alternative)"
+        note: "HkA's semantic range includes creative power, speech-magic, and administrative command."
+
+  - term_transliteration: "kA n pt"
+    term_mdc: "kA n pt"
+    semantic_field: "Bull of heaven — the king's power-form"
+    notes: >
+      The king as the 'bull of heaven who rages in his heart' is a power-animal
+      metaphor. kA = bull (also ka/soul — the same phoneme serves dual meaning here:
+      the king as divine bull and the king possessing transcendent Ka-power).
+      'Raging in his heart' (nSni m ib.f) — the rage is internal, not externally
+      directed. It is the internal intensity of divine power.
+    translation_disputes:
+      - reading: "'Rages in his heart' (Mercer, Piankoff)"
+      - reading: "'Furious of heart' (Faulkner variant)"
+        note: "nSni = storm/rage; ib = heart. Translation consensus on basic meaning."
+
+  - term_transliteration: "Szmw"
+    term_mdc: "Szmw"
+    semantic_field: "Shezmu — divine executioner / wine-press god"
+    notes: >
+      Shezmu is the god of the wine-press and oil-press, whose role in the
+      Cannibal Hymn is as divine executioner: he slaughters the gods and
+      prepares them for the king's consumption. The imagery conflates
+      the pressing of grapes (crushing, extracting essence) with the
+      execution and consumption of divine beings.
+      'Shezmu cooks the cannibal meal from the inhabitants of heaven
+      for him' — Shezmu as divine cook is attested only here and in
+      Coffin Text Spell 573.
+    attestation_range: "Shezmu appears in wine/oil contexts throughout Egyptian religion; as executioner primarily here."
+
+  - term_transliteration: "Xnsw"
+    term_mdc: "Xnsw"
+    semantic_field: "Khons — moon god as divine slaughterer"
+    notes: >
+      Khons (also spelled Khonsu) is the moon god, usually benign. In the
+      Cannibal Hymn he appears as the divine slaughterer who 'slays the lords
+      for [the king].' This is an unusual role for Khons and is one of the
+      hymn's most theologically surprising elements.
+    translation_disputes:
+      - reading: "Khons slays the lords (Piankoff)"
+      - reading: "The identification of the slaughterer as Khons is contested in some readings"
+        note: "The sign for Khons in this context requires Sethe plate verification."
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: cannibalism_interpretation
+    claim: >
+      PT 273–274 reflects actual prehistoric cannibalistic practices that were
+      'enshrined in religious literature' (Faulkner 1924).
+    state: refuted
+    refutation_class: motivated_error
+    refutation_basis: >
+      No archaeological evidence of cannibalism in Fifth or Sixth Dynasty Egypt exists.
+      Faulkner himself qualified the claim. The overwhelming scholarly consensus
+      since Renouf (who flagged this immediately upon publication in the 1880s) is
+      that literal cannibalism is not the referent.
+    source: >
+      Wikipedia PT article citing Renouf; CAES 2016 citing Faulkner 1924 qualification;
+      Eyre, C. 2002. The Cannibal Hymn: a cultural and literary study. Liverpool UP.
+    note: >
+      Rule 9 check: this refutation is anchored to the absence of archaeological
+      evidence (material class) and the internal textual evidence of symbolic
+      framing. Consensus alone would not be sufficient — the absence anchor is
+      the primary evidential basis.
+
+  - id: stellar_vs_solar_interpretation
+    claim: >
+      The Cannibal Hymn is a stellar ascent text (the king becomes a star by
+      'consuming' other stars at dawn) rather than a solar power-accumulation text.
+    state: proposed
+    positions:
+      - scholar: "Renouf (1880s); Wikipedia PT article"
+        reading: >
+          The hymn echoes how the goddess Nut (the sky) causes the stars to
+          disappear at dawn — 'as a sow eating her offspring.' The king as
+          the dawn sun 'eating' the stars is the same metaphor. Utterance 217
+          elsewhere describes the king in stellar form being 'swallowed up'
+          at dawn with other stars.
+      - scholar: "Faulkner 1924; Barta 1979"
+        reading: >
+          The hymn is primarily about power accumulation — the king absorbs
+          the magical and spiritual power of the gods. The metaphor is
+          consumption as absorption of essence, not specifically stellar transit.
+      - scholar: "Eyre 2002"
+        reading: >
+          The hymn is a 'cultural and literary study' — its function is as
+          much performative/literary as theological. The extreme violence
+          signals a category of royal power that exceeds normal cult language.
+    note: >
+      These three readings are not mutually exclusive and may all be simultaneously
+      true. Strata should record them as concurrent proposed claims rather than
+      forcing a single resolution.
+    required_source: "Eyre, C. 2002; Allen 2005; Goebs 2004."
+
+  - id: restricted_distribution
+    claim: >
+      The Cannibal Hymn appears in only two Old Kingdom pyramids (Unas and Teti),
+      suggesting it was deliberately excluded from later corpora.
+    state: proposed
+    positions:
+      - scholar: "Wikipedia PT article (no specific scholar attributed)"
+        reading: >
+          'Apart from the burial of Unas, only the Pyramid of Teti displays
+          the Cannibal Hymn.' It 'was dropped by the time the Book of the Dead
+          was being copied.' This is a factual observation about distribution.
+      - scholar: "Goebs 2004"
+        reading: >
+          The Coffin Text version (CT 573) shows modification — suggesting the
+          hymn was actively revised, not simply dropped. The tradition continued
+          in modified form in private (non-royal) contexts.
+    note: >
+      The restricted distribution is a material fact (two pyramids). The
+      interpretation of WHY it appears in only two royal contexts is proposed.
+      Possible reasons: theological shift away from aggressive power rhetoric;
+      Osirian emphasis replacing the solar-consumption framework; the text
+      becoming inappropriate for the expanding audience of funerary literature.
+    required_source: "Goebs 2004; Allen 2005 introduction on corpus selection."
+
+  - id: hearts_vs_bodies
+    claim: >
+      The gods come to the king with their 'hearts full of magic' (Mercer)
+      or their 'bodies full of magic' (Piankoff).
+    state: contested
+    positions:
+      - scholar: "Mercer 1952"
+        reading: "Hearts (ib?)"
+      - scholar: "Piankoff (modernised)"
+        reading: "Bodies (Dt?)"
+    note: >
+      This is a lexical question resolvable by the Sethe MdC. The Teti-version
+      Sethe plates (pp. 205–216) would confirm which sign appears at this position.
+      ib = heart (F34 heart sign); Dt = body/flesh (F51 or similar).
+      The distinction matters theologically: 'hearts full of magic' suggests
+      the seat of consciousness and will; 'bodies full of magic' suggests
+      physical substance. The king consumes either consciousness or matter.
+    required_source: "Sethe 1908, vol. 1, pp. 205–216."
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "Unas pyramid, antechamber east wall gable"
+    date_start: -2375
+    date_end: -2345
+    note: "First carved instance. Piankoff 1968 plates 28–30, cols 1–29 right-to-left."
+    source: "EEF bibliography; pyramidtextsonline.com wall index."
+  - event: "Teti pyramid, antechamber east wall gable"
+    date_start: -2345
+    date_end: -2323
+    note: "Second and last Old Kingdom royal instance."
+    source: "Wikipedia PT article; Allen 2005."
+  - event: "Coffin Texts Spell 573 (private/non-royal)"
+    date_start: -2055
+    date_end: -1650
+    note: >
+      Modified form. Appears on private coffins (MzHtj from Asiut, ZAt-HD-Htp
+      from El-Bersheh, Iqr from Gebelein). Royal exclusivity broken.
+      The modification may reflect deliberate theological revision.
+    source: "Barta 1991; Goebs 2004. Cited in CAES Vol. 2, 2016."
+  - event: "Book of the Dead — absent"
+    note: "Not transmitted. Dropped from the New Kingdom funerary corpus."
+    source: "Wikipedia PT article."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: false
+  merenre: false
+  pepi_ii: false
+  note: "Confirmed: only Unas and Teti. Distribution is a documented archaeological fact."
+
+notes: >
+  The Cannibal Hymn is the most extensively studied and debated utterance in the
+  Pyramid Texts corpus. Its violence is unparalleled in Egyptian religious literature.
+  The scholarly history of its interpretation — from literal cannibalism (Faulkner 1924,
+  retracted) to stellar/solar metaphor (Renouf, Allen) to cultural performance
+  (Eyre 2002) — is itself a case study in how adoption weight (the 'Cannibal Hymn'
+  label) can shape interpretation for 140 years.
+  The label 'Cannibal Hymn' was assigned when the text was first published in 1882.
+  That label now has massive adoption weight. The Strata dig should treat the label
+  itself as a claim requiring examination: is it a 'hymn'? Is it 'cannibal'?
+  Renouf raised both questions immediately in the 1880s. They remain open.

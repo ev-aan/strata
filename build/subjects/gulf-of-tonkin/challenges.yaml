@@ -1,0 +1,52 @@
+# Challenges ledger. Append-only: entries are added, never deleted or rewritten; a change of finding is also logged in log.yaml.
+# result: answered (finding stands) | partly_answered | open (cannot be tested yet; says why) | finding_changed
+subject: gulf-of-tonkin
+challenges:
+  - id: ch-01
+    logged: 2026-10-02
+    challenge: "The Gulf of Tonkin attack never happened."
+    raised_by: "Popular framing (see thread-tonkin-popular-framing); no single source"
+    touches: [tonkin-aug2-maddox-engaged, tonkin-aug4-attack-occurred]
+    test: "Separate the two dates and check each against the declassified record."
+    result: partly_answered
+    answer: "Correct for 4 August (refuted, high confidence, NSA historian's study read). Wrong for 2 August, when the Maddox was attacked and returned fire."
+  - id: ch-02
+    logged: 2026-10-02
+    challenge: "It was a false flag: the US manufactured the evidence."
+    raised_by: "Popular framing; no single source"
+    touches: [tonkin-sigint-selectively-presented, tonkin-midlevel-deliberate-skew]
+    test: "Read what NSA's own historian says about how the 4 August intelligence was assembled."
+    result: partly_answered
+    answer: "Documented: only the intercepts supporting an attack reached senior officials. Whether individuals at NSA did this deliberately is proposed, not established. The historian calls it not conspiratorial, with no manufactured evidence and collusion at all levels, and writes that staff believed the attack had happened."
+  - id: ch-03
+    logged: 2026-10-02
+    challenge: "The administration knew there was no attack and lied to get its resolution."
+    raised_by: "Popular framing; no single source"
+    touches: [tonkin-senior-knowledge, tonkin-senior-doubts-documented, tonkin-bundy-welcomed-resolution]
+    test: "Look for any document in which an official says no attack occurred, as opposed to doubting the evidence."
+    result: open
+    answer: "Documented: doubts reached the White House within hours, and a senior adviser welcomed the events as a reason for a resolution already wanted. Not found in what was read: a statement that no attack had occurred. The same adviser's memo says there was an attack. Rated contested, low confidence. Unread sources are listed in the dig."
+  - id: ch-04
+    logged: 2026-10-02
+    challenge: "The Maddox was sent in as bait to provoke the 2 August clash."
+    raised_by: "Popular framing; no single source"
+    touches: [tonkin-bait-order, tonkin-34a-raids-preceded]
+    test: "Look for an order or document directing the ship to provoke an attack."
+    result: open
+    answer: "No such document found in what was read (searched gap, low confidence). Covert raids on the North Vietnamese coast did precede the engagement, which is a separate and documented fact."
+  - id: ch-04b
+    logged: 2026-10-02
+    challenge: "Congress was kept in the dark about the covert raids."
+    raised_by: "Popular framing; no single source"
+    touches: [tonkin-mcnamara-34a-testimony, tonkin-mcnamara-1968-account, tonkin-fulbright-1968-evidence-uncertain]
+    test: "Compare what McNamara told the President privately, what he told the Senate, and what he and Fulbright said in 1968."
+    result: partly_answered
+    answer: "The record read shows McNamara's testimony to the Senate about the raids differed from what he told the President privately. In 1968 he said he had told the committee about the raids, and Fulbright said it was unfair to ask the committee to vote on the resolution with the evidence uncertain. Intent is not decided here."
+  - id: ch-05
+    logged: 2026-10-02
+    challenge: "Tonkin shows official accounts of any event are fabricated."
+    raised_by: "Common argument by analogy"
+    touches: []
+    test: "Ask whether a documented failure in one case adds evidence about a different event."
+    result: answered
+    answer: "No. A documented case lends no evidential weight to a different event; each is tested on its own evidence."

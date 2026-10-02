@@ -217,6 +217,7 @@ def legend():
 
 def main(path):
     path = Path(path); d = yaml.safe_load(path.read_text())
+    sys.path.insert(0, str(Path(__file__).parent)); import nodes; d = nodes.resolve_timeline(d)
     tl, panels, lanes, ev, srcs = d["timeline"], d["panels"], d["lanes"], d["events"], d["sources"]
     order = []
     for p in panels:

@@ -1,0 +1,45 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1874-lomonosov-prize-lodygin
+rev: 1
+type: event
+label: '1874: St Petersburg Academy awards Lodygin the Lomonosov prize'
+time: '1874-07-01T12:00:00Z'
+precision: year
+kind: official
+status: single
+what: 'Fontaine (1878): ''In 1874, the St. Petersburg Academy of Sciences awarded a high prize to M. Lodyguine'', on a report
+  by M. Wild, director of the Imperial Observatory, which finds him ''worthy ... to obtain the Lomonossow prize''. The amount
+  is not given (''a high prize''). The Academy''s report itself was not read.'
+sources:
+- title: Hippolyte Fontaine, Electric Lighting (English translation, 1878), pp. 171-173 (Lodygin and the St Petersburg Academy's
+    report)
+  url: https://archive.org/details/electriclightin00fontgoog
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: fontaine-1878
+  derives_from: academy-wild-report-1874
+  source_type: scholarly
+  access: read
+place:
+  name: Saint Petersburg
+  lat: 59.9387
+  lon: 30.3162
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 421007
+  note: Fontaine names the St Petersburg Academy of Sciences and says Lodygin was 'a Russian physicist'; Kommersant says Lodygin
+    worked in St Petersburg.
+window:
+  earliest: '1874-01-01'
+  latest: '1874-12-31'
+  begin_note: Fontaine says only 'In 1874'.
+  end_note: Fontaine says only 'In 1874'.
+manifest:
+  subject: incandescent-lamp
+  source: src-fontaine-1878
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a6 (split: the prize). Date and place re-checked
+    against the cited source.'
+date_basis: stated

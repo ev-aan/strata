@@ -1,0 +1,38 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1874-08-03-woodward-evans-canadian-patent
+rev: 1
+type: event
+label: '3 Aug 1874: Woodward and Evans, Canadian patent No. 3,738'
+time: '1874-08-03T12:00:00Z'
+precision: day
+kind: document
+status: single
+what: 'Scientific American, 12 Sep 1874, ''Canadian patents granted August 3 to 13, 1874'': ''3,738. H. Woodward and M. Evans,
+  Toronto, Ont. Improvements on the art or process of obtaining artificial [light] by means of electricity, called Woodward
+  and Evans'' Electric Light. Aug. 3, 1874.'' (The OCR is damaged at the number and at the word after ''artificial''; read
+  and corrected by hand.) The Canadian specification was not read.'
+sources:
+- title: Scientific American 31:11 (12 Sep 1874), 'Canadian patents granted August 3 to 13, 1874'
+  url: https://archive.org/details/sim_scientific-american_1874-09-12_31_11
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: sciam-1874
+  source_type: news
+  access: read
+place:
+  name: Toronto, Ontario
+  lat: 43.6535
+  lon: -79.3839
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 324211
+  note: Named as Woodward and Evans's town in the Scientific American list and as Woodward's in the US patent.
+manifest:
+  subject: incandescent-lamp
+  source: src-sciam-1874
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a7. Date and place re-checked against the cited
+    source.'
+date_basis: stated

@@ -3,10 +3,12 @@ timeline:
   title: "The incandescent lamp: who did what, and when (1812 to 1895)"
   as_of: "2026-10-02"
   note: >
-    Dates only; times are set to noon UTC and every event is drawn at day, month or year precision.
-    A patent's grant date is used unless the label says filed. Events marked disputed have sources that
-    disagree, as named in the detail. Claimed events with no dated record (Göbel 1854, Swan 1850s,
-    de la Rue 1840) are not drawn as events; they are shown only where a dated document first records the claim.
+    Every event is a shared node (build/nodes/lamp-*.yaml) that holds the date, its basis and precision, the place where a source names one, and the
+    sources; this file only says where each dot sits. Times are set to noon UTC and are drawn at day, month or year precision; the node's
+    `date_basis` and, where the date is uncertain, its `window` say how the date was reached. A patent's grant date is used unless the label says filed.
+    Events marked disputed have sources that disagree, as named in the detail. Claimed events with no dated record (Goebel 1854, Swan 1850s,
+    de la Rue 1840) are not drawn as events; the earliest dated traces of the Goebel claim (1882) are. Places are given only where a source names them;
+    the court rulings are placed at state level because the opinions do not name the sitting city.
 panels:
   - id: century
     title: "Panel A: 1810 to 1895 (one tick per five years)"
@@ -29,138 +31,61 @@ lanes:
   press:   {label: "Newspapers"}
   courts:  {label: "Patent offices and courts"}
 people:
-  - {who: "Humphry Davy", detail: "Royal Institution chemist; published the carbon arc in 1812."}
-  - {who: "Frederick de Moleyns", detail: "British patent No. 9053, 1841: the earliest incandescent-lamp patent found."}
-  - {who: "John Wellington Starr / Edward Augustin King", detail: "British patent No. 10,919, 1845, issued to King as a communication; later sources name Starr as the inventor."}
-  - {who: "de Changy", detail: "Belgian; platinum lamps for mines, reported by Jobard in 1858."}
-  - {who: "Alexander Lodygin", detail: "Russian; carbon-rod lamps 1872-73; Lomonosov Prize 1874; later metal-filament patents."}
-  - {who: "Henry Woodward and Mathew Evans", detail: "Toronto; Canadian patent 3,738 (1874); Woodward's US patent 181,613 (1876)."}
-  - {who: "Joseph Swan", detail: "Newcastle; carbon lamps shown 1878-79; treated-thread lamp 1880."}
-  - {who: "Thomas Edison and his laboratory", detail: "Menlo Park; Charles Batchelor kept the notebook of the Oct 1879 test."}
-  - {who: "William Sawyer and Albon Man", detail: "New York; won the Patent Office interference on paper carbons (1885); patent later held invalid."}
-  - {who: "Lewis Latimer", detail: "Carbon-manufacturing patent 252,386 (1882), assigned to a rival of Edison's."}
-  - {who: "Heinrich (Henry) Göbel", detail: "New York mechanic; claimed 1850s lamps surfaced in 1882 and in 1893 litigation."}
-  - {who: "Judges Wallace, Lacombe, Colt, Hallett, Seaman, Bradley", detail: "Wrote the opinions read for this dig."}
-sources:
-  s_davy:      {title: "Davy, Elements of Chemical Philosophy (1812)", url: "https://archive.org/details/elementschemica00davygoog", authenticity: "authenticated, moderate"}
-  s_abr:       {title: "GB Patent Office, Abridgments: Electricity and Magnetism (1859)", url: "https://archive.org/details/patentsforinvent1766grea", authenticity: "authenticated, moderate"}
-  s_fontaine:  {title: "Fontaine, Electric Lighting (1878)", url: "https://archive.org/details/electriclightin00fontgoog", authenticity: "authenticated, moderate"}
-  s_sciam:     {title: "Scientific American, 12 Sep 1874", url: "https://archive.org/details/sim_scientific-american_1874-09-12_31_11", authenticity: "authenticated, moderate"}
-  s_us181613:  {title: "US 181,613 (Woodward, 1876)", url: "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0181613", authenticity: "authenticated, strong"}
-  s_cn1879:    {title: "Chemical News 39 (1879)", url: "https://archive.org/details/s713id13691410", authenticity: "authenticated, moderate"}
-  s_cn1880:    {title: "Chemical News 42 (1880): Swan's lecture", url: "https://archive.org/details/s713id13691440", authenticity: "authenticated, moderate"}
-  s_epessay:   {title: "Edison Papers, 'The Carbon Filament Lamp'", url: "https://edison.rutgers.edu/life-of-edison/biographical-essays/lighting/the-carbon-filament-lamp", authenticity: "editorial essay"}
-  s_us223898:  {title: "US 223,898 (Edison, 1880)", url: "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0223898", authenticity: "authenticated, strong"}
-  s_herald21:  {title: "NY Herald, 21 Dec 1879, p. 5", url: "https://www.loc.gov/resource/sn83030313/1879-12-21/ed-1/?sp=5", authenticity: "authenticated, strong"}
-  s_tribune80: {title: "NY Tribune, 1 Jan 1880, p. 8", url: "https://www.loc.gov/resource/sn83030214/1880-01-01/ed-1/?sp=8", authenticity: "authenticated, strong"}
-  s_iet:       {title: "IET Archives blog on Cragside", url: "https://ietarchivesblog.org/2023/03/09/cragside-harnessing-the-power-of-water/", authenticity: "secondary"}
-  s_savoy:     {title: "The Times, 29 Dec 1881 (transcription)", url: "https://gsarchive.net/carte/savoy/electric.html", authenticity: "unchecked transcription"}
-  s_us252386:  {title: "US 252,386 (Latimer, 1882)", url: "https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0252386", authenticity: "authenticated, strong"}
-  s_us266358:  {title: "US 266,358 (Goebel, 1882)", url: "https://patents.google.com/patent/US266358A/en", authenticity: "authenticated, moderate"}
-  s_tribune82: {title: "NY Tribune, 5 Sep 1882, p. 8", url: "https://www.loc.gov/resource/sn83030214/1882-09-05/ed-1/?sp=8", authenticity: "authenticated, strong"}
-  s_ediswan:   {title: "Edison Papers, Edison and Swan United", url: "https://edison.rutgers.edu/life-of-edison/companies/company-details/electric-light,-foreign/edison-and-swan-united-electric-light-company-ltd", authenticity: "editorial reference"}
-  s_40f21:     {title: "40 F. 21 (1889)", url: "https://static.case.law/f/40/cases/0021-01.json", authenticity: "authenticated, strong"}
-  s_47f454:    {title: "47 F. 454 (1891)", url: "https://static.case.law/f/47/cases/0454-01.json", authenticity: "authenticated, strong"}
-  s_52f300:    {title: "52 F. 300 (1892)", url: "https://static.case.law/f/52/cases/0300-01.json", authenticity: "authenticated, strong"}
-  s_54f678:    {title: "54 F. 678 (1893)", url: "https://static.case.law/f/54/cases/0678-01.json", authenticity: "authenticated, strong"}
-  s_56f496:    {title: "56 F. 496 (1893)", url: "https://static.case.law/f/56/cases/0496-01.json", authenticity: "authenticated, strong"}
-  s_57f616:    {title: "57 F. 616 (1893)", url: "https://static.case.law/f/57/cases/0616-01.json", authenticity: "authenticated, strong"}
-  s_61f834:    {title: "61 F. 834 (1894)", url: "https://static.case.law/f/61/cases/0834-01.json", authenticity: "authenticated, strong"}
-  s_us575002:  {title: "US 575,002 (Lodygin, 1897)", url: "https://patents.google.com/patent/US575002A/en", authenticity: "authenticated, moderate"}
-  s_scotus:    {title: "159 U.S. 465 (1895)", url: "https://tile.loc.gov/storage-services/service/ll/usrep/usrep159/usrep159465/usrep159465.pdf", authenticity: "authenticated, strong"}
+  - {who: "Humphry Davy", detail: "Royal Institution chemist; his 1812 book describes the carbon arc."}
+  - {who: "Frederick de Moleyns", detail: "British patent No. 9053, 1841: the earliest patent found for an electric light in an exhausted globe (powdered charcoal at platinum-coil electrodes)."}
+  - {who: "John Wellington Starr / Edward Augustin King", detail: "British patent No. 10,919, 1845, issued to King as a communication; a later court and later sources name Starr as the inventor."}
+  - {who: "de Changy", detail: "Worked in Belgium per Fontaine (Howell and Schroeder 1927 call him a French civil engineer with a Belgian patent); sealed platinum lamps reported by Jobard in 1858."}
+  - {who: "Alexander Lodygin", detail: "Russian; carbon-rod lamps reported 1872-73; Academy prize 1874; later metal-filament patents."}
+  - {who: "Henry Woodward and Matthew Evans", detail: "Toronto; Canadian patent 3,738 (1874); Woodward's US patent 181,613 (1876)."}
+  - {who: "Joseph Swan", detail: "Newcastle; carbon-rod lamp described Dec 1878; a lamp shown at the Lit and Phil about two years before Oct 1880 (his own account); a lamp with a very thin carbon shown in his Oct 1880 lecture."}
+  - {who: "Thomas Edison and his laboratory", detail: "Menlo Park; Charles Batchelor kept the notebook of the 22 Oct 1879 test."}
+  - {who: "William Sawyer and Albon Man", detail: "New York; won the Patent Office interference on paper carbons (early 1885); their patent was held invalid in 1889 and the Supreme Court affirmed in 1895."}
+  - {who: "Lewis Latimer", detail: "Carbon-making patent 252,386 (1882) and, with J. V. Nichols, a lamp-mounting patent (1881), the first assigned to the United States Electric Lighting Company."}
+  - {who: "Heinrich (Henry) Goebel", detail: "New York mechanic; said he made lamps in the 1850s; the earliest dated traces of that claim in the court record are from 1882."}
+  - {who: "Judges Wallace, Lacombe, Colt, Hallett, Seaman, Bradley, Brown", detail: "Wrote the opinions read for this dig (Brown for the Supreme Court)."}
+sources: {}
 events:
-  # ---------------- Panel A: the century ----------------
-  - {id: a1, panel: century, lane: britain, time: "1812-01-01T12:00:00Z", precision: year, kind: document, status: single, sources: [s_davy],
-     label: "1812: Davy publishes the carbon arc light",
-     detail: "Elements of Chemical Philosophy, pp. 85-86 [read]. An arc, not an incandescent lamp. The demonstration date (1808-1810) is not in the book."}
-  - {id: a2, panel: century, lane: britain, time: "1841-08-21T12:00:00Z", precision: day, kind: document, status: single, sources: [s_abr],
-     label: "21 Aug 1841: de Moleyns, British patent 9053",
-     detail: "Charcoal between platinum coils in an exhausted globe [abridgment read]. Earliest incandescent-lamp patent found."}
-  - {id: a3, panel: century, lane: britain, time: "1845-11-04T12:00:00Z", precision: day, kind: document, status: single, sources: [s_abr],
-     label: "4 Nov 1845: King (for Starr), British patent 10,919",
-     detail: "Carbon in a Torricellian vacuum [abridgment read]. Starr identified by later sources."}
-  - {id: a4, panel: century, lane: europe, time: "1858-02-27T12:00:00Z", precision: day, kind: document, status: single, sources: [s_fontaine],
-     label: "27 Feb 1858: Jobard reports de Changy's sealed platinum lamps",
-     detail: "Report to the Paris Academy, quoted by Fontaine (1878) [read]. Original not read."}
-  - {id: a5, panel: century, lane: russia, time: "1873-01-01T12:00:00Z", precision: year, kind: document, status: disputed, sources: [s_fontaine],
-     alt_time: "1872-01-01T12:00:00Z", alt_tag: "1872", alt_note: "Russian accounts give 1872 for the first demonstration; Fontaine gives 1873.",
-     label: "1872-73: Lodygin's carbon-rod lamps in St Petersburg",
-     detail: "Fontaine quotes the Academy's report [read] and judges the apparatus impractical."}
-  - {id: a6, panel: century, lane: russia, time: "1874-07-11T12:00:00Z", precision: year, kind: official, status: single, sources: [s_fontaine],
-     label: "1874: Lomonosov Prize; Russian privilege No. 1619",
-     detail: "Prize per Fontaine [read]. Privilege number and 11 July date are V1 (secondary only). Prize amount unverified."}
-  - {id: a7, panel: century, lane: canada, time: "1874-08-03T12:00:00Z", precision: day, kind: document, status: single, sources: [s_sciam],
-     label: "3 Aug 1874: Woodward and Evans, Canadian patent 3,738",
-     detail: "Listed in Scientific American, 12 Sep 1874 [read]. The Canadian specification was not read."}
-  - {id: a8, panel: century, lane: canada, time: "1876-08-29T12:00:00Z", precision: day, kind: document, status: single, sources: [s_us181613],
-     label: "29 Aug 1876: Woodward, US patent 181,613",
-     detail: "Carbon rod in thin unreactive gas [read]. Assignees in Ontario; no Edison assignment shown. No document of an Edison purchase found."}
-  - {id: a9, panel: century, lane: britain, time: "1878-12-18T12:00:00Z", precision: month, kind: document, status: single, sources: [s_cn1879],
-     label: "Dec 1878: Swan describes his carbon-rod vacuum lamp",
-     detail: "Chemical News 1879 [read]: rod glowed, glass blackened, rod bent. The 18 Dec date is V1."}
-  - {id: a10, panel: century, lane: usa, time: "1879-10-22T12:00:00Z", precision: day, kind: document, status: single, sources: [s_epessay],
-     label: "22 Oct 1879: Edison lab's cotton-thread lamp burns 13 1/2 hours",
-     detail: "Batchelor notebook as transcribed by the Edison Papers (V1). Not 40 hours."}
-  - {id: a11, panel: century, lane: usa, time: "1880-01-27T12:00:00Z", precision: day, kind: official, status: single, sources: [s_us223898],
-     label: "27 Jan 1880: Edison's US patent 223,898 granted",
-     detail: "Filed 4 Nov 1879. High-resistance carbon filament; all-glass exhausted bulb [read]."}
-  - {id: a12, panel: century, lane: usa, time: "1882-09-04T12:00:00Z", precision: day, kind: document, status: single, sources: [s_tribune82],
-     label: "4 Sep 1882: Pearl Street central station starts service",
-     detail: "NY Tribune, 5 Sep 1882 [read]: turned on at 3 p.m."}
-  - {id: a13, panel: century, lane: courts, time: "1885-02-01T12:00:00Z", precision: month, kind: official, status: single, sources: [s_40f21],
-     label: "Early 1885: Patent Office awards paper-carbon priority to Sawyer and Man",
-     detail: "Interference declared Sept 1880; recorded in 40 F. 21 [read]."}
-  - {id: a14, panel: century, lane: courts, time: "1892-10-04T12:00:00Z", precision: day, kind: official, status: single, sources: [s_52f300, s_47f454],
-     label: "4 Oct 1892: Appeals court upholds Edison's lamp patent",
-     detail: "Affirms Wallace J. (47 F. 454, 1891): claim 2 valid and infringed [read]."}
-  - {id: a15, panel: century, lane: courts, time: "1893-02-18T12:00:00Z", precision: day, kind: official, status: disputed, sources: [s_54f678, s_56f496, s_57f616, s_61f834],
-     label: "1893-94: The Göbel defence is heard in four courts",
-     detail: "Boston (18 Feb 1893) and Oconto (20 Jul 1893; affirmed 1 May 1894) find it improbable; St. Louis (21 Apr 1893) finds it credible enough to refuse an injunction [all read]."}
-  - {id: a16, panel: century, lane: courts, time: "1895-11-11T12:00:00Z", precision: day, kind: official, status: single, sources: [s_scotus],
-     label: "11 Nov 1895: Supreme Court holds the Sawyer-Man patent invalid",
-     detail: "159 U.S. 465 [read]: claims to all fibrous material too broad; describes Edison's bamboo search."}
-
-  # ---------------- Panel B: 1878-1885 ----------------
-  - {id: b1, panel: race, lane: britain, time: "1878-12-18T12:00:00Z", precision: month, kind: document, status: single, sources: [s_cn1879],
-     label: "Dec 1878: Swan's rod lamp (Newcastle Chemical Society)",
-     detail: "Chemical News 1879 [read]. Blackening and bending reported."}
-  - {id: b2, panel: race, lane: britain, time: "1879-02-03T12:00:00Z", precision: month, kind: witness, status: disputed, sources: [s_cn1880],
-     alt_time: "1879-01-17T12:00:00Z", alt_tag: "17 Jan", alt_note: "Histelec gives 17 Jan 1879; Newcastle University and the Linda Hall Library give 3 Feb.",
-     label: "Early 1879: Swan shows a lamp at the Lit and Phil",
-     detail: "Swan's own 1880 reference [read]; date contested; no 1879 report found."}
-  - {id: b3, panel: race, lane: usa, time: "1879-10-22T12:00:00Z", precision: day, kind: document, status: single, sources: [s_epessay],
-     label: "22 Oct 1879: 13 1/2-hour thread lamp",
-     detail: "Batchelor notebook via the Edison Papers (V1)."}
-  - {id: b4, panel: race, lane: usa, time: "1879-11-04T12:00:00Z", precision: day, kind: official, status: single, sources: [s_us223898, s_52f300],
-     label: "4 Nov 1879: Edison files patent 223,898",
-     detail: "Filing date from 52 F. 300 [read]."}
-  - {id: b5, panel: race, lane: press, time: "1879-12-21T12:00:00Z", precision: day, kind: media, status: single, sources: [s_herald21],
-     label: "21 Dec 1879: NY Herald announces Edison's light",
-     detail: "Leads with carbonised paper; promises a New Year's Eve exhibition [read]. Byline not visible."}
-  - {id: b6, panel: race, lane: press, time: "1880-01-01T12:00:00Z", precision: day, kind: media, status: disputed, sources: [s_tribune80],
-     label: "1 Jan 1880: NY Tribune: crowds, but 'no public exhibition'",
-     detail: "Calls the announcement unauthorized; more than fifty lights burning [read]."}
-  - {id: b7, panel: race, lane: britain, time: "1880-10-20T12:00:00Z", precision: day, kind: document, status: single, sources: [s_cn1880],
-     label: "20 Oct 1880: Swan's lecture; thread lamp; disputes Edison's priority",
-     detail: "Chemical News 42 [read]."}
-  - {id: b8, panel: race, lane: britain, time: "1880-12-01T12:00:00Z", precision: year, kind: witness, status: reported, sources: [s_iet],
-     label: "1880: Cragside lit with Swan lamps",
-     detail: "IET Archives (V1); Armstrong's 1881 letter not read."}
-  - {id: b9, panel: race, lane: usa, time: "1882-01-17T12:00:00Z", precision: day, kind: official, status: single, sources: [s_us252386],
-     label: "17 Jan 1882: Latimer's carbon-making patent",
-     detail: "Assigned to the United States Electric Lighting Co., a rival [read]."}
-  - {id: b10, panel: race, lane: britain, time: "1881-12-28T12:00:00Z", precision: day, kind: media, status: single, sources: [s_savoy],
-     label: "28 Dec 1881: Savoy Theatre stage lit with Swan lamps",
-     detail: "The Times, 29 Dec 1881, via transcription (unchecked against the original)."}
-  - {id: b11, panel: race, lane: usa, time: "1882-09-04T12:00:00Z", precision: day, kind: document, status: single, sources: [s_tribune82],
-     label: "4 Sep 1882: Pearl Street",
-     detail: "NY Tribune [read]."}
-  - {id: b12, panel: race, lane: usa, time: "1882-10-24T12:00:00Z", precision: day, kind: official, status: single, sources: [s_us266358, s_54f678],
-     label: "1882: Göbel's lamp-socket patent; his lamp rights offered for sale",
-     detail: "US 266,358 [read]; the 28 Nov 1882 offer to the Edison company at $20,000 is recorded in 54 F. 678 [read]. Earliest trace of the Göbel claim."}
-  - {id: b13, panel: race, lane: britain, time: "1883-10-26T12:00:00Z", precision: month, kind: official, status: single, sources: [s_ediswan],
-     label: "Oct 1883: Edison and Swan United (Ediswan) formed",
-     detail: "Edison Papers company page (V1); exact day V0."}
-  - {id: b14, panel: race, lane: courts, time: "1885-02-01T12:00:00Z", precision: month, kind: official, status: single, sources: [s_40f21],
-     label: "Early 1885: Sawyer and Man win the interference",
-     detail: "40 F. 21 [read]."}
+  - {id: a1, panel: century, lane: britain, node: lamp-1812-davy-publishes-carbon-arc, rev: 1, note: "An arc, not an incandescent lamp. The demonstration date (1808-1810) is not in the book."}
+  - {id: a2, panel: century, lane: britain, node: lamp-1841-08-21-de-moleyns-patent-9053, rev: 1, note: "Earliest patent found for an electric light in an enclosed globe (not shown to be heated or glowing); the search was not exhaustive (see lamp-earliest-patent)."}
+  - {id: a3, panel: century, lane: britain, node: lamp-1845-11-04-king-starr-patent-10919, rev: 1}
+  - {id: a4, panel: century, lane: europe, node: lamp-1858-02-27-jobard-reports-de-changy-lamps, rev: 1, note: "Known only through Fontaine's 1878 quotation; Fontaine is the only channel for this and for Lodygin."}
+  - {id: a5, panel: century, lane: russia, node: lamp-1873-lodygin-carbon-rod-lamps, rev: 2, note: "Fontaine judges the apparatus impractical."}
+  - {id: a6, panel: century, lane: russia, node: lamp-1874-07-11-lodygin-russian-privilege, rev: 2, note: "Kommersant only (a later newspaper history; no scan of the privilege)."}
+  - {id: a6b, panel: century, lane: russia, node: lamp-1874-lomonosov-prize-lodygin, rev: 1, note: "Prize per Fontaine; the amount is not given."}
+  - {id: a7, panel: century, lane: canada, node: lamp-1874-08-03-woodward-evans-canadian-patent, rev: 1, note: "The Canadian specification was not read."}
+  - {id: a8, panel: century, lane: canada, node: lamp-1876-08-29-woodward-us-patent-181613, rev: 1, note: "No document of an Edison purchase was found."}
+  - {id: a9, panel: century, lane: britain, node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, rev: 2, note: "A rod that blackened its globe; no lasting lamp."}
+  - {id: a10, panel: century, lane: usa, node: lamp-1879-10-22-batchelor-cotton-thread-lamp, rev: 1, note: "13 1/2 hours, not 40."}
+  - {id: a11, panel: century, lane: usa, node: lamp-1880-01-27-edison-patent-223898-granted, rev: 1, note: "Filed 4 Nov 1879 (node lamp-1879-11-04-edison-files-patent-223898)."}
+  - {id: a12, panel: century, lane: usa, node: lamp-1882-09-04-pearl-street-district-service-begins, rev: 1, note: "Generation, wiring and metering were the commercial invention; the lamp was one part."}
+  - {id: a13, panel: century, lane: courts, node: lamp-1885-early-sawyer-man-win-interference, rev: 1}
+  - {id: a13b, panel: century, lane: courts, node: lamp-1889-10-05-bradley-holds-sawyer-man-claims-invalid, rev: 1}
+  - {id: a13c, panel: century, lane: courts, node: lamp-1891-47f454-wallace-upholds-edison-lamp-patent, rev: 1}
+  - {id: a14, panel: century, lane: courts, node: lamp-1892-10-04-appeals-court-affirms-edison-patent, rev: 1}
+  - {id: a15, panel: century, lane: courts, node: lamp-1893-02-18-colt-rules-on-goebel-defence-boston, rev: 1, note: "Preliminary ruling on affidavits."}
+  - {id: a15b, panel: century, lane: courts, node: lamp-1893-04-21-hallett-refuses-injunction-goebel-defence-st-louis, rev: 1, note: "Preliminary ruling on affidavits; the other way."}
+  - {id: a15c, panel: century, lane: courts, node: lamp-1893-07-20-seaman-grants-injunction-goebel-defence-wisconsin, rev: 1, note: "Preliminary ruling; the Seventh Circuit appeal below is the same case."}
+  - {id: a15d, panel: century, lane: courts, node: lamp-1894-05-01-seventh-circuit-affirms-wisconsin-goebel-ruling, rev: 1}
+  - {id: a16, panel: century, lane: courts, node: lamp-1895-11-11-supreme-court-affirms-sawyer-man-decree, rev: 1, note: "Holds the Sawyer-Man claims other than the third too indefinite; does not decide priority."}
+  - {id: a17, panel: century, lane: usa, node: lamp-1865-05-09-goebel-sewing-machine-hemmer-patent, rev: 1, note: "Shows only that Goebel held a patent in 1865; nothing about lamps."}
+  - {id: b1, panel: race, lane: britain, node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, rev: 2}
+  - {id: b2, panel: race, lane: britain, node: lamp-1879-02-03-swan-shows-lamp-lit-and-phil, rev: 2, note: "Swan's own 1880 reference; date uncertain; no 1879 report found."}
+  - {id: b3, panel: race, lane: usa, node: lamp-1879-10-22-batchelor-cotton-thread-lamp, rev: 1}
+  - {id: b3b, panel: race, lane: usa, node: lamp-1879-11-16-first-lamp-that-answers-the-purpose, rev: 1}
+  - {id: b4, panel: race, lane: usa, node: lamp-1879-11-04-edison-files-patent-223898, rev: 1}
+  - {id: b5, panel: race, lane: press, node: lamp-1879-12-21-herald-announces-new-years-eve-exhibition, rev: 1}
+  - {id: b6, panel: race, lane: press, node: lamp-1879-12-31-menlo-park-visitors-no-formal-exhibition, rev: 1, note: "Contested whether this was a public exhibition (lamp-menlo-park-dec-1879)."}
+  - {id: b7, panel: race, lane: britain, node: lamp-1880-10-20-swan-lecture-lit-and-phil, rev: 1, note: "Swan's own account while disputing priority."}
+  - {id: b8, panel: race, lane: britain, node: lamp-1880-cragside-lit-with-swan-lamps, rev: 2, note: "Armstrong's 1881 letter not read."}
+  - {id: b8b, panel: race, lane: usa, node: lamp-1880-03-latimer-joins-us-electric-lighting-bridgeport, rev: 1, note: "Secondary account (Queens Library essay hosted by the Edison Papers)."}
+  - {id: b9, panel: race, lane: usa, node: lamp-1881-09-13-nichols-latimer-patent-247097, rev: 1}
+  - {id: b9b, panel: race, lane: usa, node: lamp-1882-01-17-latimer-patent-252386, rev: 1, note: "Assigned to the United States Electric Lighting Company."}
+  - {id: b10, panel: race, lane: britain, node: lamp-1881-12-28-savoy-stage-lit-by-swan-lamps, rev: 1, note: "Via transcription; the original Times page was not compared."}
+  - {id: b11, panel: race, lane: usa, node: lamp-1882-09-04-pearl-street-district-service-begins, rev: 1}
+  - {id: b12a, panel: race, lane: usa, node: lamp-1882-early-curtis-hears-goebel-story, rev: 1}
+  - {id: b12b, panel: race, lane: usa, node: lamp-1882-05-eaton-told-of-goebel-claim, rev: 1}
+  - {id: b12c, panel: race, lane: usa, node: lamp-1882-dreyer-option-on-goebel-inventions, rev: 1}
+  - {id: b12d, panel: race, lane: usa, node: lamp-1882-10-24-goebel-patent-266358, rev: 1}
+  - {id: b12e, panel: race, lane: usa, node: lamp-1882-11-28-goebel-offer-to-edison-company, rev: 1}
+  - {id: b13, panel: race, lane: britain, node: lamp-1883-10-edison-and-swan-united-formed, rev: 1}
+  - {id: b14, panel: race, lane: courts, node: lamp-1885-early-sawyer-man-win-interference, rev: 1}

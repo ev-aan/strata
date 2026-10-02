@@ -1,0 +1,257 @@
+id: pt_304
+pt_number: 304
+display_name: "PT 304 — The Ladder Spell: Daughter of Anubis at the Heaven-Hatch"
+sethe_phrase_range:
+  value: "§§ 467a–471c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  composition_note: >
+    The ladder motif in the PT is considered by Mercer and others to be among the
+    most archaic elements — predating pyramid construction. Climbing to heaven via
+    a ladder is a mode of ascent distinct from solar (bark), stellar (imperishable
+    stars), and avian (bird/flight) modes. It implies a physical structure between
+    earth and sky that precedes more abstract cosmological models.
+  later_attestations:
+    - source: "Unas pyramid, antechamber north wall"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: >
+        Wikipedia PT article cites PT 304 as the Ladder Spell and quotes the
+        'daughter of Anubis' formula as a Unas example. Pyramidtextsonline.com
+        antechamber north wall (PT 302–312) includes PT 304.
+      source: "Wikipedia PT article; pyramidtextsonline.com."
+    - source: "Book of the Dead (ladder chapter)"
+      approximate_date_start: -1550
+      note: >
+        The ladder motif persists in New Kingdom funerary literature.
+        BD chapters concerning the 'ladder to heaven' descend from the PT
+        tradition. Specific concordance: searched_gap (Allen CT concordance required).
+      state: searched_gap
+
+location:
+  chamber: antechamber
+  wall: north
+  column_direction: east_to_west
+  note: >
+    PT 304 falls within the antechamber north wall departure sequence (PT 302–312).
+    Wikipedia places it explicitly: 'In utterance 304 the king says: Hail, daughter
+    of Anubis, above the hatches of heaven...' — in the context of describing
+    'several ways for the pharaoh to reach the heavens, one of which is by climbing
+    a ladder.' The north wall position is consistent with the outward-bound departure
+    sequence described by Allen (2005).
+  physical_condition: searched_gap
+
+ritual_class:
+  - stellar_ascent
+  - apotropaic
+  note: >
+    PT 304 is a ladder-ascent spell — the king addresses the guardians of the
+    celestial hatches and requests passage. The 'daughter of Anubis' stands at
+    the sky's hatches (ptr.w = windows/hatches); the ostrich stands at the Winding
+    Stream; the Bull of Re with four horns holds the cardinal directions. Each
+    figure is a guardian of a celestial boundary. The king asks each to open/clear
+    the way. This is simultaneously an ascent spell (direction: upward) and an
+    apotropaic address (neutralising guardians). The formula 'Open the way, let
+    [the king] pass' is the essential apotropaic-ascent formula.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Teti antechamber north wall."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+    partial_note: >
+      The opening formula 'Hail to you, daughter of Anubis' would render
+      approximately in MdC as:
+      jnD Hr.T sAt Jnpw / aHat Hr ptr.w n pt
+      ('Hail to you, daughter of Anubis, who stands at the hatches of the sky')
+      This is a back-transliteration from the Piankoff/Unas English — not confirmed.
+  gardiner_sign_list_notes: >
+    Key signs:
+    - ptr: (D4 eye + D21 mouth + Z4) — 'window/hatch' (ptr.w = the sky-windows)
+    - mAqt: (O45 or related) — 'ladder' — the specific ladder sign; Gardiner O45
+      is the 'ladder' determinative appearing in the ladder-to-heaven spells
+    - sA: (G38 or Z4+A1) — 'son/daughter' — sAt = daughter (with t-feminine ending)
+    - Jnpw: (Anubis — E17 or C6 seated dog-headed man) — 'Anubis'
+
+translations:
+  - translator_id: piankoff_modernised
+    text: >
+      "Hail to you, daughter of Anubis, she who stands at the windows (ptr.w) of
+      the sky, you friend of Thoth, she who stands at the two side rails of the
+      ladder! Open the way for [the king] that he may pass!
+
+      Hail you, O ostrich standing on the shore of the Winding Stream!
+      Open the way for [the king], that he may pass!
+
+      Hail to you, Bull of Re, you with the four horns!
+      Your horn is in the West, your horn is in the East,
+      your horn is in the South, your horn is in the North!
+      Bow that Western horn of yours for [the king], that he may pass."
+    source: >
+      Pyramidtextsonline.com antechamber north wall (Unas), §§ 468–470;
+      confirmed from khaledgamean.wordpress.com Unas antechamber translation.
+    divergence_flag: true
+    notes: >
+      The 'daughter of Anubis' is unnamed — she is identified only by position
+      (at the sky-hatches) and relationship (daughter of Anubis, friend of Thoth).
+      She stands at the mAqt ladder rails — structurally part of the celestial
+      infrastructure. The ostrich at the Winding Stream and the four-horned Bull
+      of Re are additional celestial guardians. Each is hailed and asked to
+      stand aside. The formula 'Open the way... that he may pass' is identical
+      for each figure — a repeated apotropaic address.
+
+  - translator_id: mercer_1952
+    text: >
+      Wikipedia PT article renders (Mercer-lineage):
+      'Hail, daughter of Anubis, above the hatches of heaven,
+      Comrade of Thoth, above the ladder's rails,
+      Open Unas's path, let Unas pass!'
+    source: "Wikipedia Pyramid Texts article (citing Mercer lineage rendering)."
+    divergence_flag: true
+    notes: >
+      'Above the hatches' (Mercer/Wikipedia) vs. 'at the windows' (Piankoff) —
+      ptr.w rendered differently. 'Comrade of Thoth' (Mercer) vs. 'friend of
+      Thoth' (Piankoff) — same concept, different word choice. 'Open Unas's
+      path' (Mercer) vs. 'Open the way' (Piankoff) — minor but the name-use
+      (Unas) in Mercer vs. generic 'the way' in Piankoff is a rendering choice.
+      In Teti's version: 'Open Teti's path, let Teti pass.'
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 304."
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+
+lexical_anchors:
+  - term_transliteration: "mAqt"
+    term_mdc: "mAqt"
+    semantic_field: "Ladder to heaven — celestial infrastructure"
+    notes: >
+      mAqt (also maqt) is the Egyptian word for 'ladder.' In the PT the ladder
+      is a cosmic object — it spans earth and sky and is used by the king to
+      climb to heaven. The ladder is 'tied together by Re before Osiris, tied
+      together by Horus before his father Osiris' (PT 305, immediately following).
+      The two side rails (Ax.wj n mAqt) are the structural elements of the ladder.
+      The daughter of Anubis stands at the rails — she is the ladder guardian.
+      The ladder motif is among the most archaic images in the corpus, predating
+      the solar-bark and stellar ascent theologies.
+    attestation_range: >
+      mAqt in the PT ladder spells (PT 304–305 and parallels). Ladder imagery
+      continues in Coffin Texts and Book of the Dead chapters on 'the ladder.'
+    translation_disputes:
+      - reading: "'Rails of the ladder' (Piankoff)"
+      - reading: "'Rungs of the ladder' (alternative)"
+        note: "Ax.wj n mAqt = 'the two sides of the ladder' — rails or rungs depends on interpretation."
+
+  - term_transliteration: "ptr.w"
+    term_mdc: "ptr.w"
+    semantic_field: "Hatches/windows of the sky"
+    notes: >
+      ptr.w (plural of ptr) = the hatches, windows, or openings in the sky's
+      surface. The sky (pt) is conceived as a solid surface with openings —
+      the ptr.w are the gates through which celestial beings (and the king)
+      pass. ptr = 'to look/see' (D4 eye sign) + door/window opening.
+      The daughter of Anubis stands at these sky-apertures as gatekeeper.
+    translation_disputes:
+      - reading: "'Hatches of heaven' (Mercer/Wikipedia)"
+      - reading: "'Windows of the sky' (Piankoff)"
+      note: "ptr.w is from ptr 'to see through' — window/hatch is the range."
+
+  - term_transliteration: "kA ifdw"
+    term_mdc: "kA ifdw"
+    semantic_field: "Bull of Re with four horns — cardinal-direction deity"
+    notes: >
+      The Bull of Re (kA n Ra, kA ifdw = 'bull of four [horns]') has horns in
+      all four directions. Bending the western horn = clearing the path that
+      leads to the west (and through the west to the north, where the
+      circumpolar stars are). This is a cosmological geography: the western
+      horn is the first obstruction on the outward path.
+    attestation_range: >
+      This specific figure (four-horned Bull of Re) is attested primarily in
+      the PT ladder/ascent spells. Its reappearance in later literature:
+      searched_gap.
+
+divergence_points:
+  - id: ptr_hatches_vs_windows
+    claim: "ptr.w in PT 304 means 'hatches of heaven' (Mercer) or 'windows of the sky' (Piankoff)"
+    state: contested
+    positions:
+      - scholar: "Mercer 1952 / Wikipedia rendering"
+        reading: "'Hatches' — implying trapdoor-like openings in a solid surface"
+      - scholar: "Piankoff (modernised)"
+        reading: "'Windows' — implying apertures for looking/seeing through"
+    note: >
+      ptr derives from ptr 'to see, behold' — so 'windows' (apertures for seeing)
+      is etymologically closer. But the function in context is passage, not vision —
+      so 'hatches' (openings one passes through) captures the use better.
+      Allen 2005's rendering would resolve this: searched_gap.
+
+  - id: daughter_of_anubis_identity
+    claim: "The 'daughter of Anubis' at the sky-hatches is identified"
+    state: searched_gap
+    note: >
+      She is named only relationally (daughter of Anubis, friend of Thoth).
+      No individual name is given. Whether she is a named deity in the wider
+      Egyptian pantheon, or a functional figure unique to this spell context,
+      is unresolved in the secondary literature consulted. Faulkner's commentary
+      and Allen's notes would be required to determine if Egyptologists have
+      identified her with a known deity.
+
+  - id: ladder_archaic_composition
+    claim: "The ladder motif in PT 304 is among the most archaic elements of the PT corpus, predating pyramid construction"
+    state: proposed
+    positions:
+      - scholar: "Mercer 1952 (general position)"
+        reading: >
+          The PT were 'composed much earlier, circa 3000 BCE' with internal
+          evidence suggesting pre-pyramid origin for some elements. Ladder
+          imagery implies a pre-cosmological-complexity conception of heaven.
+      - scholar: "Allen 2005 (expected counter)"
+        reading: >
+          'Archaic' elements may reflect archaic vocabulary rather than archaic
+          composition. The ladder motif is theologically consistent with Old
+          Kingdom cosmology and need not predate it.
+    note: >
+      The 'archaic = old' inference is common in PT scholarship but is
+      methodologically weak: archaic vocabulary can be a stylistic register
+      rather than evidence of early composition. Allen 2005's dating discussion
+      is required to assess this claim properly.
+
+transmission_events:
+  - event: "Unas pyramid, antechamber north wall"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com; Wikipedia PT article."
+  - event: "Teti pyramid, antechamber north wall"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 (Teti follows same north wall program)."
+  - event: "Book of the Dead — ladder chapters (general)"
+    approximate_date_start: -1550
+    note: "Ladder motif persists. Specific BD chapter concordance: searched_gap."
+    state: searched_gap
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 304 introduces the most concrete physical image of heavenly ascent in the
+  corpus — a literal ladder with side rails, celestial guardians, and a gate
+  that must be asked to open. Unlike the solar-bark (PT 217), the stellar
+  absorption (PT 273–274), or the star-identification (PT 373), the ladder is
+  an engineered structure. The king climbs rather than flies, absorbs, or transforms.
+  The daughter of Anubis standing at the rails is the most intimate guardian
+  figure in the corpus — she is at the exact point of celestial entry, touching
+  the infrastructure of heaven.

@@ -1,0 +1,30 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1882-11-28-goebel-offer-to-edison-company
+rev: 1
+type: event
+label: '28 Nov 1882: Goebel''s son offers the Edison company his father''s inventions for $20,000'
+time: '1882-11-28T12:00:00Z'
+precision: day
+kind: witness
+status: single
+what: '54 F. 678, summarising Sherburne B. Eaton''s affidavit: ''On November 28, 1882, Henry Goebel, Jr., called upon him
+  ... and made another offer to sell the inventions and good will of his father, naming the price of $20,000''; on 12 December
+  1882 he ''was informed that the company did not wish to buy''. This is not the earliest trace of the Goebel claim: Curtis
+  (early 1882), the Dickersons'' approach (May 1882) and Dreyer''s option (1882) are earlier.'
+sources:
+- title: Edison Electric Light Co. v. Beacon Vacuum Pump & Electrical Co., 54 F. 678 (C.C.D. Mass., 18 Feb 1893), Colt J.
+  url: https://static.case.law/f/54/cases/0678-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-54-f-678
+  source_type: official_record
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-54f678
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b12 (split: the offer); the earlier label ''earliest
+    trace'' is corrected. Date and place re-checked against the cited source.'
+date_basis: stated

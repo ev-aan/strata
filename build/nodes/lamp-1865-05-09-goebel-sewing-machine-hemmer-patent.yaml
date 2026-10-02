@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1865-05-09-goebel-sewing-machine-hemmer-patent
+rev: 1
+type: event
+label: '9 May 1865: Henry Goebel of New York, US patent 47,632 (sewing-machine hemmer)'
+time: '1865-05-09T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: US 47,632, 'Improvement in Hemmers for Sewing-Machines', Henry Goebel 'of the city, county, and State of New York',
+  dated 9 May 1865. The patent is for a hemmer guide and has nothing to do with lamps; it shows only that Goebel held a patent
+  in New York in 1865.
+sources:
+- title: US Patent 47,632, H. Goebel, Hemmers for Sewing-Machines (9 May 1865)
+  url: https://patents.google.com/patent/US47632A/en
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: us-patent-47632
+  source_type: official_record
+  access: read
+place:
+  name: New York City
+  lat: 40.7127
+  lon: -74.006
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 175905
+  note: The source gives the person's residence or the firm as 'of New York, N. Y.' without a street.
+manifest:
+  subject: incandescent-lamp
+  source: src-us47632
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (finding A3). Date and place re-checked against
+    the cited source.'
+date_basis: stated

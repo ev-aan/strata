@@ -1,0 +1,45 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1880-03-latimer-joins-us-electric-lighting-bridgeport
+rev: 1
+type: event
+label: 'March 1880: Latimer begins work for Maxim at the U.S. Electric Lighting Company in Bridgeport'
+time: '1880-03-15T12:00:00Z'
+precision: month
+kind: analysis
+status: single
+what: 'Queens Borough Public Library essay ''Inventing a Better Life: Latimer''s Technical Career'' (hosted by the Edison
+  Papers): in Bridgeport, Connecticut, Latimer became ''an employee of Hiram Stevens Maxim, then chief engineer at the U.S.
+  Electric Lighting Company''; he began there ''March, 1880''. The essay calls the company ''one of Edison''s competitors''
+  and says it moved to Brooklyn in 1880. A secondary account; Latimer''s logbook and the company''s records were not read.'
+sources:
+- title: 'Queens Borough Public Library, ''Blueprint for Change'' essay ''Inventing a Better Life: Latimer''s Technical Career'',
+    as hosted by the Edison Papers (Rutgers)'
+  url: https://edison.rutgers.edu/resources/latimer/inventing-a-better-life-latimer-s-technical-career
+  authenticity: 'not applicable: later or editorial source, used only for what it says (see the dig''s sources manifest)'
+  origin: queens-library-latimer-essay
+  source_type: secondary_report
+  access: read
+place:
+  name: Bridgeport, Connecticut
+  lat: 41.1793
+  lon: -73.1888
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 11049559
+  note: The essay says Latimer arrived in Bridgeport, Connecticut and began work for the U.S. Electric Lighting Company there
+    in March 1880; it says the company moved to Brooklyn in 1880. The patents themselves give New York.
+window:
+  earliest: '1880-03-01'
+  latest: '1880-03-31'
+  begin_note: 'The essay: ''March, 1880''.'
+  end_note: Same.
+manifest:
+  subject: incandescent-lamp
+  source: src-edison-papers-latimer
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (finding A5: the rivalry and the Maxim link
+    are anchored here, not to the patent). Date and place re-checked against the cited source.'
+date_basis: stated

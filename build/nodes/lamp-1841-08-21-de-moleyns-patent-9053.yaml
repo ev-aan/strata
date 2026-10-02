@@ -1,0 +1,42 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1841-08-21-de-moleyns-patent-9053
+rev: 1
+type: event
+label: '21 Aug 1841: de Moleyns, British patent No. 9053'
+time: '1841-08-21T12:00:00Z'
+precision: day
+kind: document
+status: single
+what: Abridgment of British patent 9053 (A.D. 1841, August 21), Frederick de Moleyns, 'the production or developement of electricity,
+  and the application of electricity for the attainment of illumination and motion'. Its second head is 'a means of generating
+  the electric light, by constantly supplying the electrodes at their junction, with pulverized charcoal' from a tube; the
+  electrodes are two coils of platinum wire, the lower enclosing spongy platinum, and 'the whole arrangement is enclosed in
+  an exhausted glass globe'. The abridgment does not use the words 'glow' or 'incandescent'. The Supreme Court (1895) calls
+  it a patent for an incandescent electric lamp using finely pulverized boxwood charcoal or plumbago. The full specification
+  was not read.
+sources:
+- title: GB Patent Office, Abridgments of Specifications relating to Electricity and Magnetism (1859), pp. 62-63 (No. 9053,
+    de Moleyns)
+  url: https://archive.org/details/patentsforinvent1766grea
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: gb-abridgments-1859
+  derives_from: gb-patent-9053-1841
+  source_type: official_record
+  access: read
+- title: The Incandescent Lamp Patent, 159 U.S. 465 (decided 11 Nov 1895), Library of Congress scan of United States Reports
+  url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep159/usrep159465/usrep159465.pdf
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-reports-159-465
+  source_type: official_record
+  access: read
+  derives_from: gb-patent-9053-1841
+manifest:
+  subject: incandescent-lamp
+  source: src-abridgments-1859
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a2. Date and place re-checked against the cited
+    source.'
+date_basis: stated

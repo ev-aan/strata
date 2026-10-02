@@ -1,0 +1,33 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: fz1073-2026-09-29-netanyahu-election-warning-tel-nof
+rev: 1
+type: event
+label: '29 Sep: Netanyahu says there are signs enemies will try to attack before the election'
+time: '2026-09-29T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'The Jerusalem Post (29 Sep 2026) reports that at Tel Nof air base Prime Minister Netanyahu said "There are signs that leading up to the elections, our enemies will try to attack us". It says he did not
+  specify which enemies. The opposition leader demanded a briefing; the Prime Minister''s Office said he had updated him on "possible attacks on various fronts" (as quoted by Al Jazeera
+  and others). On 30 Sep and 1 Oct the opposition leader said the warning had nothing to do with planes (Al Jazeera). The time of day is not stated in the part read; 12:00 UTC is a placeholder for a day-precision event.'
+place:
+  name: Tel Nof air base
+  lat: 31.836
+  lon: 34.82
+  precision: site
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event); OSM way 292165446. The Jerusalem Post names Tel Nof airbase as the venue.
+  note: 'Venue as named by the Jerusalem Post.'
+sources:
+- title: Jerusalem Post, Israel's enemies may attack ahead of October election, Netanyahu warns (29 Sep 2026)
+  url: https://www.jpost.com/israel-news/defense-news/article-910076
+  authenticity: news report of a public statement; the video was not watched
+  origin: jpost-910076
+  source_type: news
+  access: read
+link: https://www.jpost.com/israel-news/defense-news/article-910076
+created: '2026-10-02'
+date_basis: stated
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created for the flydubai-fz1073 dig. It says what was reported to have been said on 29 September. It does not say the warning and the flight are connected; the opposition leader says they are not.

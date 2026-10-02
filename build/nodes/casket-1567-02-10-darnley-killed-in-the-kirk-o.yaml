@@ -1,0 +1,35 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1567-02-10-darnley-killed-in-the-kirk-o
+rev: 2
+type: event
+label: '10 Feb 1567: Darnley killed in the Kirk-o''-Field explosion (about 2 a.m.)'
+time: '1567-02-10T02:00:00Z'
+precision: approx
+kind: analysis
+status: single
+what: 'Henderson: ''The explosion at Kirk-o''-Field took place about two o''clock in the morning of the 10th February 1567.'''
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
+place:
+  name: Edinburgh (Kirk o' Field, Old Town)
+  lat: 55.9496
+  lon: -3.1915
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 8341994
+  note: City-level point for the Old Town. Henderson places Kirk-o'-Field in Edinburgh; the exact site is not marked here.
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k1. Merged with b1 (the same event drawn in the detail panel).
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

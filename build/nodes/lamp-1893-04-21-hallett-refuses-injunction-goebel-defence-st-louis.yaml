@@ -1,0 +1,46 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1893-04-21-hallett-refuses-injunction-goebel-defence-st-louis
+rev: 1
+type: event
+label: '21 Apr 1893: Hallett J. (E.D. Mo.) refuses an injunction on bond: ''a fair preponderance of testimony'' for Goebel'
+time: '1893-04-21T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: '56 F. 496, on a motion for a preliminary injunction: Goebel ''does not appear to be an adventurer or an impostor'';
+  ''there is a fair preponderance of testimony in support of the Goebel claim''; ''a defense which puts the case in doubt
+  is sufficient to defeat the application''. Judge Hallett says he does ''not feel compelled to accept the opinion of the
+  court in'' the Boston case. The injunction ''will therefore be refused, if the respondents shall give a bond in the sum
+  of $20,000''. The ruling does not decide the Goebel claim finally.'
+sources:
+- title: Edison Electric Light Co. v. Columbia Incandescent Lamp Co., 56 F. 496 (C.C.E.D. Mo., 21 Apr 1893), Hallett J.
+  url: https://static.case.law/f/56/cases/0496-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-56-f-496
+  source_type: official_record
+  access: read
+place:
+  name: Missouri (Eastern District of Missouri)
+  lat: 38.7605
+  lon: -92.5618
+  precision: region
+  uncertainty_km: 250
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 161638 (centroid of the state)
+  note: The opinion's heading names the court only as 'Circuit Court, E. D. Missouri'; 57 F. 616 mentions 'St. Louis', but
+    the sitting city is not stated in the text of this opinion, so only the state is placed.
+manifest:
+  subject: incandescent-lamp
+  source: src-56f496
+related:
+- node: lamp-1893-02-18-colt-rules-on-goebel-defence-boston
+  kind: responds_to
+  grade: established
+  why: The opinion discusses 54 F. 678 and declines to follow it.
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a15 (split). Date and place re-checked against
+    the cited source.'
+date_basis: stated

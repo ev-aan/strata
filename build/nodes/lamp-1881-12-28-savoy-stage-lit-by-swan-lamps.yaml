@@ -1,0 +1,39 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1881-12-28-savoy-stage-lit-by-swan-lamps
+rev: 1
+type: event
+label: '28 Dec 1881: the Savoy Theatre stage is lit with Swan lamps at a performance of Patience'
+time: '1881-12-28T12:00:00Z'
+precision: day
+kind: media
+status: single
+what: 'The Times, Thursday 29 Dec 1881 (Gilbert and Sullivan Archive transcription): ''An interesting experiment was made
+  at a performance of Patience yesterday afternoon, when the stage was for the first time lit up by the electric light, which
+  has been used in the auditorium ever since the opening of the Savoy Theatre.'' ''The Swan incandescent lamps were used.''
+  The original page was not compared. The report is of an experiment at one performance, not of lamps in regular use.'
+sources:
+- title: The Times, 29 Dec 1881, report on the Savoy Theatre stage lighting (Gilbert and Sullivan Archive transcription; the
+    original page was not read)
+  url: https://gsarchive.net/carte/savoy/electric.html
+  authenticity: unchecked transcription (see the dig's sources manifest)
+  origin: the-times-1881-12-29
+  source_type: news
+  access: read
+place:
+  name: Savoy Theatre, London
+  lat: 51.5102
+  lon: -0.1209
+  precision: site
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM way 490638255
+  note: The Times names the Savoy Theatre; the point is the theatre building as the gazetteer has it today.
+manifest:
+  subject: incandescent-lamp
+  source: src-times-savoy
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b10. Date and place re-checked against the cited
+    source.'
+date_basis: stated

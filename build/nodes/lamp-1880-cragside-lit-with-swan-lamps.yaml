@@ -1,0 +1,49 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1880-cragside-lit-with-swan-lamps
+rev: 2
+type: event
+label: '1880: Armstrong lights Cragside with Swan''s incandescent lamps'
+time: '1880-07-01T12:00:00Z'
+precision: year
+kind: witness
+status: single
+what: 'IET Archives blog (2023), two passages: ''the arc lamps were replaced by Armstrong in 1880 with 45 incandescent lamps'';
+  and Armstrong''s letter to the editor of The Engineer of 17 January 1881 was written ''shortly after he utilised Joseph
+  Swan''s newly invented incandescent light bulbs''. That the 1880 lamps were Swan''s is the blog''s joining of the two passages.
+  The letter itself was not read. The blog''s ''first house in the world'' is not used.'
+sources:
+- title: 'IET Archives blog, ''Cragside: harnessing the power of water'' (9 Mar 2023), describing Armstrong''s letter of 17
+    Jan 1881 (IET Archives NAEST 046/24)'
+  url: https://ietarchivesblog.org/2023/03/09/cragside-harnessing-the-power-of-water/
+  authenticity: 'not applicable: archive blog; the letter itself was not read (see the dig''s sources manifest)'
+  origin: iet-cragside-blog
+  derives_from: armstrong-letter-engineer-1881
+  source_type: secondary_report
+  access: read
+place:
+  name: Cragside, Rothbury, Northumberland
+  lat: 55.3136
+  lon: -1.8856
+  precision: site
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM way 128823510 (Cragside house)
+  note: The IET blog names Cragside, Armstrong's house at Rothbury, Northumberland.
+window:
+  earliest: '1880-01-01'
+  latest: '1881-01-17'
+  begin_note: The blog says 'in 1880'.
+  end_note: Armstrong's letter on the lamps in use is dated 17 Jan 1881.
+manifest:
+  subject: incandescent-lamp
+  source: src-iet-cragside
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b8. Date and place re-checked against the cited
+    source.'
+- rev: 2
+  date: '2026-10-02'
+  change: 'Review request R3-2: wording now says ''1880'' and ''Swan'' come from two passages of the blog; claim split to
+    lamp-swan-cragside (proposed, low).'
+date_basis: stated

@@ -1,0 +1,11 @@
+# The owner has the final say (docs/GOVERNANCE.md). Changes to these paths need the owner's review.
+/CLAUDE.md           @ev-aan
+/CONTRIBUTING.md     @ev-aan
+/docs/               @ev-aan
+/build/SCHEMA.md     @ev-aan
+/build/conformance.py @ev-aan
+/build/site.yaml     @ev-aan
+/build/news.yaml     @ev-aan
+/build/tools/        @ev-aan
+/.github/            @ev-aan
+**/review.yaml       @ev-aan

@@ -1,0 +1,43 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1858-02-27-jobard-reports-de-changy-lamps
+rev: 1
+type: event
+label: '27 Feb 1858: Jobard''s communication on de Changy''s lamps, as printed by Fontaine'
+time: '1858-02-27T12:00:00Z'
+precision: day
+kind: document
+status: single
+what: Fontaine (1878) prints a communication he says 'M. Jobart' made 'to the Academy of Sciences on the 27th of February,
+  1858'. In it, in de Changy's laboratory, 'a dozen small miner's lamps' were in circuit; 'the lamps, which are enclosed in
+  hermetically sealed glass tubes', are lit 'by the incandescence of platinum'; one 'was lit in the hollow of my hand'. Fontaine
+  places de Changy 'in Belgium' and Jobard 'of Brussels'. Whether the tubes were exhausted is not stated in the passage. The
+  Academy's own report (Comptes rendus) was not read.
+sources:
+- title: Hippolyte Fontaine, Electric Lighting (English translation, 1878), pp. 186-187 (Jobard's communication of 27 Feb
+    1858 as printed)
+  url: https://archive.org/details/electriclightin00fontgoog
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: fontaine-1878
+  derives_from: jobard-academy-report-1858
+  source_type: scholarly
+  access: read
+place:
+  name: Belgium (de Changy's work, per Fontaine)
+  lat: 50.6403
+  lon: 4.6667
+  precision: region
+  uncertainty_km: 100
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 52411 (centroid of the country)
+  note: Fontaine says de Changy worked 'in Belgium' and calls Jobard 'of Brussels'; no town is named for the laboratory. The
+    Academy session that heard the communication (its city is not named in the passage read) is not what is placed.
+manifest:
+  subject: incandescent-lamp
+  source: src-fontaine-1878
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a4. Date and place re-checked against the cited
+    source.'
+date_basis: stated

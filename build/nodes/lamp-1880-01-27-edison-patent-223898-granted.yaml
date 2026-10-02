@@ -1,0 +1,40 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1880-01-27-edison-patent-223898-granted
+rev: 1
+type: event
+label: '27 Jan 1880: Edison''s US patent 223,898 ''Electric-Lamp'' granted'
+time: '1880-01-27T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: US 223,898, 'Electric-Lamp', Thomas Alva Edison 'of Menlo Park, in the State of New Jersey', patented 27 Jan 1880. Claim
+  1 is a carbon filament of high resistance; claim 2 carbon filaments in a receiver made entirely of glass and exhausted of
+  air, with the conductors passing through the glass; the specification names a mercury pump. The place is the inventor's
+  address as printed (the scan's OCR of the address is poor; 'Menlo Park, New Jersey' is read from it), not where the patent
+  issued.
+sources:
+- title: US Patent 223,898, T. A. Edison, Electric-Lamp (granted 27 Jan 1880)
+  url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0223898
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-patent-223898
+  source_type: official_record
+  access: read
+place:
+  name: Menlo Park, Edison, New Jersey
+  lat: 40.564
+  lon: -74.3476
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM way 1372807911 (Menlo Park neighbourhood, now in Edison Township)
+  note: Named as 'Menlo Park, N. J.' in the sources. The laboratory's exact site is not given in them, so only the settlement
+    is placed.
+manifest:
+  subject: incandescent-lamp
+  source: src-us223898
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a11. Date and place re-checked against the cited
+    source.'
+date_basis: stated

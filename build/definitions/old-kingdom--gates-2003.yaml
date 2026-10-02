@@ -1,0 +1,23 @@
+# Authority-scoped period definition (schema v0.6, N17). Kept as the authority printed it; never edited, only superseded by a new file.
+id: old-kingdom--gates-2003
+label: Old Kingdom
+region: Egypt
+authority:
+  title: 'Ancient cities : the archaeology of urban life in the Ancient Near East and Egypt, Greece and Rome'
+  creators:
+  - Gates, Charles, 1950-
+  year_published: 2003
+  worldcat: http://www.worldcat.org/oclc/51042563
+  locator: page 78
+quoted:
+  start: ca. 2675 BC
+  stop: 2190 BC
+from_bce: 2675
+to_bce: 2190
+via:
+  dataset: PeriodO
+  period_ark: http://n2t.net/ark:/99152/p083p5r9q68
+  authority_ark: http://n2t.net/ark:/99152/p083p5r
+  dataset_url: https://data.perio.do/d.json
+  retrieved: '2026-10-02'
+authority_read_directly: false

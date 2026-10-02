@@ -1,0 +1,33 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1889-10-05-bradley-holds-sawyer-man-claims-invalid
+rev: 1
+type: event
+label: '5 Oct 1889: Circuit court dismisses the Sawyer-Man patent suit (Consolidated Electric Light Co. v. McKeesport Light
+  Co.)'
+time: '1889-10-05T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: '40 F. 21 (C.C.W.D. Pa., 5 Oct 1889), Bradley J.: the Sawyer-Man patent (granted 12 May 1885; application filed 9 Jan
+  1880), apart from its third claim which was not in issue, is held to amount to ''the broad claim of the exclusive use, in
+  incandescing lamps, of all carbons made of fibrous or textile materials'' (headnote), and is held invalid; the court was
+  ''not at all satisfied that Sawyer and Man ever made, and reduced to practical operation, any such invention'', and found
+  that the specification had been changed in 1885, after Edison''s work was published, from the arched carbon to all fibrous
+  carbons. ''The bill must be dismissed.'' '
+sources:
+- title: Consolidated Electric Light Co. v. McKeesport Light Co., 40 F. 21 (C.C.W.D. Pa., 5 Oct 1889), Bradley J.
+  url: https://static.case.law/f/40/cases/0021-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-40-f-21
+  source_type: official_record
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-40f21
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: new event node (finding 4a); the court is the Circuit Court
+    for the Western District of Pennsylvania, not placed. Date and place re-checked against the cited source.'
+date_basis: stated

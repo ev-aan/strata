@@ -1,0 +1,34 @@
+subject: teti-pyramid-texts
+log:
+  - id: L-01
+    date: 2026-10-02
+    entry: >
+      IMPORT AND REPAIR. The owner's 22 files (two batches, an earlier chat's output) were kept verbatim in build/imports/teti-pyramid-texts/. None of the 19 utterance files
+      parsed as shipped, nor did the batch 2 index. build/tools/repair_teti.py repairs syntax only: a `ritual_class` list followed by a sibling `note` is nested as
+      `ritual_class: {classes, note}`; the same fault in `translation_disputes` is nested as `{readings, note}`; one line with text after a closing quote is quoted whole;
+      the batch 2 index entries are moved into the `utterances` list. A line-by-line comparison shows nothing removed and only the keys `classes` and `readings` added. All 19 files
+      and both indexes now parse; the repaired copies are in utterances/. build/tools/build_teti_subject.py builds claims.yaml from the files' own claims: 38 divergence points,
+      the 9 framework claims in subject.yaml, and two corpus claims. 49 claims in all: 9 established, 14 contested, 22 proposed, 1 refuted, 3 searched gaps.
+  - id: L-02
+    date: 2026-10-02
+    entry: >
+      WHAT THE FILES CLAIM THAT THIS DIG DOES NOT YET SUPPORT. (1) Nothing was read against Sethe, Allen, Faulkner or Mercer, so every claim has anchor_checked `no` and weights at the floor.
+      The 9 `established` claims stay established as the files filed them, flagged by conformance for re-anchoring (the project rule is to re-anchor, not downgrade). (2) The claim that
+      Teti's corpus has 301 spells, 18 more than Unas's 283, was anchored to Grokipedia, which is not an accepted source; it needs Allen's concordance. (3) The files call the plus or minus 10
+      years on Teti's dates 'scholarly consensus'. Old Kingdom chronologies differ between authorities by more than that (recalled, not read here), so the dates are filed as a convention
+      (teti-reign-conventional-dates, proposed). (4) The 1882 opening of the pyramid by Maspero is the files' statement and has not been checked. (5) The files describe Mercer's
+      translation as public domain and quote it; the quoted Faulkner and Allen renderings are in copyright. Treat the utterances directory as private working data until rights are checked.
+      (6) The 'refuted' cannibalism claim rests on an absence of archaeological evidence plus a scholarly consensus; its anchors were Wikipedia and a conference summary, so it is held at
+      provisional confidence until Eyre 2002 and the archaeology are read.
+  - id: L-03
+    date: 2026-10-02
+    entry: >
+      SOURCES REPLACED. Citations to Wikipedia (26), Madain Project (7), Egypt Fun Tours (3), Memphis Tours (1) and Daily News Egypt (1), plus Grokipedia, Historyskills, pyramidofman.com
+      and Scribd, are not accepted as anchors. Each claim's anchor now reads 'needs primary anchor' and the original strings are kept under `orientation_only`. The hieroglyphic text is
+      an open gap in all 19 files (claim teti-hieroglyphic-text-not-in-record); 15 of 19 also lack the transliteration. NEXT STEPS: read Sethe 1908 vol. 1 from Internet Archive page
+      images and fill the hieroglyphs for the 19 utterances, then check Allen's page references and the translations against the printed works. Parked until then: the timeline
+      (timeline.yaml) uses negative years; it feeds the Atlas, but the stand-alone timeline renderer does not yet draw dates before 1 CE.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      CHRONOLOGY CHECK (read in the PeriodO dataset, not in the authorities' own books). Six authorities define the Egyptian Old Kingdom differently: it starts between 2700 and 2600 BCE and ends between 2190 and 2130 BCE, so a spread of about 100 years at the start and 60 at the end. The imported files' statement that Teti's dates are uncertain by plus or minus 10 years as 'scholarly consensus' (claim teti-reign-conventional-dates) is therefore not supported for the period as a whole; it stays a convention taken from Shaw 2000, which was not read. A shared node (period-old-kingdom-egypt) now carries the six definitions as a time window and appears on this excavation's timeline.

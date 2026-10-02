@@ -1,0 +1,41 @@
+subject: eikon-basilike
+dig_status: migrated_from_bounty
+log:
+  - id: L-01
+    date: "2026-10-02"
+    entry: >
+      MIGRATION. Owner asked (2026-10-02) that the Casket Letters and King's Book projects be done first; the local agent that wrote bounty B-002 had not acted on the coordination
+      request. This subject restates the existing page (bounties/eikon-basilike/index.html, opened 2026-10-01) in the YAML standard without touching the page or its run files.
+      Bounty IDs (C-01..C-08, F1..F12, DT-B1, G-01..G-07) are kept as bounty_id; B-001 reuses C-01..C-06, so the slug IDs are the unique ones. Claims: 11. Headline drafted:
+      'Eikon Basilike (1649): Milton Charged the King's Prayer Was Copied Word for Word From Sidney' (92 chars; the headline claim is established at high confidence with the passage read
+      in the TCP text; status review). The headline states only what is firm (a documented charge); who wrote the book stays open.
+  - id: L-02
+    date: "2026-10-02"
+    entry: >
+      PRIMARY TEXTS READ (EEBO-TCP, fetched from github.com/textcreationpartnership). (1) Milton's passage: TCP A50898 contains 'a Prayer stol'n word for word from the mouth of Heathen
+      fiction praying to a heathen God ... Arcadia' and the instruction to compare 'Pammela's Prayer' in 'the 3d. Book of Sir Philips Arcadia p. 248' with the King's prayer. CORRECTION TO THE
+      BOUNTY PAGE: the text read is the 1650 'second time and much enlarg'd' edition, not the 1649 first edition the claim refers to; the claim is kept established (the charge is documented)
+      with the edition recorded and a next step to read the 1649 edition. (2) CORRECTION TO THE BOUNTY PAGE: TCP A38258, the text the test uses, is catalogued as 'First edition, second issue' (Madan:
+      'probably about 4 February'), whereas the page calls it 'the first issue'. Claim eikon-text-tested-is-second-issue records this; it does not change the test, since the text is the
+      one tested. (3) F2 checked by a search of A38258: no 'Pamela', 'Pammela' or 'Prayer in time of Captivity' (the word 'prayer' appears 50 times in ordinary use). (4) The word count of A38258 is
+      about 60,300 by a rough count against the page's 60,359. (5) A31932 title page confirms 'taken in his cabinet at Nasby-Field, June 14. 1645'; A78958 imprint confirms printing by Grismond for
+      Royston, 1649, for papers of 1646. Not read: the 1649 Eikonoklastes, Madan, Gauden's letters, the testimonies of Levett, Hollingworth and Wagstaffe.
+  - id: L-03
+    date: "2026-10-02"
+    entry: >
+      DT-B1 REPRODUCED (helper agent plus checks; see tests.yaml). All 32 TCP files and the Bruce OCR text downloaded; scripts run in README order in a scratch folder after replacing a hard-coded author
+      path in 8 scripts. Exact match on every result line, including the main table (Charles's own writing 0.465/0.744; Gauden's works 0.805/0.524; eight other clergy 0.724/0.632; Eikon 0.702/0.591) and the
+      positive control (73 of 482 six-word phrases shared with Arcadia; Gauden 0, Taylor 1, Milton 0, Eikon 1); identical across hash seeds. WHAT THIS DOES NOT SHOW: that the method is valid, that the genre
+      confound (F4) is absent, or that the hard-coded choices (the KEEP letter list, the 2,600-character slice for the prayer, line ranges in charles1646.py) are right; none were audited. The scripts
+      do not run as published (hard-coded /home/claude path; README silent): to be fixed by their author. Claims C-02 and C-07 stay proposed pending outside review.
+  - id: L-04
+    date: "2026-10-02"
+    entry: >
+      OPEN. G-01 and G-02 (which parts of the Cabinet letters are Charles's; whether Parliament altered them) matter most for the test's baseline. G-03 (Madan 1950) decides the planted-prayer claim and
+      would show which edition first carries the prayer. G-05 and G-06 (more of Charles's own formal and devotional prose) are the main limit on C-07. Gauden's letters (claim eikon-gauden-claimed-authorship,
+      anchor 'no') need to be read; conformance reports it as a warning with the project's rule: re-anchor, do not downgrade. An outside reviewer (a historian of the Eikon and a stylometry specialist) is needed before any computed claim leaves proposed.
+  - id: L-05
+    date: 2026-10-02
+    entry: >
+      RENAME (owner request). The public term "bounty" is now "open question". The page moved from /bounties/eikon-basilike/ to /questions/eikon-basilike/ (the old address redirects), and it is shown as open question Q-002. The legacy ID B-002 and the
+      `bounty_id` field in claims.yaml are kept as they are; earlier log entries are not rewritten. Wording on the page, in this dig's claim descriptions and timeline sources was updated to the new term, with "formerly bounty B-002" at the first mention.

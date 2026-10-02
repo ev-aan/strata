@@ -1,0 +1,39 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1876-08-29-woodward-us-patent-181613
+rev: 1
+type: event
+label: '29 Aug 1876: Woodward, US patent 181,613'
+time: '1876-08-29T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: US 181,613, 'Improvement in Electric Lights', Henry Woodward 'of the city of Toronto, county of York, Province of Ontario',
+  application filed 4 Jan 1875, dated 29 Aug 1876; assigned by mesne assignments to R. M. Wells, T. R. Fuller and E. Heimrod
+  'of same place' and C. H. Woodward of Lindsay, Canada. A piece of carbon is fitted with electrodes in a globe; the air is
+  exhausted and the globe 'filled with a rarefied gas that will not unite chemically with the carbon when hot'; the claim
+  is the carbon in combination with a lamp vessel filled with such a gas. No assignment to Edison is shown on the patent.
+sources:
+- title: US Patent 181,613, H. Woodward, Improvement in Electric Lights (dated 29 Aug 1876)
+  url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0181613
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-patent-181613
+  source_type: official_record
+  access: read
+place:
+  name: Toronto, Ontario
+  lat: 43.6535
+  lon: -79.3839
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 324211
+  note: Named as Woodward and Evans's town in the Scientific American list and as Woodward's in the US patent.
+manifest:
+  subject: incandescent-lamp
+  source: src-us181613
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a8. Date and place re-checked against the cited
+    source.'
+date_basis: stated

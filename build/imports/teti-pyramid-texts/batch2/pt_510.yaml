@@ -1,0 +1,226 @@
+id: pt_510
+pt_number: 510
+display_name: "PT 510 — The King Appears as Sobek: Animal-Form Transformation"
+sethe_phrase_range:
+  value: "§§ 1133a–1136c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1 or 2."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Coffin Texts (Sobek-transformation spells)"
+      approximate_date_start: -2055
+      state: searched_gap
+      note: "Sobek-transformation spells appear in CT. Direct concordance: searched_gap."
+
+location:
+  chamber: antechamber
+  wall: east
+  column_direction: west_to_east
+  note: >
+    PT 510 is included in the candidate list from the initial index with note
+    'The king appears as Sobek — animal-form transformation.' Precise wall
+    placement in Teti's corpus requires Allen 2005. Its PT number (510) places
+    it in the range of antechamber east wall and later spells in the Sethe
+    numbering. Pyramidtextsonline.com covers Unas only to PT 312 (antechamber
+    north wall) — PT 510 is beyond the Unas corpus, placing it in the Teti/Pepi
+    extension range. Wall placement: searched_gap pending Allen 2005 Teti section.
+  physical_condition: searched_gap
+
+ritual_class:
+  - stellar_ascent
+  - apotropaic
+  note: >
+    Animal-form transformation spells are among the most archaic elements of the
+    PT corpus. The king as Sobek (the crocodile god) acquires Sobek's attributes:
+    swiftness in water, ferocity, divine power. The transformation is not metaphorical —
+    the king IS Sobek for the duration of the spell. This is a different mode of
+    divine identification than the Osiris/Horus identifications in the earlier
+    spells: those are inheritance and role; this is bodily transformation.
+    The transliteration document (Scribd, citing Faulkner dictionary) contains
+    what appears to be PT 510 content: 'xa N m sbk sA nt / wnm N m r.f / wsS N
+    nk N m Hnn.f' = 'N appears as Sobek, son of Nut / N eats with his mouth /
+    N copulates, N mounts with his phallus.'
+    This is startlingly explicit and requires careful handling.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1 or 2."
+  mdc_transliteration:
+    value: >
+      Partial from Scribd transliteration document (anonymous, citing Faulkner
+      dictionary):
+      xa N m sbk sA nt / wnm N m r.f /
+      wsS N nk N m Hnn.f / N pi mtwt iT(w) Hmwt m-a [...]
+      r st mr.r N xft Ssp ib.f
+    source: "Scribd transliteration document (anonymous). Source: Faulkner dictionary, Griffith Institute permission."
+    state: partial
+    caveat: >
+      This MdC is from a secondary transliteration document, not Sethe 1908 directly.
+      Signs require verification against Sethe plates. The sexual content is verbatim
+      from the transliteration document and must be treated as indicative, not confirmed.
+  gardiner_sign_list_notes: >
+    Key signs from partial MdC:
+    - xa: (N28 sun rising over horizon) — 'appear, rise, be crowned' — also 'appear as'
+    - sbk: (Sobek sign — crocodile I3 + seated god A40) — 'Sobek' the crocodile god
+    - sA: (Z4+A1) — 'son'
+    - nt: (Nut — N35+X1+Z1) — 'Nut' the sky-goddess (Sobek described as 'son of Nut')
+    - wnm: (F18 tusk + N35 water + G17 owl + A2 eating man) — 'eat'
+    - nk: (I14 snake or D52 phallus) — copulate (explicit term)
+    - Hnn: — phallus/erect organ (D52 or similar)
+
+translations:
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 510."
+    note: >
+      PT 510 is in the range covered by Mercer. Its explicit sexual content
+      means translation choices vary significantly — some translators euphemise,
+      others render literally. The MdC's nk and Hnn are explicit anatomical terms
+      in Egyptian and should be rendered without euphemism in a Strata record.
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 510."
+
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+
+lexical_anchors:
+  - term_transliteration: "xa m sbk"
+    term_mdc: "xa.f m sbk"
+    semantic_field: "Appear as Sobek — divine animal transformation"
+    notes: >
+      xa m = 'appear as' — the formula for divine identification-transformation.
+      xa alone means 'rise, appear' (as the sun rises). xa m + deity name = 'appear
+      in the form of [deity].' The king does not merely invoke Sobek — he appears
+      AS Sobek. The distinction from Osirian identification (sitting on Osiris's
+      throne in PT 213) is ontological: this is bodily metamorphosis, not throne
+      inheritance. Sobek is the crocodile god — lord of water, associated with
+      the Nile and with ferocious protective power.
+    attestation_range: "xa m + deity name formula throughout PT and CT transformation spells."
+
+  - term_transliteration: "sA nt"
+    term_mdc: "sA Nt"
+    semantic_field: "Son of Nut — Sobek's divine parentage"
+    notes: >
+      Sobek as 'son of Nut' (sA Nt) is the same parentage as Osiris, Isis,
+      Seth, and Nephthys — placing Sobek in the Heliopolitan family. The king
+      appearing as 'Sobek, son of Nut' claims both the crocodile power and
+      the divine family lineage. This genealogical identification is a form
+      of protective credential: Sobek has Nut's protection.
+    attestation_range: >
+      Sobek as son of Nut attested in PT and later texts. Sobek's parentage
+      varies in different traditions (some sources give Neith as mother).
+
+  - term_transliteration: "nk"
+    term_mdc: "nk"
+    semantic_field: "Copulate — the generative act as divine power"
+    notes: >
+      nk is an explicit Egyptian verb for sexual intercourse. In PT 510's
+      Sobek-transformation context, the king's copulative capacity is stated
+      as a divine power attribute — not a human act but a cosmic generative force.
+      Egyptian religion did not separate the sacred from the sexual:
+      divine generation (nk) is cosmogonic (creation by the god's seed).
+      The MdC phrase 'wsS N nk N m Hnn.f' = '[King] copulates, [King] mounts
+      with his phallus' is explicit and must be recorded without euphemism.
+      Faulkner and Mercer may euphemise this; Allen 2005 is expected to render
+      more directly. The difference in translation approach is itself a
+      divergence point about scholarly comfort with explicit Egyptian sexual vocabulary.
+    translation_disputes:
+      - reading: "Explicit rendering (Allen 2005, expected)"
+      - reading: "Euphemised rendering (possible Mercer/older tradition)"
+        note: "Older translations often render nk as 'unite with' or similar."
+
+divergence_points:
+  - id: animal_transformation_ontology
+    claim: "In PT 510 the king bodily becomes Sobek (transformation) rather than acquiring Sobek's attributes (identification)"
+    state: proposed
+    positions:
+      - scholar: "General interpretation of xa m formula"
+        reading: >
+          'Appear as' (xa m) in PT transformation spells signals full identification —
+          the king IS the deity for the spell's duration. This is more than metaphor:
+          it is a performance of divine identity.
+      - scholar: "Alternative: performative identification"
+        reading: >
+          'Appears as Sobek' may be a ritual performance of identity rather than
+          an ontological claim. The king performs Sobek's role; he does not cease
+          to be the king.
+    note: >
+      The distinction between transformation (the king IS Sobek) and performance
+      (the king plays Sobek) has significant theological consequences.
+      In Egyptian ritual theory, the distinction may not be as sharp as in
+      Western ontology — performing a divine role and being the deity may be
+      the same act.
+
+  - id: sobek_parentage
+    claim: "Sobek is the son of Nut (PT 510) — genealogy varies by tradition"
+    state: contested
+    positions:
+      - scholar: "PT 510 (from MdC: sA Nt)"
+        reading: "Sobek = son of Nut"
+      - scholar: "Later tradition (Neith as Sobek's mother)"
+        reading: "Sobek = son of Neith (the war-goddess, not the sky-goddess)"
+    note: >
+      This is a genuine theological inconsistency across Egyptian traditions.
+      PT 510's 'son of Nut' and the later 'son of Neith' traditions are not
+      reconcilable without assuming regional cult variation. Strata should record
+      both as competing established claims in different textual traditions.
+
+  - id: explicit_sexual_content_translation
+    claim: "The explicit sexual content of PT 510 should be translated without euphemism"
+    state: proposed
+    positions:
+      - scholar: "Strata methodology (first principles)"
+        reading: >
+          The Egyptian terms nk (copulate) and Hnn (phallus) are explicit.
+          A first-principles translation records what the text says. Euphemism
+          ('unite with,' 'his member') is an adoption-weight choice — it softens
+          content that Victorian-era scholars found uncomfortable. The text itself
+          has no such discomfort.
+      - scholar: "Older scholarly tradition (Mercer, some Faulkner)"
+        reading: >
+          Scholarly convention euphemises explicit sexual content in religious
+          texts to maintain academic register.
+    note: >
+      This is a methodological claim about Strata's own translation approach.
+      It is not a claim about the Egyptian text — it is a claim about how to
+      record it. The Strata principle of exposing the evidence chain without
+      filtering for adoption-weight pressure applies here: Victorian scholarly
+      discomfort with Egyptian sexual explicitness is adoption weight.
+      The text must be recorded as written.
+
+transmission_events:
+  - event: "Teti pyramid corpus"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005 (Teti PT 510 in corpus)."
+  - event: "Coffin Texts (Sobek transformation)"
+    approximate_date_start: -2055
+    state: searched_gap
+
+parallel_pyramids:
+  unas: false
+  note: >
+    PT 510's high Sethe number (beyond Unas's 312-spell corpus) means it is
+    not in Unas. It is in the Teti extension range. Pepi I/Merenre/Pepi II
+    attestation: searched_gap.
+
+notes: >
+  PT 510 is the most theologically unusual utterance in this batch.
+  The Sobek transformation, the explicit sexual vocabulary, and the
+  'son of Nut' genealogy that contradicts later tradition all make it
+  a rich excavation target. Its position beyond the Unas corpus (PT 510 vs.
+  Unas's ceiling of ~312) makes it part of the 18 additional Teti spells —
+  placing it in the category of Teti-specific or Teti-first attestation.
+  The explicit sexual content is not anomalous in the PT corpus — Egyptian
+  funerary religion was not prudish — but it is systematically under-documented
+  in accessible secondary literature. This makes the Sethe 1908 plates and
+  Allen 2005 especially critical for this utterance.

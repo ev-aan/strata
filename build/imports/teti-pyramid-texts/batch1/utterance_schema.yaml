@@ -1,0 +1,83 @@
+# utterance_schema.yaml
+# Schema contract for every PT utterance file in teti_pyramid_texts/utterances/
+# Version: 1.0
+# Adding a new utterance: copy this template, fill all required fields,
+# mark unavailable fields as searched_gap with source and reason.
+
+# ─── REQUIRED FIELDS ─────────────────────────────────────────────────────────
+
+# id: string — canonical identifier, format: pt_{number}[_{letter}]
+#   Examples: pt_373, pt_273_274 (paired), pt_001_007 (sarcophagus group)
+
+# pt_number: integer or range — Sethe/Allen numbering
+# sethe_phrase_range: string — Sethe § numbers, e.g. "§§ 653a–655c"
+#   Mark searched_gap if not yet confirmed from Sethe 1908 directly.
+
+# timegraph:
+#   carved_date_start: integer (BCE as negative)
+#   carved_date_end: integer (BCE as negative)
+#   carved_uncertainty_years: integer
+#   carved_basis: string — what anchors the date
+#   later_attestations: list of {source, date, note}
+#     — each is a separate timegraph node for transmission tracking
+
+# location:
+#   chamber: string — sarcophagus_interior | burial_chamber | antechamber | passage_south
+#   wall: string — north | south | east | west | east_gable | west_gable | interior
+#   column_direction: string — west_to_east | east_to_west | north_to_south | unknown
+#   physical_condition: string — intact | fragmentary | partially_legible | destroyed
+
+# ritual_class: string (controlled vocabulary)
+#   Values: offering_ritual | resurrection_ritual | morning_ritual | protective |
+#           stellar_ascent | solar_ascent | osirian | threshold | apotropaic | unknown
+#   Note: a spell may carry multiple classes; list all that apply.
+
+# primary_text:
+#   hieroglyphic_unicode:
+#     value: string — Unicode Egyptian Hieroglyphs (U+13000+) or searched_gap
+#     source: citation
+#     note: string
+#   mdc_transliteration:
+#     value: string — Manuel de Codage ASCII encoding or searched_gap
+#     source: citation
+#     note: string
+#   gardiner_sign_list_notes: string — notable signs, determinatives, unusual forms
+
+# translations:
+#   Each entry: translator_id | text | divergence_flag | notes
+#   translator_ids must match subject.yaml translators registry.
+#   divergence_flag: true if this translator's reading differs substantively
+#     from at least one other in the set.
+
+# lexical_anchors:
+#   List of key terms. Each entry:
+#     term_mdc: MdC form or searched_gap
+#     term_transliteration: scholarly romanisation
+#     semantic_field: string
+#     attestation_range: string — where else in the PT corpus or Egyptian texts
+#     translation_disputes: list of competing renderings with scholar attribution
+
+# divergence_points:
+#   Explicit contested claims. Each is a full Strata claim record embedded here,
+#   with state: contested and named positions from named scholars.
+#   These are the interpretive seam — the place adoption weight most easily
+#   masquerades as evidential weight.
+
+# transmission_events:
+#   List of later appearances of this utterance in other corpora.
+#   Each entry: {corpus, pt_equivalent, date, note}
+#   — Coffin Texts, Book of the Dead, private tomb copies, etc.
+
+# notes:
+#   Untranslatable terms, lacunae in Teti's version, known damage.
+
+# ─── OPTIONAL FIELDS ──────────────────────────────────────────────────────────
+
+# parallel_pyramids:
+#   Whether this utterance appears in Unas, Pepi I, Pepi II, Merenre.
+#   Significant because Teti-only utterances have different evidential weight
+#   than shared corpus utterances.
+
+# iconographic_notes:
+#   For signs that carry pictorial meaning beyond their phonetic value —
+#   the seam between hieroglyphic script and image.

@@ -1,0 +1,43 @@
+subject: teti-pyramid-texts
+retrieved: "2026-10-02"
+# None of these works has been opened in this project. They are the works the imported files cite. Each is listed so a claim's anchor can be
+# pointed at it once it is read. Authenticity is "not tested" until then (docs/AUTHENTICITY.md). Wikipedia and tourism pages are not sources here.
+sources:
+  - id: src-sethe-1908
+    title: "K. Sethe, Die altaegyptischen Pyramidentexte (Leipzig, 1908-1910), 4 vols"
+    document_class: primary_text (hieroglyphic edition) plus German translation
+    url: ""
+    authenticity: {status: not_tested, strength: none, provenance: "Not opened. The earlier chat could not fetch it; the Internet Archive is reachable from this project (see build/imports/teti-pyramid-texts/SOURCE_CHAT.md).", tests: [], gaps: ["page images not yet read"], checked: 2026-10-02}
+  - id: src-allen-2005
+    title: "J. P. Allen, The Ancient Egyptian Pyramid Texts (SBL Press, 2005)"
+    document_class: interpretive (modern translation and introduction)
+    url: ""
+    authenticity: {status: not_tested, strength: none, provenance: "Not opened. In copyright (SBL Press): quote sparingly.", tests: [], gaps: ["not read"], checked: 2026-10-02}
+  - id: src-faulkner-1969
+    title: "R. O. Faulkner, The Ancient Egyptian Pyramid Texts (Oxford: Clarendon, 1969)"
+    document_class: interpretive (translation)
+    url: ""
+    authenticity: {status: not_tested, strength: none, provenance: "Not opened. In copyright: quote sparingly.", tests: [], gaps: ["not read"], checked: 2026-10-02}
+  - id: src-mercer-1952
+    title: "S. A. B. Mercer, The Pyramid Texts in Translation and Commentary (New York, 1952)"
+    document_class: interpretive (translation)
+    url: ""
+    authenticity: {status: not_tested, strength: none, provenance: "Not opened. The files describe it as public domain and quote it; that has not been checked.", tests: [], gaps: ["rights and text not checked"], checked: 2026-10-02}
+  - id: src-shaw-2000
+    title: "I. Shaw (ed.), The Oxford History of Ancient Egypt (OUP, 2000)"
+    document_class: interpretive (chronology)
+    url: ""
+    authenticity: {status: not_tested, strength: none, provenance: "Not opened.", tests: [], gaps: ["not read; chronologies differ between authorities"], checked: 2026-10-02}
+  - id: src-dodson-ikram-2008
+    title: "A. Dodson and S. Ikram, The Tomb in Ancient Egypt (Thames & Hudson, 2008)"
+    document_class: interpretive
+    url: ""
+    authenticity: {status: not_tested, strength: none, provenance: "Not opened.", tests: [], gaps: ["not read"], checked: 2026-10-02}
+  - id: src-import-teti
+    title: "The imported files themselves (Teti.zip, Teti2.zip, owner upload 2026-10-02)"
+    document_class: synthetic (earlier chat output)
+    url: ""
+    authenticity: {status: provenance_known, strength: weak, provenance: "Uploaded by the owner; produced by an earlier chat (SOURCE_CHAT.md). The chat shows the files built, not parsed or checked against any source.", tests: ["Parsed after repair: 19 of 19 [read]", "Repair was lossless: only structural keys added [read]"], tested_by: "Stratah session, 2026-10-02", gaps: ["every claim in them is unchecked"], checked: 2026-10-02}
+not_accepted_as_anchors:
+  - "Wikipedia (26 citations in the files): orientation only"
+  - "Madain Project (7), Egypt Fun Tours (3), Memphis Tours (1), Daily News Egypt (1), Grokipedia, Historyskills, pyramidofman.com, Scribd: not accepted"

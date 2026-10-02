@@ -1,0 +1,28 @@
+# Authority-scoped period definition (schema v0.6, N17). Kept as the authority printed it; never edited, only superseded by a new file.
+id: old-kingdom--eamena
+label: Old Kingdom
+region: Egypt
+authority:
+  title: EAMENA Database
+  creators:
+  - University of Oxford
+  - University of Southampton
+  year_published: '2021'
+  url: https://database.eamena.org/
+  citation: 'University of Oxford, University of Southampton. (2023). EAMENA Database. Retrieved from https://database.eamena.org
+    (Accessed: 2023-10-01).'
+quoted:
+  start: '-2700'
+  stop: '2150'
+from_bce: 2700
+to_bce: 2150
+via:
+  dataset: PeriodO
+  period_ark: http://n2t.net/ark:/99152/p0m64tdjsnt
+  authority_ark: http://n2t.net/ark:/99152/p0m64td
+  dataset_url: https://data.perio.do/d.json
+  retrieved: '2026-10-02'
+authority_read_directly: false
+note: The start is printed '-2700' (read as 2700 BCE as printed; under the ISO convention it would be 2701 BCE). The stop
+  is printed '2150' with the structured year +2150 (a year CE). Read here as 2150 BCE, which is almost certainly what was
+  meant; this is our reading, not what is printed.
