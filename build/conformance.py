@@ -179,6 +179,23 @@ def check_subject(r, sdir):
         if claims and not h and d.get("dig_status") not in ("parked", "pilot_draft", "data"):
             r.warn(subject, "has claims but no headline and no dig_status; a complete dig needs a specific headline")
 
+    chpath = os.path.join(sdir, "challenges.yaml")
+    if os.path.exists(chpath):
+        seen = set()
+        for ch in (load(chpath) or {}).get("challenges") or []:
+            cid = ch.get("id")
+            if cid in seen:
+                r.err(subject, f"duplicate challenge id `{cid}`")
+            seen.add(cid)
+            for k in ("challenge", "raised_by", "test", "result", "answer"):
+                if not ch.get(k):
+                    r.err(f"{subject}:{cid}", f"challenge missing `{k}`")
+            if ch.get("result") not in ("answered", "partly_answered", "open", "finding_changed"):
+                r.err(f"{subject}:{cid}", f"challenge result `{ch.get('result')}` is not allowed")
+            for ref in ch.get("touches") or []:
+                if ref not in ids:
+                    r.err(f"{subject}:{cid}", f"challenge touches unknown claim `{ref}`")
+
     tpath = os.path.join(sdir, "threads.yaml")
     if os.path.exists(tpath):
         d = load(tpath) or {}

@@ -1,0 +1,43 @@
+# Challenges ledger. Append-only. result: answered | partly_answered | open | finding_changed
+subject: casket-letters
+challenges:
+  - id: ch-01
+    logged: 2026-10-02
+    challenge: "Mary was framed by the state."
+    raised_by: "Popular framing; no single source"
+    touches: [casket-babington-postscript-forged-1586, casket-authenticity-contested]
+    test: "Separate the documented 1586 forgery from the 1567 letters."
+    result: partly_answered
+    answer: "Documented (1586): English intelligence forged text in Mary's correspondence. Unproven (1567-68): that the Casket Letters were forged by the Scottish lords. The sources for the 1586 forgery have not been read directly in this project."
+  - id: ch-02
+    logged: 2026-10-02
+    challenge: "Since the 1586 postscript was forged, the 1567 letters were forged too."
+    raised_by: "Common argument by analogy"
+    touches: [casket-babington-postscript-forged-1586, casket-authenticity-contested]
+    test: "Ask whether a forgery by different people, in another country, 19 years later is evidence about the 1567 letters."
+    result: answered
+    answer: "It shows forging Mary's letters was possible and was done. It adds no evidence that the 1567 letters were forged."
+  - id: ch-03
+    logged: 2026-10-02
+    challenge: "The letters are Mary's genuine letters to Bothwell."
+    raised_by: "Traditional view"
+    touches: [casket-authenticity-contested]
+    test: "Look for surviving originals and for any published measured comparison."
+    result: open
+    answer: "No originals survive and only French copies of four letters exist. Contested, low confidence. No computational comparison against Mary's authenticated letters was found."
+  - id: ch-04
+    logged: 2026-10-02
+    challenge: "James VI destroyed the originals."
+    raised_by: "Historians' proposal, around 1584"
+    touches: [casket-destroyer-james-vi, casket-originals-lost]
+    test: "Check whether any primary document records the destruction."
+    result: open
+    answer: "Proposed at low confidence. That the originals are lost is established at provisional confidence only, because it rests on absence."
+  - id: ch-05
+    logged: 2026-10-02
+    challenge: "A word-frequency study can settle who wrote the letters."
+    raised_by: "Common expectation"
+    touches: [casket-too-short-for-wordfreq, casket-no-computed-study-found]
+    test: "Measure how much French text survives against what the method needs."
+    result: partly_answered
+    answer: "About 1,750 words survive across the four French letters, well below what word-frequency methods need. A phrase-sharing comparison leans toward Mary at low confidence only, and no published study exists."

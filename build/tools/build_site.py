@@ -102,6 +102,17 @@ for sub in CFG["publish"]:
     body += f'<p>{E(" ".join(str(cl.get("description", "")).split()))}</p>'
     if cl.get("divergence_note"): body += f'<h2>Where evidence and belief differ</h2><p>{E(" ".join(str(cl["divergence_note"]).split()))}</p>'
     if has_tl: body += '<h2>Timeline</h2><p>Every point on the timeline links to its source. <a href="timeline/">Open the timeline</a>.</p>'
+    chp = os.path.join(base, "challenges.yaml")
+    if os.path.exists(chp):
+        chs = yaml.safe_load(open(chp)).get("challenges", [])
+        lab = {"answered": "answered: finding stands", "partly_answered": "partly answered", "open": "open: not yet testable", "finding_changed": "finding changed"}
+        body += ('<h2>Challenges addressed</h2><p>Objections raised against this dig, in the form people raise them, with the test we ran and where it stands. '
+                 'Open ones are shown as plainly as answered ones. Have one we missed? <a href="' + E(CFG["issues_url"]) + '">Send it</a>.</p>')
+        for ch in chs:
+            ref = " ".join(f'<a href="#{E(x)}">{E(x)}</a>' for x in ch.get("touches") or [])
+            body += (f'<div class="claim"><p><b>{E(ch["challenge"])}</b></p><p><span class="pill s-{"established" if ch["result"] == "answered" else "contested"}">{E(lab[ch["result"]])}</span> '
+                     f'<span class="small">raised by: {E(ch["raised_by"])}</span></p><p>{E(" ".join(str(ch["answer"]).split()))}</p>'
+                     f'<details><summary>Test and claims</summary><p>{E(ch["test"])}</p>{("<p>" + ref + "</p>") if ref else ""}</details></div>')
     body += '<h2>All claims</h2>' + "".join(claim_html(c) for c in sorted(cl["claims"], key=lambda c: order.get(c.get("state"), 9)))
     if srcs:
         body += '<h2>Sources</h2><ul class="l">'
