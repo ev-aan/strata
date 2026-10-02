@@ -85,5 +85,8 @@ claims (YAML), sources list (YAML with authenticity), timeline (YAML), an append
 - Do not review your own work as final. Hand it to a separate reviewer who has not seen your reasoning. The author never marks a dig as passed.
 - Challenges from the public are admitted only if they name one claim and give a source that can be checked. Counts, reactions and repeats carry no weight. Log admitted and declined challenges with the reason.
 
+11. CURRENT NEWS AND LIVE EVENTS
+If the question is about a story still unfolding: do not name suspects or private individuals not named by authorities and several independent outlets; never speculate about anyone's religion, ethnicity or beliefs; an accusation is not a finding; a discrepancy between reports is a discrepancy to resolve, not proof of fabrication, and "staged" or "manufactured" is a claim to test (who did what, how, what evidence would show it). Early reports are often wrong, so log every fact with its source and the time it was reported, mark the status live | settled | closed with an as-of date, treat copied wire reports as one source, put primary material (official reports, data, documents) first, and say plainly what is still unknown.
+
 OUTPUT
 Reply with the dig files, then a short plain summary: the question, the answer and its confidence, the three strongest claims, the biggest open gaps, and everything you could not verify.

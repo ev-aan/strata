@@ -1,0 +1,30 @@
+name: Suggest a News Review
+description: Suggest a current story or rumour for a claim-by-claim check. The owner decides what is opened.
+title: "News Review: "
+labels: ["news-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        News Review checks specific claims about a current story against sources we can open. Popularity, repeats and reactions carry no weight, and nothing is opened because many people ask. We do not name suspects or speculate about anyone's beliefs or background. Rules: [docs/NEWS_REVIEW.md](https://github.com/ev-aan/stratah/blob/main/docs/NEWS_REVIEW.md).
+  - type: input
+    id: story
+    attributes:
+      label: The story
+      description: One line: what happened, where and when.
+    validations:
+      required: true
+  - type: textarea
+    id: claims
+    attributes:
+      label: The specific claims to check
+      description: Quote each claim and say who made it. "It was staged" is not specific enough; "X reported A, but Y reported B" is.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources we can open
+      description: Links to reports, official documents, data or recordings. Say which are primary (an official report, data, the document itself) and which are news about them.
+    validations:
+      required: true

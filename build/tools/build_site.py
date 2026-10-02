@@ -32,7 +32,7 @@ ul.l{list-style:none;padding:0}ul.l li{padding:12px 0;border-top:1px solid var(-
 def page(title, body, desc="", canonical="", extra_head="", depth=0):
     up = "../" * depth
     nav = (f'<nav><a class="b" href="{up}">{E(CFG["name"])}</a><a href="{up}digs/">Active Excavations</a><a href="{up}method/">Method</a>'
-           f'<a href="{up}atlas/">Atlas</a><a href="{up}ideas/">Ideas</a><a href="{up}start/">Start a dig</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
+           f'<a href="{up}news/">News Review</a><a href="{up}atlas/">Atlas</a><a href="{up}ideas/">Ideas</a><a href="{up}start/">Start a dig</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
     meta = f'<meta name="description" content="{E(desc)}">' if desc else ""
     og = (f'<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">'
           f'<meta property="og:type" content="article"><meta property="og:site_name" content="{E(CFG["name"])}">'
@@ -182,7 +182,7 @@ for _s in CFG["publish"]:
     _st = (yaml.safe_load(open(_rp)) or {}).get("status") if os.path.exists(_rp) else None
     if _st not in ("passed", "passed_with_open_items", "grandfathered"):
         sys.exit(f"Refusing to publish `{_s}`: its review.yaml is missing or not passed (status: {_st}). See docs/PUBLISH_GATE.md.")
-digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/ideas/", "/start/", "/method/", "/corrections/", "/about/"]
+digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/ideas/", "/news/", "/start/", "/method/", "/corrections/", "/about/"]
 for sub in CFG["publish"]:
     base = os.path.join(ROOT, "build", "subjects", sub)
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
@@ -301,6 +301,17 @@ _start = (f'<p class="eyebrow">Start a dig</p><h1>Run your own dig with your own
           'function ok(){m.textContent="Copied."}function no(){var r=document.createRange();r.selectNodeContents(document.getElementById("rules"));var g=getSelection();g.removeAllRanges();g.addRange(r);m.textContent="Select and copy manually."}'
           'if(navigator.clipboard){navigator.clipboard.writeText(t).then(ok,no)}else{no()}}</script>')
 write("start/index.html", page("Start your own dig", _start, "All of Stratah's rules in one copy-and-paste block, for running your own evidence-weighted dig with any AI.", "/start/", depth=1))
+_news = yaml.safe_load(open(os.path.join(ROOT, "build", "news.yaml"), encoding="utf-8"))
+_nrows = ""
+for _e in _news.get("entries") or []:
+    _d = next((x for x in digs if x[0] == _e["subject"]), None)
+    if not _d: continue
+    _nrows += (f'<li><a href="../digs/{_d[0]}/"><b>{E(_d[1])}</b></a> <span class="pill">{E(_news["status_labels"].get(_e.get("status"), _e.get("status", "")))}</span>'
+               f'<br><span class="small">As of {E(_e.get("as_of", ""))}.</span> {E(" ".join(str(_d[2]).split()))}</li>')
+if not _nrows: _nrows = '<li class="small">No review is published yet. Each one appears here only after an independent review.</li>'
+write("news/index.html", page("News Review", f'<p class="eyebrow">News Review</p><h1>Current stories, checked claim by claim</h1><p>{E(" ".join(str(_news["intro"]).split()))}</p><ul class="l">{_nrows}</ul>'
+      f'<h2>How a review works</h2><ul><li>We pick the story; the public can suggest one.</li><li>Each claim is checked against sources we can open, with its confidence and limits shown.</li><li>A dated log records what was known when, and corrections are added, never overwritten.</li><li>A separate reviewer checks it before it goes live.</li></ul>'
+      f'<p><a href="{E(CFG["source_url"])}/issues/new?template=news-review.yml">Suggest a story</a> · <a href="{E(CFG["source_url"])}/blob/main/docs/NEWS_REVIEW.md">The rules</a></p>', "News Review on Stratah: current stories checked claim by claim, with a dated log of what was known when.", "/news/", depth=1))
 write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG["name"])}: {E(CFG["tagline"])}</h1><p>{E(" ".join(CFG["about"].split()))}</p><p>See the <a href="../method/">method</a> for the rules, and <a href="../corrections/">corrections</a> for what we have fixed.</p>', " ".join(CFG["about"].split())[:200], "/about/", depth=1))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_atlas
