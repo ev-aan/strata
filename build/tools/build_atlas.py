@@ -70,14 +70,14 @@ header{padding:10px 16px;border-bottom:1px solid var(--line);display:flex;flex-w
 .tog,.chip,button{font:12px ui-monospace,monospace;border:1px solid var(--line);background:var(--panel);color:var(--ink);border-radius:99px;padding:3px 11px;cursor:pointer}.chip.off{opacity:.35}.tog.on{background:var(--ink);color:var(--bg)}button:disabled,.tog:disabled{opacity:.4;cursor:not-allowed}
 #filters{padding:6px 16px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:12px ui-monospace,monospace;color:var(--mute)}
 input[type=search]{font:13px system-ui;padding:3px 10px;border:1px solid var(--line);border-radius:99px;background:var(--panel);color:var(--ink);width:170px}
-main{flex:1;display:flex;min-height:0}#stage{flex:1;min-width:0;position:relative;overflow:hidden;touch-action:none}svg{width:100%;height:100%;display:block;cursor:grab}svg:active{cursor:grabbing}
+main{flex:1;display:flex;min-height:0}#stage{flex:1;min-width:0;position:relative;overflow-x:hidden;overflow-y:auto;touch-action:pan-y}svg{width:100%;height:100%;display:block;cursor:grab}svg:active{cursor:grabbing}
 #panel{width:340px;max-width:44vw;border-left:1px solid var(--line);background:var(--panel);padding:14px;overflow:auto;font-size:14px}#panel h2{font:500 16px Georgia,serif;margin:.2em 0 .4em}.mono{font:11.5px ui-monospace,monospace;color:var(--mute)}
 a{color:var(--c0)}.note{color:var(--mute);font-size:13px}.rowlabel{font:600 12px system-ui;cursor:pointer}
 @media (max-width:760px){#filters{display:none}#filters.open{display:flex;max-height:34vh;overflow:auto}main{flex-direction:column}#panel{width:100%;max-width:none;height:30vh;border-left:0;border-top:1px solid var(--line)}}
 </style></head><body>
-<header><h1>ATLAS</h1><span class="mono">time runs left (past) to right (future); wheel or pinch to zoom, drag to pan</span>
+<header><h1>ATLAS</h1><span class="mono">time runs left (past) to right (future); scroll to see every dig; on the shared axis, Ctrl/&#8984; + wheel or pinch zooms and drag pans</span>
 <span><button class="tog on" id="axReal">Real-world time</button> <button class="tog" id="axNarr" disabled title="No narrative timelines yet">Narrative time</button></span>
-<span><button id="ftog" onclick="document.getElementById('filters').classList.toggle('open')">Filters</button> <button id="fit">Fit all</button> <button id="zin">+</button> <button id="zout">&minus;</button></span></header>
+<span><button class="tog on" id="scaleBtn" title="Switch between each dig on its own time scale and all digs on one shared axis">Each dig on its own scale</button> <button id="ftog" onclick="document.getElementById('filters').classList.toggle('open')">Filters</button> <button id="fit">Fit all</button> <button id="zin">+</button> <button id="zout">&minus;</button></span></header>
 <div id="filters"></div>
 <main><div id="stage"><svg id="svg" role="img" aria-label="Timeline of events across the digs"></svg></div>
 <aside id="panel"><h2>Pick a dot</h2><p class="note">Each row is one dig. Click a dot for what happened, how we know, and the source. Shapes show the kind of source; a dashed, pale dot means one source or a date only.</p>
@@ -87,7 +87,7 @@ const DATA=__DATA__;
 const KIND={data:'circle',document:'hex',official:'square',witness:'diamond',analysis:'down',media:'up'};
 const SHAPE_LABEL={circle:'machine-recorded data',hex:'a primary document',square:'an official statement',diamond:'a person’s account',down:'a scholar’s account',up:'a news report'};
 const NS='http://www.w3.org/2000/svg';const svg=document.getElementById('svg'),stage=document.getElementById('stage');
-const state={axis:'real',off:new Set(),kinds:new Set(),statuses:new Set(),q:''};let W=800,H=500;
+const state={scale:'own',axis:'real',off:new Set(),kinds:new Set(),statuses:new Set(),q:''};let W=800,H=500;
 const allEv=DATA.flatMap(d=>d.events.map(e=>Object.assign({dig:d.id},e)));
 let t0=Math.min(...allEv.map(e=>e.t)),t1=Math.max(...allEv.map(e=>e.e||e.t));const pad=(t1-t0)*0.04+86400000*30;t0-=pad;t1+=pad;
 let view={a:t0,b:t1};const YEAR=365.2425*86400000;
@@ -102,14 +102,16 @@ function marker(k,x,y,r,col,hollow,dash,g,ev){let s;const sw=1.6;const at={fill:
  else if(k==='down')s=el('polygon',Object.assign({points:`${x-r*1.2},${y-r} ${x+r*1.2},${y-r} ${x},${y+r*1.2}`},at),g);else if(k==='up')s=el('polygon',Object.assign({points:`${x-r*1.2},${y+r} ${x+r*1.2},${y+r} ${x},${y-r*1.2}`},at),g);
  else{const p=[];for(let i=0;i<6;i++){const a=Math.PI/3*i;p.push((x+r*1.2*Math.cos(a))+','+(y+r*1.2*Math.sin(a)))}s=el('polygon',Object.assign({points:p.join(' ')},at),g)}
  s.style.cursor='pointer';s.addEventListener('click',ev=>{ev.stopPropagation();show(g.__e)});return s}
-function ticks(a,b,w){const ppy=w/((b-a)/YEAR);let unit,step;const out=[];
- if(ppy>2400){unit='day';step=1}else if(ppy>180){unit='month';step=1}else if(ppy>60){unit='year';step=1}else if(ppy>25){unit='year';step=5}else if(ppy>6){unit='year';step=10}else if(ppy>2.5){unit='year';step=25}else if(ppy>0.6){unit='year';step=100}else if(ppy>0.25){unit='year';step=250}else if(ppy>0.12){unit='year';step=500}else{unit='year';step=1000}
- const A=new Date(a);let y=A.getUTCFullYear(),m=A.getUTCMonth(),d=A.getUTCDate();
- if(unit==='year'){const set=new Map();const k0=Math.floor(A.getUTCFullYear()/step)-1,k1=Math.ceil(new Date(b).getUTCFullYear()/step)+1;
-  for(let k=Math.max(k0,1);k<=k1;k++){set.set(k*step,k*step)} for(let k=-k1-1;k<=-k0+1;k++){if(k>0)set.set(1-k*step,1-k*step)}
-  for(const yy of [...set.keys()].sort((p,q)=>p-q)){const tt=new Date(0);tt.setUTCFullYear(yy,0,1);const tm=tt.getTime();if(tm>b||tm<a)continue;out.push([tm,yy<=0?(1-yy)+' BCE':String(yy)])}}
- else if(unit==='month'){const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];const c=new Date(Date.UTC(y,m,1));while(c.getTime()<=b){if(c.getTime()>=a)out.push([c.getTime(),M[c.getUTCMonth()]+' '+c.getUTCFullYear()]);c.setUTCMonth(c.getUTCMonth()+1)}}
- else{const c=new Date(Date.UTC(y,m,d));while(c.getTime()<=b){if(c.getTime()>=a)out.push([c.getTime(),c.getUTCDate()+' '+c.toLocaleString('en',{month:'short',timeZone:'UTC'})+' '+c.getUTCFullYear()]);c.setUTCDate(c.getUTCDate()+1)}}
+function ticks(a,b,w){const H1=3600000,D1=86400000,out=[],need=84,span=b-a,Mn=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+ const S=[['h',1],['h',3],['h',6],['h',12],['d',1],['d',2],['d',7],['d',14],['m',1],['m',3],['m',6],['y',1],['y',2],['y',5],['y',10],['y',25],['y',50],['y',100],['y',250],['y',500],['y',1000]];
+ const dur=([u,n])=>u==='h'?n*H1:u==='d'?n*D1:u==='m'?n*30.44*D1:n*YEAR;
+ let pick=S[S.length-1];for(const s of S){if(dur(s)/span*w>=need){pick=s;break}}const [u,n]=pick;
+ if(u==='h'||u==='d'){const d=dur(pick);for(let tm=Math.floor(a/d)*d;tm<=b;tm+=d){if(tm<a)continue;const c=new Date(tm);
+   out.push([tm,u==='h'?c.getUTCDate()+' '+Mn[c.getUTCMonth()]+' '+String(c.getUTCHours()).padStart(2,'0')+':00':c.getUTCDate()+' '+Mn[c.getUTCMonth()]+' '+c.getUTCFullYear()])}}
+ else if(u==='m'){const A=new Date(a);let mi=A.getUTCFullYear()*12+Math.floor(A.getUTCMonth()/n)*n;for(;;mi+=n){const yy=Math.floor(mi/12),mm=mi-yy*12;const c=new Date(0);c.setUTCFullYear(yy,mm,1);c.setUTCHours(0,0,0,0);const tm=c.getTime();if(tm>b)break;if(tm>=a)out.push([tm,Mn[mm]+' '+(yy<=0?(1-yy)+' BCE':yy)])}}
+ else{const A=new Date(a),B=new Date(b);const set=new Set();const k0=Math.floor(A.getUTCFullYear()/n)-1,k1=Math.ceil(B.getUTCFullYear()/n)+1;
+  for(let k=Math.max(k0,1);k<=k1;k++)set.add(k*n);for(let k=1;k<=Math.ceil(-A.getUTCFullYear()/n)+2;k++)set.add(1-k*n);
+  for(const yy of [...set].sort((p,q)=>p-q)){const c=new Date(0);c.setUTCFullYear(yy,0,1);c.setUTCHours(0,0,0,0);const tm=c.getTime();if(tm>b||tm<a)continue;out.push([tm,yy<=0?(1-yy)+' BCE':String(yy)])}}
  return out}
 function passes(e){if(state.off.has(e.dig))return false;if(e.axis!==state.axis)return false;if(state.kinds.size&&!state.kinds.has(e.k))return false;if(state.statuses.size&&!state.statuses.has(e.st))return false;
  if(state.q){const s=(e.l+' '+e.d+' '+e.lane).toLowerCase();if(!s.includes(state.q))return false}return true}
@@ -117,25 +119,29 @@ function draw(){W=stage.clientWidth;H=stage.clientHeight;svg.setAttribute('viewB
  const L=150,R=14,T=34,pw=W-L-R;const X=t=>L+(t-view.a)/(view.b-view.a)*pw;
  const defs=el('g',{},svg);const digs=DATA.filter(d=>!state.off.has(d.id));
  // axis ticks
- const tk=ticks(view.a,view.b,pw);for(const [t,lab] of tk){const x=X(t);el('line',{x1:x,x2:x,y1:T-6,y2:H-4,stroke:'var(--line)','stroke-width':1},defs);const tx=el('text',{x:x+3,y:T-12,fill:'var(--mute)','font-size':11,'font-family':'ui-monospace,monospace'},defs);tx.textContent=lab}
+ const own=state.scale==='own';const tk=own?[]:ticks(view.a,view.b,pw);for(const [t,lab] of tk){const x=X(t);el('line',{x1:x,x2:x,y1:T-6,y2:H-4,stroke:'var(--line)','stroke-width':1},defs);const tx=el('text',{x:x+3,y:T-12,fill:'var(--mute)','font-size':11,'font-family':'ui-monospace,monospace'},defs);tx.textContent=lab}
  let y=T;const rowInfo=[];
  digs.forEach((d,ri)=>{const evs=d.events.filter(e=>passes(Object.assign({dig:d.id},e))).map(e=>Object.assign({dig:d.id},e));
-  const vis=evs.filter(e=>{const x=X(e.t),xe=e.e?X(e.e):x;return xe>=L-20&&x<=W+20});
-  const levels=[];const place=[];for(const e of vis){const x=X(e.t);let lv=0;while(lv<levels.length&&levels[lv]>x-14)lv++;if(lv===levels.length)levels.push(-1e9);levels[lv]=Math.max(x,e.e?X(e.e):x)+8;place.push([e,lv])}
-  const rh=Math.max(46,22+levels.length*17);el('rect',{x:0,y:y,width:W,height:rh,fill:ri%2?'transparent':'rgba(128,128,128,.07)'},defs);
+  let rv=view;if(own){const base=evs.length?evs:d.events.filter(e=>e.axis===state.axis);if(base.length){const a=Math.min(...base.map(e=>e.t)),b=Math.max(...base.map(e=>e.e||e.t));const pad=(b-a)*0.06+86400000*20;rv={a:a-pad,b:b+pad}}}
+  const Xr=tt=>L+(tt-rv.a)/(rv.b-rv.a)*pw,AX=own?18:0;
+  const showLab=pw/((rv.b-rv.a)/YEAR)>40;
+  const vis=evs.filter(e=>{const x=Xr(e.t),xe=e.e?Xr(e.e):x;return xe>=L-20&&x<=W+20});
+  const levels=[];const place=[];for(const e of vis){const x=Xr(e.t);let lv=0;while(lv<levels.length&&levels[lv]>x-14)lv++;if(lv===levels.length)levels.push(-1e9);levels[lv]=Math.max(x,e.e?Xr(e.e):x)+8+(showLab?Math.min(e.l.length,46)*5.8+6:0);place.push([e,lv])}
+  const rh=Math.max(46,22+AX+levels.length*17);el('rect',{x:0,y:y,width:W,height:rh,fill:ri%2?'transparent':'rgba(128,128,128,.07)'},defs);
   const lab=el('text',{x:8,y:y+16,class:'rowlabel',fill:COL(DATA.indexOf(d))},defs);const words=d.title.split(' ');let line='',ln=0;for(const w of words){if((line+' '+w).length>20){const ts=el('tspan',{x:8,dy:ln?14:0},lab);ts.textContent=line;line=w;ln++;if(ln>2)break}else line=(line?line+' ':'')+w}if(ln<=2){const ts=el('tspan',{x:8,dy:ln?14:0},lab);ts.textContent=line}
-  lab.addEventListener('click',()=>zoomTo(d));const cnt=el('text',{x:8,y:y+rh-6,fill:'var(--mute)','font-size':10.5,'font-family':'ui-monospace,monospace'},defs);cnt.textContent=evs.length+' of '+d.events.length+' events';
+  if(own){for(const [tm,lb] of ticks(rv.a,rv.b,pw)){const x=Xr(tm);el('line',{x1:x,x2:x,y1:y+2,y2:y+rh,stroke:'var(--line)','stroke-width':1},defs);const tx=el('text',{x:x+3,y:y+13,fill:'var(--mute)','font-size':10.5,'font-family':'ui-monospace,monospace'},defs);tx.textContent=lb}}
+  lab.addEventListener('click',()=>{if(own){state.scale='shared';syncScale();zoomTo(d)}else zoomTo(d)});const cnt=el('text',{x:8,y:y+rh-6,fill:'var(--mute)','font-size':10.5,'font-family':'ui-monospace,monospace'},defs);cnt.textContent=evs.length+' of '+d.events.length+' events';
   const clip=el('g',{},svg);
-  for(const [e,lv] of place){const g=el('g',{},clip);g.__e=e;const x=X(e.t),yy=y+16+lv*17;const col=COL(DATA.indexOf(d));
-   if(e.e){const xe=X(e.e);el('rect',{x:x,y:yy-3,width:Math.max(3,xe-x),height:6,fill:col,'fill-opacity':.25,stroke:col,'stroke-dasharray':'3 2'},g)}
+  for(const [e,lv] of place){const g=el('g',{},clip);g.__e=e;const x=Xr(e.t),yy=y+16+AX+lv*17;const col=COL(DATA.indexOf(d));
+   if(e.e){const xe=Xr(e.e);el('rect',{x:x,y:yy-3,width:Math.max(3,xe-x),height:6,fill:col,'fill-opacity':.25,stroke:col,'stroke-dasharray':'3 2'},g)}
    const hollow=['day','month','year','approx'].includes(e.p)&&e.st!=='reported';const dash=e.st==='single'||e.st==='inferred';
    marker(KIND[e.k]||'circle',x,yy,5,col,e.st==='inferred'||e.p==='year'||e.p==='month',dash,g);
    if(e.st==='disputed'){el('circle',{cx:x,cy:yy,r:9,fill:'none',stroke:'var(--c1)','stroke-width':1.5},g)}
-   if(pw/((view.b-view.a)/YEAR)>40){const tt=el('text',{x:x+9,y:yy+4,fill:'var(--ink)','font-size':11},g);tt.textContent=e.l.length>46?e.l.slice(0,44)+'…':e.l;tt.style.pointerEvents='none'}
+   if(pw/((rv.b-rv.a)/YEAR)>40){const tt=el('text',{x:x+9,y:yy+4,fill:'var(--ink)','font-size':11},g);tt.textContent=e.l.length>46?e.l.slice(0,44)+'…':e.l;tt.style.pointerEvents='none'}
    g.addEventListener('mouseenter',()=>{svg.setAttribute('aria-description',e.l)});const ti=el('title',{},g);ti.textContent=fmt(e)+': '+e.l}
   y+=rh});
  if(!digs.length){const t=el('text',{x:L,y:60,fill:'var(--mute)'},svg);t.textContent='No dig selected.'}
- svg.setAttribute('height',Math.max(H,y+10));svg.__ppy=pw}
+ const TH=Math.max(H,y+10);svg.setAttribute('viewBox',`0 0 ${W} ${TH}`);svg.style.height=TH+'px';svg.__ppy=pw}
 function show(e){const d=DATA.find(x=>x.id===e.dig);const p=document.getElementById('panel');
  const links=[];if(e.link)links.push(`<a href="${e.link}" target="_blank" rel="noopener">Open the source</a>`);
  if(d.slug&&!window.ATLAS_PRIVATE)links.push(`<a href="../digs/${d.slug}/">Read the dig</a>`);if(d.slug&&!window.ATLAS_PRIVATE)links.push(`<a href="../digs/${d.slug}/timeline/">Dig timeline</a>`);
@@ -150,11 +156,14 @@ function build(){const f=document.getElementById('filters');f.innerHTML='<span>d
  const q=document.createElement('input');q.type='search';q.placeholder='search events';q.oninput=()=>{state.q=q.value.toLowerCase();draw()};f.appendChild(q);
  if(allEv.some(e=>e.axis==='narrative')){const n=document.getElementById('axNarr');n.disabled=false;n.title='';n.onclick=()=>{state.axis='narrative';n.classList.add('on');document.getElementById('axReal').classList.remove('on');fitAll()};document.getElementById('axReal').onclick=()=>{state.axis='real';document.getElementById('axReal').classList.add('on');n.classList.remove('on');fitAll()}}}
 function fitAll(){const ev=allEv.filter(e=>e.axis===state.axis);if(ev.length){let a=Math.min(...ev.map(e=>e.t)),b=Math.max(...ev.map(e=>e.e||e.t));const p=(b-a)*0.04+86400000*30;view={a:a-p,b:b+p}}draw()}
+function syncScale(){stage.scrollTop=0;const b=document.getElementById('scaleBtn'),own=state.scale==='own';b.classList.toggle('on',own);b.textContent=own?'Each dig on its own scale':'All digs on one shared axis';
+ for(const id of ['fit','zin','zout']){const x=document.getElementById(id);x.disabled=own;x.title=own?'Switch to the shared axis to zoom and compare digs':''}if(!own&&!window.__fitted){window.__fitted=1;fitAll();return}draw()}
+document.getElementById('scaleBtn').onclick=()=>{state.scale=state.scale==='own'?'shared':'own';syncScale()};
 document.getElementById('fit').onclick=fitAll;document.getElementById('zin').onclick=()=>zoom(.5,.5);document.getElementById('zout').onclick=()=>zoom(2,.5);
-svg.addEventListener('wheel',e=>{e.preventDefault();const r=svg.getBoundingClientRect();const cx=Math.min(1,Math.max(0,(e.clientX-r.left-150)/(r.width-164)));zoom(e.deltaY<0?.8:1.25,cx)},{passive:false});
-let drag=null;svg.addEventListener('pointerdown',e=>{drag={x:e.clientX,a:view.a,b:view.b}});window.addEventListener('pointerup',()=>drag=null);
+svg.addEventListener('wheel',e=>{if(state.scale==='own'||!(e.ctrlKey||e.metaKey||e.shiftKey))return;e.preventDefault();const r=svg.getBoundingClientRect();const cx=Math.min(1,Math.max(0,(e.clientX-r.left-150)/(r.width-164)));zoom(e.deltaY<0?.8:1.25,cx)},{passive:false});
+let drag=null;svg.addEventListener('pointerdown',e=>{if(state.scale==='own')return;drag={x:e.clientX,a:view.a,b:view.b}});window.addEventListener('pointerup',()=>drag=null);
 window.addEventListener('pointermove',e=>{if(!drag)return;const pw=stage.clientWidth-164;const dt=-(e.clientX-drag.x)/pw*(drag.b-drag.a);view={a:drag.a+dt,b:drag.b+dt};draw()});
-window.addEventListener('resize',draw);build();fitAll();
+window.addEventListener('resize',draw);build();fitAll();syncScale();
 </script></body></html>"""
 
 def build_atlas_html(subjects, private=False):
