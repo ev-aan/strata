@@ -23,7 +23,7 @@ discriminating_tests:
         Median ratios: Letter III 1.59 (90% 1.25-1.78), IV 1.49 (1.23-1.88), V 1.55 (1.10-2.66), VI 1.35 (0.94-1.64); Letter II opening 0.01 (too short, ignored).
         Calibration with held-out letters: Mary's median 1.44, 57/60 correct; Catherine's 0.64, 58/60 correct (115/120).
       accessible: true
-      run_files: "bounties/casket-letters/data/ (README, extract.py, pilot.py, compare.py, boot.py, casket_fr.json, dt002_results.txt)"
+      run_files: "questions/casket-letters/data/ (README, extract.py, pilot.py, compare.py, boot.py, casket_fr.json, dt002_results.txt)"
     positive_control: "Partial pass (finding F8): without being pointed at it, the search found, at rank 3 of ~77,000 passages, Mary's letter from Ripon of 27 Jan 1569 with the same opening construction as Letter II; two higher hits were OCR noise and an editorial translation."
     errors_and_limits:
       - "F10: the pre-set bar of 3x could never have worked (Mary's own letters reach 3 only once in 60 tries). Both readings are reported: under the pre-set rule no letter is linked; under the calibrated rule (above 1) all four lean Mary."

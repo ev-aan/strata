@@ -5,7 +5,7 @@ title: "Challenge: [ID] on [page]"
 labels: challenge
 ---
 
-**Page and ID** (for example B-002, C-07):
+**Page and ID** (for example Q-002, C-07):
 
 **What you dispute** (one or two sentences):
 

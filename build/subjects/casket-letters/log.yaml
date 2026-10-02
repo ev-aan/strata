@@ -53,3 +53,8 @@ log:
       Two objects were added: the casket with its letters (originals lost) and the French copies of Letters 3 to 6, with two 1889 location events (Hatfield; the Record Office, London) from Henderson p. 68.
       Where the copies are held today is a stated gap: 1889 is the latest source read. MERGED: seven events drawn twice (detail panel and overview) became one node each. NOT MERGED, and an inconsistency in the original timeline:
       the Westminster conference is dated 7-14 Dec 1568 in the overview (k9) and 9-14 Dec 1568 in the detail panel (b9). Both are kept as separate nodes linked by `related` until the Record or a second source settles the first date.
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      RENAME (owner request). The public term "bounty" is now "open question". The page moved from /bounties/casket-letters/ to /questions/casket-letters/ (the old address redirects), and it is shown as open question Q-001. The legacy ID B-001 and the
+      `bounty_id` field in claims.yaml are kept as they are; earlier log entries are not rewritten. Wording on the page, in this dig's claim descriptions and timeline sources was updated to the new term, with "formerly bounty B-001" at the first mention.

@@ -10,7 +10,7 @@ url_slug: casket-letters-mary-queen-of-scots-no-originals-survive-copies-transla
 
 subject: casket-letters
 title: "The Casket Letters (Mary Queen of Scots, 1567 to 1587)"
-migrated_from: "bounties/casket-letters/index.html (bounty B-001, opened 2026-10-01 by the Strata/Stratah project). The page and its run files are unchanged; this subject restates its claims in the YAML standard. Bounty IDs (C-01..C-06, F1..F11, DT-001, DT-002, G-01..G-05) are kept as `bounty_id` so nothing is renumbered."
+migrated_from: "questions/casket-letters/index.html (open question Q-001 (formerly bounty B-001), opened 2026-10-01 by the Strata/Stratah project). The page and its run files are unchanged; this subject restates its claims in the YAML standard. Open Question IDs (C-01..C-06, F1..F11, DT-001, DT-002, G-01..G-05) are kept as `bounty_id` so nothing is renumbered."
 description: >
   In June 1567 Mary's enemies said they had found a silver casket with letters and sonnets from her to the Earl of Bothwell.
   Read as genuine, the letters tie her to the murder of her husband Lord Darnley. They were shown to Elizabeth I's commissioners
@@ -75,7 +75,7 @@ claims:
     next_step: "Read the document at the UK National Archives (or its published catalogue entry) and the NSA history 'To Catch a Queen'; nsa.gov was blocked from the cloud session."
     anchor:
       type: archive-document
-      description: "Surviving at the UK National Archives and described consistently by the NSA's history and archive sources (per bounty B-001; not read in this dig). A DIFFERENT case from 1567: it shows forging Mary's letters was possible and was done, and adds no weight to the claim that the 1567 letters were forged."
+      description: "Surviving at the UK National Archives and described consistently by the NSA's history and archive sources (per open question Q-001 (formerly bounty B-001); not read in this dig). A DIFFERENT case from 1567: it shows forging Mary's letters was possible and was done, and adds no weight to the claim that the 1567 letters were forged."
       ref: [src-nsa-to-catch-a-queen]
   - id: casket-french-printed-retranslation
     bounty_id: C-03
@@ -106,7 +106,7 @@ claims:
     would_change_if: "another French copy being found, or Henderson's list being corrected"
     anchor:
       type: scholarly-catalogue
-      description: "Henderson (1889, p. 68), as quoted on the bounty page: 'The copies of the original French versions of the letters now known to exist are Nos. 3 and 5 in the Record Office, and Nos. 4 and 6 at Hatfield.' The book was read in OCR in this dig; the archive holdings themselves were not seen."
+      description: "Henderson (1889, p. 68), as quoted on the open question page: 'The copies of the original French versions of the letters now known to exist are Nos. 3 and 5 in the Record Office, and Nos. 4 and 6 at Hatfield.' The book was read in OCR in this dig; the archive holdings themselves were not seen."
       ref: [src-henderson-1889, src-casket-french-copies]
   - id: casket-authenticity-contested
     bounty_id: C-04
@@ -125,7 +125,7 @@ claims:
       - {label: "Composite (genuine letters altered or spliced)", holder: "Harry Bresslau (1882); Antonia Fraser (1969); John Guy (2004)", ground: "Guy estimates about 1,500-1,800 words of Letter II likely genuine and 1,000-1,200 likely interpolated, from internal inconsistencies: careful reading, not measurement. The most common modern view."}
     anchor:
       type: scholarly-positions
-      description: "Positions as summarised in bounty B-001 from the sources it lists; not each re-read here. Authenticity of the SOURCES (the copies) is tracked separately in sources/MANIFEST.yaml; 'genuine' here means authored by Mary as letters to Bothwell."
+      description: "Positions as summarised in open question Q-001 (formerly bounty B-001) from the sources it lists; not each re-read here. Authenticity of the SOURCES (the copies) is tracked separately in sources/MANIFEST.yaml; 'genuine' here means authored by Mary as letters to Bothwell."
       ref: [src-henderson-1889]
   - id: casket-no-computed-study-found
     bounty_id: C-05
@@ -139,7 +139,7 @@ claims:
     adoption_note: "Not a claim anyone holds."
     would_change_if: "a published computed comparison being found"
     next_step: "Search Google Scholar, Cryptologia and Digital Scholarship in the Humanities; ask the 2023 decipherment team. NARROWED (finding F7): manual comparisons do exist (Bresslau 1882, Sepp); what is unfound is a systematic computed comparison across all surviving French text."
-    searched: "Two web searches by the bounty author; no wider search yet."
+    searched: "Two web searches by the open question author; no wider search yet."
   - id: casket-french-lean-mary
     bounty_id: C-06
     state: proposed
@@ -147,7 +147,7 @@ claims:
     evidence_class: synthetic
     confidence: low
     evidential_weight: 2
-    anchor_checked: secondary   # texts via 19th-century print and OCR; test code and outputs published in bounties/casket-letters/data/
+    anchor_checked: secondary   # texts via 19th-century print and OCR; test code and outputs published in questions/casket-letters/data/
     adoption_weight: 1
     adoption_note: "New 2026-10-01. Agrees in direction with Bresslau (1882); agreement, not confirmation."
     would_change_if: "a genre-matched control (G-05) erasing the lean, a reviewer finding an error, or a rerun on cleaner texts"
@@ -174,5 +174,5 @@ claims:
     would_change_if: "a recount from the archive copies, or evidence that a word-frequency method works on texts of this length"
     anchor:
       type: count-and-citation
-      description: "Line count of Henderson's appendix by the bounty author (OCR, +/-20%); Eder (2010) as cited on the bounty page, not re-read here."
+      description: "Line count of Henderson's appendix by the open question author (OCR, +/-20%); Eder (2010) as cited on the open question page, not re-read here."
       ref: [src-henderson-1889, src-eder-2010]

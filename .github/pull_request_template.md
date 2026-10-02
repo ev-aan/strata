@@ -1,5 +1,5 @@
 ## What this changes
-<!-- One or two sentences. Which dig or bounty, which IDs (C-, F-, G-, DT-)? -->
+<!-- One or two sentences. Which dig or open question, which IDs (C-, F-, G-, DT-)? -->
 
 ## Checklist (see CONTRIBUTING.md; unchecked items must be explained)
 - [ ] Evidential and adoption weight are shown separately for every claim I touched

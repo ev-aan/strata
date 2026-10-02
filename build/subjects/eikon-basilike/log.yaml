@@ -34,3 +34,8 @@ log:
       OPEN. G-01 and G-02 (which parts of the Cabinet letters are Charles's; whether Parliament altered them) matter most for the test's baseline. G-03 (Madan 1950) decides the planted-prayer claim and
       would show which edition first carries the prayer. G-05 and G-06 (more of Charles's own formal and devotional prose) are the main limit on C-07. Gauden's letters (claim eikon-gauden-claimed-authorship,
       anchor 'no') need to be read; conformance reports it as a warning with the project's rule: re-anchor, do not downgrade. An outside reviewer (a historian of the Eikon and a stylometry specialist) is needed before any computed claim leaves proposed.
+  - id: L-05
+    date: 2026-10-02
+    entry: >
+      RENAME (owner request). The public term "bounty" is now "open question". The page moved from /bounties/eikon-basilike/ to /questions/eikon-basilike/ (the old address redirects), and it is shown as open question Q-002. The legacy ID B-002 and the
+      `bounty_id` field in claims.yaml are kept as they are; earlier log entries are not rewritten. Wording on the page, in this dig's claim descriptions and timeline sources was updated to the new term, with "formerly bounty B-002" at the first mention.

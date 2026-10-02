@@ -1,8 +1,8 @@
 ---
-name: Propose a bounty
+name: Propose an open question
 about: Suggest an open problem for Stratah to excavate
-title: "Bounty proposal: [subject]"
-labels: bounty-proposal
+title: "Open question proposal: [subject]"
+labels: open-question-proposal
 ---
 
 **The question** (as narrow and testable as possible):

@@ -59,22 +59,22 @@ The same rules are on the site at [ev-aan.github.io/stratah/method/](https://ev-
 
 ---
 
-## 4. Running a test or a bounty
+## 4. Running a test or an open question
 
-Learned the hard way on bounties B-001 and B-002. Every step is required.
+Learned the hard way on open questions Q-001 and Q-002 (formerly bounties B-001 and B-002). Every step is required.
 
 **Before any data is collected**
 
 1. **Check feasibility first.** Is there an oracle, something independent that could confirm an answer? Are the sources open? Is there enough text or data for the method? Log what you find, including dead ends.
 2. **Write the test down first.** Record the question, the method, the corpora, the controls and what each possible result would and would not show. Do this in the log, before you run anything.
-3. **Set decision thresholds from calibration, not by guessing.** In B-001 a guessed bar of 3× could never be met even by Mary's own letters. Run the method on texts of known authorship first, then set the bar from that.
+3. **Set decision thresholds from calibration, not by guessing.** In Q-001 a guessed bar of 3× could never be met even by Mary's own letters. Run the method on texts of known authorship first, then set the bar from that.
 
 **Controls (no result counts without them)**
 
-4. **Positive control.** The method must find a known answer it was not pointed at, for example the Pamela prayer in Sidney's *Arcadia* (B-002).
+4. **Positive control.** The method must find a known answer it was not pointed at, for example the Pamela prayer in Sidney's *Arcadia* (Q-002).
 5. **Held-out calibration.** Test the method on known material it was not built from. Leave out the whole source work, not just the passage.
-6. **Genre control.** Check whether the method is detecting the author or just the type of writing. In B-002, the Queen's letters scored as "Charles" until this was fixed.
-7. **Attractor control.** Check whether a large or varied comparison corpus pulls in everything. In B-002, 17 of 31 passages by unrelated clergy came out nearest Gauden.
+6. **Genre control.** Check whether the method is detecting the author or just the type of writing. In Q-002, the Queen's letters scored as "Charles" until this was fixed.
+7. **Attractor control.** Check whether a large or varied comparison corpus pulls in everything. In Q-002, 17 of 31 passages by unrelated clergy came out nearest Gauden.
 8. **Report distances and ranges, not "nearest wins".** Ask whether the questioned text sits inside the candidate's own range, compared with other writers' ranges.
 
 **Sources**
@@ -94,7 +94,7 @@ Learned the hard way on bounties B-001 and B-002. Every step is required.
 
 ## 5. Page and record conventions
 
-Every dig or bounty page carries:
+Every dig or open question page carries:
 
 - **IDs that are never reused or renumbered:**
   - claims (C-01…)
@@ -119,7 +119,7 @@ Every dig or bounty page carries:
 1. **Fork the repository** and make your changes on a branch.
 2. **Open a pull request** and fill in the checklist. A maintainer reviews and merges it.
 3. **To challenge a finding,** open an issue with the "Challenge a finding" form. Name the ID (for example `C-03` or `F7`) and the source that anchors your challenge. Challenges without an anchor are not logged. With one, they are logged whether accepted or not.
-4. **To propose a new bounty,** open an issue. Name:
+4. **To propose a new open question,** open an issue. Name:
    - the question
    - the oracle
    - whether the sources are open

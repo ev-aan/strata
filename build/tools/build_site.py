@@ -3,7 +3,7 @@
 
 Usage: python3 build/tools/build_site.py [outdir=site]
 
-Includes: the existing homepage, method page and bounty pages (copied as they are), plus generated pages for each dig listed
+Includes: the existing homepage, method page and open-question pages (copied as they are), plus generated pages for each dig listed
 under `publish` in build/site.yaml: /digs/ (index), /digs/<slug>/ (article), its timeline, its claims.yaml and sources manifest,
 /corrections/ (every logged correction of a published dig) and /about/. Digs not listed are not published."""
 import os, sys, shutil, html, re, json, datetime, yaml
@@ -97,9 +97,19 @@ os.makedirs(OUT)
 # existing pages and files, copied unchanged
 for f in ("index.html", "CNAME"):
     if os.path.exists(os.path.join(ROOT, f)): shutil.copy(os.path.join(ROOT, f), OUT)
-for d in ("method", "bounties"):
+for d in ("method", "questions"):
     if os.path.isdir(os.path.join(ROOT, d)): shutil.copytree(os.path.join(ROOT, d), os.path.join(OUT, d))
 open(os.path.join(OUT, ".nojekyll"), "w").close()
+# the open-question pages used to live under /bounties/: leave redirects so old links keep working
+for _q in sorted(os.listdir(os.path.join(ROOT, "questions"))) if os.path.isdir(os.path.join(ROOT, "questions")) else []:
+    if os.path.isdir(os.path.join(ROOT, "questions", _q)):
+        os.makedirs(os.path.join(OUT, "bounties", _q), exist_ok=True)
+        open(os.path.join(OUT, "bounties", _q, "index.html"), "w", encoding="utf-8").write(
+            f'<!doctype html><meta charset="utf-8"><title>Moved</title><meta http-equiv="refresh" content="0; url=../../questions/{_q}/">'
+            f'<link rel="canonical" href="https://{CFG["domain"]}/questions/{_q}/"><p>This page moved to <a href="../../questions/{_q}/">/questions/{_q}/</a>.</p>')
+os.makedirs(os.path.join(OUT, "bounties"), exist_ok=True)
+open(os.path.join(OUT, "bounties", "index.html"), "w", encoding="utf-8").write(
+    f'<!doctype html><meta charset="utf-8"><title>Moved</title><meta http-equiv="refresh" content="0; url=../#questions"><link rel="canonical" href="https://{CFG["domain"]}/#questions"><p>These pages are now <a href="../#questions">open questions</a>.</p>')
 
 digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/ideas/", "/method/", "/corrections/", "/about/"]
 for sub in CFG["publish"]:

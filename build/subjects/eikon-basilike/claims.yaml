@@ -10,7 +10,7 @@ url_slug: eikon-basilike-1649-milton-charged-kings-prayer-copied-from-sidney
 
 subject: eikon-basilike
 title: "Eikon Basilike, the King's Book (1649)"
-migrated_from: "bounties/eikon-basilike/index.html (bounty B-002, opened 2026-10-01 by the Strata/Stratah project). The page and its run files are unchanged; this subject restates its claims in the YAML standard. Bounty IDs (C-01..C-08, F1..F12, DT-B1, G-01..G-07) are kept as bounty_id; B-001 (Casket Letters) also uses C-01..C-06, so the slug IDs here are the unique ones."
+migrated_from: "questions/eikon-basilike/index.html (open question Q-002 (formerly bounty B-002), opened 2026-10-01 by the Strata/Stratah project). The page and its run files are unchanged; this subject restates its claims in the YAML standard. Open Question IDs (C-01..C-08, F1..F12, DT-B1, G-01..G-07) are kept as bounty_id; B-001 (Casket Letters) also uses C-01..C-06, so the slug IDs here are the unique ones."
 description: >
   Eikon Basilike ('The King's Image') appeared within days of Charles I's execution on 30 January 1649 and shaped how he was remembered.
   Milton answered it for Parliament. After 1660 John Gauden claimed he had written it; royalists swore the King did. This dig keeps four questions
@@ -57,7 +57,7 @@ claims:
     adoption_weight: 2   # of 5
     adoption_note: "Not measured."
     would_change_if: "the TCP catalogue note being corrected, or Madan's bibliography saying otherwise"
-    next_step: "Check Madan's bibliography (1950) for the issue points; the bounty page calls this text 'the first issue'."
+    next_step: "Check Madan's bibliography (1950) for the issue points; the open question page calls this text 'the first issue'."
     anchor:
       type: catalogue-record
       description: "TCP A38258 header [read]: 'First edition, second issue. Printed by John Grismond for Richard Royston. \"This issue appeared within a few days of the death the King, probably about 4 February.\" Cf. Madan, F.F. New bibl. of the Eikon basilike.'"
@@ -73,10 +73,10 @@ claims:
     adoption_weight: 2   # of 5
     adoption_note: "Not measured."
     would_change_if: "a prayer resembling Pamela's being found in the text under other wording"
-    next_step: "Run the phrase matcher (the bounty's pamela_control.py) over the whole text to rule out a prayer without the names; read Madan on which editions first carry the prayer (gap G-03)."
+    next_step: "Run the phrase matcher (the open question's pamela_control.py) over the whole text to rule out a prayer without the names; read Madan on which editions first carry the prayer (gap G-03)."
     anchor:
       type: absence-in-searched-record
-      description: "Search by this session of TCP A38258 (about 60,300 words by a rough count; the bounty gives 60,359): 0 hits for 'Pamela', 'Pammela', 'Prayer in time of Captivity'. The word 'prayer' occurs 50 times in ordinary use."
+      description: "Search by this session of TCP A38258 (about 60,300 words by a rough count; the open question gives 60,359): 0 hits for 'Pamela', 'Pammela', 'Prayer in time of Captivity'. The word 'prayer' occurs 50 times in ordinary use."
       ref: [src-tcp-a38258]
   - id: eikon-pamela-prayer-is-sidneys
     bounty_id: C-02
@@ -106,10 +106,10 @@ claims:
     adoption_weight: 5   # of 5
     adoption_note: "Universal. Whether the claim is true is a separate claim (eikon-charles-wrote-book)."
     would_change_if: "his letters being shown spurious or misdated"
-    next_step: "Re-anchor to Gauden's own letters of 1660-62 (the bounty page marks this 'no'); the TCP header for A38258 lists Gauden (1605-1662) among the attributed authors, which is not the claim itself."
+    next_step: "Re-anchor to Gauden's own letters of 1660-62 (the open question page marks this 'no'); the TCP header for A38258 lists Gauden (1605-1662) among the attributed authors, which is not the claim itself."
     anchor:
       type: letters-of-the-claimant
-      description: "Per bounty B-002: his letters pressing the claim survive and are cited across the literature. Not read in this dig."
+      description: "Per open question Q-002 (formerly bounty B-002): his letters pressing the claim survive and are cited across the literature. Not read in this dig."
   - id: eikon-charles-wrote-book
     bounty_id: C-04
     state: contested
@@ -127,7 +127,7 @@ claims:
       - {label: "Composite", holder: "Many modern accounts", ground: "Gauden composed or polished from the King's papers; Jeremy Taylor sometimes named as reviser. Fits both bodies of testimony."}
     anchor:
       type: testimony
-      description: "As summarised in bounty B-002; the testimonies were not each re-read here."
+      description: "As summarised in open question Q-002 (formerly bounty B-002); the testimonies were not each re-read here."
   - id: eikon-pamela-prayer-planted
     bounty_id: C-05
     state: contested
@@ -155,7 +155,7 @@ claims:
     adoption_note: "Not a claim anyone holds."
     would_change_if: "a published computed study being found"
     next_step: "Google Scholar, Digital Scholarship in the Humanities, and the 1950s-2000s literature in The Library ('John Gauden and the Authorship of the Eikon Basilike', not yet read)."
-    searched: "Three web searches by the bounty author."
+    searched: "Three web searches by the open question author."
   - id: eikon-text-lacks-charles-habits
     bounty_id: C-07
     state: proposed

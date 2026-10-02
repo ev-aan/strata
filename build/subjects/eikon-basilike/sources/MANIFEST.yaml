@@ -1,7 +1,7 @@
 subject: eikon-basilike
 retrieved: "2026-10-02"
 # Authenticity of each source is the authenticity of a DOCUMENT as a printed work or a transcription of one. The authorship of the King's Book is the
-# question of the dig (claim eikon-charles-wrote-book), not a source property. Wikipedia pages linked on the bounty page are orientation only and are not sources.
+# question of the dig (claim eikon-charles-wrote-book), not a source property. Wikipedia pages linked on the open question page are orientation only and are not sources.
 sources:
   - id: src-tcp-a38258
     title: "Eikon basilike, The pourtraicture of His Sacred Majestie in his solitudes and sufferings (1648 [1649]), EEBO-TCP A38258; first edition, second issue"
@@ -13,11 +13,11 @@ sources:
       provenance: "EEBO-TCP transcription from Early English Books Online image set 58806 (microfilm of the Huntington Library copy); catalogue note: 'Printed by John Grismond for Richard Royston ... probably about 4 February'."
       tests:
         - "Header, imprint and issue note read in the TEI file downloaded 2026-10-02 [read]"
-        - "Word count of the TEI text about 60,300 (the bounty page gives 60,359) [counted]"
+        - "Word count of the TEI text about 60,300 (the open question page gives 60,359) [counted]"
       tested_by: "Strata session, 2026-10-02 (not an independent review)"
       gaps:
         - "Transcription, not compared with the page images."
-        - "Catalogued as the SECOND issue of the first edition; the bounty page calls it 'the first issue'."
+        - "Catalogued as the SECOND issue of the first edition; the open question page calls it 'the first issue'."
         - "Authenticity here is as a printed edition of 1649; who wrote the text is the open question."
       checked: 2026-10-02
     stored_as: "not stored (public GitHub repository); fetch https://raw.githubusercontent.com/textcreationpartnership/A38258/master/A38258.xml"
@@ -31,7 +31,7 @@ sources:
       provenance: "EEBO-TCP transcription; catalogue: 'Publish'd now the second time and much enlarg'd ... Printed by T.N. ... London: 1650'."
       tests: ["The passage on 'Pammela's Prayer' read in the text layer [read]"]
       tested_by: "Strata session, 2026-10-02 (not an independent review)"
-      gaps: ["This is the 1650 second edition, not the 1649 first edition the bounty claim refers to.", "Transcription, not compared with the page images."]
+      gaps: ["This is the 1650 second edition, not the 1649 first edition the open question claim refers to.", "Transcription, not compared with the page images."]
       checked: 2026-10-02
   - id: src-tcp-a31932
     title: "The Kings cabinet opened (1645), EEBO-TCP A31932: papers taken at Naseby, 14 June 1645"
@@ -45,7 +45,7 @@ sources:
       tested_by: "Strata session, 2026-10-02 (not an independent review)"
       gaps:
         - "Royalists alleged Parliament altered the letters (gap G-02); not tested here."
-        - "The bounty's test uses only the King's letters and removes the annotations; which parts are Charles's is gap G-01."
+        - "The open question's test uses only the King's letters and removes the annotations; which parts are Charles's is gap G-01."
       next_step: "Compare with Charles I in 1646 (Camden Society, 1856) and modern editions."
       checked: 2026-10-02
   - id: src-tcp-a78958
@@ -68,7 +68,7 @@ sources:
     title: "The 1687 Works containing the 'Prayer in time of Captivity', EEBO-TCP A31771"
     document_class: primary_text
     url: https://github.com/textcreationpartnership/A31771
-    authenticity: {status: unchecked, gaps: ["Not read in this session; used by the bounty's positive control."], checked: 2026-10-02}
+    authenticity: {status: unchecked, gaps: ["Not read in this session; used by the open question's positive control."], checked: 2026-10-02}
   - id: src-tcp-corpora
     title: "Comparison corpora: Gauden (13 works, A42489 A42498 A42492 A42483 A42487 A42490 A42495 A42475 A42477 A42491 A42496 A42479 A42476), Taylor (A13414 A27805 A63653 A63711, letter A63729), eight control divines (A45397 A57134 A01344 A02549 A64646 A62025 A26864 A31927), all EEBO-TCP"
     document_class: primary_text
@@ -76,15 +76,15 @@ sources:
       status: unchecked
       strength: moderate
       gaps:
-        - "Attribution of each work to its author follows the TCP catalogue; 'secure' works were chosen by the bounty author and disputed attributions left out."
+        - "Attribution of each work to its author follows the TCP catalogue; 'secure' works were chosen by the open question author and disputed attributions left out."
         - "Genres differ (sermons and treatises vs meditation vs private letters): the genre confound is addressed by Taylor as a control (finding F4) but not removed."
       checked: 2026-10-02
   - id: src-bruce-1856
     title: "J. Bruce (ed.), Charles I in 1646 (Camden Society, 1856), Internet Archive charlesiinlette00chargoog"
     document_class: primary_text (edition of the King's letters)
     url: https://archive.org/details/charlesiinlette00chargoog
-    authenticity: {status: unchecked, gaps: ["OCR text used by the bounty's charles1646.py; not read in this session beyond the reproduction."], checked: 2026-10-02}
+    authenticity: {status: unchecked, gaps: ["OCR text used by the open question's charles1646.py; not read in this session beyond the reproduction."], checked: 2026-10-02}
   - id: src-library-gauden
     title: "'John Gauden and the Authorship of the Eikon Basilike', The Library, s5-XX(2)"
     document_class: interpretive
-    authenticity: {status: unchecked, gaps: ["Not read; listed on the bounty page as 'not yet read'."], checked: 2026-10-02}
+    authenticity: {status: unchecked, gaps: ["Not read; listed on the open question page as 'not yet read'."], checked: 2026-10-02}

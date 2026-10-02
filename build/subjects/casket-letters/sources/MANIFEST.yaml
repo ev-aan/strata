@@ -2,7 +2,7 @@ subject: casket-letters
 retrieved: "2026-10-02"
 # Authenticity here has two levels (SCHEMA.md A9): the authenticity of each SOURCE as a document, and the separate question of whether the
 # lost casket originals were Mary's. The second is claim casket-authenticity-contested, not a source property. Wikipedia pages linked on the
-# bounty page are orientation only and are not sources here.
+# open question page are orientation only and are not sources here.
 sources:
   - id: src-henderson-1889
     title: "T. F. Henderson, The Casket Letters and Mary Queen of Scots (Edinburgh, 1889), Google-scanned copy on the Internet Archive"
@@ -13,8 +13,8 @@ sources:
       strength: moderate
       provenance: "Public-domain 1889 book; Internet Archive identifier casketlettersan00hendgoog; OCR text downloaded 2026-10-02."
       tests:
-        - "The bounty page's quotation from p. 68 ('The copies of the original French versions of the letters now known to exist are Nos. 3 and 5 in the Record Office, and Nos. 4 and 6 at Hatfield') is present in the OCR text [read]"
-        - "The Bresslau/Catherine de Medici passage the bounty page cites (pp. 69-70) is present in the OCR text [read]"
+        - "The open question page's quotation from p. 68 ('The copies of the original French versions of the letters now known to exist are Nos. 3 and 5 in the Record Office, and Nos. 4 and 6 at Hatfield') is present in the OCR text [read]"
+        - "The Bresslau/Catherine de Medici passage the open question page cites (pp. 69-70) is present in the OCR text [read]"
       tested_by: "Strata session, 2026-10-02 (not an independent review)"
       gaps:
         - "OCR text: dates, names and quotations were checked only where quoted; page numbers in the OCR are noisy."
@@ -44,9 +44,9 @@ sources:
     authenticity:
       status: authenticated
       strength: moderate
-      provenance: "Public-domain nineteenth-century edition, Internet Archive scans; used by the bounty's test via OCR."
-      tests: ["Not re-checked in this session; used as described on the bounty page."]
-      tested_by: "bounty B-001 author (computed test); not independently reviewed"
+      provenance: "Public-domain nineteenth-century edition, Internet Archive scans; used by the open question's test via OCR."
+      tests: ["Not re-checked in this session; used as described on the open question page."]
+      tested_by: "open question Q-001 (formerly bounty B-001) author (computed test); not independently reviewed"
       gaps:
         - "Copies were made by clerks, so spelling is normalised in the test; autograph and secretary letters are not separated."
         - "OCR noise and an editorial French translation of a letter Mary wrote in another language were found in the pilot (finding F8) and had to be filtered."
@@ -59,7 +59,7 @@ sources:
       strength: moderate
       provenance: "Public-domain edition; used as the control corpus in test DT-002."
       tests: ["Not re-checked in this session."]
-      tested_by: "bounty B-001 author"
+      tested_by: "open question Q-001 (formerly bounty B-001) author"
       gaps: ["Mostly official dispatches, so a genre difference from the intimate casket letters (finding F11)."]
       checked: 2026-10-02
   - id: src-lasry-2023
@@ -85,4 +85,4 @@ sources:
     title: "M. Eder, 'Does size matter? Authorship attribution, small samples, big problem', Digital Humanities 2010 abstract"
     document_class: interpretive (method)
     url: https://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/html/ab-744.html
-    authenticity: {status: unchecked, gaps: ["Cited by the bounty page; not read in this session."], checked: 2026-10-02}
+    authenticity: {status: unchecked, gaps: ["Cited by the open question page; not read in this session."], checked: 2026-10-02}
