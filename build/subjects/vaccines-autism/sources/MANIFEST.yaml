@@ -105,16 +105,18 @@ sources:
     title: "Madsen KM et al. A population-based study of measles, mumps, and rubella vaccination and autism. N Engl J Med 2002;347:1477-82"
     url: https://europepmc.org/article/MED/12421889
     document_class: synthetic (cohort statistics)
-    read: abstract (nejm.org refused)
-    sha256: f813c1d1fac16611b2da89cd14988772815f61711c825a29ccc794d94371aaa7
-    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 12421889; no retraction or correction.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], next_step: "Read the full text (headline requirement).", checked: 2026-10-02}
+    read: "full (a third-party PDF copy of the NEJM article hosted at web.math.princeton.edu, 6 pages, fetched 2026-10-02; nejm.org refused direct download; its numbers match the Europe PMC abstract)"
+    sha256: f813c1d1fac16611b2da89cd14988772815f61711c825a29ccc794d94371aaa7   # of the Europe PMC abstract record
+    full_text_copy: {url: "https://web.math.princeton.edu/~sswang/autism/madsen_melbye02_nejm_MMR-autism-risk.pdf", sha256: 2a8f6fcd52f1228ed0010b1e390649b4f47f07acc35e3fd6f12d90f9f7f9f28f, compared_with_holder_copy: no}
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 12421889; no retraction or correction.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The full text was read in a third-party copy, not compared with the publisher's file."], checked: 2026-10-02}
   - id: src-hviid-2019
     title: "Hviid A et al. Measles, Mumps, Rubella Vaccination and Autism: A Nationwide Cohort Study. Ann Intern Med 2019;170:513-20"
     url: https://europepmc.org/article/MED/30831578
     document_class: synthetic
-    read: abstract (acpjournals.org refused)
-    sha256: 0812247b77823ca68491a2204418e1a124c8c918664dd348ddc83a59eeba5ff6
-    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 30831578; no retraction or correction.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text and subgroup tables not read."], next_step: "Read the full text (headline requirement).", checked: 2026-10-02}
+    read: "full (a third-party PDF copy of the Annals article hosted by the Autism Science Foundation, 9 pages, fetched 2026-10-02; acpjournals.org refused direct download; its numbers match the Europe PMC abstract)"
+    sha256: 0812247b77823ca68491a2204418e1a124c8c918664dd348ddc83a59eeba5ff6   # of the Europe PMC abstract record
+    full_text_copy: {url: "https://autismsciencefoundation.org/wp-content/uploads/2019/03/vaccine.2019.pdf", sha256: d00c928f15479eccc8955f83f082b77ad877765eaa08ad6eb7e1a392fd6a6315, compared_with_holder_copy: no}
+    authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 30831578; no retraction or correction.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The full text was read in a third-party copy hosted by an organisation that supports vaccination, not compared with the publisher's file."], checked: 2026-10-02}
   - id: src-taylor-1999
     title: "Taylor B et al. Autism and measles, mumps, and rubella vaccine: no epidemiological evidence for a causal association. Lancet 1999;353:2026-29"
     url: https://europepmc.org/article/MED/10376617
@@ -401,6 +403,69 @@ sources:
     document_class: primary_text (court decisions)
     read: tool (the court's file host refused direct download)
     authenticity: {status: authenticated, strength: moderate, provenance: "uscfc.uscourts.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["No local copies; reporter citations unverified."], next_step: "Download the six decisions and two Federal Circuit opinions.", checked: 2026-10-02}
+  - id: src-oap-cedillo-sm-2009
+    title: "Special Master Hastings, decision of 12 Feb 2009, docket 98-916V (first-theory test case)"
+    url: https://www.uscfc.uscourts.gov/sites/cfc/files/hastings_cedillo_decision.pdf
+    document_class: primary_text (court decision)
+    read: "opened 2026-10-02 (PDF fetched directly from uscfc.uscourts.gov and text-extracted); caption and the passage 'overwhelmingly contrary to the petitioners' causation theories' read"
+    sha256: 48d531c57006914274c8a91778d687203fa3cf056bfb47c7592b31309c0130f9
+    authenticity: {status: authenticated, strength: strong, provenance: "uscfc.uscourts.gov, the Court of Federal Claims' own host; linked from the court's autism decisions page.", tests: ["Official host [read]", "Docket number, date and caption consistent with the court's decision list and the Federal Circuit opinions [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full; the evidentiary body was not read."], checked: 2026-10-02}
+  - id: src-oap-hazlehurst-sm-2009
+    title: "Special Master Campbell-Smith, decision of 12 Feb 2009, docket 03-654V (first-theory test case)"
+    url: https://www.uscfc.uscourts.gov/sites/cfc/files/campbell_smith_hazlehurst_decision.pdf
+    document_class: primary_text (court decision)
+    read: "opened 2026-10-02 (PDF fetched directly from uscfc.uscourts.gov and text-extracted); caption (theory: the combination of MMR and thimerosal-containing vaccines) read"
+    sha256: e63267eaea72a7fec25aec506f6b8d00b31147f6a41faa8a8df07a273b41402c
+    authenticity: {status: authenticated, strength: strong, provenance: "uscfc.uscourts.gov, the Court of Federal Claims' own host; linked from the court's autism decisions page.", tests: ["Official host [read]", "Docket number, date and caption consistent with the court's decision list and the Federal Circuit opinions [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full; the evidentiary body was not read."], checked: 2026-10-02}
+  - id: src-oap-snyder-sm-2009
+    title: "Special Master Vowell, decision of 12 Feb 2009, docket 01-162V (first-theory test case)"
+    url: https://www.uscfc.uscourts.gov/sites/cfc/files/vowell_snyder_decision.pdf
+    document_class: primary_text (court decision)
+    read: "opened 2026-10-02 (PDF fetched directly from uscfc.uscourts.gov and text-extracted); caption and the ordering paragraph (compensation denied) read"
+    sha256: 57585eb9ca8b5826cf7fc49b3c4945b2ae9d91947af30bfbeee51291e36584d1
+    authenticity: {status: authenticated, strength: strong, provenance: "uscfc.uscourts.gov, the Court of Federal Claims' own host; linked from the court's autism decisions page.", tests: ["Official host [read]", "Docket number, date and caption consistent with the court's decision list and the Federal Circuit opinions [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full; the evidentiary body was not read."], checked: 2026-10-02}
+  - id: src-oap-king-sm-2010
+    title: "Special Master Hastings, decision of 12 Mar 2010, docket 03-584V (second-theory test case: thimerosal alone)"
+    url: https://www.uscfc.uscourts.gov/sites/cfc/files/hastings_king_decision.pdf
+    document_class: primary_text (court decision)
+    read: "opened 2026-10-02 (PDF fetched directly from uscfc.uscourts.gov and text-extracted); caption, table of contents and the conclusion (petitioners not entitled to an award) read"
+    sha256: 5f4e53080aa24a65e00ce85df4951e3109a4f82e089f0e09f3e367c9011ce7b1
+    authenticity: {status: authenticated, strength: strong, provenance: "uscfc.uscourts.gov, the Court of Federal Claims' own host; linked from the court's autism decisions page.", tests: ["Official host [read]", "Docket number, date and caption consistent with the court's decision list and the Federal Circuit opinions [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full; the evidentiary body was not read."], checked: 2026-10-02}
+  - id: src-oap-mead-sm-2010
+    title: "Special Master Campbell-Smith, decision of 12 Mar 2010, docket 03-215V (second-theory test case)"
+    url: https://www.uscfc.uscourts.gov/sites/cfc/files/campbell_smith_mead_decision.pdf
+    document_class: primary_text (court decision)
+    read: "opened 2026-10-02 (PDF fetched directly from uscfc.uscourts.gov and text-extracted); caption and the ordering paragraph (claim dismissed) read"
+    sha256: 90b774668f9fe5f2cbea84e6600025e9db453860cb5001a0fface899764c8014
+    authenticity: {status: authenticated, strength: strong, provenance: "uscfc.uscourts.gov, the Court of Federal Claims' own host; linked from the court's autism decisions page.", tests: ["Official host [read]", "Docket number, date and caption consistent with the court's decision list and the Federal Circuit opinions [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full; the evidentiary body was not read."], checked: 2026-10-02}
+  - id: src-oap-dwyer-sm-2010
+    title: "Special Master Vowell, decision of 12 Mar 2010, docket 03-1202V (second-theory test case)"
+    url: https://www.uscfc.uscourts.gov/sites/cfc/files/vowell_dwyer_decision.pdf
+    document_class: primary_text (court decision)
+    read: "opened 2026-10-02 (PDF fetched directly from uscfc.uscourts.gov and text-extracted); caption and the conclusion (petition denied) read"
+    sha256: 446a0181ec72ace2dcca30d56e231ee1f84ca15d9db189660fec61f60b93238a
+    authenticity: {status: authenticated, strength: strong, provenance: "uscfc.uscourts.gov, the Court of Federal Claims' own host; linked from the court's autism decisions page.", tests: ["Official host [read]", "Docket number, date and caption consistent with the court's decision list and the Federal Circuit opinions [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full; the evidentiary body was not read."], checked: 2026-10-02}
+  - id: src-oap-background
+    title: "US Court of Federal Claims, Office of Special Masters. The Autism Proceedings: test case theories (court background sheet, 'for background use only')"
+    url: https://www.uscfc.uscourts.gov/sites/cfc/files/autism_proceedings_background.pdf
+    document_class: primary_text (court background sheet)
+    read: "full (2 pages, fetched directly 2026-10-02)"
+    sha256: 6bd950e81add6bc4f33501764dedb2f6b528b1345eb5a7b10a8e490588e0caf3
+    authenticity: {status: authenticated, strength: strong, provenance: "uscfc.uscourts.gov, the Court's own host.", tests: ["Official host [read]", "Consistent with the Federal Circuit opinions and the six decisions [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-vernacchio-order-2015
+    title: "US Court of Federal Claims, Office of Special Masters, order of 27 Mar 2015 denying a motion for judicial estoppel, docket 08-504V (a different family's case; it describes the 2007 compensation case, docket 02-1466V, and quotes its Rule 4(c) report)"
+    url: https://www.govinfo.gov/content/pkg/USCOURTS-cofc-1_08-vv-00504/pdf/USCOURTS-cofc-1_08-vv-00504-0.pdf
+    document_class: primary_text (court order; secondary as to the 2007 case it describes)
+    read: "full (9 pages, fetched directly from govinfo.gov 2026-10-02)"
+    sha256: c5d398b82da316e73d0bedd5f23c64f70c2812a9641d689dbdfe93142c05719a
+    authenticity: {status: authenticated, strength: strong, provenance: "govinfo.gov, the US Government Publishing Office's collection of court opinions.", tests: ["Official host [read]", "Docket header, filing date and page numbers consistent [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["It quotes the Rule 4(c) report and the 2011 fees decision of the 2007 case; neither of those was itself read."], checked: 2026-10-02}
+  - id: src-gmc-findings-2010
+    title: "General Medical Council Fitness to Practise Panel, Wakefield, Walker-Smith and Murch: determination on the facts, 28 Jan 2010 (as hosted by third parties)"
+    url: http://www.circare.org/autism/gmcfpphearing_20100128.pdf
+    document_class: primary_text (panel determination)
+    read: "full text extracted 2026-10-02; the heads of charge and findings against Wakefield on the referral description, the ethics statement and the letter to the Lancet were read; not every paragraph was read"
+    sha256: 59294aa415d6d5a5e0cfa5b3607f115231ea74a205b2ea401e647096b063f697
+    authenticity: {status: authenticated, strength: moderate, provenance: "A copy hosted by CIRCARE (circare.org); a second copy hosted by FactCheck.org (cdn.factcheck.org/UploadedFiles/gmc-charge-sheet.pdf) has a different file hash but the same extracted text. The GMC's own host (gmc-uk.org) and its web archive refused this session.", tests: ["Panel, date and the quoted paragraphs consistent with the passages the High Court judgment quotes (charges 31 to 34 as numbered there) [read]", "Two independent hosts carry the same text [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Third-party copies; not compared with the GMC's own file.", "The sanctions determination of 24 May 2010 was not read."], next_step: "Compare with a copy from the GMC or the UK Government Web Archive.", checked: 2026-10-02}
   - id: src-cafc-cedillo-2010
     title: "US Court of Appeals for the Federal Circuit, Cedillo v. Secretary of Health and Human Services, No. 2010-5004 (decided 27 Aug 2010)"
     url: https://www.cafc.uscourts.gov/opinions-orders/10-5004.pdf
@@ -447,6 +512,20 @@ sources:
     sha256: 846e651c21b0237e3cf9365a414775a7ab3f9ec633b1c5e67718200442b208bb
     stored_as: sources/md-cosa-2015-geier-licence.txt   # plain text for the quote check; Maryland court opinion, public record
     authenticity: {status: authenticated, strength: strong, provenance: "mdcourts.gov, the Maryland judiciary's opinions host. The text quotes the Board's Final Decision and Order of 22 Aug 2012.", tests: ["Official host [read]", "Docket, date and reporter citation consistent with the citation in the 1 Oct 2015 opinion (223 Md. App. 404) [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The Board's own order was not read; the opinion quotes it."], checked: 2026-10-02}
+  - id: src-md-board-order-2012-03
+    title: "Maryland State Board of Physicians, In the matter of Mark R. Geier, M.D., Final Decision and Order, Case Nos. 2007-0083, 2008-0454, 2009-0308 (dated 22 March 2012; summary suspension upheld)"
+    url: https://www.mbp.state.md.us/bpqapp/Orders/D2425003.222.pdf
+    document_class: primary_text (agency order)
+    read: "full text by OCR (83-page scanned PDF fetched directly 2026-10-02; OCR errors possible, so quotations are taken from court opinions where they appear there)"
+    sha256: 15a8ebcaff8cd86fc634c2cb03bcb9b874f361bd97a454ea99d338f02eda62f1
+    authenticity: {status: authenticated, strength: strong, provenance: "mbp.state.md.us, the Board's own order archive; the Board's 2013 order (src-md-board-order-2013-0223) says in its footnote 1 that the summary suspension was affirmed in a Final Decision and Order issued on 22 March 2012.", tests: ["Official host [read]", "Date confirmed by the Board's own later order [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["OCR of a scanned file.", "This is not the 22 Aug 2012 revocation order."], checked: 2026-10-02}
+  - id: src-md-board-order-2013-0223
+    title: "Maryland State Board of Physicians, In the matter of Mark R. Geier, M.D., Final Decision and Order, Case No. 2012-0223 (after the exceptions hearing of 27 Feb 2013; practising while suspended)"
+    url: https://www.mbp.state.md.us/bpqapp/Orders/D2425003.223.pdf
+    document_class: primary_text (agency order)
+    read: "full text by OCR (5-page scanned PDF fetched directly 2026-10-02)"
+    sha256: 760413681ab4a623b9af66292b886ee7c95ee1086faa258974aa92d9c576db0a
+    authenticity: {status: authenticated, strength: strong, provenance: "mbp.state.md.us, the Board's own order archive.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["OCR of a scanned file.", "Used only for the footnote that confirms the 22 Mar 2012 and 22 Aug 2012 orders."], checked: 2026-10-02}
   - id: src-geier-md-2019
     title: "Maryland Court of Special Appeals, Geier v. Maryland State Board of Physicians, No. 338, Sept. Term 2018 (2019)"
     url: https://mdcourts.gov/data/opinions/cosa/2019/0338s18.pdf

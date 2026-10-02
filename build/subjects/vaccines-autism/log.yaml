@@ -410,3 +410,63 @@ log:
       (1,294 cases, OR 0.86, 0.68 to 1.09) and that "findings were similar when restricted to
       children with a diagnosis of autism". The four places now say so. Ground: say what the study
       measured, with the autism-restricted result as the abstract states it.
+  - id: L-28
+    date: 2026-10-02
+    entry: >
+      ROUND 6: READ WHAT IS REACHABLE; UNREAD SOURCES BECOME SUB-QUESTIONS. Owner direction
+      (conversation 2026-10-02): "unread sources become sub-questions of the prime question".
+      WHAT WAS READ, and what changed. (1) Madsen et al. 2002 (NEJM) and Hviid et al. 2019 (Ann Intern
+      Med), in full, in third-party PDF copies (Princeton and the Autism Science Foundation hosts;
+      nejm.org and acpjournals.org refused; both copies' numbers match the Europe PMC abstracts;
+      the copies were not compared with the publishers' files). va-mmr-no-detectable-increase is
+      now anchored to these two papers and is `primary`; confidence stays high, weight stays 4
+      (both are Danish register cohorts, from one group); the other studies moved from the anchor
+      to the basis as abstract-level corroboration. The condition of L-06 for the headline is met;
+      headline_status stays `draft` for a reviewer and the owner to move. Hviid also speaks to the
+      unvaccinated gap (a vaccine-naive-in-infancy subgroup, not fully unvaccinated), added to
+      va-fully-unvaccinated-gap. (2) The six special masters' decisions in the Omnibus Autism
+      Proceeding (Cedillo, Hazlehurst, Snyder, King, Mead, Dwyer) and the court's background sheet,
+      directly from uscfc.uscourts.gov: all six denied or dismissed; the three first-theory
+      decisions were affirmed by Court of Federal Claims judges; the court says the third theory
+      (MMR alone) was not presented as its own test cases because its evidence was largely
+      presented in the first group (this sits with the Federal Circuit's finding that MMR alone was
+      argued in Hazlehurst, L-22). va-omnibus-test-cases is now `primary`, confidence high. (3)
+      The GMC panel's findings of fact (28 Jan 2010), in third-party copies (CIRCARE and FactCheck.org;
+      the GMC's own host refused): against Wakefield, the referral description was found
+      irresponsible, misleading and contrary to his duty (charges 33 to 34), his letter to the
+      Lancet dishonest (35), and the ethics statement irresponsible but NOT dishonest (37; the
+      panel was "not certain that you intended to deceive"). va-wakefield-referral-description now
+      rests on the panel's own words (weight kept at 3, confidence moderate); the ethics claim
+      carries the "not dishonest" finding. (4) The Maryland Board's own orders: the Final Decision and
+      Order of 22 Mar 2012 (summary suspension upheld) and a 2013 order whose footnote confirms
+      the 22 Aug 2012 revocation, both read by OCR from the Board's site; the 22 Aug 2012 order
+      itself was not found. (5) A 2015 special master's order (docket 08-504V, read in full)
+      quotes the government's Rule 4(c) report in the 2007 compensation case and says the case was
+      settled, not adjudicated, that the petitioners alleged a Table injury (an encephalopathy),
+      that the 2010 damages decision says only that the government "elect[ed] not to challenge" the
+      claim, and that the government says it has never conceded that any vaccine can cause
+      significant aggravation of a mitochondrial disorder. va-poling-concession is rewritten on
+      this, confidence raised from moderate to high (a court record now quotes the wording and
+      three sources agree on the concession), anchor still `secondary` (the report and decision
+      themselves unread); this restores, with a source, the Table-injury point removed in
+      round 1 for lack of one (F2), and supplies a source for "encephalopathy" (R3-2) as the
+      petitioners' allegation, attributed. WHAT COULD NOT BE READ. Lancet 2010 and 2004 notices
+      (thelancet.com 403; ScienceDirect Cloudflare block; Unpaywall not OA; the Elsevier API gives
+      metadata only, confirming the 6 to 12 Feb 2010 issue; Europe PMC and PubMed Central have
+      records, no text; the Internet Archive is blocked by this environment's egress policy);
+      BMJ c5347, c7452, c696, c2803 (bmj.com 403; not in PMC); the JAMA 2016 erratum to Jain
+      2015 (jamanetwork.com 403; Europe PMC record, no text); the Annals correction to Andersson
+      2025 (acpjournals.org 403; Europe PMC record, no text); the Rule 4(c) report and damages
+      decision (not on govinfo; may be sealed); the Maryland Board order of 22 Aug 2012 (not found
+      under the Board's file names tried); the 2006 case report's full text (PMC has the
+      abstract only). DECISION. Each is now a `searched_gap` claim, a sub-question of the prime
+      question, with a precise next step, an anchor of type search-record saying what was tried,
+      and the claims it could move: va-sq-lancet-2010-notice, va-sq-lancet-2004-notices,
+      va-sq-bmj-2011-records, va-sq-jain-2016-erratum, va-sq-andersson-2025-correction,
+      va-sq-compensation-decision, va-sq-other-compensated-cases (a lead for Banks 2007, not
+      opened), va-sq-geier-revocation-order, va-sq-case-report-same-child (the case report's abstract
+      describes a 19-month-old girl, consistent with but not stating that it is the same child as the
+      compensation case). They carry no evidential weight for or against the prime question and are
+      listed in the assessment's would_settle, which the first screen shows, with a sentence that
+      these sources have not been read. Not changed: the headline, key points, the owner's earlier
+      decisions.

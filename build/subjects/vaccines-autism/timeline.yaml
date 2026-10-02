@@ -97,7 +97,7 @@ events:
      detail: "Autism (transcript p. 44): 'a slight, but not significant, increase' at the highest exposure [read]."}
   - {id: a05, panel: years, lane: research, time: "2002-11-07T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-madsen-2002],
      label: "Nov 2002: Madsen et al., 537,303 Danish children, RR 0.92",
-     detail: "No association with MMR [abstract]."}
+     detail: "Adjusted RR 0.92 (0.68 to 1.24) for autistic disorder, 0.83 (0.65 to 1.07) for other autistic-spectrum disorders [read in full]."}
   - {id: a06, panel: years, lane: research, time: "2004-02-01T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-destefano-2004],
      label: "Feb 2004: DeStefano et al. (CDC), age at MMR and autism",
      detail: "Whole-sample OR 1.49 for vaccination before 36 months, attributed to early-intervention requirements [abstract]."}
@@ -163,7 +163,7 @@ events:
      detail: "Self-selected online survey; 3 unvaccinated cases [read]."}
   - {id: a27, panel: years, lane: research, time: "2019-03-05T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-hviid-2019],
      label: "Mar 2019: Hviid et al., 657,461 Danish children, HR 0.93",
-     detail: "No increase in subgroups; no clustering after vaccination [abstract]."}
+     detail: "6,517 autism diagnoses, HR 0.93 (0.85 to 1.02); no increase in subgroups, no clustering after vaccination [read in full]."}
   # ---------------- Panel B ----------------
   - {id: b01, panel: recent, lane: research, time: "2025-07-15T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-andersson-2025],
      label: "Jul 2025: Danish aluminum cohort (1,224,176 children): no increase",
