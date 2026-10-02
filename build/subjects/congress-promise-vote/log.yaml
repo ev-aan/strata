@@ -1,0 +1,22 @@
+subject: congress-promise-vote
+dig_status: scoping
+log:
+  - id: L-01
+    date: "2026-10-02"
+    entry: >
+      Owner proposed using timelines to show how politics works (votes, messaging, alliances) and
+      whether politicians are true to their constituents. Owner chose: US Congress; question
+      "promise to vote to outcome"; neutral fixed-rule selection across both parties.
+  - id: L-02
+    date: "2026-10-02"
+    entry: >
+      Feasibility: official House and Senate roll-call XML and the Voteview dataset are reachable
+      from the cloud session; a House 2023 roll call parsed correctly (member, party, vote). FEC
+      and api.congress.gov need free API keys. congress.gov and OpenSecrets block the cloud session.
+  - id: L-03
+    date: "2026-10-02"
+    entry: >
+      Protocol written (protocol.yaml) before any bill or member was chosen. No subject selected
+      and no claims filed. Constituent-opinion comparison deliberately left out of the pilot.
+      NEXT: owner approves or amends the protocol; then apply the selection rule mechanically
+      and log the candidate list before reading any member's record.
