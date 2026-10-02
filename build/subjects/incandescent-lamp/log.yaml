@@ -195,3 +195,34 @@ log:
       the notebook image. (c) Edison's filing on 4 Nov 1879: re-read in 40 F. 21; the application file wrapper and USPTO filing record were not read. Also open: the Comptes rendus 1858 and the Academy's 1874 report (only through Fontaine);
       Armstrong's 1881 letter; the original Times page for the Savoy; the Canadian specification; Swan's patents and the Lit and Phil 1879 minutes; Davy's 1802 papers; Rohde (2007); the springe.de wording;
       The Canadian Encyclopedia; Sprengel; Lodygin and GE; any Edison purchase of the Woodward patent; the full specifications of the 1841 and 1845 patents; the Patent Office interference record.
+  - id: L-19
+    date: 2026-10-02
+    entry: >
+      REVISION ROUND 2 (author response to review.yaml R1-4, R1-5 and R2-1 to R2-11). Each finding was checked against the source first. Corrections to my own
+      earlier log entries, by new entry (L-14, L-17 and the claims' basis notes stay as written and are wrong in these two places).
+      (1) Kommersant doc 6822124 DOES contain the privilege number and the backdated priority date: "11 июля 1874 года ... Александру Лодыгину «привилегию» № 1619.
+      Интересно, что «приоритет» был указан задним числом, от 2 октября 1872 года" (re-opened and read in this round). L-14 (e) and L-17 (12) were wrong to say it does
+      not; the number and date are restored in lamp-lodygin-1872-74, in node lamp-1874-07-11-lodygin-russian-privilege (rev 2), in the timeline note and in the manifest, with
+      their single source (a later newspaper history, no scan of the privilege). The Lomonosov prize and General Electric are indeed not in that page. (2) 52 F. 300 DOES contain
+      "under an application filed November 4, 1879, letters patent No. 223,898 were issued" and "The knowledge that practical stability could be given to a carbon filament was not
+      gained until October, 1879" (re-opened in this round). L-17 (2) and (3), and the basis notes of lamp-edison-patent and lamp-edison-oct-1879-test, wrongly said these words were
+      not in that opinion; 52 F. 300 is cited again for the filing date, and the second sentence is cited as a court's view (not a dated record) in lamp-first-practical-priority.
+  - id: L-20
+    date: 2026-10-02
+    entry: >
+      R2-1 and R1-4 (c). The abridgment of de Moleyns's patent (pp. 62-63) says only "a means of generating the electric light ... with pulverized charcoal" between platinum-wire
+      coils in "an exhausted glass globe"; it does not say the conductor is heated or glows, and the full specification was not read. Surface text restated: search_summary,
+      assessment text and key point 1, the headline, lamp-edison-sole-inventor, lamp-lodygin-first-claim and dt-which-first now describe 1841 as an electric light fed with powdered
+      charcoal in an exhausted globe (the Supreme Court calls it incandescent) and carry "heated carbon conductor in a vacuum" for King's 1845 patent only, where the
+      abridgment says "intensely heated" and carbon "enclosed in a Torricellian vacuum" (and 40 F. 21 quotes the specification). New headline (95 characters, still draft):
+      "No one person invented the bulb: carbon lamps were patented by 1845; Edison v Swan is unsettled". The assessment basis now lists lamp-de-moleyns-patent,
+      lamp-starr-king-patent and lamp-earliest-patent. R2-2 and R1-5: the assessment text no longer says one standard "was used for every claimant" without qualification or that
+      every national story stretches a record into "first"; it says one stated standard (S1 to S4) is applied, that depth differs (abridgments, a blog, a transcription), that
+      Lodygin's "first" and the Canadian sale are the stretched ones on the documents read, Goebel is contested (about forty affidavits per Colt J.; no dated document before 1882
+      either way) and de Changy's first-claim is not dug. The divergence note's "weakest records" is replaced by what the records are; the thread text says the same. R2-4: both
+      statements about the October 1880 lamp and the blackening are now attributed to Swan by name (lecture, Chemical News 42). R2-6: key point 3 and the assessment text say "per a blog"
+      and "per a transcription"; Cragside and the Savoy stay in one claim at moderate confidence and secondary, shown as limits. R2-7: the two Swan nodes get rev 2 with `time` at the middle
+      of their windows and date_basis inferred (the 18 Dec 1878 and 3 Feb 1879 days came from secondary summaries); the timeline pins are updated. R2-8: Swan's "October, 1877, I sent to
+      Mr. Stearn a number of carbons, made from carbonised cardboard ... mounted for me in glass globes" (Chemical News 42, p. 229; verified) is recorded in lamp-swan-before-edison as
+      Swan's claim under S4. R2-9: Quote Investigator's 1882 Christian Union article by Edison and 1921 American Magazine interview are in the tx-10000-ways chain as read: no; the claim stays
+      at provisional and says only "earliest version found". R2-11: one spelling, Matthew Evans. R2-10 needs no change by the author; noted for the owner.

@@ -36,7 +36,7 @@ people:
   - {who: "John Wellington Starr / Edward Augustin King", detail: "British patent No. 10,919, 1845, issued to King as a communication; a later court and later sources name Starr as the inventor."}
   - {who: "de Changy", detail: "Worked in Belgium per Fontaine (Howell and Schroeder 1927 call him a French civil engineer with a Belgian patent); sealed platinum lamps reported by Jobard in 1858."}
   - {who: "Alexander Lodygin", detail: "Russian; carbon-rod lamps reported 1872-73; Academy prize 1874; later metal-filament patents."}
-  - {who: "Henry Woodward and Mathew Evans", detail: "Toronto; Canadian patent 3,738 (1874); Woodward's US patent 181,613 (1876)."}
+  - {who: "Henry Woodward and Matthew Evans", detail: "Toronto; Canadian patent 3,738 (1874); Woodward's US patent 181,613 (1876)."}
   - {who: "Joseph Swan", detail: "Newcastle; carbon-rod lamp described Dec 1878; a lamp shown at the Lit and Phil about two years before Oct 1880 (his own account); a lamp with a very thin carbon shown in his Oct 1880 lecture."}
   - {who: "Thomas Edison and his laboratory", detail: "Menlo Park; Charles Batchelor kept the notebook of the 22 Oct 1879 test."}
   - {who: "William Sawyer and Albon Man", detail: "New York; won the Patent Office interference on paper carbons (early 1885); their patent was held invalid in 1889 and the Supreme Court affirmed in 1895."}
@@ -50,11 +50,11 @@ events:
   - {id: a3, panel: century, lane: britain, node: lamp-1845-11-04-king-starr-patent-10919, rev: 1}
   - {id: a4, panel: century, lane: europe, node: lamp-1858-02-27-jobard-reports-de-changy-lamps, rev: 1, note: "Known only through Fontaine's 1878 quotation; Fontaine is the only channel for this and for Lodygin."}
   - {id: a5, panel: century, lane: russia, node: lamp-1873-lodygin-carbon-rod-lamps, rev: 1, note: "Fontaine judges the apparatus impractical."}
-  - {id: a6, panel: century, lane: russia, node: lamp-1874-07-11-lodygin-russian-privilege, rev: 1, note: "Kommersant only; no privilege number in the page read."}
+  - {id: a6, panel: century, lane: russia, node: lamp-1874-07-11-lodygin-russian-privilege, rev: 2, note: "Kommersant only (a later newspaper history; no scan of the privilege)."}
   - {id: a6b, panel: century, lane: russia, node: lamp-1874-lomonosov-prize-lodygin, rev: 1, note: "Prize per Fontaine; the amount is not given."}
   - {id: a7, panel: century, lane: canada, node: lamp-1874-08-03-woodward-evans-canadian-patent, rev: 1, note: "The Canadian specification was not read."}
   - {id: a8, panel: century, lane: canada, node: lamp-1876-08-29-woodward-us-patent-181613, rev: 1, note: "No document of an Edison purchase was found."}
-  - {id: a9, panel: century, lane: britain, node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, rev: 1, note: "A rod that blackened its globe; no lasting lamp."}
+  - {id: a9, panel: century, lane: britain, node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, rev: 2, note: "A rod that blackened its globe; no lasting lamp."}
   - {id: a10, panel: century, lane: usa, node: lamp-1879-10-22-batchelor-cotton-thread-lamp, rev: 1, note: "13 1/2 hours, not 40."}
   - {id: a11, panel: century, lane: usa, node: lamp-1880-01-27-edison-patent-223898-granted, rev: 1, note: "Filed 4 Nov 1879 (node lamp-1879-11-04-edison-files-patent-223898)."}
   - {id: a12, panel: century, lane: usa, node: lamp-1882-09-04-pearl-street-district-service-begins, rev: 1, note: "Generation, wiring and metering were the commercial invention; the lamp was one part."}
@@ -68,8 +68,8 @@ events:
   - {id: a15d, panel: century, lane: courts, node: lamp-1894-05-01-seventh-circuit-affirms-wisconsin-goebel-ruling, rev: 1}
   - {id: a16, panel: century, lane: courts, node: lamp-1895-11-11-supreme-court-affirms-sawyer-man-decree, rev: 1, note: "Holds the Sawyer-Man claims other than the third too indefinite; does not decide priority."}
   - {id: a17, panel: century, lane: usa, node: lamp-1865-05-09-goebel-sewing-machine-hemmer-patent, rev: 1, note: "Shows only that Goebel held a patent in 1865; nothing about lamps."}
-  - {id: b1, panel: race, lane: britain, node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, rev: 1}
-  - {id: b2, panel: race, lane: britain, node: lamp-1879-02-03-swan-shows-lamp-lit-and-phil, rev: 1, note: "Swan's own 1880 reference; date uncertain; no 1879 report found."}
+  - {id: b1, panel: race, lane: britain, node: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society, rev: 2}
+  - {id: b2, panel: race, lane: britain, node: lamp-1879-02-03-swan-shows-lamp-lit-and-phil, rev: 2, note: "Swan's own 1880 reference; date uncertain; no 1879 report found."}
   - {id: b3, panel: race, lane: usa, node: lamp-1879-10-22-batchelor-cotton-thread-lamp, rev: 1}
   - {id: b3b, panel: race, lane: usa, node: lamp-1879-11-16-first-lamp-that-answers-the-purpose, rev: 1}
   - {id: b4, panel: race, lane: usa, node: lamp-1879-11-04-edison-files-patent-223898, rev: 1}

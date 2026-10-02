@@ -1,15 +1,16 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: lamp-1874-07-11-lodygin-russian-privilege
-rev: 1
+rev: 2
 type: event
-label: '11 Jul 1874: Lodygin''s Russian privilege (patent) is dated'
+label: '11 Jul 1874: Lodygin is issued Russian privilege No. 1619 (priority dated from 2 Oct 1872)'
 time: '1874-07-11T12:00:00Z'
 precision: day
 kind: official
 status: single
-what: 'Kommersant (St Petersburg, 2024), marking 150 years: the first patent for an incandescent lamp ''was received'' on
-  11 July 1874 by Lodygin. The article says Lodygin filed a petition for a privilege in 1872. It gives no privilege number;
-  the number 1619 and a priority date of 2 Oct 1872, which the dig had recorded, are not in this article and are not used.'
+what: 'Kommersant (St Petersburg, 11 Jul 2024), marking 150 years: on 11 July 1874 the home patent office issued Lodygin privilege
+  No. 1619, ''interestingly'' with the priority dated retroactively, from 2 October 1872; the article also says he petitioned
+  for a privilege in 1872 and, in another passage, that the first patent for an incandescent lamp ''was received'' that day.
+  One later newspaper history; no scan of the privilege.'
 sources:
 - title: Kommersant (St Petersburg), 'Why Lodygin's invention became Edison's lamp' (doc 6822124)
   url: https://www.kommersant.ru/doc/6822124
@@ -27,4 +28,8 @@ history:
   change: 'Created from the incandescent-lamp dig''s revision: timeline event a6 (split: the privilege); the privilege number
     and priority date of the earlier version are not in the Kommersant page read and are dropped. Date and place re-checked
     against the cited source.'
+- rev: 2
+  date: '2026-10-02'
+  change: 'Review request R2-3: the privilege number 1619 and the backdated priority date of 2 Oct 1872 ARE in the Kommersant
+    page (doc 6822124); rev 1 wrongly said they were not. Restored with their single newspaper source.'
 date_basis: stated

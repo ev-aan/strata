@@ -1,9 +1,9 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: lamp-1878-12-swan-rod-lamp-newcastle-chemical-society
-rev: 1
+rev: 2
 type: event
 label: 'Dec 1878: Swan describes a carbon-rod lamp that blackened its globe (Newcastle Chemical Society)'
-time: '1878-12-18T12:00:00Z'
+time: '1878-12-12T12:00:00Z'
 precision: month
 kind: document
 status: single
@@ -13,7 +13,8 @@ what: 'Chemical News 39: at the Newcastle Chemical Society meeting, Mr. J. W. Sw
   dynamo-electric machine ''of the second or 6000 candle size''. The rod ''glow[ed] with great splendour'', the glass ''became
   coated with a sooty deposit on its inside'', and the rod ''became curved to the form of a bow, as if from softening''. B.
   S. Proctor''s note in the same volume (read 27 Mar 1879) says that ''at our meeting in December, 1878, Mr. J. W. Swan exhibited
-  an electric lamp ... which had broken down''. The report prints no day.'
+  an electric lamp ... which had broken down''. The report prints no day. The `time` is the middle of the December 1878 window;
+  no source read gives a day (an earlier 18 Dec came from secondary summaries that were not kept).'
 sources:
 - title: 'Chemical News 39 (28 Mar 1879, p. 133; 18 Apr 1879, p. 168): Newcastle Chemical Society report, and B. S. Proctor,
     ''On the smoke of an electric lamp'''
@@ -45,4 +46,8 @@ history:
   change: 'Created from the incandescent-lamp dig''s revision: timeline events a9 and b1 (one event). The 18 Dec day on the
     earlier timeline came from secondary summaries (Grace''s Guide, Histelec) that this dig did not keep; it is retained only
     as the best single date inside the December window. Date and place re-checked against the cited source.'
-date_basis: derived
+- rev: 2
+  date: '2026-10-02'
+  change: 'Review request R2-7: time moved from 18 Dec (a day no source read gives) to the middle of the window, date_basis
+    inferred; the window is unchanged.'
+date_basis: inferred

@@ -277,7 +277,7 @@ sources:
     title: "Kommersant (St Petersburg), 'Why Lodygin's invention became Edison's lamp' (doc 6822124)"
     url: https://www.kommersant.ru/doc/6822124
     document_class: secondary
-    read: "yes, directly (page dated 11 July 2024; re-read 2026-10-02: gives 11 July 1874 for Lodygin's patent, 1872 for the first demonstration and the petition for a privilege, and 30-40 minutes for the first lamps; it gives NO privilege number and does not mention a Lomonosov prize. The number 1619 and the priority date 2 Oct 1872, and the lamptech entry, recorded in the first version of this dig, are not in this page and are not used)"
+    read: "yes, directly (page dated 11 July 2024; re-read 2026-10-02: gives 11 July 1874 for Lodygin's patent, 1872 for the first demonstration and the petition for a privilege, and 30-40 minutes for the first lamps; it gives privilege No. 1619 (11 July 1874, with its priority dated retroactively from 2 October 1872; a correction of an earlier note here that said the page gave no number) and does not mention a Lomonosov prize or General Electric; the lamptech entry recorded in the first version of this dig is not in this page and is not used)"
     authenticity: {status: not_applicable, basis: "Newspaper history; gives dates without a scan of the privilege."}
   - id: src-kommersant-campaign
     title: "Kommersant, 'The fight against kowtowing: how the USSR separated from the West' (doc 5338615)"

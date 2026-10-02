@@ -14,7 +14,8 @@ threads:
     description: >
       Six countries have an answer to "Who invented the light bulb?": the United States (Edison), Britain
       (Swan), Canada (Woodward and Evans), Germany (Göbel), Russia (Lodygin) and Belgium (de Changy). Each
-      story takes one real record and stretches it into "first". The pattern is similar in every country.
+      story starts from one real record. For Lodygin and for Woodward and Evans the documents read show it stretched into "first"; Göbel's
+      is contested on a preliminary court record, de Changy's first-claim is not dug, and Latimer is not a national claim.
       The claimants are held to one stated standard (S1 to S4, in the description in claims.yaml), but they are not equally well
       documented, and the thread does not claim that each was dug to the same depth. Still live are the Swan-versus-Edison
       question and, on a preliminary court record, Göbel's 1854 lamps; the others are filed in claims.yaml and the spread of the
