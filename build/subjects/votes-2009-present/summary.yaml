@@ -1,0 +1,2188 @@
+generated_by: build/tools/build_votes.py
+source_sha256: 98fcc6eac8d966557c4f10c3a64aaee321b88b68522bf339ee18da858f5b1988
+rolls: 17052
+closest_rule: For each Congress and chamber, the 3 passage votes of bills or joint resolutions with the smallest |yea - nay| (at least 50 votes
+  cast); ties by earlier date. Not a judgement of importance.
+months:
+  2009-01:
+    H_amendment: 9
+    H_other: 27
+    H_passage: 9
+    S_amendment: 12
+    S_cloture: 3
+    S_nomination: 3
+    S_other: 10
+    S_passage: 3
+  2009-02:
+    H_amendment: 2
+    H_other: 31
+    H_passage: 11
+    S_amendment: 17
+    S_cloture: 2
+    S_nomination: 3
+    S_other: 18
+    S_passage: 2
+  2009-03:
+    H_amendment: 20
+    H_other: 37
+    H_passage: 27
+    S_amendment: 22
+    S_cloture: 3
+    S_nomination: 5
+    S_other: 13
+    S_passage: 2
+  2009-04:
+    H_amendment: 15
+    H_other: 22
+    H_passage: 17
+    S_amendment: 33
+    S_cloture: 2
+    S_nomination: 6
+    S_other: 15
+    S_passage: 1
+  2009-05:
+    H_amendment: 18
+    H_other: 34
+    H_passage: 11
+    S_amendment: 14
+    S_cloture: 3
+    S_nomination: 2
+    S_other: 4
+    S_passage: 4
+  2009-06:
+    H_amendment: 87
+    H_other: 70
+    H_passage: 28
+    S_amendment: 1
+    S_cloture: 6
+    S_nomination: 1
+    S_other: 3
+    S_passage: 1
+  2009-07:
+    H_amendment: 97
+    H_other: 67
+    H_passage: 45
+    S_amendment: 28
+    S_cloture: 2
+    S_other: 5
+    S_passage: 5
+  2009-08:
+    S_amendment: 5
+    S_cloture: 1
+    S_nomination: 1
+    S_other: 7
+    S_passage: 2
+  2009-09:
+    H_amendment: 14
+    H_other: 24
+    H_passage: 21
+    S_amendment: 12
+    S_cloture: 2
+    S_nomination: 3
+    S_other: 13
+    S_passage: 3
+  2009-10:
+    H_amendment: 23
+    H_other: 48
+    H_passage: 15
+    S_amendment: 11
+    S_cloture: 5
+    S_nomination: 3
+    S_other: 8
+    S_passage: 1
+  2009-11:
+    H_amendment: 25
+    H_other: 31
+    H_passage: 23
+    S_amendment: 4
+    S_cloture: 1
+    S_nomination: 4
+    S_other: 9
+    S_passage: 4
+  2009-12:
+    H_amendment: 26
+    H_other: 31
+    H_passage: 22
+    S_amendment: 16
+    S_cloture: 5
+    S_nomination: 1
+    S_other: 20
+    S_passage: 2
+  2010-01:
+    H_amendment: 3
+    H_other: 12
+    H_passage: 9
+    S_amendment: 11
+    S_cloture: 1
+    S_nomination: 3
+    S_other: 1
+  2010-02:
+    H_amendment: 22
+    H_other: 19
+    H_passage: 8
+    S_cloture: 5
+    S_nomination: 3
+    S_other: 4
+  2010-03:
+    H_amendment: 27
+    H_other: 61
+    H_passage: 32
+    S_amendment: 4
+    S_cloture: 4
+    S_nomination: 3
+    S_other: 65
+    S_passage: 4
+  2010-04:
+    H_amendment: 14
+    H_other: 23
+    H_passage: 10
+    S_amendment: 1
+    S_cloture: 6
+    S_nomination: 5
+    S_other: 6
+    S_passage: 1
+  2010-05:
+    H_amendment: 35
+    H_other: 43
+    H_passage: 16
+    S_amendment: 30
+    S_cloture: 3
+    S_nomination: 2
+    S_other: 12
+    S_passage: 2
+  2010-06:
+    H_amendment: 18
+    H_other: 39
+    H_passage: 21
+    S_amendment: 6
+    S_cloture: 3
+    S_nomination: 8
+    S_other: 11
+  2010-07:
+    H_amendment: 34
+    H_other: 34
+    H_passage: 30
+    S_cloture: 6
+    S_nomination: 1
+    S_other: 11
+  2010-08:
+    H_amendment: 1
+    H_other: 3
+    S_cloture: 1
+    S_nomination: 1
+    S_other: 5
+  2010-09:
+    H_amendment: 10
+    H_other: 15
+    H_passage: 22
+    S_amendment: 2
+    S_cloture: 8
+    S_nomination: 1
+    S_other: 6
+    S_passage: 2
+  2010-11:
+    H_amendment: 3
+    H_other: 12
+    H_passage: 6
+    S_cloture: 3
+    S_other: 5
+    S_passage: 1
+  2010-12:
+    H_amendment: 27
+    H_other: 29
+    H_passage: 22
+    S_amendment: 9
+    S_cloture: 11
+    S_nomination: 5
+    S_other: 17
+  2011-01:
+    H_amendment: 2
+    H_other: 18
+    H_passage: 3
+    S_other: 6
+  2011-02:
+    H_amendment: 104
+    H_other: 13
+    H_passage: 8
+    S_amendment: 5
+    S_cloture: 1
+    S_nomination: 4
+    S_other: 8
+    S_passage: 2
+  2011-03:
+    H_amendment: 18
+    H_other: 32
+    H_passage: 12
+    S_amendment: 6
+    S_cloture: 1
+    S_nomination: 6
+    S_other: 5
+    S_passage: 2
+  2011-04:
+    H_amendment: 21
+    H_other: 35
+    H_passage: 9
+    S_amendment: 8
+    S_nomination: 2
+    S_other: 3
+    S_passage: 2
+  2011-05:
+    H_amendment: 63
+    H_other: 23
+    H_passage: 16
+    S_cloture: 6
+    S_nomination: 6
+    S_other: 11
+  2011-06:
+    H_amendment: 83
+    H_other: 20
+    H_passage: 11
+    S_amendment: 9
+    S_cloture: 2
+    S_nomination: 6
+    S_other: 2
+    S_passage: 1
+  2011-07:
+    H_amendment: 140
+    H_other: 30
+    H_passage: 18
+    S_cloture: 5
+    S_nomination: 3
+    S_other: 9
+    S_passage: 1
+  2011-08:
+    H_other: 3
+    H_passage: 5
+    S_other: 1
+  2011-09:
+    H_amendment: 18
+    H_other: 19
+    H_passage: 13
+    S_amendment: 16
+    S_cloture: 5
+    S_nomination: 2
+    S_other: 4
+    S_passage: 3
+  2011-10:
+    H_amendment: 39
+    H_other: 17
+    H_passage: 18
+    S_amendment: 14
+    S_cloture: 6
+    S_nomination: 9
+    S_other: 2
+    S_passage: 4
+  2011-11:
+    H_amendment: 22
+    H_other: 19
+    H_passage: 15
+    S_amendment: 8
+    S_cloture: 3
+    S_nomination: 5
+    S_other: 6
+    S_passage: 2
+  2011-12:
+    H_amendment: 21
+    H_other: 35
+    H_passage: 22
+    S_amendment: 6
+    S_cloture: 4
+    S_nomination: 2
+    S_other: 9
+    S_passage: 2
+  2012-01:
+    H_other: 6
+    H_passage: 5
+    S_cloture: 1
+    S_nomination: 1
+    S_other: 1
+  2012-02:
+    H_amendment: 38
+    H_other: 25
+    H_passage: 16
+    S_amendment: 10
+    S_cloture: 3
+    S_nomination: 4
+    S_other: 2
+    S_passage: 1
+  2012-03:
+    H_amendment: 23
+    H_other: 22
+    H_passage: 15
+    S_amendment: 18
+    S_cloture: 8
+    S_nomination: 8
+    S_other: 4
+    S_passage: 2
+  2012-04:
+    H_amendment: 15
+    H_other: 16
+    H_passage: 13
+    S_amendment: 15
+    S_cloture: 2
+    S_nomination: 3
+    S_other: 2
+    S_passage: 2
+  2012-05:
+    H_amendment: 70
+    H_other: 23
+    H_passage: 17
+    S_amendment: 10
+    S_cloture: 1
+    S_nomination: 5
+    S_other: 7
+    S_passage: 3
+  2012-06:
+    H_amendment: 104
+    H_other: 29
+    H_passage: 12
+    S_amendment: 38
+    S_cloture: 6
+    S_nomination: 4
+    S_other: 10
+    S_passage: 1
+  2012-07:
+    H_amendment: 57
+    H_other: 12
+    H_passage: 19
+    S_amendment: 1
+    S_cloture: 8
+    S_nomination: 3
+    S_other: 1
+    S_passage: 1
+  2012-08:
+    H_amendment: 4
+    H_other: 9
+    H_passage: 4
+    S_amendment: 1
+    S_cloture: 1
+    S_nomination: 1
+  2012-09:
+    H_amendment: 16
+    H_other: 14
+    H_passage: 17
+    S_cloture: 4
+    S_nomination: 1
+    S_other: 5
+    S_passage: 1
+  2012-11:
+    H_amendment: 2
+    H_other: 4
+    H_passage: 4
+    S_amendment: 10
+    S_cloture: 2
+    S_other: 4
+  2012-12:
+    H_amendment: 4
+    H_other: 14
+    H_passage: 23
+    S_amendment: 14
+    S_cloture: 3
+    S_nomination: 7
+    S_other: 6
+    S_passage: 4
+  2013-01:
+    H_amendment: 12
+    H_other: 16
+    H_passage: 6
+    S_amendment: 1
+    S_nomination: 1
+    S_other: 7
+    S_passage: 3
+  2013-02:
+    H_amendment: 4
+    H_other: 13
+    H_passage: 8
+    S_amendment: 6
+    S_cloture: 4
+    S_nomination: 4
+    S_other: 1
+    S_passage: 1
+  2013-03:
+    H_amendment: 8
+    H_other: 20
+    H_passage: 6
+    S_amendment: 50
+    S_cloture: 4
+    S_nomination: 3
+    S_other: 7
+    S_passage: 1
+  2013-04:
+    H_amendment: 8
+    H_other: 15
+    H_passage: 16
+    S_amendment: 9
+    S_cloture: 3
+    S_nomination: 6
+    S_other: 1
+  2013-05:
+    H_amendment: 13
+    H_other: 23
+    H_passage: 19
+    S_amendment: 18
+    S_nomination: 7
+    S_other: 1
+    S_passage: 2
+  2013-06:
+    H_amendment: 79
+    H_other: 19
+    H_passage: 23
+    S_amendment: 10
+    S_cloture: 7
+    S_nomination: 5
+    S_other: 5
+    S_passage: 2
+  2013-07:
+    H_amendment: 81
+    H_other: 27
+    H_passage: 15
+    S_amendment: 3
+    S_cloture: 10
+    S_nomination: 12
+    S_other: 3
+    S_passage: 1
+  2013-08:
+    H_amendment: 10
+    H_other: 5
+    H_passage: 5
+    S_cloture: 1
+    S_nomination: 2
+  2013-09:
+    H_amendment: 12
+    H_other: 21
+    H_passage: 24
+    S_amendment: 1
+    S_cloture: 2
+    S_nomination: 3
+    S_other: 4
+    S_passage: 1
+  2013-10:
+    H_amendment: 7
+    H_other: 49
+    H_passage: 10
+    S_cloture: 7
+    S_nomination: 4
+    S_other: 4
+    S_passage: 1
+  2013-11:
+    H_amendment: 15
+    H_other: 16
+    H_passage: 10
+    S_amendment: 3
+    S_cloture: 8
+    S_nomination: 1
+    S_other: 6
+    S_passage: 1
+  2013-12:
+    H_amendment: 8
+    H_other: 8
+    H_passage: 14
+    S_cloture: 18
+    S_nomination: 16
+    S_other: 11
+  2014-01:
+    H_amendment: 3
+    H_other: 12
+    H_passage: 15
+    S_amendment: 3
+    S_cloture: 6
+    S_nomination: 2
+    S_other: 7
+    S_passage: 1
+  2014-02:
+    H_amendment: 25
+    H_other: 18
+    H_passage: 16
+    S_cloture: 10
+    S_nomination: 12
+    S_other: 6
+  2014-03:
+    H_amendment: 18
+    H_other: 21
+    H_passage: 19
+    S_amendment: 5
+    S_cloture: 20
+    S_nomination: 16
+    S_other: 1
+    S_passage: 4
+  2014-04:
+    H_amendment: 12
+    H_other: 16
+    H_passage: 11
+    S_cloture: 12
+    S_nomination: 13
+    S_other: 4
+    S_passage: 1
+  2014-05:
+    H_amendment: 46
+    H_other: 21
+    H_passage: 17
+    S_cloture: 20
+    S_nomination: 17
+    S_other: 3
+  2014-06:
+    H_amendment: 65
+    H_other: 18
+    H_passage: 13
+    S_amendment: 2
+    S_cloture: 24
+    S_nomination: 24
+    S_other: 1
+    S_passage: 2
+  2014-07:
+    H_amendment: 50
+    H_other: 31
+    H_passage: 24
+    S_amendment: 5
+    S_cloture: 15
+    S_nomination: 12
+    S_other: 6
+    S_passage: 2
+  2014-08:
+    H_amendment: 1
+    H_other: 4
+    H_passage: 2
+  2014-09:
+    H_amendment: 3
+    H_other: 14
+    H_passage: 18
+    S_cloture: 7
+    S_nomination: 5
+    S_other: 2
+  2014-11:
+    H_amendment: 4
+    H_other: 7
+    H_passage: 5
+    S_cloture: 12
+    S_nomination: 6
+    S_other: 1
+    S_passage: 1
+  2014-12:
+    H_amendment: 7
+    H_other: 9
+    H_passage: 17
+    S_cloture: 28
+    S_nomination: 17
+    S_other: 30
+    S_passage: 1
+  2015-01:
+    H_amendment: 9
+    H_other: 24
+    H_passage: 16
+    S_amendment: 33
+    S_cloture: 4
+    S_other: 10
+    S_passage: 2
+  2015-02:
+    H_amendment: 10
+    H_other: 30
+    H_passage: 16
+    S_amendment: 1
+    S_cloture: 7
+    S_nomination: 2
+    S_other: 1
+    S_passage: 3
+  2015-03:
+    H_amendment: 13
+    H_other: 14
+    H_passage: 11
+    S_amendment: 51
+    S_cloture: 6
+    S_nomination: 4
+    S_other: 11
+  2015-04:
+    H_amendment: 24
+    H_other: 23
+    H_passage: 16
+    S_amendment: 12
+    S_cloture: 1
+    S_nomination: 5
+    S_other: 13
+    S_passage: 2
+  2015-05:
+    H_amendment: 27
+    H_other: 12
+    H_passage: 17
+    S_amendment: 8
+    S_cloture: 8
+    S_nomination: 4
+    S_other: 4
+    S_passage: 4
+  2015-06:
+    H_amendment: 86
+    H_other: 24
+    H_passage: 15
+    S_amendment: 11
+    S_cloture: 7
+    S_nomination: 2
+    S_other: 2
+    S_passage: 2
+  2015-07:
+    H_amendment: 53
+    H_other: 24
+    H_passage: 23
+    S_amendment: 25
+    S_cloture: 9
+    S_nomination: 1
+    S_other: 3
+    S_passage: 3
+  2015-08:
+    S_cloture: 1
+  2015-09:
+    H_amendment: 11
+    H_other: 14
+    H_passage: 14
+    S_cloture: 8
+    S_nomination: 1
+    S_other: 1
+  2015-10:
+    H_amendment: 11
+    H_other: 27
+    H_passage: 14
+    S_amendment: 7
+    S_cloture: 6
+    S_nomination: 4
+    S_other: 4
+    S_passage: 1
+  2015-11:
+    H_amendment: 37
+    H_other: 13
+    H_passage: 14
+    S_cloture: 4
+    S_nomination: 4
+    S_other: 7
+    S_passage: 1
+  2015-12:
+    H_amendment: 16
+    H_other: 32
+    H_passage: 12
+    S_amendment: 6
+    S_cloture: 2
+    S_nomination: 2
+    S_other: 18
+    S_passage: 1
+  2016-01:
+    H_amendment: 23
+    H_other: 13
+    H_passage: 7
+    S_amendment: 3
+    S_cloture: 3
+    S_nomination: 3
+  2016-02:
+    H_amendment: 22
+    H_other: 18
+    H_passage: 17
+    S_amendment: 6
+    S_cloture: 5
+    S_nomination: 4
+    S_other: 2
+    S_passage: 1
+  2016-03:
+    H_amendment: 6
+    H_other: 13
+    H_passage: 17
+    S_amendment: 2
+    S_cloture: 3
+    S_nomination: 1
+    S_other: 4
+    S_passage: 1
+  2016-04:
+    H_amendment: 4
+    H_other: 17
+    H_passage: 20
+    S_amendment: 17
+    S_cloture: 5
+    S_nomination: 1
+    S_other: 1
+    S_passage: 3
+  2016-05:
+    H_amendment: 41
+    H_other: 27
+    H_passage: 21
+    S_amendment: 4
+    S_cloture: 8
+    S_nomination: 2
+    S_other: 6
+    S_passage: 3
+  2016-06:
+    H_amendment: 37
+    H_other: 21
+    H_passage: 16
+    S_amendment: 3
+    S_cloture: 13
+    S_nomination: 1
+    S_other: 11
+    S_passage: 1
+  2016-07:
+    H_amendment: 94
+    H_other: 25
+    H_passage: 17
+    S_cloture: 9
+    S_nomination: 2
+    S_other: 6
+  2016-09:
+    H_amendment: 19
+    H_other: 34
+    H_passage: 43
+    S_cloture: 9
+    S_nomination: 2
+    S_other: 3
+    S_passage: 3
+  2016-11:
+    H_amendment: 5
+    H_other: 5
+    H_passage: 9
+    S_cloture: 1
+    S_passage: 2
+  2016-12:
+    H_amendment: 1
+    H_other: 14
+    H_passage: 14
+    S_cloture: 4
+    S_other: 4
+    S_passage: 1
+  2017-01:
+    H_amendment: 27
+    H_other: 26
+    H_passage: 15
+    S_amendment: 2
+    S_cloture: 1
+    S_nomination: 5
+    S_other: 25
+    S_passage: 2
+  2017-02:
+    H_amendment: 4
+    H_other: 28
+    H_passage: 7
+    S_cloture: 8
+    S_nomination: 10
+    S_other: 21
+  2017-03:
+    H_amendment: 25
+    H_other: 49
+    H_passage: 26
+    S_cloture: 5
+    S_nomination: 9
+    S_other: 13
+  2017-04:
+    H_amendment: 4
+    H_other: 16
+    H_passage: 8
+    S_cloture: 4
+    S_nomination: 5
+    S_other: 5
+    S_passage: 1
+  2017-05:
+    H_amendment: 5
+    H_other: 21
+    H_passage: 23
+    S_cloture: 8
+    S_nomination: 9
+    S_other: 4
+  2017-06:
+    H_amendment: 13
+    H_other: 26
+    H_passage: 20
+    S_amendment: 3
+    S_cloture: 5
+    S_nomination: 7
+    S_other: 2
+    S_passage: 1
+  2017-07:
+    H_amendment: 50
+    H_other: 25
+    H_passage: 19
+    S_amendment: 4
+    S_cloture: 6
+    S_nomination: 6
+    S_other: 8
+    S_passage: 1
+  2017-08:
+    S_cloture: 2
+    S_nomination: 4
+    S_passage: 1
+  2017-09:
+    H_amendment: 76
+    H_other: 18
+    H_passage: 11
+    S_cloture: 8
+    S_nomination: 8
+    S_other: 4
+    S_passage: 1
+  2017-10:
+    H_amendment: 13
+    H_other: 18
+    H_passage: 17
+    S_amendment: 21
+    S_cloture: 9
+    S_nomination: 9
+    S_other: 9
+  2017-11:
+    H_amendment: 7
+    H_other: 28
+    H_passage: 23
+    S_cloture: 12
+    S_nomination: 15
+    S_other: 6
+  2017-12:
+    H_amendment: 4
+    H_other: 33
+    H_passage: 24
+    S_amendment: 2
+    S_cloture: 4
+    S_nomination: 8
+    S_other: 21
+    S_passage: 1
+  2018-01:
+    H_amendment: 4
+    H_other: 27
+    H_passage: 17
+    S_cloture: 12
+    S_nomination: 10
+    S_other: 5
+  2018-02:
+    H_amendment: 4
+    H_other: 21
+    H_passage: 16
+    S_cloture: 9
+    S_nomination: 3
+    S_other: 2
+  2018-03:
+    H_amendment: 2
+    H_other: 17
+    H_passage: 19
+    S_amendment: 1
+    S_cloture: 9
+    S_nomination: 5
+    S_other: 5
+    S_passage: 2
+  2018-04:
+    H_amendment: 9
+    H_other: 12
+    H_passage: 16
+    S_cloture: 11
+    S_nomination: 9
+    S_other: 2
+  2018-05:
+    H_amendment: 22
+    H_other: 24
+    H_passage: 18
+    S_cloture: 10
+    S_nomination: 12
+    S_other: 4
+  2018-06:
+    H_amendment: 21
+    H_other: 35
+    H_passage: 27
+    S_amendment: 9
+    S_cloture: 9
+    S_nomination: 4
+    S_other: 7
+    S_passage: 3
+  2018-07:
+    H_amendment: 23
+    H_other: 23
+    H_passage: 20
+    S_amendment: 8
+    S_cloture: 8
+    S_nomination: 9
+    S_other: 7
+  2018-08:
+    S_amendment: 8
+    S_cloture: 5
+    S_nomination: 7
+    S_other: 3
+    S_passage: 2
+  2018-09:
+    H_amendment: 2
+    H_other: 19
+    H_passage: 15
+    S_amendment: 1
+    S_cloture: 5
+    S_nomination: 8
+    S_other: 2
+    S_passage: 2
+  2018-10:
+    S_cloture: 5
+    S_nomination: 12
+    S_other: 4
+  2018-11:
+    H_amendment: 1
+    H_other: 2
+    H_passage: 7
+    S_cloture: 7
+    S_nomination: 3
+    S_other: 3
+  2018-12:
+    H_amendment: 15
+    H_other: 14
+    H_passage: 46
+    S_amendment: 6
+    S_cloture: 4
+    S_nomination: 4
+    S_other: 8
+  2019-01:
+    H_amendment: 3
+    H_other: 37
+    H_passage: 24
+    S_cloture: 9
+    S_other: 4
+  2019-02:
+    H_amendment: 7
+    H_other: 18
+    H_passage: 13
+    S_amendment: 1
+    S_cloture: 9
+    S_nomination: 4
+    S_other: 4
+    S_passage: 2
+  2019-03:
+    H_amendment: 11
+    H_other: 11
+    H_passage: 11
+    S_cloture: 9
+    S_nomination: 9
+    S_other: 3
+  2019-04:
+    H_amendment: 8
+    H_other: 17
+    H_passage: 10
+    S_cloture: 16
+    S_nomination: 12
+    S_other: 2
+  2019-05:
+    H_amendment: 24
+    H_other: 20
+    H_passage: 16
+    S_cloture: 20
+    S_nomination: 21
+    S_other: 2
+    S_passage: 2
+  2019-06:
+    H_amendment: 159
+    H_other: 27
+    H_passage: 13
+    S_amendment: 3
+    S_cloture: 24
+    S_nomination: 22
+    S_other: 8
+    S_passage: 3
+  2019-07:
+    H_amendment: 43
+    H_other: 22
+    H_passage: 19
+    S_amendment: 4
+    S_cloture: 31
+    S_nomination: 27
+    S_other: 7
+    S_passage: 1
+  2019-08:
+    S_amendment: 1
+    S_cloture: 1
+    S_passage: 1
+  2019-09:
+    H_amendment: 8
+    H_other: 19
+    H_passage: 14
+    S_amendment: 1
+    S_cloture: 21
+    S_nomination: 22
+    S_other: 6
+    S_passage: 1
+  2019-10:
+    H_amendment: 18
+    H_other: 20
+    H_passage: 16
+    S_amendment: 5
+    S_cloture: 11
+    S_nomination: 7
+    S_other: 5
+    S_passage: 1
+  2019-11:
+    H_amendment: 11
+    H_other: 8
+    H_passage: 14
+    S_cloture: 12
+    S_nomination: 10
+    S_other: 2
+  2019-12:
+    H_amendment: 15
+    H_other: 28
+    H_passage: 16
+    S_cloture: 28
+    S_nomination: 27
+    S_other: 5
+    S_passage: 2
+  2020-01:
+    H_amendment: 6
+    H_other: 16
+    H_passage: 11
+    S_cloture: 6
+    S_nomination: 6
+    S_other: 19
+    S_passage: 1
+  2020-02:
+    H_amendment: 17
+    H_other: 13
+    H_passage: 14
+    S_amendment: 3
+    S_cloture: 11
+    S_nomination: 9
+    S_other: 7
+  2020-03:
+    H_amendment: 6
+    H_other: 8
+    H_passage: 10
+    S_amendment: 4
+    S_cloture: 6
+    S_nomination: 1
+    S_other: 4
+    S_passage: 3
+  2020-04:
+    H_amendment: 1
+    H_other: 1
+  2020-05:
+    H_amendment: 1
+    H_other: 6
+    H_passage: 4
+    S_amendment: 3
+    S_cloture: 8
+    S_nomination: 9
+    S_other: 1
+    S_passage: 1
+  2020-06:
+    H_amendment: 2
+    H_other: 11
+    H_passage: 5
+    S_amendment: 1
+    S_cloture: 12
+    S_nomination: 9
+    S_other: 3
+    S_passage: 1
+  2020-07:
+    H_amendment: 24
+    H_other: 13
+    H_passage: 8
+    S_amendment: 6
+    S_cloture: 9
+    S_nomination: 7
+    S_other: 2
+    S_passage: 1
+  2020-08:
+    H_other: 3
+    H_passage: 1
+    S_cloture: 2
+    S_nomination: 2
+  2020-09:
+    H_amendment: 5
+    H_other: 13
+    H_passage: 13
+    S_cloture: 19
+    S_nomination: 19
+    S_other: 3
+    S_passage: 1
+  2020-10:
+    H_amendment: 1
+    H_other: 4
+    S_cloture: 4
+    S_nomination: 2
+    S_other: 19
+  2020-11:
+    H_amendment: 2
+    H_other: 3
+    H_passage: 4
+    S_cloture: 9
+    S_nomination: 7
+  2020-12:
+    H_amendment: 1
+    H_other: 10
+    H_passage: 15
+    S_amendment: 1
+    S_cloture: 20
+    S_nomination: 21
+    S_other: 7
+    S_passage: 1
+  2021-01:
+    H_other: 15
+    H_passage: 2
+    S_cloture: 2
+    S_nomination: 4
+    S_other: 5
+    S_passage: 1
+  2021-02:
+    H_amendment: 6
+    H_other: 18
+    H_passage: 7
+    S_amendment: 32
+    S_cloture: 4
+    S_nomination: 7
+    S_other: 14
+  2021-03:
+    H_amendment: 13
+    H_other: 21
+    H_passage: 14
+    S_amendment: 25
+    S_cloture: 15
+    S_nomination: 15
+    S_other: 17
+    S_passage: 3
+  2021-04:
+    H_amendment: 4
+    H_other: 11
+    H_passage: 21
+    S_amendment: 5
+    S_cloture: 13
+    S_nomination: 11
+    S_other: 5
+    S_passage: 2
+  2021-05:
+    H_amendment: 3
+    H_other: 11
+    H_passage: 9
+    S_amendment: 15
+    S_cloture: 10
+    S_nomination: 8
+    S_other: 7
+  2021-06:
+    H_amendment: 13
+    H_other: 18
+    H_passage: 17
+    S_amendment: 3
+    S_cloture: 15
+    S_nomination: 13
+    S_other: 1
+    S_passage: 2
+  2021-07:
+    H_amendment: 15
+    H_other: 20
+    H_passage: 15
+    S_amendment: 1
+    S_cloture: 16
+    S_nomination: 15
+    S_other: 4
+    S_passage: 2
+  2021-08:
+    H_other: 3
+    H_passage: 3
+    S_amendment: 58
+    S_cloture: 3
+    S_nomination: 1
+    S_other: 5
+    S_passage: 1
+  2021-09:
+    H_amendment: 24
+    H_other: 9
+    H_passage: 19
+    S_amendment: 3
+    S_cloture: 20
+    S_nomination: 18
+    S_other: 2
+    S_passage: 1
+  2021-10:
+    H_amendment: 2
+    H_other: 6
+    H_passage: 19
+    S_cloture: 23
+    S_nomination: 20
+    S_other: 3
+  2021-11:
+    H_amendment: 3
+    H_other: 13
+    H_passage: 33
+    S_cloture: 12
+    S_nomination: 12
+    S_other: 1
+  2021-12:
+    H_amendment: 5
+    H_other: 17
+    H_passage: 39
+    S_amendment: 1
+    S_cloture: 22
+    S_nomination: 23
+    S_other: 8
+    S_passage: 1
+  2022-01:
+    H_amendment: 3
+    H_other: 6
+    H_passage: 4
+    S_cloture: 5
+    S_nomination: 5
+    S_other: 1
+    S_passage: 1
+  2022-02:
+    H_amendment: 14
+    H_other: 5
+    H_passage: 15
+    S_amendment: 3
+    S_cloture: 25
+    S_nomination: 24
+    S_other: 1
+    S_passage: 1
+  2022-03:
+    H_amendment: 7
+    H_other: 18
+    H_passage: 29
+    S_amendment: 3
+    S_cloture: 26
+    S_nomination: 19
+    S_other: 9
+    S_passage: 2
+  2022-04:
+    H_amendment: 7
+    H_other: 9
+    H_passage: 23
+    S_cloture: 6
+    S_nomination: 4
+    S_other: 5
+    S_passage: 2
+  2022-05:
+    H_amendment: 16
+    H_other: 13
+    H_passage: 62
+    S_cloture: 27
+    S_nomination: 25
+    S_other: 17
+    S_passage: 1
+  2022-06:
+    H_amendment: 17
+    H_other: 20
+    H_passage: 30
+    S_amendment: 1
+    S_cloture: 7
+    S_nomination: 13
+    S_other: 8
+    S_passage: 1
+  2022-07:
+    H_amendment: 54
+    H_other: 29
+    H_passage: 35
+    S_cloture: 12
+    S_nomination: 14
+    S_other: 5
+    S_passage: 1
+  2022-08:
+    H_amendment: 1
+    H_other: 2
+    S_amendment: 21
+    S_cloture: 1
+    S_nomination: 3
+    S_other: 25
+    S_passage: 1
+  2022-09:
+    H_amendment: 6
+    H_other: 15
+    H_passage: 36
+    S_amendment: 1
+    S_cloture: 12
+    S_nomination: 12
+    S_other: 1
+    S_passage: 1
+  2022-11:
+    H_other: 5
+    H_passage: 9
+    S_amendment: 3
+    S_cloture: 5
+    S_nomination: 4
+    S_other: 2
+    S_passage: 1
+  2022-12:
+    H_amendment: 9
+    H_other: 16
+    H_passage: 33
+    S_amendment: 13
+    S_cloture: 9
+    S_nomination: 19
+    S_other: 12
+    S_passage: 1
+  2023-01:
+    H_amendment: 57
+    H_other: 31
+    H_passage: 11
+    S_nomination: 2
+    S_other: 1
+  2023-02:
+    H_amendment: 5
+    H_other: 15
+    H_passage: 4
+    S_cloture: 14
+    S_nomination: 13
+    S_other: 1
+  2023-03:
+    H_amendment: 33
+    H_other: 12
+    H_passage: 13
+    S_amendment: 11
+    S_cloture: 17
+    S_nomination: 17
+    S_other: 5
+    S_passage: 1
+  2023-04:
+    H_amendment: 3
+    H_other: 11
+    H_passage: 6
+    S_amendment: 6
+    S_cloture: 6
+    S_nomination: 3
+    S_other: 2
+    S_passage: 1
+  2023-05:
+    H_amendment: 11
+    H_other: 14
+    H_passage: 17
+    S_cloture: 13
+    S_nomination: 14
+    S_other: 7
+  2023-06:
+    H_amendment: 15
+    H_other: 19
+    H_passage: 11
+    S_amendment: 10
+    S_cloture: 12
+    S_nomination: 11
+    S_other: 4
+    S_passage: 1
+  2023-07:
+    H_amendment: 66
+    H_other: 17
+    H_passage: 10
+    S_amendment: 22
+    S_cloture: 9
+    S_nomination: 8
+    S_passage: 1
+  2023-09:
+    H_amendment: 89
+    H_other: 24
+    H_passage: 18
+    S_cloture: 15
+    S_nomination: 14
+    S_other: 5
+    S_passage: 1
+  2023-10:
+    H_amendment: 28
+    H_other: 10
+    H_passage: 3
+    S_amendment: 8
+    S_cloture: 10
+    S_nomination: 10
+    S_other: 4
+  2023-11:
+    H_amendment: 99
+    H_other: 20
+    H_passage: 12
+    S_amendment: 5
+    S_cloture: 18
+    S_nomination: 16
+    S_other: 4
+    S_passage: 3
+  2023-12:
+    H_amendment: 3
+    H_other: 17
+    H_passage: 15
+    S_cloture: 10
+    S_nomination: 11
+    S_other: 6
+  2024-01:
+    H_amendment: 3
+    H_other: 13
+    H_passage: 13
+    S_amendment: 1
+    S_cloture: 12
+    S_nomination: 13
+    S_other: 3
+    S_passage: 1
+  2024-02:
+    H_amendment: 2
+    H_other: 10
+    H_passage: 17
+    S_amendment: 2
+    S_cloture: 14
+    S_nomination: 10
+    S_other: 9
+    S_passage: 2
+  2024-03:
+    H_amendment: 11
+    H_other: 17
+    H_passage: 17
+    S_cloture: 12
+    S_nomination: 15
+    S_other: 19
+    S_passage: 1
+  2024-04:
+    H_amendment: 10
+    H_other: 18
+    H_passage: 39
+    S_amendment: 6
+    S_cloture: 7
+    S_nomination: 4
+    S_other: 22
+    S_passage: 2
+  2024-05:
+    H_amendment: 9
+    H_other: 19
+    H_passage: 33
+    S_cloture: 10
+    S_nomination: 11
+    S_other: 5
+    S_passage: 1
+  2024-06:
+    H_amendment: 80
+    H_other: 11
+    H_passage: 12
+    S_cloture: 11
+    S_nomination: 8
+    S_other: 1
+  2024-07:
+    H_amendment: 37
+    H_other: 15
+    H_passage: 13
+    S_cloture: 13
+    S_nomination: 11
+    S_other: 2
+  2024-08:
+    S_cloture: 1
+    S_nomination: 1
+  2024-09:
+    H_amendment: 4
+    H_other: 19
+    H_passage: 32
+    S_amendment: 1
+    S_cloture: 11
+    S_nomination: 11
+    S_other: 1
+    S_passage: 1
+  2024-11:
+    H_amendment: 2
+    H_other: 9
+    H_passage: 12
+    S_cloture: 15
+    S_nomination: 10
+    S_other: 23
+  2024-12:
+    H_amendment: 4
+    H_other: 10
+    H_passage: 25
+    S_amendment: 4
+    S_cloture: 11
+    S_nomination: 15
+    S_other: 4
+    S_passage: 2
+  2025-01:
+    H_other: 9
+    H_passage: 17
+    S_amendment: 3
+    S_cloture: 13
+    S_nomination: 8
+    S_other: 3
+    S_passage: 1
+  2025-02:
+    H_amendment: 2
+    H_other: 10
+    H_passage: 14
+    S_amendment: 16
+    S_cloture: 11
+    S_nomination: 13
+    S_other: 30
+  2025-03:
+    H_amendment: 4
+    H_other: 15
+    H_passage: 13
+    S_amendment: 4
+    S_cloture: 24
+    S_nomination: 20
+    S_other: 8
+    S_passage: 2
+  2025-04:
+    H_amendment: 1
+    H_other: 15
+    H_passage: 11
+    S_amendment: 20
+    S_cloture: 17
+    S_nomination: 18
+    S_other: 16
+  2025-05:
+    H_other: 19
+    H_passage: 14
+    S_cloture: 13
+    S_nomination: 11
+    S_other: 30
+  2025-06:
+    H_amendment: 3
+    H_other: 19
+    H_passage: 18
+    S_amendment: 1
+    S_cloture: 21
+    S_nomination: 19
+    S_other: 30
+    S_passage: 1
+  2025-07:
+    H_amendment: 10
+    H_other: 9
+    H_passage: 14
+    S_amendment: 23
+    S_cloture: 37
+    S_nomination: 33
+    S_other: 19
+    S_passage: 2
+  2025-08:
+    S_amendment: 8
+    S_cloture: 7
+    S_nomination: 15
+    S_other: 1
+    S_passage: 1
+  2025-09:
+    H_amendment: 28
+    H_other: 19
+    H_passage: 17
+    S_cloture: 13
+    S_nomination: 8
+    S_other: 11
+    S_passage: 4
+  2025-10:
+    S_amendment: 8
+    S_cloture: 31
+    S_nomination: 11
+    S_other: 15
+    S_passage: 1
+  2025-11:
+    H_amendment: 1
+    H_other: 13
+    H_passage: 9
+    S_amendment: 1
+    S_cloture: 8
+    S_nomination: 4
+    S_other: 8
+    S_passage: 1
+  2025-12:
+    H_amendment: 6
+    H_other: 24
+    H_passage: 27
+    S_cloture: 19
+    S_nomination: 10
+    S_other: 7
+  2026-01:
+    H_amendment: 7
+    H_other: 22
+    H_passage: 18
+    S_amendment: 2
+    S_cloture: 4
+    S_nomination: 4
+    S_other: 8
+    S_passage: 2
+  2026-02:
+    H_amendment: 2
+    H_other: 15
+    H_passage: 13
+    S_cloture: 11
+    S_nomination: 9
+    S_other: 3
+  2026-03:
+    H_amendment: 1
+    H_other: 17
+    H_passage: 12
+    S_amendment: 1
+    S_cloture: 15
+    S_nomination: 4
+    S_other: 10
+    S_passage: 1
+  2026-04:
+    H_amendment: 10
+    H_other: 19
+    H_passage: 18
+    S_amendment: 5
+    S_cloture: 5
+    S_nomination: 4
+    S_other: 25
+  2026-05:
+    H_amendment: 1
+    H_other: 18
+    H_passage: 17
+    S_cloture: 6
+    S_nomination: 5
+    S_other: 6
+  2026-06:
+    H_other: 22
+    H_passage: 20
+    S_amendment: 5
+    S_cloture: 13
+    S_nomination: 11
+    S_other: 32
+    S_passage: 1
+  2026-07:
+    H_amendment: 24
+    H_other: 12
+    H_passage: 14
+    S_cloture: 10
+    S_nomination: 9
+    S_other: 6
+  2026-08:
+    H_passage: 2
+    S_amendment: 1
+    S_cloture: 6
+    S_nomination: 3
+    S_other: 2
+    S_passage: 2
+  2026-09:
+    H_amendment: 2
+    H_other: 12
+    H_passage: 15
+    S_amendment: 6
+    S_cloture: 10
+    S_nomination: 4
+    S_other: 4
+    S_passage: 1
+closest_passage:
+- congress: 111
+  chamber: H
+  date: '2009-12-16'
+  bill: HR4314
+  question: On Passage
+  description: To permit continued financing of Government operations
+  result: Passed
+  yea: 218
+  nay: 214
+  url: https://clerk.house.gov/evs/2009/roll988.xml
+- congress: 111
+  chamber: H
+  date: '2009-11-07'
+  bill: HR3962
+  question: On Passage
+  description: Affordable Health Care for America Act
+  result: Passed
+  yea: 220
+  nay: 215
+  url: https://clerk.house.gov/evs/2009/roll887.xml
+- congress: 111
+  chamber: H
+  date: '2009-06-26'
+  bill: HR2454
+  question: On Passage
+  description: American Clean Energy and Security Act
+  result: Passed
+  yea: 219
+  nay: 212
+  url: https://clerk.house.gov/evs/2009/roll477.xml
+- congress: 111
+  chamber: S
+  date: '2010-03-25'
+  bill: HR4872
+  question: On Passage of the Bill
+  description: An Act to provide for reconciliation pursuant to Title II of the concurrent resolution on the budget for fiscal year 2010 (S. Con.
+    Res. 13).
+  result: Bill Passed
+  yea: 56
+  nay: 43
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1112/vote_111_2_00105.xml
+- congress: 111
+  chamber: S
+  date: '2010-05-20'
+  bill: HR4173
+  question: On Passage of the Bill
+  description: 'A bill to promote the financial stability of the United States by improving accountability and transparency in the financial system,
+    to end '
+  result: Bill Passed
+  yea: 59
+  nay: 39
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1112/vote_111_2_00162.xml
+- congress: 111
+  chamber: S
+  date: '2009-12-24'
+  bill: HR3590
+  question: On Passage of the Bill
+  description: An act entitled The Patient Protection and Affordable Care Act.
+  result: Bill Passed
+  yea: 60
+  nay: 39
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1111/vote_111_1_00396.xml
+- congress: 112
+  chamber: H
+  date: '2012-12-20'
+  bill: HR6684
+  question: On Passage
+  description: Spending Reduction Act of 2012
+  result: Passed
+  yea: 215
+  nay: 209
+  url: https://clerk.house.gov/evs/2012/roll644.xml
+- congress: 112
+  chamber: H
+  date: '2011-07-29'
+  bill: S627
+  question: On Passage
+  description: Budget Control Act of 2011
+  result: Passed
+  yea: 218
+  nay: 210
+  url: https://clerk.house.gov/evs/2011/roll677.xml
+- congress: 112
+  chamber: H
+  date: '2011-06-16'
+  bill: HR2112
+  question: On Passage
+  description: Making appropriations for Agriculture, Rural Development, Food and Drug Administration, and Related Agencies programs for the fiscal
+    year en
+  result: Passed
+  yea: 217
+  nay: 203
+  url: https://clerk.house.gov/evs/2011/roll459.xml
+- congress: 112
+  chamber: S
+  date: '2012-07-25'
+  bill: S3412
+  question: On Passage of the Bill
+  description: A bill to amend the Internal Revenue Code of 1986 to provide tax relief to middle-class families.
+  result: Bill Passed
+  yea: 51
+  nay: 48
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1122/vote_112_2_00184.xml
+- congress: 112
+  chamber: S
+  date: '2012-05-24'
+  bill: S2343
+  question: On Passage of the Bill
+  description: A bill to amend the Higher Education Act of 1965 to extend the reduced interest rate for Federal Direct Stafford Loans, and for
+    other purpos
+  result: Bill Defeated
+  yea: 51
+  nay: 43
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1122/vote_112_2_00113.xml
+- congress: 112
+  chamber: S
+  date: '2011-03-09'
+  bill: HR1
+  question: On Passage of the Bill
+  description: A bill making appropriations for the Department of Defense and the other departments and agencies of the Government for the fiscal
+    year endi
+  result: Bill Defeated
+  yea: 44
+  nay: 56
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1121/vote_112_1_00036.xml
+- congress: 113
+  chamber: H
+  date: '2013-09-19'
+  bill: HR3102
+  question: On Passage
+  description: Nutrition Reform and Work Opportunity Act
+  result: Passed
+  yea: 217
+  nay: 210
+  url: https://clerk.house.gov/evs/2013/roll476.xml
+- congress: 113
+  chamber: H
+  date: '2013-07-11'
+  bill: HR2642
+  question: On Passage
+  description: Federal Agriculture Reform and Risk Management Act
+  result: Passed
+  yea: 216
+  nay: 208
+  url: https://clerk.house.gov/evs/2013/roll353.xml
+- congress: 113
+  chamber: H
+  date: '2013-04-12'
+  bill: HR1120
+  question: On Passage
+  description: Preventing Greater Uncertainty in Labor-Management Relations Act
+  result: Passed
+  yea: 219
+  nay: 209
+  url: https://clerk.house.gov/evs/2013/roll101.xml
+- congress: 113
+  chamber: S
+  date: '2014-11-18'
+  bill: S2280
+  question: On Passage of the Bill
+  description: A bill to approve the Keystone XL Pipeline.
+  result: Bill Defeated
+  yea: 59
+  nay: 41
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1132/vote_113_2_00280.xml
+- congress: 113
+  chamber: S
+  date: '2014-04-07'
+  bill: HR3979
+  question: On Passage of the Bill
+  description: A bill to amend the Internal Revenue Code of 1986 to ensure that emergency services volunteers are not taken into account as employees
+    under
+  result: Bill Passed
+  yea: 59
+  nay: 38
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1132/vote_113_2_00101.xml
+- congress: 113
+  chamber: S
+  date: '2013-01-28'
+  bill: HR152
+  question: On Passage of the Bill
+  description: A bill making supplemental appropriations for the fiscal year ending September 30, 2013, and for other purposes.
+  result: Bill Passed
+  yea: 62
+  nay: 36
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1131/vote_113_1_00004.xml
+- congress: 114
+  chamber: H
+  date: '2015-07-08'
+  bill: HR5
+  question: On Passage
+  description: Student Success Act
+  result: Passed
+  yea: 218
+  nay: 213
+  url: https://clerk.house.gov/evs/2015/roll423.xml
+- congress: 114
+  chamber: H
+  date: '2015-06-09'
+  bill: HR2577
+  question: On Passage
+  description: Making appropriations for the Departments of Transportation, and Housing and Urban Development, and related agencies for the fiscal
+    year end
+  result: Passed
+  yea: 216
+  nay: 210
+  url: https://clerk.house.gov/evs/2015/roll329.xml
+- congress: 114
+  chamber: H
+  date: '2015-05-20'
+  bill: HR1806
+  question: On Passage
+  description: America COMPETES Reauthorization Act of 2015
+  result: Passed
+  yea: 217
+  nay: 205
+  url: https://clerk.house.gov/evs/2015/roll258.xml
+- congress: 114
+  chamber: S
+  date: '2015-12-03'
+  bill: HR3762
+  question: On Passage of the Bill
+  description: A bill to provide for reconciliation pursuant to section 2002 of the concurrent resolution on the budget for fiscal year 2016.
+  result: Bill Passed
+  yea: 52
+  nay: 47
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1141/vote_114_1_00329.xml
+- congress: 114
+  chamber: S
+  date: '2015-05-22'
+  bill: HR1314
+  question: On Passage of the Bill
+  description: A bill to amend the Internal Revenue Code of 1986 to provide for a right to an administrative appeal relating to adverse determinations
+    of t
+  result: Bill Passed
+  yea: 62
+  nay: 37
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1141/vote_114_1_00193.xml
+- congress: 114
+  chamber: S
+  date: '2015-01-29'
+  bill: S1
+  question: On Passage of the Bill
+  description: A bill to approve the Keystone XL Pipeline.
+  result: Bill Passed
+  yea: 62
+  nay: 36
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1141/vote_114_1_00049.xml
+- congress: 115
+  chamber: H
+  date: '2018-06-21'
+  bill: HR2
+  question: On Passage
+  description: Agriculture and Nutrition Act of 2018
+  result: Passed
+  yea: 213
+  nay: 211
+  url: https://clerk.house.gov/evs/2018/roll284.xml
+- congress: 115
+  chamber: H
+  date: '2017-05-04'
+  bill: HR1628
+  question: On Passage
+  description: American Health Care Act
+  result: Passed
+  yea: 217
+  nay: 213
+  url: https://clerk.house.gov/evs/2017/roll256.xml
+- congress: 115
+  chamber: H
+  date: '2018-06-07'
+  bill: HR3
+  question: On Passage
+  description: Spending Cuts to Expired and Unnecessary Programs Act
+  result: Passed
+  yea: 210
+  nay: 206
+  url: https://clerk.house.gov/evs/2018/roll243.xml
+- congress: 115
+  chamber: S
+  date: '2017-12-02'
+  bill: HR1
+  question: On Passage of the Bill
+  description: To provide for reconciliation pursuant to titles II and V of the concurrent resolution on the budget for fiscal year 2018.
+  result: Bill Passed
+  yea: 51
+  nay: 49
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1151/vote_115_1_00303.xml
+- congress: 115
+  chamber: S
+  date: '2018-03-14'
+  bill: S2155
+  question: On Passage of the Bill
+  description: A bill to promote economic growth, provide tailored regulatory relief, and enhance consumer protections, and for other purposes.
+  result: Bill Passed
+  yea: 67
+  nay: 31
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1152/vote_115_2_00054.xml
+- congress: 115
+  chamber: S
+  date: '2017-01-12'
+  bill: S84
+  question: On Passage of the Bill
+  description: 'A bill to provide for an exception to a limitation against appointment of persons as Secretary of Defense within seven years of
+    relief from '
+  result: Bill Passed
+  yea: 81
+  nay: 17
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1151/vote_115_1_00027.xml
+- congress: 116
+  chamber: H
+  date: '2020-05-15'
+  bill: HR6800
+  question: On Passage
+  description: HEROES Act
+  result: Passed
+  yea: 208
+  nay: 199
+  url: https://clerk.house.gov/evs/2020/roll109.xml
+- congress: 116
+  chamber: H
+  date: '2019-12-19'
+  bill: HR5377
+  question: On Passage
+  description: Restoring Tax Fairness for States and Localities Act
+  result: Passed
+  yea: 218
+  nay: 206
+  url: https://clerk.house.gov/evs/2019/roll700.xml
+- congress: 116
+  chamber: H
+  date: '2020-02-28'
+  bill: HR2339
+  question: On Passage
+  description: Reversing the Youth Tobacco Epidemic Act of 2019
+  result: Passed
+  yea: 213
+  nay: 195
+  url: https://clerk.house.gov/evs/2020/roll078.xml
+- congress: 116
+  chamber: S
+  date: '2019-06-26'
+  bill: HR3401
+  question: On Passage of the Bill
+  description: A bill making emergency supplemental appropriations for the fiscal year ending September 30, 2019, and for other purposes.
+  result: Bill Defeated
+  yea: 37
+  nay: 55
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00182.xml
+- congress: 116
+  chamber: S
+  date: '2019-08-01'
+  bill: HR3877
+  question: On Passage of the Bill
+  description: A bill to amend the Balanced Budget and Emergency Deficit Control Act of 1985, to establish a congressional budget for fiscal years
+    2020 and
+  result: Bill Passed
+  yea: 67
+  nay: 28
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1161/vote_116_1_00262.xml
+- congress: 116
+  chamber: S
+  date: '2020-06-17'
+  bill: HR1957
+  question: On Passage of the Bill
+  description: An Act to amend title 54, United States Code, to establish, fund, and provide for the use of amounts in a National Parks and Public
+    Land Leg
+  result: Bill Passed
+  yea: 73
+  nay: 25
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1162/vote_116_2_00121.xml
+- congress: 117
+  chamber: H
+  date: '2021-05-20'
+  bill: HR3237
+  question: On Passage
+  description: Making emergency supplemental appropriations for the fiscal year ending September 30, 2021, and for other purposes
+  result: Passed
+  yea: 213
+  nay: 212
+  url: https://clerk.house.gov/evs/2021/roll156.xml
+- congress: 117
+  chamber: H
+  date: '2021-06-16'
+  bill: HR1187
+  question: On Passage
+  description: ESG Disclosure Simplification Act
+  result: Passed
+  yea: 215
+  nay: 214
+  url: https://clerk.house.gov/evs/2021/roll169.xml
+- congress: 117
+  chamber: H
+  date: '2022-07-29'
+  bill: HR1808
+  question: On Passage
+  description: Assault Weapons Ban
+  result: Passed
+  yea: 217
+  nay: 213
+  url: https://clerk.house.gov/evs/2022/roll410.xml
+- congress: 117
+  chamber: S
+  date: '2022-08-07'
+  bill: HR5376
+  question: On Passage of the Bill
+  description: A bill to provide for reconciliation pursuant to title II of S. Con. Res. 14.
+  result: Bill Passed
+  yea: 50
+  nay: 50
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00325.xml
+- congress: 117
+  chamber: S
+  date: '2021-03-06'
+  bill: HR1319
+  question: On Passage of the Bill
+  description: A bill to provide for reconciliation pursuant to title II of S. Con. Res. 5.
+  result: Bill Passed
+  yea: 50
+  nay: 49
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1171/vote_117_1_00110.xml
+- congress: 117
+  chamber: S
+  date: '2022-01-13'
+  bill: S3436
+  question: On Passage of the Bill
+  description: 'A bill to require the imposition of sanctions with respect to entities responsible for the planning, construction, or operation
+    of the Nord '
+  result: Bill Defeated
+  yea: 55
+  nay: 44
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1172/vote_117_2_00008.xml
+- congress: 118
+  chamber: H
+  date: '2023-04-26'
+  bill: HR2811
+  question: On Passage
+  description: Limit, Save, Grow Act
+  result: Passed
+  yea: 217
+  nay: 215
+  url: https://clerk.house.gov/evs/2023/roll199.xml
+- congress: 118
+  chamber: H
+  date: '2024-02-07'
+  bill: HR485
+  question: On Passage
+  description: Protecting Health Care for All Patients Act
+  result: Passed
+  yea: 211
+  nay: 208
+  url: https://clerk.house.gov/evs/2024/roll040.xml
+- congress: 118
+  chamber: H
+  date: '2023-09-28'
+  bill: HR4665
+  question: On Passage
+  description: Making appropriations for the Department of State, foreign operations, and related programs for the fiscal year ending September
+    30, 2024, a
+  result: Passed
+  yea: 216
+  nay: 212
+  url: https://clerk.house.gov/evs/2023/roll500.xml
+- congress: 118
+  chamber: S
+  date: '2024-04-18'
+  bill: S4072
+  question: On Passage of the Bill
+  description: A bill to prohibit the use of funds to implement, administer, or enforce certain rules of the Environmental Protection Agency.
+  result: Bill Defeated
+  yea: 52
+  nay: 46
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00142.xml
+- congress: 118
+  chamber: S
+  date: '2023-11-01'
+  bill: HR662
+  question: On Passage of the Bill
+  description: A bill to amend the Disaster Relief Supplemental Appropriations Act, 2023 to improve disaster relief funding for agricultural producers,
+    and
+  result: Bill Defeated
+  yea: 43
+  nay: 53
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1181/vote_118_1_00285.xml
+- congress: 118
+  chamber: S
+  date: '2024-04-19'
+  bill: HR7888
+  question: On Passage of the Bill
+  description: A bill to reform the Foreign Intelligence Surveillance Act of 1978.
+  result: Bill Passed
+  yea: 60
+  nay: 34
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1182/vote_118_2_00150.xml
+- congress: 119
+  chamber: H
+  date: '2025-05-22'
+  bill: HR1
+  question: On Passage
+  description: One Big Beautiful Act
+  result: Passed
+  yea: 215
+  nay: 214
+  url: https://clerk.house.gov/evs/2025/roll145.xml
+- congress: 119
+  chamber: H
+  date: '2025-09-04'
+  bill: HR4553
+  question: On Passage
+  description: Energy and Water Development and Related Agencies Appropriations Act, 2026
+  result: Passed
+  yea: 214
+  nay: 213
+  url: https://clerk.house.gov/evs/2025/roll239.xml
+- congress: 119
+  chamber: H
+  date: '2025-06-12'
+  bill: HR4
+  question: On Passage
+  description: Rescissions Act
+  result: Passed
+  yea: 214
+  nay: 212
+  url: https://clerk.house.gov/evs/2025/roll168.xml
+- congress: 119
+  chamber: S
+  date: '2025-07-01'
+  bill: HR1
+  question: On Passage of the Bill
+  description: A bill to provide for reconciliation pursuant to title II of H. Con. Res. 14.
+  result: Bill Passed
+  yea: 50
+  nay: 50
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00372.xml
+- congress: 119
+  chamber: S
+  date: '2025-09-19'
+  bill: S2882
+  question: On Passage of the Bill
+  description: A bill making continuing appropriations for the fiscal year ending September 30, 2026, and for other purposes.
+  result: Bill Defeated
+  yea: 47
+  nay: 45
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00527.xml
+- congress: 119
+  chamber: S
+  date: '2025-07-17'
+  bill: HR4
+  question: On Passage of the Bill
+  description: A bill to rescind certain budget authority proposed to be rescinded in special messages transmitted to the Congress by the President
+    on June
+  result: Bill Passed
+  yea: 51
+  nay: 48
+  url: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00411.xml

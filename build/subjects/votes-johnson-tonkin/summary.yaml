@@ -1,0 +1,60 @@
+generated_by: build/tools/build_votes.py
+source_sha256: 98fcc6eac8d966557c4f10c3a64aaee321b88b68522bf339ee18da858f5b1988
+rolls: 49
+closest_rule: For each Congress and chamber, the 3 passage votes of bills or joint resolutions with the smallest |yea - nay| (at least 50 votes
+  cast); ties by earlier date. Not a judgement of importance.
+months:
+  1964-08:
+    H_other: 1
+    S_other: 1
+  1965-04:
+    S_other: 1
+  1965-06:
+    S_other: 2
+  1965-07:
+    S_other: 1
+  1965-10:
+    H_other: 1
+  1966-02:
+    H_other: 1
+  1966-03:
+    S_other: 2
+  1966-07:
+    S_other: 1
+  1966-10:
+    H_other: 1
+    S_other: 1
+  1967-03:
+    H_other: 3
+    S_other: 4
+  1967-05:
+    S_other: 1
+  1967-10:
+    H_other: 1
+    S_other: 1
+  1967-11:
+    H_other: 2
+    S_other: 1
+  1967-12:
+    H_other: 1
+  1968-03:
+    S_other: 1
+  1968-05:
+    H_other: 1
+  1968-06:
+    S_other: 1
+  1969-09:
+    S_other: 1
+  1969-12:
+    H_other: 5
+    S_other: 1
+  1970-06:
+    H_other: 2
+    S_other: 6
+  1970-07:
+    S_other: 1
+  1970-09:
+    S_other: 2
+  1970-12:
+    H_other: 1
+closest_passage: []

@@ -1,0 +1,38 @@
+subject: votes-2009-present
+dig_status: dataset_built
+log:
+  - id: L-01
+    date: "2026-10-02"
+    entry: >
+      Owner asked for a full timeline of all votes from Obama to today. Owner chose: every recorded roll call; YAML
+      data plus a summary diagram. Scope: all House and Senate recorded votes, 111th to 119th Congress (3 Jan 2009 to
+      30 Sep 2026): 17,052 roll calls. Index source: Voteview HSall_rollcalls.csv (secondary dataset, sha256 in
+      summary.yaml). Official anchor per row: House Clerk or Senate.gov XML (URL templates in each file header).
+  - id: L-02
+    date: "2026-10-02"
+    entry: >
+      Built with build/tools/build_votes.py (deterministic) into rollcalls-111.yaml to rollcalls-119.yaml and
+      summary.yaml; diagram overview.html from build/tools/render_votes_summary.py (monthly bars, presidency bands from
+      presidencies.yaml, closest passage votes as clickable dots). YAML is the source; HTML is generated.
+      FINDINGS ABOUT THE DATA: (1) Voteview's Senate roll numbers run across the whole Congress while Senate.gov
+      numbers restart each session; the index uses the Senate.gov (session) number, taken from Voteview's clerk_rollnumber.
+      (2) House numbers are the Clerk's per-year numbers. (3) House 2023 check: 700 of 700 non-Speaker roll calls matched
+      the official XML on date, yea and nay. (4) Senate random sample: 72 of 73 matched; one differs by one vote
+      (Senate 119th, session 1, roll 26, 30 Jan 2025: index 79-18, official 80-17). The official record wins.
+      (5) Early-2009 House rows differ from the official XML by up to two votes in some cases; cause not analysed.
+  - id: L-03
+    date: "2026-10-02"
+    entry: >
+      Selection of flagged votes ('closest passage votes') is mechanical, not a judgement of importance: for each
+      Congress and chamber, the 3 passage votes of bills or joint resolutions with the smallest margin (at least 50
+      votes cast). Presidencies are shown as context bands (dates are inauguration days, anchor_checked: no). No claim is
+      made that any President caused any vote. Party control of each chamber is NOT shown yet; it should be computed from
+      member data, not recalled.
+  - id: L-04
+    date: "2026-10-02"
+    entry: >
+      FULL VERIFICATION against the official XML of every row is run by build/tools/verify_votes.py into
+      verification.yaml (counts and every exception). See that file for the result; until it exists the rows are
+      anchor_checked: secondary. NEXT: (a) party-line analysis needs member-level votes (Voteview HSall_votes.csv,
+      large); (b) link each passage vote to its bill record and, for the politics standard, to promises (P1-P11);
+      (c) party control, committee and cloture context.

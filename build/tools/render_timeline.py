@@ -14,6 +14,7 @@ Reading the diagram
 Panels
   start / end ........ ISO UTC window
   tick_minutes | tick_hours | tick_years ... tick spacing
+  bands: [{label, from, to}] ... optional context bands behind the dots (e.g. presidencies)
   axes ............... extra clocks: [{label: "Washington (EDT, UTC-4)", offset_hours: -4}]
   lanes .............. ordered lane ids (rows)
 Event precision: exact | approx | range | day | month | year  (day, month, year are drawn hollow-ish via status)
@@ -120,6 +121,12 @@ def render_panel(panel, events, lanes, numbers, srcs):
         y = TOP + LANE_H * i
         o.append(f'<rect class="lane{i%2}" x="0" y="{y}" width="{W}" height="{LANE_H}"/>')
         o.append(f'<text class="lane-label" x="10" y="{y+LANE_H/2+4}">{esc(lanes[lid]["label"])}</text>')
+    # optional context bands (e.g. presidencies): panel.bands = [{label, from, to}]; drawn behind the dots, neutral colours
+    for bi, b in enumerate(panel.get("bands", [])):
+        bx0 = max(X(b["from"]), LABEL_W); bx1 = min(X(b["to"]), W - PAD_R)
+        if bx1 > bx0:
+            o.append(f'<rect class="band{bi%2}" x="{bx0:.1f}" y="{TOP}" width="{bx1-bx0:.1f}" height="{LANE_H*len(lane_ids)}"/>')
+            o.append(f'<text class="bandl" x="{bx0+4:.1f}" y="{TOP+11}">{esc(b["label"])}</text>')
     # events with vertical dodge
     for i, lid in enumerate(lane_ids):
         evs = sorted([e for e in events if e["panel"] == panel["id"] and e["lane"] == lid],
@@ -168,7 +175,7 @@ CSS = """
 main{max-width:1180px;margin:0 auto;padding:20px 16px 56px}h1{font-size:1.5rem;margin:.2em 0}h2{font-size:1.15rem;margin:1.6em 0 .5em}
 .note{color:var(--mute);max-width:80ch}.note.small{font-size:12.5px;margin:.1em 0 .4em}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0}
 .scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}svg.tl{width:100%;min-width:900px;height:auto;display:block}
-.lane0{fill:var(--lane0)}.lane1{fill:var(--lane1)}.grid{stroke:var(--line);stroke-width:1}.lane-label{font-size:12.5px;fill:var(--fg)}
+.band0{fill:var(--fg);fill-opacity:.07}.band1{fill:var(--fg);fill-opacity:.12}.bandl{font-size:11px;fill:var(--mute);font-weight:600}.lane0{fill:var(--lane0)}.lane1{fill:var(--lane1)}.grid{stroke:var(--line);stroke-width:1}.lane-label{font-size:12.5px;fill:var(--fg)}
 .tick{font-size:11px;fill:var(--mute)}.tick2{font-size:10.5px;fill:var(--mute);opacity:.85}.axl{font-size:10.5px;fill:var(--mute)}
 .m,.span{stroke-width:2}.m.reported{fill:var(--rep);stroke:var(--rep)}.m.single{fill:var(--single);fill-opacity:.55;stroke:var(--single);stroke-dasharray:3 2}
 .m.disputed{fill:var(--disp);stroke:var(--fg)}.m.inferred{fill:none;stroke:var(--inf);stroke-dasharray:3 2}

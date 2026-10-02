@@ -1,0 +1,9 @@
+# Presidential terms for context bands. Dates are inauguration days (20 January, fixed by the 20th Amendment).
+# anchor_checked: no. Next step: anchor each to the National Archives inaugural list when a browser session is available.
+presidencies:
+  - {id: bush43-end, name: "G. W. Bush (to 20 Jan 2009)", from: "2009-01-01", to: "2009-01-20"}
+  - {id: obama, name: "Obama", from: "2009-01-20", to: "2017-01-20"}
+  - {id: trump1, name: "Trump (1st term)", from: "2017-01-20", to: "2021-01-20"}
+  - {id: biden, name: "Biden", from: "2021-01-20", to: "2025-01-20"}
+  - {id: trump2, name: "Trump (2nd term)", from: "2025-01-20", to: "2026-10-02"}
+anchor_checked: no
