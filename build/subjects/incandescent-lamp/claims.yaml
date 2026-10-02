@@ -2,27 +2,27 @@
 # SEARCH HEADLINE (rules as in apollo-landings/claims.yaml). DRAFT: the second half of the headline rests on a
 # contested claim (lamp-swan-before-edison / lamp-first-practical-priority), not on the headline claim, so it stays draft.
 # ---------------------------------------------------------------------------
-headline: "No one person invented the bulb: carbon lamps were patented by 1845; Edison v Swan is unsettled"
+headline: "Edison did not invent the bulb alone: carbon lamps were patented by 1845; Edison v Swan is open"
 headline_claim: lamp-edison-sole-inventor
 headline_status: draft
 dig_status: open
 search_summary: >
   Who invented the light bulb? Not Edison alone: a British patent of 1841 covers an electric light fed with powdered charcoal in an
   exhausted globe, a British patent of 1845 covers a heated carbon conductor in a vacuum, Swan reported a glowing carbon rod in
-  1878, and Edison's 1880 patent was upheld by US courts for a high-resistance carbon filament in an all-glass bulb. Whether Edison or Swan first made a practical lamp is unsettled.
+  1878, and US courts upheld the second claim of Edison's 1880 patent, a carbon filament in an all-glass exhausted bulb. Whether Edison or Swan first made a practical lamp is unsettled.
 
 assessment:
   question: "Who invented the light bulb?"
   answer: partly
-  headline: "Partly Edison, but not him alone: patents for electric lamps go back to 1841, and whether Edison or Swan first made a practical lamp is unsettled."
+  headline: "Partly Edison, but not him alone: patents for an electric light go back to 1841, and whether Edison or Swan first made a practical lamp is unsettled."
   text: >
     "The light bulb" covers at least four different firsts: a patent for an electric light or lamp, a lamp with a heated carbon conductor in
     a vacuum, a lamp practical to make and use, and a lamp run from a central supply. On the first two, the documents read here put others
     ahead of Edison: de Moleyns's British patent of 1841 (an electric light fed with powdered charcoal in an exhausted globe, which the
     Supreme Court calls incandescent but whose abridgment does not), King's of 1845 (heated carbon conductors, carbon in a vacuum; Starr is
     named by later sources), and, as a reported experiment, Swan's glowing carbon rod of December 1878.
-    On the third, the courts found Edison's lamp "practically operative and successful" and upheld his patent on a high-resistance carbon
-    filament in an all-glass exhausted bulb; Swan, by his own account, showed a very thin carbon lamp in October 1880 and Swan lamps lit
+    On the third, the courts found Edison's lamp "practically operative and successful" and upheld the second claim of his patent (a carbon
+    filament in an all-glass exhausted bulb; Wallace J. credits him with high resistance, which Lacombe J. refused to make a limit of that claim); Swan, by his own account, showed a very thin carbon lamp in October 1880 and Swan lamps lit
     Cragside (1880, per an archive blog, a proposed claim only) and the Savoy stage (28 December 1881, per a transcription of The Times), both before Edison's Pearl
     Street service began on 4 September 1882, but no document read shows who first made or sold a practical lamp. On the fourth, Edison's
     company is the one documented. Two national stories (Lodygin's, and Woodward and Evans's) each hold a real record that
@@ -30,12 +30,12 @@ assessment:
     1854 lamps are contested, resting on affidavit testimony (about forty affidavits per Colt J.) that US courts weighed differently on preliminary
     motions, with no dated document from before 1882 either way; de Changy's 1858 lamps are known only through Fontaine and his claim to be first is not dug.
     One stated standard (S1 to S4, in the description) is applied to every claimant, but the depth differs: some anchors are patent abridgments, a blog or
-    a transcription, and the one exception is named: the Cragside date rests on a blog about a letter nobody read, so it is filed as its own proposed claim (lamp-swan-cragside),
-    not as established. We therefore say "partly", not "Edison" and not "Swan".
+    a transcription, and the exceptions are named: the Cragside date rests on a blog about a letter nobody read, so it is filed as its own proposed claim (lamp-swan-cragside), not as established;
+    the Savoy report and the 22 Oct 1879 notebook entry are established on transcriptions (see the description for why). We therefore say "partly", not "Edison" and not "Swan".
   key_points:
-    - "An 1841 British patent (de Moleyns) covers an electric light in an exhausted globe, an 1845 one (King) a heated carbon conductor: Edison was not first to patent one."
-    - "US courts upheld Edison's 1880 patent for a high-resistance carbon filament in an all-glass bulb; his company began Pearl Street service on 4 September 1882."
-    - "Swan reported a glowing carbon rod in 1878; Swan lamps lit Cragside (per a blog) and the Savoy (per a transcript) before Pearl Street; no document shows who sold first."
+    - "An 1841 patent (de Moleyns) covers an electric light in an exhausted globe and an 1845 one (King) a heated carbon conductor: Edison was first to patent neither."
+    - "US courts upheld claim 2 of Edison's 1880 patent (a carbon filament in an all-glass exhausted bulb); his first Pearl Street district was lit on 4 Sep 1882."
+    - "Swan lamps lit the Savoy (transcript) and Cragside (blog) before Pearl Street; Edison lamps were lit at Menlo Park from 30 Dec 1879; no document shows who sold first."
   basis: [lamp-edison-sole-inventor, lamp-de-moleyns-patent, lamp-starr-king-patent, lamp-earliest-patent, lamp-edison-patent-upheld, lamp-first-practical-priority, lamp-swan-before-edison, lamp-pearl-street, lamp-goebel-claim]
   would_settle: "A dated sale, order, price list or company record showing which of Swan's or Edison's lamps was first made and sold for ordinary use, and a dated pre-1882 document for or against Goebel's lamps."
 
@@ -57,6 +57,9 @@ description: >
   was claimed and described on its date, not that a lamp was built or worked; "built" needs a report of the lamp. (S4) A court's
   finding on affidavits is primary text for what the court found, not a document of the period it describes. Under S1 to S4 the
   claims for de Changy and Lodygin are single-channel (Fontaine), Cragside is single-channel (an archive blog about a letter not read), Goebel's 1854 lamps are contested, and Swan's 1850s work is a gap.
+  Why a transcription is treated differently from Fontaine's quotations: a transcription (the Times page as the Gilbert and Sullivan Archive prints it; Batchelor's entry in the Edison Papers edition) reproduces the dated
+  document itself, whose text can be checked against the original and whose authenticity record is its own entry, whereas Fontaine (1878) reports and selects from a report whose original was not
+  seen, so errors of quotation or selection cannot be told apart. It is a judgment, and both transcription-based claims stay at secondary and moderate, not primary.
   Two established claims are still anchored below primary (the Savoy report, read in a transcription; the 22 Oct 1879 notebook entry, read in the Edison Papers' transcription) and are shown as limits.
 
 # ---------------------------------------------------------------------------
@@ -215,7 +218,9 @@ claims:
       Two absences, not one. (1) No patent earlier than de Moleyns's of 1841 for an electric light in an enclosed globe (his: powdered charcoal fed to platinum-coil
       electrodes in an exhausted glass globe) has been found in the 1859 British abridgments. (2) No document earlier than King's 1845 patent for a heated conductor
       in a vacuum has been found: the abridgment says "intensely heated" conductors and carbon "enclosed in a Torricellian vacuum", and Fontaine's 1878 search
-      found nothing before it ("The first document on the question that we have found"; he had missed de Moleyns, which he did not find).
+      found nothing before it ("The first document on the question that we have found"; he had missed de Moleyns, which he did not find). Absence (2) could fail at 1841: the
+      Supreme Court (1895) calls the de Moleyns patent one "for an incandescent electric lamp" with finely pulverized charcoal, and the full specification of No. 9053 was not read; if it shows
+      a heated charcoal conductor in an exhausted globe, absence (2) moves to 1841.
     statement_kind: search_result
     evidence_class: primary_text
     confidence: provisional   # absence anchor: capped at provisional
@@ -226,7 +231,7 @@ claims:
     adoption_note: "Histories that mention de Moleyns usually call his the first patent."
     would_change_if: >
       an earlier patent (in Britain, France, the US or elsewhere) for an electric light in an enclosed globe, or for an electrically heated
-      conductor in a vacuum, is found
+      conductor in a vacuum, is found; or the full specification of de Moleyns's No. 9053 shows a heated charcoal conductor in an exhausted globe (which would move absence 2 to 1841)
     anchor:
       type: primary_text
       description: "Abridgments ... Electricity and Magnetism (1859): no earlier lighting entry read; Fontaine (1878), p. 169: 'The first document on the question that we have found, is an English patent of the 4th November, 1845.'"
@@ -304,7 +309,7 @@ claims:
       Fontaine (1878) says that in 1873 a Russian physicist, Lodygin, invented a new lamp in which small carbon bars are heated in a
       hermetically sealed glass receiver from which the oxygen is expelled, and that in 1874 the St Petersburg Academy of Sciences awarded
       him "a high prize" (the Lomonosov prize) on a report by Wild; Fontaine adds "Nothing is less practical nor less studied than the apparatus of this inventor."
-      Kommersant (2024) gives 1872 for Lodygin's first demonstration (no place is given for it) and says the home patent office issued him privilege No. 1619 on 11 July 1874 with its priority dated "retroactively, from 2 October 1872".
+      Kommersant (2024) gives 1872 for Lodygin's first demonstration (the sentence that gives 1872 names no place; elsewhere the page speaks of a demonstration "in Petersburg") and says the home patent office issued him privilege No. 1619 on 11 July 1874 with its priority dated "retroactively, from 2 October 1872".
     statement_kind: reported
     evidence_class: primary_text
     confidence: low
@@ -735,7 +740,7 @@ claims:
       a dated sale, order, price list or company record for lamps by Swan or Edison before the other's is found, or Armstrong's letter and
       the original Times page are read and give different dates
     positions:
-      - {label: "Edison first practical", holder: "US courts (47 F. 454; 52 F. 300); popular accounts in the US", ground: "a high-resistance carbon burner in an all-glass vacuum, found 'practically operative and successful'; patent 223,898 filed 4 Nov 1879"}
+      - {label: "Edison first practical", holder: "US courts (47 F. 454; 52 F. 300); popular accounts in the US", ground: "Wallace J.: a high-resistance carbon burner in an all-glass vacuum, found 'practically operative and successful' (claim 2 upheld on appeal without a high-resistance limit); patent 223,898 filed 4 Nov 1879; Edison lamps lit and seen by visitors at Menlo Park from 30 Dec 1879, a laboratory and contested as an exhibition (lamp-menlo-park-dec-1879)"}
       - {label: "Swan's lamps in use first", holder: "Swan (1880 lecture); British accounts", ground: "Swan lamps at Cragside (1880) and the Savoy (28 Dec 1881) before Pearl Street (4 Sep 1882); sale not documented"}
       - {label: "Not decided by the documents read", holder: "this dig's reading", ground: "the courts compared Edison's lamp with prior art in the patent suits, not with Swan's sales; the Swan dates rest on a blog and a transcription"}
     disputed_by:
@@ -818,10 +823,12 @@ claims:
   - id: lamp-edison-high-resistance
     state: established
     statement: >
-      What set Edison's lamp apart, as his patent and the courts described it, was high resistance (100 to 500 ohms in the patent's
+      What set Edison's lamp apart, as his patent and Wallace J. (47 F. 454, 1891) described it, was high resistance (100 to 500 ohms in the patent's
       example) in a thin carbon filament in an all-glass high-vacuum bulb, which let many lamps run
-      side by side ("in multiple arc") from one supply without enormous copper mains. The high-resistance
-      idea itself was not unique to him: the 1891 court noted Lane-Fox's 1878-79 British patents and a letter of his to the Times of
+      side by side ("in multiple arc") from one supply without enormous copper mains. High resistance was NOT made a limit of what was upheld: the circuit court
+      held claim 1 (the high-resistance filament "made as described") limited to leading wires secured by cement carbonised in situ and not infringed, which the complainant
+      did not appeal; on appeal Lacombe J. (52 F. 300, 1892) upheld claim 2 and refused to read into it "that the filament must be one of high specific resistance, or of at least 100 ohms
+      resistance", the draughtsman having omitted "of high resistance" and "made as described". The high-resistance idea itself was not unique to him: the 1891 court noted Lane-Fox's 1878-79 British patents and a letter of his to the Times of
       December 1878, and the 1892 appeals court noted Edison's own French patent of May 1879 (a platinum burner) as already stating it.
     statement_kind: reported
     evidence_class: primary_text
@@ -830,7 +837,7 @@ claims:
     anchor_checked: primary
     adoption_weight: 2
     adoption_note: "Popular accounts credit Edison with the bulb, rarely with the electrical reason it worked as a system."
-    would_change_if: "the 1891-92 opinions are shown to rest the patent on something else"
+    would_change_if: "the 1891-92 opinions are shown to rest the patent on something else, or to make high resistance a limit of the upheld claim"
     anchor:
       type: primary_text
       description: "US 223,898 specification; 47 F. 454 (1891), Wallace J. (Lane-Fox patents and letter); 52 F. 300 (1892), Lacombe J. (Edison's French patent No. 130,910 of 28 May 1879)."
@@ -1225,8 +1232,8 @@ claims:
       Edison did not invent the incandescent lamp from nothing and was not its first or only inventor. British patents of 1841 (de Moleyns) and
       1845 (King, for Starr) already described, respectively, an electric light fed with powdered charcoal in an exhausted globe and a heated carbon conductor in a vacuum; Woodward
       patented a carbon lamp in rarefied gas in 1874-76; and Swan reported a glowing carbon rod in an exhausted globe in December 1878,
-      a rod that blackened its globe. Edison's own patent (1880) was upheld by US courts for a high-resistance carbon filament in an
-      all-glass exhausted bulb; in Wallace J.'s words Edison made "a lamp which was practically operative and successful" (47 F. 454, 1891), and
+      a rod that blackened its globe. US courts upheld the second claim of Edison's own patent (1880), a carbon filament in an
+      all-glass exhausted receiver (claim 1, the high-resistance filament, was held limited and not infringed); in Wallace J.'s words Edison made "a lamp which was practically operative and successful" (47 F. 454, 1891), and
       Colt J. records that the earlier ruling held claim 2 to cover "a broad and fundamental invention, namely, an incandescent lamp, composed
       of a carbon filament, hermetically sealed in an all glass chamber exhausted to a practically perfect vacuum, and having leading-in
       wires of platinum" (54 F. 678). Whether Edison or Swan was first to a practical lamp, and a complete wired system (Pearl Street, 1882),

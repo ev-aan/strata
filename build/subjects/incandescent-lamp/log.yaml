@@ -239,3 +239,18 @@ log:
       description name the exception and the two established claims anchored below primary; Cragside node is rev 2. R3-3: Kommersant gives no place for the 1872 demonstration ("В 1872 году Лодыгин в первый раз
       демонстрирует свою лампу"); "in St Petersburg" removed from the claim; the Lodygin node (rev 2) says the place is the Academy's city. R3-4: the "Edison copied Swan" drift sentence is removed
       from the Britain note (no source or chain shows that story). R3-5: no change needed; the edison-patent statement now says "first two claims (of four)" as the reviewer suggested.
+  - id: L-22
+    date: 2026-10-02
+    entry: >
+      REVISION ROUND 4 (author response to R4-1 to R4-7; L-21 and earlier stay as written). R4-1 verified in 52 F. 300 and 47 F. 454: the circuit court held claim 1 (the high-resistance filament "made as
+      described") limited to leading wires secured by cement carbonised in situ and not infringed, and the complainant "has not appealed from the decision"; Lacombe J. upheld claim 2 and said that "the further
+      limitations, which defendant seeks to read into this claim, viz., that the filament must be one of high specific resistance, or of at least 100 ohms resistance, cannot be accepted", the draughtsman
+      having omitted "of high resistance" and "made as described"; "high resistance" is in Wallace J.'s account ("to unite the characteristics of high resistance, small radiating surface, and durability in a carbon
+      conductor"). The search summary, assessment text, key point 2 and lamp-edison-sole-inventor now say the courts upheld claim 2 (a carbon filament in an all-glass exhausted bulb); lamp-edison-high-resistance names
+      Wallace J. for the high-resistance account and records that claim 1 was held not infringed and that 52 F. 300 refused to import a high-resistance limit; its would_change_if is widened. R4-2: headline changed to "Edison
+      did not invent the bulb alone: carbon lamps were patented by 1845; Edison v Swan is open" (95 characters, draft). R4-3: lamp-earliest-patent says absence (2) could fail at 1841 if the full specification of No. 9053,
+      which the Supreme Court reads as incandescent, shows a heated charcoal conductor; would_change_if likewise. R4-4: "the exceptions are named"; the description explains why a transcription of a dated document (the
+      Times page, Batchelor's entry) is treated differently from Fontaine's quotation of an unseen report, as a stated judgment. R4-5: (a) the assessment headline says "an electric light" and key point 1 names both patents;
+      (b) dt-which-first now says at least four firsts and a system, drops Davy from row 1 (not a lamp), shows de Moleyns as not shown incandescent, orders the rows, and says row 4 (central supply) is the only one examined with no
+      search for an earlier one; (c) thread-edison-legend says "filed", with the provisional and not-found status. R4-6: the Lodygin claim and node (rev 3) say the sentence giving 1872 names no place and that the page elsewhere speaks
+      of a demonstration "in Petersburg" without dating it. R4-7: key point 3 and the Edison position now mention Menlo Park (lamps lit and seen by visitors from 30 Dec 1879, a laboratory, contested as an exhibition) beside Pearl Street.

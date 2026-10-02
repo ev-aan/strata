@@ -4,30 +4,31 @@ discriminating_tests:
 
   - id: dt-which-first
     question: >
-      "Invented the light bulb" can mean five different firsts. For each, which dated document comes first?
-      (1) electricity making light by heating a solid; (2) a patent on an incandescent lamp; (3) a carbon
-      conductor in a vacuum; (4) a lamp practical to make and sell; (5) a lamp run from a central supply.
+      "Invented the light bulb" can mean at least four different firsts (the assessment's count) and a system. For each, which dated document comes first?
+      (1) a patent for an electric light in an enclosed globe; (2) a heated carbon conductor in a vacuum; (3) a lamp practical to make and use;
+      (4) a lamp run from a central supply. (Davy's arc of 1812 is not a lamp, see lamp-davy-arc.)
     retires: lamp-edison-sole-inventor
     predicts:
       single-inventor: >
         IF one person invented the light bulb, the same name should come first on all five, or at least
-        on the first three.
+        on the first two.
       cumulative-invention: >
         IF the lamp was built up by many people, different names should come first on different questions,
         and the later names should be first only on the practical and system questions.
     result:
       type: primary_text
       finding: >
-        (1) Davy, by 1812 for the arc; glowing wires reportedly 1802 (gap). (2) de Moleyns, 1841, an electric light fed with powdered charcoal in an exhausted globe (the Supreme Court calls it incandescent; the Patent Office abridgment does not), the
-        earliest found for an electric light in an exhausted globe (an absence-based result, provisional); row (3) is the earliest found for a heated carbon conductor in a vacuum. (3) King for Starr, 1845. (4) Edison's laboratory had "the first lamp that answers
+        (1) de Moleyns, 1841, an electric light fed with powdered charcoal in an exhausted globe (the Patent Office abridgment does not say incandescent or heated; the Supreme Court calls the patent incandescent; the full specification was not read), the
+        earliest found (an absence-based result, provisional). (2) King for Starr, 1845, heated carbon conductors with carbon in a vacuum, the earliest found for that (absence-based, provisional; it would move to 1841 only if the full specification of 9053 shows a heated conductor).
+        (Davy's 1812 arc is not a lamp, and glowing wires reportedly in 1802 are a gap.) (3) Edison's laboratory had "the first lamp that answers
         the purpose" by 16 Nov 1879 and the courts called his lamp "practically operative and successful"; Swan lamps lit Cragside in 1880 (per a blog only)
         and the Savoy stage on 28 Dec 1881; nothing read shows who first made or sold a practical lamp, so row 4 is contested
-        (lamp-first-practical-priority). (5) Edison, Pearl Street, 4 Sep 1882. Different names lead different questions.
+        (lamp-first-practical-priority). (4) Edison, Pearl Street, 4 Sep 1882, the only central supply examined: nothing in the dig searched for an earlier one. Different names lead different questions.
       accessible: true
     resolves: >
-      The single-inventor story fails on questions 1 to 3, which are answered by patents and printed
-      reports that anyone can read (patents show earlier designs, not that lamps were built). Edison is the one documented on 5; row 4 is
-      open between Edison and Swan. Verification: V2 for every row except Davy's 1802 papers, and V1 or V2 for Cragside and the Savoy.
+      The single-inventor story fails on questions 1 and 2, which are answered by patents and printed
+      reports that anyone can read (patents show earlier designs, not that lamps were built). Edison is the one documented on row 4 (no search for earlier supplies); row 3 is
+      open between Edison and Swan. Verification: V2 for every row except Davy's 1802 papers, and V1 for Cragside (a blog) and the Savoy (a transcript).
     note: >
       Retired by documents, not by the number of historians who say "it was gradual". The test does not
       decide the Swan versus Edison question on 4, which stays contested (the first version of this test said Edison "shares 4" with Swan,
@@ -77,7 +78,7 @@ discriminating_tests:
       type: primary_text
       finding: >
         US 181,613 describes a piece of carbon between two electrodes in a globe emptied of air and refilled with a rarefied
-        gas that does not combine with hot carbon, which it says "becomes luminous". Edison's US 223,898 claims a thin high-resistance
+        gas that does not combine with hot carbon, which it says "becomes luminous". Edison's US 223,898 describes a thin high-resistance
         carbon filament in an all-glass globe exhausted to about one-millionth of an atmosphere.
       accessible: true
     resolves: >
