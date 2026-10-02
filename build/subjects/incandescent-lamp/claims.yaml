@@ -10,7 +10,8 @@ search_summary: >
   built incandescent lamps before Edison's. What Edison made first was a practical system. See the evidence.
 
 subject: incandescent-lamp
-title: "The Incandescent Light Bulb: who invented it? (1802-1895)"
+question: "Who invented the light bulb?"
+title: "Who invented the light bulb? (the invention era, 1802-1895)"
 description: >
   "Who invented the light bulb?" has a famous answer (Edison) and several national counter-answers
   (Swan for Britain, Woodward and Evans for Canada, Göbel for Germany, Lodygin for Russia, de Changy
@@ -133,24 +134,44 @@ claims:
     statement: >
       Frederick de Moleyns received British patent No. 9053 on 21 August 1841 for a lamp in which
       powdered charcoal falls between two platinum coils inside an exhausted glass globe and glows
-      when current passes. It is the earliest incandescent-lamp patent found in this dig.
+      when current passes.
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5
     anchor_checked: primary
     adoption_weight: 2
     adoption_note: "Known to historians of the lamp; almost absent from popular accounts."
-    would_change_if: >
-      an earlier patent for a lamp lit by an electrically heated solid is found (the "earliest"
-      part rests on the absence of earlier entries in the abridgments and on Fontaine's search)
+    would_change_if: "the full specification shows a different design from the abridgment"
     anchors:
       - {class: primary_text, ref: "Patents for Inventions: Abridgments of Specifications relating to Electricity and Magnetism (1859), pp. 62-63", source: src-abridgments-1859}
       - {class: primary_text, ref: "159 U.S. 465 (1895) cites the de Moleyns patent as prior art", source: src-scotus-1895}
     basis: >
       # V: V2 for the abridgment (the Patent Office's own published summary). The full specification
       #    was not read.
-      Note a disagreement: Fontaine (1878) wrote that the earliest lamp document he found was King's
-      1845 patent. He had not found de Moleyns. The 1859 abridgment is the stronger record.
+      Whether this is the first such patent is a separate, absence-based claim: lamp-earliest-patent.
+
+  - id: lamp-earliest-patent
+    state: established
+    statement: >
+      No incandescent-lamp patent earlier than de Moleyns's of 1841 has been found. The 1859 British
+      abridgments list none earlier, and Fontaine's 1878 search found nothing before King's 1845 patent
+      (he had missed de Moleyns too).
+    evidence_class: primary_text
+    confidence: provisional   # absence anchor: capped at provisional
+    evidential_weight: 3
+    anchor_checked: primary
+    absence_anchor: true
+    adoption_weight: 2
+    adoption_note: "Histories that mention de Moleyns usually call his the first patent."
+    would_change_if: >
+      an earlier patent (in Britain, France, the US or elsewhere) for a lamp lit by an electrically
+      heated solid is found
+    anchors:
+      - {class: primary_text, ref: "Abridgments ... Electricity and Magnetism (1859): no earlier lighting entry", source: src-abridgments-1859}
+      - {class: primary_text, ref: "Fontaine (1878): earliest document found was King's 1845 patent", source: src-fontaine-1878}
+    basis: >
+      Two searched absences in two countries' records (British abridgments; a French engineer's survey).
+      French and US patent indexes before 1841 were not searched.
 
   - id: lamp-starr-king-patent
     state: established
@@ -194,6 +215,9 @@ claims:
     basis: >
       # V: V2 for Fontaine's quotation; the Comptes rendus original not opened, so anchor_checked is
       #    secondary. A Belgian patent No. 3244 of 28 Aug 1856 is cited by Hammer (1900) only (V0).
+      INSULARITY FLAG: this claim and lamp-lodygin-1872-74 both rest on one book, Fontaine (1878). One
+      contemporary engineer quoting two reports is a single channel; re-anchor each to its original
+      (Comptes rendus 1858; the Academy's 1874 report) before raising either.
       A separate claim that Jobard made a carbon-in-vacuum lamp in 1838 was not found in Fontaine,
       Hammer, Schroeder or the abridgments, and is not filed as a claim here.
 
@@ -219,6 +243,8 @@ claims:
       # V: V2 for Fontaine. Privilege number and dates V1. Dates disagree: Fontaine says 1873,
       #    Russian accounts 1872. The often-quoted 50,000-rouble prize is not supported: Fontaine says
       #    only "a high prize" and one family source says 1,000 roubles.
+      INSULARITY FLAG: the primary-text anchor is Fontaine alone (shared with lamp-de-changy-belgium);
+      the privilege details come from a newspaper. Next step: read the Academy's 1874 prize report.
       Fontaine, a contemporary, called the apparatus "nothing less practical". Rods in a sealed
       vessel are real prior art; they did not last.
 
@@ -819,10 +845,10 @@ claims:
     would_change_if: "an earlier printed version about the lamp is found"
     anchors:
       - {class: primary_text, ref: "Dyer and Martin, Edison: His Life and Inventions (Harper, 1910), vol. II, pp. 615-616", source: src-dyer-martin-1910}
-      - {class: synthetic, ref: "Quote Investigator (2012): '10,000' wording traced to 1982", source: src-quote-investigator}
     basis: >
-      # V: V2 for the 1910 text. The 1982 first appearance is from Quote Investigator (V1) and is not
-      #    used for the refutation. Confidence moderate because "Edison never said it about the lamp"
+      # V: V2 for the 1910 text, the only anchor. Quote Investigator (secondary) traces the later
+      #    "999" (1946) and "10,000" (1982) forms; that history is in transmission.yaml (tx-10000-ways),
+      #    not here, and is not used for the refutation. Confidence moderate because "Edison never said it about the lamp"
       #    partly rests on the absence of an earlier version.
 
   # =========================== THE HEADLINE ===========================

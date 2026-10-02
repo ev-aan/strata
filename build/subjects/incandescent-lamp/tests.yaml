@@ -18,8 +18,8 @@ discriminating_tests:
     result:
       type: primary_text
       finding: >
-        (1) Davy, by 1812 for the arc; glowing wires reportedly 1802 (gap). (2) de Moleyns, 1841.
-        (3) King for Starr, 1845. (4) Edison and Swan both, 1879-80, on different routes (bamboo and
+        (1) Davy, by 1812 for the arc; glowing wires reportedly 1802 (gap). (2) de Moleyns, 1841, the
+        earliest found (an absence-based result, provisional). (3) King for Starr, 1845. (4) Edison and Swan both, 1879-80, on different routes (bamboo and
         treated thread). (5) Edison, Pearl Street, 4 Sep 1882. Different names lead different questions.
       accessible: true
     resolves: >

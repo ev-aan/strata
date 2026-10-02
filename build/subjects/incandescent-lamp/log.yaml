@@ -45,3 +45,25 @@ log:
       cannot refute (absence anchors are capped). Open gaps with next steps: Davy's 1802 papers; de la Rue
       and Grove originals; Swan's 1850s records; the Lit and Phil 1879 date; any Edison purchase of the
       Woodward patent; the Sprengel pump link; Lodygin's GE sale; Rohde 2007; Latimer's Edison role.
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      Owner set the dig's question: "Who invented the light bulb?" Added as `question:` and used in the title.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      Structure audit against CONTRIBUTING.md, SCHEMA.md and the standing rules; fixes made. (1) Added
+      transmission.yaml (format proposed here, rules X1-X4) with four chains: Göbel, the Canadian sale,
+      Lodygin's priority, and the "10,000 ways" quote. (2) Reception threads now hold only contested members
+      (T4); refuted myths are pointed to by `see_transmission`. The "corrective overshoot" thread had no
+      contested member and was folded into thread-edison-legend. (3) Thread member ids now use subject:claim
+      (T1). (4) "Earliest patent" split from lamp-de-moleyns-patent into lamp-earliest-patent at provisional
+      confidence, because it rests on absence. (5) Quote Investigator removed as an anchor of
+      lamp-10000-ways-quote (rule A4); it is cited in the transmission chain instead. (6) Insularity flag added
+      to lamp-de-changy-belgium and lamp-lodygin-1872-74: both rest on Fontaine (1878) alone.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      New finding while building the transmission chains: the "fifty thousand rubles" Lomonosov Prize figure is
+      printed in Howell and Schroeder (1927), a General Electric history (read), not in a Soviet source.
+      Fontaine (1878) says only "a high prize".
