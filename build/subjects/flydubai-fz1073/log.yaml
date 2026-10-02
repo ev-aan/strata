@@ -207,3 +207,21 @@ log:
       different parts of one dive. NEXT STEP FOR THE OWNER (a browser is needed): download the CSV data
       from the Flightradar24 incident page and the AirNav Radar blog page (it says "download the data"),
       and drop both files into this folder; then compare the timestamps and altitudes directly.
+  - id: L-14
+    date: 2026-10-02
+    entry: >
+      OWNER QUESTION: how could the dive be survivable for passengers, and how was no one hurt? PREMISE CORRECTED from reports read: not
+      everyone was unhurt. Al Jazeera (30 Sep 2026): footage on board 'appears to show the injured pilot lying on the cabin floor with several
+      stab wounds, and a passenger with a bloody head wound'; both pilots hospitalised at Tabuk (Tabuk airport statement via Al Ekhbariya). NBC:
+      Magen David Adam's paramedic said at least one passenger, in his 50s, was taken to hospital with a 'chest injury' after the passengers reached
+      Tel Aviv. The cause of the passengers' injuries (the fight, the dive, or something else) is NOT stated in what was read. ARITHMETIC ON REPORTED
+      FIGURES (not measured loads): 30,900 ft/min is 515 ft/s (157 m/s), a vertical SPEED, which by itself produces no g-force; passengers feel
+      CHANGES in vertical speed. To reach that speed from level, a push-over at 0.5 g downward gives a seat load of +0.5 g in 32 s (8,243 ft fallen), at
+      1 g downward 0 g in 16 s (4,122 ft), at 2 g downward -1 g in 8 s (2,061 ft). To stop it, a pull-out at a load factor of 1.5 g takes 32 s (8,243 ft),
+      at 2 g 16 s (4,122 ft), at 2.5 g 11 s (2,748 ft). A 15,000-19,000 ft descent with that peak is therefore compatible with a smooth profile (about
+      +0.5 g to +1.5 g), which a belted passenger tolerates; an abrupt push-over below 0 g would lift unbelted people off their seats. Whether the
+      load factor went below zero cannot be told from tracker data. CORRECTION TO L-13: it said Flightradar24's '14,125 ft in 29 seconds' fits the peak
+      rate. It does not fit: 14,125 ft in 29 s is 29,200 ft/min on average, nearly the whole peak rate with almost no time to build it up, which would
+      need an implausibly abrupt change; CNN's 17,400 ft in just under two minutes averages 8,700 ft/min. The 29 s figure is probably a sampling artefact
+      or measures a different slice; treat as UNRESOLVED until the raw ADS-B CSV is read. WHAT WOULD SETTLE IT: the flight data recorder's vertical
+      acceleration trace (held by investigators), the raw tracker data, seat-belt sign status, and the medical records of the injured passengers.
