@@ -20,7 +20,7 @@ url_slug: do-vaccines-cause-autism
 assessment:
   question: "Do vaccines cause autism?"
   answer: "no"
-  headline: "No. Large studies of children's records find no link (high confidence); a 2007 legal concession and an untested question about mitochondrial disease are explained below."
+  headline: "No. Large studies of children's records find no link (high confidence); a 2007 legal concession and a question about mitochondrial disease with no controlled study found are explained below."
   text: >
     Two nationwide Danish cohorts following 1,194,764 children found no more autism after MMR,
     and studies in the UK (a case-control study of pervasive developmental disorders, 1,294 cases,
@@ -34,7 +34,7 @@ assessment:
     children did not match their records. In 2007 the US government conceded one family's
     compensation claim for a child with a pre-existing mitochondrial disorder; that was a legal
     decision, not a scientific finding. Whether fever after vaccination can trigger regression
-    in children with mitochondrial disease has not been tested in a controlled study. Two
+    in children with mitochondrial disease: we found no controlled study of it. Two
     limits: no study can show an effect is exactly zero, and our search found no large
     record-based study comparing fully unvaccinated children with vaccinated ones (a title-level
     search, a gap and not a finding: va-fully-unvaccinated-gap). Studies of records are statistics:
@@ -50,7 +50,7 @@ assessment:
   key_points:
     - "Two Danish cohorts (1,194,764 children) and UK and US studies found no more autism after MMR (the UK study: pervasive developmental disorders, similar for autism)."
     - "Health bodies (adoption, not evidence): WHO's safety committee found no evidence of a causal link (2025); since Nov 2025 the CDC's page disputes the 'no link' statement."
-    - "The 1998 paper was retracted in 2010; a court found its ethics statement untrue. Open: a 2007 legal concession (not science); fever in mitochondrial disease (untested)."
+    - "The 1998 paper was retracted in 2010; a court found its ethics statement untrue. Open: a 2007 legal concession (not science); mitochondrial fever (no study found)."
   basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
   # Key point 2 states institutional positions on the first screen by owner decision 2026-10-02 (log L-19). They are adoption, not basis.
   rated_claim: va-mmr-no-detectable-increase
@@ -125,11 +125,14 @@ short_answer:
   except:
     - claim: va-poling-concession
       text: >
-        What remains open, 1: a legal concession. In 2007 the US government conceded, in one
-        child's compensation case, a link between vaccines and her injury (CNN: the program
-        "concluded" they "significantly aggravated" an underlying illness, a mitochondrial
-        disorder, that had predisposed her to symptoms of autism). This was a compensation
-        decision, not a scientific finding that vaccines cause autism.
+        What remains open, 1: a legal concession. A 2015 special master's order quotes the
+        government's Rule 4(c) report in one child's compensation case (late 2007) as saying the
+        facts met the statutory criteria for showing a vaccination "significantly aggravated an
+        underlying mitochondrial disorder"; CNN reports the program "concluded" this, and NPR
+        that the government said it was "possible" the vaccines "may have exacerbated" the
+        disorder. The case was settled, not adjudicated, and the government says it has never
+        conceded that any vaccine can cause significant aggravation of such a disorder. This was
+        a compensation decision, not a scientific finding that vaccines cause autism.
       scale: >
         The best-known concession, not a count: other compensated cases with autism-like
         features were not checked. Her case had been designated a potential test case before
@@ -139,7 +142,7 @@ short_answer:
         opened.
       scale_sources: [src-poling-cnn-2008, src-bruesewitz, src-oap-decisions, src-cafc-cedillo-2010, src-cafc-hazlehurst-2010]
       what_it_is:
-        - "A concession by the US government in one family's compensation claim: the program concluded her underlying illness was 'significantly aggravated' by vaccines (as reported by CNN)."
+        - "A settlement in one family's compensation claim, in which the government's Rule 4(c) report (as a 2015 court order quotes it) said the facts met the statutory criteria for showing a vaccination significantly aggravated an underlying mitochondrial disorder; CNN and NPR word it differently."
         - >
           Made inside a no-fault program built to pay faster and more easily than a court
           case (see va-compensation-program); whether its presumption for listed injuries
@@ -151,12 +154,17 @@ short_answer:
         - >
           Not an admission that vaccines cause autism: the CDC director said so at the time,
           and autism is not on the government's list of compensable vaccine injuries.
-        - "Not a court ruling after a trial of the evidence: the government conceded before one."
+        - "Not a court ruling after a trial of the evidence: the case was settled before one."
+        - >
+          Not a concession of the theory in general: the 2015 order says the settlement cannot be
+          conflated into "a concession of the theory writ large", and the government says it has
+          never conceded that any vaccine can cause significant aggravation of a mitochondrial
+          disorder.
     - claim: va-mito-fever-regression
       text: >
-        What remains open, 2: an untested question. In children with mitochondrial disease (about 5 in 100 children
+        What remains open, 2: a question with no controlled study found. In children with mitochondrial disease (about 5 in 100 children
         with autism), small case series report regression after fever, including a few
-        after a fever that followed a routine vaccination. No controlled study has tested this.
+        after a fever that followed a routine vaccination. We found no controlled study of this.
       scale: >
         Mitochondrial disease affects about 1 in 10,000 people overall. Reports of regression
         after a post-vaccination fever found so far: at least 5 children in two reports (4 in one
@@ -218,7 +226,7 @@ description: >
   rare individual cases. This dig keeps four things apart: (1) what the population
   studies measured, which is statistical evidence and filed as `synthetic`; (2) what the
   primary documents show about the 1998 paper, the court cases and the insider claims;
-  (3) the narrow items that remain open (one legal concession, one untested hypothesis, and
+  (3) the narrow items that remain open (one legal concession, one hypothesis with no controlled study found, and
   the limits of what population data can show), filed so they cannot be smoothed away; and
   (4) the institutional record, which in 2025-2026 split for the first time, filed as
   adoption, never as evidence, in both directions.
@@ -247,8 +255,8 @@ divergence_note: >
   uninformative autism result are recorded in their claims), while what visibly changed was
   adoption by an institution. Strata records both statements, and gives neither of them
   evidential weight. The real open edges are narrow: a very rare susceptible group cannot
-  be excluded by population data, fever-related regression in mitochondrial disease is
-  untested, our search found no study of the whole schedule as one exposure (va-whole-schedule-gap),
+  be excluded by population data, we found no controlled study of fever-related
+  regression in mitochondrial disease, our search found no study of the whole schedule as one exposure (va-whole-schedule-gap),
   and in the one
   national analysis of the rise, part of it (about 40%, somewhere between 13% and 67%) is
   not explained by the two reporting changes it measured.
@@ -918,7 +926,7 @@ claims:
         holder: "Critics quoted by Retraction Watch and BuzzFeed (2017)"
         ground: "No controls, five donors, large variation between replicates; no link to vaccines."
     basis: >
-      Not refuted, because no controlled study has tested it; it is unsupported. No
+      Not refuted, because we found no controlled study of it; it is unsupported. No
       correction or expression of concern was found. An image-duplication allegation
       sometimes repeated online was searched for and not found, so it is not filed.
 
@@ -1994,7 +2002,7 @@ claims:
           Regression after fever is documented in this group, a few after post-vaccination
           fevers.
       - label: "No (not shown)"
-        holder: "No controlled study exists; the population cohorts did not look at this group"
+        holder: "No controlled study found; the population cohorts did not look at this group"
         ground: >
           The evidence is small, uncontrolled and retrospective. The review that collects it
           says it is not clear whether mitochondrial dysfunction contributed to or caused the
@@ -2009,8 +2017,8 @@ claims:
           injured by vaccines.
     basis: >
       This is the only specific, testable mechanism by which a vaccine could contribute to
-      autism-like regression in a subgroup. Filed as proposed: a real hypothesis, untested by
-      any controlled study. It is the open question in the short answer.
+      autism-like regression in a subgroup. Filed as proposed: a real hypothesis, with no
+      controlled study found. It is the open question in the short answer.
 
   - id: va-small-effect-not-excludable
     state: searched_gap

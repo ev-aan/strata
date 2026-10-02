@@ -510,3 +510,21 @@ log:
       case report and a 2008 NEJM perspective on the compensation case, which points to one child but
       does not state it). The two claims that cite the retracted paper carry flagged_sources (PS3, now
       enforced).
+  - id: L-30
+    date: 2026-10-02
+    entry: >
+      ROUND 8 (author response to review round 7, R7-1 to R7-3; surface lines made to say no more
+      than the claims). R7-1: the first-screen item for the 2007 compensation case said the
+      government "conceded ... a link"; it now opens with the Rule 4(c) wording as the 2015 special
+      master's order reports it, gives CNN's and NPR's wordings, and says the case was settled and not
+      adjudicated and that the government says it has never conceded the general point; the item's
+      what_it_is is aligned and what_it_is_not adds that it is not a concession of the theory in general
+      (the order's "a concession of the theory writ large"), and "the government conceded before one"
+      became "the case was settled before one". R7-2: absence stated in the dig's voice is reworded to
+      "we found no controlled study" for the mitochondrial fever question (assessment headline, text and
+      key point 3, the short-answer item, the divergence note, the description item, the aluminium
+      tissue basis, the mitochondrial positions and basis); the whole-schedule and unvaccinated gaps
+      were already reworded in L-29; "no study can show an effect is exactly zero" is left because it
+      states a limit of method, not an absence found. Key point 3 stays within 170 characters. R7-3: the
+      authenticity note of src-wakefield-1998 no longer says "Full text not read": the full text was read
+      in a third-party copy (briandeer.com), not compared with the publisher's file (va-sq-publisher-files).
