@@ -1,6 +1,6 @@
 subject: vaccines-autism
 status: revisions_requested
-reviewed_by: independent review agent (fourth reviewer; rounds 1-3 by three earlier reviewers)
+reviewed_by: independent review agent (fourth reviewer; two independent passes at b20ad59 agree on R4-1; rounds 1-3 by three earlier reviewers)
 reviewed_on: 2026-10-02
 note: >
   The requests of rounds 1 and 2 were copied here from docs/reviews/vaccines-autism-round-1.md and
@@ -122,7 +122,7 @@ rounds:
     finding: 'Core supported by CNN, but the fuller quoted phrase rests on Salon "not re-checked", and "government conceded" is the family lawyer''s account. State that the Rule 4(c) wording is unverified; established on a secondary anchor is borderline.'
     author_response: {action: fixed, note: 'Anchor now leads with the sourced CNN wording and NPR (now opened), says the fuller phrase is known only as quoted in Salon and not re-checked, and says the Rule 4(c) report and 2010 decision were not read. statement_kind reported. State kept at established/moderate with the conformance warning; the reviewer may prefer proposed, which the author would accept.', commit: 6446a36}
     resolved: true
-    reviewer_note: "Opened CNN (6 Mar 2008): program 'concluded last November' that her underlying illness was 'significantly aggravated'; potential test case (lawyer); concession shortly before an expert-testimony deadline (lawyer's account); Gerberding 'absolutely no statement indicating that vaccines are a cause of autism'; 'nearly 5,000 other autism claims are pending'. Opened NPR (7 Mar 2008): 'in its ruling, the government said it was possible that the vaccines Hannah received may have exacerbated that disorder'. Both wordings are given; the Salon-only wording is no longer in the statement. Established at moderate on two independent news reports is acceptable with the stated limit. Unsourced word elsewhere: see R3-2."
+    reviewer_note: "Opened CNN (6 Mar 2008): program 'concluded last November' that her underlying illness was 'significantly aggravated'; potential test case (lawyer); concession shortly before an expert-testimony deadline (lawyer's account); Gerberding 'absolutely no statement indicating that vaccines are a cause of autism'; 'nearly 5,000 other autism claims are pending'. Opened NPR (7 Mar 2008): 'in its ruling, the government said it was possible that the vaccines [the child] received may have exacerbated that disorder'. Both wordings are given; the Salon-only wording is no longer in the statement. Established at moderate on two independent news reports is acceptable with the stated limit. Unsourced word elsewhere: see R3-2."
   - id: N4
     target: va-signs-emerge-in-schedule-window
     severity: non_blocking
@@ -393,6 +393,21 @@ rounds:
     severity: non_blocking
     finding: 'The details now rest on the Federal Circuit opinions ("[opened]"), but both events still list only src-oap-decisions in sources, so the timeline links to the decision list rather than the documents read. Add src-cafc-cedillo-2010 and src-cafc-hazlehurst-2010 to the events and the timeline sources list.'
     evidence: 'timeline.yaml lines for a14 and a18 at b20ad59.'
+  - id: R4-8
+    target: divergence_note; assessment.text (aluminum)
+    severity: non_blocking
+    reviewer: second fourth-round reviewer (independent pass at the same head, b20ad59; agrees with R4-1)
+    finding: "(a) divergence_note says 'Nothing in the evidence changed between those two dates; what changed was adoption by an institution.' No claim shows that, and the dig itself lists new 2025 items (the Andersson aluminum cohort, the Henry Ford draft, the WHO reviews). Say what the dig shows, for example that no study read for this dig reports a new association between those dates. (b) assessment.text says children exposed to more aluminum 'were not diagnosed with autism more often' without the claim's caveat (autism-specific figure read only in the journal's press release; moderate, weight 3)."
+  - id: R4-9
+    target: va-mmr-causes-autism basis; tests.yaml dt-mmr-cohorts note
+    severity: non_blocking
+    reviewer: second fourth-round reviewer
+    finding: "Both still call Rule 9 for statistics 'an open design question (log L-05)'. L-19 records the owner's decision (option (a): statistics cannot prove a claim false; general claims stay proposed; no rule change). Update the wording through a new log entry."
+  - id: R4-10
+    target: va-mito-fever-regression; short_answer 'What remains open, 2' scale; va-poling-concession
+    severity: non_blocking
+    reviewer: second fourth-round reviewer
+    finding: "In Rossignol and Frye 2012 the 'one further child' refs are 25 and 85, and ref 85 is Poling et al. 2006 ('a child with autism'). That case report may concern the same child as the compensation concession (not shown by any source the dig read). The scale ('at least 5 children in two reports') and the positions list them side by side, which could read as independent corroboration. Say it is not verified whether they are one child, or verify. Also, for R3-5 (marked resolved by the other fourth reviewer): the wording is fixed, but my decision on the open question is that va-retraction-reasons should be confidence moderate, not high, while both Lancet notices are unread and the 2004 non-disclosure admission rests on one secondary review."
 open_items_proposed_by_author:
   - 'Other compensated vaccine-injury cases with autism-like features (for example Banks v. HHS, 2007) not investigated (F4).'
   - 'The Lancet 2004 and 2010 notices, the 1998 full text, the GMC findings, the BMJ articles and the Poling decision remain unread; the claims that rest on them say so.'
@@ -407,7 +422,7 @@ owner_decisions_open:
   - 'refutation_class on the refuted claims (log L-07).'
 open_items:
   - 'Blocking, round 4: R4-1 (the omnibus claim says the MMR-alone theory was never ruled on; the Hazlehurst and Cedillo opinions show it was argued and rejected).'
-  - 'Non-blocking, round 4: R4-2 (the child''s first name in an earlier reviewer note in this published file; fix before the subject is added to publish), R4-3 (L-19 log accuracy), R4-4 (IOM 2004 wording), R4-5 (WHO 11 studies in divergence_note), R4-6 (WHO and CDC pages in two anchors), R4-7 (timeline a14 and a18 sources).'
+  - 'Non-blocking, round 4: R4-2 (the child''s first name in an earlier reviewer note in this published file; fix before the subject is added to publish), R4-3 (L-19 log accuracy), R4-4 (IOM 2004 wording), R4-5 (WHO 11 studies in divergence_note), R4-6 (WHO and CDC pages in two anchors), R4-7 (timeline a14 and a18 sources), R4-8 to R4-10 (second fourth-round reviewer: divergence_note absolute, stale Rule 9 wording after L-19, Poling 2006 case report possibly the same child, retraction-claim confidence moderate). The first name noted in R4-2 was redacted to [the child] in the N3 note by the second fourth-round reviewer; the log entry for it is still the author\'s.'
   - 'Eleven established claims rest on secondary reads (abstracts, news, fetched pages), including the headline claim; the search headline stays draft until the Madsen 2002 and Hviid 2019 full texts are read. The JAMA 2016 erratum to Jain 2015 is unread.'
   - 'Sources not read by anyone yet: the Lancet 2004 and 2010 notices; the BMJ 2011 articles (Deer, Godlee) and BMJ c696 and c2803; the 1998 paper full text; the GMC findings; the Poling Rule 4(c) report and decision; the special masters'' decisions (all six) and the King, Mead and Dwyer outcomes; the Maryland Board''s own order; full texts of Madsen 2002 and Hviid 2019.'
   - 'Owner decisions still open: search headline wording (N10); the publication-status schema, PR #6, adopted by the owner but not yet merged (F9); naming of adults in the public record and the Poling case surname; headline_status draft; refutation_class.'
