@@ -165,13 +165,19 @@ def check_subject(r, sdir):
             target = ids.get(hc)
             if target is None:
                 r.err(subject, f"headline_claim `{hc}` is not a claim in this subject")
-            elif d.get("headline_status") == "published":
+            elif d.get("headline_status") in ("review", "published"):
                 ok = (target.get("state") in ("established", "refuted")
                       and target.get("confidence") == "high"
                       and norm_checked(target.get("anchor_checked")) == "primary")
                 if not ok:
-                    r.err(subject, f"published headline rests on `{hc}`, which is not "
+                    r.err(subject, f"{d.get('headline_status')} headline rests on `{hc}`, which is not "
                                    "established/refuted at high confidence with a primary check")
+
+        h = d.get("headline")
+        if h and not 70 <= len(h) <= 95:
+            r.warn(subject, f"headline is {len(h)} characters; aim for 70-95 (rule 7)")
+        if claims and not h and d.get("dig_status") not in ("parked", "pilot_draft", "data"):
+            r.warn(subject, "has claims but no headline and no dig_status; a complete dig needs a specific headline")
 
     tpath = os.path.join(sdir, "threads.yaml")
     if os.path.exists(tpath):
