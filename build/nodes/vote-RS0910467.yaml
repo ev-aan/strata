@@ -1,0 +1,21 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: vote-RS0910467
+rev: 1
+type: event
+label: '1970-07-10: Senate SCR64 To adopt s. con. res. 64, to terminate the tonkin gulf resol'
+time: '1970-07-10T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'To adopt s. con. res. 64, to terminate the tonkin gulf resolution, after adopting committee substitute amendment, and
+  an amendment to make t Result: n/a; yea 57, nay 5. Roll call 467.'
+sources:
+- title: Voteview roll-call data (secondary index; official record is the anchor from 1990, the Congressional Record before)
+  url: https://voteview.com
+  authenticity: dataset; counts spot-checked for 2009-2026 against official XML, not for these years
+link: https://voteview.com/rollcall/RS0910467
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from votes-johnson-tonkin roll-call event v46 (Voteview).

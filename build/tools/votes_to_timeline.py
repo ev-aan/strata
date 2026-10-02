@@ -21,12 +21,17 @@ for f in sorted(glob.glob(os.path.join(d, "rollcalls-*.yaml"))):
                    "kind": "official", "status": "single", "sources": ["s_vv"], "link": url,
                    "label": f"{x['d']}: {'House' if x['ch']=='H' else 'Senate'} {x['b'] or ''} {txt[:60]}".replace("  ", " "),
                    "detail": f"{txt} Result: {x['res'] or 'n/a'}; yea {x['y']}, nay {x['x']}. Roll call {x['n']}."})
+        # a roll call that is already a shared node (build/nodes/vote-<Voteview id>.yaml) is referenced, not copied
+        vid = url.rsplit("/", 1)[1] if "voteview.com" in url else None
+        if vid and os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "nodes", f"vote-{vid}.yaml")):
+            ev[-1]["_node"] = f"vote-{vid}"
 # extra panels may carry copy_votes_between: [from, to]; the vote dots in that window are repeated in the panel
 for pn in extra["panels"]:
     win = pn.pop("copy_votes_between", None)
     if win:
         for e in [e for e in ev if win[0] <= e["time"][:10] <= win[1]]:
             c = dict(e); c["id"] += "r"; c["panel"] = pn["id"]; ev.append(c)
+ev = [({"id": e["id"], "panel": e["panel"], "lane": e["lane"], "node": e["_node"], "rev": 1} if "_node" in e else e) for e in ev]
 panels = [{"id": "years", "bands": extra.get("bands", []), "title": f"Panel A: {start[:4]} to {end[:4]} (one tick per year)", "start": f"{start}T00:00:00Z", "end": f"{end}T00:00:00Z", "tick_years": 1,
            "lanes": ["tonkin", "house", "senate"]}] + extra["panels"]
 lanes = {"tonkin": {"label": "Gulf of Tonkin dig events"}, "house": {"label": "House votes"}, "senate": {"label": "Senate votes"}, **extra["lanes"]}

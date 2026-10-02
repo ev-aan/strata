@@ -1,0 +1,28 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: crec-1970-p21119
+rev: 1
+type: image
+label: Congressional Record, Senate, 24 Jun 1970, p. 21119 (page image)
+time: '1970-06-24T12:00:00Z'
+precision: day
+kind: document
+status: single
+what: A page image of the GPO bound edition, stored as the checked copy behind the quotations and vote counts read from it.
+  The full volume is not stored.
+sources:
+- title: Congressional Record, Vol. 116, Part 16 (Senate, 24 June 1970), GPO bound edition, granule GPO-CRECB-1970-pt16-1-1
+  url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf
+  authenticity: authenticated, strong (see the dig's sources manifest)
+media:
+  file: ../subjects/gulf-of-tonkin/sources/congressional-record/crec-1970-p21119-019.png
+  sha256: 6f4c79df6d4b929237dea41dec46c8467e69165ffba15bc03ddb50f9749f25bc
+manifest:
+  subject: gulf-of-tonkin
+  source: src-congressional-record-1970
+evidences:
+- vote-RS0910398
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the stored page image; sha256 recomputed and equals the value in the dig's sources manifest.

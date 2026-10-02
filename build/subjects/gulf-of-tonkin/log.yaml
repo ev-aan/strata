@@ -223,3 +223,13 @@ log:
       at the White House and that retaliation orders 'had been issued prior to the meeting'. OPEN: the Record prints that the House passed 'with an amendment'
       while a Senate message (p. 18612) says the Senate passed H.J. Res. 1145 'without amendment'; unreconciled here. Voteview's House roll number
       for this vote is 197; the Record's is 210.
+  - id: L-22
+    date: 2026-10-02
+    entry: >
+      SHARED NODES (pilot). Owner decision: events, documents and images are their own artifacts in build/nodes/, and digs refer to them (SCHEMA.md, Nodes, N1 to N8). All 25 events of this timeline
+      became nodes (tonkin-<date>-<words>), the Bundy staff meeting memo is a document node pointing at src-bundy-memo-1964, and the five Congressional Record page images are image nodes with their
+      sha256 (recomputed; equal to the manifest). One event was ADDED because its page image was already held and its claim already filed: Fulbright opening the Senate debate on 6 Aug 1964
+      (node tonkin-1964-08-06-fulbright-opens-senate-debate-aug4-as-fact, claim tonkin-fulbright-opening-aug4-as-fact). The timeline now has 26 events and refers to nodes. MERGED with the Johnson-era votes
+      dig because they were the same event: the 2 Aug Maddox engagement (here e2, there t1) and the 24 Jun 1970 Senate repeal vote (here g9, there v44, one node vote-RS0910398 with both source
+      records). NOT merged: the votes dig's 4 Aug summary event (t2) overlaps events f1 to f8 here, so it is its own node linked by `related`; the 7 Aug resolution event (e7) summarises two chamber votes,
+      which are their own nodes linked by `related`. The rendered timeline text is unchanged except for those points.

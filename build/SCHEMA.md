@@ -179,3 +179,21 @@ public official did and why it might have happened. Other subjects (documents, e
 ### Applied so far
 - Tonkin: `actors.yaml` built for Johnson, McNamara, Bundy, Morse, Gruening (2026-10-02); vote links to the roll-call data.
 - Politics pilot: protocol conforms to P1 to P7.
+
+## Nodes: shared dated artifacts (draft v0.4, 2026-10-02)
+
+A node is one dated artifact (an event, a document, an image, a recording, a dataset) kept once in `build/nodes/<id>.yaml`. Digs refer to nodes; they do not copy them.
+
+**Fields.** `id` (permanent, equals the file name), `rev` (whole number from 1), `type` (event, document, image, recording, dataset), `label`, `time` (ISO; negative years are BCE as written), optional `end`, `precision`, `kind` (the source kind that sets the marker shape: data, document, official, witness, analysis, media), `status` (single, reported, disputed, inferred), `what` (what the sources show, nothing about what it means), `sources` (title, url, authenticity), `link`, `related`, `created`, `history`. Images and recordings add `media: {file, sha256}` and `evidences: [node ids]`. A node whose source is already filed in a dig's sources manifest points to it with `manifest: {subject, source}` instead of repeating the authenticity record.
+
+**Rules.**
+- N1. A node says what a source shows, with its date. It does not say the thing is true. That judgement lives in the claims, which cite nodes as anchors.
+- N2. Digs reference a node by `node: <id>` (and `rev:` for the revision they read) in `timeline.yaml`. A dig's own reading goes in the event's `note`, never into the node.
+- N3. Append-only. A change is a new `rev` plus a `history` entry that says what changed and why. Nothing is overwritten or deleted.
+- N4. A dig that disagrees with a node (a different date, a different reading of the source) makes a variant: a new node with `derived_from: <id>` and `variant_reason`. The original stays and both can be shown.
+- N5. Two descriptions are merged into one node only when they are the same event. Overlaps that are not identical stay separate and are linked with `related`. Merges are logged in the node's `history`.
+- N6. A node needs at least one source or a stated `source_gap`. A media file carries its sha256, and the file is stored only where its licence allows.
+- N7. Conformance checks that every `node:` resolves, that hashes match, that history is in step with `rev`, and warns when a dig's pinned `rev` is behind the node's current `rev`.
+- N8. A dataset (for example a set of roll calls) is one node that points at its records. Individual records become nodes only when a dig cites them.
+
+Tools: `build/tools/nodes.py` expands references in memory for the timeline renderer and the Atlas. `build/tools/migrate_tonkin_nodes.py` was the one-off pilot move of the Tonkin family.

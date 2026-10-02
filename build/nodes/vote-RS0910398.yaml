@@ -1,0 +1,27 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: vote-RS0910398
+rev: 1
+type: event
+label: '24 Jun 1970: Senate votes 81-10 to repeal the Tonkin Resolution (Dole amendment)'
+time: '1970-06-24T12:00:00Z'
+precision: day
+kind: official
+status: reported
+what: 'Read in the Congressional Record, p. 21132 [No. 167 Leg.]. The ten nays include Fulbright, who said in the same debate
+  ''I am going to vote for its repeal'' and objected to the procedure (p. 21119). See claim tonkin-resolution-repealed-1970.
+  Voteview record: To amend h.r. 15628 by repealing the gulf of tonkin resolution effective at the end of the 91st congress.
+  Result: n/a; yea 81, nay 10. Roll call 398.'
+sources:
+- title: 'Congressional Record, Senate, 24 June 1970 (p. 21132: roll call 81-10)'
+  url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf#page=32
+  authenticity: GPO bound Record, authenticated, strong
+- title: Voteview, Senate roll call 481, 7 Aug 1964, H.J.Res. 1145 (88 yea, 2 nay)
+  url: https://voteview.com/rollcall/RS0880481
+  authenticity: dataset of the official roll call; Congressional Record not read
+link: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf#page=32
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event g9. Merged with votes-johnson-tonkin roll-call event v44 (the same
+    Senate vote, Voteview roll call).

@@ -10,6 +10,8 @@ Time runs left (past) to right (future). Each dig is a row; vertical position in
 `axis` per event: 'real' (default; when it happened or was recorded) or 'narrative' (when a story says it happened).
 The two axes are switched, never mixed. YAML is the source; this page is generated."""
 import os, sys, glob, json, html, datetime, re, yaml
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from nodes import resolve_timeline
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SUBJ = os.path.join(ROOT, "build", "subjects")
@@ -39,6 +41,7 @@ def load(subjects):
         tp = os.path.join(SUBJ, sub, "timeline.yaml")
         if not os.path.exists(tp): continue
         T = yaml.safe_load(open(tp))
+        T = resolve_timeline(T)
         tl = T.get("timeline", {}); srcs = T.get("sources", {}); lanes = T.get("lanes", {})
         cp = os.path.join(SUBJ, sub, "claims.yaml")
         title = tl.get("title") or sub
@@ -56,7 +59,7 @@ def load(subjects):
                         "k": e.get("kind", "analysis"), "st": e.get("status", "single"), "l": " ".join(str(e.get("label", "")).split()),
                         "d": " ".join(str(e.get("detail", "")).split()), "lane": (lanes.get(e.get("lane")) or {}).get("label", e.get("lane", "")),
                         "link": e.get("link") or (ss[0]["url"] if ss else ""), "src": ss, "axis": e.get("axis", "real"),
-                        "alt": ({"t": ms(e["alt_time"]), "note": e.get("alt_note", "")} if e.get("alt_time") else None)})
+                        "alt": ({"t": ms(e["alt_time"]), "note": e.get("alt_note", "")} if e.get("alt_time") else None), "node": e.get("node", ""), "sh": [s for s in e.get("shared_by", []) if s != sub]})
         if evs: data.append({"id": sub, "title": title_dig, "tl_title": tl.get("title", ""), "slug": slug, "events": sorted(evs, key=lambda x: x["t"])})
     return data
 
@@ -154,7 +157,7 @@ function show(e){const d=DATA.find(x=>x.id===e.dig);const p=document.getElementB
  const links=[];if(e.link)links.push(`<a href="${e.link}" target="_blank" rel="noopener">Open the source</a>`);
  if(d.slug&&!window.ATLAS_PRIVATE)links.push(`<a href="../digs/${d.slug}/">Read the dig</a>`);if(d.slug&&!window.ATLAS_PRIVATE)links.push(`<a href="../digs/${d.slug}/timeline/">Dig timeline</a>`);
  p.innerHTML=`<p class="mono">${d.title}</p><h2>${esc(e.l)}</h2><p class="mono">${fmt(e)} · ${esc(e.lane)}</p><p>${esc(e.d)}</p>`+(e.alt?`<p class="note">Another source gives ${new Date(e.alt.t).toUTCString().slice(5,16)}: ${esc(e.alt.note)}</p>`:'')+
- `<p class="mono">kind: ${SHAPE_LABEL[KIND[e.k]]||e.k} · status: ${e.st}</p><p><b>Sources</b></p><ul>`+e.src.map(s=>`<li>${s.url?`<a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}</a>`:esc(s.title)}<br><span class="note">${esc(s.auth)}</span></li>`).join('')+`</ul><p>${links.join(' · ')}</p>`}
+ (e.node?`<p class="note">Shared node <b>${esc(e.node)}</b>${e.sh&&e.sh.length?' &middot; also used in: '+e.sh.map(s=>esc((DATA.find(x=>x.id===s)||{title:s}).title)).join(', '):''}</p>`:'')+`<p class="mono">kind: ${SHAPE_LABEL[KIND[e.k]]||e.k} · status: ${e.st}</p><p><b>Sources</b></p><ul>`+e.src.map(s=>`<li>${s.url?`<a href="${s.url}" target="_blank" rel="noopener">${esc(s.title)}</a>`:esc(s.title)}<br><span class="note">${esc(s.auth)}</span></li>`).join('')+`</ul><p>${links.join(' · ')}</p>`}
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function zoomTo(d){const ev=d.events.filter(e=>e.axis===state.axis);if(!ev.length)return;const a=Math.min(...ev.map(e=>e.t)),b=Math.max(...ev.map(e=>e.e||e.t));const p=(b-a)*0.08+86400000*3;view={a:a-p,b:b+p};draw()}
 function zoom(f,cx){const w=view.b-view.a,c=view.a+w*cx;const nw=Math.max(60000,Math.min(t1-t0,w*f));view={a:c-nw*cx,b:c+nw*(1-cx)};draw()}

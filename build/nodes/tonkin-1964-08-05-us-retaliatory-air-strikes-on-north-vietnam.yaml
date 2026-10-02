@@ -1,0 +1,20 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-05-us-retaliatory-air-strikes-on-north-vietnam
+rev: 1
+type: event
+label: '5 Aug: US retaliatory air strikes on North Vietnam'
+time: '1964-08-05T12:00:00Z'
+precision: day
+kind: analysis
+status: single
+what: Hanyok refers to 'the retaliatory air strikes of 5 August'. Time of day not given here.
+sources:
+- title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), National Security Archive copy, 56 pp.
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
+  authenticity: authenticated, moderate (copy not byte-compared with NSA's)
+link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=49
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event e5.

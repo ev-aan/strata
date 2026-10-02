@@ -1,0 +1,24 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-06-fulbright-opens-senate-debate-aug4-as-fact
+rev: 1
+type: event
+label: '6 Aug: Fulbright opens the Senate debate and states the 4 August attack as fact'
+time: '1964-08-06T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'Fulbright: ''On August 4 the Maddox and another destroyer, the C. Turner Joy, were again attacked by North Vietnamese
+  torpedo boats in international waters ... without any doubt a calculated act of military aggression.'' Congressional Record,
+  Senate, 6 Aug 1964, p. 18399, read on the page image. See claim tonkin-fulbright-opening-aug4-as-fact.'
+sources:
+- title: Congressional Record, Vol. 110, Part 14 (Senate, 6 August 1964), GPO bound edition, granule GPO-CRECB-1964-pt14-3-2
+  url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-3-2.pdf
+  authenticity: authenticated, strong (see the dig's sources manifest)
+manifest:
+  subject: gulf-of-tonkin
+  source: src-congressional-record-1964-aug6
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from claim tonkin-fulbright-opening-aug4-as-fact, whose anchor is the page image (node crec-1964-p18399).

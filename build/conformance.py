@@ -247,6 +247,77 @@ def check_history(r, base):
             r.err(rel, f"claim `{cid}` was deleted; retire it with a state change, never remove it")
 
 
+def check_nodes(r):
+    """Shared nodes (build/nodes/*.yaml): see SCHEMA.md, Nodes."""
+    import hashlib, re
+    ndir = os.path.join(os.path.dirname(SUBJECTS), "nodes")
+    nodes = {}
+    for f in sorted(glob.glob(os.path.join(ndir, "*.yaml"))):
+        fid = os.path.basename(f)[:-5]
+        try:
+            n = load(f) or {}
+        except yaml.YAMLError as e:
+            r.err(f"node:{fid}", f"YAML does not parse: {e}")
+            continue
+        nodes[fid] = n
+        w = f"node:{fid}"
+        if n.get("id") != fid:
+            r.err(w, "`id` must equal the file name")
+        for k in ("rev", "type", "label", "time", "kind", "status", "what", "history"):
+            if n.get(k) in (None, ""):
+                r.err(w, f"missing `{k}`")
+        if n.get("type") not in ("event", "document", "image", "recording", "dataset"):
+            r.err(w, f"unknown type `{n.get('type')}`")
+        if n.get("status") not in ("single", "reported", "disputed", "inferred"):
+            r.err(w, f"unknown status `{n.get('status')}`")
+        if not re.match(r"^-?\d{4}-\d\d-\d\d", str(n.get("time", ""))):
+            r.err(w, f"time `{n.get('time')}` is not ISO")
+        if not n.get("sources") and not n.get("source_gap"):
+            r.err(w, "a node needs at least one source, or a stated `source_gap`")
+        for s in n.get("sources") or []:
+            if not s.get("title"):
+                r.err(w, "a source has no title")
+        h = n.get("history") or []
+        if h and h[-1].get("rev") != n.get("rev"):
+            r.err(w, "the last `history` entry must describe the current `rev` (append-only)")
+        if n.get("derived_from") and not n.get("variant_reason"):
+            r.err(w, "a variant (`derived_from`) must give `variant_reason`")
+        m = (n.get("media") or {})
+        if m.get("file"):
+            fp = os.path.normpath(os.path.join(ndir, m["file"]))
+            if not os.path.exists(fp):
+                r.err(w, f"media file missing: {m['file']}")
+            elif m.get("sha256") and hashlib.sha256(open(fp, "rb").read()).hexdigest() != m["sha256"]:
+                r.err(w, "media sha256 does not match the file")
+        mf = n.get("manifest")
+        if mf:
+            mp = os.path.join(SUBJECTS, mf["subject"], "sources", "MANIFEST.yaml")
+            ids = {s.get("id") for s in (load(mp) or {}).get("sources", [])} if os.path.exists(mp) else set()
+            if mf["source"] not in ids:
+                r.err(w, f"manifest entry `{mf['source']}` not found in {mf['subject']}")
+    for fid, n in nodes.items():
+        for k in ("related", "evidences"):
+            for ref in n.get(k) or []:
+                if ref not in nodes:
+                    r.err(f"node:{fid}", f"`{k}` refers to unknown node `{ref}`")
+        if n.get("derived_from") and n["derived_from"] not in nodes:
+            r.err(f"node:{fid}", f"derived_from unknown node `{n['derived_from']}`")
+    for sdir in sorted(glob.glob(os.path.join(SUBJECTS, "*"))):
+        tp = os.path.join(sdir, "timeline.yaml")
+        if not os.path.exists(tp):
+            continue
+        sub = os.path.basename(sdir)
+        for e in (load(tp) or {}).get("events", []):
+            nid = e.get("node")
+            if not nid:
+                continue
+            if nid not in nodes:
+                r.err(sub, f"timeline event {e.get('id')} refers to unknown node `{nid}`")
+            elif e.get("rev") is not None and e["rev"] < nodes[nid].get("rev", 1):
+                r.warn(sub, f"timeline event {e.get('id')} was written against rev {e['rev']} of node `{nid}`; it is now rev {nodes[nid]['rev']}: re-read and update the pin")
+    return nodes
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--base", help="git ref to compare against for history rules")
@@ -259,6 +330,7 @@ def main():
             check_subject(r, sdir)
         except yaml.YAMLError as e:
             r.err(os.path.basename(sdir), f"YAML does not parse: {e}")
+    nodes = check_nodes(r)
     if args.base:
         check_history(r, args.base)
 
@@ -266,7 +338,7 @@ def main():
         print(f"WARNING  {w}")
     for e in r.errors:
         print(f"ERROR    {e}")
-    print(f"\n{len(subjects)} subjects checked: {len(r.errors)} errors, {len(r.warnings)} warnings")
+    print(f"\n{len(subjects)} subjects and {len(nodes)} shared nodes checked: {len(r.errors)} errors, {len(r.warnings)} warnings")
     sys.exit(1 if r.errors else 0)
 
 

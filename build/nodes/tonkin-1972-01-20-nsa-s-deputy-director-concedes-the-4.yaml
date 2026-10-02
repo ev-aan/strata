@@ -1,0 +1,21 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1972-01-20-nsa-s-deputy-director-concedes-the-4
+rev: 1
+type: event
+label: '1972: NSA''s deputy director concedes the 4 Aug intercept could refer to 2 Aug'
+time: '1972-01-20T12:00:00Z'
+precision: day
+kind: analysis
+status: single
+what: 'Hanyok''s note 7: a 20 January 1972 meeting between Dr. Louis Tordella and SFRC staff chief Carl Marcy; Tordella could
+  not produce the original.'
+sources:
+- title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), National Security Archive copy, 56 pp.
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
+  authenticity: authenticated, moderate (copy not byte-compared with NSA's)
+link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=51
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event g2.

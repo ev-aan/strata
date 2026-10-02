@@ -1,0 +1,19 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1995-11-09-giap-tells-mcnamara-in-hanoi-that-nothing
+rev: 1
+type: event
+label: '1995: Giap tells McNamara in Hanoi that nothing happened on 4 Aug'
+time: '1995-11-09T12:00:00Z'
+precision: day
+kind: media
+status: single
+what: Seattle Times report of the 9 Nov 1995 meeting.
+sources:
+- title: 'Seattle Times, 9 Nov 1995: McNamara asks for truth about Gulf of Tonkin, Giap: there was no attack'
+  url: https://archive.seattletimes.com/archive/19951109/2151509/mcnamara-asks-for-truth-about-gulf-of-tonkin----giap-there-was-no-attack
+  authenticity: news archive
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event g3.

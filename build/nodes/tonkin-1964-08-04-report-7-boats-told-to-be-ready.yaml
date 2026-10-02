@@ -1,0 +1,25 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-04-report-7-boats-told-to-be-ready
+rev: 1
+type: event
+label: 'Report 7: boats told to be ready for ''military operations'' that night'
+time: '1964-08-04T11:40:00Z'
+precision: exact
+kind: document
+status: single
+what: 'Read: ''imminent plans of DRV naval action possibly against Desoto mission''; T-142 and T-146 to ready, T-333 to join
+  if oil can be found. Date-time group 04/1140Z per Prados (the OCR of the group is unclear). Hanyok reads later Phu Bai reports
+  as a salvage and tow operation.'
+sources:
+- title: NSA SIGINT intercept reports, Aug 1964 (declassified 2003)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf
+  authenticity: authenticated, moderate
+- title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
+  authenticity: a 2004 essay; footnotes primary documents
+link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf#page=4
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event f1.

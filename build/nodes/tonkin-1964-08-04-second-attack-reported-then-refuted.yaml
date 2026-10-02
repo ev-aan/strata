@@ -1,0 +1,31 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-04-second-attack-reported-then-refuted
+rev: 1
+type: event
+label: '4 Aug: a second attack on the destroyers is reported (NSA''s own study finds it did not happen)'
+time: '1964-08-04T15:00:00Z'
+precision: approx
+kind: analysis
+status: reported
+what: Summary node for the reported second attack of 4 August 1964. Its detail is in the 4 August events (f1 to f8). The study's
+  finding is the claim tonkin-aug4-attack-occurred in the Gulf of Tonkin dig.
+sources:
+- title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), NSArchive copy
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
+  authenticity: authenticated, moderate (see gulf-of-tonkin sources)
+link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=49
+related:
+- tonkin-1964-08-04-report-7-boats-told-to-be-ready
+- tonkin-1964-08-04-destroyers-first-reported-radar-sightings
+- tonkin-1964-08-04-mcnamara-to-lbj-ship-allegedly-to-be
+- tonkin-1964-08-04-mcnamara-to-lbj-reports-the-supposed-engagement
+- tonkin-1964-08-04-destroyers-report-evading-torpedoes-and-having-sunk
+- tonkin-1964-08-04-report-12-boat-reports-an-enemy-aircraft
+- tonkin-1964-08-04-report-13-we-shot-at-two-enemy
+- tonkin-1964-08-04-herrick-s-doubt-message-sent
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from votes-johnson-tonkin overlay event t2. Overlaps the 4 August events of the Gulf of Tonkin dig but is
+    a summary, so it was not merged.

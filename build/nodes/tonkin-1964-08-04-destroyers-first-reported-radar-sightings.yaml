@@ -1,0 +1,20 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-04-destroyers-first-reported-radar-sightings
+rev: 1
+type: event
+label: Destroyers' first reported radar sightings (04/1240Z)
+time: '1964-08-04T12:40:00Z'
+precision: exact
+kind: analysis
+status: single
+what: Prados. The base of the Swatow boats, Quang Khe, was about 110 nautical miles from Hon Me, too far to reach in the time
+  between the intercept and this report.
+sources:
+- title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
+  authenticity: a 2004 essay; footnotes primary documents
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event f2.

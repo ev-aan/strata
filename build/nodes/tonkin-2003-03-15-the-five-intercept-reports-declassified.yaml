@@ -1,0 +1,24 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-2003-03-15-the-five-intercept-reports-declassified
+rev: 1
+type: event
+label: 'March 2003: the five intercept reports declassified'
+time: '2003-03-15T12:00:00Z'
+precision: month
+kind: document
+status: reported
+what: 'Prados: declassified in March 2003 on a Mandatory Declassification Review request. The scan carries a NARA review stamp
+  dated 3-13-03.'
+sources:
+- title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
+  authenticity: a 2004 essay; footnotes primary documents
+- title: NSA SIGINT intercept reports, Aug 1964 (declassified 2003)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf
+  authenticity: authenticated, moderate
+link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf#page=2
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event g6.

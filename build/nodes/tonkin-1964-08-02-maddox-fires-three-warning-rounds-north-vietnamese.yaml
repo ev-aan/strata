@@ -1,0 +1,26 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese
+rev: 1
+type: event
+label: '2 Aug: Maddox fires three warning rounds; North Vietnamese boats attack'
+time: '1964-08-02T08:05:00Z'
+precision: approx
+kind: analysis
+status: reported
+what: 'Hanyok: about 1505 Gulf time (08:05 UTC) the Maddox fired three rounds to warn off the boats; the administration did
+  not report this and said the Vietnamese boats fired first. Jets from the Ticonderoga arrived within about fifteen minutes;
+  one boat was left dead in the water and two damaged.'
+sources:
+- title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), National Security Archive copy, 56 pp.
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
+  authenticity: authenticated, moderate (copy not byte-compared with NSA's)
+- title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
+  authenticity: a 2004 essay; footnotes primary documents
+link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=17
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event e2. Merged with votes-johnson-tonkin overlay event t1 (same event,
+    same time).

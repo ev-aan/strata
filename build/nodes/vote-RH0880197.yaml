@@ -1,0 +1,21 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: vote-RH0880197
+rev: 1
+type: event
+label: '1964-08-07: House HJRE1145 H.j. res. 1145. support the president''s actions in retaliati'
+time: '1964-08-07T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'H.j. res. 1145. support the president''s actions in retaliating to attacks against u.s. naval forces off viet nam and
+  pledge u.s. assistance Result: n/a; yea 416, nay 0. Roll call 197.'
+sources:
+- title: Voteview roll-call data (secondary index; official record is the anchor from 1990, the Congressional Record before)
+  url: https://voteview.com
+  authenticity: dataset; counts spot-checked for 2009-2026 against official XML, not for these years
+link: https://voteview.com/rollcall/RH0880197
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from votes-johnson-tonkin roll-call event v1 (Voteview).

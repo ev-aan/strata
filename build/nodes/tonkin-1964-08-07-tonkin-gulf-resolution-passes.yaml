@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-07-tonkin-gulf-resolution-passes
+rev: 1
+type: event
+label: '7 Aug: Tonkin Gulf Resolution passes (House 416-0, Senate 88-2)'
+time: '1964-08-07T12:00:00Z'
+precision: day
+kind: official
+status: reported
+what: 'Signed 10 August. Senate: read in the Congressional Record, p. 18470 (yeas 88, nays 2: Gruening and Morse; 10 not voting).
+  House: the Record prints 416-0 on Roll No. 210 (p. 18555), under suspension of the rules (see claim tonkin-house-debate-aug7).'
+sources:
+- title: 'Congressional Record, Senate, 7 Aug 1964 (p. 18470: roll call 88-2)'
+  url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf#page=30
+  authenticity: GPO bound Record, authenticated, strong
+- title: Voteview, Senate roll call 481, 7 Aug 1964, H.J.Res. 1145 (88 yea, 2 nay)
+  url: https://voteview.com/rollcall/RS0880481
+  authenticity: dataset of the official roll call; Congressional Record not read
+- title: Voteview, House roll call 197, 7 Aug 1964, H.J.Res. 1145 (416 yea, 0 nay)
+  url: https://voteview.com/rollcall/RH0880197
+  authenticity: dataset of the official roll call; Congressional Record not read
+- title: Senate.gov, Chairman Fulbright and the Tonkin Gulf Resolution
+  url: https://www.senate.gov/artandhistory/senate-stories/chairman-fulbright-and-the-tonkin-gulf-resolution.htm
+  authenticity: official history; vote counts not read in the Record
+- title: Council on Foreign Relations, Congress passes the Gulf of Tonkin Resolution
+  url: https://www.cfr.org/articles/twe-remembers-congress-passes-gulf-tonkin-resolution
+  authenticity: secondary
+link: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf#page=30
+related:
+- vote-RH0880197
+- vote-RS0880481
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event e7. Summary of the two chamber votes, which are their own nodes
+    (related).

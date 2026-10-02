@@ -1,0 +1,21 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-03-second-34-a-raid-night-of-3
+rev: 1
+type: event
+label: Second 34-A raid, night of 3/4 August (time not stated)
+time: '1964-08-03T17:00:00Z'
+precision: range
+kind: analysis
+status: inferred
+end: '1964-08-03T23:00:00Z'
+what: 'Prados: another raid on the night of 3/4 August as the destroyers began their run back up the Gulf. The bar is an inference
+  for the local night, not a stated time.'
+sources:
+- title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
+  authenticity: a 2004 essay; footnotes primary documents
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event e4.

@@ -1,0 +1,24 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-04-report-13-we-shot-at-two-enemy
+rev: 1
+type: event
+label: 'Report 13: ''we shot at two enemy airplanes... we sacrificed two comrades'''
+time: '1964-08-04T16:44:00Z'
+precision: exact
+kind: document
+status: reported
+what: 'Read. The report speaks of aircraft, not ships. Hanyok: it appears to combine two separate messages into one translation,
+  and ''comrades'' was rendered as ''boats''; the original Vietnamese text cannot be located.'
+sources:
+- title: NSA SIGINT intercept reports, Aug 1964 (declassified 2003)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf
+  authenticity: authenticated, moderate
+- title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), National Security Archive copy, 56 pp.
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
+  authenticity: authenticated, moderate (copy not byte-compared with NSA's)
+link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tonkin_intercepts.pdf#page=7
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event f7.

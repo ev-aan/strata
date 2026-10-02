@@ -1,0 +1,21 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: vote-RS0910392
+rev: 1
+type: event
+label: '1970-06-22: Senate HR15628 To table dole (kan.) amendment to h.r. 15628, said amendment'
+time: '1970-06-22T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'To table dole (kan.) amendment to h.r. 15628, said amendment providing to repeal the gulf of tonkin resolution effective
+  at the end of the 9 Result: n/a; yea 15, nay 67. Roll call 392.'
+sources:
+- title: Voteview roll-call data (secondary index; official record is the anchor from 1990, the Congressional Record before)
+  url: https://voteview.com
+  authenticity: dataset; counts spot-checked for 2009-2026 against official XML, not for these years
+link: https://voteview.com/rollcall/RS0910392
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from votes-johnson-tonkin roll-call event v43 (Voteview).

@@ -1,0 +1,23 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-04-mcnamara-to-lbj-ship-allegedly-to-be
+rev: 1
+type: event
+label: 'McNamara to LBJ (9:43 a.m. EDT): ship ''allegedly'' to be attacked tonight'
+time: '1964-08-04T13:43:00Z'
+precision: exact
+kind: document
+status: reported
+what: 'Read in transcription: ''this ship is allegedly uh to be attacked tonight''. Before any attack on the destroyers was
+  reported. Conditional planning followed (''in the event he is attacked'').'
+sources:
+- title: LBJ tapes on the Gulf of Tonkin (transcriptions by Prados)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/tapes.htm
+  authenticity: transcription; audio not heard
+- title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
+  authenticity: a 2004 essay; footnotes primary documents
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event f3.
