@@ -331,10 +331,16 @@ claims:
     state: established
     exception: "Established as who said what, from outlets' reports of statements and interviews; none was watched."
     statement: >
-      Israel's Prime Minister said on 30 September that "one of the pilots stabbed the other pilot" and that "Apparently he tried to crash the plane with its occupants"; his spokesperson said the attacking pilot was "bashing the control panel"; Israel's Defence Minister said "the terrorist had a single objective: to crash the plane". These are Israeli officials' accounts, adoption-class until material backs them; the Saudi and UAE statements and the airline's do not say that the plane was to be crashed.
+      Israel's Prime Minister said on 30 September that "one of the pilots stabbed the other pilot" and that "Apparently he tried to crash the plane with its occupants". This is an Israeli official's account, adoption-class until material backs them; the Saudi and UAE statements and the airline's do not say that the plane was to be crashed.
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
+    confidence_reasons:
+      start: moderate
+      start_because: "The Prime Minister's video was not watched; his words are read through outlets."
+      steps:
+        - {domain: independent_corroboration, effect: none, reason: "Owner-delegated rule (2026-10-02): established at moderate only where at least two independent outlets report the same words. MiGFlug quotes the video address; CNN reports his CNN interview; ABC Australia and Al Jazeera report 'apparently tried to crash the plane' attributed to him; these are not copies of one wire text. Considered; held at moderate. The spokesperson's and Defence Minister's quotations rest on fewer outlets and are in a separate, lower claim."}
+      reviewed: false
     evidential_weight: 3   # of 5; statements by officials
     anchor_checked: secondary
     adoption_weight: 5   # of 5
@@ -346,11 +352,69 @@ claims:
       type: statements-via-reports
       description: >
         MiGFlug [read], quoting Netanyahu's video address of 30 Sep: "During the flight as they approached the country one of the pilots stabbed the other pilot. Apparently he tried to crash the plane with its occupants." CNN live blog, 30 Sep 22:40 UTC [read]: Netanyahu to CNN: the captain "managed to prevent a 9/11 disaster"; "That's what it looks like was happening as far as the specific motivations of this"; Israel "did not have any warning or intelligence" (CNN's words); CNN adds that Israel "has not made public the details behind the attacker's motive".
-        Al Jazeera, 2 Oct [read] and ABC Australia [read]: the Prime Minister's spokesperson Doron Spielman said "the attacking pilot was standing over the control panel, bashing the control panel". ABC Australia [read]: Defence Minister Katz: "According to our preliminary information, the terrorist had a single objective: to crash the plane."
+        ABC Australia [read] and Al Jazeera [read] report the Prime Minister's words in the same terms ("apparently tried to crash the plane"). The spokesperson's and the Defence Minister's accounts are in fz1073-spokesperson-and-katz-accounts.
         UAE foreign ministry [read] and flydubai [read] say only "altercation"/"safety incident in the flight deck"; the Saudi statement says "altercation ... assaulted".
-      sources: [src-migflug-copilot, src-cnn-live-0930, src-aj-12min, src-abc-au-plunge, src-mofa-uae, src-flydubai-updates, src-saudi-moi-original]
+      sources: [src-migflug-copilot, src-cnn-live-0930, src-aj-original, src-abc-au-plunge, src-mofa-uae, src-flydubai-updates, src-saudi-moi-original]
     basis: >
       An accusation is not a finding. The claim records who said what; whether the pilot meant to crash the aircraft is not established by any investigating authority.
+
+  - id: fz1073-spokesperson-and-katz-accounts
+    state: proposed
+    statement: >
+      Two further Israeli accounts rest on fewer outlets: the Prime Minister's spokesperson is quoted as saying the attacking pilot "was standing over the control panel, bashing the control panel" (Al Jazeera and ABC Australia, which may draw on one wire text), and Israel's Defence Minister is quoted as saying "the terrorist had a single objective: to crash the plane" (ABC Australia only).
+    evidence_class: interpretive
+    confidence: provisional
+    statement_kind: reported
+    confidence_reasons:
+      start: provisional
+      start_because: "Statements read through outlets."
+      steps:
+        - {domain: independent_corroboration, effect: none, reason: "Owner-delegated rule (2026-10-02): a who-said-what claim about officials' statements read only through outlets is established only where two independent outlets report the same words. The Defence Minister's quotation is in one outlet; the spokesperson's is in two that may share a wire origin. Lowered to proposed and held at provisional, the cap for a proposed claim."}
+      reviewed: false
+    evidential_weight: 2   # of 5
+    anchor_checked: secondary
+    adoption_weight: 4   # of 5
+    adoption_note: >
+      Not polled. Accusations by officials; no investigating body has confirmed them.
+    would_change_if: >
+      a second independent outlet, a transcript or the Israeli Prime Minister's Office text of the statements
+    anchor:
+      type: statements-via-reports
+      description: >
+        Al Jazeera, 2 Oct [read] and ABC Australia [read]: the Prime Minister's spokesperson Doron Spielman said "the attacking pilot was standing over the control panel, bashing the control panel". ABC Australia [read]: Defence Minister Katz: "According to our preliminary information, the terrorist had a single objective: to crash the plane." The UAE foreign ministry, the airline and the Saudi statement do not say this.
+      sources: [src-aj-12min, src-abc-au-plunge, src-mofa-uae]
+    basis: >
+      Capped at provisional. An accusation is not a finding.
+
+  - id: fz1073-terrorist-label-single-outlet
+    state: proposed
+    statement: >
+      Israel's President is reported to have called the co-pilot a "terrorist" on BBC Radio 4 on 1 October (The National only), and a top UAE official, Anwar Gargash (CNN's description), is reported to have described the incident on Friday 2 October as a "dangerous terrorist act" (CNN only); each rests on one outlet, and the second sits beside Ynet's anonymous report that UAE officials were wary of the word.
+    evidence_class: interpretive
+    confidence: provisional
+    statement_kind: reported
+    confidence_reasons:
+      start: provisional
+      start_because: "Statements read through one outlet each; neither broadcast nor Gargash's own words were read."
+      steps:
+        - {domain: independent_corroboration, effect: none, reason: "Owner-delegated rule (2026-10-02): established only where two independent outlets report the same words; each item has one outlet. Lowered to proposed and held at provisional, the cap for a proposed claim."}
+      reviewed: false
+    evidential_weight: 2   # of 5
+    anchor_checked: secondary
+    adoption_weight: 3   # of 5
+    adoption_note: >
+      Not polled. Accusations by officials, not findings; the UAE investigation is still examining any terrorist link.
+    would_change_if: >
+      the BBC programme or WAM/UAE text of Gargash's remark, or a second outlet reporting the same words
+    next_step: >
+      Find the BBC Radio 4 interview and Gargash's statement (WAM or his own post) and record their dates and wording.
+    anchor:
+      type: statements-via-reports
+      description: >
+        The National [read]: Herzog, "Speaking on BBC Radio 4 on Thursday ... did refer to the co-pilot as a 'terrorist'." CNN explainer [read]: "Anwar Gargash, a top UAE official, on Friday described the incident as a 'dangerous terrorist act,' a label Netanyahu has so far stopped short of" (CNN's description; Gargash's own words were not read). Ynet [read]: Emirati officials viewed the Israeli terror conclusion as "overly definitive" (anonymous Israeli official, single source).
+      sources: [src-national-ag, src-cnn-explainer, src-ynet]
+    basis: >
+      Capped at provisional. An accusation is not a finding.
 
   - id: fz1073-landing-time
     state: contested
@@ -469,7 +533,7 @@ claims:
     state: established
     exception: "Established as who said what, from reports of interviews and briefings; the interviews themselves were not watched."
     statement: >
-      Israel's Prime Minister said on "CBS Evening News" on Wednesday night, 30 September, that the pilot is an Omani citizen (NBC) and told CNN the same (CNN does not date its interview; it was on 30 September or 1 October), Israel's President said so on BBC Radio 4 on 1 October (per The National), and an Israeli official told Reuters the same; Israeli sources first said so to the Jerusalem Post on 30 September. No UAE, Saudi, Flydubai or Omani authority had publicly confirmed it on the record by 2 October; CBS reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship.
+      Israel's Prime Minister said on "CBS Evening News" on Wednesday night, 30 September, that the pilot is an Omani citizen (NBC) and told CNN the same (CNN does not date its interview; it was on 30 September or 1 October), Israel's President is reported to have said so on BBC Radio 4 on 1 October (The National only), and an Israeli official told Reuters the same; Israeli sources first said so to the Jerusalem Post on 30 September. No UAE, Saudi, Flydubai or Omani authority had publicly confirmed it on the record by 2 October; CBS reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship.
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
@@ -478,6 +542,7 @@ claims:
       start_because: "Read through CNN, Al Jazeera, Reuters (via KFGO), the Jerusalem Post and The National, not from the interviews themselves."
       steps:
         - {domain: independent_corroboration, effect: up1, reason: "The statement is reported by CNN (an interview with the Prime Minister), Reuters (an Israeli official), the Jerusalem Post (Israeli sources) and CBS; each records the same speakers saying it."}
+        - {domain: independent_corroboration, effect: none, reason: "Owner-delegated rule (2026-10-02): held at moderate because at least two independent outlets report the same statement (NBC and CBS for the CBS Evening News remark; CNN for its interview; Bloomberg's reprint and Arab News for Fox and the Israeli envoy; Reuters for an Israeli official). The Herzog item rests on The National alone and is mentioned only as a further speaker."}
         - {domain: risk_of_bias, effect: down1, reason: "Every outlet traces to Israeli officials (the Prime Minister, an Israeli official, Israeli sources); one origin on the Israeli side, so the count of outlets does not add independence. This is why the claim is held at moderate, as the other secondary-read claims are."}
         - {domain: inconsistency, effect: none, reason: "The National reports a different speaker, President Herzog (BBC Radio 4, 1 Oct), who also said it; this is a third Israeli speaker, not an inconsistency. Considered and not applied."}
       reviewed: false
@@ -665,15 +730,21 @@ claims:
     exception: "Established as who said what and when, from reports of interviews; the interviews themselves were not watched."
     statement: >
       On motive and character of the attack, Israel's Prime Minister said on 1 October (Fox News, as quoted by Ynet) that the attacker pilot "underwent Islamist radical indoctrination" and on 2 October (CBS) that "whoever sent him will pay a very heavy price", while also saying it is too early to say whether Iran was involved; the US President said on 1 October that an Iran link was likely "based on what I'm hearing"; an Israeli official told Ynet no Iran link has been found so far.
-      Israel's Defence Minister called it an "attempted jihadist terror attack" and Israel's President called the co-pilot a "terrorist" (BBC Radio 4, 1 October, per The National); a top UAE official (CNN's description), Anwar Gargash, "on Friday described the incident as a 'dangerous terrorist act'" (CNN, 2 October). The airline says motive is unknown; the UAE says it is examining all motives, including any terrorist link and prior planning. All of these are accusations or assessments by officials, not findings.
+      Israel's Defence Minister called it an "attempted jihadist terror attack" (Al Jazeera and The National). The airline says motive is unknown; the UAE says it is examining all motives, including any terrorist link and prior planning. All of these are accusations or assessments by officials, not findings.
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
+    confidence_reasons:
+      start: moderate
+      start_because: "Statements read through outlets, not from the broadcasts."
+      steps:
+        - {domain: independent_corroboration, effect: none, reason: "Owner-delegated rule (2026-10-02): a who-said-what claim about an interview stays established at moderate only where at least two independent outlets report the same words. Netanyahu's 'indoctrination' words are reported by CNN, Al Jazeera, Ynet and Bloomberg's reprint (all from the Fox interview); his 'whoever sent him' words by CBS, Reuters and CNN's Friday video item; Trump's words by CNN and CBS; Katz's words by Al Jazeera and The National. Items resting on one outlet (an anonymous official to Ynet) are labelled as such in the text. Considered; held at moderate."}
+      reviewed: false
     evidential_weight: 3   # of 5; officials' statements are adoption-class
     anchor_checked: secondary
     adoption_weight: 4   # of 5
     adoption_note: >
-      Not polled. The Israeli statements were widely carried; none names a document or evidence. The "terrorist" label from a UAE official sits beside Ynet's report (anonymous Israeli official) that UAE officials were wary of the word; the two are not reconciled.
+      Not polled. The Israeli statements were widely carried; none names a document or evidence.
     would_change_if: >
       an authority publishing the material behind any of these statements, or the UAE investigation reporting a motive
     anchor:
@@ -681,9 +752,10 @@ claims:
       description: >
         Ynet [read]: "After Prime Minister Benjamin Netanyahu told Fox News that 'we know that the attacker pilot underwent Islamist radical indoctrination,'" (Ynet's wording of the quote). CNN live blog [read], in CNN's own words: Netanyahu said "it has been established that he 'underwent Islamist radical indoctrination'"; "That appears to be something we're gathering from his personal information"; "too early to say" about Iran. Al Jazeera [read]: Netanyahu said "I don't make final conclusions yet." CBS [read, 2 Oct]: Netanyahu: "We are investigating whether he was dispatched, and whoever sent him will pay a very heavy price."
         CNN live blog [read]: Trump: "I would say the answer, based on what I'm hearing, is yes. But we're working on it right now." On whether the co-pilot was placed by Iran's Revolutionary Guard CNN prints Trump's reply as "Could be. Could be." and CBS [read] as "Could've been, yeah"; CBS also prints "They'll be hit very hard" if Iran is behind it. Ynet [read]: "a senior Israeli official said investigators had ruled out a suspected Iranian connection" so far, and that "Israel was examining the suspect's social media activity" (anonymous official; no content of any post was shown). flydubai Statement 2 [read]: the "underlying reasons and motives behind this event are unknown". UAE foreign ministry [read]: the investigation "includes examining all circumstances and motives surrounding the incident, including any possible connection to terrorist activity or intent".
-        The National [read]: Katz called it an "attempted jihadist terror attack"; Herzog, on BBC Radio 4 on Thursday, said "It's too early to say" about an Iranian link and "did refer to the co-pilot as a 'terrorist'". CNN explainer [read]: "Anwar Gargash, a top UAE official, on Friday described the incident as a 'dangerous terrorist act,' a label Netanyahu has so far stopped short of" (CNN's description; Gargash's own words were not read). CNN's explainer also quotes a Friday video in which Netanyahu said the suspect had "undergone Islamist radicalization".
-        On 30 Sep Netanyahu told CBS "I don't think it was a hijacking. It looks like a suicide attempt" (via ProtoThema; CBS itself not read for that quote).
-      sources: [src-cnn-live, src-cnn-explainer, src-aljazeera-uae, src-cbs-copilot, src-cbs-trump, src-ynet, src-flydubai-updates, src-mofa-uae, src-national-ag, src-abc-au-plunge, src-protothema]
+        The National [read]: Katz called it an "attempted jihadist terror attack"; Al Jazeera's explainer [read] gives the same words for Katz. CNN's explainer [read] also quotes a Friday video in which Netanyahu said the suspect had "undergone Islamist radicalization".
+        On 30 Sep Netanyahu told CBS "I don't think it was a hijacking. It looks like a suicide attempt" (NBC [read] and CBS's 1 Oct piece [read] both report it).
+        The statements by Israel's President and a top UAE official are in a separate claim (fz1073-terrorist-label-single-outlet) because each rests on one outlet.
+      sources: [src-cnn-live, src-cnn-explainer, src-aljazeera-uae, src-aljazeera-explainer, src-cbs-copilot, src-cbs-trump, src-nbc-0930, src-ynet, src-flydubai-updates, src-mofa-uae, src-national-ag]
     basis: >
       Further claims about the content of the co-pilot's posts and belongings were reported by The Week, the Times of Israel and a Tribune item relaying i24 (src-theweek, src-toi-liveblog, src-tribune-i24); none could be re-read (403 or lead only), they come from unnamed officials or third-hand, and they are not repeated here. Guardrail: this records what officials said. It does not assess anyone's beliefs or background. Axios (reportedly citing an Israeli intelligence official and colleagues on "religious radicalization") was not readable (HTTP 403) and is not used.
 
