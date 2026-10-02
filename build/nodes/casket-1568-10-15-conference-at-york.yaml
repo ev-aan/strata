@@ -1,0 +1,35 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1568-10-15-conference-at-york
+rev: 2
+type: event
+label: 'Oct 1568: conference at York'
+time: '1568-10-15T12:00:00Z'
+precision: month
+kind: analysis
+status: single
+what: Henderson's chapter on the York Commission. Whether the French versions were produced at York is a question he discusses;
+  the date is given only as 'October' in the passages read.
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
+place:
+  name: York
+  lat: 53.9591
+  lon: -1.0815
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM node 20913294
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k8. Merged with b8 (the same event drawn in the detail panel).
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

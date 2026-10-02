@@ -26,3 +26,9 @@ log:
       Renderer extended: panels may carry bands (context spans such as presidencies). NEXT: read the Congressional
       Record for the 1970 repeal debates; add actors.yaml (P1-P11) for members who voted No in 1964 and Yes in 1970,
       selected by a rule written first; tie to claim tonkin-resolution-rested-on-aug4.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      SHARED NODES (pilot, with the Gulf of Tonkin dig). The 11 roll calls that belong to the Tonkin story (the 7 Aug 1964 House and Senate votes and the nine June to July 1970 repeal-debate votes) and the two
+      overlay events are now referenced from build/nodes/ instead of copied. The generator build/tools/votes_to_timeline.py emits a reference when build/nodes/vote-<Voteview id>.yaml exists. The other roll calls stay as
+      records in rollcalls-*.yaml and are not nodes (SCHEMA.md N8). The 2 Aug overlay event and the 24 Jun 1970 vote are merged with the Tonkin dig's events of the same moment, so a correction to either now reaches both.

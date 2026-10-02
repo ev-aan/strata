@@ -1,0 +1,31 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1892-10-04-appeals-court-affirms-edison-patent
+rev: 1
+type: event
+label: '4 Oct 1892: Court of Appeals (2d Cir.) affirms Wallace J. on Edison''s second claim'
+time: '1892-10-04T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: '52 F. 300 (C.C.A. 2d Cir., 4 Oct 1892), Lacombe J.: the second claim of patent 223,898 (carbon filament in an all-glass
+  exhausted receiver with the conductors through the glass) is sustained and the decree affirmed. On the patent''s term the
+  court holds the patent in suit not affected by the loss of a Swedish patent (directly, or through Canadian patent No. 10,654
+  of 17 Nov 1879) and the Commissioner''s attempted ''certificate of correction'' limiting the term ''wholly void''. The decree
+  is ''affirmed, with costs''.'
+sources:
+- title: Edison Electric Light Co. v. United States Electric Lighting Co., 52 F. 300 (2d Cir., 4 Oct 1892), Lacombe J.
+  url: https://static.case.law/f/52/cases/0300-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-52-f-300
+  source_type: official_record
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-52f300
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a14. Date and place re-checked against the cited
+    source.'
+date_basis: stated

@@ -1,0 +1,31 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-1964-08-04-herrick-s-doubt-message-sent
+rev: 2
+type: event
+label: Herrick's doubt message SENT (1:27 p.m. Washington time)
+time: '1964-08-04T17:27:00Z'
+precision: range
+kind: analysis
+status: disputed
+end: '1964-08-04T18:27:00Z'
+what: 'Prados, quoting a 28 Aug 1964 chronology: contacts ''appear doubtful''; ''freak weather effects'' and ''over-eager
+  sonarmen''; ''no visual sightings''. DISCREPANCIES: (1) earlier reports said the message was received at 1:27 p.m.; the
+  chronology says sent. (2) The bar spans 17:27 to 18:27 UTC because it is unclear whether ''Washington time'' means daylight
+  time (UTC-4) or the UTC-5 that Prados uses to convert. The message itself was not read.'
+sources:
+- title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
+  authenticity: a 2004 essay; footnotes primary documents
+  origin: prados-2004
+  source_type: scholarly
+  access: read
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event f8.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

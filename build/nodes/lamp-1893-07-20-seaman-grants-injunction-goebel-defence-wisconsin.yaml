@@ -1,0 +1,50 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1893-07-20-seaman-grants-injunction-goebel-defence-wisconsin
+rev: 1
+type: event
+label: '20 Jul 1893: Seaman J. (E.D. Wis.) grants Edison an injunction, following Boston and disapproving St. Louis'
+time: '1893-07-20T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: '57 F. 616, on a motion for a preliminary injunction against lamp makers at Oconto, Wis.: the headnote states the rule
+  that a new defence against a patent upheld ''after protracted and expensive litigation'' can be defeated only by ''convincing
+  proof as will raise a presumption that it would have defeated the patent'', every reasonable doubt being resolved against
+  it; 54 F. 678 followed, 56 F. 496 ''disapproved''. ''I cannot find that [the new affidavits] remove any of the doubts above
+  noted.'' Injunction granted.'
+sources:
+- title: Edison Electric Light Co. v. Electric Manufacturing Co., 57 F. 616 (C.C.E.D. Wis., 20 Jul 1893), Seaman J.
+  url: https://static.case.law/f/57/cases/0616-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-57-f-616
+  source_type: official_record
+  access: read
+place:
+  name: Wisconsin (Eastern District of Wisconsin)
+  lat: 44.4309
+  lon: -89.6885
+  precision: region
+  uncertainty_km: 250
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 165466 (centroid of the state)
+  note: The heading names the court only as 'Circuit Court, E. D. Wisconsin'; the defendants are named as lamp makers 'at
+    Oconto, Wis.'. The sitting city is not stated, so only the state is placed.
+manifest:
+  subject: incandescent-lamp
+  source: src-57f616
+related:
+- node: lamp-1893-04-21-hallett-refuses-injunction-goebel-defence-st-louis
+  kind: responds_to
+  grade: established
+  why: The opinion disapproves 56 F. 496 and discusses the St. Louis evidence.
+- node: lamp-1893-02-18-colt-rules-on-goebel-defence-boston
+  kind: responds_to
+  grade: established
+  why: The opinion follows 54 F. 678.
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a15 (split). Date and place re-checked against
+    the cited source.'
+date_basis: stated

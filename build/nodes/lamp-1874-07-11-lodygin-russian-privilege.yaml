@@ -1,0 +1,42 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1874-07-11-lodygin-russian-privilege
+rev: 3
+type: event
+label: '11 Jul 1874: Lodygin is issued Russian privilege No. 1619 (priority dated from 2 Oct 1872)'
+time: '1874-07-11T12:00:00Z'
+precision: day
+kind: official
+status: single
+what: 'Kommersant (St Petersburg, 11 Jul 2024), marking 150 years: on 11 July 1874 the home patent office issued Lodygin privilege
+  No. 1619, ''interestingly'' with the priority dated retroactively, from 2 October 1872; the article also says he petitioned
+  for a privilege in 1872 and, in another passage, that the first patent for an incandescent lamp ''was received'' that day.
+  One later newspaper history; no scan of the privilege. LOW CONFIDENCE (owner decision): the number, the 11 July 1874 date
+  and the backdated priority all come from this one newspaper history with no scan of the privilege; the same page says the
+  Russian patent came ''only a year'' after the 1872 petition, which does not fit a July 1874 grant, so these details are
+  unverified.'
+sources:
+- title: Kommersant (St Petersburg), 'Why Lodygin's invention became Edison's lamp' (doc 6822124)
+  url: https://www.kommersant.ru/doc/6822124
+  authenticity: 'not applicable: newspaper history, no scan of the privilege (see the dig''s sources manifest)'
+  origin: kommersant-6822124
+  source_type: news
+  access: read
+manifest:
+  subject: incandescent-lamp
+  source: src-kommersant-lodygin
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a6 (split: the privilege); the privilege number
+    and priority date of the earlier version are not in the Kommersant page read and are dropped. Date and place re-checked
+    against the cited source.'
+- rev: 2
+  date: '2026-10-02'
+  change: 'Review request R2-3: the privilege number 1619 and the backdated priority date of 2 Oct 1872 ARE in the Kommersant
+    page (doc 6822124); rev 1 wrongly said they were not. Restored with their single newspaper source.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'Owner decision (L-24): flagged as single-source and unverified, low confidence; the page itself says the Russian
+    patent came only a year after the 1872 petition.'
+date_basis: stated

@@ -1,0 +1,96 @@
+# Publish-gate review record (docs/PUBLISH_GATE.md). status: pending | passed | passed_with_open_items | grandfathered | failed
+subject: mcafee-and-surfside
+status: grandfathered
+checks:
+- check: 'conformance: no errors for this subject'
+  result: FAIL
+  detail: 'ERROR    publish-gate:mcafee-and-surfside: published subject has no review.yaml (docs/PUBLISH_GATE.md)'
+- check: headline present, 70-95 characters
+  result: pass
+  detail: 93 characters
+- check: headline claim is established/refuted at high confidence with a primary check, or status is draft
+  result: pass
+  detail: 'surfside-deliberate-timed-to-mcafee: refuted, high, anchor_checked primary; headline_status draft'
+- check: headline_status is draft or review before the gate passes
+  result: pass
+  detail: draft
+- check: assessment present with question, answer, headline, text, basis, would_settle
+  result: pass
+  detail: ''
+- check: assessment has exactly three key_points
+  result: pass
+  detail: '3'
+- check: assessment states no percentage
+  result: pass
+  detail: ''
+- check: taxonomy entry (area and question types)
+  result: pass
+  detail: ''
+- check: every claim has statement_kind
+  result: pass
+  detail: ''
+- check: every searched gap names its next step
+  result: pass
+  detail: ''
+- check: sources manifest exists
+  result: pass
+  detail: ''
+- check: every source has an authenticity block
+  result: pass
+  detail: ''
+- check: log has entries
+  result: pass
+  detail: ''
+- check: timeline present (dates exist, so a timeline is required)
+  result: pass
+  detail: ''
+open_items:
+- 'conformance: no errors for this subject: ERROR    publish-gate:mcafee-and-surfside: published subject has no review.yaml
+  (docs/PUBLISH_GATE.md)'
+- Established claims anchored below primary are shown on the page as limits (anchor_checked).
+needs_manual_check:
+- '5 established/refuted claims anchored below primary: mcafee-death-facts, mcafee-spanish-finding-suicide, mcafee-31tb-2019-tweet,
+  mcafee-june8-tweet-posted, mcafee-owned-unit'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-spanish-finding-suicide (match 0.00): "Everything points
+  to death by suicide..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-spanish-finding-suicide (match 0.00): "no indications
+  of anything other than a violent death of suicidal orig..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-spanish-finding-suicide (match 0.00): "Everything points
+  to death by suicide...."'
+- 'quote not matched in stored sources (OCR noise possible): surfside-collapse-facts (match 0.00): "On June 24, 2021, Champlain
+  Towers South, a 12-floor condominium in Su..."'
+- 'quote not matched in stored sources (OCR noise possible): surfside-failure-began-before-mcafee-death (match 0.36): "the
+  collapse began in early June..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-31tb-2019-tweet (match 0.00): "In a June 2019 tweet, McAfee
+  claimed to have ''31+'' terabytes of ''incri..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-31tb-2019-tweet (match 0.00): "The only McAfee tweet about
+  31 terabytes of files is from June 9, 2019..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-31tb-2019-tweet (match 0.00): "If I''m arrested or disappear,
+  31+ terabytes of incriminating data will..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-june8-tweet-posted (match 0.00): "If anything ever happens
+  to me, please know that the 31TB (terabytes) ..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-june8-tweet-posted (match 0.00): "indicating it could
+  have been the template for a digitally fabricated ..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-owned-unit (match 0.00): "An Associated Press review of
+  property records at the Champlain Towers..."'
+- 'quote not matched in stored sources (OCR noise possible): mcafee-owned-unit (match 0.00): "no evidence he owned a condo
+  in the building or had any other connecti..."'
+- 'dates, names, patent or document numbers: verify each against the source'
+- every refuted claim names its target and rests on material or primary-text evidence (Rule 9)
+- no claim goes beyond what was read; anything not read is marked not read
+conformance_warnings: 3
+established_or_refuted_without_primary_check:
+- mcafee-death-facts
+- mcafee-spanish-finding-suicide
+- mcafee-31tb-2019-tweet
+- mcafee-june8-tweet-posted
+- mcafee-owned-unit
+quotes:
+  found_in_stored_sources: 0
+  not_found_in_stored_sources: 12
+  no_stored_source_to_check_against: 0
+reviewed_by: Claude (build session), partial review; no independent reviewer
+reviewed_on: '2026-10-02'
+notes: 'Published by the owner before the gate existed. Read directly: NIST''s public pages on the collapse. Not read: NIST''s
+  technical report, the Internet Archive capture of the 8 June 2021 tweet, the Miami-Dade property records, the Spanish court
+  ruling. Several claims rest on fact-check and news summaries (secondary). Headline status is draft.'

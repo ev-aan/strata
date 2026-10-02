@@ -1,0 +1,132 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch2/pt_539.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_539
+pt_number: 539
+display_name: "PT 539 — A Litany of Ascension: The King Climbs to Heaven"
+sethe_phrase_range:
+  value: "§§ 1298a–1306c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 2."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  structural_note: >
+    Mercer's Chapter XXVIII labels PT 539 'A Litany of Ascension' — indicating
+    a repetitive structural form (litany = repeated formula with variation).
+    This is structurally distinct from the individual utterances and multi-part
+    hymn series in earlier spells. A litany implies an oral/chanted performance
+    register: the repetition is a ritual technique, not a scribal redundancy.
+  later_attestations:
+    - source: "Coffin Texts ascension litanies"
+      state: searched_gap
+      note: "Whether the litany form persists in CT: searched_gap."
+
+location:
+  chamber: searched_gap
+  wall: searched_gap
+  note: >
+    PT 539's wall placement in Teti's corpus: searched_gap (Allen 2005 Teti section required).
+    Its high Sethe number suggests corridor, vestibule, or ascending passage placement.
+    The 'litany' classification and ascension theme suggest an outward-bound location —
+    the spirit climbing toward the sky would encounter this spell late in the exit sequence.
+  physical_condition: searched_gap
+
+ritual_class:
+  classes:
+    - stellar_ascent
+    - solar_ascent
+  note: >
+    'A Litany of Ascension' — the repeated formula of the king's upward movement
+    toward heaven. The litany form (repeated with variation) is a ritual intensification
+    technique: each repetition reasserts the ascension claim. The cumulative effect
+    of the repeated formula is to make the ascension progressively more certain.
+    This is performative language operating through repetition.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 2."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 2."
+
+translations:
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 539. Chapter XXVIII."
+    note: >
+      Mercer's Chapter XXVIII is 'A Litany of Ascension, Utterance 539' — again
+      a single-utterance chapter. Combined with PT 534's single-chapter status,
+      this suggests the high-numbered spells in Mercer's classification include
+      several uniquely isolated utterances. The litany text itself: searched_gap.
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 539."
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+
+lexical_anchors:
+  - term_transliteration: "pr r pt"
+    semantic_field: "Ascend to / go up to heaven"
+    notes: >
+      pr = go out, leave, ascend (from house sign O1 with open door).
+      r = to, toward.
+      pt = sky/heaven.
+      'pr r pt' is the standard ascension phrase — the king exits the earthly
+      realm and moves toward the sky. In a litany, this phrase (or a variation)
+      would repeat across multiple stanzas with different divine destinations
+      or different modes of ascent named.
+    attestation_range: "pr r pt throughout PT ascension spells and later funerary literature."
+
+  - term_transliteration: "Hsb"
+    semantic_field: "Litany / counting formula"
+    notes: >
+      The litany form in Egyptian ritual is structured around counted or sequenced
+      addresses. A PT litany of ascension may address multiple divine beings
+      sequentially, with the king's ascension affirmed in relation to each.
+      The structural parallel is PT 217's cardinal-direction announcements —
+      a proto-litany form already in the first batch. PT 539 may be a fully
+      developed litany version of the same ascension-announcement structure.
+
+divergence_points:
+  - id: litany_as_genre
+    claim: "PT 539 is a 'litany' — a structurally distinct spell type"
+    state: proposed
+    positions:
+      - scholar: "Mercer 1952"
+        reading: >
+          Chapter XXVIII heading: 'A Litany of Ascension.' This is a generic
+          classification — Mercer recognised a formal difference in PT 539
+          from surrounding spells.
+      - scholar: "Allen 2005 (expected)"
+        reading: >
+          Allen's wall-sequence analysis may reclassify PT 539 — his approach
+          organises by architectural position and thematic function rather than
+          formal genre. Whether Allen retains the 'litany' classification: searched_gap.
+    note: >
+      The genre classification 'litany' carries implications for how the spell
+      was performed — orally, with repetition, in a ceremonial context. If Allen
+      reclassifies it, the performance register changes. This is a case where
+      the classification system itself is an interpretive claim.
+
+transmission_events:
+  - event: "Teti pyramid corpus"
+    date_start: -2345
+    date_end: -2323
+    source: "Mercer 1952; Allen 2005."
+
+parallel_pyramids:
+  unas: false
+  note: "PT 539 is beyond Unas's corpus (Unas ceiling ~PT 312). Attestation in Pepi I/II: searched_gap."
+
+notes: >
+  PT 539 is included as the representative of the litany genre in the PT corpus —
+  a structural form distinct from individual utterances, paired hymn series,
+  and ceremonial meal/offering texts. The repetitive litany structure implies
+  a different performance context: probably chanted by a lector-priest (xrj-Hbt)
+  during the final procession through the pyramid passage. Its high Sethe number
+  and single-chapter classification make it one of the most under-documented spells
+  in accessible secondary literature. Sethe 1908 vol. 2 is the primary unlock.

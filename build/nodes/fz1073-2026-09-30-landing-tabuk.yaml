@@ -1,0 +1,62 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: fz1073-2026-09-30-landing-tabuk
+rev: 2
+type: event
+label: '30 Sep: FZ1073 lands at Tabuk, 9:45 a.m. local (06:45 UTC), per the Saudi Interior Ministry'
+time: '2026-09-30T06:45:00Z'
+precision: exact
+kind: official
+status: disputed
+what: 'The Saudi Interior Ministry statement (as quoted by Al Jazeera) says the aircraft arrived "safely" at 9:45 a.m. local time (06:45 GMT) with
+  174 passengers and eight crew on board. Tabuk airport (quoted by Khaleej Times) gives 9:45 a.m. Saudi time and says its air traffic control received
+  a distress call at 8:44 a.m. Saudi time (05:44 UTC). CNN gives touchdown at "9:54 a.m."; that is nine minutes after the two Saudi sources; CNN''s source for the figure is not stated and the difference
+  is not resolved. AirNav Radar''s blog says the flight "landed safely at Tabuk" with last ADS-B data at about 06:58 UTC, and Khaleej Times says Flightradar24''s final signal was at about 10:58 a.m. UAE time (06:58 UTC); a last signal can come after touchdown, but AirNav''s wording equates them. The landing time is therefore open.'
+alt_time: '2026-09-30T06:54:00Z'
+alt_tag: CNN time
+alt_note: 'CNN: touchdown at 9:54 a.m. (UTC+3 = 06:54 UTC); Saudi Interior Ministry and Tabuk airport: 9:45 a.m.'
+place:
+  name: Prince Sultan bin Abdulaziz International Airport, Tabuk
+  lat: 28.3713
+  lon: 36.6391
+  precision: site
+  uncertainty_km: 5
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event); OSM relation 19293202, an administrative
+    boundary around the airport, so the point is its centre rather than the runway. The airport is named by the Saudi Interior Ministry statement as quoted.
+  note: 'Approximate: the point is the centre of the airport boundary.'
+sources:
+- title: Al Jazeera, Flydubai co-pilot 'assaulted' captain before landing, initial Saudi probe (1 Oct 2026), quoting the Saudi Interior Ministry
+  url: https://www.aljazeera.com/news/2026/10/1/flydubai-co-pilot-assaulted-captain-before-landing-initial-saudi-probe
+  authenticity: news report quoting a ministry statement; the statement itself was not reached
+  origin: saudi-moi-statement
+  source_type: official_record
+  access: read
+- title: Khaleej Times, Flydubai FZ1073 timeline (2 Oct 2026), quoting a Tabuk airport statement
+  url: https://www.khaleejtimes.com/business/aviation/flydubai-dubai-tel-aviv-diverted-flight-from-altercation-to-probe
+  authenticity: news report quoting an airport statement; the statement itself was not reached
+  origin: tabuk-airport-statement
+  source_type: official_record
+  access: read
+- title: CNN, What happened inside the Flydubai flight to Israel? (30 Sep, updated 1 Oct 2026)
+  url: https://www.cnn.com/2026/09/30/middleeast/flydubai-israel-plane-pilot-hijacking-incident-latam-hnk-intl
+  authenticity: news report; source of its touchdown time not stated
+  origin: cnn-explainer
+  source_type: news
+  access: read
+- title: 'AirNav Radar blog, Flydubai FZ1073 diverts to Tabuk (30 Sep 2026), landed and last ADS-B about 06:58 UTC'
+  url: https://www.airnavradar.com/blog/flydubai-fz1073-diverts-to-tabuk-after-mid-air-cockpit-incident
+  authenticity: tracker operator's own blog post; the data file was not reached
+  origin: airnav-radar
+  source_type: dataset
+  access: read
+link: https://www.aljazeera.com/news/2026/10/1/flydubai-co-pilot-assaulted-captain-before-landing-initial-saudi-probe
+created: '2026-10-02'
+date_basis: stated
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created for the flydubai-fz1073 dig. The Saudi ministry and Tabuk airport are two statements by Saudi bodies; the ministry statement
+    and the airport statement may share facts but are separate records.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Review round 1 (R1-7): removed the guess that CNN''s 9:54 is transposed digits; added AirNav''s and Flightradar24''s final-signal time
+    of about 06:58 UTC; landing time stated as open. 06:45 stays attributed to the Saudi ministry and Tabuk airport.'

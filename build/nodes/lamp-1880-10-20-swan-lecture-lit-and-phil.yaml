@@ -1,0 +1,40 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1880-10-20-swan-lecture-lit-and-phil
+rev: 1
+type: event
+label: '20 Oct 1880: Swan lectures on electric lighting and disputes Edison''s priority on carbonised paper'
+time: '1880-10-20T12:00:00Z'
+precision: day
+kind: witness
+status: single
+what: 'Chemical News 42 (5 Nov 1880): J. W. Swan, lecture to the Newcastle-upon-Tyne Literary and Philosophical Society, 20
+  October 1880. He describes an experiment ''about twenty years ago'' with a carbonised paper arch in a vacuum that ''became
+  red-hot'' and bent until it broke; calls it ''the very first instance in which carbonised paper was ever used in the construction
+  of an incandescent electric lamp''; and says a Scribner''s article''s statement that Edison was first to use carbonised
+  paper ''is incorrect''. It is Swan''s own account, given while he disputed priority with Edison.'
+sources:
+- title: 'Chemical News 42 (5 Nov 1880), pp. 227-230: J. W. Swan, ''Electric Lighting'', lecture to the Newcastle Literary
+    and Philosophical Society, 20 Oct 1880'
+  url: https://archive.org/details/s713id13691440
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: swan-lecture-1880
+  source_type: testimony
+  access: read
+place:
+  name: Newcastle upon Tyne
+  lat: 54.9738
+  lon: -1.6132
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 142282
+  note: The source names the Newcastle-upon-Tyne society; the hall or room is not named, so only the city is placed.
+manifest:
+  subject: incandescent-lamp
+  source: src-chemnews-1880
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b7. Date and place re-checked against the cited
+    source.'
+date_basis: stated

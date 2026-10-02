@@ -14,19 +14,24 @@ threads:
     description: >
       Six countries have an answer to "Who invented the light bulb?": the United States (Edison), Britain
       (Swan), Canada (Woodward and Evans), Germany (Göbel), Russia (Lodygin) and Belgium (de Changy). Each
-      story takes one real record and stretches it into "first". The pattern is the same in every country,
-      which is why every claimant is dug to the same standard here. Only the Swan-versus-Edison question is
-      still live; the others are settled in claims.yaml and their spread is traced in transmission.yaml.
+      story starts from one real record. For Lodygin and for Woodward and Evans the documents read show it stretched into "first"; Göbel's
+      is contested on a preliminary court record, de Changy's first-claim is not dug, and Latimer is not a national claim.
+      The claimants are held to one stated standard (S1 to S4, in the description in claims.yaml), but they are not equally well
+      documented, and the thread does not claim that each was dug to the same depth. Still live are the Swan-versus-Edison
+      question and, on a preliminary court record, Göbel's 1854 lamps; the others are filed in claims.yaml and the spread of the
+      refuted stories is traced in transmission.yaml.
     members:
       - {claim: "incandescent-lamp:lamp-swan-before-edison", attestation: preserved}
+      - {claim: "incandescent-lamp:lamp-first-practical-priority", attestation: preserved}
+      - {claim: "incandescent-lamp:lamp-goebel-claim", attestation: preserved}
     see_transmission: [tx-goebel-legend, tx-canada-sale, tx-lodygin-priority]
     overlay_notes:
-      - "United States: the true core is the practical lamp and the Pearl Street system; the drift is to 'invented the bulb'."
-      - "Britain: the true core is Swan's 1878-79 demonstrations and his 1880 lamp; the drift is to 'Edison copied Swan', which no record read here supports."
-      - "Canada: the true core is an 1874 patent; the drift is a sale with no document and a design that differs from Edison's."
-      - "Germany: the true core is a real mechanic with a real 1882 lamp-part patent; the 1854 lamps have no record before 1882."
-      - "Russia: the true core is a real 1872-74 lamp and Academy prize; the drift is from 'before Edison' to 'first'."
-      - "Belgium: de Changy's sealed platinum lamps (1858) are real; Belgian 'first' claims are not dug further here."
+      - "United States: the true core is a lamp the courts called practical and the Pearl Street district service of 4 Sep 1882; the drift is to 'invented the bulb'. Sources: src-47f454, src-52f300, src-tribune-1882-09-05."
+      - "Britain: the true core is Swan's Dec 1878 report of a glowing carbon rod, his own account of a lamp shown about two years before Oct 1880, and Swan lamps at the Savoy (28 Dec 1881) and, per a blog only, Cragside (1880); the dig records no popular story that has drifted from these and files none. Sources: src-chemnews-1879, src-chemnews-1880, src-iet-cragside, src-times-savoy."
+      - "Canada: the true core is an 1874 Canadian patent and Woodward's 1876 US patent; the drift is a sale with no document and a design that differs from Edison's. Sources: src-sciam-1874, src-us181613, src-elecworld-1900."
+      - "Germany: the true core is a real New York mechanic with a real 1882 lamp-socket patent; the 1854 lamps have no dated document from before 1882, and US courts weighed the testimony differently on preliminary motions. Sources: src-us266358, src-54f678, src-56f496, src-57f616."
+      - "Russia: the true core is a lamp and Academy prize reported by Fontaine in 1878 (a single channel) and a privilege (patent) dated 11 July 1874 per Kommersant; the drift is from 'before Edison' to 'first'. Sources: src-fontaine-1878, src-kommersant-lodygin, src-abridgments-1859."
+      - "Belgium: de Changy's sealed platinum lamps are reported by Jobard in 1858 as printed by Fontaine (a single channel; the original was not read); his nationality is not settled (Fontaine: Belgium; Howell and Schroeder: a French engineer with a Belgian patent); Belgian 'first' claims are not dug further here. Sources: src-fontaine-1878, src-howell-schroeder-1927."
     firewall: >
       Records how priority stories travel and why they persist. Mechanically barred (confers_weight: false)
       from adding evidential weight to any claim. National pride and repetition are adoption weight; the
@@ -40,18 +45,19 @@ threads:
       The popular Edison story compresses a laboratory team, borrowed prior art, patent fights and a business
       into one man and one night. Its fixtures are the "10,000 ways" quote, a 40-hour first lamp, a grand
       New Year's Eve 1879 unveiling, and Edison as sole inventor. Only the New Year's Eve question is still
-      contested; the rest are settled in claims.yaml.
+      contested; the rest are filed in claims.yaml (the quote claim at provisional confidence, the 40-hour figure as "not found in any source opened").
     members:
       - {claim: "incandescent-lamp:lamp-menlo-park-dec-1879", attestation: preserved}
     see_transmission: [tx-10000-ways]
     overlay_notes:
-      - "The quote is about the storage battery (1910 text) and grew from 'several thousand' to '10,000' by 1982."
-      - "The first long test ran 13 1/2 hours (Batchelor notebook), not 40 (lamp-edison-oct-1879-test)."
-      - "Edison lost the Patent Office interference over paper carbons to Sawyer and Man in 1885 (lamp-sawyer-man-priority)."
+      - "The earliest version found of the quote is about the storage battery (1910 text) and grew from 'several thousand' to '10,000' by 1982 (the later forms are from Quote Investigator, secondary). Sources: src-dyer-martin-1910, src-quote-investigator."
+      - "The first long test ran 13 1/2 hours (Batchelor notebook, as transcribed by the Edison Papers), not 40 (lamp-edison-oct-1879-test). Source: src-edison-papers-doc1831."
+      - "Edison lost the Patent Office interference over paper carbons to Sawyer and Man in early 1885, as 40 F. 21 recounts it (lamp-sawyer-man-priority). Source: src-40f21."
       - >
         Corrective stories can overshoot in the other direction: Latimer's real filament-making patent becomes
-        "Latimer invented the bulb" (refuted: lamp-latimer-invented-claim), and Tesla, who did not work on the
-        incandescent lamp in this period, is also named online. No record ties Tesla to it, so no claim is filed.
+        "Latimer invented the bulb" (refuted: lamp-latimer-invented-claim; sources src-us252386, src-us247097), and Tesla is also
+        named online. The dig did not search for Tesla; no source read mentions him in connection with the incandescent lamp, so no
+        claim is filed.
     firewall: >
       Records reception only. Barred from lending weight to any claim (confers_weight: false). Correcting the
       legend does not shrink what the record shows Edison's team did; that is filed separately.

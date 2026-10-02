@@ -1,0 +1,47 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1812-davy-publishes-carbon-arc
+rev: 1
+type: event
+label: '1812: Davy''s account of the carbon arc and the 2000-plate battery is in print'
+time: '1812-07-01T12:00:00Z'
+precision: year
+kind: document
+status: single
+what: 'Davy, Elements of Chemical Philosophy, pp. 85-86: with the Royal Institution''s battery of 2000 double plates, pieces
+  of charcoal about an inch long and one sixth of an inch across, brought within a thirtieth or fortieth of an inch, gave
+  ''a bright spark'', and ''more than half the volume of the charcoal became ignited to whiteness''; drawn apart, ''a constant
+  discharge'' formed ''a most brilliant ascending arch of light'' of at least four inches. The book gives no date for the
+  experiment.'
+sources:
+- title: Humphry Davy, Elements of Chemical Philosophy, Part I, vol. 1 (1812), Internet Archive scan of the Bradford and Inskeep
+    (US) edition, pp. 85-86
+  url: https://archive.org/details/elementschemica00davygoog
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: davy-1812
+  source_type: primary_document
+  access: read
+place:
+  name: Royal Institution, Albemarle Street, London
+  lat: 51.5097
+  lon: -0.1423
+  precision: site
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM way 128812567
+  note: The book names 'the laboratory of the Royal Institution' as the place of the battery; the building shown is the Institution's
+    address today. London is not named in the passage read. This is where the experiment is described, not where the book
+    was printed.
+window:
+  earliest: '1812-02-01'
+  latest: '1812-12-31'
+  begin_note: The text records a gas made in February 1812, so the volume was written or printed after that.
+  end_note: The Internet Archive catalogue dates this edition 1812; the title page was not legible in the OCR read here.
+manifest:
+  subject: incandescent-lamp
+  source: src-davy-1812
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event a1. Date and place re-checked against the cited
+    source.'
+date_basis: derived

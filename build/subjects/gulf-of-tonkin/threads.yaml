@@ -5,7 +5,7 @@ threads:
   - id: thread-tonkin-popular-framing
     type: reception-overlay
     title: "Tonkin as 'proof' of a government false-flag"
-    confers_weight: false   # T4: required for reception overlays
+    confers_weight: false   # TH4: required for reception overlays
     description: >
       How Tonkin reaches general readers: "the attack that never happened" and the
       "false flag that started the Vietnam War". The first phrase tracks the

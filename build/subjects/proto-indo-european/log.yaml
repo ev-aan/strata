@@ -1,0 +1,9 @@
+subject: proto-indo-european
+log:
+  - id: L-01
+    date: 2026-10-02
+    entry: >
+      REVIEW FOR CONSISTENCY AND ACCURACY (owner request). Finding: this dig is not complete. The headline does not match
+      its headline_claim, the two homeland claims are rated high without any anchor read, and recent literature (recalled,
+      not read) disagrees with a clean refutation of the Anatolian view. See headline_hold in claims.yaml. Next step: read
+      the aDNA papers and the 2023 and 2025 studies, then re-rate; add weights and would_change_if to every claim.

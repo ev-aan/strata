@@ -1,0 +1,283 @@
+id: pt_213
+pt_number: 213
+display_name: "PT 213 — Resurrection Address: 'You Have Not Gone Dead'"
+sethe_phrase_range:
+  value: "§§ 134a–135d"
+  state: partial
+  note: >
+    Phrase numbers §§ 134–135 are confirmed from pyramidtextsonline.com Unas
+    wall layout and Allen 2005 structure. Precise a/b/c/d subdivisions require
+    Sethe 1908 vol. 1 to confirm.
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Unas pyramid, sarcophagus chamber south wall"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: >
+        PT 213 is the opening spell of the Resurrection Ritual on the south
+        wall in both Unas and Teti. Shared corpus. Unas version is better
+        preserved and is the primary source for translation comparison.
+      source: "Pyramidtextsonline.com (Unas south wall: PT 213–219)."
+    - source: "Middle Kingdom Coffin Texts"
+      approximate_date_start: -2055
+      approximate_date_end: -1650
+      state: searched_gap
+      note: "CT equivalent requires Allen CT concordance."
+    - source: "Senwosret-ankh tomb, El-Lisht (12th Dynasty)"
+      approximate_date: -1900
+      note: >
+        A near-complete replica of the Unas PT corpus was inscribed in the
+        tomb of the High Priest Senwosret-ankh at El-Lisht, including the
+        Resurrection Ritual. PT 213's presence there is probable but requires
+        direct confirmation.
+      state: searched_gap
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: burial_chamber
+  wall: south
+  column_direction: west_to_east
+  note: >
+    The south wall bears the Resurrection Ritual — identified by Allen (2005, p. 11)
+    as 'longer spells designed to release the deceased's spirit from its attachment
+    to the body and the earth and to send it on its daily journey to join the gods.'
+    PT 213 is the opening spell of this ritual (first spell encountered reading
+    west to east on the south wall). In a Middle Kingdom copy, this ritual's
+    title indicates it was performed AFTER the offering rituals.
+  physical_condition: >
+    South wall of Teti's burial chamber 'now exists mostly as disjointed fragments'
+    (Madain Project). The Unas south wall version is significantly better preserved
+    and serves as the primary textual reference for translation. Teti-specific
+    variants require Leclant restoration reports.
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  - resurrection_ritual
+  - osirian
+  note: >
+    PT 213 is the opening address of the Resurrection Ritual. It directly
+    addresses the deceased king (Unas / Teti) with the declaration that he
+    has 'gone alive' not dead — a theological negation of physical death.
+    The king is placed on the throne of Osiris — an Osirian identification
+    that is, in Teti's corpus, strengthened relative to Unas (see subject.yaml,
+    osiris_emphasis). The spell then identifies every limb of the king with
+    Atum, and the Horus/Seth sacred sites as servants.
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Teti south wall; or Unas south wall for comparison."
+
+  mdc_transliteration:
+    value: >
+      Partial from Unas version (pyramidtextsonline.com + Piankoff plates):
+      hA N nn Sm.n.k m mwt / Sm.n.k m anx /
+      Hms.k Hr st wsir /
+      Xkr.k m wAs.k m-a.k / wD.k n anx.w /
+      Xkr.k m Ams.k nxt m-a.k / wD.k n imj.w-ist
+    source: >
+      Reconstructed from Unas Piankoff translation + MdC conventions.
+      Treat as indicative of Teti version — not confirmed from Sethe Teti plates.
+    state: partial
+    caveat: >
+      The hA N formula uses N as a placeholder for the king's name (Unas or Teti).
+      In Teti's version, N = Ttj (Teti). The name cartouche is a critical anchor
+      for establishing this as a Teti-specific record vs. shared corpus.
+
+  gardiner_sign_list_notes: >
+    Key signs:
+    - hA: (O30) — exclamation / address particle; also written as D35 variant
+    - mwt: (G14 vulture + t-bread + D6 mouth) — 'death/dead'
+    - anx: (S34) — ankh sign = 'life/live'
+    - wsir: Osiris determinative (A40 seated god + Dd-pillar or throne)
+    - Atum sign complex: the limb-identification formula repeats Atum's name 8 times
+    Teti-specific sign forms: searched_gap.
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: piankoff_modernised
+    text: >
+      "O [King], you have not gone dead, you have gone alive to sit on the throne
+      of Osiris. Your scepter is in your hand that you may give orders to the living,
+      the handle of your lotus-shaped scepter in your hand.
+      Give orders to those of the Mysterious Sites (the dead).
+      Your arm is that of Atum, your shoulders are those of Atum, your belly is
+      that of Atum, your back is that of Atum, your bottom is that of Atum,
+      your two legs are those of Atum, your face is that of Anubis.
+      The sites of Horus serve you, the sites of Seth serve you."
+    source: "Pyramidtextsonline.com modernised Piankoff (Unas), §§ 134–135."
+    divergence_flag: true
+    notes: >
+      '[King]' substitutes for the cartouche — in Unas this reads 'Unas';
+      in Teti's version this reads 'Teti' (Ttj). The name is the only structural
+      difference between pyramid corpora at this spell. The Osiris-throne
+      identification and the Atum limb-formula are shared corpus.
+
+  - translator_id: mercer_1952
+    text: >
+      "O Osiris-King, thou art not gone away dead, thou art gone away alive.
+      Sit thou upon the throne of Osiris!
+      Thy scepter is in thy hand. Thou givest commands to the living.
+      Thy scepter of lotus-wood is in thy hand. Thou givest commands to those
+      in the mysterious places.
+      Thy two arms are (those of) Atum; thy two shoulders are (those of) Atum;
+      thy belly is (that of) Atum; thy back is (that of) Atum; thy rear is
+      (that of) Atum; thy two legs are (those of) Atum; thy face is that of Anubis.
+      The nomes of Horus protect thee; the nomes of Seth protect thee."
+    source: "Mercer, S.A.B. 1952. Utterance 213. Sacred-texts.com."
+    divergence_flag: true
+    notes: >
+      Mercer renders 'Osiris-King' — already folding in the Osirian identification
+      as a title. This is an interpretive choice: the original may address the king
+      by name, with Osiris as a throne reference, not a titular prefix.
+      'Nomes protect' vs. 'sites serve' — Mercer uses 'nomes' (administrative
+      districts) where Piankoff uses 'sites.' The Egyptian Spw.t can mean
+      either; the distinction affects how the geography of the afterlife is
+      understood.
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 213."
+    divergence_flag: false
+    note: "Faulkner's rendering needs direct verification for divergence assessment."
+
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+. Spell corresponding to PT 213."
+    divergence_flag: false
+    note: >
+      Allen's 2005 edition reorganises the text by wall sequence rather than
+      Sethe's artificial publication order. His numbering of corresponding spells
+      in the Teti corpus may differ from the PT 213 Sethe number. Concordance
+      required.
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "nn Sm.n.k m mwt"
+    term_mdc: "nn Sm.n.k m mwt"
+    semantic_field: "Negation of death — 'you have not gone away dead'"
+    notes: >
+      The grammatical form Sm.n.k is a past-tense stative (sdm.n.f): 'you went.'
+      nn negates it: 'you did not go.' This is not a promise about the future —
+      it is a declaration about the present state. The king has already NOT gone
+      dead. The ritual declaration retroactively establishes the condition.
+      This is a speech-act in J.L. Austin's sense: the utterance performs what
+      it describes.
+    translation_disputes:
+      - reading: "'You have not gone dead' — past stative, negated"
+        scholars: ["Faulkner", "Allen", "Piankoff modernised"]
+      - reading: "'Thou art not gone away dead' — present-state rendering"
+        scholars: ["Mercer"]
+        note: >
+          The tense distinction matters: past (Sm.n.k) implies the king went
+          somewhere but not into death; present implies a state of being.
+          The sdm.n.f form is well-established in Egyptological grammar as
+          past/perfective. Mercer's 'art' (present) is the older grammatical
+          understanding.
+
+  - term_transliteration: "st wsir"
+    term_mdc: "st wsir"
+    semantic_field: "Throne of Osiris"
+    notes: >
+      st = throne/seat. wsir = Osiris (also written as the Djed pillar on a
+      throne, or as a seated mummiform figure). The king sits on 'the throne
+      of Osiris' — he becomes the new Osiris. This is the Osirian identification
+      that distinguishes the Teti corpus theologically from the predominantly
+      solar Unas corpus.
+    attestation_range: "Core Osirian formula; runs through all PT corpora."
+
+  - term_transliteration: "Xkr"
+    term_mdc: "Xkr"
+    semantic_field: "Scepter, equipped with / to be equipped"
+    notes: >
+      Mercer translates as 'thy scepter is in thy hand' (nominal reading).
+      Piankoff renders 'your scepter is in your hand' similarly.
+      The wAs scepter (was-scepter) is the symbol of power/dominion;
+      the Ams (lotus-scepter) is associated with authority over the dead.
+      The king holds both — authority over the living (anx.w) and the dead (imj.w-ist).
+    translation_disputes:
+      - reading: "wAs-scepter (dominion)"
+        scholars: ["Mercer", "Piankoff", "Faulkner"]
+        note: "'wAs' is well-established; the 'lotus-shaped' qualifier is debated."
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: osiris_king_title
+    claim: >
+      The address 'Osiris-King' (Mercer) vs. 'O [King]' (Piankoff/Allen) reflects
+      a grammatical interpretation of the Osirian identification.
+    state: contested
+    positions:
+      - scholar: "Mercer 1952"
+        reading: >
+          'Osiris-King' — the Osirian identification is a titular prefix;
+          the king is addressed as Osiris from the opening word.
+      - scholar: "Piankoff / Allen"
+        reading: >
+          'O [Name]' — the king is addressed by name; the Osirian identification
+          is contextual (he sits on Osiris's throne) rather than titular.
+    note: >
+      This is a real grammatical question about the Egyptian address formula.
+      The Old Egyptian wsir + cartouche construction can be read either way:
+      as an apposition ('Osiris, [the king]') or as a compound title ('Osiris-King').
+      The theological stakes are significant: titular Osirian identity (Mercer)
+      vs. Osirian inheritance through throne-sitting (Piankoff/Allen).
+    required_source: "Faulkner 1969 notes; Allen 2005 introduction on Osirian theology."
+
+  - id: spwt_nomes_vs_sites
+    claim: "Spw.t in PT 213 §135 refers to geographical nomes (Mercer) or sacred sites (Piankoff)"
+    state: contested
+    positions:
+      - scholar: "Mercer 1952"
+        reading: "'The nomes of Horus protect thee; the nomes of Seth protect thee.'"
+      - scholar: "Piankoff (modernised)"
+        reading: "'The sites of Horus serve you, the sites of Seth serve you.'"
+    note: >
+      Spw.t primarily means 'nome' (administrative district) but in mythological
+      contexts refers to the sacred mounds or cult sites of Horus and Seth.
+      'Protect' vs. 'serve' is a separate verb-reading question. Together these
+      two choices produce very different images: Mercer has geographic regions
+      protecting the king; Piankoff has sacred sites serving him.
+      Allen 2005 would resolve this — his translation is the required source.
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "Unas pyramid, sarcophagus chamber south wall (opening spell of Resurrection Ritual)"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com south wall index."
+  - event: "Teti pyramid, burial chamber south wall"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005; Madain Project."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 213 is theologically the most important utterance in this initial set.
+  The declaration 'you have not gone dead, you have gone alive' is the
+  theological inversion at the heart of Egyptian funerary thought: death
+  is not an ending but a transition to a different mode of being.
+  The Atum limb-formula (§ 135) is remarkable — every part of the king's
+  body is identified with Atum (the primordial creator). The king does not
+  merely join the gods — he is constituted by divine substance in each limb.
+  This is a claim about ontology, not metaphor.

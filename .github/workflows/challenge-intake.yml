@@ -1,0 +1,88 @@
+name: Challenge intake
+
+# Checks that a public challenge is complete (docs/CHALLENGES.md). It never admits or declines one: a reviewer does that.
+# The issue text is passed as data through an environment variable and a file; it is never interpolated into a shell command.
+
+on:
+  issues:
+    types: [opened, edited]
+  schedule:
+    - cron: '17 3 * * *'
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triage:
+    if: github.event_name == 'issues' && contains(github.event.issue.labels.*.name, 'challenge')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install YAML parser
+        run: python3 -m pip install --quiet pyyaml
+
+      - name: Save the issue body as data
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: printf '%s' "$BODY" > body.md
+
+      - name: Collect other open challenges
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh issue list --label challenge --state open --limit 200 --json number,body > open.json
+
+      - name: Check completeness
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: python3 build/tools/triage_challenge.py body.md open.json > result.json
+
+      - name: Comment and label
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          python3 - <<'PY' > comment.md
+          import json
+          r = json.load(open("result.json"))
+          if r["status"] == "ready":
+              print("Thank you. This submission is **complete enough to be reviewed**. That is not an admission: a reviewer will decide whether it meets the admission test (S1 to S5 in docs/CHALLENGES.md) and will say why either way. More challenges, reactions or comments do not change the outcome; new evidence does.")
+          else:
+              print("Thank you. This submission is **not yet complete**. It will be reviewed once these are fixed (edit the issue). If it is still incomplete in 14 days it will be closed, and you can open it again.\n")
+              for f in r["failures"]:
+                  print("- " + f)
+          if r["notes"]:
+              print("\nNotes for the reviewer and for you:\n")
+              for n in r["notes"]:
+                  print("- " + n)
+          PY
+          for l in "challenge:ready" "challenge:needs-info" "challenge:admitted" "challenge:declined"; do gh label create "$l" --force >/dev/null 2>&1 || true; done
+          STATUS=$(python3 -c "import json;print(json.load(open('result.json'))['status'])")
+          if [ "$STATUS" = "ready" ]; then
+            gh issue edit "$ISSUE_NUMBER" --add-label "challenge:ready" --remove-label "challenge:needs-info" || true
+          else
+            gh issue edit "$ISSUE_NUMBER" --add-label "challenge:needs-info" --remove-label "challenge:ready" || true
+          fi
+          gh issue comment "$ISSUE_NUMBER" --body-file comment.md
+
+  stale:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close challenges that stayed incomplete for 14 days
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          gh issue list --label "challenge:needs-info" --state open --limit 200 --json number,updatedAt > stale.json
+          for n in $(python3 -c "
+          import json, datetime
+          now = datetime.datetime.now(datetime.timezone.utc)
+          for i in json.load(open('stale.json')):
+              u = datetime.datetime.fromisoformat(i['updatedAt'].replace('Z', '+00:00'))
+              if (now - u).days >= 14:
+                  print(i['number'])
+          "); do
+            gh issue close "$n" --comment "Closed: this challenge stayed incomplete for 14 days. You are welcome to open it again with the missing evidence (see docs/CHALLENGES.md)."
+          done

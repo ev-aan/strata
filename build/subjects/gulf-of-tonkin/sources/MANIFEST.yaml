@@ -20,7 +20,7 @@ sources:
       tests:
         - "Internal markers present in the scan: Cryptologic Quarterly masthead, classification banners, statutory redaction marks (b)(3)-P.L. 86-36 [read]"
         - "Content match: sentences quoted in independent press and archive summaries (for example the 'preclude responsible decisionmakers' sentence) appear word for word in this copy [read]"
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps:
         - "Not byte-compared with NSA's own copy; nsa.gov and media.defense.gov returned HTTP 403 to this environment."
       next_step: "Obtain NSA's copy from a network that is not refused, or from an independent web archive, and compare SHA-256."
@@ -46,7 +46,7 @@ sources:
       tests:
         - "Markers in the scan: 'Memorandum for Record', date and subject lines, UNCLASSIFIED stamps on each page [read]"
         - "Content match: the passages Prados quotes in his 2004 essay appear in this copy word for word [read]"
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps:
         - "The author line is not legible in the scan; authorship is from Prados (William Y. Smith)."
         - "The LBJ Library original was not seen."
@@ -68,7 +68,7 @@ sources:
       tests:
         - "Stamps on the pages: NARA declassification-review marks (E.O. 12958, Sec. 3.6, date 3-13-03) and 'COPY LBJ LIBRARY' [read]"
         - "Content match: report numbers, date-time groups and wording agree with what Prados and Hanyok describe [read]"
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps:
         - "Sanitized copies; some date-time groups are unreadable in the OCR."
         - "These are NSA summary reports of intercepts, not the raw intercepts."
@@ -120,7 +120,7 @@ sources:
       strength: strong
       provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
       tests: ["Page headers and numbering continuous (p. 18470 roll call page read)", "Vote totals agree with the Voteview roll-call data (88-2)"]
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps: ["OCR text of a two-column scan; wording checked on the page image only where quoted", "Debate read in part"]
       checked: 2026-10-02
     stored_as: "page image sources/congressional-record/crec-1964-p18470-30.png (full 42 MB file not stored)"
@@ -135,7 +135,7 @@ sources:
       strength: strong
       provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
       tests: ["Roll call page (21132) read; counts agree with Voteview roll 398 (81-10)"]
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps: ["Two-column scan; the quoted Fulbright passage was checked on the page image", "Debate read in part"]
       checked: 2026-10-02
     stored_as: "page images sources/congressional-record/crec-1970-p21119-019.png, crec-1970-p21131-031.png and crec-1970-p21132-032.png (full 62 MB file not stored)"
@@ -150,7 +150,7 @@ sources:
       strength: strong
       provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
       tests: ["Page 18399 (Fulbright's opening) read on the page image; wording matches the text layer"]
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps: ["Two-column scan; text layer interleaves columns, so only the quoted passage was checked on the image", "Debate searched, not read in full"]
       checked: 2026-10-02
     stored_as: "page image sources/congressional-record/crec-1964-p18399-061.png (full file not stored)"
@@ -165,7 +165,7 @@ sources:
       strength: strong
       provenance: "Government Publishing Office hearing, fetched from govinfo.gov"
       tests: ["Hearing text read; quotations of the 1964 testimony are also read in context with McNamara's confirmation (p. 30)"]
-      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session, 2026-10-02 (not an independent review)"
       gaps: ["OCR text layer, some pages letter-spaced; page numbers taken from the text layer, not verified on images", "A 1968 record: what it says about 1964 is a later account"]
       checked: 2026-10-02
     stored_as: "sources/mcnamara-1968-hearing.ocr.txt (OCR text, public domain; the 24 MB PDF is not stored)"
@@ -179,7 +179,7 @@ sources:
       strength: strong
       provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
       tests: ["Roll call (p. 18555) read on the page image by the delegated reader; counts agree with Voteview (416-0)"]
-      tested_by: "Strata session with a delegated reader, 2026-10-02 (not an independent review)"
+      tested_by: "Stratah session with a delegated reader, 2026-10-02 (not an independent review)"
       gaps: ["Pages 18556-18625 keyword-searched only", "No page images stored yet for this file"]
       checked: 2026-10-02
     stored_as: "not stored (full PDF not kept)"

@@ -1,0 +1,34 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: tonkin-2005-12-01-nsa-declassifies-about-140-documents-including-the
+rev: 2
+type: event
+label: '1 Dec 2005: NSA declassifies about 140 documents, including the Hanyok study'
+time: '2005-12-01T12:00:00Z'
+precision: day
+kind: document
+status: reported
+what: National Security Archive posting of 1 December 2005.
+sources:
+- title: National Security Archive posting, 1 Dec 2005, on the NSA release
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/press20051201.htm
+  authenticity: secondary account
+  origin: nsarchive-posting-2005
+  source_type: secondary_report
+  derives_from: nsa-release-2005
+  access: read
+- title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), National Security Archive copy, 56 pp.
+  url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
+  authenticity: authenticated, moderate (copy not byte-compared with NSA's)
+  origin: hanyok-2001
+  source_type: official_history
+  access: read
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Gulf of Tonkin timeline, event g7.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

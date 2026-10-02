@@ -1,0 +1,48 @@
+# TRANSMISSION RECORD for the Flydubai FZ1073 dig (format: build/SCHEMA.md, X1 to X4; see incandescent-lamp/transmission.yaml for the header).
+# How the "staged / false flag" story spread. Spread is adoption, never evidence: it confers no weight on any claim and no claim cites this chain (X1, X3).
+# The counts below are an advocacy group's, as reported by the Jerusalem Post; we have not seen the underlying data and make no claim about who was behind any post.
+subject: flydubai-fz1073
+
+chains:
+
+  - id: tx-staged-story
+    about: "flydubai-fz1073:fz1073-event-simulated"
+    title: "How the claim that the FZ1073 incident was staged by Israel spread"
+    confers_weight: false
+    events:
+      - id: tx-s-01
+        date: "2026-09-30"
+        precision: day
+        step: origin
+        carrier: "A first X post declaring the event an Israeli false flag, reported as 67 minutes after the emergency signal"
+        form: "The incident was an Israeli false-flag operation."
+        source: src-jpost-910349
+        read: yes
+        note: "As reported from a study by two advocacy groups (Combat Antisemitism Movement and Antisemitism Research Center); the post itself and the study were not read."
+      - id: tx-s-02
+        date: "2026-09-30"
+        precision: day
+        step: amplification
+        carrier: "Posts containing 'false flag', counted over a 12-hour window by the same groups"
+        form: "4,136 posts counted, of which 2,963 were classed by the groups as hostile posts blaming Israel, the Mossad, the Prime Minister, Zionists or Jews; reported 2,000 posts by 9:36 a.m. ET."
+        source: src-jpost-910349
+        read: yes
+        note: "The groups' classification and counts are not independently checked. Some posts the groups counted allege the event was staged to cancel the election or distract from criminal charges; that is the claim, not evidence."
+      - id: tx-s-03
+        date: "2026-09-30"
+        precision: day
+        step: amplification
+        carrier: "A post by a US account with a large following, viewed more than 1.5 million times on X; a deepfake video imitating a BBC news report, viewed more than 300,000 times"
+        form: "The event was a 'false flag'; the deepfake pushed a story that Indian officials were involved with Mossad."
+        source: src-abc-verify
+        read: yes
+        note: "ABC News Verify found the video was AI-manipulated from real footage of a presenter, with unrelated plane footage, and that the narrative relied on 'anti-Zionist and antisemitic tropes rather than any established facts'. A viral 'aftermath' video was also reported misattributed (search summary; not read)."
+      - id: tx-s-04
+        date: "2026-10-02"
+        precision: day
+        step: persistence
+        carrier: "Facebook posts using a Canadian pilot's doubts about tracker-derived descent figures"
+        form: "'They just got exposed by one of their own'; 'Hollywood on steroids'."
+        source: src-ibtimes-700mph
+        read: yes
+        note: "The pilot said the numbers would change with recorder data and did not say the flight was staged (IBTimes)."

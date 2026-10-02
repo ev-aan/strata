@@ -1,0 +1,40 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: casket-1584-06-01-after-gowrie-s-execution-casket-probably
+rev: 3
+type: event
+label: 'After Gowrie''s execution (about 1584): casket probably passes to Arran; originals then disappear'
+time: '1584-06-01T12:00:00Z'
+precision: year
+kind: analysis
+status: inferred
+what: 'Henderson: ''The likelihood is that, after the execution of the Earl of Gowrie... they passed into Arran''s hands'';
+  the original copies of the Scottish translations ''disappeared completely from human ken''. The year is recalled, not read;
+  who destroyed them is open (claim casket-destroyer-james-vi, proposed).'
+sources:
+- title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
+  url: https://archive.org/details/casketlettersan00hendgoog
+  authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
+about:
+- object-casket-and-letters-1567
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from the Casket Letters timeline, event k12.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `inferred`; each source given an origin,
+    a source_type and how it was accessed.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'Schema v0.6: added a time window with an open end; the node time is a placeholder inside it.'
+date_basis: inferred
+window:
+  earliest: '1584-01-01'
+  latest: open
+  begin_note: After the execution of Gowrie (about 1584, recalled, not read).
+  end_note: 'Henderson gives no date for when the originals disappeared: they "disappeared completely from human ken". The
+    end is open.'

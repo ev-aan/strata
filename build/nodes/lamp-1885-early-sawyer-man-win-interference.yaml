@@ -1,0 +1,37 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1885-early-sawyer-man-win-interference
+rev: 1
+type: event
+label: 'Early 1885: Commissioner of Patents decides the Edison-Sawyer-Man interference for Sawyer and Man'
+time: '1885-01-15T12:00:00Z'
+precision: month
+kind: official
+status: single
+what: '40 F. 21: Edison applied in December 1879 (11 Dec) and Sawyer and Man on 9 January 1880; ''in September, 1880, an interference
+  was declared between the two applications'' over carbon made from paper; ''The case was not finally decided until the beginning
+  of 1885.'' Broadnax, the attorney who prepared the Sawyer-Man application, is quoted as speaking of ''the decision of the
+  commissioner of patents of the interference, awarding priority of invention to Sawyer and Man'' and puts the amendments
+  that followed in February and March 1885. The Commissioner''s decision itself was not read.'
+sources:
+- title: Consolidated Electric Light Co. v. McKeesport Light Co., 40 F. 21 (C.C.W.D. Pa., 5 Oct 1889), Bradley J.
+  url: https://static.case.law/f/40/cases/0021-01.json
+  authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: fedrep-40-f-21
+  source_type: official_record
+  access: read
+window:
+  earliest: '1884-12-01'
+  latest: '1885-02-28'
+  begin_note: '''Not finally decided until the beginning of 1885'' (the court), read as from December 1884.'
+  end_note: The amendments that followed 'soon after' the decision are put in February 1885.
+manifest:
+  subject: incandescent-lamp
+  source: src-40f21
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline events a13 and b14 (one event); the earlier time of
+    1 Feb 1885 is moved to mid-January with the window, because the amendments came after the decision. Date and place re-checked
+    against the cited source.'
+date_basis: derived

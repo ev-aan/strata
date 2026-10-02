@@ -1,0 +1,68 @@
+# Ideas for exploration. YAML is the source; /ideas/ on the site is generated from it by build/tools/build_site.py.
+# status: parked (designed or noted, not scheduled) | exploring (being worked on) | done
+intro: >
+  Things we may build or excavate next. Parked means noted, not scheduled. If one matters to you, or you have a better idea,
+  tell us. Ideas about the method are as welcome as ideas about topics.
+ideas:
+  - id: paper-review
+    title: Review an academic paper against an excavation
+    status: parked
+    summary: >
+      Upload a paper and get a review that adds new information and finds errors and gaps. Each finding is a proposal that must meet
+      the project's criteria (a source read directly, authenticity tested, evidence class and what would change it stated) before it can be accepted.
+      The paper itself stays private; only the review is published.
+  - id: shared-nodes-everywhere
+    title: One shared record for every dated event, document and image
+    status: exploring
+    summary: >
+      Events, documents and images are kept once as shared nodes, and excavations refer to them, so a correction reaches every excavation that uses them.
+      Done for the Gulf of Tonkin family. The other excavations still hold their own copies.
+  - id: object-map
+    title: Where objects were found and where they are now, on a map
+    status: exploring
+    summary: >
+      Tablets, manuscripts and other objects, with where they were made, found, moved and are held today, each stage a dated event with a place.
+      The Atlas has a Map view. Started with the Casket Letters; the Nippur flood tablet comes next once its museum record is found.
+  - id: standards-review
+    title: Adopt the best structures from other open-data and evidence standards
+    status: exploring
+    summary: >
+      A survey of 19 standards and projects (event datasets, gazetteers, provenance models, evidence-grading and verification protocols) found structures we lack:
+      time windows with reasons for each boundary, attributable disputes, recorded reasons behind each confidence rating, a separation of evidence from assumption and judgment,
+      and a self-describing, checkable data release. The first set is being chosen.
+  - id: atlas-overview-strip
+    title: A mini-map for very long timelines on the Atlas
+    status: parked
+    summary: >
+      A small overview of the whole time range with a movable window, to help on phones when a range spans thousands of years.
+  - id: narrative-time
+    title: Story time next to real-world time
+    status: parked
+    summary: >
+      Place characters and events from stories on their own time scale, switchable against real-world time, so fact and fiction can be compared on one timeline.
+      The data model supports it. The view is switched off until there are events to show.
+  - id: images-beyond-pages
+    title: Figures and photographs as evidence nodes
+    status: parked
+    summary: >
+      Keep a thumbnail, a link to the original and a rights status for each image, so figures from papers and photographs can be cited without republishing them.
+      The mechanism exists. Only government page images have used it so far.
+  - id: donated-agents
+    title: Donate your AI agent to finish an open investigation
+    status: parked
+    summary: >
+      Open questions, claims and next steps are published as a public list of work orders. Anyone can run their own AI agent on one, using the
+      rules on the Start a dig page, and submit the result as a pull request. Every submission goes through the same checks as our own work: the
+      validator, then a separate reviewer who re-opens the sources. A donated result carries no extra weight for coming from many agents or many people.
+  - id: frontier-map
+    title: A map of what is known and what is not (the frontier)
+    status: parked
+    summary: >
+      Every excavation already records what we looked for and could not settle, and what would settle it. Gathered in one place, those gaps show where
+      understanding runs out. Each gap would get a home: what is unknown, why, what has been tried, what kind of evidence would move it, and a way to take it on.
+  - id: verified-feed
+    title: A verified feed, so others can distribute what has passed
+    status: parked
+    summary: >
+      Like a news wire, but for checked statements: a finding, an object record or a timeline can be published for others to carry, with a mark that anyone can verify
+      showing exactly which review it passed, when, and whether it has since been corrected or withdrawn. The reader of a copy can always trace it back to the review record.

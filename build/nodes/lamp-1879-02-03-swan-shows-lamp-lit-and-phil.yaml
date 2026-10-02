@@ -1,0 +1,62 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: lamp-1879-02-03-swan-shows-lamp-lit-and-phil
+rev: 2
+type: event
+label: 'About two years before 20 Oct 1880: Swan shows his ''little lamp'' at the Lit and Phil (date unknown; 17 Jan or 3
+  Feb 1879 per secondary pages)'
+time: '1879-04-20T12:00:00Z'
+precision: month
+kind: witness
+status: disputed
+alt_time: '1879-01-17T12:00:00Z'
+alt_tag: 17 Jan
+alt_note: Histelec gives 17 Jan 1879; Newcastle University and the Linda Hall Library give 3 Feb (secondary, not read).
+what: 'Swan, lecture of 20 Oct 1880 (Chemical News 42, pp. 227, 230): he began by referring to ''my last lecture on Electric
+  Lighting, almost two years ago'', and later said ''there are many here who will remember this little lamp, which I showed
+  here two years ago in action'', ''composed entirely of three substances, namely, glass, platinum, and carbon''. No 1879
+  report of the showing was found. The dates 3 February 1879 (Newcastle University; Linda Hall Library) and 17 January 1879
+  (Histelec) are from secondary pages that were seen only as search summaries. The `time` is the middle of the window; the
+  3 Feb and 17 Jan 1879 dates are from secondary pages seen only as search summaries (the alternative marker shows 17 Jan)
+  and are not used as the date.'
+sources:
+- title: 'Chemical News 42 (5 Nov 1880), pp. 227-230: J. W. Swan, ''Electric Lighting'', lecture to the Newcastle Literary
+    and Philosophical Society, 20 Oct 1880'
+  url: https://archive.org/details/s713id13691440
+  authenticity: authenticated, moderate (see the dig's sources manifest)
+  origin: swan-lecture-1880
+  source_type: testimony
+  access: read
+- title: 'Linda Hall Library and Newcastle University Special Collections pages on Swan (dates for the 1879 showing: 3 Feb
+    or 17 Jan); search summaries only, no URL kept'
+  authenticity: 'not applicable: secondary pages, not retained (see the dig''s sources manifest)'
+  origin: swan-1879-secondary-pages
+  source_type: secondary_report
+  access: cited_only
+place:
+  name: Newcastle upon Tyne
+  lat: 54.9738
+  lon: -1.6132
+  precision: city
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
+    OSM relation 142282
+  note: The source names the Newcastle-upon-Tyne society; the hall or room is not named, so only the city is placed.
+window:
+  earliest: '1878-10-20'
+  latest: '1879-10-20'
+  begin_note: '''Two years ago'' said on 20 Oct 1880, read loosely as within a year either side of two years (this dig''s
+    reading).'
+  end_note: '''Almost two years ago'' for the previous lecture, read the same way.'
+manifest:
+  subject: incandescent-lamp
+  source: src-chemnews-1880
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: 'Created from the incandescent-lamp dig''s revision: timeline event b2. Date and place re-checked against the cited
+    source.'
+- rev: 2
+  date: '2026-10-02'
+  change: 'Review request R2-7: time moved from 3 Feb 1879 (secondary, cited_only) to the middle of the window, date_basis
+    inferred; the secondary dates stay in the text and the alternative marker.'
+date_basis: inferred

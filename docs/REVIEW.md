@@ -2,7 +2,9 @@
 
 Decided by the owner, 2026-10-02. Nothing reaches `main` (and so the public site) without passing
 two separate checks: the **validator** for the mechanical rules, and an **independent review agent**
-for the judgment rules a script cannot decide.
+for the judgment rules a script cannot decide. These two checks are the PR gate. Putting a subject on
+the site is a second control, the publish gate (`PUBLISH_GATE.md`), which sits on top of the PR gate;
+see "How this fits the publish gate" at the end of this file.
 
 ## The flow
 
@@ -25,8 +27,12 @@ for the judgment rules a script cannot decide.
 ## What the review agent checks
 
 The validator already covers states, classes, weights, required fields, Rules 9 and 12, append-only
-logs, thread links TH1, TH2 and TH4 (across all subjects), transmission chains X1 to X4, and the
-provisional cap on claims marked `absence_anchor: true`. It cannot tell whether a claim *should* have
+logs (with the N26 redaction exception), the anchor format (N25: one `anchor` mapping, manifest-resolvable
+`sources`), the headline rules, the taxonomy entry (`check_taxonomy`), the publish gate (`check_publish_gate`:
+a published subject needs a `review.yaml` with an allowed status), definitions and shared nodes
+(`check_definitions`, `check_nodes`, N1 to N24), the challenge checks (S1 to S5 intake fields, N24),
+thread links TH1, TH2 and TH4 (across all subjects), transmission chains X1 to X4, and the provisional cap
+on claims marked `absence_anchor: true`. It cannot tell whether a claim *should* have
 been marked as resting on absence, so the reviewer checks that (B below). The reviewer covers what the
 validator cannot:
 
@@ -38,6 +44,7 @@ validator cannot:
 
 **B. Weights and states are honest.**
 - `anchor_checked: primary` only where the primary document was actually read (look for the `# V:` line).
+- Anchor format (SCHEMA N25): one `anchor` mapping per claim with `type`, `description` and manifest-resolvable `sources`; no `anchors:` or `ref:`. Conformance enforces it; check the description says what was actually read.
 - Any claim whose support is "no record was found" is marked `absence_anchor: true` and held at
   provisional. An unmarked absence claim above provisional is a blocking finding.
 - Each `refutation_class` meets its bar: `fabrication` needs evidence of deliberate invention;
@@ -85,13 +92,22 @@ follow-up PR, which is opened before merging.
 ## What only the owner merges (the gate itself)
 
 A change to any of these is reviewed by an agent but **escalated** to the owner, never merged by an
-agent, because a gate reviewed only by agents could lower its own bar:
+agent, because a gate reviewed only by agents could lower its own bar. The list is the owner-only set
+that `.github/CODEOWNERS` and `docs/GOVERNANCE.md` already define, plus the two deploy-related paths
+the review gate adds:
 
-- `docs/REVIEW.md`, `CLAUDE.md`, `CONTRIBUTING.md`, `build/SCHEMA.md`, `method/index.html` (the rules)
-- `build/conformance.py` and anything under `build/tools/` (the checks)
-- `.github/` (CI workflows, PR and issue templates) and `netlify.toml` (deploys)
+- the rules and the process: `CLAUDE.md`, `CONTRIBUTING.md` and everything under `docs/` (including
+  `SCHEMA_PROPOSALS.md`, `GOVERNANCE.md`, `PUBLISH_GATE.md`, `CHALLENGES.md`, `NEWS_REVIEW.md` and this file)
+- the schema and the validator: `build/SCHEMA.md`, `build/conformance.py` and anything under `build/tools/`
+- the site and its settings: `build/site.yaml`, `build/news.yaml`, `build/taxonomy.yaml`
+- the publish decision: every `build/subjects/<subject>/review.yaml` (the independent review agent
+  writes it inside a dig PR, but the owner publishes; see below)
+- `.github/` (CI workflows, PR and issue templates, `CODEOWNERS`)
+- `method/index.html` and `netlify.toml`, and the licence files (`LICENSE*`)
 
-If a PR touches any of these alongside content, the whole PR is escalated.
+If a PR touches any of these alongside content, the whole PR is escalated. A change to a rule, the
+schema or the validator also needs a proposal that meets `docs/SCHEMA_PROPOSALS.md`; the owner decides
+only on such a proposal. Agents never merge these.
 
 ## Known limit (stated, not hidden)
 
@@ -99,3 +115,11 @@ GitHub cannot require the review agent's approval: the agent posts its verdict a
 branch protection can require a pull request and a passing `conformance` check, but not the review
 itself. The review step holds because agents follow `CLAUDE.md` and the owner merges nothing that has
 no posted verdict. Branch protection on `main` is a setting the owner turns on (see `README-deploy.md`).
+
+## How this fits the publish gate (reconciled 2026-10-02)
+Two controls work together and neither replaces the other. (The PR gate itself has two checks, the validator and the independent review; the publish gate is the second control.)
+- **This file (the PR gate)** decides how a change reaches `main`: on a branch, validated, reviewed by a separate agent, merged only on APPROVE. Nobody pushes to `main`.
+- **The publish gate** ([`PUBLISH_GATE.md`](PUBLISH_GATE.md)) decides what appears on the site: a subject listed under `publish` in `build/site.yaml` needs `build/subjects/<subject>/review.yaml` with a status of `passed` or `passed_with_open_items`; the validator and the site build refuse it otherwise.
+When a PR adds a subject to `publish`, the independent review agent is the reviewer for the publish gate. It does the checks above, then writes the verdict into `review.yaml` (status, `reviewed_by`, `reviewed_on`, `notes`, `open_items`) in the same PR. `python3 build/tools/review_dig.py <subject>` gives it a mechanical first pass. The author never writes their own `passed`.
+The challenge rules ([`CHALLENGES.md`](CHALLENGES.md)) decide what public submissions get examined. A change a challenge produces goes through this file like any other change.
+`build/site.yaml` and every `review.yaml` are owner-only (see the list above), so a PR that adds a subject to `publish` is reviewed by the agent, with the verdict written into `review.yaml` and posted on the PR, and then merged by the owner, who publishes (`GOVERNANCE.md`). A plain content PR with no owner-only path is merged by the review agent on APPROVE.

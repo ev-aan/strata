@@ -1,0 +1,221 @@
+id: pt_570
+pt_number: 570
+display_name: "PT 570 — New Birth of the Deceased King as a God in Heaven"
+sethe_phrase_range:
+  value: "§§ 1454a–1466c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 2."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  theological_note: >
+    PT 570 is classified by Mercer under 'New-Birth of the Deceased King as a
+    God in Heaven' (Chapter XXXIV — a single utterance). This is the explicit
+    new-birth theology: the king is not resurrected (brought back) but born
+    again (entirely new existence). The distinction between resurrection and
+    new-birth is theologically significant — one is a return, the other is
+    a first appearance in a new mode. PT 570 may represent the high point of
+    the transformation theology that begins with PT 213's 'you have not gone dead'
+    and culminates here in divine rebirth.
+  later_attestations:
+    - source: "New Kingdom — the Book of the Dead's rebirth chapters"
+      approximate_date_start: -1550
+      note: >
+        The new-birth theology is central to the Book of the Dead. Whether PT 570
+        specifically is a direct ancestor of BD rebirth chapters requires Allen
+        CT concordance. The theological line is clear; the textual lineage: searched_gap.
+      state: searched_gap
+
+location:
+  chamber: searched_gap
+  wall: searched_gap
+  note: >
+    PT 570's wall placement: searched_gap (Allen 2005 Teti section required).
+    Its Sethe number (570) places it in the corridor/vestibule/ascending corridor
+    range — late in the exit sequence, close to the pyramid's exterior. A new-birth
+    theology spell placed near the exit makes architectural sense: the king is
+    born (new) as he emerges from the pyramid's interior.
+  physical_condition: searched_gap
+
+ritual_class:
+  - resurrection_ritual
+  - stellar_ascent
+  - osirian
+  note: >
+    PT 570 is the explicit new-birth spell — the culmination of the transformation
+    sequence. The entire PT program moves from:
+    1. Death declared not-death (PT 213: 'you have not gone dead, you have gone alive')
+    2. Transformation through the Akhet (antechamber spells)
+    3. Power absorption (PT 273–274: Cannibal Hymn)
+    4. Named ascent (PT 373: 'Rise up, O Teti')
+    5. New divine birth (PT 570)
+    PT 570 is the theological endpoint. The king is not merely resurrected —
+    he is born as a god, for the first time in this new form.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 2."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 2."
+
+translations:
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 570. Chapter XXXIV."
+    note: >
+      Chapter XXXIV: 'New-Birth of the Deceased King as a God in Heaven,
+      Utterance 570' — another single-utterance chapter. The 'new birth'
+      terminology echoes the Nut-as-mother theology (PT 427–435): Nut births
+      the king as the sun is born each dawn. PT 570 may be the explicit statement
+      of this new-birth that the Nut hymns implicitly prepare.
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 570."
+
+  - translator_id: allen_2005
+    text: >
+      From arxiv 2404.01458 (Graur 2024) citing Allen 2015:
+      Nut 'gave birth' to the king:
+      'The sky conceives you with Orion, the morning-star gives you birth with Orion.
+      Live! Live, as the gods have commanded you to live.
+      You ever go up with Orion in the eastern arm of the sky,
+      you ever go down with Orion in the western arm of the sky.
+      Sothis, whose places are clean, is the third of you two:
+      she is the one who leads you two from the Field of Reeds
+      to the perfect paths in the sky.'
+    source: >
+      Allen 2015 (PT 442, not PT 570 — see note).
+      Cited in Graur 2024, arxiv.org/pdf/2404.01458.
+    divergence_flag: true
+    notes: >
+      IMPORTANT: This Allen citation is from PT 442 (the king appears as Orion's
+      companion), not PT 570. It is included as an Allen-translated example of
+      the new-birth / stellar-birth theology that PT 570 belongs to — not as
+      a translation of PT 570 itself. The confusion of PT numbers at this level
+      of the corpus requires careful disambiguation. PT 570 Allen text: searched_gap.
+
+lexical_anchors:
+  - term_transliteration: "ms"
+    term_mdc: "ms"
+    semantic_field: "Birth / give birth to"
+    notes: >
+      ms = 'give birth to / be born.' The new-birth theology is expressed through
+      ms (birth verb) rather than wHm-anx (renewal of life) or xa (appear/rise).
+      Birth (ms) implies an entirely new existence — not a return but a first
+      entry into a new mode. The king is ms.n Nt (born of Nut) = given birth to
+      by the sky-goddess. The stellar identification in the birth theology:
+      the morning star (Sirius/Sothis) gives birth 'with Orion' — the king is
+      born alongside the stars, becoming a permanent stellar being.
+    attestation_range: >
+      ms in birth/rebirth theology throughout Egyptian funerary literature.
+      The stellar-birth formula (sky conceives + morning star gives birth) is
+      attested in PT 442 and related spells.
+
+  - term_transliteration: "Spdt"
+    term_mdc: "Spdt"
+    semantic_field: "Sothis/Sirius — the star that marks the king's birth"
+    notes: >
+      Sothis (Spdt, identified with Sirius) is the star whose heliacal rising
+      marked the Egyptian New Year and the Nile inundation. In PT 442/570
+      theology, Sothis 'gives birth' to the king alongside Orion — making the
+      king's divine rebirth coincide with the Nile flood (and thus with the
+      annual renewal of Egypt). The king as a star born with Sothis and Orion
+      is a cosmological statement about the regularity and certainty of royal
+      resurrection: as certain as Sirius rises, the king is reborn.
+    attestation_range: >
+      Sothis in PT birth theology; Sirius/Sothis identification in Egyptian
+      astronomy from Old Kingdom through Greco-Roman period.
+
+  - term_transliteration: "sAH"
+    term_mdc: "sAH"
+    semantic_field: "Orion — the stellar form of Osiris"
+    notes: >
+      sAH = Orion (the constellation). In Egyptian theology, Orion (sAH) is
+      identified with Osiris — the great star-god of the afterlife. The king
+      'goes up with Orion' = joins Osiris in the stellar realm. This links the
+      new-birth theology back to the Osirian identification of PT 213 and 373:
+      the king who was identified with Osiris in the burial chamber is born as
+      a star alongside Osiris-Orion in PT 570/442.
+    attestation_range: >
+      sAH as Orion/Osiris throughout PT corpus; later Egyptian astronomical texts.
+
+divergence_points:
+  - id: resurrection_vs_new_birth
+    claim: "PT 570 describes new birth (first emergence in divine form) not resurrection (return from death)"
+    state: proposed
+    positions:
+      - scholar: "Mercer 1952 (classification)"
+        reading: >
+          Chapter title: 'New-Birth of the Deceased King as a God in Heaven.'
+          Mercer's classification distinguishes new-birth from resurrection —
+          this is a new entry into existence, not a return to prior existence.
+      - scholar: "Alternative: resurrection-rebirth continuum"
+        reading: >
+          Egyptian theology may not sharply distinguish resurrection (return)
+          from new-birth (first entry). Both involve ms (birth verb) and both
+          involve divine transformation. The distinction may be a modern
+          analytical category imposed on a spectrum.
+    note: >
+      This is a high-stakes interpretive question for the PT program as a whole.
+      If PT 213 ('you have not gone dead') and PT 570 ('new birth as a god')
+      describe the same process from different angles, the entire program is
+      a unified transformation narrative. If they describe genuinely different
+      theological events, the PT has a more complex multi-stage resurrection
+      theology. Allen 2005's analysis is required.
+
+  - id: stellar_birth_timing
+    claim: >
+      The king's divine birth coincides with the annual heliacal rising of Sirius
+      — making royal resurrection cosmologically periodic (annual), not unique.
+    state: proposed
+    positions:
+      - scholar: "Allen 2005 (PT 442, related)"
+        reading: >
+          'You ever go up with Orion in the eastern arm of the sky, you ever go
+          down with Orion in the western arm of the sky.' The 'ever' (Aw = always/
+          eternally) suggests the king participates in the eternal stellar cycle —
+          rising and setting with Orion, perpetually.
+      - scholar: "Alternative: once-for-all event"
+        reading: >
+          The resurrection is a single unique event — the king enters the stellar
+          cycle but the initial birth is not repeated. 'Ever going up' = permanent
+          membership in the stellar community, not annual rebirth.
+    note: >
+      Whether the king is born once into the stellar cycle (and then participates
+      eternally) or is reborn annually with Sirius is a theological question with
+      implications for the entire PT cosmology. The 'ever up/down' formula could
+      support either reading.
+
+transmission_events:
+  - event: "Teti pyramid corpus"
+    date_start: -2345
+    date_end: -2323
+    source: "Mercer 1952; Allen 2005."
+  - event: "New Kingdom Book of the Dead — rebirth chapters"
+    approximate_date_start: -1550
+    state: searched_gap
+    note: "Theological lineage clear; specific textual concordance: searched_gap."
+
+parallel_pyramids:
+  unas: false
+  note: "PT 570 is beyond Unas's corpus. Pepi I/II attestation: searched_gap."
+
+notes: >
+  PT 570 is the theological culmination of the entire burial chamber program —
+  the endpoint of the journey begun at PT 213's 'you have not gone dead.'
+  The new-birth theology takes the Osirian resurrection (body reconstituted,
+  gates opened, stars reached) and transforms it: the king is not the same
+  being reanimated but a new divine being born into the stellar order.
+  This is the most ambitious claim in the corpus — not that the king survives
+  death but that death generates a qualitatively new divine existence.
+  Combined with PT 534's protection against Osiris and PT 510's Sobek
+  transformation, the high-numbered Teti spells (beyond Unas's range)
+  show a theological richness and complexity that the standard resurrection
+  narrative does not capture. These are the spells most worth unlocking
+  through Sethe 1908 vol. 2.

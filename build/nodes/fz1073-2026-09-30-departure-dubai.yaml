@@ -1,0 +1,47 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: fz1073-2026-09-30-departure-dubai
+rev: 1
+type: event
+label: '30 Sep: FZ1073 departs Dubai for Tel Aviv, about 03:05 UTC (07:05 Dubai time)'
+time: '2026-09-30T03:05:00Z'
+precision: approx
+kind: data
+status: reported
+what: 'FlightAware''s flight history lists the 30 September DXB to TLV flight FDB1073 (aircraft type B38M) with a departure time of 07:05 AM
+  at UTC+4, which is 03:05 UTC. AirNav Radar''s blog gives "approximately 03:05 UTC" and Al Jazeera, quoting Flightradar24, gives 03:05. CNN''s
+  "6:05 a.m. local time" matches 03:05 UTC if "local" is UTC+3, the clock CNN uses for its other times; CNN''s "10:05 p.m. ET" is one hour
+  off that (03:05 UTC is 11:05 p.m. EDT).'
+place:
+  name: Dubai International Airport
+  lat: 25.2515
+  lon: 55.3667
+  precision: site
+  source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event); OSM way 1429712446. The
+    airport is named as the departure point by the airline's own statement (news.flydubai.com).
+  note: 'The place is the departure airport named by the airline; the position of the aircraft at any other time is not given here.'
+sources:
+- title: FlightAware, FZ1073 (FDB1073) flight history page, row for 30-Sep-2026 (read 2026-10-02)
+  url: https://www.flightaware.com/live/flight/FDB1073/history
+  authenticity: tracker's own page; not byte-compared; the individual track log returned HTTP 429 and was not read
+  origin: flightaware-history
+  source_type: dataset
+  access: read
+- title: AirNav Radar blog, Flydubai FZ1073 diverts to Tabuk after mid-air cockpit incident (30 Sep 2026)
+  url: https://www.airnavradar.com/blog/flydubai-fz1073-diverts-to-tabuk-after-mid-air-cockpit-incident
+  authenticity: tracker operator's own blog post; the underlying data download was not reached
+  origin: airnav-radar
+  source_type: dataset
+  access: read
+- title: Al Jazeera, What happened on the diverted Flydubai flight from Dubai to Tel Aviv (updated 1 Oct 2026), timeline quoting Flightradar24
+  url: https://www.aljazeera.com/news/2026/9/30/what-happened-on-diverted-flydubai-flight-from-dubai-to-tel-aviv
+  authenticity: news report quoting Flightradar24; Flightradar24 itself was not reachable
+  origin: flightradar24
+  source_type: news
+  access: read
+link: https://www.flightaware.com/live/flight/FDB1073/history
+created: '2026-10-02'
+date_basis: dataset_field
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created for the flydubai-fz1073 dig. Takeoff time agreed by three independent trackers; CNN's local time resolves to the same instant (see dig log).

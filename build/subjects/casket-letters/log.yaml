@@ -1,0 +1,68 @@
+subject: casket-letters
+dig_status: migrated_from_bounty
+log:
+  - id: L-01
+    date: "2026-10-02"
+    entry: >
+      MIGRATION. Owner asked (2026-10-02) that the Casket Letters and King's Book projects be done first, and the local agent that wrote bounty B-001 had not
+      acted on the coordination request. This subject restates the existing page (bounties/casket-letters/index.html, opened 2026-10-01) in the YAML standard
+      without touching the page or its run files. Bounty IDs (C-01..C-06, F5, F6, DT-001, DT-002, G-01..G-05) are kept as bounty_id. Claims: 9 (6 from the page,
+      plus the destroyer of the originals, the four surviving French copies and the text-length finding). Not carried over as claims: findings F1-F4, F7-F9, F10-F11 (they are
+      in tests.yaml or in this log). Headline drafted: 'Casket Letters (1567): No Originals Survive, Only Copies and Translations of Mary's Letters' (92 chars, status review).
+  - id: L-02
+    date: "2026-10-02"
+    entry: >
+      PRIMARY SOURCE READ. Henderson (1889) downloaded from the Internet Archive (casketlettersan00hendgoog; the archive.org API had timed out earlier, the download
+      path works) and checked in OCR: (1) the p. 68 sentence on which French copies exist (Nos. 3 and 5 at the Record Office, Nos. 4 and 6 at Hatfield) and 'only No. 6 can be
+      regarded as in itself fatally compromising'; (2) Bresslau's 'exhaustive comparison' and the objection that 'similar peculiarities of style ... may be found in the letters of
+      Catherine de Medici' (the control problem, F9); (3) the chain of custody (20 June 1567 to Morton; 16 Sept 1568 Moray's receipt; the casket back with Morton; after his execution to
+      Gowrie via his natural son the Prior of Pluscardin; probably then to Arran; the 'original copies of the Scottish translations disappeared completely from human ken'); (4) the dates
+      used on the timeline (10 Feb 1567 explosion about 2 a.m.; acquittal 12 April; marriage 15 May; Carberry Hill 14 June; Lochleven 16 June; Parliament 15 Dec 1567; York in October 1568;
+      Westminster Dec 1568, minute of 14 Dec). NEW FINDING: Henderson himself writes that the copies 'must be regarded as thoroughly authenticated transcripts' on the strength of
+      the commissioners' collation minute; that is an advocate's reading of a claim, not a test, and is recorded in the MANIFEST as such. The copies carry 'alterations and corrections' in other hands.
+  - id: L-03
+    date: "2026-10-02"
+    entry: >
+      LIMITS AND DISCREPANCIES. (a) Henderson gives Carberry Hill as 14 June; many accounts give 15 June (recalled, not read); shown as a disputed date. (b) The year of Morton's
+      execution (1581) and Gowrie's (about 1584) are recalled, not read in the passages examined; marked as such. (c) The York conference date is 'October' only. (d) The NSA document
+      (1586 postscript) and Eder (2010) were not read: nsa.gov is blocked from the cloud session. (e) The computed result (DT-002) is the bounty author's and was NOT rerun here;
+      the numbers are restated. (f) Labanoff and La Ferriere were not re-read. (g) Wikipedia links on the bounty page remain on the page; none is used as a source here.
+      NEXT: rerun DT-002 from the published run files to confirm it reproduces (fixed seed 7); read the National Archives catalogue entry for the French copies; control G-05; outside reviewer (G-04).
+  - id: L-04
+    date: "2026-10-02"
+    entry: >
+      DT-002 REPRODUCED from the published run files (README order; scripts copied to a scratch folder, nothing in bounties/ touched). Inputs downloaded from the
+      Internet Archive: henderson (casketlettersan00hendgoog), Labanoff vols 1-2 (lettresinstructi01mary, lettresinstructi02maryuoft), La Ferriere vols 2-3
+      (lettresdecatheri02cathuoft, lettresdecatheri03cathuoft). extract.py ran on the Henderson OCR (its hard-coded line numbers matched this file) and produced
+      the four texts (670, 469, 254, 389 raw words). boot.py reproduced EXACTLY the published ratios, 90% ranges and calibration (57/60 and 58/60). Not reproduced:
+      the 'most frequent shared phrases' listings differ run to run because set ordering is not fixed; they are illustrative, not results. What this does NOT show: that
+      the method is sound, that the genre confound (F11) is absent, or that anyone outside the project has checked it. C-06 stays proposed. Housekeeping: compare.py also prints
+      an earlier exploratory run (n=4 phrases, calibration 35/40) that is not the published analysis; it should be labelled or removed by its author.
+  - id: L-05
+    date: "2026-10-02"
+    entry: >
+      CORRECTION to L-01: L-01 says the drafted headline has status 'review'. That was wrong. Headline rule 2 allows only a claim that is established or refuted at HIGH
+      confidence; casket-originals-lost is established but capped at confidence 'provisional' (an absence anchor), so the headline cannot meet the rule. headline_status is
+      now 'draft'. It would move to 'review' if the loss of the originals is anchored to primary evidence (for example the Bowes correspondence in the Calendar of State Papers,
+      reachable at british-history.ac.uk) and the claim's confidence can be raised, or if a different claim is chosen. The text of the headline is unchanged.
+  - id: L-06
+    date: 2026-10-02
+    entry: >
+      SHARED NODES, PLACES AND OBJECTS (pilot). The timeline's events are now shared nodes (build/nodes/casket-*), 7 of them with a place that Henderson's text names (Kirk-o'-Field in Edinburgh, Carberry Hill, York, Westminster);
+      events with no place named in the text read have none. Coordinates are from OpenStreetMap Nominatim at city, site or region precision (Carberry Hill itself was not found, so a nearby point is used and flagged as approximate within about 2 km).
+      Two objects were added: the casket with its letters (originals lost) and the French copies of Letters 3 to 6, with two 1889 location events (Hatfield; the Record Office, London) from Henderson p. 68.
+      Where the copies are held today is a stated gap: 1889 is the latest source read. MERGED: seven events drawn twice (detail panel and overview) became one node each. NOT MERGED, and an inconsistency in the original timeline:
+      the Westminster conference is dated 7-14 Dec 1568 in the overview (k9) and 9-14 Dec 1568 in the detail panel (b9). Both are kept as separate nodes linked by `related` until the Record or a second source settles the first date.
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      RENAME (owner request). The public term "bounty" is now "open question". The page moved from /bounties/casket-letters/ to /questions/casket-letters/ (the old address redirects), and it is shown as open question Q-001. The legacy ID B-001 and the
+      `bounty_id` field in claims.yaml are kept as they are; earlier log entries are not rewritten. Wording on the page, in this dig's claim descriptions and timeline sources was updated to the new term, with "formerly bounty B-001" at the first mention.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      NODE SCHEMA v0.5 (SCHEMA.md N12 to N16). This excavation's nodes now record each source's origin, type and access, how each date was arrived at (`date_basis`), and graded related links. Values were assigned by rule and are to be reviewed. Dates were given a basis by rule (for example 'After Morton's execution (1581)' is `derived`); review these.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      CORRECTION of my own earlier note: the log entry for the nodes pilot called the Westminster conference dates (7-14 Dec 1568 in the overview and 9-14 Dec in the detail panel) an unreconciled inconsistency. The node texts show they describe different parts of one process: the sessions began on 7 and 8 Dec, Morton exhibited his declaration on 9 Dec when the collation began, and the minute is of 14 Dec. The collation node is now linked as part_of the conference node (established), not as a possible same-event. Time windows (schema v0.6) were added to the conference node and to the two nodes dated only by 'after' an execution (Morton 1581 and Gowrie about 1584, both years recalled and not read); the Gowrie one has an open end.

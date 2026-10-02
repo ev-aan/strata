@@ -1,0 +1,189 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch2/pt_247.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_247
+pt_number: 247
+display_name: "PT 247 — Your Son Horus Has Acted for You: First Antechamber Spell"
+sethe_phrase_range:
+  value: "§§ 257a–258c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  architectural_significance: >
+    PT 247 is architecturally the hinge spell: the last ritual text addressed
+    to the king by priests on his behalf, and the first spell of the antechamber
+    (Akhet). Allen (2005, p. 12) confirms: 'The texts in the antechamber begin
+    with a spell on the west gable, addressed to the spirit as you emerge from
+    the Duat (PT 247).' From PT 247 onward, spells shift from ritual (performed
+    by others) to personal (spoken by the spirit itself). This is a
+    one-way threshold in the text program.
+  later_attestations:
+    - source: "Unas pyramid, antechamber west wall gable"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: "Shared corpus. Unas antechamber west gable: PT 247–253."
+      source: "Pyramidtextsonline.com wall index."
+
+location:
+  chamber: antechamber
+  wall: west_gable
+  column_direction: north_to_south
+  note: >
+    The antechamber west gable is the first surface encountered entering the
+    antechamber from the burial chamber. Allen (2005) places PT 247 here as
+    the opening of the antechamber sequence. In Unas, the west gable bears
+    PT 247–253.
+  physical_condition: >
+    Antechamber condition in Teti better than burial chamber north/south walls.
+    Specific condition of west gable: searched_gap (Leclant reports required).
+
+ritual_class:
+  classes:
+    - threshold
+    - osirian
+  note: >
+    PT 247 is the last ritual text — spoken by priests about the king — before
+    all subsequent antechamber spells become personal (spoken by the king's spirit
+    itself). Its opening line 'Your son Horus has acted for you' is a ritual
+    completion statement: the funerary rites are declared finished. The spirit
+    is now released to act for itself. This transition from passive recipient
+    to active agent is the theological core of PT 247.
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Teti antechamber west gable."
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+    partial_note: >
+      The Piankoff Unas version (pyramidtextsonline.com antechamber west gable)
+      opens: 'Your son Horus has acted for you...' The MdC would run approximately:
+      ir n.k sA.k Hr — 'acted for you your son Horus'
+      This is a back-transliteration from English — not confirmed from Sethe.
+  gardiner_sign_list_notes: >
+    Key signs:
+    - sA: (G38 duck or Z4+A1) — 'son'
+    - ir: (D46 hand + D21 mouth) — 'act/do'
+    - pr: (O1 house with door open) — 'emerge' — 'as you emerge from the Duat'
+    - dwAt: (N14 star in circle) — 'Duat' — the underworld
+
+translations:
+  - translator_id: allen_2005
+    text: >
+      Allen (2005, p. 12) characterises PT 247 as: addressed to the spirit
+      'as you emerge from the Duat' with opening words 'Your son Horus has acted
+      for you.' This is the last ritual text in Unis's pyramid — all subsequent
+      antechamber and corridor spells are personal.
+    source: "Allen, J.P. 2005. p. 12."
+    divergence_flag: false
+    notes: >
+      Allen's characterisation is from his architectural introduction, not a
+      full translation. Full PT 247 translation in his Teti corpus: searched_gap.
+
+  - translator_id: piankoff_modernised
+    text: >
+      Pyramidtextsonline.com antechamber west gable renders PT 247 (Unas):
+      'To say: Extinguished is the flame! The flame-serpent is not to be found
+      in the house of he who possesses Ombos. It is a serpent which will bite,
+      which has slipped into the house of him whom it will bite, that it may
+      remain in it.'
+    source: "Pyramidtextsonline.com antechamber west gable; Piankoff modernised (Unas)."
+    divergence_flag: true
+    notes: >
+      CRITICAL DIVERGENCE: the Piankoff/Unas rendering of PT 247 is a serpent
+      charm — 'extinguish the flame-serpent' — not the 'Your son Horus has acted'
+      formula cited by Allen. This may indicate:
+      1. Allen and Piankoff use different phase numbering for PT 247
+      2. The Unas and Teti versions differ substantially at this point
+      3. The 'Your son Horus' line belongs to a different PT number in the
+         Unas corpus than Allen's Sethe-number PT 247 label suggests
+      This is the most important divergence in the second batch and requires
+      direct comparison of Allen 2005 Teti section with Sethe 1908 and Piankoff 1968.
+    required_source: "Allen 2005 pp. 65+; Piankoff 1968 Unas plates."
+
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 247."
+
+lexical_anchors:
+  - term_transliteration: "ir n.k"
+    semantic_field: "Act for you / has acted on your behalf"
+    notes: >
+      The phrase 'has acted for you' (ir n.k) is a ritual completion formula —
+      the priest declares the rites accomplished. It frames the king as passive
+      recipient of ritual action. The moment the formula is spoken, the king's
+      spirit is released to act for itself. This is a performative speech-act:
+      declaring completion is the completion.
+
+  - term_transliteration: "pr m dwAt"
+    semantic_field: "Emerge from the Duat"
+    notes: >
+      pr = emerge/come out (O1 house with open door);
+      dwAt = the Duat/underworld (star-in-circle sign, N14).
+      The king emerges from the Duat into the Akhet (antechamber).
+      The physical architecture enacts this: stepping through the doorway
+      from the burial chamber (Per Duat) into the antechamber (Akhet) IS
+      the emergence described.
+
+divergence_points:
+  - id: pt247_content_discrepancy
+    claim: "PT 247 opens with 'Your son Horus has acted for you' (Allen) vs. a serpent charm (Piankoff/Unas)"
+    state: contested
+    positions:
+      - scholar: "Allen, J.P. 2005"
+        reading: "'Your son Horus has acted for you' — ritual completion, threshold formula"
+      - scholar: "Piankoff (Unas, modernised)"
+        reading: "'Extinguished is the flame! The flame-serpent is not to be found...' — apotropaic serpent charm"
+    note: >
+      This is not a translation divergence — it is a content discrepancy.
+      Either the Teti and Unas versions of PT 247 are substantively different,
+      or Allen and Piankoff are numbering the spells differently at this
+      architectural location. Allen 2005 explicitly says 'PT 247' for the
+      'Your son Horus' formula in the Teti context. Piankoff's Unas PT 247
+      is a serpent charm. Resolution requires direct source comparison.
+    required_source: "Allen 2005 pp. 65+; Piankoff 1968 pls. for Unas antechamber west gable."
+
+  - id: ritual_to_personal_transition
+    claim: >
+      The shift from ritual texts (priest-performed) to personal texts (spirit-spoken)
+      occurs at PT 247 — the first antechamber spell.
+    state: established
+    positions:
+      - scholar: "Allen, J.P. 2005"
+        reading: >
+          'This is the last ritual text in Unis's pyramid: the other spells in
+          the antechamber, and those in the corridor, are all of the personal kind,
+          originally meant to be recited by the spirit itself.'
+        source: "Allen 2005, p. 12."
+    note: >
+      This is established from Allen's direct statement about the textual program.
+      The theological significance is major: the king's spirit becomes autonomous
+      at PT 247. Before this point, the king receives ritual action. After this
+      point, he performs it.
+
+transmission_events:
+  - event: "Unas pyramid, antechamber west gable"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com; Allen 2005."
+  - event: "Teti pyramid, antechamber west gable"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005, p. 12."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 247 is architecturally the most consequential hinge in the entire text program.
+  The ritual-to-personal transition it marks is not a gradual shift — it is a
+  declared boundary. The content discrepancy between Allen and Piankoff is the
+  most urgent research question in this batch: it touches the structural integrity
+  of the wall-sequence model.

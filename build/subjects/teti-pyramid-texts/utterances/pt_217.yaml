@@ -1,0 +1,269 @@
+# Repaired copy of build/imports/teti-pyramid-texts/batch1/pt_217.yaml (syntax only; see build/tools/repair_teti.py)
+id: pt_217
+pt_number: 217
+display_name: "PT 217 — Solar Ascent: Cardinal Direction Announcements"
+sethe_phrase_range:
+  value: "§§ 152a–162c (approximate)"
+  state: searched_gap
+  required_source: "Sethe, K. 1908. Vol. 1."
+
+# ─── TIMEGRAPH ────────────────────────────────────────────────────────────────
+
+timegraph:
+  carved_date_start: -2345
+  carved_date_end: -2323
+  carved_uncertainty_years: 10
+  carved_basis: "Co-extensive with Teti's reign. Shaw 2000."
+  later_attestations:
+    - source: "Unas pyramid, sarcophagus chamber south wall"
+      approximate_date_start: -2375
+      approximate_date_end: -2345
+      note: "Shared corpus; Unas version is the primary comparison text."
+      source: "Pyramidtextsonline.com: south wall PT 213–219."
+
+# ─── LOCATION ─────────────────────────────────────────────────────────────────
+
+location:
+  chamber: burial_chamber
+  wall: south
+  column_direction: west_to_east
+  note: >
+    PT 217 sits within the Resurrection Ritual on the south wall. It follows PT 213
+    (the initial resurrection address) and PT 214–216 (transitional spells) in the
+    west-to-east sequence. The cardinal direction structure of PT 217 —
+    announcements to south, north, west, east — mirrors the architectural
+    orientation of the chamber itself.
+  physical_condition: "South wall fragmentary in Teti. Unas version primary reference."
+
+# ─── RITUAL CLASS ─────────────────────────────────────────────────────────────
+
+ritual_class:
+  classes:
+    - resurrection_ritual
+    - solar_ascent
+  note: >
+    PT 217 is the cardinal-direction announcement spell: the king's resurrection
+    is announced to the gods of all four compass points, each announced by a
+    different herald deity (Seth/Nephthys to the south, Osiris/Isis to the north,
+    Thoth to the west, Horus to the east). The refrain — Re-Atum addresses the king
+    as 'an Imperishable Spirit' — establishes the solar dimension of the ascent.
+    This is the spell where the Unas/Teti corpus most clearly blends solar and
+    Osirian theology: the king is 'Lord of Dispensation' (solar) who journeys
+    'united in darkness' (Osirian/stellar).
+
+# ─── PRIMARY TEXT ─────────────────────────────────────────────────────────────
+
+primary_text:
+  hieroglyphic_unicode:
+    value: searched_gap
+    required_source: "Sethe 1908, vol. 1. Teti south wall."
+
+  mdc_transliteration:
+    value: searched_gap
+    required_source: "Sethe 1908."
+    partial_note: >
+      The Unas version MdC for the Re-Atum refrain would run approximately:
+      ra-itm N i.n.k / sA.k pw i.n.k N
+      Xr.k r pt xnj.tj m kkw / xa.tj m Axt mr.k im.f
+      This is reconstructed from the Piankoff translation — not a confirmed MdC.
+
+  gardiner_sign_list_notes: >
+    Key signs:
+    - Ax (Hh or A17): 'spirit' / 'akh' — luminous transfigured being
+    - nb: (V30 basket) — 'lord'
+    - wjA: (P1 + determinative) — 'sacred bark' (the solar boat)
+    - kkw: (darkness sign, N2) — 'darkness' — the night sky / Duat
+    - Axt: (N27 horizon between mountains) — 'Akhet' / horizon
+
+# ─── TRANSLATIONS ─────────────────────────────────────────────────────────────
+
+translations:
+  - translator_id: piankoff_modernised
+    text: >
+      "Re-Atum, [King] comes to you, an Imperishable Spirit, Lord of Dispensation
+      in the site of the four papyrus columns. Your son comes to you, this [King]
+      comes to you, that you (both) may stride over the sky, united in darkness,
+      that you may rise on the horizon in the place where you like to be.
+
+      Seth and Nephthys, hurry! Announce to the gods of the South and their spirits:
+      He comes indeed, this [King], an Imperishable Spirit!
+      If he wills that you will die, you will die;
+      If he wills that you will live, you will live.
+
+      [Refrain to Re-Atum repeats]
+
+      Osiris and Isis, hurry! Announce to the gods of the North and their spirits:
+      He comes indeed, this [King], an Imperishable Spirit, like the Honored One
+      (star) over the Nile, so that the spirits in the waters honor him.
+      Whom he wills that he live, he lives. Whom he wills that he die, he dies.
+
+      [Refrain to Re-Atum repeats]
+
+      Thoth, hurry! Announce to the gods of the West and their spirits:
+      He comes indeed, this [King], an Imperishable Spirit, decked like Anubis
+      on the neck, who rules over the Western height, that he may reckon hearts
+      and that he may have power over breasts!
+
+      [Refrain to Re-Atum repeats]
+
+      Horus, hurry! Announce to the Eastern souls and to their spirits:
+      He comes indeed, this [King]..."
+    source: "Pyramidtextsonline.com modernised Piankoff, §§ 152–159+ (Unas version)."
+    divergence_flag: false
+    notes: >
+      '[King]' substitutes for cartouche. In Teti's version: Ttj (Teti).
+      The power formula 'If he wills that you die, you die; if he wills that
+      you live, you live' is one of the most remarkable royal power assertions
+      in the PT corpus — the resurrected king has life-and-death authority
+      over the gods themselves.
+
+  - translator_id: mercer_1952
+    text: searched_gap
+    required_source: "Mercer 1952. Utterance 217."
+    divergence_flag: false
+
+  - translator_id: faulkner_1969
+    text: searched_gap
+    required_source: "Faulkner 1969. Utterance 217."
+    divergence_flag: false
+
+  - translator_id: allen_2005
+    text: searched_gap
+    required_source: "Allen 2005. Teti corpus, pp. 65+."
+    divergence_flag: false
+
+# ─── LEXICAL ANCHORS ──────────────────────────────────────────────────────────
+
+lexical_anchors:
+  - term_transliteration: "Ax"
+    term_mdc: "Ax"
+    semantic_field: "Akh — transfigured luminous spirit"
+    notes: >
+      Ax (akh) is the third mode of existence in Egyptian theology alongside
+      bA (ba, animating personality-soul) and kA (ka, vital double/life-force).
+      The akh is the transfigured form that results from successful resurrection —
+      a luminous being among the imperishable stars. 'Ax.w nTr.w' = 'Imperishable
+      Spirits.' The king is repeatedly addressed as an Ax throughout PT 217.
+      The visual sign for Ax is often the crested ibis (Gardiner G25).
+    attestation_range: >
+      Core throughout PT corpus; continues through Coffin Texts and Book of the Dead.
+    translation_disputes:
+      readings:
+        - reading: "Imperishable Spirit (Piankoff, Allen)"
+        - reading: "Spirit / Glorious one (Mercer, Faulkner variants)"
+          note: "The luminous/transfigured quality is consensus; 'Imperishable' is an Allen preference."
+
+  - term_transliteration: "nb-wD"
+    term_mdc: "nb-wD"
+    semantic_field: "Lord of Dispensation / Lord of Command"
+    notes: >
+      nb = 'lord'; wD = 'command/decree'. The king as 'Lord of Dispensation in the
+      site of the four papyrus columns' — the four papyrus columns = the four
+      cardinal directions, a cosmological image of the king's authority spanning
+      all space. wD also means 'to send forth' or 'to dispatch' — the king
+      dispatches spirits, sends forth commands.
+    translation_disputes:
+      readings:
+        - reading: "Lord of Dispensation (Piankoff modernised)"
+        - reading: "Lord of Command (alternative rendering)"
+          note: "Faulkner and Allen's precise rendering of nb-wD in this context: searched_gap."
+
+  - term_transliteration: "mAA-xrw"
+    term_mdc: "mAa-xrw"
+    semantic_field: "True of voice / Justified"
+    notes: >
+      The 'Honored One (star) over the Nile' in the Piankoff rendering may be
+      the mAa-xrw formula: 'true of voice' / 'justified.' mAa-xrw became the
+      standard posthumous epithet for the deceased in all later Egyptian funerary
+      texts. Its appearance in PT 217 in the context of the king being like a
+      'star over the Nile' suggests an early form of the stellar-justified formula.
+    attestation_range: >
+      mAa-xrw runs through the entire Egyptian funerary tradition from the PT
+      through the demotic period.
+
+  - term_transliteration: "kkw"
+    term_mdc: "kkw"
+    semantic_field: "Darkness — the Duat night phase"
+    notes: >
+      'United in darkness' (xnj.tj m kkw) — the king and Re-Atum travel together
+      through the darkness of the Duat. kkw is the absolute darkness of the
+      underworld at midnight, before the sun begins its eastward renewal.
+      This is where the solar and Osirian theologies converge: the Osirian
+      underworld is the same darkness that the solar bark traverses.
+
+# ─── DIVERGENCE POINTS ────────────────────────────────────────────────────────
+
+divergence_points:
+  - id: life_death_authority_formula
+    claim: >
+      The formula 'If he wills that you die, you die; if he wills that you live,
+      you live' asserts the resurrected king's power over divine beings.
+    state: proposed
+    positions:
+      - scholar: "General scholarly consensus"
+        reading: >
+          The formula is a statement of royal power in the afterlife — the king
+          commands gods as he commanded humans in life. Death grants, not limits,
+          royal authority.
+      - scholar: "Alternative: conditional ritual formula"
+        reading: >
+          The formula may be a conditional address to the herald deities (Seth,
+          Nephthys, etc.) — instructions to announce the king's power, not a
+          direct claim to killing gods. The 'if' construction (jr wD.f) is
+          conditional, not declarative.
+    note: >
+      The grammar of jr wD.f (if he commands) is not in dispute; the referent
+      is. Does the king have actual power of life and death over the herald
+      gods, or is this a formula of royal supremacy in the announcement
+      context? The distinction affects how we read Egyptian royal theology.
+    required_source: "Faulkner 1969 commentary; Allen 2005 notes on PT 217."
+
+  - id: solar_vs_osirian_dominance
+    claim: >
+      PT 217 is primarily a solar ascent spell (king joins Re-Atum) or
+      primarily an Osirian transformation spell.
+    state: contested
+    positions:
+      - scholar: "Unas interpretation (Egyptfuntours summary)"
+        reading: >
+          In Unas, the king ascends primarily as a solar figure joining Re.
+      - scholar: "Teti interpretation (Egyptfuntours summary)"
+        reading: >
+          In Teti, the Osirian identification is stronger — the king as
+          'Osiris-Teti' predominates over the solar dimension.
+    note: >
+      PT 217 itself contains both: the Re-Atum refrain (solar) and the
+      Osiris/Isis announcement to the north (Osirian). The question is
+      which is the theological frame and which is the subordinate element.
+      This requires Allen 2005's analysis of the Teti version specifically —
+      the popular claim about Teti's Osirian emphasis is applied to the whole
+      corpus, but PT 217 may not individually support it.
+
+# ─── TRANSMISSION EVENTS ──────────────────────────────────────────────────────
+
+transmission_events:
+  - event: "Unas pyramid, sarcophagus chamber south wall"
+    date_start: -2375
+    date_end: -2345
+    source: "Pyramidtextsonline.com south wall PT 213–219."
+  - event: "Teti pyramid, burial chamber south wall"
+    date_start: -2345
+    date_end: -2323
+    source: "Allen 2005; Madain Project."
+
+parallel_pyramids:
+  unas: true
+  pepi_i: searched_gap
+  merenre: searched_gap
+  pepi_ii: searched_gap
+
+notes: >
+  PT 217 is the most architecturally self-aware spell in this initial set.
+  The cardinal-direction structure (south → north → west → east) maps onto the
+  chamber's physical orientation. The four herald deities correspond to the
+  four points of the compass AND the four sons of Horus (though they are not
+  the same figures). This is the PT corpus doing what the whole architectural
+  program does: using physical space as theological argument.
+  The power-formula ('if he wills you die, you die') has no parallel in any
+  earlier Egyptian text and represents the most extreme claim of royal
+  transcendence in the corpus.
