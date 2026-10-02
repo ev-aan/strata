@@ -279,9 +279,12 @@ A log entry may be edited only to remove personal data (for example a private pe
 Why: a retracted or flagged paper must never read as a sound study. Publication status is a fact
 about a source, not a claim state: it lives on the source entry. The page shows it in a list at the
 top (`source_notices`) and as a notice on each claim that lists the source in its own
-`flagged_sources`; a status is also tagged in the Sources list. The validator makes this
-mandatory only for retracted and withdrawn sources (an expression of concern is a warning;
-`corrected` and `unpublished` are not enforced), and only where a claim cites the source by id.
+`flagged_sources`; a status is also tagged in the Sources list. The validator enforces, for
+retracted and withdrawn sources only: a `source_notices` entry for every such source in the
+manifest, cited or not (PS4), and a `flagged_sources` acknowledgement on every item that cites
+one, in claims, timeline, tests, transmission or actors files (PS3). An expression of concern
+is a warning; `corrected` and `unpublished` are not enforced. Only claims show the
+acknowledgement beside them.
 
 ### What silence means
 A source with no `publication` block has **not been looked up**. It does not mean "not retracted".
@@ -331,8 +334,9 @@ subject folder (`claims.yaml`, `timeline.yaml`, `tests.yaml`, `transmission.yaml
 `scale_sources`, `reception_records`, a `source:` on a statement or chain event), except
 `log.yaml`, `review.yaml`, `sources.yaml` and the manifest, which record work and review rather than
 cite evidence, and except the `flagged_sources` and `source_notices` keys. It also follows a claim's
-`anchor.nodes` to each shared node that has `manifest: {subject, source}` naming this subject, and
-treats that `source` as cited by the claim.
+`anchor.nodes` (and a timeline event's `node:`) to each shared node that has
+`manifest: {subject, source}` naming this subject, and treats that `source` as cited by the
+claim or event.
 
 The citing item acknowledges with `flagged_sources` on itself or on an enclosing item (timeline
 event, test, chain, statement). One at the top level of a file does not count. In `claims.yaml` only
@@ -351,5 +355,8 @@ the page does not yet show it beside the event; only the claim page and the top 
 Recording or changing a status on a dig that is already published is a correction under
 `docs/PUBLISH_GATE.md`: it needs a new `log.yaml` entry saying what was recorded and when. The
 manifest `publication` block is not itself a history; an earlier status survives only in version
-control and the log. Recording a retraction turns the validator red until the claims carry
+control and the log. To have it appear on the public corrections page, put the word
+CORRECTION in the log entry (`build_site.py` picks entries by that word); if the change alters a
+finding, follow the gate's revision loop (new log entry, revision round, independent check,
+visible correction). The validator does not enforce this paragraph. Recording a retraction turns the validator red until the claims carry
 `flagged_sources` and `source_notices` (intended).

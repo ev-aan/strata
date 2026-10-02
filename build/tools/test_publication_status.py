@@ -161,6 +161,36 @@ class Rules(unittest.TestCase):
         self.assertTrue(any("PS3" in e for e in r.errors))
 
 
+    def test_more_malformed_inputs(self):
+        for bad in (5, True, "x"):
+            r = run(make({"claims.yaml": {"source_notices": bad, "claims": []}}, [src(RETRACTED)]))
+            self.assertTrue(any("PS4" in e for e in r.errors), bad)
+        d = make({"claims.yaml": {"claims": [claim()]}}, [])
+        with open(os.path.join(d, "sources", "MANIFEST.yaml"), "w") as f:
+            f.write("sources: 5\n")
+        self.assertEqual(run(d).errors, [])
+        nd = tempfile.mkdtemp()
+        with open(os.path.join(nd, "bad.yaml"), "w") as f:
+            yaml.safe_dump({"id": ["x"], "manifest": {"subject": "s", "source": "src-a"}}, f)
+        run(make({"claims.yaml": {"source_notices": NOTICE, "claims": [claim()]}}, [src(RETRACTED)]), nd)
+
+    def test_timeline_node_key_and_dedupe(self):
+        nd = tempfile.mkdtemp()
+        with open(os.path.join(nd, "n1.yaml"), "w") as f:
+            yaml.safe_dump({"id": "n1", "manifest": {"subject": "s", "source": "src-a"}}, f)
+        files = {"claims.yaml": {"source_notices": NOTICE, "claims": []},
+                 "timeline.yaml": {"events": [{"id": "e1", "node": "n1"}]}}
+        r = run(make(files, [src(RETRACTED)]), nd)
+        self.assertEqual(len(r.errors), 1)
+        files["timeline.yaml"]["events"][0]["flagged_sources"] = ["src-a"]
+        self.assertEqual(run(make(files, [src(RETRACTED)]), nd).errors, [])
+        # a claim reaching the same source by id and by node gives one error line, not two
+        c = claim()
+        c["anchor"]["nodes"] = [{"node": "n1", "verb": "supports"}]
+        r = run(make({"claims.yaml": {"source_notices": NOTICE, "claims": [c]}}, [src(RETRACTED)]), nd)
+        self.assertEqual(sum("PS3" in e for e in r.errors), 1)
+
+
 class Rendering(unittest.TestCase):
     man = {"src-a": {"id": "src-a", "title": "A <paper>", "publication": RETRACTED},
            "src-b": {"id": "src-b", "title": "B", "publication": {"status": "corrected", "date": "2015-01-01"}},

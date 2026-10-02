@@ -217,7 +217,8 @@ def load_sources(sdir):
     for name in (os.path.join("sources", "MANIFEST.yaml"), "sources.yaml"):
         p = os.path.join(sdir, name)
         if os.path.exists(p):
-            return {s.get("id"): s for s in (load(p) or {}).get("sources") or []
+            lst = (load(p) or {}).get("sources")
+            return {s.get("id"): s for s in (lst if isinstance(lst, list) else [])
                     if isinstance(s, dict) and isinstance(s.get("id"), str)}
     return {}
 
@@ -236,7 +237,8 @@ def _ps_nodes(subject, nodes_dir=None):
         except yaml.YAMLError:
             continue
         mf = n.get("manifest") if isinstance(n, dict) else None
-        if isinstance(mf, dict) and mf.get("subject") == subject and isinstance(mf.get("source"), str):
+        if (isinstance(mf, dict) and mf.get("subject") == subject and isinstance(mf.get("source"), str)
+                and isinstance(n.get("id"), str)):
             out[n.get("id")] = mf["source"]
     return out
 
@@ -256,12 +258,12 @@ def _ps_walk(o, ids, acks, item, depth, file, hits, ack_lists, nodemap):
                 ack_lists.append((file, o.get("id") or item, names))
                 acks = acks | set(names)
         item = o.get("id") if isinstance(o.get("id"), str) else item
-        nl = o.get("nodes")
-        if isinstance(nl, list):
-            for ref in nl:
-                nid = ref.get("node") if isinstance(ref, dict) else ref
-                if isinstance(nid, str) and nid in nodemap and nodemap[nid] in ids:
-                    hits.append((nodemap[nid], file, item, nodemap[nid] in acks, None))
+        refs = [o.get("node")]                       # {node: id} in anchor.nodes and timeline events
+        if isinstance(o.get("nodes"), list):
+            refs += [x for x in o["nodes"] if isinstance(x, str)]   # bare ids in a `nodes:` list
+        for nid in refs:
+            if isinstance(nid, str) and nid in nodemap and nodemap[nid] in ids:
+                hits.append((nodemap[nid], file, item, nodemap[nid] in acks, None))
         for k, v in o.items():
             if k in PS_ACK_KEYS:
                 continue
@@ -304,7 +306,11 @@ def check_publication(r, subject, sdir, claims, d, nodes_dir=None):
             except yaml.YAMLError:
                 continue                      # reported elsewhere
             _ps_walk(doc, set(sources), frozenset(), None, 0, fn, hits, ack_lists, nodemap)
+    seen = set()
     for sid, fn, item, acked, names in hits:
+        if (sid, fn, item, acked) in seen:
+            continue                                  # the same site reached twice (id and node)
+        seen.add((sid, fn, item, acked))
         if sid == "misplaced":
             r.err(f"{subject}:{item}", "PS3: `flagged_sources` must be on the claim itself, not inside it "
                                        "(the page reads only the claim's own list)")
@@ -321,7 +327,11 @@ def check_publication(r, subject, sdir, claims, d, nodes_dir=None):
                 r.err(f"{subject}:{fn}:{item}", f"PS3: `flagged_sources` names `{sid}`, which has no "
                                                 "valid `publication` status in the manifest")
     shown = set()
-    for n in d.get("source_notices") or []:
+    notices = d.get("source_notices")
+    if notices and not isinstance(notices, list):
+        r.err(subject, "PS4: `source_notices` must be a list of {source, notice}")
+        notices = []
+    for n in notices or []:
         if isinstance(n, dict):
             if not isinstance(n.get("source"), str):
                 r.err(subject, "PS4: a `source_notices` entry has no `source` id (a string)")
