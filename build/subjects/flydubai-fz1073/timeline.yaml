@@ -71,6 +71,7 @@ sources:
   s_aerocorner: {title: "AeroCorner, Flydubai FZ1073 Cockpit Stabbing", url: "https://aerocorner.com/news/flydubai-fz1073-tel-aviv-tabuk-diversion-7500/"}
   s_aljazeera: {title: "Al Jazeera, What happened on the diverted Flydubai flight", url: "https://www.aljazeera.com/news/2026/9/30/what-happened-on-diverted-flydubai-flight-from-dubai-to-tel-aviv"}
   s_theprint:  {title: "ThePrint, Can an Omani pilot fly a plane to Israel?", url: "https://theprint.in/world/can-an-omani-pilot-fly-a-plane-to-israel-flydubai-clause-israels-aviation-pact-with-uae-under-lens/3058939/"}
+  s_airnav:    {title: "AirNav Radar blog, Flydubai FZ1073 diverts to Tabuk (30 Sep, 18:18 UTC)", url: "https://www.airnavradar.com/blog/flydubai-fz1073-diverts-to-tabuk-after-mid-air-cockpit-incident"}
   s_fr24:      {title: "Flightradar24 post on X, quoted in a search result (post not read)", url: "https://x.com/flightradar24/status/2105219645229645874"}
 
 # kind: data = machine-recorded; official = government or company statement; witness = a person's account;
@@ -87,21 +88,23 @@ events:
   - {id: a2,  panel: flight, lane: aircraft, time: "2026-09-30T05:21:00Z", precision: exact, kind: data,  status: single, sources: [s_fr24],
      label: "Altitude fluctuations begin",
      detail: "From a Flightradar24 post quoted in a search result; the post itself was not read."}
-  - {id: a3,  panel: flight, lane: aircraft, time: "2026-09-30T05:22:00Z", precision: exact, kind: data,  status: disputed, sources: [s_aljazeera, s_cnn, s_airlive],
+  - {id: a3,  panel: flight, lane: aircraft, time: "2026-09-30T05:22:00Z", precision: exact, kind: data,  status: disputed, sources: [s_aljazeera, s_cnn, s_airlive, s_airnav],
      label: "Rapid descent",
-     detail: "DISCREPANCY: about 14,000 ft in under 30 seconds (30,875 to 16,750 ft; Flightradar24 via Al Jazeera/Reuters) versus 17,400 ft in just under two minutes (CNN) versus about 34,000 to about 19,000 ft in about 90 seconds (another outlet). Only the raw altitude track can say."}
+     detail: "DISCREPANCY: about 14,000 ft in under 30 seconds (30,875 to 16,750 ft; Flightradar24 via Al Jazeera/Reuters) versus 17,400 ft in just under two minutes (CNN) versus about 34,000 to about 19,000 ft in about 90 seconds (another outlet). AirNav Radar reports a peak descent rate of about -30,900 ft/min and a drop from 34,000 ft to 15,000 ft 'in just a few minutes', which is compatible with all three: a very steep first half-minute inside a longer descent. Only the raw altitude track can confirm."}
   - {id: a4,  panel: flight, lane: first_officer, time: "2026-09-30T05:22:00Z", precision: approx, kind: media, status: inferred, sources: [s_aljazeera],
      label: "Cockpit struggle (start, inferred)",
      detail: "Reports say the struggle began when the captain was stabbed and the jet plunged; the start time of the fight is not given. Placed at the time of the drop as an inference."}
   - {id: a5,  panel: flight, lane: captain, time: "2026-09-30T05:22:00Z", precision: approx, kind: official, status: reported, sources: [s_cnn, s_cnn_live],
      label: "Captain stabbed",
      detail: "Israeli PM: the first officer stabbed the captain. Saudi ministry: an assault by the co-pilot on the captain, injuries to both. Exact time not reported; placed at the start of the incident."}
-  - {id: a6,  panel: flight, lane: aircraft, time: "2026-09-30T05:31:00Z", precision: exact, kind: data,  status: reported, sources: [s_airlive, s_migflug, s_aljazeera, s_cnn],
+  - {id: a6,  panel: flight, lane: aircraft, time: "2026-09-30T05:31:00Z", precision: exact, kind: data,  status: disputed, sources: [s_airlive, s_migflug, s_aljazeera, s_cnn, s_airnav],
+     alt_time: "2026-09-30T05:28:48Z", alt_tag: "AirNav", alt_note: "AirNav Radar: squawk 7700 at 05:28:48 UTC",
      label: "Squawk 7700 (emergency); distress call",
-     detail: "05:31 UTC per Flightradar24. CNN gives a distress call at 8:31 a.m. (consistent if UTC+3)."}
-  - {id: a7,  panel: flight, lane: aircraft, time: "2026-09-30T05:38:00Z", precision: exact, kind: data,  status: reported, sources: [s_airlive, s_migflug],
+     detail: "05:31 UTC per Flightradar24. DISCREPANCY BETWEEN TWO INDEPENDENT TRACKERS: AirNav Radar says 05:28:48 UTC, about two minutes earlier. CNN gives a distress call at 8:31 a.m. (matches 05:31 UTC if UTC+3). Only the raw data from each can say why they differ (reception time, reporting delay, or a different message)."}
+  - {id: a7,  panel: flight, lane: aircraft, time: "2026-09-30T05:38:00Z", precision: exact, kind: data,  status: disputed, sources: [s_airlive, s_migflug, s_airnav],
+     alt_time: "2026-09-30T05:35:00Z", alt_tag: "AirNav", alt_note: "AirNav Radar: squawk 7500 at about 05:35 UTC",
      label: "Squawk 7500 (unlawful interference)",
-     detail: "05:38 UTC per Flightradar24. Code 7500 signals unlawful interference. Who set it is not reported."}
+     detail: "05:38 UTC per Flightradar24; about 05:35 UTC per AirNav Radar (a three-minute difference, with 7700 to 7500 about six to seven minutes apart in both). Code 7500 signals unlawful interference. AirNav also reports the code returning to 7700 on approach to Tabuk (7700, 7500, 7700). Who set the codes is not reported."}
   - {id: a8,  panel: flight, lane: passengers, time: "2026-09-30T05:45:00Z", precision: range, end: "2026-09-30T06:10:00Z", kind: witness, status: inferred, sources: [s_cnn, s_aerocorner],
      label: "Passengers and crew enter the cockpit; the attacker is restrained (time not reported)",
      detail: "Passenger accounts: a chokehold and removal from the cockpit (Hayoun), tied with headphone cords and zip ties (Musaev). The time of day is not reported; the bar spans the period between the squawk change and the loss of tracking and is an inference."}

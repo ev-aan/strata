@@ -1,0 +1,81 @@
+subject: mcafee-and-surfside
+
+discriminating_tests:
+
+  - id: dt-tweet-record
+    question: >
+      Does the alleged 8 June 2021 tweet exist in the account's own record or in any independent capture?
+    retires: mcafee-june8-tweet-posted
+    predicts:
+      posted: >
+        IF McAfee posted it, it should appear on his timeline or in advanced search, or in the hundreds of tweets archived on
+        Archive.is after his death, or leave a deleted-post trace (retweets, quote tweets, platform records).
+      fabricated: >
+        IF it was fabricated, it should be absent from all of these, and the screenshot should reuse details (such as a timestamp)
+        from a real post.
+    result:
+      type: primary_text
+      finding: >
+        Four organizations reported no trace: PolitiFact (timeline, advanced search, AllMyTweets, account analysis), Snopes (timeline;
+        no retweets or quote tweets; hundreds of archived tweets searched on Archive.is), USA Today (advanced search; a genuine
+        8 June tweet carries the same timestamp as the screenshot), Check Your Fact (rating only). Two genuine tweets were sent on
+        8 June and neither mentions files or a condo.
+      accessible: true
+    resolves: >
+      Several independent searches of the account's own record agree, and a template match is reported. LIMITS: we have not repeated
+      the searches; the Internet Archive's capture of the profile (25 Jun 2021, 20:38 UTC) exists but could not be read from here;
+      and an absence is a capped anchor. Not rated high for those reasons.
+    note: >
+      D3 satisfied. Method follows AUTHENTICITY.md section 5 (digital items) and rule A8. Next: read the archive capture in a
+      browser.
+
+  - id: dt-collapse-timeline
+    question: >
+      Does the physical record place the start of the building's failure before or after McAfee's death on 23 June 2021?
+    retires: surfside-deliberate-timed-to-mcafee
+    predicts:
+      timed-to-death: >
+        IF the collapse was a deliberate act following his death, no failure process or distress should predate 23 June, and an
+        external cause should be found.
+      structural-failure: >
+        IF it was a structural failure, the connections should have failed earlier and distress should be documented in the weeks before.
+    result:
+      type: primary_text
+      finding: >
+        NIST [read]: the failure began in early June when two garage-column and pool-deck connections failed; distress was visible in
+        the weeks before (a sliding glass door off its frame, a crack in a planter wall, a gate that shifted); causes lie in the original
+        design and construction.
+      accessible: true
+    resolves: >
+      The sequence runs from early June to the collapse on 24 June, with McAfee's death on 23 June inside it. NIST's page summary does
+      not say whether sabotage was specifically tested and excluded; the technical report is the next thing to read.
+    note: >
+      D3 satisfied: retired by a physical investigation, not by the fact-checks or by popularity.
+
+  - id: dt-property-records
+    question: >
+      Do property records show McAfee, his wife or an entity of his owning a unit in the building?
+    retires: mcafee-owned-unit
+    predicts:
+      owned: >
+        IF he owned one, the county property records for the building's folios should list him, his wife or a company he controlled.
+      did-not-own: >
+        IF not, no such owner should appear.
+    result:
+      type: primary_text
+      finding: >
+        An AP review (via USA Today) found neither McAfee nor his wife listed as owners of any unit; a search report says Miami-Dade
+        records show no property for him near or in the building.
+      accessible: true
+    resolves: >
+      Reported absence in the records. LIMIT: not repeated here (the site blocks this environment), and ownership through a company would not
+      show under his name.
+    note: >
+      An absence is capped; the claim stays moderate until the records are searched directly, including entities.
+
+# ---------------------------------------------------------------------------
+# OPEN TESTS (not filed):
+#   - dt-archive-capture: read the Internet Archive capture of @officialmcafee (25 Jun 2021 20:38 UTC) and the platform's records.
+#   - dt-spanish-record: read the court ruling of 24 July 2023 and any autopsy summary (mcafee-cause-independent-review).
+#   - dt-nist-report: read NIST's technical report for the scenarios examined and excluded, including any external cause.
+# ---------------------------------------------------------------------------

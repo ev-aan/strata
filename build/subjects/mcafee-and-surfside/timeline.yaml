@@ -1,0 +1,118 @@
+timeline:
+  id: mcafee-and-surfside
+  title: "John McAfee and Champlain Towers South: who did what, and when (2019 to 2026)"
+  as_of: "2026-10-02"
+  note: >
+    Times are UTC. Miami was on daylight time (UTC-4) in June 2021 and Spain on summer time (UTC+2). Where only a date is
+    reported the event is drawn hollow. NIST's "early June" is a range, drawn as a bar and marked as an inference for its edges.
+    The collapse time is given as about 1:30 a.m. by NIST and 1:22 a.m. by other sources; both are shown. Quoted facts were
+    read in the cited sources, as marked. No claim is made about any person beyond what those sources say.
+panels:
+  - id: years
+    title: "Panel A: 2019 to 2026 (one tick per year)"
+    start: "2019-01-01T00:00:00Z"
+    end:   "2026-12-31T00:00:00Z"
+    tick_years: 1
+    lanes: [mcafee, spain, surfside]
+  - id: weeks
+    title: "Panel B: June and early July 2021 (UTC, one tick per two days)"
+    start: "2021-06-01T00:00:00Z"
+    end:   "2021-07-06T00:00:00Z"
+    tick_hours: 48
+    lanes: [surfside, mcafee, spain, online, factcheck]
+  - id: night
+    title: "Panel C: the night of 23 to 24 June 2021 (UTC, Miami and Spain clocks)"
+    start: "2021-06-24T03:30:00Z"
+    end:   "2021-06-24T07:30:00Z"
+    tick_minutes: 30
+    axes: [{label: "Miami (EDT, UTC-4)", offset_hours: -4}, {label: "Spain (CEST, UTC+2)", offset_hours: 2}]
+    lanes: [surfside]
+lanes:
+  mcafee:    {label: "John McAfee"}
+  spain:     {label: "Spanish authorities"}
+  surfside:  {label: "Champlain Towers South"}
+  online:    {label: "Social media"}
+  factcheck: {label: "Fact-checkers"}
+people:
+  - {who: "John McAfee", detail: "Software entrepreneur; died aged 75 in a prison cell near Barcelona on 23 June 2021."}
+  - {who: "Janice McAfee", detail: "His widow; said he was not suicidal when they last spoke and asked for further checks and another autopsy (PolitiFact; AFP)."}
+  - {who: "Javier Villalba", detail: "McAfee's lawyer; told Reuters he saw no warning signs (PolitiFact)."}
+  - {who: "Catalan justice department", detail: "Said 'Everything points to death by suicide' (PolitiFact)."}
+  - {who: "Spanish court", detail: "Approved extradition on 23 June 2021; later closed the inquiry into the death in a ruling dated 24 July 2023 (AFP)."}
+  - {who: "NIST investigators", detail: "Judith Mitrani-Reiser (lead) and Glenn Bell (co-lead) presented the findings (NIST)."}
+  - {who: "Daniella Levine Cava", detail: "Miami-Dade County mayor; said there was nothing to indicate foul play at that point (USA Today)."}
+  - {who: "Fact-checkers", detail: "Dan Evon (Snopes); Madison Czopek and Tom Kertscher (PolitiFact); USA Today; Check Your Fact."}
+  - {who: "AP", detail: "Reviewed property records at the building; found neither McAfee nor his wife listed as owners of any unit (via USA Today)."}
+  - {who: "Pat McAfee (sports analyst)", detail: "Named in the fabricated chain as a claimed son; said he has no condo in Florida (Snopes). Not a relative of John McAfee per the same report."}
+  - {who: "The residents and families of Champlain Towers South", detail: "98 people died; named here only as the people affected."}
+sources:
+  s_nist:       {title: "NIST, Champlain Towers South Collapse (updated 22 Jun 2026)", url: "https://www.nist.gov/disaster-and-failure-studies/champlain-towers-south-collapse", authenticity: "authenticated, strong"}
+  s_nist25:     {title: "NIST, Investigation Nears Completion of Technical Work (9 Sep 2025)", url: "https://www.nist.gov/news-events/news/2025/09/champlain-towers-south-investigation-nears-completion-technical-work", authenticity: "authenticated, strong"}
+  s_snopes:     {title: "Snopes, Did John McAfee Hide Files at Collapsed Miami Building?", url: "https://www.snopes.com/fact-check/john-mcafee-files-miami-building/", authenticity: "fact-check"}
+  s_pf25:       {title: "PolitiFact, Rumors surrounding John McAfee's death (25 Jun 2021)", url: "https://api.politifact.com/article/2021/jun/25/rumors-surrounding-john-mcafees-death-linked-qanon", authenticity: "fact-check"}
+  s_pf28:       {title: "PolitiFact, Image suggesting John McAfee stored files ... is fake (28 Jun 2021)", url: "https://politifact.com/factchecks/2021/jun/28/instagram-posts/image-suggesting-john-mcafee-stored-files-collapse/", authenticity: "fact-check"}
+  s_usat:       {title: "USA Today fact check (via Yahoo)", url: "https://www.yahoo.com/news/fact-check-no-evidence-john-215403780.html", authenticity: "fact-check"}
+  s_afp:        {title: "AFP via The Local, Spain court shelves probe (29 Sep 2023)", url: "https://www.thelocal.es/20230929/spain-court-shelves-probe-into-john-mcafee-prison-death", authenticity: "wire report; ruling not read"}
+  s_count:      {title: "TheCount.com, Did John McAfee Own A Florida Condo ...? (26 Jun 2021)", url: "https://thecount.com/2021/06/26/john-mcafee-tweet-champlain-towers-south-collins-avenue-surfside-florida-collapse/", authenticity: "weak; corroboration only"}
+  s_wayback:    {title: "Internet Archive capture of @officialmcafee, 25 Jun 2021 20:38 UTC (content not readable from here)", url: "http://web.archive.org/web/20210625203856/https://twitter.com/officialmcafee", authenticity: "unchecked: not read"}
+  s_gulf:       {title: "Gulf News, Florida tower collapse: final death toll put at 98", url: "https://gulfnews.com/world/americas/florida-tower-collapse-final-death-toll-put-at-98-1.1627348327645", authenticity: "secondary"}
+events:
+  # ---------------- Panel A ----------------
+  - {id: a1, panel: years, lane: mcafee, time: "2019-06-09T12:00:00Z", precision: day, kind: media, status: reported, sources: [s_pf25, s_usat, s_count],
+     label: "9 Jun 2019: McAfee tweets he has 31+ TB of incriminating data; will release it if arrested",
+     detail: "Tweeted from Cuba (TheCount). He did not say where the files were (USA Today). The post itself was not read."}
+  - {id: a2, panel: years, lane: spain, time: "2020-10-06T12:00:00Z", precision: month, kind: media, status: reported, sources: [s_pf25, s_afp],
+     label: "Oct 2020: McAfee arrested at Barcelona airport on a US tax warrant",
+     detail: "PolitiFact: charged with tax evasion and willful failure to file; AFP: arrested just before boarding a flight to Istanbul."}
+  - {id: a3, panel: years, lane: surfside, time: "2021-06-24T05:30:00Z", precision: exact, kind: document, status: disputed, sources: [s_nist],
+     alt_time: "2021-06-24T05:22:00Z", alt_tag: "1:22 a.m. EDT", alt_note: "Other sources give about 1:22 a.m. EDT (05:22 UTC); NIST says approximately 1:30 a.m. EDT.",
+     label: "24 Jun 2021: Champlain Towers South partly collapses (about 1:30 a.m. EDT)",
+     detail: "NIST [read]: a 12-floor condominium in Surfside, partially collapsed 'at approximately 1:30 a.m. EDT'. Other reports say 1:22 a.m. The difference is unresolved."}
+  - {id: a4, panel: years, lane: spain, time: "2023-09-29T12:00:00Z", precision: day, kind: media, status: reported, sources: [s_afp],
+     label: "29 Sep 2023: Spanish court's ruling (dated 24 Jul 2023) closing the inquiry made public",
+     detail: "AFP: 'no indications of anything other than a violent death of suicidal origin, nothing at all'; the ruling cannot be appealed. The ruling was not read."}
+  - {id: a5, panel: years, lane: surfside, time: "2025-09-09T12:00:00Z", precision: day, kind: document, status: reported, sources: [s_nist25],
+     label: "9 Sep 2025: NIST update: failure likely started in the pool deck",
+     detail: "Read. Includes indications of distress visible in the weeks before the collapse."}
+  - {id: a6, panel: years, lane: surfside, time: "2026-06-22T12:00:00Z", precision: day, kind: document, status: reported, sources: [s_nist],
+     label: "22 Jun 2026: NIST technical findings: collapse began in early June 2021",
+     detail: "Read: 'the collapse began in early June, when two connections between garage columns and the pool deck failed'."}
+  # ---------------- Panel B ----------------
+  - {id: b1, panel: weeks, lane: surfside, time: "2021-06-01T00:00:00Z", precision: range, end: "2021-06-10T00:00:00Z", kind: document, status: inferred, sources: [s_nist],
+     label: "'Early June': two garage-column and pool-deck connections fail (NIST)",
+     detail: "NIST [read]: the collapse began in early June. The exact days are not given; the bar is our reading of 'early June'."}
+  - {id: b2, panel: weeks, lane: surfside, time: "2021-06-01T00:00:00Z", precision: range, end: "2021-06-24T00:00:00Z", kind: document, status: inferred, sources: [s_nist25],
+     label: "Weeks of visible distress: a sliding door off its frame, a cracked planter wall, a shifting gate",
+     detail: "NIST Sep 2025 [read]: 'indications of the building's distress that were visible in the weeks before'. The dates of each sign are not given here."}
+  - {id: b3, panel: weeks, lane: mcafee, time: "2021-06-08T12:00:00Z", precision: day, kind: media, status: reported, sources: [s_usat, s_pf28],
+     label: "8 Jun 2021: McAfee posts two real tweets; neither mentions files or a condo",
+     detail: "USA Today: one carries the same timestamp as the later fabricated screenshot, 'indicating it could have been the template'. PolitiFact: two tweets sent on 8 June, neither about files or a condo."}
+  - {id: b4, panel: weeks, lane: spain, time: "2021-06-23T12:00:00Z", precision: day, kind: media, status: reported, sources: [s_pf25, s_afp],
+     label: "23 Jun: Spanish court approves extradition; McAfee found dead hours later",
+     detail: "PolitiFact: the extradition was not final. The Catalan justice department: 'Everything points to death by suicide'. Times of day not given in the reports read."}
+  - {id: b5, panel: weeks, lane: online, time: "2021-06-23T15:00:00Z", precision: day, kind: media, status: single, sources: [s_pf25],
+     label: "23 Jun: an Instagram account of McAfee posts a plain letter 'Q' minutes after news of his death",
+     detail: "PolitiFact: it is unclear who controlled the account, which has since been removed."}
+  - {id: b6, panel: weeks, lane: surfside, time: "2021-06-24T05:30:00Z", precision: exact, kind: document, status: reported, sources: [s_nist],
+     label: "24 Jun: the building partly collapses (about 1:30 a.m. EDT)",
+     detail: "See Panel C for the time discrepancy."}
+  - {id: b7, panel: weeks, lane: online, time: "2021-06-25T12:00:00Z", precision: day, kind: media, status: reported, sources: [s_pf28, s_usat],
+     label: "25 Jun: Instagram post uses a fabricated tweet image to link the two events",
+     detail: "PolitiFact: the post of 25 June used a fabricated image; USA Today: similar versions spread on Instagram, Twitter, Reddit and blogs."}
+  - {id: b8, panel: weeks, lane: factcheck, time: "2021-06-25T14:00:00Z", precision: day, kind: media, status: reported, sources: [s_snopes, s_pf25],
+     label: "25 Jun: Snopes and PolitiFact publish; no such tweet found; no property link",
+     detail: "Snopes (Dan Evon): rated False; hundreds of archived tweets searched on Archive.is."}
+  - {id: b9, panel: weeks, lane: factcheck, time: "2021-06-25T20:38:56Z", precision: exact, kind: data, status: single, sources: [s_wayback],
+     label: "25 Jun 20:38 UTC: Internet Archive captures @officialmcafee (content not read here)",
+     detail: "Availability record read; the capture's content is blocked from this environment. Open it in a browser."}
+  - {id: b10, panel: weeks, lane: factcheck, time: "2021-06-28T12:00:00Z", precision: day, kind: media, status: reported, sources: [s_pf28, s_usat],
+     label: "28 Jun: PolitiFact and USA Today rate the tweet image false",
+     detail: "PolitiFact's sources include Twitter advanced search, AllMyTweets, AccountAnalysis.app and an email to a platform spokesperson."}
+  - {id: b11, panel: weeks, lane: surfside, time: "2021-07-04T12:00:00Z", precision: day, kind: media, status: single, sources: [s_gulf],
+     label: "4 Jul: the remaining structure is demolished",
+     detail: "Secondary report; the final death toll was 98 (Gulf News, Miami-Dade)."}
+  # ---------------- Panel C ----------------
+  - {id: c1, panel: night, lane: surfside, time: "2021-06-24T05:30:00Z", precision: exact, kind: document, status: disputed, sources: [s_nist],
+     alt_time: "2021-06-24T05:22:00Z", alt_tag: "1:22 a.m. EDT", alt_note: "Other sources: about 1:22 a.m. EDT (05:22 UTC)",
+     label: "Partial collapse: about 1:30 a.m. EDT (NIST) or 1:22 a.m. (other sources)",
+     detail: "A 12-minute difference between the investigating agency's rounded time and other reports. It does not affect any claim."}

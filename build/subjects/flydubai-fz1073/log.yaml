@@ -147,3 +147,63 @@ log:
       the table says so. The suspect is not named; named people are officials and those who spoke
       publicly. CAUTION: the diagram records what is reported and where reports differ. It is not a
       finding.
+  - id: L-10
+    date: 2026-10-02
+    entry: >
+      OWNER'S TIMING HYPOTHESIS, NOW STATED: the timing is "convenient" because of an upcoming election in
+      Israel. FACTS (secondary; Al Jazeera and other reports): Israel's Knesset election is scheduled for
+      27 October 2026, 27 days after the flight; 38 candidate lists were submitted; reported polls on
+      23 September showed Netanyahu leading preference polls among named leaders and no party likely to win a
+      majority; one report says it is the first Knesset election held on schedule rather than early
+      since 1988. The flight was 7 days before the third anniversary of 7 October. Whether any of this
+      is more than coincidence is what a test must say.
+  - id: L-11
+    date: 2026-10-02
+    entry: >
+      TWO DIFFERENT CLAIMS MUST NOT BE MIXED. (A) The event was manufactured or staged. (B) A real
+      event is being used politically, in its timing or its framing. (B) is ordinary politics and can be
+      shown from public statements; (A) is an extraordinary allegation about a real attack with a
+      seriously wounded captain and about 174 people at risk. Variants of (A) and who would have had to
+      take part, drawn from the reporting: (A1) staged entirely: the captain (Indian national, wounded,
+      Saudi hospital, surgery), the first officer (in custody), two off-duty pilots, cabin crew, about 174
+      passengers of several nationalities including two Australians and four US-Israeli dual citizens,
+      Flydubai (a UAE company), Saudi authorities (whose interior ministry reported an assault and
+      injuries with a UAE team present) and UAE authorities, plus the trackers' data (two independent trackers
+      recorded the dive and the squawk codes). (A2) a real attack deliberately allowed or arranged (a
+      vetting failure by design): would require the vetting and rostering records, not yet seen.
+      (A3) a real attack with a real vetting failure, later politically exploited. (A4) a real attack and a
+      coincidence in timing. The independence of the sources matters: Saudi Arabia, the UAE, Flydubai,
+      Indian and Australian officials, and two independent aviation trackers are not the Israeli
+      government. A claim that the event was staged by Israeli actors would need to explain why those
+      independent parties' records agree with it. This is a statement about what the allegation requires,
+      not a finding.
+  - id: L-12
+    date: 2026-10-02
+    entry: >
+      TESTS THAT COULD SEPARATE THEM, defined before looking: (1) INDEPENDENT RECORDS OF THE DIVE: do
+      two or more independent trackers agree on the altitude and squawk sequence? (They do on the
+      sequence 7700, 7500, 7700 and on a dive of about 14,000 to 19,000 ft; they differ by about three minutes
+      in time; see L-13.) (2) INDEPENDENT NON-ISRAELI OFFICIAL RECORD: the Saudi interior ministry statement
+      and the UAE investigation. (3) WITNESS INDEPENDENCE: accounts from passengers of different
+      nationalities who do not know each other. (4) THE CREW-NATIONALITY RULE: the agreement text, the
+      roster and vetting records (see L-04). (5) TIMING BASE RATE: how often do aviation security
+      incidents involving Israel-linked flights occur in any given 4-week window, and where were the
+      statements and polls before and after? (6) FRAMING: how did officials' statements change in
+      the days after, and did polling move? Pre-registration: any pattern must be named here before
+      the data is looked at.
+  - id: L-13
+    date: 2026-10-02
+    entry: >
+      OPEN DATA SOURCES FOR THE FLIGHT, AND WHAT WORKED. Aircraft: A6-FKF, Boeing 737 MAX 8; ICAO
+      address 8965D1 (hexdb.io). Reachable: AirNav Radar's blog (read). Blocked from this environment:
+      Flightradar24's blog and CSV (Cloudflare check, HTTP 403); AirNav's flight page and log (403);
+      ADS-B Exchange history ("direct access not permitted"); OpenSky history (needs an account, 403). The
+      ADS-B Exchange sample archive publishes only the first day of each month. NOT FOUND: any public
+      ATC audio or ACARS feed for the event. FINDING FROM AIRNAV (secondary): squawk 7700 at 05:28:48 UTC
+      and 7500 at about 05:35 UTC, against Flightradar24's 05:31 and 05:38: about three minutes apart
+      between two independent networks. AirNav also reports a peak descent rate of about -30,900 ft/min and
+      a fall from 34,000 ft to 15,000 ft in a few minutes, which fits Flightradar24's 14,125 ft in 29
+      seconds and is not incompatible with CNN's 17,400 ft in just under two minutes: they appear to measure
+      different parts of one dive. NEXT STEP FOR THE OWNER (a browser is needed): download the CSV data
+      from the Flightradar24 incident page and the AirNav Radar blog page (it says "download the data"),
+      and drop both files into this folder; then compare the timestamps and altitudes directly.
