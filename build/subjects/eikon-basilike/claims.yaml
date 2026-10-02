@@ -4,6 +4,21 @@
 headline: "Eikon Basilike (1649): Milton Charged Charles I's Prayer Was Copied Word for Word From Sidney"
 headline_claim: eikon-milton-pamela-charge
 headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
+verdict:
+  question: "Who wrote Eikon Basilike, the King's Book of 1649: Charles I or John Gauden?"
+  answer: unsettled
+  headline: "Unsettled. Milton charged that a prayer in it was copied from Sidney (established). Who wrote the book is not decided."
+  text: >
+    It is established that Milton, in Eikonoklastes, charged that a prayer printed as the King's own was 'stol'n word for word' from Pamela's prayer in Sidney's Arcadia. It is also established that Gauden claimed after the Restoration
+    to have written the book. Neither settles authorship, and whether the prayer was planted by Milton's side is a separate claim we have not examined. Our first measurements find the text we tested does not carry Charles's measured writing habits,
+    but that is a low-confidence result of ours that no one outside the project has reviewed, and the text tested has no prayers at all. No published computational study of the book was found.
+  lean:
+    toward: "Not Charles I as the sole author of the text as printed"
+    strength: slight
+    because: "The first-edition text we tested does not carry Charles's measured writing habits: it sits as far from his own prose as other clergy do (claim eikon-text-lacks-charles-habits)."
+    caveats: "Our own low-confidence result, unreviewed. It does not point to Gauden: that test has not been run (claim eikon-style-singles-out-gauden). The comparison is between kinds of writing as well as authors. The text tested has no prayers at all."
+  basis: [eikon-milton-pamela-charge, eikon-gauden-claimed-authorship, eikon-charles-wrote-book, eikon-text-lacks-charles-habits, eikon-no-computed-study-found]
+  would_settle: "Gauden's own letters read directly, an edition-by-edition account of when the Pamela prayer was added, and a reviewed measurement on enough genre-matched text."
 search_summary: >
   Did Milton accuse Charles I's King's Book of plagiarism? Yes: Eikonoklastes says a prayer in it was stol'n word for word from Pamela's prayer in Sidney's Arcadia. Who wrote the book is not settled.
 url_slug: eikon-basilike-1649-milton-charged-kings-prayer-copied-from-sidney

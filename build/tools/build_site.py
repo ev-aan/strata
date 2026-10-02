@@ -81,6 +81,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nodes as _nodes
 NODES = _nodes.load_nodes()
 CUR = {"slug": ""}
+VERD = {}
 TAX = yaml.safe_load(open(os.path.join(ROOT, "build", "taxonomy.yaml")))
 AREAS, QTYPES = TAX["areas"], TAX["question_types"]
 META = {}   # slug -> {sub, area, areas, types, popular}
@@ -101,6 +102,21 @@ def node_html(nid, verb=""):
         img = f'<a href="{E(orig)}" target="_blank" rel="noopener">{tag}</a>' if orig else tag
     return (f'<li>{img}{("<span class=pill>" + E(verb) + "</span> ") if verb else ""}<b>{E(n["label"])}</b> <span class="small">· {E(str(n["time"])[:10])} · {E(n["type"])} · node {E(nid)} rev {E(n["rev"])}</span>'
             f'<br><span class="small">{srcs}</span></li>')
+
+ANS = {"yes": "Yes", "no": "No", "leans_yes": "Leans yes", "leans_no": "Leans no", "unsettled": "Unsettled", "partly": "Partly"}
+
+def verdict_html(v, slug, prefix=""):
+    """The bottom-line box: the question, the answer in words, why, and what would settle it. No percentages: see SCHEMA N23."""
+    if not v: return ""
+    cls = {"yes": "s-established", "no": "s-refuted", "unsettled": "s-contested", "partly": "s-contested"}.get(v["answer"], "s-contested")
+    links = " ".join(f'<a href="{prefix}digs/{E(slug)}/#{E(c)}">{E(c)}</a>' for c in v.get("basis", []))
+    return (f'<div class="claim" style="border-width:2px"><p class="eyebrow">Where this stands</p><p><b>{E(v["question"])}</b></p>'
+            f'<p><span class="pill {cls}">{E(ANS.get(v["answer"], v["answer"]))}</span> <b>{E(v["headline"])}</b></p>'
+            f'<p>{E(" ".join(str(v["text"]).split()))}</p>'
+            + (f'<p><b>Which way the evidence leans:</b> {E(v["lean"]["strength"])}ly toward <b>{E(v["lean"]["toward"])}</b>. {E(v["lean"]["because"])}</p><p class="small"><b>Why this is not a finding.</b> {E(v["lean"]["caveats"])}</p>' if v.get("lean") else "") +
+            f'<p class="small"><b>What would settle it.</b> {E(v["would_settle"])}</p>'
+            f'<p class="small">Based on: {links}</p>'
+            f'<p class="small">We give no probability figure. Confidence words describe how sure we are of the basis, and no source supplies a number that would not be invented.</p></div>')
 
 order = {"refuted": 0, "established": 1, "contested": 2, "proposed": 3, "searched_gap": 4}
 if os.path.exists(OUT): shutil.rmtree(OUT)
@@ -151,6 +167,8 @@ for sub in CFG["publish"]:
                  + (" · Starts from a widely shared claim" if _a.get("popular_claims") else "") + "</p>")
     body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{_tags}{banner}'
             f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>')
+    body += verdict_html(cl.get("verdict"), slug)
+    VERD[sub] = (cl.get("verdict"), slug)
     if hc: body += f'<h2>The headline finding</h2>{claim_html(hc)}'
     body += f'<p>{E(" ".join(str(cl.get("description", "")).split()))}</p>'
     if cl.get("divergence_note"): body += f'<h2>Where evidence and belief differ</h2><p>{E(" ".join(str(cl["divergence_note"]).split()))}</p>'
@@ -229,6 +247,13 @@ _ideas = yaml.safe_load(open(os.path.join(ROOT, "build", "ideas.yaml")))
 _lab = {"parked": "parked", "exploring": "exploring", "done": "done"}
 _li = "".join(f'<li id="{E(i["id"])}"><b>{E(i["title"])}</b> <span class="pill">{E(_lab.get(i["status"], i["status"]))}</span><br>{E(" ".join(str(i["summary"]).split()))}</li>' for i in _ideas["ideas"])
 write("ideas/index.html", page("Ideas for exploration", f'<p class="eyebrow">Ideas</p><h1>Ideas for exploration</h1><p>{E(" ".join(str(_ideas["intro"]).split()))}</p><ul class="l">{_li}</ul><p><a href="{E(CFG["issues_url"])}">Suggest an idea or a dig</a>.</p>', "Ideas and possible next digs for Stratah, with their status.", "/ideas/", depth=1))
+_QMAP = {"casket-letters": "casket-letters", "eikon-basilike": "eikon-basilike"}
+for _sub, _qd in _QMAP.items():
+    _qp = os.path.join(OUT, "questions", _qd, "index.html")
+    if os.path.exists(_qp) and _sub in VERD and VERD[_sub][0]:
+        _q = open(_qp, encoding="utf-8").read()
+        _q = re.sub(r"<!--VERDICT-->", lambda m: verdict_html(VERD[_sub][0], VERD[_sub][1], prefix="../../"), _q, count=1)
+        open(_qp, "w", encoding="utf-8").write(_q)
 _hp = os.path.join(OUT, "index.html")
 if os.path.exists(_hp):
     _h = open(_hp, encoding="utf-8").read()

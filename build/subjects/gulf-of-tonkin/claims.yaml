@@ -20,6 +20,16 @@
 headline: "Gulf of Tonkin Incident: The August 4, 1964 Attack Never Happened, NSA's Own Study Found"
 headline_claim: tonkin-aug4-attack-occurred
 headline_status: draft           # set back to draft 2026-10-02 by owner: open dig, published as such; return to review when its anchors are read
+verdict:
+  question: "Did North Vietnamese boats attack US destroyers a second time on 4 August 1964?"
+  answer: "no"
+  headline: "No. The second attack did not happen (high confidence). What senior officials knew about that is unsettled."
+  text: >
+    NSA's own historian re-read the intercepts and concluded that no attack took place that night. The intercept reports describe aircraft and salvage of boats damaged on 2 August, not an attack on the ships, and doubts reached the
+    White House within hours. The 2 August clash with USS Maddox did happen. Whether senior officials knew the 4 August attack had not occurred when they sought the Resolution is a separate question, and the documents read support
+    only that they knew of doubts. Two limits: the refutation rests largely on Hanyok's re-analysis, which we read but did not repeat, and the original Vietnamese text of the key report cannot be located.
+  basis: [tonkin-aug4-attack-occurred, tonkin-aug2-maddox-engaged, tonkin-senior-doubts-documented, tonkin-senior-knowledge]
+  would_settle: "New intercepts, ship logs or North Vietnamese records showing boats present and firing on 4 August, or the missing original text showing it concerned 4 August."
 search_summary: >
   Did a second Gulf of Tonkin attack happen on August 4, 1964? No. NSA's own historian found it never happened, though the August 2 clash was real. What officials knew is still debated.
 

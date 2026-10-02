@@ -203,6 +203,28 @@ def check_subject(r, sdir):
             ids[cid] = c
             check_claim(r, subject, c, legacy)
 
+        vd = d.get("verdict")
+        if vd:
+            for k_ in ("question", "answer", "headline", "text", "basis", "would_settle"):
+                if not vd.get(k_):
+                    r.err(subject, f"verdict missing `{k_}`")
+            if vd.get("answer") not in ("yes", "no", "leans_yes", "leans_no", "unsettled", "partly"):
+                r.err(subject, f"verdict answer `{vd.get('answer')}` unknown")
+            _txt = " ".join(str(vd.get(k_, "")) for k_ in ("headline", "text")) + " " + " ".join(str(v_) for v_ in (vd.get("lean") or {}).values())
+            if "%" in _txt or "percent" in _txt.lower():
+                r.err(subject, "a verdict must not state a percentage: no source supplies one (SCHEMA N23)")
+            if len(str(vd.get("headline", ""))) > 200:
+                r.warn(subject, "verdict headline is over 200 characters")
+            _by = {c_.get("id"): c_ for c_ in claims}
+            for b_ in vd.get("basis") or []:
+                if b_ not in _by:
+                    r.err(subject, f"verdict basis `{b_}` is not a claim in this subject")
+            if vd.get("answer") in ("leans_yes", "leans_no") and not any(_by.get(b_, {}).get("confidence") in ("moderate", "high") for b_ in vd.get("basis") or []):
+                r.err(subject, "a 'leans' verdict needs at least one basis claim at moderate or high confidence; otherwise say unsettled and give a `lean` note")
+            if vd.get("lean"):
+                for k_ in ("toward", "strength", "because", "caveats"):
+                    if not vd["lean"].get(k_):
+                        r.err(subject, f"verdict lean missing `{k_}`")
         hc = d.get("headline_claim")
         if hc is not None:
             target = ids.get(hc)
