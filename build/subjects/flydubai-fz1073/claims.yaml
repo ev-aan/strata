@@ -7,7 +7,7 @@
 #  - "manufactured" is tested as claims: who would have had to do what, and what evidence would show it.
 # Authored 2026-10-02 for independent review. The author does not write review.yaml.
 # ---------------------------------------------------------------------------
-headline: "Flydubai FZ1073: airline and authorities report an attack; no evidence of staging; motive open"
+headline: "Flydubai FZ1073: Saudi ministry says co-pilot assaulted captain; no evidence of staging found"
 headline_claim: fz1073-diverted-tabuk
 headline_status: draft           # live event; the headline rests partly on an absence claim (no evidence of staging), so it stays a draft
 event_status: live
@@ -17,7 +17,7 @@ assessment:
   answer: unsettled
   headline: "Unsettled, leaning slightly no: no evidence of staging was found, but only statements and reports were read. Motive and vetting are open."
   key_points:
-    - "The airline, the UAE and Saudi Arabia (the latter as quoted) report an assault, injuries and a landing at Tabuk; no recorder or raw tracker data was read."
+    - "Flydubai and the UAE say an altercation; the Saudi ministry (as quoted) says an assault with injuries to both; landing at Tabuk. No raw data read."
     - "No evidence was found that anyone staged it or let it happen; the Omani-pilot and timing doubts are open questions, not findings."
     - "No investigating body has given a motive, a weapon, how the co-pilot was rostered, or what the recorders show."
   text: >
@@ -27,7 +27,7 @@ assessment:
     On the owner's three points. (1) The co-pilot is described as Omani by Israel's Prime Minister and an Israeli official; an unnamed Omani official reportedly told CBS he was born in Oman and holds Omani citizenship; no UAE, Saudi, Flydubai or Omani authority has publicly confirmed it. Whether any instrument bars Omani pilots from the Israel route is unresolved: the Jerusalem Post reports both that Flydubai's own agreement does and that the bilateral agreement does not, which concern different documents that nobody has published.
     A rule breach, if shown, would point to a rostering or vetting failure; it would not by itself show the event was arranged. (2) The timing: the flight fell 27 days before Israel's election and 7 days before the third anniversary of 7 October, and the day after the Prime Minister warned of attacks before the election. Opposition figures say the event is being used politically; that is a claim about use, and can be true without any
     staging. No evidence of foreknowledge or arrangement has been found; the Prime Minister says Israel had no specific warning. A fair test needs a base rate, which has not been computed. (3) Looking inconsistent: the reports differ on several numbers and labels, some explained by clocks, slices of one dive or wording, and several unresolved (landing time, passenger count, descent figures, pilots' duty status). A discrepancy is not evidence of fabrication.
-    On who has called it terrorism: officials on both the Israeli side (the Prime Minister, Defence Minister, President) and the UAE side (a senior adviser, as reported by CNN) have used the word; these are accusations, and the airline says motive is unknown while the UAE is investigating it. What is not known: the weapon, the motive, whether the co-pilot was vetted, the cabin-pressure and acceleration record, and who took the controls first.
+    On who has called it terrorism: officials on both the Israeli side (the Prime Minister, Defence Minister, President) and the UAE side (a top UAE official, as reported by CNN) have used the word; these are accusations, and the airline says motive is unknown while the UAE is investigating it. What is not known: the weapon, the motive, whether the co-pilot was vetted, the cabin-pressure and acceleration record, and who took the controls first.
   lean:
     toward: "No: the event was not manufactured"
     short: "no"
@@ -63,7 +63,7 @@ divergence_note: >
   Evidence and belief diverge in three places. First, a story that the event was staged or a "false flag" spread within about an hour of the emergency squawk and has been repeated at scale
   (an advocacy group counted thousands of such posts; a faked news video was produced); it rests on no evidence found, while the records read (statements by the airline, the UAE and, as quoted, Saudi Arabia, and tracker reports) agree with a real emergency, injured pilots and a diversion; raw tracker and recorder data were not opened.
   Second, the Omani-pilot point is a real question that Israeli officials and reporters are asking; the popular reading ("so it was arranged") is one of at least five explanations and the evidence does not choose among
-  them. Third, the official Israeli account (a terror attack, "Islamist radical indoctrination", a possible Iran link) has gone further than any investigating authority: the airline says motive is unknown, and the UAE says it is examining motives, including any terrorist link and prior planning. Officials on several sides have used the word terrorist (Israel's Defence Minister and President; a senior UAE adviser, per CNN), so it is an accusation by officials, not a finding.
+  them. Third, the official Israeli account (a terror attack, "Islamist radical indoctrination", a possible Iran link) has gone further than any investigating authority: the airline says motive is unknown, and the UAE says it is examining motives, including any terrorist link and prior planning. Officials on several sides have used the word terrorist (Israel's Defence Minister and President; a top UAE official, per CNN), so it is an accusation by officials, not a finding.
   The gap between what has been asserted and what has been shown is recorded claim by claim, and statements by officials are adoption-class until backed by material.
 
 claims:
@@ -312,7 +312,7 @@ claims:
     state: established
     exception: "Established as who said what, from reports of interviews and briefings; the interviews themselves were not watched."
     statement: >
-      Israel's Prime Minister told CNN on 1 October that the co-pilot is an Omani national, and an Israeli official told Reuters the same; Israeli sources first said so to the Jerusalem Post on 30 September. No UAE, Saudi, Flydubai or Omani authority had publicly confirmed it on the record by 2 October; CBS reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship.
+      Israel's Prime Minister told CNN that the co-pilot is an Omani national (CNN does not date the interview; it was on 30 September or 1 October), Israel's President said so on BBC Radio 4 on 1 October (per The National), and an Israeli official told Reuters the same; Israeli sources first said so to the Jerusalem Post on 30 September. No UAE, Saudi, Flydubai or Omani authority had publicly confirmed it on the record by 2 October; CBS reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship.
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
@@ -322,7 +322,7 @@ claims:
       steps:
         - {domain: independent_corroboration, effect: up1, reason: "The statement is reported by CNN (an interview with the Prime Minister), Reuters (an Israeli official), the Jerusalem Post (Israeli sources) and CBS; each records the same speakers saying it."}
         - {domain: risk_of_bias, effect: down1, reason: "Every outlet traces to Israeli officials (the Prime Minister, an Israeli official, Israeli sources); one origin on the Israeli side, so the count of outlets does not add independence. This is why the claim is held at moderate, as the other secondary-read claims are."}
-        - {domain: inconsistency, effect: none, reason: "The National attributes the statement to President Herzog, while the others attribute it to Netanyahu or to officials; likely a slip in one outlet. Considered; the claim is about Israel's side and holds either way."}
+        - {domain: inconsistency, effect: none, reason: "The National reports a different speaker, President Herzog (BBC Radio 4, 1 Oct), who also said it; this is a third Israeli speaker, not an inconsistency. Considered and not applied."}
       reviewed: false
     evidential_weight: 3   # of 5; a statement by officials is adoption-class
     anchor_checked: secondary
@@ -335,7 +335,7 @@ claims:
       type: statements-via-reports
       description: >
         CNN explainer [read, updated 1 Oct]: "Netanyahu told CNN that the suspect was an Omani national." Al Jazeera [read]: "An Israeli official who spoke to Reuters on condition of anonymity identified the attacker as an Omani national."
-        Jerusalem Post, 30 Sep [read]: "Israeli sources later corroborated to the Post that the suspected hijacker is believed to be of Omani nationality, according to initial investigations." The National [read]: neither "Oman, UAE authorities nor flydubai have confirmed his nationality." Reuters 2 Oct [read]: "Omani authorities have not commented on the incident." ABC Verify [read]: posts about the pilot's nationality spread before authorities released anything, and Reuters then reported the Israeli official.
+        Jerusalem Post, 30 Sep [read]: "Israeli sources later corroborated to the Post that the suspected hijacker is believed to be of Omani nationality, according to initial investigations." The National [read]: "Herzog alleged that the co-pilot is Omani" (BBC Radio 4, Thursday 1 Oct). The National [read]: neither "Oman, UAE authorities nor flydubai have confirmed his nationality." Reuters 2 Oct [read]: "Omani authorities have not commented on the incident." ABC Verify [read]: posts about the pilot's nationality spread before authorities released anything, and Reuters then reported the Israeli official.
       sources: [src-cnn-explainer, src-aljazeera-explainer, src-jpost-910192, src-national-ag, src-reuters-kfgo, src-abc-verify]
     basis: >
       Bloomberg's headline on the same statement was not read (HTTP 403).
@@ -482,7 +482,7 @@ claims:
     exception: "Established as who said what and when, from reports of interviews; the interviews themselves were not watched."
     statement: >
       On motive and character of the attack, Israel's Prime Minister said on 1 October (Fox News, as quoted by Ynet) that the attacker pilot "underwent Islamist radical indoctrination" and on 2 October (CBS) that "whoever sent him will pay a very heavy price", while also saying it is too early to say whether Iran was involved; the US President said on 1 October that an Iran link was likely "based on what I'm hearing"; an Israeli official told Ynet no Iran link has been found so far.
-      Israel's Defence Minister called it an "attempted jihadist terror attack" and Israel's President called the co-pilot a "terrorist" (BBC Radio 4, 1 October, per The National); a senior UAE official, Anwar Gargash, "on Friday described the incident as a 'dangerous terrorist act'" (CNN, 2 October). The airline says motive is unknown; the UAE says it is examining all motives, including any terrorist link and prior planning. All of these are accusations or assessments by officials, not findings.
+      Israel's Defence Minister called it an "attempted jihadist terror attack" and Israel's President called the co-pilot a "terrorist" (BBC Radio 4, 1 October, per The National); a top UAE official (CNN's description), Anwar Gargash, "on Friday described the incident as a 'dangerous terrorist act'" (CNN, 2 October). The airline says motive is unknown; the UAE says it is examining all motives, including any terrorist link and prior planning. All of these are accusations or assessments by officials, not findings.
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
@@ -507,7 +507,7 @@ claims:
   - id: fz1073-motive-not-established
     state: searched_gap
     statement: >
-      No investigating authority has established a motive, an affiliation or any direction by a third party; "terrorist act" (said by Israeli officials and, per CNN, by a senior UAE official), "suicide attempt", "Islamist indoctrination" and "Iran link" are accusations or assessments by officials so far, not findings; the UAE says it is examining motive, including any terrorist link and prior planning.
+      No investigating authority has established a motive, an affiliation or any direction by a third party; "terrorist act" (said by Israeli officials and, per CNN, by a top UAE official), "suicide attempt", "Islamist indoctrination" and "Iran link" are accusations or assessments by officials so far, not findings; the UAE says it is examining motive, including any terrorist link and prior planning.
     evidence_class: primary_text
     confidence: low
     statement_kind: search_result
@@ -672,7 +672,7 @@ claims:
     assumptions:
       - {text: "The outlets read report the same underlying event and quote the same few records.", if_wrong: "If two outlets described different events, the discrepancies below would not be comparable."}
     alternatives:
-      - {text: "The discrepancies indicate fabricated or coordinated reporting.", why_not_preferred: "Each resolved item has a simple cause (a time zone, a different slice of the descent, a transposition); no evidence of fabrication was found, and a discrepancy alone is not evidence of it."}
+      - {text: "The discrepancies indicate fabricated or coordinated reporting.", why_not_preferred: "Each resolved item has a simple cause (a time zone, a different slice of the descent, and, for the landing time, no explanation yet, which is listed as open); no evidence of fabrication was found, and a discrepancy alone is not evidence of it."}
     evidential_weight: 2   # of 5
     anchor_checked: no
     adoption_weight: 3   # of 5
@@ -686,7 +686,7 @@ claims:
       type: comparison-of-reports
       description: >
         RESOLVED OR EXPLAINED (all [read]; the landing time is listed under STILL OPEN): (1) takeoff: CNN's "6:05 a.m. local time" is 03:05 UTC on the UTC+3 clock CNN uses elsewhere, matching FlightAware (07:05 at +04), AirNav and Flightradar24; CNN's "10:05 p.m. ET" is one hour off (03:05 UTC is 11:05 p.m. EDT), a correction of log L-03 (see L-17). (2) distress call: CNN's 8:31 is the 7700 squawk (05:31 UTC); Tabuk air traffic control logged a radio distress call at 8:44 Saudi time (05:44 UTC). (3) landing time is NOT resolved: 9:45 a.m. local (06:45 UTC) from the Saudi ministry and Tabuk airport, 9:54 from CNN (source not stated), and about 06:58 UTC from AirNav's blog and Flightradar24's final signal (Khaleej Times); a last signal can be later than touchdown, but AirNav's wording equates them.
-        (4) squawk times: Flightradar24 (05:31, 05:38) and AirNav Radar (05:28:48, about 05:35) differ by two to three minutes; unexplained but small. (5) the drop: different slices of one dive (see fz1073-descent-magnitude). (6) who said "Omani": Netanyahu, an Israeli official, Israeli sources; The National says Herzog, probably a slip.
+        (4) squawk times: Flightradar24 (05:31, 05:38) and AirNav Radar (05:28:48, about 05:35) differ by two to three minutes; unexplained but small. (5) the drop: different slices of one dive (see fz1073-descent-magnitude). (6) who said "Omani": Netanyahu, Israel's President (BBC Radio 4, via The National), an Israeli official and Israeli sources; these are several Israeli speakers, not a discrepancy.
         STILL OPEN: (3) the landing time (see above); (4) the first-signal times (two to three minutes apart); (7) 174 passengers plus 8 crew (Saudi) against 172 passengers and crew (airline CEO); (8) the additional pilots described as on-duty crew, reserve pilots, another air crew, off-duty, British; (9) who first reached the controls (passenger accounts differ); (10) the weapon; (11) the early "hijacking ruled out" report and the 7500 squawk; (12) the number of those injured.
       sources: [src-cnn-explainer, src-cnn-live, src-flightaware-history, src-airnav-blog, src-khaleej-timeline, src-aljazeera-saudi, src-flydubai-updates, src-reuters-kfgo, src-national-ag]
     basis: >

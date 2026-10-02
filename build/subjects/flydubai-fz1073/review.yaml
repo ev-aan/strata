@@ -47,30 +47,34 @@ open_items: []
 needs_manual_check:
 - '8 established/refuted claims anchored below primary: fz1073-flight-times, fz1073-both-pilots-injured, fz1073-copilot-custody-unnamed, fz1073-israel-says-omani,
   fz1073-motive-statements, fz1073-timing-dates, fz1073-political-use-alleged, fz1073-event-simulated'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.00): "revealed an assault on the captain by the co-pilot,
-  resulting in vario..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.38): "the pilot was assaulted by his co-pilot, resulting
-  in various injuries..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.00): "revealed an assault on the captain by the co-pilot,
-  resulting in vario..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.85): "has now returned to the UAE following medical clearance..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.00): "a seriously wounded pilot ... lying on the floor..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-weapon-not-established (match 0.40): "he could have carried a knife, or an ax..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.84): "was successfully secured by on-duty
-  flydubai crew travelling on the fl..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.85): "the pilots who secured the aircraft
-  and landed it safely..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.80): "the passengers on board who assisted
-  our crew..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.00): "the pilot told me he was taking
-  over..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.00): "two other pilots on board, British
-  pilots..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-copilot-custody-unnamed (match 0.00): "left Saudi Arabia for Abu Dhabi on Thursday morning,
-  accompanied by th..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-copilot-custody-unnamed (match 0.00): "The accused pilot has not been publicly identified..."'
-- 'quote not matched in stored sources (OCR noise possible): fz1073-copilot-custody-unnamed (match 0.28): "The co-pilot''s identity has not been publicly
-  disclosed beyond his nat..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.00): "revealed an assault on the captain by the
+  co-pilot, resulting in vario..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.38): "the pilot was assaulted by his co-pilot,
+  resulting in various injuries..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.00): "revealed an assault on the captain by the
+  co-pilot, resulting in vario..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.85): "has now returned to the UAE following medical
+  clearance..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-both-pilots-injured (match 0.00): "a seriously wounded pilot ... lying on
+  the floor..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-weapon-not-established (match 0.40): "he could have carried a knife, or an
+  ax..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.84): "was successfully secured
+  by on-duty flydubai crew travelling on the fl..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.85): "the pilots who secured
+  the aircraft and landed it safely..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.80): "the passengers on board
+  who assisted our crew..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.00): "the pilot told me he was
+  taking over..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-crew-and-passengers-secured-aircraft (match 0.00): "two other pilots on board,
+  British pilots..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-copilot-custody-unnamed (match 0.00): "left Saudi Arabia for Abu Dhabi on
+  Thursday morning, accompanied by th..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-copilot-custody-unnamed (match 0.00): "The accused pilot has not been publicly
+  identified..."'
+- 'quote not matched in stored sources (OCR noise possible): fz1073-copilot-custody-unnamed (match 0.28): "The co-pilot''s identity has not been
+  publicly disclosed beyond his nat..."'
 - 'quote not matched in stored sources (OCR noise possible): fz1073-copilot-custody-unnamed (match 0.53): "was detained by Saudi Arabian authorities..."'
 - 'dates, names, patent or document numbers: verify each against the source'
 - every refuted claim names its target and rests on material or primary-text evidence (Rule 9)
@@ -92,62 +96,65 @@ quotes:
 reviewed_by: independent review agent (second reviewer)
 reviewed_on: '2026-10-02'
 notes: 'Round 1 of an independent peer review. The reviewer did not write the dig. Verdict: revisions requested (not failed): the core facts (diversion
-  and landing at Tabuk, injuries, UAE investigation, who-said-what on nationality and motive) check out against the sources, but four findings would mislead
-  a reader and the rest are accuracy or hygiene fixes.
+  and landing at Tabuk, injuries, UAE investigation, who-said-what on nationality and motive) check out against the sources, but four findings
+  would mislead a reader and the rest are accuracy or hygiene fixes.
 
-  SOURCES OPENED BY THE REVIEWER (all fetched fresh on 2026-10-02, text compared with the quotations): flydubai newsroom statements 1-4 (stored text matches
-  the page); UAE MoFA statement (stored text matches); Emirates 24|7 GCAA text (stored text matches); Al Jazeera (Saudi probe piece, explainer, UAE piece);
-  CNN explainer and CNN live blog; Reuters via KFGO; Jerusalem Post 910076, 910192, 910349, 910405; Ynet; CBS; ThePrint; ABC News Verify; IBTimes UK; ProtoThema;
-  The National; Khaleej Times; AirNav Radar blog; FlightAware history page; Jewish Chronicle (2023). Not reachable or not opened: the Saudi Interior Ministry
-  original (SPA), Tabuk airport original, WAM originals, Flightradar24, raw ADS-B (OpenSky, ADS-B Exchange, AirNav CSV), FlightAware track log, gov.il,
-  Bloomberg, Axios, Times of Israel, Haaretz, the 2020 UAE-Israel air agreement text; The Conversation was not re-opened.
+  SOURCES OPENED BY THE REVIEWER (all fetched fresh on 2026-10-02, text compared with the quotations): flydubai newsroom statements 1-4 (stored
+  text matches the page); UAE MoFA statement (stored text matches); Emirates 24|7 GCAA text (stored text matches); Al Jazeera (Saudi probe piece,
+  explainer, UAE piece); CNN explainer and CNN live blog; Reuters via KFGO; Jerusalem Post 910076, 910192, 910349, 910405; Ynet; CBS; ThePrint;
+  ABC News Verify; IBTimes UK; ProtoThema; The National; Khaleej Times; AirNav Radar blog; FlightAware history page; Jewish Chronicle (2023).
+  Not reachable or not opened: the Saudi Interior Ministry original (SPA), Tabuk airport original, WAM originals, Flightradar24, raw ADS-B (OpenSky,
+  ADS-B Exchange, AirNav CSV), FlightAware track log, gov.il, Bloomberg, Axios, Times of Israel, Haaretz, the 2020 UAE-Israel air agreement text;
+  The Conversation was not re-opened.
 
-  CLAIMS CHECKED (anchor says what the claim says? source opened / passage found / matches): diverted-tabuk (yes/yes/yes); flight-times (yes/yes/yes; all
-  conversions re-done and correct: 07:05 +04 = 03:05 UTC, 8:44 and 9:45 Saudi = 05:44 and 06:45 UTC, 9:21 UAE = 05:21 UTC); both-pilots-injured (yes/yes/yes;
-  Saudi wording confirmed in Al Jazeera and CNN live blog); weapon-not-established (yes/yes/yes); crew-and-passengers-secured-aircraft (yes/yes/partly,
-  see R1-5); copilot-custody-unnamed (yes/yes/yes); israel-says-omani (yes/yes/yes); omani-nationality-unconfirmed (yes/yes/yes; CBS and JPost wording confirmed);
-  omani-barred-rule (yes/yes/partly, see R1-3); uae-investigation (yes/yes/yes); motive-statements (yes/yes/partly, see R1-2 and R1-4); timing-dates (yes/yes/yes;
-  27 and 7 days correct, 29 Sep was a Tuesday); political-use-alleged (yes/yes/yes); event-simulated (yes/yes/partly, see R1-1); reports-inconsistent (yes/yes/partly,
-  see R1-7); descent-magnitude (yes/yes/yes; all five figures confirmed); transmission.yaml figures (67 minutes, 4,136, 2,963, 1.5 million, 300,000 all
-  confirmed against JPost and ABC; no poster is named).
+  CLAIMS CHECKED (anchor says what the claim says? source opened / passage found / matches): diverted-tabuk (yes/yes/yes); flight-times (yes/yes/yes;
+  all conversions re-done and correct: 07:05 +04 = 03:05 UTC, 8:44 and 9:45 Saudi = 05:44 and 06:45 UTC, 9:21 UAE = 05:21 UTC); both-pilots-injured
+  (yes/yes/yes; Saudi wording confirmed in Al Jazeera and CNN live blog); weapon-not-established (yes/yes/yes); crew-and-passengers-secured-aircraft
+  (yes/yes/partly, see R1-5); copilot-custody-unnamed (yes/yes/yes); israel-says-omani (yes/yes/yes); omani-nationality-unconfirmed (yes/yes/yes;
+  CBS and JPost wording confirmed); omani-barred-rule (yes/yes/partly, see R1-3); uae-investigation (yes/yes/yes); motive-statements (yes/yes/partly,
+  see R1-2 and R1-4); timing-dates (yes/yes/yes; 27 and 7 days correct, 29 Sep was a Tuesday); political-use-alleged (yes/yes/yes); event-simulated
+  (yes/yes/partly, see R1-1); reports-inconsistent (yes/yes/partly, see R1-7); descent-magnitude (yes/yes/yes; all five figures confirmed); transmission.yaml
+  figures (67 minutes, 4,136, 2,963, 1.5 million, 300,000 all confirmed against JPost and ABC; no poster is named).
 
-  Wire reports: Reuters text is counted once (src-reuters-kfgo), and Al Jazeera items that quote Reuters are used for different facts; no double counting
-  found. The five outlets behind israel-says-omani all trace to Israeli officials, which the claim says.
+  Wire reports: Reuters text is counted once (src-reuters-kfgo), and Al Jazeera items that quote Reuters are used for different facts; no double
+  counting found. The five outlets behind israel-says-omani all trace to Israeli officials, which the claim says.
 
-  ASSESSMENT QUESTIONS FROM THE OWNER''S BRIEF. (a) Refuted at moderate on a secondary tracker read: the finding (the event was real) is very likely right,
-  but as written it does not meet Rule 9 (material or primary-text evidence): the legs that are material (raw ADS-B, recorders, hospital records) were not
-  read, and the legs that were read are statements by parties (airline, UAE), reports of statements (Saudi, India) and a list page that shows only a departure
-  row. See R1-1 for the options. (b) Omani rule: sides are attributed correctly in substance but the two Jerusalem Post sources speak about different documents
-  (Flydubai''s own operating agreement versus the bilateral agreement), so they do not actually contradict one another; ''contested'' is the wrong label
-  and the statement is a meta-claim. Low confidence is honest. See R1-3. (c) Guardrails: the co-pilot is not named anywhere; religion and ethnicity are
-  not speculated about; ''indoctrination'', ''terror'' and ''Iran'' are recorded as statements. The captain is named in timeline.yaml: he is a victim named
-  by India''s foreign ministry, the UAE civil aviation authority, Israel''s Prime Minister and every outlet, so the guardrail (about suspects and private
-  individuals not named by authorities) is met and I would keep the name there; it is an owner decision whether to also keep it in the manifest titles and
-  URLs, which carry it unavoidably. Passenger names: claims.yaml names one passenger (R1-6). (d) The assessment says slightly more than the claims in two
-  places (R1-8). The headline is 89 characters and still draft. (e) Dates, times and places in the timeline and the three nodes check out (UTC+4 Dubai,
-  UTC+3 Tabuk and Israel on 30 Sep 2026; Israel''s clock change is later in October); two label problems are in R1-9. (f) Log: only the dig_status line
-  changed in L-01 to L-15; L-16 to L-21 are new entries and corrections to earlier readings are new entries (L-17, L-18). The log statement in L-17 and
-  L-20 that passenger names were removed is not true of claims.yaml (R1-6).
+  ASSESSMENT QUESTIONS FROM THE OWNER''S BRIEF. (a) Refuted at moderate on a secondary tracker read: the finding (the event was real) is very
+  likely right, but as written it does not meet Rule 9 (material or primary-text evidence): the legs that are material (raw ADS-B, recorders,
+  hospital records) were not read, and the legs that were read are statements by parties (airline, UAE), reports of statements (Saudi, India)
+  and a list page that shows only a departure row. See R1-1 for the options. (b) Omani rule: sides are attributed correctly in substance but the
+  two Jerusalem Post sources speak about different documents (Flydubai''s own operating agreement versus the bilateral agreement), so they do
+  not actually contradict one another; ''contested'' is the wrong label and the statement is a meta-claim. Low confidence is honest. See R1-3.
+  (c) Guardrails: the co-pilot is not named anywhere; religion and ethnicity are not speculated about; ''indoctrination'', ''terror'' and ''Iran''
+  are recorded as statements. The captain is named in timeline.yaml: he is a victim named by India''s foreign ministry, the UAE civil aviation
+  authority, Israel''s Prime Minister and every outlet, so the guardrail (about suspects and private individuals not named by authorities) is
+  met and I would keep the name there; it is an owner decision whether to also keep it in the manifest titles and URLs, which carry it unavoidably.
+  Passenger names: claims.yaml names one passenger (R1-6). (d) The assessment says slightly more than the claims in two places (R1-8). The headline
+  is 89 characters and still draft. (e) Dates, times and places in the timeline and the three nodes check out (UTC+4 Dubai, UTC+3 Tabuk and Israel
+  on 30 Sep 2026; Israel''s clock change is later in October); two label problems are in R1-9. (f) Log: only the dig_status line changed in L-01
+  to L-15; L-16 to L-21 are new entries and corrections to earlier readings are new entries (L-17, L-18). The log statement in L-17 and L-20 that
+  passenger names were removed is not true of claims.yaml (R1-6).
 
-  Conformance: python3 build/conformance.py reports 0 errors (98 warnings across the repository). This subject is not in build/site.yaml publish, so the
-  publish-gate check does not apply to it. The quote check lists many quotes as unmatched only because just three sources are stored; I matched the ones
-  in the claims by hand against the live pages (see above).
+  Conformance: python3 build/conformance.py reports 0 errors (98 warnings across the repository). This subject is not in build/site.yaml publish,
+  so the publish-gate check does not apply to it. The quote check lists many quotes as unmatched only because just three sources are stored; I
+  matched the ones in the claims by hand against the live pages (see above).
 
 
-  ROUND 2 (second reviewer, who did not write the dig or round 1). All ten round 1 requests are resolved (see each reviewer_note). Status stays revisions_requested
-  because two new blocking requests were found on a fresh pass: R2-1 (the Herzog attribution is called a slip but is a real, separate statement) and R2-2
-  (the headline and key point 1 say the airline and the UAE report an attack or assault; they say altercation). Three non-blocking items are R2-3 to R2-5.
-  Rule 9: fz1073-event-simulated is a searched gap with an absence anchor at low confidence and the lean (no, slight) matches it. Guardrails: the co-pilot
-  is not named anywhere I grepped; no passenger name in claims, timeline, nodes, manifest or transmission (one in log L-15, R2-5); no speculation on religion,
-  ethnicity or beliefs; accusations are recorded as accusations. Times: UTC conversions rechecked (07:05 +04 = 03:05; 9.21 UAE = 05:21; 8:44 and 9:45 Saudi
-  = 05:44 and 06:45; 10.58 UAE = 06:58; 10:57 UAE = 06:57; 5:30 pm UAE = 13:30; 11 pm UAE = 19:00; 10:34 at UTC+3 = 07:34); landing time is left open. Sources
-  opened fresh by this reviewer: flydubai newsroom (statements stored text matches the page header; stored MoFA and GCAA text read), CNN explainer and live
-  blog, Al Jazeera (Saudi probe, explainer, UAE piece), Khaleej Times, AirNav Radar blog, FlightAware history, Reuters via KFGO, Jerusalem Post 910192,
-  910405, 910349, 910076, Ynet, ThePrint, CBS, ABC News Verify, The National. Not reached or not opened: Saudi Interior Ministry and Tabuk airport originals,
-  WAM, Flightradar24, raw ADS-B (OpenSky, ADS-B Exchange, AirNav data file), FlightAware track log, gov.il, Bloomberg, Axios, Times of Israel, Haaretz,
-  IBTimes, Jewish Chronicle, ProtoThema, The Conversation. The repository working tree was mid-merge by another agent (conformance.py had conflict markers),
-  so conformance and review_dig were run on a clean checkout of the branch tip: 0 errors, 92 warnings (8 for this subject, all established claims anchored
-  below primary, each with an exception line); review_dig mechanical checks all pass.'
+  ROUND 2 (second reviewer, who did not write the dig or round 1). All ten round 1 requests are resolved (see each reviewer_note). Status stays
+  revisions_requested because two new blocking requests were found on a fresh pass: R2-1 (the Herzog attribution is called a slip but is a real,
+  separate statement) and R2-2 (the headline and key point 1 say the airline and the UAE report an attack or assault; they say altercation). Three
+  non-blocking items are R2-3 to R2-5. Rule 9: fz1073-event-simulated is a searched gap with an absence anchor at low confidence and the lean
+  (no, slight) matches it. Guardrails: the co-pilot is not named anywhere I grepped; no passenger name in claims, timeline, nodes, manifest or
+  transmission (one in log L-15, R2-5); no speculation on religion, ethnicity or beliefs; accusations are recorded as accusations. Times: UTC
+  conversions rechecked (07:05 +04 = 03:05; 9.21 UAE = 05:21; 8:44 and 9:45 Saudi = 05:44 and 06:45; 10.58 UAE = 06:58; 10:57 UAE = 06:57; 5:30
+  pm UAE = 13:30; 11 pm UAE = 19:00; 10:34 at UTC+3 = 07:34); landing time is left open. Sources opened fresh by this reviewer: flydubai newsroom
+  (statements stored text matches the page header; stored MoFA and GCAA text read), CNN explainer and live blog, Al Jazeera (Saudi probe, explainer,
+  UAE piece), Khaleej Times, AirNav Radar blog, FlightAware history, Reuters via KFGO, Jerusalem Post 910192, 910405, 910349, 910076, Ynet, ThePrint,
+  CBS, ABC News Verify, The National. Not reached or not opened: Saudi Interior Ministry and Tabuk airport originals, WAM, Flightradar24, raw
+  ADS-B (OpenSky, ADS-B Exchange, AirNav data file), FlightAware track log, gov.il, Bloomberg, Axios, Times of Israel, Haaretz, IBTimes, Jewish
+  Chronicle, ProtoThema, The Conversation. The repository working tree was mid-merge by another agent (conformance.py had conflict markers), so
+  conformance and review_dig were run on a clean checkout of the branch tip: 0 errors, 92 warnings (8 for this subject, all established claims
+  anchored below primary, each with an exception line); review_dig mechanical checks all pass.'
 rounds:
 - round: 1
   reviewed_on: '2026-10-02'
@@ -155,223 +162,232 @@ rounds:
   - id: R1-1
     target: fz1073-event-simulated
     severity: blocking
-    finding: 'The claim is state refuted, evidence_class primary_text, confidence moderate, anchor_checked secondary. Rule 9 needs material or primary-text
-      evidence against the target. What was actually read: (i) the airline and UAE statements, which are statements by interested parties and which NEWS_REVIEW.md
-      calls adoption-class until backed by material; (ii) the Saudi ministry and India''s foreign ministry, read only through CNN and Al Jazeera; (iii)
-      the FlightAware history page, which I opened: the 30 Sep row shows only a scheduled departure (07:05 +04, arrival cell ''(?)'') and the 1 Oct flights
-      as Cancelled; it records no emergency, no diversion and no landing, so it does not contradict a staging claim and the confidence_reasons line that
-      ''three independent trackers each record parts of it'' is overstated for FlightAware; (iv) AirNav''s blog, a company''s description of its own ADS-B
-      (the CSV was not opened), and Flightradar24 only through Al Jazeera, Reuters, CNN and Khaleej Times. No raw track, recorder, hospital record or court
-      record was read. Also the confidence arithmetic counts the same independent corroboration inside the ''high'' start and again as up1. The conclusion
-      (the event was real) is probably right, and IBTimes, ABC Verify and many named witnesses support it, but the label ''refuted'' with a lean built on
-      it is stronger than the reading. Either (a) re-state the claim as searched_gap with an absence anchor (''no evidence of staging found; the independent
-      records read through reports agree with the official account'') and keep the lean at ''no'' with lowered strength, or (b) keep refuted only after
-      the raw ADS-B (AirNav CSV or another network) or another material record has been opened and the anchor says so. Do not describe FlightAware as recording
-      the emergency. If kept refuted, change evidence_class honestly and remove the ''independent'' claim for FlightAware.'
+    finding: 'The claim is state refuted, evidence_class primary_text, confidence moderate, anchor_checked secondary. Rule 9 needs material or
+      primary-text evidence against the target. What was actually read: (i) the airline and UAE statements, which are statements by interested
+      parties and which NEWS_REVIEW.md calls adoption-class until backed by material; (ii) the Saudi ministry and India''s foreign ministry, read
+      only through CNN and Al Jazeera; (iii) the FlightAware history page, which I opened: the 30 Sep row shows only a scheduled departure (07:05
+      +04, arrival cell ''(?)'') and the 1 Oct flights as Cancelled; it records no emergency, no diversion and no landing, so it does not contradict
+      a staging claim and the confidence_reasons line that ''three independent trackers each record parts of it'' is overstated for FlightAware;
+      (iv) AirNav''s blog, a company''s description of its own ADS-B (the CSV was not opened), and Flightradar24 only through Al Jazeera, Reuters,
+      CNN and Khaleej Times. No raw track, recorder, hospital record or court record was read. Also the confidence arithmetic counts the same
+      independent corroboration inside the ''high'' start and again as up1. The conclusion (the event was real) is probably right, and IBTimes,
+      ABC Verify and many named witnesses support it, but the label ''refuted'' with a lean built on it is stronger than the reading. Either (a)
+      re-state the claim as searched_gap with an absence anchor (''no evidence of staging found; the independent records read through reports
+      agree with the official account'') and keep the lean at ''no'' with lowered strength, or (b) keep refuted only after the raw ADS-B (AirNav
+      CSV or another network) or another material record has been opened and the anchor says so. Do not describe FlightAware as recording the
+      emergency. If kept refuted, change evidence_class honestly and remove the ''independent'' claim for FlightAware.'
     author_response:
       action: fixed
-      note: 'Re-verified: FlightAware''s page shows a departure row and cancellations only; AirNav''s data file and all raw sources remain unreachable (retried
-        OpenSky, ADS-B Exchange, AirNav log, Flightradar24, FlightAware track log, adsb.lol). Restated as a searched_gap with an absence anchor (low confidence);
-        lean strength lowered to slight; confidence_reasons arithmetic removed with the refutation; FlightAware no longer described as recording the emergency;
-        headline claim moved to fz1073-diverted-tabuk; headline reworded (94 characters, draft). Owner decision applied: Rule 9 as written. Log L-22.'
+      note: 'Re-verified: FlightAware''s page shows a departure row and cancellations only; AirNav''s data file and all raw sources remain unreachable
+        (retried OpenSky, ADS-B Exchange, AirNav log, Flightradar24, FlightAware track log, adsb.lol). Restated as a searched_gap with an absence
+        anchor (low confidence); lean strength lowered to slight; confidence_reasons arithmetic removed with the refutation; FlightAware no longer
+        described as recording the emergency; headline claim moved to fz1073-diverted-tabuk; headline reworded (94 characters, draft). Owner decision
+        applied: Rule 9 as written. Log L-22.'
       commit: 8495c38
     resolved: true
-    reviewer_note: 'Verified. fz1073-event-simulated is now state searched_gap, absence_anchor true, confidence low, anchor_checked no; its anchor lists
-      each leg with its limit, says FlightAware shows only a departure row and cancellations (I re-opened the page: row 30-Sep-2026, later flights Cancelled)
-      and records the raw sources as not reached. The assessment lean is ''no'', strength slight, and its caveats say a wholly simulated event is not refuted
-      under Rule 9. No leftover ''refuted'', ''three independent trackers'' or ''well documented'' wording in claims, timeline, transmission or manifest
-      (grep). Headline claim is fz1073-diverted-tabuk (established, high, primary, two official texts that I re-read in the stored files). Raw ADS-B was
-      not reachable for me either; the HTTP 403/429 notes are the author''s and were not re-tested by me.'
+    reviewer_note: 'Verified. fz1073-event-simulated is now state searched_gap, absence_anchor true, confidence low, anchor_checked no; its anchor
+      lists each leg with its limit, says FlightAware shows only a departure row and cancellations (I re-opened the page: row 30-Sep-2026, later
+      flights Cancelled) and records the raw sources as not reached. The assessment lean is ''no'', strength slight, and its caveats say a wholly
+      simulated event is not refuted under Rule 9. No leftover ''refuted'', ''three independent trackers'' or ''well documented'' wording in claims,
+      timeline, transmission or manifest (grep). Headline claim is fz1073-diverted-tabuk (established, high, primary, two official texts that
+      I re-read in the stored files). Raw ADS-B was not reachable for me either; the HTTP 403/429 notes are the author''s and were not re-tested
+      by me.'
   - id: R1-2
     target: fz1073-motive-statements; divergence_note; assessment key point 3
     severity: blocking
-    finding: 'The statement says ''the airline and the UAE say motive is unknown and under investigation'', and the divergence_note says ''the UAE and the
-      airline say motive is unknown''. Only flydubai says motive is unknown (statement 2, stored). The UAE MoFA text (stored, which I re-read) says the
-      investigation includes ''any possible connection to terrorist activity or intent'' and does not say motive is unknown. CNN''s explainer, which the
-      author read and cites, reports that Anwar Gargash, a senior UAE official, ''on Friday described the incident as a dangerous terrorist act'', and The
-      National reports Israel''s President calling the co-pilot a ''terrorist''; Gargash''s statement appears nowhere in claims.yaml, the timeline or the
-      log. This is a who-said-what error and an omitted statement from the very authority the dig uses as its counterweight to Israel''s account. Fix: record
-      Gargash''s statement (with the CNN source and the date, as an accusation by a UAE official, not a finding), correct ''the UAE says motive is unknown''
-      to what the UAE actually said (it is examining motives, including terrorism and prior planning), and adjust fz1073-motive-not-established and the
-      divergence_note, which presently treat the Israeli side alone as having ''gone further than any investigating authority''.'
+    finding: 'The statement says ''the airline and the UAE say motive is unknown and under investigation'', and the divergence_note says ''the
+      UAE and the airline say motive is unknown''. Only flydubai says motive is unknown (statement 2, stored). The UAE MoFA text (stored, which
+      I re-read) says the investigation includes ''any possible connection to terrorist activity or intent'' and does not say motive is unknown.
+      CNN''s explainer, which the author read and cites, reports that Anwar Gargash, a senior UAE official, ''on Friday described the incident
+      as a dangerous terrorist act'', and The National reports Israel''s President calling the co-pilot a ''terrorist''; Gargash''s statement
+      appears nowhere in claims.yaml, the timeline or the log. This is a who-said-what error and an omitted statement from the very authority
+      the dig uses as its counterweight to Israel''s account. Fix: record Gargash''s statement (with the CNN source and the date, as an accusation
+      by a UAE official, not a finding), correct ''the UAE says motive is unknown'' to what the UAE actually said (it is examining motives, including
+      terrorism and prior planning), and adjust fz1073-motive-not-established and the divergence_note, which presently treat the Israeli side
+      alone as having ''gone further than any investigating authority''.'
     author_response:
       action: fixed
-      note: 'Verified in nat.txt/CNN explainer text: only flydubai says motive is unknown; the UAE MoFA says motives, terrorist link and prior planning
-        are being examined. Corrected the statement, divergence_note, motive-not-established and the assessment; recorded Gargash (CNN, Friday 2 Oct), Herzog
-        (The National, BBC Radio 4, 1 Oct) and Katz as accusations with who, when and source. Log L-22.'
+      note: 'Verified in nat.txt/CNN explainer text: only flydubai says motive is unknown; the UAE MoFA says motives, terrorist link and prior
+        planning are being examined. Corrected the statement, divergence_note, motive-not-established and the assessment; recorded Gargash (CNN,
+        Friday 2 Oct), Herzog (The National, BBC Radio 4, 1 Oct) and Katz as accusations with who, when and source. Log L-22.'
       commit: 8495c38
     resolved: true
-    reviewer_note: 'Verified. Only flydubai Statement 2 says motives are unknown; the UAE MoFA text says it is examining ''all circumstances and motives
-      ... including any possible connection to terrorist activity or intent, and whether it involved prior planning or direction'' (stored file). Gargash
-      is recorded with CNN as source: CNN explainer, ''Anwar Gargash, a top UAE official, on Friday described the incident as a "dangerous terrorist act"'',
-      verbatim. Herzog (BBC Radio 4, Thursday, ''terrorist'') and Katz (''attempted jihadist terror attack'') match The National, which I re-opened. Remaining
-      wording problem (CNN says ''a top UAE official'', the assessment text and divergence_note say ''senior adviser'') and the missing Gargash/Herzog remarks
-      in timeline.yaml are in R2-3; they do not reopen R1-2.'
+    reviewer_note: 'Verified. Only flydubai Statement 2 says motives are unknown; the UAE MoFA text says it is examining ''all circumstances and
+      motives ... including any possible connection to terrorist activity or intent, and whether it involved prior planning or direction'' (stored
+      file). Gargash is recorded with CNN as source: CNN explainer, ''Anwar Gargash, a top UAE official, on Friday described the incident as a
+      "dangerous terrorist act"'', verbatim. Herzog (BBC Radio 4, Thursday, ''terrorist'') and Katz (''attempted jihadist terror attack'') match
+      The National, which I re-opened. Remaining wording problem (CNN says ''a top UAE official'', the assessment text and divergence_note say
+      ''senior adviser'') and the missing Gargash/Herzog remarks in timeline.yaml are in R2-3; they do not reopen R1-2.'
   - id: R1-3
     target: fz1073-omani-barred-rule
     severity: blocking
-    finding: 'The state is contested and the statement is a meta-claim about ''the owner''s first observation''. Opening the sources: JPost 30 Sep (910192)
-      says in its own voice (subtitle and body) that ''Flydubai''s agreement to operate in Israel explicitly states that all pilots must be from countries
-      that have normalized relations'', then quotes a ministry source only for ''This is a clear breach of the agreement''; the claim puts ''explicitly
-      states'' in the mouth of the ministry source. JPost 2 Oct (910405) says the bilateral Israel-UAE agreement ''did not stipulate'' this; that is a different
-      instrument, so the two JPost items are not in direct conflict (the dig half-notices this in the disputed_by text but still files both under disputed_by).
-      Netanyahu''s statement (Ynet, Reuters) that such pilots are not permitted, and the Israeli official to CNN who says he ''should not have been allowed'',
-      are a third voice; Reuters wording is ''Netanyahu has said pilots from such countries were not permitted''. No source disputes a rule on Flydubai''s
-      own agreement; nobody has published either text. Fix: restate the claim in first order (for example ''A crew-nationality rule bars pilots from states
-      without relations with Israel from flydubai''s Israel flights'') with state proposed or contested only if some named party says it does not exist
-      for that instrument; list each side (Netanyahu, the ministry source, the 2 Oct unnamed sources, ThePrint''s reading of the 2020 agreement, which is
-      secondary and not the agreement) with the instrument each addresses and attribute ''explicitly states'' to the Jerusalem Post. Low confidence is honest
-      and should stay.'
+    finding: 'The state is contested and the statement is a meta-claim about ''the owner''s first observation''. Opening the sources: JPost 30
+      Sep (910192) says in its own voice (subtitle and body) that ''Flydubai''s agreement to operate in Israel explicitly states that all pilots
+      must be from countries that have normalized relations'', then quotes a ministry source only for ''This is a clear breach of the agreement'';
+      the claim puts ''explicitly states'' in the mouth of the ministry source. JPost 2 Oct (910405) says the bilateral Israel-UAE agreement ''did
+      not stipulate'' this; that is a different instrument, so the two JPost items are not in direct conflict (the dig half-notices this in the
+      disputed_by text but still files both under disputed_by). Netanyahu''s statement (Ynet, Reuters) that such pilots are not permitted, and
+      the Israeli official to CNN who says he ''should not have been allowed'', are a third voice; Reuters wording is ''Netanyahu has said pilots
+      from such countries were not permitted''. No source disputes a rule on Flydubai''s own agreement; nobody has published either text. Fix:
+      restate the claim in first order (for example ''A crew-nationality rule bars pilots from states without relations with Israel from flydubai''s
+      Israel flights'') with state proposed or contested only if some named party says it does not exist for that instrument; list each side (Netanyahu,
+      the ministry source, the 2 Oct unnamed sources, ThePrint''s reading of the 2020 agreement, which is secondary and not the agreement) with
+      the instrument each addresses and attribute ''explicitly states'' to the Jerusalem Post. Low confidence is honest and should stay.'
     author_response:
       action: fixed
-      note: 'Verified in the JPost 30 Sep and 2 Oct pages: ''explicitly states'' is the paper''s own voice; the 2 Oct sources address the bilateral agreement.
-        Claim restated first-order as state proposed, low, with each side tied to its instrument (a flydubai agreement, b bilateral agreement, c unnamed
-        instrument, d not read), and an assumption that the two items concern different documents. Log L-22.'
+      note: 'Verified in the JPost 30 Sep and 2 Oct pages: ''explicitly states'' is the paper''s own voice; the 2 Oct sources address the bilateral
+        agreement. Claim restated first-order as state proposed, low, with each side tied to its instrument (a flydubai agreement, b bilateral
+        agreement, c unnamed instrument, d not read), and an assumption that the two items concern different documents. Log L-22.'
       commit: 8495c38
     resolved: true
-    reviewer_note: 'Verified. Claim restated first-order (state proposed, low) with each side tied to its instrument. I re-opened both Jerusalem Post pages:
-      30 Sep (910192) says in its own voice ''Flydubai''s agreement to operate in Israel explicitly states that all pilots must be from countries that have
-      normalized relations with Israel'', and quotes the ministry source only for ''This is a clear breach of the agreement''; 2 Oct (910405) says the sources''
-      account ''concerned the bilateral aviation agreement'' and did not address a separate operating or security arrangement. The assumption that the two
-      items concern different documents is stated with its if_wrong. One nuance for the author, not blocking: the 2 Oct piece itself reports the earlier
-      ministry source as saying the agreement ''required'' the rule, so the ''own voice'' reading rests on the 30 Sep text only.'
+    reviewer_note: 'Verified. Claim restated first-order (state proposed, low) with each side tied to its instrument. I re-opened both Jerusalem
+      Post pages: 30 Sep (910192) says in its own voice ''Flydubai''s agreement to operate in Israel explicitly states that all pilots must be
+      from countries that have normalized relations with Israel'', and quotes the ministry source only for ''This is a clear breach of the agreement'';
+      2 Oct (910405) says the sources'' account ''concerned the bilateral aviation agreement'' and did not address a separate operating or security
+      arrangement. The assumption that the two items concern different documents is stated with its if_wrong. One nuance for the author, not blocking:
+      the 2 Oct piece itself reports the earlier ministry source as saying the agreement ''required'' the rule, so the ''own voice'' reading rests
+      on the 30 Sep text only.'
   - id: R1-4
     target: fz1073-motive-statements
     severity: non_blocking
-    finding: 'The statement puts in quotation marks that Netanyahu said ''we know that he underwent Islamist radical indoctrination''. No source read has
-      that exact wording: Ynet quotes ''we know that the attacker pilot underwent Islamist radical indoctrination'', CNN''s live blog has ''it has been
-      established that he underwent Islamist radical indoctrination'' (CNN''s wording, not a direct quote), CNN''s explainer has ''undergone Islamist radicalization''
-      (a video of Friday) and Reuters paraphrases. Quote one source exactly and name it, or paraphrase without quotation marks. Also the statement dates
-      it 1 October and ''whoever sent him will pay a very heavy price'' to 2 October, which matches CBS and CNN.'
+    finding: 'The statement puts in quotation marks that Netanyahu said ''we know that he underwent Islamist radical indoctrination''. No source
+      read has that exact wording: Ynet quotes ''we know that the attacker pilot underwent Islamist radical indoctrination'', CNN''s live blog
+      has ''it has been established that he underwent Islamist radical indoctrination'' (CNN''s wording, not a direct quote), CNN''s explainer
+      has ''undergone Islamist radicalization'' (a video of Friday) and Reuters paraphrases. Quote one source exactly and name it, or paraphrase
+      without quotation marks. Also the statement dates it 1 October and ''whoever sent him will pay a very heavy price'' to 2 October, which
+      matches CBS and CNN.'
     author_response:
       action: fixed
-      note: 'Verified: Ynet''s wording is ''we know that the attacker pilot underwent Islamist radical indoctrination''; CNN''s live-blog wording is CNN''s
-        own paraphrase. The statement now quotes only ''underwent Islamist radical indoctrination'' attributed to Fox via Ynet; Ynet''s exact sentence and
-        CNN''s labelled paraphrase are in the anchor. Dates 1 and 2 Oct kept (match CBS and CNN).'
+      note: 'Verified: Ynet''s wording is ''we know that the attacker pilot underwent Islamist radical indoctrination''; CNN''s live-blog wording
+        is CNN''s own paraphrase. The statement now quotes only ''underwent Islamist radical indoctrination'' attributed to Fox via Ynet; Ynet''s
+        exact sentence and CNN''s labelled paraphrase are in the anchor. Dates 1 and 2 Oct kept (match CBS and CNN).'
       commit: 8495c38
     resolved: true
-    reviewer_note: Verified. The statement now quotes only 'underwent Islamist radical indoctrination' (Fox via Ynet) and gives Ynet's full sentence ('we
-      know that the attacker pilot underwent Islamist radical indoctrination') and CNN's labelled paraphrase in the anchor; I matched both in Ynet and the
-      CNN live blog. 'Whoever sent him will pay a very heavy price' is in CBS as a statement of Friday 2 October, correct. The 1 October date for the Fox
-      interview is consistent with the CNN live blog of 1 October.
+    reviewer_note: Verified. The statement now quotes only 'underwent Islamist radical indoctrination' (Fox via Ynet) and gives Ynet's full sentence
+      ('we know that the attacker pilot underwent Islamist radical indoctrination') and CNN's labelled paraphrase in the anchor; I matched both
+      in Ynet and the CNN live blog. 'Whoever sent him will pay a very heavy price' is in CBS as a statement of Friday 2 October, correct. The
+      1 October date for the Fox interview is consistent with the CNN live blog of 1 October.
   - id: R1-5
     target: fz1073-crew-and-passengers-secured-aircraft
     severity: non_blocking
-    finding: 'Established at high confidence with anchor_checked primary, but the statement goes beyond the primary texts: it says passengers ''entered
-      the cockpit'' and that crew helped ''after the captain opened the cockpit door'', and says ''two additional pilots''. The flydubai, MoFA and GCAA
-      texts say only that on-duty crew travelling on the flight secured and landed the aircraft and that passengers assisted or contributed. The door and
-      the number come from Reuters and CBS (I confirmed Reuters: ''a reserve flydubai pilot crew'', no number) and the cockpit entry from passengers via
-      CNN. Split the claim or trim the statement to what the primary texts say and put the rest in a separate secondary-anchored claim; the ''who did what
-      first'' detail is already declared out of scope.'
+    finding: 'Established at high confidence with anchor_checked primary, but the statement goes beyond the primary texts: it says passengers
+      ''entered the cockpit'' and that crew helped ''after the captain opened the cockpit door'', and says ''two additional pilots''. The flydubai,
+      MoFA and GCAA texts say only that on-duty crew travelling on the flight secured and landed the aircraft and that passengers assisted or
+      contributed. The door and the number come from Reuters and CBS (I confirmed Reuters: ''a reserve flydubai pilot crew'', no number) and the
+      cockpit entry from passengers via CNN. Split the claim or trim the statement to what the primary texts say and put the rest in a separate
+      secondary-anchored claim; the ''who did what first'' detail is already declared out of scope.'
     author_response:
       action: fixed
-      note: 'Verified: the primary texts say only that on-duty crew travelling on the flight secured and landed the aircraft and that passengers assisted.
-        fz1073-crew-and-passengers-secured-aircraft is trimmed to that (primary, high); the number of pilots, the cockpit door and passenger entry moved
-        to the new fz1073-crew-details (secondary, moderate, with an exception line).'
+      note: 'Verified: the primary texts say only that on-duty crew travelling on the flight secured and landed the aircraft and that passengers
+        assisted. fz1073-crew-and-passengers-secured-aircraft is trimmed to that (primary, high); the number of pilots, the cockpit door and passenger
+        entry moved to the new fz1073-crew-details (secondary, moderate, with an exception line).'
       commit: 8495c38
     resolved: true
-    reviewer_note: 'Verified against the stored flydubai, MoFA and GCAA texts: the trimmed claim says only what they say (on-duty flydubai crew travelling
-      on the flight secured and landed the aircraft; passengers assisted or contributed; flydubai crew members travelling on board intervened). The door,
-      number of pilots and cockpit entry are in the new fz1073-crew-details (secondary, moderate, exception line). Quotes matched: AJ (spokesperson for
-      Netanyahu to Reuters, ''click the release''), Reuters (''A reserve flydubai pilot crew'', no number), CBS (''two off-duty pilots'').'
+    reviewer_note: 'Verified against the stored flydubai, MoFA and GCAA texts: the trimmed claim says only what they say (on-duty flydubai crew
+      travelling on the flight secured and landed the aircraft; passengers assisted or contributed; flydubai crew members travelling on board
+      intervened). The door, number of pilots and cockpit entry are in the new fz1073-crew-details (secondary, moderate, exception line). Quotes
+      matched: AJ (spokesperson for Netanyahu to Reuters, ''click the release''), Reuters (''A reserve flydubai pilot crew'', no number), CBS
+      (''two off-duty pilots'').'
   - id: R1-6
     target: fz1073-surgeon; log L-17, L-20; timeline people
     severity: non_blocking
-    finding: claims.yaml names a private passenger ('Dr. Shota Musaev, a dentist on board', in the anchor description of fz1073-surgeon), while L-17 and
-      L-20 and the timeline note say passenger names were removed and passengers are identified by role only. Remove the name from the claim (the quote
-      can be trimmed to 'a dentist on board'), and note in a new log entry that the statement in L-17 did not hold for claims.yaml. In the timeline people
-      list, 'a plumber who says he held the attacker' and 'a dentist who tied the attacker' combine an occupation with a distinctive act and are identifiable
-      from CNN's own text; consider dropping the occupations (the surgeon claim needs only 'dentist').
+    finding: claims.yaml names a private passenger ('Dr. Shota Musaev, a dentist on board', in the anchor description of fz1073-surgeon), while
+      L-17 and L-20 and the timeline note say passenger names were removed and passengers are identified by role only. Remove the name from the
+      claim (the quote can be trimmed to 'a dentist on board'), and note in a new log entry that the statement in L-17 did not hold for claims.yaml.
+      In the timeline people list, 'a plumber who says he held the attacker' and 'a dentist who tied the attacker' combine an occupation with
+      a distinctive act and are identifiable from CNN's own text; consider dropping the occupations (the surgeon claim needs only 'dentist').
     author_response:
       action: fixed
-      note: 'Verified: claims.yaml named a passenger in fz1073-surgeon; removed (quote trimmed to ''a dentist on board''; Ynet sentence now ''a passenger'').
-        Timeline occupations paired with acts removed. L-17 and L-20''s statement corrected in L-22. Captain named in the timeline only; manifest title
-        no longer carries the name (the Emirates 24|7 URL slug and the stored GCAA text do, noted in L-22). Checked manifest, nodes, claims, timeline, transmission
-        for passenger names: none remain.'
+      note: 'Verified: claims.yaml named a passenger in fz1073-surgeon; removed (quote trimmed to ''a dentist on board''; Ynet sentence now ''a
+        passenger''). Timeline occupations paired with acts removed. L-17 and L-20''s statement corrected in L-22. Captain named in the timeline
+        only; manifest title no longer carries the name (the Emirates 24|7 URL slug and the stored GCAA text do, noted in L-22). Checked manifest,
+        nodes, claims, timeline, transmission for passenger names: none remain.'
       commit: 8495c38
     resolved: true
     reviewer_note: 'Resolved for the scope asked. grep over claims.yaml, timeline.yaml, transmission.yaml, sources/MANIFEST.yaml and build/nodes/fz1073-*
-      finds no passenger name or occupation-plus-act pairing; the manifest title no longer carries the captain''s name; the captain is named only in timeline.yaml
-      (people list) and, unavoidably, in one URL slug and the stored GCAA text. New finding, logged as R2-5: the log still carries a passenger''s full name
-      in an earlier entry (L-15), which L-22 does not mention; the log is append-only, so the fix is a note, not an edit.'
+      finds no passenger name or occupation-plus-act pairing; the manifest title no longer carries the captain''s name; the captain is named only
+      in timeline.yaml (people list) and, unavoidably, in one URL slug and the stored GCAA text. New finding, logged as R2-5: the log still carries
+      a passenger''s full name in an earlier entry (L-15), which L-22 does not mention; the log is append-only, so the fix is a note, not an edit.'
   - id: R1-7
     target: fz1073-reports-inconsistent; fz1073-flight-times; node fz1073-2026-09-30-landing-tabuk
     severity: non_blocking
-    finding: 'The landing time is listed as resolved (''likely transposed digits'' for CNN''s 9:54 against 9:45). That is a guess, and other sources I opened
-      widen the spread rather than narrow it: AirNav''s blog says the aircraft ''landed at Tabuk at approximately 06:58 UTC'' and Khaleej Times says Flightradar24
-      received its final signal at about 10.58am UAE time (06:58 UTC), against 06:45 UTC from the Saudi ministry and Tabuk airport. The last-signal time
-      can be later than touchdown, but the AirNav wording equates them. Move landing time to the still-open list, keep 06:45 attributed to the Saudi ministry,
-      and say in the flight-times claim that AirNav''s blog implies a later touchdown. Also the ''established'' state with moderate confidence on tracker
-      listings is defensible given the exception line, but note the first-signal times (05:28:48 versus 05:31) are the same unresolved item.'
+    finding: 'The landing time is listed as resolved (''likely transposed digits'' for CNN''s 9:54 against 9:45). That is a guess, and other sources
+      I opened widen the spread rather than narrow it: AirNav''s blog says the aircraft ''landed at Tabuk at approximately 06:58 UTC'' and Khaleej
+      Times says Flightradar24 received its final signal at about 10.58am UAE time (06:58 UTC), against 06:45 UTC from the Saudi ministry and
+      Tabuk airport. The last-signal time can be later than touchdown, but the AirNav wording equates them. Move landing time to the still-open
+      list, keep 06:45 attributed to the Saudi ministry, and say in the flight-times claim that AirNav''s blog implies a later touchdown. Also
+      the ''established'' state with moderate confidence on tracker listings is defensible given the exception line, but note the first-signal
+      times (05:28:48 versus 05:31) are the same unresolved item.'
     author_response:
       action: fixed
-      note: 'Verified: AirNav''s blog says ''landed safely at Tabuk'' with last ADS-B about 06:58 UTC and Khaleej Times gives Flightradar24''s final signal
-        as 10:58 a.m. UAE (06:58 UTC). The ''transposed digits'' guess is withdrawn; landing time moved to the open list in fz1073-reports-inconsistent;
-        the flight-times claim says AirNav implies a later touchdown and that the first-signal times (05:28:48 vs 05:31) are unresolved; node fz1073-2026-09-30-landing-tabuk
-        is rev 2 with the AirNav source added; 06:45 stays attributed to the Saudi ministry and Tabuk airport.'
+      note: 'Verified: AirNav''s blog says ''landed safely at Tabuk'' with last ADS-B about 06:58 UTC and Khaleej Times gives Flightradar24''s
+        final signal as 10:58 a.m. UAE (06:58 UTC). The ''transposed digits'' guess is withdrawn; landing time moved to the open list in fz1073-reports-inconsistent;
+        the flight-times claim says AirNav implies a later touchdown and that the first-signal times (05:28:48 vs 05:31) are unresolved; node
+        fz1073-2026-09-30-landing-tabuk is rev 2 with the AirNav source added; 06:45 stays attributed to the Saudi ministry and Tabuk airport.'
       commit: 8495c38
     resolved: true
-    reviewer_note: 'Verified. AirNav''s blog says ''landed safely at Tabuk, with the last ADS-B data ... at approximately 06:58 UTC'' and later ''as it
-      approached and landed at Tabuk at approximately 06:58 UTC''; Khaleej Times says ''Flightradar24 received its final signal from the aircraft at about
-      10.58am UAE time'' (06:58 UTC) and that the airport gave 9.45am Saudi time landing and 8.44am distress call. CNN explainer: ''touched down at 9:54
-      a.m.''. The transposition guess is withdrawn, the landing time is in the open list, flight-times says AirNav implies a later touchdown, node rev 2
-      is correct. Stale wording left behind is in R2-5.'
+    reviewer_note: 'Verified. AirNav''s blog says ''landed safely at Tabuk, with the last ADS-B data ... at approximately 06:58 UTC'' and later
+      ''as it approached and landed at Tabuk at approximately 06:58 UTC''; Khaleej Times says ''Flightradar24 received its final signal from the
+      aircraft at about 10.58am UAE time'' (06:58 UTC) and that the airport gave 9.45am Saudi time landing and 8.44am distress call. CNN explainer:
+      ''touched down at 9:54 a.m.''. The transposition guess is withdrawn, the landing time is in the open list, flight-times says AirNav implies
+      a later touchdown, node rev 2 is correct. Stale wording left behind is in R2-5.'
   - id: R1-8
     target: assessment (answer, lean, text, key points); fz1073-israel-says-omani
     severity: non_blocking
-    finding: 'Where the assessment says more than the claims: (i) the headline ''the attack is well documented'' rests on official statements and reports
-      with no recorder or raw data; consider ''reported by the airline, Saudi and UAE authorities'' in place of ''well documented'', and re-test after R1-1;
-      (ii) the text says ''the Saudi ministry says the co-pilot assaulted the captain and both were injured; the captain was seriously wounded'' without
-      saying that ''seriously'' is not the Saudi wording (it comes from CNN, Indian authorities and Israel''s Prime Minister); (iii) the text and fz1073-israel-says-omani
-      say no Omani authority has publicly confirmed the nationality, but CBS reports an unnamed Omani official confirming birth in Oman and Omani citizenship
-      (the sibling gap claim says so); add one clause to the statement or assessment. (iv) fz1073-israel-says-omani is established at HIGH confidence on
-      a secondary read although the other exception claims are capped at moderate; either cap it at moderate or say why a who-said-what claim from several
-      outlets reaches high. All sources trace to the Israeli side, as the claim says.'
+    finding: 'Where the assessment says more than the claims: (i) the headline ''the attack is well documented'' rests on official statements
+      and reports with no recorder or raw data; consider ''reported by the airline, Saudi and UAE authorities'' in place of ''well documented'',
+      and re-test after R1-1; (ii) the text says ''the Saudi ministry says the co-pilot assaulted the captain and both were injured; the captain
+      was seriously wounded'' without saying that ''seriously'' is not the Saudi wording (it comes from CNN, Indian authorities and Israel''s
+      Prime Minister); (iii) the text and fz1073-israel-says-omani say no Omani authority has publicly confirmed the nationality, but CBS reports
+      an unnamed Omani official confirming birth in Oman and Omani citizenship (the sibling gap claim says so); add one clause to the statement
+      or assessment. (iv) fz1073-israel-says-omani is established at HIGH confidence on a secondary read although the other exception claims are
+      capped at moderate; either cap it at moderate or say why a who-said-what claim from several outlets reaches high. All sources trace to the
+      Israeli side, as the claim says.'
     author_response:
       action: fixed
-      note: (i) headline and key point reworded from 'well documented' to what the airline and authorities report; (ii) the assessment says 'seriously wounded'
-        is not the Saudi wording; (iii) israel-says-omani and the assessment mention CBS's unnamed Omani official; (iv) israel-says-omani capped at moderate
-        with a risk_of_bias step (all outlets trace to the Israeli side).
+      note: (i) headline and key point reworded from 'well documented' to what the airline and authorities report; (ii) the assessment says 'seriously
+        wounded' is not the Saudi wording; (iii) israel-says-omani and the assessment mention CBS's unnamed Omani official; (iv) israel-says-omani
+        capped at moderate with a risk_of_bias step (all outlets trace to the Israeli side).
       commit: 8495c38
     resolved: true
-    reviewer_note: 'Verified: the headline and key point no longer say ''well documented''; the text says ''seriously wounded'' is not Saudi wording; CBS''s
-      unnamed Omani official is mentioned (checked in CBS: ''An Omani official confirmed to CBS News that the attacker was born in Oman and currently holds
-      Omani citizenship''); israel-says-omani is capped at moderate with a risk_of_bias step. New overstatements found in the assessment key point 1 and
-      in the headline are in R2-2.'
+    reviewer_note: 'Verified: the headline and key point no longer say ''well documented''; the text says ''seriously wounded'' is not Saudi wording;
+      CBS''s unnamed Omani official is mentioned (checked in CBS: ''An Omani official confirmed to CBS News that the attacker was born in Oman
+      and currently holds Omani citizenship''); israel-says-omani is capped at moderate with a risk_of_bias step. New overstatements found in
+      the assessment key point 1 and in the headline are in R2-2.'
   - id: R1-9
     target: timeline.yaml
     severity: non_blocking
-    finding: (i) The lane label 'Two off-duty pilots (unnamed)' and the lane id offduty_pilots adopt CBS's description while the airline's own statement
-      (stored) says 'on-duty flydubai crew travelling on the flight'; the same timeline lists the disagreement elsewhere. Use a neutral label ('Two additional
-      pilots'). (ii) The lane label 'First officer (suspect, not named)' uses 'suspect' as a label; the note elsewhere says an accusation is not a finding.
-      Use 'accused' or 'first officer (accused by officials)'. (iii) The description in claims.yaml says the co-pilot 'is in custody in the UAE'; the Saudi
-      wording is 'accompanied by' an Emirati team, and the claim fz1073-copilot-custody-unnamed itself notes that the custody wording is Israeli and Reuters;
-      align the description. (iv) b16 converts the Jerusalem Post page clock (10:34) as Israel time; I could not confirm the zone, which the entry already
-      states. No other time conversion errors found.
+    finding: (i) The lane label 'Two off-duty pilots (unnamed)' and the lane id offduty_pilots adopt CBS's description while the airline's own
+      statement (stored) says 'on-duty flydubai crew travelling on the flight'; the same timeline lists the disagreement elsewhere. Use a neutral
+      label ('Two additional pilots'). (ii) The lane label 'First officer (suspect, not named)' uses 'suspect' as a label; the note elsewhere
+      says an accusation is not a finding. Use 'accused' or 'first officer (accused by officials)'. (iii) The description in claims.yaml says
+      the co-pilot 'is in custody in the UAE'; the Saudi wording is 'accompanied by' an Emirati team, and the claim fz1073-copilot-custody-unnamed
+      itself notes that the custody wording is Israeli and Reuters; align the description. (iv) b16 converts the Jerusalem Post page clock (10:34)
+      as Israel time; I could not confirm the zone, which the entry already states. No other time conversion errors found.
     author_response:
       action: fixed
-      note: '(i) lane id and label are now additional_pilots / ''Two additional pilots (unnamed)''; (ii) lane label ''First officer (accused by officials,
-        not named)''; (iii) description now says he left Saudi Arabia for Abu Dhabi with an Emirati security team; (iv) b16 unchanged: the zone is stated
-        as an assumption in its detail.'
+      note: '(i) lane id and label are now additional_pilots / ''Two additional pilots (unnamed)''; (ii) lane label ''First officer (accused by
+        officials, not named)''; (iii) description now says he left Saudi Arabia for Abu Dhabi with an Emirati security team; (iv) b16 unchanged:
+        the zone is stated as an assumption in its detail.'
       commit: 8495c38
     resolved: true
-    reviewer_note: 'Verified: lane ids and labels are neutral (additional_pilots, ''Two additional pilots (unnamed)'', ''First officer (accused by officials,
-      not named)''); the description says he left Saudi Arabia with an Emirati security team. b16 conversion (10:34 at UTC+3 = 07:34 UTC) is correctly flagged
-      as an assumption.'
+    reviewer_note: 'Verified: lane ids and labels are neutral (additional_pilots, ''Two additional pilots (unnamed)'', ''First officer (accused
+      by officials, not named)''); the description says he left Saudi Arabia with an Emirati security team. b16 conversion (10:34 at UTC+3 = 07:34
+      UTC) is correctly flagged as an assumption.'
   - id: R1-10
     target: log.yaml
     severity: non_blocking
-    finding: Add a new entry (append-only) recording the corrections made in response to R1-2, R1-4, R1-6 and R1-7, and the author's responses. Note that
-      L-21 asks the owner whether a moderate-confidence refutation is acceptable; the owner has not answered, and R1-1 gives the reviewer's position. The
-      first 15 entries and header were not rewritten (only the dig_status line changed), which is correct.
+    finding: Add a new entry (append-only) recording the corrections made in response to R1-2, R1-4, R1-6 and R1-7, and the author's responses.
+      Note that L-21 asks the owner whether a moderate-confidence refutation is acceptable; the owner has not answered, and R1-1 gives the reviewer's
+      position. The first 15 entries and header were not rewritten (only the dig_status line changed), which is correct.
     author_response:
       action: fixed
-      note: New log entry L-22 records the corrections for R1-1 to R1-9 and the author's responses; L-21's owner question is noted as answered in the reviewer's
-        direction pending the owner.
+      note: New log entry L-22 records the corrections for R1-1 to R1-9 and the author's responses; L-21's owner question is noted as answered
+        in the reviewer's direction pending the owner.
       commit: 8495c38
     resolved: true
-    reviewer_note: Verified. Log diff against the first draft is exactly one appended entry, L-22; no earlier entry or header was altered. L-22 covers R1-1
-      to R1-9 and correctly leaves the owner question open.
+    reviewer_note: Verified. Log diff against the first draft is exactly one appended entry, L-22; no earlier entry or header was altered. L-22
+      covers R1-1 to R1-9 and correctly leaves the owner question open.
 - round: 2
   reviewed_on: '2026-10-02'
   reviewer: second independent reviewer (did not write the dig, did not write round 1)
@@ -379,45 +395,73 @@ rounds:
   - id: R2-1
     target: fz1073-israel-says-omani (inconsistency step and statement); fz1073-reports-inconsistent anchor item (6)
     severity: blocking
-    finding: 'The claim and the comparison anchor treat The National''s attribution of the Omani statement to President Herzog as ''likely a slip in one
-      outlet'' / ''probably a slip''. It is not a slip. I opened The National (1 Oct): ''Israeli President Isaac Herzog alleged the co-pilot suspected of
-      the attack was Omani'', and later ''Herzog alleged that the co-pilot is Omani ... He claimed he is an "Omani citizen, although that does not mean
-      anything"'', from his BBC Radio 4 interview on Thursday. So Herzog is a third named Israeli speaker (with Netanyahu and an Israeli official), and
-      the dig calls a correct report of what a named official said an outlet error. This is a who-said-what error on the page and implies a fault in an
-      outlet that the source does not support. Fix: add Herzog (BBC Radio 4, 1 October, via The National) to the statement, drop ''slip'' in the claim,
-      in item (6) of fz1073-reports-inconsistent and the inconsistency step (the step should say the National reports a different speaker, who also said
-      it; no inconsistency), and log the correction in a new entry.'
+    finding: 'The claim and the comparison anchor treat The National''s attribution of the Omani statement to President Herzog as ''likely a slip
+      in one outlet'' / ''probably a slip''. It is not a slip. I opened The National (1 Oct): ''Israeli President Isaac Herzog alleged the co-pilot
+      suspected of the attack was Omani'', and later ''Herzog alleged that the co-pilot is Omani ... He claimed he is an "Omani citizen, although
+      that does not mean anything"'', from his BBC Radio 4 interview on Thursday. So Herzog is a third named Israeli speaker (with Netanyahu and
+      an Israeli official), and the dig calls a correct report of what a named official said an outlet error. This is a who-said-what error on
+      the page and implies a fault in an outlet that the source does not support. Fix: add Herzog (BBC Radio 4, 1 October, via The National) to
+      the statement, drop ''slip'' in the claim, in item (6) of fz1073-reports-inconsistent and the inconsistency step (the step should say the
+      National reports a different speaker, who also said it; no inconsistency), and log the correction in a new entry.'
+    author_response:
+      action: fixed
+      note: 'Verified in The National (lines: ''Herzog alleged that the co-pilot is Omani''). Dropped ''slip'' in the claim and item (6); the
+        inconsistency step now says a third Israeli speaker, no inconsistency; Herzog added to the statement and anchor; timeline b17 added. Log
+        L-23.'
+      commit: recorded in the commit that adds this response
   - id: R2-2
     target: headline; assessment key_points[0]
     severity: blocking
-    finding: 'Surface lines say more than the claims. (a) The headline says ''airline and authorities report an attack''. The airline (Statements 2 and
-      4) says ''an altercation'' and ''a safety incident in the flight deck''; the UAE MoFA text repeats the airline''s ''altercation''; only the Saudi
-      interior ministry (read through reports) says ''an assault on the captain by the co-pilot'', and ''attack'' is the Israeli officials'' word. (b) Key
-      point 1 says ''The airline, the UAE and Saudi Arabia ... report an assault, injuries and a landing at Tabuk''; the airline and the MoFA do not say
-      assault, and the airline''s primary texts do not say injuries (the GCAA text says the captain is receiving treatment). CLAUDE.md: surface lines are
-      plain and true. Fix, for example: headline ''Flydubai FZ1073: diverted after a cockpit altercation, Saudi ministry says co-pilot assaulted captain;
-      no evidence of staging'' (re-count to 70-95), and key point 1 attributing ''altercation'' to the airline and the UAE and ''assault, injuries to both''
-      to the Saudi ministry as quoted.'
+    finding: 'Surface lines say more than the claims. (a) The headline says ''airline and authorities report an attack''. The airline (Statements
+      2 and 4) says ''an altercation'' and ''a safety incident in the flight deck''; the UAE MoFA text repeats the airline''s ''altercation'';
+      only the Saudi interior ministry (read through reports) says ''an assault on the captain by the co-pilot'', and ''attack'' is the Israeli
+      officials'' word. (b) Key point 1 says ''The airline, the UAE and Saudi Arabia ... report an assault, injuries and a landing at Tabuk'';
+      the airline and the MoFA do not say assault, and the airline''s primary texts do not say injuries (the GCAA text says the captain is receiving
+      treatment). CLAUDE.md: surface lines are plain and true. Fix, for example: headline ''Flydubai FZ1073: diverted after a cockpit altercation,
+      Saudi ministry says co-pilot assaulted captain; no evidence of staging'' (re-count to 70-95), and key point 1 attributing ''altercation''
+      to the airline and the UAE and ''assault, injuries to both'' to the Saudi ministry as quoted.'
+    author_response:
+      action: fixed
+      note: 'Verified: flydubai and MoFA say ''altercation''; only the Saudi ministry as quoted says ''assault''. Headline now ''Flydubai FZ1073:
+        Saudi ministry says co-pilot assaulted captain; no evidence of staging found'' (93 characters, draft); key point 1 attributes ''altercation''
+        to flydubai and the UAE and ''assault with injuries to both'' to the Saudi ministry as quoted.'
+      commit: recorded in the commit that adds this response
   - id: R2-3
     target: assessment.text; divergence_note; timeline.yaml people
     severity: non_blocking
-    finding: 'Gargash''s title: CNN (explainer) calls him ''a top UAE official''; the claim says ''a senior UAE official'' (fine, CNN''s own sense) but
-      the assessment text and divergence_note call him ''a senior adviser'' / ''a senior UAE adviser'', which no source read says. Use CNN''s wording. Also
-      timeline.yaml still omits Gargash''s 2 October statement and Herzog''s ''terrorist'' remark (R1-2 asked for the timeline too): add a people entry
-      or a Panel B event dated 2 Oct (Gargash, via CNN) and 1 Oct (Herzog, BBC Radio 4, via The National).'
+    finding: 'Gargash''s title: CNN (explainer) calls him ''a top UAE official''; the claim says ''a senior UAE official'' (fine, CNN''s own sense)
+      but the assessment text and divergence_note call him ''a senior adviser'' / ''a senior UAE adviser'', which no source read says. Use CNN''s
+      wording. Also timeline.yaml still omits Gargash''s 2 October statement and Herzog''s ''terrorist'' remark (R1-2 asked for the timeline too):
+      add a people entry or a Panel B event dated 2 Oct (Gargash, via CNN) and 1 Oct (Herzog, BBC Radio 4, via The National).'
+    author_response:
+      action: fixed
+      note: 'Verified: CNN says ''a top UAE official''. Assessment text and divergence note now use it; timeline gets people entries and Panel
+        B events b17 (Herzog, 1 Oct, via The National) and b18 (Gargash, 2 Oct, via CNN), both marked as accusations.'
+      commit: recorded in the commit that adds this response
   - id: R2-4
     target: fz1073-israel-says-omani; node b10 in timeline.yaml; motive-statements
     severity: non_blocking
-    finding: Date of Netanyahu's CNN interview. The claim and timeline b10 say Netanyahu told CNN 'on 1 October' that the co-pilot is Omani and 'interviews
-      with CNN and Fox on 1 Oct'. The CNN live blog (updated Thu 1 Oct) says Netanyahu 'said Wednesday' that the suspect was being questioned by Saudi authorities,
-      in the same item that gives the Omani statement and the plumber and axe remarks, and Al Jazeera's Fox/Hannity quote ('now being investigated in Saudi
-      Arabia') is from 30 September. I could not date the CNN interview from the pages; the Fox 'indoctrination' remark is reported in 1 October pieces.
-      Say 'on 30 September or 1 October (CNN does not give the date)' or cite the date CNN gives, and fix b10.
+    finding: Date of Netanyahu's CNN interview. The claim and timeline b10 say Netanyahu told CNN 'on 1 October' that the co-pilot is Omani and
+      'interviews with CNN and Fox on 1 Oct'. The CNN live blog (updated Thu 1 Oct) says Netanyahu 'said Wednesday' that the suspect was being
+      questioned by Saudi authorities, in the same item that gives the Omani statement and the plumber and axe remarks, and Al Jazeera's Fox/Hannity
+      quote ('now being investigated in Saudi Arabia') is from 30 September. I could not date the CNN interview from the pages; the Fox 'indoctrination'
+      remark is reported in 1 October pieces. Say 'on 30 September or 1 October (CNN does not give the date)' or cite the date CNN gives, and
+      fix b10.
+    author_response:
+      action: fixed
+      note: 'Verified: CNN does not date the interview. Claim and timeline b10 now say 30 Sep or 1 Oct (CNN does not give the date); the Fox remark
+        is reported in 1 Oct pieces.'
+      commit: recorded in the commit that adds this response
   - id: R2-5
     target: log.yaml L-15; fz1073-reports-inconsistent alternatives
     severity: non_blocking
-    finding: (a) Earlier log entry L-15 still names a private passenger in full (item 4, 'SURGEON'); L-22 corrects the claim that names were removed for
-      claims.yaml but does not say the log retains one. The log is append-only, so do not edit; add a note in the next log entry, and the owner decides
-      whether a redaction is acceptable (an append-only exception for a personal name). (b) fz1073-reports-inconsistent, alternatives.why_not_preferred
-      still lists 'a transposition' as a cause of a resolved item, left over from the withdrawn landing-time guess; no item in the resolved list is now
-      explained by a transposition. Remove.
+    finding: (a) Earlier log entry L-15 still names a private passenger in full (item 4, 'SURGEON'); L-22 corrects the claim that names were removed
+      for claims.yaml but does not say the log retains one. The log is append-only, so do not edit; add a note in the next log entry, and the
+      owner decides whether a redaction is acceptable (an append-only exception for a personal name). (b) fz1073-reports-inconsistent, alternatives.why_not_preferred
+      still lists 'a transposition' as a cause of a resolved item, left over from the withdrawn landing-time guess; no item in the resolved list
+      is now explained by a transposition. Remove.
+    author_response:
+      action: fixed
+      note: (a) L-15 not edited; L-23 notes it names a passenger, that the name appears nowhere else (searched claims, timeline, transmission,
+        manifest, nodes) and that redaction is the owner's decision; L-22/L-17 wording corrected there. (b) 'transposition' removed from the alternative.
+      commit: recorded in the commit that adds this response

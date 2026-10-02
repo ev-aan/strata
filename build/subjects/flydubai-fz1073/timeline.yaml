@@ -52,7 +52,8 @@ people:
   - {who: "Passengers who intervened", detail: "About five or six passengers entered the cockpit (a passenger to CNN). Identified here by role only; no passenger is named. Accounts by several passengers are quoted by CNN, Haaretz and Ynet. About 170 on board (counts differ), mostly Israeli; four US-Israeli dual citizens; two Australians."}
   - {who: "Cabin crew", detail: "Unnamed; a crew member is seen calling for a doctor and for a pilot in video verified by CNN."}
   - {who: "Benjamin Netanyahu", detail: "Israel's Prime Minister; made the main public claims about the attack, the co-pilot's nationality and 'Islamist radical indoctrination'; also said it was too early to declare a motive or an Iran link (CNN, Al Jazeera). On 29 Sep warned of attacks before the election."}
-  - {who: "Isaac Herzog", detail: "Israel's President; called it a 'great miracle'; said Israel and the UAE will 'investigate the incident in depth together'."}
+  - {who: "Isaac Herzog", detail: "Israel's President; called it a 'great miracle'; said Israel and the UAE will 'investigate the incident in depth together'. On BBC Radio 4 (Thursday 1 Oct, per The National) he said the co-pilot is Omani and called him a 'terrorist'; an accusation, not a finding."}
+  - {who: "Anwar Gargash", detail: "Described by CNN as a top UAE official; CNN reports that on Friday 2 Oct he described the incident as a 'dangerous terrorist act' (his own words not read); an accusation, not a finding. The UAE's investigation is examining any terrorist link."}
   - {who: "Miri Regev", detail: "Israel's Transportation Minister; asked Shin Bet to halt flydubai's Israel flights and asked the civil aviation authority to look at whether the UAE violated the aviation agreement."}
   - {who: "Israel Katz", detail: "Israel's Defence Minister; called it an 'attempted jihadist terror attack' (Al Jazeera, CNN; no evidence given)."}
   - {who: "Yair Lapid", detail: "Israel's opposition leader; said the 29 Sep warning had nothing to do with planes, and accused Netanyahu of trying to 'hitch a pathetic ride' (Al Jazeera)."}
@@ -81,6 +82,7 @@ sources:
   s_jp_405:    {title: "Jerusalem Post, Omani co-pilot held no second nationality, sources say (2 Oct)", url: "https://www.jpost.com/israel-news/article-910405"}
   s_ynet:      {title: "Ynetnews, co-pilot transferred to UAE (2 Oct)", url: "https://www.ynetnews.com/article/rkwxox2qfg"}
   s_theprint:  {title: "ThePrint, Can an Omani pilot fly a plane to Israel?", url: "https://theprint.in/world/can-an-omani-pilot-fly-a-plane-to-israel-flydubai-clause-israels-aviation-pact-with-uae-under-lens/3058939/"}
+  s_national:  {title: "The National, UAE investigation to determine if flydubai incident was linked to terrorist activity (1 Oct)", url: "https://www.thenationalnews.com/news/uae/2026/10/01/flydubai-uae-investigation-terrorist-activity/"}
   s_cbs:       {title: "CBS News, What we're learning about the co-pilot (updated 2 Oct)", url: "https://www.cbsnews.com/news/flydubai-plane-attempted-crash-hijacking-israel-dubai-what-to-know/"}
   s_abc:       {title: "ABC News Verify, Fake news spreading online (1 Oct, updated 2 Oct)", url: "https://www.abc.net.au/news/2026-10-01/verify-flight-misinformation-fz1073-tel-aviv-dubai/107215774"}
   s_jp_349:    {title: "Jerusalem Post, Watchdogs uncovered conspiracy theories (1 Oct), reporting an advocacy group's counts", url: "https://www.jpost.com/diaspora/antisemitism/article-910349"}
@@ -163,7 +165,7 @@ events:
      detail: "Statement issued 'on Thursday' (1 Oct); the hour is not given. With an Emirati security team, after being medically cleared. Read through Al Jazeera and CNN."}
   - {id: b10, panel: aftermath, lane: israel_gov, time: "2026-10-01T12:00:00Z", precision: day, date_basis: stated, kind: official, status: reported, sources: [s_cnn, s_cnn_live, s_aj_uae],
      label: "Netanyahu: co-pilot Omani, 'underwent Islamist radical indoctrination'",
-     detail: "Interviews with CNN and Fox News on 1 Oct. The same reports note motive is not confirmed; he also said it was too early to say whether Iran was involved."}
+     detail: "Omani: told CNN (CNN does not date the interview: 30 Sep or 1 Oct). 'Underwent Islamist radical indoctrination': Fox News, reported in 1 Oct pieces. The same reports note motive is not confirmed; he also said it was too early to say whether Iran was involved. Placed at midday 1 Oct as a day-precision marker; the window is 30 Sep to 1 Oct."}
   - {id: b11, panel: aftermath, lane: us, time: "2026-10-01T14:00:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_cnn_live, s_ynet],
      label: "Trump: Iran link likely, 'based on what I'm hearing'; no detail",
      detail: "'Could be. Could be.' The same day a senior Israeli official told Ynet that investigators had so far ruled out an Iranian connection."}
@@ -182,3 +184,9 @@ events:
   - {id: b16, panel: aftermath, lane: israel_agencies, time: "2026-10-02T07:34:00Z", precision: approx, date_basis: derived, kind: media, status: single, sources: [s_jp_405],
      label: "Israeli sources (unnamed): the co-pilot held no second nationality",
      detail: "Jerusalem Post, 2 Oct 10:34 (page clock taken as Israel time, UTC+3, so 07:34 UTC; the zone is not stated). Anonymous sources; not confirmed by any authority."}
+  - {id: b17, panel: aftermath, lane: israel_gov, time: "2026-10-01T15:30:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_national],
+     label: "Herzog (BBC Radio 4): co-pilot is Omani; calls him a 'terrorist'; Iran link 'too early to say'",
+     detail: "Per The National, interview on Thursday 1 Oct; the hour is not given (midday-style placeholder). An accusation, not a finding; The National says no confirmation from Oman, the UAE or flydubai."}
+  - {id: b18, panel: aftermath, lane: uae, time: "2026-10-02T12:00:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_cnn],
+     label: "Gargash, a top UAE official per CNN: 'dangerous terrorist act'",
+     detail: "CNN explainer: 'on Friday' (2 Oct); the hour is not given and his own words were not read. An accusation, not a finding; the UAE investigation is still examining any terrorist link."}
