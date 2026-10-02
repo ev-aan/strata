@@ -129,7 +129,7 @@ Every excavation or open question page carries:
    - whether the sources are open
    - the conspiracy or popular claim it touches, if any.
 
-The public marks dig sites; contributors do the excavation.
+The public marks dig sites; contributors do the excavation. The owner has the final say on everything; see [`docs/GOVERNANCE.md`](docs/GOVERNANCE.md) for where contributions come in and who decides.
 
 ## Licences
 
