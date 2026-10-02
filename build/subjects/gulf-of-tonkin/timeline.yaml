@@ -35,7 +35,7 @@ panels:
     start: "1964-01-01T00:00:00Z"
     end:   "2006-06-30T00:00:00Z"
     tick_years: 5
-    lanes: [testimony, nsa_internal, declass]
+    lanes: [cong, testimony, nsa_internal, declass]
 
 lanes:
   covert:       {label: "Covert OPLAN 34-A raids"}
@@ -79,6 +79,8 @@ sources:
   s_senate:   {title: "Senate.gov, Chairman Fulbright and the Tonkin Gulf Resolution", url: "https://www.senate.gov/artandhistory/senate-stories/chairman-fulbright-and-the-tonkin-gulf-resolution.htm", authenticity: "official history; vote counts not read in the Record"}
   s_vote_s:   {title: "Voteview, Senate roll call 481, 7 Aug 1964, H.J.Res. 1145 (88 yea, 2 nay)", url: "https://voteview.com/rollcall/RS0880481", authenticity: "dataset of the official roll call; Congressional Record not read"}
   s_vote_h:   {title: "Voteview, House roll call 197, 7 Aug 1964, H.J.Res. 1145 (416 yea, 0 nay)", url: "https://voteview.com/rollcall/RH0880197", authenticity: "dataset of the official roll call; Congressional Record not read"}
+  s_crec64:   {title: "Congressional Record, Senate, 7 Aug 1964 (p. 18470: roll call 88-2)", url: "https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf#page=30", authenticity: "GPO bound Record, authenticated, strong"}
+  s_crec70:   {title: "Congressional Record, Senate, 24 June 1970 (p. 21132: roll call 81-10)", url: "https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf#page=32", authenticity: "GPO bound Record, authenticated, strong"}
   s_cfr:      {title: "Council on Foreign Relations, Congress passes the Gulf of Tonkin Resolution", url: "https://www.cfr.org/articles/twe-remembers-congress-passes-gulf-tonkin-resolution", authenticity: "secondary"}
   s_seattle:  {title: "Seattle Times, 9 Nov 1995: McNamara asks for truth about Gulf of Tonkin, Giap: there was no attack", url: "https://archive.seattletimes.com/archive/19951109/2151509/mcnamara-asks-for-truth-about-gulf-of-tonkin----giap-there-was-no-attack", authenticity: "news archive"}
 
@@ -105,9 +107,9 @@ events:
   - {id: e6, panel: overview, lane: cong, time: "1964-08-06T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_essay],
      label: "6 Aug: McNamara tells senators the Navy 'was not aware of' South Vietnamese actions",
      detail: "Quoted by Prados from the Senate Foreign Relations Committee's published executive sessions (vol. XVI, p. 293); the record was not read directly."}
-  - {id: e7, panel: overview, lane: cong, time: "1964-08-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_vote_s, s_vote_h, s_senate, s_cfr], link: "https://voteview.com/rollcall/RS0880481",
+  - {id: e7, panel: overview, lane: cong, time: "1964-08-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_crec64, s_vote_s, s_vote_h, s_senate, s_cfr], link: "https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf#page=30",
      label: "7 Aug: Tonkin Gulf Resolution passes (House 416-0, Senate 88-2)",
-     detail: "Signed 10 August. Totals read in Voteview's roll-call data (Senate roll 481, House roll 197) and agree with the Senate history page and CFR. The two Senate nays are Ernest Gruening (D-AK) and Wayne Morse (D-OR) in Voteview's member file. Voteview's per-member file for Senate roll 481 lists one more yea than the 88 in its summary row; unresolved, so totals follow the summary row. The Congressional Record was not read."}
+     detail: "Signed 10 August. Senate: read in the Congressional Record, p. 18470 (yeas 88, nays 2: Gruening and Morse; 10 not voting). House 416-0 from Voteview's roll-call data (roll 197); the House Record was not read."}
   - {id: e8, panel: overview, lane: intel, time: "1964-08-08T12:00:00Z", precision: day, kind: document, status: single, sources: [s_essay],
      label: "8 Aug: CIA cover note sends Bundy the selected intercepts",
      detail: "Prados: a cover note of 8 August accompanied the intercepts 'selected by CIA and NSA' that the White House had requested."}
@@ -168,3 +170,6 @@ events:
   - {id: g7, panel: after, lane: declass, time: "2005-12-01T12:00:00Z", precision: day, kind: document, status: reported, sources: [s_press, s_hanyok],
      label: "1 Dec 2005: NSA declassifies about 140 documents, including the Hanyok study",
      detail: "National Security Archive posting of 1 December 2005."}
+  - {id: g9, panel: after, lane: cong, time: "1970-06-24T12:00:00Z", precision: day, kind: official, status: reported, sources: [s_crec70, s_vote_s], link: "https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf#page=32",
+     label: "24 Jun 1970: Senate votes 81-10 to repeal the Tonkin Resolution (Dole amendment)",
+     detail: "Read in the Congressional Record, p. 21132 [No. 167 Leg.]. The ten nays include Fulbright, who said in the same debate 'I am going to vote for its repeal' and objected to the procedure (p. 21119). See claim tonkin-resolution-repealed-1970."}

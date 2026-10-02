@@ -99,6 +99,31 @@ actors:
     information_at_time_of_actions: "Not determined."
     alignment: not_determinable
 
+  - id: fulbright
+    name: "J. William Fulbright (D-AR)"
+    role_at_event: "US Senator from Arkansas; his committee role is shown by the Record's debate but not separately sourced here"
+    statements:
+      - {date: "1970-06-24", venue: "Senate floor", visibility: public, source: src-congressional-record-1970, claim: tonkin-1970-vote-not-clean-measure, anchor_checked: primary,
+         text_quote: "I am going to vote for its repeal. I am committed to it, of course. I still think that it is unfortunate it was not brought up according to recognized procedure."}
+    commitments:
+      - {date: "1970-06-24", specific: true, source: src-congressional-record-1970, anchor_checked: primary,
+         text_quote: "I think it should be repealed and that should be done in an orderly fashion in order to preserve some respect for the committee system."}
+    actions:
+      - {date: "1964-08-07", kind: vote, what: "Yea on H.J.Res. 1145 (Record p. 18470: on the yea list; 88-2)", source: src-congressional-record-1964, anchor_checked: primary}
+      - {date: "1970-06-22", kind: vote, what: "Yea on the motion to table the Dole amendment, which failed 15-67 (Voteview roll 392)", source: "https://voteview.com/rollcall/RS0910392", anchor_checked: secondary}
+      - {date: "1970-06-24", kind: vote, what: "Nay on the Dole amendment to repeal; passed 81-10 (Record p. 21132)", source: src-congressional-record-1970, claim: tonkin-resolution-repealed-1970, anchor_checked: primary}
+      - {date: "1970-07-10", kind: vote, what: "Yea on S. Con. Res. 64 to terminate the Resolution; passed 57-5 (Voteview roll 467)", source: "https://voteview.com/rollcall/RS0910467", anchor_checked: secondary}
+    information_at_time_of_actions: "In 1970 the Record shows him stating the procedural objection. What he knew about the 1964 attacks when voting Yea in 1964 is not determined here (see tonkin-senior-knowledge)."
+    alignment: changed_with_stated_reason
+    alignment_note: >
+      Voted Yea in 1964, then said in 1970 that he was committed to repeal. On 24 June 1970 he voted Nay on the amendment that would
+      repeal and gave a reason in the Record (procedure and respect for the committee system); on 10 July he voted Yea on the
+      concurrent resolution (Voteview, secondary). The label records that a stated reason accompanies the Nay; it does not judge the
+      reason. The 22 June and 10 July votes are from Voteview and not yet read in the Record.
+    inducement: {state: searched_gap, tiers_found: [], searched: [], next: "none proposed for this pilot"}
+    motive_map: {possible: [], acted_on_evidence: [], weight: "none (P6)"}
+    fixed_line: "Motive and sincerity are not assessed."
+
 # Collective actor: Congress as a body. The 88 senators and 416 representatives who voted yea are
 # not profiled; the pilot method (P1-P8) would be run on named members only after a neutral selection rule.
 bodies:

@@ -149,3 +149,20 @@ log:
       could have known on the date. Without it the 'broke' label would be unfair for the vote, since what senators were
       told on 6 Aug is unread. (5) The vote dots rest on Voteview (secondary); the official roll call is still to read.
       Nothing in this dig changed state as a result.
+  - id: L-17
+    date: "2026-10-02"
+    entry: >
+      CONGRESSIONAL RECORD READ (govinfo bound edition; first primary legislative record in this dig). (1) 7 Aug 1964, Senate p. 18470:
+      'yeas 88, nays 2' [No. 520 Leg.], nays Gruening and Morse, 10 not voting: anchors the Senate vote to the Record (was Voteview).
+      The debate prints the President's 4 Aug address ('repeated today by a number of hostile vessels attacking two U.S. destroyers
+      with torpedoes') and the enacted preamble says 'deliberately and repeatedly attacked'. Claim tonkin-resolution-rested-on-aug4
+      raised to weight 4, anchor_checked primary; the whole debate is still searched, not read line by line. (2) 24 June 1970, Senate
+      p. 21132: 'yeas 81, nays 10' [No. 167 Leg.] on the Dole amendment (No. 715) to repeal the Resolution; nays Allen, Bellmon, Eastland,
+      Ervin, Fulbright, Hollings, Long, McClellan, McGee, Stennis (new claim tonkin-resolution-repealed-1970). (3) The debate (p. 21119)
+      shows Fulbright saying 'I am going to vote for its repeal. I am committed to it, of course' while objecting to the procedure, and he is on
+      the list of nays. So a 1970 nay is not a clean measure of a senator's view of the 1964 Resolution (new claim
+      tonkin-1970-vote-not-clean-measure, proposed). Added actors.yaml entry for Fulbright (alignment: changed_with_stated_reason).
+      METHOD NOTES: the Record is a two-column scan; plain text extraction interleaves columns, so the one quoted passage was checked on
+      the page image. Page images (not the 42 and 62 MB PDFs) are stored with sha256 in sources/congressional-record/. Voteview numbers
+      the same roll calls 481 (1964) and 398 (1970); the Record's own numbers are 520 and 167. NEXT: read the full 6-7 Aug 1964 debates for
+      who cited the 4 August attack and what senators were told (P8); read the 1970 debate and amendment text; the House Record.

@@ -110,3 +110,33 @@ sources:
       status: not_applicable
       basis: "A secondary news posting."
     stored_as: not stored; cited by URL
+  - id: src-congressional-record-1964
+    title: "Congressional Record, Vol. 110, Part 14 (Senate, 7 August 1964), GPO bound edition, granule GPO-CRECB-1964-pt14-4-1"
+    document_class: primary_text (official proceedings)
+    url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf
+    pdf_sha256: 7de8a08396fe965fe493e8f44733a90992dc82250811759ca027ec83d4f74fea
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
+      tests: ["Page headers and numbering continuous (p. 18470 roll call page read)", "Vote totals agree with the Voteview roll-call data (88-2)"]
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps: ["OCR text of a two-column scan; wording checked on the page image only where quoted", "Debate read in part"]
+      checked: 2026-10-02
+    stored_as: "page image sources/congressional-record/crec-1964-p18470-30.png (full 42 MB file not stored)"
+    image_sha256: 6dab8ad713e7031730bed4d34fa61163e62a2684318dfcdc34a3fadf67ce354a
+  - id: src-congressional-record-1970
+    title: "Congressional Record, Vol. 116, Part 16 (Senate, 24 June 1970), GPO bound edition, granule GPO-CRECB-1970-pt16-1-1"
+    document_class: primary_text (official proceedings)
+    url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf
+    pdf_sha256: da3ed809dbeee6c7cc94ea5492f1bdc8aec4a67094df3142e0d38497efc15844
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "Government Publishing Office bound Congressional Record, fetched from govinfo.gov"
+      tests: ["Roll call page (21132) read; counts agree with Voteview roll 398 (81-10)"]
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps: ["Two-column scan; the quoted Fulbright passage was checked on the page image", "Debate read in part"]
+      checked: 2026-10-02
+    stored_as: "page images sources/congressional-record/crec-1970-p21119-019.png and crec-1970-p21132-032.png (full 62 MB file not stored)"
+    image_sha256: {p21119: 6f4c79df6d4b929237dea41dec46c8467e69165ffba15bc03ddb50f9749f25bc, p21132: 0cf5547d25a755a54493958d46d61a291a3a9f9155e6a173ac01b4dff41ec440}
