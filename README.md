@@ -19,4 +19,4 @@ Site: https://stratah.org
 Rules, the schema and the validator change only through a proposal that meets `docs/SCHEMA_PROPOSALS.md`.
 
 ## Licences
-Code: MIT (`LICENSE`). Written content: CC BY 4.0 (`LICENSE-CONTENT.md`). Historical sources keep their own status.
+Written content (pages, claims, findings, logs, timelines): **CC BY 4.0** (`LICENSE-CONTENT.md`). Reuse with credit to "Stratah (stratah.org)", a link to the page and to the licence, and a note of any changes. Code: MIT (`LICENSE`). Historical sources keep their own status.
