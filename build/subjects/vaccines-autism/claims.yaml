@@ -20,6 +20,36 @@ url_slug: do-vaccines-cause-autism
 short_answer:
   question: "Do vaccines cause autism?"
   answer: "No, to the best of our knowledge."
+  # The summary below is the first thing a reader sees. Every figure is tied to a source
+  # and a verification level; nothing is added up across studies that may share children.
+  summary: >
+    Across studies covering more than a million children, vaccines have not been found to
+    cause autism. A 2014 analysis pooling 10 studies of 1,266,327 children found no link; two
+    nationwide Danish studies following 1,194,764 children found no more autism after MMR; and
+    in December 2025 the WHO's vaccine safety committee, reviewing 31 studies and 5
+    meta-analyses published from 2010 to 2025, found no evidence of a causal relationship.
+  summary_figures:
+    - figure: "10 studies, 1,266,327 children, no association"
+      detail: "Taylor, Swerdfeger & Eslick 2014: 5 cohort studies (1,256,407 children) and 5 case-control studies (9,920 children)."
+      source: src-taylor-2014
+      checked: abstract
+    - figure: "1,194,764 children, no increase after MMR"
+      detail: >
+        Madsen 2002 (537,303 children born in Denmark 1991-1998; RR 0.92) and Hviid 2019
+        (657,461 born 1999-2010; HR 0.93, 95% CI 0.85 to 1.02). The two birth cohorts do not
+        overlap; they are also the two studies in Cochrane's 2021 pooled estimate.
+      source: [src-madsen-2002, src-hviid-2019, src-cochrane-2021]
+      checked: abstract
+    - figure: "31 studies and 5 meta-analyses, 2010-2025, no causal relationship"
+      detail: "WHO Global Advisory Committee on Vaccine Safety, statement of 11 Dec 2025."
+      source: src-who-gacvs-2025
+      checked: read via fetch tool
+    - figure: "Not summed"
+      detail: >
+        These counts are not added together. Many of the same Danish children appear in more
+        than one study (the thimerosal cohort, born 1990-1996, and the aluminum cohort, born
+        1997-2018, overlap the MMR cohorts' birth years), and the meta-analysis may include
+        Danish studies, so a combined total would count the same children more than once.
   basis: >
     For MMR, studies following more than a million children find no more autism among
     vaccinated than unvaccinated children (va-mmr-no-detectable-increase). For thimerosal
@@ -35,22 +65,44 @@ short_answer:
         compensation case, that vaccines significantly aggravated a pre-existing
         mitochondrial disorder, which showed features of autism. This was a
         compensation decision, not a scientific finding that vaccines cause autism.
+      scale: >
+        One known concession. The same court received more than 5,000 autism claims, and
+        all six test cases chosen to present the families' strongest theories were rejected.
+      scale_sources: [src-poling-cnn-2008, src-oap-decisions]
     - claim: va-mito-fever-regression
       text: >
         One open question. In children with mitochondrial disease (about 5 in 100 children
         with autism), small case series report regression after fever, including a few
         after a fever that followed a routine vaccination. No controlled study has tested this.
+      scale: >
+        Mitochondrial disease affects about 1 in 10,000 people overall. The published reports
+        of regression after a post-vaccination fever amount to 4 children in one series of 28.
+        No rate per vaccination can be calculated from evidence this small.
+      scale_sources: [src-rossignol-frye-2012, src-shoffner-2010]
     - claim: va-small-effect-not-excludable
       text: >
         A limit, not an exception. No study can prove an effect is exactly zero. The largest
         MMR study rules out anything but a very small average increase; smaller studies have
         wider margins; and population data cannot by themselves rule out a very rare
         susceptible group.
+      scale: >
+        In the largest study, any average effect of MMR would be at most about 2 or 3 extra
+        autism diagnoses per 100,000 children per year, against about 130 per 100,000 per year
+        from all causes. This is Strata's own arithmetic from the study's figures (an upper
+        bound of 2% applied to its overall rate of 129.7 per 100,000 person-years), not a figure
+        the study reports, and it is a ceiling, not an estimate: the study's best estimate is no
+        increase.
+      scale_sources: [src-hviid-2019]
   also_true:
     - claim: va-rubella-causes-autism-vaccine-prevents
       text: >
         The reverse is established. Rubella infection in pregnancy can cause autism in the
         child, and the rubella vaccine (the R in MMR) prevents it.
+      scale: >
+        About 7 in 100 children with congenital rubella had autism in the classic follow-up of
+        243 children. One US model estimates rubella vaccination prevented about 1,228 autism
+        cases from 2001 to 2010 (range 830 to 6,225).
+      scale_sources: [src-chess-1978, src-berger-2011]
 
 # ---------------------------------------------------------------------------
 # SOURCE NOTICES (rule PS4): shown first on the page, above every other section.

@@ -126,3 +126,19 @@ log:
       `source_notices` block shown first on the page, and `flagged_sources` on the three claims
       that cite a retracted paper. The validator rules that enforce this (PS1-PS4) are on the
       separate branch schema/publication-status.
+  - id: L-13
+    date: 2026-10-02
+    entry: >
+      OWNER REQUEST: a plain summary ("over X studies covering Y children...") and a sense of
+      scale for each exception. Added `summary` and `summary_figures` to the short answer: 10
+      studies and 1,266,327 children (Taylor 2014, abstract); 1,194,764 children in two
+      non-overlapping Danish MMR cohorts (abstracts); 31 studies and 5 meta-analyses (WHO
+      GACVS 2025, via fetch tool). Counts are deliberately not summed, because the same Danish
+      children appear in several studies. Added `scale` to each exception: Poling is one
+      known concession against more than 5,000 autism claims; mitochondrial disease is about 1
+      in 10,000 people, with 4 published post-vaccination-fever regressions in one series; the
+      small-effect ceiling is about 2.6 extra diagnoses per 100,000 children per year (Strata's
+      own arithmetic: 2% of 129.7 per 100,000 person-years, labelled as such); congenital
+      rubella, about 7 in 100 with autism and an estimated 1,228 US cases prevented in
+      2001-2010. A single "1 in N" figure for vaccine-caused autism was considered and not used:
+      no source supports one, and inventing it would be adoption weight dressed as evidence.
