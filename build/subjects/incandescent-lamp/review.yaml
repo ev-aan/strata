@@ -398,24 +398,28 @@ rounds:
     finding: 'Key point 3 says "Edison lamps were lit at Menlo Park from 30 Dec 1879" and the position ground says "lit and seen by visitors from 30 Dec 1879". The Herald of 31 Dec 1879 is dated Menlo Park, 30 Dec, and says the place was "thronged with visitors"; its title in the node is "The Horseshoes Still Shining", and the dig itself dates the 22 Oct 1879 test and the 16 Nov 1879 lamp earlier. "From 30 Dec" reads as the day lighting began. The newspapers show visitors and lights on 30 and 31 Dec, not a first lighting.'
     evidence: 'build/nodes/lamp-1879-12-31-menlo-park-visitors-no-formal-exhibition.yaml; lamp-edison-oct-1879-test; Edison Papers Doc. 1831. (The loc.gov pages were not reachable to this reviewer.)'
     asked: 'Say "seen by visitors at Menlo Park on 30-31 Dec 1879" (or "by 30 Dec").'
+    author_response_round5: {action: fixed, note: 'Verified (Herald 31 Dec 1879, dateline Menlo Park 30 Dec, "thronged with visitors"; no first lighting reported). Key point 3 and the position ground say "seen by visitors at Menlo Park on 30-31 Dec 1879". L-23.'}
   - id: R5-2
     target: 'tests.yaml dt-which-first (predicts, result.finding, note) (continuation of R4-5 b)'
     severity: non_blocking
     finding: 'The question lists four rows and says "at least four ... and a system", but predicts still says "the same name should come first on all five"; finding (3) ends "so row 4 is contested" although row 3 (a practical lamp) is the contested one; the note says the test "does not decide the Swan versus Edison question on 4". Row 4 (central supply) is Edison, the only supply examined.'
     evidence: 'build/subjects/incandescent-lamp/tests.yaml (read in full).'
     asked: 'Use "all four" and "row 3" consistently, or say five if a fifth row is meant.'
+    author_response_round5: {action: fixed, note: Verified in tests.yaml; "all four" and "row 3" now consistent. L-23.}
   - id: R5-3
     target: 'claims.yaml assessment.text ("On the fourth, Edison''s company is the one documented"); assessment.basis'
     severity: non_blocking
     finding: 'The assessment says Edison''s company is "the one documented" for a lamp run from a central supply; dt-which-first says nothing in the dig searched for an earlier supply. A reader of the assessment alone is not told that. Also, key point 3 rests on lamp-swan-in-use, lamp-swan-cragside and lamp-menlo-park-dec-1879, none of which is in assessment.basis (lamp-first-practical-priority, which cites them, is).'
     evidence: 'claims.yaml; tests.yaml dt-which-first row 4.'
     asked: 'Add "no earlier central supply was searched for" to the assessment text and list the three claims in the basis.'
+    author_response_round5: {action: fixed, note: 'Agreed; assessment text says nothing earlier was searched for, and the basis lists lamp-swan-in-use, lamp-swan-cragside and lamp-menlo-park-dec-1879. L-23.'}
   - id: R5-4
     target: 'timeline.yaml people (Lewis Latimer); threads.yaml thread-national-priority overlay_notes (Russia)'
     severity: non_blocking
     finding: 'The Latimer entry says "Carbon-making patent 252,386 (1882) and, with J. V. Nichols, a lamp-mounting patent (1881), the first assigned to the United States Electric Lighting Company". The 1881 patent (US 247,097, OCR of the USPTO scan) has no assignment line (Nichols of Brooklyn and Latimer of New York); only 252,386 says "assignor to the United States Electric Lighting Company". "The first" is ambiguous and can be read as the 1881 patent. The Russia overlay note says "a patent dated 11 July 1874 per Kommersant"; the page says "privilege" (привилегия) No. 1619 with a backdated priority, as the claim says.'
     evidence: 'build/subjects/incandescent-lamp/timeline.yaml; US 247,097 and 252,386 (OCR in the first reviewers'' notes); Kommersant doc 6822124.'
     asked: 'Say "the 1882 patent was assigned to ..."; say "privilege" in the Russia note.'
+    author_response_round5: {action: fixed, note: 'Verified in the OCR of US 247,097 (no assignment line) and US 252,386; timeline Latimer entry and Russia note ("privilege") fixed. The Greener and Staite (1846) and Roberts (1852) lead is logged in L-23, no claim change.'}
 open_items:
 - 'FOURTH REVIEWER, FINAL STATUS (passed_with_open_items): every blocking request in rounds 1 to 4 (R1-1 to R1-5, R2-1 to R2-4, R3-1, R3-2, R4-1) is resolved by a reviewer''s own reading, and I re-verified R4-1 myself in 52 F. 300, 47 F. 454 and 54 F. 678. The earlier open_items below that say the status stays revisions_requested were true when written (round 4) and are superseded by this one. Non-blocking leftovers: R4-5 (b) residue and R5-1 to R5-4 above; they should be shown to the author as follow-ups and do not change what a reader is told about who invented the lamp. The subject is NOT added to build/site.yaml by this review.'
 - 'Fourth reviewer, read personally: 52 F. 300, 47 F. 454, 54 F. 678 (static.case.law JSON); 159 U.S. 465 (tile.loc.gov, pdftotext); abridgments pp. 62-63 and 97-98 and a text search of the 1859 abridgments for lighting entries to 1845 (archive.org); Kommersant 6822124 (re-read, 1619, 2 Oct 1872 backdated priority, Petersburg wording, 30-40 minutes); the IET Cragside blog (45 incandescent lamps in 1880; Swan bulbs and 17 Jan 1881 in a separate passage); The Times transcription at gsarchive.net (needs a browser user agent); Chemical News 42 pp. 227-230 (Stearn Oct 1877; "a mere hair"; "no blackening"; "two years ago in action"; "as much better than carbonised cardboard"; Swan reports Upton said Edison''s use of carbon in such a vacuum was "entirely new"); the Google Patents text of US 575,002 (citizen of Russia, Pittsburg; filed 4 Jan 1893; dated 12 Jan 1897; molybdenum and tungsten).'
