@@ -363,51 +363,61 @@ rounds:
     severity: blocking
     finding: 'The new what_it_is_not line says the proceeding was "Not a ruling on the theory of MMR alone, which an earlier pass reports was never presented (not re-checked)", and the statement says of Cedillo, Hazlehurst and Snyder "the theory was MMR plus thimerosal". The two Federal Circuit opinions the author added and cites as opened say otherwise. Hazlehurst (09-5128): "The Hazlehursts initially presented that theory of causation, but in post-hearing briefing they relied on the theory that Yates''s autism was caused by the MMR vaccine alone", and the denial was affirmed. Cedillo (10-5004): the special master "concluded that the evidence did not demonstrate that the MMR vaccine alone or in combination with TCVs can cause autism in general". So an MMR-alone theory was argued in one test case and ruled on, and the line tells readers the reverse on the point most relevant to the MMR question. Fix: say the first group presented MMR plus thimerosal, that the Hazlehursts relied on MMR alone after the hearing and the special master and the Federal Circuit rejected it, and drop or narrow the "never presented" line (the basis line "the third planned theory (MMR alone) was never presented" is true only of the planned third group of test cases; say so).'
     evidence: 'cafc.uscourts.gov/opinions-orders/09-5128.pdf and 10-5004.pdf (sha256 as in the manifest), opened and searched in full text by me.'
+    author_response: {action: fixed, note: 'Verified: Hazlehurst 09-5128 says the Hazlehursts moved in post-hearing briefing to MMR alone, and Cedillo 10-5004 has the special master addressing MMR alone or with TCVs. The statement, anchor, what_it_is_not and basis are corrected and the earlier never-presented statement is withdrawn in the basis. The timeline had no such line. King, Mead and Dwyer theories not checked. Log L-22.'}
   - id: R4-2
     target: review.yaml (round 1 N3 reviewer_note)
     severity: non_blocking
     finding: 'build_site.py copies review.yaml to the public site (digs/<slug>/review.yaml). The round 1 N3 reviewer_note quotes NPR as "the vaccines [first name] received", so the child''s first name would be published despite the owner rule of L-19. The other occurrence, in open_items, is removed in this round because open_items is the current reviewer''s field; I did not edit an earlier reviewer''s note. Owner or author: redact it to "[the child]" in a new commit and log the redaction, before the subject is added to publish.'
     evidence: 'Case-insensitive grep for the first name in build/subjects/vaccines-autism: only review.yaml and the stored Bruesewitz opinion text (a different child, the Bruesewitz petitioner; not published by build_site.py).'
+    author_response: {action: fixed, note: 'Verified: the first name is no longer in the working tree (redacted to [the child] in 5b14b9b). It remains in git history, which a redaction cannot change. No earlier log entry was edited (the note is in review.yaml), so no redacts entry applies; the redaction is recorded in L-22.'}
   - id: R4-3
     target: log L-19; assessment key point 3
     severity: non_blocking
     finding: 'L-19 says the former key points 2 and 3 were joined and "nothing in them was dropped". Two things left the first screen: the year of the full retraction (2010) and "a court later found its ethics statement untrue". Both are still in assessment.text, so the page loses nothing, but the log line is not accurate. Correct it in a new log entry; restoring "in 2010" to key point 3 would fit.'
     evidence: 'git diff a74e1d7 f71be42 -- claims.yaml (assessment.key_points).'
+    author_response: {action: fixed, note: 'Verified: the retraction year and the court finding left the first screen. L-19 said nothing was dropped; corrected by L-22. Key point 3 now restores both.'}
   - id: R4-4
     target: assessment.text (IOM 2004)
     severity: non_blocking
     finding: 'The new sentence says the IOM (2004) "found no evidence of a causal link". The IOM Executive Summary says "the evidence favors rejection of a causal relationship" between MMR vaccine and autism, and the same for thimerosal-containing vaccines: a stronger statement, and limited to those two exposures, not vaccines in general. Use the IOM''s wording and scope (as the thimerosal adoption_note already does).'
     evidence: 'nap.nationalacademies.org/read/10997/chapter/2, Causality Conclusions (read via fetch tool).'
+    author_response: {action: fixed, note: 'Verified against the IOM executive summary wording already used in the thimerosal adoption note. The assessment now says the IOM found the evidence favors rejecting a causal relationship for MMR and for thimerosal-containing vaccines.'}
   - id: R4-5
     target: divergence_note (WHO qualifier)
     severity: non_blocking
     finding: 'Says "20 of 31 primary studies showed no association and the other 11 of very low strength" but not that the 11 suggested an association, which the WHO says and va-cdc-page-2025 already says. Fairness to the opposing side: "the other 11 suggested an association but were of very low strength".'
     evidence: 'WHO GACVS statement: "The other eleven studies ... suggested a potential association; however ... all had very low strength of evidence and a high risk of bias."'
+    author_response: {action: fixed, note: 'Verified in the WHO page. divergence_note now says the other 11 suggested an association but were of very low strength.'}
   - id: R4-6
     target: va-cdc-page-2025 and va-causes-largely-unknown (anchor.sources)
     severity: non_blocking
     finding: 'Same class as R3-1 and R3-9. va-cdc-page-2025 lists src-who-gacvs-2025 in anchor.sources, though its manifest entry says "used as adoption, not as an anchor" and the anchor description does not use it. va-causes-largely-unknown, a searched gap, lists src-cdc-autism-page (an agency page) in anchor.sources. Move both to adoption_note or positions; no weight changes.'
     evidence: 'claims.yaml anchors; sources/MANIFEST.yaml src-who-gacvs-2025 document_class.'
+    author_response: {action: fixed, note: 'Fixed. src-who-gacvs-2025 removed from va-cdc-page-2025 anchor.sources; src-cdc-autism-page removed from the searched gap va-causes-largely-unknown and named in its adoption_note. No weights changed.'}
   - id: R4-7
     target: timeline.yaml events a14 and a18
     severity: non_blocking
     finding: 'The details now rest on the Federal Circuit opinions ("[opened]"), but both events still list only src-oap-decisions in sources, so the timeline links to the decision list rather than the documents read. Add src-cafc-cedillo-2010 and src-cafc-hazlehurst-2010 to the events and the timeline sources list.'
     evidence: 'timeline.yaml lines for a14 and a18 at b20ad59.'
+    author_response: {action: fixed, note: 'Fixed. a14 and a18 now list the two Federal Circuit opinions, which are added to the timeline sources list.'}
   - id: R4-8
     target: divergence_note; assessment.text (aluminum)
     severity: non_blocking
     reviewer: second fourth-round reviewer (independent pass at the same head, b20ad59; agrees with R4-1)
     finding: "(a) divergence_note says 'Nothing in the evidence changed between those two dates; what changed was adoption by an institution.' No claim shows that, and the dig itself lists new 2025 items (the Andersson aluminum cohort, the Henry Ford draft, the WHO reviews). Say what the dig shows, for example that no study read for this dig reports a new association between those dates. (b) assessment.text says children exposed to more aluminum 'were not diagnosed with autism more often' without the claim's caveat (autism-specific figure read only in the journal's press release; moderate, weight 3)."
+    author_response: {action: fixed, note: '(a) Fixed: the divergence_note no longer says nothing changed; it says the dig lists new 2025 items and none is read as changing what the large studies show for autism, with the supplementary Asperger signal and the drafts uninformative result recorded in their claims. (b) Fixed: assessment text now carries the aluminum caveat (autism-only figure read only in a press release; moderate confidence).'}
   - id: R4-9
     target: va-mmr-causes-autism basis; tests.yaml dt-mmr-cohorts note
     severity: non_blocking
     reviewer: second fourth-round reviewer
     finding: "Both still call Rule 9 for statistics 'an open design question (log L-05)'. L-19 records the owner's decision (option (a): statistics cannot prove a claim false; general claims stay proposed; no rule change). Update the wording through a new log entry."
+    author_response: {action: fixed, note: 'Fixed. va-mmr-causes-autism basis and the dt-mmr-cohorts note now state the owner decision of L-19 (option (a)); no rule change.'}
   - id: R4-10
     target: va-mito-fever-regression; short_answer 'What remains open, 2' scale; va-poling-concession
     severity: non_blocking
     reviewer: second fourth-round reviewer
     finding: "In Rossignol and Frye 2012 the 'one further child' refs are 25 and 85, and ref 85 is Poling et al. 2006 ('a child with autism'). That case report may concern the same child as the compensation concession (not shown by any source the dig read). The scale ('at least 5 children in two reports') and the positions list them side by side, which could read as independent corroboration. Say it is not verified whether they are one child, or verify. Also, for R3-5 (marked resolved by the other fourth reviewer): the wording is fixed, but my decision on the open question is that va-retraction-reasons should be confidence moderate, not high, while both Lancet notices are unread and the 2004 non-disclosure admission rests on one secondary review."
+    author_response: {action: fixed, note: 'Verified (refs 25 and 85 of Rossignol and Frye; 85 is Poling et al. 2006). Whether it is the same child as the concession is not shown by any source read: the short-answer scale and the mito positions now say so and do not count them as independent. va-retraction-reasons confidence lowered to moderate.'}
 open_items_proposed_by_author:
   - 'Other compensated vaccine-injury cases with autism-like features (for example Banks v. HHS, 2007) not investigated (F4).'
   - 'The Lancet 2004 and 2010 notices, the 1998 full text, the GMC findings, the BMJ articles and the Poling decision remain unread; the claims that rest on them say so.'

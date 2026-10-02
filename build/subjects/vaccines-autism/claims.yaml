@@ -23,8 +23,10 @@ assessment:
   text: >
     Two nationwide Danish cohorts following 1,194,764 children found no more autism after MMR,
     and studies in the UK (1,294 cases) and the US (95,727 children with older siblings) agree.
-    Children exposed to more thimerosal or aluminum were not diagnosed with autism more often.
-    The 1998 paper that started the scare was retracted in 2010; a court later found its
+    Children exposed to more thimerosal were not diagnosed with autism more often; for
+    aluminum, a Danish cohort found no increase in neurodevelopmental disorders (read in the
+    abstract), and its autism-only figure was read only in a press release, so that claim is
+    held at moderate confidence. The 1998 paper that started the scare was retracted in 2010; a court later found its
     ethics statement untrue, and a 2011 BMJ investigation reported that its account of the
     children did not match their records. In 2007 the US government conceded one family's
     compensation claim for a child with a pre-existing mitochondrial disorder; that was a legal
@@ -36,14 +38,15 @@ assessment:
     general claim "vaccines cause autism" is filed as unsupported, not as refuted. The reverse link is established:
     rubella in pregnancy can cause autism, and the vaccine prevents it. What health bodies say
     is shown separately because it is adoption, not evidence: the US Institute of Medicine
-    (2004) and the WHO's vaccine safety committee (December 2025) found no evidence of a causal
-    link; since
+    (2004) found that the evidence favors rejecting a causal relationship for MMR and for
+    thimerosal-containing vaccines, and the WHO's vaccine safety committee (December 2025)
+    found no evidence of a causal relationship; since
     November 2025 the CDC's page has said the "no link" statement is not evidence-based, a
     change the US Health Secretary said he ordered (va-cdc-page-2025).
   key_points:
     - "Two Danish cohorts (1,194,764 children) and studies in the UK and US found no more autism in children who got MMR."
     - "Health bodies (adoption, not evidence): WHO's safety committee found no evidence of a causal link (2025); since Nov 2025 the CDC's page disputes the 'no link' statement."
-    - "The 1998 paper behind the scare was retracted. Open: a 2007 legal concession (not science) and an untested question on fever in mitochondrial disease."
+    - "The 1998 paper was retracted in 2010; a court found its ethics statement untrue. Open: a 2007 legal concession (not science); fever in mitochondrial disease (untested)."
   basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
   # Key point 2 states institutional positions on the first screen by owner decision 2026-10-02 (log L-19). They are adoption, not basis.
   rated_claim: va-mmr-no-detectable-increase
@@ -144,7 +147,9 @@ short_answer:
         Mitochondrial disease affects about 1 in 10,000 people overall. Reports of regression
         after a post-vaccination fever found so far: at least 5 children in two reports (4 in one
         series of 28, and one case report), as collected in one review; this is not a systematic
-        count. No rate per vaccination can be calculated from evidence this small.
+        count. The case report (Poling et al. 2006) may concern the same child as the
+        compensation concession; that is not shown by any source read, so the two are not
+        independent evidence until it is checked. No rate per vaccination can be calculated from evidence this small.
       scale_sources: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006]
     - claim: va-small-effect-not-excludable
       text: >
@@ -216,10 +221,13 @@ divergence_note: >
   measles, mumps and rubella cause autism, 13% of US adults said true, 68% false and 19%
   were unsure (Annenberg). Since November 2025 the gap has a new
   shape. The US health department's own CDC page now calls "vaccines do not cause autism"
-  not an evidence-based claim, while the WHO's safety committee (which found 20 of 31
-  primary studies showed no association and the other 11 of very low strength), the AAP and the
-  studies themselves find no evidence of a link. Nothing in the evidence changed between those two dates; what changed was
-  adoption by an institution. Strata records both statements, and gives neither of them
+  not an evidence-based claim, while the WHO's safety committee (which found that 20 of 31
+  primary studies showed no association and that the other 11 suggested one but were of very
+  low strength), the AAP and the large studies find no evidence of a link. The dig does list
+  new 2025 items (the Danish aluminium cohort, the Henry Ford draft, the WHO reviews); none is
+  read here as changing what the large studies show for autism (the cohort's supplementary
+  Asperger signal and the draft's uninformative autism result are recorded in their claims),
+  while what visibly changed was adoption by an institution. Strata records both statements, and gives neither of them
   evidential weight. The real open edges are narrow: a very rare susceptible group cannot
   be excluded by population data, fever-related regression in mitochondrial disease is
   untested, the whole schedule has never been studied as one exposure, and in the one
@@ -343,9 +351,11 @@ claims:
     basis: >
       Filed as `proposed` rather than `refuted`. Rule 9 lets a refutation rest only on
       material or primary-text evidence, and the population studies that retire this claim
-      are statistics, which CONTRIBUTING.md classes as `synthetic`. This is an open design
-      question for the method (log L-05), not a sign that the claim is live: it is retired
-      by dt-mmr-cohorts at evidential weight 1.
+      are statistics, which CONTRIBUTING.md classes as `synthetic`. The owner decided (log L-19,
+      option (a) of L-05) that statistics cannot prove a claim false but can show that no
+      evidence supports it, so the claim stays filed as unsupported and not refuted; no rule
+      changed. It is not a sign that the claim is live: it is retired by dt-mmr-cohorts at
+      evidential weight 1.
 
   # =====================================================================
   # B. THE ORIGIN: THE 1998 LANCET PAPER
@@ -501,7 +511,7 @@ claims:
       was published afterwards, in the BMJ in January 2011, and is the BMJ's finding, not The
       Lancet's.
     evidence_class: primary_text
-    confidence: high
+    confidence: moderate   # lowered from high in round 4 (R4-10): both Lancet notices are unread and the 2004 non-disclosure admission rests on one secondary review
     evidential_weight: 4   # of 5; capped: both Lancet notices known only as quoted
     anchor_checked: secondary   # notices known as reported (Indian J Psychiatry 2011 and the Guardian of 2 Feb 2010 read directly in round 3; BMJ c696 not reachable); author list read
     adoption_weight: 2   # of 5
@@ -1419,7 +1429,8 @@ claims:
       In the US vaccine court's Omnibus Autism Proceeding, which the Federal Circuit describes
       as addressing approximately 5,000 autism claims, the Petitioners' Steering Committee
       proposed a test-case approach. In the first group of three test cases (Cedillo,
-      Hazlehurst, Snyder; the theory was MMR plus thimerosal), the special masters denied all
+      Hazlehurst, Snyder; the theories included MMR plus thimerosal-containing vaccines, and
+      in Hazlehurst, in post-hearing briefing, MMR alone), the special masters denied all
       three petitions in 2009 and the Court of Federal Claims affirmed; the Federal Circuit
       affirmed Hazlehurst (13 May 2010) and Cedillo (27 Aug 2010), and Snyder was not appealed.
       The court's list also shows decisions in three further cases (King, Mead, Dwyer) dated
@@ -1446,7 +1457,13 @@ claims:
         omnibus proceeding was "an effort ... to identify and adjudicate certain test cases as a
         means of addressing the principal issues in approximately 5,000 autism claims that have
         been filed under the Vaccine Act"; the Cedillo and Snyder petitioners presented a theory
-        based on MMR plus thimerosal; the court affirmed. The court's decision list (read
+        based on the combined effect of MMR and thimerosal-containing vaccines; the Hazlehursts
+        "initially presented that theory of causation, but in post-hearing briefing they relied
+        on the theory that [the child's] autism was caused by the MMR vaccine alone"; the court
+        affirmed. In Cedillo (10-5004) the special master "concluded that the evidence did not
+        demonstrate that the MMR vaccine alone or in combination with TCVs can cause autism in
+        general, or that the MMR vaccine alone or in combination with TCVs caused" the child's
+        autism [read]. The court's decision list (read
         directly) also gives special-masters' decisions of 12 Mar 2010 in King, Mead and Dwyer;
         they were not opened. Cedillo: the evidence was "overwhelmingly contrary to the
         petitioners' contentions" [as read through a fetch tool in an earlier pass; not
@@ -1463,7 +1480,7 @@ claims:
     what_it_is_not:
       - "Not a scientific proof that no child's autism was ever caused by a vaccine."
       - "Not a judgment on the families' honesty or on their children's suffering."
-      - "Not a ruling on the theory of MMR alone, which an earlier pass reports was never presented (not re-checked)."
+      - "Not a finding that no theory was left untested: the Federal Circuit opinions read show the MMR-alone theory was argued in Hazlehurst and addressed in Cedillo, and the cases decided are individual petitions, so no ruling is claimed on any other petition."
     positions:
       - label: "A caution, not a finding either way"
         holder: "Justice Sotomayor's dissent in Bruesewitz (2011), n.25"
@@ -1476,7 +1493,10 @@ claims:
         ground: "The families' experts did not show causation by the legal standard."
     basis: >
       A failure of proof by a preponderance of the evidence is a legal finding, not a
-      scientific proof of no link. The third planned theory (MMR alone) was never presented.
+      scientific proof of no link. An earlier statement here that the MMR-alone theory "was
+      never presented" was wrong and is withdrawn (round 4, R4-1): the Federal Circuit opinions
+      show MMR alone was argued in Hazlehurst and addressed in Cedillo. Whether King, Mead and
+      Dwyer (the three further cases) tested other theories was not checked.
 
   - id: va-bruesewitz-no-autism-finding
     state: established
@@ -1749,7 +1769,7 @@ claims:
     evidential_weight: 3   # of 5
     anchor_checked: secondary
     adoption_weight: 4   # of 5
-    adoption_note: "Stated on the CDC page (Jul 2026) and by the NIH Director (Aug 2026) [secondary]."
+    adoption_note: "Stated on the CDC page (Jul 2026; src-cdc-autism-page, read via a fetch tool) and by the NIH Director (Aug 2026) [secondary]. Agency statements: adoption, not an anchor."
     would_change_if: "large genetic and exposure cohorts assign causes to most cases"
     next_step: >
       Combine genome sequencing with prospectively recorded exposures (including vaccination
@@ -1759,7 +1779,7 @@ claims:
       type: stated-limit
       description: "Heritability is high but explains variation, not individual cases (see va-heritability-high)."
       accessible: true
-      sources: [src-cdc-autism-page, src-sandin-2017]
+      sources: [src-sandin-2017]
     basis: "Not knowing the cause is not evidence for any particular cause, vaccines included."
 
   # =====================================================================
@@ -1832,7 +1852,7 @@ claims:
       sources: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006]
     positions:
       - label: "Yes (possible)"
-        holder: "Shoffner 2010; Poling et al. 2006 (case report); the Poling concession"
+        holder: "Shoffner 2010; Poling et al. 2006 (case report; possibly the same child as the Poling concession, not verified, so not counted as separate support)"
         ground: >
           Regression after fever is documented in this group, a few after post-vaccination
           fevers.
@@ -1921,7 +1941,7 @@ claims:
         2025; Kennedy said he ordered it [secondary: STAT, 21 Nov 2025]. Revised again about
         22 Jul 2026 [secondary].
       accessible: true
-      sources: [src-cdc-autism-page, src-stat-cdc-page-2025, src-who-gacvs-2025]
+      sources: [src-cdc-autism-page, src-stat-cdc-page-2025]
     positions:
       - label: "Yes, a link is possible"
         holder: "HHS and the current CDC page"

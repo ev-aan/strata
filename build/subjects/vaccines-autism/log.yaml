@@ -311,3 +311,36 @@ log:
       text in Europe PMC and JAMA refused: still unread, now said so in the MMR claim anchor.
       Owner decisions (headline wording; the surname "Poling" in the case name, put to the owner
       in L-19) are unchanged.
+  - id: L-22
+    date: 2026-10-02
+    entry: >
+      REVISION ROUND 5 (author response to review round 4, R4-1 to R4-10; each verified first).
+      R4-1 (blocking): CORRECTION. va-omnibus-test-cases said the first group's theory "was MMR
+      plus thimerosal" and that MMR alone "was never presented". The Federal Circuit opinions
+      cited as opened say otherwise: in Hazlehurst (09-5128) the petitioners, in post-hearing
+      briefing, "relied on the theory that [the child's] autism was caused by the MMR vaccine
+      alone" (denial affirmed), and in Cedillo (10-5004) the special master found the evidence
+      did not show that "the MMR vaccine alone or in combination with TCVs" can cause autism. The
+      statement, anchor, what_it_is_not and basis are corrected; the never-presented statement is
+      withdrawn. No timeline or summary line repeated it. Whether King, Mead and Dwyer tested
+      other theories was not checked. R4-3: CORRECTION OF L-19, which said nothing was dropped
+      when the former key points 2 and 3 were joined; the retraction year (2010) and the court's
+      finding on the ethics statement left the first screen (both stayed in the assessment text).
+      Key point 3 now restores both. R4-4: the assessment gives the IOM's wording and scope (the
+      evidence favors rejecting a causal relationship, for MMR and for thimerosal-containing
+      vaccines). R4-5: the divergence_note says the other 11 WHO studies suggested an association.
+      R4-8: the divergence_note no longer says nothing in the evidence changed between November
+      2025 and the earlier position; the assessment text carries the aluminum caveat (the autism-only
+      figure read only in a press release; moderate). R4-9: the stale "open design question" wording
+      for Rule 9 is replaced by the owner's decision of L-19 in va-mmr-causes-autism and
+      dt-mmr-cohorts. R4-10: the 2006 case report (Poling et al., ref 85 of Rossignol and Frye) may
+      concern the same child as the compensation concession; not verified, so the scale and
+      positions no longer treat them as independent; va-retraction-reasons confidence is moderate.
+      R4-6: the WHO page leaves va-cdc-page-2025's anchor.sources and the CDC page leaves
+      va-causes-largely-unknown's (adoption, in adoption notes). R4-7: timeline a14 and a18 link the
+      Federal Circuit opinions. R4-2: the child's first name, which an earlier reviewer note in
+      review.yaml quoted from NPR, was redacted there to "[the child]" (commit 5b14b9b); it
+      remains in git history, which a redaction cannot change. No log entry was edited, so no
+      `redacts` entry applies (SCHEMA N26 covers log entries only). Owner decisions untouched:
+      headline wording, the surname in the case name, `corrected` as a PS3 warning,
+      headline_status draft, refutation_class.
