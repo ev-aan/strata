@@ -55,7 +55,7 @@ Offered to make it stronger, not to lower any bar.
 - **New scoping digs** (log only, no claims): `dyatlov-pass`, `mcafee-and-surfside`, `chemtrails`, `flood-myths-worldwide`. Apollo is parked.
 
 ### From jolly-hopper, 2026-10-02 (third post): the live corpus has been supplied
-The owner uploaded the earlier Mesopotamian dig; it is imported verbatim at `build/imports/mesopotamia-corpus/` with an `IMPORT_NOTE.md`. `validate_threads.py` passes (26 claims, 1 expected warning).
+The owner uploaded the earlier Mesopotamian dig; it is imported verbatim at `build/imports/mesopotamia-corpus/` with an `IMPORT_NOTE.md`. `validate_threads.py` passes (26 claims, 1 expected warning). That script's own thread rules T1-T4 are enforced in `build/conformance.py` as TH1-TH4 (T1 to T7 below are the timeline rules).
 - **The live YAML schema differs from `build/SCHEMA.md` v0.1** (reconciliation table appended there). Where they differ, the live corpus wins; v0.1 was drafted before it was seen.
 - **IDs are settled in practice:** slugs with a subject prefix, referenced as `subject:claim`. `C-01` appears only on the HTML bounty pages.
 - **Needed from the owner:** the main eight-rule validator, the live schema document, the Gilgamesh subject file and the retranslation.

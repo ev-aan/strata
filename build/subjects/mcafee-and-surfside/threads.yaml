@@ -5,7 +5,7 @@ threads:
   - id: thread-mcafee-surfside-link
     type: reception-overlay
     title: "'McAfee hid files in the building and it was destroyed'"
-    confers_weight: false   # T4: required for reception overlays
+    confers_weight: false   # TH4: required for reception overlays
     description: >
       How the link reached the public: a screenshot of a tweet, an Instagram post, and posts claiming McAfee, or a claimed son, had a
       unit in the building. It joins two real events one day apart with a fabricated item and a real 2019 statement about files.

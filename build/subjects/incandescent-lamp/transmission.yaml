@@ -15,7 +15,7 @@
 # Rules (to be added to the validator):
 #   X1 confers_weight must be false. Spread is adoption, never evidence.
 #   X2 every event names a source; read: no is allowed but caps the event at "reported".
-#   X3 a chain id may never appear in any claim's anchors (same firewall as threads, rule T2).
+#   X3 a chain id may never appear in any claim's anchors (same firewall as threads, rule TH2).
 #   X4 `about` must resolve to a claim in this subject.
 
 subject: incandescent-lamp

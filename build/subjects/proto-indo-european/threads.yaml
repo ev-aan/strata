@@ -5,7 +5,7 @@ threads:
   - id: thread-pie-popular-framing
     type: reception-overlay
     title: "PIE in popular science framing"
-    confers_weight: false   # T4: required for reception overlays
+    confers_weight: false   # TH4: required for reception overlays
     description: >
       How PIE reaches general readers: a single mother tongue that "went global,"
       often narrated with origin-myth cadence — a "Big Bang" of language, a people

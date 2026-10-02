@@ -5,7 +5,7 @@ threads:
   - id: thread-apollo-hoax-framing
     type: reception-overlay
     title: "The 'faked Moon landing' narrative"
-    confers_weight: false   # T4: required for reception overlays
+    confers_weight: false   # TH4: required for reception overlays
     description: >
       How the hoax idea reaches general readers: photographic oddities (shadows,
       a waving flag, no stars), the Van Allen belts, "the tapes were lost", and a
