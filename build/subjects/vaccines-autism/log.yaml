@@ -108,3 +108,12 @@ log:
       the 2006 Poling case report. Tags corrected where a fetch tool, not a full read, was used.
       Cochrane's autism estimate confirmed to be the two Danish cohorts (657,461 + 537,303 =
       1,194,764).
+  - id: L-11
+    date: 2026-10-02
+    entry: >
+      OWNER QUESTION: was the paper pulled because of problems in its data? Added
+      va-retraction-reasons to keep three things apart that are often merged: the 2004
+      retraction of interpretation (data insufficient), the 2010 full retraction (misstated
+      referral and ethics approval, after the GMC findings), and the 2011 BMJ records
+      comparison (diagnoses and onset dates not matching records; fraud judgment). No
+      existing claim changed.

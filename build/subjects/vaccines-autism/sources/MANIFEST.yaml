@@ -23,6 +23,12 @@ sources:
     read: abstract (metadata and author list; the notice text is known as quoted)
     sha256: 98912601e6c99bc55094996405c9243cd4ae89dd512932f733366dd80d9c7ba5
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed record PMID 15016483.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Notice text not read."], next_step: "Read the notice in The Lancet.", checked: 2026-10-02}
+  - id: src-indian-jpsych-2011
+    title: "Review quoting the 2004 Lancet 'Retraction of an interpretation' (Indian J Psychiatry 2011)"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3136032/
+    document_class: secondary (quotes the 2004 notice)
+    read: tool
+    authenticity: {status: not_applicable, basis: "A secondary article used only for its quotation of the 2004 notice."}
   - id: src-lancet-retraction-2010
     title: "The Editors of The Lancet. Retraction. Lancet 2010;375:445 (as reported in BMJ 2010;340:c696)"
     url: https://www.bmj.com/content/340/bmj.c696
