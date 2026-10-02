@@ -17,17 +17,17 @@ assessment:
   answer: unsettled
   headline: "Unsettled, leaning slightly no: no evidence of staging was found, but only statements and reports were read. Motive and vetting are open."
   key_points:
-    - "Flydubai and the UAE say an altercation; the Saudi ministry (as quoted) says an assault with injuries to both; landing at Tabuk. No raw data read."
+    - "Flydubai and the UAE say an altercation; the Saudi ministry's own text says the co-pilot assaulted the captain, injuring both; landing at Tabuk. No raw data."
     - "No evidence was found that anyone staged it or let it happen; the Omani-pilot and timing doubts are open questions, not findings."
     - "No investigating body has given a motive, a weapon, how the co-pilot was rostered, or what the recorders show."
   text: >
-    As of 2 October 2026 this is a live event with no investigation findings published. Reported by the airline, the UAE foreign ministry and (through news reports) the Saudi interior ministry and Tabuk airport: flight FZ1073 left Dubai about 03:05 UTC, descended steeply from about 05:21 UTC,
-    squawked emergency codes, and landed at Tabuk, Saudi Arabia (06:45 UTC per the Saudi ministry; AirNav Radar's blog implies about 06:58, which is unresolved). Trackers are read only through their own listings and reports. The Saudi ministry says the co-pilot assaulted the captain and both were injured; "seriously wounded" is the wording of India's authorities, Israel's Prime Minister and CNN, not of the Saudi ministry.
+    As of 2 October 2026 this is a live event with no investigation findings published. Stated by the airline, the UAE foreign ministry and the Saudi interior ministry (its own English text, read on the Saudi Press Agency), and by Tabuk airport through a news report: flight FZ1073 left Dubai about 03:05 UTC, descended steeply from about 05:21 UTC,
+    squawked emergency codes, and landed at Tabuk, Saudi Arabia (9:45 a.m. per the Saudi ministry, which gives no time zone, so 06:45 UTC if Saudi time; AirNav Radar and Al Jazeera's 2 October piece give about 06:58; unresolved). Trackers are read only through their own listings and reports. The Saudi ministry's text says an altercation occurred in which the co-pilot assaulted the captain, injuring both individuals, and says nothing on a stabbing, a weapon, nationality, motive or custody; "seriously wounded" is the wording of India's authorities, Israel's Prime Minister and CNN, not of the Saudi ministry.
     Flydubai crew travelling on the flight helped secure the aircraft, and passengers assisted. The UAE attorney general ordered an investigation into circumstances, motive, any terrorist link and prior planning or direction.
     On the owner's three points. (1) The co-pilot is described as Omani by Israel's Prime Minister and an Israeli official; an unnamed Omani official reportedly told CBS he was born in Oman and holds Omani citizenship; no UAE, Saudi, Flydubai or Omani authority has publicly confirmed it. Whether any instrument bars Omani pilots from the Israel route is unresolved: the Jerusalem Post reports both that Flydubai's own agreement does and that the bilateral agreement does not, which concern different documents that nobody has published.
     A rule breach, if shown, would point to a rostering or vetting failure; it would not by itself show the event was arranged. (2) The timing: the flight fell 27 days before Israel's election and 7 days before the third anniversary of 7 October, and the day after the Prime Minister warned of attacks before the election. Opposition figures say the event is being used politically; that is a claim about use, and can be true without any
     staging. No evidence of foreknowledge or arrangement has been found; the Prime Minister says Israel had no specific warning. A fair test needs a base rate, which has not been computed. (3) Looking inconsistent: the reports differ on several numbers and labels, some explained by clocks, slices of one dive or wording, and several unresolved (landing time, passenger count, descent figures, pilots' duty status). A discrepancy is not evidence of fabrication.
-    On who has called it terrorism: officials on both the Israeli side (the Prime Minister, Defence Minister, President) and the UAE side (a top UAE official, as reported by CNN) have used the word; these are accusations, and the airline says motive is unknown while the UAE is investigating it. What is not known: the weapon, the motive, whether the co-pilot was vetted, the cabin-pressure and acceleration record, and who took the controls first.
+    On who has called it terrorism: officials on both the Israeli side (the Prime Minister, Defence Minister, President) and the UAE side (a top UAE official, as reported by CNN) have used the word; these are accusations, and the airline says motive is unknown while the UAE is investigating it. Israeli officials say Israeli investigators will take part in the UAE-led investigation; the UAE has not said so in anything read. Several viral items about the flight (a deepfake in the style of a BBC report, a 2025 basketball team's video, an unrelated airliner clip) were debunked by fact-checkers; those debunks remove fakes and do not test whether the event was staged. The persons-on-board figure differs between the Saudi ministry (174 passengers and eight crew) and the airline's CEO (172 passengers and crew). What is not known: the weapon, the motive, whether the co-pilot was vetted, the cabin-pressure and acceleration record, and who took the controls first.
   lean:
     toward: "No: the event was not manufactured"
     short: "no"
@@ -51,10 +51,11 @@ description: >
 
 # ---------------------------------------------------------------------------
 # VERIFICATION
-# READ DIRECTLY 2026-10-02 (primary): the airline's own statements (news.flydubai.com), the UAE Ministry of Foreign Affairs statement (mofa.gov.ae), FlightAware's flight-history listing.
+# READ DIRECTLY 2026-10-02 (primary): the airline's own statements (news.flydubai.com), the UAE Ministry of Foreign Affairs statement (mofa.gov.ae), the Saudi Interior Ministry statement (spa.gov.sa, English), FlightAware's flight-history listing.
 # READ DIRECTLY (secondary): CNN (explainer and live blog), Al Jazeera (three pieces), Reuters text via KFGO, Jerusalem Post (four pieces), ThePrint, Ynet, Khaleej Times, The National,
 #   CBS News, ABC News Verify, IBTimes UK, ProtoThema, The Conversation, AirNav Radar's blog, MiGFlug, The Jewish Chronicle, Emirates 24|7 (GCAA statement).
-# NOT REACHED: the Saudi Interior Ministry and Tabuk airport statements and WAM originals (read through reports only); gov.il; Flightradar24; raw ADS-B (OpenSky, ADS-B Exchange, AirNav flight pages);
+# DEEP-DIVE PASS (log L-25 onward): the Saudi Interior Ministry statement was read in its original English on the Saudi Press Agency; per-entry stamps of CNN's live blogs and the page metadata of about 40 outlets and fact-checks were read from raw HTML; media timeline panels C1 to C3 added.
+# NOT REACHED: Tabuk airport's own statement, the Arabic text of the Saudi statement and WAM originals (read through reports only); gov.il; Flightradar24; raw ADS-B (OpenSky, ADS-B Exchange, AirNav flight pages);
 #   Bloomberg, Axios, Washington Post, Times of Israel, Haaretz, The New Arab (403 or errors); no Snopes check of this event was found. Full list in sources/MANIFEST.yaml and log L-16 onward.
 # No flight recorder data, investigation report, charging document or court record exists in public as of this date.
 # ---------------------------------------------------------------------------
@@ -80,9 +81,9 @@ claims:
     statement_kind: reported
     confidence_reasons:
       start: high
-      start_because: "Two official primary texts (the airline's statements and the UAE foreign ministry's statement) were read directly."
+      start_because: "Three official primary texts were read directly: the airline's statements, the UAE foreign ministry's statement and the Saudi Interior Ministry's statement on the Saudi Press Agency (English)."
       steps:
-        - {domain: risk_of_bias, effect: none, reason: "The airline and the UAE are interested parties, but the diversion and landing are also given by the Saudi interior ministry and Tabuk airport (read through reports) and by tracker reports (AirNav Radar's own account; Flightradar24 through reports); no source says otherwise."}
+        - {domain: risk_of_bias, effect: none, reason: "The airline and the UAE are interested parties, but the diversion and landing are also given by the Saudi interior ministry (its own text, read) and Tabuk airport (read through a report) and by tracker reports (AirNav Radar's own account; Flightradar24 through reports); no source says otherwise."}
         - {domain: independent_corroboration, effect: none, reason: "Already counted in the high start; considered and not applied twice."}
       reviewed: false
     evidential_weight: 4   # of 5; not 5 because no recorder or raw tracker data was read
@@ -97,17 +98,17 @@ claims:
       description: >
         flydubai Statement 2 [read, stored in sources/flydubai-updates.txt]: "An altercation occurred in the flight deck of flight FZ 1073, operating from Dubai International (DXB) to Ben Gurion International Airport (TLV), on 30 September."
         and "The aircraft was successfully secured by on-duty flydubai crew travelling on the flight, who diverted and landed the aircraft safely at Tabuk Airport (TUU)." Statement 4 (CEO) says the flight "was diverted to Tabuk in Saudi Arabia, following a safety incident in the flight deck."
-        The UAE Ministry of Foreign Affairs [read] says the flight "was diverted and landed safely at Tabuk Airport in the Kingdom of Saudi Arabia". Corroboration read through reports: Saudi Interior Ministry (Al Jazeera), Tabuk airport (Khaleej Times), AirNav Radar and FlightAware.
-      sources: [src-flydubai-updates, src-mofa-uae, src-aljazeera-saudi, src-khaleej-timeline, src-airnav-blog, src-flightaware-history]
+        The UAE Ministry of Foreign Affairs [read] says the flight "was diverted and landed safely at Tabuk Airport in the Kingdom of Saudi Arabia". The Saudi Interior Ministry [read on SPA, English, sources/spa-moi-2026-10-01.txt]: "authorizing an emergency landing at the Prince Sultan bin Abdulaziz International Airport in Tabuk on Wednesday, September 30" and "The aircraft landed safely at 9:45 a.m. with 174 passengers and an eight-member flight crew on board". Corroboration read through reports: Tabuk airport (Khaleej Times), AirNav Radar and FlightAware.
+      sources: [src-flydubai-updates, src-mofa-uae, src-saudi-moi-original, src-aljazeera-saudi, src-khaleej-timeline, src-airnav-blog, src-flightaware-history]
     basis: >
-      # V: the airline's and the UAE ministry's pages were read directly (official domains). The Saudi statements were read only through outlets that quote them.
+      # V: the airline's page, the UAE ministry's page and the Saudi ministry's SPA item were read directly (official domains). The Arabic original of the Saudi item and Tabuk airport's own statement were not seen.
 
   - id: fz1073-flight-times
     state: established
     exception: "Times are agreed within minutes by several independent trackers, but the raw ADS-B tracks were not reached, so the anchor stays secondary and the claim is capped at moderate."
     statement: >
       On 30 September the flight departed Dubai at about 03:05 UTC (07:05 Dubai time), began a steep descent from about 05:21 UTC, showed squawk 7700 at about 05:29 to 05:31 UTC and squawk 7500 at about 05:35 to 05:38 UTC
-      (two trackers differ by two to three minutes), made a radio distress call to Tabuk air traffic control at about 05:44 UTC, and, per the Saudi interior ministry (via Al Jazeera) and Tabuk airport (via Khaleej Times), landed at Tabuk at 06:45 UTC (9:45 a.m. local); AirNav Radar's blog says it "landed safely at Tabuk" with last ADS-B at about 06:58 UTC, which implies a later touchdown, so the landing time is unresolved.
+      (two trackers differ by two to three minutes), made a radio distress call to Tabuk air traffic control at about 05:44 UTC, and, per the Saudi interior ministry's statement ("landed safely at 9:45 a.m.", no time zone given; 06:45 UTC if Saudi time, UTC+3, is assumed) and Tabuk airport (9:45 Saudi time, via Khaleej Times), landed at Tabuk about 06:45 UTC; AirNav Radar's blog and Al Jazeera's 2 Oct piece give about 06:58 UTC, so the landing time is unresolved (see fz1073-landing-time).
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
@@ -129,15 +130,15 @@ claims:
     anchor:
       type: tracker-listings-and-official-statements-via-reports
       description: >
-        FlightAware flight-history listing [read]: the 30 Sep DXB to TLV row, type B38M, departure 07:05 AM at +04 (03:05 UTC); later flights are listed Cancelled. AirNav Radar blog [read]: departure "approximately 03:05 UTC",
+        FlightAware flight-history listing [read]: the 30 Sep DXB to TLV row, type B38M, departure 07:05 AM at +04 (03:05 UTC) with an arrival cell of 09:15 IDT marked "?"; the departure equals the scheduled time and the page does not show whether it is the actual wheels-up time; later flights are listed Cancelled. AirNav Radar blog [read]: departure "approximately 03:05 UTC",
         squawk 7700 at 05:28:48 UTC, 7500 at "05:35 UTC", last ADS-B about 06:58 UTC. Al Jazeera [read], quoting Flightradar24: 03:05 take-off, 05:21 altitude fluctuations, 05:31 code 7700, 05:38 code 7500. Khaleej Times [read], quoting Tabuk airport:
-        distress call at 8:44 a.m. Saudi time and landing at 9:45 a.m. Saudi time. Al Jazeera [read], quoting the Saudi Interior Ministry: arrived "at 9:45am local time (06:45 GMT)". CNN's "6:05 a.m. local time" is 03:05 UTC on the UTC+3 clock CNN uses for its other times.
-      sources: [src-flightaware-history, src-airnav-blog, src-aljazeera-explainer, src-khaleej-timeline, src-aljazeera-saudi, src-cnn-explainer]
+        distress call at 8:44 a.m. Saudi time and landing at 9:45 a.m. Saudi time. The Saudi Interior Ministry on SPA [read]: "The aircraft landed safely at 9:45 a.m." with no time zone; Al Jazeera's rendering of the statement adds "local time (06:45 GMT)". Al Jazeera, 2 Oct [read, raw HTML]: "06:58 GMT: FZ1073 lands" and "05:33 GMT" at about 15,000 ft. ABC News Australia [read]: after tracking data disappeared at roughly 10:15 a.m. Dubai time (06:15 UTC) for about 15 minutes, "Over the next 30 minutes the flight continues its descent before touching down at Tabuk Airport", which fits a landing near 06:45 UTC. CNN's "6:05 a.m. local time" is 03:05 UTC on the UTC+3 clock CNN uses for its other times.
+      sources: [src-flightaware-history, src-airnav-blog, src-aljazeera-explainer, src-aj-12min, src-abc-au-plunge, src-khaleej-timeline, src-saudi-moi-original, src-aljazeera-saudi, src-cnn-explainer]
       nodes:
         - {node: fz1073-2026-09-30-departure-dubai, verb: supports}
         - {node: fz1073-2026-09-30-landing-tabuk, verb: supports}
     basis: >
-      # V: FlightAware listing, AirNav blog and the news pieces were read; Flightradar24 and the Saudi statements were not reached directly.
+      # V: FlightAware listing, AirNav blog, the Saudi ministry's SPA item and the news pieces were read; Flightradar24 and the Tabuk airport statement were not reached directly.
 
   - id: fz1073-descent-magnitude
     state: searched_gap
@@ -167,38 +168,59 @@ claims:
 
   - id: fz1073-both-pilots-injured
     state: established
-    exception: "The Saudi ministry statement was read only through outlets that quote it; the airline's primary statements confirm the captain's medical clearance and return, not the injuries. Capped at moderate until the statement is read."
     statement: >
-      The captain (an Indian national) and the co-pilot were both injured and taken to hospital in Tabuk; the Saudi interior ministry says preliminary investigations "revealed an assault on the captain by the co-pilot, resulting in various injuries to both",
-      and that both flew to Abu Dhabi on 1 October with an Emirati security team. Israel's Prime Minister, passengers and verified video say the captain was stabbed and seriously wounded.
+      The Saudi Interior Ministry's own statement (SPA, English) says the captain and co-pilot were transferred to a local hospital, that "an altercation occurred in which the co-pilot assaulted the captain, resulting in injuries to both individuals", and that both pilots left Saudi Arabia for Abu Dhabi on 1 October "accompanied by the UAE security team"; the airline's CEO says the captain has returned to the UAE after medical clearance.
+    evidence_class: primary_text
+    confidence: high
+    statement_kind: reported
+    confidence_reasons:
+      start: high
+      start_because: "The Saudi Interior Ministry statement was read directly on the Saudi Press Agency (English text, raw HTML), and the airline's statement was read directly."
+      steps:
+        - {domain: risk_of_bias, effect: none, reason: "The statement is a party's own (the Saudi authorities investigated and held both men), but the injuries to both are also stated by Tabuk airport (via Khaleej Times), India's foreign ministry and embassy and the airline; considered and not applied."}
+        - {domain: indirectness, effect: none, reason: "The Arabic original was not seen and the release hour is unknown; the English text is the agency's own. Other English renderings differ (CNN: 'revealed an assault on the captain by the co-pilot, resulting in various injuries to both'; Al Jazeera: 'the pilot was assaulted by his co-pilot, resulting in various injuries to both'); they are not the agency's English and are not used for the quotation. Considered and not applied."}
+      reviewed: false
+    evidential_weight: 4   # of 5; a statement by a party, read at source
+    anchor_checked: primary
+    adoption_weight: 5   # of 5
+    adoption_note: >
+      Not polled. Undisputed.
+    would_change_if: >
+      the Arabic original or a later Saudi statement changing the wording; a medical or court record contradicting the injuries
+    anchor:
+      type: official-statement
+      description: >
+        Saudi Press Agency, 1 Oct 2026 (English; raw HTML read; stored in sources/spa-moi-2026-10-01.txt): "The captain and co-pilot were transferred to a local hospital for medical evaluation and treatment." "Preliminary investigations conducted by competent Saudi authorities, in coordination with a security team from the United Arab Emirates, revealed that an altercation occurred in which the co-pilot assaulted the captain, resulting in injuries to both individuals."
+        "following medical clearance, both pilots departed Saudi Arabia for Abu Dhabi on Thursday, October 1, accompanied by the UAE security team." The item attributes this to "an official source at the Ministry of Interior". It says nothing about a stabbing, a weapon, nationality, motive, terrorism, arrest, custody or charges.
+        flydubai CEO statement [read]: the Captain "has now returned to the UAE following medical clearance". GCAA statement via Emirates 24|7 [read]: the Captain "is in good condition, and is receiving the necessary medical treatment". Tabuk airport, via Khaleej Times [read]: both injured and taken to hospital.
+      sources: [src-saudi-moi-original, src-flydubai-updates, src-gcaa-emirates247, src-khaleej-timeline, src-aljazeera-saudi, src-cnn-live]
+    basis: >
+      # V: the Saudi English text was read on the Saudi Press Agency (primary). Other English renderings of the Saudi statement were read in CNN and Al Jazeera and differ in wording; the Arabic was not seen. Severity ("seriously wounded", stabbing) is not in the Saudi text; see fz1073-captain-wounds.
+
+  - id: fz1073-captain-wounds
+    state: established
+    exception: "Severity and the stabbing are stated by Israel's Prime Minister, passengers, video verified by CNN, India's embassy and the captain's own account, read through outlets; the Saudi statement says only 'injuries to both individuals'. Capped at moderate."
+    statement: >
+      The captain (an Indian national) was seriously wounded, with stab wounds according to Israel's Prime Minister, passengers and CNN-verified video, and underwent surgery; India's embassy in Riyadh said he was in stable condition; the Saudi ministry's text says "injuries" and does not say stabbing or serious; the weapon is not established (fz1073-weapon-not-established).
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
-    confidence_reasons:
-      start: moderate
-      start_because: "Official statements of the Saudi ministry, Tabuk airport, India's foreign ministry and the airline were read through secondary reports."
-      steps:
-        - {domain: independent_corroboration, effect: up1, reason: "The Saudi ministry, India's Ministry of External Affairs, Tabuk airport, the UAE civil aviation authority and the airline each say the captain was injured or treated, and verified video shows the injured captain; they do not trace to one origin."}
-        - {domain: indirectness, effect: down1, reason: "The Saudi statement is read through quotations, and its Arabic original (two English renderings differ slightly) was not seen."}
-      reviewed: false
-    evidential_weight: 4   # of 5
+    evidential_weight: 3   # of 5
     anchor_checked: secondary
     adoption_weight: 5   # of 5
     adoption_note: >
-      Not polled. Undisputed; the captain has spoken to India's Prime Minister from hospital (CNN).
+      Not polled. Undisputed that he was seriously hurt; the details come from the Israeli side, passengers and the captain's own account.
     would_change_if: >
-      the Saudi statement text or a medical record contradicting the reported injuries
+      a medical record, the investigation's findings or a Saudi, UAE or Indian statement giving the injuries
     next_step: >
-      Read the Saudi Press Agency text of the 1 October ministry statement and the Tabuk airport statement.
+      Read the Indian Ministry of External Affairs statements (Statesman and newsonair were blocked) and any UAE hospital or prosecution statement.
     anchor:
-      type: official-statements-via-reports
+      type: statements-via-reports
       description: >
-        Al Jazeera [read] quotes the Saudi Interior Ministry (1 Oct): "the pilot was assaulted by his co-pilot, resulting in various injuries to both"; CNN live blog [read] renders the same statement "revealed an assault on the captain by the co-pilot, resulting in various injuries to both".
-        Al Jazeera, quoting Tabuk airport via Al Ekhbariya: captain and first officer taken to hospital. flydubai CEO statement [read]: the Captain "has now returned to the UAE following medical clearance". GCAA statement via Emirates 24|7 [read]: the Captain "is in good condition, and is receiving the necessary medical treatment".
-        CNN [read]: verified video shows "a seriously wounded pilot ... lying on the floor"; a dentist-passenger and Israel's Prime Minister describe stabbing and severe blood loss; a local politician says the captain was out of danger after surgery on 30 Sep (single source, via family). CNN also reports an Israel Airports Authority spokesperson saying a 50-year-old male passenger was taken to hospital with an upper-body injury, in "light condition".
-      sources: [src-aljazeera-saudi, src-cnn-live, src-cnn-explainer, src-flydubai-updates, src-gcaa-emirates247]
+        CNN [read]: verified video shows "a seriously wounded pilot ... lying on the floor"; a local politician says he was "out of danger" after surgery (single source, citing family). Al Jazeera, 2 Oct [read]: "In a video call from his hospital bed in Saudi Arabia on Thursday, the captain told India's Prime Minister: 'When I was down, I could feel that the aircraft was plummeting'" (the captain's own account, first person, not independently verified); the Indian embassy in Riyadh said he was "reported to be in stable condition". Israel's Prime Minister's spokesperson said he was "bloodied and lying on the floor" (Al Jazeera, ABC Australia).
+      sources: [src-cnn-explainer, src-cnn-live, src-aj-12min, src-abc-au-plunge, src-saudi-moi-original]
     basis: >
-      # V: the Saudi wording is quoted by two outlets in slightly different English; the original was not read. Not everyone was unhurt (a passenger injury is reported); this corrects the premise of an earlier owner question (L-14).
+      The captain is named only in the timeline (named by India's foreign ministry, the Israeli and UAE authorities and all outlets); no passenger is named here.
 
   - id: fz1073-weapon-not-established
     state: searched_gap
@@ -280,6 +302,141 @@ claims:
     basis: >
       Passenger testimony is not independent of the passengers' own situation and is not claimed as a finding about the sequence. Label differences (on-duty crew travelling, reserve, off-duty) are listed in fz1073-reports-inconsistent.
 
+  - id: fz1073-passenger-controls
+    state: proposed
+    statement: >
+      One passenger says in a TV interview that he pulled the co-pilot out of the cockpit, "jumped back in there, grabbed the controls, started pulling the controls", and that "the pilot told me he was taking over from there"; Al Jazeera adds in its own voice that "another pilot who had been travelling farther back in the plane arrived at the cockpit", and the same passenger says there were "no pilots in the seats" when he first entered; this rests on one passenger's own account.
+    evidence_class: interpretive
+    confidence: provisional
+    statement_kind: reported
+    evidential_weight: 2   # of 5
+    anchor_checked: no
+    adoption_weight: 4   # of 5
+    adoption_note: >
+      Not polled. The US President repeated a version ("he took the stick and lifted it up and levelled out the plane before it crashed"); that repeats the account and adds no evidence. CNN prints the same passenger's words slightly differently ("the pilot told me he was taking over the controls from there").
+    would_change_if: >
+      the recorders, the airline's or the investigation's account of the sequence in the cockpit, or independent accounts
+    next_step: >
+      Read the investigation's account of who controlled the aircraft and when (the flight data and cockpit voice recorders); compare accounts from other passengers.
+    anchor:
+      type: statements-via-reports
+      description: >
+        Al Jazeera, 2 Oct [read, raw HTML]: "When I went in, I saw the terrorist on the controls, between the two seats. There were no pilots in the seats. I grabbed the terrorist, put him in a hold and first of all pulled him outside" and "I jumped back in there, grabbed the controls, started pulling the controls" and "The plane started levelling out a little more, and then the pilot told me he was taking over from there", all as the passenger's words from a TV interview; Al Jazeera's own sentence: "At that point, another pilot who had been travelling farther back in the plane arrived at the cockpit."
+        CNN [read]: "The plane started to level out a bit, and then the pilot told me he was taking over the controls from there". The Jerusalem Post, 2 Oct [read]: another passenger "described an interval during the confrontation when the cockpit was empty, and the aircraft was descending"; the Post says it has not independently established the precise sequence or the length of that interval.
+      sources: [src-aj-12min, src-cnn-explainer, src-jpost-910405]
+    basis: >
+      One account counted once even though CNN and Al Jazeera both print it. Capped at provisional while single-source. It does not bear on whether the event was real; it is a detail of the sequence.
+
+  - id: fz1073-israeli-attack-account
+    state: established
+    exception: "Established as who said what, from outlets' reports of statements and interviews; none was watched."
+    statement: >
+      Israel's Prime Minister said on 30 September that "one of the pilots stabbed the other pilot" and that "Apparently he tried to crash the plane with its occupants"; his spokesperson said the attacking pilot was "bashing the control panel"; Israel's Defence Minister said "the terrorist had a single objective: to crash the plane". These are Israeli officials' accounts, adoption-class until material backs them; the Saudi and UAE statements and the airline's do not say that the plane was to be crashed.
+    evidence_class: primary_text
+    confidence: moderate
+    statement_kind: reported
+    evidential_weight: 3   # of 5; statements by officials
+    anchor_checked: secondary
+    adoption_weight: 5   # of 5
+    adoption_note: >
+      Not polled. Widely repeated; no investigating body has confirmed an intent to crash the aircraft.
+    would_change_if: >
+      the UAE-led investigation, recorder data or a charging document stating the intent, or contradicting it
+    anchor:
+      type: statements-via-reports
+      description: >
+        MiGFlug [read], quoting Netanyahu's video address of 30 Sep: "During the flight as they approached the country one of the pilots stabbed the other pilot. Apparently he tried to crash the plane with its occupants." CNN live blog, 30 Sep 22:40 UTC [read]: Netanyahu to CNN: the captain "managed to prevent a 9/11 disaster"; "That's what it looks like was happening as far as the specific motivations of this"; Israel "did not have any warning or intelligence" (CNN's words); CNN adds that Israel "has not made public the details behind the attacker's motive".
+        Al Jazeera, 2 Oct [read] and ABC Australia [read]: the Prime Minister's spokesperson Doron Spielman said "the attacking pilot was standing over the control panel, bashing the control panel". ABC Australia [read]: Defence Minister Katz: "According to our preliminary information, the terrorist had a single objective: to crash the plane."
+        UAE foreign ministry [read] and flydubai [read] say only "altercation"/"safety incident in the flight deck"; the Saudi statement says "altercation ... assaulted".
+      sources: [src-migflug-copilot, src-cnn-live-0930, src-aj-12min, src-abc-au-plunge, src-mofa-uae, src-flydubai-updates, src-saudi-moi-original]
+    basis: >
+      An accusation is not a finding. The claim records who said what; whether the pilot meant to crash the aircraft is not established by any investigating authority.
+
+  - id: fz1073-landing-time
+    state: contested
+    statement: >
+      The landing time at Tabuk is not settled: the Saudi Interior Ministry says "9:45 a.m." (no time zone given; 06:45 UTC if Saudi time is assumed) and Tabuk airport says 9:45 Saudi time (via Khaleej Times); AirNav Radar's blog and Al Jazeera's 2 Oct piece give about 06:58 UTC; CNN gives "9:54 a.m."
+    evidence_class: primary_text
+    confidence: low
+    statement_kind: reported
+    disputed_by:
+      - {who: "Saudi Interior Ministry (SPA English) and Tabuk airport (via Khaleej Times)", kind: institution, position: "Landed at 9:45 a.m. (Saudi time, UTC+3, assumed for the ministry; stated for the airport), about 06:45 UTC.", source_read: "SPA item read on the Saudi Press Agency; Tabuk airport read through Khaleej Times", via: "Saudi Press Agency; Khaleej Times"}
+      - {who: "AirNav Radar (blog) and Al Jazeera (2 Oct piece, which uses a Flightradar24 timeline)", kind: institution, position: "Landed about 06:58 UTC; AirNav's last ADS-B message was about 06:58 UTC and Khaleej Times gives Flightradar24's final signal as 10:58 a.m. UAE time (06:58 UTC); a last signal can come after touchdown.", source_read: "AirNav blog and Al Jazeera 12-minute piece (raw HTML)", via: "AirNav Radar; Al Jazeera"}
+      - {who: "CNN (explainer, still unchanged at its last edit 2 Oct 20:43 UTC)", kind: institution, position: "Touched down at 9:54 a.m.; no source stated.", source_read: "CNN explainer, raw HTML", via: "CNN"}
+    evidential_weight: 3   # of 5
+    anchor_checked: secondary
+    adoption_weight: 4   # of 5
+    adoption_note: >
+      Not polled. Most outlets repeat 9:45 or "06:45 GMT"; Al Jazeera itself carries both 06:45 and 06:58 in different pieces.
+    would_change_if: >
+      raw ADS-B or runway records, the Saudi Arabic text with its time zone, or the investigation's timeline
+    next_step: >
+      Read the raw ADS-B final position and ground speed to find touchdown; read the Arabic SPA item for any time zone; obtain Tabuk airport's original statement (Cluster2).
+    anchor:
+      type: official-statement-and-reports
+      description: >
+        SPA [read]: "The aircraft landed safely at 9:45 a.m. with 174 passengers and an eight-member flight crew on board". Khaleej Times [read]: Tabuk airport: landing "9.45am Saudi time, or 10.45am UAE time" and Flightradar24's "final signal" at "about 10.58am UAE time". AirNav Radar blog [read]: "The flight subsequently landed safely at Tabuk, with the last ADS-B data received by AirNav Radar at approximately 06:58 UTC". Al Jazeera, 2 Oct [read]: "06:58 GMT: FZ1073 lands" and "Nearly four hours after it took off, the Flydubai plane landed in Tabuk". CNN explainer [read]: "touched down at 9:54 a.m."
+        ABC Australia [read] describes a tracking gap from about 10:15 a.m. Dubai time (06:15 UTC) of about 15 minutes, then 30 minutes of descent to touchdown, which fits 06:45 UTC more than 06:58.
+      sources: [src-saudi-moi-original, src-khaleej-timeline, src-airnav-blog, src-aj-12min, src-cnn-explainer, src-abc-au-plunge]
+      nodes:
+        - {node: fz1073-2026-09-30-landing-tabuk, verb: qualifies}
+    basis: >
+      The official time has no time zone on its face. The 13-minute spread does not affect any other claim.
+
+  - id: fz1073-persons-on-board
+    state: contested
+    statement: >
+      The number of people aboard is reported three ways: the Saudi Interior Ministry says "174 passengers and an eight-member flight crew" (182), the airline's CEO says "172 passengers and crew", and Israel's Prime Minister, Reuters, CBS and Al Jazeera say 174 people or 174 passengers and crew; the figures have not been reconciled.
+    evidence_class: primary_text
+    confidence: low
+    statement_kind: reported
+    disputed_by:
+      - {who: "Saudi Interior Ministry (SPA English)", kind: institution, position: "174 passengers and an eight-member flight crew on board (182 persons); the flight crew returned to Dubai on a separate flight.", source_read: "SPA item read directly", via: "Saudi Press Agency"}
+      - {who: "flydubai CEO", kind: institution, position: "all 172 passengers and crew on board are safe.", source_read: "flydubai newsroom read directly; Dubai Eye relays the same text", via: "flydubai newsroom"}
+      - {who: "Israel's Prime Minister, Reuters, CBS, Al Jazeera, CNN", kind: group, position: "174 people (a total), or 174 passengers.", source_read: "Reuters via KFGO, CBS, Al Jazeera, CNN read", via: "outlets"}
+    evidential_weight: 3   # of 5
+    anchor_checked: secondary
+    adoption_weight: 3   # of 5
+    adoption_note: >
+      Not polled. An Aviation Herald summary (not re-read) is said to give 174 passengers and 6 crew; not used.
+    would_change_if: >
+      the manifest or a statement from the airline or the investigation
+    next_step: >
+      Ask flydubai or the investigation for the passenger and crew manifest counts; read the Aviation Herald page directly.
+    anchor:
+      type: official-statements
+      description: >
+        SPA [read]: "174 passengers and an eight-member flight crew"; flydubai Statement 4 [read]: "all 172 passengers and crew on board are safe"; Reuters via KFGO [read]: "the plane carrying 174 passengers and crew"; Al Jazeera 2 Oct [read]: "the 174 people on board". Two flydubai statements also say "all passengers and crew are safe and accounted for" without a number. A difference of eight to ten people between two official sources is not explained by anything read.
+      sources: [src-saudi-moi-original, src-flydubai-updates, src-dubaieye-ceo, src-reuters-kfgo, src-aj-12min]
+    basis: >
+      A discrepancy to resolve, not evidence of fabrication: crew counts can differ by whether off-duty or positioning crew are counted, which is a possibility not a finding.
+
+  - id: fz1073-replacement-flight-timing
+    state: searched_gap
+    statement: >
+      When the replacement flight reached Tel Aviv is not settled: the Saudi ministry says passengers left Tabuk at "5:40 p.m." (no time zone; 14:40 UTC if Saudi time), CNN's blog logged the Tabuk departure at 15:13 UTC and the arrival at 15:37 UTC, Al Jazeera citing the Times of Israel says "shortly before 16:00 GMT", and CBS says "shortly before 8 p.m. local time" (about 16:45 to 17:00 UTC).
+    evidence_class: primary_text
+    confidence: low
+    statement_kind: search_result
+    absence_anchor: true
+    evidential_weight: 2   # of 5
+    anchor_checked: no
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not polled. A minor point; it bears only on the timeline.
+    would_change_if: >
+      a flight record of the replacement flight, or the airport authority's statement
+    next_step: >
+      Read the replacement flight's tracker record (Tabuk to Tel Aviv) and the Israel Airports Authority statement.
+    anchor:
+      type: search-record
+      description: >
+        SPA [read]: "At 5:40 p.m., all passengers continued their journey on a replacement Flydubai aircraft". CNN live blog, 30 Sep [read, per-entry stamps]: 15:13:27 UTC "Plane bringing home stranded passengers takes off from Saudi's Tabuk airport", 15:37:32 "Breaking news: Passengers from diverted flight land at Tel Aviv airport", 16:24:16 "begin disembarking" (entry stamps are publication times). Al Jazeera 30 Sep [read]: "shortly before 16:00 GMT" (citing the Times of Israel, not read). CBS first story [read]: "The plane landed in Tel Aviv shortly before 8 p.m. local time on Wednesday."
+        The Saudi 5:40 p.m. (14:40 UTC) and the CNN take-off entry (15:13 UTC) differ by 33 minutes, which may be publication lag; no tracker record of the replacement flight was read. Searched: the sources above; the Israel Airports Authority and tracker data were not found.
+      sources: [src-saudi-moi-original, src-cnn-live-0930, src-aljazeera-explainer, src-cbs-first]
+    basis: >
+      An absence anchor is capped at provisional.
+
   # ===================== B. THE CO-PILOT, AND THE OWNER'S FIRST OBSERVATION (OMANI NATIONALITY) =====================
 
   - id: fz1073-copilot-custody-unnamed
@@ -302,9 +459,9 @@ claims:
     anchor:
       type: official-statements-via-reports
       description: >
-        Al Jazeera [read]: both pilots "left Saudi Arabia for Abu Dhabi on Thursday morning, accompanied by the Emirati security team". CNN live blog [read]: "The accused pilot has not been publicly identified". Reuters via KFGO [read, 2 Oct]: "The co-pilot's identity has not been publicly disclosed beyond his nationality" and he "was detained by Saudi Arabian authorities";
-        a source told Reuters Israeli officials were expected to question him in the UAE. CBS [read]: "The co-pilot of the flight has not yet been publicly identified." CBS also reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship; that is a nationality statement, not a name, and not an on-record authority. Searched for a name in reports and by search; none attributed to an authority.
-      sources: [src-aljazeera-saudi, src-cnn-live, src-reuters-kfgo, src-cbs-copilot]
+        Saudi Interior Ministry on SPA [read]: "both pilots departed Saudi Arabia for Abu Dhabi on Thursday, October 1, accompanied by the UAE security team". Al Jazeera [read]: both pilots "left Saudi Arabia for Abu Dhabi on Thursday morning, accompanied by the Emirati security team"; its explainer of 1 Oct [read] says "he was taken into custody by authorities in Saudi Arabia, but has not been charged yet" (Al Jazeera's own voice, no source named). CNN live blog [read]: "The accused pilot has not been publicly identified". Reuters via KFGO [read, 2 Oct]: "The co-pilot's identity has not been publicly disclosed beyond his nationality" and he "was detained by Saudi Arabian authorities";
+        a source told Reuters Israeli officials were expected to question him in the UAE. CBS [read]: "The co-pilot of the flight has not yet been publicly identified." CBS also reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship; that is a nationality statement, not a name, and not an on-record authority. The Saudi Interior Ministry's own text [read on SPA] says only that both pilots departed "accompanied by the UAE security team"; it does not say arrest, custody, questioning or charge. Searched for a name in reports and by search; none attributed to an authority.
+      sources: [src-saudi-moi-original, src-aljazeera-saudi, src-cnn-live, src-reuters-kfgo, src-cbs-copilot, src-aj-cleared]
     basis: >
       Guardrail: the co-pilot is not named in this entry. A nationality is not a name. The word "suspect" means only that officials accuse him; it is not a finding.
 
@@ -312,7 +469,7 @@ claims:
     state: established
     exception: "Established as who said what, from reports of interviews and briefings; the interviews themselves were not watched."
     statement: >
-      Israel's Prime Minister told CNN that the co-pilot is an Omani national (CNN does not date the interview; it was on 30 September or 1 October), Israel's President said so on BBC Radio 4 on 1 October (per The National), and an Israeli official told Reuters the same; Israeli sources first said so to the Jerusalem Post on 30 September. No UAE, Saudi, Flydubai or Omani authority had publicly confirmed it on the record by 2 October; CBS reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship.
+      Israel's Prime Minister said on "CBS Evening News" on Wednesday night, 30 September, that the pilot is an Omani citizen (NBC) and told CNN the same (CNN does not date its interview; it was on 30 September or 1 October), Israel's President said so on BBC Radio 4 on 1 October (per The National), and an Israeli official told Reuters the same; Israeli sources first said so to the Jerusalem Post on 30 September. No UAE, Saudi, Flydubai or Omani authority had publicly confirmed it on the record by 2 October; CBS reports that an unnamed Omani official said he was born in Oman and holds Omani citizenship.
     evidence_class: primary_text
     confidence: moderate
     statement_kind: reported
@@ -334,9 +491,9 @@ claims:
     anchor:
       type: statements-via-reports
       description: >
-        CNN explainer [read, updated 1 Oct]: "Netanyahu told CNN that the suspect was an Omani national." Al Jazeera [read]: "An Israeli official who spoke to Reuters on condition of anonymity identified the attacker as an Omani national."
+        NBC [read]: "The pilot who initiated the attack is an Omani citizen and is being interrogated in Saudi Arabia, Netanyahu said on the CBS program on Wednesday night." CNN explainer [read, updated 1 Oct]: "Netanyahu told CNN that the suspect was an Omani national." Al Jazeera [read]: "An Israeli official who spoke to Reuters on condition of anonymity identified the attacker as an Omani national."
         Jerusalem Post, 30 Sep [read]: "Israeli sources later corroborated to the Post that the suspected hijacker is believed to be of Omani nationality, according to initial investigations." The National [read]: "Herzog alleged that the co-pilot is Omani" (BBC Radio 4, Thursday 1 Oct). The National [read]: neither "Oman, UAE authorities nor flydubai have confirmed his nationality." Reuters 2 Oct [read]: "Omani authorities have not commented on the incident." ABC Verify [read]: posts about the pilot's nationality spread before authorities released anything, and Reuters then reported the Israeli official.
-      sources: [src-cnn-explainer, src-aljazeera-explainer, src-jpost-910192, src-national-ag, src-reuters-kfgo, src-abc-verify]
+      sources: [src-cnn-explainer, src-nbc-0930, src-aljazeera-explainer, src-jpost-910192, src-national-ag, src-reuters-kfgo, src-abc-verify]
     basis: >
       Bloomberg's headline on the same statement was not read (HTTP 403).
 
@@ -389,7 +546,7 @@ claims:
       description: >
         BY INSTRUMENT. (a) Flydubai's own agreement to operate in Israel: the Jerusalem Post, 30 Sep [read], in its own voice (subtitle and body): "Flydubai's agreement to operate in Israel explicitly states that all pilots must be from countries that have normalized relations with Israel"; an unnamed ministry source is quoted only for "This is a clear breach of the agreement". ThePrint [read] repeats it as the Jerusalem Post's report and notes that "Reports differ on where the clause sits." (b) The 2020 bilateral UAE-Israel agreement: the Jerusalem Post, 2 Oct [read]: unnamed sources "disputed claims that the Israel-UAE aviation agreement limits pilots to nationals of countries with diplomatic ties" and said it "did not stipulate" this, and the paper adds that this "did not address whether a separate operating or security arrangement imposed additional requirements"; ThePrint [read], summarising the agreement (not itself read): it "mentions nothing on pilot nationality" and Article 13(2)-(3) lets airlines bring staff "of any nationality".
         (c) Israeli statements without naming an instrument: Netanyahu to Fox (via Ynet [read]): restrictions bar pilots from states without diplomatic relations and "that's a loophole that has to be corrected"; Reuters [read]: "Netanyahu has said pilots from such countries were not permitted to operate flights to Israel"; an Israeli official to CNN [read]: the attacker "should not have been allowed to fly the Israel-bound plane"; a second Israeli security official: Shin Bet "is supposed to vet all airlines' personnel flying into Israel from the UAE, as part of a side security understanding", and it is not known whether Shin Bet failed to vet him or vetted and approved him.
-        (d) Not read: Israel's entry rule for Omani nationals (gov.il 403) and any Omani prohibition on travel to Israel. The Jewish Chronicle (Jan 2023) [read]: Oman's Consultative Assembly voted to criminalise "interacting with Israelis in person and online"; that concerns contacts and does not say Omani nationals may not travel to Israel. A search summary said Omanis "are not legally permitted to travel to Israel"; it had no primary text and is not used.
+        (d) Not read: Israel's entry rule for Omani nationals (gov.il 403) and any Omani prohibition on travel to Israel. The Jewish Chronicle (Jan 2023) [read]: Oman's Consultative Assembly voted to criminalise "interacting with Israelis in person and online"; that concerns contacts and does not say Omani nationals may not travel to Israel. A search result for the Times of Israel is headed "Oman's parliament votes to expand Israel boycott, in interim step" (headline only, not read), which suggests the 2023 amendment may not have become law; the Jewish Chronicle headline says "criminalises". Whether it did is not established. A search summary said Omanis "are not legally permitted to travel to Israel"; it had no primary text and is not used. An Israeli Prime Minister's Office statement on checking pilots' identities, reported in AP/NBC, was not re-read.
       sources: [src-jpost-910192, src-jpost-910405, src-theprint, src-ynet, src-reuters-kfgo, src-cnn-live, src-jc-oman-law]
     basis: >
       Restated in first order after review (R1-3): the owner's understanding, that an Omani pilot could not have been on the route, may be right in practice, but what has been shown is a rule asserted by Israeli officials and the Jerusalem Post for one instrument and denied by other unnamed sources for another, with neither text published. Israeli officials are asking the same question (CNN: one question is "why the flight crew included a pilot from a country with which Israel does not have diplomatic relations"); that makes it an open question, not evidence of arrangement.
@@ -451,6 +608,32 @@ claims:
     basis: >
       # V: the ministry text was read directly. Israel's part ("Israeli investigators would take part in the UAE-led investigation", an Israeli official to Reuters) is not confirmed by the UAE; Ynet reports Saudi Arabia declined an Israeli observer. Both are single-source and not claimed.
 
+  - id: fz1073-israel-in-investigation
+    state: searched_gap
+    statement: >
+      Whether Israeli investigators take part in the UAE-led investigation is not confirmed by the UAE: Israel's Prime Minister said the UAE president "agreed immediately that we should join the investigation" and an Israeli official told Reuters Israeli investigators "would take part in the UAE-led investigation"; the UAE foreign ministry's text does not mention Israel, and an Israeli official told Ynet Saudi Arabia declined an Israeli observer.
+    evidence_class: primary_text
+    confidence: low
+    statement_kind: search_result
+    absence_anchor: true
+    evidential_weight: 2   # of 5
+    anchor_checked: no
+    adoption_weight: 4   # of 5
+    adoption_note: >
+      Not polled. Israeli officials and outlets treat it as settled; the UAE has not said so in anything read.
+    would_change_if: >
+      a UAE or Saudi statement on foreign participation, or a UAE prosecution announcement
+    next_step: >
+      Check UAE Public Prosecution and WAM releases, and the Saudi statement text, for any mention of Israeli participation; read the Israeli PMO's statements.
+    anchor:
+      type: search-record
+      description: >
+        CNN live blog, 30 Sep 22:40 UTC [read]: Netanyahu: "I spoke again to President (Sheikh Mohammed) bin Zahed of the United Arab Emirates, and he agreed immediately that we should join the investigation." Al Jazeera 1 Oct [read]: the president "agreed that Israel would 'join the interrogation'" (as Netanyahu said). Reuters via KFGO, 2 Oct [read]: "an Israeli government official told Reuters that Israeli investigators would take part in the UAE-led investigation alongside Emirati authorities"; "The UAE foreign ministry did not immediately respond". Ynet [read]: "Israel asked to be involved as an observer in the investigation of the pilot in Saudi Arabia and the UAE, but according to the Hebrew report, Riyadh did not agree."
+        UAE foreign ministry [read] and the Saudi item on SPA [read]: no mention of Israel.
+      sources: [src-cnn-live-0930, src-aljazeera-uae, src-reuters-kfgo, src-ynet, src-mofa-uae, src-saudi-moi-original]
+    basis: >
+      An absence anchor is capped at provisional. The Israeli statements are recorded as statements.
+
   - id: fz1073-no-findings-yet
     state: searched_gap
     statement: >
@@ -472,7 +655,7 @@ claims:
       type: search-record
       description: >
         Searched the UAE foreign ministry page [read], the airline's newsroom [read], the GCAA statement of 2 Oct [read], Reuters of 2 Oct [read], CNN's live blog [read] and web searches for a preliminary report or recorder results: none found. The GCAA says it "will not comment on any details or claims in circulation that could pre-empt the findings".
-        The WAM, Saudi Press Agency and GCAA front pages were reached but scripted and showed no release; their originals were not read.
+        The WAM and GCAA front pages were reached but scripted and showed no release; their originals were not read. Re-checked 2 Oct about 21:00 UTC: flydubai's newsroom shows nothing newer than the CEO statement (page modified 2 Oct 14:04 UTC); the Saudi Press Agency item of 1 Oct [read] contains no findings beyond "altercation ... assaulted"; Al Jazeera's 1 Oct explainer [read] says the co-pilot is "not charged yet"; no charge or court record was found.
       sources: [src-mofa-uae, src-flydubai-updates, src-gcaa-emirates247, src-reuters-kfgo, src-cnn-live]
     basis: >
       An absence anchor is capped at provisional.
@@ -497,12 +680,12 @@ claims:
       type: statements-via-reports
       description: >
         Ynet [read]: "After Prime Minister Benjamin Netanyahu told Fox News that 'we know that the attacker pilot underwent Islamist radical indoctrination,'" (Ynet's wording of the quote). CNN live blog [read], in CNN's own words: Netanyahu said "it has been established that he 'underwent Islamist radical indoctrination'"; "That appears to be something we're gathering from his personal information"; "too early to say" about Iran. Al Jazeera [read]: Netanyahu said "I don't make final conclusions yet." CBS [read, 2 Oct]: Netanyahu: "We are investigating whether he was dispatched, and whoever sent him will pay a very heavy price."
-        CNN live blog [read]: Trump: "I would say the answer, based on what I'm hearing, is yes. But we're working on it right now." Ynet [read]: "a senior Israeli official said investigators had ruled out a suspected Iranian connection". flydubai Statement 2 [read]: the "underlying reasons and motives behind this event are unknown". UAE foreign ministry [read]: the investigation "includes examining all circumstances and motives surrounding the incident, including any possible connection to terrorist activity or intent".
+        CNN live blog [read]: Trump: "I would say the answer, based on what I'm hearing, is yes. But we're working on it right now." On whether the co-pilot was placed by Iran's Revolutionary Guard CNN prints Trump's reply as "Could be. Could be." and CBS [read] as "Could've been, yeah"; CBS also prints "They'll be hit very hard" if Iran is behind it. Ynet [read]: "a senior Israeli official said investigators had ruled out a suspected Iranian connection" so far, and that "Israel was examining the suspect's social media activity" (anonymous official; no content of any post was shown). flydubai Statement 2 [read]: the "underlying reasons and motives behind this event are unknown". UAE foreign ministry [read]: the investigation "includes examining all circumstances and motives surrounding the incident, including any possible connection to terrorist activity or intent".
         The National [read]: Katz called it an "attempted jihadist terror attack"; Herzog, on BBC Radio 4 on Thursday, said "It's too early to say" about an Iranian link and "did refer to the co-pilot as a 'terrorist'". CNN explainer [read]: "Anwar Gargash, a top UAE official, on Friday described the incident as a 'dangerous terrorist act,' a label Netanyahu has so far stopped short of" (CNN's description; Gargash's own words were not read). CNN's explainer also quotes a Friday video in which Netanyahu said the suspect had "undergone Islamist radicalization".
         On 30 Sep Netanyahu told CBS "I don't think it was a hijacking. It looks like a suicide attempt" (via ProtoThema; CBS itself not read for that quote).
-      sources: [src-cnn-live, src-cnn-explainer, src-aljazeera-uae, src-cbs-copilot, src-ynet, src-flydubai-updates, src-mofa-uae, src-national-ag, src-protothema]
+      sources: [src-cnn-live, src-cnn-explainer, src-aljazeera-uae, src-cbs-copilot, src-cbs-trump, src-ynet, src-flydubai-updates, src-mofa-uae, src-national-ag, src-abc-au-plunge, src-protothema]
     basis: >
-      Guardrail: this records what officials said. It does not assess anyone's beliefs or background. Axios (reportedly citing an Israeli intelligence official and colleagues on "religious radicalization") was not readable (HTTP 403) and is not used.
+      Further claims about the content of the co-pilot's posts and belongings were reported by The Week, the Times of Israel and a Tribune item relaying i24 (src-theweek, src-toi-liveblog, src-tribune-i24); none could be re-read (403 or lead only), they come from unnamed officials or third-hand, and they are not repeated here. Guardrail: this records what officials said. It does not assess anyone's beliefs or background. Axios (reportedly citing an Israeli intelligence official and colleagues on "religious radicalization") was not readable (HTTP 403) and is not used.
 
   - id: fz1073-motive-not-established
     state: searched_gap
@@ -528,6 +711,31 @@ claims:
       sources: [src-mofa-uae, src-flydubai-updates, src-gcaa-emirates247, src-reuters-kfgo, src-ynet, src-cbs-copilot]
     basis: >
       An absence anchor is capped at provisional.
+
+  - id: fz1073-fars-israel-plan-lead
+    state: searched_gap
+    statement: >
+      An unverified lead: The Media Line reports that Shafaq News, reporting from Tehran under the headline "Israel Planning Aviation Attack to Blame Iran: Fars", said Iran's Fars agency cited unnamed Iranian security agencies claiming intelligence that Israel was considering an attack on an aircraft or airport that could be blamed on Iran, placed alongside the FZ1073 diversion; Shafaq noted that Fars "presented no evidence linking the Flydubai incident to its allegations".
+    evidence_class: interpretive
+    confidence: low
+    statement_kind: search_result
+    absence_anchor: true
+    evidential_weight: 1   # of 5
+    anchor_checked: no
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not polled. Circulated in Iranian outlets and in a Media Line survey; not found in the Western reporting read.
+    would_change_if: >
+      the Fars and Shafaq originals with dates and wording, or any evidence offered for the allegation
+    next_step: >
+      Open the Fars and Shafaq News originals (Persian and English) and record their dates, wording and any evidence offered.
+    anchor:
+      type: search-record
+      description: >
+        The Media Line [read, raw HTML; published 30 Sep 18:27 UTC]: "Shafaq News ... reported from Tehran under the headline 'Israel Planning Aviation Attack to Blame Iran: Fars' that Fars had cited Iranian security agencies claiming Iran obtained intelligence suggesting Israel was considering an attack on an aircraft or airport in the region that could then be blamed on Tehran." and "Fars presented no evidence linking the Flydubai incident to its allegations." Neither original was opened.
+      sources: [src-medialine, src-fars-shafaq]
+    basis: >
+      An allegation by unnamed Iranian agencies about Israel, relayed by a survey; it is a lead and not a finding. It is distinct from the "staged" claim the social posts made (see transmission.yaml). An absence anchor is capped at provisional.
 
   # ===================== D. THE OWNER'S SECOND AND THIRD OBSERVATIONS: TIMING AND "MANUFACTURED" =====================
 
@@ -627,13 +835,13 @@ claims:
       type: search-record
       description: >
         Searched for evidence of staging in CNN, Al Jazeera, Jerusalem Post, ABC Verify, IBTimes, ProtoThema and Khaleej Times [all read]: none found. Records read that agree with a real emergency, with their limits: flydubai [read] and the UAE foreign ministry [read] say the flight was diverted and landed at Tabuk (statements by parties); AirNav Radar's blog [read] reports its own ADS-B of squawk 7700, 7500, 7700, a descent and a landing (a company's description; the data file was not opened); Flightradar24, via Al Jazeera, Reuters and Khaleej Times [read], reports a dive (read only through reports);
-        the Saudi Interior Ministry, via Al Jazeera and CNN [read], says the aircraft landed and both pilots were hospitalised (statement read through reports); India's Ministry of External Affairs and its embassy [via CNN and Al Jazeera, read] say they were in contact with the injured captain; the UAE Attorney-General opened an investigation [read]. FlightAware's list page [read] shows the 30 Sep flight with a scheduled-style departure of 07:05 at +04 and later flights Cancelled; it records no emergency, diversion or landing and is not counted as evidence of the dive.
+        the Saudi Interior Ministry's own English statement [read on SPA] says the aircraft landed at Tabuk and both pilots were hospitalised; India's Ministry of External Affairs and its embassy [via CNN and Al Jazeera, read] say they were in contact with the injured captain; the UAE Attorney-General opened an investigation [read]. FlightAware's list page [read] shows the 30 Sep flight with a scheduled-style departure of 07:05 at +04 and later flights Cancelled; it records no emergency, diversion or landing and is not counted as evidence of the dive.
         ABC Verify [read] found a viral video was a deepfake and that the narrative rested on no established facts; IBTimes [read] says the pilot who questioned the descent numbers did not say the flight was staged.
         Raw material tried on 2 Oct and not reachable: OpenSky history (403), ADS-B Exchange history (403), AirNav Radar log page (403), Flightradar24 (Cloudflare 403), FlightAware track log (429); api.adsb.lol and OpenSky live states return nothing for the aircraft on 2 Oct.
         Same standard in the other direction: the Israeli claims of "terror" and "indoctrination" are recorded as statements only.
-      sources: [src-flydubai-updates, src-mofa-uae, src-flightaware-history, src-airnav-blog, src-aljazeera-saudi, src-aljazeera-explainer, src-reuters-kfgo, src-cnn-live, src-abc-verify, src-ibtimes-700mph]
+      sources: [src-flydubai-updates, src-mofa-uae, src-saudi-moi-original, src-flightaware-history, src-airnav-blog, src-aljazeera-saudi, src-aljazeera-explainer, src-reuters-kfgo, src-cnn-live, src-abc-verify, src-ibtimes-700mph]
     basis: >
-      An absence anchor is capped at provisional. This is not a finding that the event was real beyond what the statements and reports say; it is a finding that nothing found points the other way. A staging claim would have to explain why independent parties' accounts agree with it: an Indian national hospitalised and speaking to India's Prime Minister, Saudi and UAE statements, tracker reports, hundreds of passengers of several nationalities. It does not address whether anyone arranged or allowed a real attack (fz1073-arranged-or-allowed).
+      An absence anchor is capped at provisional. This is not a finding that the event was real beyond what the statements and reports say; it is a finding that nothing found points the other way. Debunks of specific fakes (fz1073-fakes-debunked) remove items that might look like evidence of staging; they are not tests of staging. A staging claim would have to explain why independent parties' accounts agree with it: an Indian national hospitalised and speaking to India's Prime Minister, Saudi and UAE statements, tracker reports, hundreds of passengers of several nationalities. It does not address whether anyone arranged or allowed a real attack (fz1073-arranged-or-allowed).
       The cabin observations the owner raised (masks, a clean cabin, helpers on board) do not test it (claims fz1073-masks-clean-cabin, fz1073-surgeon, fz1073-extra-pilots-statistics). The id keeps its original wording; an earlier draft held this claim as refuted at moderate confidence and the reviewer's round 1 (R1-1) moved it to a searched gap.
 
   - id: fz1073-arranged-or-allowed
@@ -665,7 +873,7 @@ claims:
   - id: fz1073-reports-inconsistent
     state: proposed
     statement: >
-      The owner's third observation, that the reporting looks inconsistent, is correct in part: reports differ on several numbers and labels, but the differences read so far are explained by clocks, slices of one dive, wording or early error, and only some remain unresolved; none is shown to be fabrication.
+      The owner's third observation, that the reporting looks inconsistent, is correct in part: reports differ on several numbers and labels, but of 23 differences inventoried (media timeline), about half are explained by clocks, slices of one dive, wording or early error, the rest remain open (landing time, squawk times, descent figures, persons on board, weapon, pilots' duty status, who first reached the controls, replacement-flight time, the pilot-nationality rule, passenger injuries), and none is shown to be fabrication.
     evidence_class: interpretive
     confidence: provisional
     statement_kind: judgment
@@ -681,14 +889,16 @@ claims:
     would_change_if: >
       an unresolved discrepancy turning out to be a material misstatement by an official source, or recorder data contradicting the tracker times
     next_step: >
-      Resolve each open item against raw data: passenger and crew count (Saudi ministry: 174 passengers and 8 crew; flydubai CEO: 172 passengers and crew; Netanyahu and Reuters: 174), the descent figures, who first took the controls, and the pilots' duty status.
+      Resolve each open item against raw material: raw ADS-B for the times and the descent (fz1073-raw-tracks-gap); the manifest for the count (fz1073-persons-on-board); the Arabic SPA text (fz1073-original-statements-gap); the investigation's findings for the weapon, the sequence in the cockpit and the pilots' duty status.
     anchor:
       type: comparison-of-reports
       description: >
-        RESOLVED OR EXPLAINED (all [read]; the landing time is listed under STILL OPEN): (1) takeoff: CNN's "6:05 a.m. local time" is 03:05 UTC on the UTC+3 clock CNN uses elsewhere, matching FlightAware (07:05 at +04), AirNav and Flightradar24; CNN's "10:05 p.m. ET" is one hour off (03:05 UTC is 11:05 p.m. EDT), a correction of log L-03 (see L-17). (2) distress call: CNN's 8:31 is the 7700 squawk (05:31 UTC); Tabuk air traffic control logged a radio distress call at 8:44 Saudi time (05:44 UTC). (3) landing time is NOT resolved: 9:45 a.m. local (06:45 UTC) from the Saudi ministry and Tabuk airport, 9:54 from CNN (source not stated), and about 06:58 UTC from AirNav's blog and Flightradar24's final signal (Khaleej Times); a last signal can be later than touchdown, but AirNav's wording equates them.
-        (4) squawk times: Flightradar24 (05:31, 05:38) and AirNav Radar (05:28:48, about 05:35) differ by two to three minutes; unexplained but small. (5) the drop: different slices of one dive (see fz1073-descent-magnitude). (6) who said "Omani": Netanyahu, Israel's President (BBC Radio 4, via The National), an Israeli official and Israeli sources; these are several Israeli speakers, not a discrepancy.
-        STILL OPEN: (3) the landing time (see above); (4) the first-signal times (two to three minutes apart); (7) 174 passengers plus 8 crew (Saudi) against 172 passengers and crew (airline CEO); (8) the additional pilots described as on-duty crew, reserve pilots, another air crew, off-duty, British; (9) who first reached the controls (passenger accounts differ); (10) the weapon; (11) the early "hijacking ruled out" report and the 7500 squawk; (12) the number of those injured.
-      sources: [src-cnn-explainer, src-cnn-live, src-flightaware-history, src-airnav-blog, src-khaleej-timeline, src-aljazeera-saudi, src-flydubai-updates, src-reuters-kfgo, src-national-ag]
+        INVENTORY (D1 to D23, all [read] unless stated; the full media timeline with timestamps is the Panel C of timeline.yaml; each item says its status).
+        RESOLVED OR EXPLAINED: D1 takeoff: CNN's "6:05 a.m. local time" is 03:05 UTC on the UTC+3 clock CNN uses elsewhere, matching AirNav and Flightradar24 (and FlightAware's 07:05 at +04, which equals the scheduled time); CNN's "(10:05 p.m. ET)" is one hour off (03:05 UTC is 11:05 p.m. EDT); both CNN errors (that and "touched down at 9:54 a.m.") were still on the explainer at its last edit, 2 Oct 20:43 UTC (page metadata and text). D3b distress call: CNN's 8:31 is the squawk 7700 (05:31 UTC); Tabuk air traffic control logged a radio distress call at 8:44 Saudi time (05:44 UTC, via Khaleej Times). D7 captain's nationality: Indian (Israel's Prime Minister, India's embassy, the UAE civil aviation authority); MiGFlug's first story carries "Israel's Air Defense Forces said the captain is a citizen of the United Arab Emirates" and its page now shows an update banner. D10 flydubai Statement 2 appears at 13:30 (Khaleej Times), 13:40 (CNN entry) and 14:10 (AeroTime) UTC: those are outlets' logging times. D11 Saudi wording: the SPA English text says "an altercation occurred in which the co-pilot assaulted the captain, resulting in injuries to both individuals"; CNN, Al Jazeera and The National print different renderings that omit "altercation" ("revealed an assault on the captain by the co-pilot, resulting in various injuries to both"); the Arabic was not seen. D15 the "second flight FZ1081 turned back" report was called erroneous the same day (Al Jazeera, citing the Times of Israel). D6 narrative: Israeli security sources said hijacking was ruled out (Khaleej Times, 06:57 UTC), CNN logged Israeli suspicion of a hijack (12:36 UTC), Netanyahu told CBS "I don't think it was a hijacking" (CBS, via CBS's 1 Oct piece); the squawk 7500 meant unlawful interference; moved within a day. D22 dates of Herzog's BBC Radio 4 interview ("Thursday", The National) and Gargash's remark ("on Friday", CNN): as printed; originals not read.
+        STILL OPEN: D2 landing time (see fz1073-landing-time); D3 squawk times (Flightradar24 05:31 and 05:38; AirNav 05:28:48 and about 05:35; CNN's first entry 05:32); D4 "transmitted an emergency alert shortly after takeoff" in Al Jazeera's first story (its text quotes Reuters and AFP; "according to the airline") and CBS's first story, while takeoff was 03:05 UTC and the codes were squawked from about 05:28, and flydubai Statement 1 says "while en route"; not corrected on the pages read; D5 descent size (see fz1073-descent-magnitude); D8 weapon ("pocket knife" from a passenger via ABC, "knife or an ax", "stabbed or hit with an ax", "emergency axe" via Ynet; none by an authority); D9 replacement flight time (see fz1073-replacement-flight-timing); D12 where Netanyahu first said "Omani": NBC [read] reports he said on "CBS Evening News" on Wednesday night (30 Sep) that the pilot "is an Omani citizen"; Fox on Thursday (Bloomberg reprint, NPR "Fox & Friends"); CNN's interview is undated; anonymous Israeli officials said it hours earlier (CNN 11:24 UTC, 30 Sep): so the earliest on-record Netanyahu statement read is Wednesday night, and the question is which broadcast time, not whether he said it;
+        D13 the crew-nationality rule (see fz1073-omani-barred-rule); D14 persons on board (see fz1073-persons-on-board) and passenger injuries (NPR: "no reports of injuries to passengers"; CNN: a 50-year-old man taken to hospital, "light condition"; Al Jazeera: footage of "a passenger with a bloody head wound"; CBS: "No passengers were seriously injured"); D16 headlines rewritten in place: Al Jazeera (slug keeps "diverted ... after emergency alert"; now "Pilot stabbed another in bid to crash Israel-bound Flydubai jet: Netanyahu"), CBS (published 30 Sep 07:59 UTC; now a 1 Oct headline about "radical indoctrination"), Euronews (slug "after-alleged-dispute-between-"; not re-read), the Bloomberg reprint's headline against Bloomberg's own per the manifest; no correction notice was seen on any; D19 the Jerusalem Post's clock: its page metadata prints "+00:00" with the same digits as the displayed time (10:34 on 2 Oct), so whether it is Israel time (07:34 UTC) or UTC is not established, whereas Ynet's metadata shows 21:03:53 local against 18:03:53 UTC (UTC+3 confirmed); D20 the rudder ("ripped off", "significant damage", "part of the rudder broken away") has no technical source; D21 oxygen masks (see fz1073-masks-clean-cabin); D23 the date and place of the captain's call with India's Prime Minister: Al Jazeera says "In a video call from his hospital bed in Saudi Arabia on Thursday"; CNN's explainer says he "made his first public remarks on Friday" and CNN's blog says he had been moved to Abu Dhabi on Thursday; not reconciled.
+        D17 and D18 of the research notes (a MiGFlug overstatement; "six days" of Israeli suspension per Ynet via AeroCorner) were not re-checked and are not used. An unverified lead from search snippets only, that Saudi and Jordanian authorities "initially refused" to clear the aircraft, was not found on any page read and is not used; CNN [read] logged only that Saudi Arabia refused an Israeli plane to collect passengers.
+      sources: [src-cnn-explainer, src-cnn-live, src-cnn-live-0930, src-flightaware-history, src-airnav-blog, src-khaleej-timeline, src-saudi-moi-original, src-aljazeera-saudi, src-aj-original, src-cbs-first, src-migflug-first, src-flydubai-updates, src-reuters-kfgo, src-national-ag, src-nbc-0930, src-npr-0930, src-abc-au-plunge, src-jpost-910405, src-ynet-cam, src-bloomberg-spokesman]
     basis: >
       Our own reading of the reports, so capped at provisional. A discrepancy between reports is a discrepancy to resolve; it is not proof of fabrication (docs/NEWS_REVIEW.md guardrail 3).
 
@@ -771,3 +981,104 @@ claims:
       sources: [src-flydubai-updates, src-cnn-explainer, src-cnn-live]
     basis: >
       Not a test of staging. Wording differences (on-duty crew travelling, off-duty, reserve) are likely terminology for positioning crew and are listed in fz1073-reports-inconsistent.
+
+  # ===================== F. FAKES AND FACT-CHECKS; OPEN PRIMARY RECORDS (added in the deep dive, log L-25 onward) =====================
+
+  - id: fz1073-fakes-debunked
+    state: established
+    exception: "Established as what the fact-checkers report about each item; their evidence (archives, detector tools, the BBC's and NewsGuard's statements) was read through their pages, and the BBC statement was not seen directly."
+    statement: >
+      Several items that circulated about FZ1073 have been debunked by fact-checkers: a video styled as a BBC News report (a deepfake, per ABC Verify, Full Fact and TheJournal.ie, with the BBC confirming to Full Fact it is fake); a "passengers celebrating" video that is an Israeli basketball team's flight from August 2025; a "plummeting plane" clip that is an Azul aircraft posted on 18 September; an AI-generated "leaked pilot argument" video with audio from a 2017 road-rage clip; and a fake video credited to NewsGuard, which told Lead Stories it did not make that claim. These are debunks of specific fakes; they do not test whether the event was staged.
+    evidence_class: primary_text
+    confidence: moderate
+    statement_kind: reported
+    evidential_weight: 3   # of 5
+    anchor_checked: secondary
+    adoption_weight: 3   # of 5
+    adoption_note: >
+      Not polled. The fakes reached hundreds of thousands to over a million views (ABC Verify, TheJournal.ie); reach carries no weight.
+    would_change_if: >
+      a fact-checker withdrawing a verdict, or an independent check finding the clip genuine
+    anchor:
+      type: fact-checks
+      description: >
+        ABC News Verify [read]: a deepfake video purporting to be a BBC News report "appears to have been created using real footage of BBC presenter" [name omitted], "but AI-manipulated with a fake Australian voice and script". Full Fact [read]: "The BBC has confirmed that this video is fake." TheJournal.ie [read]: an AI-altered video styled as a BBC broadcast accompanied a claim "seen hundreds of thousands of times". Lead Stories [each read]: the "big speaker" celebration clip "is from August 2025 and shows members of the Israeli men's basketball team"; the plummeting-plane clip "shows an aircraft operated by Azul Brazilian Airlines" and was on YouTube on 18 September; the leaked-argument video was 95.8 "Likely to be AI-generated" on a detection tool; NewsGuard "did not make such a report".
+        France 24 (HTTP 403) and NewsGuard's own page (403) were not read. No fact-check read tests whether the incident itself was staged: they test the items.
+      sources: [src-abc-verify, src-fullfact, src-thejournal, src-ls-basketball, src-ls-azul, src-ls-aiaudio, src-ls-newsguard, src-ls-ceiling, src-ibtimes-moon]
+    basis: >
+      The invented private name in the deepfake is not repeated. Debunking fakes bears on fz1073-event-simulated only by removing items that would otherwise look like evidence of staging; it does not turn that gap into a refutation.
+
+  - id: fz1073-raw-tracks-gap
+    state: searched_gap
+    statement: >
+      No raw ADS-B or tracker record of the flight (altitude, vertical rate, ground speed, squawk, position by timestamp) has been read, so the descent figures, the squawk times, the pre-landing path and the landing time rest on reports and company summaries.
+    evidence_class: material
+    confidence: low
+    statement_kind: search_result
+    absence_anchor: true
+    evidential_weight: 1   # of 5
+    anchor_checked: no
+    adoption_weight: 3   # of 5
+    adoption_note: >
+      Not polled.
+    would_change_if: >
+      the raw track, the flight data recorder or the cockpit voice recorder summaries being read
+    next_step: >
+      Download the AirNav Radar log (flight page and CSV the blog links to), the Flightradar24 CSV/KML and the FlightAware track log (retry after the 429), from a browser; or ADS-B Exchange or an archive of the community feeds; compare altitude, vertical rate and squawk timestamps with fz1073-descent-magnitude, fz1073-flight-times and fz1073-landing-time.
+    anchor:
+      type: search-record
+      description: >
+        Tried on 2 Oct (HTTP status): OpenSky history (403), ADS-B Exchange history (403), api.adsb.lol and OpenSky live states (empty for the aircraft), AirNav Radar flight and log pages (403), Flightradar24 data and blog (403), FlightAware track log (429 earlier). The Wayback Machine availability endpoint answers but snapshot content is blocked. AirNav's blog [read] says the data can be downloaded.
+      sources: [src-airnav-blog, src-flightaware-history, src-flightradar24]
+    basis: >
+      An absence anchor is capped at provisional.
+
+  - id: fz1073-original-statements-gap
+    state: searched_gap
+    statement: >
+      Several originals behind the reporting have not been read: the Arabic text of the Saudi statement and its release hour, the WAM releases of the UAE Attorney-General and the civil aviation authority, Tabuk airport's own statement, the Times of Israel live blog entries, the Israeli Prime Minister's Office videos and interviews, France 24's and NewsGuard's pages, the original social-media posts and the Combat Antisemitism Movement and Antisemitism Research Center study; their content is known only through outlets.
+    evidence_class: primary_text
+    confidence: low
+    statement_kind: search_result
+    absence_anchor: true
+    evidential_weight: 1   # of 5
+    anchor_checked: no
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not polled.
+    would_change_if: >
+      any of the originals being read and found to differ from the reports
+    next_step: >
+      Read from a browser or another network: the Arabic SPA item (and its time), wam.ae items of 1 and 2 Oct, Cluster2/Tabuk airport's statement, the Times of Israel live blog, the Israeli PMO video transcripts, the CAM/ARC study and the first "false flag" posts; record who posted and when, without naming private individuals.
+    anchor:
+      type: search-record
+      description: >
+        Tried 2 Oct: spa.gov.sa English item (read); WAM and GCAA front pages (scripted, no item); Times of Israel (403 by curl); France 24 (403); NewsGuard (403); gov.il and the Israeli PMO site (scripted/403); X posts (not readable as text). The release hour of the SPA item is unknown: the page footer shows 18:31 GMT but that is a render clock, the earliest outlet time verified is CNN's live-blog entry, stamped 18:41:32 UTC on 1 Oct (a Khaleej Times item at about 18:26 UTC, seen in another session, was not re-verified).
+      sources: [src-saudi-moi-original, src-wam-original, src-toi-liveblog, src-france24, src-newsguard, src-israeli-pmo-video]
+    basis: >
+      An absence anchor is capped at provisional.
+
+  - id: fz1073-legal-texts-gap
+    state: searched_gap
+    statement: >
+      The texts that would settle the crew-nationality question have not been found: the 2020 UAE-Israel air transport services agreement, flydubai's Israel operating approval or any security understanding, Israel's entry rule for Omani nationals from the Israeli authority, and the Omani boycott decree and whether its 2023 amendment became law.
+    evidence_class: primary_text
+    confidence: low
+    statement_kind: search_result
+    absence_anchor: true
+    evidential_weight: 1   # of 5
+    anchor_checked: no
+    adoption_weight: 3   # of 5
+    adoption_note: >
+      Not polled. The question is asked by Israeli officials and reporters; no text has been published.
+    would_change_if: >
+      any of the texts being read
+    next_step: >
+      Find the agreement text (Israeli Ministry of Transport or ICAO registry of air services agreements), the Israeli civil aviation authority's conditions for foreign carriers, the Israel Population and Immigration Authority's entry table, and the Omani Royal Decree and its amendment history; log what each says about travel and about crew.
+    anchor:
+      type: search-record
+      description: >
+        Searched 2 Oct: ThePrint [read] (summary of the agreement's Articles 7(2), 13(2)-(3), 20(3); agreement text not read), the Jerusalem Post [read] (two conflicting reports about two instruments), gov.il (403), an ICAO attachment opened in another session was a different agreement (Israel-Greece), the Jewish Chronicle [read] on Oman (2023), a Times of Israel headline seen only in search results ("interim step").
+      sources: [src-theprint, src-jpost-910192, src-jpost-910405, src-gov-il-entry, src-uae-israel-air-agreement, src-jc-oman-law]
+    basis: >
+      An absence anchor is capped at provisional. See fz1073-omani-barred-rule.

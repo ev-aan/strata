@@ -1,9 +1,9 @@
 # Sources for the Flydubai FZ1073 dig, with authenticity entries (rules A1-A10, build/SCHEMA.md).
-# Live event, as of 2026-10-02. Every source is cited by URL; only the three official texts under sources/ are stored, and only as short statements.
+# Live event, as of 2026-10-02 (updated after the deep-dive reads logged in L-25 to L-30). Every source is cited by URL; only the three official texts under sources/ are stored, and only as short statements.
 # Copied wire reports count once (Reuters text appears in several outlets).
 # NOT REACHED from this environment (HTTP 403 or scripted pages): Bloomberg, Axios, Washington Post, The Times of Israel, Haaretz, The New Arab, Taylor and Francis,
 # The Week, NewsGuard, Gulf Business, gov.il, Flightradar24 (Cloudflare), AirNav's flight pages, OpenSky history (account needed), ADS-B Exchange history, FlightAware track log (HTTP 429),
-# Saudi Press Agency and WAM originals (not located), X posts. No Snopes article on this event was found.
+# WAM originals (not located), the Arabic text of the Saudi statement, X posts. (Correction 2026-10-02, round 3: the Saudi Press Agency English original WAS reachable and is now read; see src-saudi-moi-original and log L-25.) No Snopes article on this event was found.
 retrieved: 2026-10-02
 sources:
 - id: src-flydubai-updates
@@ -49,8 +49,8 @@ sources:
     checked: '2026-10-02'
   stored_as: sources/mofa-uae-2026-10-01.txt
 - id: src-gcaa-emirates247
-  title: Emirates 24|7, GCAA commends courage of the captain and crew of flydubai flight FZ1073 (the published headline and URL slug name the captain; carrying a UAE General Civil Aviation
-    Authority statement, WAM picture credit; 2 Oct 2026)
+  title: Emirates 24|7, GCAA commends courage of the captain and crew of flydubai flight FZ1073 (the published headline and URL slug name the
+    captain; carrying a UAE General Civil Aviation Authority statement, WAM picture credit; 2 Oct 2026)
   url: https://www.emirates247.com/uae/gcaa-commends-courage-of-captain-machchhar-smit-crew-of-flydubai-flight-fz1073/6282
   document_class: secondary (an outlet's copy of an official statement)
   read: yes, directly
@@ -316,15 +316,31 @@ sources:
     basis: Cloudflare check, HTTP 403; the X post could not be read as text. Its figures are known only through Al Jazeera, Reuters and CNN.
     next_step: Read it from a network or browser that is not refused.
 - id: src-saudi-moi-original
-  title: Saudi Interior Ministry statement of 1 Oct 2026 (Saudi Press Agency)
-  url: https://www.spa.gov.sa/en
-  document_class: not read
-  read: 'no'
+  title: Saudi Press Agency, Interior Ministry Issues Statement Detailing Flydubai Emergency Landing in Tabuk Following Cockpit Altercation (dateline
+    Riyadh, 1 October 2026) - English text
+  url: https://www.spa.gov.sa/en/w2691027
+  document_class: primary_text (a government statement carried by the state news agency)
+  read: yes, directly (English; raw HTML read with curl on 2026-10-02)
+  stored_as: sources/spa-moi-2026-10-01.txt
   authenticity:
-    status: unchecked
-    basis: The SPA front page was reached but the statement was not found in it (scripted page); the statement is known only through Al Jazeera,
-      CNN, The National and Khaleej Times.
-    next_step: Read it from a network or browser that is not refused.
+    status: authenticated
+    strength: moderate
+    provenance: Served over HTTPS from spa.gov.sa, the Saudi Press Agency's own domain. The item attributes the statement to 'an official source
+      at the Ministry of Interior'. Text stored in sources/spa-moi-2026-10-01.txt (from the page's og:description).
+    tests:
+    - 'Domain check: the state news agency''s own site [read]'
+    - 'Content match: the facts (9:45 a.m. landing, 5:40 p.m. replacement flight, injuries to both, both pilots to Abu Dhabi on 1 October with
+      the UAE security team) are reported by Al Jazeera, CNN, Khaleej Times and The National, though in different English renderings [read]'
+    - 'Wording check: the headline and body use ''altercation'' and ''assaulted''; other outlets'' renderings (''revealed an assault on the captain
+      by the co-pilot'', ''the pilot was assaulted by his co-pilot'') differ, so they are translations or paraphrases of an Arabic original that
+      was not seen [read]'
+    tested_by: Stratah session, 2026-10-02 (not an independent review; the statement is a party's own)
+    gaps:
+    - The Arabic original and the release hour were not seen; the page's footer clock (18:31 GMT) is a render clock.
+    - No time zone is given for the times in the text; Saudi time (UTC+3) is assumed.
+    - Not archived by an independent capture.
+    next_step: Read the Arabic SPA item and note its release time; obtain an independent web-archive capture.
+    checked: '2026-10-02'
 - id: src-wam-original
   title: WAM (UAE news agency) releases of 1 and 2 Oct 2026
   url: https://www.wam.ae/
@@ -352,3 +368,272 @@ sources:
     status: unchecked
     basis: The agreement text was not found; ThePrint's summary of Articles 7(2), 13(2)-(3) and 20(3) is the only description read.
     next_step: Read it from a network or browser that is not refused.
+- id: src-aj-12min
+  title: 'Al Jazeera, 12 minutes of madness: How Flydubai pilot, passengers saved plane midfall (2 Oct 2026)'
+  url: https://www.aljazeera.com/news/2026/10/2/12-minutes-of-madness-how-flydubai-pilot-passengers-saved-plane-midfall
+  document_class: secondary (news; quotes Flightradar24, CNN, Israeli TV, Trump)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-cbs-trump
+  title: CBS News, Trump suggests FlyDubai co-pilot is linked to Iran, 'based on what I'm hearing' (1 Oct 2026)
+  url: https://www.cbsnews.com/news/trump-flydubai-pilot-linked-to-iran/
+  document_class: secondary (news)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-abc-au-plunge
+  title: ABC News (Australia), How the flydubai flight plunged thousands of metres in minutes (1 Oct 2026)
+  url: https://www.abc.net.au/news/2026-10-01/how-flydubai-flight-fz1073-plunge-unfolded/107215048
+  document_class: secondary (news; says it uses Flightradar24 data)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-aj-cleared
+  title: Al Jazeera, How was the Flydubai co-pilot who attacked his captain cleared to fly? (1 Oct 2026)
+  url: https://www.aljazeera.com/news/2026/10/1/how-was-the-flydubai-pilot-who-attacked-his-co-pilot-cleared-to-fly
+  document_class: secondary (news analysis)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-dubaieye-ceo
+  title: Dubai Eye 103.8, flydubai CEO thanks crew, passengers as FZ1073 investigation proceeds (2 Oct 2026), embedding a Dubai Media Office post
+  url: https://www.dubaieye1038.com/news/local/flydubai-ceo-thanks-crew-passengers-as-fz1073-investigation-proceeds/
+  document_class: secondary (an outlet's copy of the airline CEO's statement; the airline's own page is src-flydubai-updates)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-medialine
+  title: 'The Media Line, From Hijacking Alert to False-Flag Claims: How Arab and Iranian Outlets Framed the Flydubai Incident (30 Sep 2026)'
+  url: https://themedialine.org/top-stories/from-hijacking-alert-to-false-flag-claims-how-arab-and-iranian-outlets-framed-the-flydubai-incident/
+  document_class: secondary (a survey of other outlets' reporting; the Fars and Shafaq originals were not opened)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-ls-basketball
+  title: 'Lead Stories, Video does NOT show FlyDubai FZ1073 passengers celebrating: it shows an Israeli basketball team from 2025 (1 Oct 2026)'
+  url: https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-passengers-flydubai-flight-fz1073-tel-aviv-celebrating-big-speaker-hijacking-attempt-2025.html
+  document_class: secondary (a fact-check)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A fact-check. What is tested is the item it examines; the fact-checker's own method is stated on the page.
+- id: src-ls-azul
+  title: Lead Stories, Video does NOT show a FlyDubai plane plummeting; it is an Azul aircraft (1 Oct 2026)
+  url: https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-flydubai-plane-plummeting-after-september-2026-incident-on-board-tel-aviv-flight-it-is-an-azul-brazilian-airlines-plane.html
+  document_class: secondary (a fact-check)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A fact-check. What is tested is the item it examines; the fact-checker's own method is stated on the page.
+- id: src-ls-aiaudio
+  title: Lead Stories, FAKE 'leaked video' of FlyDubai pilot argument is AI-generated; audio is from a 2017 road-rage clip (2 Oct 2026)
+  url: https://leadstories.com/hoax-alert/2026/10/fake-leaked-video-flydubai-pilot-argument-ai-generated-audio-2017-road-rage-clip.html
+  document_class: secondary (a fact-check)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A fact-check. What is tested is the item it examines; the fact-checker's own method is stated on the page.
+- id: src-ls-newsguard
+  title: Lead Stories, FAKE video claims NewsGuard reported a US political party orchestrated the FZ1073 attack (2 Oct 2026)
+  url: https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-claims-newsguard-reported-that-democratic-party-orchestrated-attempted-terrorist-attack-on-flydubai-flight-fz1073.html
+  document_class: secondary (a fact-check; quotes NewsGuard's reply to it)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A fact-check. What is tested is the item it examines; the fact-checker's own method is stated on the page.
+- id: src-ls-ceiling
+  title: Lead Stories, Video does NOT show the same plane with a ceiling and seating difference; not a false flag (2 Oct 2026)
+  url: https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-same-plane-flydubai-ceiling-seating-different-false-flag.html
+  document_class: secondary (a fact-check)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A fact-check. What is tested is the item it examines; the fact-checker's own method is stated on the page.
+- id: src-fullfact
+  title: Full Fact, Video supposedly showing BBC News linking an Indian passenger to Flydubai attack is a deepfake (2 Oct 2026)
+  url: https://fullfact.org/world/flydubai-flight-bbc-presenter-deepfake/
+  document_class: secondary (a fact-check; says the BBC confirmed the video is fake)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A fact-check. What is tested is the item it examines; the fact-checker's own method is stated on the page.
+- id: src-thejournal
+  title: 'TheJournal.ie, Debunked: AI-altered video claims attack on Flydubai plane was Indian-Israeli plot to implicate Iran (2 Oct 2026)'
+  url: https://www.thejournal.ie/video-claims-flydubai-incident-was-indian-israeli-plot-to-implicate-iran-7180572-Oct2026/
+  document_class: secondary (a fact-check)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A fact-check. What is tested is the item it examines; the fact-checker's own method is stated on the page.
+- id: src-ibtimes-moon
+  title: 'IBTimes UK, ''Faker Than the Moon Landing'': Flydubai FZ1073 ''False Flag'' Claims Explode After Viral Video Exposed (2 Oct 2026)'
+  url: https://www.ibtimes.co.uk/flydubai-fz1073-false-flag-claim-debunked-1823302
+  document_class: secondary (news relaying a fact-check)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-ynet-cam
+  title: 'Ynetnews, ''False flag'': Antisemitic Flydubai conspiracy spread online within just 67 minutes (1 Oct 2026)'
+  url: https://www.ynetnews.com/jewish-world/article/r1zyjm2qfe
+  document_class: secondary (news relaying an advocacy group's counts; same underlying study as src-jpost-910349, counted once)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-cnn-live-0930
+  title: 'CNN live blog, September 30, 2026: Dubai to Tel Aviv flight diverted to Saudi Arabia (per-entry timestamps read from the page''s JSON-LD)'
+  url: https://www.cnn.com/2026/09/30/world/live-news/dubai-israel-plane-flydubai-intl
+  document_class: secondary (news live blog)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-nbc-0930
+  title: NBC News, Pilot stabbed his co-pilot in apparent attempt to crash Israel-bound plane, Netanyahu says (30 Sep 2026, updated 1 Oct)
+  url: https://www.nbcnews.com/world/middle-east/flight-dubai-tel-aviv-diverted-emergency-alert-rcna600628
+  document_class: secondary (news)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-npr-0930
+  title: NPR, A midair stabbing on a flight to Israel is investigated for possible terrorist links (30 Sep 2026, updated 1 Oct)
+  url: https://www.npr.org/2026/09/30/nx-s1-5985806/flydubai-flight-dubai-tel-aviv-israel
+  document_class: secondary (news)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-bloomberg-spokesman
+  title: Bloomberg text as reprinted by the Spokesman-Review, FlyDubai pilot who tried to crash plane identified as Omani (1 Oct 2026)
+  url: https://www.spokesman.com/stories/2026/oct/01/flydubai-pilot-who-tried-to-crash-plane-identified/
+  document_class: secondary (a wire reprint; Bloomberg's own page src-bloomberg was not reached)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-arabnews
+  title: Arab News, FlyDubai mid-air knife attacking co-pilot was Omani and indoctrinated radical, Netanyahu says (1 Oct 2026)
+  url: https://www.arabnews.com/middle-east/uae-launches-investigation-into-flydubai-flight-incident-3004025
+  document_class: secondary (news)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-cbs-first
+  title: CBS News, FlyDubai co-pilot stabbed captain, tried to crash flight to Israel after 'radical indoctrination', Netanyahu says (first published
+    30 Sep 07:59 UTC; the URL slug keeps the first version's topic)
+  url: https://www.cbsnews.com/news/tel-aviv-israel-flydubai-flight-saudi-arabia-diverted-pilots/
+  document_class: secondary (news; the page was rewritten after its first stamp)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-migflug-first
+  title: 'MiGFlug, flydubai FZ1073: Co-Pilot Suspected of Trying to Crash 737 MAX (first published 30 Sep 08:18 UTC; carries an ''Update'' banner)'
+  url: https://migflug.com/afterburner/flydubai-fz1073-squawk-7500-hijack-alert-israeli-jets-tabuk-2026/
+  document_class: secondary (an aviation news site; early version contains claims later contradicted)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report. What is tested is the claims it carries; it is read for who said what and when.
+- id: src-toi-liveblog
+  title: Times of Israel live blog entry, Hijacking ruled out as flydubai flight to Tel Aviv lands at Saudi airport (30 Sep 2026)
+  url: https://www.timesofisrael.com/liveblog_entry/hijacking-ruled-out-as-flydubai-flight-to-tel-aviv-lands-at-saudi-airport/
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: HTTP 403 to curl on 2 Oct; known only through Khaleej Times (about 10:57 UAE time) and a summarising tool in another session.
+    next_step: Read it from a network or browser that is not refused.
+- id: src-france24
+  title: 'France 24, Truth or Fake: fake BBC report falsely implicates Indian passenger and pilot in flydubai hijacking attempt (1 Oct 2026)'
+  url: https://www.france24.com/en/fake-bbc-report-falsely-implicates-indian-passenger-and-pilot-in-flydubai-hijacking-attempt
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: HTTP 403 to curl; the AFP-detector result is known only through a summarising tool in another session.
+    next_step: Read it from a network or browser that is not refused.
+- id: src-newsguard
+  title: NewsGuard Reality Check, FlyDubai 'False Flag' Claim on Faked BBC Video
+  url: https://www.newsguardrealitycheck.com/p/flydubai-false-flag-claim-on-faked
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: HTTP 403; known only from a search-result title.
+    next_step: Read it from a network or browser that is not refused.
+- id: src-theweek
+  title: The Week (India), Omani co-pilot has links with Iran? (2 Oct 2026)
+  url: https://www.theweek.in/news/middle-east/2026/10/02/flydubai-flight-scare-omani-co-pilot-has-links-with-iran.html
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: HTTP 403 to curl; its anonymous-official claims about the co-pilot are not repeated in this dig.
+    next_step: Read it from a network or browser that is not refused.
+- id: src-tribune-i24
+  title: The Tribune (India) relaying i24 News on items allegedly found among the co-pilot's belongings (2 Oct 2026)
+  url: https://www.tribuneindia.com/news/world/omani-co-pilot-behind-flydubai-cockpit-attack-found-with-free-palestine-leaflets-pro-palestinian-material-israeli-media
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: Only the page metadata and lead were seen in another session; i24's original was not opened; the claim is third-hand and uncorroborated
+      and is not repeated in this dig.
+    next_step: Read it from a network or browser that is not refused.
+- id: src-fars-shafaq
+  title: 'Fars News Agency item and Shafaq News report ''Israel Planning Aviation Attack to Blame Iran: Fars'' (30 Sep 2026)'
+  url: https://themedialine.org/top-stories/from-hijacking-alert-to-false-flag-claims-how-arab-and-iranian-outlets-framed-the-flydubai-incident/
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: Neither original was opened; known only through The Media Line's description (src-medialine).
+    next_step: Read it from a network or browser that is not refused.
+- id: src-walla
+  title: Walla (Israeli outlet) reports relayed by AeroTime (30 Sep 2026)
+  url: https://www.aerotime.aero/articles/flydubai-fz1073-diverts-saudi-arabia-7500-code
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: Walla's originals were not opened; the AeroTime relay was not re-read in this pass.
+    next_step: Read it from a network or browser that is not refused.
+- id: src-israeli-pmo-video
+  title: Israeli Prime Minister's Office video statements and interviews (CBS Evening News, Fox News, CNN, BBC Radio 4) of 30 Sep to 2 Oct 2026
+  url: https://www.pmo.gov.il/en
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: None watched or read as transcripts; the Israeli PMO site is scripted and showed no item. Quotes are as printed by outlets.
+    next_step: Read it from a network or browser that is not refused.
+- id: src-aj-original
+  title: 'Al Jazeera, Pilot stabbed another in bid to crash Israel-bound Flydubai jet: Netanyahu (first published 30 Sep 08:00 UTC as ''Flydubai
+    flight to Israel diverted to Saudi Arabia after emergency alert''; rewritten in place, last modified 19:49 UTC)'
+  url: https://www.aljazeera.com/news/2026/9/30/flydubai-flight-to-israel-diverted-to-saudi-arabia-after-emergency-alert
+  document_class: secondary (news; credits Al Jazeera Staff, AFP and Reuters)
+  read: yes, directly (raw HTML)
+  authenticity:
+    status: not_applicable
+    basis: A news report; the URL slug preserves the first headline.
+- id: src-euronews
+  title: Euronews, Israel says pilot tried to crash flydubai plane during cockpit fight (first published about 08:16 UTC 30 Sep; slug 'after-alleged-dispute-between-')
+  url: https://www.euronews.com/2026/09/30/flydubai-plane-traveling-to-israel-diverted-to-saudi-arabia-after-alleged-dispute-between-
+  document_class: not read
+  read: 'no'
+  authenticity:
+    status: unchecked
+    basis: HTTP 406 to curl in this pass; the first headline's topic is known only from the URL slug, and its publication time from another session's
+      read of the page metadata.
+    next_step: Read the page from a browser.

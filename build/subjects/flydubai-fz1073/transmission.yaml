@@ -46,3 +46,87 @@ chains:
         source: src-ibtimes-700mph
         read: yes
         note: "The pilot said the numbers would change with recorder data and did not say the flight was staged (IBTimes)."
+
+  - id: tx-fakes
+    about: "flydubai-fz1073:fz1073-fakes-debunked"
+    title: "Fake or misattributed items that circulated about FZ1073, and when they were debunked"
+    confers_weight: false
+    events:
+      - id: tx-f-01
+        date: "2026-09-30"
+        precision: day
+        step: origin
+        carrier: "An Instagram post by a US campus advocacy group's account, captioned as the FZ1073 passengers celebrating"
+        form: "A clip of people celebrating on a plane with a big speaker, presented as the FZ1073 passengers."
+        source: src-ls-basketball
+        read: yes
+        note: "Lead Stories (1 Oct 20:37 UTC) found the footage is an Israeli men's basketball team's flight from August 2025 (Sport5 original). Later reused by 'false flag' posters (Lead Stories, ceiling-and-seating item, 2 Oct 20:41 UTC). An advocacy group's post is not a private individual; no personal account is named here."
+      - id: tx-f-02
+        date: "2026-09-30"
+        precision: day
+        step: origin
+        carrier: "A video imitating a BBC News broadcast, posted on X within a couple of hours of the incident (ABC News Verify)"
+        form: "The presenter appears to say an Indian passenger, with a name invented by the video, was involved with Mossad; the video blamed Indian officials."
+        source: src-abc-verify
+        read: yes
+        note: "ABC News Verify (1 Oct 02:22 UTC): AI-manipulated from real footage, 300,000 views. Full Fact (2 Oct 15:50 UTC): the BBC confirmed it is fake. TheJournal.ie (2 Oct 15:30 UTC): the same video accompanied a claim 'seen hundreds of thousands of times' that the incident was an Indian-Israeli intelligence operation to blame Iran. The invented name is not repeated here. France 24's version (AFP detector) was not readable."
+      - id: tx-f-03
+        date: "2026-10-01"
+        precision: day
+        step: amplification
+        carrier: "A post on X captioned as FZ1073 plummeting, using a clip of an Azul Brazilian Airlines aircraft"
+        form: "The clip is presented as the dive of FZ1073."
+        source: src-ls-azul
+        read: yes
+        note: "Lead Stories (1 Oct 22:42 UTC): the same clip was on YouTube on 18 September, 12 days before the incident."
+      - id: tx-f-04
+        date: "2026-10-01"
+        precision: day
+        step: amplification
+        carrier: "A video on X of a 'leaked' pilot argument"
+        form: "A cockpit argument between the FZ1073 pilots."
+        source: src-ls-aiaudio
+        read: yes
+        note: "Lead Stories (2 Oct 16:24 UTC): a detection tool rated the clip 95.8 'Likely to be AI-generated'; the audio is from a 2017 road-rage video."
+      - id: tx-f-05
+        date: "2026-10-02"
+        precision: day
+        step: amplification
+        carrier: "A video on X credited to NewsGuard that blamed a US political party"
+        form: "NewsGuard reported that a political party orchestrated the attack."
+        source: src-ls-newsguard
+        read: yes
+        note: "Lead Stories (2 Oct 19:28 UTC): NewsGuard told Lead Stories it did not make the claim and that such posts appear connected to a Russian influence campaign (NewsGuard's own page was not readable)."
+      - id: tx-f-06
+        date: "2026-10-02"
+        precision: day
+        step: dispute
+        carrier: "Fact-check outlets: ABC News Verify, Full Fact, TheJournal.ie, Lead Stories, IBTimes UK (relay)"
+        form: "Each debunks a specific item. None tests whether the incident itself was staged."
+        source: src-fullfact
+        read: yes
+        note: "Debunks of fakes are not evidence for or against staging; they remove items that might look like evidence."
+
+  - id: tx-fars-lead
+    about: "flydubai-fz1073:fz1073-fars-israel-plan-lead"
+    title: "The Fars 'Israel planning an aviation attack to blame Iran' item"
+    confers_weight: false
+    events:
+      - id: tx-r-01
+        date: "2026-09-30"
+        precision: day
+        step: origin
+        carrier: "Fars News Agency (Iranian, semi-official), citing unnamed Iranian security agencies, as reported by Shafaq News"
+        form: "Iran obtained intelligence that Israel was considering an attack on an aircraft or airport that could be blamed on Iran; placed alongside the FZ1073 diversion."
+        source: src-fars-shafaq
+        read: no
+        note: "Neither original was opened. Shafaq: 'Fars presented no evidence linking the Flydubai incident to its allegations'."
+      - id: tx-r-02
+        date: "2026-09-30"
+        precision: day
+        step: repetition
+        carrier: "The Media Line, in a survey of Arab and Iranian outlets (published 30 Sep 18:27 UTC)"
+        form: "Reports the Fars item and the caveat."
+        source: src-medialine
+        read: yes
+        note: "A survey of coverage, not a test of the allegation."

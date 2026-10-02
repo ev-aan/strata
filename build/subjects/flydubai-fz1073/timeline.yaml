@@ -27,6 +27,27 @@ panels:
     end:   "2026-10-03T00:00:00Z"
     tick_hours: 12
     lanes: [flydubai, israel_gov, israel_agencies, saudi_gov, uae, us, other]
+  - id: media30
+    title: "Panel C1: who reported what, when, 30 September (UTC; the zone each outlet shows is in each event's detail)"
+    start: "2026-09-30T06:00:00Z"
+    end:   "2026-10-01T00:00:00Z"
+    tick_hours: 2
+    axes: [{label: "UAE time (UTC+4)", offset_hours: 4}]
+    lanes: [m_official, m_wire, m_outlet, m_live, m_fact, m_change]
+  - id: media01
+    title: "Panel C2: who reported what, when, 1 October (UTC)"
+    start: "2026-10-01T00:00:00Z"
+    end:   "2026-10-02T00:00:00Z"
+    tick_hours: 2
+    axes: [{label: "UAE time (UTC+4)", offset_hours: 4}]
+    lanes: [m_official, m_wire, m_outlet, m_live, m_fact, m_change]
+  - id: media02
+    title: "Panel C3: who reported what, when, 2 October (UTC; to about 21:00)"
+    start: "2026-10-02T00:00:00Z"
+    end:   "2026-10-03T00:00:00Z"
+    tick_hours: 2
+    axes: [{label: "UAE time (UTC+4)", offset_hours: 4}]
+    lanes: [m_official, m_wire, m_outlet, m_live, m_fact, m_change]
 
 lanes:
   aircraft:        {label: "Aircraft and tracking data"}
@@ -43,6 +64,12 @@ lanes:
   saudi_gov:       {label: "Saudi government"}
   uae:             {label: "UAE"}
   us:              {label: "United States"}
+  m_official:      {label: "Official statements (as dated by outlets)"}
+  m_wire:          {label: "Wire copy (Reuters, AFP, Bloomberg, AP)"}
+  m_outlet:        {label: "Outlets: original reporting"}
+  m_live:          {label: "Live blogs (CNN entries)"}
+  m_fact:          {label: "Fact-checks and misinformation"}
+  m_change:        {label: "Documented changes to published pages"}
   other:           {label: "Others"}
 
 people:
@@ -87,6 +114,32 @@ sources:
   s_abc:       {title: "ABC News Verify, Fake news spreading online (1 Oct, updated 2 Oct)", url: "https://www.abc.net.au/news/2026-10-01/verify-flight-misinformation-fz1073-tel-aviv-dubai/107215774"}
   s_jp_349:    {title: "Jerusalem Post, Watchdogs uncovered conspiracy theories (1 Oct), reporting an advocacy group's counts", url: "https://www.jpost.com/diaspora/antisemitism/article-910349"}
 
+  s_spa: {title: "Saudi Press Agency, Interior Ministry statement (English), dateline Riyadh 1 Oct", url: "https://www.spa.gov.sa/en/w2691027"}
+  s_cnn30: {title: "CNN live blog, 30 September (per-entry stamps from the page's JSON-LD)", url: "https://www.cnn.com/2026/09/30/world/live-news/dubai-israel-plane-flydubai-intl"}
+  s_aj_orig: {title: "Al Jazeera, first story, rewritten in place (slug keeps the first headline)", url: "https://www.aljazeera.com/news/2026/9/30/flydubai-flight-to-israel-diverted-to-saudi-arabia-after-emergency-alert"}
+  s_cbs1: {title: "CBS News, first published 30 Sep, retitled 1 Oct", url: "https://www.cbsnews.com/news/tel-aviv-israel-flydubai-flight-saudi-arabia-diverted-pilots/"}
+  s_nbc: {title: "NBC News, 30 Sep, updated 1 Oct", url: "https://www.nbcnews.com/world/middle-east/flight-dubai-tel-aviv-diverted-emergency-alert-rcna600628"}
+  s_npr: {title: "NPR, 30 Sep, updated 1 Oct", url: "https://www.npr.org/2026/09/30/nx-s1-5985806/flydubai-flight-dubai-tel-aviv-israel"}
+  s_spoke: {title: "Bloomberg text reprinted by the Spokesman-Review", url: "https://www.spokesman.com/stories/2026/oct/01/flydubai-pilot-who-tried-to-crash-plane-identified/"}
+  s_arab: {title: "Arab News, 1 Oct", url: "https://www.arabnews.com/middle-east/uae-launches-investigation-into-flydubai-flight-incident-3004025"}
+  s_mig1: {title: "MiGFlug, first story with later update banner", url: "https://migflug.com/afterburner/flydubai-fz1073-squawk-7500-hijack-alert-israeli-jets-tabuk-2026/"}
+  s_aj12: {title: "Al Jazeera, 12 minutes of madness (2 Oct)", url: "https://www.aljazeera.com/news/2026/10/2/12-minutes-of-madness-how-flydubai-pilot-passengers-saved-plane-midfall"}
+  s_abcau: {title: "ABC News Australia, how the flight plunged (1 Oct)", url: "https://www.abc.net.au/news/2026-10-01/how-flydubai-flight-fz1073-plunge-unfolded/107215048"}
+  s_ynetcam: {title: "Ynetnews, 'False flag' counts (1 Oct)", url: "https://www.ynetnews.com/jewish-world/article/r1zyjm2qfe"}
+  s_cbstrump: {title: "CBS News, Trump on Iran (1 Oct)", url: "https://www.cbsnews.com/news/trump-flydubai-pilot-linked-to-iran/"}
+  s_ls_bb: {title: "Lead Stories, basketball video", url: "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-passengers-flydubai-flight-fz1073-tel-aviv-celebrating-big-speaker-hijacking-attempt-2025.html"}
+  s_ls_azul: {title: "Lead Stories, Azul clip", url: "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-flydubai-plane-plummeting-after-september-2026-incident-on-board-tel-aviv-flight-it-is-an-azul-brazilian-airlines-plane.html"}
+  s_ls_ai: {title: "Lead Stories, AI-generated 'leaked video'", url: "https://leadstories.com/hoax-alert/2026/10/fake-leaked-video-flydubai-pilot-argument-ai-generated-audio-2017-road-rage-clip.html"}
+  s_ls_ng: {title: "Lead Stories, fake NewsGuard-credited video", url: "https://leadstories.com/hoax-alert/2026/10/fact-check-fake-video-claims-newsguard-reported-that-democratic-party-orchestrated-attempted-terrorist-attack-on-flydubai-flight-fz1073.html"}
+  s_ls_ceil: {title: "Lead Stories, ceiling and seating video", url: "https://leadstories.com/hoax-alert/2026/10/fact-check-video-does-not-show-same-plane-flydubai-ceiling-seating-different-false-flag.html"}
+  s_fullfact: {title: "Full Fact, BBC-style deepfake", url: "https://fullfact.org/world/flydubai-flight-bbc-presenter-deepfake/"}
+  s_journal: {title: "TheJournal.ie, debunked AI-altered video", url: "https://www.thejournal.ie/video-claims-flydubai-incident-was-indian-israeli-plot-to-implicate-iran-7180572-Oct2026/"}
+  s_medialine: {title: "The Media Line, how Arab and Iranian outlets framed the incident", url: "https://themedialine.org/top-stories/from-hijacking-alert-to-false-flag-claims-how-arab-and-iranian-outlets-framed-the-flydubai-incident/"}
+  s_ibt_moon: {title: "IBTimes UK, 'Faker than the moon landing'", url: "https://www.ibtimes.co.uk/flydubai-fz1073-false-flag-claim-debunked-1823302"}
+  s_dubaieye: {title: "Dubai Eye, flydubai CEO statement", url: "https://www.dubaieye1038.com/news/local/flydubai-ceo-thanks-crew-passengers-as-fz1073-investigation-proceeds/"}
+  s_toi: {title: "Times of Israel live blog entry (not read: HTTP 403)", url: "https://www.timesofisrael.com/liveblog_entry/hijacking-ruled-out-as-flydubai-flight-to-tel-aviv-lands-at-saudi-airport/"}
+  s_euronews: {title: "Euronews (not re-read: HTTP 406; URL slug only)", url: "https://www.euronews.com/2026/09/30/flydubai-plane-traveling-to-israel-diverted-to-saudi-arabia-after-alleged-dispute-between-"}
+
 # kind: data = machine-recorded; official = government or company statement; witness = a person's account;
 #       media = a news outlet's own report or inference.
 # status: reported = 2+ independent sources agree; single = one source; disputed = sources differ; inferred = our inference.
@@ -130,7 +183,7 @@ events:
   - {id: a11, panel: flight, lane: aircraft, time: "2026-09-30T06:58:00Z", precision: approx, date_basis: stated, kind: data,  status: single, sources: [s_airnav],
      label: "Last ADS-B message received by AirNav Radar",
      detail: "AirNav Radar: last ADS-B data received 'at approximately 06:58 UTC'. (An earlier version of this timeline gave 06:11 UTC for loss of tracking coverage from an aggregator; that is superseded and not repeated here, see log L-17.)"}
-  - {id: a12, panel: flight, lane: saudi, node: fz1073-2026-09-30-landing-tabuk, rev: 2}
+  - {id: a12, panel: flight, lane: saudi, node: fz1073-2026-09-30-landing-tabuk, rev: 3}
   - {id: a13, panel: flight, lane: cabin, time: "2026-09-30T05:45:00Z", precision: range, end: "2026-09-30T06:10:00Z", date_basis: inferred, kind: media, status: single, sources: [s_cnn],
      label: "Cabin crew call for a doctor and a pilot (video; time not reported)",
      detail: "Video shared on social media and verified by CNN shows people crowded at the cockpit door, a cabin crew member calling for a doctor, and a voice calling 'We need a pilot'. Time inferred."}
@@ -147,7 +200,7 @@ events:
      detail: "Statement 2 (read). Khaleej Times gives about 5:30 p.m. UAE time. Asked all parties to 'refrain from premature speculation'."}
   - {id: b4,  panel: aftermath, lane: israel_gov, time: "2026-09-30T15:50:00Z", precision: approx, date_basis: stated, kind: official, status: reported, sources: [s_aljazeera, s_cnn],
      label: "Replacement flight reaches Ben Gurion; Herzog: 'great miracle', joint probe with the UAE",
-     detail: "Al Jazeera, citing the Times of Israel: the replacement flight landed 'shortly before 16:00 GMT'. Passengers left Tabuk at 5:40 p.m. Saudi time (Saudi ministry)."}
+     detail: "UNRESOLVED (see claim fz1073-replacement-flight-timing): Saudi ministry (SPA, no time zone given): passengers left Tabuk at '5:40 p.m.' (14:40 UTC if Saudi time); CNN entries stamped 15:13 UTC (take-off) and 15:37 UTC (landed); Al Jazeera, citing the Times of Israel: 'shortly before 16:00 GMT'; CBS: 'shortly before 8 p.m. local time' (about 16:45 to 17:00 UTC). Shown at the Al Jazeera time."}
   - {id: b5,  panel: aftermath, lane: flydubai, time: "2026-09-30T19:00:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_flydubai, s_khaleej],
      label: "flydubai suspends Israel flights, 'at the request of the authorities'",
      detail: "Statement 3 and the CEO's statement 4 (read); Khaleej Times gives 11 p.m. UAE time. Israeli minister Regev had asked for it."}
@@ -160,12 +213,12 @@ events:
   - {id: b9,  panel: aftermath, lane: uae, time: "2026-10-01T06:57:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_mofa, s_khaleej, s_aj_uae],
      label: "UAE Attorney-General orders an investigation, including any terrorist link or prior planning",
      detail: "UAE MoFA statement (read); Khaleej Times gives 10:57 a.m. UAE time for the announcement and 1:33 p.m. for the ministry."}
-  - {id: b8,  panel: aftermath, lane: saudi_gov, time: "2026-10-01T09:00:00Z", precision: day, date_basis: stated, kind: official, status: reported, sources: [s_aj_saudi, s_cnn_live],
-     label: "Saudi ministry: assault by co-pilot, injuries to both; both leave for Abu Dhabi",
-     detail: "Statement issued 'on Thursday' (1 Oct); the hour is not given. With an Emirati security team, after being medically cleared. Read through Al Jazeera and CNN."}
-  - {id: b10, panel: aftermath, lane: israel_gov, time: "2026-10-01T12:00:00Z", precision: day, date_basis: stated, kind: official, status: reported, sources: [s_cnn, s_cnn_live, s_aj_uae],
-     label: "Netanyahu: co-pilot Omani, 'underwent Islamist radical indoctrination'",
-     detail: "Omani: told CNN (CNN does not date the interview: 30 Sep or 1 Oct). 'Underwent Islamist radical indoctrination': Fox News, reported in 1 Oct pieces. The same reports note motive is not confirmed; he also said it was too early to say whether Iran was involved. Placed at midday 1 Oct as a day-precision marker; the window is 30 Sep to 1 Oct."}
+  - {id: b8,  panel: aftermath, lane: saudi_gov, time: "2026-10-01T18:41:00Z", precision: approx, date_basis: publication_proxy, kind: official, status: reported, sources: [s_spa, s_aj_saudi, s_cnn_live],
+     label: "Saudi ministry (SPA): altercation, co-pilot assaulted the captain, injuries to both; both leave for Abu Dhabi with the UAE team",
+     detail: "Read in the original English on the Saudi Press Agency (dateline 1 Oct). Release hour unknown; earliest verified outlet time is CNN's entry at 18:41 UTC (the SPA page footer shows 18:31 GMT but that is a render clock). The text gives 9:45 a.m. and 5:40 p.m. with no time zone. Other English renderings (CNN, Al Jazeera) differ. The text says nothing on stabbing, weapon, nationality, motive or custody."}
+  - {id: b10, panel: aftermath, lane: israel_gov, time: "2026-10-01T12:00:00Z", precision: day, date_basis: stated, kind: official, status: reported, sources: [s_cnn, s_cnn_live, s_aj_uae, s_nbc],
+     label: "Netanyahu: co-pilot Omani (CBS, Wed night; CNN undated); 'underwent Islamist radical indoctrination' (Fox)",
+     detail: "Omani: NBC reports he said so on CBS Evening News on Wednesday night, 30 Sep (the broadcast hour is not given); CNN does not date its interview. 'Underwent Islamist radical indoctrination': Fox News, reported in 1 Oct pieces (CNN entry 12:28 UTC; Bloomberg 'on Thursday'). The same reports note motive is not confirmed; he also said it was too early to say whether Iran was involved. Placed at midday 1 Oct as a day-precision marker; the hours are not known."}
   - {id: b11, panel: aftermath, lane: us, time: "2026-10-01T14:00:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_cnn_live, s_ynet],
      label: "Trump: Iran link likely, 'based on what I'm hearing'; no detail",
      detail: "'Could be. Could be.' The same day a senior Israeli official told Ynet that investigators had so far ruled out an Iranian connection."}
@@ -190,3 +243,178 @@ events:
   - {id: b18, panel: aftermath, lane: uae, time: "2026-10-02T12:00:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_cnn],
      label: "Gargash, a top UAE official per CNN: 'dangerous terrorist act'",
      detail: "CNN explainer: 'on Friday' (2 Oct); the hour is not given and his own words were not read. An accusation, not a finding; the UAE investigation is still examining any terrorist link."}
+  # ---------------- Panels C1 to C3: media timeline (who reported what, when, and documented changes) ----------------
+  - {id: m01, panel: media30, lane: m_outlet, time: "2026-09-30T06:57:00Z", precision: approx, date_basis: derived, kind: media, status: single, sources: [s_khaleej, s_toi],
+     label: "Times of Israel: hijacking ruled out, 'altercation between the pilots'",
+     detail: "Attribution: Israeli security sources (Times of Israel live entry, not read: HTTP 403). Time: Khaleej Times lists it at 10:57 a.m. UAE time (UTC+4) = 06:57 UTC. Key claim: hijack ruled out; cause an altercation. read: no (relay only)."}
+  - {id: m02, panel: media30, lane: m_official, time: "2026-09-30T08:07:51Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_flydubai, s_cnn30],
+     label: "flydubai Statement 1: 'experienced an incident while en route'",
+     detail: "The statement is undated on the airline's page; the time is CNN's live-blog entry stamp (UTC, from JSON-LD), so it is a publication time, not the statement time. Key claim: landed safely at Tabuk; all passengers safe and accounted for. read: yes (flydubai page)."}
+  - {id: m03, panel: media30, lane: m_live, time: "2026-09-30T07:54:35Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cnn30],
+     label: "CNN live blog first entry: 'Violent incident' between pilots forces plane to divert",
+     detail: "Attribution: 'sources told CNN'; flight-tracking data 'reviewed by CNN'. Time: entry stamp in UTC. Key claim: a violent incident between two pilots; 17,400 ft in under two minutes 'at around 1:20 a.m. ET' (05:20 UTC); emergency signal 1:32 a.m. ET (05:32 UTC). read: yes (per-entry JSON-LD)."}
+  - {id: m04, panel: media30, lane: m_outlet, time: "2026-09-30T07:59:00Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cbs1],
+     label: "CBS News first published",
+     detail: "Page metadata datePublished 03:59 -0400 = 07:59 UTC (zone stated in the stamp). The page was later retitled (see m26). The first version also says the crew 'transmitted an emergency alert shortly after takeoff' and gives BBC's '8:21 a.m. local time' (05:21 UTC on UTC+3) for the dive; the take-off statement conflicts with the data (D4). read: yes (current text)."}
+  - {id: m05, panel: media30, lane: m_outlet, time: "2026-09-30T08:00:10Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_aj_orig],
+     label: "Al Jazeera first story: 'Flydubai flight to Israel diverted to Saudi Arabia after emergency alert'",
+     detail: "Page metadata datePublished 08:00:10Z; the URL slug keeps the first headline; the page was rewritten later (m24). Current text still says 'The plane transmitted an emergency alert shortly after takeoff ... according to the airline'; the airline's statements do not say this (D4). Attribution: Al Jazeera Staff, with Reuters and AFP quoted. read: yes."}
+  - {id: m06, panel: media30, lane: m_outlet, time: "2026-09-30T08:16:00Z", precision: approx, date_basis: publication_proxy, kind: media, status: single, sources: [s_euronews],
+     label: "Euronews first headline spoke of an 'alleged dispute between' pilots",
+     detail: "Only the URL slug is evidence of the first headline; the 08:16 UTC time is from another session's read of the page metadata and was not re-checked (HTTP 406 now). read: no."}
+  - {id: m07, panel: media30, lane: m_outlet, time: "2026-09-30T08:18:13Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_mig1],
+     label: "MiGFlug first story: Israel feared a hijack; later claims contradicted",
+     detail: "Page metadata datePublished 08:18:13Z, modified 2 Oct 20:22:07Z. Text read now carries 'The picture has changed sharply since this story was first published' and still says 'Israel's Air Defense Forces said the captain is a citizen of the United Arab Emirates and the first officer an Omani citizen' and 'one a South African citizen and one from New Zealand' (an Israeli official), and 'pocket knife'. read: yes."}
+  - {id: m08, panel: media30, lane: m_outlet, time: "2026-09-30T08:56:44Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_nbc],
+     label: "NBC News first published: 14,125 ft in 29 seconds (Flightradar24)",
+     detail: "datePublished 08:56:44Z; updated 1 Oct 01:42:48Z (the page says Netanyahu told 'CBS Evening News' on Wednesday night: 'I don't think it was a hijacking. It looks like a suicide attempt'; pilot an 'Omani citizen'). read: yes."}
+  - {id: m09, panel: media30, lane: m_live, time: "2026-09-30T10:06:54Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cnn30],
+     label: "CNN: Israeli officials say the incident may have been an attempted terror attack",
+     detail: "Attribution: 'two Israeli officials and an Israeli source'; one said the co-pilot tried to stab the pilot and an Israeli passenger helped restrain him. Entry stamp in UTC. Not a finding. read: yes."}
+  - {id: m10, panel: media30, lane: m_official, time: "2026-09-30T10:48:00Z", precision: approx, date_basis: derived, kind: official, status: single, sources: [s_khaleej],
+     label: "Tabuk airport statement: captain and co-pilot injured, taken to hospital",
+     detail: "Time: Khaleej Times lists 2:48 p.m. UAE time = 10:48 UTC; CNN's entry is stamped 11:00:36 UTC. Distress call 8:44 a.m. Saudi time (05:44 UTC), landing 9:45 a.m. Saudi time. read: no (the airport's own statement was not seen)."}
+  - {id: m11, panel: media30, lane: m_live, time: "2026-09-30T11:24:56Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cnn30],
+     label: "CNN: 'One of the pilots on Flydubai plane was Omani, Israeli officials say'",
+     detail: "Attribution: two Israeli officials; one said the Omani national was the co-pilot. First CNN entry on nationality. Entry stamp in UTC. read: yes."}
+  - {id: m12, panel: media30, lane: m_outlet, time: "2026-09-30T14:32:00Z", precision: approx, date_basis: publication_proxy, kind: media, status: single, sources: [s_jp_192],
+     label: "Jerusalem Post: Regev asks Shin Bet to halt flydubai flights; 'Omani origin'; 'explicitly states' rule",
+     detail: "Page metadata prints 14:32 with '+00:00' and the page displays 'SEPTEMBER 30, 2026 14:32'; whether that is UTC or Israel time (11:32 UTC) is not established (D19); shown at 14:32 as printed. Attribution: an unnamed Transport Ministry source and 'Israeli sources'; the rule is in the Post's own voice. read: yes."}
+  - {id: m13, panel: media30, lane: m_live, time: "2026-09-30T12:36:02Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cnn30],
+     label: "CNN: Israeli sources suspect the co-pilot was trying to hijack the plane after stabbing the captain",
+     detail: "Attribution: two Israeli sources; CNN adds it is not clear whether the aim was to crash or to land and take hostages. Entry stamp UTC. read: yes."}
+  - {id: m14, panel: media30, lane: m_live, time: "2026-09-30T12:58:36Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cnn30],
+     label: "CNN: Saudi Arabia refused a request to let an Israeli plane collect the passengers",
+     detail: "Attribution: an Israeli official to CNN. Entry stamp UTC. read: yes."}
+  - {id: m15, panel: media30, lane: m_official, time: "2026-09-30T13:30:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_flydubai, s_khaleej, s_cnn30],
+     label: "flydubai Statement 2: 'an altercation occurred in the flight deck'",
+     detail: "Time: Khaleej Times 5:30 p.m. UAE time = 13:30 UTC; CNN's entry is stamped 13:40:15 UTC; the statement is undated on the airline's page. Key claim: altercation; secured and landed by 'on-duty flydubai crew travelling on the flight'; motives unknown. read: yes (flydubai page)."}
+  - {id: m16, panel: media30, lane: m_official, time: "2026-09-30T13:44:46Z", precision: exact, date_basis: stated, kind: official, status: reported, sources: [s_cnn30],
+     label: "Netanyahu video: 'one of the pilots stabbed the other pilot'; 'apparently tried to crash the plane'",
+     detail: "Time: CNN's entry stamp (UTC); the video itself was not watched; wording as quoted by MiGFlug. He does not say which pilot attacked which (as MiGFlug notes). read: no (statement), yes (CNN entry)."}
+  - {id: m17, panel: media30, lane: m_official, time: "2026-09-30T17:29:00Z", precision: approx, date_basis: derived, kind: official, status: single, sources: [s_khaleej],
+     label: "UAE GCAA: 'security incident' brought under control; crew injured",
+     detail: "Time: Khaleej Times 9:29 p.m. UAE time = 17:29 UTC. The authority's original was not seen. read: no (relay)."}
+  - {id: m18, panel: media30, lane: m_fact, time: "2026-09-30T18:27:08Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_medialine],
+     label: "The Media Line survey: Fars 'Israel planning aviation attack to blame Iran' item, early 'about 150 Israelis' and FZ1081 reports",
+     detail: "Page metadata datePublished 18:27:08 +00:00 (modified 18:38:04). Attribution: Shafaq News on Fars (Iranian security agencies, unnamed); 'Fars presented no evidence linking the Flydubai incident to its allegations'. Originals not opened. read: yes (Media Line), no (Fars, Shafaq)."}
+  - {id: m19, panel: media30, lane: m_live, time: "2026-09-30T18:58:04Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_cnn30],
+     label: "Israeli Foreign Ministry: 'attempted terrorist attack' against Israelis and the UAE",
+     detail: "Attribution: Foreign Ministry briefing as logged by CNN (entry stamp UTC). An accusation, not a finding. read: yes (CNN entry)."}
+  - {id: m20, panel: media30, lane: m_official, time: "2026-09-30T19:00:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_flydubai, s_khaleej, s_cnn30],
+     label: "flydubai Statement 3: Israel flights suspended 'in coordination with the relevant authorities'",
+     detail: "Time: Khaleej Times 11 p.m. UAE time = 19:00 UTC; CNN entry 19:52:11 UTC. The CEO later says the suspension was 'at the request of the authorities' (Statement 4). read: yes."}
+  - {id: m21, panel: media30, lane: m_official, time: "2026-09-30T22:40:03Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_cnn30],
+     label: "Netanyahu to CNN (Sciutto): 'managed to prevent a 9/11 disaster'; UAE president 'agreed ... we should join the investigation'",
+     detail: "Time: CNN entry stamp (UTC). Also: Israel 'did not have any warning or intelligence' about the incident (CNN's words). Whether he said 'Omani' in this interview is not shown in the entry. read: yes (CNN entry)."}
+  - {id: m22, panel: media30, lane: m_outlet, time: "2026-09-30T15:27:26Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_aljazeera],
+     label: "Al Jazeera explainer published: timeline 03:05, 05:21, 05:22, 05:31, 05:38, 06:45",
+     detail: "datePublished 15:27:26Z; modified 1 Oct 08:10:31Z. Uses Flightradar24 times; quotes Lapid on the 29 Sep warning. read: yes."}
+  - {id: m23, panel: media30, lane: m_outlet, time: "2026-09-30T13:35:11Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_npr],
+     label: "NPR first published; later update says Saudi 'released a preliminary assessment'",
+     detail: "datePublished 09:35:11 -04:00 = 13:35:11 UTC; modified 1 Oct 17:36:22 -04:00 = 21:36:22 UTC. Netanyahu 'said on Fox & Friends he is from Oman'; 'There were no reports of injuries to passengers.' read: yes."}
+  - {id: m24, panel: media30, lane: m_change, time: "2026-09-30T19:49:48Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_aj_orig],
+     label: "Al Jazeera first story last modified: headline now 'Pilot stabbed another in bid to crash Israel-bound Flydubai jet: Netanyahu'",
+     detail: "Metadata dateModified 19:49:48Z; the slug still carries the first headline ('...diverted ... after emergency alert'). What changed inside the page is not visible; archive snapshots could not be read (web.archive.org blocked). read: yes."}
+  - {id: m25, panel: media01, lane: m_outlet, time: "2026-10-01T01:51:23Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_cnn],
+     label: "CNN explainer first published 'What happened inside the Flydubai flight to Israel?'",
+     detail: "datePublished 01:51:23Z (9:51 p.m. ET 30 Sep); last edited 2 Oct 20:43:01Z (m55). The text carries 'departed Dubai at 6:05 a.m. local time (10:05 p.m. ET)' and 'touched down at 9:54 a.m.'. read: yes."}
+  - {id: m26, panel: media01, lane: m_change, time: "2026-10-01T15:38:00Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cbs1],
+     label: "CBS first story retitled: 'FlyDubai co-pilot stabbed captain, tried to crash flight to Israel after radical indoctrination, Netanyahu says'",
+     detail: "Metadata dateModified 11:38 -0400 = 15:38 UTC. The headline describes 1 Oct events, so the page was rewritten after its first stamp of 30 Sep 07:59 UTC (m04). Old wording not recoverable. read: yes."}
+  - {id: m27, panel: media01, lane: m_fact, time: "2026-10-01T02:22:56Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_abc],
+     label: "ABC News Verify: false-flag posts, a deepfake 'BBC' video, nationality rumours",
+     detail: "datePublished 02:22:56Z (12:22 p.m. AEST), updated 21:54:39Z. Attribution: ABC News Verify; the 'false flag' post by a US commentator viewed 'more than 1.5 million times'; the deepfake 'viewed more than 300,000 times'. read: yes."}
+  - {id: m28, panel: media01, lane: m_outlet, time: "2026-10-01T03:57:15Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_abcau],
+     label: "ABC Australia: how the flight plunged (Flightradar24 data); tracking gap about 10:15 a.m. Dubai time",
+     detail: "datePublished 03:57:15Z; modified 08:10:35Z. Key claim: 9:21 a.m. Dubai time plunge; distress call 9:44 a.m. Dubai time; tracking gap about 15 minutes from about 10:15 a.m. Dubai time (06:15 UTC); then 30 minutes of descent before touchdown. read: yes."}
+  - {id: m29, panel: media01, lane: m_live, time: "2026-10-01T04:55:08Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cnn_live],
+     label: "CNN 1 October live blog starts",
+     detail: "Entry stamps (UTC): 09:31:35 co-pilot 'worked for Flydubai for only eight months' (an Israeli official); 09:42:23 'stabbed or hit with an ax' (Netanyahu to CBS); 11:29:17 reserve pilots; 12:28:36 Fox quote; 18:41:32 Saudi statement; 19:58:31 Trump; the blog was last edited 2 Oct 00:37:27 UTC. read: yes."}
+  - {id: m30, panel: media01, lane: m_outlet, time: "2026-10-01T05:16:56Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_arab],
+     label: "Arab News: 'Omani national, according to the Israeli envoy to the UAE'",
+     detail: "datePublished 05:16:56Z; modified 18:50:12Z. Attribution: the Israeli envoy; Netanyahu. read: yes."}
+  - {id: m31, panel: media01, lane: m_official, time: "2026-10-01T06:57:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_khaleej, s_aj_uae],
+     label: "UAE Attorney-General orders an investigation team (WAM)",
+     detail: "Time: Khaleej Times 10:57 a.m. UAE time = 06:57 UTC; Emirates 24|7 stamps it 11:52 +04 = 07:52 UTC. The WAM original was not read. read: no (relay)."}
+  - {id: m32, panel: media01, lane: m_official, time: "2026-10-01T09:33:00Z", precision: approx, date_basis: derived, kind: official, status: reported, sources: [s_mofa, s_khaleej],
+     label: "UAE Ministry of Foreign Affairs statement: motives, terrorist link and prior planning examined",
+     detail: "Time: Khaleej Times 1:33 p.m. UAE time = 09:33 UTC; the ministry page carries no timestamp. read: yes (MoFA page)."}
+  - {id: m33, panel: media01, lane: m_outlet, time: "2026-10-01T11:46:08Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_aj_uae],
+     label: "Al Jazeera: Netanyahu to Fox: 'We know that he underwent Islamist radical indoctrination'",
+     detail: "datePublished 11:46:08Z; modified 2 Oct 02:05:04Z. Attribution: WAM; Fox interview; AJ staff, AP and Reuters. read: yes."}
+  - {id: m34, panel: media01, lane: m_live, time: "2026-10-01T12:28:36Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_cnn_live],
+     label: "CNN entry: Netanyahu to Fox: 'underwent Islamist radical indoctrination'",
+     detail: "CNN's wording; entry stamp UTC. Bloomberg's reprint says the comments were 'in an interview with Fox News on Thursday'. An accusation; no material shown. read: yes."}
+  - {id: m35, panel: media01, lane: m_wire, time: "2026-10-01T15:39:00Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_spoke],
+     label: "Bloomberg (reprint): 'FlyDubai pilot who tried to crash plane identified as Omani'",
+     detail: "Spokesman-Review stamp 08:39 -07:00 = 15:39 UTC; updated 2 Oct 00:17:42 UTC. Attribution: Netanyahu on Fox; 'Neither the airline nor the UAE government has announced the nationality'. Bloomberg's own page not reached. read: yes (reprint)."}
+  - {id: m36, panel: media01, lane: m_outlet, time: "2026-10-01T15:07:00Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_cbs],
+     label: "CBS: 'An Omani official confirmed to CBS News that the attacker was born in Oman ...'",
+     detail: "datePublished 11:07 -0400 = 15:07 UTC; modified 2 Oct 09:23:20 -0400 = 13:23:20 UTC. Attribution: an unnamed Omani official; 'the Omani government has not publicly confirmed his nationality'. read: yes."}
+  - {id: m37, panel: media01, lane: m_outlet, time: "2026-10-01T17:23:41Z", precision: approx, date_basis: publication_proxy, kind: media, status: single, sources: [s_jp_349],
+     label: "Jerusalem Post: advocacy groups' counts of 'false flag' posts (first post '67 minutes after the emergency signal')",
+     detail: "Page prints 17:23 with '+00:00'; zone not established (D19). Attribution: Combat Antisemitism Movement and Antisemitism Research Center; the study and posts were not seen. Ynet carries the same counts (m39). read: yes (JPost), no (study)."}
+  - {id: m38, panel: media01, lane: m_outlet, time: "2026-10-01T18:54:36Z", precision: exact, date_basis: derived, kind: media, status: single, sources: [s_ynet],
+     label: "Ynet: 'senior Israeli official' says no Iran link so far; co-pilot likely acted alone",
+     detail: "Ynet metadata: 21:54:36 local and 18:54:36 UTC. Attribution: anonymous senior Israeli official; a Hebrew report. read: yes."}
+  - {id: m39, panel: media01, lane: m_fact, time: "2026-10-01T18:03:53Z", precision: exact, date_basis: derived, kind: media, status: single, sources: [s_ynetcam],
+     label: "Ynet repeats the advocacy groups' 'false flag' counts",
+     detail: "Ynet metadata: 21:03:53 local and 18:03:53 UTC. Same underlying study as m37, counted once. read: yes."}
+  - {id: m40, panel: media01, lane: m_official, time: "2026-10-01T18:41:32Z", precision: approx, date_basis: publication_proxy, kind: official, status: single, sources: [s_spa, s_cnn_live],
+     label: "Saudi Interior Ministry statement (SPA English, dateline 1 Oct)",
+     detail: "Release hour unknown: the SPA page footer's 18:31 GMT is a render clock. Earliest outlet time verified: CNN live-blog entry 18:41:32 UTC. Key claim: 'an altercation occurred in which the co-pilot assaulted the captain, resulting in injuries to both individuals'; landed 9:45 a.m., no zone given. read: yes (SPA English), no (Arabic)."}
+  - {id: m41, panel: media01, lane: m_live, time: "2026-10-01T19:58:31Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_cnn_live, s_cbstrump],
+     label: "Trump: Iran link 'based on what I'm hearing, is yes. But we're working on it right now'",
+     detail: "CNN entry 19:58:31 UTC; CBS story stamp 20:04:38 UTC (16:04:38 -0400). Variant transcriptions of his reply on the Revolutionary Guard: 'Could be. Could be.' (CNN), 'Could've been, yeah' (CBS). An accusation without evidence offered; Netanyahu said the same day it was 'too early to say'. read: yes."}
+  - {id: m42, panel: media01, lane: m_fact, time: "2026-10-01T20:37:06Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_ls_bb],
+     label: "Lead Stories: 'passengers celebrating' video is an Israeli basketball team, August 2025",
+     detail: "Page stamp 13:37:06 -07:00 = 20:37:06 UTC. The post came from a US campus advocacy group's Instagram account on 30 Sep. read: yes."}
+  - {id: m43, panel: media01, lane: m_fact, time: "2026-10-01T22:42:15Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_ls_azul],
+     label: "Lead Stories: 'plummeting plane' clip is an Azul aircraft, posted 18 Sep",
+     detail: "Page stamp 15:42:15 -07:00 = 22:42:15 UTC. read: yes."}
+  - {id: m44, panel: media01, lane: m_outlet, time: "2026-10-01T21:53:16Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_aj_saudi],
+     label: "Al Jazeera quotes the Saudi ministry: 'the pilot was assaulted by his co-pilot, resulting in various injuries to both'",
+     detail: "datePublished 21:53:16Z; modified 2 Oct 04:44:08Z. A different English rendering from the SPA text (m40): it omits 'altercation'; the Arabic was not seen. read: yes."}
+  - {id: m45, panel: media02, lane: m_fact, time: "2026-10-02T08:46:14Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_ibt_moon],
+     label: "IBTimes UK relays Lead Stories: viral 'aftermath party' video is from 2025",
+     detail: "Stamp 09:46:14 +01:00 = 08:46:14 UTC. read: yes."}
+  - {id: m46, panel: media02, lane: m_outlet, time: "2026-10-02T12:37:20Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_aj12],
+     label: "Al Jazeera: '12 minutes of madness': 06:58 GMT landing; a passenger took the controls before a third pilot arrived",
+     detail: "datePublished 12:37:20Z; modified 15:48:09Z. Attribution: Flightradar24; CNN; Israeli TV interviews; the captain's call to India's PM (stated as 'on Thursday', from a Saudi hospital bed; CNN says 'Friday', D23). read: yes."}
+  - {id: m47, panel: media02, lane: m_wire, time: "2026-10-02T14:22:58Z", precision: exact, date_basis: stated, kind: media, status: reported, sources: [s_reuters],
+     label: "Reuters: Israeli officials expected to question the co-pilot in the UAE-led probe; flydubai CEO's first public comments",
+     detail: "datePublished 14:22:58Z; modified 15:17:59Z (KFGO copy; the same text is on the Jerusalem Post and Cyprus Mail, counted once). Flightradar24: 16,625 ft in 'just over 30 seconds'; 'Omani authorities have not commented'. read: yes."}
+  - {id: m48, panel: media02, lane: m_official, time: "2026-10-02T14:22:58Z", precision: approx, date_basis: publication_proxy, kind: official, status: single, sources: [s_flydubai, s_dubaieye],
+     label: "flydubai CEO statement 4: 'all 172 passengers and crew on board are safe'",
+     detail: "The airline's page shows no timestamp; earliest verified outlet time is Reuters 14:22:58 UTC (m47); Dubai Eye embeds a Dubai Media Office post dated 2 Oct. Key claim: 'a safety incident in the flight deck'; suspension 'at the request of the authorities'. read: yes (flydubai page)."}
+  - {id: m49, panel: media02, lane: m_fact, time: "2026-10-02T15:30:35Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_journal],
+     label: "TheJournal.ie: AI-altered 'BBC' video claims an Indian-Israeli plot to implicate Iran",
+     detail: "Stamp 15:30:35Z (modified 15:44:45Z). Attribution: TheJournal.ie; the video 'seen hundreds of thousands of times'. read: yes."}
+  - {id: m50, panel: media02, lane: m_fact, time: "2026-10-02T15:50:53Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_fullfact],
+     label: "Full Fact: BBC-style video is a deepfake; 'The BBC has confirmed that this video is fake'",
+     detail: "Stamp 15:50:53Z. The BBC's statement was not seen directly. read: yes."}
+  - {id: m51, panel: media02, lane: m_fact, time: "2026-10-02T16:24:23Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_ls_ai],
+     label: "Lead Stories: 'leaked video' of a pilot argument is AI-generated; audio from 2017",
+     detail: "Stamp 09:24:23 -07:00 = 16:24:23 UTC. read: yes."}
+  - {id: m52, panel: media02, lane: m_official, time: "2026-10-02T17:15:00Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_gcaa],
+     label: "UAE GCAA statement (WAM) commends captain, crew and passengers; 'will not comment on any details or claims in circulation'",
+     detail: "Emirates 24|7 stamp 21:15 +04 = 17:15 UTC (modified 21:40 +04). read: yes (outlet copy)."}
+  - {id: m53, panel: media02, lane: m_fact, time: "2026-10-02T19:28:27Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_ls_ng],
+     label: "Lead Stories: fake video credited to NewsGuard blaming a US political party",
+     detail: "Stamp 12:28:27 -07:00 = 19:28:27 UTC. NewsGuard told Lead Stories it did not make the claim and that such posts appear connected to a Russian influence campaign. read: yes (Lead Stories); NewsGuard's page not reached."}
+  - {id: m54, panel: media02, lane: m_fact, time: "2026-10-02T20:41:14Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_ls_ceil],
+     label: "Lead Stories: 'ceiling and seating' video does not prove a 'false flag'",
+     detail: "Stamp 13:41:14 -07:00 = 20:41:14 UTC. read: yes."}
+  - {id: m55, panel: media02, lane: m_change, time: "2026-10-02T20:43:01Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_cnn],
+     label: "CNN explainer last edit: still says 'departed Dubai at 6:05 a.m. local time (10:05 p.m. ET)' and 'touched down at 9:54 a.m.'",
+     detail: "Metadata dateModified 20:43:01Z ('Updated Oct 2, 2026, 4:43 PM ET'). Both statements were in the text read at that time; the first has an hour error in its ET conversion and the second differs from the 9:45 a.m. in the Saudi statement. No correction note on the page. read: yes."}
+  - {id: m56, panel: media02, lane: m_change, time: "2026-10-02T20:22:07Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_mig1],
+     label: "MiGFlug first story last modified; 'update' banner present",
+     detail: "Metadata dateModified 20:22:07Z; the first-version claims about nationalities and a pocket knife remain in the body. read: yes."}
+  - {id: m57, panel: media02, lane: m_change, time: "2026-10-02T00:17:42Z", precision: exact, date_basis: stated, kind: media, status: single, sources: [s_spoke],
+     label: "Bloomberg reprint last modified",
+     detail: "Spokesman-Review stamp 2 Oct 00:17:42 UTC. read: yes."}
+  - {id: m58, panel: media02, lane: m_outlet, time: "2026-10-02T10:34:36Z", precision: approx, date_basis: publication_proxy, kind: media, status: single, sources: [s_jp_405],
+     label: "Jerusalem Post: sources say the co-pilot held no second nationality; the bilateral agreement 'did not stipulate' crew nationality",
+     detail: "Page prints 10:34 with '+00:00'; zone not established (D19): if Israel time this is 07:34 UTC (the earlier b16 placement). Attribution: unnamed sources 'with knowledge of the investigation'. read: yes."}
