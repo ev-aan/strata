@@ -72,15 +72,16 @@ header{padding:10px 16px;border-bottom:1px solid var(--line);display:flex;flex-w
 input[type=search]{font:13px system-ui;padding:3px 10px;border:1px solid var(--line);border-radius:99px;background:var(--panel);color:var(--ink);width:170px}
 main{flex:1;display:flex;min-height:0}#stage{flex:1;min-width:0;position:relative;overflow-x:hidden;overflow-y:auto;touch-action:pan-y}svg{width:100%;height:100%;display:block;cursor:grab}svg:active{cursor:grabbing}
 #panel{width:340px;max-width:44vw;border-left:1px solid var(--line);background:var(--panel);padding:14px;overflow:auto;font-size:14px}#panel h2{font:500 16px Georgia,serif;margin:.2em 0 .4em}.mono{font:11.5px ui-monospace,monospace;color:var(--mute)}
-a{color:var(--c0)}.note{color:var(--mute);font-size:13px}.rowlabel{font:600 12px system-ui;cursor:pointer}
-@media (max-width:760px){#filters{display:none}#filters.open{display:flex;max-height:34vh;overflow:auto}main{flex-direction:column}#panel{width:100%;max-width:none;height:30vh;border-left:0;border-top:1px solid var(--line)}}
+a{color:var(--c0)}.note{color:var(--mute);font-size:13px}.clist{padding-left:18px}.clist li{margin:6px 0}.rowlabel{font:600 12px system-ui;cursor:pointer}
+@media (max-width:760px){header .mono{display:none}#filters{display:none}#filters.open{display:flex;max-height:34vh;overflow:auto}main{flex-direction:column}#panel{width:100%;max-width:none;height:30vh;border-left:0;border-top:1px solid var(--line)}}
 </style></head><body>
-<header><h1>ATLAS</h1><span class="mono">time runs left (past) to right (future); scroll to see every dig; on the shared axis, Ctrl/&#8984; + wheel or pinch zooms and drag pans</span>
+<header><h1>ATLAS</h1><span class="mono">time runs left (past) to right (future); scroll to see every dig. Pinch, drag, double-tap or the + &minus; buttons on a row zoom that row; tap a numbered bubble to open the group. Switch to one shared axis to compare digs</span>
 <span><button class="tog on" id="axReal">Real-world time</button> <button class="tog" id="axNarr" disabled title="No narrative timelines yet">Narrative time</button></span>
 <span><button class="tog on" id="scaleBtn" title="Switch between each dig on its own time scale and all digs on one shared axis">Each dig on its own scale</button> <button id="ftog" onclick="document.getElementById('filters').classList.toggle('open')">Filters</button> <button id="fit">Fit all</button> <button id="zin">+</button> <button id="zout">&minus;</button></span></header>
 <div id="filters"></div>
 <main><div id="stage"><svg id="svg" role="img" aria-label="Timeline of events across the digs"></svg></div>
 <aside id="panel"><h2>Pick a dot</h2><p class="note">Each row is one dig. Click a dot for what happened, how we know, and the source. Shapes show the kind of source; a dashed, pale dot means one source or a date only.</p>
+<p class="note"><b>Zoom:</b> pinch or drag a row, double-tap it, use the + and &minus; buttons on the row (&#10226; resets it), or tap a numbered bubble to open that group of events.</p>
 <p class="note">Rows share one time axis, so far-apart events in different digs are visible side by side. Narrative time (when a story says something happened) is kept apart from real-world time and switches in once narrative events exist.</p></aside></main>
 <script>
 const DATA=__DATA__;
@@ -90,7 +91,7 @@ const NS='http://www.w3.org/2000/svg';const svg=document.getElementById('svg'),s
 const state={scale:'own',axis:'real',off:new Set(),kinds:new Set(),statuses:new Set(),q:''};let W=800,H=500;
 const allEv=DATA.flatMap(d=>d.events.map(e=>Object.assign({dig:d.id},e)));
 let t0=Math.min(...allEv.map(e=>e.t)),t1=Math.max(...allEv.map(e=>e.e||e.t));const pad=(t1-t0)*0.04+86400000*30;t0-=pad;t1+=pad;
-let view={a:t0,b:t1};const YEAR=365.2425*86400000;
+let view={a:t0,b:t1};const rowView={};let rowsGeo=[];const LW=()=>stage.clientWidth<600?100:150;const YEAR=365.2425*86400000;
 function el(n,a,p){const x=document.createElementNS(NS,n);for(const k in a)x.setAttribute(k,a[k]);if(p)p.appendChild(x);return x}
 function fmt(e){const d=new Date(e.t);const y=d.getUTCFullYear(),m=d.getUTCMonth(),dd=d.getUTCDate();const M=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
  const Y=v=>v<=0?(1-v)+' BCE':String(v);let s=e.p==='year'?Y(y):e.p==='month'?M[m]+' '+y:dd+' '+M[m]+' '+y;if(e.p==='exact'||e.p==='approx'){const hh=String(d.getUTCHours()).padStart(2,'0'),mm=String(d.getUTCMinutes()).padStart(2,'0');if(hh+mm!=='1200'&&hh+mm!=='0000')s+=' '+hh+':'+mm+' UTC'}
@@ -115,29 +116,36 @@ function ticks(a,b,w){const H1=3600000,D1=86400000,out=[],need=84,span=b-a,Mn=['
  return out}
 function passes(e){if(state.off.has(e.dig))return false;if(e.axis!==state.axis)return false;if(state.kinds.size&&!state.kinds.has(e.k))return false;if(state.statuses.size&&!state.statuses.has(e.st))return false;
  if(state.q){const s=(e.l+' '+e.d+' '+e.lane).toLowerCase();if(!s.includes(state.q))return false}return true}
-function draw(){W=stage.clientWidth;H=stage.clientHeight;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML='';
- const L=150,R=14,T=34,pw=W-L-R;const X=t=>L+(t-view.a)/(view.b-view.a)*pw;
+function draw(){W=stage.clientWidth;H=stage.clientHeight;svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML='';rowsGeo=[];
+ const L=LW(),R=14,T=34,pw=W-L-R;const X=t=>L+(t-view.a)/(view.b-view.a)*pw;
  const defs=el('g',{},svg);const digs=DATA.filter(d=>!state.off.has(d.id));
  // axis ticks
  const own=state.scale==='own';const tk=own?[]:ticks(view.a,view.b,pw);for(const [t,lab] of tk){const x=X(t);el('line',{x1:x,x2:x,y1:T-6,y2:H-4,stroke:'var(--line)','stroke-width':1},defs);const tx=el('text',{x:x+3,y:T-12,fill:'var(--mute)','font-size':11,'font-family':'ui-monospace,monospace'},defs);tx.textContent=lab}
  let y=T;const rowInfo=[];
  digs.forEach((d,ri)=>{const evs=d.events.filter(e=>passes(Object.assign({dig:d.id},e))).map(e=>Object.assign({dig:d.id},e));
-  let rv=view;if(own){const base=evs.length?evs:d.events.filter(e=>e.axis===state.axis);if(base.length){const a=Math.min(...base.map(e=>e.t)),b=Math.max(...base.map(e=>e.e||e.t));const pad=(b-a)*0.06+86400000*20;rv={a:a-pad,b:b+pad}}}
+  let rv=view;if(own){if(rowView[d.id])rv=rowView[d.id];else{const base=evs.length?evs:d.events.filter(e=>e.axis===state.axis);if(base.length){const a=Math.min(...base.map(e=>e.t)),b=Math.max(...base.map(e=>e.e||e.t));const pad=(b-a)*0.06+86400000*20;rv={a:a-pad,b:b+pad}}}}
   const Xr=tt=>L+(tt-rv.a)/(rv.b-rv.a)*pw,AX=own?18:0;
   const showLab=pw/((rv.b-rv.a)/YEAR)>40;
   const vis=evs.filter(e=>{const x=Xr(e.t),xe=e.e?Xr(e.e):x;return xe>=L-20&&x<=W+20});
-  const levels=[];const place=[];for(const e of vis){const x=Xr(e.t);let lv=0;while(lv<levels.length&&levels[lv]>x-14)lv++;if(lv===levels.length)levels.push(-1e9);levels[lv]=Math.max(x,e.e?Xr(e.e):x)+8+(showLab?Math.min(e.l.length,46)*5.8+6:0);place.push([e,lv])}
-  const rh=Math.max(46,22+AX+levels.length*17);el('rect',{x:0,y:y,width:W,height:rh,fill:ri%2?'transparent':'rgba(128,128,128,.07)'},defs);
-  const lab=el('text',{x:8,y:y+16,class:'rowlabel',fill:COL(DATA.indexOf(d))},defs);const words=d.title.split(' ');let line='',ln=0;for(const w of words){if((line+' '+w).length>20){const ts=el('tspan',{x:8,dy:ln?14:0},lab);ts.textContent=line;line=w;ln++;if(ln>2)break}else line=(line?line+' ':'')+w}if(ln<=2){const ts=el('tspan',{x:8,dy:ln?14:0},lab);ts.textContent=line}
+  const levels=[];const place=[];const items=[];
+  if(showLab){for(const e of vis){const x=Xr(e.t);let lv=0;while(lv<levels.length&&levels[lv]>x-14)lv++;if(lv===levels.length)levels.push(-1e9);levels[lv]=Math.max(x,e.e?Xr(e.e):x)+8+Math.min(e.l.length,46)*5.8+6;items.push({e,x,lv})}}
+  else{let cur=null;for(const e of vis){const x=Xr(e.t);if(cur&&x-cur.lx<18){cur.es.push(e);cur.lx=x}else{cur={es:[e],x,lx:x};items.push(cur)}}levels.push(0)}
+  const rh=Math.max(80,22+AX+levels.length*17);el('rect',{x:0,y:y,width:W,height:rh,fill:ri%2?'transparent':'rgba(128,128,128,.07)'},defs);
+  const lab=el('text',{x:8,y:y+16,class:'rowlabel',fill:COL(DATA.indexOf(d))},defs);const words=d.title.split(' ');let line='',ln=0;for(const w of words){if((line+' '+w).length>(L<120?13:20)){const ts=el('tspan',{x:8,dy:ln?14:0},lab);ts.textContent=line;line=w;ln++;if(ln>2)break}else line=(line?line+' ':'')+w}if(ln<=2){const ts=el('tspan',{x:8,dy:ln?14:0},lab);ts.textContent=line}
   if(own){for(const [tm,lb] of ticks(rv.a,rv.b,pw)){const x=Xr(tm);el('line',{x1:x,x2:x,y1:y+2,y2:y+rh,stroke:'var(--line)','stroke-width':1},defs);const tx=el('text',{x:x+3,y:y+13,fill:'var(--mute)','font-size':10.5,'font-family':'ui-monospace,monospace'},defs);tx.textContent=lb}}
-  lab.addEventListener('click',()=>{if(own){state.scale='shared';syncScale();zoomTo(d)}else zoomTo(d)});const cnt=el('text',{x:8,y:y+rh-6,fill:'var(--mute)','font-size':10.5,'font-family':'ui-monospace,monospace'},defs);cnt.textContent=evs.length+' of '+d.events.length+' events';
+  lab.addEventListener('click',()=>{if(own){state.scale='shared';syncScale();zoomTo(d)}else zoomTo(d)});const cnt=el('text',{x:8,y:y+rh-6,fill:'var(--mute)','font-size':10.5,'font-family':'ui-monospace,monospace'},defs);cnt.textContent=evs.length<d.events.length?evs.length+' of '+d.events.length:String(evs.length);if(own){cnt.setAttribute('x',82);cnt.setAttribute('y',y+rh-10)}
+  if(own){[['+',8,()=>zoomRow(d.id,.4,.5)],['\u2212',32,()=>zoomRow(d.id,2.5,.5)],['\u27f2',56,()=>{delete rowView[d.id];draw()}]].forEach(([s,bx,fn])=>{const b=el('g',{style:'cursor:pointer'},defs);el('rect',{x:bx,y:y+rh-24,width:20,height:20,rx:5,fill:'var(--panel)',stroke:'var(--line)'},b);const q=el('text',{x:bx+10,y:y+rh-9.5,'text-anchor':'middle','font-size':13,fill:s==='\u27f2'&&!rowView[d.id]?'var(--mute)':'var(--ink)'},b);q.textContent=s;b.addEventListener('click',ev=>{ev.stopPropagation();fn()})})}
+  rowsGeo.push({id:d.id,y0:y,y1:y+rh,a:rv.a,b:rv.b});
   const clip=el('g',{},svg);
-  for(const [e,lv] of place){const g=el('g',{},clip);g.__e=e;const x=Xr(e.t),yy=y+16+AX+lv*17;const col=COL(DATA.indexOf(d));
+  for(const it of items){if(it.es&&it.es.length>1){const g=el('g',{style:'cursor:pointer'},clip);const col=COL(DATA.indexOf(d));const yy=y+30+AX;
+    el('circle',{cx:it.x,cy:yy,r:11,fill:col,'fill-opacity':.88,stroke:'var(--bg)','stroke-width':2},g);const q=el('text',{x:it.x,y:yy+4,'text-anchor':'middle','font-size':11,'font-weight':700,fill:'var(--bg)'},g);q.textContent=it.es.length;
+    const ti=el('title',{},g);ti.textContent=it.es.length+' events here: tap to zoom in';g.addEventListener('click',ev=>{ev.stopPropagation();openCluster(d.id,it.es,own)});continue}
+   const e=it.e||it.es[0],lv=it.lv||0;const g=el('g',{},clip);g.__e=e;const x=Xr(e.t),yy=(it.es?y+30+AX:y+16+AX+lv*17);const col=COL(DATA.indexOf(d));
    if(e.e){const xe=Xr(e.e);el('rect',{x:x,y:yy-3,width:Math.max(3,xe-x),height:6,fill:col,'fill-opacity':.25,stroke:col,'stroke-dasharray':'3 2'},g)}
-   const hollow=['day','month','year','approx'].includes(e.p)&&e.st!=='reported';const dash=e.st==='single'||e.st==='inferred';
+   const dash=e.st==='single'||e.st==='inferred';
    marker(KIND[e.k]||'circle',x,yy,5,col,e.st==='inferred'||e.p==='year'||e.p==='month',dash,g);
    if(e.st==='disputed'){el('circle',{cx:x,cy:yy,r:9,fill:'none',stroke:'var(--c1)','stroke-width':1.5},g)}
-   if(pw/((rv.b-rv.a)/YEAR)>40){const tt=el('text',{x:x+9,y:yy+4,fill:'var(--ink)','font-size':11},g);tt.textContent=e.l.length>46?e.l.slice(0,44)+'…':e.l;tt.style.pointerEvents='none'}
+   if(showLab){const tt=el('text',{x:x+9,y:yy+4,fill:'var(--ink)','font-size':11},g);tt.textContent=e.l.length>46?e.l.slice(0,44)+'\u2026':e.l;tt.style.pointerEvents='none'}
    g.addEventListener('mouseenter',()=>{svg.setAttribute('aria-description',e.l)});const ti=el('title',{},g);ti.textContent=fmt(e)+': '+e.l}
   y+=rh});
  if(!digs.length){const t=el('text',{x:L,y:60,fill:'var(--mute)'},svg);t.textContent='No dig selected.'}
@@ -160,9 +168,26 @@ function syncScale(){stage.scrollTop=0;const b=document.getElementById('scaleBtn
  for(const id of ['fit','zin','zout']){const x=document.getElementById(id);x.disabled=own;x.title=own?'Switch to the shared axis to zoom and compare digs':''}if(!own&&!window.__fitted){window.__fitted=1;fitAll();return}draw()}
 document.getElementById('scaleBtn').onclick=()=>{state.scale=state.scale==='own'?'shared':'own';syncScale()};
 document.getElementById('fit').onclick=fitAll;document.getElementById('zin').onclick=()=>zoom(.5,.5);document.getElementById('zout').onclick=()=>zoom(2,.5);
-svg.addEventListener('wheel',e=>{if(state.scale==='own'||!(e.ctrlKey||e.metaKey||e.shiftKey))return;e.preventDefault();const r=svg.getBoundingClientRect();const cx=Math.min(1,Math.max(0,(e.clientX-r.left-150)/(r.width-164)));zoom(e.deltaY<0?.8:1.25,cx)},{passive:false});
-let drag=null;svg.addEventListener('pointerdown',e=>{if(state.scale==='own')return;drag={x:e.clientX,a:view.a,b:view.b}});window.addEventListener('pointerup',()=>drag=null);
-window.addEventListener('pointermove',e=>{if(!drag)return;const pw=stage.clientWidth-164;const dt=-(e.clientX-drag.x)/pw*(drag.b-drag.a);view={a:drag.a+dt,b:drag.b+dt};draw()});
+svg.addEventListener('wheel',e=>{if(!(e.ctrlKey||e.metaKey||e.shiftKey))return;e.preventDefault();const r=svg.getBoundingClientRect();const cx=Math.min(1,Math.max(0,(e.clientX-r.left-LW())/(r.width-LW()-14)));const T=tgt(e.clientY);if(!T)return;if(T.key==='*')zoom(e.deltaY<0?.8:1.25,cx);else zoomRow(T.key,e.deltaY<0?.8:1.25,cx)},{passive:false});
+function clampV(v){let w=v.b-v.a;const lo=3600000,hi=40000*YEAR;if(w<lo){const c=(v.a+v.b)/2;v={a:c-lo/2,b:c+lo/2}}if(w>hi){const c=(v.a+v.b)/2;v={a:c-hi/2,b:c+hi/2}}return v}
+function getV(key){return key==='*'?view:(rowView[key]||(rowsGeo.find(r=>r.id===key)&&{a:rowsGeo.find(r=>r.id===key).a,b:rowsGeo.find(r=>r.id===key).b}))}
+function setV(key,v){v=clampV(v);if(key==='*')view=v;else rowView[key]=v;draw()}
+function zoomRow(id,f,cx){const v=getV(id);if(!v)return;const w=v.b-v.a,c=v.a+w*cx,nw=w*f;setV(id,{a:c-nw*cx,b:c+nw*(1-cx)})}
+function openCluster(id,es,own){const a=Math.min(...es.map(e=>e.t)),b=Math.max(...es.map(e=>e.e||e.t));
+ if(b-a<3600000){const p=document.getElementById('panel');p.innerHTML='<p class="mono">'+es.length+' events at about the same time</p><ul class="clist">'+es.map((e,i)=>'<li><a href="#" data-i="'+i+'">'+esc(e.l)+'</a><br><span class="note">'+esc(fmt(e))+'</span></li>').join('')+'</ul>';p.querySelectorAll('a[data-i]').forEach(x=>x.onclick=ev=>{ev.preventDefault();show(es[+x.dataset.i])});return}
+ const pad=(b-a)*.2+3600000;setV(own?id:'*',{a:a-pad,b:b+pad})}
+const ptrs=new Map();let G=null,moved=false;
+function tgt(cy){if(state.scale!=='own')return{key:'*'};const r=svg.getBoundingClientRect(),y=cy-r.top;const g=rowsGeo.find(g=>y>=g.y0&&y<g.y1);return g?{key:g.id}:null}
+function startG(){const ps=[...ptrs.values()];if(!ps.length){G=null;return}const mx=ps.reduce((s,p)=>s+p.x,0)/ps.length,my=ps.reduce((s,p)=>s+p.y,0)/ps.length;const T=tgt(my);if(!T){G=null;return}const v=getV(T.key);if(!v){G=null;return}
+ G={key:T.key,v0:{a:v.a,b:v.b},x0:mx,d0:ps.length>1?Math.hypot(ps[0].x-ps[1].x,ps[0].y-ps[1].y):0,n:ps.length}}
+svg.addEventListener('pointerdown',e=>{ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});moved=false;startG()});
+window.addEventListener('pointerup',e=>{ptrs.delete(e.pointerId);startG()});window.addEventListener('pointercancel',e=>{ptrs.delete(e.pointerId);startG()});
+window.addEventListener('pointermove',e=>{if(!ptrs.has(e.pointerId)||!G)return;ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY});const ps=[...ptrs.values()];const pw=stage.clientWidth-LW()-14,L=LW();const r=svg.getBoundingClientRect();
+ const mx=ps.reduce((s,p)=>s+p.x,0)/ps.length;const w0=G.v0.b-G.v0.a;
+ if(ps.length>1&&G.d0){moved=true;const d=Math.hypot(ps[0].x-ps[1].x,ps[0].y-ps[1].y);const nw=w0*G.d0/Math.max(d,10);const tc=G.v0.a+((G.x0-r.left-L)/pw)*w0;setV(G.key,{a:tc-((mx-r.left-L)/pw)*nw,b:tc-((mx-r.left-L)/pw)*nw+nw})}
+ else if(ps.length===1&&Math.abs(mx-G.x0)>5){moved=true;const dt=-(mx-G.x0)/pw*w0;setV(G.key,{a:G.v0.a+dt,b:G.v0.b+dt})}});
+svg.addEventListener('click',e=>{if(moved){e.stopPropagation();e.preventDefault();moved=false}},true);
+svg.addEventListener('dblclick',e=>{const T=tgt(e.clientY);if(!T)return;const r=svg.getBoundingClientRect();const cx=Math.min(1,Math.max(0,(e.clientX-r.left-LW())/(r.width-LW()-14)));if(T.key==='*')zoom(.4,cx);else zoomRow(T.key,.4,cx)});
 window.addEventListener('resize',draw);build();fitAll();syncScale();
 </script></body></html>"""
 
