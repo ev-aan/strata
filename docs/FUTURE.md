@@ -2,6 +2,8 @@
 
 Parked means designed or noted, not scheduled. Pick one up by moving it out of this file and logging the decision.
 
+> The public list of ideas is generated from `build/ideas.yaml` and appears on the site at `/ideas/`. Edit that file to add or change an idea; this page keeps the longer notes.
+
 ## Parked ideas
 - **Academic paper review.** Upload a paper and get a review that adds new information and finds errors and gaps. Design and criteria C1-C6 are in `docs/PAPER_REVIEW.md`. Decisions already made: the paper stays private, only the review is published, nothing changes a dig without passing the criteria and the owner's approval. Waiting for: a first paper to run by hand.
 - **Shared nodes for the other digs.** The Tonkin family is migrated (`build/SCHEMA.md`, Nodes). Casket, Eikon, McAfee, flydubai, Teti and the politics digs still hold their own copies of timeline events.

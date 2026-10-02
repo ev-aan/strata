@@ -32,7 +32,7 @@ ul.l{list-style:none;padding:0}ul.l li{padding:12px 0;border-top:1px solid var(-
 def page(title, body, desc="", canonical="", extra_head="", depth=0):
     up = "../" * depth
     nav = (f'<nav><a class="b" href="{up}">{E(CFG["name"])}</a><a href="{up}digs/">Digs</a><a href="{up}method/">Method</a>'
-           f'<a href="{up}atlas/">Atlas</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
+           f'<a href="{up}atlas/">Atlas</a><a href="{up}ideas/">Ideas</a><a href="{up}corrections/">Corrections</a><a href="{up}about/">About</a></nav>')
     meta = f'<meta name="description" content="{E(desc)}">' if desc else ""
     og = (f'<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}">'
           f'<meta property="og:type" content="article"><meta property="og:site_name" content="{E(CFG["name"])}">'
@@ -101,7 +101,7 @@ for d in ("method", "bounties"):
     if os.path.isdir(os.path.join(ROOT, d)): shutil.copytree(os.path.join(ROOT, d), os.path.join(OUT, d))
 open(os.path.join(OUT, ".nojekyll"), "w").close()
 
-digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/method/", "/corrections/", "/about/"]
+digs, corrections, urls = [], [], ["/", "/digs/", "/atlas/", "/ideas/", "/method/", "/corrections/", "/about/"]
 for sub in CFG["publish"]:
     base = os.path.join(ROOT, "build", "subjects", sub)
     cl = yaml.safe_load(open(os.path.join(base, "claims.yaml")))
@@ -178,6 +178,10 @@ write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_atlas
 write("atlas/index.html", build_atlas.build_atlas_html(CFG["publish"])[0])
+_ideas = yaml.safe_load(open(os.path.join(ROOT, "build", "ideas.yaml")))
+_lab = {"parked": "parked", "exploring": "exploring", "done": "done"}
+_li = "".join(f'<li id="{E(i["id"])}"><b>{E(i["title"])}</b> <span class="pill">{E(_lab.get(i["status"], i["status"]))}</span><br>{E(" ".join(str(i["summary"]).split()))}</li>' for i in _ideas["ideas"])
+write("ideas/index.html", page("Ideas for exploration", f'<p class="eyebrow">Ideas</p><h1>Ideas for exploration</h1><p>{E(" ".join(str(_ideas["intro"]).split()))}</p><ul class="l">{_li}</ul><p><a href="{E(CFG["issues_url"])}">Suggest an idea or a dig</a>.</p>', "Ideas and possible next digs for Stratah, with their status.", "/ideas/", depth=1))
 write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>https://{CFG['domain']}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls) + "</urlset>")
 write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: https://{CFG['domain']}/sitemap.xml\n")
 write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Digs\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open dig'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
