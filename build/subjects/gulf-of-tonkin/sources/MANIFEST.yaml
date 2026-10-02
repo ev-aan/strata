@@ -138,8 +138,8 @@ sources:
       tested_by: "Strata session, 2026-10-02 (not an independent review)"
       gaps: ["Two-column scan; the quoted Fulbright passage was checked on the page image", "Debate read in part"]
       checked: 2026-10-02
-    stored_as: "page images sources/congressional-record/crec-1970-p21119-019.png and crec-1970-p21132-032.png (full 62 MB file not stored)"
-    image_sha256: {p21119: 6f4c79df6d4b929237dea41dec46c8467e69165ffba15bc03ddb50f9749f25bc, p21132: 0cf5547d25a755a54493958d46d61a291a3a9f9155e6a173ac01b4dff41ec440}
+    stored_as: "page images sources/congressional-record/crec-1970-p21119-019.png, crec-1970-p21131-031.png and crec-1970-p21132-032.png (full 62 MB file not stored)"
+    image_sha256: {p21131: 01b080cdd0e9bd3366363b74c79c202283dc23723a341101806503df6455c556, p21119: 6f4c79df6d4b929237dea41dec46c8467e69165ffba15bc03ddb50f9749f25bc, p21132: 0cf5547d25a755a54493958d46d61a291a3a9f9155e6a173ac01b4dff41ec440}
   - id: src-congressional-record-1964-aug6
     title: "Congressional Record, Vol. 110, Part 14 (Senate, 6 August 1964), GPO bound edition, granule GPO-CRECB-1964-pt14-3-2"
     document_class: primary_text (official proceedings)

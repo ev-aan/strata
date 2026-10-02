@@ -111,6 +111,8 @@ actors:
          text_quote: "The attack, which lasted for over 2 hours, was without any doubt a calculated act of military aggression."}
       - {date: "1970-06-24", venue: "Senate floor", visibility: public, source: src-congressional-record-1970, claim: tonkin-1970-vote-not-clean-measure, anchor_checked: primary,
          text_quote: "I am going to vote for its repeal. I am committed to it, of course. I still think that it is unfortunate it was not brought up according to recognized procedure."}
+      - {date: "1970-06-24", venue: "Senate floor, later the same day", visibility: public, source: src-congressional-record-1970, claim: tonkin-1970-vote-not-clean-measure, anchor_checked: primary,
+         text_quote: "I said earlier that I would vote for the repeal because, of course, I am committed to repeal and have been for a long time. However, upon further consideration, in view of what has been said on the floor of the Senate, and also in reliance upon the assurance of the majority leader that he would bring up the Mathias resolution--which is a concurrent resolution"}
     commitments:
       - {date: "1970-06-24", specific: true, source: src-congressional-record-1970, anchor_checked: primary,
          text_quote: "I think it should be repealed and that should be done in an orderly fashion in order to preserve some respect for the committee system."}
@@ -122,10 +124,12 @@ actors:
     information_at_time_of_actions: "In 1970 the Record shows him stating the procedural objection. In August 1964 he spoke as the committees' reporter, after a joint committee session whose testimony is not yet read; what he knew about whether the 4 August attack occurred is not determined (see tonkin-senior-knowledge)."
     alignment: changed_with_stated_reason
     alignment_note: >
-      Voted Yea in 1964, then said in 1970 that he was committed to repeal. On 24 June 1970 he voted Nay on the amendment that would
-      repeal and gave a reason in the Record (procedure and respect for the committee system); on 10 July he voted Yea on the
-      concurrent resolution (Voteview, secondary). The label records that a stated reason accompanies the Nay; it does not judge the
-      reason. The 22 June and 10 July votes are from Voteview and not yet read in the Record.
+      Voted Yea in 1964, then said on 24 June 1970 that he was committed to repeal and would vote for it. Later that day he voted Nay on the
+      Dole amendment and stated his reason in the Record: further consideration, what had been said on the floor, and the majority leader's
+      assurance that the Mathias concurrent resolution would be brought up, with respect for committee procedure. On 10 July he voted Yea on the
+      concurrent resolution (Voteview, secondary). The label records that a stated reason accompanies the change; it does not judge the
+      reason. The 22 June and 10 July votes are from Voteview and not yet read in the Record (a delegated reading of the June file found Fulbright
+      saying he "moved to table the Dole amendment", p. 21121, not verified by me).
     inducement: {state: searched_gap, tiers_found: [], searched: [], next: "none proposed for this pilot"}
     motive_map: {possible: [], acted_on_evidence: [], weight: "none (P6)"}
     fixed_line: "Motive and sincerity are not assessed."

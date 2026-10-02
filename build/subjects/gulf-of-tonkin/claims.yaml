@@ -699,26 +699,32 @@ claims:
       ref: [src-congressional-record-1970]
 
   - id: tonkin-1970-vote-not-clean-measure
-    state: proposed
+    state: established
     statement: >
-      A senator's 1970 vote on the Dole amendment is not a clean measure of that senator's view of the 1964 Resolution, because
-      the debate shows support for repeal in principle mixed with objections to the procedure by which it was offered.
-    evidence_class: interpretive
+      In the 24 June 1970 Senate debate on the Dole amendment, the ten senators who voted Nay gave different reasons, or none in the pages
+      read. Fulbright said he had intended to vote for repeal and changed his vote after "the assurance of the majority leader" that the
+      Mathias concurrent resolution would be brought up. Allen and Hollings spoke against repeal itself. Stennis mixed opposition to repeal with
+      a procedural complaint. McGee called the repeal a "political charade". No stated reason was found for Bellmon, Eastland, Ervin, Long and
+      McClellan. Several senators who voted Yea (Javits, Moss) said a concurrent resolution would be better but still backed the amendment. A 1970
+      vote on this amendment is therefore not a clean measure of a senator's view of the 1964 Resolution.
+    evidence_class: primary_text
     confidence: moderate
-    evidential_weight: 3   # of 5; one senator's words read, in context; no systematic reading of the debate
+    evidential_weight: 3   # of 5; Fulbright's words verified on the page image by me; the other senators' reasons by a delegated reading (images checked by that reader, not re-checked by me)
     anchor_checked: primary
     adoption_weight: 1   # of 5
     adoption_note: "New today; not a position anyone is recorded as holding."
-    would_change_if: "a systematic reading of the 24 June debate showing the nays were mostly opposition to repeal itself"
-    next_step: "Read all of the 22-24 June 1970 debate; classify each speaker's stated reason; compare with the 10 July vote on the concurrent resolution."
+    would_change_if: "a reading of the pages showing a different reason for any of the ten, or of the pages 1-14 and 34-45 not yet read in full"
+    next_step: "Re-check each non-Fulbright quote on its page image; read the 22 June debate (the Record file read did not include it) and the text of Amendment No. 715."
     anchor:
       type: floor-statement
       description: >
-        Fulbright, 24 June 1970, p. 21119 [read from the page image]: "I am going to vote for its repeal. I am committed to it, of
-        course. I still think that it is unfortunate it was not brought up according to recognized procedure." and "I think it should be
-        repealed and that should be done in an orderly fashion in order to preserve some respect for the committee system." He is on the
-        Record's list of nays for the amendment (p. 21132). The Record also prints another senator saying he would "vote against the
-        repeal today" and for repeal later through the Mathias resolution (speaker not identified in the extract read).
+        Congressional Record, Senate, 24 June 1970. Fulbright, p. 21131 [read on the page image]: "I said earlier that I would vote for the
+        repeal because, of course, I am committed to repeal and have been for a long time. However, upon further consideration, in view of
+        what has been said on the floor of the Senate, and also in reliance upon the assurance of the majority leader that he would bring up the
+        Mathias resolution--which is a concurrent resolution..."; p. 21132: "I shall vote against the repeal today and preserve the integrity of
+        the procedure which I believe is very important to this body." Earlier that day, p. 21119: "I am going to vote for its repeal. I am committed
+        to it, of course." Nay list p. 21132. Reasons of Allen (p. 21123), Hollings (p. 21122), Stennis (p. 21121), McGee (pp. 21130-31) per the
+        delegated reading.
       accessible: true
       ref: [src-congressional-record-1970]
 
