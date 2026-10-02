@@ -23,6 +23,13 @@ ideas:
     summary: >
       Tablets, manuscripts and other objects, with where they were made, found, moved and are held today, each stage a dated event with a place.
       The Atlas has a Map view. Started with the Casket Letters; the Nippur flood tablet comes next once its museum record is found.
+  - id: standards-review
+    title: Adopt the best structures from other open-data and evidence standards
+    status: exploring
+    summary: >
+      A survey of 19 standards and projects (event datasets, gazetteers, provenance models, evidence-grading and verification protocols) found structures we lack:
+      time windows with reasons for each boundary, attributable disputes, recorded reasons behind each confidence rating, a separation of evidence from assumption and judgment,
+      and a self-describing, checkable data release. The first set is being chosen.
   - id: atlas-overview-strip
     title: A mini-map for very long timelines on the Atlas
     status: parked
