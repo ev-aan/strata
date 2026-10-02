@@ -64,7 +64,7 @@ def claim_html(c):
     more = ""
     if desc: more += f'<p><b>Anchor.</b> {E(" ".join(str(desc).split()))}</p>'
     if c.get("would_change_if"): more += f'<p><b>Would change if.</b> {E(" ".join(str(c["would_change_if"]).split()))}</p>'
-    if nxt: more += f'<p><b>Next step.</b> {E(" ".join(str(nxt).split()))}</p>'
+    if nxt: more += f'<p><b>Next step.</b> {E(" ".join(str(nxt).split()))}</p>' + _da.start_link(CUR.get("sub"), c)
     nl = an.get("nodes") if isinstance(an, dict) else None
     if nl: more += '<p><b>Evidence nodes</b> <span class="small">(what each does to the statement above)</span></p><ul class="l" style="overflow:auto">' + "".join(node_html(x["node"], x.get("verb", "")) if isinstance(x, dict) else node_html(x) for x in nl) + '</ul>'
     if c.get("assumptions"): more += '<p><b>Assumptions this rests on.</b></p><ul class="l">' + "".join(f'<li>{E(a["text"])}<br><span class="small">If wrong: {E(a["if_wrong"])}</span></li>' for a in c["assumptions"]) + '</ul>'
@@ -80,6 +80,7 @@ def claim_html(c):
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nodes as _nodes
+import dig_actions as _da
 NODES = _nodes.load_nodes()
 CUR = {"slug": "", "sub": ""}
 ASSESS = {}

@@ -59,7 +59,7 @@ jobs:
       - name: Build the site from YAML (only digs listed in build/site.yaml are published)
         run: python3 build/tools/build_site.py
 
-      - name: Refuse to publish data exports (owner decision: downloads are private for now)
+      - name: "Refuse to publish data exports (owner decision: downloads are private for now)"
         run: |
           if find site -type f \( -name '*.csv' -o -name '*.geojson' -o -name '*.graphml' -o -name 'SHA256SUMS*' \) | grep -q .; then
             echo "Data export files found in site/; refusing to deploy."; exit 1
