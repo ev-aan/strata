@@ -125,9 +125,16 @@ def assessment_html(v, slug, prefix="", show_question=True, claims=None):
             + (f'<p>{E(v["lean"]["because"])}</p><p class="small"><b>Why the lean is not a finding.</b> {E(v["lean"]["caveats"])}</p>' if v.get("lean") else "")
             + f'<p class="small">Based on: {links}</p>'
             + '<p class="small">We give no probability figure. Confidence words describe how sure we are of the basis, and no source supplies a number that would not be invented.</p>')
-    return (f'<section class="claim" style="border:1px solid var(--line);border-left:7px solid var(--amber);padding:18px 20px" id="where-it-stands"><h2 style="font-size:30px;border:0;margin:0 0 2px;padding:0">Where it stands</h2>'
+    line = ANS.get(v["answer"], v["answer"])
+    if v.get("lean"):
+        line += f', leans {v["lean"]["strength"]}ly toward {v["lean"].get("short") or v["lean"]["toward"]}'
+    elif v["answer"] in ("yes", "no") and rc and rc.get("confidence"):
+        line += f' ({rc["confidence"]} confidence)'
+    strip = (f'<p class="eyebrow" style="margin:18px 0 0">The short answer</p>'
+             f'<p style="font-size:clamp(28px,6vw,40px);line-height:1.15;margin:2px 0 16px;font-weight:600"><span class="{cls}">{E(line)}</span></p>')
+    return (strip + f'<section class="claim" style="border:1px solid var(--line);border-left:7px solid var(--amber);padding:18px 20px" id="where-it-stands"><h2 style="font-size:30px;border:0;margin:0 0 2px;padding:0">Where it stands</h2>'
             f'<p class="eyebrow" style="margin:0 0 12px">Current assessment · as of {TODAY}</p>{("<p><b>" + E(v["question"]) + "</b></p>") if show_question else ""}'
-            f'<p style="font-size:21px;line-height:1.4;margin:6px 0 10px"><span class="pill {cls}">{E(ANS.get(v["answer"], v["answer"]))}</span> <b>{E(v["headline"])}</b></p>'
+            f'<p style="font-size:21px;line-height:1.4;margin:6px 0 10px"><b>{E(v["headline"])}</b></p>'
             f'<ul style="margin:0 0 8px;padding-left:20px">{kp}</ul>{lean}{rate}'
             f'<p class="small"><b>What would settle it.</b> {E(v["would_settle"])}</p>'
             f'<details><summary>The full reasoning</summary>{more}</details></section>')

@@ -14,6 +14,7 @@ assessment:
     but that is a low-confidence result of ours that no one outside the project has reviewed, and the text tested has no prayers at all. No published computational study of the book was found.
   lean:
     toward: "Not Charles I as the sole author of the text as printed"
+    short: "not Charles I alone"
     strength: slight
     because: "The first-edition text we tested does not carry Charles's measured writing habits: it sits as far from his own prose as other clergy do (claim eikon-text-lacks-charles-habits)."
     caveats: "Our own low-confidence result, unreviewed. It does not point to Gauden: that test has not been run (claim eikon-style-singles-out-gauden). The comparison is between kinds of writing as well as authors. The text tested has no prayers at all."

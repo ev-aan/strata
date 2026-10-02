@@ -228,7 +228,7 @@ def check_subject(r, sdir):
             if vd.get("answer") in ("leans_yes", "leans_no") and not any(_by.get(b_, {}).get("confidence") in ("moderate", "high") for b_ in vd.get("basis") or []):
                 r.err(subject, "a 'leans' assessment needs at least one basis claim at moderate or high confidence; otherwise say unsettled and give a `lean` note")
             if vd.get("lean"):
-                for k_ in ("toward", "strength", "because", "caveats"):
+                for k_ in ("toward", "short", "strength", "because", "caveats"):
                     if not vd["lean"].get(k_):
                         r.err(subject, f"assessment lean missing `{k_}`")
         hc = d.get("headline_claim")
