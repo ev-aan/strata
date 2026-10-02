@@ -69,6 +69,20 @@ short_answer:
         One known concession. The same court received more than 5,000 autism claims, and
         all six test cases chosen to present the families' strongest theories were rejected.
       scale_sources: [src-poling-cnn-2008, src-oap-decisions]
+      what_it_is:
+        - "A decision by the US government not to contest one family's claim for compensation."
+        - >
+          Made inside a no-fault program built to pay faster and more easily than a court
+          case, where for a listed injury the family does not have to prove causation and the
+          government must disprove it (see va-compensation-program).
+        - "A statement about one child, who had a pre-existing mitochondrial disorder."
+      what_it_is_not:
+        - "Not a scientific study, and not a test of whether vaccines cause autism."
+        - "Not a finding about any other child, or about children without mitochondrial disease."
+        - >
+          Not an admission that vaccines cause autism: the CDC director said so at the time,
+          and autism is not on the government's list of compensable vaccine injuries.
+        - "Not a court ruling after a trial of the evidence: the government conceded before one."
     - claim: va-mito-fever-regression
       text: >
         One open question. In children with mitochondrial disease (about 5 in 100 children
@@ -1083,6 +1097,49 @@ claims:
       because the article is a main route by which the claim spread in the US. Whether
       Rolling Stone, its co-publisher, withdrew it was not checked.
 
+  - id: va-compensation-program
+    state: established
+    statement: >
+      The US Vaccine Injury Compensation Program is a no-fault scheme, designed to pay injured
+      people faster and more easily than a lawsuit. For an injury on its Table that appears
+      within the listed time window, the claimant does not have to prove the vaccine caused it;
+      the government has to disprove causation. For other injuries the claimant must prove
+      causation. Payments come from an excise tax on each vaccine dose.
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 5   # of 5
+    anchor_checked: primary   # Bruesewitz v. Wyeth opinion and syllabus read in full; 42 CFR 100.3 read
+    adoption_weight: 2   # of 5
+    adoption_note: >
+      Not measured. Payments and concessions are widely read as admissions of causation.
+    would_change_if: "Congress changes the Act's burden of proof"
+    anchor:
+      type: statute-as-described-by-the-supreme-court
+      description: >
+        Bruesewitz v. Wyeth (2011), majority opinion: the Act "establishes a no-fault
+        compensation program" designed to work faster and with greater ease than the tort
+        system; for Table injuries "no showing of causation is necessary; the Secretary bears
+        the burden of disproving causation"; for unlisted injuries "the claimant must prove
+        causation"; claimants need not show the vaccine was defective [read]. The syllabus:
+        compensation is paid out of a fund created by an excise tax on each vaccine dose [read].
+      accessible: true
+      ref: [src-bruesewitz, src-vicp-table]
+    what_it_is:
+      - "A compensation system with a deliberately low bar, so injured people are paid quickly."
+      - "A legal presumption of causation for listed injuries within set time windows."
+    what_it_is_not:
+      - >
+        Not a scientific finding. Being paid, or having a claim conceded, shows the legal test
+        was met or not contested; it does not show the vaccine caused the injury.
+      - >
+        Not an admission of fault: no one has to show the vaccine was defective, and the
+        program does not decide whether it was.
+    basis: >
+      This is the frame for every legal item in the dig (va-poling-concession,
+      va-omnibus-test-cases, va-vicp-table-no-autism, va-bruesewitz-no-autism-finding). The
+      program's low bar is intended: it trades proof for speed. That is why its outcomes are
+      evidence about the law, not about biology, in either direction.
+
   - id: va-poling-concession
     state: established
     statement: >
@@ -1109,6 +1166,14 @@ claims:
         read.
       accessible: true
       ref: [src-poling-cnn-2008, src-poling-npr-2008]
+    what_it_is:
+      - "The government's decision not to contest one family's compensation claim, made in late 2007."
+      - "About one child with a pre-existing mitochondrial disorder."
+      - "Made under no-fault rules where causation can be presumed (va-compensation-program)."
+    what_it_is_not:
+      - "Not a scientific finding that vaccines cause autism, in her or anyone else."
+      - "Not a verdict after the evidence was tried; it was conceded."
+      - "Not a precedent: the six test cases on autism theories were all rejected (va-omnibus-test-cases)."
     positions:
       - label: "Yes"
         holder: "Common reading of the case"
@@ -1153,6 +1218,13 @@ claims:
         Circuit affirmed Hazlehurst (13 May 2010) and Cedillo (27 Aug 2010) [read via fetch tool].
       accessible: true
       ref: [src-oap-decisions]
+    what_it_is:
+      - "Six decisions by special masters that the families' theories were not proved to the legal standard (more likely than not)."
+      - "Cases chosen by the families' own lawyers to present their strongest theories."
+    what_it_is_not:
+      - "Not a scientific proof that no child's autism was ever caused by a vaccine."
+      - "Not a judgment on the families' honesty or on their children's suffering."
+      - "Not a ruling on the theory of MMR alone, which was never presented."
     positions:
       - label: "Yes, the question stays open"
         holder: "Justice Sotomayor's dissent in Bruesewitz (2011), n.25"
@@ -1186,6 +1258,15 @@ claims:
         design-defect claims [read]. "Autism" appears only in the dissent, footnote 25 [read].
       accessible: true
       ref: [src-bruesewitz]
+    what_it_is:
+      - "A ruling that families cannot sue vaccine makers over a vaccine's design; such claims go to the compensation program."
+      - >
+        Based on the 1986 Act's wording that makers are not liable for side effects that were
+        "unavoidable" in a properly made and labelled vaccine.
+    what_it_is_not:
+      - "Not a finding that vaccines are unsafe or that any particular injury happened."
+      - "Not about autism: the case concerned seizures and developmental delay after DTP."
+      - "Not immunity from all suits: claims over manufacturing defects or failures to warn are not barred by this holding."
     basis: "Filed because both sides cite it; it bears on liability, not on causation."
 
   - id: va-vicp-table-no-autism
@@ -1209,6 +1290,11 @@ claims:
         Register for rules amending the Table since 2023 found none [searched].
       accessible: true
       ref: [src-vicp-table]
+    what_it_is:
+      - "A list of injuries that the compensation program presumes are vaccine-caused when they appear within set time windows."
+    what_it_is_not:
+      - "Not a scientific list of what vaccines cause: being on it, or off it, is a policy decision."
+      - "Not a bar to claims: families can still try to prove an unlisted injury."
     basis: >
       The Table is a compensation list, written to pay quickly with a low bar, and listing or
       not listing an injury is a policy decision, not a scientific finding.

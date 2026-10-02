@@ -142,3 +142,14 @@ log:
       rubella, about 7 in 100 with autism and an estimated 1,228 US cases prevented in
       2001-2010. A single "1 in N" figure for vaccine-caused autism was considered and not used:
       no source supports one, and inventing it would be adoption weight dressed as evidence.
+  - id: L-14
+    date: 2026-10-02
+    entry: >
+      OWNER REQUEST: make the court and compensation items clear about what they are and what
+      they are not. Added va-compensation-program (established, primary: the Bruesewitz opinion
+      read in full), which explains the no-fault design, the presumption of causation for Table
+      injuries and the burden on the government to disprove it. Added `what_it_is` and
+      `what_it_is_not` to va-poling-concession, va-omnibus-test-cases, va-vicp-table-no-autism,
+      va-bruesewitz-no-autism-finding and to the Poling exception in the short answer. Each line
+      rests on the anchor already cited for that claim; nothing new is asserted about the
+      Poling decision itself, which remains unread.
