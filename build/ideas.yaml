@@ -60,3 +60,9 @@ ideas:
     summary: >
       Every excavation already records what we looked for and could not settle, and what would settle it. Gathered in one place, those gaps show where
       understanding runs out. Each gap would get a home: what is unknown, why, what has been tried, what kind of evidence would move it, and a way to take it on.
+  - id: verified-feed
+    title: A verified feed, so others can distribute what has passed
+    status: parked
+    summary: >
+      Like a news wire, but for checked statements: a finding, an object record or a timeline can be published for others to carry, with a mark that anyone can verify
+      showing exactly which review it passed, when, and whether it has since been corrected or withdrawn. The reader of a copy can always trace it back to the review record.
