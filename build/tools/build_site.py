@@ -128,9 +128,9 @@ for sub in CFG["publish"]:
     n = {}
     for c in cl["claims"]: n[c.get("state")] = n.get(c.get("state"), 0) + 1
     tally = ", ".join(f"{v} {k.replace('_', ' ')}" for k, v in sorted(n.items(), key=lambda kv: order.get(kv[0], 9)))
-    banner = (f'<div class="banner"><b>Open dig.</b> This question is still being worked. The headline finding is stated at the confidence shown below; '
+    banner = (f'<div class="banner"><b>Open excavation.</b> This question is still being worked. The headline finding is stated at the confidence shown below; '
               f'not every source has been read in full, and each claim says which. Claims so far: {E(tally)}.</div>' if status != "published" else "")
-    body = (f'<p class="eyebrow">Dig · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{banner}'
+    body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{banner}'
             f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>')
     if hc: body += f'<h2>The headline finding</h2>{claim_html(hc)}'
     body += f'<p>{E(" ".join(str(cl.get("description", "")).split()))}</p>'
@@ -140,7 +140,7 @@ for sub in CFG["publish"]:
     if os.path.exists(chp):
         chs = yaml.safe_load(open(chp)).get("challenges", [])
         lab = {"answered": "answered: finding stands", "partly_answered": "partly answered", "open": "open: not yet testable", "finding_changed": "finding changed"}
-        body += ('<h2>Challenges addressed</h2><p>Objections raised against this dig, in the form people raise them, with the test we ran and where it stands. '
+        body += ('<h2>Challenges addressed</h2><p>Objections raised against this excavation, in the form people raise them, with the test we ran and where it stands. '
                  'Open ones are shown as plainly as answered ones. Have one we missed? <a href="' + E(CFG["issues_url"]) + '">Send it</a>.</p>')
         for ch in chs:
             ref = " ".join(f'<a href="#{E(x)}">{E(x)}</a>' for x in ch.get("touches") or [])
@@ -180,10 +180,10 @@ for sub in CFG["publish"]:
                 corrections.append((str(e.get("date", "")), sub, slug, head, m.group(0).strip()))
 
 items = "".join(f'<li><a href="{E(s)}/"><b>{E(h)}</b></a><br><span class="small">{E(" ".join(str(sm).split()))}</span>'
-                f'{"" if st == "published" else " <span class=pill>open dig</span>"}</li>' for s, h, sm, st in digs)
+                f'{"" if st == "published" else " <span class=pill>open excavation</span>"}</li>' for s, h, sm, st in digs)
 write("digs/index.html", page("Active excavations", f'<p class="eyebrow">Active excavations</p><h1>What we are excavating</h1><p>Each excavation files its claims with evidence, confidence and limits.</p><ul class="l">{items}</ul>', "Active excavations on Stratah: each files its claims with evidence, confidence and limits.", "/digs/", depth=1))
 crow = "".join(f'<li><span class="mono">{E(d)}</span> · <a href="../digs/{E(sl)}/">{E(h)}</a><br>{E(t)}</li>' for d, sub, sl, h, t in sorted(corrections, reverse=True)) or "<li>No corrections logged yet.</li>"
-write("corrections/index.html", page("Corrections", f'<p class="eyebrow">Corrections</p><h1>What we got wrong, and fixed</h1><p>Every correction made to a published dig is logged and stays visible. The logs are append-only: an entry is never deleted or rewritten, only added to.</p><ul class="l">{crow}</ul>', "Corrections to Stratah digs.", "/corrections/", depth=1))
+write("corrections/index.html", page("Corrections", f'<p class="eyebrow">Corrections</p><h1>What we got wrong, and fixed</h1><p>Every correction made to a published excavation is logged and stays visible. The logs are append-only: an entry is never deleted or rewritten, only added to.</p><ul class="l">{crow}</ul>', "Corrections to Stratah digs.", "/corrections/", depth=1))
 write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG["name"])}: {E(CFG["tagline"])}</h1><p>{E(" ".join(CFG["about"].split()))}</p><p>See the <a href="../method/">method</a> for the rules, and <a href="../corrections/">corrections</a> for what we have fixed.</p>', " ".join(CFG["about"].split())[:200], "/about/", depth=1))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_atlas
@@ -192,7 +192,14 @@ _ideas = yaml.safe_load(open(os.path.join(ROOT, "build", "ideas.yaml")))
 _lab = {"parked": "parked", "exploring": "exploring", "done": "done"}
 _li = "".join(f'<li id="{E(i["id"])}"><b>{E(i["title"])}</b> <span class="pill">{E(_lab.get(i["status"], i["status"]))}</span><br>{E(" ".join(str(i["summary"]).split()))}</li>' for i in _ideas["ideas"])
 write("ideas/index.html", page("Ideas for exploration", f'<p class="eyebrow">Ideas</p><h1>Ideas for exploration</h1><p>{E(" ".join(str(_ideas["intro"]).split()))}</p><ul class="l">{_li}</ul><p><a href="{E(CFG["issues_url"])}">Suggest an idea or a dig</a>.</p>', "Ideas and possible next digs for Stratah, with their status.", "/ideas/", depth=1))
+_hp = os.path.join(OUT, "index.html")
+if os.path.exists(_hp):
+    _h = open(_hp, encoding="utf-8").read()
+    _cards = "".join(f'<a class="dig-card" href="digs/{E(s)}/" style="display:block"><div class="dig-icon">&#9672;</div><div class="dig-name">{E(h)}</div>'
+                     f'<div class="dig-meta">{E(" ".join(str(sm).split()))} {"" if st == "published" else "(Open excavation)"}</div></a>' for s, h, sm, st in digs)
+    _h = re.sub(r"<!--EXCAVATIONS:start.*?-->.*?<!--EXCAVATIONS:end-->", lambda m: f'<div class="dig-grid" style="grid-template-columns:1fr">{_cards}</div>', _h, flags=re.S)
+    open(_hp, "w", encoding="utf-8").write(_h)
 write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>https://{CFG['domain']}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls) + "</urlset>")
 write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: https://{CFG['domain']}/sitemap.xml\n")
-write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Active excavations\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open dig'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
-print(f"site built in {OUT}: {len(digs)} dig(s), {len(corrections)} correction note(s)")
+write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Active excavations\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open excavation'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
+print(f"site built in {OUT}: {len(digs)} excavation(s), {len(corrections)} correction note(s)")

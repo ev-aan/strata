@@ -1,11 +1,11 @@
 # Ideas for exploration. YAML is the source; /ideas/ on the site is generated from it by build/tools/build_site.py.
 # status: parked (designed or noted, not scheduled) | exploring (being worked on) | done
 intro: >
-  Things we may build or dig into next. Parked means noted, not scheduled. If one matters to you, or you have a better idea,
+  Things we may build or excavate next. Parked means noted, not scheduled. If one matters to you, or you have a better idea,
   tell us. Ideas about the method are as welcome as ideas about topics.
 ideas:
   - id: paper-review
-    title: Review an academic paper against a dig
+    title: Review an academic paper against an excavation
     status: parked
     summary: >
       Upload a paper and get a review that adds new information and finds errors and gaps. Each finding is a proposal that must meet
@@ -15,8 +15,8 @@ ideas:
     title: One shared record for every dated event, document and image
     status: exploring
     summary: >
-      Events, documents and images are kept once as shared nodes, and digs refer to them, so a correction reaches every dig that uses them.
-      Done for the Gulf of Tonkin family. The other digs still hold their own copies.
+      Events, documents and images are kept once as shared nodes, and excavations refer to them, so a correction reaches every excavation that uses them.
+      Done for the Gulf of Tonkin family. The other excavations still hold their own copies.
   - id: object-map
     title: Where objects were found and where they are now, on a map
     status: exploring

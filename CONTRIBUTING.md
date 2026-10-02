@@ -94,7 +94,7 @@ Learned the hard way on open questions Q-001 and Q-002 (formerly bounties B-001 
 
 ## 5. Page and record conventions
 
-Every dig or open question page carries:
+Every excavation or open question page carries:
 
 - **IDs that are never reused or renumbered:**
   - claims (C-01…)
