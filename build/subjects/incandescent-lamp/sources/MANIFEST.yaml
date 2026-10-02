@@ -1,0 +1,304 @@
+# Sources for the incandescent-lamp dig, with authenticity entries (rules A1-A10, build/SCHEMA.md).
+# Nothing is stored as a copy; every source is cited by URL. Tests were run in this session
+# (2026-10-02), which is not an independent review.
+retrieved: 2026-10-02
+sources:
+
+  # ------------------------------ PATENTS ------------------------------
+  - id: src-us223898
+    title: "US Patent 223,898, T. A. Edison, Electric-Lamp (granted 27 Jan 1880)"
+    url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0223898
+    document_class: primary_text
+    read: yes, directly (OCR of the USPTO scan)
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "Served by the US Patent and Trademark Office's own image server; the printed patent as issued."
+      tests:
+        - "Official USPTO host [read]"
+        - "Dates and claim wording match the 1891 and 1892 court opinions, which quote the patent"
+      tested_by: "Strata session, 2026-10-02 (not an independent review)"
+      gaps: ["The file wrapper (application history) was not read."]
+      next_step: "Read the file wrapper for the Nov 1879 filing."
+      checked: 2026-10-02
+  - id: src-us181613
+    title: "US Patent 181,613, H. Woodward, Improvement in Electric Lights (dated 29 Aug 1876)"
+    url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0181613
+    document_class: primary_text
+    read: yes, directly (OCR of the USPTO scan)
+    authenticity:
+      status: authenticated
+      strength: strong
+      provenance: "USPTO image server; printed patent as issued, with assignees named."
+      tests: ["Official USPTO host [read]", "Patent number and date agree with secondary Canadian accounts"]
+      tested_by: "Strata session, 2026-10-02"
+      gaps: ["The Canadian patent 3,738 specification was not read (Library and Archives Canada returned 403)."]
+      next_step: "Read the Canadian specification at Library and Archives Canada."
+      checked: 2026-10-02
+  - id: src-us252386
+    title: "US Patent 252,386, L. H. Latimer, Process of Manufacturing Carbons (granted 17 Jan 1882)"
+    url: https://image-ppubs.uspto.gov/dirsearch-public/print/downloadPdf/0252386
+    document_class: primary_text
+    read: yes, directly (OCR of the USPTO scan)
+    authenticity: {status: authenticated, strength: strong, provenance: "USPTO image server; printed patent with assignment to the United States Electric Lighting Co.", tests: ["Official USPTO host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-us575002
+    title: "US Patent 575,002, A. de Lodyguine, Illuminant for Incandescent Lamps (granted 12 Jan 1897)"
+    url: https://patents.google.com/patent/US575002A/en
+    document_class: primary_text
+    read: yes, directly
+    authenticity: {status: authenticated, strength: moderate, provenance: "Google Patents rendering of the USPTO record; not checked against the USPTO image.", tests: ["Text and dates consistent with the patent's citation in lamp histories"], tested_by: "Strata session, 2026-10-02", gaps: ["USPTO image not compared"], next_step: "Compare with the USPTO image.", checked: 2026-10-02}
+  - id: src-us266358
+    title: "US Patent 266,358, H. Goebel, Electric Incandescent Lamp (granted 24 Oct 1882)"
+    url: https://patents.google.com/patent/US266358A/en
+    document_class: primary_text
+    read: yes, directly
+    authenticity: {status: authenticated, strength: moderate, provenance: "Google Patents rendering; the 1893 Boston opinion (54 F. 678) independently describes the same patent and its rejected second claim.", tests: ["Matches the court's description in 54 F. 678"], tested_by: "Strata session, 2026-10-02", gaps: ["USPTO image not compared"], checked: 2026-10-02}
+  - id: src-us47632
+    title: "US Patent 47,632, H. Goebel, Hemmers for Sewing-Machines (9 May 1865)"
+    url: https://patents.google.com/patent/US47632A/en
+    document_class: primary_text
+    read: yes, directly
+    authenticity: {status: authenticated, strength: moderate, provenance: "Google Patents rendering of the USPTO record.", tests: ["Inventor name and city match"], tested_by: "Strata session, 2026-10-02", gaps: ["USPTO image not compared"], checked: 2026-10-02}
+  - id: src-abridgments-1859
+    title: "Patents for Inventions: Abridgments of Specifications relating to Electricity and Magnetism (Great Britain Patent Office, 1859)"
+    url: https://archive.org/details/patentsforinvent1766grea
+    document_class: primary_text (the Patent Office's official summaries)
+    read: yes, directly (pp. 62-63, de Moleyns No. 9053; p. 97, King No. 10,919)
+    authenticity:
+      status: authenticated
+      strength: moderate
+      provenance: "Internet Archive scan of a library copy of the official Patent Office publication."
+      tests:
+        - "Title page and publisher are the Patent Office [read]"
+        - "The 1895 US Supreme Court and the 1893 Boston court cite the same 1841 and 1845 patents"
+      tested_by: "Strata session, 2026-10-02"
+      gaps: ["The full specifications were not read; abridgments only."]
+      next_step: "Read the full specifications of patents 9053 (1841) and 10,919 (1845)."
+      checked: 2026-10-02
+
+  # ------------------------------ COURT RECORDS ------------------------------
+  - id: src-40f21
+    title: "Consolidated Electric Light Co. v. McKeesport Light Co., 40 F. 21 (C.C.W.D. Pa., 5 Oct 1889), Bradley J."
+    url: https://static.case.law/f/40/cases/0021-01.json
+    document_class: primary_text
+    read: yes, directly
+    authenticity: &caselaw
+      status: authenticated
+      strength: strong
+      provenance: "Harvard Law School Caselaw Access Project digitization of the Federal Reporter."
+      tests:
+        - "Reporter citation, court and date match the citing opinion (159 U.S. 465 cites 40 Fed. Rep. 21) [read]"
+      tested_by: "Strata session, 2026-10-02"
+      gaps: ["OCR text; page images not compared line by line."]
+      checked: 2026-10-02
+  - id: src-47f454
+    title: "Edison Electric Light Co. v. United States Electric Lighting Co., 47 F. 454 (C.C.S.D.N.Y. 1891), Wallace J."
+    url: https://static.case.law/f/47/cases/0454-01.json
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *caselaw
+  - id: src-52f300
+    title: "Edison Electric Light Co. v. United States Electric Lighting Co., 52 F. 300 (2d Cir., 4 Oct 1892), Lacombe J."
+    url: https://static.case.law/f/52/cases/0300-01.json
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *caselaw
+  - id: src-54f678
+    title: "Edison Electric Light Co. v. Beacon Vacuum Pump & Electrical Co., 54 F. 678 (C.C.D. Mass., 18 Feb 1893), Colt J."
+    url: https://static.case.law/f/54/cases/0678-01.json
+    document_class: primary_text
+    read: yes, directly (also the law.resource.org PDF scan)
+    authenticity: *caselaw
+  - id: src-56f496
+    title: "Edison Electric Light Co. v. Columbia Incandescent Lamp Co., 56 F. 496 (C.C.E.D. Mo., 21 Apr 1893), Hallett J."
+    url: https://static.case.law/f/56/cases/0496-01.json
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *caselaw
+  - id: src-57f616
+    title: "Edison Electric Light Co. v. Electric Manufacturing Co., 57 F. 616 (C.C.E.D. Wis., 20 Jul 1893), Seaman J."
+    url: https://static.case.law/f/57/cases/0616-01.json
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *caselaw
+  - id: src-61f834
+    title: "Electric Manufacturing Co. v. Edison Electric Light Co., 61 F. 834 (7th Cir., 1 May 1894)"
+    url: https://static.case.law/f/61/cases/0834-01.json
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *caselaw
+  - id: src-scotus-1895
+    title: "The Incandescent Lamp Patent, 159 U.S. 465 (argued 29-30 Oct 1894, decided 11 Nov 1895)"
+    url: https://tile.loc.gov/storage-services/service/ll/usrep/usrep159/usrep159465/usrep159465.pdf
+    document_class: primary_text
+    read: yes, directly (OCR of the Library of Congress scan of United States Reports)
+    authenticity: {status: authenticated, strength: strong, provenance: "Library of Congress scan of the official United States Reports.", tests: ["Official loc.gov host [read]", "Cites 40 Fed. Rep. 21, which was read separately"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+
+  # ------------------------------ JOURNALS, BOOKS, NEWSPAPERS ------------------------------
+  - id: src-davy-1812
+    title: "Humphry Davy, Elements of Chemical Philosophy, Part I, vol. 1 (London, 1812)"
+    url: https://archive.org/details/elementschemica00davygoog
+    document_class: primary_text
+    read: yes, directly (pp. 85-86)
+    authenticity: &archive_book
+      status: authenticated
+      strength: moderate
+      provenance: "Internet Archive / Google Books scan of a library copy, with title page and imprint."
+      tests: ["Title page, author and imprint present in the scan [read]"]
+      tested_by: "Strata session, 2026-10-02"
+      gaps: ["Scan provenance is the holding library's; no physical inspection."]
+      checked: 2026-10-02
+  - id: src-fontaine-1878
+    title: "Hippolyte Fontaine, Electric Lighting (English translation, 1878; French ed. 1877)"
+    url: https://archive.org/details/electriclightin00fontgoog
+    document_class: primary_text (a contemporary engineer's survey; quotes the Academy and Jobard reports)
+    read: yes, directly (pp. 171-173, 186-187, 190)
+    authenticity: *archive_book
+  - id: src-chemnews-1879
+    title: "Chemical News 39 (28 Mar 1879, p. 133; 18 Apr 1879, p. 168): Newcastle Chemical Society report"
+    url: https://archive.org/details/s713id13691410
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *archive_book
+  - id: src-chemnews-1880
+    title: "Chemical News 42 (5 Nov 1880), pp. 227-230: Swan's lecture of 20 Oct 1880 to the Newcastle Lit and Phil"
+    url: https://archive.org/details/s713id13691440
+    document_class: primary_text (Swan's own account; self-interested on priority)
+    read: yes, directly
+    authenticity: *archive_book
+  - id: src-sciam-1874
+    title: "Scientific American 31:11 (12 Sep 1874), list of Canadian patents"
+    url: https://archive.org/details/sim_scientific-american_1874-09-12_31_11
+    document_class: primary_text
+    read: yes, directly (OCR was garbled; entry read and cleaned by hand)
+    authenticity: *archive_book
+  - id: src-elecworld-1900
+    title: "Electrical World and Engineer 35:15 (14 Apr 1900), 'Invention of the Incandescent Lamp'"
+    url: https://archive.org/details/sim_electrical-world_1900-04-14_35_15
+    document_class: primary_text (for what Toronto informants said in 1900; second-hand for 1874-79)
+    read: yes, directly
+    authenticity: *archive_book
+  - id: src-dyer-martin-1910
+    title: "Frank L. Dyer and T. C. Martin, Edison: His Life and Inventions, vol. II (Harper, Nov 1910), pp. 615-616"
+    url: https://archive.org/details/edison.-his-life-and-inventions-volume-ii
+    document_class: primary_text (authorised biography; Mallory's recollection)
+    read: yes, directly
+    authenticity: *archive_book
+  - id: src-schroeder-1923
+    title: "Henry Schroeder, History of Electric Light (Smithsonian Miscellaneous Collections, 1923)"
+    url: https://archive.org/details/historyofelectri00schr
+    document_class: synthetic (a later history)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A later history; used only for what it says, not as a record of the 1840 lamp."}
+  - id: src-howell-schroeder-1927
+    title: "John W. Howell and Henry Schroeder, History of the Incandescent Lamp (1927)"
+    url: https://archive.org/details/historyofincande00howe
+    document_class: synthetic (a later history, by General Electric engineers)
+    read: yes, directly (the de la Rue 1820 passage)
+    authenticity: {status: not_applicable, basis: "A later history; used only for what it says."}
+  - id: src-herald-1879-12-21
+    title: "New York Herald, 21 Dec 1879, p. 5: 'Edison's Light'"
+    url: https://www.loc.gov/resource/sn83030313/1879-12-21/ed-1/?sp=5
+    document_class: primary_text
+    read: yes, directly (OCR of the Chronicling America scan)
+    authenticity: &loc_paper
+      status: authenticated
+      strength: strong
+      provenance: "Library of Congress, Chronicling America; scan of the newspaper page with masthead and date."
+      tests: ["Official loc.gov host [read]"]
+      tested_by: "Strata session, 2026-10-02"
+      gaps: ["OCR text; byline not visible (Marshall Fox attribution unconfirmed)."]
+      checked: 2026-10-02
+  - id: src-herald-1879-12-31
+    title: "New York Herald, 31 Dec 1879, p. 3: 'The Horseshoes Still Shining'"
+    url: https://www.loc.gov/resource/sn83030313/1879-12-31/ed-1/?sp=3
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *loc_paper
+  - id: src-tribune-1880-01-01
+    title: "New-York Tribune, 1 Jan 1880, p. 8: Menlo Park visitors, 'No public exhibition promised or given'"
+    url: https://www.loc.gov/resource/sn83030214/1880-01-01/ed-1/?sp=8
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *loc_paper
+  - id: src-tribune-1882-09-05
+    title: "New-York Tribune, 5 Sep 1882, p. 8: Edison district service begins"
+    url: https://www.loc.gov/resource/sn83030214/1882-09-05/ed-1/?sp=8
+    document_class: primary_text
+    read: yes, directly
+    authenticity: *loc_paper
+  - id: src-times-savoy
+    title: "The Times (London), 29 Dec 1881, report on the Savoy Theatre stage lighting (transcription)"
+    url: https://gsarchive.net/carte/savoy/electric.html
+    document_class: primary_text (via transcription)
+    derived_from: "The Times, 29 Dec 1881 (original page not read)"
+    read: yes, the transcription
+    authenticity: {status: unchecked, gaps: ["The original Times page was not compared (rule A9: the transcription is its own item)."], next_step: "Compare with The Times Digital Archive.", checked: 2026-10-02}
+
+  # ------------------------------ SECONDARY AND REFERENCE ------------------------------
+  - id: src-edison-papers-essay
+    title: "Thomas A. Edison Papers (Rutgers), 'The Carbon Filament Lamp' and related pages"
+    url: https://edison.rutgers.edu/life-of-edison/biographical-essays/lighting/the-carbon-filament-lamp
+    document_class: secondary (editorial essay by the documentary edition; transcribes notebook N052105)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Editorial essay. The notebook page it transcribes was not opened (browser check), so claims resting on it are anchor_checked secondary."}
+  - id: src-ediswan
+    title: "Edison Papers company page, Edison and Swan United Electric Light Company, Ltd."
+    url: https://edison.rutgers.edu/life-of-edison/companies/company-details/electric-light,-foreign/edison-and-swan-united-electric-light-company-ltd
+    document_class: secondary
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Editorial reference page."}
+  - id: src-quote-investigator
+    title: "Quote Investigator, 'I Have Gotten a Lot of Results! I Know Several Thousand Things That Won't Work' (31 Jul 2012)"
+    url: https://quoteinvestigator.com/2012/07/31/edison-lot-results/
+    document_class: secondary
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "A quotation-tracing article; its 1910 source was read separately (src-dyer-martin-1910)."}
+  - id: src-iet-cragside
+    title: "IET Archives blog, 'Cragside: harnessing the power of water' (9 Mar 2023)"
+    url: https://ietarchivesblog.org/2023/03/09/cragside-harnessing-the-power-of-water/
+    document_class: secondary (describes Armstrong's letter, IET Archives NAEST 046/24)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Archive blog; the letter itself was not read."}
+  - id: src-linda-hall-swan
+    title: "Linda Hall Library and Newcastle University Special Collections pages on Swan (dates of the 1879 demonstration)"
+    url: null
+    document_class: secondary
+    read: search summaries only
+    authenticity: {status: not_applicable, basis: "Secondary; no URL kept in this session. Recorded so the disagreement over 3 Feb vs 17 Jan 1879 is visible."}
+  - id: src-kommersant-lodygin
+    title: "Kommersant, article on Lodygin (doc 6822124); lamptech.co.uk entry"
+    url: https://www.kommersant.ru/doc/6822124
+    document_class: secondary
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Newspaper history; gives the privilege number and dates without a scan."}
+  - id: src-rohde-2007
+    title: "Hans-Christian Rohde, Die Göbel-Legende: Der Kampf um die Erfindung der Glühlampe (zu Klampen, 2007)"
+    url: null
+    document_class: synthetic (a study of the court record)
+    read: no (known through lerncafe.de, goebel-projekt and radiomuseum.org summaries)
+    authenticity: {status: not_applicable, basis: "Modern study; not read."}
+  - id: src-springe
+    title: "Town of Springe, official page on Heinrich Göbel"
+    url: https://www.springe.de
+    document_class: secondary (reception record)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Used only as a record of present-day reception; exact page URL not kept in this session."}
+  - id: src-cbc-2017
+    title: "CBC, 'How many people does it take to invent a light bulb? At least two Canadians' (2017)"
+    url: https://www.cbc.ca/2017/how-many-people-does-it-take-to-invent-a-light-bulb-at-least-two-canadians-1.4022823
+    document_class: secondary (reception record)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Reception record only."}
+  - id: src-canadas-history
+    title: "Canada's History, 'Bright Idea'"
+    url: https://www.canadashistory.ca/explore/science-technology/bright-idea
+    document_class: secondary (reception record)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Reception record only; no sources cited."}
+  - id: src-canadian-encyclopedia
+    title: "The Canadian Encyclopedia, 'Woodward and Evans Light Bulb'"
+    url: https://www.thecanadianencyclopedia.ca/en/article/woodward-and-evans-light-bulb
+    document_class: secondary (reception record)
+    read: yes, directly
+    authenticity: {status: not_applicable, basis: "Reference work; cites popular books, no documents."}

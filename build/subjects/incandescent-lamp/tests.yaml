@@ -1,0 +1,81 @@
+subject: incandescent-lamp
+
+discriminating_tests:
+
+  - id: dt-which-first
+    question: >
+      "Invented the light bulb" can mean five different firsts. For each, which dated document comes first?
+      (1) electricity making light by heating a solid; (2) a patent on an incandescent lamp; (3) a carbon
+      conductor in a vacuum; (4) a lamp practical to make and sell; (5) a lamp run from a central supply.
+    retires: lamp-edison-sole-inventor
+    predicts:
+      single-inventor: >
+        IF one person invented the light bulb, the same name should come first on all five, or at least
+        on the first three.
+      cumulative-invention: >
+        IF the lamp was built up by many people, different names should come first on different questions,
+        and the later names should be first only on the practical and system questions.
+    result:
+      type: primary_text
+      finding: >
+        (1) Davy, by 1812 for the arc; glowing wires reportedly 1802 (gap). (2) de Moleyns, 1841, the
+        earliest found (an absence-based result, provisional). (3) King for Starr, 1845. (4) Edison and Swan both, 1879-80, on different routes (bamboo and
+        treated thread). (5) Edison, Pearl Street, 4 Sep 1882. Different names lead different questions.
+      accessible: true
+    resolves: >
+      The single-inventor story fails on questions 1 to 3, which are answered by patents and printed
+      reports that anyone can read. Edison leads on 5 and shares 4. Verification: V2 for every row except
+      Davy's 1802 papers.
+    note: >
+      Retired by documents, not by the number of historians who say "it was gradual". The test does not
+      decide the Swan versus Edison question on 4, which stays contested.
+
+  - id: dt-goebel-paper-trail
+    question: >
+      Does any document dated before 1879 record Göbel's carbon-filament lamps?
+    retires: lamp-goebel-claim
+    predicts:
+      goebel-lamps-1854: >
+        IF Göbel lit his New York shop with practical lamps in the 1850s, there should be some trace from
+        the time: a newspaper notice, an advertisement, a letter, a patent caveat, or witnesses whose
+        accounts agree on details.
+      story-built-later: >
+        IF the story was assembled for litigation, the record should begin around 1882, when the rights were
+        being sold, and exhibits should show features from after 1879.
+    result:
+      type: primary_text
+      finding: >
+        The earliest dated trace is 1882 (an option on his lighting inventions and an offer to the Edison
+        company at $20,000, recorded in 54 F. 678). The Boston court found exhibit lamp No. 4 could not have
+        been made before 1872, and neighbours' affidavits denied lamp displays around 1860. Göbel's own
+        1882 patent covers only a socket detail.
+      accessible: true
+    resolves: >
+      Retires the 1854 claim at moderate confidence. Rests on primary court records and patents, read in
+      full. The rulings were preliminary, on affidavits, and one judge (St. Louis) went the other way.
+    note: >
+      The absence of pre-1882 records is searched absence within the court record and this session's
+      searches, not an exhaustive archive search. A dated 1850s document would reopen the claim.
+
+  - id: dt-woodward-design
+    question: >
+      Does the Woodward and Evans patent describe the lamp that Edison patented?
+    retires: lamp-canada-invented-claim
+    predicts:
+      edison-built-on-it: >
+        IF Edison's lamp derived from Woodward's, the 1876 patent should describe a thin carbon filament in
+        a high vacuum, sealed in all-glass, or Edison's records should show use of its design.
+      separate-designs: >
+        IF the designs are different, Woodward's patent should describe something else.
+    result:
+      type: primary_text
+      finding: >
+        US 181,613 describes a shaped carbon rod between two electrodes in a globe refilled with thin
+        unreactive gas, which it says "becomes luminous". Edison's US 223,898 claims a thin high-resistance
+        carbon filament in an all-glass globe exhausted to about one-millionth of an atmosphere.
+      accessible: true
+    resolves: >
+      The designs differ on every point Edison's patent claims. Whether Edison bought the rights is a
+      separate question and stays a gap (lamp-edison-bought-woodward); buying a patent would not make it
+      the source of a different design.
+    note: "Both patents read in full (V2)."

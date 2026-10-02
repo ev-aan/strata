@@ -1,0 +1,69 @@
+subject: incandescent-lamp
+# Append-only excavation log. Corrections are new entries; earlier entries are never edited.
+
+log:
+  - id: L-01
+    date: 2026-10-02
+    entry: >
+      Dig opened. Founding core set to the invention era (1802-1895), by owner choice. Every national
+      priority claim (US, Britain, Canada, Germany, Russia, Belgium) is filed to the same standard: a
+      dated document from the time, or a named gap.
+  - id: L-02
+    date: 2026-10-02
+    entry: >
+      Primary documents read (V2): US patents 223,898, 181,613, 252,386, 575,002, 266,358, 47,632;
+      the 1859 British abridgments (de Moleyns 1841, King 1845); seven Federal Reporter opinions
+      (1889-1894) and 159 U.S. 465 (1895); Chemical News 1879 and 1880; Scientific American 1874;
+      Fontaine 1878; Davy 1812; Electrical World 1900; Dyer and Martin 1910; four New York newspaper
+      pages (1879-1882). Blocked: Google Patents (intermittent), Espacenet, Library and Archives Canada,
+      the Edison Papers notebook viewer. No Edison notebook page was opened.
+  - id: L-03
+    date: 2026-10-02
+    entry: >
+      Corrections to the popular record found while digging: (1) Edison's first long test ran 13 1/2 hours,
+      not 40; (2) the "10,000 ways" quote is about the storage battery and first printed as "several
+      thousand" in 1910; (3) the Patent Office awarded paper-carbon priority to Sawyer and Man in early
+      1885, not to Edison, and not in 1883; (4) the Woodward patent describes a carbon rod in thin gas,
+      not a filament in a vacuum; (5) Swan's Dec 1878 lamp was a rod that blackened its globe.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      CORRECTION to a research note before filing: one note said the Supreme Court in 1895 left the
+      Sawyer-Man patent's paper-carbon claim standing. The opinion (read) affirms that the patent was
+      invalid and dismisses the bill. Filed as read.
+  - id: L-05
+    date: 2026-10-02
+    entry: >
+      Göbel filed as refuted at moderate (not high) confidence: the anchors are primary court records,
+      but all four rulings were preliminary, on affidavits, and the St. Louis judge went the other way.
+      Class motivated_error, not fabrication, because no evidence read shows Göbel invented the story.
+  - id: L-06
+    date: 2026-10-02
+    entry: >
+      De la Rue 1840 filed as a gap, not refuted: the 1927 history dates a de la Rue lamp to 1820 and
+      the 1923 Smithsonian history credits the 1840 platinum lamp to Grove, but absence of a record
+      cannot refute (absence anchors are capped). Open gaps with next steps: Davy's 1802 papers; de la Rue
+      and Grove originals; Swan's 1850s records; the Lit and Phil 1879 date; any Edison purchase of the
+      Woodward patent; the Sprengel pump link; Lodygin's GE sale; Rohde 2007; Latimer's Edison role.
+  - id: L-07
+    date: 2026-10-02
+    entry: >
+      Owner set the dig's question: "Who invented the light bulb?" Added as `question:` and used in the title.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      Structure audit against CONTRIBUTING.md, SCHEMA.md and the standing rules; fixes made. (1) Added
+      transmission.yaml (format proposed here, rules X1-X4) with four chains: Göbel, the Canadian sale,
+      Lodygin's priority, and the "10,000 ways" quote. (2) Reception threads now hold only contested members
+      (T4); refuted myths are pointed to by `see_transmission`. The "corrective overshoot" thread had no
+      contested member and was folded into thread-edison-legend. (3) Thread member ids now use subject:claim
+      (T1). (4) "Earliest patent" split from lamp-de-moleyns-patent into lamp-earliest-patent at provisional
+      confidence, because it rests on absence. (5) Quote Investigator removed as an anchor of
+      lamp-10000-ways-quote (rule A4); it is cited in the transmission chain instead. (6) Insularity flag added
+      to lamp-de-changy-belgium and lamp-lodygin-1872-74: both rest on Fontaine (1878) alone.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      New finding while building the transmission chains: the "fifty thousand rubles" Lomonosov Prize figure is
+      printed in Howell and Schroeder (1927), a General Electric history (read), not in a Soviet source.
+      Fontaine (1878) says only "a high prize".
