@@ -1,0 +1,181 @@
+subject: vaccines-autism
+status: revisions_requested
+reviewed_by: independent review agent (two rounds; full texts in docs/reviews/vaccines-autism-round-1.md and -round-2.md on main; verdict posted on PR #7 by the owner's account)
+reviewed_on: 2026-10-02
+note: >
+  The reviewer's requests are copied here from the two review documents by the AUTHOR, so that
+  each can carry an author_response as docs/PUBLISH_GATE.md asks. The author has not set any
+  request resolved and has not changed the status; both are the next reviewer's to set. Request
+  ids keep the reviewer's own labels (B, N from round 1; F from round 2).
+rounds:
+- round: 1
+  reviewed_on: 2026-10-02
+  head: 491a12d
+  source: docs/reviews/vaccines-autism-round-1.md
+  requests:
+  - id: B1
+    target: va-wakefield-paper-account-accurate
+    severity: blocking
+    finding: 'The statement bundles referral, ethics approval and onset; only the ethics limb is settled by a primary read ([2012] EWHC 503 para 153). Para 157 reads "consecutively referred" narrowly and rejects the GMC panel''s reading for Walker-Smith. Onset and diagnosis rest only on BMJ material read through a fetch tool. Split into ethics (primary), records (secondary, interpretive) and referral (contested).'
+    author_response: {action: fixed, note: 'Claim narrowed to the ethics statement (refuted, primary, para 153). New va-wakefield-records-mismatch (proposed, interpretive, secondary: BMJ 2011) and va-wakefield-referral-description (contested; para 157 and the GMC panel and Lancet notice as quoted; disputed_by names both). Assessment, short answer and key points now say "a court found its ethics statement untrue" rather than that the account did not match the records. Log L-16.', commit: 6446a36}
+    resolved: false
+  - id: B2
+    target: va-retraction-reasons
+    severity: blocking
+    finding: 'The 2010 notice was never read; the gloss "the earlier investigation was the GMC hearing" is unsupported (the Guardian, 2 Feb 2010, places it as the 2004 Royal Free inquiry). In 2004 the paper was not withdrawn, only its interpretation. The 2004 Lancet admission of undisclosed funding is omitted.'
+    author_response: {action: fixed, note: 'GMC gloss removed; the claim now says which investigation the notice means is not stated in what was read, and that a 2011 review (Indian J Psychiatry, now read in full) says the Lancet''s 2004 statement had cleared the authors of ethical violations. "Withdrawn in two steps" replaced by "interpretation retracted in 2004 and the paper in 2010". The 2004 admission that the paper failed to disclose financial interests is added, as described in that review. The Guardian could not be opened from here (site blocked), so its account is not used. The manifest publication reason now says "as quoted" (F8). Log L-16.', commit: 6446a36}
+    resolved: false
+  - id: B3
+    target: va-geier-licence; timeline a22
+    severity: blocking
+    finding: 'The cited 2015 Maryland opinion supports the date, the 27 Apr 2011 suspension and the charges, but contains no "Lupron", no "misleading" and no "standard of care"; the 2017 and 2019 opinions are named in the manifest but not given.'
+    author_response: {action: fixed, note: 'The reviewer is right about the 2015 opinion. The wording is in the 2019 opinion (Court of Special Appeals, No. 338, Sept. Term 2018, p. 13), which describes the Board''s conclusion: he "failed to meet the standard of adequate care in using his Lupron protocol to treat autistic children" and committed unprofessional conduct "by using misleading methods to obtain parental consent". That opinion is now a manifest source with URL and sha256 (67b37693...), its text is stored in sources/, and the anchor says the wording is the court''s description of the Board''s decision. The 2017 opinion is no longer claimed. IOM removed from the anchor. Timeline a22 updated. Naming living persons: left to the owner.', commit: 6446a36}
+    resolved: false
+  - id: B4
+    target: va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-small-effect-not-excludable, va-geier-licence
+    severity: blocking
+    finding: 'IOM 2004 and WHO GACVS 2025 are used as anchor evidence; both are adoption. The Danish evidence is overlapping registers from one group; name the independent replications.'
+    author_response: {action: fixed, note: 'IOM and WHO removed from every anchor description and anchor source list; their statements now sit in adoption_note. va-small-effect-not-excludable re-anchored to Hviid 2019 and the method itself (now secondary, since the IOM was its only primary read). Basis of the MMR claim now states independence: Denmark (one register, one group; the meta-analysis cohorts largely Danish) vs the UK (Taylor 1999, Smeeth 2004) and the US (Jain 2015, DeStefano 2004); thimerosal names Denmark vs the US (Price 2010, Schechter 2008).', commit: 6446a36}
+    resolved: false
+  - id: N1
+    target: va-thimerosal-removed-because-harmful
+    severity: non_blocking
+    finding: '"Precautionary" is not in the MMWR text; quote exactly; add the methylmercury-guideline point, which is the strongest version of the opposing view. MMWR is reachable, so this can go to primary.'
+    author_response: {action: fixed, note: 'MMWR 1999 downloaded and read in full (sha256 a31e97f1...; text stored). Anchor quotes "no data or evidence of any harm", "because any potential risk is of concern" and "should be removed as soon as possible", and the guideline sentence; "precautionary" removed. The Yes position now carries the guideline point. anchor_checked primary, weight 5.', commit: 6446a36}
+    resolved: false
+  - id: N2
+    target: va-simpsonwood-autism-hidden
+    severity: non_blocking
+    finding: 'The whole 259-page transcript is downloadable; re-anchor to primary. "Generation zero" is not in the transcript; keep it unverified.'
+    author_response: {action: fixed, note: 'Full PDF downloaded (sha256 c2b0333f...; 260 pages); text extracted and stored; every passage mentioning autism read (eight). Autism result is on p. 44. "Generation zero" occurs 0 times; the Yes position says so. anchor_checked primary, confidence high, weight 4.', commit: 6446a36}
+    resolved: false
+  - id: N3
+    target: va-poling-concession
+    severity: non_blocking
+    finding: 'Core supported by CNN, but the fuller quoted phrase rests on Salon "not re-checked", and "government conceded" is the family lawyer''s account. State that the Rule 4(c) wording is unverified; established on a secondary anchor is borderline.'
+    author_response: {action: fixed, note: 'Anchor now leads with the sourced CNN wording and NPR (now opened), says the fuller phrase is known only as quoted in Salon and not re-checked, and says the Rule 4(c) report and 2010 decision were not read. statement_kind reported. State kept at established/moderate with the conformance warning; the reviewer may prefer proposed, which the author would accept.', commit: 6446a36}
+    resolved: false
+  - id: N4
+    target: va-signs-emerge-in-schedule-window
+    severity: non_blocking
+    finding: 'Stated more firmly than one 25-infant sibling study allows; the same paper reports 11 children with clear signs before the first birthday and no regression.'
+    author_response: {action: fixed, note: 'Statement now names the single study and its sibling sample, and adds that by parent report 11 showed clear signs before the first birthday and 4 lost skills (verified in PMC2923050). Weight lowered from 4 to 3.', commit: 6446a36}
+    resolved: false
+  - id: N5
+    target: va-omnibus-test-cases
+    severity: non_blocking
+    finding: 'Label "Yes, the question stays open" overstates Sotomayor footnote 25.'
+    author_response: {action: fixed, note: 'Relabelled "A caution, not a finding either way"; the ground already quotes "uniformly rejected".', commit: 6446a36}
+    resolved: false
+  - id: N6
+    target: va-rise-mostly-reporting
+    severity: non_blocking
+    finding: 'Danish 60% covers births 1980-1991 and two named changes; it does not show the share of the US rise.'
+    author_response: {action: fixed, note: 'Statement scoped to Denmark; the US ADDM series is described as uninterpretable for this purpose because its definitions, sources and sites changed.', commit: 6446a36}
+    resolved: false
+  - id: N7
+    target: va-measles-rna-gut
+    severity: non_blocking
+    finding: '"High" confidence on one 38-child replication is a little firm.'
+    author_response: {action: fixed, note: 'Confidence lowered to moderate; weight stays 4.', commit: 6446a36}
+    resolved: false
+  - id: N8
+    target: va-aluminum-no-detectable-increase
+    severity: non_blocking
+    finding: 'The autism-only figure is not in the abstract; keep the press-release caveat. WHO''s aluminium review is about chronic and systemic disease, not autism.'
+    author_response: {action: fixed, note: 'Caveat kept in the statement and anchor ("not in the abstract"); WHO moved to adoption_note with the note that its aluminium review is not autism-specific.', commit: 6446a36}
+    resolved: false
+  - id: N9
+    target: va-destefano-race-subset; va-thompson-subgroup-real
+    severity: non_blocking
+    finding: 'Add the abstract''s result that age cutoffs of 18 and 24 months showed no association, including in regression subgroups. Thompson''s source URL is only a site root.'
+    author_response: {action: fixed, note: 'Abstract result added (re-read). Thompson copy re-downloaded from its exact URL, same sha256 as the copy read; manifest and timeline carry the full URL.', commit: 6446a36}
+    resolved: false
+  - id: N10
+    target: headline
+    severity: non_blocking
+    finding: '"Two Narrow Exceptions Explained" can be read as "vaccines do cause autism in two cases".'
+    author_response: {action: deferred, note: 'Owner decision (round 1 section 6, item 1). The assessment headline, which the site shows first, no longer says "exceptions". Suggested search headline for the owner: "Do Vaccines Cause Autism? No, Large Studies Find; What Remains Open Is Explained" (80 characters). Not changed without the owner.'}
+    resolved: false
+  - id: FORMAT
+    target: claims.yaml, taxonomy.yaml, sources/MANIFEST.yaml
+    severity: blocking
+    finding: '38 anchors use ref:; no assessment; no taxonomy entry; no statement_kind; va-henry-ford-why-unpublished has no disputed_by; three manifest URLs do not resolve; src-poling-npr-2008 cited but not opened.'
+    author_response: {action: fixed, note: 'ref: to sources: and assessment, taxonomy and disputed_by in d5f441d (log L-15). statement_kind on every claim, assigned by rule and marked to be reviewed; URLs for src-thompson-2014, src-cdc-2004-study-statement and src-stat-geier-2025 corrected; NPR opened, in 6446a36 (L-16). review_dig: conformance, assessment, key points, taxonomy and statement_kind now pass.', commit: 6446a36}
+    resolved: false
+- round: 2
+  reviewed_on: 2026-10-02
+  head: d43c49a
+  source: docs/reviews/vaccines-autism-round-2.md
+  requests:
+  - id: F1
+    target: short_answer.summary and summary_figures
+    severity: blocking
+    finding: '"31 studies and 5 meta-analyses, no causal relationship" reads as 31 of 31 null; WHO says 20 of 31 found none and 11 (nine from one US group) suggested an association, very low strength, high risk of bias; all 5 meta-analyses null. It is also adoption shown as a first-screen figure. The 1,266,327 total is a sum made here and is not labelled.'
+    author_response: {action: fixed, note: 'WHO page downloaded and read in full (sha256 0012b1a3...). WHO removed from the first-screen summary, figures and assessment; the summary says agency statements are recorded separately as adoption. Where WHO is kept (the institutional thread, the CDC-page claim, adoption notes) it is stated as 20 of 31 null, 11 suggesting an association, all 5 meta-analyses null. Taylor 2014 given as 5 cohort studies (1,256,407) and 5 case-control studies (9,920), no total. The first-screen institution question stays an owner decision; this follows the reviewer''s recommendation in the meantime.', commit: 6446a36}
+    resolved: false
+  - id: F2
+    target: va-poling-concession what_it_is; short_answer Poling item
+    severity: blocking
+    finding: '"Made under no-fault rules where causation can be presumed" is in no source read; "decision not to contest" understates CNN''s "concluded ... significantly aggravated".'
+    author_response: {action: fixed, note: 'Both places now use CNN''s wording ("concluded" ... "significantly aggravated") and say the program is no-fault but that whether its presumption applied here was not checked. The No position no longer says "compensated under the injury table''s presumption".', commit: 6446a36}
+    resolved: false
+  - id: F3
+    target: short_answer mitochondrial scale
+    severity: non_blocking
+    finding: '"4 children in one series of 28" omits a fifth child in a case report; "amount to" implies a census.'
+    author_response: {action: fixed, note: 'Now "at least 5 children in two reports (4 in one series of 28, and one case report), as collected in one review; this is not a systematic count". The claim anchor and sources include the case report (Poling et al. 2006).', commit: 6446a36}
+    resolved: false
+  - id: F4
+    target: short_answer Poling scale
+    severity: non_blocking
+    finding: 'Poling was itself designated a potential test case (CNN); "one known concession" is unverified; ">5,000" and "about 4,800 pending" unchecked.'
+    author_response: {action: fixed, note: 'Now "the best-known concession, not a count: other compensated cases with autism-like features were not checked"; adds that her case had been designated a potential test case before the concession; uses "some 5,000 autism petitions" with the Bruesewitz dissent added as its source. Other compensated cases (Banks and others) were not investigated: deferred as an open item.', commit: 6446a36}
+    resolved: false
+  - id: F5
+    target: va-vicp-table-no-autism what_it_is_not
+    severity: non_blocking
+    finding: '"A policy decision" overstates; the Table is amended by rulemaking informed by IOM reviews.'
+    author_response: {action: fixed, note: 'Now "a legal list, informed by but not the same as scientific findings".', commit: 6446a36}
+    resolved: false
+  - id: F6
+    target: va-bruesewitz-no-autism-finding what_it_is_not
+    severity: non_blocking
+    finding: 'Manufacturers are generally immune from failure-to-warn claims if they complied with regulatory requirements.'
+    author_response: {action: fixed, note: 'Qualifier added from the opinion text (stored in sources/).', commit: 6446a36}
+    resolved: false
+  - id: F7
+    target: va-vax-unvax-surveys; src-hooker-miller-2021
+    severity: non_blocking
+    finding: 'Say which paper the expression of concern covers; record the 2021 paper''s status.'
+    author_response: {action: fixed, note: 'Basis says the notice covers the separate 2020 SAGE paper, not the 2021 paper; the 2021 source now has publication status published, no notice recorded.', commit: 6446a36}
+    resolved: false
+  - id: F8
+    target: src-wakefield-1998 publication.reason
+    severity: non_blocking
+    finding: 'Reason paraphrased from BMJ c696, which neither the dig nor the reviewer read; quote the notice or mark "as quoted".'
+    author_response: {action: fixed, note: 'Marked "As quoted in BMJ 2010;340:c696 (the notice itself was not read)"; "contrary to an earlier investigation" removed from it.', commit: 6446a36}
+    resolved: false
+  - id: F9
+    target: source_notices, flagged_sources, publication; summary, summary_figures, scale, what_it_is, what_it_is_not
+    severity: non_blocking
+    finding: 'The publication-status fields are defined only on unmerged #6; the others are in no schema. Escalate or hold.'
+    author_response: {action: deferred, note: 'Escalated to the owner. PR #6 changes the validator without the proposal docs/SCHEMA_PROPOSALS.md requires; a proposal is being drafted for it. The other fields are unvalidated extensions and carry no weight; they can be dropped or proposed, as the owner decides.'}
+    resolved: false
+  - id: F10
+    target: fairness
+    severity: non_blocking
+    finding: 'Positive: "not a finding that vaccines cause autism" paired with "not a proof that none ever did"; no new living person named.'
+    author_response: {action: fixed, note: 'No action needed.'}
+    resolved: false
+open_items_proposed_by_author:
+  - 'Other compensated vaccine-injury cases with autism-like features (for example Banks v. HHS, 2007) not investigated (F4).'
+  - 'The Lancet 2004 and 2010 notices, the 1998 full text, the GMC findings, the BMJ articles and the Poling decision remain unread; the claims that rest on them say so.'
+  - 'Madsen 2002 and Hviid 2019 full texts not read; the headline stays draft until they are.'
+owner_decisions_open:
+  - 'Search headline wording (N10).'
+  - 'Whether the first screen carries any institution counts (F1).'
+  - 'Rule 9 for statistical evidence (log L-05).'
+  - 'Publication-status schema, PR #6 (F9).'
+  - 'Naming living persons (Geier, Wakefield, Thompson, Kennedy, Siri).'
+  - 'refutation_class on the refuted claims (log L-07).'
