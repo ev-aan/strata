@@ -100,15 +100,18 @@ short_answer:
   except:
     - claim: va-poling-concession
       text: >
-        One legal exception. In 2007 the US government conceded, in one child's
-        compensation case, that vaccines significantly aggravated a pre-existing
-        mitochondrial disorder, which showed features of autism. This was a
-        compensation decision, not a scientific finding that vaccines cause autism.
+        What remains open, 1: a legal concession. In 2007 the US government conceded, in one
+        child's compensation case, a link between vaccines and her injury (CNN: the program
+        "concluded" they "significantly aggravated" an underlying illness, a mitochondrial
+        disorder, that had predisposed her to symptoms of autism). This was a compensation
+        decision, not a scientific finding that vaccines cause autism.
       scale: >
         The best-known concession, not a count: other compensated cases with autism-like
         features were not checked. Her case had been designated a potential test case before
-        the concession. The same court received some 5,000 autism petitions, and all six test
-        cases chosen to present the families' strongest theories were rejected.
+        the concession. The Federal Circuit describes the proceeding as addressing approximately
+        5,000 autism claims; the first three test cases were denied and the denials upheld on
+        review (Federal Circuit opinions opened), and three more decided in March 2010 were not
+        opened.
       scale_sources: [src-poling-cnn-2008, src-bruesewitz, src-oap-decisions]
       what_it_is:
         - "A concession by the US government in one family's compensation claim: the program concluded her underlying illness was 'significantly aggravated' by vaccines (as reported by CNN)."
@@ -126,7 +129,7 @@ short_answer:
         - "Not a court ruling after a trial of the evidence: the government conceded before one."
     - claim: va-mito-fever-regression
       text: >
-        One open question. In children with mitochondrial disease (about 5 in 100 children
+        What remains open, 2: an untested question. In children with mitochondrial disease (about 5 in 100 children
         with autism), small case series report regression after fever, including a few
         after a fever that followed a routine vaccination. No controlled study has tested this.
       scale: >
@@ -185,7 +188,8 @@ description: >
   rare individual cases. This dig keeps four things apart: (1) what the population
   studies measured, which is statistical evidence and filed as `synthetic`; (2) what the
   primary documents show about the 1998 paper, the court cases and the insider claims;
-  (3) the real exceptions and open questions, filed so they cannot be smoothed away; and
+  (3) the narrow items that remain open (one legal concession, one untested hypothesis, and
+  the limits of what population data can show), filed so they cannot be smoothed away; and
   (4) the institutional record, which in 2025-2026 split for the first time, filed as
   adoption, never as evidence, in both directions.
 
@@ -204,8 +208,10 @@ divergence_note: >
   measles, mumps and rubella cause autism, 13% of US adults said true, 68% false and 19%
   were unsure (Annenberg). Since November 2025 the gap has a new
   shape. The US health department's own CDC page now calls "vaccines do not cause autism"
-  not an evidence-based claim, while the WHO, the AAP and the studies themselves say there
-  is no link. Nothing in the evidence changed between those two dates; what changed was
+  not an evidence-based claim because studies have not ruled out the possibility, while the
+  WHO's safety committee (20 of 31 primary studies and all five meta-analyses found no
+  association; 11 studies suggested one, rated very low strength and high risk of bias), the
+  AAP and the large studies say there is no evidence of a link. Nothing in the evidence changed between those two dates; what changed was
   adoption by an institution. Strata records both statements, and gives neither of them
   evidential weight. The real open edges are narrow: a very rare susceptible group cannot
   be excluded by population data, fever-related regression in mitochondrial disease is
@@ -253,7 +259,8 @@ claims:
         other risk factors, and no clustering after vaccination [abstract]. UK GPRD case-control: 1,294 cases, 4,469
         controls, OR 0.86 (0.68 to 1.09) [abstract]. US children with older siblings (95,727,
         of whom 1,929 had an older sibling with autism): no increase at age 2 or 5 in either
-        group [abstract]. Meta-analysis (cohort data on 1,256,407 children): MMR OR 0.84
+        group [abstract; the JAMA 2016 erratum, "Incorrect Variable Description", could not be
+        read, so the abstract figures are not checked against it]. Meta-analysis (cohort data on 1,256,407 children): MMR OR 0.84
         (0.70 to 1.01) [abstract]. Cochrane 2021: rate
         ratio 0.93 (0.85 to 1.01), 2 studies, 1,194,764 children, moderate certainty
         [abstract].
@@ -479,8 +486,9 @@ claims:
       The paper's interpretation was retracted in 2004 and the paper itself in 2010, for
       different reasons, and the records problems were documented separately. In 2004, 10 of
       its 13 authors retracted its interpretation, saying no causal link was established
-      because the data were insufficient, and The Lancet said the paper had failed to disclose
-      financial interests (the paper itself stayed in the journal). In February 2010, days after
+      because the data were insufficient; a 2011 review describes the Lancet as admitting at the
+      same time that the paper had failed to disclose financial interests (the Lancet's own
+      statement was not read; the paper itself stayed in the journal). In February 2010, days after
       the GMC's findings of fact of 28 January 2010, The Lancet retracted the whole paper; its
       editor said the statements in the paper were "utterly false". The notice's own wording was
       not read. Evidence that its diagnoses and onset dates did not match the children's records
@@ -595,8 +603,7 @@ claims:
         [2012] EWHC 503 (Admin), Mitting J, 7 March 2012: "The panel's determination cannot
         stand. I therefore quash it" (para 187); Wakefield "has subsequently abandoned his
         appeal" (para 1); the GMC hearing began 16 July 2007 and decided on 24 May 2010
-        (para 1). The same judgment says there is now no respectable body of opinion that
-        supports a causal link between "MMR vaccine and autism/enterocolitis" (para 7) [all read].
+        (para 1) [all read].
       accessible: true
       sources: [src-walker-smith-2012, src-bmj-gmc-2010]
     positions:
@@ -608,8 +615,9 @@ claims:
         ground: >
           The judge quashed the panel's decision for "inadequate and superficial reasoning and,
           in a number of instances, a wrong conclusion" about Walker-Smith (para 186). He
-          ruled on the panel's handling of Walker-Smith's case, not on the science, and stated
-          that no respectable body of opinion supports the hypothesis (para 7).
+          ruled on the panel's handling of Walker-Smith's case, not on the science. (His
+          remark on the state of medical opinion, para 7, is a court's view, not evidence about
+          vaccines, and is not used.)
     basis: >
       Professional sanctions are not evidence about vaccines in either direction. They are
       filed because both sides cite them.
@@ -666,8 +674,9 @@ claims:
     adoption_note: >
       Not measured separately. The IOM (2004) said the evidence "favors rejection" for
       thimerosal-containing vaccines [read]. In July 2025 HHS adopted an ACIP vote to use only
-      thimerosal-free flu vaccines, citing the 1999 pledge [read via fetch tool]. Adoption is
-      information, not evidence.
+      thimerosal-free flu vaccines, citing the 1999 pledge [read via fetch tool; src-hhs-thimerosal-2025].
+      The CDC and FDA thimerosal pages (src-cdc-thimerosal) are agency statements of the same
+      kind. All of this is adoption, not an anchor: information, not evidence.
     would_change_if: >
       a cohort with individual exposure records finds autism rising with thimerosal dose,
       or diagnoses fall in birth cohorts after removal once reporting changes are accounted for
@@ -681,7 +690,7 @@ claims:
         Danish incidence rose after removal in 1992 [abstract]. Independent populations:
         Denmark (Hviid 2003; Madsen 2003) and the US (Price 2010; Schechter 2008).
       accessible: true
-      sources: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-cdc-thimerosal, src-verstraeten-2003, src-hhs-thimerosal-2025]
+      sources: [src-hviid-2003, src-price-2010, src-schechter-2008, src-madsen-2003, src-verstraeten-2003]
     positions:
       - label: "No"
         holder: "Hviid 2003, Price 2010, Schechter & Grether 2008, Madsen 2003, IOM 2004"
@@ -758,7 +767,10 @@ claims:
       The US Health Secretary called for the paper's retraction in August 2025; the editor
       declined [secondary: Reuters, Live Science]. The WHO's safety committee (Dec 2025) cited
       a review of 10 trials and 7 cohort studies finding no association between aluminium
-      adjuvants and chronic or systemic disease generally, not autism specifically [read].
+      adjuvants and chronic or systemic disease generally, not autism specifically; the same
+      WHO statement says two studies reported an association between cumulative aluminium
+      exposure from vaccination and ASD prevalence, but both were ecological, judged at critical
+      risk of bias and rated very low evidence, and unable by design to inform causality [read].
       Executive Order 14420 (Aug 2026) orders HHS to pursue alternatives to aluminum adjuvants
       without citing autism [read via fetch tool]. Adoption is information, not evidence.
     would_change_if: >
@@ -867,22 +879,28 @@ claims:
     evidence_class: primary_text
     confidence: moderate
     evidential_weight: 3   # of 5, for the existence of the gap
-    anchor_checked: secondary   # IOM 2013 summary read through a fetch tool
+    anchor_checked: secondary   # the dig's own Europe PMC search record (2 Oct 2026); the IOM 2013 summary is adoption
     adoption_weight: 3   # of 5
-    adoption_note: "Cited by both sides."
+    adoption_note: >
+      Cited by both sides. The IOM (2013) found no significant evidence that the recommended
+      schedule is unsafe and also that few studies had assessed the entire schedule [summary read
+      through a fetch tool, src-iom-2013]: a consensus review, recorded here as adoption.
     would_change_if: "a study of whole-schedule exposure patterns is published"
     next_step: >
       Compare autism diagnoses across children grouped by their recorded schedule pattern
       (on time, delayed, spaced, partial) in a register or Vaccine Safety Datalink cohort,
       adjusting for healthcare use, with the analysis plan published before the data are read.
     anchor:
-      type: expert-review-of-gaps
+      type: search-record
       description: >
-        IOM 2013 found no significant evidence that the recommended schedule is unsafe, and
-        also found that few studies had assessed the entire schedule and that its number,
-        frequency, timing and order had not been systematically examined [read via fetch tool].
+        Searched: Europe PMC, 2 Oct 2026, title or abstract containing "vaccination schedule",
+        "immunization schedule" or "vaccine schedule" and autism*, published 2010 to 2026: 22
+        hits, screened by title. None is a study of autism diagnoses across children grouped by
+        whole-schedule exposure pattern (the hits are uptake, attitude, mechanism and
+        evidence-review papers). A title screen can miss a study whose title does not say so.
+        The IOM's 2013 statement that few studies had assessed the entire schedule is adoption,
+        in adoption_note.
       accessible: true
-      sources: [src-iom-2013]
     basis: >
       A gap is not evidence of harm. The IOM judged new randomized trials of the schedule not
       justified; observational designs remain possible.
@@ -1216,7 +1234,7 @@ claims:
     evidence_class: primary_text
     confidence: high
     evidential_weight: 4   # of 5
-    anchor_checked: primary   # full 260-page CDC Stacks PDF downloaded; every passage mentioning autism read
+    anchor_checked: primary   # full 259-page CDC Stacks PDF downloaded; every passage mentioning autism read
     adoption_weight: 2   # of 5
     adoption_note: "Not measured. Popularized by 'Deadly Immunity' (2005)."
     would_change_if: >
@@ -1231,9 +1249,10 @@ claims:
         concerned speech delay, attention deficit disorder and the neurodevelopmental group
         [read; full text searched, all eight autism passages read]. Later, limiting to children
         seen at least twice, the autism relative risk "is no different than one" and was
-        replicated across case definitions [read]. The chair asks participants to treat the data
-        as "embargoed" and "very highly protected" until a public release at the ACIP meeting
-        on 21-22 June 2000, weeks later: a request for confidentiality ahead of a planned
+        replicated across case definitions [read]. Dr. Bernier (CDC), at pp. 255-256, asks
+        participants to treat the data as "embargoed" and "very highly protected" until a public
+        release at the ACIP meeting on 21-22 June 2000, weeks later (the meeting's chair
+        was Dr. Johnston): a request for confidentiality ahead of a planned
         public release, which is what the transcript shows, not a decision to withhold [read].
         The study was published in 2003 with both phases: no consistent associations, and no
         significant increase for autism in any analysis [abstract].
@@ -1368,7 +1387,7 @@ claims:
     what_it_is_not:
       - "Not a scientific finding that vaccines cause autism, in her or anyone else."
       - "Not a verdict after the evidence was tried; it was conceded."
-      - "Not a precedent: the six test cases on autism theories were all rejected (va-omnibus-test-cases)."
+      - "Not a precedent: the test cases on autism theories that were checked were all denied (va-omnibus-test-cases)."
     positions:
       - label: "Yes"
         holder: "Common reading of the case"
@@ -1379,8 +1398,8 @@ claims:
           The concession concerned aggravation of one child's pre-existing mitochondrial
           disorder; the government made no statement that vaccines cause autism.
     basis: >
-      This is the narrow "yes" in the short answer, and it is a legal concession, not a
-      scientific test. The compensation rules allow a presumption of causation for listed
+      This is the one legal item the short answer lists, and it is a legal concession, not a
+      scientific test; it is not an exception to the finding that large studies find no link. The compensation rules allow a presumption of causation for listed
       injuries; whether it applied here was not checked. Other compensated cases with
       autism-like features may exist and were not checked, so this is the best-known case,
       not a count. It points to the open question in va-mito-fever-regression. TO REACH
@@ -1391,47 +1410,61 @@ claims:
     state: established
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      In the US vaccine court's Omnibus Autism Proceeding, all six test cases, chosen by the
-      families' own steering committee to present their strongest theories (MMR plus
-      thimerosal, and thimerosal alone), were decided against the families in 2009 and 2010,
-      out of some 5,000 autism petitions (Bruesewitz dissent, n.25). The court's decision list
-      shows review decisions in 2009 and Federal Circuit decisions in 2010 on three of the
-      cases; the decisions themselves were not opened, so their outcome on review is not stated.
+      In the US vaccine court's Omnibus Autism Proceeding, which the Federal Circuit describes
+      as addressing approximately 5,000 autism claims, the Petitioners' Steering Committee
+      proposed a test-case approach. In the first group of three test cases (Cedillo,
+      Hazlehurst, Snyder; the theory was MMR plus thimerosal), the special masters denied all
+      three petitions in 2009 and the Court of Federal Claims affirmed; the Federal Circuit
+      affirmed Hazlehurst (13 May 2010) and Cedillo (27 Aug 2010), and Snyder was not appealed.
+      The court's list also shows decisions in three further cases (King, Mead, Dwyer) dated
+      12 Mar 2010; those were not opened and their outcome is not stated here, beyond the
+      remark in Bruesewitz n.25 that the special masters "have thus far uniformly rejected" the
+      alleged link.
     evidence_class: primary_text
-    confidence: high
+    confidence: moderate
     evidential_weight: 4   # of 5; capped while anchor_checked is secondary
-    anchor_checked: secondary   # decisions read through a fetch tool (the court CDN refused direct download)
+    anchor_checked: secondary   # Federal Circuit opinions 10-5004 and 09-5128 opened and the cited passages read, not read in full; the special masters' decisions and the second group not opened
     adoption_weight: 3   # of 5
     adoption_note: "Not measured."
     would_change_if: "a later decision reopens the theories on new evidence"
     anchor:
       type: court-decisions
       description: >
-        Special masters' decisions of 12 Feb 2009 (Cedillo, Hazlehurst, Snyder) and 12 Mar
-        2010 (King, Mead, Dwyer): all denied [court's decision list, read directly 2 Oct 2026:
-        dates and case names only; the decisions were not opened]. Cedillo: the evidence was
-        "overwhelmingly contrary to the petitioners' contentions" [as read through a fetch tool in
-        an earlier pass; not re-checked]. The list also shows Court of Federal Claims decisions on
-        24 Jul, 6 Aug and 11 Aug 2009 (Hazlehurst, Cedillo, Snyder) and Federal Circuit decisions
-        on 13 May 2010 (Hazlehurst) and 27 Aug 2010 (Cedillo); that these affirmed was not opened.
-        Number of petitions: "some 5,000" (Bruesewitz dissent, n.25, read); CNN 2008: "nearly
-        5,000 other autism claims are pending". The figures "more than 5,000 filed" and "about
-        4,800 pending" were not found in any source read in revision round 3 and are dropped.
+        Federal Circuit, Cedillo v. HHS, No. 2010-5004 (decided 27 Aug 2010) [opened; passages
+        read]: counsel for the Petitioners' Steering Committee "proposed a 'test case' approach";
+        Cedillo, Hazlehurst and Snyder "were also designated as test cases"; in footnote 1, "The
+        Special Masters in Hazlehurst and Snyder denied the respective petitions and the Court
+        of Federal Claims affirmed in both cases. Snyder ... was not appealed to this court"; the
+        court affirmed in Cedillo and, "while this appeal was pending", in Hazlehurst (604 F.3d
+        1343, 13 May 2010). Federal Circuit, Hazlehurst v. HHS, No. 2009-5128 [opened]: the
+        omnibus proceeding was "an effort ... to identify and adjudicate certain test cases as a
+        means of addressing the principal issues in approximately 5,000 autism claims that have
+        been filed under the Vaccine Act"; the Cedillo and Snyder petitioners presented a theory
+        based on MMR plus thimerosal; the court affirmed. The court's decision list (read
+        directly) also gives special-masters' decisions of 12 Mar 2010 in King, Mead and Dwyer;
+        they were not opened. Cedillo: the evidence was "overwhelmingly contrary to the
+        petitioners' contentions" [as read through a fetch tool in an earlier pass; not
+        re-checked]. Bruesewitz dissent n.25 records that "Respondent notes that there are some
+        5,000 petitions" pending: that is the respondent's figure, quoted by the dissent, not a
+        finding. CNN 2008 (the family lawyer): "nearly 5,000 other autism claims are pending".
+        The figures "more than 5,000 filed" and "about 4,800 pending" were found in no source
+        read and are dropped.
       accessible: true
-      sources: [src-oap-decisions]
+      sources: [src-oap-decisions, src-cafc-cedillo-2010, src-cafc-hazlehurst-2010]
     what_it_is:
-      - "Six decisions by special masters that the families' theories were not proved to the legal standard (more likely than not)."
-      - "Cases chosen by the families' own lawyers to present their strongest theories."
+      - "Decisions by special masters, upheld on review in the three cases checked, that the families' theories were not proved to the legal standard (more likely than not)."
+      - "Test cases proposed by the Petitioners' Steering Committee, the families' own counsel."
     what_it_is_not:
       - "Not a scientific proof that no child's autism was ever caused by a vaccine."
       - "Not a judgment on the families' honesty or on their children's suffering."
-      - "Not a ruling on the theory of MMR alone, which was never presented."
+      - "Not a ruling on the theory of MMR alone, which an earlier pass reports was never presented (not re-checked)."
     positions:
       - label: "A caution, not a finding either way"
         holder: "Justice Sotomayor's dissent in Bruesewitz (2011), n.25"
         ground: >
-          The footnote notes the special masters "uniformly rejected" the link, and adds that
-          those rulings do not necessarily mean no causal link exists [read].
+          The footnote notes the special masters "have thus far uniformly rejected" the link, and
+          adds that those rulings do not necessarily mean no causal link exists [read]. It also
+          quotes the respondent's figure of some 5,000 pending petitions.
       - label: "No"
         holder: "The special masters"
         ground: "The families' experts did not show causation by the legal standard."
@@ -1476,8 +1509,10 @@ claims:
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Autism is not on the US Vaccine Injury Table. Encephalopathy or encephalitis within 5 to
-      15 days of a measles-containing vaccine is. The Poling concession was described as an
-      encephalopathy, but the Table in force when it was decided was not read.
+      15 days of a measles-containing vaccine is. No link between the Poling concession and the
+      Table is claimed: neither CNN nor NPR describes the concession as an encephalopathy (the
+      word appears only in wording attributed to Salon, not re-checked), and the Table in force
+      when it was decided was not read.
     evidence_class: primary_text
     confidence: high
     evidential_weight: 5   # of 5
@@ -1511,7 +1546,8 @@ claims:
     state: established
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
-      Mark Geier, author of the main early papers reporting a vaccine-autism link, had his
+      Mark Geier, a co-author of papers reporting an association between thimerosal-containing
+      vaccines and autism (see va-thimerosal-no-detectable-increase), had his
       Maryland medical licence revoked by the State Board of Physicians on 22 August 2012. The
       Board found, among other things, that he treated autistic children with the drug Lupron
       outside its approved use without adequate examination, started chelation without
@@ -1801,7 +1837,12 @@ claims:
         ground: >
           The evidence is small, uncontrolled and retrospective. The review that collects it
           says it is not clear whether mitochondrial dysfunction contributed to or caused the
-          reported regressions, and that the studies' authors stressed vaccination's role in
+          reported regressions; in the same discussion it says that, because regression is known
+          to occur with stressors such as fever and infection in mitochondrial disease and is about
+          twice as common in children with both conditions, "it is likely that the regression
+          reported in at least a subset of children with ASD/MD is related to mitochondrial
+          dysfunction" (related to the mitochondrial disease, not shown to be related to
+          vaccination); and that the studies' authors stressed vaccination's role in
           preventing life-threatening disease [read]. One review author (Frye) discloses
           expert-witness work for children with mitochondrial disorders who may have been
           injured by vaccines.

@@ -34,7 +34,7 @@ people:
   - {who: "William W. Thompson", detail: "CDC scientist and co-author of DeStefano 2004; issued a statement through his lawyers on 27 Aug 2014."}
   - {who: "Hannah Poling", detail: "Child whose compensation case the US government conceded in Nov 2007 (as reported)."}
   - {who: "Robert F. Kennedy Jr.", detail: "Author of 'Deadly Immunity' (2005); US Secretary of Health and Human Services from 2025; said he ordered the Nov 2025 CDC page change (STAT)."}
-  - {who: "Mark Geier", detail: "Author of early papers reporting a link; Maryland licence revoked 22 Aug 2012 (court record)."}
+  - {who: "Mark Geier", detail: "Co-author of papers reporting an association; Maryland licence revoked 22 Aug 2012 (court record)."}
 sources:
   src-wakefield-1998:        {title: "Wakefield et al., Lancet 1998 (PubMed record, retracted)", url: "https://europepmc.org/article/MED/9500320", authenticity: "authenticated, moderate"}
   src-mmwr-1999:             {title: "AAP and USPHS joint statement, MMWR 9 Jul 1999", url: "https://www.cdc.gov/mmwr/preview/mmwrhtml/mm4826a3.htm", authenticity: "authenticated, moderate"}
@@ -119,20 +119,20 @@ events:
      label: "Sep 2008: Hornig et al. find no persistent measles RNA in the gut (4% vs 8%)",
      detail: "Three blinded labs, including the original one [read]."}
   - {id: a14, panel: years, lane: legal, time: "2009-02-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
-     label: "12 Feb 2009: vaccine court rejects the three MMR-plus-thimerosal test cases",
-     detail: "Cedillo, Hazlehurst, Snyder [court's decision list, read; the decisions were not opened]."}
+     label: "12 Feb 2009: special masters deny the first three autism test cases (Cedillo, Hazlehurst, Snyder)",
+     detail: "Denials confirmed in the Federal Circuit opinions 10-5004 and 09-5128 (footnote 1 of the first), which also say the Court of Federal Claims affirmed Hazlehurst and Snyder and that the Petitioners' Steering Committee proposed the test-case approach [opened]; the special masters' decisions themselves were not opened."}
   - {id: a15, panel: years, lane: origin, time: "2010-02-02T12:00:00Z", precision: day, kind: document, status: reported, sources: [src-guardian-lancet-2010, src-lancet-retraction-2010],
      label: "2 Feb 2010: The Lancet retracts the 1998 paper",
      detail: "Announced days after the GMC's findings of fact of 28 Jan 2010; the editor called the paper's statements 'utterly false' [Guardian, read]. The notice itself (6 Feb 2010 issue) was not read."}
   - {id: a16, panel: years, lane: legal, time: "2010-03-12T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
-     label: "12 Mar 2010: vaccine court rejects the three thimerosal-only test cases",
-     detail: "King, Mead, Dwyer [court's decision list, read; the decisions were not opened]."}
+     label: "12 Mar 2010: special masters' decisions in three further test cases (King, Mead, Dwyer)",
+     detail: "Listed in the court's decision list with this date; the decisions were not opened and their outcome is not stated here."}
   - {id: a17, panel: years, lane: origin, time: "2010-05-24T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-bmj-gmc-2010, src-walker-smith-2012],
      label: "24 May 2010: GMC strikes off Wakefield and Walker-Smith",
      detail: "Murch not guilty of serious professional misconduct [judgment para 1; BMJ]."}
   - {id: a18, panel: years, lane: legal, time: "2010-08-27T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-oap-decisions],
      label: "27 Aug 2010: Federal Circuit affirms Cedillo",
-     detail: "Hazlehurst had been affirmed on 13 May 2010 [via fetch tool]."}
+     detail: "Hazlehurst had been affirmed on 13 May 2010; Snyder was not appealed (Federal Circuit 10-5004, footnote 1) [opened]."}
   - {id: a19, panel: years, lane: media, time: "2011-01-05T12:00:00Z", precision: day, kind: media, status: reported, sources: [src-deer-2011, src-godlee-2011],
      label: "5 Jan 2011: BMJ publishes Deer's records comparison; its editors call the paper fraudulent",
      detail: "Deer: 3 of 9 'regressive autism' children had no autism diagnosis in the records [read via fetch tool]. The fraud judgment is the editorial's (Godlee et al.)."}
@@ -141,7 +141,7 @@ events:
      detail: "Autism appears only in the dissent's footnote 25 [read]."}
   - {id: a21, panel: years, lane: origin, time: "2012-03-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-walker-smith-2012],
      label: "7 Mar 2012: High Court quashes Walker-Smith's striking-off",
-     detail: "Same judgment: no respectable body of opinion supports the MMR-autism hypothesis (para 7) [read]."}
+     detail: "The judge found the panel's reasoning inadequate and its determination on Walker-Smith could not stand (paras 186-187) [read]."}
   - {id: a22, panel: years, lane: legal, time: "2012-08-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-geier-md-2015-licence, src-geier-md-2015, src-geier-md-2019],
      label: "22 Aug 2012: Maryland revokes Mark Geier's licence",
      detail: "The Board found he gave Lupron to autistic children outside its approved use without adequate examination, and used consent forms it called misleading and in one case blatantly false (223 Md. App. 404, quoting the Board's order) [read]."}

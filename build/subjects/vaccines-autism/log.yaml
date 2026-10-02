@@ -238,3 +238,51 @@ log:
       rewritten; the assessment headline already avoids it), Rule 9 for statistics, naming living
       persons. Not verified: the Lancet 2004 and 2010 notices, bmj.com articles, the GMC findings,
       the Poling decision, Banks and other compensated cases, the Hviid and Madsen full texts.
+  - id: L-19
+    date: 2026-10-02
+    entry: >
+      REVISION ROUND 4 (author response to the third independent review, R3-1 to R3-10; each
+      finding verified first). CORRECTION OF L-18: L-18 said the timeline no longer stated the
+      omnibus review outcomes; it still did (events a14, a16, a18). Corrected now, using the
+      Federal Circuit opinions Cedillo v. HHS, No. 2010-5004, and Hazlehurst v. HHS, No.
+      2009-5128, both opened (sha256 in the manifest): the Petitioners' Steering Committee
+      proposed the test-case approach; Cedillo, Hazlehurst and Snyder were denied by special
+      masters and the Court of Federal Claims affirmed Hazlehurst and Snyder; the Federal
+      Circuit affirmed Hazlehurst (13 May 2010) and Cedillo (27 Aug 2010); Snyder was not
+      appealed. King, Mead and Dwyer are listed in the court's decision list (12 Mar 2010) but
+      their decisions were not opened, so no outcome is stated for them. "Chosen to present
+      their strongest theories" and "all six denied" are dropped as unsourced; the claim's
+      confidence is moderate. The count "some 5,000 petitions" in Bruesewitz n.25 is the
+      respondent's figure, quoted by the dissent; the Federal Circuit's own "approximately
+      5,000 autism claims that have been filed" is used for the count. ALSO: L-16 and the
+      manifest said the Simpsonwood PDF has 260 pages; it has 259 (pdfinfo), and the
+      confidentiality request at pp. 255-256 was made by Dr. Bernier of the CDC, not "the
+      chair" (Dr. Johnston chaired); L-16 and L-18 are left as written. R3-1: the HHS 2025
+      release and the CDC thimerosal page are out of anchor.sources of
+      va-thimerosal-no-detectable-increase and named in adoption_note. R3-2: the word
+      "encephalopathy" is removed from va-vicp-table-no-autism and from thread-real-pieces (neither CNN
+      nor NPR uses it; it is Salon-attributed wording, not re-checked); the Poling concession is
+      described in CNN's and NPR's words. R3-5: the Lancet's 2004 funding admission is
+      attributed to the 2011 review, not stated as fact. R3-6: lines that carried the
+      "exceptions" reading, besides the owner-decision headline (NOT changed): the short
+      answer's "One legal exception" and "One open question" (now "What remains open, 1" and
+      "2"), the Poling claim basis ("the narrow 'yes'"), and the description item (3) "the real
+      exceptions" (now "the narrow items that remain open"); the assessment headline and key
+      points already avoided it, and internal YAML comments that use "exceptions" are not shown
+      to readers. thread-wakefield-transmission no longer says the claim was "adopted by the US
+      health department" (the CDC page says studies have not ruled the possibility out). The
+      divergence_note now carries the WHO 20-of-31 qualifier. R3-7: the WHO's two ecological
+      aluminium-ASD studies (critical risk of bias, very low evidence) and Rossignol and Frye's
+      sentence that regression "is related to mitochondrial dysfunction" are carried where the
+      dig states the opposing evidence. R3-9: va-whole-schedule-gap rests on a search record
+      (Europe PMC, 2 Oct 2026, title or abstract with a schedule term and autism, 2010 to 2026:
+      22 hits screened by title, none a whole-schedule study; a title screen can miss one) with
+      the IOM 2013 statement in adoption_note and out of anchor.sources; the judge's "no
+      respectable body of opinion" (para 7) is removed from va-wakefield-sanctions and timeline
+      a21. The JAMA 2016 erratum to Jain 2015 ("Incorrect Variable Description") has no text in
+      Europe PMC and JAMA refused: still unread, now stated in the MMR claim anchor. R3-10:
+      Geier is "a co-author of papers reporting an association", not "author of the main early
+      papers". OWNER DECISIONS, unchanged: the search headline "Two Narrow Exceptions Explained";
+      Rule 9 for statistics; whether living persons stay named; and whether the private person
+      Hannah Poling is named at all (the sources, CNN and NPR, name her; the owner may prefer
+      "a child").

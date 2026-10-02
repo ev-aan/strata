@@ -372,7 +372,7 @@ sources:
     title: "Scientific Review of Vaccine Safety Datalink Information, 7-8 June 2000, Simpsonwood Retreat Center (transcript, 259 pp.)"
     url: https://stacks.cdc.gov/view/cdc/253137
     document_class: primary_text (transcript)
-    read: full (260-page PDF downloaded 2026-10-02; text searched and every autism passage read)
+    read: full (259-page PDF downloaded 2026-10-02; text searched and every autism passage read)
     sha256: c2b0333f052dd6f71e477ab7e2e7bee9effc8402dbd60253dcc6f25c787a847c
     stored_as: sources/simpsonwood-transcript-2000.ocr.txt   # plain text for the quote check; US government work, public domain; machine text extracted from the PDF, OCR noise possible
     authenticity: {status: authenticated, strength: moderate, provenance: "CDC Stacks, the CDC's own repository.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Text extracted from a scan; passages other than those mentioning autism were not read line by line."], checked: 2026-10-02}
@@ -401,6 +401,20 @@ sources:
     document_class: primary_text (court decisions)
     read: tool (the court's file host refused direct download)
     authenticity: {status: authenticated, strength: moderate, provenance: "uscfc.uscourts.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["No local copies; reporter citations unverified."], next_step: "Download the six decisions and two Federal Circuit opinions.", checked: 2026-10-02}
+  - id: src-cafc-cedillo-2010
+    title: "US Court of Appeals for the Federal Circuit, Cedillo v. Secretary of Health and Human Services, No. 2010-5004 (decided 27 Aug 2010)"
+    url: https://www.cafc.uscourts.gov/opinions-orders/10-5004.pdf
+    document_class: primary_text (court opinion)
+    read: "opened 2026-10-02 (PDF fetched and text-extracted); the passages on the test-case approach, the Hazlehurst and Snyder footnote and the result were read, not the whole opinion"
+    sha256: b6d45e5a3192fb8eafcd8cd0f73a0ad7d35de52f079920c5d8f956c78ffe98e4
+    authenticity: {status: authenticated, strength: strong, provenance: "cafc.uscourts.gov, the court's own opinions host.", tests: ["Official host [read]", "Docket number and decision date consistent with the court's decision list [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full."], checked: 2026-10-02}
+  - id: src-cafc-hazlehurst-2010
+    title: "US Court of Appeals for the Federal Circuit, Hazlehurst v. Secretary of Health and Human Services, No. 2009-5128 (604 F.3d 1343, decided 13 May 2010)"
+    url: https://www.cafc.uscourts.gov/opinions-orders/09-5128.pdf
+    document_class: primary_text (court opinion)
+    read: "opened 2026-10-02 (PDF fetched and text-extracted); the description of the omnibus proceeding and the result were read, not the whole opinion"
+    sha256: 5983d9f793c3b0494495efdd00dc8dedbdd716d14b6646dc6e7431af20a81be5
+    authenticity: {status: authenticated, strength: strong, provenance: "cafc.uscourts.gov, the court's own opinions host.", tests: ["Official host [read]", "Docket number and date consistent with the court's decision list and with the citation in 10-5004 [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not read in full."], checked: 2026-10-02}
   - id: src-bruesewitz
     title: "Bruesewitz v. Wyeth LLC, 562 U.S. 223 (2011)"
     url: https://www.law.cornell.edu/supremecourt/text/09-152
