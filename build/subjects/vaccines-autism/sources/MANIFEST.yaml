@@ -13,8 +13,9 @@ sources:
     title: "Wakefield AJ et al. Ileal-lymphoid-nodular hyperplasia, non-specific colitis, and pervasive developmental disorder in children. Lancet 1998;351:637-41 (RETRACTED 2010)"
     url: https://europepmc.org/article/MED/9500320
     document_class: primary_text
-    read: abstract (thelancet.com refused; full-text passages known as quoted in [2012] EWHC 503 paras 153-157)
-    sha256: 57294fcf24c55b8fd59014af3670843022781242150eb589b85cae979342ea53
+    read: "full text (a third-party PDF copy of the Lancet article hosted at briandeer.com, 14 pages, fetched 2026-10-02; thelancet.com refused; the Summary, Patients and methods, ethics sentence and Table 2 were read; the copy was not compared with the publisher's file, and its host is the journalist who investigated the paper)"
+    sha256: 57294fcf24c55b8fd59014af3670843022781242150eb589b85cae979342ea53   # of the Europe PMC abstract record
+    full_text_copy: {url: "https://briandeer.com/mmr/lancet-paper.pdf", sha256: 2f5434bf85768aa22aa08f512a51942fbfca14217b1a777853b4b18608ae4ee9, compared_with_holder_copy: no}
     publication: {status: retracted, date: 2010-02-02, notice: "The Editors of The Lancet. Retraction. Lancet 2010;375:445 (PMID 20137807)", reason: "As quoted in BMJ 2010;340:c696 (the notice itself was not read; the Guardian of 2 Feb 2010, read, reports the retraction followed the GMC findings of 28 Jan 2010 and the editor called the statements 'utterly false'): several elements of the paper were incorrect, including that the children were consecutively referred and that the work had ethics approval. Its interpretation had already been retracted by 10 of 13 authors in 2004."}
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed record PMID 9500320 with retraction links to PMIDs 15016483 and 20137807.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], next_step: "Read the retracted full text via a library copy.", checked: 2026-10-02}
   - id: src-murch-2004
@@ -646,6 +647,13 @@ sources:
     read: full
     sha256: eabc3a28a7d0d2a4ae184b91d9173d485d698de3c957009f39cfc91ac51d46f0
     authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
+  - id: src-weissman-2008
+    title: "Weissman JR, Kelley RI, Bauman ML et al. Mitochondrial disease in autism spectrum disorder patients: a cohort analysis. PLoS ONE 2008;3(11):e3815"
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2584230/
+    document_class: synthetic (clinical cohort)
+    read: "full (Europe PMC full-text XML fetched 2026-10-02); read for its statements on regression and vaccination and its references 12 and 36"
+    sha256: 450bed8551083b80e0096ce2343f558c1a8c1981d3d9c99f51bdd6ef5a25580b
+    authenticity: {status: authenticated, strength: strong, provenance: "Open-access copy from Europe PMC; not retracted.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-poling-2006
     title: "Poling JS, Frye RE, Shoffner J, Zimmerman AW. Developmental regression and mitochondrial dysfunction in a child with autism. J Child Neurol 2006"
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2536523/

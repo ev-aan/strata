@@ -470,3 +470,43 @@ log:
       listed in the assessment's would_settle, which the first screen shows, with a sentence that
       these sources have not been read. Not changed: the headline, key points, the owner's earlier
       decisions.
+  - id: L-29
+    date: 2026-10-02
+    entry: >
+      ROUND 7 (author response to review round 6, R6-1 to R6-6). R6-1, blocking: va-fully-unvaccinated-gap
+      and va-whole-schedule-gap rested on "we searched and found none" and were unmarked and at
+      moderate; both now carry absence_anchor: true and confidence provisional (docs/REVIEW.md B).
+      va-causes-largely-unknown, an absence stated by agencies, is marked and lowered from high to
+      provisional on the same ground. Other claims checked and left: va-small-effect-not-excludable
+      (a logical limit), va-thompson-subgroup-real and va-rise-remainder-unexplained (a read
+      analysis and a read residual), va-vicp-table-no-autism (regulation text read),
+      va-simpsonwood-autism-hidden (its absent "generation zero" limb is flagged unverified). The
+      assessment text and the first-screen lines now say our search found no such study, a gap and not
+      a finding. DECISIONS (each: content decision delegated by the owner to the AI in conversation
+      2026-10-02; decided by the AI on these grounds). D1, R6-2: va-poling-concession confidence goes
+      back from high to moderate. Grounds: SCHEMA N20 starts a secondary anchor at moderate and allows a
+      raise only through a recorded confidence_reasons step, none is recorded, and the 2015 order read
+      says the settlement "cannot be conflated" into "a concession of the theory writ large" and the
+      government "has never conceded" the general point; the statement now opens with the quoted Rule
+      4(c) wording as the order reports it, not "the US government conceded a link". D2, R6-3: footnote
+      6 of the order is added (while in the Omnibus Autism Proceeding the case's theory was that
+      thimerosal-containing vaccinations can cause autism), attributed to the order. D3, R6-6: the sentence
+      saying the case report's first author "shares the family's surname" is removed from
+      va-sq-case-report-same-child because it reveals what the redaction of L-25 removed; the manifest
+      titles were checked: none names a minor's family (the id src-vernacchio-order-2015 does, and ids
+      are never renamed); no earlier log entry needed editing, so no `redacts` entry is added. Whether
+      court case names of other minors' families stay is the owner's rule and is unchanged. R6-4: the
+      Board's 22 Mar 2012 order was re-read on pages 8 and 9 by a second OCR route (300 dpi); both
+      passes agree on the Lupron footnote and on the Board's agreement with the ALJ; the claim says
+      which sentences were read that way and that OCR errors are possible elsewhere. R6-5: sub-questions
+      added for the evidentiary bodies of the six omnibus decisions (va-sq-omnibus-decision-bodies) and for
+      the publishers' own files of Madsen 2002, Hviid 2019 and the 1998 paper (va-sq-publisher-files),
+      both in the first-screen would_settle. Read this round instead of left open: the 1998 Lancet paper
+      itself, in a third-party copy hosted by the journalist who investigated it (14 pages; Summary,
+      methods, the ethics sentence and Table 2 read: "consecutively referred", the ethics sentence and
+      "autism (nine)" are as the High Court and the GMC quote them; Table 2 lists two children as
+      encephalitis, not autism); Rossignol and Frye's reference 25 (Weissman 2008, open access, in full:
+      "one of our 25 patients" whose deterioration "appeared to follow vaccination", citing both the 2006
+      case report and a 2008 NEJM perspective on the compensation case, which points to one child but
+      does not state it). The two claims that cite the retracted paper carry flagged_sources (PS3, now
+      enforced).
