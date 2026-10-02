@@ -1,0 +1,23 @@
+# Authority-scoped period definition (schema v0.6, N17). Kept as the authority printed it; never edited, only superseded by a new file.
+id: old-kingdom--robins-2000
+label: Old Kingdom
+region: Egypt
+authority:
+  title: The art of ancient Egypt
+  creators:
+  - Robins, Gay.
+  year_published: 2000
+  worldcat: http://www.worldcat.org/oclc/45184072
+  locator: page 8
+quoted:
+  start: 2649 BC
+  stop: 2134 BC
+from_bce: 2649
+to_bce: 2134
+via:
+  dataset: PeriodO
+  period_ark: http://n2t.net/ark:/99152/p0cp447cfpq
+  authority_ark: http://n2t.net/ark:/99152/p0cp447
+  dataset_url: https://data.perio.do/d.json
+  retrieved: '2026-10-02'
+authority_read_directly: false

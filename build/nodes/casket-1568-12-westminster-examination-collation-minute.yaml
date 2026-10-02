@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: casket-1568-12-westminster-examination-collation-minute
-rev: 2
+rev: 3
 type: event
 label: '9-14 Dec 1568: Westminster examination and collation minute'
 time: '1568-12-09T12:00:00Z'
@@ -28,9 +28,9 @@ about:
 - object-casket-and-letters-1567
 related:
 - node: casket-1568-12-westminster-conference-examines-the-letters
-  kind: same_event
-  grade: possible
-  why: The Westminster conference is dated 9-14 Dec 1568 here and 7-14 Dec 1568 in the related node. Unreconciled; not merged.
+  kind: part_of
+  grade: established
+  why: This is the collation phase (9 to 14 Dec) of the Westminster sessions described in the related node (7 to 14 Dec).
 created: '2026-10-02'
 history:
 - rev: 1
@@ -40,4 +40,8 @@ history:
   date: '2026-10-02'
   change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
     source_type and how it was accessed; related links graded with a stated reason.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'CORRECTION of the related link: this node is the collation phase of the conference, so the link is part_of (established),
+    not a possible same-event with unreconciled dates.'
 date_basis: stated

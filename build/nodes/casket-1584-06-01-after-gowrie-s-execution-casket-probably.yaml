@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: casket-1584-06-01-after-gowrie-s-execution-casket-probably
-rev: 2
+rev: 3
 type: event
 label: 'After Gowrie''s execution (about 1584): casket probably passes to Arran; originals then disappear'
 time: '1584-06-01T12:00:00Z'
@@ -28,4 +28,13 @@ history:
   date: '2026-10-02'
   change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `inferred`; each source given an origin,
     a source_type and how it was accessed.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'Schema v0.6: added a time window with an open end; the node time is a placeholder inside it.'
 date_basis: inferred
+window:
+  earliest: '1584-01-01'
+  latest: open
+  begin_note: After the execution of Gowrie (about 1584, recalled, not read).
+  end_note: 'Henderson gives no date for when the originals disappeared: they "disappeared completely from human ken". The
+    end is open.'

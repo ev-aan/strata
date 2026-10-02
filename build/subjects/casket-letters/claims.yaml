@@ -30,6 +30,20 @@ claims:
     statement: "The original Casket Letters are lost: only copies, translations and printed versions survive."
     evidence_class: primary_text
     confidence: provisional
+    statement_kind: reported   # assigned by rule 2026-10-02, to be reviewed
+    assumptions:
+      - text: "That no original has been traced since the 1580s means they are lost and not merely unrecognised."
+        if_wrong: "An original surfacing and being authenticated would change the claim."
+    alternatives:
+      - text: "An original survives, unrecognised, in a private or archival collection."
+        why_not_preferred: "No source read reports one. The claim rests on absence, so it is held at provisional confidence."
+    confidence_reasons:
+      start: moderate
+      start_because: "The anchor was checked against a secondary source (Henderson 1889, read in OCR)."
+      steps:
+        - {domain: unreported_negative_results, effect: down1, reason: "The claim rests on the absence of any traced original, which cannot prove absence."}
+        - {domain: indirectness, effect: down1, reason: "The account is from 1889. No modern holdings or catalogues were checked."}
+      reviewed: false
     evidential_weight: 3   # of 5; absence anchor, capped
     anchor_checked: secondary   # Henderson (1889) read in OCR on its chain of custody
     adoption_weight: 5   # of 5
@@ -51,6 +65,7 @@ claims:
     statement: "James VI destroyed the originals (around 1584)."
     evidence_class: interpretive
     confidence: low
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 2
     anchor_checked: secondary
     adoption_weight: 2
@@ -67,6 +82,7 @@ claims:
     statement: "In 1586 Walsingham's decipherer Thomas Phelippes forged an enciphered postscript to Mary's letter to Anthony Babington, asking for the names of the conspirators."
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4
     anchor_checked: no
     adoption_weight: 5
@@ -83,6 +99,7 @@ claims:
     statement: "The French versions printed in the 1570s are not copies of the originals: they were translated back into French from the Latin, which was itself translated from the Scots."
     evidence_class: interpretive
     confidence: moderate
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3
     anchor_checked: secondary   # Henderson read for the Detectio's publication history; his argument for the retranslation not yet re-read
     adoption_weight: 3
@@ -99,6 +116,7 @@ claims:
     statement: "French copies of only four of the letters survive: Nos. 3 and 5 at the Record Office and Nos. 4 and 6 at Hatfield. Letters 7 and 8 exist only in print, and Letter II survives in French only as its opening sentence and a phrase Cecil wrote in the margin."
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: reported   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3
     anchor_checked: secondary
     adoption_weight: 3
@@ -114,6 +132,10 @@ claims:
     statement: "The Casket Letters are Mary's genuine letters to Bothwell."
     evidence_class: interpretive
     confidence: low
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
+    disputed_by:
+      - {who: "T. F. Henderson", kind: person, position: "argues the letters are genuine", source_read: true, via: "Henderson 1889 (read in OCR); he is an advocate for genuineness, so his judgements are not independent evidence"}
+      - {who: "National Museums Scotland", kind: institution, position: "says it is 'widely thought' the letters were doctored", source_read: false, via: "quoted in this claim's adoption note; not read here"}
     evidential_weight: 2
     anchor_checked: no
     adoption_weight: 2
@@ -133,6 +155,7 @@ claims:
     statement: "No computational style comparison of the casket texts against Mary's authenticated French letters has been published, in two web searches."
     evidence_class: primary_text
     confidence: low
+    statement_kind: search_result   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 1
     anchor_checked: no
     adoption_weight: 1
@@ -146,6 +169,7 @@ claims:
     statement: "The four surviving French casket letters (III-VI) share three-word phrases with Mary's authenticated French letters more than with Catherine de Medici's, at levels typical of Mary's own letters."
     evidence_class: synthetic
     confidence: low
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 2
     anchor_checked: secondary   # texts via 19th-century print and OCR; test code and outputs published in questions/casket-letters/data/
     adoption_weight: 1
@@ -167,6 +191,7 @@ claims:
     statement: "The surviving French text of the four letters is about 1,750 words (about 630, 500, 240 and 400 for Letters III-VI, +/-20%), well below the length at which word-frequency authorship methods are reliable (Eder 2010: 'simply disastrous' below about 3,000 words for novels; about 2,500 for Latin prose at best)."
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3
     anchor_checked: secondary
     adoption_weight: 2

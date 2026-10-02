@@ -35,3 +35,4 @@ events:
      label: "1969: Faulkner's English translation", detail: "Standard English translation for decades, per the file."}
   - {id: t9, lane: modern, time: "2005-01-01T00:00:00Z", precision: year, kind: analysis, status: single, sources: [s_import],
      label: "2005: Allen's English translation (follows the wall sequence)", detail: "In copyright; sections of it are cited in the claims."}
+  - {id: t0, lane: ancient, node: period-old-kingdom-egypt, rev: 1}

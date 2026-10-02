@@ -48,6 +48,7 @@ claims:
       Spanish court approved his extradition to the United States on tax charges; the extradition was not final.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: secondary   # official statements read through news and fact-check reports
     adoption_weight: 5   # of 5
@@ -75,6 +76,7 @@ claims:
       saying there were "no indications of anything other than a violent death of suicidal origin, nothing at all".
     evidence_class: primary_text
     confidence: high
+    statement_kind: reported   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5; this is the strength of the claim that the finding exists
     anchor_checked: secondary   # official words read through PolitiFact and AFP
     adoption_weight: 3   # of 5
@@ -104,6 +106,7 @@ claims:
       inquiry, has been found.
     evidence_class: primary_text
     confidence: low
+    statement_kind: search_result   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 2   # of 5; absence anchor, capped
     anchor_checked: secondary
     adoption_weight: 3   # of 5
@@ -132,6 +135,7 @@ claims:
       approximately 1:30 a.m. EDT, with mass casualties; the final death toll was reported as 98.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 5   # of 5; the date and time are from the investigating agency's own page, read directly
     anchor_checked: primary   # NIST page read; the toll is from secondary reports
     adoption_weight: 5   # of 5
@@ -160,6 +164,7 @@ claims:
       the tower, and the failure spread through parts of the tower.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5; the investigating agency's own conclusion; the full report not read
     anchor_checked: primary   # NIST page and update read
     adoption_weight: 4   # of 5
@@ -194,6 +199,7 @@ claims:
       building's distress were visible in the weeks before the collapse.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: primary   # the two NIST pages read
     adoption_weight: 2   # of 5
@@ -220,6 +226,19 @@ claims:
       to him.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
+    assumptions:
+      - text: "NIST's account of the failure, read in its public summary pages and not in the full technical report, is accurate and complete enough to rule out a separate deliberate cause."
+        if_wrong: "Evidence of sabotage or an external cause, or a link between McAfee or his data and the building, would change the claim. The summary read does not say whether sabotage was specifically tested and excluded."
+    alternatives:
+      - text: "The collapse was deliberate and its timing was a coincidence."
+        why_not_preferred: "NIST finds the failure began in early June 2021 at two connections, with causes in the original design and construction, and no source read shows a deliberate act."
+    confidence_reasons:
+      start: high
+      start_because: "The anchor was read directly (primary)."
+      steps:
+        - {domain: indirectness, effect: none, reason: "Only NIST's public pages were read, not the technical report. Considered and not applied because the claim is a conjunction, and the dates alone (failure began before the death) refute 'timed to follow McAfee's death'."}
+      reviewed: false
     evidential_weight: 4   # of 5
     anchor_checked: primary   # the NIST pages read
     adoption_weight: 1   # of 5
@@ -250,6 +269,7 @@ claims:
       and would release it to the press if he was arrested or disappeared; he did not say where the files were.
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: reported   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3   # of 5; the tweet was not read directly
     anchor_checked: secondary   # quoted by PolitiFact, USA Today and TheCount
     adoption_weight: 4   # of 5
@@ -279,6 +299,7 @@ claims:
       files I have are located on hard drives in my condo near 88th Street and Collins Avenue just north of Miami Beach."
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3   # of 5; the main anchor is an absence, capped
     anchor_checked: secondary   # fact-checkers' searches read; our own capture check was blocked
     adoption_weight: 2   # of 5
@@ -314,6 +335,7 @@ claims:
       John McAfee, or his wife, owned a unit in Champlain Towers South.
     evidence_class: primary_text
     confidence: moderate
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 3   # of 5; absence anchor, capped
     anchor_checked: secondary   # an AP review of property records, read through USA Today
     adoption_weight: 2   # of 5
@@ -343,6 +365,7 @@ claims:
       McAfee died on 23 June 2021 and the building collapsed about 24 hours later; the dates are one day apart.
     evidence_class: primary_text
     confidence: high
+    statement_kind: judgment   # assigned by rule 2026-10-02, to be reviewed
     evidential_weight: 4   # of 5
     anchor_checked: primary   # the NIST date read; the death date is secondary
     adoption_weight: 5   # of 5

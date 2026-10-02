@@ -1,0 +1,83 @@
+# Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
+id: period-old-kingdom-egypt
+rev: 1
+type: event
+label: 'Old Kingdom of Egypt: all six authorities cover 2600 to 2190 BCE, but they differ on both ends'
+time: -2600-01-01T00:00:00Z
+end: -2190-12-31T00:00:00Z
+precision: year
+date_basis: derived
+kind: analysis
+status: disputed
+what: 'Six authorities define the Egyptian Old Kingdom differently, as recorded in PeriodO: it starts between 2700 and 2600
+  BCE and ends between 2190 and 2130 BCE. The bar is the span all six agree on (2600 to 2190 BCE); the pale window is the
+  outer bounds across the six (2700 to 2130 BCE). A date inside the period, such as a king''s reign, inherits this uncertainty
+  unless it has its own source.'
+window:
+  earliest: -2700-01-01
+  latest: -2130-12-31
+  certainly_covers:
+    from: -2600-01-01
+    to: -2190-12-31
+  begin_note: Earliest start 2700 BCE (EAMENA, printed -2700) and latest start 2600 BCE (Freeman 2004, p. 585). Six authorities,
+    six different starts.
+  end_note: Earliest end 2190 BCE (Gates 2003, p. 78) and latest end 2130 BCE (Freeman 2004). The UCLA Encyclopedia of Egyptology
+    says its own chronology may be replaced.
+  defined_by:
+  - old-kingdom--uee-ucla
+  - old-kingdom--freeman-2004
+  - old-kingdom--levantine-ceramics-project
+  - old-kingdom--robins-2000
+  - old-kingdom--gates-2003
+  - old-kingdom--eamena
+sources:
+- title: UCLA Encyclopedia of Egyptology (Willeke Wendrich, None), Old Kingdom as 2670 BCE to 2168 BCE, as recorded in PeriodO
+  url: http://n2t.net/ark:/99152/p0qk76z92f9
+  authenticity: Read in the PeriodO dataset (data.perio.do, retrieved 2026-10-02); the authority's own page or book was not
+    read.
+  origin: uee-ucla
+  source_type: scholarly
+  access: cited_only
+- title: Egypt, Greece and Rome (Freeman, Charles., 2004), Old Kingdom as 2600 B.C. to 2130 B.C., as recorded in PeriodO
+  url: http://n2t.net/ark:/99152/p0bd66487b6
+  authenticity: Read in the PeriodO dataset (data.perio.do, retrieved 2026-10-02); the authority's own page or book was not
+    read.
+  origin: freeman-2004
+  source_type: scholarly
+  access: cited_only
+- title: The Levantine Ceramics Project (Andrea Berlin, 2012), Old Kingdom as -2663 to -2181, as recorded in PeriodO
+  url: http://n2t.net/ark:/99152/p0m63njqgqx
+  authenticity: Read in the PeriodO dataset (data.perio.do, retrieved 2026-10-02); the authority's own page or book was not
+    read.
+  origin: levantine-ceramics-project
+  source_type: scholarly
+  access: cited_only
+- title: The art of ancient Egypt (Robins, Gay., 2000), Old Kingdom as 2649 BC to 2134 BC, as recorded in PeriodO
+  url: http://n2t.net/ark:/99152/p0cp447cfpq
+  authenticity: Read in the PeriodO dataset (data.perio.do, retrieved 2026-10-02); the authority's own page or book was not
+    read.
+  origin: robins-2000
+  source_type: scholarly
+  access: cited_only
+- title: 'Ancient cities : the archaeology of urban life in the Ancient Near East and Egypt, Greece and Rome (Gates, Charles,
+    1950-, 2003), Old Kingdom as ca. 2675 BC to 2190 BC, as recorded in PeriodO'
+  url: http://n2t.net/ark:/99152/p083p5r9q68
+  authenticity: Read in the PeriodO dataset (data.perio.do, retrieved 2026-10-02); the authority's own page or book was not
+    read.
+  origin: gates-2003
+  source_type: scholarly
+  access: cited_only
+- title: EAMENA Database (University of Oxford; University of Southampton, 2021), Old Kingdom as -2700 to 2150, as recorded
+    in PeriodO
+  url: http://n2t.net/ark:/99152/p0m64tdjsnt
+  authenticity: Read in the PeriodO dataset (data.perio.do, retrieved 2026-10-02); the authority's own page or book was not
+    read.
+  origin: eamena
+  source_type: scholarly
+  access: cited_only
+created: '2026-10-02'
+history:
+- rev: 1
+  date: '2026-10-02'
+  change: Created from six PeriodO definitions of the Old Kingdom (build/definitions/old-kingdom--*). The window is the union
+    of their bounds and the bar their intersection.

@@ -37,6 +37,13 @@ def load_nodes():
     return out
 
 
+def iso_key(s):
+    """Sortable (year, month, day) of an ISO date, with negative years as BCE as written. Returns None if it is not a date."""
+    import re
+    m = re.match(r"^(-?\d{4,})(?:-(\d\d))?(?:-(\d\d))?(?:T.*)?$", str(s))
+    return (int(m.group(1)), int(m.group(2) or 1), int(m.group(3) or 1)) if m else None
+
+
 def assess(n):
     """Independence of a node's sources (schema v0.5). Sources that derive from the same origin count once.
     Returns {independent, read, declared, label}: label is single_origin | independent | multiple_unverified | no_source."""
@@ -102,6 +109,8 @@ def resolve_timeline(T, nodes=None):
             detail = (detail + " " + " ".join(str(e["note"]).split())).strip()
         r["detail"] = detail
         r["shared_by"] = n.get("_used_by", [])
+        if n.get("window"):
+            r["window"] = n["window"]
         r["date_basis"] = n.get("date_basis", "")
         r["corro"] = assess(n)
         events.append(r)

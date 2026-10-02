@@ -93,11 +93,11 @@ def main():
     rows, cn = [], []
     for sub, c in claims:
         an = c.get("anchor") if isinstance(c.get("anchor"), dict) else {}
-        rows.append([sub, c["id"], c["state"], c.get("confidence", ""), c.get("evidence_class", ""), c.get("evidential_weight", ""), c.get("adoption_weight", ""), c.get("anchor_checked", ""), N(c["statement"])])
+        rows.append([sub, c["id"], c["state"], c.get("statement_kind", ""), c.get("confidence", ""), c.get("evidence_class", ""), c.get("evidential_weight", ""), c.get("adoption_weight", ""), c.get("anchor_checked", ""), N(c["statement"])])
         for x in an.get("nodes") or []:
-            cn.append([sub, c["id"], x])
-    write_csv(os.path.join(stage, "claims.csv"), ["subject", "id", "state", "confidence", "evidence_class", "evidential_weight", "adoption_weight", "anchor_checked", "statement"], rows)
-    write_csv(os.path.join(stage, "claim_nodes.csv"), ["subject", "claim", "node"], cn)
+            cn.append([sub, c["id"], x["node"] if isinstance(x, dict) else x, x.get("verb", "") if isinstance(x, dict) else ""])
+    write_csv(os.path.join(stage, "claims.csv"), ["subject", "id", "state", "statement_kind", "confidence", "evidence_class", "evidential_weight", "adoption_weight", "anchor_checked", "statement"], rows)
+    write_csv(os.path.join(stage, "claim_nodes.csv"), ["subject", "claim", "node", "verb"], cn)
 
     # geojson: only nodes with coordinates
     feats = []
@@ -138,8 +138,8 @@ def main():
         node(f"claim:{sub}:{c['id']}", N(c["statement"])[:120], "claim:" + c["state"])
     for l in links:
         edge(l[0], l[1], l[2] + (":" + l[3] if l[3] else ""), l[4], l[5])
-    for sub, cid, x in cn:
-        edge(f"claim:{sub}:{cid}", x, "anchored_on", "established", "")
+    for sub, cid, x, vb in cn:
+        edge(f"claim:{sub}:{cid}", x, "anchored_on" + (":" + vb if vb else ""), "established", "")
     ET.ElementTree(g).write(os.path.join(stage, "graph.graphml"), encoding="utf-8", xml_declaration=True)
 
     # build info, readme, checksums

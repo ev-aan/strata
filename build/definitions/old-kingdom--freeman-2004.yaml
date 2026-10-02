@@ -1,0 +1,23 @@
+# Authority-scoped period definition (schema v0.6, N17). Kept as the authority printed it; never edited, only superseded by a new file.
+id: old-kingdom--freeman-2004
+label: Old Kingdom
+region: Egypt
+authority:
+  title: Egypt, Greece and Rome
+  creators:
+  - Freeman, Charles.
+  year_published: 2004
+  worldcat: http://www.worldcat.org/oclc/53156026
+  locator: page 585
+quoted:
+  start: 2600 B.C.
+  stop: 2130 B.C.
+from_bce: 2600
+to_bce: 2130
+via:
+  dataset: PeriodO
+  period_ark: http://n2t.net/ark:/99152/p0bd66487b6
+  authority_ark: http://n2t.net/ark:/99152/p0bd664
+  dataset_url: https://data.perio.do/d.json
+  retrieved: '2026-10-02'
+authority_read_directly: false

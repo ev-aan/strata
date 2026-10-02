@@ -1,0 +1,24 @@
+# Authority-scoped period definition (schema v0.6, N17). Kept as the authority printed it; never edited, only superseded by a new file.
+id: old-kingdom--levantine-ceramics-project
+label: Old Kingdom
+region: Egypt
+authority:
+  title: The Levantine Ceramics Project
+  creators:
+  - Andrea Berlin
+  year_published: 2012
+  url: http://www.levantineceramics.org/
+quoted:
+  start: '-2663'
+  stop: '-2181'
+from_bce: 2663
+to_bce: 2181
+via:
+  dataset: PeriodO
+  period_ark: http://n2t.net/ark:/99152/p0m63njqgqx
+  authority_ark: http://n2t.net/ark:/99152/p0m63nj
+  dataset_url: https://data.perio.do/d.json
+  retrieved: '2026-10-02'
+authority_read_directly: false
+note: The printed labels are '-2663' and '-2181' and the structured years are the same numbers. Under the ISO convention used
+  for the structured years -2663 is 2664 BCE; read here as 2663 and 2181 BCE as printed, which may be off by one year.

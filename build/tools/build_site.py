@@ -57,7 +57,7 @@ def claim_html(c):
     chk = c.get("anchor_checked")
     chk = "no" if chk is False else chk
     nxt = c.get("next_step")
-    bits = f'<p><span class="pill s-{E(st)}">{E("refuted: the claim below is false" if st == "refuted" else st.replace("_", " "))}</span> <span class="small">confidence {E(c.get("confidence", "n/a"))}</span></p>'
+    bits = f'<p><span class="pill s-{E(st)}">{E("refuted: the claim below is false" if st == "refuted" else st.replace("_", " "))}</span> <span class="small">confidence {E(c.get("confidence", "n/a"))}{(" · " + {"reported": "what a source says", "judgment": "our conclusion", "assumption": "an assumption", "search_result": "result of a search"}.get(c.get("statement_kind"), "")) if c.get("statement_kind") else ""}</span></p>'
     bits += f'<p>{E(" ".join(str(c.get("statement", "")).split()))}</p>'
     bits += (f'<div class="meter"><span>Evidence</span><span class="dots">{dots(c.get("evidential_weight"))}</span>'
              f'<span>Public belief</span><span class="dots">{dots(c.get("adoption_weight"))}</span><span>Source checked</span><span>{E(chk)}</span></div>')
@@ -66,7 +66,14 @@ def claim_html(c):
     if c.get("would_change_if"): more += f'<p><b>Would change if.</b> {E(" ".join(str(c["would_change_if"]).split()))}</p>'
     if nxt: more += f'<p><b>Next step.</b> {E(" ".join(str(nxt).split()))}</p>'
     nl = an.get("nodes") if isinstance(an, dict) else None
-    if nl: more += '<p><b>Evidence nodes.</b></p><ul class="l" style="overflow:auto">' + "".join(node_html(x) for x in nl) + '</ul>'
+    if nl: more += '<p><b>Evidence nodes</b> <span class="small">(what each does to the statement above)</span></p><ul class="l" style="overflow:auto">' + "".join(node_html(x["node"], x.get("verb", "")) if isinstance(x, dict) else node_html(x) for x in nl) + '</ul>'
+    if c.get("assumptions"): more += '<p><b>Assumptions this rests on.</b></p><ul class="l">' + "".join(f'<li>{E(a["text"])}<br><span class="small">If wrong: {E(a["if_wrong"])}</span></li>' for a in c["assumptions"]) + '</ul>'
+    if c.get("alternatives"): more += '<p><b>Alternatives considered.</b></p><ul class="l">' + "".join(f'<li>{E(a["text"])}<br><span class="small">Why not preferred: {E(a["why_not_preferred"])}</span></li>' for a in c["alternatives"]) + '</ul>'
+    cr = c.get("confidence_reasons")
+    if cr:
+        more += f'<p><b>Why this confidence.</b> Starts at <b>{E(cr["start"])}</b> ({E(str(cr.get("start_because", "")).rstrip("."))}).</p><ul class="l">' + "".join(
+            f'<li><span class="pill">{E(s["domain"].replace("_", " "))}: {E({"none": "no change", "down1": "down one", "down2": "down two", "up1": "up one"}[s["effect"]])}</span> {E(s["reason"])}</li>' for s in cr["steps"]) + '</ul>' + ('<p class="small">These reasons were drafted by the project and have not yet been reviewed.</p>' if not cr.get("reviewed") else "")
+    if c.get("disputed_by"): more += '<p><b>Disputed by.</b></p><ul class="l">' + "".join(f'<li>{E(d["who"])}: {E(d["position"])}<br><span class="small">{E(d["via"])}{"" if d.get("source_read") else " (source not read here)"}</span></li>' for d in c["disputed_by"]) + '</ul>'
     if more: bits += f'<details><summary>Evidence and limits</summary>{more}</details>'
     return f'<div class="claim" id="{E(c.get("id"))}">{bits}</div>'
 
@@ -79,7 +86,7 @@ AREAS, QTYPES = TAX["areas"], TAX["question_types"]
 META = {}   # slug -> {sub, area, areas, types, popular}
 
 
-def node_html(nid):
+def node_html(nid, verb=""):
     n = NODES.get(nid)
     if not n: return ""
     m = n.get("media") or {}
@@ -92,7 +99,7 @@ def node_html(nid):
         orig = m.get("original_url") or ""
         tag = f'<img src="media/{E(fn)}" alt="{E(n["label"])}" loading="lazy" style="max-width:220px;border:1px solid var(--line);border-radius:6px;float:right;margin:0 0 6px 12px">'
         img = f'<a href="{E(orig)}" target="_blank" rel="noopener">{tag}</a>' if orig else tag
-    return (f'<li>{img}<b>{E(n["label"])}</b> <span class="small">· {E(str(n["time"])[:10])} · {E(n["type"])} · node {E(nid)} rev {E(n["rev"])}</span>'
+    return (f'<li>{img}{("<span class=pill>" + E(verb) + "</span> ") if verb else ""}<b>{E(n["label"])}</b> <span class="small">· {E(str(n["time"])[:10])} · {E(n["type"])} · node {E(nid)} rev {E(n["rev"])}</span>'
             f'<br><span class="small">{srcs}</span></li>')
 
 order = {"refuted": 0, "established": 1, "contested": 2, "proposed": 3, "searched_gap": 4}

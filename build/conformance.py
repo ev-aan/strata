@@ -102,6 +102,49 @@ def check_claim(r, subject, c, legacy):
         if banned in c:
             r.err(where, f"`{banned}` merges the two weights (rule 1)")
 
+    # schema v0.6 (SCHEMA.md N18-N22)
+    sk = c.get("statement_kind")
+    if sk is not None and sk not in ("reported", "judgment", "assumption", "search_result"):
+        r.err(where, f"unknown statement_kind `{sk}`")
+    for k_, need in (("assumptions", ("text", "if_wrong")), ("alternatives", ("text", "why_not_preferred"))):
+        for x in c.get(k_) or []:
+            for f_ in need:
+                if not (isinstance(x, dict) and x.get(f_)):
+                    r.err(where, f"each entry of `{k_}` needs `{f_}`")
+    if c.get("likelihood") is not None and c["likelihood"] not in ("almost no chance", "very unlikely", "unlikely", "roughly even chance", "likely", "very likely", "almost certain"):
+        r.err(where, f"unknown likelihood term `{c['likelihood']}`")
+    cr = c.get("confidence_reasons")
+    if cr:
+        lv = {"provisional": 0, "low": 1, "moderate": 2, "high": 3}
+        eff = {"down1": -1, "down2": -2, "up1": 1, "none": 0}
+        domains = {"risk_of_bias", "inconsistency", "indirectness", "imprecision", "unreported_negative_results", "independent_corroboration", "primary_anchor_read", "convergent_material_evidence"}
+        if cr.get("start") not in lv:
+            r.err(where, "confidence_reasons.start must be high | moderate | low | provisional")
+        net = 0
+        for st_ in cr.get("steps") or []:
+            if st_.get("domain") not in domains:
+                r.err(where, f"unknown confidence domain `{st_.get('domain')}`")
+            if st_.get("effect") not in eff:
+                r.err(where, f"unknown confidence effect `{st_.get('effect')}` (down1 | down2 | up1 | none)")
+            else:
+                net += eff[st_["effect"]]
+            if not st_.get("reason"):
+                r.err(where, "every confidence step needs a written reason")
+        if cr.get("start") in lv:
+            got = max(0, min(3, lv[cr["start"]] + net))
+            if conf in lv and lv[conf] > got:
+                r.err(where, f"confidence `{conf}` is higher than its recorded reasons give ({[k for k, v in lv.items() if v == got][0]})")
+            elif conf in lv and lv[conf] < got:
+                r.warn(where, f"confidence `{conf}` is lower than its recorded reasons give; say why in a step")
+    for d_ in c.get("disputed_by") or []:
+        for f_ in ("who", "kind", "position", "source_read"):
+            if d_.get(f_) in (None, ""):
+                r.err(where, f"disputed_by entry needs `{f_}`")
+        if d_.get("kind") not in ("person", "institution", "group", "work", "unnamed"):
+            r.err(where, f"disputed_by kind `{d_.get('kind')}` unknown")
+    if state == "contested" and not c.get("disputed_by"):
+        r.warn(where, "contested claim names no disputant (`disputed_by`)")
+
     # Rule 9
     if state == "refuted":
         if not c.get("refutes_target"):
@@ -273,6 +316,23 @@ def check_taxonomy(r, subjects):
             r.warn("taxonomy", f"assignment for `{s}` has no subject folder")
 
 
+def check_definitions(r):
+    dd = os.path.join(os.path.dirname(SUBJECTS), "definitions")
+    for f in sorted(glob.glob(os.path.join(dd, "*.yaml"))):
+        did = os.path.basename(f)[:-5]
+        d = load(f) or {}
+        w = f"definition:{did}"
+        if d.get("id") != did:
+            r.err(w, "`id` must equal the file name")
+        for k in ("label", "authority", "quoted", "from_bce", "to_bce", "via"):
+            if d.get(k) in (None, ""):
+                r.err(w, f"missing `{k}`")
+        if isinstance(d.get("from_bce"), int) and isinstance(d.get("to_bce"), int) and d["from_bce"] < d["to_bce"]:
+            r.err(w, "from_bce must not be later than to_bce (BCE years count down)")
+        if d.get("authority_read_directly") is not True and not d.get("via"):
+            r.err(w, "an authority not read directly must say how it was reached (`via`)")
+
+
 def check_nodes(r):
     """Shared nodes (build/nodes/*.yaml): see SCHEMA.md, Nodes."""
     import hashlib, re
@@ -336,6 +396,44 @@ def check_nodes(r):
                 r.err(w, f"media file missing: {m['file']}")
             elif m.get("sha256") and hashlib.sha256(open(fp, "rb").read()).hexdigest() != m["sha256"]:
                 r.err(w, "media sha256 does not match the file")
+        wn = n.get("window")
+        if wn:
+            import sys as _s2
+            _s2.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
+            from nodes import iso_key
+            e_, l_ = iso_key(wn.get("earliest")), (None if wn.get("latest") == "open" else iso_key(wn.get("latest")))
+            if e_ is None or (wn.get("latest") != "open" and l_ is None):
+                r.err(w, "window earliest/latest must be ISO dates (latest may be `open`)")
+            else:
+                if l_ is not None and e_ > l_:
+                    r.err(w, "window earliest is after latest")
+                tk = iso_key(n.get("time"))
+                if tk and (tk < e_ or (l_ is not None and tk > l_)):
+                    r.err(w, "node `time` lies outside its own window")
+                cv = wn.get("certainly_covers")
+                if cv:
+                    f_, t_ = iso_key(cv.get("from")), iso_key(cv.get("to"))
+                    if f_ is None or t_ is None or f_ > t_ or f_ < e_ or (l_ is not None and t_ > l_):
+                        r.err(w, "certainly_covers must be a valid span inside the window")
+            for k_ in ("begin_note", "end_note"):
+                if not wn.get(k_):
+                    r.err(w, f"window needs `{k_}`: the reason for that boundary")
+            if wn.get("defined_by"):
+                dd = {}
+                for did in wn["defined_by"]:
+                    dp = os.path.join(os.path.dirname(SUBJECTS), "definitions", did + ".yaml")
+                    if not os.path.exists(dp):
+                        r.err(w, f"window defined_by unknown definition `{did}`")
+                    else:
+                        dd[did] = load(dp)
+                if dd and len(dd) == len(wn["defined_by"]):
+                    e2 = max(d["from_bce"] for d in dd.values()); l2 = min(d["to_bce"] for d in dd.values())
+                    c1 = min(d["from_bce"] for d in dd.values()); c2 = max(d["to_bce"] for d in dd.values())
+                    if iso_key(wn.get("earliest"))[0] != -e2 or iso_key(wn.get("latest"))[0] != -l2:
+                        r.err(w, f"window does not match its definitions (expected {e2} to {l2} BCE)")
+                    cv = wn.get("certainly_covers") or {}
+                    if c1 >= c2 and (iso_key(cv.get("from")) or (0,))[0] != -c1:
+                        r.err(w, f"certainly_covers does not match the definitions' intersection ({c1} to {c2} BCE)")
         pl = n.get("place")
         if pl:
             if not pl.get("name"):
@@ -393,6 +491,10 @@ def check_nodes(r):
         if os.path.exists(cp_):
             for c in (load(cp_) or {}).get("claims", []):
                 for ref in ((c.get("anchor") or {}).get("nodes") or []) if isinstance(c.get("anchor"), dict) else []:
+                    if isinstance(ref, dict):
+                        if ref.get("verb") not in ("supports", "disputes", "refutes", "qualifies", "confirms", "corrects", "extends"):
+                            r.err(f"{os.path.basename(sdir)}:{c.get('id')}", f"anchor node `{ref.get('node')}` has unknown verb `{ref.get('verb')}`")
+                        ref = ref.get("node")
                     if ref not in nodes:
                         r.err(f"{os.path.basename(sdir)}:{c.get('id')}", f"anchor refers to unknown node `{ref}`")
     for sdir in sorted(glob.glob(os.path.join(SUBJECTS, "*"))):
@@ -424,6 +526,7 @@ def main():
         except yaml.YAMLError as e:
             r.err(os.path.basename(sdir), f"YAML does not parse: {e}")
     check_taxonomy(r, subjects)
+    check_definitions(r)
     nodes = check_nodes(r)
     if args.base:
         check_history(r, args.base)

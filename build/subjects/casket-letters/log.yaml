@@ -62,3 +62,7 @@ log:
     date: 2026-10-02
     entry: >
       NODE SCHEMA v0.5 (SCHEMA.md N12 to N16). This excavation's nodes now record each source's origin, type and access, how each date was arrived at (`date_basis`), and graded related links. Values were assigned by rule and are to be reviewed. Dates were given a basis by rule (for example 'After Morton's execution (1581)' is `derived`); review these.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      CORRECTION of my own earlier note: the log entry for the nodes pilot called the Westminster conference dates (7-14 Dec 1568 in the overview and 9-14 Dec in the detail panel) an unreconciled inconsistency. The node texts show they describe different parts of one process: the sessions began on 7 and 8 Dec, Morton exhibited his declaration on 9 Dec when the collation began, and the minute is of 14 Dec. The collation node is now linked as part_of the conference node (established), not as a possible same-event. Time windows (schema v0.6) were added to the conference node and to the two nodes dated only by 'after' an execution (Morton 1581 and Gowrie about 1584, both years recalled and not read); the Gowrie one has an open end.

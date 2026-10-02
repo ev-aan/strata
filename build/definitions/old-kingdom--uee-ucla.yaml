@@ -1,0 +1,25 @@
+# Authority-scoped period definition (schema v0.6, N17). Kept as the authority printed it; never edited, only superseded by a new file.
+id: old-kingdom--uee-ucla
+label: Old Kingdom
+region: Egypt
+authority:
+  title: UCLA Encyclopedia of Egyptology
+  creators:
+  - Willeke Wendrich
+  year_published: null
+  url: http://uee.ucla.edu/
+quoted:
+  start: 2670 BCE
+  stop: 2168 BCE
+from_bce: 2670
+to_bce: 2168
+via:
+  dataset: PeriodO
+  period_ark: http://n2t.net/ark:/99152/p0qk76z92f9
+  authority_ark: http://n2t.net/ark:/99152/p0qk76z
+  dataset_url: https://data.perio.do/d.json
+  retrieved: '2026-10-02'
+authority_read_directly: false
+editorial_note_in_periodo: UEE notes that this chronology will be replaced/improved as the project goes forward, so may be
+  outdated at some point in the near future -- but in use by contributors and DAI database, so useful to maintain a record
+  of.

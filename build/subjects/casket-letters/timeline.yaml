@@ -51,10 +51,10 @@ events:
   - {id: k6, panel: years, lane: scotland, node: casket-1567-12-letters-probably-shown-to-the-nobles-and-parliament, rev: 2}
   - {id: k7, panel: years, lane: texts, node: casket-1568-09-16-regent-moray-receives-the-casket-from, rev: 2}
   - {id: k8, panel: years, lane: england, node: casket-1568-10-15-conference-at-york, rev: 2}
-  - {id: k9, panel: years, lane: england, node: casket-1568-12-westminster-conference-examines-the-letters, rev: 2}
+  - {id: k9, panel: years, lane: england, node: casket-1568-12-westminster-conference-examines-the-letters, rev: 3}
   - {id: k10, panel: years, lane: texts, node: casket-1571-06-01-letters-first-printed-with-buchanan-s, rev: 2}
-  - {id: k11, panel: years, lane: texts, node: casket-1581-06-02-after-morton-s-execution-casket-passes, rev: 2}
-  - {id: k12, panel: years, lane: texts, node: casket-1584-06-01-after-gowrie-s-execution-casket-probably, rev: 2}
+  - {id: k11, panel: years, lane: texts, node: casket-1581-06-02-after-morton-s-execution-casket-passes, rev: 3}
+  - {id: k12, panel: years, lane: texts, node: casket-1584-06-01-after-gowrie-s-execution-casket-probably, rev: 3}
   - {id: k13, panel: years, lane: babington, node: casket-1586-06-30-phelippes-forges-a-postscript-to-mary, rev: 2}
   - {id: b1, panel: y1567, lane: scotland, node: casket-1567-02-10-darnley-killed-in-the-kirk-o, rev: 2}
   - {id: b2, panel: y1567, lane: scotland, node: casket-1567-05-15-mary-marries-bothwell, rev: 2}
@@ -64,6 +64,6 @@ events:
   - {id: b6, panel: y1567, lane: scotland, node: casket-1567-12-15-act-of-parliament-names-the-casket, rev: 2}
   - {id: b7, panel: y1567, lane: texts, node: casket-1568-09-16-regent-moray-receives-the-casket-from, rev: 2}
   - {id: b8, panel: y1567, lane: england, node: casket-1568-10-15-conference-at-york, rev: 2}
-  - {id: b9, panel: y1567, lane: england, node: casket-1568-12-westminster-examination-collation-minute, rev: 2}
+  - {id: b9, panel: y1567, lane: england, node: casket-1568-12-westminster-examination-collation-minute, rev: 3}
   - {id: h4, panel: later, lane: texts, node: casket-1889-copies-of-letters-4-and-6-at-hatfield, rev: 2}
   - {id: h3, panel: later, lane: texts, node: casket-1889-copies-of-letters-3-and-5-in-the-record-office, rev: 2}

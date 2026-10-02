@@ -28,3 +28,7 @@ log:
       an open gap in all 19 files (claim teti-hieroglyphic-text-not-in-record); 15 of 19 also lack the transliteration. NEXT STEPS: read Sethe 1908 vol. 1 from Internet Archive page
       images and fill the hieroglyphs for the 19 utterances, then check Allen's page references and the translations against the printed works. Parked until then: the timeline
       (timeline.yaml) uses negative years; it feeds the Atlas, but the stand-alone timeline renderer does not yet draw dates before 1 CE.
+  - id: L-04
+    date: 2026-10-02
+    entry: >
+      CHRONOLOGY CHECK (read in the PeriodO dataset, not in the authorities' own books). Six authorities define the Egyptian Old Kingdom differently: it starts between 2700 and 2600 BCE and ends between 2190 and 2130 BCE, so a spread of about 100 years at the start and 60 at the end. The imported files' statement that Teti's dates are uncertain by plus or minus 10 years as 'scholarly consensus' (claim teti-reign-conventional-dates) is therefore not supported for the period as a whole; it stays a convention taken from Shaw 2000, which was not read. A shared node (period-old-kingdom-egypt) now carries the six definitions as a time window and appears on this excavation's timeline.

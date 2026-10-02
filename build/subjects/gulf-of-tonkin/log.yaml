@@ -241,3 +241,7 @@ log:
     date: 2026-10-02
     entry: >
       NODE SCHEMA v0.5 (SCHEMA.md N12 to N16). This excavation's nodes now record each source's origin, type and access, how each date was arrived at (`date_basis`), and graded related links. Values were assigned by rule and are to be reviewed. The 24 Jun 1970 vote and the 4 Aug summary node had their status corrected from `reported` to `single`: the Congressional Record and Voteview repeat one official record (Voteview derives from it), and the summary rests on the Hanyok study alone. One node, tonkin-1964-08-04-report-7-boats-told-to-be-ready, is flagged for review: its two sources (the intercept reports and the Prados essay) may not be independent, because the essay quotes the intercepts; the essay's `derives_from` needs checking against the essay.
+  - id: L-25
+    date: 2026-10-02
+    entry: >
+      SCHEMA v0.6 applied to this excavation's claims (SCHEMA.md N19 to N22): statement kinds assigned by rule; assumptions, alternatives and recorded reasons behind confidence for the headline claim tonkin-aug4-attack-occurred (drafted by the project, not yet reviewed); the contested claim tonkin-senior-knowledge records that its disputants are not named in the sources read; the evidence nodes of 16 claims carry a verb (the 4 August refutation's nodes `disputes` its statement, the others `supports`).
