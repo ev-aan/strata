@@ -117,3 +117,12 @@ log:
       referral and ethics approval, after the GMC findings), and the 2011 BMJ records
       comparison (diagnoses and onset dates not matching records; fraud judgment). No
       existing claim changed.
+  - id: L-12
+    date: 2026-10-02
+    entry: >
+      OWNER CONCERN: readers may take the retracted 1998 paper for a legitimate study. Added
+      publication status to the sources (retracted: Wakefield 1998, Hooker 2014; corrected:
+      Verstraeten 2003, Jain 2015, Andersson 2025; unpublished: the Henry Ford draft), a
+      `source_notices` block shown first on the page, and `flagged_sources` on the three claims
+      that cite a retracted paper. The validator rules that enforce this (PS1-PS4) are on the
+      separate branch schema/publication-status.

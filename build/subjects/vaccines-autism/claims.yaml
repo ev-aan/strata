@@ -52,6 +52,24 @@ short_answer:
         The reverse is established. Rubella infection in pregnancy can cause autism in the
         child, and the rubella vaccine (the R in MMR) prevents it.
 
+# ---------------------------------------------------------------------------
+# SOURCE NOTICES (rule PS4): shown first on the page, above every other section.
+# ---------------------------------------------------------------------------
+source_notices:
+  - source: src-wakefield-1998
+    notice: >
+      RETRACTED. The 1998 Lancet paper by Wakefield et al. that started the MMR-autism scare
+      was fully retracted by The Lancet in February 2010. It is not a valid study and is cited
+      here only as the origin of the claim.
+  - source: src-hooker-2014
+    notice: >
+      RETRACTED. Hooker's 2014 reanalysis of CDC data on MMR and African-American boys was
+      retracted by its journal in October 2014. It is cited here only to record the claim it made.
+  - source: src-henry-ford-draft
+    notice: >
+      UNPUBLISHED. The Henry Ford Health vaccinated-versus-unvaccinated study is a draft that was
+      never peer reviewed or published. It is read here only to check what it says about autism.
+
 subject: vaccines-autism
 title: "Do Vaccines Cause Autism? (1998 to the present)"
 description: >
@@ -183,6 +201,7 @@ claims:
         See va-wakefield-paper-account-accurate and va-vax-unvax-surveys.
       accessible: true
       ref: [src-wakefield-1998, src-mawson-2017, src-hooker-miller-2021]
+    flagged_sources: [src-wakefield-1998]   # retracted; shown beside this claim (rule PS3)
     positions:
       - label: "Yes"
         holder: "Wakefield et al. 1998; parent surveys; the current HHS leadership"
@@ -687,6 +706,7 @@ claims:
       description: "Parents' reports of onset after vaccination, as in the 1998 paper (8 of 12)."
       accessible: true
       ref: [src-wakefield-1998, src-taylor-1999, src-hviid-2019, src-ozonoff-2010]
+    flagged_sources: [src-wakefield-1998]   # retracted; shown beside this claim (rule PS3)
     positions:
       - label: "Yes"
         holder: "Many parents; the 1998 paper"
@@ -923,6 +943,7 @@ claims:
         validity of the methods and statistics [both read].
       accessible: true
       ref: [src-hooker-2014, src-hooker-2014-retraction, src-thompson-2014, src-destefano-2004]
+    flagged_sources: [src-hooker-2014]   # retracted; shown beside this claim (rule PS3)
     positions:
       - label: "Yes"
         holder: "Thompson's statement; Hooker 2014 (retracted)"

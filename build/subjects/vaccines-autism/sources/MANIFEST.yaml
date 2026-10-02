@@ -15,6 +15,7 @@ sources:
     document_class: primary_text
     read: abstract (thelancet.com refused; full-text passages known as quoted in [2012] EWHC 503 paras 153-157)
     sha256: 57294fcf24c55b8fd59014af3670843022781242150eb589b85cae979342ea53
+    publication: {status: retracted, date: 2010-02-02, notice: "The Editors of The Lancet. Retraction. Lancet 2010;375:445 (PMID 20137807)", reason: "Elements of the paper were incorrect, contrary to an earlier investigation, including that the children were consecutively referred and that the work had ethics approval (as quoted in BMJ 2010;340:c696). Its interpretation had already been retracted by 10 of 13 authors in 2004."}
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed record PMID 9500320 with retraction links to PMIDs 15016483 and 20137807.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], next_step: "Read the retracted full text via a library copy.", checked: 2026-10-02}
   - id: src-murch-2004
     title: "Murch SH et al. Retraction of an interpretation. Lancet 2004;363:750"
@@ -125,6 +126,7 @@ sources:
     document_class: synthetic
     read: abstract
     sha256: ac5b401f1c31497d2e7e2bb50e894770acf0bf0a5cee5893b4e7374bc306df50
+    publication: {status: corrected, notice: "Erratum. JAMA 2016;315(2):204", reason: "Not read; check before quoting figures."}
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 25898051; erratum JAMA 2016;315:204 listed.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The erratum was not read."], next_step: "Read the erratum before quoting figures on a published page.", checked: 2026-10-02}
   - id: src-taylor-2014
     title: "Taylor LE, Swerdfeger AL, Eslick GD. Vaccines are not associated with autism: an evidence-based meta-analysis. Vaccine 2014;32:3623-29"
@@ -186,6 +188,7 @@ sources:
     document_class: synthetic
     read: abstract
     sha256: 8bb80c3d4c7dd51255fda1db50c7e95462de9253c513b27ae6e88178b1ef60c1
+    publication: {status: corrected, notice: "Erratum. Pediatrics 2004;113(1):184", reason: "Not read."}
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 14595043; erratum 2004 listed.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Erratum not read."], checked: 2026-10-02}
   - id: src-hviid-2003
     title: "Hviid A et al. Association between thimerosal-containing vaccine and autism. JAMA 2003;290:1763-66"
@@ -221,6 +224,7 @@ sources:
     document_class: synthetic
     read: abstract; autism hazard ratio from the ACP press release (https://www.eurekalert.org/news-releases/1090832)
     sha256: 3736a4a696d091a1f60696f496153d776f86b66b62f9e3473dc4710a17efc3a5
+    publication: {status: corrected, notice: "Correction. Ann Intern Med 2025;178(10):1527 (PMID 40674587)", reason: "Not read. A 2026 reanalysis says the updated supplement shows autism associations."}
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 40658954; correction PMID 40674587.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text, correction and supplement not read."], next_step: "Read the full text, the correction and the supplement.", checked: 2026-10-02}
   - id: src-who-gacvs-2025
     title: "WHO Global Advisory Committee on Vaccine Safety. Statement on vaccines and autism, 11 December 2025"
@@ -269,6 +273,7 @@ sources:
     document_class: synthetic (survey statistics)
     read: full
     sha256: be5437c04ac588721dd1ecb3f3c7f0688892c3370e34ddb61d96163ac78bca9d
+    publication: {status: published, reason: "Published in J Transl Sci (OA Text) in April 2017. An earlier version had been accepted and then pulled by Frontiers in Public Health in Nov 2016 (secondary: Retraction Watch)."}
     authenticity: {status: authenticated, strength: moderate, provenance: "Publisher PDF (OA Text). Earlier accepted abstract withdrawn by Frontiers in Public Health in Nov 2016 (secondary: Retraction Watch).", tests: ["Publisher host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-hooker-miller-2021
     title: "Hooker BS, Miller NZ. Health effects in vaccinated versus unvaccinated children, with covariates for breastfeeding status and type of birth. J Transl Sci 2021;7"
@@ -290,6 +295,7 @@ sources:
     document_class: primary_text (the draft) reporting synthetic results
     read: full (24 pages)
     sha256: 92df016032c84ad4742585fc4087d84fbdd8125d386ae1414fe571103a31d18d
+    publication: {status: unpublished, reason: "A 2020 draft, never peer reviewed or published; shelved by Henry Ford Health on internal review (statement of 26 Sep 2025)."}
     authenticity: {status: authenticated, strength: moderate, provenance: "Served by senate.gov as entered into the hearing record; Henry Ford Health's statement of 26 Sep 2025 confirms the draft and its authors.", tests: ["Official host [read]", "Content match with Henry Ford Health's description of the draft [read via fetch tool]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not peer reviewed; no final version exists."], checked: 2026-10-02}
   - id: src-henry-ford-statement
     title: "Henry Ford Health. Statement on vaccine study, 26 Sep 2025"
@@ -339,6 +345,7 @@ sources:
     document_class: synthetic
     read: full
     sha256: ba7d983ebe4af5e937401e257cac4374ad92110bf964e78939a086d3ee30e66f
+    publication: {status: retracted, date: 2014-10-03, notice: "Retraction Note. Transl Neurodegener 2014;3:22 (PMC4183946)", reason: "Undeclared competing interests that compromised peer review, and concerns about the validity of the methods and statistical analysis."}
     authenticity: {status: authenticated, strength: strong, provenance: "Europe PMC full text; tagged Retracted Publication.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-hooker-2014-retraction
     title: "Retraction Note. Transl Neurodegener 2014;3:22 (3 Oct 2014)"
