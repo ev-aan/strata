@@ -245,11 +245,11 @@ standing rule's "transmission chain": a myth is documented as seriously as the h
 never counts as evidence. First used in `incandescent-lamp`; the format is in that file's header.
 
 - **X1** every chain sets `confers_weight: false`.
-- **X2** every event names a source listed in `sources/MANIFEST.yaml` and says `read: yes | no`.
+- **X2** every event names a source listed in `sources/MANIFEST.yaml` and says `read: yes | no`. A subject with a `transmission.yaml` must have a non-empty manifest; with none, X2 fails (it does not pass silently).
 - **X3** no claim may cite a chain id in its anchors (same firewall as threads, TH2).
-- **X4** `about` resolves to a claim in the subject.
+- **X4** `about` is written `subject:claim-id` and resolves to a claim in the same subject.
 
-- Display: an event with `read: no` is shown as "reported", never as checked.
+- Display (intended, not yet implemented in the site builder): an event with `read: no` is shown as "reported", never as checked.
 
 Thread rules, now enforced in the validator across all subjects. Named TH1-TH4 here (the import corpus
 called them T1-T4) so they do not clash with the timeline rules T1-T7:

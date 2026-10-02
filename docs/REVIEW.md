@@ -17,11 +17,14 @@ see "How this fits the publish gate" at the end of this file.
    the agent that wrote the change, and it is given only the PR, the repository and this file, never
    the author's conversation or notes. It posts its review on the PR.
 5. **Verdict.**
-   - `APPROVE`: the review agent merges the PR (squash merge). The site then deploys from `main`.
+   - `APPROVE`: the review agent merges the PR (squash merge), unless the PR touches an owner-only path
+     ("What only the owner merges" below), in which case it posts APPROVE and escalates; the owner merges.
+     The site then deploys from `main`.
    - `REQUEST CHANGES`: the author fixes on the same branch and the PR is reviewed again by a fresh
      reviewer. Fixes are new commits and new log entries, never rewrites of reviewed history.
    - `ESCALATE`: the agent does not merge and flags the owner on the PR. Used when the change alters
-     rules or the method itself, or when the reviewer cannot check what it needs to.
+     rules or the method itself, when the PR touches any owner-only path (even alongside content that is
+     otherwise approved), or when the reviewer cannot check what it needs to.
 6. **Record.** The review stays on the PR permanently. Rejected and superseded reviews are kept.
 
 ## What the review agent checks
@@ -31,7 +34,7 @@ logs (with the N26 redaction exception), the anchor format (N25: one `anchor` ma
 `sources`), the headline rules, the taxonomy entry (`check_taxonomy`), the publish gate (`check_publish_gate`:
 a published subject needs a `review.yaml` with an allowed status), definitions and shared nodes
 (`check_definitions`, `check_nodes`, N1 to N24), the challenge checks (S1 to S5 intake fields, N24),
-thread links TH1, TH2 and TH4 (across all subjects), transmission chains X1 to X4, and the provisional cap
+the thread-link and transmission-chain checks (rule ids in `build/SCHEMA.md`), and the provisional cap
 on claims marked `absence_anchor: true`. It cannot tell whether a claim *should* have
 been marked as resting on absence, so the reviewer checks that (B below). The reviewer covers what the
 validator cannot:
@@ -93,8 +96,9 @@ follow-up PR, which is opened before merging.
 
 A change to any of these is reviewed by an agent but **escalated** to the owner, never merged by an
 agent, because a gate reviewed only by agents could lower its own bar. The list is the owner-only set
-that `.github/CODEOWNERS` and `docs/GOVERNANCE.md` already define, plus the two deploy-related paths
-the review gate adds:
+that `.github/CODEOWNERS` and `docs/GOVERNANCE.md` already define, plus paths the owner has yet to
+confirm (`build/taxonomy.yaml`, `method/index.html`, `netlify.toml`, the licence files; see
+`docs/proposals/owner-only-list.md`):
 
 - the rules and the process: `CLAUDE.md`, `CONTRIBUTING.md` and everything under `docs/` (including
   `SCHEMA_PROPOSALS.md`, `GOVERNANCE.md`, `PUBLISH_GATE.md`, `CHALLENGES.md`, `NEWS_REVIEW.md` and this file)

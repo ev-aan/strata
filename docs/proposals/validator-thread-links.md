@@ -1,6 +1,6 @@
 # Proposal A: cross-subject thread and chain checks, rules renamed TH1 to TH4
 
-Status: DRAFT proposal under `docs/SCHEMA_PROPOSALS.md`, split out of PR #4. Not in force. Needs an independent assessment, then the owner's decision. Companion: `docs/proposals/owner-only-list.md` (independent; either can be decided without the other).
+Status: DRAFT proposal under `docs/SCHEMA_PROPOSALS.md`, split out of PR #4. Not in force. Needs an independent assessment, then the owner's decision. Companion: `docs/proposals/owner-only-list.md`. The two are separable in substance, but the text on this branch touches shared files (`docs/REVIEW.md` names the thread checks only by pointing to `build/SCHEMA.md`, so it reads the same under either rule ids). If A is declined, the owner reverts the `build/conformance.py`, `build/SCHEMA.md` thread section and the comment renames, and nothing in B depends on them.
 Basis: origin/main at 035a82d merged into this branch. Validator runs: `python3 build/conformance.py --base origin/main`.
 
 ## 1. The failure case
@@ -11,6 +11,8 @@ Four cases where main's validator gives a wrong or misleading result. Each was r
 3. **Thread and chain ids may repeat across subjects.** Renaming the `mcafee-and-surfside` thread to `thread-apollo-hoax-framing` gives 0 errors on main. A firewall keyed on ids then cannot tell the two apart.
 4. **X2 fails open.** Main's check is `elif manifest and event source not in manifest`: with an empty or missing `sources/MANIFEST.yaml` a transmission event can name any source and pass the X2 rule (emptying the `incandescent-lamp` manifest produces no X2 error on main; this branch reports X2 for every event).
 5. **Rule ids collide.** Thread rules are named T1 to T4 in code and messages; the timeline rules in `build/SCHEMA.md` are T1 to T7. "T4" means two different rules. Renamed here to TH1 to TH4.
+6. **A malformed `threads.yaml` crashes the validator.** A `threads.yaml` containing `threads: oops` makes main stop with a traceback (`AttributeError: 'str' object has no attribute 'get'`, no rule id, no subject named); here it is one error, `apollo-landings: threads.yaml: \`threads\` must be a list`.
+7. **TH4 narrowing (inconsistent result on main).** Main accepts any `interpretive` claim as an overlay member whatever its state, but rejects an `established` claim that is not interpretive. So in the `gulf-of-tonkin` overlay `thread-tonkin-popular-framing`, adding `gulf-of-tonkin:tonkin-aug2-maddox-engaged` (established, primary_text) is an error on main, while adding `gulf-of-tonkin:tonkin-sigint-selectively-presented` (established, interpretive) passes with 0 errors. SCHEMA.md says an overlay holds claims that are not settled. Six claims are both established and interpretive (`fz1073-political-use-alleged`, `pt-373`, `pt-247`, `pt-301`, `tonkin-maddox-warning-shots`, `tonkin-sigint-selectively-presented`); none is a thread member today. This is the weakest of the cases: it is an inconsistency, not a harm that has occurred, and it is listed as an owner choice in section 8.
 
 ## 2. Evidence
 Runs below. Baselines: main 0 errors, 93 warnings (`conf-main`); this branch 0 errors, 93 warnings; `diff` of the two full outputs is empty.
@@ -31,8 +33,14 @@ case 3 (duplicate thread id across subjects)
 case 4 (empty incandescent-lamp manifest)
   main: no X2 error (132 errors, all from other rules)
   here: ERROR incandescent-lamp:tx-lodygin-priority: event `tx-l-04` source `src-kommersant-campaign` is not in sources/MANIFEST.yaml (X2) ... (one per event)
+case 6 (threads.yaml containing `threads: oops`)
+  main: Traceback ... AttributeError: 'str' object has no attribute 'get'  (rc 1, no rule id)
+  here: ERROR apollo-landings: threads.yaml: `threads` must be a list  -> 1 errors, 93 warnings
+case 7 (established interpretive claim tonkin-sigint-selectively-presented as a member of gulf-of-tonkin:thread-tonkin-popular-framing)
+  main: 0 errors, 93 warnings
+  here: ERROR gulf-of-tonkin:thread-tonkin-popular-framing: reception-overlay member ... is `established` (interpretive); only contested claims, or interpretive claims that are not settled, may be members (TH4). ...  -> 1 errors
 ```
-Cases 1 to 4 are validator bugs in the sense of `docs/SCHEMA_PROPOSALS.md` (a wrong or unusable result: a false error, and passes that the rule text says must fail).
+Cases 1 to 4 and 6 are validator bugs in the sense of `docs/SCHEMA_PROPOSALS.md` (a wrong or unusable result: a false error, a crash, and passes that the rule text says must fail). Case 7 is an inconsistency, not a bug; see the owner choices.
 
 ## 3. The change, exactly
 **SCHEMA.md** (`build/SCHEMA.md`, thread rules section; the Files-table row for threads and the X3 line cite TH rules): the text now reads
@@ -41,7 +49,7 @@ Cases 1 to 4 are validator bugs in the sense of `docs/SCHEMA_PROPOSALS.md` (a wr
 - **TH3** (morphology threads) members carry an attestation; not yet enforced.
 - **TH4** reception-overlay members are `contested` claims, or `interpretive` claims whose state is not established or refuted. Settled myths go in `transmission.yaml`, pointed to with `see_transmission`.
 - Thread and chain ids are unique across the whole repository.
-- X2 needs a non-empty `sources/MANIFEST.yaml` for any subject with `transmission.yaml`; X4 `about` is written `subject:claim-id` and names a claim in its own subject.
+- X2 gains the sentence "A subject with a `transmission.yaml` must have a non-empty manifest; with none, X2 fails"; X4 reads "`about` is written `subject:claim-id` and resolves to a claim in the same subject" (both added to `build/SCHEMA.md` in this change; before, the validator was stricter than the text). The `transmission.yaml` row of the Files table and the line "Display: an event with `read: no` is shown as reported" are also in SCHEMA.md; the row describes the file and the validator's checks, and the Display line is marked "intended, not yet implemented in the site builder" (the builder renders no transmission chains today; it is not part of this proposal).
 
 **conformance.py**: the thread and chain code leaves `check_subject` and becomes `check_links(r, subjects, index)`, called once from `main()` after every subject has been checked and before main's `check_taxonomy`, `check_publish_gate`, `check_definitions`, `check_nodes` (all kept). It also tolerates a malformed `threads.yaml` (non-list, non-mapping entries) with an error instead of a crash. Main's headline and challenge checks stay in `check_subject` unchanged. Ids renamed in messages and in the comments of `threads.yaml` (apollo-landings, gulf-of-tonkin, mcafee-and-surfside, proto-indo-european, incandescent-lamp) and `transmission.yaml` (incandescent-lamp); `docs/COORDINATION.md` gains one line saying the import script's T1-T4 are TH1-TH4 (its T1 to T7 are timeline rules and are correct).
 
@@ -82,5 +90,10 @@ Total: main 0 errors, 93 warnings; this branch 0 errors, 93 warnings. The previo
 ## 7. Neutrality check
 The rules key on claim state and evidence class and on id strings, never on a claim's direction or subject. Tested on two digs that point in different directions: `gulf-of-tonkin` (a government-conduct question) and `incandescent-lamp` (priority disputes). Case 1 injects a Tonkin established claim into the `apollo-landings` overlay, which fails; the same injection of an `incandescent-lamp` established claim would fail identically because the check reads only `state` and `evidence_class`. No existing dig changes result (table above).
 
-## 8. Independent assessment and decision
-Independent assessment of the unmerged PR #4 content: docs/reviews/assessment-topic-proposal-pr4-pr6.md (on the assessor's branch), section 3. Assessment of this proposal: pending. Owner decision: pending.
+## 8. Owner choices (not decided here)
+- **TH4 for established interpretive claims: error, warning, or main's test.** Error (as drafted): matches the schema's "overlays hold unsettled claims", consistent with how the same member is treated when it is not interpretive; hits no existing dig. Warning: closest to main for same-subject members, flags only. Revert to main's test: no behaviour change, case 7 stays open. TH1, TH2 and unique ids are errors under all three.
+- **Cross-subject strictness as a whole** (cases 1, 2b, 3): the fallback in section 6 keeps only the bug fixes (2a, 4, 6).
+- `docs/proposals/topic-admission.md` (on main) says "the existing T1 to T4 thread rules"; if A is accepted that line needs the TH names. This branch does not edit it.
+
+## 9. Independent assessment and decision
+First assessment of the unmerged PR #4 content: docs/reviews/assessment-topic-proposal-pr4-pr6.md (on the assessor's branch), section 3. Second assessment of this proposal (head b5306bc): meets with specific changes, addressed in the following commit. Re-assessment of the revised text: pending. Owner decision: pending.

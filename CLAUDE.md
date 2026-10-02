@@ -15,7 +15,7 @@ All changes go through `docs/REVIEW.md`:
 5. The review agent posts its verdict on the PR and merges only on APPROVE. Changes to rules,
    `CONTRIBUTING.md`, `SCHEMA.md`, `conformance.py` or `docs/REVIEW.md` are escalated to the owner,
    never merged by an agent. "Rules" means everything on the owner-only list in `docs/REVIEW.md`
-   ("What only the owner merges"), which matches `.github/CODEOWNERS`: all of `docs/`, the schema,
+   ("What only the owner merges"), which includes everything in `.github/CODEOWNERS` (and a few paths beyond it): all of `docs/`, the schema,
    validator and tools, `build/site.yaml`, `build/news.yaml`, `build/taxonomy.yaml`, `.github/` and every `review.yaml`.
 
 ## Content rules that are easy to get wrong
