@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------------------
 headline: "Casket Letters (1567): No Originals Survive, Only Copies and Translations of Mary's Letters"
 headline_claim: casket-originals-lost
-headline_status: review          # drafted 2026-10-02 from bounty B-001; owner approval pending
+headline_status: draft           # rule 2 needs a claim established or refuted at HIGH confidence; casket-originals-lost is capped at provisional (absence anchor), so this stays draft
 search_summary: >
   Did Mary Queen of Scots write the Casket Letters? No original survives, only copies and translations, so the debate rests on those. The 1586 forgery is a different case.
 url_slug: casket-letters-mary-queen-of-scots-no-originals-survive-copies-translations

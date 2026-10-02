@@ -1,0 +1,207 @@
+# ---------------------------------------------------------------------------
+# SEARCH HEADLINE (rules 1-7 as in gulf-of-tonkin/claims.yaml)
+# ---------------------------------------------------------------------------
+headline: "Eikon Basilike (1649): Milton Charged the King's Prayer Was Copied Word for Word From Sidney"
+headline_claim: eikon-milton-pamela-charge
+headline_status: review          # established at high confidence, anchor read in the TCP text; owner approval pending
+search_summary: >
+  Did Milton accuse Charles I's King's Book of plagiarism? Yes: Eikonoklastes says a prayer in it was stol'n word for word from Pamela's prayer in Sidney's Arcadia. Who wrote the book is not settled.
+url_slug: eikon-basilike-1649-milton-charged-kings-prayer-copied-from-sidney
+
+subject: eikon-basilike
+title: "Eikon Basilike, the King's Book (1649)"
+migrated_from: "bounties/eikon-basilike/index.html (bounty B-002, opened 2026-10-01 by the Strata/Stratah project). The page and its run files are unchanged; this subject restates its claims in the YAML standard. Bounty IDs (C-01..C-08, F1..F12, DT-B1, G-01..G-07) are kept as bounty_id; B-001 (Casket Letters) also uses C-01..C-06, so the slug IDs here are the unique ones."
+description: >
+  Eikon Basilike ('The King's Image') appeared within days of Charles I's execution on 30 January 1649 and shaped how he was remembered.
+  Milton answered it for Parliament. After 1660 John Gauden claimed he had written it; royalists swore the King did. This dig keeps four questions
+  apart: what Milton charged about one prayer (documented), who wrote the book (contested; every position rests on testimony from interested people),
+  whether the prayer was planted by Milton's side (unproven), and what a measured comparison of the book's word habits with Charles's own writing shows
+  (a proposed result, not yet reviewed). The text tested contains no prayers at all.
+divergence_note: >
+  Every position on authorship rests on testimony from people with a stake in the answer; none rests on a test of the text itself. The one measured result
+  (proposed) counts against the book being Charles's own unedited composition, and is equally consistent with Gauden writing it and with Charles drafting and someone
+  else rewriting it.
+
+claims:
+  - id: eikon-milton-pamela-charge
+    bounty_id: C-01
+    state: established
+    statement: >
+      Milton charged, in Eikonoklastes, that a prayer printed as the King's own was "stol'n word for word" from the prayer of Pamela in Sidney's Arcadia,
+      and told readers to compare "Pammela's Prayer" in "the 3d. Book of Sir Philips Arcadia p. 248" with "the first Prayer of his Majestie, deliverd to Dr. Juxon".
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4   # of 5; the passage read in the 1650 enlarged second edition, not the 1649 first edition
+    anchor_checked: primary   # EEBO-TCP A50898 (Eikonoklastes, 1650) read 2026-10-02
+    adoption_weight: 5   # of 5
+    adoption_note: "Universal."
+    would_change_if: "the passage being absent from the 1649 first edition (the charge would then date from 1650)"
+    next_step: "Read the 1649 first edition of Eikonoklastes for the same passage; the text read here is the second, enlarged edition."
+    anchor:
+      type: primary-text
+      description: >
+        TCP A50898 [read]: "...a Prayer stol'n word for word from the mouth of Heathen fiction praying to a heathen God; and that in no serious Book, but the vain
+        amatorious Poem of Sr Philip Sidneys Arcadia..." and "...may satisfie thir own eyes at leasure in the 3d. Book of Sir Philips Arcadia p. 248. comparing Pammela's
+        Prayer with the first Prayer of his Majestie, deliverd to Dr. Juxion immediatly before his death, and Entitl'd, A prayer in time of Captivity". The TCP
+        catalogue records this as the edition 'Publish'd now the second time and much enlarg'd', London 1650.
+      accessible: true
+      ref: [src-tcp-a50898]
+  - id: eikon-text-tested-is-second-issue
+    bounty_id: "F1/F2 (correction)"
+    state: established
+    statement: "The TCP text used as 'the first issue' (A38258) is catalogued as the first edition, second issue, printed by John Grismond for Richard Royston, which 'appeared within a few days of the death of the King, probably about 4 February' (Madan)."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 3   # of 5; a catalogue note, not the book itself
+    anchor_checked: primary
+    adoption_weight: 2   # of 5
+    adoption_note: "Not measured."
+    would_change_if: "the TCP catalogue note being corrected, or Madan's bibliography saying otherwise"
+    next_step: "Check Madan's bibliography (1950) for the issue points; the bounty page calls this text 'the first issue'."
+    anchor:
+      type: catalogue-record
+      description: "TCP A38258 header [read]: 'First edition, second issue. Printed by John Grismond for Richard Royston. \"This issue appeared within a few days of the death the King, probably about 4 February.\" Cf. Madan, F.F. New bibl. of the Eikon basilike.'"
+      ref: [src-tcp-a38258]
+  - id: eikon-tested-text-has-no-pamela-prayer
+    bounty_id: F2
+    state: established
+    statement: "The transcribed first-edition (second issue) text contains no Pamela prayer and no 'Prayer in time of Captivity': a search of the whole TCP text for 'Pamela', 'Pammela' and 'Captivity' prayer headings finds none. The prayers were added in later editions."
+    evidence_class: primary_text
+    confidence: moderate
+    evidential_weight: 3   # of 5; machine search of a transcription, absence anchor
+    anchor_checked: primary
+    adoption_weight: 2   # of 5
+    adoption_note: "Not measured."
+    would_change_if: "a prayer resembling Pamela's being found in the text under other wording"
+    next_step: "Run the phrase matcher (the bounty's pamela_control.py) over the whole text to rule out a prayer without the names; read Madan on which editions first carry the prayer (gap G-03)."
+    anchor:
+      type: absence-in-searched-record
+      description: "Search by this session of TCP A38258 (about 60,300 words by a rough count; the bounty gives 60,359): 0 hits for 'Pamela', 'Pammela', 'Prayer in time of Captivity'. The word 'prayer' occurs 50 times in ordinary use."
+      ref: [src-tcp-a38258]
+  - id: eikon-pamela-prayer-is-sidneys
+    bounty_id: C-02
+    state: proposed
+    statement: "The 'Prayer in time of Captivity' printed in later editions is Sidney's text: the 1687 version shares 73 six-word phrases with Arcadia and 0-1 with Gauden, Taylor, Milton or the book's own chapters."
+    evidence_class: synthetic
+    confidence: moderate
+    evidential_weight: 3
+    anchor_checked: primary   # TCP texts
+    adoption_weight: 4   # of 5
+    adoption_note: "Generally accepted; no source found disputes it."
+    would_change_if: "a review finding an error in the matcher or the corpora"
+    next_step: "Review by someone outside the project. Reproduced by this session on 2026-10-02 (tests.yaml): 73 of 482 six-word phrases shared with Arcadia."
+    anchor:
+      type: computed-result
+      description: "Positive control of the phrase matcher (finding F11): the 1687 'Prayer in time of Captivity' (TCP A31771) against Arcadia (A12229). The 1687 text changed Pamela's opening, 'O all-seeing Light, and eternal Life of all things', to 'O Powerful and eternal God', but kept the rest."
+      ref: [src-tcp-a12229, src-tcp-a31771]
+    basis: "Our own computed result."
+  - id: eikon-gauden-claimed-authorship
+    bounty_id: C-03
+    state: established
+    statement: "After the Restoration, John Gauden privately claimed to have written Eikon Basilike."
+    evidence_class: primary_text
+    confidence: high
+    evidential_weight: 4
+    anchor_checked: no
+    adoption_weight: 5   # of 5
+    adoption_note: "Universal. Whether the claim is true is a separate claim (eikon-charles-wrote-book)."
+    would_change_if: "his letters being shown spurious or misdated"
+    next_step: "Re-anchor to Gauden's own letters of 1660-62 (the bounty page marks this 'no'); the TCP header for A38258 lists Gauden (1605-1662) among the attributed authors, which is not the claim itself."
+    anchor:
+      type: letters-of-the-claimant
+      description: "Per bounty B-002: his letters pressing the claim survive and are cited across the literature. Not read in this dig."
+  - id: eikon-charles-wrote-book
+    bounty_id: C-04
+    state: contested
+    statement: "Charles I wrote Eikon Basilike."
+    evidence_class: interpretive
+    confidence: low
+    evidential_weight: 2
+    anchor_checked: no
+    adoption_weight: 2
+    adoption_note: "Divided; many modern accounts lean to Gauden working from royal papers."
+    would_change_if: "a test of the text that discriminates the positions, or a manuscript in the King's hand"
+    positions:
+      - {label: "Charles", holder: "William Levett (sworn statement); Richard Hollingworth (1692); Thomas Wagstaffe (1711)", ground: "Eyewitness testimony of the King writing at Carisbrooke; testimony from loyal servants, given decades later."}
+      - {label: "Gauden", holder: "Gauden himself (1661); his widow's narrative", ground: "His own claim, made while seeking a richer bishopric. Self-interested but specific."}
+      - {label: "Composite", holder: "Many modern accounts", ground: "Gauden composed or polished from the King's papers; Jeremy Taylor sometimes named as reviser. Fits both bodies of testimony."}
+    anchor:
+      type: testimony
+      description: "As summarised in bounty B-002; the testimonies were not each re-read here."
+  - id: eikon-pamela-prayer-planted
+    bounty_id: C-05
+    state: contested
+    statement: "The Pamela prayer was planted in an edition by Milton's side to discredit the book."
+    evidence_class: interpretive
+    confidence: low
+    evidential_weight: 1
+    anchor_checked: no
+    adoption_weight: 2
+    adoption_note: "Repeated as 'apparently' true on Wikipedia's Dugard page (orientation only; not a source); disputed by others."
+    would_change_if: "a printing record showing who inserted the prayer and when (which editions carry it, and from which printers)"
+    next_step: "Madan's bibliography of the Eikon editions (gap G-03); the printer William Dugard's own record. Keep separate from authorship: the text tested has no prayers."
+    anchor:
+      type: later-testimony
+      description: "Rests on later royalist testimony about the printer Dugard; not examined here. A real borrowing used against the King does not show who put it there."
+  - id: eikon-no-computed-study-found
+    bounty_id: C-06
+    state: searched_gap
+    statement: "No computational style study of Eikon Basilike has been published, in three web searches."
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 1
+    anchor_checked: no
+    adoption_weight: 1
+    adoption_note: "Not a claim anyone holds."
+    would_change_if: "a published computed study being found"
+    next_step: "Google Scholar, Digital Scholarship in the Humanities, and the 1950s-2000s literature in The Library ('John Gauden and the Authorship of the Eikon Basilike', not yet read)."
+    searched: "Three web searches by the bounty author."
+  - id: eikon-text-lacks-charles-habits
+    bounty_id: C-07
+    state: proposed
+    statement: "The first-edition text of Eikon Basilike does not carry Charles I's measured writing habits: it sits as far from his own prose as other clergymen's writing does."
+    evidence_class: synthetic
+    confidence: low
+    evidential_weight: 3
+    anchor_checked: primary   # TCP texts
+    adoption_weight: 1
+    adoption_note: "New 2026-10-01."
+    would_change_if: "more of Charles's own formal or devotional prose being found and sitting close to the book; a reviewer finding an error"
+    next_step: "Outside review; more of Charles's own formal and devotional prose (gaps G-05, G-06). The main result was reproduced from the published code by this session on 2026-10-02 (tests.yaml); that does not test the method."
+    anchor:
+      type: computed-result
+      description: >
+        Burrows' Delta on the 150 most common words after spelling normalisation, 2,000-word samples, profiles never including the work tested (finding F10).
+        Median distance to Charles / to Gauden: Charles's own writing (held out, n=12) 0.465 / 0.744; Gauden's own works (n=25) 0.805 / 0.524; eight other 1640s-50s clergy
+        (n=31) 0.724 / 0.632; the Eikon (n=29) 0.702 / 0.591. The Eikon's range does not overlap Charles's own. It does not show Gauden wrote it, and cannot separate
+        'someone else wrote it' from 'Charles drafted it and someone else rewrote it'.
+      ref: [src-tcp-a38258, src-tcp-a31932, src-tcp-a78958]
+    basis: "Our own computed result, not reviewed by anyone outside the project."
+  - id: eikon-style-singles-out-gauden
+    bounty_id: C-08
+    state: searched_gap
+    statement: "Measured style singles out Gauden as the author: not shown."
+    evidence_class: synthetic
+    confidence: low
+    evidential_weight: 1
+    anchor_checked: primary
+    adoption_weight: 1
+    adoption_note: "Our first run (F6) suggested it and did not survive controls: it is recorded so that a headline built on it is not made."
+    would_change_if: "a method that separates Gauden from other learned clergy before it is applied to the book"
+    next_step: "Build such a method; Gauden's profile attracts most learned 1640s prose (F9: 17 of 31 passages from eight other clergy were 'nearest Gauden')."
+  - id: eikon-no-long-chapter-in-charles-range
+    bounty_id: F12
+    state: proposed
+    statement: "No chapter of 1,500 words or more falls inside Charles's own range (0 of 19 against a profile of his formal papers); at 1,000 words the ranges overlap (8 of 26), so the short chapters cannot be decided."
+    evidence_class: synthetic
+    confidence: low
+    evidential_weight: 2
+    anchor_checked: primary
+    adoption_weight: 1
+    adoption_note: "New 2026-10-01."
+    would_change_if: "more of Charles's own prose changing his range, or a reviewer finding an error"
+    next_step: "Outside review; larger sample of Charles's formal prose."
+    anchor:
+      type: computed-result
+      description: "Chapter-level check (finding F12; chapters.py and chapters_fair.py). Bears on the composite theory only for chapters of 1,500 words or more."
+      ref: [src-tcp-a38258]

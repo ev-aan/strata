@@ -1,0 +1,62 @@
+timeline:
+  id: eikon-basilike
+  title: "The King's Book (Eikon Basilike): the papers, the editions and the claims (1645 to 1711)"
+  as_of: "2026-10-02"
+  note: >
+    Dates marked 'read' come from the EEBO-TCP files and catalogue records read for this page (title pages, imprints, issue notes). Dates marked 'bounty page' come from
+    bounty B-002 and were not independently checked: the execution date, Gauden's claim, the royalist testimonies and the 1687 captivity prayer. Where only a year is known
+    the dot is hollow and drawn mid-year. The book's authorship is the open question; no dot shows who wrote it.
+panels:
+  - id: years
+    title: "1645 to 1711 (one tick per decade)"
+    start: "1645-01-01T00:00:00Z"
+    end:   "1712-01-01T00:00:00Z"
+    tick_years: 10
+    lanes: [charles, book, milton, claims]
+lanes:
+  charles: {label: "Charles I's own papers"}
+  book:    {label: "The book and its editions"}
+  milton:  {label: "Milton and the Pamela prayer"}
+  claims:  {label: "Claims of authorship"}
+people:
+  - {who: "Charles I", detail: "King of England, 1600-1649; executed 30 January 1649 (bounty page). Authorship of the book is attributed to him by royalists."}
+  - {who: "John Gauden", detail: "Bishop, 1605-1662 (TCP authority record); claimed after 1660 to have written the book."}
+  - {who: "John Milton", detail: "1608-1674; answered the book in Eikonoklastes for Parliament."}
+  - {who: "John Grismond and Richard Royston", detail: "Printer and publisher of the book and of the Newcastle papers."}
+sources:
+  s_a31932: {title: "The Kings cabinet opened (1645), EEBO-TCP A31932, title page read", url: "https://github.com/textcreationpartnership/A31932", authenticity: "transcription; letters possibly altered (G-02)"}
+  s_a78958: {title: "The papers which passed at New-Castle (1646; printed 1649), TCP A78958, imprint read", url: "https://github.com/textcreationpartnership/A78958", authenticity: "transcription, moderate"}
+  s_a38258: {title: "Eikon basilike (1648 [1649]), TCP A38258, catalogue note read: 'probably about 4 February'", url: "https://github.com/textcreationpartnership/A38258", authenticity: "transcription, moderate; second issue of the first edition"}
+  s_a50898: {title: "Milton, Eikonoklastes (second edition, 1650), TCP A50898, passage read", url: "https://github.com/textcreationpartnership/A50898", authenticity: "transcription, moderate"}
+  s_bounty: {title: "Bounty B-002 page (Strata/Stratah), the source of dates not independently read", url: "../../../bounties/eikon-basilike/index.html", authenticity: "this repository; not independent"}
+events:
+  - {id: e1, panel: years, lane: charles, time: "1645-06-14T12:00:00Z", precision: day, kind: document, status: single, sources: [s_a31932],
+     label: "14 Jun 1645: the King's cabinet is taken at Naseby (published as The Kings Cabinet Opened)",
+     detail: "Title page: 'written with the Kings own hand, and taken in his cabinet at Nasby-Field, June 14. 1645 By victorious Sr. Thomas Fairfax'. Parliament published them with annotations; royalists alleged alteration (gap G-02). The test uses only the King's letters. Read."}
+  - {id: e2, panel: years, lane: charles, time: "1646-06-30T12:00:00Z", precision: year, kind: document, status: single, sources: [s_a78958],
+     label: "1646: Charles's papers with Alexander Henderson at Newcastle (printed 1649 by Royston)",
+     detail: "Title: 'Anno Dom. 1646'; imprint 1649 for R. Royston. His formal prose (about 5,900 words) is the main sample of his own argument. Read."}
+  - {id: e3, panel: years, lane: book, time: "1649-01-30T12:00:00Z", precision: day, kind: analysis, status: single, sources: [s_bounty],
+     label: "30 Jan 1649: Charles I executed",
+     detail: "From the bounty page; not independently read in this dig."}
+  - {id: e4, panel: years, lane: book, time: "1649-02-04T12:00:00Z", precision: approx, kind: document, status: single, sources: [s_a38258],
+     label: "About 4 Feb 1649: the first edition, second issue, appears (the text tested)",
+     detail: "TCP catalogue: 'First edition, second issue. Printed by John Grismond for Richard Royston. \"This issue appeared within a few days of the death the King, probably about 4 February.\" Cf. Madan.' The text contains no Pamela prayer. Read."}
+  - {id: e5, panel: years, lane: milton, time: "1649-10-15T12:00:00Z", precision: year, kind: analysis, status: single, sources: [s_bounty],
+     label: "1649: Milton's Eikonoklastes, first edition",
+     detail: "From the bounty page; the first edition was not read here. The TCP text read is the 1650 second edition."}
+  - {id: e6, panel: years, lane: milton, time: "1650-06-30T12:00:00Z", precision: year, kind: document, status: single, sources: [s_a50898],
+     label: "1650: Eikonoklastes, second enlarged edition: the Pamela charge ('stol'n word for word')",
+     detail: "TCP A50898: 'Publish'd now the second time and much enlarg'd', London 1650. Contains: 'a Prayer stol'n word for word from the mouth of Heathen fiction ... Arcadia' and the reference to the 3rd book, p. 248. Read."}
+  - {id: e7, panel: years, lane: claims, time: "1661-06-30T12:00:00Z", precision: year, kind: witness, status: single, sources: [s_bounty],
+     label: "About 1660-62: Gauden claims authorship privately (letters)",
+     detail: "From the bounty page (claim eikon-gauden-claimed-authorship, anchor not read; he died in 1662 per the TCP authority record). The year is approximate."}
+  - {id: e8, panel: years, lane: claims, time: "1692-06-30T12:00:00Z", precision: year, kind: witness, status: single, sources: [s_bounty],
+     label: "1692: Hollingworth supports Charles as author (testimony)",
+     detail: "From the bounty page: testimony given decades after the events."}
+  - {id: e9, panel: years, lane: claims, time: "1711-06-30T12:00:00Z", precision: year, kind: witness, status: single, sources: [s_bounty],
+     label: "1711: Wagstaffe supports Charles as author (testimony)",
+     detail: "From the bounty page: testimony given decades after the events."}
+  - {id: e10, panel: years, lane: book, time: "1687-06-30T12:00:00Z", precision: year, kind: document, status: single, sources: [s_bounty],
+     label: "1687: Works with the 'Prayer in time of Captivity' (positive control)",
+     detail: "From the bounty page (TCP A31771, not read in this session): the prayer shares 73 six-word phrases with Sidney's Arcadia and changed its opening."}

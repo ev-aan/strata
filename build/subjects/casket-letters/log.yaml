@@ -38,3 +38,10 @@ log:
       the 'most frequent shared phrases' listings differ run to run because set ordering is not fixed; they are illustrative, not results. What this does NOT show: that
       the method is sound, that the genre confound (F11) is absent, or that anyone outside the project has checked it. C-06 stays proposed. Housekeeping: compare.py also prints
       an earlier exploratory run (n=4 phrases, calibration 35/40) that is not the published analysis; it should be labelled or removed by its author.
+  - id: L-05
+    date: "2026-10-02"
+    entry: >
+      CORRECTION to L-01: L-01 says the drafted headline has status 'review'. That was wrong. Headline rule 2 allows only a claim that is established or refuted at HIGH
+      confidence; casket-originals-lost is established but capped at confidence 'provisional' (an absence anchor), so the headline cannot meet the rule. headline_status is
+      now 'draft'. It would move to 'review' if the loss of the originals is anchored to primary evidence (for example the Bowes correspondence in the Calendar of State Papers,
+      reachable at british-history.ac.uk) and the claim's confidence can be raised, or if a different claim is chosen. The text of the headline is unchanged.
