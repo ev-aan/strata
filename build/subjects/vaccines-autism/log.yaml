@@ -162,3 +162,33 @@ log:
       the fuller record. Named the two disputants on va-henry-ford-why-unpublished (N21).
       Added the subject to build/taxonomy.yaml (medicine_health; is_claim_true, what_caused_it,
       origin; popular_claims). Not added to build/site.yaml: publishing is the owner's decision.
+  - id: L-16
+    date: 2026-10-02
+    entry: >
+      REVISION ROUND 1 (author response to docs/reviews/vaccines-autism-round-1.md and -round-2.md).
+      B1: va-wakefield-paper-account-accurate narrowed to the ethics statement (High Court para 153,
+      primary); new va-wakefield-records-mismatch (proposed; BMJ 2011, read via fetch tool) and
+      va-wakefield-referral-description (contested; para 157 against the GMC panel and the Lancet
+      notice as quoted). B2: va-retraction-reasons no longer says the "earlier investigation" was the
+      GMC hearing; adds the Lancet's 2004 admission of undisclosed financial interests (Indian J
+      Psychiatry 2011, now read in full); "withdrawn in two steps" reworded. B3: va-geier-licence
+      re-anchored to the 2019 Maryland opinion, which describes the Board's grounds (Lupron
+      protocol, misleading consent methods); IOM removed from its anchor. B4: IOM 2004 and WHO GACVS
+      moved out of the anchors of the MMR, thimerosal, aluminum and small-effect claims into
+      adoption notes; independence of populations stated (Danish register vs UK and US studies).
+      F1: WHO removed from the first-screen figures; the WHO count is now stated accurately where
+      kept (20 of 31 null, 11 suggesting an association, all 5 meta-analyses null); the Taylor 2014
+      figures are given as two groups, not a sum. F2/F4/N3: Poling uses the sourced wording
+      ("concluded ... significantly aggravated"), drops the unsupported presumption line, notes it
+      was a potential test case, and calls it the best-known case, not a count; NPR now opened.
+      F3: mitochondrial count is "at least 5 children in two reports". F5, F6: Injury Table and
+      Bruesewitz wording qualified. F7: the expression of concern is attributed to the 2020 paper.
+      N1: MMWR 1999 read in full; quoted exactly; the methylmercury-guideline point added to the
+      Yes side. N2: Simpsonwood transcript read in full (260 pages; autism p. 44); "generation zero"
+      does not occur in it. N4, N6, N7: signs-in-window, rise-mostly-reporting and measles-RNA
+      narrowed or lowered. N5: Sotomayor footnote relabelled. N9: DeStefano age-cutoff result added.
+      Manifest: exact URLs for the Thompson copy, the CDC archive page and STAT; public-domain and
+      open-licence texts stored under sources/ for the quote check. statement_kind assigned by rule
+      to every claim, marked to be reviewed. Not done here, left to the owner: the headline wording,
+      institution counts on the first screen, Rule 9 for statistics, the publication-status schema
+      (PR #6), naming living persons, refutation_class.

@@ -54,12 +54,13 @@ sources:
   src-bmj-gmc-2010:          {title: "BMJ 2010;340:c2803 (GMC decision)", url: "https://www.bmj.com/content/340/bmj.c2803", authenticity: "news report"}
   src-lancet-retraction-2010: {title: "BMJ 2010;340:c696 (Lancet retraction)", url: "https://www.bmj.com/content/340/bmj.c696", authenticity: "authenticated, moderate (as quoted)"}
   src-godlee-2011:           {title: "Godlee et al., BMJ 2011;342:c7452", url: "https://www.bmj.com/content/342/bmj.c7452", authenticity: "authenticated, moderate"}
-  src-thompson-2014:         {title: "Thompson statement, 27 Aug 2014 (third-party copy)", url: "https://cdctruth.org/", authenticity: "authenticated, weak"}
+  src-thompson-2014:         {title: "Thompson statement, 27 Aug 2014 (third-party copy)", url: "http://www.cdctruth.org/wp-content/uploads/STATEMENT-OF-WILLIAM-W.-THOMPSON-Ph.D.-REGARDING-THE-2004-ARTICLE-EXAMINING-THE-POSSIBILITY-OF-A-RELATIONSHIP-BETWEEN-MMR-VACCINE-AND-AUTISM.pdf", authenticity: "authenticated, weak"}
   src-deer-2011:             {title: "Deer, BMJ 2011;342:c5347", url: "https://www.bmj.com/content/342/bmj.c5347", authenticity: "authenticated, moderate"}
   src-bruesewitz:            {title: "Bruesewitz v. Wyeth, 562 U.S. 223 (2011)", url: "https://www.law.cornell.edu/supremecourt/text/09-152", authenticity: "authenticated, moderate"}
   src-geier-md-2015:         {title: "Md. Court of Special Appeals, 2015 (Geier)", url: "https://mdcourts.gov/data/opinions/cosa/2015/0722s14.pdf", authenticity: "authenticated, strong"}
+  src-geier-md-2019:         {title: "Md. Court of Special Appeals, 2019 (Geier)", url: "https://mdcourts.gov/data/opinions/cosa/2019/0338s18.pdf", authenticity: "authenticated, strong"}
   src-hooker-2014-retraction: {title: "Retraction note, Transl Neurodegener 2014;3:22", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4183946/", authenticity: "authenticated, strong"}
-  src-cdc-2004-study-statement: {title: "CDC statement on the 2004 study (archive)", url: "https://archive.cdc.gov/", authenticity: "authenticated, moderate"}
+  src-cdc-2004-study-statement: {title: "CDC statement on the 2004 study (archive)", url: "https://archive.cdc.gov/www_cdc_gov/vaccinesafety/concerns/autism/cdc2004pediatrics.html", authenticity: "authenticated, moderate"}
   src-jain-2015:             {title: "Jain et al., JAMA 2015", url: "https://europepmc.org/article/MED/25898051", authenticity: "authenticated, moderate"}
   src-mawson-2017:           {title: "Mawson et al., J Transl Sci 2017", url: "https://www.oatext.com/pdf/JTS-3-186.pdf", authenticity: "authenticated, moderate"}
   src-hviid-2019:            {title: "Hviid et al., Ann Intern Med 2019", url: "https://europepmc.org/article/MED/30831578", authenticity: "authenticated, moderate"}
@@ -87,7 +88,7 @@ events:
      detail: "The statement says there were no data or evidence of harm [read via fetch tool]."}
   - {id: a04, panel: years, lane: institutions, time: "2000-06-07T00:00:00Z", end: "2000-06-08T23:59:00Z", precision: range, kind: official, status: reported, sources: [src-simpsonwood-2000],
      label: "7-8 Jun 2000: Simpsonwood meeting reviews preliminary thimerosal data",
-     detail: "Autism: 'a slight, but not significant, increase' in the pages read [via fetch tool]."}
+     detail: "Autism (transcript p. 44): 'a slight, but not significant, increase' at the highest exposure [read]."}
   - {id: a05, panel: years, lane: research, time: "2002-11-07T12:00:00Z", precision: month, kind: analysis, status: reported, sources: [src-madsen-2002],
      label: "Nov 2002: Madsen et al., 537,303 Danish children, RR 0.92",
      detail: "No association with MMR [abstract]."}
@@ -139,9 +140,9 @@ events:
   - {id: a21, panel: years, lane: origin, time: "2012-03-07T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-walker-smith-2012],
      label: "7 Mar 2012: High Court quashes Walker-Smith's striking-off",
      detail: "Same judgment: no respectable body of opinion supports the MMR-autism hypothesis (para 7) [read]."}
-  - {id: a22, panel: years, lane: legal, time: "2012-08-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-geier-md-2015],
+  - {id: a22, panel: years, lane: legal, time: "2012-08-22T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-geier-md-2015, src-geier-md-2019],
      label: "22 Aug 2012: Maryland revokes Mark Geier's licence",
-     detail: "Lupron protocol for autistic children; misleading consent methods [read]."}
+     detail: "Date from the 2015 opinion; the Board's grounds (Lupron protocol below the standard of care; misleading methods to obtain parental consent) as described in the 2019 opinion [read]."}
   - {id: a23, panel: years, lane: media, time: "2014-08-27T12:00:00Z", precision: day, kind: witness, status: single, sources: [src-thompson-2014, src-cdc-2004-study-statement],
      label: "27 Aug 2014: CDC co-author William Thompson says a subgroup result was omitted from DeStefano 2004",
      detail: "Read in a third-party copy; the CDC's response addresses the same point [read]."}

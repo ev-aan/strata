@@ -15,7 +15,7 @@ sources:
     document_class: primary_text
     read: abstract (thelancet.com refused; full-text passages known as quoted in [2012] EWHC 503 paras 153-157)
     sha256: 57294fcf24c55b8fd59014af3670843022781242150eb589b85cae979342ea53
-    publication: {status: retracted, date: 2010-02-02, notice: "The Editors of The Lancet. Retraction. Lancet 2010;375:445 (PMID 20137807)", reason: "Elements of the paper were incorrect, contrary to an earlier investigation, including that the children were consecutively referred and that the work had ethics approval (as quoted in BMJ 2010;340:c696). Its interpretation had already been retracted by 10 of 13 authors in 2004."}
+    publication: {status: retracted, date: 2010-02-02, notice: "The Editors of The Lancet. Retraction. Lancet 2010;375:445 (PMID 20137807)", reason: "As quoted in BMJ 2010;340:c696 (the notice itself was not read): several elements of the paper were incorrect, including that the children were consecutively referred and that the work had ethics approval. Its interpretation had already been retracted by 10 of 13 authors in 2004."}
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed record PMID 9500320 with retraction links to PMIDs 15016483 and 20137807.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text not read."], next_step: "Read the retracted full text via a library copy.", checked: 2026-10-02}
   - id: src-murch-2004
     title: "Murch SH et al. Retraction of an interpretation. Lancet 2004;363:750"
@@ -28,7 +28,8 @@ sources:
     title: "Review quoting the 2004 Lancet 'Retraction of an interpretation' (Indian J Psychiatry 2011)"
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3136032/
     document_class: secondary (quotes the 2004 notice)
-    read: tool
+    read: full (Europe PMC full text, 2026-10-02)
+    sha256: 7c03205cae9d330fc00388394736cba610e1ebae2c41f89a2721b7f2d451aa4f
     authenticity: {status: not_applicable, basis: "A secondary article used only for its quotation of the 2004 notice."}
   - id: src-lancet-retraction-2010
     title: "The Editors of The Lancet. Retraction. Lancet 2010;375:445 (as reported in BMJ 2010;340:c696)"
@@ -43,6 +44,7 @@ sources:
     document_class: primary_text (judgment)
     read: full
     sha256: 642c3c5882119ad2f393c2b3c89840e001c760e23bc97dd63a79a03de1087fcb
+    stored_as: sources/walker-smith-v-gmc-2012.txt   # plain text for the quote check; Open Justice Licence (The National Archives, Find Case Law)
     authenticity: {status: authenticated, strength: strong, provenance: "The National Archives' Find Case Law service, the official UK record of judgments (XML).", tests: ["Official host [read]", "Header date, judge and case number internally consistent [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-bmj-gmc-2010
     title: "Kmietowicz Z. Wakefield is struck off for the 'serious and wide-ranging findings against him'. BMJ 2010;340:c2803"
@@ -162,7 +164,9 @@ sources:
     title: "AAP and USPHS. Thimerosal in vaccines: a joint statement. MMWR 1999;48(26), 9 July 1999"
     url: https://www.cdc.gov/mmwr/preview/mmwrhtml/mm4826a3.htm
     document_class: primary_text
-    read: tool
+    read: full (downloaded 2026-10-02)
+    sha256: a31e97f151f8500c7d8d9db88e96a396a4187798384e4f4b586bdfb14bdcab62
+    stored_as: sources/mmwr-1999-joint-statement.txt   # plain text for the quote check; US government work, public domain
     authenticity: {status: authenticated, strength: moderate, provenance: "cdc.gov MMWR archive.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Read through a fetch tool; quotes not byte-checked."], next_step: "Download and read directly.", checked: 2026-10-02}
   - id: src-fda-thimerosal
     title: "FDA. Thimerosal and Vaccines (updated 15 Jan 2025)"
@@ -229,8 +233,9 @@ sources:
   - id: src-who-gacvs-2025
     title: "WHO Global Advisory Committee on Vaccine Safety. Statement on vaccines and autism, 11 December 2025"
     url: https://www.who.int/news/item/11-12-2025-statement-gacvs-vaccines-autism
-    document_class: interpretive (expert review)
-    read: tool
+    document_class: interpretive (expert review; used as adoption, not as an anchor)
+    read: full (downloaded 2026-10-02)
+    sha256: 0012b1a3bb958e1e62f9eac365e86b2abd6a7964607f3ae6342783875a19458b
     authenticity: {status: authenticated, strength: moderate, provenance: "who.int.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-doyon-plourde-2026
     title: "Doyon-Plourde P et al. Aluminium adjuvants in vaccines and potential health effects: systematic review. BMJ 2026;393:e088921"
@@ -280,6 +285,7 @@ sources:
     url: https://www.oatext.com/pdf/JTS-7-459.pdf
     document_class: synthetic (survey statistics)
     read: full
+    publication: {status: published, reason: "No notice recorded. The expression of concern of 18 May 2026 covers the authors' separate 2020 SAGE Open Medicine paper."}
     sha256: 413846a86d8b3ec0cb4b72605360b54ac3b4913d5d2ec59eb90a3b002e92ca22
     authenticity: {status: authenticated, strength: moderate, provenance: "Publisher PDF (OA Text).", tests: ["Publisher host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-hooker-miller-2020-eoc
@@ -327,17 +333,18 @@ sources:
     authenticity: {status: authenticated, strength: moderate, provenance: "PubMed PMID 14754936.", tests: ["Standard journal-record test [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Full text and race-stratified tables not read."], next_step: "Read the full text.", checked: 2026-10-02}
   - id: src-thompson-2014
     title: "Statement of William W. Thompson, Ph.D., Regarding the 2004 Article Examining the Possibility of a Relationship Between MMR Vaccine and Autism (Morgan Verkamp LLC, 27 Aug 2014)"
-    url: https://cdctruth.org/
+    url: http://www.cdctruth.org/wp-content/uploads/STATEMENT-OF-WILLIAM-W.-THOMPSON-Ph.D.-REGARDING-THE-2004-ARTICLE-EXAMINING-THE-POSSIBILITY-OF-A-RELATIONSHIP-BETWEEN-MMR-VACCINE-AND-AUTISM.pdf
     document_class: primary_text (statement)
-    read: full (a third-party PDF printout of the law firm's page, hosted under cdctruth.org/wp-content/uploads/; exact file path not recorded in this pass; the original URL now returns 404)
+    read: full (a third-party PDF printout of the law firm's page; re-downloaded 2026-10-02 with the same sha256; the original law-firm URL now returns 404)
     sha256: 3bed9a718869d4f1c5621c386089e1b9eead31f02cbd46e6720f33f97c056747
     authenticity: {status: authenticated, strength: weak, provenance: "Web-to-PDF conversion of the Morgan Verkamp page hosted by an advocacy site (cdctruth.org); the law firm's own page is gone.", tests: ["Content match with the CDC's response, which addresses the same claims [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not compared with an archive capture of the law firm's page (archive.org refused)."], next_step: "Compare with an Internet Archive capture of morganverkamp.com from Aug 2014.", checked: 2026-10-02}
   - id: src-cdc-2004-study-statement
     title: "CDC. Statement: 2004 MMR and Autism Study (archived page, last reviewed 24 Aug 2020)"
-    url: https://archive.cdc.gov/
+    url: https://archive.cdc.gov/www_cdc_gov/vaccinesafety/concerns/autism/cdc2004pediatrics.html
     document_class: primary_text (agency statement)
-    read: full (archived page; exact archive path not recorded in this pass)
+    read: full (archived page)
     sha256: 3fed56fc33b8e8dc099e34bae0c15cb65e3dc47c7a92ec8fbdc750a63c4e310e
+    stored_as: sources/cdc-2004-study-statement.txt   # plain text for the quote check; US government work, public domain
     authenticity: {status: authenticated, strength: moderate, provenance: "archive.cdc.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Original 2014 issue date and full archive URL not recorded."], next_step: "Record the exact archive URL.", checked: 2026-10-02}
   - id: src-hooker-2014
     title: "Hooker BS. Measles-mumps-rubella vaccination timing and autism among young African American boys: a reanalysis of CDC data. Transl Neurodegener 2014;3:16 (RETRACTED)"
@@ -358,8 +365,10 @@ sources:
     title: "Scientific Review of Vaccine Safety Datalink Information, 7-8 June 2000, Simpsonwood Retreat Center (transcript, 259 pp.)"
     url: https://stacks.cdc.gov/view/cdc/253137
     document_class: primary_text (transcript)
-    read: tool (about pages 1-57)
-    authenticity: {status: authenticated, strength: moderate, provenance: "CDC Stacks, the CDC's own repository.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["About 200 pages not read; no local copy (direct download refused)."], next_step: "Download and read the full PDF.", checked: 2026-10-02}
+    read: full (260-page PDF downloaded 2026-10-02; text searched and every autism passage read)
+    sha256: c2b0333f052dd6f71e477ab7e2e7bee9effc8402dbd60253dcc6f25c787a847c
+    stored_as: sources/simpsonwood-transcript-2000.ocr.txt   # plain text for the quote check; US government work, public domain; machine text extracted from the PDF, OCR noise possible
+    authenticity: {status: authenticated, strength: moderate, provenance: "CDC Stacks, the CDC's own repository.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Text extracted from a scan; passages other than those mentioning autism were not read line by line."], checked: 2026-10-02}
   - id: src-salon-2011
     title: "Lauerman K. Correcting our record. Salon, 16 Jan 2011"
     url: https://www.salon.com/2011/01/16/dangerous_immunity/
@@ -377,7 +386,7 @@ sources:
     title: "NPR. Case Stokes Debate About Autism, Vaccines (7 Mar 2008)"
     url: https://www.npr.org/2008/03/07/87974932/case-stokes-debate-about-autism-vaccines
     document_class: secondary
-    read: search result only (not opened)
+    read: tool (opened 2026-10-02)
     authenticity: {status: not_applicable, basis: "A news report; corroboration only."}
   - id: src-oap-decisions
     title: "US Court of Federal Claims. Autism decisions and background information (Cedillo, Hazlehurst, Snyder 2009; King, Mead, Dwyer 2010) and Federal Circuit affirmances"
@@ -391,6 +400,7 @@ sources:
     document_class: primary_text (opinion)
     read: full (syllabus, opinion, concurrence, dissent)
     sha256: 9f6d713f25bbe5e962c3789b1b7e260502cc1ce277fde6d142fa37f338c12faf
+    stored_as: sources/bruesewitz-v-wyeth-2011-opinion.txt   # plain text for the quote check; US court opinion, public domain (majority and dissent text from Cornell LII)
     authenticity: {status: authenticated, strength: moderate, provenance: "Cornell LII copy; supremecourt.gov PDF returned 404.", tests: ["Content match across the four parts; case number and vote consistent [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["Not byte-compared with the official slip opinion."], checked: 2026-10-02}
   - id: src-vicp-table
     title: "42 CFR 100.3, Vaccine Injury Table (eCFR, as of 30 Sep 2026)"
@@ -398,19 +408,29 @@ sources:
     document_class: primary_text (regulation)
     read: full
     sha256: 171e87b4fe1665cd98b9701672240b1413debbed8e8d1d48e78e3a2f261e9d5d
+    stored_as: sources/ecfr-42-cfr-100-3.txt   # plain text for the quote check; US regulation, public domain
     authenticity: {status: authenticated, strength: strong, provenance: "eCFR versioner API.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: [], checked: 2026-10-02}
   - id: src-geier-md-2015
-    title: "Maryland Court of Special Appeals, Geier v. Maryland State Board of Physicians, Nos. 722 & 2256, Sept. Term 2014 (1 Oct 2015); with the 2017 and 2019 opinions"
+    title: "Maryland Court of Special Appeals, Geier v. Maryland State Board of Physicians, Nos. 722 & 2256, Sept. Term 2014 (1 Oct 2015)"
     url: https://mdcourts.gov/data/opinions/cosa/2015/0722s14.pdf
     document_class: primary_text (court opinions)
     read: full
     sha256: ca4c1e0b9cf2300872fb5c1bb138e44df69c9be379a1e1ae23e6db2e47541dda
+    stored_as: sources/md-cosa-2015-geier.txt   # plain text for the quote check; Maryland court opinion, public record
     authenticity: {status: authenticated, strength: strong, provenance: "mdcourts.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The Board's own order not read."], checked: 2026-10-02}
+  - id: src-geier-md-2019
+    title: "Maryland Court of Special Appeals, Geier v. Maryland State Board of Physicians, No. 338, Sept. Term 2018 (2019)"
+    url: https://mdcourts.gov/data/opinions/cosa/2019/0338s18.pdf
+    document_class: primary_text (court opinion describing the Board's decision)
+    read: full
+    sha256: 67b376931427ec469ac35b70cb1e17dfa36d0d6a91705b0d9d141396ead54d93
+    stored_as: sources/md-cosa-2019-geier.txt   # plain text for the quote check; Maryland court opinion, public record
+    authenticity: {status: authenticated, strength: strong, provenance: "mdcourts.gov.", tests: ["Official host [read]"], tested_by: "Strata session, 2026-10-02", gaps: ["The Board's own order was not read."], checked: 2026-10-02}
   - id: src-stat-geier-2025
-    title: "STAT. Report on David Geier's role at HHS (26 Mar 2025), following the Washington Post (25 Mar 2025)"
-    url: https://www.statnews.com/
+    title: "STAT. Vaccine critic's apparent selection to head HHS autism study shocks experts (26 Mar 2025)"
+    url: https://www.statnews.com/2025/03/26/rfk-jr-vaccine-study-of-autism-links-led-by-vaccine-critic-scientists-shocked/
     document_class: secondary
-    read: tool (exact article URL not recorded in this pass)
+    read: search result and source pass (secondary)
     authenticity: {status: not_applicable, basis: "A news report; HHS has not published the appointment."}
 
   # ---------------- Prevalence and causes ----------------

@@ -1,0 +1,1342 @@
+REPORTED
+IN THE COURT OF SPECIAL APPEALS
+OF MARYLAND
+Nos. 722 and 2256
+September Term, 2014
+
+MARYLAND BOARD OF PHYSICIANS, et
+al.
+v.
+ANNE GEIER, et al.
+Arthur,
+Friedman,
+Davis, Arrie W.
+(Retired, Specially Assigned),
+JJ.
+Opinion by Arthur, J.
+Concurring opinion by Friedman, J.
+
+Filed: October 1, 2015
+
+During a disciplinary proceeding against appellee Mark Geier, M.D., the Maryland
+Board of Physicians publicly disclosed confidential medical information concerning Dr.
+Geier, his wife Anne, and their son David. David Geier was the subject of a separate
+disciplinary proceeding at the time of the disclosures.
+The Geiers responded to the disclosures by accusing the Board, its 22 members, its
+administrative prosecutor, and two staff members of abuse of power, invasion of privacy,
+and acting maliciously and vindictively. They filed suit in the Circuit Court for
+Montgomery County.
+In discovery, the Geiers attempted to uncover why the Board1 publicly disclosed
+their confidential medical information. The Geiers also attempted to establish that the
+disciplinary proceedings against them were motivated by malice. Although the Geiers
+ordinarily could not have obtained discovery about the Board’s decisional processes in
+the disciplinary proceedings against them (see, e.g., Montgomery County v. Stevens, 337
+Md. 471, 481 (1995); Public Serv. Comm’n v. Patuxent Valley Conservation League, 300
+Md. 200, 214 (1984)), they attempted to discover that information in this separate civil
+case and then to use it in the disciplinary proceedings. Their discovery requests collided
+with the public interest in protecting the confidentiality of governmental communications
+of “an advisory or deliberative nature,” Hamilton v. Verdow, 287 Md. 544, 563 (1980), as
+well as the general statutory prohibition on the discoverability and admissibility of
+
+1
+
+References to “the Board” include the Board members, the Board staff members,
+and the administrative prosecutor who make up the 25 co-defendants in this case.
+
+documents from the Board’s investigations and hearings. Md. Code (1981, 2014 Repl.
+Vol.) § 14-410 of the Health Occupations Article (“HO”).
+Citing the deliberative privilege, the general statutory prohibition against the
+discovery of the records of its investigatory proceedings, the attorney-client privilege,
+and the work-product protection, the Board refused to produce much of the information
+that the Geiers had requested in discovery. The circuit court granted one of the Geiers’
+several motions to compel, and the Board took an interlocutory appeal from that
+discovery order (No. 722).
+After this Court stayed part of the discovery order pending the appeal, the Geiers
+moved for discovery sanctions because of the Board’s other failures of discovery, most
+notably including the failure to produce a properly prepared designee at a duly noted
+deposition. The circuit court imposed the sanction of a default judgment on the issue of
+liability, and the Board took a second interlocutory appeal (No. 2256), which we
+consolidated with the first.
+QUESTIONS PRESENTED
+The Board’s consolidated appeal presents several questions for our review. We
+quote the single question presented in No. 722 and rephrase and consolidate the questions
+posed in No. 2256:
+1.
+
+Does the circuit court’s order compelling disclosure violate the Board’s
+absolute quasi-judicial immunity, its common law and statutory privileges,
+and §§ 1-401(d) and 14-410 of the Health Occupations Article?
+
+-2-
+
+2.
+
+Did the court err by entering an order of default against the Board on the
+issue of liability?2
+
+The Geiers have moved to dismiss both appeals on the ground that the order
+compelling discovery and the order of default are unappealable interlocutory orders, and
+not final judgments from which an appeal will lie.
+In the unusual circumstances of this case, we conclude that the first of the two
+appeals is properly before us, because the requested discovery implicates the decisional
+processes of high-level government administrators and is thus eligible for an immediate
+appeal under the collateral order doctrine. See, e.g., Stevens, 337 Md. at 479-80;
+Patuxent Valley, 300 Md. at 210. On the merits, we vacate the discovery order and
+remand for further proceedings, because the circuit court did not correctly evaluate some
+of the Board’s statutory and common-law privileges, including the deliberative privilege.
+On the other hand, we conclude that the order of default is not properly before us.
+Nonetheless, because the decision on the discovery order may indirectly affect the
+
+2
+
+The Board presented the following questions in case number 2256:
+
+1. Is the sanction of default as to liability barred by the defendants’ absolute
+judicial immunity from suit?
+2. In proceeding on the plaintiffs’ fifth motion for discovery sanctions and
+entering a sanction of default as to liability, did the circuit court improperly
+interfere with the defendants’ pending appeal from the order compelling
+discovery?
+3. Did the circuit court err and abuse its discretion in entering a discovery
+sanction of default as to liability against all defendants for the Board’s
+purported failure to prepare adequately its Rule 4-212(d) organizational
+representative?
+-3-
+
+premises for the order of default, the circuit court, upon a proper motion, should
+reevaluate the propriety of that interlocutory order on remand. See Md. Rule 2-602(a)
+(stating that, in general, “an order or other form of decision, however designated, that
+adjudicates . . . less than an entire claim . . . is subject to revision at any time before the
+entry of a judgment that adjudicates all of the claims by and against all of the parties”);
+Gertz v. Anne Arundel County, 339 Md. 261, 272-73 (1995) (an interlocutory order “is
+not a final judgment and may be revised at any time before the entry of a final
+judgment”).
+FACTUAL AND PROCEDURAL HISTORY
+Dr. Geier is a physician who advocates the theory that certain vaccines cause
+autism in genetically susceptible children. Dr. Geier’s son, David Geier, is not a
+physician, but has assisted his father in his research concerning that theory. In a case
+concerning the admissibility of expert testimony, the Court of Appeals has held that “Dr.
+Geier’s genetic susceptibility theory is no more than hypothesis and conjecture, devoid of
+a generally accepted methodology to support it.” Blackwell v. Wyeth, 408 Md. 575, 618
+(2009).
+In protracted and contentious disciplinary proceedings, the Board has established
+that Dr. Geier committed numerous violations of the Medical Practice Act, HO §§ 14-401
+et seq., in his treatment of autistic children. Geier v. Maryland State Bd. of Physicians,
+223 Md. App. 404, 415-17 (2015). The Board has also established that, while assisting in
+the treatment of autistic children in Dr. Geier’s practice, David Geier practiced medicine
+
+-4-
+
+without a license. David A. Geier v. Maryland Bd. of Physicians, No. 709, Sept. Term
+2014, slip op. at 8-10 (filed July 31, 2015).
+The Geiers contend that the Board has acted against them out of a desire to punish
+them and to discredit their research.
+A.
+
+The Disciplinary Proceeding against Dr. Geier
+
+On April 27, 2011, the Board summarily suspended Dr. Geier’s right to practice
+medicine, asserting that the “public health, safety or welfare imperatively required
+emergency action.” On May 16, 2011, the Board formally charged Dr. Geier with
+violations of the Medical Practice Act. As later amended, the charges included
+unprofessional conduct in the practice of medicine; willfully making or filing a false
+report or record in the practice of medicine; willfully failing to file or record any medical
+record as required under law; practicing medicine with an unauthorized person or aiding
+an unauthorized person in the practice of medicine; gross overutilization of health care
+services; failing to meet standards, as determined by peer review, for the delivery of
+quality medical care, and failing to keep adequate medical records. Geier, 223 Md. App.
+at 413-14.
+In September 2011, after six days of hearings, an administrative law judge (“ALJ”)
+issued a proposed decision upholding the summary suspension of Dr. Geier’s license. In
+March 2012, after an additional five days of hearings, the ALJ issued a 126-page
+proposed decision, in which she recommended that the Board uphold the charges of
+unprofessional conduct, willfully making or filing a false report or record, failing to meet
+
+-5-
+
+standards for the delivery of quality medical care; and failing to keep adequate medical
+records. The ALJ also recommended that Dr. Geier’s license be revoked. Id. at 414.
+Dr. Geier took exceptions, but on August 22, 2012, the Board issued a final
+decision ordering that his license be revoked. On a petition for judicial review, the
+Circuit Court for Montgomery County affirmed on April 9, 2014. Id. at 418. On appeal,
+this Court affirmed as well. Id. at 412.3
+B.
+
+The Disciplinary Proceeding against David Geier
+
+Meanwhile, on May 16, 2011, the Board charged David Geier with practicing
+medicine without a license in violation of HO § 14-601. On March 7, 2012, an ALJ
+recommended that the charges be dismissed. On July 30, 2012, however, the Board
+rejected the recommendation (and many of the ALJ’s findings), concluded that Mr. Geier
+had practiced medicine without a license, and imposed a fine of $10,000. On a petition
+for judicial review, the Circuit Court for Montgomery County affirmed on April 25, 2014.
+In an unreported opinion dated July 31, 2015, this Court affirmed as well.4
+C.
+
+The Disclosure of the Geiers’ Medical Information
+
+On January 25, 2012, while both of these disciplinary proceedings were pending,
+the Board issued a cease and desist order that accused Dr. Geier of practicing medicine at
+a time when his license had been summarily suspended. The order, which was posted to
+
+For a summary of the Board’s findings against Dr. Geier, see Geier, 223 Md.
+App. at 414-18.
+3
+
+4
+
+The Geiers’ unsuccessful petitions for judicial review were not decided by the
+circuit court judge who made the rulings that are at issue in this appeal.
+-6-
+
+the Board’s website and could be viewed by the public, specifically alleged that Dr. Geier
+had written prescriptions for himself, his son David, and his wife Anne. The order also
+detailed the Geiers’ confidential medical information, identifying the specific medications
+that Dr. Geier had allegedly prescribed for each person and describing the medical
+conditions that each medication typically treated. Rather than reproduce the confidential
+medical information, we shall simply state that it was highly personal in nature and not of
+the sort that an ordinary person would want to have disseminated to the public.
+Although the Board claimed (and continues to claim) that it had the right to post
+the Geiers’ confidential medical information to its website,5 it promptly removed the
+information when the Geiers protested. In addition, the Board issued an amended cease
+and desist order that deleted the references to the medications that Dr. Geier had allegedly
+prescribed and the patients for whom he had allegedly prescribed them. In the interim,
+however, other persons viewed and commented about the Geiers’ confidential medical
+information, and those comments are still accessible on the internet. Ultimately, an ALJ
+rejected the charge that Dr. Geier had written any prescriptions and had violated the
+summary suspension order.
+
+5
+
+The record does not fully support the Board’s claim that it had the right to
+disclose a patient’s confidential medical information to the public. In an email that the
+Board disclosed in discovery, one of the Board’s attorneys advised the Board that “[w]e
+are clearly violating” one of the Board’s own regulations. In the same email trail, the
+Board’s chair, Paul Elder, M.D., reacted with astonishment to the news that the Board
+had publicly disclosed a patient’s confidential medical information on its website. He
+agreed that the Board should “cease this activity asap!!!”
+-7-
+
+D.
+
+The Geiers’ Complaint, and the Board’s Unsuccessful Motion to
+Dismiss
+
+On December 21, 2012, while Dr. Geier and David Geier were pursuing their
+petitions for judicial review of the Board’s rulings against them, they and Dr. Geier’s wife
+filed a three-count complaint in the Circuit Court for Montgomery County. As
+defendants, the Geiers named the Board, as well as each of its members, its
+administrative prosecutor, and two staff members. The complaint alleged that by
+disclosing the Geiers’ confidential medical information, the defendants had deprived
+them of their constitutional right to privacy; violated the Maryland Confidentiality of
+Medical Records Act, Md. Code (1982, 2009 Repl. Vol.), §§ 4-301 et seq. of the Health
+General Article; and committed the tort of invasion of privacy by giving unreasonable
+publicity to private facts.
+The complaint alleged that the defendants “acted with ill will and with the intent to
+injure Plaintiffs by exposing Dr. Geier’s personal medical information and that of his
+wife and son.” The Geiers requested compensatory damages as well as $3 million in
+punitive damages.
+The Board moved to dismiss the complaint for failure to state a claim upon which
+relief could be granted. Following a hearing on July 10, 2013, the circuit court dismissed
+the Confidentiality of Medical Records Act claim, explaining that the statute does not
+create a private right of action. The court, however, declined to dismiss the constitutional
+claim and the invasion of privacy claim.6
+
+6
+
+As one basis for its motion to dismiss, the Board asserted that it, its members, its
+-8-
+
+E.
+
+Discovery
+
+The Geiers sought extensive discovery, attempting to unearth any evidence that
+might show that the Board acted out of animosity towards them. The Geiers did not limit
+their discovery requests to the specific circumstances immediately surrounding the
+Board’s disclosure of their confidential medical information. Instead, based on the
+contention that the Board was motivated by an overarching desire to punish them and
+discredit their research, the Geiers sought documents and testimony that revealed the
+Board’s decisional processes in the administrative proceedings against them. They also
+sought communications between the Board and its counsel that related to these
+prosecutions.
+The Board’s response to the Geiers’ maximalist approach proved unsatisfactory
+both to the Geiers and, eventually, to the circuit court. The Geiers filed multiple motions
+to compel and motions for discovery sanctions, two of which are the subject of this
+appeal.
+
+staff, and the administrative prosecutor had absolute quasi-judicial immunity from suit
+under Ostrzenski v. Seigel, 177 F.3d 245 (4th Cir. 1999). Because the court regarded the
+record as inadequate to evaluate the applicability of any immunities at that early stage of
+the proceedings, it rejected the immunity argument without prejudice to the Board’s right
+to reassert it on summary judgment. At present, the Maryland appellate cases do not
+unequivocally resolve the question of whether the Board had the right to an immediate
+appeal of an interlocutory order rejecting a claim of quasi-judicial immunity. See State v.
+Keller-Bee, ___ Md. App. ___, ___, 2015 WL 4081274, at *2-3 (July 6, 2015) (holding
+that court clerk had right to take immediate appeal of ruling denying motion to dismiss
+based on absolute judicial immunity). In any event, the Board did not appeal.
+-9-
+
+F.
+
+The First Motion to Compel
+
+On November 5, 2013, the Geiers moved to compel discovery, contending that the
+Board had not complied with their earlier discovery requests, which principally
+concerned the rationale for issuing a public cease and desist order that disclosed
+confidential medical information. The Board opposed those requests on the basis of the
+deliberative privilege, see Hamilton v. Verdow, 287 Md. at 563, and the work-product
+protection. After a hearing on the motion, the circuit court ordered the Board to provide
+the requested discovery, but stayed its order for 15 days to allow the Board to pursue an
+interlocutory appeal. The Board did not appeal.
+G.
+
+The First Motion for Sanctions and the Second Motion to Compel
+
+Although the Board began to produce responsive documents, the Geiers were
+dissatisfied with the pace and quantity of the production. On January 10, 2014, the
+Geiers filed a second motion to compel, in which they challenged the Board’s assertion of
+the attorney-client privilege. A week later, the Geiers moved for sanctions after the
+Board informed them that it had belatedly located 14 boxes of documents that might be
+responsive to the requests for production.
+On February 20, 2014, the circuit court granted the motion for sanctions, but did
+not specify a sanction. On the same day, the court granted the motion to compel the
+putatively privileged documents. The Geiers assert that the Board produced those
+documents four days later.
+
+-10-
+
+H.
+
+The Third Motion to Compel
+
+On May 1, 2014, shortly after they had failed in their petitions for judicial review
+of the Board’s decisions against them, the Geiers filed a third motion to compel. That
+motion concerned two classes of documents: the Board’s administrative investigatory file
+in its disciplinary proceedings against Dr. Geier’s partner, John L. Young, M.D.; and
+communications between the Board’s attorneys and defendant Joshua Shafer, an
+investigator for the Board. The Geiers argued that the Board had proceeded against Dr.
+Geier’s partner, Dr. Young, as part of its campaign to discredit their research.
+The Board opposed the production of the deliberations in Dr. Young’s case on a
+number of grounds, including the deliberative privilege, the attorney-client privilege, the
+work-product protection, and HO § 14-410, which states that, generally, “[t]he
+proceedings, records, or files of the Board, a disciplinary panel, or any of its other
+investigatory bodies are not discoverable and are not admissible in evidence[.]”
+Following a hearing on June 17, 2014, the circuit court granted the Geiers’ motion
+and compelled the disclosure of all of the requested documents. On June 26, 2014, the
+Board filed a notice of appeal of that order. That appeal is before us as No. 722.
+I.
+
+The Proceedings after the Initial Appeal, and the Entry of the Order of
+Default on the Issue of Liability
+
+In an order dated August 15, 2014, this Court granted the Board’s motion to stay
+the production of Dr. Young’s file and all other discovery pending further orders of court.
+In a revised order dated September 24, 2014, this Court stayed the production of Dr.
+Young’s file, of audio recordings of the Board’s deliberations in the disciplinary
+-11-
+
+proceedings against Dr. Geier and Mr. Geier, and of any written communications
+concerning this case between the Board or its members and the Board’s attorneys. In the
+meantime, however, a number of additional developments had occurred in the circuit
+court.
+On June 17, 2014, the day of the order granting the third motion to compel, the
+Geiers served a notice of deposition for a representative of the Board. The notice set the
+deposition for the previously agreed dates of July 1 through July 3, 2014, and enumerated
+no fewer than 167 discrete topics on which the Geiers requested testimony, including the
+Board’s investigation of Dr. Young. On June 29, 2014, two business days before the
+commencement of the deposition, the Board moved for a protective order. In support of
+the protective order, the Board did not assert the deliberative privilege or complain about
+the staggering number of requested topics. It simply asserted that the topics were
+insufficiently specific and that its designee had “a professional scheduling conflict.”7
+Although the Board did not obtain a protective order before the deposition was to
+begin, its designee and counsel nonetheless failed to appear. The failure to appear
+prompted a second motion for sanctions. See Md. Rule 2-432(a) (authorizing immediate
+sanctions if any officer, director, or managing agent of a party or a person designated
+
+7
+
+The court later learned that, although the designee had been on vacation outside
+of the State during the week before the deposition, she had returned to Maryland by the
+date of the deposition. Her “professional scheduling conflict” was that she had arranged
+to take off from work on the first day of the deposition.
+-12-
+
+under Rule 2-412(d) to testify on behalf of a party, fails to appear before the officer who
+is to take that person’s deposition, after proper notice).8
+Meanwhile, even though the Board had not yet obtained a stay of the June 17,
+2014, discovery order from either the circuit court or this Court, the Board did not
+produce the documents that the circuit court had compelled it to produce. The Board’s
+conduct prompted a third motion for sanctions, which the circuit court granted on August
+14, 2014, one day before this Court stayed discovery.
+The Board’s designee had appeared for a deposition on July 29, 2014, but was
+unprepared to address many of the topics in the notice, including the investigation of Dr.
+Young. The lack of preparation prompted a fifth motion for sanctions on August 8,
+2014.9 After denying the Board’s motion to stay any action on the motion pending the
+appeal of the discovery order of June 17, 2014, the circuit court granted the motion for
+sanctions in a memorandum and order dated December 16, 2014. In that memorandum,
+the court exhaustively detailed the Board’s conduct in discovery and, on the basis of that
+conduct, imposed the sanction of a default order against the Board on the issue of
+liability. The court added that “[o]nce the current interlocutory appeal has been resolved,
+the court will schedule a trial on damages.”
+
+8
+
+The circuit court eventually denied the protective order, as well as a motion to
+limit the designee deposition to one, seven-hour day.
+9
+
+The Geiers’ fourth motion for sanctions concerned the Board’s counsel’s conduct
+at other depositions. The circuit court has not ruled on that motion.
+-13-
+
+The Board took an appeal from the December 16, 2014, order. That appeal is
+before us as No. 2256.
+This Court consolidated the two appeals by order dated January 27, 2015.
+DISCUSSION
+I.
+
+The Motions to Dismiss
+We begin by addressing the scope of this consolidated, interlocutory appeal. The
+
+Geiers have asked this Court to dismiss both appeals. We shall deny the motion as to the
+discovery order of June 17, 2014, but grant it as to the order of default.
+A.
+
+Appealability of June 17, 2014, Order
+
+Generally, parties may appeal only from the entry of a final judgment. Md. Code
+(1974, 2013 Repl. Vol.) § 12-301 of the Courts and Judicial Proceedings Article (“[A]
+party may appeal from a final judgment entered in a civil or criminal case by a circuit
+court”). “[A] ruling must ordinarily have the following three attributes to be a final
+judgment: (1) it must be intended by the court as an unqualified, final disposition of the
+matter in controversy, (2) unless the court acts pursuant to Maryland Rule 2-602(b) to
+direct the entry of a final judgment as to less than all of the claims or all of the parties, it
+must adjudicate or complete the adjudication of all claims against all parties; [and] (3) it
+must be set forth and recorded in accordance with Rule 2-601.” Metro Maint. Sys. South,
+Inc. v. Milburn, 442 Md. 289, 298 (2015) (citing Rohrbeck v. Rohrbeck, 318 Md. 28, 41
+(1989)). All parties agree that the June 17, 2014, discovery order is not a final judgment.
+See, e.g., In re Foley, 373 Md. 627, 634 (2003); accord St. Joseph Med. Ctr., Inc. v.
+Cardiac Surgery Assocs., P.A., 392 Md. 75, 85-87 (2006).
+-14-
+
+The Board, however, argues that the order is appealable under the collateral order
+doctrine, a “very narrow exception” to the final judgment rule (see, e.g., Dawkins v.
+Baltimore City Police Dep’t, 376 Md. 53, 58 (2003)) that “treats as final and appealable a
+limited class of orders which do not terminate the litigation in the trial court.” Patuxent
+Valley, 300 Md. at 206. Those orders have been deemed appealable under the collateral
+order doctrine because they are “offshoots of the principal litigation in which they are
+issued[.]” Stevens, 337 Md. at 477 (citation omitted).10
+To qualify as a collateral order, a ruling must satisfy four criteria: “(1) it must
+conclusively determine the disputed question; (2) it must resolve an important issue; (3) it
+must be completely separate from the merits of the action; and (4) it must be effectively
+unreviewable on appeal from a final judgment.” See, e.g., Addison v. Lochearn Nursing
+Home, LLC, 411 Md. 251, 285 (2009). On a number of occasions, Maryland courts have
+held that, notwithstanding the general prohibition on immediate appeals of discovery
+
+The Board also relies on Baltimore City Dep’t of Social Services v. Stein, 328
+Md. 1 (1992). Stein held that a government agency, which was not a party to the case,
+could take an immediate appeal of an order compelling it to produce confidential
+information without first disobeying the order and being held in contempt. Id. at 20-21.
+In reaching its decision, the Stein Court likened the non-party agency to a government
+official claiming immunity, who, the Court suggested, could take an immediate appeal of
+an order rejecting a claim of immunity. See id. at 18-20. In subsequent decisions,
+however, the Court of Appeals has dramatically curtailed the ability of government
+officials to take immediate appeals of interlocutory orders that reject immunity defenses.
+See, e.g., Dawkins, 376 Md. at 65 (holding that, “[a]s a general rule, interlocutory trial
+court orders rejecting defenses of common law sovereign immunity, governmental
+immunity, public official immunity, statutory immunity, or any other type of immunity,
+are not appealable under the Maryland collateral order doctrine”). In the aftermath of
+Dawkins, Stein is best understood as permitting a non-party to take an immediate appeal
+of an order compelling it to provide discovery. See Cardiac Surgery Assocs., 392 Md. at
+89-91. Because the Board is a party, Stein does not advance its cause.
+10
+
+-15-
+
+orders, the collateral order doctrine may permit an immediate appeal of a discovery order
+that permits a litigant to inquire into the decisional processes of high-level government
+officials, particularly administrative adjudicators.
+In Patuxent Valley, 300 Md. at 204, the Public Service Commission issued a
+certificate to authorize a utility to construct overhead transmission lines. Patuxent Valley,
+an association of affected property owners, petitioned for judicial review and took steps
+to depose the commissioners. Id. In support of the unusual request to depose
+administrative decision-makers in an action for judicial review, Patuxent Valley and its
+allies cited a possible ex parte communication between the hearing examiner and the
+chairman of the Commission and made vague allegations of bias and bad faith. Id. at
+204-05. The circuit court denied the Commission’s motion for a protective order, the
+Commission appealed, and Patuxent Valley moved to dismiss the appeal on the ground
+that the discovery order was not a final judgment. Id. at 205.
+After issuing a writ of certiorari on its own motion (see id.), the Court of Appeals
+denied the motion to dismiss and held that the Commission had the right to take an
+immediate appeal under the collateral order doctrine. Id. at 210. In an opinion by Judge
+Eldridge, the Court reasoned that the Commission had met the four criteria of the
+collateral order doctrine:
+First, the order conclusively determined that individual Commission
+officials must appear for depositions with respect to their decision to grant
+[the utility] certificate. Second, the issue is clearly important. If, in actions
+for judicial review of administrate decisions, it is permissible for trial courts
+to order the depositions of the administrative decision makers, upon the
+type of allegations made in this case, the impact upon administrative
+agencies of the State and local governments may be quite substantial.
+-16-
+
+Third, the question whether Commission decision makers should be
+required to stand for depositions is distinct from the merits of Patuxent’s
+action for judicial review of the agency decision. Finally, if not appealable
+until the conclusion of the trial, the claim that Commission members should
+not be routinely subjected to extensive probing of their individual
+decisional thought processes would irretrievably be lost. Regardless of the
+outcome of the trial, the disruption to the administrative process, caused by
+placing the officials under pretrial scrutiny, is incurred at the first instance.
+Therefore, it would be impossible to cure the harm done to the Commission
+once the depositions have been taken.
+Id. at 206-07.
+The Court took pains to distinguish routine discovery orders from an order
+requiring high-level governmental decision-makers to submit to questioning about their
+decisional processes: while routine discovery orders ordinarily are effectively reviewable
+on appeal from a final judgment on the merits, “the harm that will result from deposing
+Commission members before trial, should they be immune from this type of scrutiny, will
+occur from the instant they are subjected to a probing of their decision making
+processes.” Id. at 208.
+The Court added that, “in the context of administrative decisionmaking, judicial
+review of Commission decisions is generally based on the record, and the thought
+processes of individual agency officials are free from scrutiny.” Id. at 209. “It would
+defeat this principle,” the Court stated, “if agency officials were routinely forced to
+undergo time-consuming depositions, then proceed to trial, and ultimately, upon a final
+judgment in the case, attempt to litigate the issue of whether they should have been
+deposed in the first place.” Id.11
+
+11
+
+On the merits, the Court held that, in an action for judicial review of an
+-17-
+
+Similarly, in Montgomery County v. Stevens, 337 Md. at 475, the Montgomery
+County Chief of Police exercised his right, under the Law Enforcement Officers Bill of
+Rights, to impose a higher penalty than a board had recommended for a policeman who
+had engaged in conduct unbecoming an officer. In the officer’s action for judicial review,
+he sought to depose the Chief, as well as several other County and local officials. Id. at
+476. When the circuit court allowed the depositions to proceed over the County’s
+objection, the County took an immediate appeal, which the officer moved to dismiss. Id.
+After issuing a writ of certiorari on its own motion, the Court, in another opinion
+by Judge Eldridge, followed Patuxent Valley and held that the discovery order “meets the
+requirements of the collateral order doctrine and is, therefore, appealable as a final
+judgment.” Id. at 478. Indeed, the Court said that the facts of Stevens were “essentially
+the same as the facts in Patuxent Valley.” Id. at 479. The Court reasoned:
+First, [the order] conclusively determines that Chief Edwards must appear
+for depositions. Second, the importance of the issue in question here is
+identical to that in Patuxent Valley, that is, the potentially great harm to the
+public by the “disruption of the governmental process” that can be caused
+by discovery into the decision making processes of a high level government
+official. Third, the issue as to whether the deposition is appropriate is
+distinct from the merits of the action for judicial review. Finally, this issue
+will become effectively unreviewable later, because the harm would occur
+when the deposition was taken, and there would be no effective remedy
+available thereafter.
+Id. at 479-80 (internal citation omitted).
+
+administrative decision, a party may depose individual administrative decision-makers
+only where the party “makes a strong showing to the court of bad faith or impropriety[.]”
+Patuxent Valley, 300 Md. at 218. Because Patuxent Valley had not made that showing,
+the Court held that the circuit court abused its discretion in allowing the depositions to go
+forward. Id.
+-18-
+
+Accordingly, the Court held that the appeal could proceed. Id. at 480.12
+On a number of occasions, this Court has applied Patuxent Valley and Stevens in
+permitting an immediate appeal of orders that permitted litigants to obtain discovery from
+high-level decision-makers. Maryland State Bd. of Dental Exam’rs v. Fisher, 123 Md.
+App. 322, 327-28 (1998) (applying collateral order doctrine to entertain immediate
+appeal of order, in action for judicial review, that permitted litigant to depose
+administrative decision-makers and required administrative board to produce its minutes
+for in camera review); see also Johnson v. Clark, 199 Md. App. 305, 308 n.1 (2011)
+(applying collateral order doctrine to entertain immediate appeal from order denying
+motion to quash deposition of County Executive).13
+By their terms, Patuxent Valley and Stevens apply only in actions for judicial
+review of an administrative decision, when the agency’s opponent attempts to obtain
+discovery about the decision-makers’ deliberative processes. Consequently, if the circuit
+court had permitted Dr. Geier or David Geier to pursue discovery about the Board’s
+deliberations in their actions for judicial review, Patuxent Valley and Stevens would have
+permitted the Board to take an immediate appeal. Patuxent Valley and Stevens, however,
+
+On the merits, the Stevens Court held that the circuit court had erred in requiring
+discovery from the administrative decision-maker. Id. at 486.
+12
+
+In Fisher, this Court held that the circuit court had erred in ordering depositions,
+but had not abused its discretion in requiring in camera review of the minutes. Fisher,
+123 Md. App. at 328, 329. In Johnson, which was not an action for judicial review, this
+Court barred the County Executive’s deposition, because the only relevant information
+concerned his mental processes while performing discretionary acts. See Johnson, 199
+Md. App. at 328-30.
+13
+
+-19-
+
+do not directly apply to this case, which involves an independent tort claim for damages
+for invasion of privacy, rather than a petition for judicial review.
+Nevertheless, the June 17, 2014, discovery order meets the four criteria of the
+collateral order doctrine. First, like the discovery orders in Patuxent Valley and Stevens,
+the discovery order in this case conclusively determines that the Board must produce
+evidence of its deliberations and decisional processes. Second, because of “the
+potentially great harm to the public by the ‘disruption of the governmental process’ that
+can be caused by discovery into the decision making processes of [] high level
+government official[s]” (Stevens, 337 Md. at 479 (quoting Patuxent Valley, 300 Md. at
+208)), the issue is no less important than the discovery issues in Patuxent Valley and
+Stevens. Third, the issue of whether it is appropriate to permit discovery into the
+deliberative processes of an administrative adjudicator14 is distinct from the merits of the
+Geiers’ tort claim for invasion of privacy. Finally, this issue is effectively unreviewable
+on appeal from a final judgment, because the harm occurs when the administrative
+decision-makers are compelled to disclose their deliberative processes. “[T]here would
+be no effective remedy thereafter.” Stevens, 337 Md. at 480.
+Furthermore, from a review of the record, it is beyond any serious dispute that the
+Geiers have used this case to circumvent the prohibition on discovery in their actions for
+judicial review and to obtain documents and testimony to challenge to the Board’s
+
+See, e.g., Patuxent Valley, 300 Md. at 214 (quoting United States v. Morgan,
+313 U.S. 409, 422 (1941)) (just as a party may not depose a judge about his or her
+decisional processes, “‘so the integrity of the administrative process must be equally
+respected’”).
+14
+
+-20-
+
+administrative actions against them. In particular, although the Geiers successfully
+persuaded the circuit court to seal the record at the outset of this case, they repeatedly
+asked the court to unseal much of the record so that they could use it in their petitions for
+judicial review. For example:
+1.
+
+On November 5, 2013, the Geiers moved to unseal a portion of the
+
+deposition of the Board’s administrative prosecutor, Victoria Pepper, in which they
+questioned her “concerning her role in, and the adequacy of her investigation into, the
+charges against Dr. Mark Geier.” The Geiers explained that they intended to introduce
+the transcript into evidence in Dr. Geier’s petition for judicial review.
+2.
+
+On December 20, 2013, the Geiers moved to unseal the deposition of Dr.
+
+Paul Elder, a Board member. Dr. Elder had not yet testified at the time of the motion, but
+the Dr. Geier “anticipate[d]” that Dr. Elder’s testimony would “be directly relevant and
+necessary evidence” in Dr. Geier’s petition for judicial review.
+3.
+
+On February 6, 2014, the Geiers moved to unseal “any documents produced
+
+by Defendants that relate to their respective judicial review proceedings.” Although the
+motion did not expressly state that Dr. Geier and David Geier intended to employ those
+documents in connection with their petitions for judicial review, it noted that they were
+both “seeking judicial review of adverse decisions before the Maryland Board of
+Physicians.”
+4.
+
+On March 6, 2014, the Geiers moved to unseal all rulings and information
+
+that did not relate to the Geiers’ private medical information. Explaining the timing of
+the motion, the Geiers stated, “[a] brief is due in Dr. Mark Geier’s judicial review case on
+-21-
+
+Monday, March 10, 2014.” They added that “an opening brief is due in David Geier’s
+judicial review case during the week of March 10, 2014.”
+5.
+
+Just before his petition for judicial review came before the circuit court, Dr.
+
+Geier requested a stay “to allow him time to accumulate evidence from the discovery
+process” in his tort claim “against the Board.” Geier, 223 Md. App. at 448-49. He
+asserted that during discovery he had “‘uncovered evidence that directly demonstrated
+bad faith, malice, and irregularities (i.e., misconduct) committed by the Board and its
+members and the administrative prosecutor against [him] in” the administrative
+proceeding. Id. at 449.
+6.
+
+Similarly, in his petition for judicial review, Mr. Geier also moved for a
+
+stay of the proceedings or, alternatively, to admit new testimony or evidence. Geier, No.
+709, Sept. Term 2014, slip op. at 26. He too claimed that the evidence, which largely
+concerned the Board members’ deliberations, would show “irregularities and misconduct
+by Board members and staff.” See id.
+7.
+
+Even after the circuit court had denied the stays, affirmed the Board, and
+
+ruled against the Geiers on their petitions for judicial review, they continued to use the
+ongoing discovery in this case to discredit the Board and bolster their legal positions. In
+David Geier’s appeal from the denial of his petition for judicial review, he cited a number
+of instances of alleged misconduct that he did not cite to the circuit court. In justifying
+their discovery requests at the hearing that led to the discovery order of June 17, 2014,
+the Geiers complained of what they saw as defects and inadequacies in the Board’s
+decisional processes and left little doubt that they intended to invoke those flaws, as well
+-22-
+
+as any others that they might later find in discovery, in a kind of rhetorical collateral
+attack on the administrative judgments against them.15
+This case does differ from Patuxent Valley and Stevens in that they concerned
+depositions, while this concerns the production of documents. In our view, however this
+is a distinction without a difference. The administrative decision-makers did not have the
+right to an immediate appeal in Patuxent Valley and Stevens only because an adversary
+had attempted to depose them about their deliberative processes; they had the right to
+appeal because the adversary had attempted to inquire into their deliberative processes.
+The administrative decision-makers would have had the right to an immediate appeal if
+the attempt to invade their decisional processes came in the form of interrogatories,
+document requests, requests for admissions, or some other discovery device. Indeed, in
+Fisher, 123 Md. App. at 329, this Court followed Patuxent Valley and Stevens in
+entertaining an immediate appeal of a discovery order compelling an administrative
+board to produce the minutes of its deliberations. In addition, in the slightly different
+context of a tort claim action against the Governor (as opposed to an administrative
+agency), the Court of Appeals employed the collateral order doctrine to review and
+reverse a discovery order that required the chief executive to submit privileged
+documents, including documents as to which he had asserted the executive privilege, for
+
+Compare Maryland-Nat’l Capital Park & Planning Comm’n v. Mardirossian,
+184 Md. App. 207, 223 (2009) (holding that court did not abuse its discretion in
+permitting the deposition of administrative decision-makers because the party
+“disavowed any intent to question the Commissioners’ mental processes”).
+15
+
+-23-
+
+“expanded in camera review” by the circuit court and opposing counsel. Ehrlich v.
+Grove, 396 Md. 550, 571-72 (2007).
+In summary, in the unusual circumstances of this specific case, we have appellate
+jurisdiction to review the discovery order of June 17, 2014, under Patuxent Valley,
+Stevens, and the collateral order doctrine. We would certainly have had appellate
+jurisdiction had the court allowed discovery of the Board’s deliberative processes in an
+action for judicial review. We see no reason why we would not also have appellate
+jurisdiction when a court allows discovery of the Board’s deliberative process in a
+separate action that is quite obviously being used to garner evidence in connection with
+an action for judicial review or the functional equivalent of a collateral attack on the
+agency’s final decision. Accordingly, we hold that the appeal of the discovery order of
+June 17, 2014, “comes within the collateral order doctrine and is properly before us.”
+Stevens, 337 Md. at 480. Therefore, we deny the motion to dismiss Case No. 722.16
+
+16
+
+In arguing that the collateral order doctrine does not permit an immediate appeal
+in this case, the Geiers cite County Comm’rs of St. Mary’s County v. Lacer, 393 Md. 415
+(2006). In that case, the Court of Appeals held that the collateral order doctrine did not
+allow the county commissioners to take an immediate appeal of an order that allowed a
+former employee to inquire into their discussions, in executive session, when they
+discussed the termination of his contract. The Lacer Court distinguished Patuxent Valley
+and Stevens because the order “permitt[ed] only an objective investigation into the facial
+statements and actions of the Board during the closed session meeting” and did not
+pertain to “the thought processes of the decision-makers.” Lacer, 393 Md. at 430. Lacer
+differs from this case, because the circuit court’s discovery order unquestionably permits
+the Geiers to inquire into “the thought processes of the decision-makers.” In fact, the
+whole purpose of the Geiers’ discovery requests is to inquire into the Board’s thought
+processes and motivations.
+-24-
+
+B.
+
+Appealability of December 16, 2014, Order of Default
+
+On December 16, 2014, the circuit court entered an order of default as to liability.
+The order of default corresponded to the Geiers’ fifth motion for sanctions, which
+complained that the Board had failed to produce a qualified or competent organizational
+representative for a deposition. The order contemplated that the court would wait to
+decide damages after this Court resolved the Board’s interlocutory appeal of the June 17,
+2014, order.
+It is beyond dispute that, because the order of default leaves open the question of
+damages, it is not a final judgment. See Banegura v. Taylor, 312 Md. 609, 618 (1988)
+(determining that entry of order of default, which left damages open for future trial, was
+not final judgment and could not be immediately appealed); Adams v. Mallory, 308 Md.
+453, 461 (1987) (“[the order], which purported to enter a judgment of default without
+determining any relief is not a final judgment under the Maryland Rules”); Farragut Vill.
+Condo. Ass’n, Section III v. Bowling, 168 Md. App. 376, 381 (2006) (“There may be a
+partial judgment as to liability . . . but there is no final and appealable judgment until the
+issue of damages has also been resolved”); see also Md. Rule 2-613 and Md. Rule 2433(a)(3) (enabling court to enter default judgment as discovery sanction only after
+determination of damages).
+The Board correctly concedes that a party cannot appeal from an order of default
+on the issue of liability. Nonetheless, the Board argues that because the collateral order
+doctrine treats the discovery order of June 17, 2014, as a final judgment, every other
+order in the case, including the subsequent order of default and perhaps even the order
+-25-
+
+denying the Board’s motion to dismiss, have now come before the Court. The Board
+misunderstands the concept of a collateral order.
+It is true that, under Md. Rule 8-131(d), “[o]n an appeal from a final judgment, an
+interlocutory order previously entered in the action is open to review by the Court unless
+an appeal has previously been taken from that order and decided on the merits by the
+Court.” (Emphasis added.) Yet, even if the discovery order of June 17, 2014, qualified
+as a conventional final judgment (which it does not), Rule 8-131(d) would not authorize
+the review of the subsequent order of default: by its terms, the rule authorizes the review
+only of interlocutory orders that were entered “previously” to the final judgment.
+In any event, in Snowden v. Baltimore Gas & Electric Co., 300 Md. 555, 560 n.2
+(1984), the Court of Appeals, in a decision by Judge Eldridge, made it clear that this
+appellate rule ordinarily does not apply when a party exercises the right to an immediate
+appeal of an interlocutory order under a statute, a rule, or the collateral order doctrine.17
+In reaching that decision, the Snowden Court specifically rejected the contention that a
+permissible interlocutory appeal, such as an appeal under the collateral order doctrine, is
+“‘a final decision to which may be added other matters for appeal.’” Id. (quoting United
+States v. Fort Sill Apache Tribe, 507 F.2d 861, 863-64 (Ct. Cls. 1974)). The Court also
+rejected the contention that a permissible interlocutory appeal “‘can carry along wholly
+unrelated holdings.’” Snowden, 300 Md. at 559 n.2 (quoting Fort Sill, 507 F.2d at 864).
+
+Snowden concerned the scope of former Rule 887, which was substantially
+identical to Rule 8-131(d).
+17
+
+-26-
+
+Accordingly, in a permissible interlocutory appeal under the predecessor of Rule
+2-602(b), the Court refused to consider a challenge to any decision other than the specific
+interlocutory decision that had come before it. Snowden, 300 Md. at 559 n.2; accord
+Banashak v. Wittstadt, 167 Md. App. 627, 671 (2006) (“the appealability of each separate
+issue must be analyzed in a vacuum,” and “there are no two-for-the-price-of-one bargains
+on the appellate docket”); Forward v. McNeily, 148 Md. App. 290, 296 n.2 (2002) (“a
+non-appealable order may not be combined with an appealable interlocutory order so as
+to confer jurisdiction upon this Court”); cf. Davis v. Attorney General, 187 Md. App. 110,
+123 (2009) (entertaining appeal of second interlocutory ruling because it “directly
+controll[ed]” and “was inextricably bound to the order that [was] treated as final for
+purposes of appeal”). Had the appeal reached the Snowden Court under the collateral
+order doctrine, the result would have been the same.
+Furthermore, in a permissible, interlocutory appeal under the collateral order
+doctrine, it would make no sense to allow the parties to contest every other order in the
+case as though there had been a conventional final judgment. “The collateral order
+doctrine ‘is based upon a judicially created fiction, under which certain interlocutory
+orders are considered to be final judgments, even though such orders clearly are not final
+judgments.’” Ehrlich v. Grove, 396 Md. at 562 (quoting Dawkins, 376 Md. at 64). More
+important, a party may take an immediate appeal of a collateral order only if it is
+“collateral” — i.e., only if it is “completely separate from the merits of the action.” See,
+e.g., Addison, 411 Md. at 285. It would be absurd to say that, in an appeal that is
+permissible only if the subject matter is “completely separate from the merits of the
+-27-
+
+action,” the appellate court may proceed to consider and decide every interlocutory ruling
+pertaining to the merits of the case.
+In advocating for the contrary conclusion, the Board cites Stevens, 337 Md. at 47677, which remarked, in passing, that under Rule 8-131(d), “on appeal from an order
+constituting a final judgment, other orders, even if interlocutory, are generally reviewable
+by the appellate court.” The Board concludes that because we can consider the discovery
+order under the collateral order doctrine, we may also consider any other orders in the
+case, including the order of default. The Board misreads Stevens.
+In Stevens the Court of Appeals did not employ the collateral order doctrine as a
+vehicle to review and decide issues other than the discovery order that permitted the
+depositions of administrative decision-makers. The Stevens Court decided no issues
+pertaining to the merits of the case. Instead, the Court simply said that because the
+collateral order doctrine permitted the Chief of Police to take an immediate appeal of the
+order that required him to submit to the deposition, it need not consider whether his coappellants, the other County and local officials, had the right to appeal the discovery
+orders affecting them as well. See Stevens, 337 Md. at 476. The Court cited Rule 8131(d) to indicate that because it had appellate jurisdiction to consider the discovery
+order concerning the Chief, it would also consider the accompanying orders concerning
+the other officials. See id.18
+
+Aside from Stevens, the Board cites In re Guardianship of Zealand W., 220 Md.
+App. 66 (2014); Tschechtelin v. Samuels, 124 Md. App. 389, rev’d on other grounds, 353
+Md. 508 (1999); and Bradley v. Fisher, 113 Md. App. 603 (1997). In Zealand W., the
+court, while addressing an interlocutory appeal that was permitted by statute, discussed
+18
+
+-28-
+
+In short, we have appellate jurisdiction to decide the validity of the discovery
+order of June 17, 2014, and of no other order. Under Snowden, we do not have
+jurisdiction to consider or decide unrelated orders, such as the subsequent order of default
+or other orders pertaining to the merits of the case, merely because we have jurisdiction
+to consider a collateral order, such as the discovery order.
+Accordingly, in proceeding to the merits of this case, we shall limit our discussion
+to the discovery order. Therefore, we grant the motion to dismiss Case No. 2256,
+concerning the order of default. As previously stated, however, our decision on the
+discovery order may, affect the circuit court’s evaluation of how to treat the order of
+default.
+II.
+
+The Merits
+In its order of June 17, 2014, the circuit court compelled the Board to produce the
+
+records of its pre-decisional deliberations in the administrative proceedings against Dr.
+Geier’s partner, John L. Young, M.D., and communications between the Board’s
+
+other issues “(1) to decide issues that were the appropriate subject of an interlocutory
+appeal; and (2) for the guidance of the circuit court upon remand.” Zealand W., 220 Md.
+App. at 79. In Bradley, an interlocutory appeal under the collateral order doctrine, this
+Court declined to consider any rulings other than the collateral order itself. Bradley, 113
+Md. App. at 605-06. In Tschechtelin, another interlocutory appeal under the collateral
+order doctrine, this Court followed Bradley and again declined to consider any rulings
+other than the collateral order itself. Tschechtelin, 124 Md. App. at 400. Notably, both
+Bradley and Tschechtelin involved appeals from the denial of dispositive motions on
+grounds of sovereign immunity. Under a subsequent Court of Appeals decision,
+however, those rulings are no longer immediately appealable. Dawkins, 376 Md. at 65.
+-29-
+
+attorneys and Joshua Shafer, an investigator for the Board. We shall address each of
+those rulings in turn.
+A.
+
+Dr. Young’s Files
+
+In the circuit court, the Board asserted two grounds for withholding documents
+pertaining to the proceedings against Dr. Young: the deliberative privilege and HO § 14410’s general statutory prohibition against the discovery and admission of the Board’s
+proceedings, records, or files. The circuit court rejected both grounds. We disagree with
+the circuit court.19
+1. HO § 14-410
+The Board argues that under HO § 14-410, the circuit court was foreclosed from
+ordering the disclosure of Dr. Young’s file to the Geiers.
+HO § 14-410 states as follows:
+(a) Except by the express stipulation and consent of all parties to a
+proceeding before the Board, a disciplinary panel, or any of its other
+investigatory bodies, in a civil or criminal action:
+(1) The proceedings, records, or files of the Board, a disciplinary
+panel, or any of its other investigatory bodies are not
+discoverable and are not admissible in evidence; and
+(2) Any order passed by the Board or disciplinary panel is not
+admissible in evidence.
+
+19
+
+Appellate courts ordinarily review discovery decisions for abuse of discretion,
+but the applicability of a privilege is a question of law. See, e.g., 100 Harborview Drive
+Council of Unit Owners v. Clark, ___ Md. App. ___, 2015 WL 4598347, at *8 (July 30,
+2015) (applying de novo standard of appellate review to trial court’s legal determinations
+regarding privilege and interpretation of statute regarding discovery). Consequently, we
+conduct a de novo review of the circuit court’s decisions regarding privilege.
+-30-
+
+(b) This section does not apply to a civil action brought by a party to a
+proceeding before the Board or a disciplinary panel who claims to be
+aggrieved by the decision of the Board or the disciplinary panel.
+Section 14-410(a) announces a general rule that, absent the “express stipulation
+and consent of all parties to a proceeding before the Board, a disciplinary panel, or any of
+its other investigatory bodies,” “[t]he proceedings, records, or files of the Board, a
+disciplinary panel, or any of its other investigatory bodies” are neither discoverable nor
+admissible. Section 14-410(b) creates an exception, under which “[t]he proceedings,
+records, or files of the Board, a disciplinary panel, or any of its other investigatory
+bodies” may be discoverable and admissible in “a civil action brought by a party to a
+proceeding before the Board or a disciplinary panel who claims to be aggrieved by the
+decision of the Board or the disciplinary panel.”20
+Although Dr. Young has consented to the release of his files to the Geiers, the
+Geiers do not claim to have the “express stipulation and consent of all parties to a
+proceeding before the Board, a disciplinary panel, or any of its other investigatory
+bodies.” HO § 14-410(a). To the contrary, the Board, which is a party to the proceeding
+involving Dr. Young, emphatically objects to the release of those files to the Geiers.
+Consequently, section 14-410 prevents the disclosure of the Dr. Young file unless the
+Geiers’ case comes within subsection (b)’s exception for a “civil action brought by a
+
+20
+
+For a discussion of the meaning of the “proceedings, records, or files” under the
+related statutory privilege for medical review committees, see Cardiac Surgery Assocs.,
+392 Md. at 91-103.
+-31-
+
+party to a proceeding before the Board . . . who claims to be aggrieved by the decision of
+the Board . . . .”
+The Geiers argue that they come within subsection (b) because they “claim[] to be
+aggrieved by [a] decision of the Board” and have brought “a civil action.” Although it is
+not completely clear whether the Geiers claim to have been aggrieved by the decisions in
+the administrative proceedings against them, by the decision to issue the cease and desist
+order disclosing their confidential medical information, or by some other decision, the
+circuit court agreed with the Geier’s interpretation. We reject that interpretation, because
+it is inconsistent with the policy of section 14-410 to allow one party who “who claims to
+be aggrieved by the decision of the Board” to obtain “[t]he proceedings, records, or files
+of the Board” in a proceeding involving a completely different party.
+In Baltimore Sun v. Univ. of Maryland Med. Sys., 321 Md. 659 (1991), the Court
+of Appeals discussed the discoverability of the confidential, peer-review records of a
+medical review committee under a statutory predecessor of what is now HO § 1-401(d).
+Much like HO § 14-410(a), the former statute, HO § 14-601(d)(1) (1981, 1986 Repl.
+Vol.), provided that “the proceedings, records, and files of a medical review committee
+are not discoverable and are not admissible in evidence in any civil action arising out of
+matters that are being reviewed and evaluated by the medical review committee.” Much
+like HO § 14-410(b), however, the following subsection created an exception, under
+which the general prohibition on discovery and admissibility did not apply to “[a] civil
+action brought by a party to the proceedings of the medical review committee who claims
+to be aggrieved by the decision of the medical review committee.” HO § 14-601(e).
+-32-
+
+In responding to the certified question, the Court of Appeals recognized that the
+general rule against the discovery and admission of medical review committee materials
+“is premised upon legislative appreciation that a high level of confidentiality is necessary
+for effective medical peer review.” Baltimore Sun v. Univ. of Maryland Med. Sys., 321
+Md. at 668. “By protecting those records from public access in those situations covered
+by [former HO] § 14-601(d), the legislature recognized that a system of effective medical
+peer review outweighs the need for complete public disclosure.” Id.; accord Cardiac
+Surgery Assocs., 392 Md. at 94 (quoting id.).
+On the other hand, the “exception to the broad statutory protection afforded by
+[former HO] § 14-601(d)” made it “plain,” in the Court’s view, “that that protection has
+no application in a civil action initiated . . . by a physician who is the subject (a party to
+the proceedings) of the medical review committee.” Baltimore Sun v. Univ. of Maryland
+Med. Sys., 321 Md. at 668 (emphasis added). The Court went on to explain that the
+exception “is premised on the due process rights of a physician aggrieved by the decision
+of the medical review committee.” Id. (emphasis added). The “all encompassing” “rule
+of confidentiality” yields only so far as “to allow a physician who is the subject of a peer
+review to obtain the records for use in that physician’s challenge to the peer review
+conclusions.” Id. at 670 (Rodowsky, J., concurring).
+In other words, to protect their own due process rights, physicians may discover
+their own files – the files from the cases in which they were “the subject” or “a
+party.” They cannot, however, discover someone else’s files. The concurring opinion
+made this point more acutely: “the rule of confidentiality is suspended only to the extent
+-33-
+
+necessary to achieve the purpose of the suspension.” Id. at 670 (Rodowsky, J.,
+concurring).
+By analogy to HO § 14-410, Baltimore Sun compels the conclusion that the Geiers
+have no right to discover the “[t]he proceedings, records, or files of the Board” in the
+matter concerning Dr. Young. Subsection (a) makes those “proceedings, records, or files”
+undiscoverable and inadmissible without “express stipulation and consent of all parties to
+a proceeding,” which the Geiers do not have. Subsection (b) creates an exception, under
+which the “proceedings, records, or files” concerning Dr. Young may become
+discoverable and admissible in a civil action brought by Dr. Young, in which Dr. Young
+“claims to be aggrieved by the decision of the Board.”
+The exception serves to permit Dr. Young to vindicate his rights if he is aggrieved
+by the Board’s decision. Baltimore Sun v. Univ. of Maryland Med. Sys., 321 Md. at 668.
+It does not, however, permit the Geiers, or anyone else besides Dr. Young, to discover
+“[t]he proceedings, records, or files of the Board” in the matter concerning Dr. Young.
+See id.; see also id. at 670 (Rodowsky, J., concurring). Any other rule would drastically
+curtail the important principle of confidentiality in Board deliberations, as it would allow
+any person who claims to be “aggrieved” by some “decision of the Board” to discover the
+Board’s “proceedings, records, or files” concerning any other person, subject only to the
+broad definition of “relevance” for purposes of discovery. The circuit court, therefore,
+erred in compelling the Board to produce “[t]he proceedings, records, or files of the
+Board” in the matter concerning Dr. Young.
+
+-34-
+
+2. The Deliberative Privilege
+The Board argues that the circuit court erroneously rejected its claim that the
+common-law deliberative privilege excused it from disclosing Dr. Young’s file. We
+vacate the circuit court’s order because, in determining that the privilege did not apply,
+the court did not expressly balance “the need for confidentiality against the [Geiers’]
+need for disclosure and the impact of nondisclosure upon the fair administration of
+justice.” Hamilton v. Verdow, 287 Md. at 563.21
+The deliberative privilege is a species of executive privilege (see id. at 561),
+“which has been considered part of the common law of evidence.” Id. at 562. The terms
+“deliberative privilege” and “executive privilege” are used interchangeably in the
+relevant case law. See § 5680 Official Information—Deliberative Process Privilege, 26A
+Fed. Prac. & Proc. Evid. § 5680 (1st ed.) (“[T]he privilege has also been known by a
+variety of other names,” including “governmental or deliberative process privilege,” and
+“frank communications exemption”); see also City of Colorado Springs v. White, 967
+P.2d 1042, 1048-49 (Colo. 1998) (noting that the terms “deliberative” and “executive” are
+used interchangeably, referring to the same privilege).
+
+Citing Hamilton v. Verdow, 287 Md. at 566, the Geiers assert that the Board did
+not properly present its claim of executive or deliberative privilege, because it failed to
+submit an affidavit. We disagree. While the State employed an affidavit (from the
+Governor) to present its claim of privilege in Hamilton, the Court of Appeals required
+only a “formal claim” of privilege (id. at 563), not a claim of privilege supported by an
+affidavit. In the circumstances of this case, the Board satisfied that requirement, because
+it gave the court adequate information about the identity of the putatively privileged
+documents and the basis for the asserted privilege.
+21
+
+-35-
+
+In the United States, the privilege traces its roots to the treason trial of Aaron Burr,
+in which Chief Justice Marshall acknowledged that President Jefferson might prevent the
+disclosure of a letter that allegedly contained state secrets. Hamilton, 287 Md. at 556-57
+(citing United States v. Burr, 25 Fed. Case. 187, 191-92 (Cir. Ct. Va. 1807)).
+In explaining the rationale for the privilege, the Court of Appeals, in an opinion by
+Judge Eldridge, stated, “[I]t is apparent from the very nature of government that a
+legitimate necessity exists for the protection from public disclosure of certain types of
+official information.” Id. at 556. The Court continued:
+The necessity for some protection from disclosure clearly extends to
+confidential advisory and deliberative communications between officials
+and those who assist them in formulating and deciding upon future
+governmental action. A fundamental part of the decisional process is the
+analysis of different options and alternatives. Advisory communications,
+from a subordinate to a governmental officer, which examine and analyze
+these choices, are often essential to this process. The making of candid
+communications by the subordinate may well be hampered if their contents
+are expected to become public knowledge.
+Id. at 558.
+The Court quoted Archibald Cox Jr., the Watergate special prosecutor who had
+pursued the tapes of President Nixon’s conversations with his aides:
+[T]here are two reasons for preserving the confidentiality of
+intragovernmental documents reflecting advisory opinions,
+recommendations and deliberations comprising parts of the process by
+which governmental decisions and policies are formulated: (1) to encourage
+aides and colleagues to give completely candid advice by reducing the risk
+that they will be subject to public disclosure, criticism and reprisals; [and]
+(2) to give the President or other officer the freedom to “think out loud,”
+which enables him [or her] to test ideas and debate policy and personalities
+uninhibited by the danger that his [or her] tentative but rejected thoughts
+will become subjects of public discussion.
+-36-
+
+Id. (quoting Archibald Cox, Executive Privilege, 122 U. Pa. L. Rev. 1383, 1410 (1974)).
+Similarly, the Court quoted United States v. Nixon, 418 U.S. 683 (1974), in which
+the Supreme Court rejected President Nixon’s claim of an “absolute, unqualified
+Presidential privilege of immunity from judicial process under all circumstances.”
+Notwithstanding its decision on the merits, the Supreme Court nonetheless recognized
+that “‘those who expect public dissemination of their remarks may well temper candor
+with a concern for appearances and for their own interests to the detriment of the
+decision-making process.’” Hamilton v. Verdow, 287 Md. at 558-59 (quoting Nixon, 418
+U.S. at 705); see also id. at 559 (quoting Kaiser Alum. & Chem. Corp. v. United States,
+157 F. Supp. 939, 946-47 (Ct. Cl. 1958)) (upholding privilege because administrator
+“needed advice as free from pressure and bias as possible”).
+The Court of Appeals also recognized another basis for the privilege, which has
+particular relevance to inquiries into administrative decision-making: in general, “‘[t]he
+judiciary . . . is not authorized “to probe the mental processes” of an executive or
+administrative officer.’” See Hamilton v. Verdow, 287 Md. at 561 (quoting Carl Zeiss
+Stiftung v. V.E.B. Carl Zeiss, Jena, 40 F.R.D. 318, 325 (D.D.C. 1966), aff’d, 384 F.2d
+979 (D.C. Cir.), cert. denied, 389 U.S. 952 (1967), which quoted Morgan v. United
+States, 304 U.S. 1, 18 (1938)). “‘No judge could tolerate an inquisition into the elements
+comprising his decision[,] indeed, (s)uch an examination of a judge would be destructive
+of judicial responsibility . . . . [B]y the same token the integrity of the administrative
+process must be equally respected.’” Hamilton v. Verdow, 287 Md. at 561 (quoting Carl
+Zeiss, 40 F.R.D. at 325) (quotation marks and citation omitted).
+-37-
+
+As with other privileges, the applicability of executive privilege “is for the court to
+decide.” Hamilton v. Verdow, 287 Md. at 562. Executive privilege, however, “differs
+from many other evidentiary privileges” in that “[i]t is for the benefit of the public and
+not the governmental officials who claim the privilege.” Id. at 563. In addition, “[a]part
+from diplomatic, military or other sensitive matters, the privilege is not an absolute one.”
+Id. (citations omitted). “Rather,” the privilege “attempts to accommodate the competing
+interests of a just resolution of legal disputes with the need to protect certain confidential
+government communications.” Id.
+“[W]hen a formal claim of executive privilege is made for confidential
+communications of the chief executive, or confidential communications of other
+government officials of an advisory or deliberative nature, there is a presumptive
+privilege, with the burden upon those seeking to compel disclosure.” Id. Nonetheless,
+“[i]n many situations the courts have engaged in a balancing process, weighing the need
+for confidentiality against the litigant’s need for disclosure and the impact of
+nondisclosure upon the fair administration of justice.” Id. In particular, the courts have
+engaged in this balancing process when, as in this case, “there is an allegation of
+government misconduct,” or “the government itself is a party in the underlying
+litigation.” Id. at 563-64.
+“Where the government is a party,” the Court of Appeals added, “a question of
+
+unfair litigation advantage may arise.” Id. at 564 n.8. “[T]he government may be in a
+position of asserting or defending a claim while at the same time depriving its opponent
+of information needed to overcome the government’s position.” Id. “In these
+-38-
+
+circumstances,” the Court explained, “courts have weighed the government’s need for
+confidentiality against its opponent’s need for information.” Id.
+In summary, if the government asserts executive or deliberative privilege in a case
+in which the government itself is a party, or in which the government has been accused of
+wrongdoing, the circuit court should “weigh[] the need for confidentiality against the
+litigant’s need for disclosure and the impact of nondisclosure upon the fair administration
+of justice.” Id. at 563.
+In the hearing that preceded the June 17, 2014, discovery order, however, the
+circuit court did not expressly balance the public interest in maintaining the
+confidentiality of the Board’s deliberations concerning Dr. Young against the Geiers’
+need for disclosure of those documents and the impact of nondisclosure upon the fair
+administration of justice. Id. Instead, the court referred to an earlier hearing, on the
+Geiers’ first motion to compel, when it had balanced the public interest in confidentiality
+against the Geiers’ need for other information, which principally concerned the Board’s
+rationale for publicly disclosing the Geiers’ confidential medical information.
+In our view, the balancing that the court had done in the past cannot substitute for
+the balancing that the court was required to do again when the Board asserted a different
+claim of deliberative privilege as to a different set of documents. Simply put, the court
+was not relieved of the obligation to conduct the required balancing as to the Board’s
+deliberations about Dr. Young merely because it had previously balanced the public
+interest in maintaining the confidentiality of other documents against the Geiers’ need for
+those other documents. Because the court did not conduct the requisite balancing, we
+-39-
+
+shall vacate the discovery order and remand the case to the circuit court so that it can do
+so, on a document-by-document basis.22
+B.
+
+Attorney-Client Privilege
+
+The circuit court compelled the Board to produce some putatively privileged
+communications between the Board’s attorneys and Joshua Shafer, an investigator for the
+Board. According to the Board’s privilege log, most of the communications concerned
+the administrative proceedings against the Geiers, but some concern this case. Although
+we would ordinarily not have appellate jurisdiction to consider an interlocutory appeal
+from a discovery ruling that rejects a claim of attorney-client privilege (Kurstin v.
+Bromberg Rosenthal LLP, 420 Md. 466, 480 (2011)), we shall consider the ruling in this
+case, because it forms part of a ruling that we have jurisdiction to review. See Stevens,
+337 Md. at 476.23
+
+22
+
+As part of the balancing process on remand, the circuit court should assess the
+Board’s immunity claims, because the Geiers can establish no “need for disclosure”
+(Hamilton v. Verdow, 287 Md. at 563), and nondisclosure cannot affect the “fair
+administration of justice” (id.), if an immunity insulates the defendants from liability or
+from suit. The Fourth Circuit has held that a peer reviewer engaged by the Board has
+absolute quasi-judicial immunity from federal claims. Ostrzenski v. Seigel, 177 F.3d 245,
+253 (4th Cir. 1999). In addition, although no Maryland court has yet to squarely decide
+the issue, the Board argues that it, its members, and staff have absolute quasi-judicial
+immunity from state-law claims under the Fourth Circuit’s Ostrzenski decision and under
+Parker v. State, 337 Md. 271 (1995), which concerns judicial (rather than quasi-judicial)
+immunity. The Board also argues that the administrative prosecutor has absolute quasiprosecutorial immunity under Gill v. Ripley, 352 Md. 754 (1999), which concerns the
+immunity of criminal prosecutors. We express no opinion on the applicability of these
+immunities, or on the interrelationship between them and the qualified, statutory
+immunity under HO § 14-412, as none of those issues are properly before us at this time.
+23
+
+In addition to arguing that the circuit court compelled the production of
+attorney-privileged communications, the Board argues that the court compelled the
+-40-
+
+Even though Shafer is an agent or employee of the Board,24 the Geiers argued that
+the attorney-client privilege could not apply to his communications with the Board’s
+attorneys. The Geiers reason that Shaffer was a “stranger” to the attorney-client
+relationship between the Board and its attorneys. They based that contention on their
+interpretation of a State policy, the Guidelines for Administrative Adjudicatory
+Proceedings. Those guidelines prohibit ex parte communications between the Assistant
+Attorneys General who investigate and prosecute administrative proceedings before the
+Board and the Assistant Attorneys General who advise the Board and require them to
+maintain separate files. See http://www.mbp.state.md.us/forms/ ag_guidelines.pdf (last
+viewed Aug. 26, 2015).
+On their face, these guidelines do nothing more than establish a firewall to
+separate an agency’s attorney-advocates from the agency’s attorney-advisors during the
+course of an administrative prosecution. The guidelines have no effect on the
+confidentiality of communications between Board employees, such as Shaffer, and the
+Board’s attorneys. The guidelines certainly have no effect on the confidentiality of
+
+production of (unspecified) materials that are protected by the work-product doctrine.
+The Board’s brief, however, contains no argument concerning work-product.
+Consequently, we do not consider that issue.
+See HO § 14-204(e)(2) (requiring Secretary of Department of Health and Mental
+Hygiene to assign sufficient number of investigators to Board). The Geiers suggest that
+because the Secretary “assigns” the investigators to the Board, the investigators cannot
+partake of the Board’s attorney-client privilege. Their argument is untenable: because the
+investigators are “assigned” to the Board, they act for and on behalf of the Board. There
+is no reason why the attorney-client privilege would not apply to an investigator’s
+communications with the Board’s attorney, provided that the other requirements of the
+privilege are met.
+24
+
+-41-
+
+communications between Board employees and the attorneys who represent them as
+parties or witnesses in this case. If the Geiers contend that the Board’s attorneys violated
+the guidelines, they may have a remedy thereunder. They do not, however, have the
+remedy of voiding the attorney-client relationship between the Board’s agents or
+employees and the Board’s attorneys. See Md. Code (1984, 2010 Repl. Vol.) § 6-106(b)
+of the State Government Article (stating that Attorney General “is the legal adviser of and
+shall represent and otherwise perform all of the legal work for each officer and unit of the
+State government”); Md. Const. Art. V, § 3(a)(2) (“The Attorney General shall . . .
+Investigate, commence, and prosecute or defend any civil or criminal suit or action or
+category of such suits or actions in any of the Federal Courts or in any Court of this State,
+or before administrative agencies and quasi legislative bodies, on the part of the State or
+in which the State may be interested, which the General Assembly by law or joint
+resolution, or the Governor, shall have directed or shall direct to be investigated,
+commenced and prosecuted or defended”).25
+The circuit court, therefore, erred in rejecting the claim of privilege on the ground
+that the guidelines made Shafer into a “stranger” to the attorney-client relationship
+between the Board and its attorneys. On remand, the court should consider whether the
+Board has met its burden (see E.I. du Pont de Nemours & Co. v. Forma-Pack, Inc., 351
+
+The Board appeared to assume that the circuit court’s ruling applied not only to
+communications with Shaffer, but to communications with Christine Farrelly, the Board’s
+Executive Director. The Geiers do not appear to share that assumption. If the ruling did,
+however, apply to Farrelly as well as Shaffer, it is erroneous as to Farrelly for the same
+reasons that it is erroneous as to Shaffer.
+25
+
+-42-
+
+Md. 396, 406 (1998)) of establishing that the communications in question otherwise
+satisfy the requirements of the attorney-client privilege. See generally Newman v. State,
+384 Md. 285, 302 (2004); Harrison v. State, 276 Md. 122, 135 (1975).26
+CONCLUSION
+In summary, under the collateral order doctrine, we have appellate jurisdiction in
+No. 722 to consider the discovery order of June 17, 2014, concerning the bar on
+discovery of the Board’s “proceedings, records, or files” under HO § 14-410, the
+deliberative privilege, and the attorney-client privilege. We vacate that order and remand
+the case to the circuit court for further proceedings consistent with this opinion.27
+On the other hand, we do not have appellate jurisdiction in No. 2256 to consider
+the order of default of December 16, 2014. Nevertheless, our decision concerning the
+discovery order may affect some of the premises of the order of default, such as the
+breadth and scope of the deposition of the Board’s designee. Consequently, the circuit
+court, upon a proper motion, should reevaluate that interlocutory order on remand. Md.
+Rule 2-602(a); Gertz v. Anne Arundel County, 339 Md. at 272-73.
+
+26
+
+In the circuit court, the Geiers argued that the Board had waived the attorneyclient privilege because Dr. Elder, a Board member, testified at his deposition that he had
+received legal advice, but did not recall the advice that he had received. The Geiers
+appear to have abandoned that argument on appeal. Insofar as it has not been abandoned,
+the argument has no merit: a party does not waive the attorney-client privilege merely by
+affirming that he or she has received legal advice. A party waives the privilege only by
+disclosing the confidential legal advice. Harrison, 276 Md. at 151.
+27
+
+The parties debate whether the June 17, 2014, order compels the Board to
+produce the audio recordings of its deliberations in the Geiers’ disciplinary cases, or
+whether an earlier discovery order compelled the production those documents. We leave
+that issue to the circuit court on remand.
+-43-
+
+MOTION TO DISMISS IN NO. 722
+DENIED. MOTION TO DISMISS IN NO.
+2256 GRANTED. DISCOVERY ORDER
+OF JUNE 17, 2014, VACATED. CASE
+REMANDED TO THE CIRCUIT COURT
+FOR MONTGOMERY COUNTY FOR
+FURTHER PROCEEDINGS CONSISTENT
+WITH THIS OPINION. COSTS TO BE
+DIVIDED EQUALLY BETWEEN
+APPELLANTS AND APPELLEES.
+
+-2-
+
+REPORTED
+IN THE COURT OF SPECIAL APPEALS
+OF MARYLAND
+Nos. 722 and 2256
+September Term, 2014
+_________________________
+MARYLAND BOARD OF PHYSICIANS, et al.
+v.
+ANNE GEIER, et al.
+_________________________
+Arthur,
+Friedman,
+Davis, Arrie W.,
+(Retired, Specially Assigned),
+JJ.
+_________________________
+Concurring Opinion by Friedman, J.
+_________________________
+
+Filed: October 1, 2015
+
+I join fully in the majority opinion. I write separately to make one additional point.
+In Section II.A.2 of the Court’s opinion, we find that the circuit court erred by not
+evaluating the Board of Physicians’ claim of deliberative process privilege by weighing
+the Board’s, and through it the public’s, need for the confidentiality of its internal
+processes as expressed in documents against the Geiers’ need to obtain these documents
+for use in this lawsuit. Maj. Slip Op. at 34-39. In note 23, we give the circuit court some
+guidance about how to conduct this weighing on remand, directing it to “assess the
+Board’s immunity claims, because the Geiers can establish no ‘need for disclosure,’ and
+nondisclosure cannot affect the ‘fair administration of justice,’ if an immunity insulates
+the defendants from liability or from suit.” Maj. Slip Op. at 39 n.23 (internal citations
+omitted). I wholeheartedly agree but would go one step further.
+I would also direct that the circuit court consider whether every document sought
+by the Geiers and whose production is sought to be prevented by the Board through a
+claim of deliberative process privilege, is germane to the appropriate scope of discovery.
+The Geiers can have no need (and thus they can offer no counterweight to the Board’s,
+and through it, the public’s right to confidentiality) for documents that are not relevant, or
+that are no longer relevant, to their lawsuit. While my brethren prefer to leave that
+discussion for another day, in the circumstances and given the parties’ conduct of
+discovery so far, I would reach it today.
+It is my view that the only documents relevant to this lawsuit are those that are
+reasonably calculated to lead to the discovery of admissible evidence related to: (1) the
+Board’s decision to issue the cease and desist order on January 25, 2012; (2) the decision
+
+to reveal the Geiers’ confidential medical information in that cease and desist order; and
+(3) the duration of time that the cease and desist order was publicly available. The Geiers
+are entitled to any non-privileged documents related to those three topics and if they find
+evidence of malice in them they are entitled to present that evidence to a jury. But that’s
+it.
+The Geiers have sought (and the circuit court thus far permitted) discovery into the
+Board’s conduct of the disciplinary proceedings against the Geiers, because they claimed
+that they were searching for evidence of the Board’s alleged malice toward them. Maj.
+Slip Op. at 8-9. For even more attenuated reasons, the Geiers have sought documents
+related to Dr. Young. Maj. Slip Op. at 10. In light of the circuit court and this Court’s
+decisions affirming the Board’s decisions in those disciplinary proceedings, I would hold
+today that the Board’s conduct of those disciplinary proceedings was non-malicious as a
+matter of law1 irrelevant to the proper scope of the Geiers’ present claims, and that,
+therefore, in the circuit court’s weighing required by the assertion of the deliberative
+process privilege, the Geiers’ desire for these documents can offer no counterweight to
+the Board’s need for confidentiality.
+
+It seems incontrovertible to me that a finding by a reviewing court that physician
+disciplinary proceedings are warranted (and all the more so when the imposition of
+discipline is confirmed on appeal) precludes, as a matter of law, that the disciplinary
+proceedings could have been conducted with malice, in much the same way that a
+conviction or a judgment is a bar to claims for malicious prosecution and malicious use
+of process. Havilah Real Property v. Early, 216 Md. App. 613, 624-25 (2014).
+1
+
+-2-
+
+
