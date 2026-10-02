@@ -1,0 +1,40 @@
+# How the excavations are grouped. YAML is the source; the site builds its browse pages and filters from this file.
+# Every excavation has one primary `area` (where it is shelved), optional extra `areas`, one or more question `types`,
+# and `popular_claims: true` when it starts from a viral or conspiracy claim. Add a subject here when it is created.
+areas:
+  history:             {name: History,                         about: "Events and people before living memory."}
+  politics:            {name: Politics and Government,         about: "Votes, policy, official statements and institutions."}
+  current_events:      {name: Current Events,                  about: "Things still unfolding, where sources are still arriving. Every one will become history; each page says as of when."}
+  science_nature:      {name: Science and Nature,              about: "Physical, life and earth science, space and climate."}
+  medicine_health:     {name: Medicine and Health,             about: "Treatments, outbreaks and health claims."}
+  technology:          {name: Technology and Engineering,       about: "Systems, disasters and failures."}
+  archaeology_texts:   {name: Archaeology and Ancient Texts,   about: "Excavated objects, inscriptions and tablets."}
+  language:            {name: Language and Linguistics,        about: "Reconstruction and the origin of languages."}
+  religion_myth:       {name: Religion and Mythology,          about: "Sacred texts and traditions, kept apart from the history behind them."}
+  law_justice:         {name: Law and Justice,                 about: "Cases, evidence, motive and proof."}
+  media_misinformation: {name: Media and Misinformation,       about: "How a claim spread and where it came from."}
+  economics_business:  {name: Economics and Business,          about: "Markets, companies and money."}
+question_types:
+  did_it_happen:       {name: "Did it happen?"}
+  who_wrote_it:        {name: "Who wrote or made it?"}
+  is_genuine:          {name: "Is the document or object genuine?"}
+  what_caused_it:      {name: "What caused it?"}
+  what_did_they_know:  {name: "What did people know, and when?"}
+  is_claim_true:       {name: "Is a widely shared claim true?"}
+  origin:              {name: "Where and when did it begin?"}
+  what_does_it_mean:   {name: "What does it say or mean?"}
+assignments:
+  gulf-of-tonkin:        {area: politics,          areas: [history],                                              types: [did_it_happen, what_did_they_know], popular_claims: true}
+  mcafee-and-surfside:   {area: current_events,    areas: [law_justice, technology, media_misinformation],        types: [is_claim_true, what_caused_it],     popular_claims: true}
+  eikon-basilike:        {area: history,           areas: [],                                                     types: [who_wrote_it, is_genuine],          popular_claims: false}
+  casket-letters:        {area: history,           areas: [],                                                     types: [is_genuine, who_wrote_it],          popular_claims: true}
+  flydubai-fz1073:       {area: current_events,    areas: [technology],                                           types: [what_caused_it, is_claim_true],     popular_claims: true}
+  apollo-landings:       {area: science_nature,    areas: [history],                                              types: [did_it_happen, is_claim_true],     popular_claims: true}
+  chemtrails:            {area: science_nature,    areas: [media_misinformation],                                 types: [is_claim_true],                      popular_claims: true}
+  dyatlov-pass:          {area: history,           areas: [science_nature],                                       types: [what_caused_it],                     popular_claims: true}
+  proto-indo-european:   {area: language,          areas: [archaeology_texts, science_nature],                    types: [origin],                             popular_claims: false}
+  flood-myths-worldwide: {area: religion_myth,     areas: [archaeology_texts, history],                           types: [origin, what_does_it_mean],         popular_claims: false}
+  teti-pyramid-texts:    {area: archaeology_texts, areas: [religion_myth, language],                              types: [what_does_it_mean],                  popular_claims: false}
+  congress-promise-vote: {area: politics,          areas: [],                                                     types: [what_did_they_know],                 popular_claims: false}
+  votes-2009-present:    {area: politics,          areas: [],                                                     types: [did_it_happen],                      popular_claims: false}
+  votes-johnson-tonkin:  {area: politics,          areas: [history],                                              types: [did_it_happen],                      popular_claims: false}

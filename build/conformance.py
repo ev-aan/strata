@@ -247,6 +247,32 @@ def check_history(r, base):
             r.err(rel, f"claim `{cid}` was deleted; retire it with a state change, never remove it")
 
 
+def check_taxonomy(r, subjects):
+    tp = os.path.join(os.path.dirname(SUBJECTS), "taxonomy.yaml")
+    if not os.path.exists(tp):
+        r.warn("taxonomy", "build/taxonomy.yaml is missing")
+        return
+    tx = load(tp) or {}
+    areas, types, asg = tx.get("areas") or {}, tx.get("question_types") or {}, tx.get("assignments") or {}
+    for sdir in subjects:
+        s = os.path.basename(sdir)
+        a = asg.get(s)
+        if not a:
+            r.warn("taxonomy", f"{s} has no entry in build/taxonomy.yaml (area and question types)")
+            continue
+        for k in [a.get("area")] + list(a.get("areas") or []):
+            if k not in areas:
+                r.err(f"taxonomy:{s}", f"unknown area `{k}`")
+        for k in a.get("types") or []:
+            if k not in types:
+                r.err(f"taxonomy:{s}", f"unknown question type `{k}`")
+        if not a.get("types"):
+            r.warn(f"taxonomy:{s}", "no question type given")
+    for s in asg:
+        if not os.path.isdir(os.path.join(SUBJECTS, s)):
+            r.warn("taxonomy", f"assignment for `{s}` has no subject folder")
+
+
 def check_nodes(r):
     """Shared nodes (build/nodes/*.yaml): see SCHEMA.md, Nodes."""
     import hashlib, re
@@ -363,6 +389,7 @@ def main():
             check_subject(r, sdir)
         except yaml.YAMLError as e:
             r.err(os.path.basename(sdir), f"YAML does not parse: {e}")
+    check_taxonomy(r, subjects)
     nodes = check_nodes(r)
     if args.base:
         check_history(r, args.base)

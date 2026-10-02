@@ -206,3 +206,6 @@ The Atlas has a Map view (Leaflet and OpenStreetMap tiles, loaded only when the 
 
 ### Terminology: open questions (2026-10-02)
 A narrowed, testable question inside a dig, with a stated test and an append-only record, is an **open question** (formerly "bounty"). Pages live under `/questions/`; `/bounties/` redirects. New items use the prefix `Q-`. The two existing ones keep their legacy IDs B-001 and B-002 in YAML (`bounty_id`) and in logs, and are shown as Q-001 and Q-002 on the site. Claim-level IDs (C-, F-) are unchanged.
+
+### Grouping the excavations (2026-10-02)
+`build/taxonomy.yaml` holds the areas (History, Politics and Government, Current Events, Science and Nature, Medicine and Health, Technology and Engineering, Archaeology and Ancient Texts, Language and Linguistics, Religion and Mythology, Law and Justice, Media and Misinformation, Economics and Business), the question types (Did it happen? Who wrote or made it? Is it genuine? What caused it? What did people know, and when? Is a widely shared claim true? Where and when did it begin? What does it say or mean?) and each subject's assignment: one primary `area`, optional extra `areas`, `types`, and `popular_claims`. Conformance checks every value and warns when a subject has no entry. The site builds the filters on /digs/ and a page per area under /areas/. Areas with no excavation get no page.

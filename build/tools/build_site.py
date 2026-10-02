@@ -74,6 +74,10 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nodes as _nodes
 NODES = _nodes.load_nodes()
 CUR = {"slug": ""}
+TAX = yaml.safe_load(open(os.path.join(ROOT, "build", "taxonomy.yaml")))
+AREAS, QTYPES = TAX["areas"], TAX["question_types"]
+META = {}   # slug -> {sub, area, areas, types, popular}
+
 
 def node_html(nid):
     n = NODES.get(nid)
@@ -130,7 +134,15 @@ for sub in CFG["publish"]:
     tally = ", ".join(f"{v} {k.replace('_', ' ')}" for k, v in sorted(n.items(), key=lambda kv: order.get(kv[0], 9)))
     banner = (f'<div class="banner"><b>Open excavation.</b> This question is still being worked. The headline finding is stated at the confidence shown below; '
               f'not every source has been read in full, and each claim says which. Claims so far: {E(tally)}.</div>' if status != "published" else "")
-    body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{banner}'
+    _a = TAX["assignments"].get(sub, {})
+    META[slug] = {"sub": sub, "area": _a.get("area"), "areas": _a.get("areas", []), "types": _a.get("types", []), "popular": bool(_a.get("popular_claims"))}
+    _tags = ""
+    if _a.get("area"):
+        _tags = (f'<p class="small">Area: <a href="../../areas/{E(_a["area"])}/">{E(AREAS[_a["area"]]["name"])}</a>'
+                 + "".join(f' · <a href="../../areas/{E(x)}/">{E(AREAS[x]["name"])}</a>' for x in _a.get("areas", []))
+                 + " · Question: " + ", ".join(E(QTYPES[x]["name"]) for x in _a.get("types", []))
+                 + (" · Starts from a widely shared claim" if _a.get("popular_claims") else "") + "</p>")
+    body = (f'<p class="eyebrow">Excavation · {E(cl.get("title"))}</p><h1>{E(head)}</h1>{_tags}{banner}'
             f'<p class="summary">{E(" ".join(str(cl.get("search_summary", "")).split()))}</p>')
     if hc: body += f'<h2>The headline finding</h2>{claim_html(hc)}'
     body += f'<p>{E(" ".join(str(cl.get("description", "")).split()))}</p>'
@@ -160,7 +172,7 @@ for sub in CFG["publish"]:
     summ = " ".join(str(cl.get("search_summary", "")).split())
     ld = '<script type="application/ld+json">' + json.dumps({"@context": "https://schema.org", "@type": "Article", "headline": head, "description": summ,
          "inLanguage": "en", "dateModified": TODAY, "isAccessibleForFree": True, "url": f"https://{CFG['domain']}/digs/{slug}/",
-         "mainEntityOfPage": f"https://{CFG['domain']}/digs/{slug}/", "about": cl.get("title"),
+         "mainEntityOfPage": f"https://{CFG['domain']}/digs/{slug}/", "about": cl.get("title"), "keywords": [AREAS[x]["name"] for x in ([META[slug]["area"]] + META[slug]["areas"]) if x] + [QTYPES[x]["name"] for x in META[slug]["types"]],
          "publisher": {"@type": "Organization", "name": CFG["name"], "url": f"https://{CFG['domain']}/"}}).replace("</", "<\\/") + '</script>'
     write(f"digs/{slug}/index.html", page(head, body, " ".join(str(cl.get("search_summary", "")).split()), f"/digs/{slug}/", ld, depth=2))
     shutil.copy(os.path.join(base, "claims.yaml"), os.path.join(OUT, "digs", slug, "claims.yaml"))
@@ -179,9 +191,27 @@ for sub in CFG["publish"]:
             for m in re.finditer(r"CORRECTION[^.]*\.(?:[^.]*\.){0,2}", txt):
                 corrections.append((str(e.get("date", "")), sub, slug, head, m.group(0).strip()))
 
-items = "".join(f'<li><a href="{E(s)}/"><b>{E(h)}</b></a><br><span class="small">{E(" ".join(str(sm).split()))}</span>'
-                f'{"" if st == "published" else " <span class=pill>open excavation</span>"}</li>' for s, h, sm, st in digs)
-write("digs/index.html", page("Active excavations", f'<p class="eyebrow">Active excavations</p><h1>What we are excavating</h1><p>Each excavation files its claims with evidence, confidence and limits.</p><ul class="l">{items}</ul>', "Active excavations on Stratah: each files its claims with evidence, confidence and limits.", "/digs/", depth=1))
+def _li(s, h, sm, st):
+    m = META.get(s, {})
+    areas_all = [x for x in ([m.get("area")] + m.get("areas", [])) if x]
+    tag = (f'<br><span class="small">{E(AREAS[m["area"]]["name"])} · ' + ", ".join(E(QTYPES[x]["name"]) for x in m.get("types", [])) + (" · starts from a widely shared claim" if m.get("popular") else "") + "</span>") if m.get("area") else ""
+    return (f'<li data-areas="{" ".join(areas_all)}" data-types="{" ".join(m.get("types", []))}" data-popular="{1 if m.get("popular") else 0}"><a href="{E(s)}/"><b>{E(h)}</b></a>{tag}<br><span class="small">{E(" ".join(str(sm).split()))}</span>'
+            f'{"" if st == "published" else " <span class=pill>open excavation</span>"}</li>')
+items = "".join(_li(*d) for d in digs)
+used_areas = [k for k in AREAS if any(k in ([META[s]["area"]] + META[s]["areas"]) for s, *_ in digs)]
+used_types = [k for k in QTYPES if any(k in META[s]["types"] for s, *_ in digs)]
+chips = ('<p class="small" id="filters">Browse: <b>Area</b> ' + " ".join(f'<button class="pill" data-k="a:{k}" style="cursor:pointer;background:none;color:inherit">{E(AREAS[k]["name"])}</button>' for k in used_areas)
+         + ' <b>Question</b> ' + " ".join(f'<button class="pill" data-k="t:{k}" style="cursor:pointer;background:none;color:inherit">{E(QTYPES[k]["name"])}</button>' for k in used_types)
+         + ' <button class="pill" data-k="p:1" style="cursor:pointer;background:none;color:inherit">Starts from a widely shared claim</button> <button class="pill" data-k="x" style="cursor:pointer;background:none;color:inherit">Show all</button></p>')
+filt_js = ("<script>(function(){var on=new Set(),lis=[].slice.call(document.querySelectorAll('ul.l li[data-areas]'));function run(){lis.forEach(function(li){var ok=true;on.forEach(function(k){var v=k.slice(2);"
+           "if(k[0]==='a'&&li.dataset.areas.split(' ').indexOf(v)<0)ok=false;if(k[0]==='t'&&li.dataset.types.split(' ').indexOf(v)<0)ok=false;if(k[0]==='p'&&li.dataset.popular!=='1')ok=false});li.style.display=ok?'':'none'})}"
+           "[].slice.call(document.querySelectorAll('#filters button')).forEach(function(b){b.onclick=function(){var k=b.dataset.k;if(k==='x'){on.clear();[].forEach.call(document.querySelectorAll('#filters button'),function(x){x.style.fontWeight=''})}else if(on.has(k)){on.delete(k);b.style.fontWeight=''}else{on.add(k);b.style.fontWeight='700'}run()}})})();</script>")
+write("digs/index.html", page("Active excavations", f'<p class="eyebrow">Active excavations</p><h1>What we are excavating</h1><p>Each excavation files its claims with evidence, confidence and limits.</p>{chips}<ul class="l">{items}</ul>{filt_js}', "Active excavations on Stratah: each files its claims with evidence, confidence and limits.", "/digs/", depth=1))
+for _k in used_areas:
+    _rows = "".join(_li(*d) for d in digs if _k in ([META[d[0]]["area"]] + META[d[0]]["areas"]))
+    _rows = _rows.replace('href="', 'href="../../digs/')
+    write(f"areas/{_k}/index.html", page(f'{AREAS[_k]["name"]}', f'<p class="eyebrow">Area</p><h1>{E(AREAS[_k]["name"])}</h1><p>{E(AREAS[_k]["about"])}</p><ul class="l">{_rows}</ul><p><a href="../../digs/">All active excavations</a></p>', f'{AREAS[_k]["name"]} excavations on Stratah: {AREAS[_k]["about"]}', f"/areas/{_k}/", depth=2))
+    urls.append(f"/areas/{_k}/")
 crow = "".join(f'<li><span class="mono">{E(d)}</span> · <a href="../digs/{E(sl)}/">{E(h)}</a><br>{E(t)}</li>' for d, sub, sl, h, t in sorted(corrections, reverse=True)) or "<li>No corrections logged yet.</li>"
 write("corrections/index.html", page("Corrections", f'<p class="eyebrow">Corrections</p><h1>What we got wrong, and fixed</h1><p>Every correction made to a published excavation is logged and stays visible. The logs are append-only: an entry is never deleted or rewritten, only added to.</p><ul class="l">{crow}</ul>', "Corrections to Stratah digs.", "/corrections/", depth=1))
 write("about/index.html", page("About", f'<p class="eyebrow">About</p><h1>{E(CFG["name"])}: {E(CFG["tagline"])}</h1><p>{E(" ".join(CFG["about"].split()))}</p><p>See the <a href="../method/">method</a> for the rules, and <a href="../corrections/">corrections</a> for what we have fixed.</p>', " ".join(CFG["about"].split())[:200], "/about/", depth=1))
@@ -201,5 +231,5 @@ if os.path.exists(_hp):
     open(_hp, "w", encoding="utf-8").write(_h)
 write("sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + "".join(f"<url><loc>https://{CFG['domain']}{u}</loc><lastmod>{TODAY}</lastmod></url>" for u in urls) + "</urlset>")
 write("robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: https://{CFG['domain']}/sitemap.xml\n")
-write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Active excavations\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/): {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open excavation'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
+write("llms.txt", f"# {CFG['name']}\n\n> {' '.join(CFG['about'].split())}\n\n## Active excavations\n\n" + "".join(f"- [{h}](https://{CFG['domain']}/digs/{s}/) [{AREAS[META[s]['area']]['name'] if META[s]['area'] else ''}]: {' '.join(str(sm).split())} ({'published' if st == 'published' else 'open excavation'}; data: https://{CFG['domain']}/digs/{s}/claims.yaml)\n" for s, h, sm, st in digs) + f"\n## How to cite\n\nCite the dig page and name its status. Each claim lists its confidence and whether its source was read directly. Corrections: https://{CFG['domain']}/corrections/\n")
 print(f"site built in {OUT}: {len(digs)} excavation(s), {len(corrections)} correction note(s)")
