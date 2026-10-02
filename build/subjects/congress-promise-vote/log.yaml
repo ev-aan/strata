@@ -59,3 +59,20 @@ log:
       B001300), voted No against a Yea majority; REPUBLICAN Alford (MO, bioguide A000379), voted No against a Yea
       majority. Both selections are final under rule item 5: no swapping if no promise is found.
       NOTE: the rule selects members who differ from their party, so findings describe unusual cases (limit already in protocol).
+  - id: L-08
+    date: "2026-10-02"
+    entry: >
+      PILOT BUILT on H.R. 3746 with Barragan (D-CA) and Alford (R-MO): claims.yaml (11 claims), actors.yaml,
+      timeline.yaml/html (10 events), sources/MANIFEST.yaml with sha256 for 5 saved records. Read in full: House
+      roll calls 243 and 199 (Clerk XML), Public Law 118-5 (govinfo), Barragan's press release and Alford's e-newsletter
+      (raw page text from their .house.gov sites; the search-tool summaries were NOT used for quotes because a first
+      summary paraphrased). FINDINGS: (1) both votes confirmed against the official record, each against their party's
+      majority; (2) both gave public reasons on 1 June 2023, from opposite directions; (3) Alford's '$1.4 billion' IRS
+      figure matches Sec. 251 ($1,389,525,000); (4) Alford's quoted pay-go waiver phrase does NOT match Sec. 265 as
+      enacted (open: possibly another bill version); (5) no dated pre-vote commitment found for Barragan; Alford's
+      promise exists only in his own later statement, so alignment is not scored for either (P2, P4); (6) inducement
+      claim (P9) not yet searched, recorded as searched_gap. LIMITS: the rule picks members who differ from their party
+      by construction; two cases show the method, not Congress; statements may be staff-written; Senate roll call, floor
+      debate, the 28 May bill text and any 2022 campaign pledge are unread; no Wayback snapshots yet. WHAT THE TEST SHOWED
+      ABOUT THE METHOD: raw-page capture beats search summaries for quotes; the selection rule needed six clarifications
+      before running (L-06) which suggests the protocol should name chamber and bill type up front.

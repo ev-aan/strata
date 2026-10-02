@@ -1,0 +1,38 @@
+subject: congress-promise-vote
+captured: "2026-10-02"
+sources:
+  - id: src-roll-243
+    title: "House Clerk roll call 243, H.R. 3746, On Passage, 31 May 2023"
+    url: "https://clerk.house.gov/evs/2023/roll243.xml"
+    local: house-roll-2023-243.xml
+    sha256: 05b0a6a387330162b81e5902a19f80b670193bb09bf4b23916a764832c8f40ed
+    capture: {archive_snapshot: none, note: "Wayback save not available from the cloud session; owner to snapshot in a browser"}
+    authenticity: {status: authenticated, strength: strong, provenance: "official House Clerk record, fetched from clerk.house.gov", tests: [provenance, internal_consistency], gaps: "not compared with the printed Congressional Record", checked: "2026-10-02"}
+  - id: src-roll-199
+    title: "House Clerk roll call 199, H.R. 2811 (Limit, Save, Grow Act), On Passage, 26 Apr 2023"
+    url: "https://clerk.house.gov/evs/2023/roll199.xml"
+    local: house-roll-2023-199.xml
+    sha256: 1d7874186430771fb874bdd83cbfaedabba5fe235cec0361eba7432ede7ef736
+    capture: {archive_snapshot: none}
+    authenticity: {status: authenticated, strength: strong, provenance: "official House Clerk record", tests: [provenance, internal_consistency], gaps: "not compared with the Congressional Record", checked: "2026-10-02"}
+  - id: src-plaw-118-5
+    title: "Public Law 118-5, Fiscal Responsibility Act of 2023 (govinfo)"
+    url: "https://www.govinfo.gov/content/pkg/PLAW-118publ5/html/PLAW-118publ5.htm"
+    local: plaw-118-5.html
+    sha256: 3ed0ddbffd016bc55b2dc4ba0eee0c07e4d19e189a6bc6847d69ce1f385da5e3
+    capture: {archive_snapshot: none}
+    authenticity: {status: authenticated, strength: strong, provenance: "Government Publishing Office statute text; includes legislative history note", tests: [provenance], gaps: "slip law, not the official Statutes at Large page images", checked: "2026-10-02"}
+  - id: src-barragan-statement
+    title: "Rep. Barragan Statement on Debt Ceiling Vote, press release, 1 Jun 2023"
+    url: "https://barragan.house.gov/2023/06/01/rep-barragan-statement-on-debt-ceiling-vote/"
+    local: barragan-2023-06-01.html
+    sha256: 42c31acfa7820092729ccdc7da9b84143936dde089540fe1539e92cc725cf3c9
+    capture: {archive_snapshot: none}
+    authenticity: {status: authenticated, strength: moderate, provenance: "fetched from the member's official .house.gov site", tests: [provenance], gaps: "no independent archive copy; who drafted it is not shown (staff may write releases); authorship is the office's, not proven to be the member's own words", checked: "2026-10-02"}
+  - id: src-alford-newsletter
+    title: "Mark Alford Newsletter: June 1st (2023), official e-newsletter"
+    url: "https://alford.house.gov/news/email/show.aspx?ID=FWBTTRHADR4IY"
+    local: alford-newsletter-2023-06-01.html
+    sha256: 4fe50784ba9d30942a30869b82d2693010a3e7d1e4f91bca548a2f7687afff0a
+    capture: {archive_snapshot: none}
+    authenticity: {status: authenticated, strength: moderate, provenance: "fetched from the member's official .house.gov site", tests: [provenance], gaps: "page header gives 'June 1st' with no year; 2023 inferred from content (it names the Fiscal Responsibility Act vote); no independent archive copy; staff-drafted possible", checked: "2026-10-02"}

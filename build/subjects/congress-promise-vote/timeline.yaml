@@ -1,0 +1,60 @@
+timeline:
+  id: congress-promise-vote
+  title: "H.R. 3746, the Fiscal Responsibility Act: two members' votes and statements (April to June 2023)"
+  as_of: "2026-10-02"
+  note: >
+    Times are UTC. Washington was on daylight time (UTC-4). Where only a date is documented the dot is drawn hollow.
+    Every dot links to its source. The two members were chosen by a pre-registered rule and are unusual by construction.
+    Motive and sincerity are not assessed.
+panels:
+  - id: spring
+    title: "26 April to 3 June 2023 (UTC, one tick per week)"
+    start: "2023-04-24T00:00:00Z"
+    end:   "2023-06-06T00:00:00Z"
+    tick_hours: 168
+    lanes: [house, barragan, alford, law]
+lanes:
+  house:    {label: "House floor"}
+  barragan: {label: "Rep. Barragan (D-CA)"}
+  alford:   {label: "Rep. Alford (R-MO)"}
+  law:      {label: "Senate and President"}
+people:
+  - {who: "Nanette Barragan", detail: "Democrat, California 44th. Voted No on both the 26 April Republican bill and the 31 May deal."}
+  - {who: "Mark Alford", detail: "Republican, Missouri 4th. Voted Yes on the 26 April Republican bill and No on the 31 May deal."}
+sources:
+  s_r199: {title: "House roll call 199 (H.R. 2811, 26 Apr 2023)", url: "https://clerk.house.gov/evs/2023/roll199.xml", authenticity: "official record, authenticated, strong"}
+  s_r243: {title: "House roll call 243 (H.R. 3746, 31 May 2023)", url: "https://clerk.house.gov/evs/2023/roll243.xml", authenticity: "official record, authenticated, strong"}
+  s_barr: {title: "Barragan press release, 1 Jun 2023", url: "https://barragan.house.gov/2023/06/01/rep-barragan-statement-on-debt-ceiling-vote/", authenticity: "member's official site, moderate"}
+  s_alf:  {title: "Alford newsletter, June 1st 2023", url: "https://alford.house.gov/news/email/show.aspx?ID=FWBTTRHADR4IY", authenticity: "member's official site, moderate; year inferred"}
+  s_plaw: {title: "Public Law 118-5", url: "https://www.govinfo.gov/content/pkg/PLAW-118publ5/html/PLAW-118publ5.htm", authenticity: "GPO statute text, strong"}
+events:
+  - {id: p1, panel: spring, lane: house, time: "2023-04-26T21:44:00Z", precision: exact, kind: official, status: reported, sources: [s_r199],
+     label: "26 Apr: House passes Limit, Save, Grow Act 217-215 (5:44 p.m. EDT)",
+     detail: "Roll 199. Republicans 217 Yea, 4 Nay; Democrats 0 Yea, 211 Nay."}
+  - {id: p2, panel: spring, lane: alford, time: "2023-04-26T21:44:00Z", precision: exact, kind: official, status: reported, sources: [s_r199],
+     label: "Alford votes Yea on Limit, Save, Grow",
+     detail: "Roll 199. He also voted Nay on the Democratic motion to recommit (roll 198)."}
+  - {id: p3, panel: spring, lane: barragan, time: "2023-04-26T21:44:00Z", precision: exact, kind: official, status: reported, sources: [s_r199],
+     label: "Barragan votes Nay on Limit, Save, Grow",
+     detail: "Roll 199."}
+  - {id: p4, panel: spring, lane: house, time: "2023-06-01T01:21:00Z", precision: exact, kind: official, status: reported, sources: [s_r243],
+     label: "31 May: House passes Fiscal Responsibility Act 314-117 (9:21 p.m. EDT)",
+     detail: "Roll 243. Democrats 165-46, Republicans 149-71. Time 9:21 PM EDT is 01:21 UTC on 1 June."}
+  - {id: p5, panel: spring, lane: barragan, time: "2023-06-01T01:21:00Z", precision: exact, kind: official, status: reported, sources: [s_r243],
+     label: "Barragan votes No, against a Democratic majority",
+     detail: "Roll 243."}
+  - {id: p6, panel: spring, lane: alford, time: "2023-06-01T01:21:00Z", precision: exact, kind: official, status: reported, sources: [s_r243],
+     label: "Alford votes No, against a Republican majority",
+     detail: "Roll 243."}
+  - {id: p7, panel: spring, lane: barragan, time: "2023-06-01T12:00:00Z", precision: day, kind: document, status: single, sources: [s_barr],
+     label: "1 Jun: Barragan press release explains her No",
+     detail: "Time of day not stated. Her reasons: precedent, environment (NEPA, Mountain Valley Pipeline), two-year freeze, SNAP."}
+  - {id: p8, panel: spring, lane: alford, time: "2023-06-01T12:30:00Z", precision: day, kind: document, status: single, sources: [s_alf],
+     label: "1 Jun: Alford newsletter explains his No",
+     detail: "Header says 'June 1st'; the year is inferred from content. Includes his reported promise about IRS agents."}
+  - {id: p9, panel: spring, lane: law, time: "2023-06-01T12:00:00Z", precision: day, kind: official, status: single, sources: [s_plaw],
+     label: "1 Jun: Senate passes H.R. 3746",
+     detail: "From the statute's legislative-history note; the Senate roll call was not read."}
+  - {id: p10, panel: spring, lane: law, time: "2023-06-03T12:00:00Z", precision: day, kind: official, status: single, sources: [s_plaw],
+     label: "3 Jun: approved as Public Law 118-5",
+     detail: "'Approved June 3, 2023.' Sec. 251 rescinds $1,389,525,000 of IRS funds; Sec. 401 suspends the debt limit to 1 Jan 2025."}
