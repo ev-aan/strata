@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese
-rev: 1
+rev: 2
 type: event
 label: '2 Aug: Maddox fires three warning rounds; North Vietnamese boats attack'
 time: '1964-08-02T08:05:00Z'
@@ -14,9 +14,15 @@ sources:
 - title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), National Security Archive copy, 56 pp.
   url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
   authenticity: authenticated, moderate (copy not byte-compared with NSA's)
+  origin: hanyok-2001
+  source_type: official_history
+  access: read
 - title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
   url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
   authenticity: a 2004 essay; footnotes primary documents
+  origin: prados-2004
+  source_type: scholarly
+  access: read
 link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=17
 created: '2026-10-02'
 history:
@@ -24,3 +30,8 @@ history:
   date: '2026-10-02'
   change: Created from the Gulf of Tonkin timeline, event e2. Merged with votes-johnson-tonkin overlay event t1 (same event,
     same time).
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `derived`; each source given an origin,
+    a source_type and how it was accessed.'
+date_basis: derived

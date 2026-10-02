@@ -58,3 +58,7 @@ log:
     entry: >
       RENAME (owner request). The public term "bounty" is now "open question". The page moved from /bounties/casket-letters/ to /questions/casket-letters/ (the old address redirects), and it is shown as open question Q-001. The legacy ID B-001 and the
       `bounty_id` field in claims.yaml are kept as they are; earlier log entries are not rewritten. Wording on the page, in this dig's claim descriptions and timeline sources was updated to the new term, with "formerly bounty B-001" at the first mention.
+  - id: L-08
+    date: 2026-10-02
+    entry: >
+      NODE SCHEMA v0.5 (SCHEMA.md N12 to N16). This excavation's nodes now record each source's origin, type and access, how each date was arrived at (`date_basis`), and graded related links. Values were assigned by rule and are to be reviewed. Dates were given a basis by rule (for example 'After Morton's execution (1581)' is `derived`); review these.

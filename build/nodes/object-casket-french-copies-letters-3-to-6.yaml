@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: object-casket-french-copies-letters-3-to-6
-rev: 1
+rev: 2
 type: object
 label: French copies of Casket Letters 3 to 6
 time: '1889-01-01T00:00:00Z'
@@ -20,8 +20,16 @@ sources:
 - title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
   url: https://archive.org/details/casketlettersan00hendgoog
   authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
 created: '2026-10-02'
 history:
 - rev: 1
   date: '2026-10-02'
   change: Created as the object that the 1889 location events point to. Present location is a stated gap.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

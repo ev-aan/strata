@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: tonkin-2001-03-01-hanyok-study-in-nsa-s-classified-cryptologic
-rev: 1
+rev: 2
 type: event
 label: 'Early 2001: Hanyok study in NSA''s classified Cryptologic Quarterly'
 time: '2001-03-01T12:00:00Z'
@@ -12,9 +12,17 @@ sources:
 - title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), National Security Archive copy, 56 pp.
   url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
   authenticity: authenticated, moderate (copy not byte-compared with NSA's)
+  origin: hanyok-2001
+  source_type: official_history
+  access: read
 link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=3
 created: '2026-10-02'
 history:
 - rev: 1
   date: '2026-10-02'
   change: Created from the Gulf of Tonkin timeline, event g5.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `derived`; each source given an origin,
+    a source_type and how it was accessed.'
+date_basis: derived

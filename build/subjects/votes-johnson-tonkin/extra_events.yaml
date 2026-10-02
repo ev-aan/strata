@@ -8,5 +8,5 @@ sources:
   s_hanyok: {title: "Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), NSArchive copy", url: "https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf", authenticity: "authenticated, moderate (see gulf-of-tonkin sources)"}
   s_tonkin_dig: {title: "Stratah Gulf of Tonkin dig, timeline", url: "../gulf-of-tonkin/timeline.html", authenticity: "this repository"}
 events:
-  - {id: t1, panel: years, lane: tonkin, node: tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese, rev: 1, note: 'In this dig: claim tonkin-aug2-maddox-engaged. See the Gulf of Tonkin dig.'}
-  - {id: t2, panel: years, lane: tonkin, node: tonkin-1964-08-04-second-attack-reported-then-refuted, rev: 1, note: See the Gulf of Tonkin dig.}
+  - {id: t1, panel: years, lane: tonkin, node: tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese, rev: 2, note: 'In this dig: claim tonkin-aug2-maddox-engaged. See the Gulf of Tonkin dig.'}
+  - {id: t2, panel: years, lane: tonkin, node: tonkin-1964-08-04-second-attack-reported-then-refuted, rev: 3, note: See the Gulf of Tonkin dig.}

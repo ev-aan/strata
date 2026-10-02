@@ -1,31 +1,67 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: tonkin-1964-08-04-second-attack-reported-then-refuted
-rev: 1
+rev: 3
 type: event
 label: '4 Aug: a second attack on the destroyers is reported (NSA''s own study finds it did not happen)'
 time: '1964-08-04T15:00:00Z'
 precision: approx
 kind: analysis
-status: reported
+status: single
 what: Summary node for the reported second attack of 4 August 1964. Its detail is in the 4 August events (f1 to f8). The study's
   finding is the claim tonkin-aug4-attack-occurred in the Gulf of Tonkin dig.
 sources:
 - title: Hanyok, Skunks, Bogies, Silent Hounds, and the Flying Fish (NSA, 2001), NSArchive copy
   url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf
   authenticity: authenticated, moderate (see gulf-of-tonkin sources)
+  origin: hanyok-2001
+  source_type: official_history
+  access: read
 link: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/relea00012.pdf#page=49
 related:
-- tonkin-1964-08-04-report-7-boats-told-to-be-ready
-- tonkin-1964-08-04-destroyers-first-reported-radar-sightings
-- tonkin-1964-08-04-mcnamara-to-lbj-ship-allegedly-to-be
-- tonkin-1964-08-04-mcnamara-to-lbj-reports-the-supposed-engagement
-- tonkin-1964-08-04-destroyers-report-evading-torpedoes-and-having-sunk
-- tonkin-1964-08-04-report-12-boat-reports-an-enemy-aircraft
-- tonkin-1964-08-04-report-13-we-shot-at-two-enemy
-- tonkin-1964-08-04-herrick-s-doubt-message-sent
+- node: tonkin-1964-08-04-report-7-boats-told-to-be-ready
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
+- node: tonkin-1964-08-04-destroyers-first-reported-radar-sightings
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
+- node: tonkin-1964-08-04-mcnamara-to-lbj-ship-allegedly-to-be
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
+- node: tonkin-1964-08-04-mcnamara-to-lbj-reports-the-supposed-engagement
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
+- node: tonkin-1964-08-04-destroyers-report-evading-torpedoes-and-having-sunk
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
+- node: tonkin-1964-08-04-report-12-boat-reports-an-enemy-aircraft
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
+- node: tonkin-1964-08-04-report-13-we-shot-at-two-enemy
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
+- node: tonkin-1964-08-04-herrick-s-doubt-message-sent
+  kind: summarises
+  grade: established
+  why: A summary of the 4 August events that this node's related nodes describe in detail.
 created: '2026-10-02'
 history:
 - rev: 1
   date: '2026-10-02'
   change: Created from votes-johnson-tonkin overlay event t2. Overlaps the 4 August events of the Gulf of Tonkin dig but is
     a summary, so it was not merged.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed; related links graded with a stated reason.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'CORRECTION of a status found by the v0.5 independence check: status changed from `reported` to `single`: the only
+    source is the Hanyok study (one independent origin).'
+date_basis: stated

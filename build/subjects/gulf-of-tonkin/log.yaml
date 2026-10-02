@@ -237,3 +237,7 @@ log:
     date: 2026-10-02
     entry: >
       CORRECTION. In this dig's timeline, the 24 Jun 1970 Senate repeal vote (event g9) listed as a source the Voteview page for the 7 Aug 1964 Senate vote (roll call 481), a different vote. Merging that event with the Johnson-era votes dig's copy exposed it. The node vote-RS0910398 now cites the Voteview page for the 1970 vote (roll call 398), as rev 2. The dot's main link (the Congressional Record page) and the vote count were not affected. LINKED CLAIMS to nodes: 16 claims now name the nodes that evidence them in `anchor.nodes`, and the dig page shows each node with its source and, for the page images, a thumbnail linking to the original.
+  - id: L-24
+    date: 2026-10-02
+    entry: >
+      NODE SCHEMA v0.5 (SCHEMA.md N12 to N16). This excavation's nodes now record each source's origin, type and access, how each date was arrived at (`date_basis`), and graded related links. Values were assigned by rule and are to be reviewed. The 24 Jun 1970 vote and the 4 Aug summary node had their status corrected from `reported` to `single`: the Congressional Record and Voteview repeat one official record (Voteview derives from it), and the summary rests on the Hanyok study alone. One node, tonkin-1964-08-04-report-7-boats-told-to-be-ready, is flagged for review: its two sources (the intercept reports and the Prados essay) may not be independent, because the essay quotes the intercepts; the essay's `derives_from` needs checking against the essay.

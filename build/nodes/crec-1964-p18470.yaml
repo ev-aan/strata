@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: crec-1964-p18470
-rev: 2
+rev: 3
 type: image
 label: Congressional Record, Senate, 7 Aug 1964, p. 18470, roll call on the resolution (page image)
 time: '1964-08-07T12:00:00Z'
@@ -13,6 +13,9 @@ sources:
 - title: Congressional Record, Vol. 110, Part 14 (Senate, 7 August 1964), GPO bound edition, granule GPO-CRECB-1964-pt14-4-1
   url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1964-pt14/pdf/GPO-CRECB-1964-pt14-4-1.pdf
   authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-congress-official-record
+  source_type: official_record
+  access: read
 media:
   file: ../subjects/gulf-of-tonkin/sources/congressional-record/crec-1964-p18470-30.png
   sha256: 6dab8ad713e7031730bed4d34fa61163e62a2684318dfcdc34a3fadf67ce354a
@@ -33,3 +36,8 @@ history:
 - rev: 2
   date: '2026-10-02'
   change: Added a 640x872 thumbnail, the original's url and the rights status (public_domain).
+- rev: 3
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

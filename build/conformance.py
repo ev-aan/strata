@@ -298,6 +298,27 @@ def check_nodes(r):
             r.err(w, f"unknown status `{n.get('status')}`")
         if not re.match(r"^-?\d{4}-\d\d-\d\d", str(n.get("time", ""))):
             r.err(w, f"time `{n.get('time')}` is not ISO")
+        if n.get("date_basis") not in ("stated", "derived", "publication_proxy", "inferred", "dataset_field"):
+            r.warn(w, f"date_basis `{n.get('date_basis')}` missing or unknown (stated | derived | publication_proxy | inferred | dataset_field)")
+        _srcs = n.get("sources") or []
+        for s in _srcs:
+            if not s.get("origin"):
+                r.warn(w, f"source `{str(s.get('title'))[:40]}` has no `origin` (schema v0.5): independence cannot be counted")
+            if s.get("source_type") not in (None, "primary_document", "official_record", "official_history", "dataset", "scholarly", "secondary_report", "news", "social_media", "testimony", "ai_generated", "unknown"):
+                r.err(w, f"unknown source_type `{s.get('source_type')}`")
+            if s.get("source_type") == "ai_generated" and len(_srcs) == 1:
+                r.err(w, "an ai_generated source cannot be the only source of a node")
+            if s.get("access") not in (None, "read", "cited_only"):
+                r.err(w, "source `access` must be read or cited_only")
+        if _srcs and all(s.get("origin") for s in _srcs):
+            import sys as _s
+            _s.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools"))
+            from nodes import assess
+            a_ = assess(n)
+            if n.get("status") == "reported" and a_["independent"] < 2:
+                r.warn(w, f"status `reported` (2+ sources agree) but the sources trace to {a_['independent']} independent origin: they repeat one record")
+            if n.get("status") == "single" and a_["independent"] >= 2:
+                r.warn(w, f"status `single` but {a_['independent']} independent origins are declared")
         if not n.get("sources") and not n.get("source_gap"):
             r.err(w, "a node needs at least one source, or a stated `source_gap`")
         for s in n.get("sources") or []:
@@ -338,10 +359,23 @@ def check_nodes(r):
                 r.err(f"node:{fid}", f"`about` refers to unknown node `{ref}`")
             elif nodes[ref].get("type") != "object":
                 r.warn(f"node:{fid}", f"`about` node `{ref}` is not of type object")
-        for k in ("related", "evidences"):
-            for ref in n.get(k) or []:
-                if ref not in nodes:
-                    r.err(f"node:{fid}", f"`{k}` refers to unknown node `{ref}`")
+        for ref in n.get("evidences") or []:
+            if ref not in nodes:
+                r.err(f"node:{fid}", f"`evidences` refers to unknown node `{ref}`")
+        for rel in n.get("related") or []:
+            w = f"node:{fid}"
+            if isinstance(rel, str):
+                r.warn(w, f"related link to `{rel}` has no grade and reason (schema v0.5)")
+                rel = {"node": rel}
+            else:
+                if rel.get("grade") not in ("established", "possible"):
+                    r.err(w, f"related link to `{rel.get('node')}`: grade must be established or possible")
+                if not rel.get("why"):
+                    r.err(w, f"related link to `{rel.get('node')}` needs a `why`")
+                if rel.get("kind") not in ("same_event", "part_of", "summarises", "overlaps", "responds_to"):
+                    r.err(w, f"related link to `{rel.get('node')}`: unknown kind `{rel.get('kind')}`")
+            if rel.get("node") not in nodes:
+                r.err(w, f"`related` refers to unknown node `{rel.get('node')}`")
         if n.get("derived_from") and n["derived_from"] not in nodes:
             r.err(f"node:{fid}", f"derived_from unknown node `{n['derived_from']}`")
     for fid, n in nodes.items():

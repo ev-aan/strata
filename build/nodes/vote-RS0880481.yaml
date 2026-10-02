@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: vote-RS0880481
-rev: 1
+rev: 2
 type: event
 label: '1964-08-07: Senate HJRE1145 H.j.res. 1145. support president''s actions in ordering retal'
 time: '1964-08-07T12:00:00Z'
@@ -13,9 +13,18 @@ sources:
 - title: Voteview roll-call data (secondary index; official record is the anchor from 1990, the Congressional Record before)
   url: https://voteview.com
   authenticity: dataset; counts spot-checked for 2009-2026 against official XML, not for these years
+  origin: voteview
+  source_type: dataset
+  derives_from: us-congress-official-record
+  access: read
 link: https://voteview.com/rollcall/RS0880481
 created: '2026-10-02'
 history:
 - rev: 1
   date: '2026-10-02'
   change: Created from votes-johnson-tonkin roll-call event v2 (Voteview).
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

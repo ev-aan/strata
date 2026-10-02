@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: casket-1889-copies-of-letters-3-and-5-in-the-record-office
-rev: 1
+rev: 2
 type: event
 label: '1889: French copies of Letters 3 and 5 are in the Record Office (Henderson)'
 time: '1889-01-01T00:00:00Z'
@@ -13,6 +13,9 @@ sources:
 - title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
   url: https://archive.org/details/casketlettersan00hendgoog
   authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
 place:
   name: London (the Record Office)
   lat: 51.5074
@@ -28,3 +31,8 @@ history:
 - rev: 1
   date: '2026-10-02'
   change: Created from claim casket-four-french-copies-survive and Henderson p. 68 (as of 1889).
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

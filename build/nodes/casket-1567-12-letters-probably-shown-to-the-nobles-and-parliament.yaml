@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: casket-1567-12-letters-probably-shown-to-the-nobles-and-parliament
-rev: 1
+rev: 2
 type: event
 label: '4 and 15 Dec 1567: letters probably shown to the Confederate Nobles and in Parliament'
 time: '1567-12-15T12:00:00Z'
@@ -14,14 +14,28 @@ sources:
 - title: T. F. Henderson, The Casket Letters and Mary Queen of Scots (1889), Internet Archive, OCR read
   url: https://archive.org/details/casketlettersan00hendgoog
   authenticity: authenticated edition, moderate; an advocate's account
+  origin: henderson-1889
+  source_type: scholarly
+  access: read
 about:
 - object-casket-and-letters-1567
 related:
-- casket-1567-12-04-confederate-nobles-meet
-- casket-1567-12-15-act-of-parliament-names-the-casket
+- node: casket-1567-12-04-confederate-nobles-meet
+  kind: overlaps
+  grade: established
+  why: Covers the same meetings as the 4 Dec and 15 Dec 1567 events, which are kept as their own nodes.
+- node: casket-1567-12-15-act-of-parliament-names-the-casket
+  kind: overlaps
+  grade: established
+  why: Covers the same meetings as the 4 Dec and 15 Dec 1567 events, which are kept as their own nodes.
 created: '2026-10-02'
 history:
 - rev: 1
   date: '2026-10-02'
   change: Created from the Casket Letters timeline, event k6. Overlaps the 4 Dec and 15 Dec events (b5, b6), which are kept
     as their own nodes.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `derived`; each source given an origin,
+    a source_type and how it was accessed; related links graded with a stated reason.'
+date_basis: derived

@@ -56,12 +56,12 @@ events:
   panel: years
   lane: house
   node: vote-RH0880197
-  rev: 1
+  rev: 2
 - id: v2
   panel: years
   lane: senate
   node: vote-RS0880481
-  rev: 1
+  rev: 2
 - id: v3
   panel: years
   lane: senate
@@ -517,47 +517,47 @@ events:
   panel: years
   lane: senate
   node: vote-RS0910383
-  rev: 1
+  rev: 2
 - id: v39
   panel: years
   lane: house
   node: vote-RH0910262
-  rev: 1
+  rev: 2
 - id: v40
   panel: years
   lane: house
   node: vote-RH0910263
-  rev: 1
+  rev: 2
 - id: v41
   panel: years
   lane: senate
   node: vote-RS0910384
-  rev: 1
+  rev: 2
 - id: v42
   panel: years
   lane: senate
   node: vote-RS0910389
-  rev: 1
+  rev: 2
 - id: v43
   panel: years
   lane: senate
   node: vote-RS0910392
-  rev: 1
+  rev: 2
 - id: v44
   panel: years
   lane: senate
   node: vote-RS0910398
-  rev: 2
+  rev: 4
 - id: v45
   panel: years
   lane: senate
   node: vote-RS0910412
-  rev: 1
+  rev: 2
 - id: v46
   panel: years
   lane: senate
   node: vote-RS0910467
-  rev: 1
+  rev: 2
 - id: v47
   panel: years
   lane: senate
@@ -600,56 +600,56 @@ events:
   panel: repeal
   lane: senate
   node: vote-RS0910383
-  rev: 1
+  rev: 2
 - id: v39r
   panel: repeal
   lane: house
   node: vote-RH0910262
-  rev: 1
+  rev: 2
 - id: v40r
   panel: repeal
   lane: house
   node: vote-RH0910263
-  rev: 1
+  rev: 2
 - id: v41r
   panel: repeal
   lane: senate
   node: vote-RS0910384
-  rev: 1
+  rev: 2
 - id: v42r
   panel: repeal
   lane: senate
   node: vote-RS0910389
-  rev: 1
+  rev: 2
 - id: v43r
   panel: repeal
   lane: senate
   node: vote-RS0910392
-  rev: 1
+  rev: 2
 - id: v44r
   panel: repeal
   lane: senate
   node: vote-RS0910398
-  rev: 2
+  rev: 4
 - id: v45r
   panel: repeal
   lane: senate
   node: vote-RS0910412
-  rev: 1
+  rev: 2
 - id: v46r
   panel: repeal
   lane: senate
   node: vote-RS0910467
-  rev: 1
+  rev: 2
 - id: t1
   panel: years
   lane: tonkin
   node: tonkin-1964-08-02-maddox-fires-three-warning-rounds-north-vietnamese
-  rev: 1
+  rev: 2
   note: 'In this dig: claim tonkin-aug2-maddox-engaged. See the Gulf of Tonkin dig.'
 - id: t2
   panel: years
   lane: tonkin
   node: tonkin-1964-08-04-second-attack-reported-then-refuted
-  rev: 1
+  rev: 3
   note: See the Gulf of Tonkin dig.

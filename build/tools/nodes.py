@@ -37,6 +37,37 @@ def load_nodes():
     return out
 
 
+def assess(n):
+    """Independence of a node's sources (schema v0.5). Sources that derive from the same origin count once.
+    Returns {independent, read, declared, label}: label is single_origin | independent | multiple_unverified | no_source."""
+    srcs = n.get("sources") or []
+    derive = {s["origin"]: s.get("derives_from") for s in srcs if s.get("origin")}
+
+    def root(o):
+        seen = set()
+        while derive.get(o) and o not in seen:
+            seen.add(o)
+            o = derive[o]
+        return o
+
+    roots, read, declared = {}, set(), True
+    for i, s in enumerate(srcs):
+        if s.get("origin"):
+            r = root(s["origin"])
+        else:
+            r, declared = f"undeclared:{i}", False
+        roots.setdefault(r, False)
+        if s.get("access") == "read":
+            roots[r] = True
+    if not srcs:
+        label = "no_source"
+    elif len(roots) == 1:
+        label = "single_origin"
+    else:
+        label = "independent" if declared else "multiple_unverified"
+    return {"independent": len(roots), "read": sum(1 for v in roots.values() if v), "declared": declared, "label": label}
+
+
 def resolve_timeline(T, nodes=None):
     """Return T with node references expanded into ordinary events (and node sources added to T['sources'])."""
     nodes = nodes if nodes is not None else load_nodes()
@@ -71,6 +102,8 @@ def resolve_timeline(T, nodes=None):
             detail = (detail + " " + " ".join(str(e["note"]).split())).strip()
         r["detail"] = detail
         r["shared_by"] = n.get("_used_by", [])
+        r["date_basis"] = n.get("date_basis", "")
+        r["corro"] = assess(n)
         events.append(r)
     T["events"] = events
     return T

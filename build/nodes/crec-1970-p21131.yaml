@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: crec-1970-p21131
-rev: 2
+rev: 3
 type: image
 label: Congressional Record, Senate, 24 Jun 1970, p. 21131 (page image)
 time: '1970-06-24T12:00:00Z'
@@ -13,6 +13,9 @@ sources:
 - title: Congressional Record, Vol. 116, Part 16 (Senate, 24 June 1970), GPO bound edition, granule GPO-CRECB-1970-pt16-1-1
   url: https://www.govinfo.gov/content/pkg/GPO-CRECB-1970-pt16/pdf/GPO-CRECB-1970-pt16-1-1.pdf
   authenticity: authenticated, strong (see the dig's sources manifest)
+  origin: us-congress-official-record
+  source_type: official_record
+  access: read
 media:
   file: ../subjects/gulf-of-tonkin/sources/congressional-record/crec-1970-p21131-031.png
   sha256: 01b080cdd0e9bd3366363b74c79c202283dc23723a341101806503df6455c556
@@ -33,3 +36,8 @@ history:
 - rev: 2
   date: '2026-10-02'
   change: Added a 640x834 thumbnail, the original's url and the rights status (public_domain).
+- rev: 3
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated

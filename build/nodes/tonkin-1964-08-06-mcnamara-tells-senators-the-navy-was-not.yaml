@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: tonkin-1964-08-06-mcnamara-tells-senators-the-navy-was-not
-rev: 1
+rev: 2
 type: event
 label: '6 Aug: McNamara tells senators the Navy ''was not aware of'' South Vietnamese actions'
 time: '1964-08-06T12:00:00Z'
@@ -13,8 +13,16 @@ sources:
 - title: Prados, The Gulf of Tonkin Incident, 40 Years Later (2004 essay)
   url: https://nsarchive2.gwu.edu/NSAEBB/NSAEBB132/essay.htm
   authenticity: a 2004 essay; footnotes primary documents
+  origin: prados-2004
+  source_type: scholarly
+  access: read
 created: '2026-10-02'
 history:
 - rev: 1
   date: '2026-10-02'
   change: Created from the Gulf of Tonkin timeline, event e6.
+- rev: 2
+  date: '2026-10-02'
+  change: 'Schema v0.5 migration, assigned by rule and to be reviewed: date_basis `stated`; each source given an origin, a
+    source_type and how it was accessed.'
+date_basis: stated
