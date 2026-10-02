@@ -23,14 +23,15 @@ assessment:
     named by later sources), and, as a reported experiment, Swan's glowing carbon rod of December 1878.
     On the third, the courts found Edison's lamp "practically operative and successful" and upheld his patent on a high-resistance carbon
     filament in an all-glass exhausted bulb; Swan, by his own account, showed a very thin carbon lamp in October 1880 and Swan lamps lit
-    Cragside (1880, per an archive blog) and the Savoy stage (28 December 1881, per a transcription of The Times), both before Edison's Pearl
+    Cragside (1880, per an archive blog, a proposed claim only) and the Savoy stage (28 December 1881, per a transcription of The Times), both before Edison's Pearl
     Street service began on 4 September 1882, but no document read shows who first made or sold a practical lamp. On the fourth, Edison's
-    company is the one documented. Several national stories (Lodygin, Woodward and Evans, Latimer) each hold a real record that
-    is stretched beyond what it shows, and two (Lodygin's "first" and the Canadian sale) are refuted or unsupported on the documents read; the Goebel
+    company is the one documented. Two national stories (Lodygin's, and Woodward and Evans's) each hold a real record that
+    is stretched beyond what it shows (Lodygin's "first" is refuted, the Canadian sale is unsupported on the documents read), and a Latimer misattribution is refuted on his patents; the Goebel
     1854 lamps are contested, resting on affidavit testimony (about forty affidavits per Colt J.) that US courts weighed differently on preliminary
     motions, with no dated document from before 1882 either way; de Changy's 1858 lamps are known only through Fontaine and his claim to be first is not dug.
     One stated standard (S1 to S4, in the description) is applied to every claimant, but the depth differs: some anchors are patent abridgments, a blog or
-    a transcription. We therefore say "partly", not "Edison" and not "Swan".
+    a transcription, and the one exception is named: the Cragside date rests on a blog about a letter nobody read, so it is filed as its own proposed claim (lamp-swan-cragside),
+    not as established. We therefore say "partly", not "Edison" and not "Swan".
   key_points:
     - "An 1841 British patent (de Moleyns) covers an electric light in an exhausted globe, an 1845 one (King) a heated carbon conductor: Edison was not first to patent one."
     - "US courts upheld Edison's 1880 patent for a high-resistance carbon filament in an all-glass bulb; his company began Pearl Street service on 4 September 1882."
@@ -55,7 +56,8 @@ description: >
   thing; the absence of an earlier document never refutes it (that is a searched gap, capped at provisional). (S3) A patent proves what
   was claimed and described on its date, not that a lamp was built or worked; "built" needs a report of the lamp. (S4) A court's
   finding on affidavits is primary text for what the court found, not a document of the period it describes. Under S1 to S4 the
-  claims for de Changy and Lodygin are single-channel (Fontaine), Goebel's 1854 lamps are contested, and Swan's 1850s work is a gap.
+  claims for de Changy and Lodygin are single-channel (Fontaine), Cragside is single-channel (an archive blog about a letter not read), Goebel's 1854 lamps are contested, and Swan's 1850s work is a gap.
+  Two established claims are still anchored below primary (the Savoy report, read in a transcription; the 22 Oct 1879 notebook entry, read in the Edison Papers' transcription) and are shown as limits.
 
 # ---------------------------------------------------------------------------
 # VERIFICATION LEVELS (as in apollo-landings):
@@ -210,9 +212,10 @@ claims:
   - id: lamp-earliest-patent
     state: established
     statement: >
-      No patent earlier than de Moleyns's of 1841 for an electric light with a heated solid in an enclosed globe has been found. The 1859 British
-      abridgments list none earlier, and Fontaine's 1878 search found nothing before King's 1845 patent
-      ("The first document on the question that we have found"; he had missed de Moleyns too).
+      Two absences, not one. (1) No patent earlier than de Moleyns's of 1841 for an electric light in an enclosed globe (his: powdered charcoal fed to platinum-coil
+      electrodes in an exhausted glass globe) has been found in the 1859 British abridgments. (2) No document earlier than King's 1845 patent for a heated conductor
+      in a vacuum has been found: the abridgment says "intensely heated" conductors and carbon "enclosed in a Torricellian vacuum", and Fontaine's 1878 search
+      found nothing before it ("The first document on the question that we have found"; he had missed de Moleyns, which he did not find).
     statement_kind: search_result
     evidence_class: primary_text
     confidence: provisional   # absence anchor: capped at provisional
@@ -222,8 +225,8 @@ claims:
     adoption_weight: 2
     adoption_note: "Histories that mention de Moleyns usually call his the first patent."
     would_change_if: >
-      an earlier patent (in Britain, France, the US or elsewhere) for a lamp lit by an electrically
-      heated solid is found
+      an earlier patent (in Britain, France, the US or elsewhere) for an electric light in an enclosed globe, or for an electrically heated
+      conductor in a vacuum, is found
     anchor:
       type: primary_text
       description: "Abridgments ... Electricity and Magnetism (1859): no earlier lighting entry read; Fontaine (1878), p. 169: 'The first document on the question that we have found, is an English patent of the 4th November, 1845.'"
@@ -301,7 +304,7 @@ claims:
       Fontaine (1878) says that in 1873 a Russian physicist, Lodygin, invented a new lamp in which small carbon bars are heated in a
       hermetically sealed glass receiver from which the oxygen is expelled, and that in 1874 the St Petersburg Academy of Sciences awarded
       him "a high prize" (the Lomonosov prize) on a report by Wild; Fontaine adds "Nothing is less practical nor less studied than the apparatus of this inventor."
-      Kommersant (2024) gives 1872 for Lodygin's first demonstration, in St Petersburg, and says the home patent office issued him privilege No. 1619 on 11 July 1874 with its priority dated "retroactively, from 2 October 1872".
+      Kommersant (2024) gives 1872 for Lodygin's first demonstration (no place is given for it) and says the home patent office issued him privilege No. 1619 on 11 July 1874 with its priority dated "retroactively, from 2 October 1872".
     statement_kind: reported
     evidence_class: primary_text
     confidence: low
@@ -665,8 +668,7 @@ claims:
     statement: >
       The Times of 29 December 1881 (read in a transcription) reports that Swan incandescent lamps lit the stage of the Savoy Theatre,
       London, for the first time at a performance of Patience on the afternoon of 28 December 1881; the auditorium had had electric light
-      since the theatre opened. An IET archives blog says Armstrong lit Cragside, his house at Rothbury, Northumberland, with Swan lamps in 1880
-      and described them in a letter to The Engineer of 17 January 1881.
+      since the theatre opened. (The Cragside half of the earlier version of this claim is now lamp-swan-cragside.)
     statement_kind: reported
     evidence_class: primary_text
     confidence: moderate
@@ -674,17 +676,40 @@ claims:
     anchor_checked: secondary
     adoption_weight: 3
     adoption_note: "Underhill, Swan's own house, is also called 'the first house lit by electric light'; no primary date found."
-    would_change_if: "Armstrong's 1881 letter or the Times report gives different dates"
+    would_change_if: "the original Times page gives different dates or wording"
     anchor:
       type: primary_text
-      description: "The Times, 29 Dec 1881, as transcribed by the Gilbert and Sullivan Archive (the original page was not compared); IET Archives blog on Armstrong's letter of 17 Jan 1881 (IET Archives NAEST 046/24), the letter itself not read."
-      sources: [src-iet-cragside, src-times-savoy]
+      description: "The Times, 29 Dec 1881, as transcribed by the Gilbert and Sullivan Archive (the original page was not compared): 'the stage was for the first time lit up by the electric light ... The Swan incandescent lamps were used.'"
+      sources: [src-times-savoy]
       nodes:
         - {node: lamp-1881-12-28-savoy-stage-lit-by-swan-lamps, verb: supports}
+    basis: >
+      # V: Times report read in transcription, not the original page, so anchor_checked is secondary (a limit shown on the page). The first version said Swan lamps were in use "from
+      #    28 December 1881" on the Savoy stage; The Times describes one experimental performance. Histelec gives 29 Dec and 1,200 lamps (V0).
+      #    Narrowed in the revision of round 3: the Cragside half moved to lamp-swan-cragside (L-21).
+
+  - id: lamp-swan-cragside
+    state: proposed
+    statement: >
+      An IET Archives blog (2023) says that Armstrong replaced arc lamps at Cragside, his house at Rothbury, Northumberland, in 1880 with 45 incandescent lamps, and, in a separate passage,
+      that Armstrong wrote to the editor of The Engineer on 17 January 1881 "shortly after he utilised Joseph Swan's newly invented incandescent light bulbs". That the 1880 lamps were
+      Swan's, and the date they were first lit, are therefore joined by the blog from two passages; the letter itself was not read.
+    statement_kind: reported
+    evidence_class: primary_text
+    confidence: low
+    evidential_weight: 2
+    anchor_checked: secondary
+    adoption_weight: 3
+    adoption_note: "Cragside is widely called the first house lit by hydro-electricity; the blog says so and that is not used here."
+    would_change_if: "Armstrong's letter of 17 January 1881 (IET Archives NAEST 046/24, The Engineer) is read and gives different lamps or dates"
+    anchor:
+      type: secondary
+      description: "IET Archives blog 'Cragside: harnessing the power of water' (9 Mar 2023): 'replaced by Armstrong in 1880 with 45 incandescent lamps'; the letter of 17 January 1881 'shortly after he utilised Joseph Swan's newly invented incandescent light bulbs'. The letter itself was not read."
+      sources: [src-iet-cragside]
+      nodes:
         - {node: lamp-1880-cragside-lit-with-swan-lamps, verb: supports}
     basis: >
-      # V: V1 for Cragside; Times report read in transcription, not the original page. The first version said Swan lamps were in use "from
-      #    28 December 1881" on the Savoy stage; The Times describes one experimental performance. Histelec gives 29 Dec and 1,200 lamps (V0).
+      # V: single channel (S1): a later blog about a letter nobody here read. Split from lamp-swan-in-use in the round-3 revision (L-21).
       The blog's "first house in the world to be lit by hydro-electricity" is not used.
 
   - id: lamp-first-practical-priority
@@ -767,7 +792,7 @@ claims:
     state: established
     statement: >
       Edison's US patent 223,898, "Electric-Lamp", was applied for on 4 November 1879 (signed 1 November) and granted on
-      27 January 1880. Its first claim is a carbon filament of high resistance; its second is carbon
+      27 January 1880. Its first two claims (of four) are: a carbon filament of high resistance; and carbon
       filaments in a receiver made entirely of glass, exhausted of air, with wires sealed through the glass.
     statement_kind: reported
     evidence_class: primary_text

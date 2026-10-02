@@ -32,7 +32,7 @@ lanes:
   courts:  {label: "Patent offices and courts"}
 people:
   - {who: "Humphry Davy", detail: "Royal Institution chemist; his 1812 book describes the carbon arc."}
-  - {who: "Frederick de Moleyns", detail: "British patent No. 9053, 1841: the earliest electric-light patent with a lamp in an exhausted globe found."}
+  - {who: "Frederick de Moleyns", detail: "British patent No. 9053, 1841: the earliest patent found for an electric light in an exhausted globe (powdered charcoal at platinum-coil electrodes)."}
   - {who: "John Wellington Starr / Edward Augustin King", detail: "British patent No. 10,919, 1845, issued to King as a communication; a later court and later sources name Starr as the inventor."}
   - {who: "de Changy", detail: "Worked in Belgium per Fontaine (Howell and Schroeder 1927 call him a French civil engineer with a Belgian patent); sealed platinum lamps reported by Jobard in 1858."}
   - {who: "Alexander Lodygin", detail: "Russian; carbon-rod lamps reported 1872-73; Academy prize 1874; later metal-filament patents."}
@@ -46,10 +46,10 @@ people:
 sources: {}
 events:
   - {id: a1, panel: century, lane: britain, node: lamp-1812-davy-publishes-carbon-arc, rev: 1, note: "An arc, not an incandescent lamp. The demonstration date (1808-1810) is not in the book."}
-  - {id: a2, panel: century, lane: britain, node: lamp-1841-08-21-de-moleyns-patent-9053, rev: 1, note: "Earliest patent of this kind found; the search was not exhaustive (see lamp-earliest-patent)."}
+  - {id: a2, panel: century, lane: britain, node: lamp-1841-08-21-de-moleyns-patent-9053, rev: 1, note: "Earliest patent found for an electric light in an enclosed globe (not shown to be heated or glowing); the search was not exhaustive (see lamp-earliest-patent)."}
   - {id: a3, panel: century, lane: britain, node: lamp-1845-11-04-king-starr-patent-10919, rev: 1}
   - {id: a4, panel: century, lane: europe, node: lamp-1858-02-27-jobard-reports-de-changy-lamps, rev: 1, note: "Known only through Fontaine's 1878 quotation; Fontaine is the only channel for this and for Lodygin."}
-  - {id: a5, panel: century, lane: russia, node: lamp-1873-lodygin-carbon-rod-lamps, rev: 1, note: "Fontaine judges the apparatus impractical."}
+  - {id: a5, panel: century, lane: russia, node: lamp-1873-lodygin-carbon-rod-lamps, rev: 2, note: "Fontaine judges the apparatus impractical."}
   - {id: a6, panel: century, lane: russia, node: lamp-1874-07-11-lodygin-russian-privilege, rev: 2, note: "Kommersant only (a later newspaper history; no scan of the privilege)."}
   - {id: a6b, panel: century, lane: russia, node: lamp-1874-lomonosov-prize-lodygin, rev: 1, note: "Prize per Fontaine; the amount is not given."}
   - {id: a7, panel: century, lane: canada, node: lamp-1874-08-03-woodward-evans-canadian-patent, rev: 1, note: "The Canadian specification was not read."}
@@ -76,7 +76,7 @@ events:
   - {id: b5, panel: race, lane: press, node: lamp-1879-12-21-herald-announces-new-years-eve-exhibition, rev: 1}
   - {id: b6, panel: race, lane: press, node: lamp-1879-12-31-menlo-park-visitors-no-formal-exhibition, rev: 1, note: "Contested whether this was a public exhibition (lamp-menlo-park-dec-1879)."}
   - {id: b7, panel: race, lane: britain, node: lamp-1880-10-20-swan-lecture-lit-and-phil, rev: 1, note: "Swan's own account while disputing priority."}
-  - {id: b8, panel: race, lane: britain, node: lamp-1880-cragside-lit-with-swan-lamps, rev: 1, note: "Armstrong's 1881 letter not read."}
+  - {id: b8, panel: race, lane: britain, node: lamp-1880-cragside-lit-with-swan-lamps, rev: 2, note: "Armstrong's 1881 letter not read."}
   - {id: b8b, panel: race, lane: usa, node: lamp-1880-03-latimer-joins-us-electric-lighting-bridgeport, rev: 1, note: "Secondary account (Queens Library essay hosted by the Edison Papers)."}
   - {id: b9, panel: race, lane: usa, node: lamp-1881-09-13-nichols-latimer-patent-247097, rev: 1}
   - {id: b9b, panel: race, lane: usa, node: lamp-1882-01-17-latimer-patent-252386, rev: 1, note: "Assigned to the United States Electric Lighting Company."}

@@ -226,3 +226,16 @@ log:
       Mr. Stearn a number of carbons, made from carbonised cardboard ... mounted for me in glass globes" (Chemical News 42, p. 229; verified) is recorded in lamp-swan-before-edison as
       Swan's claim under S4. R2-9: Quote Investigator's 1882 Christian Union article by Edison and 1921 American Magazine interview are in the tx-10000-ways chain as read: no; the claim stays
       at provisional and says only "earliest version found". R2-11: one spelling, Matthew Evans. R2-10 needs no change by the author; noted for the owner.
+  - id: L-21
+    date: 2026-10-02
+    entry: >
+      REVISION ROUND 3 (author response to R3-1 to R3-5; L-19 and L-20 stay as written). R3-1: lamp-earliest-patent had repeated the R2-1 error ("an electric light with a heated solid"). Verified in the
+      abridgments: de Moleyns (pp. 62-63) is pulverized charcoal at platinum-coil electrodes in an exhausted glass globe, with no "heated"; King (pp. 97-98) has "intensely heated" conductors and carbon
+      "enclosed in a Torricellian vacuum"; Fontaine p. 169 calls 1845 "the first document". The claim now states two separate absences (nothing earlier than 1841 found for an electric light in
+      an enclosed globe; nothing earlier than 1845 found for a heated conductor in a vacuum), would_change_if likewise, still provisional; the de Moleyns timeline note and people entry and the
+      dt-which-first row are reworded. R3-2: Latimer is no longer listed as a national story (a Latimer misattribution is refuted on his patents); the Cragside half of lamp-swan-in-use is
+      moved to a new proposed claim at low confidence, lamp-swan-cragside (IET blog only; the blog's two passages, "45 incandescent lamps" in 1880 and the letter of 17 January 1881 about "Swan's newly
+      invented incandescent light bulbs", are joined by the blog); lamp-swan-in-use is now the Savoy report only (established, moderate, secondary, a limit); the assessment text and
+      description name the exception and the two established claims anchored below primary; Cragside node is rev 2. R3-3: Kommersant gives no place for the 1872 demonstration ("В 1872 году Лодыгин в первый раз
+      демонстрирует свою лампу"); "in St Petersburg" removed from the claim; the Lodygin node (rev 2) says the place is the Academy's city. R3-4: the "Edison copied Swan" drift sentence is removed
+      from the Britain note (no source or chain shows that story). R3-5: no change needed; the edison-patent statement now says "first two claims (of four)" as the reviewer suggested.

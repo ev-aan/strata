@@ -1,16 +1,16 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: lamp-1880-cragside-lit-with-swan-lamps
-rev: 1
+rev: 2
 type: event
 label: '1880: Armstrong lights Cragside with Swan''s incandescent lamps'
 time: '1880-07-01T12:00:00Z'
 precision: year
 kind: witness
 status: single
-what: 'IET Archives blog (2023): ''In 1880 Cragside was the first house in the world to be lit by hydro-electricity''; Armstrong
-  replaced arc lamps with 45 incandescent lamps in 1880, and described the Swan lamps in a letter to the editor of The Engineer
-  of 17 January 1881. The blog is secondary; the letter itself was not read. The blog''s ''first house in the world'' is not
-  used.'
+what: 'IET Archives blog (2023), two passages: ''the arc lamps were replaced by Armstrong in 1880 with 45 incandescent lamps'';
+  and Armstrong''s letter to the editor of The Engineer of 17 January 1881 was written ''shortly after he utilised Joseph
+  Swan''s newly invented incandescent light bulbs''. That the 1880 lamps were Swan''s is the blog''s joining of the two passages.
+  The letter itself was not read. The blog''s ''first house in the world'' is not used.'
 sources:
 - title: 'IET Archives blog, ''Cragside: harnessing the power of water'' (9 Mar 2023), describing Armstrong''s letter of 17
     Jan 1881 (IET Archives NAEST 046/24)'
@@ -42,4 +42,8 @@ history:
   date: '2026-10-02'
   change: 'Created from the incandescent-lamp dig''s revision: timeline event b8. Date and place re-checked against the cited
     source.'
+- rev: 2
+  date: '2026-10-02'
+  change: 'Review request R3-2: wording now says ''1880'' and ''Swan'' come from two passages of the blog; claim split to
+    lamp-swan-cragside (proposed, low).'
 date_basis: stated
