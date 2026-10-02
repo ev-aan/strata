@@ -1,6 +1,6 @@
 # Shared node. Append-only: a change is a new `rev` plus a `history` entry, never an overwrite. See build/SCHEMA.md, Nodes.
 id: lamp-1873-lodygin-carbon-rod-lamps
-rev: 2
+rev: 3
 type: event
 label: '1872-73: Lodygin''s carbon-rod lamps (reported to the St Petersburg Academy)'
 time: '1873-01-01T12:00:00Z'
@@ -38,8 +38,9 @@ place:
   source: OpenStreetMap Nominatim lookup, retrieved 2026-10-02 (a gazetteer, orientation only; not a source for the event);
     OSM relation 421007
   note: Fontaine names the St Petersburg Academy of Sciences, to which the lamps were reported, and says Lodygin was 'a Russian
-    physicist'. Kommersant gives no place for the 1872 first demonstration (it places Lodygin's later experiments in St Petersburg).
-    The point is the Academy's city, not a stated place of the demonstration.
+    physicist'. The Kommersant sentence that gives 1872 for the first demonstration names no place; elsewhere the same page
+    speaks of a successful demonstration 'in Petersburg' (spoken of as five years before the lamps reached the United States),
+    which it does not date. The point is the Academy's city, not a stated place of the 1872 demonstration.
 window:
   earliest: '1872-01-01'
   latest: '1873-12-31'
@@ -58,4 +59,7 @@ history:
   date: '2026-10-02'
   change: 'Review request R3-3: label and place note no longer say the demonstration took place in St Petersburg; the place
     is the Academy''s.'
+- rev: 3
+  date: '2026-10-02'
+  change: 'Review request R4-6: place note says exactly where the Kommersant page names Petersburg.'
 date_basis: stated
