@@ -54,3 +54,13 @@ log:
       PARKED by the owner until primary sources are reachable. No content changed.
       Claims, weights and headline stay as filed (all anchors unchecked, headline draft).
       See dig_status, park_reason and resume_when in claims.yaml.
+  - id: L-09
+    date: 2026-10-02
+    entry: >
+      CORRECTION (conformance review, rule fix only; the dig stays parked and no
+      other content changed). apollo-robotic-only-alternative was filed as refuted
+      with evidence_class synthetic. Rule 9 requires a refutation to rest on
+      material or primary-text evidence; the capability ratio is our own inference
+      and the track imagery is not independent of NASA. State changed from refuted
+      to proposed. It can return to refuted when an independent material or
+      primary-text anchor is read (for example non-NASA orbiter imagery of tracks).
