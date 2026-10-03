@@ -544,3 +544,19 @@ log:
       2014, 1,256,407). "Millions" is not shown; the summary now says "more than a million
       children". Owner asked for the dig to be published (2026-10-03); it is added to
       build/site.yaml in the same pull request.
+  - id: L-33
+    date: 2026-10-02
+    entry: >
+      OWNER DECISION (ev-aan, in conversation, 2026-10-02 20:39 Toronto time): family surnames that are
+      the public names of court cases may be used ("Surname is fine"), including the 2007
+      compensation case ("Restore"). Children's first names stay out (log L-19). The surname
+      "Poling" is restored in the dig's display text (claims.yaml, threads.yaml, timeline.yaml),
+      where L-25 had replaced it; this reverses the L-25 content decision for display text only.
+      Earlier log entries redacted under L-25 are not edited back; this entry records the
+      reversal. The test-case names (Cedillo, Hazlehurst, Snyder) stay as they are. Also: the
+      timeline listed the two Federal Circuit opinions twice in its source list; the duplicate
+      pair is removed. Correction to the summary-fix entry made before publishing: it said the
+      study counts are not summed "because the Danish cohorts overlap" and called 1,194,764 a
+      "single figure". The two MMR cohorts (Madsen 2002, Hviid 2019) do not overlap each other;
+      the overlap is with the thimerosal and aluminum cohorts and the meta-analysis, and
+      1,194,764 is the two MMR cohorts together. The change it made ("more than a million") stands.

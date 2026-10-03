@@ -32,7 +32,7 @@ people:
   - {who: "John Walker-Smith", detail: "Senior co-author; struck off in 2010; the High Court quashed that decision on 7 Mar 2012."}
   - {who: "Brian Deer", detail: "Journalist whose comparison of the paper with hospital records was published by the BMJ in Jan 2011."}
   - {who: "William W. Thompson", detail: "CDC scientist and co-author of DeStefano 2004; issued a statement through his lawyers on 27 Aug 2014."}
-  - {who: "A child (the 2007 compensation case)", detail: "Not named here: a minor at the time and the injured party (owner rule, log L-19). Child whose compensation case the US government conceded in Nov 2007 (as reported)."}
+  - {who: "The Poling case (2007)", detail: "The family surname is the public case name and is used (owner decision, 2026-10-03); the child, a minor at the time, is not named by first name (owner rule, log L-19). Child whose compensation case the US government conceded in Nov 2007 (as reported)."}
   - {who: "Robert F. Kennedy Jr.", detail: "Author of 'Deadly Immunity' (2005); US Secretary of Health and Human Services from 2025; said he ordered the Nov 2025 CDC page change (STAT)."}
   - {who: "Mark Geier", detail: "Co-author of papers reporting an association; Maryland licence revoked 22 Aug 2012 (court record)."}
 sources:
@@ -50,8 +50,6 @@ sources:
   src-poling-cnn-2008:       {title: "CNN, 6 Mar 2008", url: "https://www.cnn.com/2008/HEALTH/conditions/03/06/vaccines.autism/index.html", authenticity: "news report"}
   src-eurosurv-2008:         {title: "Eurosurveillance, 3 Jul 2008", url: "https://www.eurosurveillance.org/content/10.2807/ese.13.27.18919-en", authenticity: "authenticated, strong"}
   src-hornig-2008:           {title: "Hornig et al., PLoS ONE 2008", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2526159/", authenticity: "authenticated, strong"}
-  src-cafc-cedillo-2010:     {title: "Federal Circuit, Cedillo v. HHS, No. 2010-5004 (27 Aug 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/10-5004.pdf", authenticity: "authenticated, strong"}
-  src-cafc-hazlehurst-2010:  {title: "Federal Circuit, Hazlehurst v. HHS, No. 2009-5128 (13 May 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/09-5128.pdf", authenticity: "authenticated, strong"}
   src-oap-decisions:         {title: "Court of Federal Claims, autism decisions", url: "https://www.uscfc.uscourts.gov/autism-decisions-and-background-information", authenticity: "authenticated, moderate"}
   src-cafc-cedillo-2010:     {title: "Federal Circuit, Cedillo v. Secretary of HHS, No. 2010-5004 (27 Aug 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/10-5004.pdf", authenticity: "authenticated, strong"}
   src-cafc-hazlehurst-2010:  {title: "Federal Circuit, Hazlehurst v. Secretary of HHS, No. 2009-5128 (13 May 2010)", url: "https://www.cafc.uscourts.gov/opinions-orders/09-5128.pdf", authenticity: "authenticated, strong"}
@@ -114,7 +112,7 @@ events:
      label: "Jun 2005: 'Deadly Immunity' published by Salon and Rolling Stone",
      detail: "Corrected five times; Salon removed it in Jan 2011 [read]."}
   - {id: a11, panel: years, lane: legal, time: "2007-11-15T12:00:00Z", precision: month, kind: official, status: reported, sources: [src-poling-cnn-2008],
-     label: "Nov 2007: US government concedes a compensation claim",
+     label: "Nov 2007: US government concedes the Poling compensation claim",
      detail: "CNN: the program 'concluded' the vaccinations 'significantly aggravated' an underlying illness; NPR: 'possible' they 'may have exacerbated' a mitochondrial disorder. Both read; the decision itself was not."}
   - {id: a12, panel: years, lane: origin, time: "2008-06-20T12:00:00Z", precision: day, kind: official, status: reported, sources: [src-eurosurv-2008],
      label: "20 Jun 2008: HPA reports measles endemic again in the UK",

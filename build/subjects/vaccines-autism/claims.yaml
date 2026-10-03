@@ -58,7 +58,7 @@ assessment:
     Not yet read, and listed as sub-questions of this question (claims va-sq-...): the Lancet's 2004
     and 2010 retraction notices, the BMJ's 2011 articles, the JAMA erratum to Jain 2015, the
     correction to Andersson 2025, the government's Rule 4(c) report and damages decision in the
-    2007 compensation case, other compensated cases, the Maryland Board's order of 22 Aug 2012,
+    Poling compensation case (2007), other compensated cases, the Maryland Board's order of 22 Aug 2012,
     whether the 2006 case report concerns the same child as that concession, the evidentiary bodies
     of the six omnibus decisions, and the publishers' own files of Madsen 2002, Hviid 2019 and the
     1998 paper (this dig read third-party copies). What would settle the
@@ -1447,7 +1447,7 @@ claims:
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       A 2015 special master's order quotes the government's Rule 4(c) report in one child's
-      vaccine-compensation case (docket 02-1466V; late 2007 per CNN) as stating that, on an
+      vaccine-compensation case (Poling v. Secretary of HHS, docket 02-1466V; late 2007 per CNN) as stating that, on an
       initial review, the facts met "the statutory criteria for demonstrating that the
       vaccination [the child] received on July 19, 2000, significantly aggravated an underlying
       mitochondrial disorder". The case was settled, not adjudicated, and the 2010 decision
@@ -1532,7 +1532,7 @@ claims:
       not a count. It points to the open question in va-mito-fever-regression. The Rule 4(c)
       report and the damages decision themselves, and other compensated cases, are not read:
       see va-sq-compensation-decision and va-sq-other-compensated-cases. A search of
-      govinfo.gov for docket 02-1466V returned no opinions (round 6).
+      govinfo.gov for the Poling docket, 02-1466V, returned no opinions (round 6).
 
   - id: va-omnibus-test-cases
     state: established
@@ -1661,7 +1661,7 @@ claims:
     statement_kind: reported   # assigned by rule on 2026-10-02 (log L-16); to be reviewed
     statement: >
       Autism is not on the US Vaccine Injury Table. Encephalopathy or encephalitis within 5 to
-      15 days of a measles-containing vaccine is. In the 2007 compensation case a 2015 court
+      15 days of a measles-containing vaccine is. In the Poling case (2007) a 2015 court
       order says the petitioners alleged a Table injury (an encephalopathy); whether the
       government's concession rested on the Table is not stated in what was read, and the Table
       in force when it was decided was not read.
@@ -1971,7 +1971,7 @@ claims:
     evidential_weight: 2   # of 5
     anchor_checked: secondary   # the review read in full; the case series as abstract and as cited
     adoption_weight: 1   # of 5
-    adoption_note: "Not measured; known mainly through the 2007 compensation case."
+    adoption_note: "Not measured; known mainly through the Poling case."
     would_change_if: >
       a prospective study of children with confirmed mitochondrial disease records fevers
       from all causes and finds regression clustering after them, or finds none
@@ -1997,7 +1997,7 @@ claims:
       sources: [src-rossignol-frye-2012, src-shoffner-2010, src-poling-2006, src-weissman-2008]
     positions:
       - label: "Yes (possible)"
-        holder: "Shoffner 2010; a 2006 case report (possibly the same child as the 2007 compensation concession, not verified, so not counted as separate support)"
+        holder: "Shoffner 2010; Poling et al. 2006 (case report; possibly the same child as the Poling concession, not verified, so not counted as separate support)"
         ground: >
           Regression after fever is documented in this group, a few after post-vaccination
           fevers.
@@ -2313,7 +2313,7 @@ claims:
     anchor:
       type: search-record
       description: >
-        Tried 2 Oct 2026: govinfo.gov (no opinions for docket 02-1466V), uscfc.uscourts.gov (the
+        Tried 2 Oct 2026: govinfo.gov (no opinions for the Poling docket, 02-1466V), uscfc.uscourts.gov (the
         autism decisions page lists the six test cases, not this case), Google Scholar-style
         searches. The case is read only through a 2015 special master's order that quotes the Rule
         4(c) report and the 2011 fees decision, and through CNN and NPR (2008).
@@ -2398,7 +2398,7 @@ claims:
     statement: >
       Sub-question of "Do vaccines cause autism?": Does the 2006 case report of developmental
       regression and mitochondrial dysfunction in a child with autism (J Child
-      Neurol 2006;21:170-2) concern the same child as the 2007 compensation concession?
+      Neurol 2006;21:170-2) concern the same child as the Poling concession?
     evidence_class: primary_text
     confidence: provisional
     evidential_weight: 1   # of 5, for the existence of the gap
