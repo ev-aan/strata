@@ -50,7 +50,7 @@ assessment:
   key_points:
     - "Two Danish cohorts (1,194,764 children) and UK and US studies found no more autism after MMR (the UK study: pervasive developmental disorders, similar for autism)."
     - "Health bodies (adoption, not evidence): WHO's safety committee found no evidence of a causal link (2025); since Nov 2025 the CDC's page disputes the 'no link' statement."
-    - "The 1998 paper was retracted in 2010; a court found its ethics statement untrue. Open: a 2007 legal concession (not science); mitochondrial fever (no study found)."
+    - "The 1998 paper was retracted in 2010; a court found its ethics statement untrue. Open: a 2007 legal concession (not science); mitochondrial fever (no controlled study)."
   basis: [va-mmr-no-detectable-increase, va-thimerosal-no-detectable-increase, va-aluminum-no-detectable-increase, va-wakefield-paper-account-accurate, va-poling-concession, va-mito-fever-regression, va-small-effect-not-excludable]
   # Key point 2 states institutional positions on the first screen by owner decision 2026-10-02 (log L-19). They are adoption, not basis.
   rated_claim: va-mmr-no-detectable-increase

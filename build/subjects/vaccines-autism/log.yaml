@@ -528,3 +528,10 @@ log:
       states a limit of method, not an absence found. Key point 3 stays within 170 characters. R7-3: the
       authenticity note of src-wakefield-1998 no longer says "Full text not read": the full text was read
       in a third-party copy (briandeer.com), not compared with the publisher's file (va-sq-publisher-files).
+  - id: L-31
+    date: 2026-10-03
+    entry: >
+      Answer to R8-1 (review round 8; resolution is the reviewer's). Key point 3 of the assessment
+      said the mitochondrial fever question had "(no study found)". That was wrong: the dig cites
+      case series (va-mito-fever-regression). It now says "(no controlled study)". R8-2 and R8-3 are
+      not answered in this entry.

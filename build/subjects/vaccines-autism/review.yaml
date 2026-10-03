@@ -596,6 +596,7 @@ rounds:
     severity: blocking
     finding: 'Key point 3 now reads Open: a 2007 legal concession (not science); mitochondrial fever (no study found). That is false on the dig own record: va-mito-fever-regression cites Shoffner 2010 (a case series of 28 children) and Weissman 2008, and the short-answer item two lines below says small case series report regression after fever. What was not found is a controlled study. A first-screen reader would be told no research exists. Fix: mitochondrial fever (no controlled study) (168 characters, within the 170 warning) or similar.'
     evidence: 'claims.yaml key_points and va-mito-fever-regression anchor at 3272352; character count by me.'
+    author_response: {action: fixed, note: 'Key point 3 now says "(no controlled study)", matching va-mito-fever-regression and the short answer (case series exist). Log L-31.'}
   - id: R8-2
     target: va-mito-fever-regression; va-aluminum-brain-tissue; tests.yaml line 78
     severity: non_blocking
