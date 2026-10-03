@@ -1,5 +1,5 @@
 subject: vaccines-autism
-status: revisions_requested
+status: passed_with_open_items
 reviewed_by: independent review agent (eighth reviewer)
 reviewed_on: 2026-10-02
 note: >
@@ -22,6 +22,7 @@ note: >
   Round 6 (sixth reviewer, head c41e40f, scratch worktree; did not edit claims, log, timeline, sources or build/site.yaml): the round 6 content (log L-24 to L-28) is verified against the sources and is accurate, with one blocking request (R6-1: two unmarked absence claims held above provisional, REVIEW.md B) and five non-blocking ones. Status is revisions_requested only because of R6-1, a two-line fix; when it is answered and resolved by a reviewer who did not write the work, the status can return to passed_with_open_items.
   Round 7 (seventh reviewer, head 634c045, scratch worktree; did not edit claims, log, timeline, sources or build/site.yaml): R6-1 to R6-6 verified against the sources and resolved (R5-1 and R5-2 too); every blocking request of rounds 1 to 6 is resolved by a reviewer who did not write the work. Status passed_with_open_items; the open items below are limits the page must show. Round 7 adds three non-blocking requests (R7-1 to R7-3).
   Round 8 (eighth reviewer, head 3272352, scratch worktree; edited only this file): reviewed the diff 634c045..3272352 (the author's answers to R7-1 to R7-3, log L-30). R7-1 and R7-3 verified and resolved; R7-2 is only partly answered. One blocking request (R8-1: key point 3 now says the mitochondrial fever question has 'no study found', which the dig's own claim contradicts: it cites case series) and three non-blocking ones. Status revisions_requested until R8-1 is answered and resolved by a reviewer who did not write the work.
+  Round 8 resolution (eighth reviewer, head 3dd7166; diff 28241d5..3dd7166 only, edited only this file): R8-1 verified and resolved. Every blocking request of rounds 1 to 8 is resolved by a reviewer who did not write the work. Status passed_with_open_items; R8-2 and R8-3 (non-blocking) remain open items.
 notes: >
   Conformance: python3 build/conformance.py --base origin/main reports 0 errors for this subject
   (11 established claims below primary are warnings). python3 build/tools/review_dig.py vaccines-autism:
@@ -597,6 +598,9 @@ rounds:
     finding: 'Key point 3 now reads Open: a 2007 legal concession (not science); mitochondrial fever (no study found). That is false on the dig own record: va-mito-fever-regression cites Shoffner 2010 (a case series of 28 children) and Weissman 2008, and the short-answer item two lines below says small case series report regression after fever. What was not found is a controlled study. A first-screen reader would be told no research exists. Fix: mitochondrial fever (no controlled study) (168 characters, within the 170 warning) or similar.'
     evidence: 'claims.yaml key_points and va-mito-fever-regression anchor at 3272352; character count by me.'
     author_response: {action: fixed, note: 'Key point 3 now says "(no controlled study)", matching va-mito-fever-regression and the short answer (case series exist). Log L-31.'}
+    resolved: true
+    resolved_in_round: 8
+    reviewer_note: 'Verified by me at head 3dd7166 (diff 28241d5..3dd7166: claims.yaml key point 3, log L-31, this author_response; nothing else changed). Key point 3 now ends mitochondrial fever (no controlled study), 168 characters; it no longer contradicts the case series cited in va-mito-fever-regression (Shoffner 2010, Weissman 2008) or the short-answer item. L-31 is a new log entry. Conformance 0 errors, review_dig all 14 checks pass at 3dd7166. Whether the absence is backed by a recorded search stays R8-2 (non-blocking).'
   - id: R8-2
     target: va-mito-fever-regression; va-aluminum-brain-tissue; tests.yaml line 78
     severity: non_blocking
@@ -620,8 +624,7 @@ open_items_proposed_by_author:
   - 'The Lancet 2004 and 2010 notices, the 1998 full text, the GMC findings, the BMJ articles and the 2007 compensation decision remain unread; the claims that rest on them say so.'
   - 'Madsen 2002 and Hviid 2019 full texts not read; the headline stays draft until they are.'
 open_items:
-  - 'Blocking, round 8: R8-1 (key point 3 says no study found for the mitochondrial fever question; case series exist). Must be answered and resolved before the status can return to passed_with_open_items.'
-  - 'Non-blocking, round 8: R7-2 (partly answered; carried as R8-2: record the search behind we found no controlled study; tests.yaml residue), R8-3 (what_it_is_not attributes the order footnote 12 point to the settlement; late 2007 is CNN date). R7-1 and R7-3 resolved.'
+  - 'Non-blocking, round 8: R7-2 (partly answered; carried as R8-2: record the search behind we found no controlled study; tests.yaml residue), R8-3 (what_it_is_not attributes the order footnote 12 point to the settlement; late 2007 is CNN date). R7-1 and R7-3 resolved. R8-1 (blocking) resolved at 3dd7166.'
   - 'Sources still unread by anyone, each with a va-sq claim: the Lancet 2004 and 2010 notices; the BMJ 2011 articles and BMJ c696 and c2803; the JAMA 2016 erratum to Jain 2015; the Annals correction to Andersson 2025 (PMID 40674587); the Rule 4(c) report and damages decision of the 2007 compensation case (and the 2011 fees decision beyond what the 2015 order quotes); other compensated cases (Banks and others); the Board order of 22 Aug 2012; the full text of the 2006 case report (whether it is the same child); the evidentiary bodies of the six omnibus decisions; the publishers own files of Madsen 2002, Hviid 2019 and the 1998 paper (third-party copies were read and match the abstracts and quoted wording).'
   - 'Nine established claims rest on secondary reads (abstracts, news, fetched pages); the page must show these as limits.'
   - 'Owner decision: whether to move headline_status from draft (the headline claim meets SCHEMA 13: established, high, weight 4, primary; the L-06 condition is met; the headline wording of N10 was changed by L-24 under the owner delegation).'
