@@ -233,7 +233,7 @@ events:
      detail: "Statement 4 (read): all 172 passengers and crew safe; the Captain returned to the UAE; flights to Tel Aviv suspended at the authorities' request. Reuters dates his first public comments to Friday 2 Oct."}
   - {id: b15, panel: aftermath, lane: uae, time: "2026-10-02T09:30:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_gcaa],
      label: "UAE civil aviation authority: commends captain, crew, passengers; no comment on claims",
-     detail: "Statement via WAM (as carried by Khaleej Times and Emirates 24|7, 2 Oct): the captain is in good condition; findings will be announced through official channels."}
+     detail: "Statement via WAM (as carried by Khaleej Times and Emirates 24|7, 2 Oct): the captain is in good condition. Khaleej Times' copy alone adds that findings will be announced through official channels."}
   - {id: b16, panel: aftermath, lane: israel_agencies, time: "2026-10-02T07:34:00Z", precision: approx, date_basis: derived, kind: media, status: single, sources: [s_jp_405],
      label: "Israeli sources (unnamed): the co-pilot held no second nationality",
      detail: "Jerusalem Post, 2 Oct 10:34 (page clock taken as Israel time, UTC+3, so 07:34 UTC; the zone is not stated). Anonymous sources; not confirmed by any authority."}

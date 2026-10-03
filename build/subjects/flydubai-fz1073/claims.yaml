@@ -646,7 +646,7 @@ claims:
   - id: fz1073-uae-investigation
     state: established
     statement: >
-      On 1 October the UAE Attorney-General ordered a team of specialised Public Prosecution members to investigate the circumstances and causes of the incident, including "any possible connection to terrorist activity or intent, and whether it involved prior planning or direction"; the UAE says its law applies because the aircraft is UAE-registered, and the civil aviation authority says findings will be announced through official channels.
+      On 1 October the UAE Attorney-General ordered a team of specialised Public Prosecution members to investigate the circumstances and causes of the incident, including "any possible connection to terrorist activity or intent, and whether it involved prior planning or direction"; the UAE says its law applies because the aircraft is UAE-registered, and the civil aviation authority says, in the Khaleej Times copy of its WAM statement, that findings will be announced through official channels.
     evidence_class: primary_text
     confidence: high
     statement_kind: reported
@@ -667,7 +667,7 @@ claims:
       type: official-statement
       description: >
         UAE Ministry of Foreign Affairs [read, stored in sources/mofa-uae-2026-10-01.txt]: the Attorney-General "had ordered the formation of a team comprising specialised members of the Public Prosecution to investigate the circumstances and causes of the incident"; the investigation "includes examining all circumstances and motives surrounding the incident, including any possible connection to terrorist activity or intent, and whether it involved prior planning or direction."
-        The ministry asks the public to rely on official sources "until the investigation is completed and its findings are announced." GCAA via Khaleej Times and Emirates 24|7 (WAM copies) [read]: findings "will be announced through official channels". Al Jazeera [read]: Saudi Arabia's National Transport Safety Center said its team had begun work.
+        The ministry asks the public to rely on official sources "until the investigation is completed and its findings are announced." GCAA via Khaleej Times (WAM copy) [read]: findings "will be announced through official channels" (this sentence is in the Khaleej Times text only; the stored Emirates 24|7 text lacks it). Al Jazeera [read]: Saudi Arabia's National Transport Safety Center said its team had begun work.
       sources: [src-mofa-uae, src-gcaa-emirates247, src-aljazeera-saudi, src-national-ag]
     basis: >
       # V: the ministry text was read directly. Israel's part ("Israeli investigators would take part in the UAE-led investigation", an Israeli official to Reuters) is not confirmed by the UAE; Ynet reports Saudi Arabia declined an Israeli observer. Both are single-source and not claimed.
