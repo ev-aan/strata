@@ -535,3 +535,12 @@ log:
       said the mitochondrial fever question had "(no study found)". That was wrong: the dig cites
       case series (va-mito-fever-regression). It now says "(no controlled study)". R8-2 and R8-3 are
       not answered in this entry.
+  - id: L-32
+    date: 2026-10-03
+    entry: >
+      Before publishing, the search summary said "studies of millions of children". The dig's own
+      short answer says the study counts are not summed because the Danish cohorts overlap, and the
+      largest single figures are about 1.2 million (Madsen 2002 plus Hviid 2019, 1,194,764; Taylor
+      2014, 1,256,407). "Millions" is not shown; the summary now says "more than a million
+      children". Owner asked for the dig to be published (2026-10-03); it is added to
+      build/site.yaml in the same pull request.
