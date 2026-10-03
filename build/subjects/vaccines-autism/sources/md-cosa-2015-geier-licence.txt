@@ -1,0 +1,1999 @@
+               REPORTED
+
+  IN THE COURT OF SPECIAL APPEALS
+
+            OF MARYLAND
+
+                 No. 1095
+
+          September Term, 2014
+
+______________________________________
+
+
+            MARK R. GEIER
+
+                    v.
+
+    MARYLAND STATE BOARD OF
+          PHYSICIANS
+
+______________________________________
+
+     Woodward,
+     Graeff,
+     Moylan, Jr., Charles E.
+       (Retired, Specially Assigned),
+
+                  JJ.
+______________________________________
+
+          Opinion by Graeff, J.
+______________________________________
+
+     Filed: May 29, 2015
+       Mark R. Geier (“Dr. Geier”), appellant, seeks review of the decision of the Maryland
+
+State Board of Physicians (the “Board”), appellee, to revoke his license to practice
+
+medicine.1 The Board revoked his license after it determined that he violated numerous
+
+provisions of the Medical Practice Act (the “Act”), Md. Code (2009 Repl. Vol.) §§ 14-401
+
+et seq., of the Health Occupations Article (“HO”), including HO §§ 14-404(a)(3)(ii)
+
+(unprofessional conduct in the practice of medicine), 14-404(a)(11) (willfully making or
+
+filing a false report or record in the practice of medicine), 14-404(a)(22) (failing to meet
+
+standards, as determined by peer review, for the delivery of quality medical care), 14-
+
+404(a)(40) (failing to keep adequate medical records), and 14-404(a)(12) (willfully failing
+
+to file or record any medical report as required under law, willfully impeding or obstructing
+
+the filing or recording of the report, or inducing another to fail to file or record the report).
+
+       Dr. Geier petitioned for judicial review in three jurisdictions, the Circuit Court for
+
+Baltimore City, the Circuit Court for Baltimore County, and the Circuit Court for
+
+Montgomery County. After Dr. Geier voluntarily dismissed his petitions in Baltimore City
+
+and Baltimore County, the Board moved to dismiss the remaining petition on res judicata
+
+grounds, pursuant to Md. Rule 2-506(c), which provides “that a notice of dismissal operates
+
+as an adjudication upon the merits when filed by a party who has previously dismissed in
+
+
+       1
+        Prior to the revocation of his license, Dr. Geier treated children with autism. The
+administrative law judge (“ALJ”) stated that autism “is a generalized term for a variety of
+neuro-developmental disorders that range in severity across a spectrum. This variety of
+disorders, referred to in their entirety as Autism Spectrum Disorder (“ASD”), have
+symptoms that substantially impact a child’s functioning in multiple spheres, including
+language and social interaction.” She explained that typical symptoms include stereotypic
+movements, self-stimulatory movements, and unusual preoccupations with certain objects.
+any court of any state or in any court of the United States an action based on or including
+
+the same claim.”2 The Circuit Court for Montgomery County denied the Board’s motion
+
+to dismiss, and it affirmed the Board’s decision on the merits.
+
+       On appeal, Dr. Geier presents 12 questions for this Court’s review, which we have
+
+consolidated and rephrased, as follows:
+
+       1. Was there substantial evidence in the record to support the Board’s
+          findings that Dr. Geier: (1) engaged in unprofessional conduct in the
+          practice of medicine, pursuant to HO § 14-404(a)(3)(ii); (2) willfully
+          made a false record in the practice of medicine, pursuant to HO § 14-
+          404(a)(11); and (3) failed to meet appropriate standards for the delivery
+          of quality medical care, pursuant to HO § 14-404(a)(22)?
+
+       2. Did the ALJ abuse its discretion in admitting the testimony of the State’s
+          expert witness, Dr. Linda Grossman?
+
+       3. Did the ALJ properly exclude from evidence two exhibits offered by Dr.
+          Geier?
+
+       4. Did the Board properly reject Dr. Geier’s contention that the State was
+          required to admit into evidence two peer review reports?
+
+       5. Did the circuit court properly deny Dr. Geier’s request to supplement the
+          administrative record?
+
+       6. Did the circuit court abuse its discretion in denying Dr. Geier’s motion
+          for a stay?
+
+       The Board, although it did not file a cross-appeal, lists in its brief the
+
+following additional question for review:
+
+       Was Dr. Geier’s petition for judicial review in the Circuit Court for
+       Montgomery County barred on res judicata grounds under [Md.] Rule 2-
+       506(c) after Dr. Geier voluntarily dismissed two other petitions for judicial
+       review that he had filed to contest the Board’s decision?
+
+       2
+           Md. Rule 2-506 was amended, effective January 1, 2014, moving (c) to (d).
+
+
+                                             2
+       For the reasons that follow, we conclude that the Board’s question presented is not
+
+properly before this Court. With respect to the issues raised by Dr. Geier, we shall affirm
+
+the judgment of the circuit court.
+
+                  FACTUAL AND PROCEDURAL BACKGROUND
+
+                                              I.
+
+                                     Relevant Proceedings
+
+       On October 3, 2006, the Board notified Dr. Geier that it had received a complaint
+
+against him regarding his use of the drug Lupron to treat autistic children.3            The
+
+complainant, who was neither a patient of Dr. Geier’s, nor a parent of a patient, alleged
+
+that, in treating autistic children, Dr. Geier was: (1) practicing outside of the scope of his
+
+expertise and the prevailing standard of care for autism; (2) experimenting on children
+
+without a rational scientific theory or the supervision of a qualified review board; and (3)
+
+failing to provide appropriate informed consent regarding the potential side effects of
+
+Lupron and similar drugs.
+
+       On April 27, 2011, the Board issued an order for summary suspension of Dr. Geier’s
+
+license to practice medicine, concluding that the “public health, safety or welfare
+
+imperatively required emergency action.” On May 16, 2011, the Board issued charges
+
+
+
+
+       3
+        The record reflects that Lupron is an FDA-approved drug used for the treatment
+of precocious puberty, a condition where girls under the age of eight have changes in breast
+development or pubic hair and boys under the age of nine have penile and scrotal changes
+and pubic hair. Lupron can reduce the symptoms of puberty in children with higher than
+normal levels of testosterone. The reduction of testosterone can decrease aggressive,
+hyperactive and hypersexual behaviors.
+
+                                              3
+against Dr. Geier pursuant to the Act. Dr. Geier requested hearings on both the order for
+
+summary suspension and the charges.
+
+       On June 17, 20, 21, 23, 27, and 30, 2011, an Administrative Law Judge (“ALJ”)
+
+held a hearing on the Board’s order for summary suspension. On September 26, 2011, the
+
+ALJ issued a proposed decision upholding summary suspension of Dr. Geier’s license.
+
+       In the interim, on September 15, 2011, the Board issued amended charges under the
+
+Act against Dr. Geier. The amended charges alleged violations of HO §§ 14-404(a)(3)(ii)
+
+(unprofessional conduct in the practice of medicine); (a)(11) (willfully making or filing a
+
+false report or record in the practice of medicine); (a)(12) (willfully failing to file or record
+
+any medical record as required under law); (a)(18) (practicing medicine with an
+
+unauthorized person or aiding an unauthorized person in the practice of medicine); (a)(19)
+
+(gross overutilization of health care services); (a)(22) (failure to meet appropriate standards
+
+for the delivery of quality medical care); and (a)(40) (failure to keep adequate medical
+
+records).
+
+       On December 6, 7, 8, 9, and 15, 2011, the ALJ held a hearing on the amended
+
+charges. At the hearing, by agreement of the parties, the entire record of the prior summary
+
+suspension hearing, including all testimony presented and all exhibits admitted, were
+
+incorporated into evidence. On March 13, 2012, following the hearing, the ALJ issued a
+
+126-page proposed decision, recommending that the amended charges be upheld with
+
+regard to HO §§ 14-404(a)(3)(ii), 14-404(a)(11), 14-404(a)(22), and 14-404(a)(40) and
+
+dismissed with regard to HO §§ 14-404(a)(12), 14-404(a)(18), and 14-404(a)(19). The
+
+ALJ recommended that Dr. Geier’s license be revoked.
+
+
+                                               4
+       In April 2012, Dr. Geier filed exceptions to the ALJ’s proposed decision. On May
+
+23, 2012, the Board held an exceptions hearing. On August 22, 2012, the Board issued a
+
+Final Decision and Order, ordering that Dr. Geier’s license be revoked.
+
+       The Board found, among other things, that Dr. Geier treated patients with Lupron,
+
+a medication that was not approved by the U.S. Food and Drug Administration (“FDA”)
+
+for use on children in the absence of precocious puberty, and that Dr. Geier did not perform
+
+an adequate examination to determine if the patients had precocious puberty. Although it
+
+noted Dr. Geier’s opinion that Lupron therapy was appropriate for purposes not approved
+
+by the FDA or the American Academy of Pediatrics, and his testimony that he treated
+
+patients who met his profile with Lupron, it found that, with the exception of one patient
+
+who was the subject of the hearing, “none of these patients met even Dr. Geier’s profile for
+
+Lupron therapy.”
+
+       The Board also found that Dr. Geier
+
+       prescribed chelation therapy to patients who failed to display the need for
+       chelation. He began this therapy without documenting a reason for the
+       treatment and without adequate documented informed consent. He violated
+       the standard of quality care by so doing. He also violated the standard of
+       quality care by prescribing for patients . . . a drug not approved for any use
+       in the United States.
+
+(Footnotes omitted). The Board found that Dr. Geier “egregiously violated basic medical
+
+standards in his treatment of these patients by not evaluating them properly, lying about
+
+which drug he was prescribing, and failing to evaluate in any realistic medical way whether
+
+his intensive and very expensive treatment was effective.”
+
+
+
+
+                                             5
+       The Board concluded that Dr. Geier violated multiple provisions of the Act, stating
+
+as follows:
+
+               Dr. Geier committed unprofessional conduct in the practice of
+       medicine within the meaning of [HO] § 14-404(a)(3)(ii) when he had parents
+       sign a consent form that falsely implied that he was conducting an
+       experimental protocol approved by an Institutional Review Board [(“IRB”)]
+       when in fact that review board was, as the ALJ put it, “a façade covering the
+       intentions of a group that did not believe that they were bound by federal or
+       state law and had no intention of being so bound.”[4] He committed further
+       unprofessional conduct when he had a parent sign a consent form for the use
+       of one drug for chelation therapy when in fact another drug, a drug not
+       approved for use in the United States, was intended to be used and was in
+       fact used. His violations of the standard of care, especially his treating of
+       some patients without examining them and his reaching diagnoses in the
+       absence of required diagnostic tests, were so egregious as to amount to
+       unprofessional conduct in themselves.
+
+              By willfully reporting false credentials when he applied for the
+       renewal of his medical license, Dr. Geier made a willfully false statement in
+       the practice of medicine within the meaning of [HO] § 14-404(a)(11).
+
+              By failing to properly evaluate patients before treating them with an
+       intensive regimen of drug therapy, by providing the parents with inadequate
+       or falsified consent forms, by failing to properly evaluate whether his
+       treatment was working, by ordering continued therapy to a patient for whom
+       there was no possibility of monitoring the effects, and by failing to keep
+       adequate records, Dr. Geier failed to meet the standard of quality care
+       required by [HO] § 14-404(a)(22).
+
+       4
+        An Institutional Review Board (IRB) is an oversight entity for research. Grimes
+v. Kennedy Krieger Institute, Inc., 366 Md. 29, 38-39 (2001).
+
+       Their primary functions are to assess the protocols of the project to determine
+       whether the project itself is appropriate, whether the consent procedures are
+       adequate, whether the methods to be employed meet proper standards,
+       whether reporting requirements are sufficient, and . . . review [] the potential
+       safety and the health hazard impact of a research project on the human
+       subjects of the experiment, especially on vulnerable subjects such as
+       children.
+
+Id. at 39.
+
+                                              6
+               By failing to document adequately the reasons these treatments were
+       initiated, halted or modified, by failing to maintain clear evidence of
+       informed consent, or even in some cases failing to document even the manner
+       in which the patients were contacted, Dr. Geier failed to keep adequate
+       medical records within the meaning of [HO] § 14-404(a)(12). This charge
+       was based on the fact that the Board’s analyst, having subpoenaed Dr.
+       Geier’s medical records for a certain patient and having received records that
+       appeared on their face to be incomplete, wrote to Dr. Geier, emphasizing that
+       all medical records for this patient should be produced. The Board’s letter
+       also required Dr. Geier to respond in writing if no additional records were
+       submitted. Dr. Geier did not produce any records; neither did he respond in
+       writing as required. According to the testimony provided at the hearing,
+       there were no additional records regarding this patient.
+
+       Finally, the Board concluded that Dr. Geier violated HO § 14-404(a)(12). Although
+
+the ALJ had concluded that there was no violation of the statute because no records existed
+
+that Dr. Geier failed to file with the Board, the Board disagreed. It explained:
+
+       The statute elsewhere requires a physician to “cooperate” with the Board’s
+       investigation. [HO] § 14-404(a)(33). The most obvious way in which most
+       investigated physicians are asked to cooperate is by filing reports in response
+       to questions posed by an analyst in the course of an investigation. In light of
+       the facts that (1) the statute requires cooperation by the investigated
+       physician; (2) the medical records appeared on their face to be incomplete;
+       and (3) that the analyst required in writing that Dr. Geier respond in writing
+       if there were no additional medical records, Dr. Geier’s failure to file a report
+       to the Board to that effect when required by the analyst was a violation of
+       [HO] § 14-404(a)(12).
+
+The Board concluded, however, that this was a “peripheral offense” that was “unrelated to
+
+Dr. Geier’s actual care of his patients,” and it “pale[d] in comparison to the egregious
+
+violations of the standard of care and the egregious unprofessional conduct displayed by
+
+Dr. Geier in this case.” Accordingly, the Board determined that it would not impose a
+
+sanction based upon the violation of HO § 14-404(a)(12).
+
+
+
+
+                                              7
+       The Board did impose a sanction, however, for the other violations of the Act. In
+
+discussing the appropriate sanction, the Board stated:
+
+               Dr. Geier has displayed in this case an almost total disregard of basic
+       medical and ethical standards by treating patients without properly
+       examining or diagnosing them, continuing treatment without properly
+       evaluating its effectiveness, and providing “informed consent” forms that
+       were misleading and in at least one case blatantly false. He provided
+       treatments supposedly according to an investigational protocol, but the
+       investigation was approved only by a sham [IRB], and he applied protocols
+       to patients who did not fit his own profile. He provided treatment by a drug
+       not approved for use in this country while informing parents that a different
+       drug would be used. His actions toward his patients were not those of an
+       honest and competent physician, nor do they appear to be those of an
+       objective and ethical researcher. Dr. Geier made little use of those
+       methodologies that distinguish the practice of medicine as a profession. At
+       the same time, he profited greatly from the minimal efforts he made for these
+       patients. In plain words, Dr. Geier exploited these patients under the guise
+       of providing competent medical treatment. Such a use of a medical license
+       is anathema to the Board. The Board has no hesitation in revoking his
+       medical license.
+
+       On September 17, 2012, Dr. Geier petitioned for judicial review. On April 9, 2014,
+
+after oral argument, the circuit court affirmed the Board’s final decision.
+
+       The court initially noted that Dr. Geier did “not address nor refute many of the
+
+Board’s findings of fact and conclusions of law regarding the violations of the” Act. Those
+
+unchallenged determinations included:
+
+               [T]he Board’s findings that he provided false informed consent to the
+       parent of his patient for use of a drug that was not approved by the FDA for
+       use in the United States, that he failed to properly evaluate his patients prior
+       to treatment and failed to adequately monitor his patients following
+       treatment, and that he failed to adequately document the treatment of his
+       patients.
+
+       With respect to the findings that Dr. Geier did challenge, the court concluded that
+
+there was substantial evidence to support the Board’s decisions that: (1) “Petitioner
+
+
+                                              8
+willfully falsified his license renewal applications”; (2) “Petitioner was performing human
+
+research on [one patient] and that an IRB should have been established”; (3) the IRB did
+
+not have any members unaffiliated with Dr. Geier and his Institute of Chronic Illness
+
+(“ICI”); (4) Dr. Geier violated HO § 14-404(a)(22) and (40); and (5) the Board’s expert
+
+“was a qualified expert and the Board presented a competent peer reviewer to testify.” It
+
+further concluded that “the sanction of revoking Petitioner’s medical license recommended
+
+by the ALJ and imposed by the Board is not arbitrary and capricious.”
+
+       On April 21, 2014, Dr. Geier moved to alter or amend the court’s ruling. On July
+
+9, 2014, the court issued an Amended Memorandum Opinion and Order, reaffirming the
+
+Board’s decision.
+
+                                        II.
+
+                      Dr. Geier’s Credentials and Practice
+
+       Dr. Geier attended medical school at George Washington University. In 1979, after
+
+completing medical school, Dr. Geier obtained his medical license from the State of
+
+Maryland. Through his medical practice, The Genetic Centers of America, Dr. Geier
+
+treated pediatric patients with Autism Spectrum Disorders (“ASD”). Dr. Geier does not
+
+have any credentials in pediatrics or autism. Instead, his residency was a one-year program
+
+in obstetrics and gynecology, which he completed in 1979.
+
+       Medical doctors in Maryland need to renew their license to practice medicine every
+
+two years. The License Renewal Form asks the doctor to list “up to two (2) specialty areas
+
+only if certified by a recognized board of the American Board of Medical Specialties
+
+(ABMS).” On his 2006, 2008, and 2010 license renewal applications filed with the Board,
+
+
+                                              9
+Dr. Geier stated that he was certified by ABMS-recognized specialty boards as follows: in
+
+“Genetics/Medical” in 2006; in “Genetics Clinical [General]” in 2008; and in “Genetics,
+
+Medical [Ph.D.]” and “Epidemiology” in 2010. Dr. Geier was not Board-certified in any
+
+of these specialties.5 Dr. Geier testified that he selected those categories from the list of
+
+ABMS-recognized board certifications because there was no option to state that he was
+
+certified by the American Board of Medical Geneticists (“ABMG”) as a “genetic
+
+counselor.” The ABMS’s list of recognized physician specialties does not list “genetic
+
+counselor” as a medical specialty.
+
+       Since 2004, Dr. Geier has treated 1,500 to 2,000 children with ASD. At issue in
+
+this case was his treatment of seven patients, Patients A, B, E, F, G, H, and I.
+
+       The ALJ summarized Dr. Geier’s practice as follows:
+
+              All the Patients were presented to [Dr. Geier] already diagnosed by
+       another physician with autism or a condition on the autism spectrum. All
+       presented with severe symptoms of autism, and all but Patient G presented
+       with adverse behaviors such as aggression and sexual activities, and
+       accelerated signs of puberty at a young age. [Dr. Geier] diagnosed all the
+       children with Precocious Puberty, administered Lupron therapy to all, and
+       chelation therapy to most. . . .
+
+               [Dr. Geier] contends that mercury is the ultimate cause of the Patients’
+       aggressive symptoms. Under his theory, the Patients are handicapped by the
+       presence of a [single nucleotide polymorphism (“SNP”)] of their
+       [methylenetetrahydrofolate reductase (“MTHFR”)] gene that causes them to
+       be more sensitive and less able to excrete mercury than the general
+       population. This build-up of mercury in their systems interferes with the
+       production of glutathione; glutathione is necessary to prevent a build-up of
+       testosterone and testosterone-related androgens and, conversely, the build-
+       up of testosterone also inhibits the production of glutathione. The build-up
+
+       5
+          The ALJ found, and the record supports, that the American College of
+Epidemiology elected Dr. Geier to be a “fellow” of the organization, but that organization
+is not a board recognized by the American Board of Medical Specialties (ABMS).
+
+                                             10
+       of testosterone makes the children more aggressive and increases
+       hypersexual behaviors.
+
+       Dr. Geier employed two types of therapy: he would medicate his patients with
+
+Lupron, a hormone designed to suppress testosterone and estrogen. In many cases, in
+
+addition to administering Lupron, he would use chelation therapy, which is intended to
+
+remove high levels of heavy metals, such as lead and mercury, from the body.
+
+       Although Lupron is approved by the FDA for use on adults for conditions including
+
+prostate cancer, the only approved, or “on-label,” use for Lupron in children is for the
+
+treatment of precocious puberty. Testimony indicated that, due to the significant potential
+
+risks in the use of Lupron, face-to-face monitoring is required at least every three months.
+
+       Dr. Geier used the drugs DMSA (dimercaptosuccinic acid) and DMPS (2,3-
+
+dimercapto-1-propane-sulfonic acid) in his chelation therapy. Although DMSA has been
+
+approved by the FDA for removing severe levels of heavy metals from the body, DMPS is
+
+not approved by the FDA for any purpose. The ALJ noted that “[p]hysicians who prescribe
+
+DMPS must inform their patients or their patients’ representatives, of its experimental
+
+status in the United States, and have a full disclosure/informed consent document” in the
+
+patient’s medical chart. Chelation therapy also has the potential for significant adverse
+
+complications, and therefore, chelation requires a physician to evaluate the patient face-to-
+
+face at least once every month. There is not a consensus in the medical community that
+
+chelation therapy should be used to treat ASD.
+
+       Dr. Geier diagnosed each patient with precocious, or premature, puberty. The
+
+criteria for diagnosing precocious puberty includes a complete history and physical
+
+
+
+                                             11
+examination, which includes: assessing genital development; determining bone age, which
+
+is based upon an X-ray of the wrist; completing hormone studies; and “Tanner Staging,” a
+
+medical grading of where a child falls in the steps of puberty. In addition, a diagnosis of
+
+precocious puberty generally is reserved for girls under the age of eight and boys under the
+
+age of nine.
+
+       Despite representing to insurance companies that Lupron was being used to treat
+
+precocious puberty, Dr. Geier testified that he would offer the patient’s parent a two to
+
+three month trial of Lupron if laboratory tests showed certain results.6 Specifically, he
+
+prescribed Lupron if the test results showed that the patient had one or more single genetic
+
+changes on a particular gene, low glutathione (a “cofactor” for an enzyme that assists the
+
+body to excrete mercury), high testosterone, low levels of the hormone DHEA-S, high
+
+levels of the hormone DHEA, and adverse behavioral signs of puberty, such as aggression
+
+and hypersexual behavior.
+
+                                        III.
+
+                               Dr. Geier’s Patients
+
+       a. Patient A
+
+       Patient A, a male, was diagnosed with autism when he was four years old. He was
+
+referred to Dr. Geier when he was nine years and eight months old. His initial lab testing
+
+
+
+       6
+         Dr. Geier does not dispute that he diagnosed his patients with precocious puberty,
+or that he did not conduct physical examinations of his patients. Nor does he dispute the
+Board’s findings regarding the treatments that he prescribed. Rather, he argues that he was
+not required to diagnose his patients with precocious puberty or conduct a physical
+examination before administering Lupron “off-label” to treat autism.
+
+                                               12
+indicated that he had high testosterone levels and high DHEA, but normal DHEA-S. Dr.
+
+Geier diagnosed him with precocious puberty and prescribed Lupron based on his
+
+diagnosis. Dr. Geier also prescribed DMPS for chelation therapy, although his laboratory
+
+results did not indicate that there was heavy metal poisoning. There was also no written
+
+informed consent form and no documentation that the risks of the treatment were discussed.
+
+       b. Patient B
+
+       Patient B, a male with autism, was six years old when he was initially assessed by
+
+Dr. Geier. Dr. Geier did not perform a physical examination of Patient B at the initial
+
+assessment, or at any time during Patient B’s treatment. Dr. Geier’s precocious puberty
+
+diagnosis did not include any information about bone age or Tanner Stage assessments.
+
+Dr. Geier prescribed both Lupron and DMPS for the patient. The patient’s parents were
+
+sent a “Geier Clinical Study Protocol,” which described the Lupron treatment but did not
+
+explain the risks and benefits.
+
+       c. Patient E
+
+       Patient E, a female with ASD, was diagnosed by Dr. Geier with precocious puberty
+
+when she was nine years and eight months old. Dr. Geier did conduct a physical
+
+examination, but the expert for the Board opined that the examination was inadequate to
+
+support a diagnosis of precocious puberty. There was no written informed consent and no
+
+documentation that the risks and benefits of the treatment or possible adverse side effects
+
+of Lupron were discussed with her parents.
+
+
+
+
+                                             13
+       d. Patient F
+
+       Patient F, a female with autism, underwent laboratory testing under Dr. Geier’s
+
+direction when she was seven years and eleven months old. The expert for the Board
+
+testified that the physical examination was inadequate, consisting only of measuring the
+
+patient’s height and weight and noting some, but not all, of the required features. Dr. Geier
+
+did not perform a bone age determination. Patient F nevertheless was prescribed Lupron.
+
+No written informed consent was obtained, and there is no documentation that the risks or
+
+potential side effects or goals of treatment were discussed. After prescribing the drugs, Dr.
+
+Geier did not conduct any further physical examination, and he did not make any
+
+assessments to determine whether the patient had suffered side effects from the treatment.
+
+       e. Patient G
+
+       Patient G, a male with pervasive developmental disorder, was eight years old when
+
+Dr. Geier made his initial assessment. Dr. Geier did not conduct a physical examination;
+
+in fact, he never met the patient in person. Dr. Geier did not conduct a bone age evaluation
+
+or a Tanner Stage evaluation. He prescribed the patient Lupron, as well as DMPS for
+
+chelation therapy, although the Board’s expert opined that there were no findings indicating
+
+elevated mercury levels. There was no written informed consent, and no documentation
+
+that any risk factors were discussed. Dr. Geier did not monitor the patient for possible
+
+adverse side effects.
+
+       f. Patient H
+
+       Patient H, a female with ASD, was over eight years old when Dr. Geier became
+
+involved with her treatment. Dr. Geier diagnosed her with precocious puberty without
+
+
+                                             14
+performing a complete physical examination. No bone age evaluation was performed, and
+
+the patient was outside the age range for a precocious puberty diagnosis. Based upon his
+
+diagnosis, Dr. Geier treated Patient H with Lupron. There was no evidence that the parents
+
+were notified of the risk and potential adverse effects of the treatment or that Dr. Geier
+
+monitored her.
+
+       g. Patient I
+
+       Patient I, a male with autism, was nine and a half years old when Dr. Geier initially
+
+assessed him. Dr. Geier prescribed the patient Lupron for precocious puberty and treated
+
+him with chelation therapy without meeting the patient or performing a physical
+
+examination.
+
+       Dr. Geier provided a parent of Patient I with a consent form, which the parent
+
+signed. The consent form stated that Patient I would be prescribed DMSA, a medication
+
+approved for use by the FDA. Dr. Geier, however, did not prescribe DMSA. Instead, he
+
+prescribed DMPS, which is not approved for any use by the FDA. The consent form also
+
+stated that the patient’s treatment protocol was approved by the IRB for the ICI, an
+
+organization run by Dr. Geier. The consent form did not convey that the IRB was affiliated
+
+with the ICI or with Dr. Geier.
+
+                                      DISCUSSION
+
+                                             I.
+
+                                       Res Judicata
+
+       Before discussing Dr. Geier’s arguments on the merits, we address the Board’s
+
+argument that Dr. Geier’s petition for judicial review should have been dismissed on res
+
+
+                                            15
+judicata grounds. The Board acknowledges that a voluntary dismissal typically is done
+
+without prejudice. It argues, however, that pursuant to Md. Rule 2-506(c), a notice of
+
+voluntary dismissal “operates as an adjudication upon the merits when filed by a party who
+
+has previously dismissed in any court of any state or in any court of the United States an
+
+action based on or including the same claim.”
+
+       Here, as indicated, after the Board’s decision, Dr. Geier filed, on September 14,
+
+2012, a petition for judicial review in the Circuit Court for Baltimore County, on September
+
+17, 2012, a petition for judicial review in the Circuit Court for Montgomery County, and
+
+on September 18, 2012, a petition for judicial review in the Circuit Court for Baltimore
+
+City. In at least one of the petitions, he asserted: “[p]etitions for Judicial Review are also
+
+being filed in Montgomery and Baltimore Counties. Petitioner believes that venue is
+
+appropriate in one or both of these other counties, and he files the instant Petition for
+
+Judicial Review only as a precaution in the event that the [courts] in these other venues
+
+reach a contrary conclusion.”
+
+       On December 28, 2012, Dr. Geier voluntarily dismissed his Baltimore City petition,
+
+without prejudice, stating that he was “electing to proceed with the judicial review in
+
+Montgomery County.” On January 2, 2013, he voluntarily dismissed his Baltimore County
+
+petition, without prejudice, stating that he was “electing to proceed with the judicial review
+
+in Montgomery County.”
+
+       On February 13, 2013, the Board moved for dismissal of the Montgomery County
+
+petition, the only remaining petition, on the ground of res judicata. The Board argued that,
+
+pursuant to Md. Rule 2-506(c), because Dr. Geier had voluntarily dismissed the same
+
+
+                                             16
+petition for judicial review in two other courts, the second voluntary dismissal operated as
+
+an adjudication upon the merits.
+
+       Dr. Geier responded that, in filing his petitions, he “believed that venue for judicial
+
+review was proper in multiple counties,” and “given the 30-day statute of limitations on
+
+such petitions, [he] could not afford to risk dismissal of his petition for filing in the
+
+incorrect venue.” Thus, “out of an abundance of caution, [he] filed his petition in all three
+
+of the counties where he believe venue might be appropriate.”
+
+       On March 25, 2013, the court denied the Board’s motion to dismiss, stating as
+
+follows:
+
+              This case is unlike the usual situation where Rule 2-506(c) arises. [Dr.
+       Geier] . . . did not file and then dismiss two successive lawsuits. Here [Dr.
+       Geier] simultaneously filed three petitions for judicial review in three
+       different Maryland courts . . . claiming he was unsure of the proper venue
+       and was concerned about the statute of limitations. Ultimately, [Dr. Geier]
+       voluntarily dismissed the Baltimore City and Baltimore County petitions and
+       chose to proceed only with the Montgomery County case. Whatever [Dr.
+       Geier’s] reason[s] were for originally filing three separate petitions, it cannot
+       be said that applying the “two dismissal” rule to this situation would further
+       the purpose of Rule 2-506(c). [The Board] has not asserted that it was
+       prejudiced by the dismissals. The dismissals did not result in duplicative,
+       wasteful or harassing litigation. While a literal interpretation of Rule 2-
+       506(c) may weigh in favor of dismissal, the [c]ourt looks to substance over
+       form and finds it would run contrary to the intent behind Rule 2-506(c) and
+       the interests of justice to grant this Motion to Dismiss and “close the
+       courthouse doors” to [Dr. Geier].
+
+               Lastly, and perhaps more importantly is the fact that this case is not
+       an initial lawsuit. Further, despite the fact that it is customary to call these
+       cases administrative appeals, they are not. This kind of action[] is for judicial
+       review of an administrative decision.
+
+(Footnote omitted).
+
+
+
+
+                                              17
+       The Board argues on appeal, as it did before the circuit court, that under the plain
+
+language of Md. Rule 2-506(c), “the second dismissal should have operated as an
+
+adjudication on the merits.” It asserts that the circuit court “explicitly recognized as much
+
+but concluded that the spirit of the rule counseled against dismissing Dr. Geier’s action.”
+
+To the contrary, the Board asserts, Dr. Geier’s actions in “forc[ing] the Board to litigate
+
+this matter in three separate jurisdictions while he maneuvered to land in the court he
+
+believed gave him the best chance to win,” manipulated both the courts and the Board. The
+
+Board argues that this Court should affirm the circuit court’s judgment on “the additional
+
+ground” that the Montgomery County petition was barred under the doctrine of res judicata
+
+pursuant to Md. Rule 2-506(c).
+
+       Dr. Geier contends that this issue is not properly before this Court. Stating that the
+
+Board is seeking to attack, as opposed to affirm, the court’s decision, Dr. Geier contends
+
+that, for this issue properly to be before this Court, the Board was required to file an appeal
+
+or a cross-appeal, which the Board did not do.
+
+       On the merits, Dr. Geier contends that the “two dismissal” rule, which provides that
+
+a second voluntary dismissal of a complaint operates as an adjudication on the merits, only
+
+precludes “a party from proceeding with a subsequent third action where the action has
+
+been dismissed twice previously.” He asserts that, in this case, the present proceeding was
+
+not a “subsequent action” because it was “the second of three total actions filed,” and the
+
+“action in Montgomery County was commenced before either of the other two actions were
+
+dismissed.” Moreover, he argues, his motive in filing in three courts was “not to harass
+
+the Board but to avoid the dismissal of his appeal” for improper venue.
+
+
+                                              18
+         We need not address this issue on the merits. We agree with Dr. Geier that the issue
+
+is not properly before this Court because the Board did not file a cross-appeal raising this
+
+issue.
+
+         In Paolino v. McCormick & Company, 314 Md. 575, 579 (1989), the Court of
+
+Appeals explained the circumstances when a cross-appeal is impermissible and when it is
+
+required:
+
+         [A]n appeal or cross appeal is impermissible from a judgment wholly in a
+         party’s favor. Offutt v. Montgomery Cty. Bd. of Ed., 285 Md. 557, 564 n.4
+         (1979). In that situation, however, despite a party’s inability to raise adverse
+         issues by appeal or cross appeal, if the losing party appeals, the winning party
+         may argue as a ground for affirmance matters resolved against it at trial. As
+         Judge Eldridge explained, for the Court, in Offutt:
+
+                [W]here a party has an issue resolved adversely in the trial
+                court, but . . . receives a wholly favorable judgment on another
+                ground, that party may, as an appellee, argue as a ground for
+                affirmance the matter that was resolved against it at trial. . . .
+                This is merely an aspect of the principle that an appellate court
+                may affirm a trial court’s decision on any ground adequately
+                shown by the record.
+
+         Id. (citations omitted). But one who seeks to attack, modify, reverse, or
+         amend a judgment (as opposed to seeking to affirm it on a ground different
+         from that relied on by the trial court) is required to appeal or cross appeal
+         from that judgment.
+
+Accord Uninsured Employers’ Fund v. White, 219 Md. App. 410, 422-23 (2014).
+
+         Joseph H. Munson Co. v. Secretary of State, 294 Md. 160 (1982), aff’d, 467 U.S.
+
+947 (1984), is helpful in our analysis of this case. There, Munson sought a declaration that
+
+a statute was unconstitutional. Id. at 162-63. The Secretary of State argued that the statute
+
+was constitutional, but he also challenged Munson’s standing to raise the constitutional
+
+
+
+
+                                               19
+issue. Id. at 167-68. The circuit court declared that the statute was constitutional. Id. at
+
+166.
+
+       After Munson appealed, the Secretary of State reasserted his challenge to Munson’s
+
+standing. Id. at 167-68. Munson argued that the issue was not properly before the Court
+
+because the Secretary failed to file a cross-appeal. Id. The Court of Appeals agreed with
+
+Munson, stating as follows:
+
+               Under circumstances where absence of standing would present an
+       alternate ground for upholding a trial court’s judgment, an appellee is entitled
+       to argue that ground in an appellate court. In such situation, a cross-appeal
+       would be unnecessary and, in fact, would be improper. Moreover, in that
+       situation, even if lack of standing were not raised by the appellee, an
+       appellate court noticing the issue would normally consider it sua sponte
+       under the principle that a judgment will ordinarily be affirmed on any ground
+       adequately shown by the record, whether or not relied on by the trial court or
+       raised by a party.
+
+               Thus, in the case at bar, if the trial court had dismissed the action on
+       some ground other than lack of standing, the Secretary as appellee would be
+       entitled to argue Munson’s alleged lack of standing as an alternate basis for
+       affirmance. However, the trial court did not dismiss the action. Instead, it
+       rendered a declaratory judgment on the merits. Munson’s alleged lack of
+       standing would not furnish an alternate ground for affirming the declaratory
+       judgment. On the contrary, the Secretary’s argument amounts to an attack
+       upon the judgment. If the issue is properly before us, and if we agreed that
+       Munson had no standing, we would be obliged to order that the trial court’s
+       judgment be reversed and that the case be remanded with directions to
+       dismiss the action.
+
+              Consequently, the Secretary is attempting to challenge the trial court’s
+       judgment in this case without having taken an appeal. A party to a trial court
+       proceeding, however, is not entitled to seek direct appellate review and
+       reversal of the trial court’s judgment unless he has filed a valid, timely order
+       of appeal. The Secretary, not having filed an order of appeal, may not on
+       appeal attack the trial court’s declaratory judgment.
+
+Id. (citations omitted).
+
+
+
+                                             20
+       A similar analysis applies here. The circuit court affirmed the decision of the Board
+
+on the merits, but it denied the Board’s request to dismiss the case on the ground of res
+
+judicata. The Board’s argument on appeal is that the circuit court should have dismissed
+
+the petition, and it erred in failing to do so and instead addressing the merits of Dr. Geier’s
+
+claims. If we agreed, we would not be affirming the circuit court on another ground, but
+
+rather, we would be reversing the circuit court and remanding with directions to dismiss
+
+the petition for judicial review. Accordingly, the Board was required to file a cross-appeal.
+
+Because it did not do so, this issue is not properly before this Court, and we decline to
+
+address it.
+
+                                              II.
+
+                                   Substantial Evidence7
+
+                                              A.
+
+                                    Standard of Review
+
+       Judicial review of an administrative decision “generally is a ‘narrow and highly
+
+deferential inquiry.’” Seminary Galleria, LLC v. Dulaney Valley Improvement Ass’n, Inc.,
+
+192 Md. App. 719, 733 (2010) (quoting Maryland-Nat’l Park & Planning Comm’n v.
+
+
+
+       7
+         The arguments set forth in Dr. Geier’s brief in this Court do not track his questions
+presented, and it is difficult to discern which of his arguments specifically dispute whether
+there was substantial evidence in the record as a whole to support the Board’s findings.
+We shall address the issue of substantial evidence only with regard to the findings made
+by the Board that Dr. Geier does appear to contest, i.e., HO §§ 14-404(a)(22), (a)(3)(ii),
+and (a)(11). He does not challenge, and we will not address, the Board’s findings
+concerning his failure to keep adequate medical records, pursuant to HO § 14-404 (a)(40),
+or its findings that he failed to cooperate with its investigation, pursuant to HO § 14-
+404(a)(12).
+
+                                              21
+Greater Baden-Aquasco Citizens Ass’n, 412 Md. 73, 83 (2009)).             This Court looks
+
+“through the circuit court’s decision and evaluates the decision of the agency,” Chesapeake
+
+Bay Foundation, Inc. v. Clickner, 192 Md. App. 172, 181 (2010), determining “‘if there is
+
+substantial evidence in the record as a whole to support the agency’s findings and
+
+conclusions, and to determine if the administrative decision is premised upon an erroneous
+
+conclusion of law.’” Cosby v. Dep’t of Human Res., 425 Md. 629, 638 (2012) (quoting
+
+Bd. of Phys. Quality Assurance v. Banks, 354 Md. 59, 67-68 (1999)).
+
+       With respect to the Board’s factual findings, we apply the substantial evidence test,
+
+which “‘requires us to affirm an agency decision, if, after reviewing the evidence in a light
+
+most favorable to the agency, we find a reasoning mind reasonably could have reached the
+
+factual conclusion the agency reached.’” Miller v. City of Annapolis Historic Pres.
+
+Comm’n, 200 Md. App. 612, 632 (2011) (quoting Montgomery Cnty v. Longo, 187 Md.
+
+App. 25, 49 (2009)).     Administrative credibility findings likewise are entitled to great
+
+deference on judicial review. Credibility findings of hearing officers who themselves have
+
+personally observed the witnesses “‘have almost conclusive force.’” Kim v. Maryland
+
+State Bd. of Physicians, 196 Md. App. 362, 370 (2010), aff’d, 423 Md. 523 (2011) (quoting
+
+Anderson v. Dep’t of Pub. Safety and Corr. Srvs., 330 Md. 187, 217 (1993)). A reviewing
+
+court “‘may not substitute its judgment for the administrative agency’s in matters where
+
+purely discretionary decisions are involved.’” Mueller v. People’s Counsel for Baltimore
+
+Cnty., 177 Md. App. 43, 82-83 (2007) (quoting People’s Counsel for Baltimore Cnty v.
+
+Surina, 400 Md. 662, 681 (2007)), cert. denied, 403 Md. 307 (2008). With respect to the
+
+Board’s conclusions of law, “a certain amount of deference may be afforded when the
+
+
+                                             22
+agency is interpreting or applying the statute the agency itself administers.” Employees’
+
+Ret. Sys. of Balt. v. Dorsey, 430 Md. 100, 111 (2013). “We are under no constraint,
+
+however, ‘to affirm an agency decision premised solely upon an erroneous conclusion of
+
+law.’” Id. (quoting Thomas v. State Ret. & Pension Sys., 420 Md. 45, 54-55 (2011)).
+
+                                            B.
+
+                            Violation of HO § 14-404(a)(22)
+
+      The Board found that Dr. Geier violated HO § 14-404(a)(22), which requires a
+
+physician to meet the standards for quality medical care. The Board concluded as follows:
+
+      By failing to properly evaluate patients before treating them with an intensive
+      regimen of drug therapy, by providing the parents with inadequate or
+      falsified consent forms, by failing to properly evaluate whether his treatment
+      was working, by ordering continued therapy to a patient for whom there was
+      no possibility of monitoring the effects, and by failing to keep adequate
+      records Dr. Geier failed to meet the standard of quality care required by [HO]
+      § 14-404(a)(22).
+
+      In support of these conclusions, the Board made the following findings of fact:
+
+             (1) Dr. Geier failed to meet basic medical standards for evaluating
+      patients and conducting medical examinations and keeping adequate records
+      of treatments and diagnoses. He failed to conduct an adequate initial
+      evaluation of any of these patients and failed to make an adequate record of
+      an examination for any of these patients. He began treatment often without
+      sufficient information about the patients’ physical condition. “In many
+      cases, [Dr. Geier] had no information at all about the Patients’ physical
+      conditions.”
+
+             For example, Dr. Geier treated Patient I for nine months without any
+      physical examination and in fact without seeing him and without even
+      documenting this patient’s height and weight. He treated Patient B for almost
+      three years without a physical examination and before ever seeing him, and
+      he also treated Patient G without first physically examining him or even
+      seeing him in person.
+
+
+
+
+                                            23
+       (2) Dr. Geier treated patients with Lupron, a medication that is not
+approved by the FDA in the absence of precocious puberty. He did not,
+however, perform an adequate examination to determine whether these
+patients had precocious puberty, or the cause of these patients’ symptoms.
+For example, Dr. Geier failed in any patient to perform a left wrist X-ray, a
+necessary test used to determine if the patient suffers from precocious
+puberty. Without conducting an adequate physical examination, and based
+largely on information supplied by the parents, Dr. Geier prescribed nearly
+identical treatment for these patients regardless of the information provided
+by the parents. Dr. Geier, after having failed to perform an adequate physical
+examination or perform all of the necessary diagnostic tests, ordered an
+intensive regimen of therapy with powerful drugs without making any
+adequate notation in the medical record as to why he ordered such treatment.
+
+        (3) Based on his theory that Lupron therapy is appropriate in certain
+situations in which its administration is not approved by the FDA or the
+[AAP], Dr. Geier purported to treat patients who met his profile with Lupron.
+With the exception of Patient E, however, none of these patients met even
+Dr. Geier’s profile for Lupron therapy.
+
+       (4) Dr. Geier prescribed chelation therapy to patients who failed to
+display the need for chelation. He began this therapy without documenting
+a reason for the treatment and without adequate documented informed
+consent. He violated the standard of quality care by so doing. He also
+violated the standard of quality care by prescribing for patients the drug
+DMPS, a drug not approved for any use in the United States.
+
+       (5) Dr. Geier provided a consent form to the parent of Patient I that
+named an FDA-approved drug and which falsely stated that it was to be used
+in the chelation treatment when another drug, DMPS, which was not FDA-
+approved, was to be used (and in fact was used) in the chelation treatment.
+Dr. Geier “failed to explain to the parents that the drug that he was asking
+them to insert into their children’s rectums was not approved for use in the
+United States.”
+
+        (6) After prescribing these treatments without an adequate previous
+medical examination and without adequate informed consent, Dr. Geier then
+failed to adequately monitor whether these treatments were working. His use
+of lab testing and intermittent reports from the parents was inadequate to
+assess the efficacy of treatment. He routinely ordered an extensive array of
+laboratory tests but failed to document any connection between these test
+results and his treatment plan. In patient A’s case, Dr. Geier ordered a
+continuation of his treatment protocol even though Patient A was
+
+
+                                     24
+       permanently leaving for Nigeria, Dr. Geier had no way to monitor the patient,
+       and Dr. Geier had not provided a referral to any physician who could.
+
+(Footnotes omitted).
+
+       Dr. Geier’s contention that the Board erred in finding that he violated the standard
+
+of care is limited to the argument that the Board erred in finding that he “violated the
+
+standard by failing to conduct physical examinations of patients.”8 In support, he argues
+
+that the Board incorrectly found “that a patient may only be prescribed Lupron if diagnosed
+
+with precocious puberty” and that he did not conduct an adequate physical examination to
+
+reach that diagnosis. He contends these findings were “legally incorrect” because a
+
+“diagnosis of precocious puberty is not required before a physician may lawfully
+
+administer Lupron ‘off-label’ to treat autism.” Thus, Dr. Geier asserts, “the Board’s
+
+conclusion that Dr. Geier violated the standard of care by failing to conduct physical
+
+examinations of patients must be reversed.”9
+
+       The Board argues that “substantial evidence supports its finding that Dr. Geier failed
+
+to meet the standards for quality medical care.” It notes, as we have recognized, that Dr.
+
+Geier does not challenge any of the Board’s findings regarding his treatment. Rather, the
+
+Board asserts, Dr. Geier challenges findings that the Board never made (that he could not
+
+
+       8
+         Dr. Geier does not challenge the Board’s conclusion that he violated the standard
+of care by “providing the parents with inadequate or falsified consent forms, by failing to
+properly evaluate whether his treatment was working, by ordering continued therapy to a
+patient for whom there was no possibility of monitoring the effects, and by failing to keep
+adequate records.”
+       9
+        Dr. Geier asserts that the parties stipulated at the hearing before the ALJ that his
+“off-label use of Lupron was lawful and within the standard of care.” That is not correct.
+The stipulation was that it was “not per se illegal” to use a drug “off-label.”
+
+                                             25
+prescribe Lupron unless a patient was diagnosed with precocious puberty), and he then
+
+argues that “he did not have to perform the evaluations necessary for a precocious puberty
+
+diagnosis because he was not prescribing Lupron for its ‘on-label: use—to treat precocious
+
+puberty.’” The Board contends, in a footnote, that Dr. Geier has waived this argument
+
+because he did not raise it in the circuit court or in his exceptions to the ALJ’s decision.
+
+       In any event, the Board argues, the medical records contradict the argument that Dr.
+
+Geier now raises because he “explicitly documented that he was using Lupron to treat
+
+precocious puberty, the ‘on label’ use for Lupron for children.” It asserts: “The fact is Dr.
+
+Geier diagnosed his patients with precocious puberty, but he never performed the
+
+evaluations necessary for the diagnosis,” and then he “treated his patients with Lupron
+
+under that diagnosis.”
+
+       We agree with the Board that Dr. Geier’s argument is devoid of merit. As we
+
+explain, there was substantial evidence to support the Board’s conclusion that Dr. Geier
+
+failed to meet the standard of quality care required by HO § 14-404(a)(22) by “failing to
+
+properly evaluate patients before treating them with an intensive regimen of drug therapy.”
+
+       The record supports the Board’s conclusion that Dr. Geier diagnosed his patients
+
+with precocious puberty, but he did not perform the required evaluations to support that
+
+diagnosis, which was the purported basis to treat them with Lupron. Although Dr. Geier
+
+now asserts that he was not prescribing Lupron for its “on label” use, to treat precocious
+
+puberty, the record contradicts that argument. Dr. Geier explicitly documented that he was
+
+using Lupron to treat precocious puberty, the “on label” use for Lupron for children. With
+
+respect to Patient H, for example, he wrote to the patient’s insurer:
+
+
+                                             26
+       As a result of my findings, I have diagnosed [Patient H] with premature
+       puberty (259.1) with evidence of pituitary dysfunction (253.9). In order to
+       treat [Patient H’s] conditions, I have prescribed Lupron therapy. The
+       package insert for Lupron specifically recommends its administration for the
+       treatment of premature puberty.
+
+Because Dr. Geier’s records state that he did prescribe Lupron for its “on-label” use, his
+
+assertion on appeal that he did not is unavailing.
+
+       Moreover, even with respect to the claim that Dr. Geier properly used Lupron “off-
+
+label” to treat patients for autism, the record supports the Board’s finding that, with the
+
+exception of Patient E, none of the patients met the profile Dr. Geier said that he used. Dr.
+
+Geier testified that he initially evaluates his patients with severe symptoms of autism by
+
+ordering a large battery of tests, including laboratory tests. If the test results show that the
+
+child has one or more SNP on the MTHFR gene, low glutathione (an enzyme that assists
+
+the body to excrete mercury), and high testosterone, low levels of the hormone
+
+dehydroepiandrosterone sulfate (“DHEA-S”), high levels of DHEA, and the child has
+
+adverse behavioral signs of puberty, such as aggression and hypersexual behaviors, Dr.
+
+Geier offers the parent a two to three month trial of Lupron.
+
+       The evidence in the record supports the Board’s finding that none of the patients,
+
+except Patient E, met the profile. Lab tests contrary to the profile included: (1) normal
+
+DHEA-S for Patient A; (2) low testosterone levels and normal glutathione for Patient B;
+
+(3) normal glutathione for Patient F; (4) normal DHEA-S for Patient G and no signs of
+
+advanced puberty or aggression; (5) normal DHEA-S and glutathione for Patient H; and
+
+(6) normal DHEA-S for Patient I.
+
+
+
+
+                                              27
+       Accordingly, the record supports the Board’s factual findings that Dr. Geier failed
+
+to properly evaluate patients before prescribing Lupron based on a diagnosis of precocious
+
+puberty, and he improperly treated patients “off-label” with Lupron based on a profile that
+
+he created, when the evidence showed the patients did not meet his profile. The facts
+
+support the Board’s conclusion that Dr. Geier failed to meet the standard of care “[b]y
+
+failing to properly evaluate patients before treating them with an intensive regimen of drug
+
+therapy.”
+
+       Moreover, as indicated, Dr. Geier does not contest the Board’s other determinations
+
+supporting its conclusion that he violated the standard of care, i.e., “by providing the
+
+parents with inadequate or falsified consent forms, by failing to properly evaluate whether
+
+his treatment was working, by ordering continued therapy to a patient for whom there was
+
+no possibility of monitoring the effects, and by failing to keep adequate records.”
+
+Accordingly, we conclude that there is more than substantial evidence to support the
+
+Board’s conclusion that Dr. Geier failed to meet the standard for quality medical care.
+
+                                             C.
+
+                            Violation of HO § 14-404(a)(3)(ii)
+
+       HO § 14-404(a)(3)(ii) prohibits a physician from engaging in “unprofessional
+
+conduct in the practice of medicine.” In concluding that Dr. Geier violated this statute, the
+
+Board stated that Dr. Geier:
+
+       [C]ommitted unprofessional conduct in the practice of medicine within the
+       meaning of [HO] § 14-404(a)(3)(ii) when he had parents sign a consent form
+       that falsely implied that he was conducting an experimental protocol
+       approved by an [IRB] when in fact that review board was, as the ALJ put it,
+       “a façade covering the intentions of a group that did not believe that they
+
+
+                                             28
+      were bound by federal or state law and had no intention of being so
+      bound.”[10]
+      He committed further unprofessional conduct when he had a parent sign a
+      consent form for the use of one drug for chelation therapy when in fact
+      another drug, a drug not approved for use in the United States, was intended
+      to be used and was in fact used. His violations of the standard of care,
+      especially his treating of some patients without examining them and his
+      reaching diagnoses in the absence of required diagnostic tests, were so
+      egregious as to amount to unprofessional conduct in themselves.
+
+(Footnotes omitted).
+
+      Initially, we note that Dr. Geier, for good reason, does not challenge the Board’s
+
+finding that he “had a parent sign a consent form for the use of one drug for chelation
+
+therapy when in fact another drug, a drug not approved for use in the United States, was
+
+intended to be used and was in fact used.” The record reflects that, although the consent
+
+form for Patient I stated that the chelation agent utilized in the protocol was DMSA, an
+
+FDA approved medication, Dr. Geier admitted that “Patient I was treated with the mercury
+
+chelator DMPS,” which is not approved by the FDA for use in the United States.
+
+      Rather, Dr. Geier’s sole argument is that the Board erred in concluding that he
+
+committed unprofessional conduct when he had parents sign a consent form “that falsely
+
+implied that he was conducting an experimental protocol approved by an” IRB. The Board
+
+contends that substantial evidence in the record supports the Board’s conclusion that Dr.
+
+
+
+
+      10
+          The Board found as a fact that “Dr. Geier provided drug therapy to Patient I
+according to a protocol not approved by the FDA after telling the parent that his protocol
+was approved by an [IRB], when in fact the [IRB] consisted entirely of persons affiliated
+with his practice and did not meet the requirements of federal or state law.”
+
+
+                                           29
+Geier’s representation to Patient I’s parent that his experimental treatment was approved
+
+by an IRB was false and misleading because the IRB was a mere “façade.”
+
+       The purpose of an IRB is to ensure that research planned is appropriately safe for
+
+patients involved in studies, and the patient has been properly notified of the risks of
+
+treatment. Under federal law, “[e]ach IRB shall include at least one member who is not
+
+otherwise affiliated with the institution and who is not part of the immediate family of a
+
+person who is affiliated with the institution.” 45 C.F.R. § 46.107(d).
+
+       Dr. Geier raises two arguments why the Board’s finding regarding the IRB was
+
+erroneous. First, he argues that, because there was no evidence that he conducted human
+
+research, there was no requirement to create an IRB. This argument, although raised
+
+below, is irrelevant because the Board’s conclusion was that Dr. Geier “had parents sign a
+
+consent form that falsely implied that he was conducting an experimental protocol
+
+approved by an [IRB] when in fact that review board was, as the ALJ put it, “a façade
+
+covering the intentions of a group that did not believe that they were bound by federal or
+
+state law and had no intention of being so bound.”11
+
+       Second, Dr. Geier argues that the Board erred in finding that the IRB “consisted
+
+entirely of persons affiliated with his practice and did not meet the requirements of federal
+
+or state law.” He argues that, because “institution” is defined in 45 C.F.R. § 46.102(b) as
+
+a “public or private entity or agency,” ICI, a corporation, not Dr. Geier, an individual, is
+
+
+
+       11
+         In the exceptions Dr. Geier filed with the Board, he argued that, because an IRB
+was not required, “any inconsistency [that] existed as to its members . . . . was . . . not a
+violation of any statute or regulation governing IRB’s.”
+
+                                             30
+the entity, and therefore, the applicable regulations do not impose any restrictions on a
+
+member’s affiliation with Dr. Geier, unless the member is a family member of Dr. Geier’s.
+
+Therefore, he argues, the Board’s conclusion that the ICI IRB was improperly constituted,
+
+when only two members of the IRB were affiliated with the ICI, and at least four members
+
+were not affiliated with the ICI and were not family members, was a misinterpretation of
+
+the law.
+
+       Initially, this contention was not raised before the Board. Accordingly, it is not
+
+properly before this Court. See County Council of Prince George’s Cnty v. Billings, 420
+
+Md. 84, 110 (2011) (“[I]n an action for judicial review of an adjudicatory administrative
+
+agency decision, the reviewing courts should decline to consider an issue not raised before
+
+the agency.”) (quoting Motor Vehicle Admin. v. Shepard, 399 Md. 241, 260 (2007));
+
+California Cartage Co. v. Nat’l Labor Relations Bd, 822 F.2d 1203, 1207 n.6 (1987)
+
+(contention not raised before the Board is not properly before the court).
+
+       In any event, as noted, the Board’s conclusion that Dr. Geier engaged in
+
+unprofessional conduct was not limited to its conclusion that Dr. Geier falsely implied that
+
+he was conducting an experimental protocol approved by an IRB when the IRB was a
+
+sham. Rather, this was only one of the determinations that led to that conclusion. The
+
+Board’s conclusion also was supported by its finding that Dr. Geier “had a parent sign a
+
+consent form for the use of one drug for chelation therapy when in fact another drug, a drug
+
+not approved for use in the United States, was intended to be used and was in fact used,” a
+
+finding not disputed by Dr. Geier. The Board further concluded that Dr. Geier’s violations
+
+of the standard of care, “especially in his treating of some patients without examining them
+
+
+                                            31
+and his reaching diagnoses in the absence of required diagnostic tests,” were so egregious
+
+as to amount to unprofessional conduct in themselves.” (Emphasis added). We previously
+
+have explained that the Board’s findings regarding Dr. Geier’s violation of the standard of
+
+care in this regard are supported by the record.
+
+       Accordingly, we need not reach the merits in the propriety of the Board’s
+
+conclusions regarding the IRB. Even if the issue properly was before this Court, the
+
+Board’s conclusion that Dr. Geier engaged in unprofessional conduct in the practice of
+
+medicine was supported by substantial evidence.
+
+                                             D.
+
+                             Violation of HO § 14-404(a)(11)
+
+       HO Section 14-404(a)(11) prohibits a physician from “willfully mak[ing] or fil[ing]
+
+a false report or record in the practice of medicine. The Board concluded that Dr. Geier
+
+violated § 14-404(a)(11) by “willfully reporting false credentials when he applied for the
+
+renewal of his medical license.” It based this conclusion on its factual finding that Dr.
+
+Geier “falsely stat[ed] that he was certified by” a recognized board of the ABMS “when he
+
+was not.”
+
+       Dr. Geier contends that there was not “substantial evidence in the record
+
+demonstrating that [he] ‘falsely stat[ed] that he was certified by an ABMS Board when he
+
+was not.’” He asserts that he was certified in 1987 by the American Board of Medical
+
+Genetics (“ABMG”) as a “genetic counselor,” that ABMG received ABMS approval in
+
+1991, and although genetic counseling is “no longer offered” as a certified specialty, “there
+
+are many specialties that are grandfathered in that [the ABMG] no longer recognize[s].”
+
+
+                                             32
+       The Board contends that “substantial evidence supports [its] finding that Dr. Geier
+
+made a false record in the practice of medicine.” It asserts that the evidence supports the
+
+Board’s finding that “Dr. Geier had not been certified in the specific specialties that he
+
+wrote on his renewal forms.”
+
+       The Board’s renewal application asked applicants to “[l]ist up to two (2) specialty
+
+areas only if certified by a recognized board of the American Board of Medical Specialties
+
+(ABMS) or the American Osteopathic Association (AOA).” Dr. Geier answered “Genetics
+
+Medical” in 2006; “Genetics, Clinical [General]” in 2008; and “Genetics, Medical [Ph.D.]”
+
+and “Epidemiology” in 2010.         Dr. Geier was not board-certified in any of these
+
+specialties.12
+
+       Given this evidence, there was substantial evidence in the record to support the
+
+Board’s conclusion that Dr. Geier “falsely stat[ed] that he was certified by an ABMS Board
+
+when he was not.” Accordingly, there was substantial evidence to support the board’s
+
+conclusion that Dr. Geier violated HO § 14-404(a)(11) by “willfully mak[ing] or fil[ing] a
+
+false report or record in the practice of medicine.
+
+                                             III.
+
+                        Admission of Dr. Grossman’s Testimony
+
+       Dr. Geier next argues that the Board’s expert, Dr. Linda Grossman, was not
+
+qualified to act as Dr. Geier’s “peer” because she was not board-certified with “the
+
+
+       12
+          Dr. Geier does not dispute that he was not Board certified in “Genetics, Medical”
+or “Genetics, Clinical.” He was given the title of “fellow” by the American College of
+Epidemiology (“ACE”), which he asserts is the same as being board certified. Even if this
+assertion were persuasive, the ACE has never been recognized by the ABMS.
+
+                                             33
+credentials in the field of [Dr. Geier’s] certification and “has no significant knowledge of
+
+the cause or treatment of autism.” Accordingly, he contends that she should not have been
+
+permitted to testify as an expert witness in the case.
+
+       The Board contends that “admission of the expert testimony of Dr. Grossman, who
+
+is board certified and has more than thirty years of experience in the relevant field, was not
+
+an abuse of discretion.” It asserts that Dr. Geier’s claim is “based on the falsehood that Dr.
+
+Geier was a “board-certified medical geneticist,” which he was not. Moreover, it argues,
+
+Dr. Grossman did not need to have significant knowledge on the “cause” of autism because
+
+that was not the issue in the case. Rather, Dr. Grossman was offered to give an opinion on
+
+the treatment of pediatric patients with autism and related disorders, which she was
+
+qualified to do.
+
+       Generally, “‘the admissibility of expert testimony is within the sound discretion of
+
+the trial judge and will not be disturbed on appeal unless clearly erroneous.’” Blackwell v.
+
+Wyeth, 408 Md. 575, 618 (2009) (quoting Wilson v. State, 370 Md. 191, 200 (2002)). In
+
+an administrative proceeding, “the Board may make its own decisions about bias, interest,
+
+credentials of expert witnesses, the logic and persuasiveness of their testimony, and the
+
+weight to be given their opinions.” State Bd. of Physicians v. Bernstein, 167 Md. App.
+
+714, 761 (2006).
+
+       Dr. Grossman testified that she is a developmental behavioral pediatrician, and she
+
+is board certified in pediatrics and developmental behavioral pediatrics, a specialty that
+
+deals with developmental disabilities such as autism. She has more than thirty years of
+
+
+
+
+                                             34
+experience diagnosing and treating children with neurodevelopmental disorders, including
+
+autism. The ALJ accepted Dr. Grossman as an expert in the following areas:
+
+       Pediatrics, developmental behavioral pediatrics, diagnosis and treatment of
+       children with neurodevelopmental disorders, including autism, generally
+       medically accepted treatment for children with neurodevelopmental
+       disorders, including autism, generally medically indicated conditions for
+       chelation,    pharmacology     related   to     children    with    autism,
+       psychopharmacology related to children with autism, interpretation of lab
+       studies of children with autism, off-label use of drugs in the area of
+       pediatrics, appropriate medical documentation, appropriate use of billing
+       codes and use of diagnostic codes.
+
+       In addressing Dr. Geier’s claim that Dr. Grossman was not a “true peer” and should
+
+not have been qualified as an expert, the Board found as follows:
+
+       Dr. Grossman is board certified in pediatrics and developmental-behavioral
+       pediatrics and has been an Associate Professor of Pediatrics, the Director of
+       the Behavioral and Developmental Pediatrics Fellowship Program at the
+       University of Maryland School of Medicine and the head of the Division of
+       Behavioral and Developmental Pediatrics at that institution. She has also
+       held many other positions of great responsibility in her 35-year career in
+       pediatrics. She testified knowledgeably about the standard of care applicable
+       to pediatric patients in general and to these patients in particular. The Board
+       is satisfied that she was appropriately admitted as an expert in this case. The
+       fact that she may not have been familiar with the details of some of Dr.
+       Geier’s idiosyncratic theories, theories that appear to be supported in large
+       part by literature that he or his son created and which have been rejected to
+       some extent by the Institutes of Medicine of the National Academy of
+       Science, does not detract from the weight of her testimony about the quality
+       of the actual medical treatment provided to these patients, in the Board’s
+       opinion.
+
+       We perceive no abuse of discretion by the Board in its finding that Dr. Grossman
+
+properly was qualified as an expert. Dr. Geier states no ground for relief in this regard.
+
+
+
+
+                                             35
+                                             IV.
+
+                      Exclusion of Dr. Geier’s Proffered Exhibits
+
+       Dr. Geier next argues that the ALJ and the Board erred when they excluded two
+
+exhibits that he wanted to admit into evidence. Specifically, he asserts error in the
+
+exclusion of his Exhibits 15 and 15A, which he asserts “conclusively demonstrate that [he]
+
+was board-certified by the ABMG.” He acknowledges that the exhibits were not timely
+
+disclosed, but he asserts that, pursuant to the Code of Maryland Regulations (“COMAR”)
+
+10.32.02.04C(6), the ALJ and the Board could have admitted the exhibits because there
+
+were “unforeseen circumstances” that “prevented him from understanding the issue.”
+
+       The Board contends that COMAR 10.32.02.04C(6) is inapplicable because this
+
+regulation does not address the admission of evidence, but rather, it “only allows a party,
+
+in the face of ‘unforeseen circumstances which would otherwise impose an extraordinary
+
+hardship on a party,’ to add a document to the discovery list after the discovery deadline.”
+
+It does not allow a person to “bypass the discovery process entirely and have the
+
+documents, which were produced for the first time at the hearing, admitted directly into
+
+evidence.” Moreover, the Board asserts, even if the regulation did apply, Dr. Geier cannot
+
+show unforeseen circumstances, as the letters purportedly were sent to Dr. Geier six months
+
+before the evidentiary hearing, and Dr. Geier “had ample notice of the issues in the case.”
+
+       After hearing Dr. Geier’s arguments regarding why he believed Exhibits 15 and 15A
+
+should be admitted, the ALJ concluded that Dr. Geier had “sufficient notice” that “anything
+
+that had to do with his credentials was going to be addressed in this hearing,” and therefore,
+
+he “should have disclosed this document as a possible exhibit,” but he failed to do so until
+
+
+                                             36
+the fourth day of the hearing. The ALJ refused to admit the evidence because it was
+
+untimely.
+
+       Dr. Geier’s only argument on appeal is that the exhibits were admissible under
+
+COMAR 10.32.02.04C(6). Dr. Geier, however, did not raise this argument to the Board in
+
+exceptions to the ALJ’s ruling.13 Accordingly, the argument is waived. See California
+
+Cartage Co., 822 F.2d at 1207 n.6 (contention not raised before the Board is not properly
+
+before the court).
+
+       In any event, the claim is without merit. COMAR 10.32.02.04C sets forth the
+
+procedures for discovery in an administrative proceeding before the Board. 14 Section C(6)
+
+provides that, “[a]bsent unforeseen circumstances which would otherwise impose an
+
+extraordinary hardship on a party, witnesses or documents may not be added to the
+
+[discovery] list subsequent to” a prehearing conference if one is scheduled, or 15 days prior
+
+to the hearing, if one is not scheduled. COMAR 10.32.02.04C(6)(a) and (b). The
+
+prohibition against adding witnesses or documents subsequent to the prehearing conference
+
+does not apply to witnesses or documents to be used for impeachment or rebuttal. COMAR
+
+10.32.02.04C(7).
+
+       Here, Dr. Geier did not seek to add Exhibits 15 and 15A to the discovery list.
+
+Rather, he sought to have documents, which were produced for the first time during the
+
+
+       13
+         In his exceptions to the ALJ’s ruling, Dr. Geier’s only mention of the ALJ’s
+exclusion of the exhibits was in a footnote, and he made no particular argument regarding
+their admissibility. Nor did Dr. Geier cite to COMAR.
+       14
+      At the time of the proceedings, COMAR 10.32.02.04(c)(6) was located at
+COMAR 10.32.02.03(e).
+
+                                             37
+hearing, admitted directly into evidence. We perceive no abuse of discretion by the ALJ
+
+declining to admit the belatedly produced documents.
+
+                                         V.
+
+                               Peer Review Reports
+
+       Dr. Geier next argues that the Board “failed to present evidence of two peer review
+
+reports,” which are required before charging a physician with failing to meet the standard
+
+of care. See HO §§ 14-401(e)(1)(ii). He argues that the record here “discloses only a single
+
+reviewer,” and there is “no evidence that there was a second peer review as required by
+
+Maryland law.” Accordingly, he asserts that the “charges and findings which emanated
+
+under” HO §§ 14-404(a)(22) and (a)(40) are “fatally deficient and must be reversed.”
+
+       The Board contends that this contention is devoid of merit for several reasons. First,
+
+it contends that, pursuant to HO § 14-405(g), Dr. Geier is “prohibited from alleging any
+
+defect in the pre-charge peer review process.” Second, the Board argues that, “even if Dr.
+
+Geier’s arguments were not precluded, [they] should be rejected” because the record as a
+
+whole demonstrates that the Board did obtain two peer review reports. These two reports
+
+included Dr. Grossman’s report, which was “indisputably admitted into evidence,” and Dr.
+
+Cely’s report, which was offered into evidence but excluded after Dr. Geier objected to its
+
+admission on the basis that Dr. Cely was not available for cross-examination. Thus, the
+
+Board argues, there was substantial evidence that the Board, in fact, had obtained two peer
+
+review reports.
+
+       Finally, the Board argues that there is no provision in the Act requiring the Board
+
+to prove during the evidentiary hearing that it complied with the pre-charge peer review
+
+
+                                              38
+procedure or that two peer review reports must be admitted into evidence. It asserts that
+
+requiring two peer review reports would serve no purpose because the testimony of only
+
+one expert witness constitutes substantial evidence.
+
+       We agree with the Board that Dr. Geier is not permitted to challenge any deficit in
+
+the pre-charge peer review process at this point in the proceedings. Section 14-401 of the
+
+Health Occupations Article describes the process by which claims are investigated. After
+
+the Board performs a preliminary investigation of an allegation of grounds for disciplinary
+
+or other action, it may refer the allegation for further investigation to an entity or individual
+
+for confidential physician peer review. HO § 14-401(c)(1)(i) and (e). For each allegation
+
+it refers for peer review, the Board “shall obtain two peer review reports.” HO § 14-
+
+401(e)(1)(ii). The entity or individual peer reviewer with which the Board contracts has
+
+90 days for completion of peer review. HO § 14-401(f).
+
+       In Bd. Of Physician Quality Assur. v. Levitsky, 353 Md. 188 (1999), the Court of
+
+Appeals explained:
+
+       The role of the peer review process is much akin to that of the Attorney
+       Grievance Commission process. Allegations of professional wrongdoing are
+       referred to members of the profession – physicians in the one case, lawyers
+       in the other – to consider the allegations and determine whether they suffice
+       to warrant the filing of charges. The peer review panel does not determine
+       whether the accused physician or attorney is ‘guilty’ of anything, only
+       whether there is a sufficient basis for the filing of charges.
+
+Id. at 206 (emphasis added).
+
+       HO Section 14-405(g) provides that “the hearing of charges may not be stayed or
+
+challenged by any procedural defects alleged to have occurred prior to the filing of
+
+
+
+
+                                               39
+charges.” (Emphasis added). In Levitsky, 353 Md. at 206, the Court of Appeals explained
+
+the scope of this statement:
+
+       To the extent that deficiencies or irregularities in the pre-charge proceedings
+       actually compromise the accused's opportunity for a full and fair hearing on
+       the charges, in conformance with applicable Constitutional, statutory, or
+       other legal requirements, or suffice in some way to deprive the agency (or
+       court) of true jurisdiction to proceed, the accused is necessarily entitled, and
+       must be allowed, to raise those deficiencies or irregularities, notwithstanding
+       the statute or rule. Beyond that, however, the statute means what it says and
+       must be given effect.
+
+       Here, even assuming arguendo, that there was not proof of two peer review reports,
+
+this did not deprive Dr. Geier of a full and fair hearing on the charges. Accordingly, he
+
+cannot challenge on appeal the alleged procedural defect in the charges.
+
+                                          VI.
+
+            Denial of Request to Supplement Administrative Record
+
+       Dr. Geier next argues that the circuit court erred in denying his motion to
+
+supplement the administrative record with a letter confirming the dates on which he was
+
+board certified by the ABMG, and to “order the [Board] to consider this evidence.” He
+
+asserts that he had good reason for his failure to offer the letter into evidence during the
+
+administrative hearing, arguing that charges did not properly notify him of the Board’s
+
+intention to dispute his board certification.
+
+       Maryland Code (2014) § 10-222(f) of the State Government Article provides:
+
+          (f)(1) Additional evidence. — Judicial review of disputed issues of fact
+       shall be confined to the record for judicial review supplemented by additional
+       evidence taken pursuant to this section.
+              (2) The court may order the presiding officer to take additional
+       evidence on terms that the court considers proper if:
+
+
+
+                                                40
+                  (i) before the hearing date in court, a party applies for leave to offer
+       additional evidence; and
+                  (ii) the court is satisfied that:
+                       1. the evidence is material; and
+                       2. there were good reasons for the failure to offer the evidence
+       in the administrative proceeding.
+
+       The Board contends that the circuit court properly denied Dr. Geier’s request to
+
+supplement the record with a September 20, 2013, letter stating that he was certified in
+
+“Genetic Counseling” by ABMG in 1987 and this certification was revoked on October
+
+26, 2011. It asserts:
+
+       The letter was written over one year after the Board’s decision and was in
+       response to Dr. Geier’s counsel’s request dated September 16, 2013. . . . The
+       circuit court appropriately rejected this letter. There is no dispute, and the
+       administrative record already conclusively shows, that Dr. Geier was
+       certified by ABMG as a “Genetic Counselor” in 1987. . . . And the
+       revocation of Dr. Geier’s genetic counseling certification in 2011 is not
+       relevant because Dr. Geier’s Board license renewal applications were filed
+       in 2006, 2008, and 2010, and he did not state in any of these applications that
+       his certification was in genetic counseling. The letter would have added
+       nothing more to this case other than to further reconfirm that Dr. Geier
+       misrepresented his credentials.
+
+       We agree. The circuit court did not abuse its discretion in denying the motion to
+
+supplement the record.
+
+                                          VII.
+
+                             Denial of Motion for Stay
+
+       Dr. Geier’s final argument is that the court erred when it denied his motion to stay
+
+the proceedings to allow him time to accumulate evidence from the discovery process in
+
+
+
+
+                                                 41
+an unrelated proceeding against the Board.15 He asserts that, during discovery in this
+
+unrelated proceeding, he “uncovered evidence that directly demonstrated bad faith, malice,
+
+and irregularities (i.e., misconduct) committed by the Board and its members and the
+
+administrative prosecutor against Dr. Geier in this action.” He argues that, in denying his
+
+motion, the court “deprived Dr. Geier of the opportunity to demonstrate the improper
+
+actions of the Board.”
+
+       The Board responds in several ways. Initially, it argues that this Court should not
+
+consider this argument. It states that, although Dr. Geier “mentions this issue,” he “does
+
+not give any explanation as to why the circuit court erred in denying his motion other than
+
+to assert that he had ‘uncovered evidence’ of Board wrongdoing.” It notes that Dr. Geier
+
+does not identify any evidence of wrongdoing, and therefore, it contends that we should
+
+not consider this unsupported argument.
+
+       In any event, the Board argues that “the circuit court was within its broad discretion
+
+in denying Dr. Geier’s motion for a stay.” It notes that the issue whether the Board was
+
+biased was raised in the circuit court for the first time on the day of argument, and it argues
+
+that, because the argument was not raised in the circuit court memorandum, the issue was
+
+waived. It further asserts:
+
+       Dr. Geier’s motion rested largely upon an allegation issued at least 18 months
+       before he filed his initial Rule 7-207 memorandum. Dr. Geier, thus, cannot
+       even complain that he did not have an opportunity to raise his argument in a
+       timely manner. Furthermore, Dr. Geier made no showing that any Board
+
+       15
+         The motion stated that Dr. Geier and his family members filed a tort action against
+the Board due to the Board’s unlawful disclosure of the Geier’s private medical
+information. He alleged that the Board acted maliciously against him in releasing this
+private medical information to the public.
+
+                                              42
+       member was even aware that the alleged medical information was in the
+       purported cease and desist order when it was allegedly issued.
+
+       Finally, the Board argues that the motion sought a stay to allow Dr. Geier to present
+
+evidence such as a deposition transcript of a former Board member. It asserts that such
+
+evidence was protected by the Board’s deliberative process privilege and was inadmissible
+
+in a judicial review proceeding.
+
+       The decision whether to grant a motion to stay a proceeding is within the discretion
+
+of the trial court, and it is reviewed for an abuse of discretion. Bechamps v. 1190 Augustine
+
+Herman, LC, 202 Md. App. 455, 460 (2011). Accord Vaughn v. Vaughn, 146 Md. App.
+
+264, 279 (2002) (“Whether to grant or deny a stay of proceedings is a matter within the
+
+discretion of the trial court, and only will be disturbed if the discretion is abused.”). The
+
+standard for finding an abuse of discretion is that “‘no reasonable person would take the
+
+view adopted by the [trial] court’ . . . . the trial court ruling was ‘clearly against the logic
+
+and effect of facts and inferences before the court[ ] . . . or when the ruling is violative of
+
+fact and logic.’” Fishman v. Murphy ex rel. Estate of Urban, 433 Md. 534, 546 (2013)
+
+(quoting Aventis Pasteur, Inc. v. Skevofilax, 396 Md. 405, 419 (2007)).
+
+       Here, the circuit court denied the motion to stay in a summary order, without
+
+specifying its rationale. Dr. Geier has failed to convince us that, under the circumstances
+
+here, the court abused its discretion in denying Dr. Geier’s motion to stay the proceedings.
+
+Reversal is not warranted.
+
+
+                                                           JUDGMENT   AFFIRMED.
+                                                           COSTS TO BE PAID BY
+                                                           APPELLANT.
+
+
+                                              43
+

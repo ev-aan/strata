@@ -39,3 +39,4 @@ assignments:
   votes-2009-present:    {area: politics,          areas: [],                                                     types: [did_it_happen],                      popular_claims: false}
   votes-johnson-tonkin:  {area: politics,          areas: [history],                                              types: [did_it_happen],                      popular_claims: false}
   incandescent-lamp:     {area: technology,        areas: [history, law_justice],                                 types: [origin, is_claim_true],          popular_claims: true}
+  vaccines-autism:       {area: medicine_health,   areas: [media_misinformation, law_justice],               types: [is_claim_true, what_caused_it, origin], popular_claims: true}
