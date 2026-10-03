@@ -51,10 +51,10 @@ open_items:
   co-pilot was assigned, Israeli part in the investigation, no findings yet, motive, the Fars lead, timing, event-simulated, arranged-or-allowed, masks,
   surgeon, extra pilots, raw tracks, original statements, legal texts. Five claims are proposed, not established: passenger-controls, spokesperson-and-katz-accounts,
   terrorist-label-single-outlet (single-source, provisional), omani-barred-rule (low) and reports-inconsistent (provisional).'
-- 'Unresolved discrepancies (inventory items D2, D3, D4, D5, D8, D9, D12, D13, D14, D16, D19, D20, D21, D22, D23 in fz1073-reports-inconsistent): landing time
+- 'Unresolved discrepancies (inventory items D2, D3, D4, D5, D8, D9, D12, D13, D14, D16, D19, D20, D21, D22, D23, D24 in fz1073-reports-inconsistent): landing time
   (06:45 versus about 06:58 UTC versus CNN 9:54), squawk times, the early ''emergency alert shortly after takeoff'' wording, descent figures, weapon, replacement-flight
   time, where the Prime Minister first said Omani, the crew-nationality rule, persons on board (182 versus 172), passenger injuries, rewritten headlines,
-  the Jerusalem Post page clock, the rudder, oxygen masks, the date and place of the captain''s call.'
+  the Jerusalem Post page clock, the rudder, oxygen masks, the date and place of the captain''s call, the co-pilot''s place of birth (D24, reports conflict).'
 - 'Timestamps with no zone: the Saudi text (9:45 a.m., 5:40 p.m.), the Jerusalem Post page clock (+00:00 beside the digits of its displayed time), the airline
   statements (undated on the page; the page metadata shows 08:20:00 UTC created, 14:04:03 UTC modified), the WAM and Tabuk airport originals, and Gargash
   and Herzog (day only). Placeholder hours at day precision (b10, b17, b18) are stated as such.'
@@ -65,7 +65,8 @@ open_items:
 - The Fars lead (fz1073-fars-israel-plan-lead) rests on one survey and neither original was opened; whether an Iranian-agency allegation about Israel belongs
   on the page at all is an owner decision.
 - 'Pending formats proposal: the media timeline (three panels, 91 events) stays in this dig until the owner decides on a separate page.'
-- 'Round 4 requests R4-1 to R4-9 are resolved (fifth reviewer). Two non-blocking round 5 requests are open for the author at the next update (R5-1: record the published_at field of the Saudi item page; R5-2: place of birth is reported two ways). The author must respond fixed, disputed or deferred (docs/PUBLISH_GATE.md).'
+- 'Rounds 4 and 5 requests (R4-1 to R4-9, R5-1, R5-2) are resolved (sixth reviewer). One non-blocking round 6 request is open for the author at the next update (R6-1: attribute the GCAA closing sentence on official channels to Khaleej Times alone). The author must respond fixed, disputed or deferred (docs/PUBLISH_GATE.md).'
+- The older published version on main and the git history still carry the captain-name slug in the Emirates 24|7 link until this branch merges; the stored verbatim GCAA file still holds the name by design (L-34).
 - 'Live event: this record covers the page as of 2 October 2026 about 23:50 UTC; it needs re-review at each significant update; the headline stays a draft.'
 needs_manual_check:
 - '8 established/refuted claims anchored below primary: fz1073-flight-times, fz1073-both-pilots-injured, fz1073-copilot-custody-unnamed, fz1073-israel-says-omani,
@@ -118,8 +119,8 @@ quotes:
   found_in_stored_sources: 22
   not_found_in_stored_sources: 131
   no_stored_source_to_check_against: 0
-reviewed_by: independent review agent (fifth reviewer)
-reviewed_on: '2026-10-02'
+reviewed_by: independent review agent (sixth reviewer)
+reviewed_on: '2026-10-03'
 notes: 'Round 1 of an independent peer review. The reviewer did not write the dig. Verdict: revisions requested (not failed): the core facts (diversion
   and landing at Tabuk, injuries, UAE investigation, who-said-what on nationality and motive) check out against the sources, but four findings
   would mislead a reader and the rest are accuracy or hygiene fixes.
@@ -669,6 +670,8 @@ rounds:
       action: fixed
       note: 'Re-fetched the SPA page by curl: published_at 1790879513 = Thu 1 Oct 2026 18:31:53 UTC (date -u confirms). Recorded as the page''s own publication field, not the agency''s release record, in b8, m40, fz1073-original-statements-gap, the manifest and the stored-text header; it supports the 18:31:00 approximate placement and does not change b8 or m40; Arabic text and release hour stay unconfirmed. Log L-33.'
       commit: 980e309
+    resolved: true
+    reviewer_note: 'Verified by curl on 3 Oct: the raw SPA page embeds "published_at":1790879513 (date -u: Thu 1 Oct 2026 18:31:53 UTC). The dig calls it the page''s own publication field, not the agency''s release record, in b8, m40, fz1073-original-statements-gap, the manifest and the stored-text header (all five read in the diff); placement at 18:31:00 approximate is unchanged; Arabic text and release hour still stated as unconfirmed.'
   - id: R5-2
     target: fz1073-israel-says-omani (statement); fz1073-omani-nationality-unconfirmed
     severity: non_blocking
@@ -677,6 +680,17 @@ rounds:
       action: fixed
       note: 'Re-opened CBS''s later piece (other sources: an Omani citizen not born in Oman) and CNN''s explainer (a source: born in the UAE). Added as open discrepancy D24 in fz1073-reports-inconsistent (counts now 22 usable, 6 explained, 16 open), a clause in fz1073-israel-says-omani, a paragraph in fz1073-omani-nationality-unconfirmed with the quotes (name omitted, family details not repeated), the assessment text and the timeline detail of the CBS item. Nothing says which report is right. Log L-33.'
       commit: 980e309
+    resolved: true
+    reviewer_note: 'Verified by opening CBS''s later piece (other sources: an Omani citizen not born in Oman), CNN''s explainer (another source: born in the UAE) and the earlier CBS item (an unnamed Omani official: born in Oman). Attributions in D24, israel-says-omani, omani-nationality-unconfirmed, the assessment and the CBS timeline detail match the pages; none is presented as an authority on the record; the suspect is named nowhere (CBS prints his name; the dig writes [name omitted]); no parent or family detail is repeated (grep for mother, father, Syrian: none). Counts: D1 to D24, D17 and D18 unused = 22 usable; 6 explained; the open list has 16 ids; the text agrees.'
+- round: 6
+  reviewed_on: '2026-10-03'
+  reviewer: sixth independent reviewer (did not write the dig, rounds 1 to 5 or the author responses)
+  scope: Author responses to R5-1 and R5-2 (commits 980e309, 051778c), log L-33 and L-34, commit 6b801c4 (GCAA link moved to a Khaleej Times copy) and everything changed in build/subjects/flydubai-fz1073 since 0d88efa.
+  requests:
+  - id: R6-1
+    target: 'fz1073-uae-investigation (line 670, anchor: GCAA via Khaleej Times and Emirates 24|7 ... ''will be announced through official channels''); timeline b15'
+    severity: non_blocking
+    finding: 'Three passages now say the GCAA statement is read "via Khaleej Times and Emirates 24|7 (WAM copies)" and quote that findings "will be announced through official channels" (claims) or paraphrase it (b15). That closing sentence is in the Khaleej Times text only; the stored Emirates 24|7 text does not contain it (L-34 and the manifest both say the sentence was added in the Khaleej Times copy). Attribute that sentence to Khaleej Times alone, or say the two copies differ.'
 notes_round3_resolution: "ROUND 3 (third independent reviewer, did not write the dig or earlier rounds). All five round 2 requests (R2-1 to R2-5) are resolved by my own check; rounds 1 and 2 together have no unresolved blocking request (R1-1 to R1-3 and R2-1, R2-2 were the blocking ones). Sources I opened this round: The National (Herzog: Omani, 'terrorist', 'too early to say', Thursday), CNN explainer (Gargash 'a top UAE official'; Omani statement undated), CNN live blog (Saudi ministry 'revealed an assault on the captain by the co-pilot, resulting in various injuries to both'; 'said Wednesday' belongs to the detention remark), Al Jazeera Saudi piece ('the pilot was assaulted by his co-pilot'), plus the stored flydubai, MoFA and GCAA texts for 'altercation'. Fresh pass: headline is 93 characters and draft; key points do not exceed the claims; co-pilot unnamed; no passenger name or occupation-plus-act in claims, timeline, transmission, manifest or nodes (grep; the name remains only in log L-15 and the CNN page itself); no speculation on religion, ethnicity or beliefs; accusations (Netanyahu, Herzog, Katz, Gargash, Trump) are recorded as accusations; log diff against 9619273 is append-only (L-22 and L-23 added, nothing earlier changed). Conformance: 0 errors, 92 warnings repository-wide, 8 for this subject (established below primary, each with an exception line). review_dig mechanical checks all pass. Minor leftovers, non-blocking: b10, b17 and b18 use placeholder hours at day precision (stated in each detail); the Herzog quote 'terrorist' and 'too early to say' were read through a page summary tool, not a raw text dump, so a human may re-check the exact words; the WebFetch result for The National did not reproduce the 'Omani citizen, although that does not mean anything' sentence the second reviewer quoted, which I did not re-verify."
 notes_round4: 'ROUND 4 (fourth independent reviewer; did not write the dig, rounds 1 to 3 or the deep-dive update). VERDICT: passed_with_open_items. No
   blocking request: nothing I found would lead a reader to a wrong finding, and the headline, key points, answer and lean say no more than the claims. Nine
@@ -755,3 +769,4 @@ notes_round5: >-
   DECISIONS I SUPPORT: L-32 D1 (the Fars lead stays as an unverified lead), D2 (the GCAA link stays; the slug cannot be altered; the page shows the link
   title, not the address), D3 (the media timeline stays until the formats proposal), D4 (headline stays a draft). For the owner: whether to switch the
   headline claim to fz1073-both-pilots-injured at publication.
+notes_round6: 'ROUND 6 (sixth independent reviewer; did not write the dig, rounds 1 to 5 or the author responses). VERDICT: passed_with_open_items. R5-1 and R5-2 are resolved by my own check; no blocking request remains; one new non-blocking request (R6-1). WHAT I OPENED (curl, raw HTML, 3 Oct 2026): the SPA page (published_at 1790879513 = 18:31:53 UTC 1 Oct), the Khaleej Times copy of the GCAA statement (datePublished 2026-10-02T20:54:48+04:00 = 16:54:48 UTC; dateModified 22:26:41+04:00 = 18:26:41 UTC; ''By WAM''), CBS later piece, CBS first item, CNN explainer. KHALEEJ TIMES VS STORED TEXT: the two opening paragraphs, the pilot-condition sentence, the no-comment sentence and the call to rely on official sources match; the investigation paragraph is reworded with the same content; a closing sentence on findings being announced through official channels is added: exactly as L-34 and the manifest say (the manifest says the copy is not fully verbatim). Every GCAA quotation in claims.yaml (good condition and necessary medical treatment; passengers who contributed to bringing the situation under control; will not comment on any details or claims in circulation; official channels) appears in the Khaleej Times text; the last appears only there (R6-1). m52 (16:54:48Z, both outlets'' stamps in its detail) and the s_gcaa source are correct. NAME CHECK: the captain''s name, in plain, hyphenated or URL-encoded form, and the Emirates 24|7 slug appear only in the stored verbatim file sources/gcaa-statement-via-emirates247.txt (build/nodes, timeline.html, timeline.yaml, claims, log, manifest and this file: none; build_site.py does not publish sources/ per L-34, not re-checked by me); the suspect''s name, family details, private passengers and the deepfake''s invented name appear nowhere. The linked Khaleej Times page itself prints the captain''s name in its own headline text, body and links: a public source, acceptable. LOG: git diff shows no deleted line; only L-33 and L-34 added. CHECKS: python3 build/conformance.py --base origin/main 0 errors (95 warnings repository-wide); review_dig.py mechanical checks pass (quotes found 22, not found 141). The older published version on main and git history still carry the captain-name slug until this branch merges. NOT VERIFIED: the Arabic SPA text and release hour; WAM originals; the Emirates 24|7 page itself (not re-opened); raw ADS-B; build_site.py''s handling of sources/; interviews and Gargash''s own words; each other discrepancy item beyond D24. Owner decisions I support: L-33 (headline claim stays diverted-tabuk), L-34 (link change, history not rewritten).'
