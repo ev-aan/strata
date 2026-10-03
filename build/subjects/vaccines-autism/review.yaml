@@ -1,6 +1,6 @@
 subject: vaccines-autism
-status: passed_with_open_items
-reviewed_by: independent review agent (seventh reviewer)
+status: revisions_requested
+reviewed_by: independent review agent (eighth reviewer)
 reviewed_on: 2026-10-02
 note: >
   The requests of rounds 1 and 2 were copied here from docs/reviews/vaccines-autism-round-1.md and
@@ -21,6 +21,7 @@ note: >
   Round 5 (fifth reviewer, head dcbaafb, scratch worktree; did not edit claims, log, timeline, sources or build/site.yaml): R4-1 to R4-10 verified against the sources and resolved; every blocking request of rounds 1 to 4 is now resolved. Status passed_with_open_items; the open items below are limits the page must show.
   Round 6 (sixth reviewer, head c41e40f, scratch worktree; did not edit claims, log, timeline, sources or build/site.yaml): the round 6 content (log L-24 to L-28) is verified against the sources and is accurate, with one blocking request (R6-1: two unmarked absence claims held above provisional, REVIEW.md B) and five non-blocking ones. Status is revisions_requested only because of R6-1, a two-line fix; when it is answered and resolved by a reviewer who did not write the work, the status can return to passed_with_open_items.
   Round 7 (seventh reviewer, head 634c045, scratch worktree; did not edit claims, log, timeline, sources or build/site.yaml): R6-1 to R6-6 verified against the sources and resolved (R5-1 and R5-2 too); every blocking request of rounds 1 to 6 is resolved by a reviewer who did not write the work. Status passed_with_open_items; the open items below are limits the page must show. Round 7 adds three non-blocking requests (R7-1 to R7-3).
+  Round 8 (eighth reviewer, head 3272352, scratch worktree; edited only this file): reviewed the diff 634c045..3272352 (the author's answers to R7-1 to R7-3, log L-30). R7-1 and R7-3 verified and resolved; R7-2 is only partly answered. One blocking request (R8-1: key point 3 now says the mitochondrial fever question has 'no study found', which the dig's own claim contradicts: it cites case series) and three non-blocking ones. Status revisions_requested until R8-1 is answered and resolved by a reviewer who did not write the work.
 notes: >
   Conformance: python3 build/conformance.py --base origin/main reports 0 errors for this subject
   (11 established claims below primary are warnings). python3 build/tools/review_dig.py vaccines-autism:
@@ -511,7 +512,7 @@ rounds:
     author_response: {action: fixed, note: 'Owner-delegated decision D1: confidence back to moderate (N20: a secondary anchor starts at moderate; no confidence_reasons step is recorded for a raise; the order itself limits the concession). The statement now opens with the quoted Rule 4(c) wording as the order reports it. Log L-29.'}
     resolved: true
     resolved_in_round: 7
-    reviewer_note: 'Verified by me against the order itself (govinfo, docket 08-504V, order of 27 Mar 2015; sha256 c5d398b8... matches the manifest). Footnote 11: ''Respondent stated in her Rule 4(c) report that based on an initial review, the facts of that case met "the statutory criteria for demonstrating that the vaccination ... significantly aggravated an underlying mitochondrial disorder."'' Footnote 12: ''the Respondent "elect[ed] not to challenge petitioner''s claim." ... This cannot be conflated into either a concession of the theory writ large or a judicial determination''. Text: ''Poling was settled, not adjudicated''; Respondent ''has never conceded (in [that case] or otherwise) that any vaccine can cause significant aggravation of a pre-existing mitochondrial disorder''; the recommendation ''was unrelated to the validity of a particular causal theory''. The claim is at moderate (N20: secondary anchor starts at moderate; no confidence_reasons raise) and its statement opens with the Rule 4(c) wording as the order reports it, followed by ''a concession of the theory writ large'' and ''never conceded''. Every quotation matches. The first-screen line that still says ''conceded ... a link'' is R7-1 (non-blocking).'
+    reviewer_note: 'Verified by me against the order itself (govinfo, docket 08-504V, order of 27 Mar 2015; sha256 c5d398b8... matches the manifest). Footnote 11: ''Respondent stated in her Rule 4(c) report that based on an initial review, the facts of that case met "the statutory criteria for demonstrating that the vaccination ... significantly aggravated an underlying mitochondrial disorder."'' Footnote 12: ''the Respondent "elect[ed] not to challenge petitioner''s claim." ... This cannot be conflated into either a concession of the theory writ large or a judicial determination''. Text: ''[the case] was settled, not adjudicated''; Respondent ''has never conceded (in [that case] or otherwise) that any vaccine can cause significant aggravation of a pre-existing mitochondrial disorder''; the recommendation ''was unrelated to the validity of a particular causal theory''. The claim is at moderate (N20: secondary anchor starts at moderate; no confidence_reasons raise) and its statement opens with the Rule 4(c) wording as the order reports it, followed by ''a concession of the theory writ large'' and ''never conceded''. Every quotation matches. The first-screen line that still says ''conceded ... a link'' is R7-1 (non-blocking).'
   - id: R6-3
     target: va-poling-concession (anchor)
     severity: non_blocking
@@ -560,24 +561,66 @@ rounds:
     finding: 'The first-screen sentence says "In 2007 the US government conceded, in one child''s compensation case, a link between vaccines and her injury" in Strata''s voice, with only CNN''s word "concluded" in the brackets. After D1 the claim itself opens with the Rule 4(c) wording and records that the 2015 order calls the settlement neither "a concession of the theory writ large" nor a judicial determination, that NPR words it "possible ... may have exacerbated", and that the government says it has never conceded that any vaccine can cause such aggravation. The first screen should not say more than the claim: reword to what the report is quoted as saying, and add the order''s limit to what_it_is_not (the assessment.text line, "conceded one family''s compensation claim ... a legal decision", is fine).'
     evidence: 'claims.yaml assessment short_answer.except[0].text versus va-poling-concession statement; order 08-504V footnotes 11 and 12 and the text, read by me.'
     author_response: {action: fixed, note: 'Verified: the first-screen item still said the government conceded a link. short_answer.except[0].text now opens with the Rule 4(c) wording as the 2015 order reports it, gives CNN''s and NPR''s wordings, and says the case was settled, not adjudicated and the government says it has never conceded the general point; what_it_is is aligned; what_it_is_not now says it is not a concession of the theory in general (the order''s ''a concession of the theory writ large''), and ''the government conceded before one'' now reads ''the case was settled before one''. L-30.'}
+    resolved: true
+    resolved_in_round: 8
+    reviewer_note: 'Verified by me against the order (govinfo 08-504V, sha256 c5d398b8... matches), CNN 6 Mar 2008 and NPR 7 Mar 2008 (both fetched, HTTP 200). short_answer.except[0].text: footnote 11 gives the Rule 4(c) wording (statutory criteria ... significantly aggravated an underlying mitochondrial disorder); the text says the case was settled, not adjudicated; the respondent asserts it has never conceded that any vaccine can cause significant aggravation of a pre-existing mitochondrial disorder; CNN: the program concluded last November (so late 2007) the illness was significantly aggravated; NPR: the government said it was possible that the vaccines may have exacerbated that disorder. The line no longer says more than va-poling-concession. Residues, non-blocking (R8-3): the new what_it_is_not item says the order calls the settlement not a concession of the theory writ large, but footnote 12 says that of the damages decision wording (elected not to challenge), as the claim correctly states; and the date late 2007 is CNN''s, not the order''s.'
   - id: R7-2
     target: short_answer.except[1].text; divergence_note; description (va-mito-fever-regression)
     severity: non_blocking
     finding: '"No controlled study has tested this" and "fever-related regression in mitochondrial disease is untested" state an absence in the dig''s voice; the sibling lines about the schedule and unvaccinated children were correctly changed to "our search found no". The claim is provisional so the cap is met; the wording should say "we found no controlled study" and point to the search that supports it, or say in the claim what was searched.'
     evidence: 'claims.yaml assessment lines; REVIEW.md B.'
     author_response: {action: fixed, note: 'Verified. The absence wording is now ''we found no controlled study'' in the assessment headline, the assessment text, key point 3, the search-headline-adjacent description item, the short-answer item, the aluminium-tissue basis line, the mitochondrial positions and basis, and the divergence note; the logical limit ''no study can prove an effect is exactly zero'' is left as it states a limit of method. Key point 3 kept within 170 characters. L-30.'}
+    resolved: false
+    reviewer_note: 'Partly answered (eighth reviewer). The dig voice now says we found no controlled study in the headline, assessment text, short-answer item, description, divergence note, va-mito-fever-regression positions and basis, and va-aluminum-brain-tissue basis (read at 3272352). Not answered: the second half of the request, to point to the search behind that sentence or say in the claim what was searched; neither claim records a search for controlled studies (the mito anchor is the Rossignol and Frye 2012 review and case series; log L-03 records only a reading stream on mitochondrial disease). tests.yaml line 78 still says the mechanism remains untested. Key point 3 was shortened to no study found, which is wrong (R8-1). Carried to R8-1 and R8-2.'
   - id: R7-3
     target: sources/MANIFEST.yaml src-wakefield-1998
     severity: non_blocking
     finding: 'The authenticity block still reads gaps "Full text not read." and next_step "Read the retracted full text via a library copy", while the read field now says the full text was read in a third-party copy. Add a correcting note (the manifest is the source record; do not delete the earlier statement) saying the third-party copy was read, not compared with the publisher file, as va-sq-publisher-files already says.'
     evidence: 'MANIFEST.yaml lines 12 to 18.'
     author_response: {action: fixed, note: 'Verified: src-wakefield-1998 authenticity gaps still said ''Full text not read''. Corrected to say the full text was read in a third-party copy (briandeer.com, not compared with the publisher''s file) and pointing to va-sq-publisher-files. L-30.'}
+    resolved: true
+    resolved_in_round: 8
+    reviewer_note: 'Verified by me. MANIFEST.yaml src-wakefield-1998 authenticity gaps now says the full text was read in a third-party copy (briandeer.com), not compared with the publisher file, and thelancet.com refused; next_step points to va-sq-publisher-files. I downloaded https://briandeer.com/mmr/lancet-paper.pdf (sha256 2f5434bf... matches full_text_copy); thelancet.com returned 403 to me; briandeer.com/mmr/lancet-summary.htm says it is material from the investigation by Brian Deer for The Sunday Times, so the new provenance phrase is accurate. Departure from the request: the earlier gaps text was replaced, not kept beside a correcting note. SCHEMA does not make the manifest append-only and L-30 records the earlier wording, so the record is intact; accepted.'
+- round: 8
+  reviewed_on: 2026-10-02
+  head: 3272352
+  reviewer: independent review agent (eighth reviewer; did not write the work or any earlier round)
+  scope: 'Only the diff 634c045..3272352 under build/subjects/vaccines-autism (the seventh reviewer round in e15e95b and the author commit 3272352: claims.yaml, log.yaml L-30, review.yaml author_response lines, sources/MANIFEST.yaml). Content outside the diff was read only where a changed line depends on it.'
+  findings_checked:
+    checks_run: 'In a scratch worktree at 3272352: python3 build/conformance.py --base origin/main: 0 errors, 102 warnings across 16 subjects (9 for this subject, all established claims anchored below primary, unchanged). python3 build/tools/review_dig.py vaccines-autism: every mechanical check passes (6 quotes matched in stored text, 58 not stored; needs_manual_check list unchanged in kind).'
+    sources_opened_by_me: 'govinfo order 08-504V (downloaded, sha256 matches; text p. 4, the passage settled, not adjudicated, footnotes 11 and 12); CNN 6 Mar 2008 and NPR 7 Mar 2008 (fetched; wording as quoted); briandeer.com copy of the 1998 paper (sha256 matches) and briandeer.com/mmr/lancet-summary.htm (provenance); thelancet.com (403, not reached); a Europe PMC title screen (mitochondrial AND regression AND fever AND autism AND vaccin*, 379 hits, first 40 titles: no controlled study seen; a spot check by me, not a record for the dig).'
+    adoption_and_names: 'No changed line uses adoption as evidence. No minor, victim or person under investigation is named in the changed lines (the child is [the child] or one child). One family surname of the compensation child remained in the seventh reviewer note on R6-2 (a quotation of the order); I replaced it with [the case], as the seventh reviewer did for the sixth reviewer note. After that the surname occurs only in ids and the bibliographic title of the 2006 case report (L-25 b).'
+  requests:
+  - id: R8-1
+    target: assessment.key_points[2]
+    severity: blocking
+    finding: 'Key point 3 now reads Open: a 2007 legal concession (not science); mitochondrial fever (no study found). That is false on the dig own record: va-mito-fever-regression cites Shoffner 2010 (a case series of 28 children) and Weissman 2008, and the short-answer item two lines below says small case series report regression after fever. What was not found is a controlled study. A first-screen reader would be told no research exists. Fix: mitochondrial fever (no controlled study) (168 characters, within the 170 warning) or similar.'
+    evidence: 'claims.yaml key_points and va-mito-fever-regression anchor at 3272352; character count by me.'
+  - id: R8-2
+    target: va-mito-fever-regression; va-aluminum-brain-tissue; tests.yaml line 78
+    severity: non_blocking
+    finding: 'R7-2 second half: the dig now says we found no controlled study but neither claim says what was searched. Record the search (database, terms, date, what was screened) in the anchor or basis, or attribute the absence to what was read (the Rossignol and Frye 2012 review collects case series and the Weissman 2008 paper says large population-based studies will be needed). tests.yaml line 78 still says the mechanism remains untested.'
+    evidence: 'claims.yaml at 3272352; log L-03; tests.yaml line 78.'
+  - id: R8-3
+    target: short_answer.except[0] (va-poling-concession) what_it_is_not and text
+    severity: non_blocking
+    finding: 'The new what_it_is_not item says the 2015 order says the settlement cannot be conflated into a concession of the theory writ large. Footnote 12 says it of the damages decision wording (the respondent elected not to challenge petitioner claim); the claim statement says this correctly. Align the surface line. Also the text gives (late 2007) as if from the order; the date is CNN (concluded last November), as the claim says (late 2007 per CNN).'
+    evidence: 'Order 08-504V footnote 12 and text; CNN 6 Mar 2008; read by me.'
+  - id: R8-4
+    target: review.yaml R6-2 reviewer_note (seventh reviewer)
+    severity: non_blocking
+    finding: 'The family surname of the compensation child appeared in a quotation of the order in the R6-2 reviewer note. Replaced with [the case] by me in this file (the reviewer field); no other file touched. Recorded here so the change is visible.'
+    evidence: 'grep of build/subjects/vaccines-autism at 3272352.'
+    resolved: true
+    resolved_in_round: 8
+    reviewer_note: 'Done by me in this commit.'
 open_items_proposed_by_author:
   - 'Other compensated vaccine-injury cases with autism-like features (for example Banks v. HHS, 2007) not investigated (F4).'
   - 'The Lancet 2004 and 2010 notices, the 1998 full text, the GMC findings, the BMJ articles and the 2007 compensation decision remain unread; the claims that rest on them say so.'
   - 'Madsen 2002 and Hviid 2019 full texts not read; the headline stays draft until they are.'
 open_items:
-  - 'Non-blocking, round 7: R7-1 (first-screen wording of the compensation concession), R7-2 (absence wording on the mitochondrial fever question), R7-3 (stale authenticity note for the 1998 paper). Not resolved; to be answered by the author.'
+  - 'Blocking, round 8: R8-1 (key point 3 says no study found for the mitochondrial fever question; case series exist). Must be answered and resolved before the status can return to passed_with_open_items.'
+  - 'Non-blocking, round 8: R7-2 (partly answered; carried as R8-2: record the search behind we found no controlled study; tests.yaml residue), R8-3 (what_it_is_not attributes the order footnote 12 point to the settlement; late 2007 is CNN date). R7-1 and R7-3 resolved.'
   - 'Sources still unread by anyone, each with a va-sq claim: the Lancet 2004 and 2010 notices; the BMJ 2011 articles and BMJ c696 and c2803; the JAMA 2016 erratum to Jain 2015; the Annals correction to Andersson 2025 (PMID 40674587); the Rule 4(c) report and damages decision of the 2007 compensation case (and the 2011 fees decision beyond what the 2015 order quotes); other compensated cases (Banks and others); the Board order of 22 Aug 2012; the full text of the 2006 case report (whether it is the same child); the evidentiary bodies of the six omnibus decisions; the publishers own files of Madsen 2002, Hviid 2019 and the 1998 paper (third-party copies were read and match the abstracts and quoted wording).'
   - 'Nine established claims rest on secondary reads (abstracts, news, fetched pages); the page must show these as limits.'
   - 'Owner decision: whether to move headline_status from draft (the headline claim meets SCHEMA 13: established, high, weight 4, primary; the L-06 condition is met; the headline wording of N10 was changed by L-24 under the owner delegation).'
