@@ -95,7 +95,7 @@ people:
 sources:
   s_flydubai:  {title: "flydubai newsroom, Updates on FZ 1073 (statements 1 to 4)", url: "https://news.flydubai.com/updates-on-fz-1073-dxb-tlv-on-30-september-2026"}
   s_mofa:      {title: "UAE Ministry of Foreign Affairs, UAE Following Incident Involving flydubai Flight to Tel Aviv (1 Oct)", url: "https://www.mofa.gov.ae/en/MediaHub/News/2026/10/1/UAE-fly-dubai"}
-  s_gcaa:      {title: "Emirates 24|7, GCAA commends courage of the captain and crew (2 Oct), carrying the GCAA statement", url: "https://www.emirates247.com/uae/gcaa-commends-courage-of-captain-machchhar-smit-crew-of-flydubai-flight-fz1073/6282"}
+  s_gcaa:      {title: "Khaleej Times (WAM), GCAA says it will not comment on claims as investigation continues (2 Oct), a WAM copy of the GCAA statement", url: "https://www.khaleejtimes.com/uae/flydubai-incident-gcaa-reserves-comment-praises-pilot"}
   s_flightaware: {title: "FlightAware, FZ1073 (FDB1073) flight history", url: "https://www.flightaware.com/live/flight/FDB1073/history"}
   s_cnn:       {title: "CNN, What happened inside the Flydubai flight to Israel? (30 Sep, updated 1 Oct)", url: "https://www.cnn.com/2026/09/30/middleeast/flydubai-israel-plane-pilot-hijacking-incident-latam-hnk-intl"}
   s_cnn_live:  {title: "CNN live blog, 1 October", url: "https://www.cnn.com/2026/10/01/world/live-news/flydubai-flight-israel-pilot-passengers-intl"}
@@ -233,7 +233,7 @@ events:
      detail: "Statement 4 (read): all 172 passengers and crew safe; the Captain returned to the UAE; flights to Tel Aviv suspended at the authorities' request. Reuters dates his first public comments to Friday 2 Oct."}
   - {id: b15, panel: aftermath, lane: uae, time: "2026-10-02T09:30:00Z", precision: day, date_basis: stated, kind: official, status: single, sources: [s_gcaa],
      label: "UAE civil aviation authority: commends captain, crew, passengers; no comment on claims",
-     detail: "Statement via WAM (as carried by Emirates 24|7, 2 Oct): the captain is in good condition; findings will be announced through official channels."}
+     detail: "Statement via WAM (as carried by Khaleej Times and Emirates 24|7, 2 Oct): the captain is in good condition; findings will be announced through official channels."}
   - {id: b16, panel: aftermath, lane: israel_agencies, time: "2026-10-02T07:34:00Z", precision: approx, date_basis: derived, kind: media, status: single, sources: [s_jp_405],
      label: "Israeli sources (unnamed): the co-pilot held no second nationality",
      detail: "Jerusalem Post, 2 Oct 10:34 (page clock taken as Israel time, UTC+3, so 07:34 UTC; the zone is not stated). Anonymous sources; not confirmed by any authority."}
@@ -397,9 +397,9 @@ events:
   - {id: m51, panel: media02, lane: m_fact, time: "2026-10-02T16:24:23Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_ls_ai],
      label: "Lead Stories reports 'leaked video' of a pilot argument is AI-generated; audio from 2017",
      detail: "Stamp 09:24:23 -07:00 = 16:24:23 UTC. read: yes."}
-  - {id: m52, panel: media02, lane: m_official, time: "2026-10-02T17:15:00Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_gcaa],
+  - {id: m52, panel: media02, lane: m_official, time: "2026-10-02T16:54:48Z", precision: exact, date_basis: stated, kind: official, status: single, sources: [s_gcaa],
      label: "UAE GCAA statement (WAM) commends captain, crew and passengers; 'will not comment on any details or claims in circulation'",
-     detail: "Emirates 24|7 stamp 21:15 +04 = 17:15 UTC (modified 21:40 +04). read: yes (outlet copy)."}
+     detail: "Earliest outlet stamp seen: Khaleej Times (by WAM) datePublished 20:54:48 +04 = 16:54:48 UTC (modified 22:26:41 +04); the Emirates 24|7 report is stamped 21:15 +04 = 17:15 UTC (modified 21:40 +04). The release hour of the WAM original is not known. read: yes (outlet copies; the Khaleej Times paragraph on the investigation is reworded against the Emirates 24|7 text)."}
   - {id: m53, panel: media02, lane: m_fact, time: "2026-10-02T19:28:27Z", precision: exact, date_basis: stated, kind: analysis, status: single, sources: [s_ls_ng],
      label: "Lead Stories: fake video credited to NewsGuard blaming a US political party",
      detail: "Stamp 12:28:27 -07:00 = 19:28:27 UTC. NewsGuard told Lead Stories it did not make the claim; Lead Stories reports that NewsGuard said the post appears connected to a 'Russian disinformation campaign' (its quoted NewsGuard email says 'a Russian influence campaign'). read: yes (Lead Stories); NewsGuard's page not reached."}

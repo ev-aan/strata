@@ -191,7 +191,7 @@ claims:
       description: >
         Saudi Press Agency, 1 Oct 2026 (English; raw HTML read; stored in sources/spa-moi-2026-10-01.txt): "The captain and co-pilot were transferred to a local hospital for medical evaluation and treatment." "Preliminary investigations conducted by competent Saudi authorities, in coordination with a security team from the United Arab Emirates, revealed that an altercation occurred in which the co-pilot assaulted the captain, resulting in injuries to both individuals."
         "following medical clearance, both pilots departed Saudi Arabia for Abu Dhabi on Thursday, October 1, accompanied by the UAE security team." The item attributes this to "an official source at the Ministry of Interior". It says nothing about a stabbing, a weapon, nationality, motive, terrorism, arrest, custody or charges.
-        flydubai CEO statement [read]: the Captain "has now returned to the UAE following medical clearance". GCAA statement via Emirates 24|7 [read]: the Captain "is in good condition, and is receiving the necessary medical treatment". Tabuk airport, via Khaleej Times [read]: both injured and taken to hospital.
+        flydubai CEO statement [read]: the Captain "has now returned to the UAE following medical clearance". GCAA statement via Khaleej Times and Emirates 24|7 (WAM copies) [read]: the Captain "is in good condition, and is receiving the necessary medical treatment". Tabuk airport, via Khaleej Times [read]: both injured and taken to hospital.
       sources: [src-saudi-moi-original, src-flydubai-updates, src-gcaa-emirates247, src-khaleej-timeline, src-aljazeera-saudi, src-cnn-live]
     basis: >
       # V: the Saudi English text was read on the Saudi Press Agency (primary). Other English renderings of the Saudi statement were read in CNN and Al Jazeera and differ in wording; the Arabic was not seen. Severity ("seriously wounded", stabbing) is not in the Saudi text; see fz1073-captain-wounds.
@@ -271,7 +271,7 @@ claims:
       type: official-statements
       description: >
         flydubai Statement 2 [read]: the aircraft "was successfully secured by on-duty flydubai crew travelling on the flight"; Statement 4 [read]: thanks "the pilots who secured the aircraft and landed it safely" and "the passengers on board who assisted our crew".
-        The UAE foreign ministry [read]: the altercation "prompting flydubai crew members travelling on board to intervene and secure the aircraft". The GCAA statement [read via Emirates 24|7] commends "the passengers who contributed to bringing the situation under control".
+        The UAE foreign ministry [read]: the altercation "prompting flydubai crew members travelling on board to intervene and secure the aircraft". The GCAA statement [read via Khaleej Times and Emirates 24|7, WAM copies] commends "the passengers who contributed to bringing the situation under control".
       sources: [src-flydubai-updates, src-mofa-uae, src-gcaa-emirates247]
     basis: >
       # V: the airline and ministry texts were read directly. The number of pilots, the cockpit door and the order of events are not in these texts; see fz1073-crew-details.
@@ -667,7 +667,7 @@ claims:
       type: official-statement
       description: >
         UAE Ministry of Foreign Affairs [read, stored in sources/mofa-uae-2026-10-01.txt]: the Attorney-General "had ordered the formation of a team comprising specialised members of the Public Prosecution to investigate the circumstances and causes of the incident"; the investigation "includes examining all circumstances and motives surrounding the incident, including any possible connection to terrorist activity or intent, and whether it involved prior planning or direction."
-        The ministry asks the public to rely on official sources "until the investigation is completed and its findings are announced." GCAA via Emirates 24|7 [read]: findings "will be announced through official channels". Al Jazeera [read]: Saudi Arabia's National Transport Safety Center said its team had begun work.
+        The ministry asks the public to rely on official sources "until the investigation is completed and its findings are announced." GCAA via Khaleej Times and Emirates 24|7 (WAM copies) [read]: findings "will be announced through official channels". Al Jazeera [read]: Saudi Arabia's National Transport Safety Center said its team had begun work.
       sources: [src-mofa-uae, src-gcaa-emirates247, src-aljazeera-saudi, src-national-ag]
     basis: >
       # V: the ministry text was read directly. Israel's part ("Israeli investigators would take part in the UAE-led investigation", an Israeli official to Reuters) is not confirmed by the UAE; Ynet reports Saudi Arabia declined an Israeli observer. Both are single-source and not claimed.
